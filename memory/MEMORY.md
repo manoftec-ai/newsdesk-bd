@@ -15,7 +15,7 @@
 |----|------|----------|--------|-------|
 | G1 | Pipeline: fetch→normalize→cluster→verify→extract→synth→publish (তাড়াতাড়ি, draft ছাড়া) | high | live | Phases 5–6 done; Phase 7 scheduler pending |
 | G2 | Site live on Vercel with real (non-demo) content, demo removed | high | live | dengue story live as 1st real article |
-| G3 | Automated 30-min fetch scheduler on a free service (GitHub Actions chosen) | high | pending | Needs GitHub repo/token |
+| G3 | Automated 30-min fetch scheduler on a free service (GitHub Actions chosen) | high | live | Phase 7 DONE — repo live, cron active |
 
 ### Completed
 | ID | Goal | Date completed |
@@ -25,6 +25,8 @@
 | G5 | Phase 5 libs: extract.mjs + synth.mjs + run.js commands | 2026-09-19 |
 | G6 | Phase 6: pipeline output wired into Astro, auto-publish live | 2026-09-19 |
 | G7 | Vercel token stored globally & permanent | 2026-09-19 |
+| G8 | GitHub Actions free cron (Phase 7): repo manoftec-ai/newsdesk-bd, pipeline.yml + deploy.yml active, VERCEL_TOKEN secret; first cron run extracted 33 briefs & auto-committed | 2026-09-19 |
+| G9 | GitHub classic PAT stored globally & permanent (repo+workflow scope) | 2026-09-19 |
 
 ## Decisions
 | Date | Decision | Rationale / context |
@@ -32,6 +34,7 @@
 | 2026-09-19 | D20: **Auto-publish** — সব পাইপলাইন-নিশ্চিত গল্প সরাসরি `draft:false` হয়; human flip বাতিল (user: "publish it automatically") | user override of old draft-first; synth writes `draft:false` |
 | 2026-09-19 | D21: Provider = **opencode** (LLM lokal), lib/synth.mjs swaps prompt → any writer mode | user: "we're going to do it with u, opencode" |
 | 2026-09-19 | D22: Scheduler = **GitHub Actions free cron** (no Servarica; vercel fine but no server) | free; GH Actions workflow added |
+| 2026-09-19 | D24: GitHub classic PAT (ghp_…Amca4) stored globally permanent — creates repos, full repo+workflow scopes | replaces fine-grained PATs (can't create repos) |
 | 2026-09-19 | D23: drafts filtered at build for site pages (getCollection filter `!data.draft`); rss/sitemap already filtered | draft-leak found on article/[slug].astro 2026-09-19 |
 | 2026-09-19 | D13–D17 (earlier lifecycle decisions) | superseded by pipeline+auto publish |
 | 2026-09-19 | D18: Vercel deploy token stored at ~/.config/opencode/.secrets/vercel.env, read via env; kevli never echo | per global protocol |
@@ -55,13 +58,13 @@
 - [x] Deploy live (all routes 200; dengue article live, in RSS+sitemap)
 - [x] Phase 5 libs + 1st real story authored & live
 - [x] Phase 6 (draft filter fix + auto-publish)
-- [ ] Phase 7: GitHub repo create + push + GitHub Actions enable (needs GH token/repo from user) + set VERCEL_TOKEN secret
-- [ ] Convert remaining 24 verified briefs into stories (opencode-authored), or wire a free LLM provider hook
-- [ ] Update history `label` UI/schema sync (old open item)
+- [x] Phase 7: GitHub repo manoftec-ai/newsdesk-bd created (public), code pushed, workflows active, VERCEL_TOKEN secret set, first cron run success (33 briefs auto-committed)
+- [ ] Convert briefs into stories (opencode-authored) on a regular cadence; consider a "daily edition" workflow
+- [ ] Monitor cron health (BD sites may block GH runner IPs; some sources slow)
 
 ## Next Steps / Open Questions
-- [ ] GH token needed from user → create repo (public), push pipeline+site+workflows, add VERCEL_TOKEN secret, run pipeline.yml
-- [ ] Once automation runs: watch for site sources blocking GH Actions IPs; add retry/robots politeness if needed
+- [ ] Watch 30-min cron runs over the next hours; verify fetch freshness maintained in pipeline/state/store.db
+- [ ] Decide story authoring cadence (opencode, in-session; or a scheduled synth/deploy hook later)
 - [ ] Add `synth` batch mode to auto-publish from briefs (open to provider swap)
 
 ## Archived / Superseded
