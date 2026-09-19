@@ -19,4 +19,4 @@ jobs:
 
       - name: Deploy to Vercel (production)
         working-directory: site
-        run: npx vercel deploy . --prod --yes --token "$VERCEL_TOKEN"
+        run: npx vercel deploy . --prod --yes --token "$VERCEL_TOKEN" --scope man-of-technology --name newsdesk-bd
