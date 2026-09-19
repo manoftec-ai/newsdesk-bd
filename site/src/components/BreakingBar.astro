@@ -1,0 +1,15 @@
+---
+const { items = [] } = Astro.props;
+const rail = items.length > 0 ? [...items, ...items] : [];
+---
+
+<div class="ticker-band">
+  <span class="ticker-label">ব্রেকিং</span>
+  <div class="ticker-viewport" aria-label="সর্বশেষ আলোচিত খবর">
+    <div class="ticker-track">
+      {rail.map((item) => (
+        <a href={`/article/${item.slug}`}>{item.title}</a>
+      ))}
+    </div>
+  </div>
+</div>

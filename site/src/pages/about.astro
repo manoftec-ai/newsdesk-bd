@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE, categories } from "../lib/news-data.js";
+---
+
+<BaseLayout title={`আমাদের সম্পর্কে — ${SITE.name}`} description={SITE.description}>
+  <div class="prose prose-lg prose-brown dark:prose-invert mx-auto max-w-3xl px-5">
+    <Breadcrumbs crumbs={[{ name: "আমাদের সম্পর্কে", href: "/about", current: true }]} />
+    <h1 class="mt-6 font-serif text-4xl font-bold">আমাদের সম্পর্কে</h1>
+
+    <p>
+      <strong>{SITE.name}</strong> একটি সম্পূর্ণ স্বয়ংক্রিয় সংবাদ ডেস্ক — বাংলাদেশের ১২টিরও বেশি
+      প্রধান সংবাদমাধ্যম, সরকারি ও দাপ্তরিক সূত্র থেকে সংগৃহীত খবর একত্রিত করে আমরা একটি নির্ভরযোগ্য,
+      প্রমাণসহ সংবাদ তৈরি করি।
+    </p>
+
+    <h2>আমরা কীভাবে কাজ করি</h2>
+    <ol>
+      <li>
+        <strong>সংগ্রহ:</strong> নির্ধারিত সময়সূচিতে একাধিক পত্রিকা ও দাপ্তরিক সূত্র থেকে
+        প্রতিবেদন সংগ্রহ করা হয়।
+      </li>
+      <li>
+        <strong>যাচাই:</strong> একই ঘটনার একাধিক প্রতিবেদন তুলনা করে ঘটনার সত্যতা যাচাই করা হয়।
+      </li>
+      <li>
+        <strong>সংশ্লেষণ:</strong> যাচাই করা তথ্যের ভিত্তিতে বাইরের সমালোচনা ছাড়াই একটি মূল
+        প্রতিবেদন লেখা হয়, প্রতিটি তথ্যের উৎসসহ।
+      </li>
+      <li>
+        <strong>প্রকাশ:</strong> প্রতিটি সংবাদে যাচাই ব্যাজ, সূত্রের তালিকা ও প্রমাণের লিংক
+        সবসময় দেখা যায়।
+      </li>
+    </ol>
+
+    <h2>যাচাই ব্যাজ</h2>
+    <ul>
+      <li><strong>যাচাইকৃত:</strong> অফিসিয়াল সূত্রে নিশ্চিত — প্রকাশের জন্য সম্পূর্ণ প্রস্তুত।</li>
+      <li><strong>নিশ্চিত:</strong> একাধিক বিশ্বস্ত পত্রিকা একমত — নিয়মিত সংবাদের জন্য যথেষ্ট।</li>
+      <li><strong>একক/আংশিক:</strong> একক সূত্র বা আংশিক তথ্য — এখনও চূড়ান্ত নয়।</li>
+      <li><strong>সন্দেহজনক:</strong> যাচাই করা যায়নি — প্রকাশযোগ্য নয়।</li>
+    </ul>
+
+    <h2>বিভাগসমূহ</h2>
+    <ul>
+      {categories.map((category) => (
+        <li>
+          <a href={`/category/${category.slug}`}>{category.name}</a>
+        </li>
+      ))}
+    </ul>
+
+    <p>
+      কোনো সংবাদ, সংশোধন বা অভিযোগ থাকলে — <a href="/contact">যোগাযোগ</a> পাতা ব্যবহার করুন।
+    </p>
+  </div>
+</BaseLayout>

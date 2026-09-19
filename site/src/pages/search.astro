@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { categories, tags, SITE } from "../lib/news-data.js";
+
+const title = `খুঁজুন — ${SITE.name}`;
+---
+
+<BaseLayout title={title} description="নিউজডেস্ক বিডিতে খুঁজুন।">
+  <div class="mx-auto max-w-4xl px-5">
+    <Breadcrumbs crumbs={[{ name: "খুঁজুন", href: "/search", current: true }]} />
+
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">খুঁজুন</h1>
+      <p class="mt-2 text-muted-foreground">সব সংবাদ ও ট্যাগ অনুসন্ধান করুন।</p>
+    </header>
+
+    <div id="search" class="mt-6 min-h-14 text-center text-sm text-muted-foreground">
+      খোঁজার বাক্স লোড হচ্ছে…
+    </div>
+
+    <div class="mt-10 grid gap-10 sm:grid-cols-2">
+      <section>
+        <h2 class="mb-3 font-serif text-xl font-bold">বিভাগসমূহ</h2>
+        <div class="flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <a
+              href={`/category/${category.slug}`}
+              class="category-pill"
+              style={`background-color:${category.color}`}
+            >
+              {category.name}
+            </a>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h2 class="mb-3 font-serif text-xl font-bold">জনপ্রিয় ট্যাগ</h2>
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <a
+              href={`/tags/${tag.slug}`}
+              class="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground hover:border-primary hover:text-primary"
+            >
+              #{tag.name}
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const searchRoot = document.getElementById("search");
+  const loadScript = (src) =>
+    new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      script.onload = resolve;
+      script.onerror = resolve;
+      document.head.appendChild(script);
+    });
+
+  const init = async () => {
+    if (!searchRoot || searchRoot.dataset.busy === "true") return;
+    searchRoot.dataset.busy = "true";
+    try {
+      await loadScript("/pagefind/pagefind-entry.js");
+      await loadScript("/pagefind/pagefind-ui.js");
+      if (window.PagefindUI) {
+        searchRoot.innerHTML = "";
+        new window.PagefindUI({ element: "#search", showSubResults: true });
+      } else {
+        searchRoot.innerHTML = "সরাসরি অনুসন্ধান এই সংস্করণে নেই — উপরের বিভাগ/ট্যাগ ব্যবহার করুন।";
+      }
+    } catch {
+      searchRoot.innerHTML = "সরাসরি অনুসন্ধান চালু করা যায়নি — উপরের বিভাগ/ট্যাগ ব্যবহার করুন।";
+    }
+  };
+
+  searchRoot?.addEventListener("focusin", init, { once: true });
+</script>

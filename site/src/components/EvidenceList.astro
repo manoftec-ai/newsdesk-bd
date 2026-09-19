@@ -1,0 +1,30 @@
+---
+import Icon from "./Icon.astro";
+
+const { items = [] } = Astro.props;
+---
+
+<div class="evidence-box">
+  <div class="flex items-center gap-2 text-sm font-bold">
+    <Icon name="shield" class="h-4 w-4 text-primary" />
+    প্রমাণ ও সূত্র
+  </div>
+  {
+    items.length > 0 && (
+      <ul class="mt-3">
+        {items.map((item) => (
+          <li>
+            <strong>{item.type}</strong> —{" "}
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noreferrer">
+                {item.label}
+              </a>
+            ) : (
+              item.label
+            )}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</div>

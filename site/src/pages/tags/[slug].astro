@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { tags, postsByTag, SITE } from "../../lib/news-data.js";
+
+export async function getStaticPaths() {
+  return tags.map((tag) => ({
+    params: { slug: tag.slug },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+const posts = await postsByTag(tag.slug);
+---
+
+<BaseLayout
+  title={`#${tag.name} — ${SITE.name}`}
+  description={`#${tag.name} ট্যাগের যাচাই-করা সংবাদ।`}
+  canonical={`${SITE.url}/tags/${tag.slug}`}
+>
+  <div class="mx-auto max-w-6xl px-5">
+    <Breadcrumbs crumbs={[{ name: `#${tag.name}`, href: `/tags/${tag.slug}`, current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">#{tag.name}</h1>
+    </header>
+
+    {posts.length > 0 ? (
+      <div class="mt-8">
+        {posts.map((post) => (
+          <PostCard post={post} variant="list" />
+        ))}
+      </div>
+    ) : (
+      <p class="mt-8 text-muted-foreground">এই ট্যাগে কোনো সংবাদ নেই।</p>
+    )}
+  </div>
+</BaseLayout>

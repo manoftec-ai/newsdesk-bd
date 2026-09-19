@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "seeded": "2026-09-19",
+  "fbVerified": "2026-09-19",
+  "description": "Trust register seed: source reputations + official/agency channels for the VERIFY engine (ARCHITECTURE.md §4A). Facebook page URLs were verified via web search on 2026-09-19 (re-check periodically). Method 'search' = VERIFY finds the channel via SearXNG meta-search; 'web' = direct site scan; 'facebook' = official FB page monitoring.",
+  "sources": {
+    "prothomalo": "top",
+    "ittefaq": "top",
+    "kalerkantho": "top",
+    "jugantor": "top",
+    "samakal": "top",
+    "dainikbangla": "top",
+    "dhakatribune": "top",
+    "dailystar": "top",
+    "banglatribune": "top",
+    "bdnews24": "top",
+    "independent": "top",
+    "deshrupantor": "top",
+    "jamuna": "top",
+    "atnbangla": "top",
+    "channeli": "top"
+  },
+  "blocklist": [],
+  "channels": [
+    {
+      "id": "fire_service",
+      "topic": "fire",
+      "name": "Bangladesh Fire Service & Civil Defence",
+      "web": "https://fireservice.gov.bd/",
+      "facebook": "https://www.facebook.com/fscd.bd",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "police",
+      "topic": "crime",
+      "name": "Bangladesh Police (HQ)",
+      "web": "https://www.police.gov.bd/",
+      "facebook": "https://www.facebook.com/BangladeshPoliceOfficialPage",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "ECONNRESET; verified page has ~2.7M followers" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "dmp",
+      "topic": "crime",
+      "name": "Dhaka Metropolitan Police",
+      "web": "https://dmp.gov.bd/",
+      "facebook": "https://www.facebook.com/dmp.dhaka",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UND_ERR_CONNECT_TIMEOUT; FB URL from official dmp.gov.bd site text" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "bmd",
+      "topic": "weather",
+      "name": "Bangladesh Meteorological Department",
+      "web": "https://www.bmd.gov.bd/",
+      "facebook": "https://www.facebook.com/bmd.gov.bd",
+      "method": "facebook+web",
+      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "bbs",
+      "topic": "economy",
+      "name": "Bangladesh Bureau of Statistics",
+      "web": "https://www.bbs.gov.bd/",
+      "facebook": "https://www.facebook.com/bbs.gov.bd",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "pid",
+      "topic": "government",
+      "name": "Press Information Department (govt news releases)",
+      "web": "https://www.pid.gov.bd/",
+      "facebook": "https://www.facebook.com/pid.bangladesh",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "ENOTFOUND; fb from archived official posts" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "pmo",
+      "topic": "government",
+      "name": "PMO Bangladesh - Prime Minister's Office",
+      "web": "https://www.pmo.gov.bd/",
+      "facebook": "https://www.facebook.com/bdpmoffice",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "DEPTH_ZERO_SELF_SIGNED_CERT; NEW official page launched 2026-02-18 under 11th PM" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "btrc",
+      "topic": "telecom",
+      "name": "BTRC",
+      "web": "https://www.btrc.gov.bd/",
+      "facebook": "https://www.facebook.com/btrc.gov",
+      "method": "facebook+search",
+      "probe": { "homeReachable": false, "httpStatus": 0, "note": "DEPTH_ZERO_SELF_SIGNED_CERT" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "dghs",
+      "topic": "health",
+      "name": "Directorate General of Health Services",
+      "web": "https://dghs.gov.bd/",
+      "facebook": "https://www.facebook.com/dghsbd",
+      "method": "facebook+web",
+      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "fbVerified": "2026-09-19"
+    },
+    {
+      "id": "nbr",
+      "topic": "economy",
+      "name": "National Board of Revenue",
+      "web": "https://www.nbr.gov.bd/",
+      "facebook": "https://www.facebook.com/nbr.bangladesh",
+      "method": "facebook+search",
+      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "fbVerified": "2026-09-19"
+    }
+  ],
+  "notes": [
+    "Most .gov.bd hosts are flaky (self-signed certs, resets, timeouts). VERIFY gather will primarily use SearXNG meta-search + official Facebook pages (checked above) rather than direct TLS polling.",
+    "blocklist (impersonator/clickbait domains) starts empty; grow ONLY with manually verified examples.",
+    "bmd FB page confirmation came via directory/aggregator data (facebook.com/bmd.gov.bd) — re-confirm against the page's verified badge in Phase 4."
+  ]
+}

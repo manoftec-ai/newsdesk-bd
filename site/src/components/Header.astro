@@ -1,0 +1,121 @@
+---
+import Icon from "./Icon.astro";
+import { SITE } from "../lib/news-data.js";
+import { NAVIGATION, MORE_NAVIGATION } from "../config/theme.config.ts";
+
+const current = Astro.url.pathname.replace(/\/$/, "") || "/";
+const active = (to) => {
+  if (to === "/") return current === "/";
+  return current === to || current.startsWith(to + "/");
+};
+const linkClass = (to) =>
+  active(to)
+    ? "text-sm font-medium text-foreground"
+    : "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
+const actionClass =
+  "inline-flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground";
+---
+
+<header class="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
+  <div class="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-5">
+    <a href="/" class="flex min-w-0 items-center gap-1.5" aria-label={SITE.name}>
+      <span class="truncate font-serif text-lg font-bold tracking-tight">
+        {SITE.name}
+        <span class="text-primary">.</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-5 lg:flex" aria-label="প্রধান নেভিগেশন">
+      {
+        NAVIGATION.map((item) => (
+          <a href={item.to} class={linkClass(item.to)} aria-current={active(item.to) ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+      <a href="/news" class={linkClass("/news")} aria-current={active("/news") ? "page" : undefined}>
+        আরও
+      </a>
+    </nav>
+
+    <div class="flex items-center gap-1">
+      <a href="/search" aria-label="খুঁজুন" class={actionClass}>
+        <Icon name="search" class="h-4 w-4" />
+      </a>
+      <a href="/rss.xml" aria-label="RSS ফিড" class={`${actionClass} hidden sm:inline-flex`}>
+        <Icon name="rss" class="h-4 w-4" />
+      </a>
+      <button type="button" data-theme-toggle aria-label="ডার্ক মোড" class={actionClass}>
+        <span data-theme-icon="moon"><Icon name="moon" class="h-4 w-4" /></span>
+        <span data-theme-icon="sun" hidden><Icon name="sun" class="h-4 w-4" /></span>
+      </button>
+      <button
+        type="button"
+        data-menu-toggle
+        aria-label="মেনু"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        class={`${actionClass} lg:hidden`}
+      >
+        <span data-menu-icon="menu"><Icon name="menu" class="h-4 w-4" /></span>
+        <span data-menu-icon="x" hidden><Icon name="x" class="h-4 w-4" /></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" data-menu-panel class="border-t border-border/60 bg-background text-foreground lg:hidden" hidden>
+    <nav class="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-3" aria-label="মোবাইল নেভিগেশন">
+      {[...NAVIGATION, ...MORE_NAVIGATION].map((item) => (
+        <a
+          href={item.to}
+          class={`rounded-md px-2 py-2 text-sm hover:bg-muted hover:text-foreground ${active(item.to) ? "text-foreground font-medium" : "text-muted-foreground"}`}
+          aria-current={active(item.to) ? "page" : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.querySelector("[data-menu-toggle]");
+  const menuPanel = document.querySelector("[data-menu-panel]");
+  const menuIcon = document.querySelector('[data-menu-icon="menu"]');
+  const closeIcon = document.querySelector('[data-menu-icon="x"]');
+  const themeToggle = document.querySelector("[data-theme-toggle]");
+  const moonIcon = document.querySelector('[data-theme-icon="moon"]');
+  const sunIcon = document.querySelector('[data-theme-icon="sun"]');
+
+  const setThemeIcon = () => {
+    const dark = document.documentElement.classList.contains("dark");
+    moonIcon.hidden = dark;
+    sunIcon.hidden = !dark;
+  };
+
+  setThemeIcon();
+
+  const setMenu = (open) => {
+    menuPanel.hidden = !open;
+    menuIcon.hidden = open;
+    closeIcon.hidden = !open;
+    menuToggle?.setAttribute("aria-expanded", String(open));
+  };
+
+  menuToggle?.addEventListener("click", () => setMenu(menuPanel.hidden));
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!menuPanel.hidden) {
+      setMenu(false);
+      menuToggle?.focus();
+    }
+  });
+
+  themeToggle?.addEventListener("click", () => {
+    const next = !document.documentElement.classList.contains("dark");
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+    setThemeIcon();
+  });
+</script>

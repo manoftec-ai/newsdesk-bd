@@ -1,0 +1,15 @@
+---
+import { BADGES } from "../lib/news-data.js";
+
+const { badge, tier, compact = false } = Astro.props;
+const meta = BADGES[badge?.key] ?? BADGES[badge] ?? BADGES.partial;
+const tierText = tier ? ` [${tier}]` : "";
+---
+
+<span
+  class:list={["badge-chip", meta.className]}
+  title={`${meta.label}${tierText} — ${meta.tierNote}`}
+>
+  {meta.label}
+  {!compact && tier && <span class="opacity-80">{tierText}</span>}
+</span>

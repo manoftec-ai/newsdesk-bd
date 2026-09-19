@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE } from "../lib/news-data.js";
+---
+
+<BaseLayout title={`পাতাটি খুঁজে পাওয়া যায়নি — ${SITE.name}`}>
+  <div class="mx-auto max-w-2xl px-5 py-24 text-center">
+    <div class="font-serif text-7xl font-bold text-primary">৪০৪</div>
+    <h1 class="mt-4 font-serif text-3xl font-bold">পাতাটি খুঁজে পাওয়া যায়নি</h1>
+    <p class="mt-3 text-muted-foreground">
+      যে পেজটি খুঁজছেন তা আর নেই বা সরানো হয়েছে। নতুন খবরের জন্য নীড়পাতায় ফিরুন।
+    </p>
+    <a
+      href="/"
+      class="mt-6 inline-block rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground"
+    >
+      নীড়পাতায় যান
+    </a>
+  </div>
+</BaseLayout>

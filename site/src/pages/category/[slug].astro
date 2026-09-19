@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { categories, postsByCategory, getCategory, SITE } from "../../lib/news-data.js";
+
+export async function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const posts = await postsByCategory(category.slug);
+---
+
+<BaseLayout
+  title={`${category.name} সংবাদ — ${SITE.name}`}
+  description={`${category.name} বিভাগের যাচাই-করা সংবাদ।`}
+  canonical={`${SITE.url}/category/${category.slug}`}
+>
+  <div class="mx-auto max-w-6xl px-5">
+    <Breadcrumbs
+      crumbs={[{ name: category.name, href: `/category/${category.slug}`, current: true }]}
+    />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <div class="flex items-center gap-3">
+        <span class="category-pill" style={`background-color:${category.color}`}>
+          {category.name}
+        </span>
+        <span class="text-sm text-muted-foreground">{posts.length}টি সংবাদ</span>
+      </div>
+      <h1 class="mt-3 font-serif text-4xl font-bold">{category.name} সংবাদ</h1>
+    </header>
+
+    {posts.length > 0 ? (
+      <div class="mt-8">
+        {posts.map((post) => (
+          <PostCard post={post} variant="list" />
+        ))}
+      </div>
+    ) : (
+      <p class="mt-8 text-muted-foreground">এই বিভাগে এখনো কোনো সংবাদ প্রকাশিত হয়নি।</p>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,210 @@
+# newsdesk-bd — sources (Phase 1, verified by probe 2026-09-19)
+# method: rss | scraper (plain HTML) | headless (JS/403-protected browser)
+
+site:
+  codename: newsdesk-bd
+  titleBn: নিউজডেস্ক বিডি
+  taglineBn: বাংলাদেশের সবচেয়ে যাচাই-করা সংবাদ
+  lang: bn
+  url: https://newsdesk-bd.vercel.app
+  cadence_minutes: 30
+
+# Destination site categories
+categories:
+  - জাতীয়
+  - রাজনীতি
+  - অর্থনীতি
+  - আন্তর্জাতিক
+  - ক্রীড়া
+  - বিনোদন
+  - প্রযুক্তি
+  - মতামত/বিশ্লেষণ
+  - সর্বশেষ
+
+# Verification tiers (category -> tier)
+tiers:
+  A: [জাতীয়, রাজনীতি, অর্থনীতি, আন্তর্জাতিক]
+  B: [ক্রীড়া, বিনোদন, প্রযুক্তি]
+  C: [মতামত/বিশ্লেষণ]
+  all: সর্বশেষ
+
+# AI provider (swap = change provider; see ARCHITECTURE.md §5)
+ai:
+  provider: local   # local | gemini
+  local:
+    model: Qwen2.5-3B-Instruct-Q4_K_M
+    server: http://127.0.0.1:8082
+    openaiCompat: true
+  gemini:
+    model: gemini-2.0-flash
+    apiKeyEnv: GEMINI_API_KEY
+
+# Polling behavior
+poll:
+  min_interval_minutes: 30      # per-source floor; never fetch faster than this
+  dedupe_title_similarity: 0.92 # 0..1, drop items whose title matches this strongly
+  cluster_window_hours: 8       # only cluster items from the last 8h
+  cluster_similarity: 0.45
+  cluster_prune_sim: 0.35       # centroid outlier prune (removes single-linkage grab-away members)
+  cluster_mature_runs: 3        # runs with no new member before story is written
+
+# VERIFY scoring (ARCHITECTURE.md §4A). Corroboration-based today; official/search/FB
+# signals plug in as a provider later — same model.
+verify:
+  paper_points: 2              # per distinct reputable paper agreeing
+  official_points: 3           # official/agency channel confirming
+  eyewitness_points: 0.5       # eyewitness/journalist account
+  contradiction_penalty: -1    # per contradicting public comment (red flag)
+  verified_min: 5              # verified badge requires official signal AND >= this
+  confirmed_min: 3
+  single_val: 2
+  min_badge:                   # publish floor per site tier
+    A: confirmed
+    B: single
+    C: single
+
+# News sources (probe-verified 2026-09-19)
+sources:
+  - id: prothomalo
+    nameBn: প্রথম আলো
+    nameEn: Prothom Alo
+    lang: bn
+    method: rss
+    feed: https://www.prothomalo.com/feed
+    home: https://www.prothomalo.com/
+    reputation: top
+    note: RSS OK (82 items). Cloudflare-protected, but feed works.
+
+  - id: ittefaq
+    nameBn: দৈনিক ইত্তেফাক
+    nameEn: Ittefaq
+    lang: bn
+    method: rss
+    feed: https://www.ittefaq.com.bd/feed/
+    home: https://www.ittefaq.com.bd/
+    reputation: top
+
+  - id: kalerkantho
+    nameBn: কালের কণ্ঠ
+    nameEn: Kaler Kantho
+    lang: bn
+    method: headless
+    home: https://www.kalerkantho.com/
+    reputation: top
+    note: HTTP 403 on plain fetch (bot protection) -> headless browser needed.
+
+  - id: jugantor
+    nameBn: যুগান্তর
+    nameEn: Jugantor
+    lang: bn
+    method: headless
+    home: https://www.jugantor.com/
+    reputation: top
+    note: HTTP 403 on plain fetch -> headless browser needed.
+
+  - id: samakal
+    nameBn: সমকাল
+    nameEn: Samakal
+    lang: bn
+    method: rss
+    feed: https://www.samakal.com/rss
+    home: https://www.samakal.com/
+    reputation: top
+
+  - id: dainikbangla
+    nameBn: দৈনিক বাংলা
+    nameEn: Dainik Bangla
+    lang: bn
+    method: scraper
+    home: https://www.dainikbangla.com.bd/
+    reputation: top
+    note: Site up (200), no feed found -> homepage scraper.
+
+  - id: dhakatribune
+    nameBn: ঢাকা ট্রিবিউন
+    nameEn: Dhaka Tribune
+    lang: en
+    method: rss
+    feed: https://www.dhakatribune.com/feed/
+    home: https://www.dhakatribune.com/
+    reputation: top
+
+  - id: dailystar
+    nameBn: ডেইলি স্টার
+    nameEn: The Daily Star
+    lang: en
+    method: rss
+    feed: https://www.thedailystar.net/rss.xml
+    home: https://www.thedailystar.net/
+    reputation: top
+    note: Main feed ~8 items; section feeds (bangladesh/sports/etc.) to add in Phase 7.
+
+  - id: banglatribune
+    nameBn: বাংলা ট্রিবিউন
+    nameEn: Bangla Tribune
+    lang: bn
+    method: rss
+    feed: https://www.banglatribune.com/feed/
+    home: https://www.banglatribune.com/
+    reputation: top
+
+  - id: bdnews24
+    nameBn: বিডিনিউজ২৪
+    nameEn: bdnews24.com (Bangla)
+    lang: bn
+    method: scraper
+    home: https://bangla.bdnews24.com/
+    reputation: top
+    note: Site up (200), no feed found -> scraper.
+
+  - id: independent
+    nameBn: দ্য ইন্ডিপেন্ডেন্ট
+    nameEn: The Independent
+    lang: en
+    method: scraper
+    home: https://www.theindependentbd.com/
+    reputation: top
+    note: Reachable (200), no RSS paths found -> scraper.
+
+  - id: deshrupantor
+    nameBn: দেশ রূপান্তর
+    nameEn: Desh Rupantor
+    lang: bn
+    method: rss
+    feed: https://www.deshrupantor.com/feed/
+    home: https://www.deshrupantor.com/
+    reputation: top
+
+  - id: jamuna
+    nameBn: জামুনা টিভি
+    nameEn: Jamuna TV
+    lang: bn
+    method: headless
+    home: https://www.jamuna.tv/
+    reputation: top
+    note: HTTP 403 on plain fetch -> headless browser needed.
+
+  - id: atnbangla
+    nameBn: এটিএন বাংলা
+    nameEn: ATN Bangla
+    lang: bn
+    method: scraper
+    home: https://www.atnbangla.tv/
+    reputation: top
+    note: Correct domain is atnbangla.tv (atnbanglatv.com does NOT resolve). No feed -> scraper.
+
+  - id: channeli
+    nameBn: চ্যানেল আই
+    nameEn: Channel i
+    lang: bn
+    method: rss
+    feed: https://www.channelionline.com/rss.xml
+    home: https://www.channelionline.com/
+    reputation: top
+    note: RSS OK (30 items).
+
+# Pending investigation (recorded, not blocking)
+# - dailystar section feeds (more coverage) -> Phase 7
+# - kalerkantho/jugantor/jamuna (HTTP 403 bot-protection): HEADLESS DEFERRED — decided 2026-09-19
+#   to skip for now; implement Playwright/browser strategy later. These 3 are NOT in the active set.
+# ACTIVE SOURCE SET (Phase 2) = 8 RSS + 4 scraper = 12 sources.

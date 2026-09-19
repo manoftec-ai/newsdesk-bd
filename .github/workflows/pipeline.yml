@@ -1,0 +1,53 @@
+name: pipeline
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pipeline deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Fetch
+        run: node run.js fetch || true
+
+      - name: Normalize
+        run: node run.js normalize || true
+
+      - name: Cluster
+        run: node run.js cluster || true
+
+      - name: Verify
+        run: node run.js verify || true
+
+      - name: Extract briefs
+        run: node run.js extract || true
+
+      - name: Commit state
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no state change"
+          else
+            git commit -m "pipeline: fetch/verify/extract (auto, $(date -u +%Y%m%dT%H%M))"
+            git push
+          fi

@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { authors, postsByAuthor, SITE } from "../../lib/news-data.js";
+
+export async function getStaticPaths() {
+  return authors.map((author) => ({
+    params: { slug: author.slug },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+const posts = await postsByAuthor(author.slug);
+---
+
+<BaseLayout
+  title={`${author.name} — ${SITE.name}`}
+  description={author.bio}
+  canonical={`${SITE.url}/authors/${author.slug}`}
+>
+  <div class="mx-auto max-w-6xl px-5">
+    <Breadcrumbs crumbs={[{ name: author.name, href: `/authors/${author.slug}`, current: true }]} />
+    <div class="mt-8 flex items-start gap-4">
+      <img
+        src={author.avatar}
+        alt={author.name}
+        width="96"
+        height="96"
+        class="h-24 w-24 rounded-full object-cover"
+      />
+      <div>
+        <h1 class="font-serif text-3xl font-bold">{author.name}</h1>
+        <p class="mt-2 max-w-2xl text-muted-foreground">{author.longBio}</p>
+      </div>
+    </div>
+
+    {posts.length > 0 && (
+      <div class="mt-10">
+        <h2 class="mb-4 font-serif text-2xl font-bold">প্রকাশিত সংবাদ</h2>
+        {posts.map((post) => (
+          <PostCard post={post} variant="list" />
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>

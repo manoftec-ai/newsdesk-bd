@@ -1,0 +1,20 @@
+{
+  "name": "pipeline",
+  "version": "0.1.0",
+  "description": "newsdesk-bd pipeline (fetch/normalize/cluster/verify/extract/synth)",
+  "type": "module",
+  "scripts": {
+    "fetch": "node run.js fetch",
+    "normalize": "node run.js normalize",
+    "cluster": "node run.js cluster",
+    "verify": "node run.js verify",
+    "test": "node --test test/*.test.mjs",
+    "probe": "node tools/probe_feeds.mjs"
+  },
+  "keywords": [],
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "rss-parser": "^3.13.0",
+    "yaml": "^2.9.1"
+  }
+}

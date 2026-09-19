@@ -1,0 +1,460 @@
+{
+  "meta": {
+    "scope": "project",
+    "project": "newsdesk-bd (Bangla News Synth)",
+    "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
+    "memorySystemVersion": "1.0",
+    "lastUpdated": "2026-09-19",
+    "sessionsCount": 5
+  },
+  "purpose": "Automated Bengali news desk for Bangladesh. Every 30 min, fetch ~12 BD sources, dedupe, cluster same-topic stories, merge part-by-part info into ONE original Bengali article per topic with sources+attribution, publish to static Astro site on Vercel (testing).",
+  "user": {
+    "name": "Zulfikar Rahman",
+    "note": "Full profile in GLOBAL memory; not a programmer, AI writes code, ZERO/VERY LOW budget"
+  },
+  "environment": {
+    "os": "Termux on Android",
+    "node": "v24.18.0",
+    "npm": "12.0.2",
+    "git": "2.55.0",
+    "python": "not installed (pipeline uses Node.js)"
+  },
+  "decisions": [
+    {
+      "date": "2026-09-19",
+      "decision": "Original synthesis + attribution; never full reprint",
+      "context": "Legal safety (copyright/press law) + unique SEO content"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Static site: Astro on Vercel free tier",
+      "context": "Node-native; Hugo glibc binaries don't run on Termux (bionic); Vercel builds Astro natively, no domain yet"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "AI provider-swap: local HF/llama.cpp default, Gemini free alternate",
+      "context": "Zero budget + privacy; swap = one config value"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Pipeline in Node.js",
+      "context": "Only runtime already installed in Termux"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Draft-first publishing superseded -> AUTO-PUBLISH. synth writes draft:false; user explicitly approved (publish automatically). All verified pipeline stories go live directly.",
+      "context": "User override of earlier draft-first habit (mustwatch.live); verified earlier"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Phase 5 provider = opencode (authored by AI assistant). llama.cpp/gemini swap available via synth.mjs provider interface.",
+      "context": "User decided: 'we're going to do it with u, opencode'"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Phase 7 scheduler = GitHub Actions free cron (*/30). NO Servarica. Vercel OK for deploy.",
+      "context": "User: 'no servarica; instead use free method github or anything suitable'. Needs public GitHub repo (free mins) or shared/self-hosted runner"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Pipeline state moved to pipeline/state/ (store.db + briefs) so it can be committed to GitHub Actions repo; pipeline/tmp/ stays gitignored.",
+      "context": "GitHub Actions ephemeral runners need persistent state across cron runs"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Draft filter: build-time getCollection filter !data.draft applied on article/[slug].astro too (was leaking drafts publicly). rss/sitemap already filter.",
+      "context": "Draft article was accessible at /article/slug before fix"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Deploy Vercel free hobby tier for testing",
+      "context": "Zero budget"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "~12 sources mix (Bangla dailies + English-based + TV)",
+      "context": "User-approved list"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Cadence every 30 min",
+      "context": "User choice"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Categories: জাতীয়, রাজনীতি, অর্থনীতি, আন্তর্জাতিক, ক্রীড়া, বিনোদন, প্রযুক্তি, মতামত/বিশ্লেষণ, সর্বশেষ",
+      "context": "Default BD taxonomy"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Authenticity = product core differentiator (verified-news brand)",
+      "context": "User's main priority: authentic-first, not just detailed; fake-news-heavy market"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Only verified stories publish; single-source/unconfirmed -> pending_verification queue",
+      "context": "D9 trust first"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Tiered verification A/B/C by topic sensitivity",
+      "context": "D10: sensitive must be verified (>= নিশ্চিত), routine fast, opinion labeled"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Social signals v1 = official/agency channels + self-hosted SearXNG meta-search; direct X/FB scraping deferred",
+      "context": "D11: free + stable; X/FB APIs paid/fragile"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "'Authentic' publicly = evidence + confidence badge (যাচাইকৃত/নিশ্চিত/একক-সূত্র/সন্দেহজনক) with clickable source list",
+      "context": "D12: transparent evidence bar"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "VERIFY stage inserted in pipeline (4): trust register -> gather signals -> score -> badge -> tier policy",
+      "context": "Architecture v2; badge+evidence in front matter + UI"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Site base = QuietPages (xocothemes/quietpages, MIT, Astro 7 + Tailwind 4 + MDX), re-skinned for Bengali news",
+      "context": "Zero-budget free OSS; newspaper-editorial layout; user approved recommendation"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Search = Pagefind (static index, loaded on search focus)",
+      "context": "100-speed checklist"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Dark mode kept (QuietPages pure-CSS prefers-color-scheme); breaking ticker = static top bar at build time",
+      "context": "Free, zero JS; news identity"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Bengali fonts self-hosted woff2: Noto Serif Bengali (headlines) + Hind Siliguri/Noto Sans Bengali (body); English slugs; lang per article (bn/en)",
+      "context": "Speed + Bengali rendering; 3 sources English"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "Verification badge on homepage cards + article header; EvidenceList + SourceList first-class",
+      "context": "D12 trust promise; build ourselves"
+    },
+    {
+      "date": "2026-09-19",
+      "id": "D16",
+      "decision": "Site LIVE at https://newsdesk-bd.vercel.app — full Bengali re-skin of QuietPages built on Vercel cloud (Termux noexec/no-symlink + Astro7 satteri missing → no local build). Pagefind indexed 30 pages. All routes 200.",
+      "rationale": "Zero-budget; user approved QuietPages; cloud build sidesteps android native-binding wall."
+    }
+  ],
+  "sources": [
+    "প্রথম আলো",
+    "দৈনিক ইত্তেফাক",
+    "কালের কণ্ঠ",
+    "যুগান্তর",
+    "সমকাল",
+    "দৈনিক বাংলা",
+    "ঢাকা ট্রিবিউন",
+    "ডেইলি স্টার",
+    "বাংলা ট্রিবিউন",
+    "বিডিনিউজ২৪",
+    "দ্য ইন্ডিপেন্ডেন্ট",
+    "দেশ রূপান্তর",
+    "টিভি: জামুনা, এটিএন, চ্যানেল আই"
+  ],
+  "categories": [
+    "জাতীয়",
+    "রাজনীতি",
+    "অর্থনীতি",
+    "আন্তর্জাতিক",
+    "ক্রীড়া",
+    "বিনোদন",
+    "প্রযুক্তি",
+    "মতামত/বিশ্লেষণ",
+    "সর্বশেষ"
+  ],
+  "pipeline": {
+    "language": "Node.js",
+    "stages": [
+      "1 FETCH",
+      "2 NORMALIZE",
+      "3 CLUSTER (TF-IDF Bengali tokens)",
+      "4 VERIFY (trust register -> gather -> score -> badge -> tier policy)",
+      "5 EXTRACT facts (verified flags)",
+      "6 SYNTHESIZE Bengali story (badge+evidence)",
+      "7 REVIEW (draft:true -> false)",
+      "8 PUBLISH (git -> Vercel)"
+    ],
+    "verification": {
+      "promise": "authentic-first; only verified stories publish",
+      "trustLadder": [
+        "Official/agency channels (highest)",
+        ">=2 reputable independent papers agreeing",
+        "Eyewitness/journalist on social (medium)",
+        "Public comments (red flags only, never proof)"
+      ],
+      "scoring": [
+        "+2 per top paper",
+        "+3 official channel",
+        "+0.5 journalist",
+        "-1 per contradiction",
+        "-2 sole minor source"
+      ],
+      "badges": {
+        "verified": ">=5 incl official: যাচাইকৃত",
+        "confirmed": ">=3: নিশ্চিত",
+        "partial": "2: একক/আংশিক (Tier B only)",
+        "suspect": "<=1: সন্দেহজনক (never published)"
+      },
+      "tiers": {
+        "A": "sensitive/breaking must be >= নিশ্চিত",
+        "B": "routine normal speed",
+        "C": "opinion labeled"
+      },
+      "correctionLoop": true,
+      "limits": "comments never proof; direct X/FB scraping deferred (paid); SearXNG self-hosted on VPS"
+    },
+    "aiProvider": {
+      "interface": "extractFacts(items) + writeStory(facts, style)",
+      "local": "llama.cpp HTTP server, Qwen2.5-3B/Genia-2 (honest: passable Bengali, fact-checked)",
+      "gemini": "Google free tier via env key (better Bengali, still free)"
+    },
+    "antiHallucination": "facts-first chain: every fact recorded with source_id+url+excerpt; contradictions flagged; LLM only stitches facts (D3)",
+    "politeness": "<=1 fetch/source/30min, honor ETag/Last-Modified/403/429"
+  },
+  "site": {
+    "framework": "Astro (static)",
+    "dataModel": "site/src/content/news/*.md front matter: title, categories, date, sources[], draft, summary",
+    "pages": [
+      "index সর্বশেষ",
+      "categories/[cat] (9)",
+      "news/[...slug]",
+      "rss.xml",
+      "sitemap"
+    ],
+    "fonts": "Noto Sans Bengali via fontsource (self-hosted)",
+    "deploy": "Vercel free hobby, git push auto-build"
+  },
+  "database": {
+    "engine": "SQLite store.db",
+    "tables": [
+      "raw_items",
+      "clusters",
+      "cluster_members",
+      "facts",
+      "stories",
+      "meta"
+    ]
+  },
+  "buildPhases": [
+    {
+      "phase": 1,
+      "name": "Fetch + trust",
+      "deliverables": [
+        "probe_feeds.mjs",
+        "sources.yaml verified per method",
+        "trust.json seed (reputations + official channels)",
+        "fetch.js"
+      ],
+      "exit": "all 12 sources returning real items; trust/blocklist in place"
+    },
+    {
+      "phase": 2,
+      "name": "Normalize",
+      "deliverables": [
+        "normalize.js",
+        "dedupe",
+        "category->tier mapper"
+      ],
+      "exit": "new vs dupes correct; no boilerplate"
+    },
+    {
+      "phase": 3,
+      "name": "Cluster",
+      "deliverables": [
+        "cluster.js (Bengali TF-IDF)"
+      ],
+      "exit": "same topic from >=2 sources -> 1 cluster"
+    },
+    {
+      "phase": 4,
+      "name": "Verify",
+      "deliverables": [
+        "verify.js (SearXNG/official signals, score, badge, tier policy)",
+        "verdicts.db",
+        "human-check queue"
+      ],
+      "exit": "verdicts match human judgement on hand-labelled sample"
+    },
+    {
+      "phase": 5,
+      "name": "Extract+Synth",
+      "deliverables": [
+        "extract.js",
+        "synth.js",
+        "llama.cpp local",
+        "Gemini swap"
+      ],
+      "exit": "draft .md with correct badge+evidence per mature publishable cluster"
+    },
+    {
+      "phase": 6,
+      "name": "Site",
+      "deliverables": [
+        "Astro build with badge/evidence UI"
+      ],
+      "exit": "categories/articles/badges/RSS build locally"
+    },
+    {
+      "phase": 7,
+      "name": "Deploy+Expand",
+      "deliverables": [
+        "Vercel + git flow",
+        "full 12 sources",
+        "30-min automation"
+      ],
+      "exit": "reviewed+verified story live; unpattended pipeline"
+    }
+  ],
+  "openQuestions": [
+    "RSS availability unverified for most sources -> Phase 1 probe (mixed per-source methods expected)",
+    "Local model Bengali quality mediocre -> may default provider to gemini at Phase 5",
+    "SearXNG needs hosting on Servarica VPS for official/contradiction search (free, later)",
+    "Official-channel list is the weak point for Tier A -> seed only manually-verified channels",
+    "Badge thresholds start as spec values; calibrate after hand-labelled sample run",
+    "Domain TBD (testing on *.vercel.app)",
+    "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
+  ],
+  "workInProgress": "PHASES 5+6 COMPLETE 2026-09-19. extract.mjs (brief builder, 25 briefs -> pipeline/state/briefs) + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue-24h-2-deaths-1232-admissions.md (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources) deployed to Vercel prod, verified on homepage+RSS+sitemap. Article/[slug].astro draft-filter fixed (draft not public). All 7 demo articles removed (re-removed after 19:33 restore; cause unknown). NEXT: Phase 7 GH Actions (needs GitHub repo/token), write remaining 24 briefs, pagefind/index rebuild automatic via Vercel.",
+  "phase3Results": {
+    "runDate": "2026-09-19",
+    "clusters": 43,
+    "singletons": 296,
+    "multiSourceClusters": 33,
+    "matured": 0,
+    "windowHours": 8,
+    "similarity": 0.45,
+    "validated": [
+      "cluster 2 = অপ্রতিম হত্যাকাণ্ড: 24 articles / 6 papers",
+      "cluster 13 = নতুন পে-স্কেল: 12 articles / 3 papers",
+      "cluster 32 = মুন্সীগঞ্জ বাস-কার দুর্ঘটনা: 5 papers -> confirmed"
+    ],
+    "moduleFiles": [
+      "pipeline/lib/cluster.mjs (TF-IDF + union-find)",
+      "pipeline/run.js cluster"
+    ]
+  },
+  "phase4Results": {
+    "runDate": "2026-09-19",
+    "evaluated": 43,
+    "passed": 33,
+    "humanCheck": 10,
+    "badges": {
+      "verified": 0,
+      "confirmed": 33,
+      "single": 10
+    },
+    "safeguards": [
+      "single-paper cluster of 10 items -> single/human_check (never auto-publish)",
+      "mixed-topic single-paper cluster -> human_check",
+      "5 distinct papers on same crash -> confirmed"
+    ],
+    "moduleFiles": [
+      "pipeline/lib/verify.mjs",
+      "pipeline/run.js verify [--mature-only]",
+      "verdicts table",
+      "verify: config block"
+    ],
+    "pending": "official signals (official FB pages + self-hosted SearXNG) needed for verified badge; provider layer designed"
+  },
+  "phase1Results": {
+    "probeDate": "2026-09-19",
+    "rssSources": [
+      "prothomalo",
+      "ittefaq",
+      "samakal",
+      "dhakatribune",
+      "dailystar",
+      "banglatribune",
+      "deshrupantor",
+      "channeli"
+    ],
+    "scraperSources": [
+      "dainikbangla",
+      "bdnews24",
+      "independent",
+      "atnbangla"
+    ],
+    "headlessSources": [
+      "kalerkantho",
+      "jugantor",
+      "jamuna"
+    ],
+    "feedUrls": {
+      "prothomalo": "https://www.prothomalo.com/feed",
+      "ittefaq": "https://www.ittefaq.com.bd/feed/",
+      "samakal": "https://www.samakal.com/rss",
+      "dhakatribune": "https://www.dhakatribune.com/feed/",
+      "dailystar": "https://www.thedailystar.net/rss.xml",
+      "banglatribune": "https://www.banglatribune.com/feed/",
+      "deshrupantor": "https://www.deshrupantor.com/feed/",
+      "channeli": "https://www.channelionline.com/rss.xml"
+    },
+    "officialChannelFb": {
+      "fire_service": "https://www.facebook.com/fscd.bd",
+      "police": "https://www.facebook.com/BangladeshPoliceOfficialPage",
+      "dmp": "https://www.facebook.com/dmp.dhaka",
+      "bmd": "https://www.facebook.com/bmd.gov.bd",
+      "bbs": "https://www.facebook.com/bbs.gov.bd",
+      "pid": "https://www.facebook.com/pid.bangladesh",
+      "pmo": "https://www.facebook.com/bdpmoffice",
+      "btrc": "https://www.facebook.com/btrc.gov",
+      "dghs": "https://www.facebook.com/dghsbd",
+      "nbr": "https://www.facebook.com/nbr.bangladesh"
+    },
+    "atnbanglaDomain": "https://www.atnbangla.tv/ (atnbanglatv.com does not resolve)"
+  },
+  "phase2Results": {
+    "runDate": "2026-09-19",
+    "sourcesOk": "12/12",
+    "items": 456,
+    "lang": {
+      "bn": 374,
+      "en": 82
+    },
+    "withPublishedDate": 411,
+    "avgBodyChars": 941,
+    "nearDupsMarked": 8,
+    "moduleFiles": [
+      "pipeline/lib/db.mjs (node:sqlite, schema per arch §7)",
+      "pipeline/lib/config.mjs (YAML + tier mapper)",
+      "pipeline/lib/normalize.mjs (bengali tokenizer/similarity)",
+      "pipeline/lib/fetch.mjs (rss-parser RSS + cheerio scraper)",
+      "pipeline/run.js (CLI fetch|normalize)"
+    ],
+    "tuning": [
+      "scrapers skip video/gallery/photostory paths",
+      "article-page timeout 12s; max 15 article fetches/source",
+      "dedupe_title_similarity 0.92 (calibration candidate)"
+    ]
+  },
+  "testData": "pipeline/tmp/store.db holds 2026-09-19 sample run (refreshable)",
+  "nextSteps": [
+    "Phase 7 SCHEDULER: create public GitHub repo, push pipeline+site+workflows (.github/workflows/pipeline.yml cron */30 + deploy.yml on site push), set VERCEL_TOKEN secret, verify a GH Actions run end-to-end (fetch->...->extract commits state). Requires GitHub token from user.",
+    "Write remaining 24 verified briefs -> stories (opencode authors), auto-publish via synth draft:false.",
+    "Site polish (before expanding): contact email + form target, Google Search Console for newsdesk-bd.vercel.app, real thumbnails (pipeline cover/first photo), Lighthouse 100",
+    "Phase 5 provider: llama.cpp local vs gemini free swap — interface ready in synth.mjs",
+    "Classify step: raw source category strings -> site's 9 categories (currently keyword-mapped for tiers)",
+    "Headless sources (kalerkantho/jugantor/jamuna); dailystar section feeds",
+    "Dedupe/cluster/verify threshold calibration on hand-labelled sample",
+    "Watch for 19:33-style demo restore / external sync touching site/src/content/news"
+  ],
+  "archived": [
+    {
+      "date": "2026-09-19",
+      "item": "Pipeline stages without VERIFY (v1 architecture)",
+      "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
+    }
+  ],
+  "lastUpdated": "2026-09-19"
+}
