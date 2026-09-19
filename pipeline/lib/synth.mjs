@@ -75,7 +75,10 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 - Title: an accurate, concise Bengali headline (report headline-news style).
 - Excerpt: 1–2 sentence lead summary for cards.
 - Aim ~250–350 words body. Include a short context paragraph ("এই খবরটি একাধিক সূত্রে যাচাই করা হয়েছে") when multi-source.
-- End with the sources list (সূত্র:) linking every source URL.
+- End with the sources list (সূত্র:) linking every source URL. That list is the last thing: nothing after it.
+- FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
+  "এই সংবাদটি একাধিক যাচাইকৃত সূত্র থেকে সংশ্লেষিত" or "...এটি সম্পাদকীয় পর্যালোচনার অপেক্ষায় থাকা একটি খসড়া।"
+  or any variant announcing the article is a draft/awaiting review. Write it as a finished, published news story.
 - Badge/verification comes from the front matter — do not undermine it.
 
 ## Facts/sources verified
@@ -94,13 +97,36 @@ Return ONLY the final markdown (front matter included).`;
 export function finalizeStory(slug, bodyMd, { siteDir } = {}) {
   const brief = loadBrief(slug);
   let content = `---\n${frontMatter(brief)}\n---\n\n`;
-  const excerpt = extractExcerpt(bodyMd);
+  const body = stripEditorialFooters(bodyMd);
+  const excerpt = extractExcerpt(body);
   if (excerpt) content = content.replace('excerpt: "…"', `excerpt: "${excerpt}"`);
   const dir = siteDir ?? resolve(import.meta.dirname, '../../../site/src/content/news');
   mkdirSync(dir, { recursive: true });
   const f = join(dir, `${slug}.md`);
-  writeFileSync(f, content + bodyMd.trim() + '\n');
+  writeFileSync(f, content + body.trim() + '\n');
   return f;
+}
+
+// Remove trailing editorial disclaimers ("synthesized from sources, draft awaiting
+// review") that a writer might append. Guarantee: published stories never carry a
+// draft/editorial-review footnote. Only trailing paragraph blocks are inspected,
+// and only when their text clearly matches a disclaimer signature.
+function isEditorialFooter(blockText) {
+  const text = blockText.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return (
+    /পর্যালোচনার অপেক্ষায়/u.test(text) ||
+    /সম্পাদকীয় পর্যালোচন/u.test(text) ||
+    /সংশ্লেষ/u.test(text) ||
+    (/খসড়া/u.test(text) && /সূত্র/u.test(text))
+  );
+}
+function stripEditorialFooters(md) {
+  const blocks = String(md).trim().split(/\n\s*\n/);
+  for (let guard = 0; guard < 5 && blocks.length > 1; guard++) {
+    if (!isEditorialFooter(blocks[blocks.length - 1])) break;
+    blocks.pop();
+  }
+  return blocks.join('\n\n');
 }
 
 function extractExcerpt(md) {

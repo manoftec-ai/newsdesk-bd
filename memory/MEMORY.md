@@ -1,7 +1,7 @@
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
-> Last updated: 2026-09-19T<now>+06:00
-> Sessions count: 3+
+> Last updated: 2026-09-19
+> Sessions count: 8
 
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
@@ -31,6 +31,7 @@
 ## Decisions
 | Date | Decision | Rationale / context |
 |------|----------|---------------------|
+| 2026-09-19 | D25: **No editorial/draft footer** — articles must never end with "সংবাদটি … সূত্র থেকে সংশ্লেষিত; … খসড়া" disclaimer. Banned in synth writingPrompt + deterministically stripped in `stripEditorialFooters()` at finalize | user: "that line should not also come in future" (2026-09-19) |
 | 2026-09-19 | D20: **Auto-publish** — সব পাইপলাইন-নিশ্চিত গল্প সরাসরি `draft:false` হয়; human flip বাতিল (user: "publish it automatically") | user override of old draft-first; synth writes `draft:false` |
 | 2026-09-19 | D21: Provider = **opencode** (LLM lokal), lib/synth.mjs swaps prompt → any writer mode | user: "we're going to do it with u, opencode" |
 | 2026-09-19 | D22: Scheduler = **GitHub Actions free cron** (no Servarica; vercel fine but no server) | free; GH Actions workflow added |
@@ -55,11 +56,17 @@
 - No git repo yet; no GitHub account linked
 
 ## Work in Progress
+- [x] Author batch 4 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md` (body only, 256–293 words; facts pinned to brief leads; Bengali numerals; verification closing present). See memory/sessions/2026-09-19-author-batch-national-78-87.md
+- [x] Remove editorial/draft footer (2026-09-19): deleted the "সংশ্লেষিত … খসড়া" closing line from the live dengue article; banned it in `synth.mjs` writingPrompt and added `stripEditorialFooters()` guard in `finalizeStory` so no future story carries it. 6-case unit test passed; pipeline `npm test` 10/10. See memory/sessions/2026-09-19-remove-synthesis-footer.md
+- [x] Author batch 3 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-98,99,100,101,105,106}.b.md` (body only, 137–243 words; facts pinned to brief leads + full member bodies in store.db; no invented detail). See memory/sessions/2026-09-19-newsdesk-batch-3.md
+- [x] Author batch 1 (2026-09-19): 6 national bodies written → `pipeline/tmp/stories/{national-91,92,93,94,95,97}.b.md` (body only, 251–268 words each, facts pinned to brief leads). See memory/sessions/2026-09-19-author-6-stories.md
+- [x] Author batch 2 (2026-09-19): 6 mixed-category bodies written → `pipeline/tmp/stories/{economy-103,economy-90,entertainment-81,international-96,sports-104,sports-86}.b.md` (body only, 197–252 words). See memory/sessions/2026-09-19-author-batch-2-mixed-categories.md
+- [x] First batch of 3 story bodies authored (national-119, politics-102, politics-120) → `pipeline/tmp/stories/*.b.md`, ready to finalize/publish (2026-09-19)
 - [x] Deploy live (all routes 200; dengue article live, in RSS+sitemap)
 - [x] Phase 5 libs + 1st real story authored & live
 - [x] Phase 6 (draft filter fix + auto-publish)
 - [x] Phase 7: GitHub repo manoftec-ai/newsdesk-bd created (public), code pushed, workflows active, VERCEL_TOKEN secret set, first cron run success (33 briefs auto-committed)
-- [ ] Convert briefs into stories (opencode-authored) on a regular cadence; consider a "daily edition" workflow
+- [ ] Convert briefs into stories (opencode-authored) on a regular cadence; consider a "daily edition" workflow (24 of 33 national+other briefs now authored across batches 1–4; next: national/politics remainder)
 - [ ] Monitor cron health (BD sites may block GH runner IPs; some sources slow)
 
 ## Next Steps / Open Questions

@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-19",
-    "sessionsCount": 5
+    "sessionsCount": 8
   },
   "purpose": "Automated Bengali news desk for Bangladesh. Every 30 min, fetch ~12 BD sources, dedupe, cluster same-topic stories, merge part-by-part info into ONE original Bengali article per topic with sources+attribution, publish to static Astro site on Vercel (testing).",
   "user": {
@@ -44,6 +44,11 @@
       "date": "2026-09-19",
       "decision": "Draft-first publishing superseded -> AUTO-PUBLISH. synth writes draft:false; user explicitly approved (publish automatically). All verified pipeline stories go live directly.",
       "context": "User override of earlier draft-first habit (mustwatch.live); verified earlier"
+    },
+    {
+      "date": "2026-09-19",
+      "decision": "D25: NO editorial/draft footer on articles. Banned in synth.mjs writingPrompt (hard constraint) + deterministic stripEditorialFooters() guard in finalizeStory removes trailing 'সংশ্লেষিত / সম্পাদকীয় পর্যালোচনার অপেক্ষায় / খসড়া' disclaimers.",
+      "context": "User 2026-09-19: remove the footer line from the dengue article and ensure it never appears in future articles"
     },
     {
       "date": "2026-09-19",
@@ -325,7 +330,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "PHASES 5+6 COMPLETE 2026-09-19. extract.mjs (brief builder, 25 briefs -> pipeline/state/briefs) + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue-24h-2-deaths-1232-admissions.md (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources) deployed to Vercel prod, verified on homepage+RSS+sitemap. Article/[slug].astro draft-filter fixed (draft not public). All 7 demo articles removed (re-removed after 19:33 restore; cause unknown). NEXT: Phase 7 GH Actions (needs GitHub repo/token), write remaining 24 briefs, pagefind/index rebuild automatic via Vercel.",
+  "workInProgress": "PHASES 5+6 COMPLETE 2026-09-19. extract.mjs (brief builder, 25 briefs -> pipeline/state/briefs) + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue-24h-2-deaths-1232-admissions.md (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources) deployed to Vercel prod, verified on homepage+RSS+sitemap. Article/[slug].astro draft-filter fixed (draft not public). All 7 demo articles removed (re-removed after 19:33 restore; cause unknown). AUTHOR BATCH 1 DONE (2026-09-19): 6 national story bodies -> pipeline/tmp/stories/{national-91,92,93,94,95,97}.b.md, 251-268 words each, facts pinned to brief leads; details in memory/sessions/2026-09-19-author-6-stories.md. AUTHOR BATCH 2 DONE (2026-09-19): 6 mixed-category bodies -> pipeline/tmp/stories/{economy-103,economy-90,entertainment-81,international-96,sports-104,sports-86}.b.md, 197-252 words each. AUTHOR BATCH 3 DONE: {national-98,99,100,101,105,106}. AUTHOR BATCH 4 DONE (2026-09-19): 6 national bodies -> pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md, 256-293 words each, Bengali numerals, verification paragraph closings; details in memory/sessions/2026-09-19-author-batch-national-78-87.md. NEXT: finalize/publish authored bodies (finalizeStory -> draft:false), write remaining 20+ briefs, Phase 7 GH Actions (repo created, workflows live), pagefind/index rebuild automatic via Vercel. FOOTER FIX (2026-09-19): removed the 'সংশ্লেষিত ... খসড়া' closing line from the live dengue article; synth.mjs writingPrompt now forbids editorial/draft footers and finalizeStory strips them (stripEditorialFooters); 6-case unit test + pipeline npm test 10/10 pass; details in memory/sessions/2026-09-19-remove-synthesis-footer.md.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
@@ -440,6 +445,8 @@
   },
   "testData": "pipeline/tmp/store.db holds 2026-09-19 sample run (refreshable)",
   "nextSteps": [
+    "Add a CI/test guard asserting no site content file contains draft/editorial footer disclaimers (backstop for D25)",
+    "FINALIZE authored bodies (pipeline/tmp/stories/*.b.md incl. national-91,92,93,94,95,97) via synth finalizeStory -> auto-publish draft:false",
     "Phase 7 SCHEDULER: create public GitHub repo, push pipeline+site+workflows (.github/workflows/pipeline.yml cron */30 + deploy.yml on site push), set VERCEL_TOKEN secret, verify a GH Actions run end-to-end (fetch->...->extract commits state). Requires GitHub token from user.",
     "Write remaining 24 verified briefs -> stories (opencode authors), auto-publish via synth draft:false.",
     "Site polish (before expanding): contact email + form target, Google Search Console for newsdesk-bd.vercel.app, real thumbnails (pipeline cover/first photo), Lighthouse 100",
