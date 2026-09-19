@@ -6,6 +6,7 @@ import VerificationBadge from "../components/VerificationBadge.astro";
 
 import {
   SITE,
+  CONTACT,
   categories,
   breakingItems,
   featuredPost,
@@ -25,6 +26,37 @@ const secondLine = rest.slice(0, 4);
 const leadBadge = lead ? getBadge(lead) : null;
 const leadCategory = lead ? getCategory(lead.category) : null;
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      logo: `${SITE.url}/favicon.svg`,
+      sameAs: [CONTACT.socialUrl].filter(Boolean),
+      description: SITE.description,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      description: SITE.description,
+      inLanguage: "bn-BD",
+      publisher: { "@id": `${SITE.url}/#organization` },
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${SITE.url}/#homepage`,
+      url: SITE.url,
+      name: SITE.name,
+      isPartOf: { "@id": `${SITE.url}/#website` },
+    },
+  ],
+};
+
 const homeSections = await Promise.all(
   categories
     .filter((category) => category.slug !== "latest")
@@ -43,6 +75,7 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
 
 <BaseLayout
   description={`${SITE.description} সর্বশেষ আপডেট: ${dateTime}, ${now.toLocaleDateString("bn-BD")}`}
+  jsonLd={jsonLd}
 >
   <!-- Masthead (brand block, homepage only) -->
   <section class="masthead">

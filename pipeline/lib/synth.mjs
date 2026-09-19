@@ -16,6 +16,31 @@ export function listBriefs() {
   return readdirSync(BRIEFS_DIR).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, ''));
 }
 
+// Deterministic tag inference from verified content (headline + member titles).
+// Only tags defined in site/src/config/theme.config.ts are emitted; nothing is
+// labeled from thin air — a tag is added only when its keyword actually appears.
+export function inferTags(brief) {
+  const pool = [
+    brief.headline ?? '',
+    ...(brief.members ?? []).map((m) => `${m.title ?? ''} ${m.lead ?? ''}`),
+  ].join(' ');
+  const map = {
+    health: ['ডেঙ্গু', 'হাসপাতাল', 'স্বাস্থ্য', 'কিডনি', 'হাম', 'ভর্তি', 'রোগী', 'ঝুঁকি'],
+    education: ['শিক্ষা', 'শিক্ষাব্যবস্থা', 'স্কুল', 'কলেজ', 'বিশ্ববিদ্যালয়', 'শিক্ষার্থী', 'সাক্ষরতা'],
+    economy: ['গ্যাস', 'বেতন', 'ভাতা', 'ইটভাটা', 'অর্থনীতি', 'বাজেট', 'টাক', 'মুদ্রাস্ফীতি', 'বাণিজ্য'],
+    transport: ['মহাসড়ক', 'বাস', 'হাইওয়ে', 'রেল', 'সড়ক', 'মেট্রোরেল', 'ট্রেন', 'গাড়ি'],
+    weather: ['আবহাওয়া', 'বৃষ্টি', 'ঝড়', 'বন্যা', 'তাপমাত্রা'],
+    cricket: ['ক্রিকেট', 'টেস্ট', 'সেঞ্চুরি', 'উইকেট', 'রান', 'বোলার', 'ব্যাটার', 'হৃদয়'],
+    dhaka: ['ঢাকা', 'মিরপুর', 'কাশিমপুর', 'বুড়িগঙ্গা', 'রাজধানী'],
+    metro: ['মেট্রো'],
+  };
+  const tags = [];
+  for (const [slug, kws] of Object.entries(map)) {
+    if (kws.some((kw) => pool.includes(kw))) tags.push(slug);
+  }
+  return tags;
+}
+
 // Front matter for a story. draft:false = auto-publish (user decision 2026-09-19;
 // overrides original draft-first). Flip to true for manual-review mode later.
 export function frontMatter(brief) {
@@ -28,7 +53,7 @@ export function frontMatter(brief) {
     excerpt: '…',
     date: firstDate,
     category: brief.category ?? 'national',
-    tags: [],
+    tags: inferTags(brief),
     author: 'desk',
     lang: 'bn',
     draft: false,
@@ -40,11 +65,14 @@ export function frontMatter(brief) {
       evidence: brief.evidence ?? [],
     },
   };
+  const tagList = fm.tags.length ? `[${fm.tags.map((t) => `"${t}"`).join(', ')}]` : '[]';
   return `title: "${fm.title}"
-excerpt: "${fm.excerpt}"
+seoTitle: "…"
+excerpt: "…"
+seoDescription: "…"
 date: ${fm.date}
 category: "${fm.category}"
-tags: []
+tags: ${tagList}
 author: "desk"
 lang: "bn"
 draft: false
@@ -99,7 +127,24 @@ export function finalizeStory(slug, bodyMd, { siteDir } = {}) {
   let content = `---\n${frontMatter(brief)}\n---\n\n`;
   const body = stripEditorialFooters(bodyMd);
   const excerpt = extractExcerpt(body);
-  if (excerpt) content = content.replace('excerpt: "…"', `excerpt: "${excerpt}"`);
+  if (excerpt) {
+    content = content.replace('excerpt: "…"', `excerpt: "${excerpt}"`);
+    content = content.replace(
+      'seoDescription: "…"',
+      `seoDescription: "${excerpt.length > 155 ? `${excerpt.slice(0, 154)}…` : excerpt}"`,
+    );
+  }
+  const title = String(brief.headline ?? '').trim();
+  const capTitle = (t) => {
+    if (t.length <= 72) return t;
+    const cut = t.slice(0, 71);
+    const lastSpace = cut.lastIndexOf(' ');
+    return `${(lastSpace > 10 ? cut.slice(0, lastSpace) : cut).trim()}…`;
+  };
+  content = content.replace(
+    'seoTitle: "…"',
+    `seoTitle: "${capTitle(title).replace(/"/g, '\\"')}"`,
+  );
   const dir = siteDir ?? resolve(import.meta.dirname, '../../../site/src/content/news');
   mkdirSync(dir, { recursive: true });
   const f = join(dir, `${slug}.md`);

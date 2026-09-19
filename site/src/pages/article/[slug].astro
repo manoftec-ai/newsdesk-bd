@@ -57,6 +57,8 @@ const jsonLd = {
   datePublished: isoDate(entry.data.date),
   ...(entry.data.updated ? { dateModified: isoDate(entry.data.updated) } : {}),
   inLanguage: post.lang,
+  keywords: (post.tags ?? []).join(", "),
+  isAccessibleForFree: true,
   author: { "@type": "Organization", name: author?.name ?? SITE.name, url: SITE.url },
   publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
   mainEntityOfPage: {
