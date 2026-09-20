@@ -13,7 +13,7 @@ on:
   # So deploy also fires on their successful completion, and checks whether
   # the pushed commit actually changed site content first.
   workflow_run:
-    workflows: [auto-author, images, pipeline]
+    workflows: [auto-author, images, pipeline, watcher]
     types: [completed]
 
 jobs:

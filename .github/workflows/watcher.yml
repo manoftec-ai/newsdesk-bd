@@ -1,0 +1,76 @@
+# watcher.yml — Living Story Watcher (increment 4, D36)
+#
+# Every day, for each tracked story in site/src/data/tracked-stories.json:
+#   - searches Google News RSS (bn/BD) with the story's fingerprint keywords
+#   - appends any NEW relevant headline as an honest, source-attributed update
+#     to the article's frontmatter `updates[]` (rendered as "আপডেট ইতিহাস"),
+#     sets `updated` + `lastChecked`, and bumps the registry's lastChecked/nextCheck
+#   - commits + pushes; Vercel rebuilds/deploys via deploy.yml workflow_run
+#   - pokes IndexNow for the updated article URLs
+#
+# No LLM, no VPS, no Termux — pure GH Actions + Google News RSS (free).
+name: watcher
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *' # 02:00 UTC = 08:00 BD, once a day
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watcher
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pipeline deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Run story watcher
+        run: node tools/tracked_watcher.mjs
+
+      - name: Collect modified story slugs
+        id: slugs
+        run: |
+          slugs=$(git diff --name-only | grep -E '^site/src/content/news/[^/]+\.md$' | sed -E 's#^.*/([^/]+)\.md$#\1#' | sort -u)
+          echo "SLUGS=$(printf '%s' "$slugs" | jq -R -s -c 'split("\n") | map(select(length>0))')" >> "$GITHUB_OUTPUT"
+          echo "modified: $slugs"
+
+      - name: Commit updates
+        run: |
+          git config user.name "newsdesk-bd-watcher"
+          git config user.email "watcher@newsdesk-bd.local"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "watcher: living-story update check (auto, $(date -u +%Y%m%dT%H%M))"
+          git pull --rebase origin main || true
+          git push
+
+      - name: Poke IndexNow for updated stories
+        if: steps.slugs.outputs.SLUGS != '[]' && steps.slugs.outputs.SLUGS != ''
+        run: |
+          key="59b9d831dc064ecffbbcf0618ce0a97c"
+          urlList=$(printf '%s' '${{ steps.slugs.outputs.SLUGS }}' | jq -c 'map("https://newsdesk-bd.vercel.app/article/" + .)')
+          if [ -n "$urlList" ] && [ "$urlList" != "[]" ]; then
+            body=$(jq -n --arg host "newsdesk-bd.vercel.app" --arg key "$key" --argjson urlList "$urlList" \
+              '{host:$host,key:$key,keyLocation:("https://newsdesk-bd.vercel.app/"+$key+".txt"),urlList:$urlList}')
+            curl -s -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+              -H 'Content-Type: application/json; charset=utf-8' -d "$body"
+          fi
