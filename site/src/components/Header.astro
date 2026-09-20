@@ -17,9 +17,9 @@ const actionClass =
 ---
 
 <header class="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-  <div class="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-5">
+  <div class="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-5">
     <a href="/" class="flex min-w-0 items-center gap-1.5" aria-label={SITE.name}>
-      <span class="truncate font-serif text-lg font-bold tracking-tight">
+      <span class="whitespace-nowrap font-serif text-base font-bold tracking-tight sm:text-lg">
         {SITE.name}
         <span class="text-primary">.</span>
       </span>
@@ -38,12 +38,9 @@ const actionClass =
       </a>
     </nav>
 
-    <div class="flex items-center gap-6">
+    <div class="flex items-center gap-2 sm:gap-4">
       <a href="/search" aria-label="খুঁজুন" class={actionClass}>
         <Icon name="search" class="h-4 w-4" />
-      </a>
-      <a href="/rss.xml" aria-label="RSS ফিড" class={`${actionClass} hidden sm:inline-flex`}>
-        <Icon name="rss" class="h-4 w-4" />
       </a>
       <button type="button" data-theme-toggle aria-label="ডার্ক মোড" class={actionClass}>
         <span data-theme-icon="moon"><Icon name="moon" class="h-4 w-4" /></span>

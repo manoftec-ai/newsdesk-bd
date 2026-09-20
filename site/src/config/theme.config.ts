@@ -54,7 +54,6 @@ export const FORMS = {
 };
 
 export const SOCIAL_LINKS = [
-  { href: "/rss.xml", label: "RSS ফিড", icon: "rss" },
   { href: CONTACT.socialUrl, label: `${SITE.name} X (টুইটার)`, icon: "twitter" },
   { href: SITE.repositoryUrl, label: `${SITE.name} GitHub`, icon: "github" },
 ];
