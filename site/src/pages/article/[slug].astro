@@ -19,6 +19,7 @@ import {
   formatTime,
   relatedPosts,
 } from "../../lib/news-data.js";
+import { eventsForPost } from "../../lib/events.js";
 
 export async function getStaticPaths() {
   return (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
@@ -42,6 +43,7 @@ const category = getCategory(post.category);
 const author = getAuthor(post.author);
 const badge = getBadge(post);
 const related = await relatedPosts(post);
+const matchedEvents = eventsForPost(post);
 
 const isoDate = (date) => (date ? new Date(date).toISOString() : undefined);
 const pageTitle = post.seoTitle ?? `${post.title} — ${SITE.name}`;
@@ -208,6 +210,30 @@ const shareLinks = [
             কখনো মুছে যাবে না।
           </p>
         </div>
+      )}
+
+      {matchedEvents.length > 0 && (
+        <aside class="event-flow-box mt-6" role="note" aria-label="ঘটনাপঞ্জি">
+          <div class="flex flex-wrap items-center justify-between gap-2 text-sm">
+            <span class="font-semibold">এই ঘটনার আরও খবর (ঘটনাপঞ্জি)</span>
+            <a
+              href="/ghotona"
+              class="font-medium text-primary underline underline-offset-2 hover:text-foreground"
+            >
+              ঘটনাপঞ্জির সব পাতা →
+            </a>
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {matchedEvents.slice(0, 3).map((event) => (
+              <a
+                href={`/ghotona/${event.id}`}
+                class="event-chip rounded-full border border-border px-3 py-1 text-xs hover:border-primary hover:text-primary"
+              >
+                {event.nameBn}
+              </a>
+            ))}
+          </div>
+        </aside>
       )}
 
       <div class="prose prose-lg prose-headings:font-serif prose-brown dark:prose-invert mt-8">

@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { SITE, sortedPosts } from "../../lib/news-data.js";
+import { events, eventCounts, eventRegistryMeta } from "../../lib/events.js";
+
+const posts = await sortedPosts();
+const counts = eventCounts(posts);
+const meta = eventRegistryMeta();
+
+const rows = events()
+  .map((event) => ({ event, count: counts.get(event.id) ?? 0 }))
+  .sort((a, b) => {
+    if (a.event.status === "active" && b.event.status !== "active") return -1;
+    if (a.event.status !== "active" && b.event.status === "active") return 1;
+    const rank = { high: 0, med: 1, low: 2 };
+    return (rank[a.event.priority] ?? 2) - (rank[b.event.priority] ?? 2);
+  });
+
+const PRIORITY = {
+  high: { label: "বড়", cls: "badge--verified" },
+  med: { label: "মাঝারি", cls: "badge--confirmed" },
+  low: { label: "ছোট", cls: "badge--partial" },
+};
+
+const STATUS = {
+  active: { label: "চলছে", cls: "badge--verified" },
+  planned: { label: "পরিকল্পিত", cls: "badge--partial" },
+};
+
+const activeEvents = rows.filter((row) => row.event.status === "active").length;
+const coveredEvents = rows.filter((row) => row.count > 0).length;
+---
+
+<BaseLayout
+  title={`ঘটনাপঞ্জি — ${SITE.name}`}
+  description="ঘটনাপঞ্জি — বাংলাদেশের বড় বড় ঘটনার কালানুক্রমিক সংগ্রহ। প্রতিটি ঘটনার সাথে যুক্ত আমাদের সব সংবাদ এক জায়গায় পাবেন।"
+>
+  <div class="mx-auto max-w-5xl px-5">
+    <Breadcrumbs crumbs={[{ name: "ঘটনাপঞ্জি", href: "/ghotona", current: true }]} />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-6">
+      <h1 class="font-serif text-4xl font-bold">ঘটনাপঞ্জি</h1>
+      <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+        বাংলাদেশের গুরুত্বপূর্ণ ঘটনার কালনিরুপণী — এক জায়গায় সব সংবাদ। কোনো ঘটনার পাতায় গেলে তার
+        শুরু থেকে এখন পর্যন্ত আমাদের প্রকাশিত প্রতিটি প্রতিবেদন কালানুক্রমে পাবেন। নতুন কোনো ঘটনার
+        খবর প্রকাশিত হলে তা স্বয়ংক্রিয়ভাবে সঠিক ঘটনার পাতায় জায়গা নেয়।
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <span>মোট ঘটনা: {rows.length}</span>
+        <span>চলমান: {activeEvents}</span>
+        <span>সংবাদ আছে: {coveredEvents}</span>
+        {meta.updatedAt && <span>তালিকা হালনাগাদ: {meta.updatedAt}</span>}
+      </div>
+    </header>
+
+    <div class="grid gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      {rows.map(({ event, count }) => {
+        const priority = PRIORITY[event.priority] ?? PRIORITY.low;
+        const status = STATUS[event.status] ?? STATUS.planned;
+        return (
+          <a
+            href={`/ghotona/${event.id}`}
+            class="group flex flex-col bg-background p-5 hover:bg-muted/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <div class="flex items-center gap-2">
+              <span class:list={["badge-chip", priority.cls]}>{priority.label}</span>
+              <span class:list={["badge-chip", status.cls]}>{status.label}</span>
+            </div>
+            <h2 class="mt-3 font-serif text-lg font-semibold leading-snug group-hover:text-primary">
+              {event.nameBn}
+            </h2>
+            <p class="mt-1 text-xs text-muted-foreground">
+              {event.year === "ongoing" ? "চলমান" : event.year}
+              {count > 0 ? ` · ${count}টি প্রতিবেদন` : ""}
+            </p>
+          </a>
+        );
+      })}
+    </div>
+
+    {rows.length === 0 && (
+      <p class="text-muted-foreground">এখনো কোনো ঘটনা তালিকাভুক্ত হয়নি।</p>
+    )}
+  </div>
+</BaseLayout>

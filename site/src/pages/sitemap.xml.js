@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 import { categories, tags } from "../config/theme.config.ts";
+import { events } from "../lib/events.js";
 
 export async function GET(context) {
   const published = (await getCollection("news", ({ data }) => !data.draft)).sort(
@@ -24,7 +25,7 @@ export async function GET(context) {
     }
   }
 
-  const staticPages = ["", "/news", "/search", "/tracked", "/about", "/contact"];
+  const staticPages = ["", "/news", "/search", "/tracked", "/ghotona", "/about", "/contact"];
   const items = [
     ...staticPages.map((path) => ({ path, lastmod: SITE_LAUNCH })),
     ...categories
@@ -34,6 +35,10 @@ export async function GET(context) {
         lastmod: lastmodByCategory.get(c.slug) ?? SITE_LAUNCH,
       })),
     ...tags.map((t) => ({ path: `/tags/${t.slug}`, lastmod: lastmodByTag.get(t.slug) ?? SITE_LAUNCH })),
+    ...events().map((event) => ({
+      path: `/ghotona/${event.id}`,
+      lastmod: SITE_LAUNCH,
+    })),
     ...published.map((entry) => ({
       path: `/article/${entry.id}`,
       lastmod: iso(entry.data.updated ?? entry.data.date) ?? SITE_LAUNCH,

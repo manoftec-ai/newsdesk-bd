@@ -1,0 +1,176 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import VerificationBadge from "../../components/VerificationBadge.astro";
+import { getCollection } from "astro:content";
+import { SITE, getCategory, getBadge, formatDate } from "../../lib/news-data.js";
+import { events, matchesEvent, eventCategoryLabel } from "../../lib/events.js";
+
+export async function getStaticPaths() {
+  return events().map((event) => ({
+    params: { slug: event.id },
+    props: { event },
+  }));
+}
+
+const { event } = Astro.props;
+
+const allEntries = (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
+  slug: entry.id,
+  title: entry.data.title,
+  excerpt: entry.data.excerpt,
+  category: entry.data.category,
+  date: entry.data.date.toISOString().slice(0, 10),
+  updated: entry.data.updated ? entry.data.updated.toISOString().slice(0, 10) : undefined,
+  verification: entry.data.verification,
+  tracked: entry.data.tracked,
+}));
+
+const matching = allEntries
+  .filter((post) => !!post.title)
+  .filter((post) => matchesEvent(event, post))
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+const byYear = matching.reduce((acc, post) => {
+  const year = (post.date ?? "").slice(0, 4) || "অজানা";
+  acc[year] = acc[year] ?? [];
+  acc[year].push(post);
+  return acc;
+}, {});
+
+const years = Object.keys(byYear).sort((a, b) => (a < b ? 1 : -1));
+
+const eventTitle = event.nameBn ?? event.name;
+const description = event.description ?? `${eventTitle} — নিউজডেস্ক বিডির ঘটনাপঞ্জি।`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      name: eventTitle,
+      description,
+      url: `${SITE.url}/ghotona/${event.id}`,
+      ...(event.name ? { about: event.name } : {}),
+      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "নীড়", item: `${SITE.url}/` },
+        { "@type": "ListItem", position: 2, name: "ঘটনাপঞ্জি", item: `${SITE.url}/ghotona` },
+        { "@type": "ListItem", position: 3, name: eventTitle, item: `${SITE.url}/ghotona/${event.id}` },
+      ],
+    },
+  ],
+};
+
+const PRIORITY = {
+  high: { label: "বড় ঘটনা", cls: "badge--verified" },
+  med: { label: "মাঝারি", cls: "badge--confirmed" },
+  low: { label: "ছোট", cls: "badge--partial" },
+};
+const STATUS = {
+  active: { label: "সক্রিয়", cls: "badge--verified" },
+  planned: { label: "পরিকল্পিত", cls: "badge--partial" },
+};
+const priority = PRIORITY[event.priority] ?? PRIORITY.low;
+const status = STATUS[event.status] ?? STATUS.planned;
+---
+
+<BaseLayout
+  title={`${eventTitle} — ঘটনাপঞ্জি | ${SITE.name}`}
+  description={description}
+  canonical={`${SITE.url}/ghotona/${event.id}`}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <div class="mx-auto max-w-4xl px-5">
+    <Breadcrumbs
+      crumbs={[
+        { name: "ঘটনাপঞ্জি", href: "/ghotona" },
+        { name: eventTitle, href: `/ghotona/${event.id}`, current: true },
+      ]}
+    />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-6">
+      <div class="flex flex-wrap items-center gap-2">
+        {event.category && <span class="badge-chip">{eventCategoryLabel(event.category)}</span>}
+        <span class:list={["badge-chip", priority.cls]}>{priority.label}</span>
+        <span class:list={["badge-chip", status.cls]}>{status.label}</span>
+      </div>
+      <h1 class="mt-3 font-serif text-4xl font-bold">{eventTitle}</h1>
+      {event.name && event.nameBn && (
+        <p class="mt-1 text-sm text-muted-foreground">{event.name}</p>
+      )}
+      <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+        {event.type === "event" ? "এই ঘটনার" : ""} শুরু থেকে এখন পর্যন্ত নিউজডেস্ক বিডিতে প্রকাশিত
+        সব প্রতিবেদনের কালানুক্রম।
+        {event.year !== "ongoing" ? ` ঘটনাটি ${event.year} সালের।` : " ঘটনাটি এখনও চলছে — নতুন খবর এখানেই যোগ হয়।"}
+      </p>
+      <div class="mt-3 text-sm text-muted-foreground">
+        <span class="font-medium text-foreground">{matching.length}</span>টি সংবাদ সংগ্রহে আছে
+      </div>
+    </header>
+
+    {matching.length === 0 ? (
+      <div class="tracker-box" role="note">
+        <p class="font-semibold">এখনো এই ঘটনার কোনো সংবাদ সংগ্রহে নেই</p>
+        <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+          এই ঘটনা আমাদের তালিকায় আছে — এখনই নতুন খবর প্রতিবেদন করলে সেটি স্বয়ংক্রিয়ভাবে এই
+          পাতায় যুক্ত হয়ে যাবে। পুরনো ঘটনার জন্য আমরা নিজস্ব, সূত্র-ভিত্তিক স্মরণ প্রতিবেদন
+          প্রকাশের পরিকল্পনা করছি।
+        </p>
+      </div>
+    ) : (
+      <div>
+        {years.map((year) => (
+          <section class="mb-10">
+            <h2 class="mb-4 font-serif text-2xl font-bold text-primary">{year}</h2>
+            <div>
+              {byYear[year].map((post) => {
+                const category = getCategory(post.category);
+                const badge = getBadge(post);
+                return (
+                  <article class="border-b border-border/60 py-5">
+                    <div class="flex flex-wrap items-center gap-2 text-xs">
+                      {category && (
+                        <a href={`/category/${category.slug}`} aria-label={category.name}>
+                          <span
+                            class="category-pill"
+                            style={`background-color:${category.color}`}
+                          >
+                            {category.name}
+                          </span>
+                        </a>
+                      )}
+                      <VerificationBadge badge={badge} compact />
+                      {post.tracked && (
+                        <span class="tracked-chip">ট্র্যাক করা গল্প</span>
+                      )}
+                      <time datetime={post.date}>{formatDate(post.date)}</time>
+                    </div>
+                    <a href={`/article/${post.slug}`} class="mt-2 block">
+                      <h3 class="font-serif text-xl font-semibold leading-snug hover:text-primary">
+                        {post.title}
+                      </h3>
+                    </a>
+                    {post.excerpt && (
+                      <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                        {post.excerpt}
+                      </p>
+                    )}
+                    {post.updated && (
+                      <div class="mt-2 text-xs text-muted-foreground">
+                        সর্বশেষ হালনাগাদ: {formatDate(post.updated)}
+                      </div>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>
