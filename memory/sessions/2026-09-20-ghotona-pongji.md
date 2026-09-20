@@ -56,3 +56,34 @@ keep Bengali raw in site content only.
 3. Author more Tier-1 anchors via `history_author.mjs` (e.g. rana-plaza before 2027-04-24
    anniversary, holly-artisan 2027-07-01).
 4. Consider a `/ghotona` nav/footer link.
+
+---
+
+## Addendum — first publish batch (same day, later session)
+### What the user asked
+"yes, publish and make a schedule so that every event can publish simultaneously. or u have better option?"
+
+### What was done (user approved publish → better option implemented)
+- **Reality check given to user**: only 7 of 82 events have curated fact-checked descriptions;
+  75 cannot be published without fabricating history (banned). So "publish all simultaneously"
+  is impossible today. Better option: (1) publish all 7 curated anchors NOW in one pass (as
+  the user wanted "simultaneously" for what's writable), and (2) the weekly schedule auto-
+  publishes every newly-curated event forever after (queue self-drains as descriptions are curated).
+- `history_author.mjs`: added **`--publish-all`** (author+flip every curated event live in one run)
+  and draft→published **flip logic** when `--publish` hits an existing draft.
+- `history-author.yml`: author job changed from draft-loop to `node tools/history_author.mjs
+  --publish-all` — weekly run (Mon 03:00 UTC) now PUBLISHES (draft:false) every event with a
+  curated description; refused otherwise. Header comment updated.
+- Ran `--publish-all` locally → 1 flipped + 6 written = **7 live**: sagor-runi-murder,
+  rana-plaza-collapse, holly-artisan-attack-2016, june-july-2024-quota, oust-hasina-2024,
+  dengue-outbreak-season, nct-lease-story.
+- Tests: `npm test` 24/24 (parallel session had been adding tests).
+- Committed `0acf11e` + pushed → deploy+images green. Verified LIVE 200:
+  `/article/history-<id>` for all 7; auto-adsorb confirmed — the anchors appear on their
+  `/ghotona/<id>` hub timeline.
+
+### Next steps (updated)
+1. Curate more event descriptions → they auto-publish on the next Monday run (their own commit).
+2. Anniversary-timed authoring pushes for upcoming events (e.g. 2026-11-24 Tazreen; 2027-04-24
+   Rana Plaza) — optional manual dispatch of `history_author.mjs <id> --publish`.
+3. Consider `/ghotona` header/footer link (currently only in MORE_NAVIGATION drawer).
