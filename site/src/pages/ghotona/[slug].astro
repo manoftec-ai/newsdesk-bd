@@ -4,7 +4,14 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
 import { getCollection } from "astro:content";
 import { SITE, getCategory, getBadge, formatDate } from "../../lib/news-data.js";
-import { events, matchesEvent, eventCategoryLabel } from "../../lib/events.js";
+import {
+  events,
+  matchesEvent,
+  eventCategoryLabel,
+  chronologyFor,
+  groupChronologyByYear,
+  formatChronoDate,
+} from "../../lib/events.js";
 
 export async function getStaticPaths() {
   return events().map((event) => ({
@@ -39,6 +46,12 @@ const byYear = matching.reduce((acc, post) => {
 }, {});
 
 const years = Object.keys(byYear).sort((a, b) => (a < b ? 1 : -1));
+
+const chrono = chronologyFor(event.id)
+  .slice()
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+const chronoByYear = groupChronologyByYear(chrono);
+const chronoYears = Object.keys(chronoByYear).sort((a, b) => (a < b ? 1 : -1));
 
 const eventTitle = event.nameBn ?? event.name;
 const description = event.description ?? `${eventTitle} — নিউজডেস্ক বিডির ঘটনাপঞ্জি।`;
@@ -111,6 +124,74 @@ const status = STATUS[event.status] ?? STATUS.planned;
         <span class="font-medium text-foreground">{matching.length}</span>টি সংবাদ সংগ্রহে আছে
       </div>
     </header>
+
+    {chrono.length > 0 && (
+      <section class="mb-12" aria-label="এই ঘটনার কালানুক্রম">
+        <div class="mb-5 border-l-4 border-primary pl-4">
+          <h2 class="font-serif text-2xl font-bold text-primary">কালানুক্রম</h2>
+          <p class="mt-1 text-sm text-muted-foreground">
+            এই ক্ষুদ্র-কালানুক্রম সংবাদমাধ্যমের প্রতিবেদন-ভিত্তিক তৈরি; প্রতিটি খণ্ড তারিখ ও সূত্রসহ
+            যাচাই করা। এই সংরক্ষণাগার শুধু ঘটনাপঞ্জিতে থাকে — মূল সাইটের খবরের তালিকায় এগুলো আসে না।
+          </p>
+        </div>
+        <div>
+          {chronoYears.map((year) => (
+            <section class="mb-8">
+              <h3 class="mb-3 font-serif text-xl font-bold text-foreground">{year}</h3>
+              <ol class="relative ml-3 border-l border-border/60">
+                {chronoByYear[year].map((item) => (
+                  <li class="relative mb-6 pl-6">
+                    <span
+                      class="absolute -left-1.5 top-1.5 h-3 w-3 rounded-full border-2 border-primary bg-background"
+                      aria-hidden="true"
+                    />
+                    <time class="text-sm font-medium text-primary">
+                      {formatChronoDate(item.date)}
+                    </time>
+                    <h4 class="mt-1 font-serif text-lg font-semibold leading-snug">
+                      {item.title}
+                    </h4>
+                    {item.summary && (
+                      <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                        {item.summary}
+                      </p>
+                    )}
+                    {item.sourceName && (
+                      <p class="mt-1.5 text-xs text-muted-foreground">
+                        সূত্র:{" "}
+                        {item.sourceUrl ? (
+                          <a
+                            class="underline decoration-dotted underline-offset-2 hover:text-primary"
+                            href={item.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.sourceName}
+                          </a>
+                        ) : (
+                          item.sourceName
+                        )}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section aria-label="নিউজডেস্ক বিডিতে প্রকাশিত সংবাদ">
+      <div class="mb-5 border-l-4 border-primary pl-4">
+        <h2 class="font-serif text-2xl font-bold text-primary">
+          নিউজডেস্ক বিডিতে প্রকাশিত সংবাদ
+        </h2>
+        <p class="mt-1 text-sm text-muted-foreground">
+          আমাদের {matching.length}টি প্রতিবেদন এই ঘটনার সঙ্গে যুক্ত — কালানুক্রমে সাজানো।
+        </p>
+      </div>
+    </section>
 
     {matching.length === 0 ? (
       <div class="tracker-box" role="note">

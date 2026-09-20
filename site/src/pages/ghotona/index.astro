@@ -2,14 +2,19 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { SITE, sortedPosts } from "../../lib/news-data.js";
-import { events, eventCounts, eventRegistryMeta } from "../../lib/events.js";
+import { events, eventCounts, chronologyCounts, eventRegistryMeta } from "../../lib/events.js";
 
 const posts = await sortedPosts();
 const counts = eventCounts(posts);
+const chronoCounts = chronologyCounts();
 const meta = eventRegistryMeta();
 
 const rows = events()
-  .map((event) => ({ event, count: counts.get(event.id) ?? 0 }))
+  .map((event) => ({
+    event,
+    count: counts.get(event.id) ?? 0,
+    chrono: chronoCounts[event.id] ?? 0,
+  }))
   .sort((a, b) => {
     if (a.event.status === "active" && b.event.status !== "active") return -1;
     if (a.event.status !== "active" && b.event.status === "active") return 1;
@@ -30,6 +35,8 @@ const STATUS = {
 
 const activeEvents = rows.filter((row) => row.event.status === "active").length;
 const coveredEvents = rows.filter((row) => row.count > 0).length;
+const chronoEvents = rows.filter((row) => row.chrono > 0).length;
+const chronoItems = rows.reduce((sum, row) => sum + row.chrono, 0);
 ---
 
 <BaseLayout
@@ -49,12 +56,17 @@ const coveredEvents = rows.filter((row) => row.count > 0).length;
         <span>মোট ঘটনা: {rows.length}</span>
         <span>চলমান: {activeEvents}</span>
         <span>সংবাদ আছে: {coveredEvents}</span>
+        {chronoItems > 0 && (
+          <span>
+            কালানুক্রম: {chronoEvents}টি ঘটনায় {chronoItems}টি তারিখযুক্ত রেকর্ড
+          </span>
+        )}
         {meta.updatedAt && <span>তালিকা হালনাগাদ: {meta.updatedAt}</span>}
       </div>
     </header>
 
     <div class="grid gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-      {rows.map(({ event, count }) => {
+      {rows.map(({ event, count, chrono }) => {
         const priority = PRIORITY[event.priority] ?? PRIORITY.low;
         const status = STATUS[event.status] ?? STATUS.planned;
         return (
@@ -72,6 +84,7 @@ const coveredEvents = rows.filter((row) => row.count > 0).length;
             <p class="mt-1 text-xs text-muted-foreground">
               {event.year === "ongoing" ? "চলমান" : event.year}
               {count > 0 ? ` · ${count}টি প্রতিবেদন` : ""}
+              {chrono > 0 ? ` · কালানুক্রম ${chrono}` : ""}
             </p>
           </a>
         );
