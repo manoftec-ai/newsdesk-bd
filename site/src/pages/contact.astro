@@ -3,24 +3,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import Icon from "../components/Icon.astro";
 import { CONTACT, SITE } from "../lib/news-data.js";
+
+const fallbackNote = !CONTACT.email
+  ? "মেসেজ ডেলিভারি এখন তৈরি হচ্ছে — আপাতত নিচের সামাজিক মাধ্যম দিয়ে যোগাযোগ করা যাবে।"
+  : `আরেকটি উপায়: সরাসরি ${CONTACT.email} ইমেইলে লিখে পাঠান।`;
 ---
 
-<BaseLayout title={`যোগাযোগ — ${SITE.name}`} description={`${SITE.name} — সংশোধন ও মতামতের জন্য যোগাযোগ।`}>
+<BaseLayout title={`যোগাযোগ — ${SITE.name}`} description={`${SITE.name} — সংশোধন, মতামত ও সংবাদ টিপস পাঠান।`}>
   <div class="mx-auto max-w-3xl px-5">
     <Breadcrumbs crumbs={[{ name: "যোগাযোগ", href: "/contact", current: true }]} />
     <header class="mt-6 border-b border-border/60 pb-4">
       <h1 class="font-serif text-4xl font-bold">যোগাযোগ</h1>
       <p class="mt-2 text-muted-foreground">
-        সংশোধন, মতামত বা সংবাদ টিপস পাঠাতে নিচের ফর্মটি ব্যবহার করুন।
+        সংশোধন (করেকশন), মতামত বা সংবাদ টিপস পাঠাতে নিচের ফর্মটি ব্যবহার করুন।
       </p>
     </header>
 
-    <form
-      action={CONTACT.email ? `mailto:${CONTACT.email}` : ""}
-      method="post"
-      enctype={CONTACT.email ? "text/plain" : "application/x-www-form-urlencoded"}
-      class="mt-8 space-y-4"
-    >
+    <form id="contact-form" class="mt-8 space-y-4" novalidate>
       <div>
         <label for="name" class="mb-1 block text-sm font-medium">আপনার নাম</label>
         <input
@@ -28,6 +27,7 @@ import { CONTACT, SITE } from "../lib/news-data.js";
           name="name"
           type="text"
           required
+          autocomplete="name"
           class="w-full rounded-md border border-input bg-background px-3 py-2 focus:ring-2 focus:ring-ring"
         />
       </div>
@@ -38,6 +38,7 @@ import { CONTACT, SITE } from "../lib/news-data.js";
           name="email"
           type="email"
           required
+          autocomplete="email"
           class="w-full rounded-md border border-input bg-background px-3 py-2 focus:ring-2 focus:ring-ring"
         />
       </div>
@@ -45,8 +46,9 @@ import { CONTACT, SITE } from "../lib/news-data.js";
         <label for="subject" class="mb-1 block text-sm font-medium">বিষয়</label>
         <select id="subject" name="subject" class="w-full rounded-md border border-input bg-background px-3 py-2">
           <option>সংবাদ সংশোধন</option>
-          <option>মতামত</option>
           <option>সংবাদ টিপস</option>
+          <option>ফ্যাক্ট চেক অনুরোধ</option>
+          <option>মতামত</option>
           <option>অন্যান্য</option>
         </select>
       </div>
@@ -60,30 +62,128 @@ import { CONTACT, SITE } from "../lib/news-data.js";
           class="w-full rounded-md border border-input bg-background px-3 py-2 focus:ring-2 focus:ring-ring"
         ></textarea>
       </div>
-      <button
-        type="submit"
-        class="rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground disabled:opacity-50"
-        disabled={!CONTACT.email}
-      >
-        পাঠান
-      </button>
-      {!CONTACT.email && (
-        <p class="text-sm text-muted-foreground">
-          ইমেইল এখনো সেট করা হয়নি — ফর্মটি প্রস্তুত থাকলেও এখন পাঠানো যাবে না।
-        </p>
-      )}
+      <div class="flex items-center gap-3">
+        <button
+          type="submit"
+          id="contact-submit"
+          class="rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground disabled:opacity-50"
+        >
+          পাঠান
+        </button>
+        <span id="contact-status" class="text-sm text-muted-foreground" role="status" aria-live="polite"></span>
+      </div>
     </form>
 
+    <noscript>
+      <p class="mt-6 rounded-md border border-border p-4 text-sm text-muted-foreground">
+        ফর্মটি চালাতে জাভাস্ক্রিপ্ট দরকার। আপাতত {CONTACT.socialHandle} (
+        <a href={CONTACT.socialUrl} target="_blank" rel="noreferrer" class="underline">{CONTACT.socialUrl}</a>
+        ) দিয়ে যোগাযোগ করা যাবে।
+      </p>
+    </noscript>
+
     <div class="mt-10 border-t border-border/60 pt-6">
-      <a
-        href={CONTACT.socialUrl}
-        target="_blank"
-        rel="noreferrer"
-        class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
-      >
-        <Icon name="twitter" class="h-4 w-4" />
-        {CONTACT.socialHandle}
-      </a>
+      <div class="flex flex-wrap items-center gap-4">
+        <a
+          href={CONTACT.socialUrl}
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
+        >
+          <Icon name="twitter" class="h-4 w-4" />
+          {CONTACT.socialHandle}
+        </a>
+        {CONTACT.email && (
+          <a
+            href={`mailto:${CONTACT.email}`}
+            class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
+          >
+            <Icon name="send" class="h-4 w-4" />
+            {CONTACT.email}
+          </a>
+        )}
+      </div>
     </div>
+
+    <section class="mt-10 border-t border-border/60 pt-8">
+      <h2 class="font-serif text-2xl font-bold">নিউজলেটার</h2>
+      <p class="mt-2 max-w-xl text-sm text-muted-foreground">
+        দিনের গুরুত্বপূর্ণ যাচাই-করা সংবাদ এক জায়গায় —{SITE.name} নিউজলেটারে সাবস্ক্রাইব করুন। স্প্যাম নেই,
+        যেকোনো সময় বাতিল করা যায়।
+      </p>
+      <form id="newsletter-form" class="mt-4 flex max-w-md flex-col gap-3 sm:flex-row" novalidate>
+        <label for="newsletter-email" class="sr-only">ইমেইল</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          required
+          placeholder="ইমেইল ঠিকানা"
+          autocomplete="email"
+          class="w-full rounded-md border border-input bg-background px-3 py-2 focus:ring-2 focus:ring-ring"
+        />
+        <button
+          type="submit"
+          class="rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground whitespace-nowrap disabled:opacity-50"
+        >
+          সাবস্ক্রাইব
+        </button>
+      </form>
+      <p id="newsletter-status" class="mt-2 text-sm text-muted-foreground" role="status" aria-live="polite"></p>
+    </section>
   </div>
 </BaseLayout>
+
+<script>
+  const contactForm = document.getElementById("contact-form");
+  const newsletterForm = document.getElementById("newsletter-form");
+
+  const post = async (body) => {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    try {
+      return await response.json();
+    } catch {
+      return { ok: false, reason: "network" };
+    }
+  };
+
+  const setStatus = (el, text, isError) => {
+    el.textContent = text;
+    el.className = `text-sm ${isError ? "text-primary" : "text-muted-foreground"}`;
+  };
+
+  contactForm?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const submit = document.getElementById("contact-submit");
+    const status = document.getElementById("contact-status");
+    const data = Object.fromEntries(new FormData(contactForm).entries());
+    submit.disabled = true;
+    setStatus(status, "পাঠানো হচ্ছে…", false);
+    const result = await post({ ...data, kind: "contact" });
+    submit.disabled = false;
+    if (result.ok) {
+      contactForm.reset();
+      setStatus(status, "ধন্যবাদ! আপনার বার্তা আমাদের কাছে পৌঁছেছে।", false);
+    } else {
+      setStatus(status, "বার্তা এখনই পাঠানো গেল না — উপরের সামাজিক চ্যানেলে লিখুন।", true);
+    }
+  });
+
+  newsletterForm?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const status = document.getElementById("newsletter-status");
+    const email = document.getElementById("newsletter-email")?.value.trim();
+    if (!email) return;
+    const result = await post({ email, kind: "newsletter" });
+    if (result.ok) {
+      newsletterForm.reset();
+      setStatus(status, "সাবস্ক্রাইব সম্পন্ন – ধন্যবাদ!", false);
+    } else {
+      setStatus(status, "সাবস্ক্রিপশন এখন চালু হয়নি — পরে আবার চেষ্টা করুন।", true);
+    }
+  });
+</script>

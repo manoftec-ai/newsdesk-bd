@@ -11,6 +11,7 @@ on:
     paths:
       - 'site/src/**'
       - 'site/public/**'
+      - 'site/api/**'
       - 'site/package.json'
       - 'site/astro.config.mjs'
   # Bot workflows (auto-author, images, pipeline) push with the default
@@ -41,7 +42,7 @@ jobs:
         if: github.event.workflow_run != null || github.event.schedule != null
         run: |
           if git rev-parse --verify -q HEAD~1 >/dev/null && \
-             git diff --quiet HEAD~1 HEAD -- site/src site/public site/package.json site/astro.config.mjs; then
+             git diff --quiet HEAD~1 HEAD -- site/src site/public site/api site/package.json site/astro.config.mjs; then
             echo "DEPLOY_CHANGED=false" >> "$GITHUB_ENV"
           else
             echo "DEPLOY_CHANGED=true" >> "$GITHUB_ENV"
