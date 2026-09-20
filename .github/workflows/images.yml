@@ -67,11 +67,11 @@ jobs:
       - name: Commit + push (branded images + front matter)
         run: |
           cd ..
-          if ! git diff --quiet; then
+          if [ -n "$(git status --porcelain)" ]; then
             git config user.name "newsdesk-bd-bot"
             git config user.email "bot@newsdesk-bd.local"
-            git pull --rebase origin main
             git add site/public/images site/src/content/news
-            git commit -m "pipeline: brand thumbnail images (auto, $(date -u +%Y%m%dT%H%M))"
+            git -c commit.gpgsign=false commit -m "pipeline: brand thumbnail images (auto, $(date -u +%Y%m%dT%H%M))"
+            git pull --rebase origin main
             git push
           fi

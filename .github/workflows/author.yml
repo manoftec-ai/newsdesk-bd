@@ -85,11 +85,11 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: |
           cd ..
-          if ! git diff --quiet; then
+          if [ -n "$(git status --porcelain)" ]; then
             git config user.name "newsdesk-bd-bot"
             git config user.email "bot@newsdesk-bd.local"
-            git pull --rebase origin main
             git add site/src/content/news site/public/images
-            git commit -m "author: auto-author briefs + brand thumbnails (GH Actions, $(date -u +%Y%m%dT%H%M))"
+            git -c commit.gpgsign=false commit -m "author: auto-author briefs + brand thumbnails (GH Actions, $(date -u +%Y%m%dT%H%M))"
+            git pull --rebase origin main
             git push
           fi

@@ -27,9 +27,28 @@ Site was live with 34 articles but nothing new all day despite the */30 pipeline
    across future runner-image updates.
 4. Verified font URLs live (HTTP 200) before committing; fonts are valid TrueType.
 
+## Second bug exposed by the font fix (same commits)
+After the font fix, `images` rerun FAILED at the commit step with:
+`error: cannot pull with rebase: You have unstaged changes.` (exit 128).
+The 34 thumbnails were generated fine (`add_images done. made=34 photo=34 failed=0`) but the
+commit block ran `git pull --rebase origin main` BEFORE `git add` — the generated files were
+unstaged on disk, so rebase refused. **Fixed in both `images.yml` and `author.yml`**: guard with
+`git status --porcelain`, then `git add` → `git commit` → `git pull --rebase origin main` → `git push`.
+(Also `git diff --quiet` guard misses untracked files; porcelain catches them.)
+
+## IMPORTANT — scheduled authoring still blocked (needs a key)
+`author.yml` authors via `author_stories.mjs`, which exits no-op unless `LLM_API_KEY` is set.
+Repo secrets contain ONLY `VERCEL_TOKEN` — no `LLM_API_KEY/BASE_URL/MODEL` and no
+`OPENCODE_API_KEY` (auto-author.yml alt path). So even a green author run would skip authoring
+by design (`if: env.LLM_API_KEY != ''`). 13 briefs (international-134, national-122/123/125/126/127/128/
+130/131/136, sports-129/133) wait un-authored. NEEDED from user: a free Google AI Studio key
+(Gemini 2.5 Flash, default target) → set as `LLM_API_KEY` (optionally LLM_BASE_URL/LLM_MODEL) secret,
+or an `OPENCODE_API_KEY` for auto-author.yml. Until then: author via opencode in-session + push.
+
 ## Queued backlog (waited all day, un-authored at fix time)
 international-134, national-122,123,125,126,127,128,130,131,136, sports-129,133 (13 briefs).
 
 ## Verification
-- After push: re-ran `author` + `images` workflows via `workflow_dispatch` → both must go green.
-- Watch for new articles on https://newsdesk-bd.vercel.app (Vercel auto-deploys on push).
+- Font fix verified: images rerun made 34 photos, 0 failed (then died on the commit-step bug).
+- Commit-order fix pushed → re-running images; expect green + a `pipeline: brand thumbnail images` commit.
+- author.yml stays green-but-noop until an LLM secret is added.
