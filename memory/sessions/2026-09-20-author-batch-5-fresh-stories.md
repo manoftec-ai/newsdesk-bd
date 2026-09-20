@@ -45,3 +45,9 @@ dont publish any article today" — nothing published 2026-09-20 (font outage da
 - Frontmatter YAML validated for all 5 (pipeline `yaml` parse) — OK.
 - Body words 92-164 (site median 243; min was 92) — concise but fact-pool-constrained.
 - No local Astro build (D28) — Vercel CI build verifies.
+## Post-push addendum (same session)
+- Committed ALL batch-5 work + pipeline state + memory as single commit, BUT `git pull --rebase` hit conflicts: a concurrent GH pipeline run (and a parallel opencode session) had pushed to main first (added briefs national-138/142/143, store.db, memory edits, plus D37 `auto-author.yml` commits 209399c/7621161/14e9681).
+- Resolved: kept remote/GH-run store.db + 3 new briefs (`checkout --ours`), manually merged both memory sides (D37 + batch-5) into MEMORY.md WIP and MEMORY.json workInProgress; rebase continued → **0bce209** pushed to main.
+- KEY LEARNED: parallel session introduced **D37 "opencode-on-GitHub"** — `auto-author.yml` (cron hourly + on pipeline + manual) runs opencode `run --auto` headless on the GH runner, NO key needed (openrc free model opencode/big-pickle via gateway, verified keyless). Fix commits fixed YAML indentation + pinned opencode version + push-retry.
+- Deploy: Vercel built 0bce209 READY (`newsdesk-h8w33hqbo-man-of-technology.vercel.app`), production alias serving all 5 new articles → **200** (earlier 404s were Vercel bot-protection without cookie). `images.yml` ran on push (0bce209) → thumbnails branded. Sitemap live (61 locs).
+- Git safety order confirmed again: add → commit → pull --rebase → push; will hit conflicts routinely ≥2 agents push concurrently — always `git status --porcelain` first and expect add/add on pipeline state.
