@@ -16,6 +16,8 @@ const news = defineCollection({
     canonical: z.string().url().optional(),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
+    tracked: z.boolean().default(false),
+    lastChecked: z.coerce.date().optional(),
     updates: z
       .array(
         z.object({
