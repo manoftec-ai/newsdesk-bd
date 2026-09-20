@@ -23,9 +23,13 @@ jobs:
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
     steps:
+      # IMPORTANT: do NOT checkout github.event.workflow_run.head_sha here.
+      # For a dispatch/schedule-triggered run that head points at the ref SHA
+      # when the run STARTED, not the commit the run later pushed (observed:
+      # deploy kept deploying the pre-author commit and skipped site changes).
+      # Checkout the current main tip — the triggering bot just pushed there.
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run && github.event.workflow_run.head_sha || '' }}
           fetch-depth: 2
 
       - name: Check whether site content changed (bot-driven run)

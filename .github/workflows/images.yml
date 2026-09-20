@@ -72,6 +72,9 @@ jobs:
             git config user.email "bot@newsdesk-bd.local"
             git add site/public/images site/src/content/news
             git -c commit.gpgsign=false commit -m "pipeline: brand thumbnail images (auto, $(date -u +%Y%m%dT%H%M))"
-            git pull --rebase origin main
+            # Merge-style push tolerant of concurrent workers (auto-author etc.)
+            git fetch origin main
+            git merge --ff-only origin/main 2>/dev/null || \
+              git merge --no-edit -X theirs origin/main 2>/dev/null || true
             git push
           fi
