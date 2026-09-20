@@ -4,9 +4,11 @@
 #   1. plan  — runs pipeline/tools/event_scheduler.mjs and commits the plan as a
 #      machine-readable report under pipeline/state/history-plan.json, so opencode
 #      (or the user) can see exactly which events to author next.
-#   2. author — authors Tier-1 hub DRAFTS with pipeline/tools/history_author.mjs
-#      for events that have a curated description. Drafts stay draft:true (human
-#      reviews facts before going live — no-fabrication rule). No LLM used.
+#   2. author — authors+publishes Tier-1 hubs with pipeline/tools/history_author.mjs
+#      using --publish-all: every event that has a CURATED description goes live
+#      automatically (draft:false). Events without a curated description are refused
+#      (no-fabrication rule) — the weekly run "drains the queue" as descriptions are
+#      curated over time. No LLM used.
 #
 # Free GH Actions + zero budget. No VPS, no Termux.
 name: history-author
@@ -73,20 +75,19 @@ jobs:
         with:
           node-version: 24
 
-      - name: Author Tier-1 hub drafts (curated descriptions only)
+      - name: Author + publish Tier-1 hubs (curated descriptions only)
         run: |
-          # events with curated DESCRIPTIONS in history_author.mjs get a draft;
-          # others are refused (no fabrication). One at a time to keep diffs small.
-          for id in $(node tools/history_author.mjs --list); do
-            node tools/history_author.mjs "$id" || true
-          done
+          # Every event with a curated DESCRIPTIONS entry in history_author.mjs is
+          # written/flipped to draft:false in one pass. Events without one are
+          # refused (no fabrication) — they join future runs once curated.
+          node tools/history_author.mjs --publish-all
           git add -A
           git config user.name "newsdesk-bd-history"
           git config user.email "history@newsdesk-bd.local"
           if git diff --cached --quiet; then
-            echo "no new drafts"
+            echo "no new hubs"
             exit 0
           fi
-          git commit -m "ghotona-pongji: tier-1 hub drafts (auto, $(date -u +%Y%m%dT%H%M))"
+          git commit -m "ghotona-pongji: tier-1 hubs published (auto, $(date -u +%Y%m%dT%H%M))"
           git pull --rebase origin main || true
           git push

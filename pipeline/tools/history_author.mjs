@@ -9,6 +9,7 @@
 //     so a human can review factual claims before it goes live
 //
 // usage: node tools/history_author.mjs <eventId> [--publish]
+//        node tools/history_author.mjs --publish-all   (author+flip every curated event live)
 //   --publish  flip draft:false (only when the description was human-reviewed)
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
@@ -58,19 +59,7 @@ const DESCRIPTIONS = {
     'ঢাকা-নরসিংদী এনসিটি এক্সপ্রেসওয়ে ও টোল আদায় নিয়ে ইজারা কেলেঙ্কারির অভিযোগ উঠেছে; টোল স্টেশন থেকে অস্বাভাবিক আয় ও চুক্তি নিয়ে প্রশ্ন তুলেছে সংবাদমাধ্যম।',
 };
 
-function main() {
-  const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
-  const publish = process.argv.includes('--publish');
-  const listOnly = process.argv.includes('--list');
-  if (listOnly) {
-    console.log(Object.keys(DESCRIPTIONS).join(' '));
-    return;
-  }
-  const [eventId] = args;
-  if (!eventId) {
-    console.error('usage: node tools/history_author.mjs <eventId> [--publish]');
-    process.exit(1);
-  }
+function author(eventId, publish) {
   const data = JSON.parse(readFileSync(EVENTS_FILE, 'utf8'));
   const event = data.events.find((e) => e.id === eventId);
   if (!event) {
@@ -86,6 +75,17 @@ function main() {
   const slug = `history-${eventId}`;
   const mdPath = join(CONTENT_DIR, `${slug}.md`);
   if (existsSync(mdPath)) {
+    if (publish) {
+      const current = readFileSync(mdPath, 'utf8');
+      const flipped = current.replace(/^draft:\s*true$/m, 'draft: false');
+      if (flipped !== current) {
+        writeFileSync(mdPath, flipped);
+        console.log(`+ flipped to PUBLISHED site/src/content/news/${slug}.md`);
+        return;
+      }
+      console.log(`already published: site/src/content/news/${slug}.md`);
+      return;
+    }
     console.log(`already exists: site/src/content/news/${slug}.md`);
     return;
   }
@@ -131,6 +131,32 @@ ${description}
   console.log(
     `+ wrote ${publish ? 'PUBLISHED' : 'DRAFT'} site/src/content/news/${slug}.md`,
   );
+}
+
+function main() {
+  const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+  const publishAll = process.argv.includes('--publish-all');
+  const publish = process.argv.includes('--publish');
+  const listOnly = process.argv.includes('--list');
+  if (listOnly) {
+    console.log(Object.keys(DESCRIPTIONS).join(' '));
+    return;
+  }
+  if (publishAll) {
+    let done = 0;
+    for (const id of Object.keys(DESCRIPTIONS)) {
+      author(id, true);
+      done += 1;
+    }
+    console.log(`publish-all done: ${done} curated event(s) written/flipped`);
+    return;
+  }
+  const [eventId] = args;
+  if (!eventId) {
+    console.error('usage: node tools/history_author.mjs <eventId> [--publish] | --publish-all | --list');
+    process.exit(1);
+  }
+  author(eventId, publish);
 }
 
 const isDirectRun = process.argv[1] && resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url));
