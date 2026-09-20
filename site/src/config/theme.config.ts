@@ -31,6 +31,7 @@ export const MORE_NAVIGATION = [
   { to: "/news", label: "সব খবর" },
   { to: "/tracked", label: "ট্র্যাক করা গল্প" },
   { to: "/ghotona", label: "ঘটনাপঞ্জি" },
+  { to: "/category/history", label: "ইতিহাস" },
   { to: "/factcheck", label: "ফ্যাক্ট চেক" },
   { to: "/districts", label: "জেলার খবর" },
   { to: "/corrections", label: "সংশোধন নীতি" },
@@ -87,6 +88,7 @@ export const categories = [
   renderCategory("opinion", "মতামত/বিশ্লেষণ", "#8a5a08"),
   renderCategory("latest", "সর্বশেষ", "#54616d"),
   renderCategory("factcheck", "ফ্যাক্ট চেক", "#5b21b6"),
+  renderCategory("history", "ইতিহাস", "#a05a2c"),
 ];
 
 export const districts = [
@@ -119,6 +121,7 @@ const baseTags = [
   { slug: "transport", name: "পরিবহন" },
   { slug: "gujob", name: "গুজব" },
   { slug: "factcheck", name: "ফ্যাক্ট চেক" },
+  { slug: "history", name: "ইতিহাস" },
 ];
 
 export const tags = [...baseTags, ...districts];
