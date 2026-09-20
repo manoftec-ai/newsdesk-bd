@@ -2,16 +2,10 @@
 @source "../src";
 
 /* Self-hosted Bengali fonts (stable /fonts/ URLs — preloaded in BaseLayout).
-   font-display: optional — no FOUT reswap, so LCP pins to the first paint. */
-@font-face {
-  font-family: "Noto Serif Bengali";
-  font-style: normal;
-  font-weight: 600;
-  font-display: optional;
-  src: url("/fonts/noto-serif-bengali-bengali-600.woff2") format("woff2");
-  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE;
-}
-
+   Only the two essential faces ship: serif-700 (headlines) + sans-400 (body).
+   Other weights are synthesized by the browser locally — no extra downloads,
+   no font parse cost (biggest simulated-LCP lever). font-display: optional
+   means no FOUT reswap either, so LCP pins to the first paint. */
 @font-face {
   font-family: "Noto Serif Bengali";
   font-style: normal;
@@ -27,24 +21,6 @@
   font-weight: 400;
   font-display: optional;
   src: url("/fonts/hind-siliguri-bengali-400.woff2") format("woff2");
-  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE;
-}
-
-@font-face {
-  font-family: "Hind Siliguri";
-  font-style: normal;
-  font-weight: 500;
-  font-display: optional;
-  src: url("/fonts/hind-siliguri-bengali-500.woff2") format("woff2");
-  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE;
-}
-
-@font-face {
-  font-family: "Hind Siliguri";
-  font-style: normal;
-  font-weight: 600;
-  font-display: optional;
-  src: url("/fonts/hind-siliguri-bengali-600.woff2") format("woff2");
   unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE;
 }
 
