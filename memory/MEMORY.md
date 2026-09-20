@@ -92,6 +92,13 @@
 - [ ] Convert briefs into stories (opencode-authored) on a regular cadence; consider a "daily edition" workflow (24 of 33 national+other briefs now authored across batches 1–4; next: national/politics remainder)
 - [ ] Monitor cron health (BD sites may block GH runner IPs; some sources slow)
 
+- [x] **Front-end header (2026-09-20)**: site name now fully visible on mobile
+  (`whitespace-nowrap`, `text-base sm:text-lg`, tighter `px-4 gap-3` + icon `gap-2 sm:gap-4`).
+  **RSS/"XML view" removed site-wide**: header RSS icon deleted, footer "RSS ফিড" link removed,
+  `SOCIAL_LINKS` rss entry dropped, head `<link rel="alternate" rss+xml>` removed. Kept
+  `/rss.xml` endpoint direct-URL only (non-destructive; pipeline source RSS ingestion untouched).
+  See memory/sessions/2026-09-20-frontend-header-rss-removal.md
+
 ## Next Steps / Open Questions
 - [ ] Living Story Tracker (D35): increment 2 article UI (tracked badge + শেষ চেক stamp), increment 3 `/tracked` hub page + nav; then watcher (Google News RSS daily) — see Work in Progress
 - [ ] Watch 30-min cron runs over the next hours; verify fetch freshness maintained in pipeline/state/store.db
