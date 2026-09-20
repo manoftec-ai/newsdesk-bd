@@ -70,17 +70,26 @@ jobs:
       - name: Stage and push drafted stories
         if: github.event.inputs.dry_run != 'true'
         run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
           git add -A
           if git diff --cached --quiet; then
             echo "no story changes (nothing new or already committed)"
-          else
-            git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))" &&
-            git pull --rebase origin main || true
-            git push && git push --set-upstream origin main || {
-              echo "push failed — remote moved during authoring; retrying once"
-              git pull --rebase origin main || true
-              git push
-            }
+            exit 0
           fi
-        env:
-          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))"
+          # Merge-style push that tolerates concurrent work landing on the same
+          # files while we author (e.g. a parallel session authoring the same
+          # brief). Non-conflicting files merge in; on add/add or content
+          # conflicts keep the remote (already-published) version.
+          git fetch origin main
+          if git merge --ff-only origin/main 2>/dev/null; then
+            :
+          elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+            :
+          else
+            echo "merge failed — aborting merge and keeping local commit; will retry next run"
+            git merge --abort 2>/dev/null || true
+            git reset --hard HEAD 2>/dev/null || true
+          fi
+          git push origin HEAD:main
