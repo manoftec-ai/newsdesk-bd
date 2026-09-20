@@ -73,15 +73,15 @@ export const authors = [
 const renderCategory = (slug, name, color) => ({ slug, name, color });
 
 export const categories = [
-  renderCategory("national", "জাতীয়", "#c0392b"),
+  renderCategory("national", "জাতীয়", "#a8281f"),
   renderCategory("politics", "রাজনীতি", "#7b241c"),
-  renderCategory("economy", "অর্থনীতি", "#148f77"),
-  renderCategory("international", "আন্তর্জাতিক", "#2e86c1"),
-  renderCategory("sports", "ক্রীড়া", "#1e8449"),
-  renderCategory("entertainment", "বিনোদন", "#7d3c98"),
-  renderCategory("tech", "প্রযুক্তি", "#117a8b"),
-  renderCategory("opinion", "মতামত/বিশ্লেষণ", "#b9770e"),
-  renderCategory("latest", "সর্বশেষ", "#5d6d7e"),
+  renderCategory("economy", "অর্থনীতি", "#0e6f5e"),
+  renderCategory("international", "আন্তর্জাতিক", "#1a6293"),
+  renderCategory("sports", "ক্রীড়া", "#16693b"),
+  renderCategory("entertainment", "বিনোদন", "#6d3490"),
+  renderCategory("tech", "প্রযুক্তি", "#0e6474"),
+  renderCategory("opinion", "মতামত/বিশ্লেষণ", "#8a5a08"),
+  renderCategory("latest", "সর্বশেষ", "#54616d"),
 ];
 
 export const tags = [
