@@ -51,3 +51,9 @@ dont publish any article today" — nothing published 2026-09-20 (font outage da
 - KEY LEARNED: parallel session introduced **D37 "opencode-on-GitHub"** — `auto-author.yml` (cron hourly + on pipeline + manual) runs opencode `run --auto` headless on the GH runner, NO key needed (openrc free model opencode/big-pickle via gateway, verified keyless). Fix commits fixed YAML indentation + pinned opencode version + push-retry.
 - Deploy: Vercel built 0bce209 READY (`newsdesk-h8w33hqbo-man-of-technology.vercel.app`), production alias serving all 5 new articles → **200** (earlier 404s were Vercel bot-protection without cookie). `images.yml` ran on push (0bce209) → thumbnails branded. Sitemap live (61 locs).
 - Git safety order confirmed again: add → commit → pull --rebase → push; will hit conflicts routinely ≥2 agents push concurrently — always `git status --porcelain` first and expect add/add on pipeline state.
+
+## Images: auto-branded & force-deployed (same session)
+- images.yml push-run (b65bb44, 15:10) branded ALL 5 batch-5 stories with REAL Openverse free-license photos (Openverse search by story keywords, no API key) → 1200x675 WebP brand overlay, `thumbnail`+`thumbnailAlt` (with photographer+license credit) in frontmatter.
+- **Quirk discovered**: Vercel does NOT create deployments for GH-Actions-originated pushes (b65bb44, and all images branding commits, never got a deploy; only Termux/user pushes deploy). So thumbs existed in repo but NOT live.
+- `vercel --prod` via CLI failed when run from repo root: root has no package.json (site lives in `site/`) → `npm run build` ENOENT /vercel/path0/package.json. Fix: run CLI from `site/` (`--cwd .../site`). Deployed f5925c9 → READY → production alias now serves images+articles (200/200 for all 5).
+- Net: EVERY article auto-gets an image on the next images.yml run (push/cron 17,47/manual). But deployment only actually ships when a webhook-deployable push happens — keep in mind for future.
