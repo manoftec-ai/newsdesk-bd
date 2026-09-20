@@ -21,16 +21,18 @@
 # Trigger: schedule (offset from pipeline `0,30` and images `17,47`) + manual + on
 # pipeline completion. concurrency protects against racing the other commit workflows.
 
+# author.yml — OPTIONAL API-LLM authoring (parked; primary authoring = auto-author.yml,
+# which runs opencode headless from GitHub).
+#
+# User decision 2026-09-20 (D36): authoring is done by OPENCODE (default free model
+# opencode/big-pickle) executing from GitHub Actions — NOT by a provider API key.
+# This workflow is therefore KEPT MANUAL-ONLY: it stops being scheduled/triggered and
+# does nothing unless run by hand, and even then it only works if an LLM_API_KEY secret
+# is configured. It exists so the provider-swap path can be re-enabled later.
 name: author
 
 on:
-  schedule:
-    - cron: "23,53 * * * *"
   workflow_dispatch:
-  workflow_run:
-    workflows: ["pipeline"]
-    types: [completed]
-    branches: [main]
 
 concurrency:
   group: author-${{ github.ref }}

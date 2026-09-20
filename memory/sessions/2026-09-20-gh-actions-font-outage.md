@@ -52,3 +52,26 @@ international-134, national-122,123,125,126,127,128,130,131,136, sports-129,133 
 - Font fix verified: images rerun made 34 photos, 0 failed (then died on the commit-step bug).
 - Commit-order fix pushed → re-running images; expect green + a `pipeline: brand thumbnail images` commit.
 - author.yml stays green-but-noop until an LLM secret is added.
+## FOLLOW-UP 2026-09-20 — D37: OPENCODE-ON-GITHUB is now the authoring path
+(renumbered from D36 — a parallel session claimed D36 for the living-story Tracker)
+
+- images rerun 35514735181 went GREEN after the commit-order fix → bot commit 6d8acbc
+  "pipeline: brand thumbnail images (auto, 20260920T1352)".
+- User explicitly ruled out provider API keys and chose opencode for authoring, executed
+  automatically from GitHub:
+  - "opencode you will execute the article but not from here you will do it from github
+    so that our action can be done automatically."
+  - "i am not going to give api. opencode default free model for now we can change later
+    but we will use opencode for sure."
+- IMPLEMENTED + PUSHED (commit …): auto-author.yml is now the sole scheduled authoring path —
+  headless `opencode run --auto --model opencode/big-pickle` on the GH runner:
+  - triggers: hourly cron '17 * * * *' + workflow_run (on pipeline completed) + manual dispatch;
+  - reads briefs, writes body-only pipeline/tmp/stories/<slug>.b.md (cap 10 newest/run),
+    runs finalize_stories.mjs --site=site/src/content/news, never git-ops itself;
+  - separate steps: check OPENCODE_API_KEY (fails loudly if missing) → install opencode →
+    author → stage/commit/pull --rebase/push;
+  - timeout bumped 30→45 min.
+- author.yml (D34 hybrid, needs a provider key) is PARKED manual-only (schedule+workflow_run removed).
+- Decided: only remaining blocker = `OPENCODE_API_KEY` secret (opencode's OWN key, free, from
+  https://opencode.ai/auth). It is NOT a provider API key, so it honours the user's rule. Once added:
+  dispatch auto-author → briefs become articles → push → Vercel deploy + images.yml brands thumbnails → live.
