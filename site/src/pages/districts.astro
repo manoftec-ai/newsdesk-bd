@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Icon from "../components/Icon.astro";
+import { SITE, sortedPosts } from "../lib/news-data.js";
+import { districts } from "../config/theme.config.ts";
+
+const posts = await sortedPosts();
+const rows = districts
+  .map((district) => ({
+    district,
+    count: posts.filter((post) => post.tags.includes(district.slug)).length,
+  }))
+  .sort((a, b) => b.count - a.count);
+
+const taggedTotal = rows.reduce((acc, row) => acc + row.count, 0);
+---
+
+<BaseLayout
+  title={`জেলার খবর — ${SITE.name}`}
+  description="ঢাকা, চট্টগ্রাম, সিলেটসহ বাংলাদেশের জেলাভিত্তিক যাচাই-করা সংবাদ এক জায়গায়।"
+  canonical={`${SITE.url}/districts`}
+>
+  <div class="mx-auto max-w-5xl px-5">
+    <Breadcrumbs crumbs={[{ name: "জেলার খবর", href: "/districts", current: true }]} />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-6">
+      <h1 class="font-serif text-4xl font-bold">জেলার খবর</h1>
+      <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+        জেলাভিত্তিক সংবাদ খুঁজতে এখান থেকে আপনার জেলার পাতায় যান। প্রতিটি জেলার পাতায় সেই জেলার সব
+        যাচাই-করা প্রতিবেদন কালানুক্রমে সাজানো থাকে।
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <span>মোট জেলা: {rows.length}</span>
+        <span>ট্যাগ করা প্রতিবেদন: {taggedTotal}</span>
+      </div>
+    </header>
+
+    <div class="grid gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      {rows.map(({ district, count }) => (
+        <a
+          href={`/tags/${district.slug}`}
+          class="group flex items-center justify-between bg-background px-5 py-4 hover:bg-muted/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          <span class="flex items-center gap-2">
+            <Icon name="arrows" class="h-4 w-4 text-muted-foreground" />
+            <span class="font-serif text-lg font-semibold group-hover:text-primary">{district.name}</span>
+          </span>
+          <span class="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
+            {count}
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <p class="mt-6 text-sm text-muted-foreground">
+      আপনার জেলার পাতা পাননি? কোনো জেলার সংবাদ নিয়মিত প্রকাশিত হলে তা স্বয়ংক্রিয়ভাবে এই তালিকায় যুক্ত
+      হয়।
+    </p>
+  </div>
+</BaseLayout>

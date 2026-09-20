@@ -35,6 +35,22 @@ export function inferTags(brief) {
     metro: ['মেট্রো'],
     gujob: ['গুজব', 'ভুয়া', 'মিথ্যা দাবি', 'রিউমার'],
     factcheck: ['ফ্যাক্ট চেক', 'সত্যতা যাচাই', 'ফ্যাক্টচেক'],
+    chattogram: ['চট্টগ্রাম', 'কর্ণফুলী', 'কাপ্তাই'],
+    sylhet: ['সিলেট'],
+    rajshahi: ['রাজশাহী'],
+    khulna: ['খুলনা'],
+    rangpur: ['রংপুর'],
+    barishal: ['বরিশাল'],
+    mymensingh: ['ময়মনসিংহ'],
+    cumilla: ['কুমিল্লা'],
+    narayanganj: ['নারায়ণগঞ্জ'],
+    gaibandha: ['গাইবান্ধা', 'সুন্দরগঞ্জ'],
+    dinajpur: ['দিনাজপুর'],
+    bogura: ['বগুড়া'],
+    jashore: ['যশোর'],
+    tangail: ['টাঙ্গাইল'],
+    coxsbazar: ['কক্সবাজার', 'টেকনাফ'],
+    rangamati: ['রাঙ্গামাটি'],
   };
   const tags = [];
   for (const [slug, kws] of Object.entries(map)) {

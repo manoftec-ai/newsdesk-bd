@@ -32,6 +32,7 @@ export const MORE_NAVIGATION = [
   { to: "/tracked", label: "ট্র্যাক করা গল্প" },
   { to: "/ghotona", label: "ঘটনাপঞ্জি" },
   { to: "/factcheck", label: "ফ্যাক্ট চেক" },
+  { to: "/districts", label: "জেলার খবর" },
   { to: "/corrections", label: "সংশোধন নীতি" },
   { to: "/about", label: "আমাদের সম্পর্কে" },
   { to: "/contact", label: "যোগাযোগ" },
@@ -88,8 +89,27 @@ export const categories = [
   renderCategory("factcheck", "ফ্যাক্ট চেক", "#5b21b6"),
 ];
 
-export const tags = [
+export const districts = [
   { slug: "dhaka", name: "ঢাকা" },
+  { slug: "chattogram", name: "চট্টগ্রাম" },
+  { slug: "sylhet", name: "সিলেট" },
+  { slug: "rajshahi", name: "রাজশাহী" },
+  { slug: "khulna", name: "খুলনা" },
+  { slug: "rangpur", name: "রংপুর" },
+  { slug: "barishal", name: "বরিশাল" },
+  { slug: "mymensingh", name: "ময়মনসিংহ" },
+  { slug: "cumilla", name: "কুমিল্লা" },
+  { slug: "narayanganj", name: "নারায়ণগঞ্জ" },
+  { slug: "gaibandha", name: "গাইবান্ধা" },
+  { slug: "dinajpur", name: "দিনাজপুর" },
+  { slug: "bogura", name: "বগুড়া" },
+  { slug: "jashore", name: "যশোর" },
+  { slug: "tangail", name: "টাঙ্গাইল" },
+  { slug: "coxsbazar", name: "কক্সবাজার" },
+  { slug: "rangamati", name: "রাঙ্গামাটি" },
+];
+
+const baseTags = [
   { slug: "metro", name: "মেট্রো" },
   { slug: "weather", name: "আবহাওয়া" },
   { slug: "economy", name: "অর্থনীতি" },
@@ -100,3 +120,5 @@ export const tags = [
   { slug: "gujob", name: "গুজব" },
   { slug: "factcheck", name: "ফ্যাক্ট চেক" },
 ];
+
+export const tags = [...baseTags, ...districts];
