@@ -144,6 +144,11 @@ const shareLinks = [
             </a>
           )}
           <VerificationBadge badge={badge} tier={post.verification?.tier} />
+          {post.corrected && (
+            <span class="badge-chip badge--corrected" role="note" title="এই প্রতিবেদন সংশোধন করা হয়েছে">
+              সংশোধিত
+            </span>
+          )}
           {post.tracked && (
             <a href="/tracked" class="tracked-chip" aria-label="ট্র্যাক করা গল্পের তালিকা">
               ট্র্যাক করা
@@ -209,6 +214,13 @@ const shareLinks = [
             একই ঘটনার খবর ভুলে যাইনি — নতুন অগ্রগতি পেলে এই প্রতিবেদনটিই হালনাগাদ হবে এবং এখানে পুরনো লেখা
             কখনো মুছে যাবে না।
           </p>
+        </div>
+      )}
+
+      {post.corrected && post.correctionNote && (
+        <div class="correction-box mt-6" role="note" aria-label="সংশোধন নোট">
+          <div class="text-sm font-semibold">সংশোধন</div>
+          <p class="mt-1.5 leading-relaxed text-muted-foreground">{post.correctionNote}</p>
         </div>
       )}
 

@@ -31,6 +31,8 @@ export const MORE_NAVIGATION = [
   { to: "/news", label: "সব খবর" },
   { to: "/tracked", label: "ট্র্যাক করা গল্প" },
   { to: "/ghotona", label: "ঘটনাপঞ্জি" },
+  { to: "/factcheck", label: "ফ্যাক্ট চেক" },
+  { to: "/corrections", label: "সংশোধন নীতি" },
   { to: "/about", label: "আমাদের সম্পর্কে" },
   { to: "/contact", label: "যোগাযোগ" },
 ];

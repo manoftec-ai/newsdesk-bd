@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Icon from "../components/Icon.astro";
+import { SITE, formatDate, sortedPosts } from "../lib/news-data.js";
+
+const corrected = (await sortedPosts())
+  .filter((post) => post.corrected)
+  .sort((a, b) => (b.updated && a.updated && a.updated < b.updated ? 1 : -1));
+---
+
+<BaseLayout
+  title={`সংশোধন নীতি — ${SITE.name}`}
+  description={`${SITE.name} — ভুল চোখে পড়লে কী হয়, কীভাবে করেকশন জানাবেন এবং কীভাবে তা লিপিবদ্ধ হয়।`}
+  canonical={`${SITE.url}/corrections`}
+>
+  <div class="mx-auto max-w-3xl px-5">
+    <Breadcrumbs crumbs={[{ name: "সংশোধন নীতি", href: "/corrections", current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">সংশোধন ও প্রতিকার নীতি</h1>
+      <p class="mt-2 text-muted-foreground">
+        সত্যতা আমাদের মূল প্রতিশ্রুতি — তাই ভুল হলে তা স্বচ্ছভাবে স্বীকার ও লিপিবদ্ধ করাই আমাদের নীতি।
+      </p>
+    </header>
+
+    <div class="prose prose-lg prose-brown dark:prose-invert mt-8">
+      <h2>ভুল চোখে পড়লে আমাদের করণীয়</h2>
+      <ol>
+        <li>
+          <strong>প্রকাশের পরও আমরা প্রতিবেদন হালনাগাদ চালিয়ে যাই।</strong> ট্র্যাক করা গল্পের মতোই,
+          কোনো ভুল ধরা পড়লে সেটি সংশোধন করা হয় — পুরনো লেখা মুছে যায় না, সংশোধনের ইতিহাস পাশাপাশি থাকে।
+        </li>
+        <li>
+          <strong>সংশোধিত প্রতিবেদন চিহ্নিত করা হয়।</strong> সংশোধিত প্রতিবেদনের শিরোনামের পাশে
+          <em> "সংশোধিত"</em> ব্যাজ দেখা যায় এবং সংশোধন নোটসহ প্রকাশ করা হয়।
+        </li>
+        <li>
+          <strong>সূত্রেকর্তৃক যাচাই:</strong> কোনো তথ্য সংশোধনের আগে আমরা একাধিক নির্ভরযোগ্য সূত্র দিয়ে
+          নতুন তথ্যটি যাচাই করি, তারপরই পরিবর্তন আনা হয়।
+        </li>
+      </ol>
+
+      <h2>ভুল জানাবেন যেভাবে</h2>
+      <p>
+        আমাদের <a href="/contact">যোগাযোগ</a> পাতা দিয়ে "সংবাদ সংশোধন" বিষয় বেছে বার্তা পাঠান। সম্ভব হলে
+        কোন লাইনে/কোন তথ্যে ভুল, এবং সঠিক তথ্যের নির্ভরযোগ্য সূত্র (লিংকসহ) দিন — যেন দ্রুত যাচাই করতে পারি।
+      </p>
+
+      <h2>কোন কোন ভুল সংশোধন হয়</h2>
+      <ul>
+        <li>নাম, পদবি, সংখ্যা, তারিখ বা স্থানের ভুল</li>
+        <li>কোনো বক্তব্য বা ঘটনার ভুল বর্ণনা</li>
+        <li>সূত্রে অমিল বা ভুল সূত্র</li>
+        <li>যাচাই-ব্যাজ স্তরে ভুল</li>
+      </ul>
+
+      <h2>সংশোধনের রেকর্ড</h2>
+      <p>
+        প্রতিটি সংশোধন তারিখ-সহ আমাদের <em>সংশোধনের লগে</em> লিপিবদ্ধ থাকে (নিচে)। কোনো সংশোধন করা হলে তার
+        "আপডেট ইতিহাস"-এও স্বয়ংক্রিয়ভাবে স্থান পায়, যাতে পাঠক পরিবর্তনটি নিজেই দেখতে পারেন।
+      </p>
+    </div>
+
+    <div class="mt-10 border-t border-border/60 pt-6">
+      <h2 class="flex items-center gap-2 font-serif text-2xl font-bold">
+        <Icon name="check" class="h-5 w-5 text-primary" />
+        সংশোধনের লগ
+      </h2>
+      {corrected.length > 0 ? (
+        <ul class="mt-4 space-y-3">
+          {corrected.map((post) => (
+            <li class="rounded-md border border-border p-4">
+              <div class="flex flex-wrap items-center gap-3">
+                <a
+                  href={`/article/${post.slug}`}
+                  class="font-medium text-foreground underline-offset-2 hover:text-primary"
+                >
+                  {post.title}
+                </a>
+                <span class="badge-chip badge--corrected">সংশোধিত</span>
+              </div>
+              <div class="mt-2 text-sm text-muted-foreground">
+                <span class="flex items-center gap-1.5">
+                  <Icon name="clock" class="h-3.5 w-3.5" />
+                  {post.updated ? formatDate(post.updated) : formatDate(post.date)}
+                </span>
+              </div>
+              {post.correctionNote && (
+                <p class="mt-2 text-sm leading-relaxed">{post.correctionNote}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="mt-4 text-muted-foreground">
+          এখন পর্যন্ত কোনো প্রতিবেদন সংশোধনের প্রয়োজন হয়নি। কোনো ভুল চোখে পড়লে{" "}
+          <a href="/contact" class="underline underline-offset-2 hover:text-primary">
+            জানিয়ে দিন
+          </a>
+          —
+          {SITE.name} স্বচ্ছভাবে তা লিখবে।
+        </p>
+      )}
+    </div>
+  </div>
+</BaseLayout>

@@ -721,6 +721,19 @@
   background: #9a2419;
 }
 
+/* Corrected articles (corrections/remedies system). */
+.badge--corrected {
+  background: #6d3490;
+}
+
+.correction-box {
+  border: 1px solid color-mix(in oklab, #6d3490 30%, var(--color-border));
+  border-left: 3px solid #6d3490;
+  border-radius: 8px;
+  background: color-mix(in oklab, #6d3490 6%, var(--color-card));
+  padding: 0.9rem 1.1rem;
+}
+
 /* Living-story tracker: chip + info box shown on tracked articles. */
 .tracked-chip {
   display: inline-flex;
