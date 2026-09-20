@@ -94,6 +94,8 @@ tags: ${tagList}
 author: "desk"
 lang: "bn"
 draft: false
+keyPoints: []
+faq: []
 sources:
 ${fm.sources.map((s) => `  - name: "${String(s.name).replace(/"/g, '\\"')}"\n    url: "${s.url}"`).join('\n')}
 verification:
@@ -120,6 +122,11 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 - Neutral, plain editorial Bengali. No hype, no speculation. If a fact is unknown, say so or omit it.
 - Title: an accurate, concise Bengali headline (report headline-news style).
 - Excerpt: 1–2 sentence lead summary for cards.
+- Right after the lead paragraph, add a "এক নজরে" bullet list of 3–4 key points. Format it EXACTLY like this (bold label, then bullets, then a blank paragraph before the next body block):
+  **এক নজরে**
+  - point one
+  - point two
+  - point three
 - Aim ~250–350 words body. Include a short context paragraph ("এই খবরটি একাধিক সূত্রে যাচাই করা হয়েছে") when multi-source.
 - End with the sources list (সূত্র:) linking every source URL. That list is the last thing: nothing after it.
 - FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
@@ -163,11 +170,35 @@ export function finalizeStory(slug, bodyMd, { siteDir } = {}) {
     'seoTitle: "…"',
     `seoTitle: "${capTitle(title).replace(/"/g, '\\"')}"`,
   );
+  const { keyPoints, remaining } = extractKeyPoints(body);
+  if (keyPoints.length) {
+    content = content.replace(
+      'keyPoints: []',
+      `keyPoints:\n${keyPoints.map((p) => `  - "${String(p).replace(/"/g, '\\"')}"`).join('\n')}`,
+    );
+  }
   const dir = siteDir ?? resolve(import.meta.dirname, '../../../site/src/content/news');
   mkdirSync(dir, { recursive: true });
   const f = join(dir, `${slug}.md`);
-  writeFileSync(f, content + body.trim() + '\n');
+  writeFileSync(f, content + remaining.trim() + '\n');
   return f;
+}
+
+// Pull a writer's "এক নজরে" bullet block out of the body into keyPoints front
+// matter, and remove that block from the article body (the UI renders it as a
+// styled box instead). Returns { keyPoints, remaining }.
+function extractKeyPoints(md) {
+  const m = String(md).match(/(?:\*\*)?এক\s*নজরে(?:\*\*)?(?::)?\s*\n((?:\s*(?:[-•*])\s*.+\n?)+)/u);
+  if (!m) return { keyPoints: [], remaining: md };
+  const keyPoints = m[1]
+    .split('\n')
+    .map((l) => l.replace(/^\s*(?:[-•*])\s*/, '').replace(/\*+$/g, '').trim())
+    .filter((p) => p.length > 1);
+  const remaining = String(md)
+    .replace(m[0], '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+  return { keyPoints, remaining };
 }
 
 // Remove trailing editorial disclaimers ("synthesized from sources, draft awaiting

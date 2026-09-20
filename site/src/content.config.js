@@ -28,6 +28,15 @@ const news = defineCollection({
         note: z.string().optional(),
       })
       .optional(),
+    keyPoints: z.array(z.string()).default([]),
+    faq: z
+      .array(
+        z.object({
+          q: z.string(),
+          a: z.string(),
+        }),
+      )
+      .default([]),
     tracked: z.boolean().default(false),
     lastChecked: z.coerce.date().optional(),
     updates: z

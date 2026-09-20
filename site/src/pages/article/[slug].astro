@@ -98,6 +98,19 @@ const jsonLd = {
         },
       ],
     },
+    ...(post.faq?.length
+      ? [
+          {
+            "@type": "FAQPage",
+            "@id": `${SITE.url}/article/${post.slug}#faq`,
+            mainEntity: post.faq.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+          },
+        ]
+      : []),
   ],
 };
 
@@ -284,9 +297,33 @@ const shareLinks = [
       )}
 
       <div class="prose prose-lg prose-headings:font-serif prose-brown dark:prose-invert mt-8">
+        {post.keyPoints?.length > 0 && (
+          <div class="keypoints-box mb-6" role="note" aria-label="এক নজরে">
+            <div class="text-sm font-bold">এক নজরে</div>
+            <ul class="mt-3 space-y-2">
+              {post.keyPoints.map((point) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div class="prose-article">
           <Content />
         </div>
+
+        {post.faq?.length > 0 && (
+          <div class="faq-box mt-10" role="note" aria-label="প্রশ্নোত্তর">
+            <h2 class="font-serif text-2xl font-bold">প্রশ্নোত্তর</h2>
+            <div class="mt-4 space-y-4">
+              {post.faq.map((item) => (
+                <div class="border-b border-border/60 pb-4">
+                  <h3 class="font-semibold">{item.q}</h3>
+                  <p class="mt-2 leading-relaxed text-muted-foreground">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
         <div class="mt-8">

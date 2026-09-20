@@ -770,6 +770,41 @@
   font-style: italic;
 }
 
+/* "এক নজরে" key-points box + FAQ section on articles. */
+.keypoints-box {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  background: color-mix(in oklab, var(--color-primary) 5%, var(--color-card));
+  padding: 1rem 1.25rem;
+}
+
+.keypoints-box ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.keypoints-box li {
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.keypoints-box li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+.faq-box h3 {
+  font-size: 1.05rem;
+}
+
 /* Living-story tracker: chip + info box shown on tracked articles. */
 .tracked-chip {
   display: inline-flex;
