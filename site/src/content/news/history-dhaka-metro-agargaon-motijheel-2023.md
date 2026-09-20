@@ -1,5 +1,7 @@
 ---
 title: "৪ নভেম্বর ২০২৩: আগারগাঁও-মতিঝিল মধ্যবর্তী মেট্রোরেল চালু"
+thumbnail: "/images/history-dhaka-metro-agargaon-motijheel-2023.webp"
+thumbnailAlt: "৪ নভেম্বর ২০২৩: আগারগাঁও-মতিঝিল মধ্যবর্তী মেট্রোরেল চালু — ছবি: The Daily Star — PM inaugurates Agargaon-Motijheel section of metro rail"
 seoTitle: "মেট্রোরেল ২য় পর্যায়: আগারগাঁও-মতিঝিল ৮.৭ কিলোমিটার রুট চালু"
 seoDescription: ৪ নভেম্বর ২০২৩-এ প্রধানমন্ত্রী শেখ হাসিনা মেট্রোরেলের
   আগারগাঁও-মতিঝিল অংশটি উদ্বোধন করেন; পরদিন থেকে যাত্রীদের জন্য খুলে দেওয়া হয়।
