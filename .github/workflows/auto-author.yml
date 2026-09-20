@@ -1,0 +1,78 @@
+name: auto-author
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Write drafts but do NOT commit/push"
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-author
+  cancel-in-progress: false
+
+jobs:
+  author:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pipeline deps
+        run: npm ci --no-audit --no-fund
+        working-directory: pipeline
+
+      - name: Check OPENCODE_API_KEY secret
+        run: |
+          if [ -z "$OPENCODE_API_KEY" ]; then
+            echo "::error::OPENCODE_API_KEY secret is not set. Add it (GitHub > Settings > Secrets) from https://opencode.ai/auth, then re-run."
+            exit 1
+          fi
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+
+      - name: Install opencode
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      - name: Author unpublished briefs
+        id: author
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          opencode run --auto --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
+Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
+Task:
+1. Read pipeline/state/briefs/*.json and list briefs whose slug does NOT yet have a story in site/src/content/news/ (compare normalized slug).
+2. If there are none, reply 'no unpublished briefs' and stop (exit 0).
+3. For each unpublished brief, write the Bengali article body only to pipeline/tmp/stories/<slug>.b.md (255-290 words, headlines in Bengali, numerals in Bengali, facts pinned strictly to the brief; end with the verification-confirmation paragraph using sources; NEVER add an editorial/draft footer).
+4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news
+   (or with --dry-run if DRY_RUN=true).
+5. Do NOT git commit, do NOT push, do NOT touch anything else.
+Always finish by printing a short summary listing files created."
+
+      - name: Stage and push drafted stories
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no story changes (nothing new or already committed)"
+          else
+            git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))"
+            git pull --rebase origin main || true
+            git push
+          fi

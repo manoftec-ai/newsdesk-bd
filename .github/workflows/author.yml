@@ -1,0 +1,97 @@
+# author.yml — scheduled story AUTHORING on GitHub (Hybrid model per user decision 2026-09-19).
+#
+# Why this exists: user cannot keep Termux open all the time. Everything else
+# (fetch/verify/extract, branded images, sitemap/IndexNow, Lighthouse gate, Vercel
+# deploy) already runs in GH Actions. THE ONLY thing Termux/opencode was still needed
+# for was the actual story WRITING. This workflow closes that gap:
+#   author_stories.mjs releases each unpublished brief through the SAME
+#   writingPrompt() + finalizeStory() path opencode uses (footer guard included),
+#   but backs the authoring with a FREE API LLM (gemini-2.5-flash free tier) instead
+#   of a local opencode session.
+#
+# Hybrid split (user's explicit choice):
+#   - Volume/freshness authoring -> this scheduled workflow (free API, no Termux).
+#   - Editing / featured / polish -> opencode in-session, as before.
+# If LLM_API_KEY is NOT set, this job is a no-op (opencode authoring is unaffected),
+# so nothing breaks on the scheduled run while a key/wiring is being decided.
+#
+# After authoring it also brands thumbnails (add_images.mjs --strategy=mix) so each
+# new story is image-complete in the SAME commit, then commits+pushes -> Vercel deploy.
+#
+# Trigger: schedule (offset from pipeline `0,30` and images `17,47`) + manual + on
+# pipeline completion. concurrency protects against racing the other commit workflows.
+
+name: author
+
+on:
+  schedule:
+    - cron: "23,53 * * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["pipeline"]
+    types: [completed]
+    branches: [main]
+
+concurrency:
+  group: author-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+  LLM_MODEL: ${{ secrets.LLM_MODEL }}
+  LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+
+jobs:
+  author:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: pipeline/package-lock.json
+
+      - name: Install Bengali fonts (for sharp SVG/WebP brand thumbnails)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-bengali
+          fc-cache -f >/dev/null 2>&1
+
+      - name: Install pipeline deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Author unpublished briefs (free API LLM, capped per run)
+        if: env.LLM_API_KEY != ''
+        run: node tools/author_stories.mjs
+        env:
+          NODE_OPTIONS: "--max-old-space-size=1536"
+
+      - name: Brand thumbnails for any new stories (mixed strategy)
+        if: env.LLM_API_KEY != ''
+        run: node tools/add_images.mjs --strategy=mix
+        env:
+          NODE_OPTIONS: "--max-old-space-size=1536"
+
+      - name: Commit + push authored stories + images
+        if: env.LLM_API_KEY != ''
+        run: |
+          cd ..
+          if ! git diff --quiet; then
+            git config user.name "newsdesk-bd-bot"
+            git config user.email "bot@newsdesk-bd.local"
+            git pull --rebase origin main
+            git add site/src/content/news site/public/images
+            git commit -m "author: auto-author briefs + brand thumbnails (GH Actions, $(date -u +%Y%m%dT%H%M))"
+            git push
+          fi
