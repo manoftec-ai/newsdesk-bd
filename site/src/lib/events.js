@@ -1,10 +1,60 @@
 import eventsRegistry from "../data/events.json" with { type: "json" };
+import eventsNewsRegistry from "../data/events-news.json" with { type: "json" };
 
 export const events = () => eventsRegistry.events ?? [];
 
 export const getEvent = (slug) => events().find((event) => event.id === slug);
 
 export const eventRegistryMeta = () => eventsRegistry.meta ?? {};
+
+export const chronology = () => eventsNewsRegistry.chronology ?? {};
+
+// Dated historical news archive for one event (empty array if none curated yet).
+export const chronologyFor = (slug) => chronology()[slug] ?? [];
+
+export const hasChronology = (slug) => (chronology()[slug]?.length ?? 0) > 0;
+
+// Number of dated archive entries per event (0 when not curated).
+export const chronologyCounts = () => {
+  const counts = {};
+  for (const [id, items] of Object.entries(chronology())) {
+    if (Array.isArray(items)) counts[id] = items.length;
+  }
+  return counts;
+};
+
+// group chronological archive items by year (descending), partial dates intact.
+export const groupChronologyByYear = (items) => {
+  const byYear = {};
+  for (const item of items) {
+    const year = (item.date ?? "").slice(0, 4) || "অজানা";
+    byYear[year] = byYear[year] ?? [];
+    byYear[year].push(item);
+  }
+  return byYear;
+};
+
+const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
+const toBn = (str = "") => String(str).replace(/\d/g, (d) => BN_DIGITS[+d]);
+const MONTH_BN = [
+  null,
+  "জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন",
+  "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর",
+];
+
+// Format chronological dates that may have YEAR-only or YEAR-MONTH precision:
+// "2012" -> "২০১২", "2012-08" -> "আগস্ট ২০১২", full ISO -> "১১ ফেব্রুয়ারি ২০১২".
+export const formatChronoDate = (value) => {
+  if (!value) return "অজানা";
+  const [y, m, d] = String(value).split("-");
+  const year = toBn(y);
+  if (d && m) {
+    const day = toBn(Number(d));
+    return `${day} ${MONTH_BN[Number(m)] ?? ""} ${year}`.trim();
+  }
+  if (m) return `${MONTH_BN[Number(m)] ?? ""} ${year}`.trim();
+  return year;
+};
 
 export const EVENT_CATEGORY_LABELS = {
   security: "নিরাপত্তা",
