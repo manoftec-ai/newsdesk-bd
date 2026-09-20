@@ -1,12 +1,17 @@
 // lib/images.mjs — article thumbnails.
 //
-// Strategy (user 2026-09-19: "mix it... different case different action"):
-//   1. Try a FREE-LICENSE contextual photo (Openverse API, commercial + modification
+// Strategy (user 2026-09-20, "real photos build trust"; original 2026-09-19 rule
+// "mix it... different case different action"):
+//   1. REAL NEWSPAPER PHOTO FIRST: pull the outlet's own og:image from the story's
+//      first source URL (the same article we verified against). Credit it
+//      ("ছবি: <source name>") — standard BD practice. Real, relevant, traceable.
+//   2. Else a FREE-LICENSE contextual photo (Openverse API, commercial + modification
 //      licenses only). Credit the creator + add our brand mark.
-//   2. If nothing suitable is found, generate a BRANDED CARD (category colour +
-//      Bengali headline + our brand) — 100% original, never misleading.
-// Every output is WebP. We NEVER scrape Google Images or remove watermarks from
-// third-party photos (copyright risk); instead we brand + credit legal sources.
+//   3. Else a BRANDED CARD (category colour + Bengali headline + our brand) —
+//      100% original, never misleading.
+// Every output is WebP. We never hotlink Google Images (their thumbnails just point
+// back at newspaper CDNs — we fetch the source article's own media instead) and we
+// never remove watermarks.
 
 const OPENVERSE = "https://api.openverse.org/v1/images/";
 const UA = "newsdesk-bd/1.0 (+https://newsdesk-bd.vercel.app)";
@@ -104,11 +109,13 @@ export async function searchOpenverse(query, perPage = 10) {
   }
 }
 
-async function downloadBuffer(url, { maxBytes = 10 * 1024 * 1024 } = {}) {
+async function downloadBuffer(url, { maxBytes = 10 * 1024 * 1024, referer = "" } = {}) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), 25000);
+  const headers = { "User-Agent": UA };
+  if (referer) headers["Referer"] = referer;
   try {
-    const res = await fetch(url, { headers: { "User-Agent": UA }, signal: ctrl.signal });
+    const res = await fetch(url, { headers, signal: ctrl.signal, redirect: "follow" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const type = res.headers.get("content-type") ?? "";
     if (!type.startsWith("image/")) throw new Error(`not an image (${type})`);
@@ -120,6 +127,68 @@ async function downloadBuffer(url, { maxBytes = 10 * 1024 * 1024 } = {}) {
   } finally {
     clearTimeout(t);
   }
+}
+
+// registrable-domain heuristic (last two labels): channelionline.com, images.xyz.bd,
+// banglatribune.com. Good enough for BD sites (single-level TLDs like .com/.bd).
+function registrableDomain(url) {
+  try {
+    const labels = new URL(url).hostname.split(".");
+    if (labels.length < 2) return labels[0] ?? "";
+    return labels.slice(-2).join(".");
+  } catch {
+    return "";
+  }
+}
+
+const OG_IMAGE_RE = /<meta[^>]+(?:property|name)=(?:"og:image"|"twitter:image"|'og:image'|'twitter:image')[^>]+content="([^"]+)"/i;
+
+// Real newspaper photo: the outlet's own og:image for one of the story's sources.
+// Returns pick-like object or null. `refererOk` — some CDNs need the source page as
+// Referer; we pass it through on the download.
+export async function searchSourcePhoto(sources = [], referer = false) {
+  for (const s of sources) {
+    const srcUrl = s?.url;
+    const srcName = s?.name;
+    if (!srcUrl) continue;
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 20000);
+    try {
+      const res = await fetch(srcUrl, { headers: { "User-Agent": UA }, signal: ctrl.signal, redirect: "follow" });
+      if (!res.ok) continue;
+      const html = await res.text();
+      const m = html.match(OG_IMAGE_RE);
+      if (!m || !m[1]) continue;
+      let ogUrl = m[1].trim();
+      if (!/^https:\/\//i.test(ogUrl)) continue; // https-only
+      const dist = registrableDomain(ogUrl);
+      const src = registrableDomain(srcUrl);
+      if (!dist || !src) continue;
+      // Accept same outlet domain or its CDN subdomain (incl. known CDN hosts used by BD media).
+      const sameOutlet =
+        dist === src ||
+        src.endsWith("." + dist) ||
+        dist.endsWith("." + src) ||
+        /\.(joymedia|jagonews|webcrawler|wixstatic|cloudinary|googleapis|amazonaws)\./.test(dist);
+      if (!sameOutlet) continue;
+      return {
+        title: srcName || "উৎস",
+        url: ogUrl,
+        width: 0,
+        height: 0,
+        license: "",
+        creator: srcName || "উৎস",
+        creatorUrl: srcUrl,
+        landing: srcUrl,
+        referer: referer ? srcUrl : "",
+      };
+    } catch {
+      // try next source
+    } finally {
+      clearTimeout(t);
+    }
+  }
+  return null;
 }
 
 // ---- rendering (sharp loaded lazily so dry-run works without it) -----------
@@ -201,21 +270,34 @@ export async function renderBrandCard({ title, category, brand = BRAND }) {
 
 // ---- orchestration ----------------------------------------------------------
 // Returns { webp, mode, alt, credit } — webp is a Buffer, or null on dry-run.
-export async function chooseThumbnail({ slug, title, category, tags = [], dryRun = false, mode = "mix" }) {
+// Priority (user 2026-09-20): 1) the outlet's own og:image from `sources`,
+// 2) Openverse free-license photo, 3) branded card (or none in strict "photo" mode).
+export async function chooseThumbnail({ slug, title, category, tags = [], sources = [], dryRun = false, mode = "mix" }) {
   const seed = hashSeed(slug || title || "x");
   const query = buildQuery(category, tags, title);
-  const results = mode === "card" ? [] : await searchOpenverse(query, 10);
-  const landscape = results.filter(
+
+  const pickSource = mode === "card"
+    ? null
+    : await searchSourcePhoto(sources, true);
+  const sourceResults = pickSource ? [pickSource] : [];
+
+  const openverseResults = mode === "card" ? [] : await searchOpenverse(query, 10);
+  const landscape = openverseResults.filter(
     (r) => r.width >= 1000 && r.height >= 600 && r.width > r.height,
   );
-  const pick = landscape.length ? landscape[seed % Math.min(landscape.length, 5)] : null;
+  const pickDefault = landscape.length ? landscape[seed % Math.min(landscape.length, 5)] : null;
+
+  const pick = pickSource || pickDefault;
+  const photoMode = pickSource ? "source" : pickDefault ? "photo" : mode === "photo" ? "none" : "card";
 
   if (dryRun) {
     return {
       webp: null,
-      mode: pick ? "photo" : mode === "photo" ? "none" : "card",
+      mode: photoMode,
       query,
-      pick: pick ? { title: pick.title, creator: pick.creator, license: pick.license, url: pick.url } : null,
+      pick: pick
+        ? { title: pick.title ?? "", creator: pick.creator, license: pick.license ?? "", url: pick.url, source: !!pickSource }
+        : null,
     };
   }
 
@@ -225,16 +307,18 @@ export async function chooseThumbnail({ slug, title, category, tags = [], dryRun
 
   if (pick) {
     try {
-      const img = await downloadBuffer(pick.url);
+      const img = await downloadBuffer(pick.url, { referer: pickSource?.referer ?? "" });
       const webp = await renderPhotoFromBuffer(img);
       return {
         webp,
-        mode: "photo",
-        alt: `${title} — ছবি: ${pick.creator}${pick.license ? ` (${pick.license.toUpperCase()})` : ""}`,
+        mode: photoMode,
+        alt: pickSource
+          ? `${title} — ছবি: ${pickSource.title}`
+          : `${title} — ছবি: ${pickDefault.creator}${pickDefault.license ? ` (${pickDefault.license.toUpperCase()})` : ""}`,
         credit: pick.landing || pick.creatorUrl || "",
       };
     } catch {
-      // fall through to branded card
+      // fall through to branded card (same semantics as before)
     }
   }
   const webp = await renderBrandCard({ title, category });

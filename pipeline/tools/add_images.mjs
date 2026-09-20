@@ -67,7 +67,27 @@ function parseFrontMatter(content) {
     }
   }
   const hasThumb = /^thumbnail:/m.test(fm);
-  return { title, category, tags, hasThumb, fmEnd: m[0].length };
+  // parse `sources:` list entries (name/url pairs) from the front matter block
+  // (line-based: block ends at the next top-level key or an inline `sources: [...]`)
+  let sources = [];
+  {
+    const lines = fm.split("\n");
+    const srcIdx = lines.findIndex((l) => /^sources:\s*$/i.test(l.trim()) && !/\[/.test(l));
+    let cur = {};
+    for (let i = srcIdx + 1; srcIdx >= 0 && i < lines.length; i++) {
+      const line = lines[i];
+      if (/^\S/.test(line) || (!line.trim() && !cur.url)) break;
+      const n = line.match(/^\s*(?:-\s*)?name:\s*(?:"([^"]*)"|'([^']*)'|(.*?))\s*$/);
+      const u = line.match(/^\s*(?:-\s*)?url:\s*(?:"([^"]*)"|'([^']*)'|(.*?))\s*$/);
+      if (n) cur.name = (n[1] ?? n[2] ?? n[3] ?? "").trim();
+      else if (u) {
+        cur.url = (u[1] ?? u[2] ?? u[3] ?? "").trim();
+        if (cur.url) sources.push({ name: cur.name ?? "", url: cur.url });
+        cur = {};
+      }
+    }
+  }
+  return { title, category, tags, sources, hasThumb, fmEnd: m[0].length };
 }
 
 function insertThumbnail(content, thumbPath, alt) {
@@ -106,6 +126,7 @@ for (const f of files) {
       title: meta.title,
       category: meta.category,
       tags: meta.tags,
+      sources: meta.sources,
       dryRun,
       mode: strategy,
     });
