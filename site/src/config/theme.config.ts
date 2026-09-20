@@ -85,6 +85,7 @@ export const categories = [
   renderCategory("tech", "প্রযুক্তি", "#0e6474"),
   renderCategory("opinion", "মতামত/বিশ্লেষণ", "#8a5a08"),
   renderCategory("latest", "সর্বশেষ", "#54616d"),
+  renderCategory("factcheck", "ফ্যাক্ট চেক", "#5b21b6"),
 ];
 
 export const tags = [
@@ -96,4 +97,6 @@ export const tags = [
   { slug: "education", name: "শিক্ষা" },
   { slug: "health", name: "স্বাস্থ্য" },
   { slug: "transport", name: "পরিবহন" },
+  { slug: "gujob", name: "গুজব" },
+  { slug: "factcheck", name: "ফ্যাক্ট চেক" },
 ];

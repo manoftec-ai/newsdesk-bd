@@ -18,6 +18,16 @@ const news = defineCollection({
     updated: z.coerce.date().optional(),
     corrected: z.boolean().default(false),
     correctionNote: z.string().optional(),
+    factCheck: z
+      .object({
+        claim: z.string().optional(),
+        verdict: z
+          .enum(["true", "mostly-true", "half", "mostly-false", "false", "unverifiable", "misleading"])
+          .optional(),
+        verifiedDate: z.coerce.date().optional(),
+        note: z.string().optional(),
+      })
+      .optional(),
     tracked: z.boolean().default(false),
     lastChecked: z.coerce.date().optional(),
     updates: z

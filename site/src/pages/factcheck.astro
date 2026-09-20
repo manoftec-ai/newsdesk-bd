@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Icon from "../components/Icon.astro";
+import { SITE, formatDate, sortedPosts, getVerdict } from "../lib/news-data.js";
+import { getCategory } from "../lib/news-data.js";
+
+const all = await sortedPosts();
+const factchecks = all.filter(
+  (post) => post.category === "factcheck" || post.factCheck,
+);
+
+const summary = factchecks.reduce(
+  (acc, post) => {
+    if (post.factCheck?.verdict) acc[post.factCheck.verdict] = (acc[post.factCheck.verdict] ?? 0) + 1;
+    return acc;
+  },
+  {},
+);
+const mixed = factchecks.filter((post) => post.factCheck).length > 0;
+---
+
+<BaseLayout
+  title={`ফ্যাক্ট চেক / গুজব যাচাই — ${SITE.name}`}
+  description="গুজব, চক্রান্ত তত্ত্ব ও ইন্টারনেটে ছড়ানো তথ্যের সত্যতা যাচাই — রায় ও প্রমাণসহ।"
+  canonical={`${SITE.url}/factcheck`}
+>
+  <div class="mx-auto max-w-5xl px-5">
+    <Breadcrumbs crumbs={[{ name: "ফ্যাক্ট চেক", href: "/factcheck", current: true }]} />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-6">
+      <h1 class="flex flex-wrap items-center gap-3 font-serif text-4xl font-bold">
+        <Icon name="flag" class="h-8 w-8 text-primary" />
+        ফ্যাক্ট চেক / গুজব যাচাই
+      </h1>
+      <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+        ইন্টারনেট ও সামাজিক মাধ্যমে ছড়ানো দাবি, গুজব ও ভুল তথ্যের সত্যতা আমরা নির্ভরযোগ্য সূত্র দিয়ে
+        যাচাই করি — একটি সুস্পষ্ট <strong>রায়</strong> (সত্য / মিথ্যা / আংশিক) ও প্রমাণসহ। সন্দেহ হলে
+        "যাচাই করা যায়নি" বলেও আমরা তা সততার সঙ্গে প্রকাশ করি।
+      </p>
+      {mixed && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="badge-chip badge--verified">সত্য {summary.true ?? 0}</span>
+          <span class="badge-chip badge--confirmed">আংশিক {summary.half ?? 0}</span>
+          <span class="badge-chip badge--suspect">মিথ্যা {summary.false ?? 0}</span>
+          <span class="badge-chip badge--partial">অন্যান্য {factchecks.length - (summary.true ?? 0) - (summary.half ?? 0) - (summary.false ?? 0)}</span>
+        </div>
+      )}
+    </header>
+
+    {factchecks.length > 0 ? (
+      <div class="grid gap-6 lg:grid-cols-2">
+        {factchecks.map((post) => {
+          const verdict = getVerdict(post.factCheck);
+          const category = getCategory(post.category);
+          return (
+            <article class="rounded-md border border-border p-5 hover:bg-muted/40">
+              {verdict && (
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class:list={["verdict-chip", verdict.className]}>{verdict.label}</span>
+                  {post.factCheck.verifiedDate && (
+                    <time datetime={post.factCheck.verifiedDate.toISOString()} class="text-xs text-muted-foreground">
+                      যাচাই: {formatDate(post.factCheck.verifiedDate)}
+                    </time>
+                  )}
+                  {category && (
+                    <span class="category-pill" style={`background-color:${category.color}`}>{category.name}</span>
+                  )}
+                </div>
+              )}
+              {post.factCheck?.claim && (
+                <p class="factcheck-claim mt-3 text-sm text-muted-foreground">দাবি: {post.factCheck.claim}</p>
+              )}
+              <h2 class="mt-3 font-serif text-xl font-semibold leading-snug">
+                <a href={`/article/${post.slug}`} class="hover:text-primary">{post.title}</a>
+              </h2>
+              <div class="mt-3 flex items-center gap-4 text-xs text-muted-foreground">
+                <span class="flex items-center gap-1.5">
+                  <Icon name="calendar" class="h-3.5 w-3.5" />
+                  {formatDate(post.date)}
+                </span>
+                <span>{post.readingTime} মিনিট পাঠ</span>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="rounded-md border border-dashed border-border p-10 text-center">
+        <Icon name="alert" class="mx-auto h-10 w-10 text-muted-foreground" />
+        <h2 class="mt-4 font-serif text-2xl font-bold">কোনো সন্দেহজনক দাবি চোখে পড়েছে?</h2>
+        <p class="mx-auto mt-2 max-w-lg text-muted-foreground">
+          কোনো গুজব বা ভুয়া খবর ছড়াতে দেখলে <a href="/contact" class="underline underline-offset-2 hover:text-primary">যোগাযোগ</a> পাতায়
+          "সংবাদ টিপস" বেছে দিন — আমরা সত্যতা যাচাই করে এই পাতায় প্রকাশ করব।
+        </p>
+        <a
+          href="/contact"
+          class="mt-5 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground"
+        >
+          গুজব জানান → {SITE.name} যাচাই করবে
+        </a>
+      </div>
+    )}
+  </div>
+</BaseLayout>

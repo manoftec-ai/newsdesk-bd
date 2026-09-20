@@ -734,6 +734,42 @@
   padding: 0.9rem 1.1rem;
 }
 
+/* Fact-check verdict chips + claim box. */
+.verdict-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 9999px;
+  padding: 0.22rem 0.6rem;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.verdict--true { background: #16693b; }
+.verdict--mostly-true { background: #0e6f5e; }
+.verdict--half { background: #8a5a08; }
+.verdict--mostly-false { background: #a0520a; }
+.verdict--false { background: #9a2419; }
+.verdict--misleading { background: #6d3490; }
+.verdict--unverifiable { background: #54616d; }
+
+.factcheck-box {
+  border: 1px solid color-mix(in oklab, #5b21b6 30%, var(--color-border));
+  border-left: 3px solid #5b21b6;
+  border-radius: 8px;
+  background: color-mix(in oklab, #5b21b6 6%, var(--color-card));
+  padding: 0.9rem 1.15rem;
+}
+
+.factcheck-claim {
+  border-left: 3px solid var(--color-border);
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+
 /* Living-story tracker: chip + info box shown on tracked articles. */
 .tracked-chip {
   display: inline-flex;

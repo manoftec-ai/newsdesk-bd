@@ -123,5 +123,18 @@ export const getBadge = (post) => {
   return { key, ...BADGES[key] ?? BADGES.partial };
 };
 
+export const VERDICTS = {
+  true: { label: "সত্য", className: "verdict--true", tierNote: "দাবির মূল তথ্য সঠিক" },
+  "mostly-true": { label: "বেশিরভাগ সত্য", className: "verdict--mostly-true", tierNote: "মূল তথ্য সঠিক, কিছু অংশ অতিরঞ্জিত" },
+  half: { label: "আংশিক সত্য", className: "verdict--half", tierNote: "আংশিক সঠিক, আংশিক ভুল বা অর্ধসত্য" },
+  "mostly-false": { label: "বেশিরভাগ মিথ্যা", className: "verdict--mostly-false", tierNote: "অধিকাংশ দাবি ভুল, অল্প অংশ সত্য" },
+  false: { label: "মিথ্যা", className: "verdict--false", tierNote: "দাবিটি যাচাইয়ে ভুল প্রমাণিত" },
+  misleading: { label: "বিভ্রান্তিকর", className: "verdict--misleading", tierNote: "প্রসঙ্গ বাদ দিয়ে বিভ্রান্তি তৈরি করে" },
+  unverifiable: { label: "যাচাই করা যায়নি", className: "verdict--unverifiable", tierNote: "নির্ভরযোগ্য সূত্রে প্রমাণ করা যায়নি" },
+};
+
+export const getVerdict = (factCheck) =>
+  factCheck?.verdict ? VERDICTS[factCheck.verdict] ?? null : null;
+
 export const wordCount = (text = "") => text.trim().split(/\s+/).filter(Boolean).length;
 export { SITE as siteIdentity };
