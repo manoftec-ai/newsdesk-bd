@@ -57,5 +57,27 @@
 - Queue drains automatically (scheduled); no manual action needed.
 - national-122/123/126/130/131/136, sports-133, international-… remain — the newest-10
   cap picks them in future runs.
-- Parallel session still active (living-story D36 + header tweaks 383fb4f): always
+- Parallel session still active (living-story D36 + header/footer tweaks 383fb4f): always
   fetch+rebase before pushing; the merge -X theirs step absorbs same-file races.
+
+## Addendum (same day, error sweep + resilience) — commits 0b68fcc, 1082966
+- **deploy stale-commit bug FIXED (0b68fcc)**: `github.event.workflow_run.head_sha` for a
+  dispatch/schedule-triggered bot run points at the ref SHA when the run STARTED, not the
+  commit it later pushed. The 16:12 deploy therefore checked out 43f882b (pre-author) and
+  its guard saw "no site change" → skipped → live stuck at 59 while main had 69. Fix:
+  checkout current main tip for bot-triggered deploys; guard diffs HEAD~1..HEAD of main.
+  Verified: live sitemap 59 → 69 == main.
+- **merge-abort push bug FIXED**: images 16:27 push failed "! [rejected] (fetch first)" — the
+  `|| true` on `merge -X theirs` left the merge IN PROGRESS, so `git push` bailed. All three
+  bot workflows now abort cleanly (`git merge --abort` + exit 0; the pushed commit is entirely
+  regenerable next run) instead of pushing a mid-merge tree.
+- **schedule delivery is unreliable this afternoon**: pipeline cron '*/30' last fired 14:07;
+  auto-author '17 * * * *' never delivered a slot; images '17,47' delivered only some
+  (14:15?, 15:47). workflow_dispatch + workflow_run + push triggers all work fine.
+  Resilience added (1082966): (1) auto-author now runs the pipeline fetch/normalize/cluster/
+  verify/extract chain itself before authoring (idempotent, deduped) so a missed pipeline
+  slot doesn't starve the queue; (2) deploy.yml gained '*/15 * * * *' safety-net schedule
+  with the content guard extended to schedule events (skips unless the last commit changed
+  site/); (3) images/pipeline use the same abort-and-skip merge.
+- State at end of sweep: 86 briefs, 69 live on main (68 stories + dengue), 18 still queued;
+  live site == main (69). All remaining work is automatic (best-effort schedules + chains).
