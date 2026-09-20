@@ -32,3 +32,15 @@ Living Story system, site-only increments now. Watcher later (Google News RSS se
   link to /tracked (আপডেট ইতিহাস component already exists).
 - Inc 3: `/tracked` hub page (join registry × posts) + nav/footer links.
 - Later: daily Development Watcher (Google News RSS search + feed keyword match) via GH Actions.
+
+## Increment 2 delivered (article UI) — 2026-09-20
+- `site/src/pages/article/[slug].astro`:
+  - `.tracked-chip` link (→ `/tracked`) shown next to category pill + verification badge when
+    the post has `tracked: true` (aria-label "ট্র্যাক করা গল্পের তালিকা").
+  - "শেষ চেক: <date>" stamp in the meta row (eye icon) rendered from `lastChecked` frontmatter.
+  - `.tracker-box` "এই গল্পটি ট্র্যাক করা হচ্ছে" info block (role=note) with link to
+    `/tracked` — promises updates land on the same page, nothing deleted.
+- `site/src/styles.css`: `.tracked-chip` (#4f46e5 bg, hover #4338ca, ~6.2:1 on white) +
+  `.tracker-box` (primary-tinted border-left card, matches evidence-box design language).
+- NOTE: `/tracked` target doesn't exist yet (increment 3, same session) — brief 404 window
+  acceptable; built and pushed together once inc-3 lands.

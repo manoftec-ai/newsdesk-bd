@@ -142,6 +142,11 @@ const shareLinks = [
             </a>
           )}
           <VerificationBadge badge={badge} tier={post.verification?.tier} />
+          {post.tracked && (
+            <a href="/tracked" class="tracked-chip" aria-label="ট্র্যাক করা গল্পের তালিকা">
+              ট্র্যাক করা
+            </a>
+          )}
         </div>
 
         <h1 class="mt-4 font-serif text-3xl font-bold leading-tight sm:text-4xl">
@@ -158,6 +163,15 @@ const shareLinks = [
             <Icon name="clock" class="h-4 w-4" />
             {post.readingTime} মিনিট পাঠ
           </span>
+          {post.tracked && post.lastChecked && (
+            <span class="flex items-center gap-1.5">
+              <Icon name="eye" class="h-4 w-4" />
+              <span>
+                শেষ চেক:{" "}
+                <time datetime={isoDate(post.lastChecked)}>{formatDate(post.lastChecked)}</time>
+              </span>
+            </span>
+          )}
           {post.lang === "en" && <span class="rounded bg-muted px-2 py-0.5 text-xs">English</span>}
           {post.demo && <span class="rounded border border-border px-2 py-0.5 text-xs">ডেমো</span>}
         </div>
@@ -176,6 +190,24 @@ const shareLinks = [
             <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
           )}
         </figure>
+      )}
+
+      {post.tracked && (
+        <div class="tracker-box mt-6" role="note" aria-label="গল্প ট্র্যাকার">
+          <div class="flex flex-wrap items-center justify-between gap-2 text-sm">
+            <span class="font-semibold">এই গল্পটি ট্র্যাক করা হচ্ছে</span>
+            <a
+              href="/tracked"
+              class="font-medium text-primary underline underline-offset-2 hover:text-foreground"
+            >
+              ট্র্যাক করা সব গল্প →
+            </a>
+          </div>
+          <p class="mt-1.5 leading-relaxed text-muted-foreground">
+            একই ঘটনার খবর ভুলে যাইনি — নতুন অগ্রগতি পেলে এই প্রতিবেদনটিই হালনাগাদ হবে এবং এখানে পুরনো লেখা
+            কখনো মুছে যাবে না।
+          </p>
+        </div>
       )}
 
       <div class="prose prose-lg prose-headings:font-serif prose-brown dark:prose-invert mt-8">
