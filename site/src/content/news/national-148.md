@@ -1,0 +1,65 @@
+---
+title: "এমপি গাজী নজরুলের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার, জিজ্ঞাসাবাদের জন্য এমপি ও প্রথম স্ত্রী থানায়"
+seoTitle: "এমপি গাজী নজরুলের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার, জিজ্ঞাসাবাদের জন্য…"
+excerpt: "রাজধানীর শেরেবাংলা নগরের ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) মরদেহ উদ্ধার করেছে পুলিশ। রবিবার (২"
+seoDescription: "রাজধানীর শেরেবাংলা নগরের ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) মরদেহ উদ্…"
+date: 2026-09-20T13:58:48.000Z
+category: "national"
+tags: ["transport", "dhaka"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "ন্যাম ভবনের ফ্ল্যাট থেকে এমপির দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+  - "নিহত মোছা. মরিয়ম খাতুনের বয়স ১৯ বছর"
+  - "জিজ্ঞাসাবাদের জন্য এমপি ও প্রথম স্ত্রী পুলিশ হেফাজতে"
+faq: []
+sources:
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/crime/l8f1tjdbn6"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/law-and-crime/969629/%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE-%E0%A6%AD%E0%A6%AC%E0%A6%A8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80-%E0%A6%AE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%AE%E0%A7%87%E0%A6%B0"
+  - name: "চ্যানেল আই"
+    url: "https://www.channelionline.com/hanging-body-of-satkhira-mp-gazi-nazruls-wife-recovered/"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/law-and-crime/969649/%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%97%E0%A6%BE%E0%A6%9C%E0%A7%80-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%AE%E0%A6%B0%E0%A6%A6%E0%A7%87%E0%A6%B9-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%B0-%E0%A6%AF%E0%A6%BE"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/video/bangladesh/44eo1984on"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/law-and-crime/969653/%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%97%E0%A6%BE%E0%A6%9C%E0%A7%80-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%93-%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80-%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6-%E0%A6%B9%E0%A7%87%E0%A6%AB%E0%A6%BE%E0%A6%9C%E0%A6%A4%E0%A7%87"
+  - name: "চ্যানেল আই"
+    url: "https://www.channelionline.com/where-is-gazi-nazrul-now/"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/crime/1ly3la6kzk"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/video/bangladesh/p2tpozf130"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 6
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+    - type: "paper"
+      label: "reputable paper corroboration (channeli)"
+---
+
+রাজধানীর শেরেবাংলা নগরের ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) মরদেহ উদ্ধার করেছে পুলিশ। রবিবার (২০ সেপ্টেম্বর) রাত ৭টার দিকে এ ঘটনা ঘটে। পরে জিজ্ঞাসাবাদের জন্য এমপি ও তার প্রথম স্ত্রীকে পুলিশ হেফাজতে নেওয়া হয়েছে।
+
+বাংলা ট্রাইবিউন জানিয়েছে, রাজধানীর শেরেবাংলা নগর থানাধীন ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের আলোচিত সংসদ সদস্য জিএম নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) ঝুলন্ত মরদেহ উদ্ধার করা হয়েছে। রবিবার (২০ সেপ্টেম্বর) রাত ৭টার দিকে ঘটনাটি ঘটে।
+
+চ্যানেল আইয়ের প্রতিবেদন অনুযায়ী, ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য জিএম নজরুল ইসলামের দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার করেছে পুলিশ। মৃত্যু হত্যা নাকি আত্মহত্যা—তা এখনো নিশ্চিত নয় বলে জানানো হয়েছে।
+
+প্রথম আলোর খবরে বলা হয়েছে, ন্যাম ভবনের ফ্ল্যাট থেকে মরদেহ উদ্ধারের ঘটনায় জিজ্ঞাসাবাদের জন্য এমপি গাজী নজরুল ইসলাম ও তার প্রথম স্ত্রী মাকছুদা বেগমকে পুলিশ হেফাজতে নেওয়া হয়েছে। রাত ১০টার দিকে পুলিশের পক্ষ থেকে এ বিষয়ে ব্রিফিং দেওয়া হয় বলে জানা গেছে। সংসদ সদস্যদের আবাসিক ভবন ন্যাম ভবন থেকে মরদেহ উদ্ধার ঘিরে রাজধানীর রাজনৈতিক ও আইন-শৃঙ্খলা মহলে ব্যাপক আলোচনা শুরু হয়েছে।
+
+শেরেবাংলা নগরের সংসদ সদস্যদের আবাসিক ভবনে এমন ঘটনা ঘটায় সংশ্লিষ্ট মহলে চাঞ্চল্যের সৃষ্টি হয়েছে। মৃত্যু হত্যা নাকি আত্মহত্যা—তা এখনো নিশ্চিত নয়, তদন্ত চলছে বলেই প্রতিবেদনগুলোতে জানানো হয়েছে।
+
+এই খবরটি একাধিক সূত্রে যাচাই করা হয়েছে।
+
+সূত্র:
+- প্রথম আলো — https://www.prothomalo.com/bangladesh/crime/l8f1tjdbn6
+- বাংলা ট্রিবিউন — https://www.banglatribune.com/law-and-crime/969629/%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE-%E0%A6%AD%E0%A6%AC%E0%A6%A8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80-%E0%A6%AE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%AE%E0%A7%87%E0%A6%B0
+- চ্যানেল আই — https://www.channelionline.com/hanging-body-of-satkhira-mp-gazi-nazruls-wife-recovered/
+- প্রথম আলো — https://www.prothomalo.com/bangladesh/crime/1ly3la6kzk
