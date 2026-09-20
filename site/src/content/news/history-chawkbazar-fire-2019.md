@@ -1,5 +1,7 @@
 ---
 title: "২০১৯ সালে চকবাজার অগ্নিকাণ্ড: রাসায়নিক গুদামের আগুনে অন্তত ৭০ প্রাণহানি"
+thumbnail: "/images/history-chawkbazar-fire-2019.webp"
+thumbnailAlt: "২০১৯ সালে চকবাজার অগ্নিকাণ্ড: রাসায়নিক গুদামের আগুনে অন্তত ৭০ প্রাণহানি — ছবি: The Daily Star — Death toll from Old Dhaka chemical warehouse fire jumps"
 seoTitle: "চকবাজার আগুন (২০১৯): পুরান ঢাকার রাসায়নিক গুদামে অগ্নিকাণ্ডে ৭০-এর
   বেশি মৃত্যু"
 seoDescription: ২০১৯ সালের ২০ ফেব্রুয়ারি রাতে পুরান ঢাকার চকবাজারে একটি

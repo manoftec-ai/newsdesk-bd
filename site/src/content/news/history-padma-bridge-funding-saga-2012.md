@@ -1,5 +1,7 @@
 ---
 title: "২০১২ সালে বিশ্বব্যাংকের ঋণ বাতিল: পদ্মা সেতুর স্বনির্ভর নির্মাণের সিদ্ধান্ত"
+thumbnail: "/images/history-padma-bridge-funding-saga-2012.webp"
+thumbnailAlt: "২০১২ সালে বিশ্বব্যাংকের ঋণ বাতিল: পদ্মা সেতুর স্বনির্ভর নির্মাণের সিদ্ধান্ত — ছবি: The Daily Star — Govt to build Padma bridge with own resources (2012)"
 seoTitle: "পদ্মা সেতু: ২০১২ সালে বিশ্বব্যাংকের ১.২ বিলিয়ন ডলার ঋণ বাতিল ও
   স্বনির্ভর নির্মাণের ঘোষণা"
 seoDescription: ২০১২ সালের ২৯ জুন বিশ্বব্যাংক দুর্নীতির অভিযোগে পদ্মা সেতুর ১.২
