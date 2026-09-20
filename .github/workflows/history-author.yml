@@ -1,0 +1,92 @@
+# history-author.yml — Ghotona Pongji automation (F7)
+#
+# Runs weekly (Mon 03:00 UTC = 09:00 BD). Two jobs:
+#   1. plan  — runs pipeline/tools/event_scheduler.mjs and commits the plan as a
+#      machine-readable report under pipeline/state/history-plan.json, so opencode
+#      (or the user) can see exactly which events to author next.
+#   2. author — authors Tier-1 hub DRAFTS with pipeline/tools/history_author.mjs
+#      for events that have a curated description. Drafts stay draft:true (human
+#      reviews facts before going live — no-fabrication rule). No LLM used.
+#
+# Free GH Actions + zero budget. No VPS, no Termux.
+name: history-author
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1' # 03:00 UTC Mon = 09:00 BD
+
+permissions:
+  contents: write
+
+concurrency:
+  group: history-author
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    outputs:
+      plan_json: ${{ steps.plan.outputs.PLAN_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Generate plan report
+        id: plan
+        run: |
+          node tools/event_scheduler.mjs --waiting-days=7 > plan.txt
+          mkdir -p state
+          node tools/event_scheduler.mjs --waiting-days=7 --json > state/history-plan.json
+          printf 'PLAN_JSON=' >> "$GITHUB_OUTPUT"
+          jq -c '. | map(.id)' state/history-plan.json >> "$GITHUB_OUTPUT"
+          cat plan.txt
+
+      - name: Commit plan
+        run: |
+          git config user.name "newsdesk-bd-history"
+          git config user.email "history@newsdesk-bd.local"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "ghotona-pongji: weekly event plan (auto, $(date -u +%Y%m%dT%H%M))"
+          git pull --rebase origin main || true
+          git push
+
+  author:
+    needs: plan
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Author Tier-1 hub drafts (curated descriptions only)
+        run: |
+          # events with curated DESCRIPTIONS in history_author.mjs get a draft;
+          # others are refused (no fabrication). One at a time to keep diffs small.
+          for id in $(node tools/history_author.mjs --list); do
+            node tools/history_author.mjs "$id" || true
+          done
+          git add -A
+          git config user.name "newsdesk-bd-history"
+          git config user.email "history@newsdesk-bd.local"
+          if git diff --cached --quiet; then
+            echo "no new drafts"
+            exit 0
+          fi
+          git commit -m "ghotona-pongji: tier-1 hub drafts (auto, $(date -u +%Y%m%dT%H%M))"
+          git pull --rebase origin main || true
+          git push
