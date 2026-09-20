@@ -98,6 +98,11 @@
   `SOCIAL_LINKS` rss entry dropped, head `<link rel="alternate" rss+xml>` removed. Kept
   `/rss.xml` endpoint direct-URL only (non-destructive; pipeline source RSS ingestion untouched).
   See memory/sessions/2026-09-20-frontend-header-rss-removal.md
+- [x] **Front-end ticker + footer (2026-09-20)**: `BreakingBar` (homepage, below hero) now ALWAYS
+  renders top-10 latest headlines (was: only posts flagged `breaking:true` = 0 posts → invisible);
+  label changed ব্রেকিং→সর্বশেষ; compact as before. Footer bottom strip: two lines →
+  single centered `© {year} নিউজডেস্ক বিডি — সর্বস্বত্ব সংরক্ষিত।` (removed "সেট ইন নোটো…" line).
+  Commit `274694e`. See memory/sessions/2026-09-20-frontend-header-rss-removal.md
 
 ## Next Steps / Open Questions
 - [ ] Living Story Tracker (D35): increment 2 article UI (tracked badge + শেষ চেক stamp), increment 3 `/tracked` hub page + nav; then watcher (Google News RSS daily) — see Work in Progress
