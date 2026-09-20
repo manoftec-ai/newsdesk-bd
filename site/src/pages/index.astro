@@ -8,7 +8,6 @@ import {
   SITE,
   CONTACT,
   categories,
-  breakingItems,
   featuredPost,
   sortedPosts,
   postsByCategory,
@@ -17,11 +16,11 @@ import {
 } from "../lib/news-data.js";
 
 const now = new Date();
-const breaking = await breakingItems();
 const lead = await featuredPost();
 const all = await sortedPosts();
 const rest = all.filter((p) => p.slug !== lead?.slug);
 const secondLine = rest.slice(0, 4);
+const tickerItems = all.slice(0, 10);
 
 const leadBadge = lead ? getBadge(lead) : null;
 const leadCategory = lead ? getCategory(lead.category) : null;
@@ -87,7 +86,7 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
     <p class="masthead-tagline">{SITE.tagline}</p>
   </section>
 
-  {breaking.length > 0 && <BreakingBar items={breaking} />}
+  {tickerItems.length > 0 && <BreakingBar items={tickerItems} />}
 
   <div class="mx-auto max-w-6xl px-5">
     <!-- Lead story -->
