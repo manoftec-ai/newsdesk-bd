@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import VerificationBadge from "../components/VerificationBadge.astro";
+import { SITE, sortedPosts, getCategory, getBadge, formatDate } from "../lib/news-data.js";
+import { trackedStories, trackedRegistryMeta } from "../lib/tracked-stories.js";
+
+const posts = await sortedPosts();
+const registry = trackedStories();
+const meta = trackedRegistryMeta();
+
+const rows = registry
+  .map((story) => ({ story, post: posts.find((p) => p.slug === story.slug) }))
+  .filter((row) => row.post)
+  .sort((a, b) => {
+    const rank = { tracked: 0, checking: 1, closed: 2 };
+    const ar = rank[a.story.status] ?? 2;
+    const br = rank[b.story.status] ?? 2;
+    if (ar !== br) return ar - br;
+    return String(b.story.lastChecked ?? "").localeCompare(String(a.story.lastChecked ?? ""));
+  });
+
+const STATUS = {
+  tracked: { label: "ট্র্যাক হচ্ছে", cls: "badge--confirmed" },
+  checking: { label: "পরীক্ষা চলছে", cls: "badge--partial" },
+  closed: { label: "অনুসরণ বন্ধ", cls: "badge--partial" },
+};
+
+const activeCount = registry.filter((story) => story.status === "tracked").length;
+const fmt = (iso) => (iso ? formatDate(iso) : "—");
+---
+
+<BaseLayout
+  title={`ট্র্যাক করা গল্প — ${SITE.name}`}
+  description="নিউজডেস্ক বিডির ট্র্যাক করা গল্প — যেসব গুরুত্বপূর্ণ ঘটনার অগ্রগতি আমরা সন্ধান করে একই প্রতিবেদনে হালনাগাদ করি। পুরনো লেখা কখনো মুছে যায় না।"
+>
+  <div class="mx-auto max-w-4xl px-5">
+    <Breadcrumbs crumbs={[{ name: "ট্র্যাক করা গল্প", href: "/tracked", current: true }]} />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-6">
+      <h1 class="font-serif text-4xl font-bold">ট্র্যাক করা গল্প</h1>
+      <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+        এই গল্পগুলো আমরা ভুলে যাইনি। ট্রেন্ড বদলে গেলেও এগুলোর পরবর্তী অগ্রগতি সন্ধান করা হয় এবং পাওয়া
+        গেলে একই প্রতিবেদনেই হালনাগাদ করা হয় — সূত্রসহ। পুরনো লেখা কখনো মুছে যায় না, ইতিহাস এখানে
+        সংরক্ষিত থাকে।
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <span>মোট ট্র্যাক করা: {registry.length}</span>
+        <span>সক্রিয়: {activeCount}</span>
+        {meta.updatedAt && <span>রেজিস্ট্রি হালনাগাদ: {fmt(meta.updatedAt)}</span>}
+      </div>
+    </header>
+
+    {rows.length === 0 ? (
+      <p class="text-muted-foreground">এখনো কোনো গল্প ট্র্যাক করা হচ্ছে না।</p>
+    ) : (
+      <div>
+        {rows.map(({ story, post }) => {
+          const category = getCategory(post.category);
+          const badge = getBadge(post);
+          const status = STATUS[story.status] ?? STATUS.closed;
+          const updateCount = post.updates?.length ?? 0;
+          return (
+            <article class="border-b border-border/60 py-6">
+              <div class="flex flex-wrap items-center gap-2">
+                {category && (
+                  <a href={`/category/${category.slug}`} aria-label={category.name}>
+                    <span class="category-pill" style={`background-color:${category.color}`}>
+                      {category.name}
+                    </span>
+                  </a>
+                )}
+                <VerificationBadge badge={badge} compact />
+                <span class:list={["badge-chip", status.cls]}>{status.label}</span>
+                {post.breaking && <span class="badge-chip badge--verified">ব্রেকিং</span>}
+                <time class="text-xs text-muted-foreground" datetime={post.date}>
+                  {post.date}
+                </time>
+              </div>
+              <a href={`/article/${post.slug}`} class="mt-2 block">
+                <h2 class="font-serif text-2xl font-semibold leading-tight hover:text-primary">
+                  {post.title}
+                </h2>
+              </a>
+              <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
+              <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+                <span>
+                  শেষ চেক:{" "}
+                  <time datetime={story.lastChecked ? String(story.lastChecked) : undefined}>
+                    {fmt(story.lastChecked)}
+                  </time>
+                </span>
+                <span>হালনাগাদ: {updateCount}</span>
+                {post.updated && <span>সর্বশেষ আপডেট: {fmt(post.updated)}</span>}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    )}
+  </div>
+</BaseLayout>

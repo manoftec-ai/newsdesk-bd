@@ -29,6 +29,7 @@ export const NAVIGATION = [
 export const MORE_NAVIGATION = [
   { to: "/category/opinion", label: "মতামত/বিশ্লেষণ" },
   { to: "/news", label: "সব খবর" },
+  { to: "/tracked", label: "ট্র্যাক করা গল্প" },
   { to: "/about", label: "আমাদের সম্পর্কে" },
   { to: "/contact", label: "যোগাযোগ" },
 ];

@@ -44,3 +44,22 @@ Living Story system, site-only increments now. Watcher later (Google News RSS se
   `.tracker-box` (primary-tinted border-left card, matches evidence-box design language).
 - NOTE: `/tracked` target doesn't exist yet (increment 3, same session) — brief 404 window
   acceptable; built and pushed together once inc-3 lands.
+
+## Increment 3 delivered (hub page + nav) — 2026-09-20
+- NEW `site/src/pages/tracked.astro` — `/tracked` hub:
+  - Reads the Story Registry (`lib/tracked-stories.js`) joined with published posts
+    (`sortedPosts()`, filtered to existing posts only — no phantom links).
+  - Sort: status rank (tracked→checking→closed), then lastChecked desc.
+  - Per-story card: category pill, verification badge, status chip (ট্র্যাক হচ্ছে / অনুসরণ বন্ধ,
+    reusing `.badge--confirmed` / `.badge--partial`), original date, title (hover primary),
+    excerpt, meta row: শেষ চেক / হালনাগাদ (update count) / সর্বশেষ আপডেট.
+  - Hero: h1 "ট্র্যাক করা গল্প", promise copy (updates land on same page, nothing deleted),
+    totals (মোট / সক্রিয় / রেজিস্ট্রি হালনাগাদ from registry meta.updatedAt). Empty state included.
+- Discovery: `theme.config.ts` MORE_NAVIGATION += `/tracked` "ট্র্যাক করা গল্প";
+  `Footer.astro` সাইট column += `/tracked`; `sitemap.xml.js` staticPages += `/tracked`
+  (news-sitemap untouched — article-only).
+- Article-page tracked UI (inc-2) now has a valid `/tracked` target.
+- All four increments of the site phase are done. NEXT (future, separate session): the daily
+  Development Watcher via GH Actions (Google News RSS search `hl=bn&gl=BD&ceid=BD:bn` +
+  feed keyword match → append আপডেট + set `updated` + touch lastChecked), then human review of
+  sensitive updates.

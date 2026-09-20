@@ -24,7 +24,7 @@ export async function GET(context) {
     }
   }
 
-  const staticPages = ["", "/news", "/search", "/about", "/contact"];
+  const staticPages = ["", "/news", "/search", "/tracked", "/about", "/contact"];
   const items = [
     ...staticPages.map((path) => ({ path, lastmod: SITE_LAUNCH })),
     ...categories
