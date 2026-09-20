@@ -55,8 +55,15 @@ jobs:
             git commit -m "pipeline: fetch/verify/extract (auto, $(date -u +%Y%m%dT%H%M))"
             # Merge-style push tolerant of concurrent workers (auto-author etc.)
             git fetch origin main
-            git merge --ff-only origin/main 2>/dev/null || \
-              git merge --no-edit -X theirs origin/main 2>/dev/null || true
+            if git merge --ff-only origin/main 2>/dev/null; then
+              :
+            elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+              :
+            else
+              echo "merge failed — abandoning push; briefs re-fetched on a later pipeline run"
+              git merge --abort 2>/dev/null || true
+              exit 0
+            fi
             git push
           fi
 

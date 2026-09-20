@@ -37,6 +37,19 @@ jobs:
         run: npm ci --no-audit --no-fund
         working-directory: pipeline
 
+      # Redundancy: GitHub has been delivering `schedule` events unreliably, so
+      # auto-author also refreshes briefs itself (deduped by pipeline) instead of
+      # waiting for pipeline.yml's cron to land. Exactly duplicates what
+      # pipeline.yml does; harmless and idempotent when pipeline already ran.
+      - name: Refresh briefs (redundant safety net)
+        working-directory: pipeline
+        run: |
+          node run.js fetch || true
+          node run.js normalize || true
+          node run.js cluster || true
+          node run.js verify || true
+          node run.js extract || true
+
       - name: Install opencode
         run: |
           curl -fsSL https://opencode.ai/install | bash -s -- --version 1.18.31
@@ -88,8 +101,8 @@ jobs:
           elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
             :
           else
-            echo "merge failed — aborting merge and keeping local commit; will retry next run"
+            echo "merge failed — abandoning push; batch re-authored on a later run"
             git merge --abort 2>/dev/null || true
-            git reset --hard HEAD 2>/dev/null || true
+            exit 0
           fi
           git push origin HEAD:main
