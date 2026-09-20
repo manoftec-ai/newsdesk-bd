@@ -23,6 +23,13 @@ on:
     branches: [main]
     paths:
       - "site/src/content/news/**"
+  # Deterministic chain: whenever a bot workflow can land new/changed articles
+  # (auto-author publishes batches, pipeline refreshes briefs, watcher updates
+  # tracked stories), brand thumbnails right after — do NOT rely on schedule
+  # delivery, which GitHub has been dropping this week.
+  workflow_run:
+    workflows: [auto-author, watcher, pipeline]
+    types: [completed]
   schedule:
     - cron: "17,47 * * * *" # 1 min offset from pipeline.yml cron, avoids lockstep
 
