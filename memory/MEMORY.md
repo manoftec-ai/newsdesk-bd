@@ -16,6 +16,7 @@
 | G1 | Pipeline: fetch→normalize→cluster→verify→extract→synth→publish (তাড়াতাড়ি, draft ছাড়া) | high | live | Phases 5–6 done; Phase 7 scheduler pending |
 | G2 | Site live on Vercel with real (non-demo) content, demo removed | high | live | dengue story live as 1st real article |
 | G3 | Automated 30-min fetch scheduler on a free service (GitHub Actions chosen) | high | live | Phase 7 DONE — repo live, cron active |
+| G8 | Publish full verified backlog + SEO foundation | high | done | 2026-09-19: all 33 briefs authored + auto-published (34 articles live); sitemap/schema/SEO pipeline upgrades |
 
 ### Completed
 | ID | Goal | Date completed |
@@ -37,6 +38,10 @@
 | 2026-09-19 | D22: Scheduler = **GitHub Actions free cron** (no Servarica; vercel fine but no server) | free; GH Actions workflow added |
 | 2026-09-19 | D24: GitHub classic PAT (ghp_…Amca4) stored globally permanent — creates repos, full repo+workflow scopes | replaces fine-grained PATs (can't create repos) |
 | 2026-09-19 | D23: drafts filtered at build for site pages (getCollection filter `!data.draft`); rss/sitemap already filtered | draft-leak found on article/[slug].astro 2026-09-19 |
+| 2026-09-19 | D26: **SEO foundation** — every published story carries `seoTitle` (≤72 chars, word-boundary) + `seoDescription` (≤155 chars) + deterministic `tags` (inferTags keyword map, only defined tags) | backlog publish + SERP quality; regenerated 33 stories |
+| 2026-09-19 | D27: sitemap.xml served **all categories + all tags + per-item real lastmod**; homepage emits NewsMediaOrganization + WebSite + WebPage JSON-LD; article NewsArticle + isAccessibleForFree + keywords | index completeness + E-E-A-T + rich results |
+| 2026-09-19 | D28: Local Astro build **impossible on Termux** (Astro 7 needs `@bruits/satteri-*-android-arm64` — no npm artifact). All builds/deploys stay on Vercel Linux runner; validate frontmatter via zod-style node script instead | verified 34/34 frontmatters pass |
+| 2026-09-19 | D29: `finalize_stories.mjs` tool added; NOTE its `--site` arg = content dir (`site/src/content/news`), default fixed after path bug | batch finalize + dry-run |
 | 2026-09-19 | D13–D17 (earlier lifecycle decisions) | superseded by pipeline+auto publish |
 | 2026-09-19 | D18: Vercel deploy token stored at ~/.config/opencode/.secrets/vercel.env, read via env; kevli never echo | per global protocol |
 
@@ -50,10 +55,11 @@
 ## Project Context
 - Tech stack: Astro (content collections `news`) static on Vercel; pipeline = plain Node (extract/synth in pipeline/lib)
 - Structure: pipeline/ (run.js fetch/normalize/cluster/verify/extract) + site/ (Astro) + .github/workflows (pipeline.yml, deploy.yml)
-- Content: src/content/news/ — real stories (only dengue story now), demo removed
+- Content: src/content/news/ — **34 real stories live** (33 authored from briefs + dengue), all `draft:false`, tags+seo fields generated
 - Site: https://newsdesk-bd.vercel.app (production)
-- Pipeline state: store.db + briefs at `pipeline/state/` (db.mjs/extract.mjs point there; NOT tmp/), 25 briefs generated
-- No git repo yet; no GitHub account linked
+- Pipeline state: store.db + briefs at `pipeline/state/` (db.mjs/extract.mjs point there; NOT tmp/), 33 briefs authored
+- Git: repo `manoftec-ai/newsdesk-bd` (main branch), GitHub Actions pipeline.yml cron `*/30` + deploy.yml push→Vercel; GITHUB_TOKEN classic PAT stored global
+- Author workflow: brief JSON → agent writes body-only md to `pipeline/tmp/stories/<slug>.b.md` → `node pipeline/tools/finalize_stories.mjs --site=site/src/content/news` (or with `--site` default = content dir)
 
 ## Work in Progress
 - [x] Author batch 4 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md` (body only, 256–293 words; facts pinned to brief leads; Bengali numerals; verification closing present). See memory/sessions/2026-09-19-author-batch-national-78-87.md

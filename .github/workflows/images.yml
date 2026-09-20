@@ -1,0 +1,79 @@
+# images.yml — add a branded WebP thumbnail for every article (auto, no Termux needed)
+#
+# Why: user rule (2026-09-19, permanent) — every article gets a brand-marked image, "different
+# case different action" (mix photo + branded card), and it must run WITHOUT Termux being open
+# (user: "i cant open my termux always ... is it possible through github?" -> YES: GH Actions).
+#
+# Trigger strategy:
+#   - push to main touching site/src/content/news/** (new/changed articles) -> brand them right away
+#   - schedule */30 (catch-up pass: picks up any article that lacked a thumbnail, incl. brand refresh)
+#   - manual (workflow_dispatch)
+#
+# Generates via pipeline/tools/add_images.mjs: Openverse (free-license, commercial+modification,
+# no API key) photo -> WebP 1200x675 with brand overlay; else a branded category card. WebP lives
+# at site/public/images/<slug>.webp, front matter gets thumbnail/thumbnailAlt. Committed+updated
+# by this job (rebase before push to avoid racing the 5-min pipeline job). Vercel auto-deploys on push.
+#
+# concurrency:
+#   - with pipeline.yml (only commits on real state change): use pull --rebase so both can coexist.
+name: images
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "site/src/content/news/**"
+  schedule:
+    - cron: "17,47 * * * *" # 1 min offset from pipeline.yml cron, avoids lockstep
+
+concurrency:
+  group: images-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: pipeline/package-lock.json
+
+      - name: Install Bengali fonts (sharp SVG text rendering)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-bengali
+          fc-cache -f >/dev/null 2>&1
+
+      - name: Install pipeline deps (incl. sharp)
+        run: npm ci --no-audit --no-fund
+
+      - name: Add branded WebP thumbnails
+        run: node tools/add_images.mjs --write --strategy=mix
+        env:
+          OPENVERSE_USER_AGENT: "newsdesk-bd/1.0 (https://newsdesk-bd.vercel.app)"
+          NODE_OPTIONS: "--max-old-space-size=1024"
+
+      - name: Commit + push (branded images + front matter)
+        run: |
+          cd ..
+          if ! git diff --quiet; then
+            git config user.name "newsdesk-bd-bot"
+            git config user.email "bot@newsdesk-bd.local"
+            git pull --rebase origin main
+            git add site/public/images site/src/content/news
+            git commit -m "pipeline: brand thumbnail images (auto, $(date -u +%Y%m%dT%H%M))"
+            git push
+          fi

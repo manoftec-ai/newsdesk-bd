@@ -13,7 +13,7 @@ const linkClass = (to) =>
     ? "text-sm font-medium text-foreground"
     : "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
 const actionClass =
-  "inline-flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground";
+  "inline-flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground";
 ---
 
 <header class="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
@@ -38,7 +38,7 @@ const actionClass =
       </a>
     </nav>
 
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-6">
       <a href="/search" aria-label="খুঁজুন" class={actionClass}>
         <Icon name="search" class="h-4 w-4" />
       </a>

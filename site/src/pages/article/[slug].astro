@@ -17,7 +17,6 @@ import {
   getBadge,
   formatDate,
   formatTime,
-  formatDateTime,
   relatedPosts,
 } from "../../lib/news-data.js";
 
@@ -50,22 +49,53 @@ const description = post.seoDescription ?? post.excerpt;
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  headline: post.title,
-  description,
-  articleSection: category?.name,
-  datePublished: isoDate(entry.data.date),
-  ...(entry.data.updated ? { dateModified: isoDate(entry.data.updated) } : {}),
-  inLanguage: post.lang,
-  keywords: (post.tags ?? []).join(", "),
-  isAccessibleForFree: true,
-  author: { "@type": "Organization", name: author?.name ?? SITE.name, url: SITE.url },
-  publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": `${SITE.url}/article/${post.slug}`,
-  },
-  ...(post.thumbnail ? { image: `${SITE.url}${post.thumbnail}` } : {}),
+  "@graph": [
+    {
+      "@type": "NewsArticle",
+      headline: post.title,
+      description,
+      articleSection: category?.name,
+      datePublished: isoDate(entry.data.date),
+      ...(entry.data.updated ? { dateModified: isoDate(entry.data.updated) } : {}),
+      inLanguage: post.lang,
+      keywords: (post.tags ?? []).join(", "),
+      isAccessibleForFree: true,
+      author: { "@type": "Organization", name: author?.name ?? SITE.name, url: SITE.url },
+      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${SITE.url}/article/${post.slug}`,
+      },
+      ...(post.thumbnail ? { image: `${SITE.url}${post.thumbnail}` } : {}),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "নীড়",
+          item: `${SITE.url}/`,
+        },
+        ...(category
+          ? [
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: category.name,
+                item: `${SITE.url}/category/${category.slug}`,
+              },
+            ]
+          : []),
+        {
+          "@type": "ListItem",
+          position: category ? 3 : 2,
+          name: post.title,
+          item: `${SITE.url}/article/${post.slug}`,
+        },
+      ],
+    },
+  ],
 };
 
 const shareUrl = `${SITE.url}/article/${post.slug}`;
@@ -194,7 +224,7 @@ const shareLinks = [
         </div>
       )}
 
-      <div class="mt-6 border-t border-border/60 pt-4" aria-label="শেয়ার করুন">
+      <div class="mt-6 border-t border-border/60 pt-4" role="group" aria-label="শেয়ার করুন">
         <div class="flex items-center gap-2 text-sm">
           <span class="flex items-center gap-1.5 font-medium">
             <Icon name="share" class="h-4 w-4" />

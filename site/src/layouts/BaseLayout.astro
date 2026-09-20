@@ -27,7 +27,7 @@ const absoluteUrl = (value) => {
   }
 };
 const canonicalUrl = absoluteUrl(canonical || Astro.url.pathname);
-const ogImageUrl = absoluteUrl(ogImage);
+const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
 ---
 
 <!doctype html>
@@ -35,6 +35,7 @@ const ogImageUrl = absoluteUrl(ogImage);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#b3352b" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="author" content={SITE.name} />
