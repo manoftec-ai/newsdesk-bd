@@ -105,6 +105,16 @@
   single centered `© {year} নিউজডেস্ক বিডি — সর্বস্বত্ব সংরক্ষিত।` (removed "সেট ইন নোটো…" line).
   Commit `274694e`. See memory/sessions/2026-09-20-frontend-header-rss-removal.md
 
+- [x] **Living Story Watcher — increment 4 DONE (2026-09-20)**: `pipeline/tools/tracked_watcher.mjs`
+  searches Google News RSS (bn/BD) daily per tracked story fingerprint; appends honest
+  source-attributed `updates[]` entries to articles ("আপডেট ইতিহাস", label "ওয়াচার আপডেট"),
+  sets `updated`+`lastChecked`; bumps registry lastChecked/nextCheck/lastItem even on no-match.
+  No LLM (title/snippet from outlet's own item only, never fabricated); surgical frontmatter
+  edits (tiny diffs) + re-parse validation; `--dry-run`/`--limit`; import-safe for tests.
+  `watcher.yml` cron `0 2 * * *` (08:00 BD) + manual, npm ci→run→commit/push→IndexNow poke;
+  deploy.yml `workflow_run` now includes `watcher`. `npm test`: 13/13 (incl. 3 new watcher tests).
+  See memory/sessions/2026-09-20-living-story-watcher-increment4.md
+  
 ## Next Steps / Open Questions
 - [ ] Living Story Tracker (D35): increment 2 article UI (tracked badge + শেষ চেক stamp), increment 3 `/tracked` hub page + nav; then watcher (Google News RSS daily) — see Work in Progress
 - [ ] Watch 30-min cron runs over the next hours; verify fetch freshness maintained in pipeline/state/store.db
