@@ -8,15 +8,37 @@ on:
       - 'site/public/**'
       - 'site/package.json'
       - 'site/astro.config.mjs'
+  # Bot workflows (auto-author, images, pipeline) push with the default
+  # GITHUB_TOKEN, whose push events do NOT trigger push-based workflows.
+  # So deploy also fires on their successful completion, and checks whether
+  # the pushed commit actually changed site content first.
+  workflow_run:
+    workflows: [auto-author, images, pipeline]
+    types: [completed]
 
 jobs:
   vercel:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success'
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run && github.event.workflow_run.head_sha || '' }}
+          fetch-depth: 2
+
+      - name: Check whether site content changed (bot-driven run)
+        if: github.event.workflow_run != null
+        run: |
+          if git rev-parse --verify -q HEAD~1 >/dev/null && \
+             git diff --quiet HEAD~1 HEAD -- site/src site/public site/package.json site/astro.config.mjs; then
+            echo "DEPLOY_CHANGED=false" >> "$GITHUB_ENV"
+          else
+            echo "DEPLOY_CHANGED=true" >> "$GITHUB_ENV"
+          fi
 
       - name: Deploy to Vercel (production)
+        if: ${{ github.event.workflow_run == null || env.DEPLOY_CHANGED == 'true' }}
         working-directory: site
         run: npx vercel deploy . --prod --yes --token "$VERCEL_TOKEN" --scope man-of-technology --name newsdesk-bd
