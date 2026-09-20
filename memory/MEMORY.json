@@ -5,7 +5,19 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-20",
-    "sessionsCount": 15
+    "sessionsCount": 15,
+    "reminders": {
+      "mandate": "Surfaced to user at every session start (user request 2026-09-20).",
+      "pending": [
+        "Telegram secrets: user creates BotFather bot + channel, adds TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID to GitHub secrets -> activates F5 Telegram auto-post + F3 /api/contact relay (currently skip / not_configured)"
+      ],
+      "pendingDashboard": [
+        "Vercel project newsdesk-bd -> Settings -> Analytics: enable Web Analytics (no CLI; /_vercel/insights/script.js 404 until enabled; defer script already shipped and harmless)"
+      ],
+      "deferred": [
+        "Search console + site indexing (user: 'we will do later it'): GSC/Bing Webmaster verify newsdesk-bd.vercel.app + IndexNow/sitemap submission, indexing review. Site-side XML stack (sitemap.xml, news-sitemap.xml, robots, IndexNow key 59b9d831dc064ecffbbcf0618ce0a97c + pipeline poke) is ALREADY live."
+      ]
+    }
   },
   "purpose": "Automated Bengali news desk for Bangladesh. Every 30 min, fetch ~12 BD sources, dedupe, cluster same-topic stories, merge part-by-part info into ONE original Bengali article per topic with sources+attribution, publish to static Astro site on Vercel (testing).",
   "user": {

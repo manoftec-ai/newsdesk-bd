@@ -3,6 +3,12 @@
 > Last updated: 2026-09-20
 > Sessions count: 12
 
+## ⏰ REMINDERS — user action items (MANDATORY: surface at session start)
+Recorded per user request 2026-09-20: "keep these two points for me … you can remind me this later".
+1. **[PENDING — needed to activate F5 + F3] Telegram secrets**: user creates a bot (BotFather) + channel, then adds `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` as GitHub repo secrets → the Telegram auto-post workflow and the /api/contact relay both switch on (currently silently skip / return `not_configured`).
+2. **[PENDING — dashboard-only action] Vercel Web Analytics**: enable in Vercel dashboard (Settings → Analytics, project `newsdesk-bd`). No CLI exists. `/_vercel/insights/script.js` returns 404 until then; script tag is already deployed (defer, harmless).
+3. **[DEFERRED — "we will do later"] Search console + site indexing**: GSC/Bing Webmaster verification for `newsdesk-bd.vercel.app`, IndexNow/sitemap submission check, indexing review. NOTE: the site-side XML stack (sitemap.xml, news-sitemap.xml, robots.txt, IndexNow key `59b9d831dc064ecffbbcf0618ce0a97c` + pipeline poke) is ALREADY live — this item is the user-side verification/registration, not new code.
+
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
 - Communication preference: বাংলা সংবাদ-ওরিয়েন্টেড; concise; detail on request
