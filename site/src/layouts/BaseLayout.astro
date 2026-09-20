@@ -73,6 +73,20 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/fonts/hind-siliguri-bengali-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/hind-siliguri-bengali-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     {
       jsonLd && (
         <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
