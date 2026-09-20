@@ -81,3 +81,21 @@
   site/); (3) images/pipeline use the same abort-and-skip merge.
 - State at end of sweep: 86 briefs, 69 live on main (68 stories + dengue), 18 still queued;
   live site == main (69). All remaining work is automatic (best-effort schedules + chains).
+
+## Addendum 2 (same day, MISSING-THUMBNAIL root cause + chain fix) — commit 49f1bc9
+- **Reported**: newly published stories missing their right image.
+- **Root cause (two layers)**:
+  1. Direct: the 16:27 images run generated ALL needed thumbnails
+     (`add_images done. made=20 photo=11 card=9 skipped=49 failed=0`) but its push died on
+     the mid-merge bug ("fetch first") → the commit was lost on the ephemeral runner.
+  2. Systemic: images.yml had NO deterministic trigger after a bot batch — only `schedule`
+     (flaky today) and `push` (bot pushes with GITHUB_TOKEN never re-trigger push workflows).
+     So nothing re-ran images after the new auto-author batches until a random schedule slot.
+- **Fix**: images.yml now chains via `workflow_run` on [auto-author, watcher, pipeline]
+  (validated no loop: auto-author listens only to pipeline; pipeline listens to nothing).
+  Backfilled by manual dispatch → green in 40s, pushed f6e280f (20 webp + frontmatter) →
+  deploy workflow_run fired immediately (16:56 success) → live images verified HTTP 200.
+- **Verified final matrix on main**: 69/69 stories have a thumbnail (mix photo/card per
+  add_images --strategy=mix); 70 files incl. og-default.svg. 0 missing.
+- Future batches: auto-author → images (workflow_run) → deploy (workflow_run) → live. No
+  schedule slot needed for thumbnails anymore.
