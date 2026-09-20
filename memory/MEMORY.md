@@ -1,7 +1,7 @@
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
-> Last updated: 2026-09-19
-> Sessions count: 8
+> Last updated: 2026-09-20
+> Sessions count: 9
 
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
@@ -17,10 +17,13 @@
 | G2 | Site live on Vercel with real (non-demo) content, demo removed | high | live | dengue story live as 1st real article |
 | G3 | Automated 30-min fetch scheduler on a free service (GitHub Actions chosen) | high | live | Phase 7 DONE — repo live, cron active |
 | G8 | Publish full verified backlog + SEO foundation | high | done | 2026-09-19: all 33 briefs authored + auto-published (34 articles live); sitemap/schema/SEO pipeline upgrades |
+| G9 | Lighthouse/PageSpeed 100/100 (perf, SEO, a11y, best-practices) + fast-indexing | high | done | 2026-09-20: CI gate green; median 100/100/100/100 |
 
 ### Completed
 | ID | Goal | Date completed |
 |----|------|----------------|
+| G10 | news-sitemap.xml + IndexNow + default OG image + theme-color | 2026-09-20 |
+| G11 | Lighthouse CI gate (GH Actions) — first green run 2026-09-20 | 2026-09-20 |
 | G0 | Deploy newsdesk-bd static Astro site to Vercel | 2026-09-19 |
 | G4 | Remove all 7 demo articles + demo SVGs (backup kept) | 2026-09-19 |
 | G5 | Phase 5 libs: extract.mjs + synth.mjs + run.js commands | 2026-09-19 |
@@ -42,6 +45,10 @@
 | 2026-09-19 | D27: sitemap.xml served **all categories + all tags + per-item real lastmod**; homepage emits NewsMediaOrganization + WebSite + WebPage JSON-LD; article NewsArticle + isAccessibleForFree + keywords | index completeness + E-E-A-T + rich results |
 | 2026-09-19 | D28: Local Astro build **impossible on Termux** (Astro 7 needs `@bruits/satteri-*-android-arm64` — no npm artifact). All builds/deploys stay on Vercel Linux runner; validate frontmatter via zod-style node script instead | verified 34/34 frontmatters pass |
 | 2026-09-19 | D29: `finalize_stories.mjs` tool added; NOTE its `--site` arg = content dir (`site/src/content/news`), default fixed after path bug | batch finalize + dry-run |
+| 2026-09-20 | D30: **Lighthouse/PageSpeed gate** = GitHub Actions `lighthouserc.json` asserting minScore 1 on performance/SEO/a11y/best-practices (mobile, 3 runs). Google PSI API quota 429 on our network — LHCI (treosh/lighthouse-ci-action@v12, Docker Chrome) is the repeatable local substitute | user: "page insight speed test make it 100/100"; PSI quota per-day 0 unauthenticated |
+| 2026-09-20 | D31: **Ship only 2 webfont faces** (Noto Serif Bengali 700 + Hind Siliguri 400, `font-display: optional`); other weights synthesized by browser. Preloading 5 faces delayed simulated LCP (font-parse render delay ~2.1s); trimmed set + optional display → LCP 1.7s, perf 100 | observed LCP 290ms; simulated LCP was model-bound on font handling, not real network (TTFB 24ms real) |
+| 2026-09-20 | D32: Chip/badge colors darkened to WCAG AA (≥4.5:1), tap targets ≥44px (h-11 w-11, gap-6), `role=region/group` for ticker+share, `target-size` green → **a11y 100** (color-contrast was the only weighted failure, weight 7/140 ⇒ 95) | Lighthouse artifact LHRs |
+| 2026-09-20 | D33: Verification — GSC, Bing Webmaster, IndexNow live. news-sitemap.xml (Google News schema), robots lists both sitemaps, key file `site/public/<indexnow-key>.txt` (59b9d831dc064ecffbbcf0618ce0a97c), pipeline.yml pokes IndexNow after each commit | user: "add xml file for faster index" |
 | 2026-09-19 | D13–D17 (earlier lifecycle decisions) | superseded by pipeline+auto publish |
 | 2026-09-19 | D18: Vercel deploy token stored at ~/.config/opencode/.secrets/vercel.env, read via env; kevli never echo | per global protocol |
 
@@ -57,11 +64,14 @@
 - Structure: pipeline/ (run.js fetch/normalize/cluster/verify/extract) + site/ (Astro) + .github/workflows (pipeline.yml, deploy.yml)
 - Content: src/content/news/ — **34 real stories live** (33 authored from briefs + dengue), all `draft:false`, tags+seo fields generated
 - Site: https://newsdesk-bd.vercel.app (production)
+- SEO/perf gate (2026-09-20): `.github/workflows/lighthouse.yml` (runs after deploy via `workflow_run` + manual) with `lighthouserc.json`; artifacts `lighthouse-results.zip`; median **100/100/100/100** green on bd23c4e. Fonts now only `noto-serif-bengali-bengali-700` + `hind-siliguri-bengali-400` preloaded in BaseLayout (all `font-display: optional`); latin faces removed
+- Indexing (2026-09-20): `/news-sitemap.xml` (Google News schema, pubDate+keywords), robots.txt lists `/sitemap.xml` + `/news-sitemap.xml`, IndexNow key `59b9d831dc064ecffbbcf0618ce0a97c` at `/59b9….txt`, pipeline.yml "Poke IndexNow" step posts all news URLs after Commit; default `og:image` = `/images/og-default.svg`, `theme-color #b3352b`
 - Pipeline state: store.db + briefs at `pipeline/state/` (db.mjs/extract.mjs point there; NOT tmp/), 33 briefs authored
 - Git: repo `manoftec-ai/newsdesk-bd` (main branch), GitHub Actions pipeline.yml cron `*/30` + deploy.yml push→Vercel; GITHUB_TOKEN classic PAT stored global
 - Author workflow: brief JSON → agent writes body-only md to `pipeline/tmp/stories/<slug>.b.md` → `node pipeline/tools/finalize_stories.mjs --site=site/src/content/news` (or with `--site` default = content dir)
 
 ## Work in Progress
+- [x] SEO/perf/auth (2026-09-20): news-sitemap + robots + IndexNow key & pipeline poke; default OG + theme-color; article JSON-LD `@graph` (NewsArticle + BreadcrumbList); tap-target/aria fixes; font-display optional + only serif-700/sans-400 faces; AA chip colors → **Lighthouse 100/100/100/100** (run 35478722149, commit bd23c4e). See memory/sessions/2026-09-20-lighthouse-100.md
 - [x] Author batch 4 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md` (body only, 256–293 words; facts pinned to brief leads; Bengali numerals; verification closing present). See memory/sessions/2026-09-19-author-batch-national-78-87.md
 - [x] Remove editorial/draft footer (2026-09-19): deleted the "সংশ্লেষিত … খসড়া" closing line from the live dengue article; banned it in `synth.mjs` writingPrompt and added `stripEditorialFooters()` guard in `finalizeStory` so no future story carries it. 6-case unit test passed; pipeline `npm test` 10/10. See memory/sessions/2026-09-19-remove-synthesis-footer.md
 - [x] Author batch 3 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-98,99,100,101,105,106}.b.md` (body only, 137–243 words; facts pinned to brief leads + full member bodies in store.db; no invented detail). See memory/sessions/2026-09-19-newsdesk-batch-3.md

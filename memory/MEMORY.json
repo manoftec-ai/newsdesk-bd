@@ -4,8 +4,8 @@
     "project": "newsdesk-bd (Bangla News Synth)",
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
-    "lastUpdated": "2026-09-19",
-    "sessionsCount": 8
+    "lastUpdated": "2026-09-20",
+    "sessionsCount": 9
   },
   "purpose": "Automated Bengali news desk for Bangladesh. Every 30 min, fetch ~12 BD sources, dedupe, cluster same-topic stories, merge part-by-part info into ONE original Bengali article per topic with sources+attribution, publish to static Astro site on Vercel (testing).",
   "user": {
@@ -150,6 +150,30 @@
       "id": "D16",
       "decision": "Site LIVE at https://newsdesk-bd.vercel.app — full Bengali re-skin of QuietPages built on Vercel cloud (Termux noexec/no-symlink + Astro7 satteri missing → no local build). Pagefind indexed 30 pages. All routes 200.",
       "rationale": "Zero-budget; user approved QuietPages; cloud build sidesteps android native-binding wall."
+    },
+    {
+      "date": "2026-09-20",
+      "id": "D30",
+      "decision": "Lighthouse/PageSpeed gate = GH Actions (treosh/lighthouse-ci-action@v12) + lighthouserc.json asserting minScore 1 on performance/SEO/a11y/best-practices (mobile, 3 runs). Google PSI API 429 quota-0 on our network → CI Lighthouse is the repeatable substitute.",
+      "rationale": "User: make it 100/100; PSI quota exhausted unauthenticated"
+    },
+    {
+      "date": "2026-09-20",
+      "id": "D31",
+      "decision": "Ship only 2 webfont faces (Noto Serif Bengali 700 + Hind Siliguri 400), font-display optional, preloaded; other weights synthesized locally. 5 preloaded faces delayed simulated LCP via font-parse render delay (~2.1s).",
+      "rationale": "Observed LCP 290ms but simulated LCP model-bound on fonts; trimmed set → LCP 1.7s perf 100"
+    },
+    {
+      "date": "2026-09-20",
+      "id": "D32",
+      "decision": "WCAG AA chip/badge colors (≥4.5:1), 44px tap targets, landmark/group roles → a11y 100 (color-contrast was the only weighted failure: weight 7/140 = 95%).",
+      "rationale": "Lighthouse LHR analysis"
+    },
+    {
+      "date": "2026-09-20",
+      "id": "D33",
+      "decision": "Fast indexing stack live: news-sitemap.xml (Google News schema), robots +both sitemaps, IndexNow key 59b9d831dc064ecffbbcf0618ce0a97c + pipeline.yml poke, default og-image, theme-color.",
+      "rationale": "User: add xml file for faster index; GSC/Bing verification = user-side"
     }
   ],
   "sources": [
@@ -237,8 +261,10 @@
       "rss.xml",
       "sitemap"
     ],
-    "fonts": "Noto Sans Bengali via fontsource (self-hosted)",
-    "deploy": "Vercel free hobby, git push auto-build"
+    "fonts": "Self-hosted woff2 (2026-09-20): ONLY 2 faces shipped — Noto Serif Bengali 700 (headlines) + Hind Siliguri 400 (body), both preloaded, font-display optional; other weights synthesized by browser (killed simulated-LCP font-parse delay)",
+    "deploy": "Vercel free hobby, git push auto-build",
+    "performanceGate": "GH Actions lighthouse.yml (treosh/lighthouse-ci-action@v12) + lighthouserc.json assert minScore 1 (perf/seo/a11y/bp; mobile, 3 runs). First GREEN 2026-09-20 bd23c4e: 100/100/100/100 median. LCP 1.7s, CLS 0, TBT 0ms.",
+    "indexing": "sitemap.xml + news-sitemap.xml (Google News, robots lists both) + IndexNow key 59b9d831dc064ecffbbcf0618ce0a97c (key file + pipeline.yml poke step)"
   },
   "database": {
     "engine": "SQLite store.db",
@@ -330,7 +356,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "PHASES 5+6 COMPLETE 2026-09-19. extract.mjs (brief builder, 25 briefs -> pipeline/state/briefs) + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue-24h-2-deaths-1232-admissions.md (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources) deployed to Vercel prod, verified on homepage+RSS+sitemap. Article/[slug].astro draft-filter fixed (draft not public). All 7 demo articles removed (re-removed after 19:33 restore; cause unknown). AUTHOR BATCH 1 DONE (2026-09-19): 6 national story bodies -> pipeline/tmp/stories/{national-91,92,93,94,95,97}.b.md, 251-268 words each, facts pinned to brief leads; details in memory/sessions/2026-09-19-author-6-stories.md. AUTHOR BATCH 2 DONE (2026-09-19): 6 mixed-category bodies -> pipeline/tmp/stories/{economy-103,economy-90,entertainment-81,international-96,sports-104,sports-86}.b.md, 197-252 words each. AUTHOR BATCH 3 DONE: {national-98,99,100,101,105,106}. AUTHOR BATCH 4 DONE (2026-09-19): 6 national bodies -> pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md, 256-293 words each, Bengali numerals, verification paragraph closings; details in memory/sessions/2026-09-19-author-batch-national-78-87.md. NEXT: finalize/publish authored bodies (finalizeStory -> draft:false), write remaining 20+ briefs, Phase 7 GH Actions (repo created, workflows live), pagefind/index rebuild automatic via Vercel. FOOTER FIX (2026-09-19): removed the 'সংশ্লেষিত ... খসড়া' closing line from the live dengue article; synth.mjs writingPrompt now forbids editorial/draft footers and finalizeStory strips them (stripEditorialFooters); 6-case unit test + pipeline npm test 10/10 pass; details in memory/sessions/2026-09-19-remove-synthesis-footer.md.",
+  "workInProgress": "SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
@@ -445,16 +471,18 @@
   },
   "testData": "pipeline/tmp/store.db holds 2026-09-19 sample run (refreshable)",
   "nextSteps": [
+    "Report Lighthouse 100/100 + SEO audit + font verdict to user (2026-09-20 outcome: green)",
+    "User-side: Google Search Console + Bing Webmaster for newsdesk-bd.vercel.app (guide already given)",
+    "PNG og-image upgrade (svg default currently live + fine)",
+    "Finalize/publish remaining authored bodies (pipeline/tmp/stories/*.b.md) via synth finalizeStory",
+    "Write remaining verified briefs -> stories (opencode authors), auto-publish via synth draft:false",
     "Add a CI/test guard asserting no site content file contains draft/editorial footer disclaimers (backstop for D25)",
-    "FINALIZE authored bodies (pipeline/tmp/stories/*.b.md incl. national-91,92,93,94,95,97) via synth finalizeStory -> auto-publish draft:false",
-    "Phase 7 SCHEDULER: create public GitHub repo, push pipeline+site+workflows (.github/workflows/pipeline.yml cron */30 + deploy.yml on site push), set VERCEL_TOKEN secret, verify a GH Actions run end-to-end (fetch->...->extract commits state). Requires GitHub token from user.",
-    "Write remaining 24 verified briefs -> stories (opencode authors), auto-publish via synth draft:false.",
-    "Site polish (before expanding): contact email + form target, Google Search Console for newsdesk-bd.vercel.app, real thumbnails (pipeline cover/first photo), Lighthouse 100",
     "Phase 5 provider: llama.cpp local vs gemini free swap — interface ready in synth.mjs",
     "Classify step: raw source category strings -> site's 9 categories (currently keyword-mapped for tiers)",
     "Headless sources (kalerkantho/jugantor/jamuna); dailystar section feeds",
     "Dedupe/cluster/verify threshold calibration on hand-labelled sample",
-    "Watch for 19:33-style demo restore / external sync touching site/src/content/news"
+    "Watch for 19:33-style demo restore / external sync touching site/src/content/news",
+    "Watch cron health (BD sites may block GH runner IPs; some sources slow)"
   ],
   "archived": [
     {
