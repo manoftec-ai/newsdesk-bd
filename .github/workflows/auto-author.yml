@@ -37,19 +37,16 @@ jobs:
         run: npm ci --no-audit --no-fund
         working-directory: pipeline
 
-      - name: Check OPENCODE_API_KEY secret
-        run: |
-          if [ -z "$OPENCODE_API_KEY" ]; then
-            echo "::error::OPENCODE_API_KEY secret is not set. Add it (GitHub > Settings > Secrets) from https://opencode.ai/auth, then re-run."
-            exit 1
-          fi
-        env:
-          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
-
       - name: Install opencode
         run: |
-          curl -fsSL https://opencode.ai/install | bash
+          curl -fsSL https://opencode.ai/install | bash -s -- --version 1.18.31
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      # NOTE: no API key is required. The opencode gateway serves the default free
+      # model (`opencode/big-pickle`) to headless `opencode run` WITHOUT auth —
+      # verified 2026-09-20 keyless from a fresh profile. If the gateway ever
+      # demands auth, set the OPENCODE_API_KEY secret (free, opencode.ai/auth) and
+      # this step will pick it up automatically from the environment.
 
       - name: Author unpublished briefs
         id: author
@@ -58,7 +55,7 @@ jobs:
         run: |
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
-          opencode run --auto --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
+          opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
 Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
 Task:
 1. Read pipeline/state/briefs/*.json and list briefs whose slug does NOT yet have a story in site/src/content/news/ (compare normalized slug).
@@ -77,7 +74,13 @@ Always finish by printing a short summary listing files created."
           if git diff --cached --quiet; then
             echo "no story changes (nothing new or already committed)"
           else
-            git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))"
+            git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))" &&
             git pull --rebase origin main || true
-            git push
+            git push && git push --set-upstream origin main || {
+              echo "push failed — remote moved during authoring; retrying once"
+              git pull --rebase origin main || true
+              git push
+            }
           fi
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
