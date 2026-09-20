@@ -62,11 +62,9 @@ jobs:
           cache: npm
           cache-dependency-path: pipeline/package-lock.json
 
-      - name: Install Bengali fonts (for sharp SVG/WebP brand thumbnails)
+      - name: Point fontconfig at bundled Bengali fonts (no apt)
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-noto-bengali
-          fc-cache -f >/dev/null 2>&1
+          echo "FONTCONFIG_FILE=$GITHUB_WORKSPACE/pipeline/fonts/fontconfig.local.conf" >> "$GITHUB_ENV"
 
       - name: Install pipeline deps
         run: npm ci --no-audit --no-fund

@@ -1,7 +1,7 @@
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
 > Last updated: 2026-09-20
-> Sessions count: 9
+> Sessions count: 10
 
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
@@ -50,6 +50,7 @@
 | 2026-09-20 | D32: Chip/badge colors darkened to WCAG AA (≥4.5:1), tap targets ≥44px (h-11 w-11, gap-6), `role=region/group` for ticker+share, `target-size` green → **a11y 100** (color-contrast was the only weighted failure, weight 7/140 ⇒ 95) | Lighthouse artifact LHRs |
 | 2026-09-20 | D33: Verification — GSC, Bing Webmaster, IndexNow live. news-sitemap.xml (Google News schema), robots lists both sitemaps, key file `site/public/<indexnow-key>.txt` (59b9d831dc064ecffbbcf0618ce0a97c), pipeline.yml pokes IndexNow after each commit | user: "add xml file for faster index" |
 | 2026-09-20 | D34: **Authoring = HYBRID** (would-rather-query answer on 2026-09-20): GH Actions `author.yml` menulis cerita via **free LLM API** (default Gemini 2.5 Flash, provider-agnostic `lib/llm.mjs` + `tools/author_stories.mjs`); opencode tetap utk editing/featured. `images.yml` meng-brand semua thumbnail (mix: foto Openverse bebas-lisensi overlay WebP 1200×675 atau kartu brand; sharp + fonts-noto-bengali di runner; `sharp` ^0.33.5 di pipeline). Ikuti: fetch→verify→extract→finalize→images→deploy semua jalan di cron tanpa Termux | user: "rely on github cause i cant open my termux always… is it possible through github? including authoring and whole publishing" + Q "Hybrid" |
+| 2026-09-20 | D35: **Bundled Bengali fonts, NO apt** — removed `apt-get install fonts-noto-bengali` from `author.yml` + `images.yml`. New GH runner image (ubuntu-24.04 20260907.300) stops locating that package (`E: Unable to locate package → exit 100`), which killed authoring AND images all day 2026-09-20 → **0 posts**. Static TTFs (Noto Sans Bengali Regular/Bold + Noto Serif Bengali Bold, ~600KB, from notofonts.github.io) committed at `pipeline/fonts/` + `fontconfig.local.conf`; workflows export `FONTCONFIG_FILE=$GITHUB_WORKSPACE/pipeline/fonts/fontconfig.local.conf` — sharp/librsvg resolves Bengali from the repo, no system font/apt dependency | runner image drift broke apt package; bundled fonts = deterministic across future image updates; 13 briefs were queued un-authored (international-134, national-122/123/125/126/127/128/130/131/136, sports-129/133) |
 | 2026-09-19 | D13–D17 (earlier lifecycle decisions) | superseded by pipeline+auto publish |
 | 2026-09-19 | D18: Vercel deploy token stored at ~/.config/opencode/.secrets/vercel.env, read via env; kevli never echo | per global protocol |
 
@@ -72,6 +73,7 @@
 - Author workflow: brief JSON → agent writes body-only md to `pipeline/tmp/stories/<slug>.b.md` → `node pipeline/tools/finalize_stories.mjs --site=site/src/content/news` (or with `--site` default = content dir)
 
 ## Work in Progress
+- [x] **GH Actions font outage + fix (2026-09-20)**: new runner image lost `fonts-noto-bengali` in apt → `author.yml` + `images.yml` died at the font step all day → **0 posts published**. Root cause: `E: Unable to locate package fonts-noto-bengali` (exit 100). Fix D35: bundled static TTFs in `pipeline/fonts/` + `fontconfig.local.conf`, workflows export `FONTCONFIG_FILE` (no apt). 13 queued briefs (international-134, national-122/123/125/126/127/128/130/131/136, sports-129/133). See memory/sessions/2026-09-20-gh-actions-font-outage.md
 - [x] SEO/perf/auth (2026-09-20): news-sitemap + robots + IndexNow key & pipeline poke; default OG + theme-color; article JSON-LD `@graph` (NewsArticle + BreadcrumbList); tap-target/aria fixes; font-display optional + only serif-700/sans-400 faces; AA chip colors → **Lighthouse 100/100/100/100** (run 35478722149, commit bd23c4e). See memory/sessions/2026-09-20-lighthouse-100.md
 - [x] Author batch 4 (2026-09-19): 6 national bodies → `pipeline/tmp/stories/{national-78,79,82,84,85,87}.b.md` (body only, 256–293 words; facts pinned to brief leads; Bengali numerals; verification closing present). See memory/sessions/2026-09-19-author-batch-national-78-87.md
 - [x] Remove editorial/draft footer (2026-09-19): deleted the "সংশ্লেষিত … খসড়া" closing line from the live dengue article; banned it in `synth.mjs` writingPrompt and added `stripEditorialFooters()` guard in `finalizeStory` so no future story carries it. 6-case unit test passed; pipeline `npm test` 10/10. See memory/sessions/2026-09-19-remove-synthesis-footer.md

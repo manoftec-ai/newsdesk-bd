@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-20",
-    "sessionsCount": 9
+    "sessionsCount": 10
   },
   "purpose": "Automated Bengali news desk for Bangladesh. Every 30 min, fetch ~12 BD sources, dedupe, cluster same-topic stories, merge part-by-part info into ONE original Bengali article per topic with sources+attribution, publish to static Astro site on Vercel (testing).",
   "user": {
@@ -180,6 +180,12 @@
       "id": "D34",
       "decision": "Authoring = HYBRID: GH Actions author.yml (free API LLM, Gemini 2.5 Flash default) menulis cerita terjadwal + opencode tetap untuk editing/featured. lib/llm.mjs + tools/author_stories.mjs + workflows/author.yml & images.yml; jalur finalizeStory() (footer-guard) tetap dipakai; tanpa LLM_API_KEY = no-op (opencode unchanged).",
       "rationale": "user: always-rely-on-github, cannot keep Termux open; free-tier API default; chose Hybrid over full-swap / keep-local (answer to D-question 2026-09-19)"
+    },
+    {
+      "date": "2026-09-20",
+      "id": "D35",
+      "decision": "Bundled Bengali fonts, NO apt. Removed `apt-get install fonts-noto-bengali` from author.yml + images.yml. Static TTFs committed at pipeline/fonts/ (NotoSansBengali-Regular/Bold + NotoSerifBengali-Bold, ~600KB, notofonts.github.io hinted set) + fontconfig.local.conf; workflows export FONTCONFIG_FILE=$GITHUB_WORKSPACE/pipeline/fonts/fontconfig.local.conf. sharp->librsvg resolves Bengali fonts from the repo.",
+      "rationale": "New ubuntu-24.04 runner image (20260907.300) no longer locates apt package fonts-noto-bengali → exit 100 killed author.yml + images.yml all day 2026-09-20 → 0 posts, 13 briefs queued. Bundled fonts = deterministic across runner image drift."
     }
   ],
   "sources": [
@@ -362,7 +368,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
+  "workInProgress": "GH ACTIONS FONT OUTAGE FIXED 2026-09-20 (D35): runner image drift broke apt fonts-noto-bengali → author.yml+images.yml died all day → 0 posts (13 briefs queued: international-134, national-122/123/125/126/127/128/130/131/136, sports-129/133). Bundled Noto Bengali TTF set in pipeline/fonts/ + fontconfig.local.conf; workflows export FONTCONFIG_FILE; no apt. Re-ran author+images to verify. Details: memory/sessions/2026-09-20-gh-actions-font-outage.md. ---- SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
@@ -497,5 +503,5 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-19"
+  "lastUpdated": "2026-09-20"
 }
