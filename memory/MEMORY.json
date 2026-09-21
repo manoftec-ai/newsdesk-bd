@@ -248,6 +248,12 @@
       "rationale": "user chose Option A (full background on GitHub) from A/B/C; frees the user from hand-authoring history batches in Termux"
     },
     {
+      "id": "D45",
+      "date": "2026-09-21",
+      "decision": "history pack faq must be {q,a} — matches site/news Astro collection schema ([{q,a}] NOT {question,answer})",
+      "rationale": "Schema drift (D44 batch wrote {question,answer}) broke astro deploy — site uses news collection schema from site/src/content.config.js. Now enforced by gate_history_batch.mjs renderArticle round-trip + Astro content-schema exact match so any future batch cannot silently break deploy."
+    },
+    {
       "date": "2026-09-21",
       "id": "D-Q3",
       "title": "source expansion phase",

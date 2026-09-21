@@ -1,3 +1,4 @@
+| D45 | history pack faq MUST be {q,a} — matches Astro site news schema; enforced in gate_history_batch.mjs renderArticle+content-schema check (2026-09-21) | Everest batch used {question,answer} → astro deploy broke (D44) |
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
 > Last updated: 2026-09-21
