@@ -1,6 +1,8 @@
 // tools/finalize_stories.mjs — finalize all pending briefs whose body file exists
-// usage: node tools/finalize_stories.mjs [--site=/path/to/site]
+// usage: node tools/finalize_stories.mjs [--site=/path/to/site] [--max=N]
 // bodyfiles: pipeline/tmp/stories/<slug>.b.md (body only, no front matter)
+// --max=N caps how many stories are finalized per run (newest brief first) so a
+// sudden supply spike can never make one run author/publish an unbounded batch.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { finalizeStory, storyExists } from '../lib/synth.mjs';
@@ -11,8 +13,26 @@ const siteDir = siteArg
   ? resolve(siteArg)
   : resolve(import.meta.dirname, '../../site/src/content/news');
 
+const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
+const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : Infinity;
+
 const bodiesDir = join(import.meta.dirname, '../tmp/stories');
-const bodies = existsSync(bodiesDir) ? readdirSync(bodiesDir).filter((f) => f.endsWith('.b.md')) : [];
+let bodies = existsSync(bodiesDir) ? readdirSync(bodiesDir).filter((f) => f.endsWith('.b.md')) : [];
+
+// Newest brief first, so a capped run always advances the most recent news.
+const briefDate = (f) => {
+  const slug = f.replace(/\.b\.md$/, '');
+  try {
+    return JSON.parse(readFileSync(join(BRIEFS_DIR, `${slug}.json`), 'utf8')).date || '';
+  } catch {
+    return '';
+  }
+};
+bodies.sort((a, b) => String(briefDate(b)).localeCompare(String(briefDate(a))));
+if (bodies.length > max) {
+  console.log(`cap: ${bodies.length} body files -> finalizing newest ${max} this run`);
+  bodies = bodies.slice(0, max);
+}
 
 let finalized = 0, skipped = 0, failed = 0;
 for (const f of bodies) {

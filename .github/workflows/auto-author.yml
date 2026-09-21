@@ -23,7 +23,12 @@ concurrency:
 jobs:
   author:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
+    env:
+      # Hard cap on stories authored/published per run. Guards against a supply
+      # spike (e.g. a source fix) turning one run into an unbounded, very long
+      # batch. Override per-repo with the AUTHOR_MAX_PER_RUN variable.
+      AUTHOR_MAX_PER_RUN: ${{ vars.AUTHOR_MAX_PER_RUN || '6' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -73,9 +78,9 @@ jobs:
           Task:
           1. Read pipeline/state/briefs/*.json and list briefs whose slug does NOT yet have a story in site/src/content/news/ (compare normalized slug).
           2. If there are none, reply 'no unpublished briefs' and stop (exit 0).
-          3. If more than 10 remain, author only the 10 newest by published date and state that the rest remain.
+          3. If more than $AUTHOR_MAX_PER_RUN remain, author only the $AUTHOR_MAX_PER_RUN newest by published date and state that the rest remain.
           4. For each targeted brief, write the Bengali article body only to pipeline/tmp/stories/<slug>.b.md (255-290 words, headlines in Bengali, numerals in Bengali, facts pinned strictly to the brief; end with the verification-confirmation paragraph using sources; NEVER add an editorial/draft footer).
-          5. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news
+          5. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
              (or with --dry-run if DRY_RUN=true).
           6. Do NOT git commit, do NOT push, do NOT touch anything else.
           Always finish by printing a short summary listing files created."
