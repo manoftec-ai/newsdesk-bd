@@ -66,6 +66,18 @@ function validateArticle(a) {
   if (Array.isArray(a.keyPoints)) {
     for (const kp of a.keyPoints) if (latin(kp)) issues.push('Latin letters in keyPoints');
   }
+  // faq must match the SITE'S news schema ({q,a}), not our own invented shape — a
+  // schema drift here (e.g. {question,answer}) silently breaks the Astro build + deploy.
+  if (!Array.isArray(a.faq) || a.faq.length === 0) {
+    issues.push('need >=1 faq item');
+  } else {
+    for (const [i, f] of a.faq.entries()) {
+      if (!f || typeof f.q !== 'string' || typeof f.a !== 'string' || f.q.trim() === '' || f.a.trim() === '') {
+        issues.push(`faq[${i}] must be {q, a} strings (site schema) — got ${JSON.stringify(f)}`);
+      }
+      if (f.question !== undefined || f.answer !== undefined) issues.push(`faq[${i}] uses {question,answer}, site needs {q,a}`);
+    }
+  }
   if (!Array.isArray(a.sources) || a.sources.length < 3) {
     issues.push('need >=3 sources');
   } else {
