@@ -57,6 +57,11 @@ jobs:
             sleep 300
             dispatch auto-author.yml
             sleep 1500
+            # Explicit deploy each cycle: deploy.yml's `workflow_run` trigger ALSO
+            # proved unreliable for heartbeat-dispatched bot runs (site froze at the
+            # 14:53 deploy although auto-author kept pushing new stories). deploy.yml
+            # supports workflow_dispatch, so have the heartbeat publish every cycle.
+            dispatch deploy.yml
           done
           echo "handing off to a fresh heartbeat"
           dispatch heartbeat.yml
