@@ -239,6 +239,13 @@
       "date": "2026-09-21",
       "decision": "D43: Frontmatter YAML title wrap = deploy blocker. Long Bengali title: values in history/auto-authored md must be single-line double-quoted scalars (YAML quoted scalars cannot span lines). Diagnosis: vercel check-run failure -> job log -> js-yaml error with file:line.",
       "context": "4 batch-3 history files (auto-history workflow) broke all deploys for commit 3c320d1 (can not read a block mapping entry). Fixed in 026ee31; all 147 content files validate with local js-yaml now."
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D44",
+      "title": "history-batch.yml — background auto-publish (Option A)",
+      "value": "history-batch.yml: keyless headless opencode authors fact-packs from curated topics.json queue on schedule Tue+Fri 06:00 UTC + dispatch (max_topics in); gate_history_batch.mjs re-validates server-side (schema, no-Latin, >=150-word body, >=3 sources, date, slug collision, curl re-verify all URLs 200 only) before publishing any history-<slug>.md; merge-tolerant commit/push; wired into deploy/images/telegram workflow_run",
+      "rationale": "user chose Option A (full background on GitHub) from A/B/C; frees the user from hand-authoring history batches in Termux"
     }
   ],
   "sources": [
@@ -421,7 +428,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "100-ARTICLE HISTORY ARCHIVE (D42) — DONE ✅ MILESTONE REACHED 2026-09-21: 112 history-*.md live (batches 1–7, 15 per batch). Batch 7 (commit 7f51c68 / pushed 0b5349d, 20 files +1351): election-1970-awami-league-sweep, agartala-conspiracy-case-1968, declaration-of-independence-1971, operation-searchlight-1971, instrument-of-surrender-1971, bangabandhu-return-1972, constitution-1972-adopted, swadhin-bangla-betar-kendra-1971, wall-street-crash-1929, spanish-flu-1918, atomic-bombings-1945, rwanda-genocide-1994, march-on-washington-1963, sputnik-1957, montgomery-bus-boycott-1955. All URLs curl-verified 200 (replaced 403/404: Britannica, archives.gov article pages, LOC, nmaahc, ushmm with live history.com/archives.gov equivalents). Pack source-of-truth: pipeline/state/history/batch7-{a..e}.json; one pack per publish_history.mjs invocation. Batch-6 thumbnails confirmed applied 15/15 (images.yml auto-commit 274e6d4, pulled via rebase); batch-7 thumbnails pending next workflow run. RULE: no Latin [A-Za-z] in body/keyPoints/seoTitle/seoDescription — transliterate names (e.g. A. Philip Randolph → ফিলিপ র্যান্ডলফ; avoid Cyrillic через typo); JSON stringify escapes ignored, check RAW values. Old dates keep history posts off homepage. — CONTINUED opportunistically afterward.",
+  "workInProgress": "See memory/MEMORY.md Work in Progress section (D44).",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
@@ -563,5 +570,6 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-20"
+  "lastUpdated": "2026-09-21",
+  "sessionsCount": 15
 }
