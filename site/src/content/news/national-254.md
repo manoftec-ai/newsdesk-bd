@@ -1,40 +1,46 @@
 ---
-title: "এবার ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেনের পদত্যাগ"
-seoTitle: "এবার ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেনের পদত্যাগ"
-excerpt: "ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন পদত্যাগ করেছেন। রাষ্ট্রের এই শীর্ষ আইনজীবীর পদত্যাগের খবর দুই সংবাদমাধ্যমের প্রতিবেদনে এসেছে। যুগান্তর ও ডেইলি অবজারভারের খবরে বলা হয়েছে, এ"
-seoDescription: "ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন পদত্যাগ করেছেন। রাষ্ট্রের এই শীর্ষ আইনজীবীর পদত্যাগের খবর দুই সংবাদমাধ্যমের প্রতিবেদনে এসেছে। যুগান্তর ও ডেইলি অবজ…"
-date: 2026-09-21T13:01:30.000Z
+title: "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী"
+thumbnail: "/images/national-254.webp"
+thumbnailAlt: "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী — ছবি: প্রথম আলো"
+seoTitle: "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না:…"
+excerpt: "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না বলে জানিয়েছেন জ্বালানি প্রতিমন্ত্রী। প্রথম আলোর খবরে বলা হয়েছে, প্রতিমন্ত্রী বলেছেন, গত মার্চ থেকে আগস্ট পর্যন্ত "
+seoDescription: "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না বলে জানিয়েছেন জ্বালানি প্রতিমন্ত্রী। প্রথম আলোর খবরে বলা হয়েছে, প্রতিমন্ত্রী বলেছেন, গত…"
+date: 2026-09-21T09:54:32.000Z
 category: "national"
-tags: ["transport"]
+tags: ["economy"]
 author: "desk"
 lang: "bn"
 draft: false
 keyPoints: []
 faq: []
 sources:
-  - name: "jugantor"
-    url: "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OOEFDdjVPam5ZUWdzdnpMLVd4ZFdoeFFycFRNTkwxd09SanluLTVHaGhPWnBGbzdZMG05a204am51dGZ5TzlpampXdTg5WXU3azhj?oc=5"
-  - name: "daily-observer"
-    url: "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBxd3FGbVFacGpBX2RlUzVBOGhXZGpwcEdsQm5rQW9vLUNHeENERElfNlZRVTVXdXREZmFzZ3ZuUmk2YkxOTi1ZMU5hSmtmUQ?oc=5"
+  - name: "দৈনিক ইত্তেফাক"
+    url: "https://news.google.com/rss/articles/CBMiywRBVV95cUxNUUEtdlF6cWJwaDcwQWtkZXNJQjJwaHVLVjVsYWx5enM3R0FkM0J0R2ExaEZDSXkzWXpyU1dic2dsNXNuV2xFc2gxNUZpYWFYNGctMGE2Z3dBYy1zdjRGSGJXVHJVYjNXVGZMc2ZlLXplRlE5OEx6b0tnOGNmQXNmQzdBV2NSU2xxWW1HQnVFWWFKeklwQ3hXSTRsQTlZYU5GeERXOWR5YkJiM2UzLXZhUTdUdXdmUnQ0VXd1SHN1R3luOGxfQzlabGFhejduTEQ0b3BiMHhuMFFiNXl3cmVHdmZ5cTF0ZkwyR1JqZ2VIaEZQRldNUE5fZHg1M2hmZlVGVngxSk5nbVB4X3FXQWg5RGhybm5oRUJ3cFlEczBiRkZ5WFljZDRRNnRDa19lNFRZbkJ5N1dtMUM2Mi14SEpUalhBRDBaMERkUzB6MUhlZ1c1Tk12Ym9ObWh4RnhuakhidXNGbVZlVWVUYjNXMkZvV1JvNUF2VmhCS01MTTdzYW1DQl9XQmM2M09KX1lEb29lYUVtU1N0b1daUzZHTmNpVHJveDZreE4yZzVUakI4QTNTMmdQQTdrdmhDaHIwTExob1RKUUVaZDFxdDBpelBRLUtaU3BUaGU3OHI3anYwRzhodUpTM1NnNFJzZkhXWmgzdVBXVTFmc01EaldjT2NWak9rbUV6U3hPbTBnVkhveEFfYm5zb2UyaXNDYTV1ZWF3d1ktenRzV3ZqeE44ZTI2bHZmbzVRX09sR2t2WUhSU2NHejZ6OERXMEFRQdIB0ARBVV95cUxPMFNBTzltQUVHangweDhEZUpUaU1GVkVwbjhzMjc2LTRCQ2ZsZENndWpuOEE5OEZTWEZrTkxjM2pvcnFqZ1RrWnJOcC1JLXFNZjdzdWhXVHY2anVVenRxeFJZbERkZDFhaVRFOGZVNzBkX3NIXzNzcU1VelVoR1RsSXFaUDVEaUxqdlFvTEVXR2JSUVdzTS1aSFRiWWV4WEM2UnRoUm81ZG1HLTdNU240NWdfWUpUbFZnT3FsaW5tdmREcXd4d0doUkhaM292Z0NBc3V1TDVhWGVObk9lTkZWZFBEQVpnTFBoTmtSelB5czhKd29KTzVtZjlGcWFWd0VPM1U0VmJBNEZoMUtUcTZjdHczaHQzbW9KWmJTT2E2dGVucWR4cENkeGdkSGFwSzQ3SWZMdlhab3MxMU1QeFg1dnY2Vnc3S195b01kZnpaOEtpcEhGZ2s0cG9wWkwxaUpfNGhwLThIOGZiUU1JYnhaNEJRX0FhX3h4VUNBYS1KQXJkRDB6U18yQ0pfZ1luWFc0bU03dDJSRWl6R0FyZ1FyZXBKbkRGM2JfLWNTTjNLRHhFd001ZHVtRldtUnBQWkxfbUFmMGNKb1pNZG9yMGo5UXVldTZiaTJEcVpaaXhOQVZJbzlwdXppb1FualUwRUY3Y2Z3SXk0U0Z0TmhYS1czaW1lWU9rWlRmdFcxbDhldGc1SGNDemNDY180RGdmbTBGM0l2dUZfS0Y3TXBhRVFEYUMyb1ZPU0F2YTdrcnRnWWhJTWxIMUdfRll4REtyd2dP?oc=5"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/xzcs9z7jwg"
+  - name: "দৈনিক ইত্তেফাক"
+    url: "https://news.google.com/rss/articles/CBMiswRBVV95cUxOVEN0X0pNbkt0dFRoakVpVkgteUdiVzlId2RzOWxnTWV2U3djYnJ3WW5vNzdxOXJCOUVoRHg0cExLSW9hTFlTMkludVBQemJUUUswRUZwZG4yWTBwWldfWWJFR09tYmdBZFpNYzkweFRPejRFcjFTTUI3YXowdUhnY2h4MjgzNmlXbFNpVHN1eS1fVXdyTHQ2dEVTNGhPZ1RIU0lwczdsa21lSkxxbHJoanhPWnlBTjZnelY0dWNLdXJKTm1tcFZhOEIteTdweXB4RDl0T1BiWHo2LTV3d2tyUXFMM0ZTU3dCNGtsb2V1V0ZybWJ5ZEZ3YUp0ZGVZZmxqdGRMamlxRzVuQWpvdUlwMk00TlZCX0ZKZ1NFUUdycThXWHZybDJLMFJ6MDRIY01ibWE0VVd0c3cxekFYRUl2X3Zwc29fV2hMU3dSd2plcDBFOUFvdVhHazJWTWlTTDR4RzRiUGtEbzJPOVRoUnBHb3ZVR3NDZEVYR2puSGpCOEFsaGQ2THZSbERJMWN5N1VmeTBJSEl2VGoyUFdWRW9Lb0ZQaGVRQlVja0hacmY1OHN4cWZDQm11VWNSeHluTGs1Qk9yOWJjRk5XMGlrMncwNmtuWXRselRjdTFMZ29qODFLeGRKV1JFZ3VHOVA0VFdYbmFHWjBtM2dZa0FpZEJHUy0tTDNHQVdZZXB4MWtueDg5OGZRVEZZWHhSRUxCMlF5YnQtSjBybjRHbXk3c3ZyaGU3SQ?oc=5"
 verification:
   badge: "confirmed"
   tier: "A"
   score: 4
   evidence:
     - type: "paper"
-      label: "reputable paper corroboration (jugantor)"
+      label: "reputable paper corroboration (prothomalo)"
     - type: "paper"
-      label: "reputable paper corroboration (daily-observer)"
+      label: "reputable paper corroboration (ittefaq)"
 ---
 
-ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন পদত্যাগ করেছেন। রাষ্ট্রের এই শীর্ষ আইনজীবীর পদত্যাগের খবর দুই সংবাদমাধ্যমের প্রতিবেদনে এসেছে। যুগান্তর ও ডেইলি অবজারভারের খবরে বলা হয়েছে, এবার ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেনের পদত্যাগের ঘটনা ঘটেছে। পদত্যাগের এ খবরকে রাষ্ট্রীয় আইনি কাঠামোয় নতুন সংকেত হিসেবে দেখছেন সংশ্লিষ্টদের একাংশ।
+জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না বলে জানিয়েছেন জ্বালানি প্রতিমন্ত্রী। প্রথম আলোর খবরে বলা হয়েছে, প্রতিমন্ত্রী বলেছেন, গত মার্চ থেকে আগস্ট পর্যন্ত জ্বালানি তেলে ২২ হাজার ৮৭৫ কোটি টাকা লোকসান হয়েছে। দাম সমন্বয়ের পরও প্রতি লিটার ডিজেলে ৭০ টাকা লোকসান হচ্ছে বলে জানান তিনি।
 
-যুগান্তরের প্রতিবেদনের শিরোনামে বলা হয়েছে, এবার ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেনের পদত্যাগ। ডেইলি অবজারভারের খবরে বলা হয়েছে, পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন। দুই সংবাদমাধ্যমই ডেপুটি অ্যাটর্নি জেনারেলের পদত্যাগের ঘটনা নিশ্চিত করেছে। এর আগেও অ্যাটর্নি জেনারেল অফিসের শীর্ষ পর্যায়ে পদত্যাগের ঘটনা ঘটেছিল বলে 'এবার' শব্দটি ব্যবহার করে ইঙ্গিত দিয়েছে যুগান্তর।
+দৈনিক ইত্তেফাকের প্রতিবেদনেও একই তথ্য গুরুত্বের সঙ্গে উঠে এসেছে। সেখানেও বলা হয়েছে, জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে অন্য কোনো বিকল্প ছিল না। অব্যাহত লোকসানের হিসাবের কারণেই মূল্য সমন্বয়ের এই সিদ্ধান্ত নিতে হয়েছে বলে প্রতিমন্ত্রীর বক্তব্যে এসেছে।
 
-ডেপুটি অ্যাটর্নি জেনারেলের পদত্যাগের কারণ কী এবং আনুষ্ঠানিকভাবে কার কাছে পদত্যাগপত্র জমা দেওয়া হয়েছে, এ বিষয়ে প্রতিবেদনগুলোতে বিস্তারিত তথ্য জানানো হয়নি। তবে রাষ্ট্রের সিনিয়র আইনজীবীদের এমন পদত্যাগ আদালতের কার্যক্রম ও গুরুত্বপূর্ণ মামলার কৌশলে পরিবর্তন আনতে পারে বলে ধারণা করা হচ্ছে। এই পদত্যাগ নিয়ে আইনি মহলে নানা আলোচনা চলছে।
+মূল্য সমন্বয়ের প্রেক্ষাপটে প্রতিমন্ত্রীর এই হিসাব এবারের ঘোষণার সঙ্গে যুক্ত হয়েছে। তাঁর দেওয়া তথ্য অনুযায়ী, গত ছয় মাসের ব্যবধানে জ্বালানি খাতে রাষ্ট্রীয় যে ক্ষতি হয়েছে, তা সামলানোর পথই ছিল দাম বাড়ানো। আন্তর্জাতিক বাজারের চাপের কারণে এই সমন্বয় অনিবার্য হয়ে পড়েছিল বলে তাঁর বক্তব্য থেকে বোঝা যায়।
 
-পদত্যাগের পর বেলায়েত হোসেনের পরবর্তী ভূমিকা কী হবে এবং তাঁর স্থানে কে দায়িত্ব নেবেন, তা এখনো স্পষ্ট নয়। অ্যাটর্নি জেনারেল অফিসে দায়িত্বরত কর্মকর্তাদের মধ্যে এমন পদত্যাগ সরকারি মামলার পরিচালনায় নতুন করে নজর কেড়েছে। দুই সংবাদমাধ্যম প্রকাশিত তথ্যের বাইরে পদত্যাগের আনুষ্ঠানিক কারণ ও পটভূমি নিয়ে কোনো বিবরণ দেয়নি, তাই আপাতত পাওয়া তথ্য অনুযায়ীই পদত্যাগের খবরটি সংক্ষিপ্তভাবে নথিভুক্ত হয়েছে।
+তবে দাম বাড়ানোর পরও লোকসানের হিসাব মেলেনি। বিশেষ করে ডিজেলের ক্ষেত্রে প্রতি লিটারে এখনো ৭০ টাকা পর্যন্ত ক্ষতি বহন করতে হচ্ছে বলে প্রতিমন্ত্রী জানিয়েছেন। এ পরিস্থিতিতে ভবিষ্যতে আরও সমন্বয়ের প্রয়োজন পড়তে পারে; তবে এ মুহূর্তে এ নিয়ে সরকারের পক্ষ থেকে নতুন করে কিছু জানানো হয়নি।
 
-রাষ্ট্রপক্ষের আইনজীবীদের মধ্যে ডেপুটি অ্যাটর্নি জেনারেল অন্যতম গুরুত্বপূর্ণ পদ। এমন পদে দায়িত্বরত আইনজীবীর পদত্যাগ মামলা পরিচালনায় অস্থিরতা তৈরি করতে পারে বলে সংশ্লিষ্ট মহলের ধারণা। অ্যাটর্নি জেনারেলের কার্যালয়ের সম্ভাব্য নতুন পদক্ষেপ ও পদত্যাগের কারণ জানতে আগ্রহ বাড়ছে। এই বিষয়ে অফিসিয়াল কোনো বক্তব্য প্রকাশ না হওয়া পর্যন্ত প্রতিবেদনগুলোতে উপস্থাপিত তথ্যকেই নির্ভরযোগ্য বলে ধরে নেওয়া হয়েছে।
+সাম্প্রতিক জ্বালানি তেলের দাম সমন্বয় নিয়ে দেশজুড়ে আলোচনা চলছে। সাধারণ মানুষের কাছে এ সিদ্ধান্ত কেন নেওয়া হল, তা কয়েকটি প্রশ্নের উদ্রেক করে। প্রতিমন্ত্রীর এই বক্তব্য সেই প্রশ্নগুলোর একটি উত্তরের চেষ্টা বলেই গণমাধ্যমের খবরে এটিকে গুরুত্ব দেওয়া হয়েছে।
 
-এই খবরটির তথ্য যুগান্তর ও ডেইলি অবজারভারের প্রতিবেদন মিলিয়ে যাচাই করা হয়েছে।
+এখন দেখার বিষয়, এই সমন্বয়ের পরে বাজারে তেলের দাম কতটা কার্যকরভাবে প্রতিফলিত হয়। একই সঙ্গে লোকসানের যে চিত্র প্রতিমন্ত্রী দিয়েছেন, তা সরকারের পরবর্তী কোনো সিদ্ধান্তে আবার ভূমিকা রাখে কি না, সেদিকে নজর রাখছে সংশ্লিষ্ট মহল।
+
+এই খবরটি প্রথম আলো ও দৈনিক ইত্তেফাকের প্রতিবেদন মিলিয়ে যাচাই করা হয়েছে।
