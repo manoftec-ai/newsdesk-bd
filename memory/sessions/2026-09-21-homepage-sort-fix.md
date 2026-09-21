@@ -32,3 +32,18 @@ After the heartbeat fix, user still reported no new news on the site.
 ## Open
 - Confirm after deploy that the homepage top items are the newest by timestamp.
 - Backlog (21 unpublished briefs) draining at ≤6/run via the heartbeat chain.
+
+---
+
+## Follow-up: missing article image (D-Q9)
+- User: `/article/sports-255` missing image.
+- sports-255.md had no `thumbnail:` and no `site/public/images/sports-255.webp`.
+- `images.yml` last ran 14:24; sports-255 published ~14:36 (commit `dafa4bd`), sports-253 and
+  national-257 also unthumbnailed.
+- Cause: `images.yml`'s `workflow_run: [auto-author, watcher, pipeline, history-batch]` trigger did
+  NOT fire for the auto-author runs the heartbeat dispatches (no images run after 14:24 despite
+  auto-author completing 14:36 and 14:50). The workflow file itself is correct.
+- Fix: (a) manual `workflow_dispatch` of `images.yml` → commit `a999858` (sports-255/253, national-257
+  branded, live 200); (b) `heartbeat.yml` now also dispatches `images.yml` every cycle → `feaba1f`.
+  New heartbeat run (feaba1f) in_progress; old (6910e26) cancelled by concurrency.
+- images.yml is a catch-up pass (brands every article missing a thumbnail) → safe to run every 30 min.
