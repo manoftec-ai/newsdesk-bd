@@ -55,6 +55,11 @@ jobs:
           node run.js verify || true
           node run.js extract || true
 
+      - name: Select newest unpublished briefs (deterministic)
+        working-directory: pipeline
+        run: |
+          node tools/pick_briefs.mjs --max="$AUTHOR_MAX_PER_RUN" --out=state/pick.json
+
       - name: Install opencode
         run: |
           curl -fsSL https://opencode.ai/install | bash -s -- --version 1.18.31
@@ -76,13 +81,21 @@ jobs:
           opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
           Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
           Task:
-          1. Read pipeline/state/briefs/*.json and list briefs whose slug does NOT yet have a story in site/src/content/news/ (compare normalized slug).
-          2. If there are none, reply 'no unpublished briefs' and stop (exit 0).
-          3. If more than $AUTHOR_MAX_PER_RUN remain, author only the $AUTHOR_MAX_PER_RUN newest by published date and state that the rest remain.
-          4. For each targeted brief, write the Bengali article body only to pipeline/tmp/stories/<slug>.b.md (255-290 words, headlines in Bengali, numerals in Bengali, facts pinned strictly to the brief; end with the verification-confirmation paragraph using sources; NEVER add an editorial/draft footer).
-          5. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
+          1. Read pipeline/state/pick.json (written by pick_briefs.mjs — the
+             newest unpublished briefs, pre-computed and sorted by published date).
+             Author a story for EXACTLY the slugs in its 'picked' array. Never
+             substitute, add, or skip any of them.
+          2. If 'picked' is empty (or the file is missing), reply 'no unpublished
+             briefs' and stop (exit 0).
+          3. For each targeted slug, read its brief <slug>.json under
+             pipeline/state/briefs/ for the facts, then write the Bengali article
+             body only to pipeline/tmp/stories/<slug>.b.md (255-290 words,
+             headlines in Bengali, numerals in Bengali, facts pinned strictly to the
+             brief; end with the verification-confirmation paragraph using sources;
+             NEVER add an editorial/draft footer).
+          4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
              (or with --dry-run if DRY_RUN=true).
-          6. Do NOT git commit, do NOT push, do NOT touch anything else.
+          5. Do NOT git commit, do NOT push, do NOT touch anything else.
           Always finish by printing a short summary listing files created."
 
       - name: Stage and push drafted stories
