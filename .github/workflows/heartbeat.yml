@@ -6,9 +6,14 @@ name: heartbeat
 # so the whole news desk sat idle for hours and produced no new stories.
 #
 # This heartbeat does NOT depend on schedule reliability. Once started, it keeps a
-# small runner alive and EXPLICITLY dispatches `pipeline.yml` (which in turn triggers
-# `auto-author.yml` via workflow_run) every 30 minutes. Before GitHub's 6-hour job
-# limit it dispatches a fresh copy of itself, so the chain is self-sustaining.
+# small runner alive and EXPLICITLY dispatches `images.yml` + `pipeline.yml` +
+# `auto-author.yml` every 30 minutes. Before GitHub's 6-hour job limit it dispatches
+# a fresh copy of itself, so the chain is self-sustaining.
+#
+# NOTE: `images.yml` is dispatched here directly because its `workflow_run` trigger
+# proved unreliable for heartbeat-dispatched runs — articles published after the last
+# images run were left without thumbnails (e.g. sports-255). images.yml is a catch-up
+# pass (brands every article missing a thumbnail), so running it each cycle is safe.
 # The `schedule` entries below are only a cold-start backup for the chain.
 
 on:
@@ -47,6 +52,7 @@ jobs:
           }
           for i in 1 2 3 4 5 6; do
             echo "--- cycle $i ---"
+            dispatch images.yml
             dispatch pipeline.yml
             sleep 300
             dispatch auto-author.yml
