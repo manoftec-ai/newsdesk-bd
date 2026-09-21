@@ -329,6 +329,13 @@
       "title": "heartbeat poll-based handoff so new stories reach the live homepage within one 30-min cycle",
       "value": "heartbeat.yml rewritten: each cycle dispatches images+pipeline, POLLS the pipeline run until completed (node poller), dispatches auto-author, POLLS until completed, dispatches deploy.yml, then pads to a 30-min cycle; 5 cycles then hands off to a fresh heartbeat; new heartbeat run 35633041595 dispatched 17:35, old one auto-cancelled",
       "rationale": "user wants the homepage to show new news every 30 minutes (if available) while keeping the strict 2-source gate; old fixed 300s sleep dispatched auto-author before pipeline finished pushing, so auto-author always read a full cycle of stale briefs; polling fixes the handoff latency"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q14",
+      "title": "duplicate-title articles (same story published many times) fixed at the source",
+      "value": "added pipeline/lib/published.mjs (normTitle / loadPublishedTitles / isTitleDuplicate, exact normalized-title match within 72h) and wired it into extract.mjs, pick_briefs.mjs and finalize_stories.mjs so no duplicate brief/pick/article is ever written again; removed 22 duplicate articles + thumbnails + stale briefs (kept first-published copy); live verified (politics-277/278 404, one story per headline)",
+      "rationale": "re-clustered events produced new briefs with identical headlines (NCP protest -> politics-273/277/278/282, Saifuddin -> sports-255/257/258) which auto-author re-published; the dedup must live in the pipeline, not rely on humans"
     }
   ],
   "sources": [
