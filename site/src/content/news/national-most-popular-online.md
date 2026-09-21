@@ -1,5 +1,7 @@
 ---
 title: "Most Popular Online Newportal in Bangladesh"
+thumbnail: "/images/national-most-popular-online.webp"
+thumbnailAlt: "Most Popular Online Newportal in Bangladesh — ছবি: Silver Blu3 (BY-SA)"
 seoTitle: "Most Popular Online Newportal in Bangladesh"
 excerpt: "দেশের জনপ্রিয় অনলাইন সংবাদপত্র ও টেলিভিশন চ্যানেল নিয়ে খবর প্রকাশ করেছে দুই সংবাদমাধ্যম। ডেইলি অবজারভার দেশের জনপ্রিয় অনলাইন সংবাদপত্র নিয়ে এবং জামুনা টেলিভিশন দেশের জনপ্রিয় ট"
 seoDescription: "দেশের জনপ্রিয় অনলাইন সংবাদপত্র ও টেলিভিশন চ্যানেল নিয়ে খবর প্রকাশ করেছে দুই সংবাদমাধ্যম। ডেইলি অবজারভার দেশের জনপ্রিয় অনলাইন সংবাদপত্র নিয়ে এবং জামুনা…"
