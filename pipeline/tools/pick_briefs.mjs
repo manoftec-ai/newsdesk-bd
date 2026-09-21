@@ -9,6 +9,7 @@
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
+import { loadPublishedTitles, isTitleDuplicate } from '../lib/published.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -23,20 +24,30 @@ const outPath = outArg
   ? resolve(outArg)
   : resolve(import.meta.dirname, '../state/pick.json');
 
+const publishedTitles = loadPublishedTitles(siteDir);
+
 const briefs = readdirSync(BRIEFS_DIR)
   .filter((f) => f.endsWith('.json'))
   .map((f) => {
     const slug = f.replace(/\.json$/, '');
-    let date = '';
+    let date = '', headline = '';
     try {
-      date = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8')).date || '';
+      const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
+      date = j.date || '';
+      headline = j.headline || '';
     } catch {
-      // unreadable brief -> treat as no-date, never first.
+      // unreadable brief -> treat as no-date/headline, never first.
     }
-    return { slug, date, published: existsSync(join(siteDir, `${slug}.md`)) };
+    return {
+      slug,
+      date,
+      headline,
+      published: existsSync(join(siteDir, `${slug}.md`)),
+      titleDup: isTitleDuplicate(headline, date, publishedTitles),
+    };
   });
 
-const pending = briefs.filter((b) => !b.published);
+const pending = briefs.filter((b) => !b.published && !b.titleDup);
 pending.sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.slug.localeCompare(b.slug));
 
 const picked = pending.slice(0, max);
@@ -51,6 +62,7 @@ if (picked.length) {
     ),
   );
 }
-console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date) -> ${outPath}`);
+const dupCount = briefs.filter((b) => b.titleDup).length;
+console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
 for (const p of picked) console.log(`  ${p.date || 'no-date'}  ${p.slug}`);
 if (!picked.length) console.log('  -> no unpublished briefs');

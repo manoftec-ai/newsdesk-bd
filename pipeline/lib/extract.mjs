@@ -7,6 +7,7 @@ import { resolve, dirname, join } from 'node:path';
 import { openDb } from './db.mjs';
 import { loadConfig, tierForCategory } from './config.mjs';
 import { loadTrust } from './verify.mjs';
+import { loadPublishedTitles, isTitleDuplicate } from './published.mjs';
 
 export const BRIEFS_DIR = resolve(import.meta.dirname, '../state/briefs');
 
@@ -142,15 +143,17 @@ export function exportBriefs({ status = 'passed' } = {}) {
     ? db.prepare(`SELECT v.cluster_id FROM verdicts v JOIN clusters c ON c.id=v.cluster_id WHERE v.status=?`).all('passed')
     : db.prepare(`SELECT v.cluster_id FROM verdicts v`).all();
   mkdirSync(BRIEFS_DIR, { recursive: true });
-  let written = 0, skipped = 0;
+  const published = loadPublishedTitles(resolve(import.meta.dirname, '../../site/src/content/news'));
+  let written = 0, skipped = 0, dups = 0;
   for (const { cluster_id } of query) {
     const brief = buildBrief(cluster_id, { db });
     if (!brief || !brief.verdict) { skipped++; continue; }
+    if (isTitleDuplicate(brief.headline, brief.date, published)) { dups++; continue; }
     const f = join(BRIEFS_DIR, `${brief.slug}.json`);
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');
     written++;
   }
-  console.log(`extract done. briefs written=${written} skipped=${skipped} dir=${BRIEFS_DIR}`);
+  console.log(`extract done. briefs written=${written} skipped=${skipped} title-dups=${dups} dir=${BRIEFS_DIR}`);
   return written;
 }
 
