@@ -23,6 +23,7 @@ export const normalizePost = (entry) => ({
   ...entry.data,
   date: isoDate(entry.data.date),
   updated: isoDate(entry.data.updated),
+  ts: entry.data.date ? entry.data.date.getTime() : 0,
   readingTime: entry.data.readingTime ?? estimateReadingTime(entry.body),
 });
 
@@ -52,7 +53,7 @@ export const postsByAuthor = async (slug) =>
   (await sortedPosts()).filter((post) => post.author === slug);
 
 export const sortedPosts = async () =>
-  [...(await posts())].sort((a, b) => (a.date < b.date ? 1 : -1));
+  [...(await posts())].sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0));
 
 export const featuredPost = async () => {
   const sorted = await sortedPosts();
