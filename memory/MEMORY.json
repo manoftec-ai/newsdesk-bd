@@ -246,6 +246,20 @@
       "title": "history-batch.yml — background auto-publish (Option A)",
       "value": "history-batch.yml: keyless headless opencode authors fact-packs from curated topics.json queue on schedule Tue+Fri 06:00 UTC + dispatch (max_topics in); gate_history_batch.mjs re-validates server-side (schema, no-Latin, >=150-word body, >=3 sources, date, slug collision, curl re-verify all URLs 200 only) before publishing any history-<slug>.md; merge-tolerant commit/push; wired into deploy/images/telegram workflow_run",
       "rationale": "user chose Option A (full background on GitHub) from A/B/C; frees the user from hand-authoring history batches in Termux"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q3",
+      "title": "source expansion phase",
+      "value": "added 7 probe-verified RSS sources to pipeline/config/sources.yaml",
+      "rationale": "root cause of no-new-news = content-supply gap; 3 headless sources un-fetchable on GH runner; Google News proxy rejected for poor quality"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q4",
+      "title": "headless stay deferred",
+      "value": "kalerkantho/jugantor/jamuna remain method:headless, not in active set",
+      "rationale": "no browser step in pipeline.yml; Google News RSS site: proxy returns redirect links + epaper junk"
     }
   ],
   "sources": [
@@ -571,5 +585,5 @@
     }
   ],
   "lastUpdated": "2026-09-21",
-  "sessionsCount": 15
+  "sessionsCount": 16
 }
