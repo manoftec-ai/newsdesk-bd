@@ -1,5 +1,7 @@
 ---
 title: "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+thumbnail: "/images/national-36-missing-children.webp"
+thumbnailAlt: "36 missing children’s bodies recovered in 8 months, 26 killed after rape — ছবি: ||-SAM Nasim-|| (BY)"
 seoTitle: "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
 excerpt: "জানুয়ারি থেকে জুলাই পর্যন্ত আট মাসে ৩৬ শিশুর মরদেহ উদ্ধার হয়েছে; এর মধ্যে ২৬ জন ধর্ষণের শিকার হওয়ার পর নিহত হয়েছেন। শিশু নিরাপত্তা নিয়ে গভীর উদ্বেগ প্রকাশ করেছে আইন ও সালিশ কে"
 seoDescription: "জানুয়ারি থেকে জুলাই পর্যন্ত আট মাসে ৩৬ শিশুর মরদেহ উদ্ধার হয়েছে; এর মধ্যে ২৬ জন ধর্ষণের শিকার হওয়ার পর নিহত হয়েছেন। শিশু নিরাপত্তা নিয়ে গভীর উদ্বেগ প…"

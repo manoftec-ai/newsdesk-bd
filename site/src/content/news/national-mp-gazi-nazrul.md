@@ -1,5 +1,7 @@
 ---
 title: "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+thumbnail: "/images/national-mp-gazi-nazrul.webp"
+thumbnailAlt: "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban — ছবি: Silver Blu3 (BY-SA)"
 seoTitle: "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
 excerpt: "রাজধানীর ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) ঝুলন্ত মরদেহ উদ্ধার করেছে পুলিশ। রবিবার রাতে সংসদ স"
 seoDescription: "রাজধানীর ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) ঝুলন্ত মরদেহ উদ্ধার করেছে…"

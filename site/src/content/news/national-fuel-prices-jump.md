@@ -1,5 +1,7 @@
 ---
 title: "Fuel prices jump by up to Tk20 a litre"
+thumbnail: "/images/national-fuel-prices-jump.webp"
+thumbnailAlt: "Fuel prices jump by up to Tk20 a litre — ছবি: ||-SAM Nasim-|| (BY)"
 seoTitle: "Fuel prices jump by up to Tk20 a litre"
 excerpt: "আন্তর্জাতিক বাজারে জ্বালানি তেলের দাম ও পরিবহন খরচ বেড়ে যাওয়ায় দেশে ডিজেল, কেরোসিন, অকটেন ও পেট্রল—চার ধরনের জ্বালানি তেলের দাম লিটারপ্রতি ২০ টাকা পর্যন্ত বাড়িয়েছে সরকার। নতুন"
 seoDescription: "আন্তর্জাতিক বাজারে জ্বালানি তেলের দাম ও পরিবহন খরচ বেড়ে যাওয়ায় দেশে ডিজেল, কেরোসিন, অকটেন ও পেট্রল—চার ধরনের জ্বালানি তেলের দাম লিটারপ্রতি ২০ টাকা পর্য…"
