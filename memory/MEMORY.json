@@ -294,6 +294,13 @@
       "title": "fix: homepage latest list not newest-first (same-day sort bug)",
       "value": "site/src/lib/news-data.js normalizePost now adds ts=entry.data.date.getTime(); sortedPosts sorts by (b.ts-a.ts) instead of comparing day-truncated date strings; commit 02e333e",
       "rationale": "date was truncated to YYYY-MM-DD so same-day articles could not be ordered, making hero/latest show arbitrary older stories and hiding freshly published news"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q9",
+      "title": "missing thumbnails: images workflow not triggered by heartbeat-dispatched auto-author",
+      "value": "manually ran images.yml (commit a999858) to brand sports-255/sports-253/national-257; added dispatch images.yml to every heartbeat cycle (commit feaba1f)",
+      "rationale": "images.yml workflow_run trigger did not fire for auto-author runs dispatched by the heartbeat, so post-14:24 articles had no thumbnail; images.yml is an idempotent catch-up pass so dispatching it each cycle is safe"
     }
   ],
   "sources": [
