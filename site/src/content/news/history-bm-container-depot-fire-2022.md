@@ -3,11 +3,8 @@ title: "২০২২ সালে সীতাকুণ্ডের বিএম
 thumbnail: "/images/history-bm-container-depot-fire-2022.webp"
 thumbnailAlt: "২০২২ সালে সীতাকুণ্ডের বিএম কনটেইনার ডিপো আগুন: ভুল লেবেলের রাসায়নিক ও ৪৯ প্রাণহানি — ছবি: The Daily Star — 49 deaths and counting (2022)"
 seoTitle: "বিএম কনটেইনার ডিপো বিস্ফোরণ (২০২২): হাইড্রোজেন পারক্সাইডের আগুনে ৪৯ মৃত্যু"
-seoDescription: ২০২২ সালের ৪ জুন রাতে চট্টগ্রামের সীতাকুণ্ডে বিএম কনটেইনার
-  ডিপোতে ভয়াবহ আগুন ও বিস্ফোরণে অন্তত ৪৯ জন নিহত হন; হাইড্রোজেন পারক্সাইডে
-  পানিতে নেভানোর চেষ্টা বিস্ফোরণ বাড়ায়।
-excerpt: ২০২২ সালের ৪ জুন রাতে সীতাকুণ্ডের বিএম কনটেইনার ডিপোতে আগুন লেগে ভয়াবহ
-  বিস্ফোরণ হয়; অন্তত ৪৯ জন প্রাণ হারান, যাদের ৯ জন দমকলকর্মী।
+seoDescription: ২০২২ সালের ৪ জুন রাতে চট্টগ্রামের সীতাকুণ্ডে বিএম কনটেইনার ডিপোতে ভয়াবহ আগুন ও বিস্ফোরণে অন্তত ৪৯ জন নিহত হন; হাইড্রোজেন পারক্সাইডে পানিতে নেভানোর চেষ্টা বিস্ফোরণ বাড়ায়।
+excerpt: ২০২২ সালের ৪ জুন রাতে সীতাকুণ্ডের বিএম কনটেইনার ডিপোতে আগুন লেগে ভয়াবহ বিস্ফোরণ হয়; অন্তত ৪৯ জন প্রাণ হারান, যাদের ৯ জন দমকলকর্মী।
 date: 2022-06-04
 category: history
 tags:
@@ -20,24 +17,18 @@ draft: false
 corrected: false
 keyPoints:
   - ৪ জুন ২০২২ রাত প্রায় ৯টায় সীতাকুণ্ডের বিএম ইনল্যান্ড কনটেইনার ডিপোতে আগুন
-  - হাইড্রোজেন পারক্সাইডের কনটেইনার ভুল লেবেল করা ছিল; পানিতে নেভাতে গিয়ে
-    বিস্ফোরণ
-  - অন্তত ৪৯ জন নিহত — ৯ জন দমকলকর্মীসহ; আহত প্রায় ৩০০; কনটেইনার ৫০০ ফুট উড়ে
-    যায়
+  - হাইড্রোজেন পারক্সাইডের কনটেইনার ভুল লেবেল করা ছিল; পানিতে নেভাতে গিয়ে বিস্ফোরণ
+  - অন্তত ৪৯ জন নিহত — ৯ জন দমকলকর্মীসহ; আহত প্রায় ৩০০; কনটেইনার ৫০০ ফুট উড়ে যায়
   - ২৪ ঘণ্টার বেশি আগুন জ্বলে; তদন্তে ডিপোতে নিরাপত্তা পরিকল্পনার অভাব ধরা পড়ে
 faq:
   - q: বিস্ফোরণ এত বড় হলো কেন?
-    a: ভুল লেবেল করা হাইড্রোজেন পারক্সাইড কনটেইনে ফায়ারফাইটাররা পানি ঢেলে দেন; তা
-      অক্সিডাইজিং রাসায়নিকের সঙ্গে বিক্রিয়া করে বিশাল বিস্ফোরণ ঘটায়।
+    a: ভুল লেবেল করা হাইড্রোজেন পারক্সাইড কনটেইনে ফায়ারফাইটাররা পানি ঢেলে দেন; তা অক্সিডাইজিং রাসায়নিকের সঙ্গে বিক্রিয়া করে বিশাল বিস্ফোরণ ঘটায়।
   - q: নিহতদের মধ্যে কারা ছিলেন?
-    a: শ্রমিক ও দমকলকর্মী; দমকলকর্মী সংখ্যা অন্তত ৯। আহতদের অনেকে দগ্ধ; গুরুতরদের
-      ঢাকায় স্থানান্তর করা হয়।
+    a: শ্রমিক ও দমকলকর্মী; দমকলকর্মী সংখ্যা অন্তত ৯। আহতদের অনেকে দগ্ধ; গুরুতরদের ঢাকায় স্থানান্তর করা হয়।
 sources:
-  - name: The Guardian — At least 49 killed and hundreds injured in Bangladesh depot
-      fire (2022)
+  - name: The Guardian — At least 49 killed and hundreds injured in Bangladesh depot fire (2022)
     url: https://www.theguardian.com/world/2022/jun/04/five-killed-and-at-least-100-injured-in-bangladesh-depot-fire
-  - name: BBC News — Bangladesh officials say depot fire exacerbated by mislabelled
-      chemicals (2022)
+  - name: BBC News — Bangladesh officials say depot fire exacerbated by mislabelled chemicals (2022)
     url: https://www.bbc.com/news/world-asia-61702868
   - name: The Daily Star — 49 deaths and counting (2022)
     url: https://www.thedailystar.net/news/bangladesh/accidents-fires/news/49-deaths-and-counting-3040221
@@ -47,12 +38,10 @@ verification:
   score: 0.9
   evidence:
     - type: documented
-      label: The Guardian — At least 49 killed and hundreds injured in Bangladesh
-        depot fire (2022)
+      label: The Guardian — At least 49 killed and hundreds injured in Bangladesh depot fire (2022)
       url: https://www.theguardian.com/world/2022/jun/04/five-killed-and-at-least-100-injured-in-bangladesh-depot-fire
     - type: documented
-      label: BBC News — Bangladesh officials say depot fire exacerbated by mislabelled
-        chemicals (2022)
+      label: BBC News — Bangladesh officials say depot fire exacerbated by mislabelled chemicals (2022)
       url: https://www.bbc.com/news/world-asia-61702868
     - type: documented
       label: The Daily Star — 49 deaths and counting (2022)

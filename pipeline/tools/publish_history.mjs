@@ -46,7 +46,7 @@ export function renderArticle(a) {
   if (!Array.isArray(a.sources) || a.sources.length === 0) throw new Error(`no sources for ${a.slug}`);
   if (a.body.split(/\s+/).filter(Boolean).length < 150) throw new Error(`body too short for ${a.slug}`);
   const fm = buildFrontMatter(a);
-  return `---\n${stringify(fm).trimEnd()}\n---\n\n${a.body.trim()}\n`;
+  return `---\n${stringify(fm, { lineWidth: 0 }).trimEnd()}\n---\n\n${a.body.trim()}\n`;
 }
 
 function main() {

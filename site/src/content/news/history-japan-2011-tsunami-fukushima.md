@@ -3,12 +3,8 @@ title: ১১ মার্চ ২০১১ জাপানের টোকুহ
 thumbnail: "/images/history-japan-2011-tsunami-fukushima.webp"
 thumbnailAlt: "১১ মার্চ ২০১১ জাপানের টোকুহোকু ভূমিকম্প ও ফুকুশিমা সুনামি — ছবি: Orangeadnan (BY)"
 seoTitle: "জাপান ২০১১: ৯.০ মাত্রার ভূমিকম্প, ৪০ মিটার সুনামি ও ফুকুশিমা বিপর্যয়"
-seoDescription: ২০১১ সালের ১১ মার্চ জাপানের উত্তর-পূর্ব উপকূলে ৯.০ মাত্রার
-  ভূমিকম্প ও ভয়াবহ সুনামি হয়; প্রায় ১৯,৬০০ মানুষ মারা যান ও ফুকুশিমার
-  পারমাণবিক দুর্ঘটনা ঘটে।
-excerpt: ২০১১ সালের ১১ মার্চ বিকেলে জাপানের টোকুহোকু উপকূলে ৯.০ মাত্রার ভূমিকম্প
-  হয়; এর ফলে ৪০ মিটার পর্যন্ত সুনামি আছড়ে পড়ে। দুই দেশজুড়ে প্রায় ১৯,৬০০
-  মানুষ মারা যান।
+seoDescription: ২০১১ সালের ১১ মার্চ জাপানের উত্তর-পূর্ব উপকূলে ৯.০ মাত্রার ভূমিকম্প ও ভয়াবহ সুনামি হয়; প্রায় ১৯,৬০০ মানুষ মারা যান ও ফুকুশিমার পারমাণবিক দুর্ঘটনা ঘটে।
+excerpt: ২০১১ সালের ১১ মার্চ বিকেলে জাপানের টোকুহোকু উপকূলে ৯.০ মাত্রার ভূমিকম্প হয়; এর ফলে ৪০ মিটার পর্যন্ত সুনামি আছড়ে পড়ে। দুই দেশজুড়ে প্রায় ১৯,৬০০ মানুষ মারা যান।
 date: 2011-03-11
 category: history
 tags:
@@ -20,22 +16,17 @@ lang: bn
 draft: false
 corrected: false
 keyPoints:
-  - ১১ মার্চ ২০১১, দুপুর ২টা ৪৬ মিনিটে (স্থানীয় সময়) ৯.০ মাত্রার ভূমিকম্প;
-    জাপানের রেকর্ডে সবচেয়ে বড়
+  - ১১ মার্চ ২০১১, দুপুর ২টা ৪৬ মিনিটে (স্থানীয় সময়) ৯.০ মাত্রার ভূমিকম্প; জাপানের রেকর্ডে সবচেয়ে বড়
   - সুনামির ঢেউ ওমোইনামি উপকূলে ৯.৩ মিটার উচ্চতা; কোবোরিনাইয়ে রান-আপ ৩০-৪০ মিটার
   - নিহত প্রায় ১৯,৬৩০; নিখোঁজ ~২,৫৬০; আহত ৬,২০০-র বেশি; ৪ লাখের বেশি বাস্তুচ্যুত
-  - ফুকুশিমা দাইচি পারমাণবিক বিদ্যুৎ কেন্দ্রের ৩টি রিঅ্যাক্টর মেল্টডাউন; ইনেস
-    লেভেল ৭
+  - ফুকুশিমা দাইচি পারমাণবিক বিদ্যুৎ কেন্দ্রের ৩টি রিঅ্যাক্টর মেল্টডাউন; ইনেস লেভেল ৭
 faq:
   - q: সুনামির উচ্চতা কত ছিল?
-    a: আইওয়াতে কোবোরিনাই মাছ ধরার বন্দরে রান-আপ ৪০ মিটার পর্যন্ত পরিমাপ করা হয়;
-      সোমা উপকূলে ঢেউ ৯ মিটারের বেশি।
+    a: আইওয়াতে কোবোরিনাই মাছ ধরার বন্দরে রান-আপ ৪০ মিটার পর্যন্ত পরিমাপ করা হয়; সোমা উপকূলে ঢেউ ৯ মিটারের বেশি।
   - q: ফুকুশিমার দুর্ঘটনায় কী হয়েছিল?
-    a: সুনামিতে পাওয়ার লাইন নষ্ট ও জেনারেটর প্লাবিত হলে কুলিং ব্যবস্থা ব্যর্থ হয়;
-      ৩টি রিঅ্যাক্টরে মেল্টডাউন ও তেজস্ক্রিয় বিকিরণ ঘটে।
+    a: সুনামিতে পাওয়ার লাইন নষ্ট ও জেনারেটর প্লাবিত হলে কুলিং ব্যবস্থা ব্যর্থ হয়; ৩টি রিঅ্যাক্টরে মেল্টডাউন ও তেজস্ক্রিয় বিকিরণ ঘটে।
 sources:
-  - name: Japan Meteorological Agency — Information on the 2011 Great East Japan
-      Earthquake
+  - name: Japan Meteorological Agency — Information on the 2011 Great East Japan Earthquake
     url: https://www.jma.go.jp/jma/en/2011_Earthquake/Information_on_2011_Earthquake.html
   - name: NOAA NCEI — Great Tohoku, Japan Earthquake and Tsunami, 11 March 2011
     url: https://www.ngdc.noaa.gov/hazard/11mar2011.html
@@ -47,8 +38,7 @@ verification:
   score: 0.9
   evidence:
     - type: documented
-      label: Japan Meteorological Agency — Information on the 2011 Great East Japan
-        Earthquake
+      label: Japan Meteorological Agency — Information on the 2011 Great East Japan Earthquake
       url: https://www.jma.go.jp/jma/en/2011_Earthquake/Information_on_2011_Earthquake.html
     - type: documented
       label: NOAA NCEI — Great Tohoku, Japan Earthquake and Tsunami, 11 March 2011
