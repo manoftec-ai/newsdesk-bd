@@ -315,6 +315,13 @@
       "title": "single-source corroboration gate stays strict",
       "value": "user understood the gate (story publishes only after a 2nd independent outlet reports it) and decided to keep it as-is; no relax of verify min_badge / single-source auto-publish",
       "rationale": "preserves the 'most verified news' brand; freshness lag is acceptable trade-off"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q12",
+      "title": "deploy.yml workflow_run stopped firing for heartbeat-dispatched bot runs; heartbeat now dispatches deploy.yml each cycle",
+      "value": "heartbeat.yml cycle is now images -> pipeline -> sleep300 -> auto-author -> sleep1500 -> dispatch deploy.yml; deploy.yml already supported workflow_dispatch; manual deploy dispatched 17:05 succeeded 17:06 and live site caught up (16:45 batch live, homepage newest-first)",
+      "rationale": "live site froze at the 14:53 deploy for 2h although auto-author kept pushing stories — same workflow_run-unreliability bug class as D-Q9 (images); explicit dispatch from the heartbeat is the reliable pump"
     }
   ],
   "sources": [
