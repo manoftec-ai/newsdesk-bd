@@ -88,19 +88,21 @@ sources:
     nameBn: কালের কণ্ঠ
     nameEn: Kaler Kantho
     lang: bn
-    method: headless
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:kalerkantho.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.kalerkantho.com/
     reputation: top
-    note: HTTP 403 on plain fetch (bot protection) -> headless browser needed.
+    note: "2026-09-21: HTTP 403 bypassed via Google News site: proxy (real URLs decoded)."
 
   - id: jugantor
     nameBn: যুগান্তর
     nameEn: Jugantor
     lang: bn
-    method: headless
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:jugantor.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.jugantor.com/
     reputation: top
-    note: HTTP 403 on plain fetch -> headless browser needed.
+    note: "2026-09-21: HTTP 403 bypassed via Google News site: proxy (real URLs decoded)."
 
   - id: samakal
     nameBn: সমকাল
@@ -179,10 +181,11 @@ sources:
     nameBn: জামুনা টিভি
     nameEn: Jamuna TV
     lang: bn
-    method: headless
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:jamuna.tv&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.jamuna.tv/
     reputation: top
-    note: HTTP 403 on plain fetch -> headless browser needed.
+    note: "2026-09-21: HTTP 403 bypassed via Google News site: proxy (real URLs decoded)."
 
   - id: atnbangla
     nameBn: এটিএন বাংলা
@@ -237,21 +240,21 @@ sources:
     nameBn: দ্য ডেইলি অবজারভার
     nameEn: The Daily Observer
     lang: en
-    method: rss
-    feed: https://www.observerbd.com/rss
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:observerbd.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.observerbd.com/
     reputation: top
-    note: Added 2026-09-21, RSS OK (14 items).
+    note: "Added 2026-09-21, RSS OK (14 items); 2026-09-21: runner HTTP 403 -> gnews proxy."
 
   - id: bd24live
     nameBn: বিডি২৪লাইভ
     nameEn: bd24live
     lang: en
-    method: rss
-    feed: https://www.bd24live.com/rss
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:bd24live.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.bd24live.com/
     reputation: standard
-    note: Added 2026-09-21, RSS OK (10 items).
+    note: "Added 2026-09-21, RSS OK (10 items); 2026-09-21: runner HTTP 403 -> gnews proxy."
 
   - id: dainikazadi
     nameBn: দৈনিক আজাদী
@@ -273,9 +276,21 @@ sources:
     reputation: top
     note: Added 2026-09-21, RSS OK (44 items) — international corroboration.
 
+  - id: gtrends
+    nameBn: গুগল ট্রেন্ডস (লিড ইঞ্জিন)
+    nameEn: Google Trends lead engine
+    lang: bn
+    method: gtrends
+    feed: https://trends.google.com/trending/rss?geo=BD
+    home: https://trends.google.com/trending?geo=BD
+    reputation: top
+    limit: 10
+    queries: 6
+    note: Added 2026-09-21. Reads BD trending topics -> Google News search (bn/BD) ->
+      yields real items attributed to their outlets for cluster/verify.
+
 # Pending investigation (recorded, not blocking)
 # - dailystar section feeds (more coverage) -> Phase 7
-# - kalerkantho/jugantor/jamuna (HTTP 403 bot-protection): HEADLESS DEFERRED — decided 2026-09-19
-#   to skip for now; implement Playwright/browser strategy later. These 3 are NOT in the active set.
-#   (Google News RSS proxy works but returns redirect links + epaper junk; rejected for quality.)
-# ACTIVE SOURCE SET (2026-09-21) = 15 RSS + 4 scraper = 19 sources (up from 12).
+# - headless method deprecated 2026-09-21: kalerkantho/jugantor/jamuna + daily-observer +
+#   bd24live (HTTP 403 on runner) now use gnews (Google News site: proxy). No browser needed.
+# ACTIVE SOURCE SET (2026-09-21) = 16 RSS/gnews + 4 scraper + 1 gtrends = 21 sources (up from 12).

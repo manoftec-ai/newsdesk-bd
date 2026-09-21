@@ -2,6 +2,7 @@
 import Parser from 'rss-parser';
 import * as cheerio from 'cheerio';
 import { normalizeTitle, urlHash, cleanBody, parseDate, isBoilerplateTitle } from './normalize.mjs';
+import { decodeGoogleNewsUrl, stripSourceFromTitle } from '../tools/tracked_watcher.mjs';
 
 const UA = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Mobile Safari/537.36';
 const TIMEOUT_MS = 25000;
@@ -31,6 +32,12 @@ export async function fetchRss(source) {
     if (!title || !url) continue;
     if (isBoilerplateTitle(title)) continue;
     const body = cleanBody(it.contentSnippet || it.content || it.summary || '');
+    let category = null;
+    if (it.categories && it.categories[0] !== undefined) {
+      const c = it.categories[0];
+      category = typeof c === 'object' && c !== null ? String(c._ ?? c['#text'] ?? '') : String(c);
+      if (!category) category = null;
+    }
     items.push({
       source_id: source.id,
       url,
@@ -39,7 +46,7 @@ export async function fetchRss(source) {
       body,
       published_at: parseDate(it.isoDate || it.pubDate),
       seen_at: new Date().toISOString(),
-      category: (it.categories && it.categories[0]) || null,
+      category,
       lang: source.lang,
     });
   }
@@ -124,5 +131,131 @@ export async function fetchScraper(source) {
 export async function fetchSource(source) {
   if (source.method === 'rss') return fetchRss(source);
   if (source.method === 'scraper') return fetchScraper(source);
+  if (source.method === 'gnews') return fetchGnews(source);
+  if (source.method === 'gtrends') return fetchGTrends(source);
   throw new Error(`${source.id}: unsupported method ${source.method}`);
+}
+
+// ---------- Google News proxy (bypasses HTTP 403 bot-protection on runner) ----------
+// Feed is a news.google.com/rss/search?q=site:<outlet> URL. Items are decoded to the
+// real article URL and titles get the trailing " - Outlet" suffix stripped.
+const GNEWS_ITEMS_MAX = 60;
+
+async function parseGnewsUrl(source) {
+  const parser = new Parser({ timeout: TIMEOUT_MS, headers: { 'user-agent': UA } });
+  const feed = await parser.parseURL(source.feed);
+  const items = [];
+  for (const it of feed.items.slice(0, GNEWS_ITEMS_MAX)) {
+    const rawTitle = String(it.title ?? '').trim();
+    const link = String(it.link ?? '').trim();
+    if (!rawTitle || !link) continue;
+    const url = decodeGoogleNewsUrl(link);
+    if (!url || !/^https?:/.test(url)) continue;
+    const title = normalizeTitle(stripSourceFromTitle(rawTitle));
+    if (!title || isBoilerplateTitle(title)) continue;
+    // Drop homepage/epaper prints that Google News site: search surfaces
+    if (/\|\|| \| |epaper|e-paper|\|\s*$/.test(rawTitle.toLowerCase())) continue;
+    items.push({
+      source_id: source.id,
+      url,
+      url_hash: urlHash(url),
+      title,
+      body: cleanBody(it.contentSnippet || ''),
+      published_at: parseDate(it.isoDate || it.pubDate),
+      seen_at: new Date().toISOString(),
+      category: null,
+      lang: source.lang,
+    });
+  }
+  return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
+}
+
+// ---------- Google Trends lead engine ----------
+// Reads Google Trends RSS for BD, then for each trending term runs a Google News
+// search (bn/BD). Items are re-attributed to the real outlet's source_id when the
+// decoded URL host matches a known outlet, so verify treats them as that paper.
+const KNOWN_OUTLETS = new Map([
+  ['prothomalo.com', 'prothomalo'], ['ittefaq.com.bd', 'ittefaq'],
+  ['kalerkantho.com', 'kalerkantho'], ['jugantor.com', 'jugantor'],
+  ['samakal.com', 'samakal'], ['dainikbangla.com.bd', 'dainikbangla'],
+  ['dhakatribune.com', 'dhakatribune'], ['thedailystar.net', 'dailystar'],
+  ['banglatribune.com', 'banglatribune'], ['bdnews24.com', 'bdnews24'],
+  ['theindependentbd.com', 'independent'], ['deshrupantor.com', 'deshrupantor'],
+  ['jamuna.tv', 'jamuna'], ['atnbangla.tv', 'atnbangla'],
+  ['channelionline.com', 'channeli'], ['tbsnews.net', 'tbs'],
+  ['bbc.com', 'bbc-bengali'], ['voabangla.com', 'voa-bangla'],
+  ['observerbd.com', 'daily-observer'], ['bd24live.com', 'bd24live'],
+  ['dainikazadi.net', 'dainikazadi'], ['theguardian.com', 'guardian-world'],
+]);
+
+async function parseGnewsSearch(query) {
+  const url = `https://news.google.com/rss/search?${new URLSearchParams({
+    q: query, hl: 'bn', gl: 'BD', ceid: 'BD:bn',
+  })}`;
+  const parser = new Parser({ timeout: TIMEOUT_MS, headers: { 'user-agent': UA } });
+  const feed = await parser.parseURL(url);
+  const out = [];
+  for (const it of feed.items.slice(0, 15)) {
+    const rawTitle = String(it.title ?? '').trim();
+    const link = String(it.link ?? '').trim();
+    if (!rawTitle || !link) continue;
+    // Google News put the outlet in the trailing " - host" part of the title;
+    // use that to pick the known source and get the real headline.
+    const m = rawTitle.match(/^(.*?)\s*-\s*([A-Za-z0-9][A-Za-z0-9.-]*\.(?:com|net|bd|tv|org))\s*$/);
+    if (!m) continue;
+    const outlet = m[2].toLowerCase();
+    let srcId = null;
+    for (const [host, id] of KNOWN_OUTLETS) if (outlet.endsWith(host.replace(/^www\./, ''))) { srcId = id; break; }
+    if (!srcId) continue;
+    const title = normalizeTitle(m[1]);
+    if (!title || isBoilerplateTitle(title)) continue;
+    if (/\|\|| \| |epaper|e-paper|\|\s*$/.test(rawTitle.toLowerCase())) continue;
+    const real = decodeGoogleNewsUrl(link);
+    out.push({
+      source_id: srcId,
+      real: /^https?:/.test(real) ? real : link,
+      title,
+      snippet: cleanBody(it.contentSnippet || ''),
+      published_at: parseDate(it.isoDate || it.pubDate),
+    });
+  }
+  return out;
+}
+
+async function fetchGTrends(source) {
+  const parser = new Parser({ timeout: TIMEOUT_MS, headers: { 'user-agent': UA } });
+  const feed = await parser.parseURL(source.feed);
+  const topics = feed.items.slice(0, source.limit ?? 10);
+  const seen = new Set();
+  const items = [];
+  let queries = 0;
+  for (const topic of topics) {
+    const term = String(topic.title ?? '').trim();
+    if (term.length < 3 || seen.has(term)) continue;
+    seen.add(term);
+    if (queries++ >= (source.queries ?? 6)) break;
+    try {
+      const hits = await parseGnewsSearch(term);
+      for (const h of hits) {
+        if (!h.snippet && !h.title) continue;
+        items.push({
+          source_id: h.source_id,
+          url: h.real,
+          url_hash: urlHash(h.real),
+          title: h.title,
+          body: h.snippet,
+          published_at: h.published_at,
+          seen_at: new Date().toISOString(),
+          category: null,
+          lang: h.title.match(/[\u0900-\u097F]/) ? 'bn' : 'en',
+          trendQuery: term,
+        });
+      }
+    } catch { /* one failing search must not kill the engine */ }
+  }
+  return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
+}
+
+export async function fetchGnews(source) {
+  return parseGnewsUrl(source);
 }
