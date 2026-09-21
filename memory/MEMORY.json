@@ -308,6 +308,13 @@
       "title": "deterministic brief selection for auto-author (newest-first, not stale backfill)",
       "value": "new pipeline/tools/pick_briefs.mjs computes newest N unpublished briefs by date -> pipeline/state/pick.json; auto-author.yml runs it before the author step; prompt (re)written to author EXACTLY the picked slugs; finalize_stories --max kept as cap; commit a9d044b",
       "rationale": "the LLM author was instructed to pick the newest N briefs but published stale backfill (Sept-2023) while fresh briefs waited; selection must be deterministic, not left to the model"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q11",
+      "title": "single-source corroboration gate stays strict",
+      "value": "user understood the gate (story publishes only after a 2nd independent outlet reports it) and decided to keep it as-is; no relax of verify min_badge / single-source auto-publish",
+      "rationale": "preserves the 'most verified news' brand; freshness lag is acceptable trade-off"
     }
   ],
   "sources": [
