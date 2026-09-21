@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-21",
-    "sessionsCount": 18,
+    "sessionsCount": 19,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20).",
       "pending": [
@@ -287,6 +287,13 @@
       "title": "self-sustaining heartbeat workflow (bypass GitHub schedule drops)",
       "value": ".github/workflows/heartbeat.yml keeps a runner alive and explicitly workflow_dispatches pipeline.yml + auto-author.yml every 30min via GITHUB_TOKEN, then re-dispatches heartbeat.yml before the 6h limit; schedule entries are cold-start backup only; concurrency heartbeat cancel-in-progress true; permissions actions:write; commit 6910e26",
       "rationale": "GitHub schedule trigger dropped ~13/14 pipeline cron events (only 1 in ~7h) causing a ~2.5h news gap; workflow_dispatch is the documented GITHUB_TOKEN recursion exception so dispatched runs DO start; no third-party account needed"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q8",
+      "title": "fix: homepage latest list not newest-first (same-day sort bug)",
+      "value": "site/src/lib/news-data.js normalizePost now adds ts=entry.data.date.getTime(); sortedPosts sorts by (b.ts-a.ts) instead of comparing day-truncated date strings; commit 02e333e",
+      "rationale": "date was truncated to YYYY-MM-DD so same-day articles could not be ordered, making hero/latest show arbitrary older stories and hiding freshly published news"
     }
   ],
   "sources": [
