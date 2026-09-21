@@ -280,6 +280,13 @@
       "title": "auto-author per-run flood cap",
       "value": "finalize_stories.mjs --max=N (newest-first) + auto-author AUTHOR_MAX_PER_RUN default 6 (repo-var overridable) + 30min timeout",
       "rationale": "gnews supply spike made one auto-author run 31min/10 stories; cap keeps runs bounded"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q7",
+      "title": "self-sustaining heartbeat workflow (bypass GitHub schedule drops)",
+      "value": ".github/workflows/heartbeat.yml keeps a runner alive and explicitly workflow_dispatches pipeline.yml + auto-author.yml every 30min via GITHUB_TOKEN, then re-dispatches heartbeat.yml before the 6h limit; schedule entries are cold-start backup only; concurrency heartbeat cancel-in-progress true; permissions actions:write; commit 6910e26",
+      "rationale": "GitHub schedule trigger dropped ~13/14 pipeline cron events (only 1 in ~7h) causing a ~2.5h news gap; workflow_dispatch is the documented GITHUB_TOKEN recursion exception so dispatched runs DO start; no third-party account needed"
     }
   ],
   "sources": [
