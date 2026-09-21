@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '*/20 * * * *'
   workflow_run:
-    workflows: [auto-author, images, pipeline, watcher, history-author]
+    workflows: [auto-author, images, pipeline, watcher, history-author, history-batch]
     types: [completed]
 
 permissions:

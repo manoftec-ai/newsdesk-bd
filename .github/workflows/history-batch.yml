@@ -1,0 +1,134 @@
+name: history-batch
+on:
+  workflow_dispatch:
+    inputs:
+      max_topics:
+        description: "Number of pending topics to author this run (default 3)"
+        type: number
+        default: 3
+      dry_run:
+        description: "Validate + gate but do NOT commit/push"
+        type: boolean
+        default: false
+  schedule:
+    - cron: '0 6 * * 2,5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: history-batch
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pipeline deps
+        run: npm ci --no-audit --no-fund
+        working-directory: pipeline
+
+      - name: Install opencode
+        run: |
+          curl -fsSL https://opencode.ai/install | bash -s -- --version 1.18.31
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      # NOTE: no API key required — the opencode gateway serves the default free
+      # model (`opencode/big-pickle`) to headless `opencode run` WITHOUT auth
+      # (verified 2026-09-20 keyless). If it ever demands auth, set the
+      # OPENCODE_API_KEY secret; this step picks it up from the environment.
+      - name: Author pending history topics
+        id: author
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          cat > /tmp/history-author-prompt.txt <<'PROMPT_EOF'
+          You are the newsdesk-bd history-archive author, working ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
+
+          Task: author new history articles for topics that have NO published article yet.
+          1. Read pipeline/state/history/topics.json. From its topics array, take topics with status != 'published' AND status != 'failed', and that have NO file at site/src/content/news/history-<slug>.md. Sort by priority (lowest number first) and take only the first N topics, where N is the number printed as "PROMPT_TOPICS_N" at the end of this block (default 3).
+          2. If there are none, reply 'no pending topics' and stop (exit 0).
+          3. For EACH selected topic:
+             a. Research facts from web; start from the topic's hintSources (if given) and expand with reputable sources (Wikipedia, Banglapedia, history.com, archives.gov, CDC archives, NPS, Britannica only if it returns 200, etc).
+             b. Select at least 3 source URLs. VERIFY in the bash shell that every URL returns exactly HTTP 200, using:
+                curl -sIL -o /dev/null -w '%{http_code}' -L -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0' '<url>'
+                Only keep URLs that return 200. Replace any 403/404/5xx with a working equivalent. You need at least 3 sources at the end.
+             c. Write the fact-pack as a JSON file at pipeline/tmp/history-staging/topics-<slug>.json
+                containing a ONE-element array [article], where article matches EXACTLY this schema (copy key order from pipeline/state/history/batch7-a.json):
+                {
+                  "slug": "<topic slug>",
+                  "title": "<Bengali headline>",
+                  "seoTitle": "<Bengali, <60 chars>",
+                  "seoDescription": "<Bengali, ~150 chars>",
+                  "excerpt": "<Bengali excerpt>",
+                  "date": "<topic date exactly as in topics.json: YYYY-MM-DD>",
+                  "tags": ["history"],
+                  "keyPoints": [3-5 Bengali bullets with Bengali numerals],
+                  "faq": [2-3 Bengali Q&A items, each {question, answer}],
+                  "sources": [{"name": "<source display name>", "url": "<verified 200 url>"} x>=3],
+                  "body": "<the article>"
+                }
+             d. Article body rules (HARD):
+                - Bengali only. ZERO Latin letters anywhere in body, keyPoints, seoTitle, seoDescription, excerpt, title (no 'A-Za-z' at all).
+                - Bengali numerals (১২৩, not 123).
+                - Body 180-240 words. Verify with: echo "<body>" | tr ' ' '\n' | sed '/^$/d' | wc -l
+                - Real, verifiable facts tied to the verified sources — NO fabrication, NO invented statistics.
+                - Write as an original news article with a clear lead, factual body paragraphs, a conclusion.
+                - End the body with an empty line then a 'সূত্র: <source1 name>, <source2 name>, <source3 name>' line listing the cited sources by name.
+                - NO Latin, NO English words, NO emojis, NO double quotes except where needed in Bengali text.
+                - No trailing draft/editorial notes.
+             e. Work ONE topic at a time: write its file, then verify the JSON parses:
+                node -e "JSON.parse(require('fs').readFileSync('pipeline/tmp/history-staging/topics-<slug>.json','utf8'))"
+          4. Do NOT modify topics.json. Do NOT git commit, do NOT push, do NOT touch anything else.
+          5. Print a short summary of topics covered and files written.
+          PROMPT_EOF
+          # The block scalar strips the common indent, so sed sees real text.
+          TOPICS_N="${{ github.event.inputs.max_topics }}"
+          if [ -z "$TOPICS_N" ]; then TOPICS_N="3"; fi
+          sed -i "s/PROMPT_TOPICS_N/$TOPICS_N/g" /tmp/history-author-prompt.txt
+          opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "$(cat /tmp/history-author-prompt.txt)"
+
+      - name: Gate, validate and publish facts
+        env:
+          MAX_TOPICS: ${{ github.event.inputs.max_topics || '3' }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            node tools/gate_history_batch.mjs --max-topics "$MAX_TOPICS" --dry-run
+          else
+            node tools/gate_history_batch.mjs --max-topics "$MAX_TOPICS"
+          fi
+        working-directory: pipeline
+
+      - name: Stage and push published articles
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no history changes (nothing new or already committed)"
+            exit 0
+          fi
+          git commit -m "history-batch: publish history articles ($(date -u +%Y%m%dT%H%M))"
+          git fetch origin main
+          if git merge --ff-only origin/main 2>/dev/null; then
+            :
+          elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+            :
+          else
+            echo "merge failed — abandoning push; batch re-authored on a later run"
+            git merge --abort 2>/dev/null || true
+            exit 0
+          fi
+          git push origin HEAD:main

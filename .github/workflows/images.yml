@@ -28,7 +28,7 @@ on:
   # tracked stories), brand thumbnails right after — do NOT rely on schedule
   # delivery, which GitHub has been dropping this week.
   workflow_run:
-    workflows: [auto-author, watcher, pipeline]
+    workflows: [auto-author, watcher, pipeline, history-batch]
     types: [completed]
   schedule:
     - cron: "17,47 * * * *" # 1 min offset from pipeline.yml cron, avoids lockstep

@@ -1,0 +1,129 @@
+{
+  "updated": "2026-09-21",
+  "note": "Editorial topic queue for the background history-archive pipeline (history-batch.yml). The workflow picks status=pending topics by priority (lowest number first), opencode researches + authors a fact-pack, the deterministic gate validates all URLs (HTTP 200 only), then publishes. status: pending|published|failed. hintSources are suggested starting points; opencode must curl-verify candidates and only keep HTTP 200.",
+  "topics": [
+    {
+      "slug": "bhasan-char-rohingya-2018",
+      "date": "2018-10-12",
+      "priority": 1,
+      "status": "pending",
+      "why": "Rohingya relocation island — first batch arrived Oct 2018",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Bhashan_Char",
+        "https://en.banglapedia.org/index.php?title=Rohingya_Refugees"
+      ]
+    },
+    {
+      "slug": "cyclone-mocha-2023",
+      "date": "2023-05-14",
+      "priority": 2,
+      "status": "pending",
+      "why": "Category-5 cyclone, strongest Bay storm in years; Bangladesh/Myanmar landfall",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Cyclone_Mocha"
+      ]
+    },
+    {
+      "slug": "cricket-1997-icc-trophy-win",
+      "date": "1997-03-23",
+      "priority": 3,
+      "status": "pending",
+      "why": "Bangladesh won ICC Trophy 1997 → ODI status; birth of BD cricketing",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/1997_ICC_Trophy",
+        "https://en.banglapedia.org/index.php?title=Cricket"
+      ]
+    },
+    {
+      "slug": "noakhali-riots-1946",
+      "date": "1946-10-10",
+      "priority": 4,
+      "status": "pending",
+      "why": "1946 Noakhali communal riots; Gandhi visited; pre-partition trauma",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Noakhali_riots"
+      ]
+    },
+    {
+      "slug": "bengal-famine-1943",
+      "date": "1943-10-16",
+      "priority": 5,
+      "status": "pending",
+      "why": "Bengal famine ~3M died; wartime policy failure; iconic famine photo",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Bengal_famine_of_1943"
+      ]
+    },
+    {
+      "slug": "partition-of-india-1947",
+      "date": "1947-08-15",
+      "priority": 6,
+      "status": "pending",
+      "why": "India/Pakistan partition; Bengal & Punjab divided; mass migration",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Partition_of_India",
+        "https://en.wikipedia.org/wiki/Partition_of_Bengal_(1947)"
+      ]
+    },
+    {
+      "slug": "apollo-1-fire-1967",
+      "date": "1967-01-27",
+      "priority": 7,
+      "status": "pending",
+      "why": "Pad 34 capsule fire killed Grissom/White/Chaffee; NASA redesign",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Apollo_1"
+      ]
+    },
+    {
+      "slug": "malaysia-airlines-mh370-2014",
+      "date": "2014-03-08",
+      "priority": 8,
+      "status": "pending",
+      "why": "MH370 vanished Mar 2014; largest aviation mystery",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370"
+      ]
+    },
+    {
+      "slug": "three-mile-island-1979",
+      "date": "1979-03-28",
+      "priority": 9,
+      "status": "pending",
+      "why": "US worst nuclear accident; partial meltdown, no offsite deaths",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"
+      ]
+    },
+    {
+      "slug": "exxon-valdez-1989",
+      "date": "1989-03-24",
+      "priority": 10,
+      "status": "pending",
+      "why": "Alaska oil spill, 11M gallons, environmental law changes",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill"
+      ]
+    },
+    {
+      "slug": "deepwater-horizon-2010",
+      "date": "2010-04-20",
+      "priority": 11,
+      "status": "pending",
+      "why": "Gulf of Mexico oil rig explosion; largest marine spill",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill"
+      ]
+    },
+    {
+      "slug": "mount-everest-1953",
+      "date": "1953-05-29",
+      "priority": 12,
+      "status": "published",
+      "why": "Hillary & Tenzing first summited Everest — milestone of human exploration",
+      "hintSources": [
+        "https://en.wikipedia.org/wiki/1953_British_Mount_Everest_expedition"
+      ]
+    }
+  ]
+}
