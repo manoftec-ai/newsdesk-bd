@@ -266,6 +266,13 @@
       "title": "headless stay deferred",
       "value": "kalerkantho/jugantor/jamuna remain method:headless, not in active set",
       "rationale": "no browser step in pipeline.yml; Google News RSS site: proxy returns redirect links + epaper junk"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q5",
+      "title": "fresh-news engine: gnews proxy + Google Trends",
+      "value": "added gnews fetch method (Google News site: proxy bypasses runner HTTP 403) + gtrends lead engine (BD trending topics -> Google News search -> outlet-attributed items); fixed guardian categories bind; 9 sources converted; active set 23; runner new=1->265, sources_failed=8->2",
+      "rationale": "Cloudflare blocks runner datacenter IPs; trends give an always-fresh BD agenda"
     }
   ],
   "sources": [
@@ -591,5 +598,5 @@
     }
   ],
   "lastUpdated": "2026-09-21",
-  "sessionsCount": 16
+  "sessionsCount": 17
 }
