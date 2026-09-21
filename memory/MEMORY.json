@@ -322,6 +322,13 @@
       "title": "deploy.yml workflow_run stopped firing for heartbeat-dispatched bot runs; heartbeat now dispatches deploy.yml each cycle",
       "value": "heartbeat.yml cycle is now images -> pipeline -> sleep300 -> auto-author -> sleep1500 -> dispatch deploy.yml; deploy.yml already supported workflow_dispatch; manual deploy dispatched 17:05 succeeded 17:06 and live site caught up (16:45 batch live, homepage newest-first)",
       "rationale": "live site froze at the 14:53 deploy for 2h although auto-author kept pushing stories — same workflow_run-unreliability bug class as D-Q9 (images); explicit dispatch from the heartbeat is the reliable pump"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q13",
+      "title": "heartbeat poll-based handoff so new stories reach the live homepage within one 30-min cycle",
+      "value": "heartbeat.yml rewritten: each cycle dispatches images+pipeline, POLLS the pipeline run until completed (node poller), dispatches auto-author, POLLS until completed, dispatches deploy.yml, then pads to a 30-min cycle; 5 cycles then hands off to a fresh heartbeat; new heartbeat run 35633041595 dispatched 17:35, old one auto-cancelled",
+      "rationale": "user wants the homepage to show new news every 30 minutes (if available) while keeping the strict 2-source gate; old fixed 300s sleep dispatched auto-author before pipeline finished pushing, so auto-author always read a full cycle of stale briefs; polling fixes the handoff latency"
     }
   ],
   "sources": [

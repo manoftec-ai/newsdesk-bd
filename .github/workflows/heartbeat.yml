@@ -7,13 +7,24 @@ name: heartbeat
 #
 # This heartbeat does NOT depend on schedule reliability. Once started, it keeps a
 # small runner alive and EXPLICITLY dispatches `images.yml` + `pipeline.yml` +
-# `auto-author.yml` every 30 minutes. Before GitHub's 6-hour job limit it dispatches
+# `auto-author.yml` + `deploy.yml`. Before GitHub's 6-hour job limit it dispatches
 # a fresh copy of itself, so the chain is self-sustaining.
 #
-# NOTE: `images.yml` is dispatched here directly because its `workflow_run` trigger
-# proved unreliable for heartbeat-dispatched runs — articles published after the last
-# images run were left without thumbnails (e.g. sports-255). images.yml is a catch-up
-# pass (brands every article missing a thumbnail), so running it each cycle is safe.
+# DISPATCH ORDER MATTERS (learned the hard way):
+# - `images.yml` is dispatched here directly because its `workflow_run` trigger
+#   proved unreliable for heartbeat-dispatched runs (articles were left without
+#   thumbnails). images.yml is a catch-up pass, safe to run every cycle.
+# - pipeline -> auto-author must be POLLED (not fixed sleep): pipeline takes ~8 min
+#   to fetch+verify+extract+push. Dispatching auto-author after 300s made it read a
+#   full cycle of STALE briefs, so new stories were never picked. Now auto-author is
+#   dispatched only AFTER the pipeline push actually completes.
+# - deploy.yml is dispatched only AFTER auto-author completes, because its
+#   `workflow_run` trigger is ALSO unreliable for heartbeat-dispatched runs (site
+#   froze at a 14:53 deploy while auto-author kept publishing). This guarantees new
+#   verified stories reach the live homepage within the same ~30-min cycle.
+# - Cycle pacing is 30 min so each source is fetched at most once per 30 min
+#   (be-nice-to-sources rule).
+#
 # The `schedule` entries below are only a cold-start backup for the chain.
 
 on:
@@ -35,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 190
     steps:
-      - name: Pump pipeline + auto-author every 30 min, then hand off
+      - name: Pump pipeline -> auto-author -> deploy on a 30-min cadence, then hand off
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
@@ -50,18 +61,61 @@ jobs:
               -d '{"ref":"main"}')
             echo "$(date -u +%H:%M:%S) dispatch $1 -> HTTP $code"
           }
-          for i in 1 2 3 4 5 6; do
-            echo "--- cycle $i ---"
+          # Wait until a workflow run that we dispatched (created after $since)
+          # reaches 'completed'. Prints progress; exits 0=success, 3=failure,
+          # 2=timeout. Callers continue on any outcome.
+          poll () {
+            node -e '
+              const gh = process.env.GH_TOKEN, repo = process.env.REPO;
+              const wf = process.argv[1], since = Number(process.argv[2]), max = Number(process.argv[3]) || 50;
+              const sleep = ms => new Promise(r => setTimeout(r, ms));
+              (async () => {
+                for (let i = 0; i < max; i++) {
+                  let runs = [];
+                  try {
+                    const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/${wf}/runs?per_page=5`, {
+                      headers: { Authorization: `Bearer ${gh}`, Accept: "application/vnd.github+json", "User-Agent": "newsdesk-heartbeat" }
+                    });
+                    runs = (await r.json()).workflow_runs || [];
+                  } catch (e) { /* transient API error */ }
+                  const mine = runs.filter(x => new Date(x.created_at).getTime() >= since)
+                                   .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+                  if (mine.length) {
+                    const last = mine[mine.length - 1];
+                    if (last.status === "completed") {
+                      console.log(`[${new Date().toISOString()}] ${wf}: ${last.conclusion || "completed"}`);
+                      process.exit(last.conclusion === "success" ? 0 : 3);
+                    }
+                    console.log(`[${new Date().toISOString()}] ${wf}: ${last.status}`);
+                  } else {
+                    console.log(`[${new Date().toISOString()}] ${wf}: not-started`);
+                  }
+                  await sleep(15000);
+                }
+                console.log(`[${new Date().toISOString()}] ${wf}: TIMEOUT`);
+                process.exit(2);
+              })();
+            ' "$1" "$2" "$3"
+          }
+
+          CYCLES=5
+          for i in $(seq 1 $CYCLES); do
+            echo "--- cycle $i/$CYCLES ---"
+            t0=$(date +%s)
             dispatch images.yml
             dispatch pipeline.yml
-            sleep 300
+            poll pipeline.yml "$t0" 50 || echo "pipeline not confirmed, continuing"
+            t1=$(date +%s)
             dispatch auto-author.yml
-            sleep 1500
-            # Explicit deploy each cycle: deploy.yml's `workflow_run` trigger ALSO
-            # proved unreliable for heartbeat-dispatched bot runs (site froze at the
-            # 14:53 deploy although auto-author kept pushing new stories). deploy.yml
-            # supports workflow_dispatch, so have the heartbeat publish every cycle.
+            poll auto-author.yml "$t1" 100 || echo "auto-author not confirmed, continuing"
+            t2=$(date +%s)
             dispatch deploy.yml
+            # Pace the cycle to ~30 min so the next pipeline fetch is >= 30 min
+            # after the previous one (be-nice-to-sources rule).
+            elapsed=$(( $(date +%s) - t0 ))
+            rem=$(( 1800 - elapsed ))
+            echo "cycle elapsed ${elapsed}s, sleeping ${rem}s to keep a 30-min cadence"
+            if [ "$rem" -gt 0 ]; then sleep "$rem"; fi
           done
           echo "handing off to a fresh heartbeat"
           dispatch heartbeat.yml
