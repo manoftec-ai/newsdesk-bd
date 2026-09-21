@@ -49,8 +49,21 @@ Dispatch run `f9bcb414` then `4a6fbec7`:
 ## Tests
 `npm test` 24/24 green. `node --check lib/fetch.mjs` OK. Config YAML re-validated.
 
+## Following session — observed GitHub + added flood guard (2026-09-21)
+Observed GitHub working autonomously (no manual dispatch): every pipeline completion fires
+`images → auto-author → deploy → telegram → Lighthouse`. deploy/telegram/images succeed;
+**Lighthouse fails every run** (known `minScore:1` regression). auto-author run `35583992487`
+took **31 min** and published **10** stories (commit `7e932de`) — the source fix had flooded
+it with newly-mature briefs (soft prompt cap was 10).
+
+Throttle added (commit `f9b2ef5`/pushed `d9ce178`):
+- `finalize_stories.mjs` gained `--max=N` (sorts bodies newest-brief-first, slices).
+- `auto-author.yml` job env `AUTHOR_MAX_PER_RUN` (default 6, repo-variable overridable) is
+  interpolated into both the author prompt and `--max=`; job timeout 45→30 min.
+
 ## Open / next
 - Consider a `gnews`-style fallback for the 2 transient scraper sources.
 - Cadence is still 30 min; can drop to 15 min now that supply is up (watch politeness).
 - Optionally add dailystar/prothomalo section feeds (Phase 7 note) for more volume.
 - Google may change token format again; gnews proxy relies on the `site:` query shape.
+- Lighthouse gate still red — decide fix vs relax.

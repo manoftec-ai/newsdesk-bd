@@ -273,6 +273,13 @@
       "title": "fresh-news engine: gnews proxy + Google Trends",
       "value": "added gnews fetch method (Google News site: proxy bypasses runner HTTP 403) + gtrends lead engine (BD trending topics -> Google News search -> outlet-attributed items); fixed guardian categories bind; 9 sources converted; active set 23; runner new=1->265, sources_failed=8->2",
       "rationale": "Cloudflare blocks runner datacenter IPs; trends give an always-fresh BD agenda"
+    },
+    {
+      "date": "2026-09-21",
+      "id": "D-Q6",
+      "title": "auto-author per-run flood cap",
+      "value": "finalize_stories.mjs --max=N (newest-first) + auto-author AUTHOR_MAX_PER_RUN default 6 (repo-var overridable) + 30min timeout",
+      "rationale": "gnews supply spike made one auto-author run 31min/10 stories; cap keeps runs bounded"
     }
   ],
   "sources": [
