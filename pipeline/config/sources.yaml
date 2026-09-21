@@ -203,8 +203,79 @@ sources:
     reputation: top
     note: RSS OK (30 items).
 
+  - id: tbs
+    nameBn: দ্য বিজনেস স্ট্যান্ডার্ড
+    nameEn: The Business Standard
+    lang: en
+    method: rss
+    feed: https://www.tbsnews.net/rss.xml
+    home: https://www.tbsnews.net/
+    reputation: top
+    note: Added 2026-09-21, RSS OK (10 items, verified parse).
+
+  - id: bbc-bengali
+    nameBn: বিবিসি বাংলা
+    nameEn: BBC Bengali
+    lang: bn
+    method: rss
+    feed: https://feeds.bbci.co.uk/bengali/rss.xml
+    home: https://www.bbc.com/bengali
+    reputation: top
+    note: Added 2026-09-21, RSS OK (14 items) — international corroboration.
+
+  - id: voa-bangla
+    nameBn: ভিওএ বাংলা
+    nameEn: Voice of America Bangla
+    lang: bn
+    method: rss
+    feed: https://www.voabangla.com/rss/?count=100
+    home: https://www.voabangla.com/
+    reputation: top
+    note: Added 2026-09-21, RSS OK (60 items) — international corroboration.
+
+  - id: daily-observer
+    nameBn: দ্য ডেইলি অবজারভার
+    nameEn: The Daily Observer
+    lang: en
+    method: rss
+    feed: https://www.observerbd.com/rss
+    home: https://www.observerbd.com/
+    reputation: top
+    note: Added 2026-09-21, RSS OK (14 items).
+
+  - id: bd24live
+    nameBn: বিডি২৪লাইভ
+    nameEn: bd24live
+    lang: en
+    method: rss
+    feed: https://www.bd24live.com/rss
+    home: https://www.bd24live.com/
+    reputation: standard
+    note: Added 2026-09-21, RSS OK (10 items).
+
+  - id: dainikazadi
+    nameBn: দৈনিক আজাদী
+    nameEn: Dainik Azadi
+    lang: bn
+    method: rss
+    feed: https://www.dainikazadi.net/rss
+    home: https://www.dainikazadi.net/
+    reputation: top
+    note: Added 2026-09-21, RSS OK (10 items).
+
+  - id: guardian-world
+    nameBn: দ্য গার্ডিয়ান
+    nameEn: The Guardian (World)
+    lang: en
+    method: rss
+    feed: https://www.theguardian.com/world/rss
+    home: https://www.theguardian.com/
+    reputation: top
+    note: Added 2026-09-21, RSS OK (44 items) — international corroboration.
+
 # Pending investigation (recorded, not blocking)
 # - dailystar section feeds (more coverage) -> Phase 7
 # - kalerkantho/jugantor/jamuna (HTTP 403 bot-protection): HEADLESS DEFERRED — decided 2026-09-19
 #   to skip for now; implement Playwright/browser strategy later. These 3 are NOT in the active set.
-# ACTIVE SOURCE SET (Phase 2) = 8 RSS + 4 scraper = 12 sources.
+#   (Google News RSS proxy works but returns redirect links + epaper junk; rejected for quality.)
+# ACTIVE SOURCE SET (2026-09-21) = 15 RSS + 4 scraper = 19 sources (up from 12).
