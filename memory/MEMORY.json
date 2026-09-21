@@ -4,8 +4,8 @@
     "project": "newsdesk-bd (Bangla News Synth)",
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
-    "lastUpdated": "2026-09-20",
-    "sessionsCount": 16,
+    "lastUpdated": "2026-09-21",
+    "sessionsCount": 17,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20).",
       "pending": [
@@ -234,6 +234,11 @@
       "id": "D41",
       "decision": "Per-event dated chronological archive (কালানুক্রম): data store site/src/data/events-news.json (chronology.<eventId>[] = {date,title,summary,sourceName,sourceUrl}; partial dates YYYY/YYYY-MM ok), loaders in site/src/lib/events.js (chronologyFor/hasChronology/chronologyCounts/groupChronologyByYear/formatChronoDate), year-grouped timeline on /ghotona/[slug].astro + 'কালানুক্রম N' on /ghotona index cards + stat. Lives OUTSIDE src/content/news -> excluded from home feed/RSS/sitemap automatically. FIRST EVENT: sagor-runi-murder 17 dated entries (2012-02-11->2025-02-11; DB->RAB 2012-04-18, exhumation 2012-04-26, US-lab DNA 2012-08, 7th IO 2019-07-04, IFS progress 2020-10-07, taskforce 2024-08-23, RAB->PBI 2024-11-04), each = own original Bengali summary + verifiable source citation (Wikipedia/TBS/Prothom Alo EN/Daily Star/Times of Dhaka). Hard rule: no fabrication. Pushed 2e8dfba, deploy green, live verified.",
       "rationale": "User: include [previous news] in every event, full chronology with dates, event by event, inside ghotona pongji not the home section. Complements watcher D36 (fresh news) + ghotona anchors D39 (overview) with dated historical progression."
+    },
+    {
+      "date": "2026-09-21",
+      "decision": "D43: Frontmatter YAML title wrap = deploy blocker. Long Bengali title: values in history/auto-authored md must be single-line double-quoted scalars (YAML quoted scalars cannot span lines). Diagnosis: vercel check-run failure -> job log -> js-yaml error with file:line.",
+      "context": "4 batch-3 history files (auto-history workflow) broke all deploys for commit 3c320d1 (can not read a block mapping entry). Fixed in 026ee31; all 147 content files validate with local js-yaml now."
     }
   ],
   "sources": [
@@ -531,6 +536,8 @@
   },
   "testData": "pipeline/tmp/store.db holds 2026-09-19 sample run (refreshable)",
   "nextSteps": [
+    "If next deploy fails: check history batch titles single-line first (D43) before blaming own change",
+    "কালানুক্রম: continue event-by-event (4/82 done; suggest june-july-2024-quota, oust-hasina-2024, dengue-outbreak-season)",
     "100-article history archive (D42, IN PROGRESS): 15/100 live (batch 1, pushed bff82be). Continue batches 2-3 toward 100+ (BD + regional events back to 2000: 1991 cyclone, 1998 flood, 2004 tsunami, 2014 election, Sundarbans spill, 2016 Bangladesh Bank heist, 2018 quota/road-safety, Covid 2020, Aug 2024 floods, cricket 2005/2007, Karnaphuli tunnel 2023...). Same publish_history.mjs + fact-pack JSONs at pipeline/state/history/. Each: own Bengali synthesis, >=150 words, curl-verified sources, commit+push per batch. Then optional /history index page.",
     "Per-event কালানুক্রম (dated chronology) archives (D41): 1/82 events curated (sagor-runi-murder, 17 entries, live 2e8dfba). Continue event-by-event: tazreen-fires-2012, rana-plaza-collapse, holly-artisan-attack-2016, june-july-2024-quota, oust-hasina-2024... Rule: dated entries + own Bengali summaries + verifiable source citations + partial dates OK + never fabricate.",
     "7-feature enrichments (D40) go-live follow-ups: (a) user creates Telegram bot (BotFather)+channel and adds TELEGRAM_BOT_TOKEN+TELEGRAM_CHAT_ID to GitHub secrets -> F5 auto-post + F3 contact relay activate (both silent-no-op until then); (b) user enables Vercel Web Analytics in dashboard (no CLI) + verify /_vercel/insights/script.js 200; (c) post-deploy verify /factcheck (seeded), /corrections, /districts, /contact, /api/contact; (d) optional reader corrections-inbox form; (e) optional districts registry 17->64",
