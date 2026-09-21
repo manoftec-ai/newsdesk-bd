@@ -2,7 +2,7 @@
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
 > Last updated: 2026-09-21
-> Sessions count: 19
+> Sessions count: 20
 
 ## ⏰ REMINDERS — user action items (MANDATORY: surface at session start)
 Recorded per user request 2026-09-20: "keep these two points for me … you can remind me this later".
@@ -42,6 +42,7 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 ## Decisions
 | Date | Decision | Rationale / context |
 |------|----------|---------------------|
+| 2026-09-21 | D-Q15: **pick.json can list a slug the same auto-author run already published — expected, not a bug.** `pick_briefs.mjs` runs before the author step, so the chosen slug may already exist as a finalized story (recorded: economy-296 published by parallel run in commit `5bcbe7e` while still listed as "picked"). The `storyExists` gate in `finalize_stories.mjs` is the safety net → writes nothing, never duplicates (D-Q14 dedup intact). Observing "already exists, skip" is the correct healthy outcome | parallel auto-author runs on GitHub finalize shortlisted briefs while a second authoring path reads the same pick.json |
 | 2026-09-19 | D25: **No editorial/draft footer** — articles must never end with "সংবাদটি … সূত্র থেকে সংশ্লেষিত; … খসড়া" disclaimer. Banned in synth writingPrompt + deterministically stripped in `stripEditorialFooters()` at finalize | user: "that line should not also come in future" (2026-09-19) |
 | 2026-09-19 | D20: **Auto-publish** — সব পাইপলাইন-নিশ্চিত গল্প সরাসরি `draft:false` হয়; human flip বাতিল (user: "publish it automatically") | user override of old draft-first; synth writes `draft:false` |
 | 2026-09-19 | D21: Provider = **opencode** (LLM lokal), lib/synth.mjs swaps prompt → any writer mode | user: "we're going to do it with u, opencode" |
