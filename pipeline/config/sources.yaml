@@ -79,10 +79,11 @@ sources:
     nameBn: দৈনিক ইত্তেফাক
     nameEn: Ittefaq
     lang: bn
-    method: rss
-    feed: https://www.ittefaq.com.bd/feed/
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:ittefaq.com.bd&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.ittefaq.com.bd/
     reputation: top
+    note: "2026-09-21: runner HTTP 403 -> gnews site: proxy (real URLs decoded)."
 
   - id: kalerkantho
     nameBn: কালের কণ্ঠ
@@ -108,10 +109,11 @@ sources:
     nameBn: সমকাল
     nameEn: Samakal
     lang: bn
-    method: rss
-    feed: https://www.samakal.com/rss
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:samakal.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.samakal.com/
     reputation: top
+    note: "2026-09-21: runner HTTP 403 -> gnews site: proxy (real URLs decoded)."
 
   - id: dainikbangla
     nameBn: দৈনিক বাংলা
@@ -126,10 +128,11 @@ sources:
     nameBn: ঢাকা ট্রিবিউন
     nameEn: Dhaka Tribune
     lang: en
-    method: rss
-    feed: https://www.dhakatribune.com/feed/
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:dhakatribune.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.dhakatribune.com/
     reputation: top
+    note: "2026-09-21: runner HTTP 403 -> gnews site: proxy (real URLs decoded)."
 
   - id: dailystar
     nameBn: ডেইলি স্টার
@@ -172,10 +175,11 @@ sources:
     nameBn: দেশ রূপান্তর
     nameEn: Desh Rupantor
     lang: bn
-    method: rss
-    feed: https://www.deshrupantor.com/feed/
+    method: gnews
+    feed: https://news.google.com/rss/search?q=site:deshrupantor.com&hl=bn&gl=BD&ceid=BD:bn
     home: https://www.deshrupantor.com/
     reputation: top
+    note: "2026-09-21: runner HTTP 403 -> gnews site: proxy (real URLs decoded)."
 
   - id: jamuna
     nameBn: জামুনা টিভি
@@ -293,4 +297,4 @@ sources:
 # - dailystar section feeds (more coverage) -> Phase 7
 # - headless method deprecated 2026-09-21: kalerkantho/jugantor/jamuna + daily-observer +
 #   bd24live (HTTP 403 on runner) now use gnews (Google News site: proxy). No browser needed.
-# ACTIVE SOURCE SET (2026-09-21) = 16 RSS/gnews + 4 scraper + 1 gtrends = 21 sources (up from 12).
+# ACTIVE SOURCE SET (2026-09-21) = 13 gnews + 5 rss + 4 scraper + 1 gtrends = 23 sources (up from 12).
