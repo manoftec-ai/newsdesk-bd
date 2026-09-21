@@ -1,47 +1,48 @@
 ---
-title: "পাবলিক বিশ্ববিদ্যালয়ের চার শর বেশি শিক্ষকের বিরুদ্ধে গঠিত তদন্ত কমিটি কেন বেআইনি নয়: হাইকোর্ট"
-seoTitle: "পাবলিক বিশ্ববিদ্যালয়ের চার শর বেশি শিক্ষকের বিরুদ্ধে গঠিত তদন্ত কমিটি…"
-excerpt: "পাবলিক বিশ্ববিদ্যালয়ের চার শতাধিক শিক্ষকের বিরুদ্ধে গঠিত তদন্ত কমিটি কেন বেআইনি নয়—এমন প্রশ্ন তুলেছে হাইকোর্ট। সমকাল ও প্রথম আলোর প্রতিবেদনে হাইকোর্টের এ প্রশ্নের খবর জানানো হয়ে"
-seoDescription: "পাবলিক বিশ্ববিদ্যালয়ের চার শতাধিক শিক্ষকের বিরুদ্ধে গঠিত তদন্ত কমিটি কেন বেআইনি নয়—এমন প্রশ্ন তুলেছে হাইকোর্ট। সমকাল ও প্রথম আলোর প্রতিবেদনে হাইকোর্টের …"
-date: 2026-09-21T14:49:33.000Z
+title: "আত্মহত্যায় প্ররোচনা মামলায় গাজী নজরুল আটক, স্ত্রী মাকসুদা গ্রেপ্তার"
+thumbnail: "/images/national-286.webp"
+thumbnailAlt: "আত্মহত্যায় প্ররোচনা মামলায় গাজী নজরুল আটক, স্ত্রী মাকসুদা গ্রেপ্তার — ছবি: ASaber91 (BY)"
+seoTitle: "আত্মহত্যায় প্ররোচনা মামলায় গাজী নজরুল আটক, স্ত্রী মাকসুদা গ্রেপ্তার"
+excerpt: "আত্মহত্যায় প্ররোচনার মামলায় এমপি গাজী নজরুল আটক হয়েছেন এবং তাঁর স্ত্রী মাকসুদা গ্রেপ্তার হয়েছেন। কালের কণ্ঠ ও ঢাকা ট্রিবিউনের প্রতিবেদনে এই তথ্য জানানো হয়েছে। কালের কণ্ঠের প্র"
+seoDescription: "আত্মহত্যায় প্ররোচনার মামলায় এমপি গাজী নজরুল আটক হয়েছেন এবং তাঁর স্ত্রী মাকসুদা গ্রেপ্তার হয়েছেন। কালের কণ্ঠ ও ঢাকা ট্রিবিউনের প্রতিবেদনে এই তথ্য জানান…"
+date: 2026-09-20T22:57:29.000Z
 category: "national"
 tags: []
 author: "desk"
 lang: "bn"
 draft: false
-keyPoints:
-  - "চার শতাধিক শিক্ষকের বিরুদ্ধে গঠিত কমিটি নিয়ে প্রশ্ন হাইকোর্টের"
-  - "কেন বেআইনি নয়, তা জানতে চাওয়া হয়েছে"
-  - "সমকাল ও প্রথম আলোর প্রতিবেদনে খবরটি প্রকাশ"
+keyPoints: []
 faq: []
 sources:
-  - name: "সমকাল"
-    url: "https://news.google.com/rss/articles/CBMikwZBVV95cUxQUVRpVWVyUmtXN3l5VW9tQmdIS3pGcW1lc0tKMmNLaFExNExrR0hZM3pPZzVUZHctWGNoc19VSXMwNE5yLXZaaVBBS1Z2Nk05Nmxxeld4TUphaWc5Qjg1NXN5ZmhxeHpYNEdmR09yc0ZJRkExNGd1dkgyQkFPOHFFb3psNTdMZlRTVWthT2JfSmNnOFo3a1hnU1YyTkc2YmxremliZmdwSmhDcFc2V05nY1FBdHhrU083Nml0MEhNTDhEcXFUYVJreVBxbDkxZl9KdGZiUW5nYTlpbjgzVDRWZWo2eGpxSUdtVlBZRTd4VlJVWjA0SDl5RDczd0NORUh2MGRQS0ZiX0s3SUtwa3lSS3VxeEZ2NERRUjBueXlHdk9ZQm5DOWxveGdhY1pzazdCQ0NYaTdvLXZZUmRwak9uSFZKbjV3R0lXNDg3ZjVKMDVIQ0xsV09SNXpIUHpEQndsOUViY2N6NnBtdW9ZR3AxNTFRRDNERFBxWTBXWXJKNmRKNy01cU9ZTXN4YS1ZeTUzVW5qeHJKRE16aUxYU1phbWdiS0VhcFNjTlA4bDFYM0cyMWUyN0ViVnBTVHcwOGVCbzk0ZDJvanFvckc4SllVTmNwQmJCb0dJRHpNQWVzc1ZwLWJ3TnFWajVQQ0dpUmM5RnY5cFB1MVp0Sjk3TTh3LVZlZEppSXhhWVFlTTBnYlc0TEx5TU9nYndZTHdXYXBlaEVVaWRwRjBhQU1TT2hSdDJkSXZYMTRYTk42NXkwbXBtX29EZzJubkhEZ3VSeXNCSml5REdQUkpvbE8xSFFleWJNT1E2QU00cDZIUUhmdnhqNnptSlpsOUY4QjBITUhiQmR0SkFHZV9sVTlRVU42bXNMVVlySXZzeFhzMkVuMzNFaktZaHk3OWo5anU2ejRwQmVDRzlXczBrREM2NFNyak93LVMyVnpBZDEwWW9VbnlQNkxRa3h5RnBxcmhkWHg2NjhFUF9UOS1aazFzVEUwS3B1d3g3RFRicnJ2YVpKS3VmTEh3dGgtRThCVlBKb29zb2pr?oc=5"
-  - name: "প্রথম আলো"
-    url: "https://www.prothomalo.com/bangladesh/56y99s5zeo"
+  - name: "kalerkantho"
+    url: "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVSHhoZjVnMk44clRKV0VxX0RmTGxSLVdQLXRNWkk1U00xNnZmazRRU0o2bFFWLXdScmdOUVF1dndoQkQyamJNaGhUenV1UGNHWTVZR002SjR2Q29wbklhcTYxT3QtX1VYRUFB?oc=5"
+  - name: "Dhaka Tribune"
+    url: "https://news.google.com/rss/articles/CBMi3wRBVV95cUxPdzNXbEpYcDl0dGIwMEdUQ3l0UXlKRmljYnZqd2dZM29vNl91ZHRWZWFhTV9XZEwzb3ctLUtQMjY1OG54VXpSSzIwd2tYemhERVM0SVFzUGk0em1aNVRqbzY4ZWx0bEphMW1HZkJyeDB6MldObnZLQVRYcW9mRHM0dzVPME9zWXpyS3gtNFFtQjdWLWFOS0hOVjBmMGJWVWo1RVIyMkF5QUduSDhGc0ZNZFJfd3lkNFllZjdWajFuYjhhUnNmNmo2ZG45NGFDeFJENks3WUxUUFl6ME1WeGZGX1JUNUZ6enRseWwzUVhROUJsYlBLTDh3U2FNLXVKZ1VjUHBibXFIMjl4WjlCcVgzVlFmaW5vSkNMWTlfOEVsY0VXZm1yNGR4SHdfMWsxaDY1VV9RQjMzWlR1VlFKWGRnVlFyMlREQ3BROFhOdEFhTGFjTHBfSDdLRXh0TW1zMDRmcHg4Q1RuSEZIX2hPWl9GaDN4Sy1tYi1BUm1DYmV3aEtidzRJbGlDQVFkc1FpcVhLVW03bE84a3lxd09iVnJGWWNnbXdsRVdIOUtBNVZyOElmd3FwT2tiUEJhY0V5Q2JMVkJGT0pUY21PTjJHU2tqeENIWDJpRlRuMWNPN0ZMUEhBZjNyaGVIZmpWQVlTWF84aXViV3JDRXBERG5OTHcyR3UyQ3UyTGRycFpFMkNjemlOT2FJdFFZbHpiYnEySmpONGdCdnBUSlE3a09wVUFZbnlDb01CMDF6WDFiMVBWYm8tUTVad2ZDd0JFN2hndGtReWxuZDdhRE5TZ0hrWEhN0gHkBEFVX3lxTE9YSmxuTkdjekZET1g4eTdTei1HUUgzWXYxQ0xqMmxvSmhsQUpxLVo0N1NzWUxIUFdjd19nM0IxcVdWMkZLTjRYMkJvRElaRXFfZXhRbmlITklMY0h0eUR6d040LWV1blhVZnhzMGJpbERjaFBzOGs0SFN2eFUwOXBHNWxiRjFkUmN2UHFhNVNZcW1PeWFaSXJvOGFMRWwyMDRpOERCaUluVWJVOUxvQ293NDZKZk90dGpyTnJJbXFRU21tMDMya1ZVd3prak5UZk1Pc0kwbG0wZlNsV05xWm1kUWgyOEdnZTdpWmR0ZnFFOXJCYk5RTnduN3Iwd1hVMXJ3ZE9aVzU1aG9oaUVkTDVqeE5ZVS1ROWMydllwaHdVaVBiNF9zdy1ncHF5dFNtN3h0RTN6c2FjRWR4TmhwX3NnakpLdDRwRkk0bHRsMTVnZld6TTZiWjB5dGN6UGt5Sm9nRmFqbUUzcnliNkprSlVsV2c1bERvcm1FU19FU2QtOE0xYkhBTWlJYVBNRTF3OE1BRGlJMmJPbW1PT2dTR2Q4cV81c25rbUN4VEN0YVZOanZoOWZ0YzlQT2xNMXFWZGhDNENmN3pqQThVMzE5Mm91NDJVLTZRYzc2T2Vob2lrdzhqY3MzUDZhMFdfTmJubUt1SUJTQi12NnpFdFFBajNUdjY2VVBEM2s2WFJZNzdzUEVxZDN1clhSZHVEdm1mQWRBc1I2U2VCVGFnNjY2RngtNDJQSHRVcnVMaFpETnFuQjk3RU1VUXY2YTdEbGlycU1qaUgwVHA2RGVaMzZKSEVMVVhPSg?oc=5"
 verification:
   badge: "confirmed"
   tier: "A"
   score: 4
   evidence:
     - type: "paper"
-      label: "reputable paper corroboration (prothomalo)"
+      label: "reputable paper corroboration (dhakatribune)"
     - type: "paper"
-      label: "reputable paper corroboration (samakal)"
+      label: "reputable paper corroboration (kalerkantho)"
 ---
 
-পাবলিক বিশ্ববিদ্যালয়ের চার শতাধিক শিক্ষকের বিরুদ্ধে গঠিত তদন্ত কমিটি কেন বেআইনি নয়—এমন প্রশ্ন তুলেছে হাইকোর্ট। সমকাল ও প্রথম আলোর প্রতিবেদনে হাইকোর্টের এ প্রশ্নের খবর জানানো হয়েছে।
+আত্মহত্যায় প্ররোচনার মামলায় এমপি গাজী নজরুল আটক হয়েছেন এবং তাঁর স্ত্রী মাকসুদা গ্রেপ্তার হয়েছেন। কালের কণ্ঠ ও ঢাকা ট্রিবিউনের প্রতিবেদনে এই তথ্য জানানো হয়েছে।
 
-সমকালের শিরোনামে ‘অনুসন্ধান’ এবং প্রথম আলোর শিরোনামে ‘তদন্ত কমিটি’ শব্দ ব্যবহার করা হলেও দুই প্রতিবেদনের মূল বিষয় এক—পাবলিক বিশ্ববিদ্যালয়ের চার শতাধিক শিক্ষকের বিরুদ্ধে যে কমিটি গঠন করা হয়েছে, তা কেন বেআইনি ঘোষণা করা হবে না, হাইকোর্ট তা জানতে চেয়েছে। দুই সংবাদমাধ্যমই হাইকোর্টের এ প্রশ্নকে শিরোনামের কেন্দ্রে রেখেছে।
+কালের কণ্ঠের প্রতিবেদনে বলা হয়েছে, আত্মহত্যার প্ররোচনার মামলায় এমপি গাজী নজরুল ও তাঁর স্ত্রী গ্রেপ্তার হয়েছেন। ঢাকা ট্রিবিউনের খবরে বলা হয়েছে, আত্মহত্যায় প্ররোচনার মামলায় গাজী নজরুল আটক হয়েছেন এবং তাঁর স্ত্রী মাকসুদা গ্রেপ্তার হয়েছেন। দুই সংবাদমাধ্যমই এমপি গাজী নজরুল ও তাঁর স্ত্রীর জড়িত থাকার বিষয়টি নিশ্চিত করেছে। আটক-গ্রেপ্তারের ঘটনায় দুই পত্রিকার প্রতিবেদনের মূল বিবরণে মিল রয়েছে।
 
-কোন পাবলিক বিশ্ববিদ্যালয়ের কতজন শিক্ষকের কথা বলা হচ্ছে, কমিটি কবে ও কাদের নির্দেশে গঠন করা হয়েছে এবং হাইকোর্টের এ প্রশ্নের পরবর্তী শুনানি কবে—এসব বিস্তারিত সূত্রগুলোর সংক্ষিপ্ত প্রতিবেদনে নেই। তবে দুই প্রতিবেদনের বর্ণনা থেকে বোঝা যায়, সরকারি বিশ্ববিদ্যালয়ের একাধিক শিক্ষকের বিরুদ্ধে গঠিত কমিটির বৈধতা নিয়ে আদালতের দৃষ্টি আকর্ষণ করা হয়েছে এবং হাইকোর্ট কারণে এ প্রশ্ন তুলে জবাবলিপি চেয়েছে।
+মামলাটির বিস্তারিত—কার আত্মহত্যায় প্ররোচনার অভিযোগ আনা হয়েছে, তা প্রতিবেদনগুলোয় স্পষ্ট নয়। গাজী নজরুল কোন এলাকার সংসদ সদস্য, তাও প্রতিবেদনগুলোয় রয়েছে কি না জানা যাচ্ছে না। আটক ও গ্রেপ্তারের নির্দিষ্ট তারিখ, সময় ও স্থান কোথায়, সে তথ্যও পাওয়া যায়নি। এমপি ও তাঁর স্ত্রীকে একই মামলায় আটক-গ্রেপ্তার করা হয়েছে কি না, তা-ও স্পষ্ট নয়।
 
-খবরটির সূত্র সমকাল ও প্রথম আলো—দুটি প্রতিষ্ঠিত সংবাদমাধ্যমই হাইকোর্টের প্রশ্নের কথাটি প্রতিবেদনে নিশ্চিত করেছে। প্রশ্নটি তুলেই হাইকোর্ট সংশ্লিষ্ট পক্ষের ব্যাখ্যা চেয়েছে; তবে কমিটি গঠনের নির্দেশটি কার পক্ষ থেকে এসেছে, তা দুটি সংক্ষিপ্ত প্রতিবেদনে স্পষ্টভাবে বলা নেই। প্রতিবেদন দুটি সংক্ষিপ্ত হলেও হাইকোর্টের এ প্রশ্নকে অন্যতম প্রধান খবর হিসেবে স্থান দিয়েছে।
+পুলিশ বা সংশ্লিষ্ট কর্তৃপক্ষ আনুষ্ঠানিক বিবৃতি দিয়েছে কি না, তা এ মুহূর্তে প্রতিবেদনগুলো থেকে জানা যাচ্ছে না। মামলার তদন্তের পরিধি কতটুকু, তাও খবরগুলোয় উল্লেখ নেই। এ ধরনের মামলায় আইনগত প্রক্রিয়া অনুযায়ী আটক-গ্রেপ্তারকৃতদের আদালতে তোলার কথা থাকলেও তা নিশ্চিত হওয়া যাচ্ছে না। প্রতিবেদনে আত্মহত্যার ঘটনাটি কোথায় ও কবে ঘটেছিল, সে তথ্যও নেই।
 
-হাইকোর্টের এ প্রশ্নটি ওই কমিটির বৈধতা নিয়ে আদালতের স্পষ্ট অবস্থানই তুলে ধরছে। এর আগে বিশ্ববিদ্যালয় শিক্ষকদের বিরুদ্ধে গঠিত অন্য কোনো কমিটি নিয়ে আদালতে এ ধরনের প্রশ্ন উঠেছিল কি না, তা সূত্রে উল্লেখ নেই; আবেদনকারী পক্ষের নামও প্রতিবেদন দুটিতে নেই। ফলে খবরটির মূল উপাদান—চার শতাধিক শিক্ষকের বিরুদ্ধে গঠিত কমিটির বৈধতা নিয়ে হাইকোর্টের প্রশ্ন—দুটি স্বতন্ত্র সংবাদমাধ্যমে নিশ্চিত হয়েছে।
+একজন সংসদ সদস্য ও তাঁর স্ত্রীর জড়িত থাকার খবর জাতীয় পর্যায়ে নজর কাড়ছে। আত্মহত্যায় প্ররোচনার মামলা সাধারণত সংবেদনশীল হিসেবে বিবেচিত হয়। মামলার পূর্ণাঙ্গ চিত্র পরিষ্কার করতে আরও তথ্যের অপেক্ষায় থাকতে হবে সংশ্লিষ্টদের। আইনি প্রক্রিয়ার ধাপে ধাপে বিস্তারিত জানা গেলে এই খবর হালনাগাদ করা যাবে।
 
-এই খবরটি সমকাল ও প্রথম আলোর প্রতিবেদন মিলিয়ে স্বাধীনভাবে যাচাই করা হয়েছে।
+পরবর্তী তথ্য পাওয়া গেলে এই খবর হালনাগাদ করা হবে। এমপি ও তাঁর স্ত্রীর পক্ষ থেকে এখনও কোনো আনুষ্ঠানিক বক্তব্য প্রকাশ পায়নি বলে প্রতিবেদনগুলোয় ইঙ্গিত রয়েছে। মামলার পরবর্তী শুনানি ইত্যাদি বিষয়ে গুরুত্বপূর্ণ তথ্য সামনে এলে তা-ই চূড়ান্ত হিসেবে বিবেচিত হবে।
+
+এই খবরটি কালের কণ্ঠ ও ঢাকা ট্রিবিউনের প্রতিবেদন মিলিয়ে স্বাধীনভাবে যাচাই করা হয়েছে।
 
 সূত্র:
-- সমকাল — https://news.google.com/rss/articles/CBMikwZBVV95cUxQUVRpVWVyUmtXN3l5VW9tQmdIS3pGcW1lc0tKMmNLaFExNExrR0hZM3pPZzVUZHctWGNoc19VSXMwNE5yLXZaaVBBS1Z2Nk05Nmxxeld4TUphaWc5Qjg1NXN5ZmhxeHpYNEdmR09yc0ZJRkExNGd1dkgyQkFPOHFFb3psNTdMZlRTVWthT2JfSmNnOFo3a1hnU1YyTkc2YmxremliZmdwSmhDcFc2V05nY1FBdHhrU083Nml0MEhNTDhEcXFUYVJreVBxbDkxZl9KdGZiUW5nYTlpbjgzVDRWZWo2eGpxSUdtVlBZRTd4VlJVWjA0SDl5RDczd0NORUh2MGRQS0ZiX0s3SUtwa3lSS3VxeEZ2NERRUjBueXlHdk9ZQm5DOWxveGdhY1pzazdCQ0NYaTdvLXZZUmRwak9uSFZKbjV3R0lXNDg3ZjVKMDVIQ0xsV09SNXpIUHpEQndsOUViY2N6NnBtdW9ZR3AxNTFRRDNERFBxWTBXWXJKNmRKNy01cU9ZTXN4YS1ZeTUzVW5qeHJKRE16aUxYU1phbWdiS0VhcFNjTlA4bDFYM0cyMWUyN0ViVnBTVHcwOGVCbzk0ZDJvanFvckc4SllVTmNwQmJCb0dJRHpNQWVzc1ZwLWJ3TnFWajVQQ0dpUmM5RnY5cFB1MVp0Sjk3TTh3LVZlZEppSXhhWVFlTTBnYlc0TEx5TU9nYndZTHdXYXBlaEVVaWRwRjBhQU1TT2hSdDJkSXZYMTRYTk42NXkwbXBtX29EZzJubkhEZ3VSeXNCSml5REdQUkpvbE8xSFFleWJNT1E2QU00cDZIUUhmdnhqNnptSlpsOUY4QjBITUhiQmR0SkFHZV9sVTlRVU42bXNMVVlySXZzeFhzMkVuMzNFaktZaHk3OWo5anU2ejRwQmVDRzlXczBrREM2NFNyak93LVMyVnpBZDEwWW9VbnlQNkxRa3h5RnBxcmhkWHg2NjhFUF9UOS1aazFzVEUwS3B1d3g3RFRicnJ2YVpKS3VmTEh3dGgtRThCVlBKb29zb2pr?oc=5
-- প্রথম আলো — https://www.prothomalo.com/bangladesh/56y99s5zeo
+- কালের কণ্ঠ — https://news.google.com/rss/articles/CBMia0FVX3lxTFBVSHhoZjVnMk44clRKV0VxX0RmTGxSLVdQLXRNWkk1U00xNnZmazRRU0o2bFFWLXdScmdOUVF1dndoQkQyamJNaGhUenV1UGNHWTVZR002SjR2Q29wbklhcTYxT3QtX1VYRUFB?oc=5
+- ঢাকা ট্রিবিউন — https://news.google.com/rss/articles/CBMi3wRBVV95cUxPdzNXbEpYcDl0dGIwMEdUQ3l0UXlKRmljYnZqd2dZM29vNl91ZHRWZWFhTV9XZEwzb3ctLUtQMjY1OG54VXpSSzIwd2tYemhERVM0SVFzUGk0em1aNVRqbzY4ZWx0bEphMW1HZkJyeDB6MldObnZLQVRYcW9mRHM0dzVPME9zWXpyS3gtNFFtQjdWLWFOS0hOVjBmMGJWVWo1RVIyMkF5QUduSDhGc0ZNZFJfd3lkNFllZjdWajFuYjhhUnNmNmo2ZG45NGFDeFJENks3WUxUUFl6ME1WeGZGX1JUNUZ6enRseWwzUVhROUJsYlBLTDh3U2FNLXVKZ1VjUHBibXFIMjl4WjlCcVgzVlFmaW5vSkNMWTlfOEVsY0VXZm1yNGR4SHdfMWsxaDY1VV9RQjMzWlR1VlFKWGRnVlFyMlREQ3BROFhOdEFhTGFjTHBfSDdLRXh0TW1zMDRmcHg4Q1RuSEZIX2hPWl9GaDN4Sy1tYi1BUm1DYmV3aEtidzRJbGlDQVFkc1FpcVhLVW03bE84a3lxd09iVnJGWWNnbXdsRVdIOUtBNVZyOElmd3FwT2tiUEJhY0V5Q2JMVkJGT0pUY21PTjJHU2tqeENIWDJpRlRuMWNPN0ZMUEhBZjNyaGVIZmpWQVlTWF84aXViV3JDRXBERG5OTHcyR3UyQ3UyTGRycFpFMkNjemlOT2FJdFFZbHpiYnEySmpONGdCdnBUSlE3a09wVUFZbnlDb01CMDF6WDFiMVBWYm8tUTVad2ZDd0JFN2hndGtReWxuZDdhRE5TZ0hrWEhN0gHkBEFVX3lxTE9YSmxuTkdjekZET1g4eTdTei1HUUgzWXYxQ0xqMmxvSmhsQUpxLVo0N1NzWUxIUFdjd19nM0IxcVdWMkZLTjRYMkJvRElaRXFfZXhRbmlITklMY0h0eUR6d040LWV1blhVZnhzMGJpbERjaFBzOGs0SFN2eFUwOXBHNWxiRjFkUmN2UHFhNVNZcW1PeWFaSXJvOGFMRWwyMDRpOERCaUluVWJVOUxvQ293NDZKZk90dGpyTnJJbXFRU21tMDMya1ZVd3prak5UZk1Pc0kwbG0wZlNsV05xWm1kUWgyOEdnZTdpWmR0ZnFFOXJCYk5RTnduN3Iwd1hVMXJ3ZE9aVzU1aG9oaUVkTDVqeE5ZVS1ROWMydllwaHdVaVBiNF9zdy1ncHF5dFNtN3h0RTN6c2FjRWR4TmhwX3NnakpLdDRwRkk0bHRsMTVnZld6TTZiWjB5dGN6UGt5Sm9nRmFqbUUzcnliNkprSlVsV2c1bERvcm1FU19FU2QtOE0xYkhBTWlJYVBNRTF3OE1BRGlJMmJPbW1PT2dTR2Q4cV81c25rbUN4VEN0YVZOanZoOWZ0YzlQT2xNMXFWZGhDNENmN3pqQThVMzE5Mm91NDJVLTZRYzc2T2Vob2lrdzhqY3MzUDZhMFdfTmJubUt1SUJTQi12NnpFdFFBajNUdjY2VVBEM2s2WFJZNzdzUEVxZDN1clhSZHVEdm1mQWRBc1I2U2VCVGFnNjY2RngtNDJQSHRVcnVMaFpETnFuQjk3RU1VUXY2YTdEbGlycU1qaUgwVHA2RGVaMzZKSEVMVVhPSg?oc=5
