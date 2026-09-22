@@ -9,7 +9,7 @@
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
-import { loadPublishedTitles, isTitleDuplicate } from '../lib/published.mjs';
+import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -50,7 +50,18 @@ const briefs = readdirSync(BRIEFS_DIR)
 const pending = briefs.filter((b) => !b.published && !b.titleDup);
 pending.sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.slug.localeCompare(b.slug));
 
-const picked = pending.slice(0, max);
+// Same-batch guard: two pending briefs can carry the SAME headline (same event
+// clustered twice with identical members, e.g. national-290/292). Pick only the
+// newest slug per normalized title so the same story can't be picked twice.
+const seenTitle = new Set();
+const picked = [];
+for (const p of pending) {
+  const key = p.headline ? normTitle(p.headline) : '';
+  if (key && seenTitle.has(key)) continue;
+  if (key) seenTitle.add(key);
+  picked.push(p);
+  if (picked.length >= max) break;
+}
 
 if (picked.length) {
   writeFileSync(
@@ -63,6 +74,7 @@ if (picked.length) {
   );
 }
 const dupCount = briefs.filter((b) => b.titleDup).length;
-console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
+console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
 for (const p of picked) console.log(`  ${p.date || 'no-date'}  ${p.slug}`);
+if (!picked.length) console.log('  -> no unpublished briefs');
 if (!picked.length) console.log('  -> no unpublished briefs');

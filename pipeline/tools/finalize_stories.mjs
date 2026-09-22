@@ -7,7 +7,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { finalizeStory, storyExists } from '../lib/synth.mjs';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
-import { loadPublishedTitles, isTitleDuplicate } from '../lib/published.mjs';
+import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 
 const siteArg = process.argv.find((a) => a.startsWith('--site='))?.split('=')[1];
 const siteDir = siteArg
@@ -51,6 +51,11 @@ for (const f of bodies) {
     const body = readFileSync(join(bodiesDir, f), 'utf8').trim();
     const out = finalizeStory(slug, body, { siteDir });
     finalized++;
+    // Register the headline immediately so a SECOND brief with the SAME title
+    // in this same run (same-batch duplicate, e.g. national-290/292) is skipped
+    // instead of also being published. In-memory mirror of loadPublishedTitles.
+    const key = normTitle(brief.headline);
+    if (!publishedTitles.has(key)) publishedTitles.set(key, brief.date);
     console.log(`+ ${slug}: wrote ${out}`);
   } catch (e) {
     failed++;
