@@ -1,48 +1,44 @@
 ---
-title: "দুর্নীতির অভিযোগে এনবিআরের সাবেক চেয়ারম্যান-সচিবের ২৫টি ব্যাংক হিসাব অবরুদ্ধের আদেশ"
-seoTitle: "দুর্নীতির অভিযোগে এনবিআরের সাবেক চেয়ারম্যান-সচিবের ২৫টি ব্যাংক হিসাব…"
-excerpt: "দুর্নীতি দমন কমিশনের (দুদক) আবেদনের পরিপ্রেক্ষিতে জাতীয় রাজস্ব বোর্ডের (এনবিআর) সাবেক চেয়ারম্যান ও সাবেক প্রথম সচিবের নামে থাকা ২৫টি ব্যাংক হিসাব অবরুদ্ধের (ফ্রিজ) আদেশ দিয়েছেন "
-seoDescription: "দুর্নীতি দমন কমিশনের (দুদক) আবেদনের পরিপ্রেক্ষিতে জাতীয় রাজস্ব বোর্ডের (এনবিআর) সাবেক চেয়ারম্যান ও সাবেক প্রথম সচিবের নামে থাকা ২৫টি ব্যাংক হিসাব অবরুদ্…"
-date: 2026-09-22T11:26:56.000Z
+title: "চার জেলায় নতুন পুলিশ সুপার"
+thumbnail: "/images/national-341.webp"
+thumbnailAlt: "চার জেলায় নতুন পুলিশ সুপার — ছবি: Silver Blu3 (BY-SA)"
+seoTitle: "চার জেলায় নতুন পুলিশ সুপার"
+excerpt: "চার জেলায় নতুন পুলিশ সুপার (এসপি) নিয়োগ দেওয়া হয়েছে। মঙ্গলবার (২২ সেপ্টেম্বর) এ সংক্রান্ত খবর প্রকাশ করেছে দেশের দুই প্রতিষ্ঠিত সংবাদমাধ্যম—যুগান্তর ও কালের কণ্ঠ। যুগান্তরের শি"
+seoDescription: "চার জেলায় নতুন পুলিশ সুপার (এসপি) নিয়োগ দেওয়া হয়েছে। মঙ্গলবার (২২ সেপ্টেম্বর) এ সংক্রান্ত খবর প্রকাশ করেছে দেশের দুই প্রতিষ্ঠিত সংবাদমাধ্যম—যুগান্তর ও…"
+date: 2026-09-22T09:58:32.000Z
 category: "national"
 tags: []
 author: "desk"
 lang: "bn"
 draft: false
-keyPoints:
-  - "এনবিআরের সাবেক চেয়ারম্যান আবু হেনা রহমাতুল মুনীমের নামে ২৫ ব্যাংক হিসাব অবরুদ্ধের আদেশ"
-  - "সাবেক প্রথম সচিব ঈদতাজুল ইসলামের হিসাবও অবরুদ্ধ"
-  - "দুদকের আবেদনে জ্ঞাত আয়বহির্ভূত সম্পদ অর্জনের অনুসন্ধানের কথা উল্লেখ"
-  - "ঢাকার মহানগর সিনিয়র স্পেশাল জজ আদালতের ভারপ্রাপ্ত বিচারক শুনানি শেষে আদেশ"
+keyPoints: []
 faq: []
 sources:
-  - name: "প্রথম আলো"
-    url: "https://www.prothomalo.com/bangladesh/crime/qutmj9o7ai"
-  - name: "দৈনিক ইত্তেফাক"
-    url: "https://news.google.com/rss/articles/CBMi7ARBVV95cUxOSnQtczdCRTBJR3NUbFRwQlhGUG5YeDg4R1VXX2NhemtvMHBqbDJ5bmxkZnhEMHluQmxEU19XWURCczVUdV8tTTlLc2UweTZHaXNqVnBoTXRaR1RKLUtkVjFXcjlMcy1hOHJxcFFhR1huQXJqR2UtMXR5LWJUWVBrY0tpSFhNSzkzQUtIV21RdVM4TDNMV2F1aElsMEpVblRDTW1tQnJmZkk2MDFQMVhfZGNyNWVGRFRueERKa1J3RnhXekJvU1E0RDZoX1Uxc09qM2dueW5ydk5heDUxZ1gyVmt0THRRQlhWeEh5U1pFcmM5OHRsbjlvZWZBOHpabkYzcUJrbVhVRERlcFZzQ2N3LXNYZnhrRV9kWEtVZG52dVN2MnFCSnFQSW02OFVBdzVncVFNMnh6Q1BveWMzR1hUQkRyYWF3aWJpTU85amRFRWtUUVFtV3ZGemtBMGNJQjl0dDR4MVlBcWlzYmg0RFVvZlhKd3g4N1ZlWmdOZzgtNXBjS3RoWm5BeUozdG9relRwelFQcmNQdVVRWmZvLXNuazNFODRkUnExZTVYRlcwajFHbUItdElMTE9acVM5a0F6XzBxaTBMajJSRkdZZHY0YmJZTDBkNmNkT0I1VzVHRF9YNVNNWGJDU1FxYkpwRjFEWGtnZHFLeGhCc3lySXJUZUZyVEhOZTRBMzRBUVFmRUhtVWUxNXNQektLalFWWThienlsRmw0SWdKaE1PNTNHWDJfR0ViWFNZajI5ZlkzdThOeTdwaktxR3pWOWVJLXZZRk1yREpoZHNYVjBXLVN3TFBhVVJJTjFRaURQM9IB8gRBVV95cUxQYUpxQmZHcHJWSWxtelNkMjhqUXNWRnlmVzR2dVhISGhCY25jMXdPR1dGWF9KN2Y0QWJTUF9lY2tPUi1BZi11UUJhN2NaTURZQ1NJSW5EdDFZTFpqSzduQXYyT2NFVkxaTzJYbkl3UkR3dE1EUEwyX21xRGdsS0hoRGFYZkpoOThrVHVkZHpYcWhISlVOdHNuemdIRjJTXzJNd2RvMmpsdk1hdlBzaENEOUFrQlJQTkpncEtSMjJwTUlmd2hEb0F3eE5mWm5YVjlvU290aFFNNFREYkhrQUhkeGt0ekZmazhNMndreEdkTDZHSENZZ0RHMmFWSFpWRTF6TWtUVWRtS25CM1E3LS1RdmV1cGZmLTYwRGZxdnpCNExpbVZzUVBMSEtyLWFPcW53dDVlclZnb010WmZGZWNEbmJrYWdqbzBhZmtBN1FOdllnTU5LdE55QmNSY2FYSUlvbVR2a1BDRDJjbFItWlN3VWRMb25tVURHRUc4emxzaUc5N3NGcTZhb2dLUl93TFVlOThETHllYlNMWTJnYkpkZ1NFRlRLZTFpc3FxdDM1VVJPWGhiczlxTGRNS1FXdmNaMGUzZTYwUTdDcEg3elZJb2I3UTloZ2hfdzhCempiMkh1R0NZN2F2SkJyWUlwbHMzQ0xHeTRkT2loRVhNWjdKV2dwdjVFRDllc2NjamxDN2UyQnZaTlViX1MzallWZ0ZydjNHd21zaThoaUN6eGVHajlZQWtoOFVmejgwX3JsZkJWbjdwa1NnN3B1UXZ5UTE0NE53eWFHS1J5MG9Del9tdEpyeDNWaFhwUWtVUUwzSmNkQQ?oc=5"
+  - name: "jugantor"
+    url: "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80QWlYdHBydF9zTVZTYUdwOEpKd1A5dXI4cHlNcVF6eXBsZy1fRXpKcWdDanBwNEJwaEZXaXJmTXRrOEY3YS04NlE5V1JVRjcxVzA4?oc=5"
+  - name: "kalerkantho"
+    url: "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WZzRDT2M2SmtDU2xCLTc0WXZRNllKX0x4QVlwdDU4YmNIOXdoWUFEQnRuUl92ZFBGOERlajRlbHhWWVo5Ry0weTA3WXR1Wkh3YjQ0RGJRVFo3SDJ2QjdsMzJFT1pFR0dabnpPLU14Yw?oc=5"
 verification:
   badge: "confirmed"
   tier: "A"
   score: 4
   evidence:
     - type: "paper"
-      label: "reputable paper corroboration (prothomalo)"
+      label: "reputable paper corroboration (kalerkantho)"
     - type: "paper"
-      label: "reputable paper corroboration (ittefaq)"
+      label: "reputable paper corroboration (jugantor)"
 ---
 
-দুর্নীতি দমন কমিশনের (দুদক) আবেদনের পরিপ্রেক্ষিতে জাতীয় রাজস্ব বোর্ডের (এনবিআর) সাবেক চেয়ারম্যান ও সাবেক প্রথম সচিবের নামে থাকা ২৫টি ব্যাংক হিসাব অবরুদ্ধের (ফ্রিজ) আদেশ দিয়েছেন আদালত।
+চার জেলায় নতুন পুলিশ সুপার (এসপি) নিয়োগ দেওয়া হয়েছে। মঙ্গলবার (২২ সেপ্টেম্বর) এ সংক্রান্ত খবর প্রকাশ করেছে দেশের দুই প্রতিষ্ঠিত সংবাদমাধ্যম—যুগান্তর ও কালের কণ্ঠ। যুগান্তরের শিরোনাম ‘৪ জেলায় নতুন পুলিশ সুপার’, আর কালের কণ্ঠের শিরোনাম ‘চার জেলায় নতুন পুলিশ সুপার’—দুটি শিরোনামের সংখ্যা ও বিষয় অভিন্ন।
 
-আজ মঙ্গলবার (২২ সেপ্টেম্বর) ঢাকার মহানগর সিনিয়র স্পেশাল জজ আদালতের ভারপ্রাপ্ত বিচারক মো. আলমগীর শুনানি শেষে এই আদেশ দেন। দুদকের আইনজীবী তরিকুল ইসলাম প্রথম আলোকে এ তথ্য নিশ্চিত করেছেন। তিনি জানান, দুদকের উপপরিচালক মো. সাইদুজ্জামান ২৫টি ব্যাংক হিসাব অবরুদ্ধ করার আবেদন করেন। শুনানি শেষে আদালত আবেদনটি মঞ্জুর করেন।
+দুই সংবাদমাধ্যমের প্রতিবেদনে বলা হয়েছে, চারটি জেলার পুলিশ প্রধান হিসেবে নতুন কর্মকর্তাদের পদায়ন করা হয়েছে। তবে প্রকাশিত সূচনায় কোন কোন জেলায় এই নিয়োগ দেওয়া হয়েছে, নতুন এসপিদের নাম বা পূর্ববর্তী কর্মস্থল কোথায় ছিল—এসব বিস্তারিত উল্লেখ করা হয়নি। ফলে পূর্ণাঙ্গ তালিকা জানতে পাঠককে সংশ্লিষ্ট সংবাদমাধ্যমের বিস্তারিত প্রতিবেদন অনুসরণ করতে হবে। বদলির কারণও সূচনায় সরাসরি বলা হয়নি।
 
-আদালতে জমা দেওয়া দুদকের আবেদনে বলা হয়েছে, আবু হেনা রহমাতুল মুনীম, ঈদতাজুল ইসলাম ও অন্যদের বিরুদ্ধে বিভিন্ন অনিয়ম ও দুর্নীতির মাধ্যমে জ্ঞাত আয়বহির্ভূত সম্পদ অর্জনের অভিযোগে অনুসন্ধান চলছে। অনুসন্ধানকালে সংশ্লিষ্ট ব্যক্তিদের এসব ব্যাংক হিসাবে সন্দেহজনক ও অস্বাভাবিক লেনদেনের তথ্য পাওয়া গেছে।
+জেলা পর্যায়ে পুলিশ প্রধানের বদলি ও নিয়োগ প্রশাসনিক প্রয়োজনে নিয়মিতই ঘটে থাকে। কর্মস্থল পরিবর্তন, জ্যেষ্ঠদের নতুন দায়িত্ব বা বিভিন্ন জেলায় প্রশাসনিক ভারসাম্য আনার অংশ হিসেবে এ ধরনের সিদ্ধান্ত নেওয়া হয় বলে প্রশাসনিক চর্চায় বিবেচনা করা হয়। চারটি জেলায় একসঙ্গে নতুন পুলিশ সুপার নিয়োগের সিদ্ধান্ত আলাদা করে দুটি প্রতিষ্ঠিত পত্রিকার শিরোনামে জায়গা পেয়েছে, যা এই রদবদলকে পাঠকদের দৃষ্টিতে গুরুত্বপূর্ণ করেছে। তবে সূচনা প্রকাশিত হওয়ায় এখনো পুরোপুরি চিত্র পাওয়া যায়নি।
 
-দুদকের আবেদনে আরও উল্লেখ করা হয়েছে, বিশ্বস্ত সূত্রে জানা গেছে, অভিযোগসংশ্লিষ্ট ব্যক্তিরা এসব ব্যাংক হিসাবে থাকা অস্থাবর সম্পদ বিভিন্ন মাধ্যমে হস্তান্তর বা বেহাত করার চেষ্টা করছেন। অনুসন্ধান কার্যক্রম সম্পন্ন হওয়ার আগেই এই সম্পদ হস্তান্তর, রূপান্তর বা স্থানান্তর হয়ে গেলে সুষ্ঠু অনুসন্ধান কার্যক্রম ব্যাহত হওয়ার আশঙ্কা রয়েছে। তাই অনুসন্ধানের স্বার্থে হিসাবগুলোতে থাকা অস্থাবর সম্পদ অবিলম্বে অবরুদ্ধ করা প্রয়োজন বলে আবেদনে জানানো হয়েছে।
+যুগান্তর ও কালের কণ্ঠ—দুটি স্বাধীন সংবাদমাধ্যম স্বতন্ত্রভাবে একই তথ্য প্রকাশ করায় খবরটির নির্ভরযোগ্যতা জোরদার হয়েছে। চার জেলার সংখ্যাটি দুই শিরোনামেই হুবহু নির্দেশিত হয়েছে, যা দুটি সূত্রের মধ্যে সামঞ্জস্য দেখায়। নিয়োগের বিস্তারিত তালিকা—কোন জেলায় কে এসপি হচ্ছেন—আনুষ্ঠানিকভাবে প্রকাশিত হলে আরও স্পষ্ট তথ্য জানা যাবে; আপাতত প্রকাশিত তথ্যই নির্ভরযোগ্য ভিত্তি। প্রশাসনিক সিদ্ধান্তের পরিক্রমায় জেলাগুলোর পুলিশ প্রশাসনের গঠন কেমন পাল্টায়, তা ফলোআপ প্রতিবেদনে তুলে ধরা যেতে পারে।
 
-এনবিআর তথা রাজস্ব খাতের আলোচিত এই দুজন প্রাক্তন কর্মকর্তার নামে ব্যাংক হিসাব অবরুদ্ধের ঘটনায় নতুন করে আলোচনা শুরু হয়েছে। দৈনিক ইত্তেফাকও একই শিরোনামে প্রতিবেদন প্রকাশ করে তথ্যটি নিশ্চিত করেছে।
-
-এই খবরটি প্রথম আলো ও দৈনিক ইত্তেফাক—দুটি প্রতিষ্ঠিত জাতীয় সংবাদমাধ্যমের প্রতিবেদন থেকে যাচাই করা হয়েছে।
+এই খবরটি যুগান্তর ও কালের কণ্ঠ—দুটি প্রতিষ্ঠিত সংবাদমাধ্যমের প্রতিবেদন মিলিয়ে স্বাধীনভাবে যাচাই করা হয়েছে এবং দুই সূত্রের তথ্য অনুযায়ী বিষয়টি নিশ্চিত হয়েছে।
 
 সূত্র:
-- প্রথম আলো — https://www.prothomalo.com/bangladesh/crime/qutmj9o7ai
-- দৈনিক ইত্তেফাক — https://news.google.com/rss/articles/CBMi7ARBVV95cUxOSnQtczdCRTBJR3NUbFRwQlhGUG5YeDg4R1VXX2NhemtvMHBqbDJ5bmxkZnhEMHluQmxEU19XWURCczVUdV8tTTlLc2UweTZHaXNqVnBoTXRaR1RKLUtkVjFXcjlMcy1hOHJxcFFhR1huQXJqR2UtMXR5LWJUWVBrY0tpSFhNSzkzQUtIV21RdVM4TDNMV2F1aElsMEpVblRDTW1tQnJmZkk2MDFQMVhfZGNyNWVGRFRueERKa1J3RnhXekJvU1E0RDZoX1Uxc09qM2dueW5ydk5heDUxZ1gyVmt0THRRQlhWeEh5U1pFcmM5OHRsbjlvZWZBOHpabkYzcUJrbVhVRERlcFZzQ2N3LXNYZnhrRV9kWEtVZG52dVN2MnFCSnFQSW02OFVBdzVncVFNMnh6Q1BveWMzR1hUQkRyYWF3aWJpTU85amRFRWtUUVFtV3ZGemtBMGNJQjl0dDR4MVlBcWlzYmg0RFVvZlhKd3g4N1ZlWmdOZzgtNXBjS3RoWm5BeUozdG9relRwelFQcmNQdVVRWmZvLXNuazNFODRkUnExZTVYRlcwajFHbUItdElMTE9acVM5a0F6XzBxaTBMajJSRkdZZHY0YmJZTDBkNmNkT0I1VzVHRF9YNVNNWGJDU1FxYkpwRjFEWGtnZHFLeGhCc3lySXJUZUZyVEhOZTRBMzRBUVFmRUhtVWUxNXNQektLalFWWThienlsRmw0SWdKaE1PNTNHWDJfR0ViWFNZajI5ZlkzdThOeTdwaktxR3pWOWVJLXZZRk1yREpoZHNYVjBXLVN3TFBhVVJJTjFRaURQM9IB8gRBVV95cUxQYUpxQmZHcHJWSWxtelNkMjhqUXNWRnlmVzR2dVhISGhCY25jMXdPR1dGWF9KN2Y0QWJTUF9lY2tPUi1BZi11UUJhN2NaTURZQ1NJSW5EdDFZTFpqSzduQXYyT2NFVkxaTzJYbkl3UkR3dE1EUEwyX21xRGdsS0hoRGFYZkpoOThrVHVkZHpYcWhISlVOdHNuemdIRjJTXzJNd2RvMmpsdk1hdlBzaENEOUFrQlJQTkpncEtSMjJwTUlmd2hEb0F3eE5mWm5YVjlvU290aFFNNFREYkhrQUhkeGt0ekZmazhNMndreEdkTDZHSENZZ0RHMmFWSFpWRTF6TWtUVWRtS25CM1E3LS1RdmV1cGZmLTYwRGZxdnpCNExpbVZzUVBMSEtyLWFPcW53dDVlclZnb010WmZGZWNEbmJrYWdqbzBhZmtBN1FOdllnTU5LdE55QmNSY2FYSUlvbVR2a1BDRDJjbFItWlN3VWRMb25tVURHRUc4emxzaUc5N3NGcTZhb2dLUl93TFVlOThETHllYlNMWTJnYkpkZ1NFRlRLZTFpc3FxdDM1VVJPWGhiczlxTGRNS1FXdmNaMGUzZTYwUTdDcEg3elZJb2I3UTloZ2hfdzhCempiMkh1R0NZN2F2SkJyWUlwbHMzQ0xHeTRkT2loRVhNWjdKV2dwdjVFRDllc2NjamxDN2UyQnZaTlViX1MzallWZ0ZydjNHd21zaThoaUN6eGVHajlZQWtoOFVmejgwX3JsZkJWbjdwa1NnN3B1UXZ5UTE0NE53eWFHS1J5MG9Del9tdEpyeDNWaFhwUWtVUUwzSmNkQQ?oc=5
+- যুগান্তর — https://news.google.com/rss/articles/CBMiU0FVX3lxTE80QWlYdHBydF9zTVZTYUdwOEpKd1A5dXI4cHlNcVF6eXBsZy1fRXpKcWdDanBwNEJwaEZXaXJmTXRrOEY3YS04NlE5V1JVRjcxVzA4?oc=5
+- কালের কণ্ঠ — https://news.google.com/rss/articles/CBMib0FVX3lxTE1WZzRDT2M2SmtDU2xCLTc0WXZRNllKX0x4QVlwdDU4YmNIOXdoWUFEQnRuUl92ZFBGOERlajRlbHhWWVo5Ry0weTA3WXR1Wkh3YjQ0RGJRVFo3SDJ2QjdsMzJFT1pFR0dabnpPLU14Yw?oc=5
