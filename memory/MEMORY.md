@@ -1,8 +1,8 @@
 | D45 | history pack faq MUST be {q,a} — matches Astro site news schema; enforced in gate_history_batch.mjs renderArticle+content-schema check (2026-09-21) | Everest batch used {question,answer} → astro deploy broke (D44) |
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
-> Last updated: 2026-09-21
-> Sessions count: 20
+> Last updated: 2026-09-22
+> Sessions count: 21
 
 ## ⏰ REMINDERS — user action items (MANDATORY: surface at session start)
 Recorded per user request 2026-09-20: "keep these two points for me … you can remind me this later".
@@ -42,6 +42,7 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 ## Decisions
 | Date | Decision | Rationale / context |
 |------|----------|---------------------|
+| 2026-09-22 | D-Q16: **Same-batch duplicate hole in D-Q14 — title unicity now enforced WITHIN one run too.** User saw the same Keraniganj gold-heist story twice on the homepage (national-290 + national-292, identical headline/date/sources kalerkantho+prothomalo, both authored same 20:20 run). Root cause: D-Q14's `isTitleDuplicate` checks against a SNAPSHOT of already-published titles taken once at script start, so two briefs carrying the identical headline finalized in the SAME run both pass (290 written, then 292 seen as "not yet published"). Second copy national-292 ALSO leaked editorial meta-text into its live body (`[this sentence asserts a negative…]`). Fix (commit `b6871c0`): (1) removed `national-292` + its webp (kept the clean 290); (2) `finalize_stories.mjs` registers each written headline into the in-memory `publishedTitles` map (`normTitle`) so a later same-run duplicate is skipped; (3) `pick_briefs.mjs` dedupes the PENDING pool by normalized headline (keeps newest slug) so the same story can't even be picked twice in one run. Verified: unit sim (same-title 2nd check → true/blocked), real-repo pick sim picks 290 but drops 292, pipeline tests 24/24, deployed green (deploy b6871c0); live site: article 292 → 404, homepage no longer links it | same-event double-cluster produced two identical briefs; quality gate (D25 no-junk / no repo-raw-meta in published bodies) also covered by removal. Lesson: any dedup that snapshots the published set must be updated as items are written in the same loop (and selection tools must dedupe their candidate pool, not just against disk) |
 | 2026-09-21 | D-Q15: **pick.json can list a slug the same auto-author run already published — expected, not a bug.** `pick_briefs.mjs` runs before the author step, so the chosen slug may already exist as a finalized story (recorded: economy-296 published by parallel run in commit `5bcbe7e` while still listed as "picked"). The `storyExists` gate in `finalize_stories.mjs` is the safety net → writes nothing, never duplicates (D-Q14 dedup intact). Observing "already exists, skip" is the correct healthy outcome | parallel auto-author runs on GitHub finalize shortlisted briefs while a second authoring path reads the same pick.json |
 | 2026-09-19 | D25: **No editorial/draft footer** — articles must never end with "সংবাদটি … সূত্র থেকে সংশ্লেষিত; … খসড়া" disclaimer. Banned in synth writingPrompt + deterministically stripped in `stripEditorialFooters()` at finalize | user: "that line should not also come in future" (2026-09-19) |
 | 2026-09-19 | D20: **Auto-publish** — সব পাইপলাইন-নিশ্চিত গল্প সরাসরি `draft:false` হয়; human flip বাতিল (user: "publish it automatically") | user override of old draft-first; synth writes `draft:false` |
