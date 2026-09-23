@@ -91,8 +91,10 @@ jobs:
              pipeline/state/briefs/ for the facts, then write the Bengali article
              body only to pipeline/tmp/stories/<slug>.b.md (255-290 words,
              headlines in Bengali, numerals in Bengali, facts pinned strictly to the
-             brief; end with the verification-confirmation paragraph using sources;
-             NEVER add an editorial/draft footer).
+brief; end with the verification-confirmation paragraph using sources;
+              NEVER add an editorial/draft footer; in the body's source list
+              (সূত্র:) write each source as a Markdown link [source name](url) —
+              NEVER show a raw/visible full URL).
           4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
              (or with --dry-run if DRY_RUN=true).
           5. Do NOT git commit, do NOT push, do NOT touch anything else.
