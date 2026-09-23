@@ -156,22 +156,22 @@ export const formatDateTimeBDShort = (ts) => {
 export const BADGES = {
   verified: {
     label: "যাচাইকৃত",
-    tierNote: "অফিসিয়াল সূত্রে নিশ্চিত · প্রকাশের জন্য সম্পূর্ণ প্রস্তুত",
+    tierNote: "অফিসিয়াল বা প্রাথমিক সূত্রে তথ্যটি নিশ্চিত হয়েছে",
     className: "badge--verified",
   },
   confirmed: {
     label: "নিশ্চিত",
-    tierNote: "একাধিক বিশ্বস্ত পত্রিকা একমত · নিয়মিত সংবাদের জন্য যথেষ্ট",
+    tierNote: "দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে",
     className: "badge--confirmed",
   },
   partial: {
     label: "একক/আংশিক",
-    tierNote: "একক সূত্র বা আংশিক তথ্য · নিয়মিত সংবাদের জন্য প্রযোজ্য",
+    tierNote: "একক সূত্রের ওপর ভিত্তি করে — আরও সূত্রে নিশ্চিত হলে পরিপূর্ণ হবে",
     className: "badge--partial",
   },
   suspect: {
     label: "সন্দেহজনক",
-    tierNote: "যাচাই করা যায়নি বা অসঙ্গতি রয়েছে · প্রকাশযোগ্য নয়",
+    tierNote: "নির্ভরযোগ্য সূত্রে যাচাই করা যায়নি, তাই প্রকাশযোগ্য নয়",
     className: "badge--suspect",
   },
 };
