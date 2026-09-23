@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
-import EvidenceList from "../../components/EvidenceList.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
 
@@ -327,7 +326,6 @@ const shareLinks = [
       </div>
 
         <div class="mt-8">
-          <EvidenceList items={post.verification?.evidence ?? []} />
           {post.sources.length > 0 && (
           <div class="mt-4">
             <div class="text-sm font-bold">সূত্র</div>
