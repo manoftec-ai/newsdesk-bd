@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import Icon from "../components/Icon.astro";
-import { SITE, formatDate, sortedPosts } from "../lib/news-data.js";
+import { SITE, formatDateTimeBD, sortedPosts } from "../lib/news-data.js";
 
 const corrected = (await sortedPosts())
   .filter((post) => post.corrected)
@@ -82,7 +82,9 @@ const corrected = (await sortedPosts())
               <div class="mt-2 text-sm text-muted-foreground">
                 <span class="flex items-center gap-1.5">
                   <Icon name="clock" class="h-3.5 w-3.5" />
-                  {post.updated ? formatDate(post.updated) : formatDate(post.date)}
+                  <time datetime={new Date(post.updated || post.ts).toISOString()}>
+                    {formatDateTimeBD(post.updated || post.ts)}
+                  </time>
                 </span>
               </div>
               {post.correctionNote && (

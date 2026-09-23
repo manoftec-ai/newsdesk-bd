@@ -1,5 +1,5 @@
 ---
-import { getCategory, getBadge, formatDate } from "../lib/news-data.js";
+import { getCategory, getBadge, formatDateTimeBDShort } from "../lib/news-data.js";
 import VerificationBadge from "./VerificationBadge.astro";
 
 const { post, variant = "default", hidden = false } = Astro.props;
@@ -22,7 +22,9 @@ const href = `/article/${post.slug}`;
       <h3 class="mt-1.5 font-serif text-lg font-semibold leading-snug text-foreground group-hover:text-primary">
         {post.title}
       </h3>
-      <div class="mt-1 text-xs text-muted-foreground">{formatDate(post.date)}</div>
+      <div class="mt-1 text-xs text-muted-foreground">
+        <time datetime={new Date(post.ts).toISOString()}>{formatDateTimeBDShort(post.ts)}</time>
+      </div>
     </a>
   ) : variant === "list" ? (
     <article class="group grid gap-6 border-b border-border/60 py-8 sm:grid-cols-[1fr_220px]" hidden={hidden}>
@@ -37,7 +39,7 @@ const href = `/article/${post.slug}`;
           )}
           <VerificationBadge badge={badge} compact />
           {post.demo && <span class="rounded border border-border px-1.5 py-0.5">ডেমো</span>}
-          <time datetime={post.date}>{formatDate(post.date)}</time>
+          <time datetime={new Date(post.ts).toISOString()}>{formatDateTimeBDShort(post.ts)}</time>
         </div>
         <a href={href} class="mt-1 block py-1">
           <h2 class="font-serif text-2xl font-semibold leading-tight group-hover:text-primary sm:text-3xl">
@@ -91,7 +93,7 @@ const href = `/article/${post.slug}`;
           )}
           <VerificationBadge badge={badge} compact />
           {post.demo && <span class="rounded border border-border px-1.5 py-0.5">ডেমো</span>}
-          <time datetime={post.date}>{formatDate(post.date)}</time>
+          <time datetime={new Date(post.ts).toISOString()}>{formatDateTimeBDShort(post.ts)}</time>
         </div>
         <a href={href} class="mt-1 block py-1">
           <h3 class="font-serif text-xl font-semibold leading-snug group-hover:text-primary">

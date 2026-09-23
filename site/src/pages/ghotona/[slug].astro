@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
 import { getCollection } from "astro:content";
-import { SITE, getCategory, getBadge, formatDate } from "../../lib/news-data.js";
+import { SITE, getCategory, getBadge, formatDate, formatDateTimeBDShort } from "../../lib/news-data.js";
 import {
   events,
   matchesEvent,
@@ -26,9 +26,12 @@ const allEntries = (await getCollection("news", ({ data }) => !data.draft)).map(
   slug: entry.id,
   title: entry.data.title,
   excerpt: entry.data.excerpt,
+  thumbnail: entry.data.thumbnail,
+  thumbnailAlt: entry.data.thumbnailAlt,
   category: entry.data.category,
   year: entry.data.date.getFullYear(),
   date: entry.data.date.toISOString().slice(0, 10),
+  ts: entry.data.date ? entry.data.date.getTime() : 0,
   updated: entry.data.updated ? entry.data.updated.toISOString().slice(0, 10) : undefined,
   verification: entry.data.verification,
   tracked: entry.data.tracked,
@@ -214,41 +217,57 @@ const status = STATUS[event.status] ?? STATUS.planned;
                 const badge = getBadge(post);
                 return (
                   <article class="border-b border-border/60 py-5">
-                    <div class="flex flex-wrap items-center gap-2 text-xs">
-                      {category && (
-                        <a href={`/category/${category.slug}`} aria-label={category.name}>
-                          <span
-                            class="category-pill"
-                            style={`background-color:${category.color}`}
-                          >
-                            {category.name}
-                          </span>
+                    <div class="flex gap-4">
+                      {post.thumbnail && (
+                        <a href={`/article/${post.slug}`} class="mini-row-thumb shrink-0" aria-label={post.title}>
+                          <img
+                            src={post.thumbnail}
+                            alt={post.thumbnailAlt || ""}
+                            loading="lazy"
+                            decoding="async"
+                          />
                         </a>
                       )}
-                      <VerificationBadge badge={badge} compact />
-                      {post.tracked && (
-                        <span class="tracked-chip">ট্র্যাক করা গল্প</span>
-                      )}
-                      <time datetime={post.date}>{formatDate(post.date)}</time>
-                    </div>
-                    <a href={`/article/${post.slug}`} class="mt-2 block">
-                      <h3 class="font-serif text-xl font-semibold leading-snug hover:text-primary">
-                        {post.title}
-                      </h3>
-                    </a>
-                    {post.excerpt && (
-                      <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                        {post.excerpt}
-                      </p>
-                    )}
-                    {post.updated && (
-                      <div class="mt-2 text-xs text-muted-foreground">
-                        সর্বশেষ হালনাগাদ: {formatDate(post.updated)}
+                      <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center gap-2 text-xs">
+                          {category && (
+                            <a href={`/category/${category.slug}`} aria-label={category.name}>
+                              <span
+                                class="category-pill"
+                                style={`background-color:${category.color}`}
+                              >
+                                {category.name}
+                              </span>
+                            </a>
+                          )}
+                          <VerificationBadge badge={badge} compact />
+                          {post.tracked && (
+                            <span class="tracked-chip">ট্র্যাক করা গল্প</span>
+                          )}
+                          <time class="mini-row-datetime" datetime={new Date(post.ts).toISOString()}>
+                            {formatDateTimeBDShort(post.ts)}
+                          </time>
+                        </div>
+                        <a href={`/article/${post.slug}`} class="mt-2 block">
+                          <h3 class="font-serif text-xl font-semibold leading-snug hover:text-primary">
+                            {post.title}
+                          </h3>
+                        </a>
+                        {post.excerpt && (
+                          <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                            {post.excerpt}
+                          </p>
+                        )}
+                        {post.updated && (
+                          <div class="mt-2 text-xs text-muted-foreground">
+                            সর্বশেষ হালনাগাদ: {formatDate(post.updated)}
+                          </div>
+                        )}
+                        </div>
                       </div>
-                    )}
-                  </article>
-                );
-              })}
+                    </article>
+                  );
+                })}
             </div>
           </section>
         ))}

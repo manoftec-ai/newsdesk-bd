@@ -920,7 +920,7 @@
   line-height: 1.14;
 }
 
-/* Secondary headline list rows on the homepage. */
+/* Secondary headline list rows (homepage "আরও খবর" + article "আরও পড়ুন"). */
 .mini-row {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -931,14 +931,6 @@
 
 .mini-row:last-child {
   border-bottom: 0;
-}
-
-.mini-row-time {
-  color: var(--color-muted-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding-top: 0.2rem;
-  white-space: nowrap;
 }
 
 .mini-row-thumb {
@@ -984,21 +976,6 @@
   color: var(--color-muted-foreground);
   font-size: 0.72rem;
   white-space: nowrap;
-}
-
-/* Article page "আরও পড়ুন" rows (legacy layout, date + title only). */
-.mini-row > div > a {
-  font-family: var(--font-serif);
-  font-size: 1.02rem;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--color-foreground);
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-
-.mini-row > div > a:hover {
-  color: var(--color-primary);
 }
 
 /* Bengali article body: slightly larger, comfortable line height. */
