@@ -5,17 +5,18 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-23",
-    "sessionsCount": 33,
+    "sessionsCount": 34,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20).",
       "pending": [
-        "Telegram secrets: user creates BotFather bot + channel, adds TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID to GitHub secrets -> activates F5 Telegram auto-post + F3 /api/contact relay (currently skip / not_configured)"
+        "Telegram secrets: user creates BotFather bot + channel, adds TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID to GitHub secrets -> activates F5 Telegram auto-post + F3 /api/contact relay (currently skip / not_configured)",
+        "Facebook activation (D46, 2026-09-23): user creates FB Page + FB App + long-lived Page Access Token (pages_manage_posts), adds FACEBOOK_PAGE_ID + FACEBOOK_PAGE_TOKEN to GitHub secrets -> facebook.yml auto-post switches on (code live, currently skip)"
       ],
       "pendingDashboard": [
         "Vercel project newsdesk-bd -> Settings -> Analytics: enable Web Analytics (no CLI; /_vercel/insights/script.js 404 until enabled; defer script already shipped and harmless)"
       ],
-      "deferred": [
-        "Search console + site indexing (user: 'we will do later it'): GSC/Bing Webmaster verify newsdesk-bd.vercel.app + IndexNow/sitemap submission, indexing review. Site-side XML stack (sitemap.xml, news-sitemap.xml, robots, IndexNow key 59b9d831dc064ecffbbcf0618ce0a97c + pipeline poke) is ALREADY live."
+      "inProgress": [
+        "GSC indexing (D46, 2026-09-23): SEO.googleSiteVerification + SEO.bingSiteVerification slots shipped in theme.config.ts (meta-tag rendered in BaseLayout). User-side: add newsdesk-bd.vercel.app in Google Search Console -> HTML-tag verification -> paste token into theme.config.ts -> deploy -> Verify -> submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow. Optional Bing msvalidate.01 same slot."
       ]
     }
   },
@@ -32,6 +33,12 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "date": "2026-09-23",
+      "id": "D46",
+      "decision": "Social distribution + GSC indexing. NEW facebook_post.mjs (posts newest-unsent story to FB Page Graph API v21 /feed, secret-gated FACEBOOK_PAGE_ID/FACEBOOK_PAGE_TOKEN, state pipeline/state/facebook-sent.json, mirrors telegram_post) + .github/workflows/facebook.yml (cron */20 + workflow_run + dispatch, merge-tolerant state commit) + test/facebook.test.mjs (pipeline tests now 26/26). GSC/Bing verification slots: SEO.googleSiteVerification + SEO.bingSiteVerification in theme.config.ts -> conditional meta tags in BaseLayout head (no-op until filled). Footer SOCIAL_LINKS gained FB ('facebook' icon) + Telegram ('send' icon) entries with empty href, filtered out by Footer until real URLs set. Commit b711029.",
+      "rationale": "user: build next step = facebook page + telegram group + search console indexing. Telegram code existed since D40 awaiting user secrets; Google ignores IndexNow so GSC verification is separate user-side (HTML-tag token); FB posting needs user-created Page + App + long-lived Page Token. All three are code-ready; activation = user account steps."
+    },
     {
       "date": "2026-09-19",
       "decision": "Original synthesis + attribution; never full reprint",
@@ -648,7 +655,10 @@
     "Ghotona-Pongji (D39): 7 curated anchors PUBLISHED live 2026-09-20 (commit 0acf11e: sagor-runi, rana-plaza, holly-artisan, june-july-2024-quota, oust-hasina, dengue, nct); weekly Mon 03:00 UTC workflow auto-publishes newly-curated via --publish-all. Next: curate descriptions for 75 remaining events; optional anniversary dispatch (e.g. 2027-04-24 Rana Plaza); consider /ghotona header/footer link",
     "Living Story Tracker D36: inc-2 article UI (tracked badge + শেষ চেক stamp), inc-3 /tracked hub page + nav; then daily watcher (Google News RSS search + feed keyword match) in GH Actions",
     "Report Lighthouse 100/100 + SEO audit + font verdict to user (2026-09-20 outcome: green)",
-    "User-side: Google Search Console + Bing Webmaster for newsdesk-bd.vercel.app (guide already given)",
+    "Archived/current GSC 'guide already given' -> now D46: verification slots shipped; user pastes HTML-tag token then submits sitemaps",
+    "User-side GSC (D46 2026-09-23): paste google-site-verification token into theme.config.ts SEO.googleSiteVerification -> deploy -> Verify in GSC -> submit sitemap.xml + news-sitemap.xml; optional Bing msvalidate.01",
+    "Telegram activation (D46 reminder): create bot + channel + add TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID secrets",
+    "Facebook activation (D46 reminder): create Page + App + long-lived Page Token + add FACEBOOK_PAGE_ID/FACEBOOK_PAGE_TOKEN secrets; then set footer hrefs in theme.config.ts SOCIAL_LINKS (facebook/telegram empty placeholders render nothing until filled)",
     "PNG og-image upgrade (svg default currently live + fine)",
     "Finalize/publish remaining authored bodies (pipeline/tmp/stories/*.b.md) via synth finalizeStory",
     "Write remaining verified briefs -> stories (opencode authors), auto-publish via synth draft:false",
@@ -668,5 +678,5 @@
     }
   ],
   "lastUpdated": "2026-09-23",
-  "sessionsCount": 33
+  "sessionsCount": 34
 }
