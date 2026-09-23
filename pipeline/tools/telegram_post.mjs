@@ -96,9 +96,9 @@ export async function main() {
     .slice(0, 4)
     .map((t) => `#${t.replace(/[^a-z0-9]/gi, '')}`)
     .join(' ');
-  const url = `https://newsdesk-bd.vercel.app/article/${encodeURIComponent(target.slug)}`;
+  const url = `https://jachaidesk.com/article/${encodeURIComponent(target.slug)}`;
 
-  const text = `🆕 ${escapeHtml('নিউজডেস্ক বিডি')}\n\n<b>${escapeHtml(target.title)}</b>\n\n${escapeHtml(categoryName)} · ${badgeLabel}\n\n${url}${hashtags ? `\n\n${hashtags}` : ''}`;
+  const text = `🆕 ${escapeHtml('জাচাইডেস্ক')}\n\n<b>${escapeHtml(target.title)}</b>\n\n${escapeHtml(categoryName)} · ${badgeLabel}\n\n${url}${hashtags ? `\n\n${hashtags}` : ''}`;
 
   const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: 'POST',

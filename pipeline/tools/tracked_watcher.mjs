@@ -153,7 +153,7 @@ function googleQuery(term) {
 
 async function fetchItems(query) {
   const parser = new Parser({
-    headers: { 'User-Agent': 'newsdesk-bd-watcher/1.0 (+https://newsdesk-bd.vercel.app)' },
+    headers: { 'User-Agent': 'jachaidesk-watcher/1.0 (+https://jachaidesk.com)' },
   });
   try {
     const feed = await parser.parseURL(query);

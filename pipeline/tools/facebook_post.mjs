@@ -96,9 +96,9 @@ export async function main() {
     .slice(0, 4)
     .map((t) => `#${t.replace(/[^a-z0-9]/gi, '')}`)
     .join(' ');
-  const url = `https://newsdesk-bd.vercel.app/article/${encodeURIComponent(target.slug)}`;
+  const url = `https://jachaidesk.com/article/${encodeURIComponent(target.slug)}`;
 
-  const message = `🆕 নিউজডেস্ক বিডি
+  const message = `🆕 জাচাইডেস্ক
 
 ${target.title}
 
