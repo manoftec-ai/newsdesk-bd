@@ -141,16 +141,17 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   4. "## যা এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
      identities, decisions). Keep it to what is genuinely NOT reported. Omit the whole
      section if nothing is unknown.
-  5. A short closing verification line IN PROSE (no list): name the outlets AT MOST ONCE,
-     e.g. "বাংলা ট্রিবিউন ও যুগান্তরের প্রতিবেদনে বিষয়টি নিশ্চিত করা হয়েছে।"
+  5. A short closing verification line IN PROSE (no list, no media names): e.g.
+     "সংশ্লিষ্ট সূত্রে বিষয়টি নিশ্চিত করা হয়েছে।"
 - Source attribution rules (hard):
-  - Name a source (as a link) AT MOST ONCE, for the key fact — combine the outlets:
-    "বাংলা ট্রিবিউন ও যুগান্তর জানিয়েছে, …"
-  - Name sources separately ONLY when they disagree or one carries details the other lacks,
-    and say WHAT the difference is: "বাংলা ট্রিবিউন বৈঠকের স্থান হিসেবে একটি হোটেলের কথা বলেছে; যুগান্তরের প্রতিবেদনে স্থান নিয়ে বিস্তারিত নেই।"
-  - FORBIDDEN sequential chains: "…প্রতিবেদনে বলা হয়েছে…", "একই খবর প্রকাশ করেছে…",
-    "দুই প্রতিবেদনেই…". State each fact once; attribute once.
-  - Link the outlet names to their URLs where a fact comes from them.
+  - NEVER name a media outlet, newspaper, or news agency in the body text. The outlet names
+    are rendered automatically with links in the 'সূত্র:' section from front matter.
+  - Attribute facts to the ACTOR instead: "পুলিশ জানিয়েছে, …", "মন্ত্রণালয় জানায়, …",
+    "সংবাদ সম্মেলনে তিনি বলেন, …". Only when no actor exists may you use neutral phrasing
+    like "সূত্র জানিয়েছে, …" or "বিষয়টি নিশ্চিত করা হয়েছে।"
+  - FORBIDDEN in body: outlet names (প্রথম আলো, বিডিনিউজ২৪, …), "…প্রতিবেদনে বলা হয়েছে…",
+    "একই খবর প্রকাশ করেছে…", "দুই প্রতিবেদনেই…", "একাধিক সংবাদমাধ্যম…". State each fact once;
+    attribute to the actor once.
 
 ## Constraints (hard)
 - ORIGINAL synthesis only. Never reprint any one outlet's article. Rewrite in your own words.
