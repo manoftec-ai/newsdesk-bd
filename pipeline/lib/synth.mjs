@@ -106,9 +106,20 @@ verification:
 ${(fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')}`;
 }
 
+// 1.3 — Dynamic target length per story tier. Short briefs (few sources) carry
+// little info → short article; rich clusters (many sources) justify a longer
+// piece. The writer must stop when the information stops, never pad.
+export function targetWords(brief) {
+  const n = (brief.members ?? []).length;
+  if (n <= 2) return { min: 100, max: 180, tier: 'short' };
+  if (n === 3) return { min: 200, max: 350, tier: 'normal' };
+  return { min: 400, max: 550, tier: 'complex' };
+}
+
 // Writing prompt for the provider. Everything the writer needs in one place.
 export function writingPrompt(brief) {
   const srcs = brief.sources.map((s) => `- ${s.name} — ${s.url}`).join('\n');
+  const { min, max } = targetWords(brief);
   const leads = brief.members.map((m) =>
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
   ).join('\n\n');
@@ -152,7 +163,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 - If a fact is unknown, say so briefly or omit it.
 - Title: an accurate, concise Bengali headline (report headline-news style).
 - Excerpt: 1–2 sentence lead summary for cards.
-- Aim ~250–350 words body. Stop when the information stops — never pad to reach a word count.
+- Aim ${min}–${max} words body for this brief. Stop when the information stops — never pad to reach a word count.
 - Do NOT end with a 'সূত্র:' source list — source links are rendered automatically from front matter; never put source URLs in the body, and never write a raw/visible full URL.
 - FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
   "এই সংবাদটি একাধিক যাচাইকৃত সূত্র থেকে সংশ্লেষিত" or "...এটি সম্পাদকীয় পর্যালোচনার অপেক্ষায় থাকা একটি খসড়া।"

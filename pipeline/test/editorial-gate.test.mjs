@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { findEditorialViolations } from '../lib/synth.mjs';
+import { findEditorialViolations, targetWords } from '../lib/synth.mjs';
 
 const bn = 'বাংলা';
 const bn2 = 'বাংলা-২';
@@ -49,4 +49,18 @@ test('allows quoted statement containing "মনে করছেন" inside a qu
   const body = `${bn} রিজভী বলেন, "আমি মনে করছি এটি ভুল সিদ্ধান্ত হবে।"`;
   const hits = findEditorialViolations(body);
   assert.equal(hits.length, 0);
+});
+
+test('targetWords: ≤2 sources -> short (100-180)', () => {
+  assert.deepEqual(targetWords({ members: [{}, {}] }), { min: 100, max: 180, tier: 'short' });
+  assert.equal(targetWords({ members: [{}] }).tier, 'short');
+});
+
+test('targetWords: 3 sources -> normal (200-350)', () => {
+  assert.deepEqual(targetWords({ members: [{}, {}, {}] }), { min: 200, max: 350, tier: 'normal' });
+});
+
+test('targetWords: ≥4 sources -> complex (400-550)', () => {
+  assert.deepEqual(targetWords({ members: [{}, {}, {}, {}] }), { min: 400, max: 550, tier: 'complex' });
+  assert.equal(targetWords({ members: [] }).tier, 'short');
 });
