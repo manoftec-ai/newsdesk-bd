@@ -37,6 +37,7 @@ const post = {
   slug: entry.id,
   ...entry.data,
   date: formatDate(entry.data.date),
+  ts: entry.data.date ? entry.data.date.getTime() : 0,
   year: entry.data.date.getFullYear(),
   updated: entry.data.updated ? formatDate(entry.data.updated) : undefined,
   readingTime: entry.data.readingTime ?? 1,
