@@ -253,6 +253,47 @@ function extractExcerpt(md) {
   return (lines.slice(0, 3).join(' ').replace(/"/g, '\\"')).slice(0, 180);
 }
 
+// 1.2 — Editorial gate: speculation & empty-predictive filler that must NEVER
+// appear in a published body unless the brief explicitly quotes someone saying
+// it. finalize_stories.mjs BLOCKS (never publishes) any body that hits these;
+// the story is simply picked again and re-authored on a later automation run.
+export const BANNED_SPECULATION = [
+  /পর্যবক্ষক(রা)?\s+মনে\s+করছেন/u,
+  /পর্যবক্ষকদের\s+মনে\s+করছেন/u,
+  /পর্যবক্ষকদের\s+মতে/u,
+  /বলে\s+মনে\s+করছেন/u,
+  /বলে\s+মনে\s+করা হচ্ছে/u,
+  /মনে\s+করা হচ্ছে/u,
+  /মনে\s+করছেন\s+অনেকে/u,
+  /অনেকে\s+মনে\s+করছেন/u,
+  /আশা\s+করছেন\s+পর্যবক্ষক/u,
+  /পর্যবক্ষকরা\s+আশা\s+করছেন/u,
+  /আরও\s+তথ্য\s+প্রকাশ\s+আশা/u,
+  /আলোচনার\s+জন্ম\s+দেবে/u,
+  /বলে\s+ধারণা/u,
+  /বলে\s+আশা\s+করা হচ্ছে/u,
+];
+
+// Predictive sentences that add no information and assert an unapproved future.
+export const BANNED_FILLER_SENTENCES = [
+  /বিষয়টি\s+নিয়ে\s+ব্যাপক\s+আলোচনা\s+হতে\s+পারে।/u,
+  /বিষয়টি\s+নিয়ে\s+আলোচনা\s+হতে\s+পারে।/u,
+  /বিষয়টি\s+নিয়ে\s+আরও\s+আলোচনা\s+হতে\s+পারে।/u,
+];
+
+export function findEditorialViolations(body) {
+  const text = String(body ?? '');
+  const hits = [];
+  for (const re of BANNED_SPECULATION) {
+    const m = text.match(re);
+    if (m) hits.push({ type: 'speculation', pattern: re.source, match: m[0] });
+  }
+  for (const re of BANNED_FILLER_SENTENCES) {
+    if (re.test(text)) hits.push({ type: 'filler', pattern: re.source, match: re.source });
+  }
+  return hits;
+}
+
 // Whether a brief already has a finalized story in the content dir.
 export function storyExists(slug, { siteDir } = {}) {
   const dir = siteDir ?? resolve(import.meta.dirname, '../../../site/src/content/news');
