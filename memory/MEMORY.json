@@ -7,7 +7,7 @@
     "lastUpdated": "2026-09-23",
     "sessionsCount": 34,
     "reminders": {
-      "mandate": "Surfaced to user at every session start (user request 2026-09-20).",
+      "mandate": "Surfaced to user at every session start (user request 2026-09-20). DEFER ALL 4 pending items until user finds a real domain (user decision 2026-09-23); when domain is set, switch siteUrl/astro.config site/canonical/og + hardcoded vercel.app URLs in telegram/facebook post scripts to the new domain.",
       "pending": [
         "Telegram secrets: user creates BotFather bot + channel, adds TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID to GitHub secrets -> activates F5 Telegram auto-post + F3 /api/contact relay (currently skip / not_configured)",
         "Facebook activation (D46, 2026-09-23): user creates FB Page + FB App + long-lived Page Access Token (pages_manage_posts), adds FACEBOOK_PAGE_ID + FACEBOOK_PAGE_TOKEN to GitHub secrets -> facebook.yml auto-post switches on (code live, currently skip)"
