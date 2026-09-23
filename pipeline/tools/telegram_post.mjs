@@ -98,7 +98,7 @@ export async function main() {
     .join(' ');
   const url = `https://jachaidesk.com/article/${encodeURIComponent(target.slug)}`;
 
-  const text = `🆕 ${escapeHtml('জাচাইডেস্ক')}\n\n<b>${escapeHtml(target.title)}</b>\n\n${escapeHtml(categoryName)} · ${badgeLabel}\n\n${url}${hashtags ? `\n\n${hashtags}` : ''}`;
+  const text = `🆕 ${escapeHtml('যাচাইডেস্ক')}\n\n<b>${escapeHtml(target.title)}</b>\n\n${escapeHtml(categoryName)} · ${badgeLabel}\n\n${url}${hashtags ? `\n\n${hashtags}` : ''}`;
 
   const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: 'POST',

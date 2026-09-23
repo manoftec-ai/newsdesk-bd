@@ -98,7 +98,7 @@ export async function main() {
     .join(' ');
   const url = `https://jachaidesk.com/article/${encodeURIComponent(target.slug)}`;
 
-  const message = `🆕 জাচাইডেস্ক
+  const message = `🆕 যাচাইডেস্ক
 
 ${target.title}
 

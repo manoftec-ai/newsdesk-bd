@@ -16,7 +16,7 @@
 const OPENVERSE = "https://api.openverse.org/v1/images/";
 const UA = "jachaidesk/1.0 (+https://jachaidesk.com)";
 
-export const BRAND = "জাচাইডেস্ক";
+export const BRAND = "যাচাইডেস্ক";
 
 // category -> generic illustrative search query (kept short: Openverse AND-matches)
 const CATEGORY_QUERY = {
