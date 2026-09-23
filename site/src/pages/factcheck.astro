@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import Icon from "../components/Icon.astro";
-import { SITE, formatDate, sortedPosts, getVerdict } from "../lib/news-data.js";
+import { SITE, formatDate, formatDateTimeBD, sortedPosts, getVerdict } from "../lib/news-data.js";
 import { getCategory } from "../lib/news-data.js";
 
 const all = await sortedPosts();
@@ -76,7 +76,7 @@ const mixed = factchecks.filter((post) => post.factCheck).length > 0;
               <div class="mt-3 flex items-center gap-4 text-xs text-muted-foreground">
                 <span class="flex items-center gap-1.5">
                   <Icon name="calendar" class="h-3.5 w-3.5" />
-                  {formatDate(post.date)}
+                  <time datetime={new Date(post.ts).toISOString()}>{formatDateTimeBD(post.ts)}</time>
                 </span>
                 <span>{post.readingTime} মিনিট পাঠ</span>
               </div>

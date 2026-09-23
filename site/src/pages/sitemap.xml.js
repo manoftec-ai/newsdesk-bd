@@ -25,7 +25,7 @@ export async function GET(context) {
     }
   }
 
-  const staticPages = ["", "/news", "/search", "/tracked", "/ghotona", "/districts", "/about", "/contact", "/corrections", "/factcheck"];
+  const staticPages = ["", "/news", "/search", "/tracked", "/ghotona", "/districts", "/about", "/contact", "/corrections", "/factcheck", "/privacy", "/terms", "/editorial-policy"];
   const items = [
     ...staticPages.map((path) => ({ path, lastmod: SITE_LAUNCH })),
     ...categories

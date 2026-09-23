@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import VerificationBadge from "../components/VerificationBadge.astro";
-import { SITE, sortedPosts, getCategory, getBadge, formatDate } from "../lib/news-data.js";
+import { SITE, sortedPosts, getCategory, getBadge, formatDate, formatDateTimeBDShort } from "../lib/news-data.js";
 import { trackedStories, trackedRegistryMeta } from "../lib/tracked-stories.js";
 
 const posts = await sortedPosts();
@@ -61,36 +61,50 @@ const fmt = (iso) => (iso ? formatDate(iso) : "—");
           const updateCount = post.updates?.length ?? 0;
           return (
             <article class="border-b border-border/60 py-6">
-              <div class="flex flex-wrap items-center gap-2">
-                {category && (
-                  <a href={`/category/${category.slug}`} aria-label={category.name}>
-                    <span class="category-pill" style={`background-color:${category.color}`}>
-                      {category.name}
-                    </span>
+              <div class="flex gap-4">
+                {post.thumbnail && (
+                  <a href={`/article/${post.slug}`} class="mini-row-thumb shrink-0" aria-label={post.title}>
+                    <img
+                      src={post.thumbnail}
+                      alt={post.thumbnailAlt || ""}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
                 )}
-                <VerificationBadge badge={badge} compact />
-                <span class:list={["badge-chip", status.cls]}>{status.label}</span>
-                {post.breaking && <span class="badge-chip badge--verified">ব্রেকিং</span>}
-                <time class="text-xs text-muted-foreground" datetime={post.date}>
-                  {post.date}
-                </time>
-              </div>
-              <a href={`/article/${post.slug}`} class="mt-2 block">
-                <h2 class="font-serif text-2xl font-semibold leading-tight hover:text-primary">
-                  {post.title}
-                </h2>
-              </a>
-              <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-              <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
-                <span>
-                  শেষ চেক:{" "}
-                  <time datetime={story.lastChecked ? String(story.lastChecked) : undefined}>
-                    {fmt(story.lastChecked)}
-                  </time>
-                </span>
-                <span>হালনাগাদ: {updateCount}</span>
-                {post.updated && <span>সর্বশেষ আপডেট: {fmt(post.updated)}</span>}
+                <div class="min-w-0 flex-1">
+                  <div class="flex flex-wrap items-center gap-2">
+                    {category && (
+                      <a href={`/category/${category.slug}`} aria-label={category.name}>
+                        <span class="category-pill" style={`background-color:${category.color}`}>
+                          {category.name}
+                        </span>
+                      </a>
+                    )}
+                    <VerificationBadge badge={badge} compact />
+                    <span class:list={["badge-chip", status.cls]}>{status.label}</span>
+                    {post.breaking && <span class="badge-chip badge--verified">ব্রেকিং</span>}
+                    <time class="mini-row-datetime" datetime={new Date(post.ts).toISOString()}>
+                      {formatDateTimeBDShort(post.ts)}
+                    </time>
+                  </div>
+                  <a href={`/article/${post.slug}`} class="mt-2 block">
+                    <h2 class="font-serif text-2xl font-semibold leading-tight hover:text-primary">
+                      {post.title}
+                    </h2>
+                  </a>
+                  <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
+                  <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+                    <span>
+                      শেষ চেক:{" "}
+                      <time datetime={story.lastChecked ? String(story.lastChecked) : undefined}>
+                        {fmt(story.lastChecked)}
+                      </time>
+                    </span>
+                    <span>হালনাগাদ: {updateCount}</span>
+                    {post.updated && <span>সর্বশেষ আপডেট: {fmt(post.updated)}</span>}
+                  </div>
+                </div>
               </div>
             </article>
           );
