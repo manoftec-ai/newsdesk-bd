@@ -1,17 +1,17 @@
 | D45 | history pack faq MUST be {q,a} — matches Astro site news schema; enforced in gate_history_batch.mjs renderArticle+content-schema check (2026-09-21) | Everest batch used {question,answer} → astro deploy broke (D44) |
 # Project Memory — newsdesk-bd (নিউজডেস্ক বিডি)
 
-> Last updated: 2026-09-23 (author batch national-426 + national-425 finalized)
+> Last updated: 2026-09-23 (author batch national-426 + national-425 finalized; domain launch)
 > Sessions count: 35
 
 ## ⏰ REMINDERS — user action items (MANDATORY: surface at session start)
-Recorded per user request 2026-09-20: "keep these two points for me … you can remind me this later".
-> **DEFER ALL 4 UNTIL REAL DOMAIN FOUND (user decision 2026-09-23):** user will obtain a real domain first, then do the activation steps below (Telegram/FB secrets, GSC verification, Vercel analytics). Code stays live but dormant until then. Once the domain is set, `siteUrl`/`astro.config site`, canonical URLs, sitemaps, og:image base and the hardcoded `https://newsdesk-bd.vercel.app` URLs in telegram/facebook post scripts must be switched to the new domain.
+Recorded per user request 2026-09-20: "keep these two points for me … you can remind me this later"
+> **DOMAIN NOW SET (D47, 2026-09-23): `jachaidesk.com` is live.** The remaining activation steps below are NO LONGER deferred — switch `siteUrl`/`astro.config site`, canonical URLs, sitemaps, og:image base and the hardcoded `https://newsdesk-bd.vercel.app` URLs in telegram/facebook post scripts to the new domain, then do the account-side activation steps (Telegram/FB secrets, GSC verification, Vercel analytics).
 > **FB distribution route UNDECIDED (2026-09-23, parked):** RSS→FB (native, zero-setup, public, site-news-only) vs Graph API real automation (our facebook_post.mjs, needs App Live = App Review + Business Verification = heavy; adds control/frequency/format only, still site-news content) vs editorial automation for beyond-site-news content (new generators + API). Pick ONE in a later session; never both RSS and API on the same page (double-post).
 1. **[PENDING — needed to activate F5 + F3] Telegram secrets**: user creates a bot (BotFather) + channel, then adds `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` as GitHub repo secrets → the Telegram auto-post workflow and the /api/contact relay both switch on (currently silently skip / return `not_configured`).
 2. **[PENDING — needed to activate FB auto-post (new, D46 2026-09-23)]** Facebook page + token: user creates the FB Page (e.g. "নিউজডেস্ক বিডি"), a FB App + long-lived Page Access Token (`pages_manage_posts`), then adds `FACEBOOK_PAGE_ID` + `FACEBOOK_PAGE_TOKEN` as GitHub repo secrets → `facebook.yml` (cron */20 + workflow_run) auto-posts one newest-unsent story/run. Code live since commit b711029; silently skips until then.
 3. **[PENDING — dashboard-only action] Vercel Web Analytics**: enable in Vercel dashboard (Settings → Analytics, project `newsdesk-bd`). No CLI exists. `/_vercel/insights/script.js` returns 404 until then; script tag is already deployed (defer, harmless).
-3. **[IN PROGRESS — GSC indexing]** Search console + site indexing: the site-side XML stack (sitemap.xml, news-sitemap.xml, robots.txt, IndexNow key + pipeline poke) is ALREADY live. NEW (D46, 2026-09-23): `SEO.googleSiteVerification` + `SEO.bingSiteVerification` slots shipped in theme.config.ts (meta-tag verification auto-rendered in BaseLayout head). User-side: add `https://newsdesk-bd.vercel.app/` in Google Search Console → pick HTML-tag verification → paste the token into theme.config.ts → deploy → click Verify → submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow, so GSC verification is required for Google indexing; optional Bing Webmaster `msvalidate.01` token uses the same slot.
+4. **[IN PROGRESS — GSC indexing]** Search console + site indexing: the site-side XML stack (sitemap.xml, news-sitemap.xml, robots.txt, IndexNow key + pipeline poke) is ALREADY live. NEW (D46, 2026-09-23): `SEO.googleSiteVerification` + `SEO.bingSiteVerification` slots shipped in theme.config.ts (meta-tag verification auto-rendered in BaseLayout head). User-side: add `https://jachaidesk.com/` in Google Search Console → pick HTML-tag verification → paste the token into theme.config.ts → deploy → click Verify → submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow, so GSC verification is required for Google indexing; optional Bing Webmaster `msvalidate.01` token uses the same slot.
 
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
@@ -75,6 +75,12 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 | 2026-09-19 | D13–D17 (earlier lifecycle decisions) | superseded by pipeline+auto publish |
 | 2026-09-19 | D18: Vercel deploy token stored at ~/.config/opencode/.secrets/vercel.env, read via env; kevli never echo | per global protocol |
 
+## Decisions (recent)
+| Date | Decision | Rationale / context |
+|------|----------|---------------------|
+| 2026-09-23 | D47: **Custom domain launched** — `jachaidesk.com` (registered at Spaceship 2026-09-23, the newsdesk-bd brand domain). DNS kept on Spaceship's own nameservers (launch1/launch2.spaceship.net): apex `A @ → 76.76.21.21` + `CNAME www → cname.vercel-dns.com`, TTL 3600. Domain added to Vercel team man-of-technology, attached to newsdesk-bd project (`verified:true`). http→https 308 + www→apex 308 auto by Vercel. Verified serving full homepage from global vantage (webfetch) | user bought the domain + added record manually; asked to verify. Vercel dashboard shows configVerifiedAt:null (cosmetic — site demonstrably live; flips on Vercel's next background check) |
+| 2026-09-23 | Learn: **Termux/Dhaka ISP local DNS is flaky for the apex** — `curl https://jachaidesk.com` failed locally with "Could not resolve host" while global DoH (8.8.8.8 + 1.1.1.1) and a neutral proxy all resolve to 76.76.21.21 and serve the site. Diagnosis rule: when user says "site doesn't load", verify DNS from ≥2 global resolvers + fetch via a neutral proxy (WebFetch/api.allorigins) before assuming a config fault | user: "in live i dont see my site" |
+
 ## Preferences & Constraints
 - npm/node install Android-local = বাধাগ্রস্ত → সব build/deploy **Vercel Linux runner**-এ; never local Astro build
 - `vercel deploy . --prod --yes --token "$VERCEL_TOKEN"` from `site/`; CLI 59.x ignores auth.json
@@ -86,7 +92,7 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 - Tech stack: Astro (content collections `news`) static on Vercel; pipeline = plain Node (extract/synth in pipeline/lib)
 - Structure: pipeline/ (run.js fetch/normalize/cluster/verify/extract) + site/ (Astro) + .github/workflows (pipeline.yml, deploy.yml)
 - Content: src/content/news/ — **59+ real stories live** (58 authored from briefs + dengue + first fact-check seed), all `draft:false`, tags+seo fields generated — growing automatically via auto-author
-- Site: https://newsdesk-bd.vercel.app (production)
+- Site: https://newsdesk-bd.vercel.app (production) → **custom domain live: https://jachaidesk.com** (+ www redirect) since 2026-09-23 (D47)
 - SEO/perf gate (2026-09-20): `.github/workflows/lighthouse.yml` (runs after deploy via `workflow_run` + manual) with `lighthouserc.json`; artifacts `lighthouse-results.zip`; median **100/100/100/100** green on bd23c4e. Fonts now only `noto-serif-bengali-bengali-700` + `hind-siliguri-bengali-400` preloaded in BaseLayout (all `font-display: optional`); latin faces removed
 - Indexing (2026-09-20): `/news-sitemap.xml` (Google News schema, pubDate+keywords), robots.txt lists `/sitemap.xml` + `/news-sitemap.xml`, IndexNow key `59b9d831dc064ecffbbcf0618ce0a97c` at `/59b9….txt`, pipeline.yml "Poke IndexNow" step posts all news URLs after Commit; default `og:image` = `/images/og-default.svg`, `theme-color #b3352b`
 - Pipeline state: store.db + briefs at `pipeline/state/` (db.mjs/extract.mjs point there; NOT tmp/), 33 briefs authored

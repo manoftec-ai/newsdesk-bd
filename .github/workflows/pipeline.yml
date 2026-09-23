@@ -70,10 +70,10 @@ jobs:
       - name: Poke IndexNow (Bing/Yandex quick index)
         run: |
           key="59b9d831dc064ecffbbcf0618ce0a97c"
-          urlList=$(ls ../site/src/content/news/*.md 2>/dev/null | sed -E 's#^.*/([^/]+)\.md$#https://newsdesk-bd.vercel.app/article/\1#' | sort -u | jq -R -s -c 'split("\n") | map(select(length>0))')
+          urlList=$(ls ../site/src/content/news/*.md 2>/dev/null | sed -E 's#^.*/([^/]+)\.md$#https://jachaidesk.com/article/\1#' | sort -u | jq -R -s -c 'split("\n") | map(select(length>0))')
           if [ -n "$urlList" ] && [ "$urlList" != "[]" ]; then
-            body=$(jq -n --arg host "newsdesk-bd.vercel.app" --arg key "$key" --argjson urlList "$urlList" \
-              '{host:$host,key:$key,keyLocation:("https://newsdesk-bd.vercel.app/"+$key+".txt"),urlList:$urlList}')
+            body=$(jq -n --arg host "jachaidesk.com" --arg key "$key" --argjson urlList "$urlList" \
+              '{host:$host,key:$key,keyLocation:("https://jachaidesk.com/"+$key+".txt"),urlList:$urlList}')
             curl -s -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
               -H 'Content-Type: application/json; charset=utf-8' -d "$body"
           fi

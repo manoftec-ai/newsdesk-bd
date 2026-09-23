@@ -67,10 +67,10 @@ jobs:
         if: steps.slugs.outputs.SLUGS != '[]' && steps.slugs.outputs.SLUGS != ''
         run: |
           key="59b9d831dc064ecffbbcf0618ce0a97c"
-          urlList=$(printf '%s' '${{ steps.slugs.outputs.SLUGS }}' | jq -c 'map("https://newsdesk-bd.vercel.app/article/" + .)')
+          urlList=$(printf '%s' '${{ steps.slugs.outputs.SLUGS }}' | jq -c 'map("https://jachaidesk.com/article/" + .)')
           if [ -n "$urlList" ] && [ "$urlList" != "[]" ]; then
-            body=$(jq -n --arg host "newsdesk-bd.vercel.app" --arg key "$key" --argjson urlList "$urlList" \
-              '{host:$host,key:$key,keyLocation:("https://newsdesk-bd.vercel.app/"+$key+".txt"),urlList:$urlList}')
+            body=$(jq -n --arg host "jachaidesk.com" --arg key "$key" --argjson urlList "$urlList" \
+              '{host:$host,key:$key,keyLocation:("https://jachaidesk.com/"+$key+".txt"),urlList:$urlList}')
             curl -s -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
               -H 'Content-Type: application/json; charset=utf-8' -d "$body"
           fi
