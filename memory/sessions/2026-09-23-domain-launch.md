@@ -32,3 +32,4 @@ Domain fully live and correct. User-side DNS cache is the only blocker.
   proxy before assuming a misconfiguration.
 - Vercel apex recommendation = A 76.76.21.21 (not 76.76.21.123); www = cname.vercel-dns.com.
 ```
+>> 2026-09-23 after-action: user confirmed the site loads on jachaidesk.com from his browser ("yes its working fine now"). Domain launch fully closed. Next queued: switch siteUrl/canonical/og + telegram/facebook script URLs to jachaidesk.com, then GSC/Bing add custom domain.
