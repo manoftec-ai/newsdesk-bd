@@ -3,19 +3,21 @@
 > Created 2026-09-23. Discussion only so far — no implementation.
 > Source: editorial critique reviewed in memory/sessions/2026-09-23-editorial-quality-review-discussion.md
 
-## ⏳ Decisions needed first (user answers → unblock Phase 1)
-- [ ] **Q1 — Evidence box "কেন নিশ্চিত / প্রমাণ":** re-introduce a frontmatter-driven evidence box at article bottom? (reverses D52 single-source display; recommended YES, single place, never in body)
-- [ ] **Q2 — Regeneration:** apply new style to NEW stories only, or also regenerate the existing ~430? (recommended: new only + sample-audit; backfill only flagged)
-- [ ] **Q3 — Publish volume:** keep 30-min auto-publish, fix duplicate same-event stories via rank/clustering (recommended) instead of a hard editorial-value gate?
+## ✅ Decisions (locked 2026-09-23)
+- [x] **Q1 — Evidence box: NO.** Keep exactly today's display — single frontmatter `সূত্র` block, name-only links (D50/D52 as-is). No quotes/evidence box.
+- [x] **Q2 — Regeneration: new-first, then all.** Apply new writing style to NEW articles first; user reviews; if satisfactory → backfill all existing (~430).
+- [x] **Q3 — Publish volume: as now, no human required.** Keep 30-min auto-publish; duplicates fixed via clustering/rank at Round-2, never a human gate.
 
 ## Phase 1 — Editorial layer (prompt/template/gate, no re-architecture)
-- [ ] 1.1 Rewrite author prompt (auto-author.yml + pipeline/lib/synth.mjs): synthesize-first template — merge sources into one narrative (কী ঘটেছে / যা জানা যায়নি / যাচাই), name sources only on divergence or single key-fact attribution
-- [ ] 1.2 Speculation + filler ban gate in finalize_stories.mjs: block publish (not just strip) on banned phrases ("পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে…", "মনে করা হচ্ছে…" etc.) + retry once with a correct instruction
+- [ ] 1.1 Rewrite author prompt (auto-author.yml + pipeline/lib/synth.mjs): synthesize-first template — merge sources into ONE narrative (কী ঘটেছে / যা জানা যায়নি / যাচাই), sources named only on divergence or single key-fact attribution; keep "এক নজরে" keyPoints
+- [ ] 1.2 Speculation + filler ban gate in finalize_stories.mjs: BLOCK publish (not strip) on banned phrases ("পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে…", "মনে করা হচ্ছে…" etc.) + retry once with a corrected instruction
 - [ ] 1.3 Dynamic target length per tier (breaking=short / normal / complex) passed in the prompt, drop the fixed 250–290w instruction
-- [ ] 1.4 Badge legend: "নিশ্চিত [A]" meaning (2+ independent sources matched) — one-line tooltip/legend under the badge (site-side)
-- [ ] 1.5 (if Q1=yes) "কেন নিশ্চিত / প্রমাণ" box: frontmatter evidence arrays + small Astro component at article bottom
-- [ ] 1.6 Sample-audit existing ~430 articles for the biggest offenders (repetition/speculation); backfill ONLY flagged ones (if Q2=yes)
-- [ ] 1.7 Verify: pipeline tests + 1 live story inspected before/after; lighthouse still 100s
+- [ ] 1.4 Badge legend: "নিশ্চিত [A]" meaning (2+ independent sources matched) — one-line text under the badge (site-side). Assumption: kept tiny, no evidence/quotes added (source display unchanged per Q1)
+- [ ] 1.7 Verify: pipeline tests + 1–2 live stories inspected before/after + lighthouse still 100s
+
+## Phase 1b — after user review of new-style articles (Q2=gated)
+- [ ] 1b.1 (if satisfactory) Bulk regenerate ALL existing ~430 articles with the new style + gate; verify deploys green
+- [ ] 1b.2 (if not) Adjust template with user feedback, then retry new-only before any bulk run
 
 ## Round 2 — article-writing depth (after Phase 1 ships, same focus: how stories are written)
 - [ ] 2.1 News vs Fact-check split: distinct templates/formats (factcheck category already exists)
