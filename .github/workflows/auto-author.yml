@@ -79,27 +79,49 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
-          Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
-          Task:
-          1. Read pipeline/state/pick.json (written by pick_briefs.mjs — the
-             newest unpublished briefs, pre-computed and sorted by published date).
-             Author a story for EXACTLY the slugs in its 'picked' array. Never
-             substitute, add, or skip any of them.
-          2. If 'picked' is empty (or the file is missing), reply 'no unpublished
-             briefs' and stop (exit 0).
-          3. For each targeted slug, read its brief <slug>.json under
-             pipeline/state/briefs/ for the facts, then write the Bengali article
-             body only to pipeline/tmp/stories/<slug>.b.md (255-290 words,
-             headlines in Bengali, numerals in Bengali, facts pinned strictly to the
-              brief; you MAY end with a short verification closing naming the outlets in
-               prose (no editorial/draft disclaimer — NEVER such footer); do NOT
-               append a 'সূত্র:' list or any source links in the body (the source
-               links are rendered automatically from front matter — the body must
-               not repeat them; NEVER show a raw/visible full URL).
-          4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
-             (or with --dry-run if DRY_RUN=true).
-          5. Do NOT git commit, do NOT push, do NOT touch anything else.
-          Always finish by printing a short summary listing files created."
+           Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
+           Task:
+           1. Read pipeline/state/pick.json (written by pick_briefs.mjs — the
+              newest unpublished briefs, pre-computed and sorted by published date).
+              Author a story for EXACTLY the slugs in its 'picked' array. Never
+              substitute, add, or skip any of them.
+           2. If 'picked' is empty (or the file is missing), reply 'no unpublished
+              briefs' and stop (exit 0).
+           3. For each targeted slug, read its brief <slug>.json under
+              pipeline/state/briefs/ for the facts, then write the Bengali article
+              body only to pipeline/tmp/stories/<slug>.b.md.
+           How to write (SYNTHESIZE-FIRST):
+           - Treat ALL member leads in the brief as ONE fact pool. Merge them into a
+             single narrative. NEVER walk through the outlets one by one.
+           - Body structure IN THIS ORDER:
+               a) Lead paragraph — most important fact up front (who/what/when/where).
+               b) '**এক নজরে**' bullet list of 3-4 key points (bold label, bullets, blank
+                  paragraph after).
+               c) '## কী ঘটেছে' — 2-4 short paragraphs telling the story in plain logic.
+               d) '## যা এখনো জানা যায়নি' — ONLY if the brief truly leaves unknowns
+                  (agenda/details/identities/decisions). Omit the section if nothing is unknown.
+               e) ONE closing verification line IN PROSE naming the outlets AT MOST ONCE,
+                  e.g. 'বাংলা ট্রিবিউন ও যুগান্তরের প্রতিবেদনে বিষয়টি নিশ্চিত করা হয়েছে।'
+           - Source attribution: name a source (linked) AT MOST ONCE for the key fact —
+             combine outlets: 'বাংলা ট্রিবিউন ও যুগান্তর জানিয়েছে, ...'. Name sources
+             separately ONLY when they disagree or one adds details the other lacks, and say
+             what the difference is. FORBIDDEN chains: '...প্রতিবেদনে বলা হয়েছে...',
+             'একই খবর প্রকাশ করেছে...', 'দুই প্রতিবেদনেই...'. State each fact once.
+           Hard rules:
+           - Facts pinned strictly to the brief. NO speculation — never write
+             'পর্যবক্ষকরা মনে করছেন...', 'আলোচনার জন্ম দেবে বলে মনে করা হচ্ছে...' unless the
+             brief quotes someone actually saying it. No generic background padding —
+             context only if it explains why the news matters AND is in the brief.
+           - Headlines in Bengali, numerals in Bengali. Body ~200-350 words; stop when the
+             information stops, never pad to reach a word count.
+           - (no editorial/draft disclaimer — NEVER such footer); do NOT append a 'সূত্র:'
+             list or any source links in the body (the source links are rendered
+             automatically from front matter — the body must not repeat them; NEVER show a
+             raw/visible full URL).
+           4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
+              (or with --dry-run if DRY_RUN=true).
+           5. Do NOT git commit, do NOT push, do NOT touch anything else.
+           Always finish by printing a short summary listing files created."
 
       - name: Stage and push drafted stories
         if: github.event.inputs.dry_run != 'true'

@@ -116,18 +116,43 @@ export function writingPrompt(brief) {
 
 Write ONE original Bengali news article (সংবাদ) about this verified story.
 
+## How to write it (synthesize-first)
+- Treat ALL member leads below as ONE fact pool. Merge them into a single coherent
+  narrative. NEVER walk through the outlets one by one.
+- Body structure (in this order):
+  1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
+  2. "এক নজরে" bullet list of 3–4 key points. Format EXACTLY like this (bold label, then bullets, then a blank paragraph before the next block):
+     **এক নজরে**
+     - point one
+     - point two
+     - point three
+  3. "## কী ঘটেছে" — 2–4 short paragraphs telling the story in plain chronology or logic.
+  4. "## যা এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
+     identities, decisions). Keep it to what is genuinely NOT reported. Omit the whole
+     section if nothing is unknown.
+  5. A short closing verification line IN PROSE (no list): name the outlets AT MOST ONCE,
+     e.g. "বাংলা ট্রিবিউন ও যুগান্তরের প্রতিবেদনে বিষয়টি নিশ্চিত করা হয়েছে।"
+- Source attribution rules (hard):
+  - Name a source (as a link) AT MOST ONCE, for the key fact — combine the outlets:
+    "বাংলা ট্রিবিউন ও যুগান্তর জানিয়েছে, …"
+  - Name sources separately ONLY when they disagree or one carries details the other lacks,
+    and say WHAT the difference is: "বাংলা ট্রিবিউন বৈঠকের স্থান হিসেবে একটি হোটেলের কথা বলেছে; যুগান্তরের প্রতিবেদনে স্থান নিয়ে বিস্তারিত নেই।"
+  - FORBIDDEN sequential chains: "…প্রতিবেদনে বলা হয়েছে…", "একই খবর প্রকাশ করেছে…",
+    "দুই প্রতিবেদনেই…". State each fact once; attribute once.
+  - Link the outlet names to their URLs where a fact comes from them.
+
 ## Constraints (hard)
 - ORIGINAL synthesis only. Never reprint any one outlet's article. Rewrite in your own words.
-- Every factual claim must trace to the member leads below (facts first).
-- Neutral, plain editorial Bengali. No hype, no speculation. If a fact is unknown, say so or omit it.
+- Every factual claim must trace to the member leads below.
+- Neutral, plain editorial Bengali. No hype, NO speculation. Never invent reactions — no
+  "পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে বলে মনে করা হচ্ছে…", "বলে মনে করছেন…" —
+  unless an outlet explicitly quotes someone saying it.
+- No generic background padding. Add context ONLY if it directly explains why the news
+  matters AND is present in the leads. Never add background just to lengthen the article.
+- If a fact is unknown, say so briefly or omit it.
 - Title: an accurate, concise Bengali headline (report headline-news style).
 - Excerpt: 1–2 sentence lead summary for cards.
-- Right after the lead paragraph, add a "এক নজরে" bullet list of 3–4 key points. Format it EXACTLY like this (bold label, then bullets, then a blank paragraph before the next body block):
-  **এক নজরে**
-  - point one
-  - point two
-  - point three
-- Aim ~250–350 words body. Include a short context paragraph ("এই খবরটি একাধিক সূত্রে যাচাই করা হয়েছে") when multi-source.
+- Aim ~250–350 words body. Stop when the information stops — never pad to reach a word count.
 - Do NOT end with a 'সূত্র:' source list — source links are rendered automatically from front matter; never put source URLs in the body, and never write a raw/visible full URL.
 - FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
   "এই সংবাদটি একাধিক যাচাইকৃত সূত্র থেকে সংশ্লেষিত" or "...এটি সম্পাদকীয় পর্যালোচনার অপেক্ষায় থাকা একটি খসড়া।"
