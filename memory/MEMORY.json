@@ -7,7 +7,7 @@
     "lastUpdated": "2026-09-23",
     "sessionsCount": 35,
     "reminders": {
-      "mandate": "Surfaced to user at every session start (user request 2026-09-20). DEFER ALL 4 pending items until user finds a real domain (user decision 2026-09-23); when domain is set, switch siteUrl/astro.config site/canonical/og + hardcoded vercel.app URLs in telegram/facebook post scripts to the new domain.",
+      "mandate": "Surfaced to user at every session start (user request 2026-09-20). WHEN DOMAIN IS SET (D47: jachaidesk.com now live), switch siteUrl/astro.config site/canonical/og + hardcoded vercel.app URLs in telegram/facebook post scripts to the new domain.",
       "pending": [
         "Telegram secrets: user creates BotFather bot + channel, adds TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID to GitHub secrets -> activates F5 Telegram auto-post + F3 /api/contact relay (currently skip / not_configured)",
         "Facebook activation (D46, 2026-09-23): user creates FB Page + FB App + long-lived Page Access Token (pages_manage_posts), adds FACEBOOK_PAGE_ID + FACEBOOK_PAGE_TOKEN to GitHub secrets -> facebook.yml auto-post switches on (code live, currently skip)"
@@ -16,7 +16,7 @@
         "Vercel project newsdesk-bd -> Settings -> Analytics: enable Web Analytics (no CLI; /_vercel/insights/script.js 404 until enabled; defer script already shipped and harmless)"
       ],
       "inProgress": [
-        "GSC indexing (D46, 2026-09-23): SEO.googleSiteVerification + SEO.bingSiteVerification slots shipped in theme.config.ts (meta-tag rendered in BaseLayout). User-side: add newsdesk-bd.vercel.app in Google Search Console -> HTML-tag verification -> paste token into theme.config.ts -> deploy -> Verify -> submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow. Optional Bing msvalidate.01 same slot."
+        "GSC indexing (D46, 2026-09-23): SEO.googleSiteVerification + SEO.bingSiteVerification slots shipped in theme.config.ts (meta-tag rendered in BaseLayout). User-side: add jachaidesk.com in Google Search Console -> HTML-tag verification -> paste token into theme.config.ts -> deploy -> Verify -> submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow. Optional Bing msvalidate.01 same slot."
       ]
     }
   },
@@ -523,6 +523,19 @@
       "exit": "reviewed+verified story live; unpattended pipeline"
     }
   ],
+  "domain": {
+    "name": "jachaidesk.com",
+    "launched": "2026-09-23",
+    "registrar": "Spaceship (registered 2026-09-23, expires 2027-09-23)",
+    "nameservers": "launch1.spaceship.net + launch2.spaceship.net (Spaceship's own DNS kept)",
+    "records": {
+      "A @": "76.76.21.21 (Vercel apex)",
+      "CNAME www": "cname.vercel-dns.com",
+      "TTL": 3600
+    },
+    "vercel": "attached to newsdesk-bd project (man-of-technology team), verified:true; http->https + www->apex redirects auto; configVerifiedAt null (cosmetic, flips on Vercel background check)",
+    "note": "Termux/Dhaka ISP local DNS fails to resolve the apex (had to verify via --resolve and neutral proxies); global DoH 8.8.8.8 + 1.1.1.1 both correct"
+  },
   "openQuestions": [
     "RSS availability unverified for most sources -> Phase 1 probe (mixed per-source methods expected)",
     "Local model Bengali quality mediocre -> may default provider to gemini at Phase 5",
@@ -532,7 +545,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "Author batch 2026-09-23 (national-426 + national-425 — 2 stories finalized, draft:false, NOT committed): pick.json picked national-426 (হাম ১১ প্রাণ, banglatribune+channeli, 11:10Z) + national-425 (বিএনপি কথা রাখতে পারেনি: HRW, bbc-bengali+channeli, 07:38Z); neither existed in content; authored bodies 258/263 tokens (Bengali numerals, এক নজরে keyPoints ৩ each, verification closings, no D25 footer). national-425 subject clash (bbc: বিএনপি vs channeli: সরকার) attributed separately, not merged. finalize wrote=2 skipped=0 failed=0; thumbnails pending images.yml. Prior: national-417/415/416 all already-live (D-Q15 skip).",
+"workInProgress": "DOMAIN LAUNCHED 2026-09-23 (D47): jachaidesk.com live (Spaceship NS, A @ 76.76.21.21 + CNAME www cname.vercel-dns.com, TTL 3600), attached to Vercel newsdesk-bd project, serving full homepage globally (verified via webfetch + --resolve; local Termux/ISP DNS flaky for apex). See memory/sessions/2026-09-23-domain-launch.md. NEXT (per reminders): switch siteUrl/canonical/og + telegram/facebook post script URLs to jachaidesk.com; GSC + Bing add the new domain. ---- Author batch 2026-09-23 (national-426 + national-425 — 2 stories finalized, draft:false, NOT committed): pick.json picked national-426 (হাম ১১ প্রাণ, banglatribune+channeli, 11:10Z) + national-425 (বিএনপি কথা রাখতে পারেনি: HRW, bbc-bengali+channeli, 07:38Z); neither existed in content; authored bodies 258/263 tokens (Bengali numerals, এক নজরে keyPoints ৩ each, verification closings, no D25 footer). national-425 subject clash (bbc: বিএনপি vs channeli: সরকার) attributed separately, not merged. finalize wrote=2 skipped=0 failed=0; thumbnails pending images.yml. Prior: national-417/415/416 all already-live (D-Q15 skip). ---- SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
