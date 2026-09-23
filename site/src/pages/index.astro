@@ -13,6 +13,7 @@ import {
   postsByCategory,
   getCategory,
   getBadge,
+  formatDateTimeBDShort,
 } from "../lib/news-data.js";
 
 const now = new Date();
@@ -137,11 +138,21 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
           <div class="grid gap-x-8 gap-y-4 md:grid-cols-2">
             {secondLine.map((post) => (
               <div class="mini-row">
-                <time class="mini-row-time" datetime={post.date}>
-                  {post.date}
-                </time>
-                <div>
+                {post.thumbnail && (
+                  <a href={`/article/${post.slug}`} class="mini-row-thumb">
+                    <img
+                      src={post.thumbnail}
+                      alt={post.thumbnailAlt || ""}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                )}
+                <div class="mini-row-body">
                   <a href={`/article/${post.slug}`}>{post.title}</a>
+                  <time class="mini-row-datetime" datetime={new Date(post.ts).toISOString()}>
+                    {formatDateTimeBDShort(post.ts)}
+                  </time>
                 </div>
               </div>
             ))}

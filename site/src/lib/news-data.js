@@ -96,6 +96,63 @@ export const formatDate = (iso) => tryDate("", iso);
 
 export const formatTime = (iso) => tryDate("সময়", iso);
 
+/** Bangladesh (Asia/Dhaka, UTC+6) date + time label, e.g. "২৩ সেপ্টেম্বর, ২০২৬ · ৫:১০ PM".
+ *  Falls back to UTC-based date only if Intl/timeZone is unavailable. */
+export const formatDateTimeBD = (ts) => {
+  try {
+    const d = new Date(ts);
+    const opts = { timeZone: "Asia/Dhaka" };
+    const datePart = new Intl.DateTimeFormat("bn-BD", {
+      ...opts,
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(d);
+    const timePart = new Intl.DateTimeFormat("bn-BD", {
+      ...opts,
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    }).format(d);
+    return `${datePart} · ${timePart}`;
+  } catch {
+    return tryDate("", ts);
+  }
+};
+
+/** Same as formatDateTimeBD but omits the year (e.g. for "today"-ish rows).
+ *  Includes the year only when it differs from Bangladesh's current year. */
+export const formatDateTimeBDShort = (ts) => {
+  try {
+    const d = new Date(ts);
+    const now = new Date();
+    const inDhaka = (v) =>
+      new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Dhaka",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }).format(v);
+    const sameYear = inDhaka(d).slice(0, 4) === inDhaka(now).slice(0, 4);
+    const opts = { timeZone: "Asia/Dhaka" };
+    const datePart = new Intl.DateTimeFormat("bn-BD", {
+      ...opts,
+      day: "numeric",
+      month: "long",
+      year: sameYear ? undefined : "numeric",
+    }).format(d);
+    const timePart = new Intl.DateTimeFormat("bn-BD", {
+      ...opts,
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    }).format(d);
+    return `${datePart} · ${timePart}`;
+  } catch {
+    return formatDateTimeBD(ts);
+  }
+};
+
 export const BADGES = {
   verified: {
     label: "যাচাইকৃত",

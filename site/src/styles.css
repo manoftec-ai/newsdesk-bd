@@ -941,7 +941,32 @@
   white-space: nowrap;
 }
 
-.mini-row a {
+.mini-row-thumb {
+  display: block;
+  width: 5.5rem;
+  height: 3.2rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  background: var(--color-muted);
+  flex: none;
+  align-self: start;
+}
+
+.mini-row-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mini-row-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.mini-row-body a {
   font-family: var(--font-serif);
   font-size: 1.02rem;
   font-weight: 600;
@@ -951,7 +976,28 @@
   overflow-wrap: anywhere;
 }
 
-.mini-row a:hover {
+.mini-row-body a:hover {
+  color: var(--color-primary);
+}
+
+.mini-row-datetime {
+  color: var(--color-muted-foreground);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+/* Article page "আরও পড়ুন" rows (legacy layout, date + title only). */
+.mini-row > div > a {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-foreground);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.mini-row > div > a:hover {
   color: var(--color-primary);
 }
 
