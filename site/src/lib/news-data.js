@@ -1,5 +1,5 @@
 import { getCollection } from "astro:content";
-export { SITE, authors, categories, tags, CONTACT, NAVIGATION, MORE_NAVIGATION } from "../config/theme.config.ts";
+export { SITE, SEO, authors, categories, tags, CONTACT, NAVIGATION, MORE_NAVIGATION } from "../config/theme.config.ts";
 import { SITE, authors, categories, tags } from "../config/theme.config.ts";
 
 const isoDate = (date) => date?.toISOString().slice(0, 10);
