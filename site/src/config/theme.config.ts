@@ -15,6 +15,11 @@ export const SITE = {
   repositoryUrl: "https://github.com/",
 };
 
+export const SEO = {
+  googleSiteVerification: "",
+  bingSiteVerification: "",
+};
+
 export const NAVIGATION = [
   { to: "/", label: "সর্বশেষ" },
   { to: "/category/national", label: "জাতীয়" },
@@ -60,6 +65,8 @@ export const FORMS = {
 
 export const SOCIAL_LINKS = [
   { href: CONTACT.socialUrl, label: `${SITE.name} X (টুইটার)`, icon: "twitter" },
+  { href: "", label: `${SITE.name} ফেসবুক পেজ`, icon: "facebook" },
+  { href: "", label: `${SITE.name} টেলিগ্রাম চ্যানেল`, icon: "send" },
   { href: SITE.repositoryUrl, label: `${SITE.name} GitHub`, icon: "github" },
 ];
 

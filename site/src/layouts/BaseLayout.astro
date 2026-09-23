@@ -2,7 +2,7 @@
 import "../styles.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE, imageSrc } from "../lib/news-data.js";
+import { SITE, SEO, imageSrc } from "../lib/news-data.js";
 
 const {
   title = `${SITE.name} — ${SITE.tagline}`,
@@ -39,6 +39,12 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="author" content={SITE.name} />
+    {SEO.googleSiteVerification && (
+      <meta name="google-site-verification" content={SEO.googleSiteVerification} />
+    )}
+    {SEO.bingSiteVerification && (
+      <meta name="msvalidate.01" content={SEO.bingSiteVerification} />
+    )}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content={ogType} />
