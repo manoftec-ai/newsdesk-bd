@@ -128,7 +128,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   - point two
   - point three
 - Aim ~250–350 words body. Include a short context paragraph ("এই খবরটি একাধিক সূত্রে যাচাই করা হয়েছে") when multi-source.
-- End with the sources list (সূত্র:) linking every source URL. That list is the last thing: nothing after it.
+- End with the sources list (সূত্র:) linking every source URL. Write each source as a Markdown link [source name](url) — NEVER a raw/visible full URL. That list is the last thing: nothing after it.
 - FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
   "এই সংবাদটি একাধিক যাচাইকৃত সূত্র থেকে সংশ্লেষিত" or "...এটি সম্পাদকীয় পর্যালোচনার অপেক্ষায় থাকা একটি খসড়া।"
   or any variant announcing the article is a draft/awaiting review. Write it as a finished, published news story.
