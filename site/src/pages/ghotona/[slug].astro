@@ -54,7 +54,7 @@ const chronoByYear = groupChronologyByYear(chrono);
 const chronoYears = Object.keys(chronoByYear).sort((a, b) => (a < b ? 1 : -1));
 
 const eventTitle = event.nameBn ?? event.name;
-const description = event.description ?? `${eventTitle} — নিউজডেস্ক বিডির ঘটনাপঞ্জি।`;
+const description = event.description ?? `${eventTitle} — জাচাইডেস্কের ঘটনাপঞ্জি।`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -116,7 +116,7 @@ const status = STATUS[event.status] ?? STATUS.planned;
         <p class="mt-1 text-sm text-muted-foreground">{event.name}</p>
       )}
       <p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
-        {event.type === "event" ? "এই ঘটনার" : ""} শুরু থেকে এখন পর্যন্ত নিউজডেস্ক বিডিতে প্রকাশিত
+        {event.type === "event" ? "এই ঘটনার" : ""} শুরু থেকে এখন পর্যন্ত জাচাইডেস্কে প্রকাশিত
         সব প্রতিবেদনের কালানুক্রম।
         {event.year !== "ongoing" ? ` ঘটনাটি ${event.year} সালের।` : " ঘটনাটি এখনও চলছে — নতুন খবর এখানেই যোগ হয়।"}
       </p>
@@ -182,10 +182,10 @@ const status = STATUS[event.status] ?? STATUS.planned;
       </section>
     )}
 
-    <section aria-label="নিউজডেস্ক বিডিতে প্রকাশিত সংবাদ">
+    <section aria-label="জাচাইডেস্কে প্রকাশিত সংবাদ">
       <div class="mb-5 border-l-4 border-primary pl-4">
         <h2 class="font-serif text-2xl font-bold text-primary">
-          নিউজডেস্ক বিডিতে প্রকাশিত সংবাদ
+          জাচাইডেস্কে প্রকাশিত সংবাদ
         </h2>
         <p class="mt-1 text-sm text-muted-foreground">
           আমাদের {matching.length}টি প্রতিবেদন এই ঘটনার সঙ্গে যুক্ত — কালানুক্রমে সাজানো।

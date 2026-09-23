@@ -68,7 +68,7 @@ jobs:
       - name: Add branded WebP thumbnails
         run: node tools/add_images.mjs --write --strategy=mix
         env:
-          OPENVERSE_USER_AGENT: "newsdesk-bd/1.0 (https://newsdesk-bd.vercel.app)"
+          OPENVERSE_USER_AGENT: "jachaidesk/1.0 (https://jachaidesk.com)"
           NODE_OPTIONS: "--max-old-space-size=1024"
 
       - name: Commit + push (branded images + front matter)
