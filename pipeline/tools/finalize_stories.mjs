@@ -5,7 +5,7 @@
 // sudden supply spike can never make one run author/publish an unbounded batch.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { finalizeStory, storyExists } from '../lib/synth.mjs';
+import { finalizeStory, storyExists, findEditorialViolations } from '../lib/synth.mjs';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 
@@ -37,7 +37,7 @@ if (bodies.length > max) {
 
 const publishedTitles = loadPublishedTitles(siteDir);
 
-let finalized = 0, skipped = 0, failed = 0;
+let finalized = 0, skipped = 0, failed = 0, blocked = 0;
 for (const f of bodies) {
   const slug = f.replace(/\.b\.md$/, '');
   try {
@@ -49,6 +49,17 @@ for (const f of bodies) {
       console.log(`- ${slug}: title already published, skip`); skipped++; continue;
     }
     const body = readFileSync(join(bodiesDir, f), 'utf8').trim();
+    // 1.2 editorial gate: never publish speculation/filler (story re-authored later)
+    const violations = findEditorialViolations(body);
+    if (violations.length) {
+      console.log(`- ${slug}: EDITORIAL GATE BLOCKED [${violations.map((v) => v.match).join(' | ')}], skip`);
+      blocked++; continue;
+    }
+    // Enforce automation-only: never publish if verdict not passed
+    if (brief.verdict && brief.verdict.status !== 'passed') {
+      console.log(`- ${slug}: verdict.status=${brief.verdict.status} -> blocked (not passed), skip`);
+      skipped++; continue;
+    }
     const out = finalizeStory(slug, body, { siteDir });
     finalized++;
     // Register the headline immediately so a SECOND brief with the SAME title
@@ -62,4 +73,4 @@ for (const f of bodies) {
     console.error(`! ${slug}: ${e.message}`);
   }
 }
-console.log(`\nfinalize done. wrote=${finalized} skipped=${skipped} failed=${failed}`);
+console.log(`\nfinalize done. wrote=${finalized} skipped=${skipped} failed=${failed} blocked=${blocked}`);
