@@ -17,12 +17,15 @@
 - [ ] 1.6 Sample-audit existing ~430 articles for the biggest offenders (repetition/speculation); backfill ONLY flagged ones (if Q2=yes)
 - [ ] 1.7 Verify: pipeline tests + 1 live story inspected before/after; lighthouse still 100s
 
-## Round 2 — editorial depth (after Phase 1 ships)
-- [ ] 2.1 Homepage editorial hierarchy: clearly distinguish প্রধান খবর / সর্বশেষ / যাচাইকৃত / ব্যাখ্যা / ফ্যাক্ট চেক
-- [ ] 2.2 News vs Fact-check split: distinct templates/formats (factcheck category already exists)
-- [ ] 2.3 Political-news strict rules: факт → attribution → evidence only, no assumed public reaction
-- [ ] 2.4 "এই খবরের মূল কথা / What you need to know" box on important stories (only when documented)
-- [ ] 2.5 Duplicate same-event stories: dedup at clustering/rank layer (not a publish gate)
+## Round 2 — article-writing depth (after Phase 1 ships, same focus: how stories are written)
+- [ ] 2.1 News vs Fact-check split: distinct templates/formats (factcheck category already exists)
+- [ ] 2.2 Political-news strict rules: fact → attribution → evidence only, no assumed public reaction
+- [ ] 2.3 "এই খবরের মূল কথা / What you need to know" box on important stories (only when documented)
+- [ ] 2.4 Duplicate same-event stories: dedup at clustering/rank layer (keeps quality without stopping the 30-min volume)
+
+## PROPOSALS ONLY — site/UX design (NOT writing, parked until user asks)
+- [ ] P1 Homepage editorial hierarchy: clearly distinguish প্রধান খবর / সর্বশেষ / যাচাইকৃত / ব্যাখ্যা / ফ্যাক্ট চেক
+- [ ] P2 Badge legend placement as a permanent site-wide legend (vs per-article tooltip only)
 
 ## Notes / constraints
 - English-only in terminal; Bengali only inside site content/prompt instructions.
