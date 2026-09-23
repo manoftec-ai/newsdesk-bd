@@ -27,6 +27,7 @@ const allEntries = (await getCollection("news", ({ data }) => !data.draft)).map(
   title: entry.data.title,
   excerpt: entry.data.excerpt,
   category: entry.data.category,
+  year: entry.data.date.getFullYear(),
   date: entry.data.date.toISOString().slice(0, 10),
   updated: entry.data.updated ? entry.data.updated.toISOString().slice(0, 10) : undefined,
   verification: entry.data.verification,

@@ -128,9 +128,10 @@ export const eventMatchScore = (event, post) => {
   const excerpt = normalize(post?.excerpt ?? "");
   const body = normalize(post?.body ?? "");
   const keywords = event?.keywords ?? [];
+  const strong = new Set((event?.strongKeywords ?? []).map((k) => normalize(k)));
   let score = 0;
   for (const keyword of keywords) {
-    const weight = isSpecific(keyword) ? 1 : 0.1;
+    const weight = strong.has(normalize(keyword)) ? 1 : isSpecific(keyword) ? 1 : 0.1;
     score += countOccurrences(title, keyword) * 3 * weight;
     score += countOccurrences(excerpt, keyword) * 1.5 * weight;
     if (body) score += countOccurrences(body, keyword) * 0.8 * weight;
@@ -138,13 +139,38 @@ export const eventMatchScore = (event, post) => {
   return score;
 };
 
-// Match purely by weighted score. Add a small credit for a title hit so a single
-// strong keyword in the headline can still qualify.
+// Optional hard gates an event can declare to keep chronicle links precise:
+//   strongKeywords    — topic-defining words; an article MUST mention at least one
+//                       of them (and they score at full weight like specific keywords)
+//   years             — allowed years (from post.date / post.year); empty = any year
+//   excludeCategories — categories that must never link into this chronicle
+const passesHardGates = (event, post) => {
+  const strongWords = (event?.strongKeywords ?? []).filter(Boolean);
+  if (strongWords.length) {
+    const hay = normalize([post?.title, post?.excerpt, post?.body].filter(Boolean).join(" "));
+    if (!strongWords.some((k) => normalize(k) && hay.includes(normalize(k)))) return false;
+  }
+  const years = event?.years ?? [];
+  if (years.length) {
+    const year =
+      post?.year ??
+      (post?.date ? Math.trunc(Number(String(post.date).slice(0, 4))) : 0) ??
+      0;
+    if (year && !years.map(Number).filter(Boolean).includes(Number(year))) return false;
+  }
+  const excludeCats = event?.excludeCategories ?? [];
+  if (excludeCats.length && post?.category && excludeCats.includes(post.category)) return false;
+  return true;
+};
+
+// Match purely by weighted score, bounded by the event's hard gates. Add a small
+// credit for a title hit so a single strong keyword in the headline can still qualify.
 export const matchesEvent = (event, post, minimum = 4) => {
   if (!event || !post) return false;
+  if (!passesHardGates(event, post)) return false;
   const score = eventMatchScore(event, post);
   if (score >= minimum) return true;
-  for (const keyword of event?.keywords ?? []) {
+  for (const keyword of [...(event?.strongKeywords ?? []), ...(event?.keywords ?? [])]) {
     if (isSpecific(keyword) && normalize(post.title).includes(normalize(keyword))) {
       return true;
     }
