@@ -1,7 +1,7 @@
 // test/synth.test.mjs — unit tests for synth helpers
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inferTags, claimRules, writingPrompt, factCheckBlock } from '../lib/synth.mjs';
+import { inferTags, claimRules, writingPrompt, factCheckBlock, prepBody } from '../lib/synth.mjs';
 
 test('inferTags emits only defined tags from real keywords', () => {
   const brief = {
@@ -125,4 +125,27 @@ test('factCheckBlock: empty for plain news story', () => {
     category: 'national',
     members: [{ source_id: 'pal', title: 'x', lead: 'y' }],
   }), '');
+});
+
+test('prepBody: excerpt stripped of এক নজরে block and markdown markers', () => {
+  const body = `ঢাকায় নতুন মেট্রো লাইন চালু হয়েছে। খরচ হয়েছে নির্ধারিত বাজেটের মধ্যেই।
+
+**এক নজরে**
+- স্টেশন ১০টি
+- খরচ ৫০০ কোটি টাকা
+
+## মূল খবর
+
+বাস ও রিকশার উপরে ভর করে যাতায়াত করা ঢাকাবাসীর জন্য নতুন এই পথ যুক্ত হয়েছে।
+`;
+  const { excerpt, keyPoints, remaining } = prepBody(body);
+  assert.equal(keyPoints.length, 2);
+  assert.deepEqual(keyPoints, ['স্টেশন ১০টি', 'খরচ ৫০০ কোটি টাকা']);
+  assert.match(remaining, /## মূল খবর/);
+  assert.doesNotMatch(remaining, /এক\s*নজরে/);
+  assert.ok(excerpt.length > 0);
+  assert.ok(excerpt.startsWith('ঢাকায়'));
+  assert.doesNotMatch(excerpt, /\*\*/);
+  assert.doesNotMatch(excerpt, /এক\s*নজরে/);
+  assert.doesNotMatch(excerpt, /## /);
 });
