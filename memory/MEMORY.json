@@ -34,6 +34,19 @@
   },
   "decisions": [
     {
+      "id": "D66",
+      "date": "2026-09-24",
+      "title": "Editorial deploy batch N2+N3+N4+N6",
+      "summary": "Spec-aligned LLM auditor (12-point SPEC_AUDIT_POINTS + delete-sentence rules in auditPrompt); claim-level writing rules in writer prompt via claimRules() + auto-author.yml; mechanical n13 disclosure gate (CONFLICTING claim must state both sides); mechanical n14 quote-integrity gate (quotes must exist verbatim in leads). Suite 120/120. Commit 1c3924c.",
+      "files": [
+        "pipeline/lib/audit.mjs",
+        "pipeline/lib/synth.mjs",
+        "pipeline/test/audit.test.mjs",
+        "pipeline/test/synth.test.mjs",
+        ".github/workflows/auto-author.yml"
+      ]
+    },
+    {
       "id": "D65",
       "date": "2026-09-24",
       "title": "P0-10 structured contradiction detection",
@@ -826,8 +839,9 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 42,
+  "sessionsCount": 43,
   "p0Progress": {
-    "P0-10": "done"
+    "P0-10": "done",
+    "N-deploy-batch-1": "done"
   }
 }
