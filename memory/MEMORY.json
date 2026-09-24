@@ -34,6 +34,12 @@
   },
   "decisions": [
     {
+      "id": "D67",
+      "date": "2026-09-24",
+      "title": "SITE DEPLOY FIXED — invalid YAML frontmatter was breaking every Vercel build; national-473 fresh-news rewrite finally LIVE",
+      "detail": "Root cause of \"still see the old news\": 17 auto-authored articles had single-quoted YAML excerpts/seoDescription scalars containing UNESCAPED single quotes (writer wrapped values in '...' while the Bengali text itself contained ' quotes) -> js-yaml \"bad indentation of a mapping entry\" (e.g. history-atomic-bombings-1945.md:6:75) -> \"Command npm run build exited with 1\" -> EVERY Vercel deploy ERROR since those files landed, freezing jachaidesk.com at an old build (serving pre-rewrite national-473). Found via Vercel API (deployment events endpoint returns a TOP-LEVEL ARRAY; earlier code read j.events which was undefined -> bogus 0 events). Confirmed with local js-yaml on all files. Fix: repaired the 17 broken files to double-quoted scalars preserving text. Verified all 459 news frontmatters parse AND pass site/content.config.js zod schema. Commit 7b5a04c (rebase -> b64b3fb) pushed; deploy went READY; jachaidesk.com/article/national-473 now shows মূল খবর / কী এখনো জানা যায়নি and no banned phrases. Root cause in pipeline: NOT current code — synth.mjs finalizeStory already writes excerpt in double quotes. The 17 files came from earlier auto-author batches that wrote single quotes. Consider a frontmatter sanity-check step before content lands (cheap guard)."
+    },
+    {
       "id": "D66",
       "date": "2026-09-24",
       "title": "Editorial deploy batch N2+N3+N4+N6",
@@ -839,7 +845,7 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 43,
+  "sessionsCount": 44,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done"
