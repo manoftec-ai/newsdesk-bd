@@ -454,6 +454,12 @@
       "date": "2026-09-24",
       "title": "Reader-value test (#21) + editorial-value ranking (#22) implemented",
       "detail": "New pipeline/lib/editorial.mjs. readerValueCheck(): concrete-token novelty probe, PASS only if body adds a concrete fact beyond headline or is >=4x headline length; wired into audit.mjs mechanicalAudit as rv1 gate (blocks publish, separate from 10 LLM points). editorialValue(brief): internal-only 0-100 score (impact/corroboration/consequence/urgency/usefulness/geo relevance); used in pick_briefs.mjs as tiebreak within newest-first batch, exposed in pick.json+console. Tests editorial.test.mjs (8 new) + 2 audit rv1 -> suite 80/80. Commit 516c305. Critique #21/#22; deterministic zero-cost, keyless."
+    },
+    {
+      "id": "D62",
+      "date": "2026-09-24",
+      "title": "FRESH-NEWS VOICE — publish gate + writers stop reporting-on-reporting",
+      "detail": "User: \"every news is just comparing between two source what they said... just want a simple fresh news. source name will be just after the news.\" Commit 69e5a53: (1) findEditorialViolations (gate used by LIVE auto-author path) now BLOCKS outlet names (BANNED_OUTLET_NAMES), source-meta reporting-on-reporting (BANNED_SOURCE_META: দুই প্রতিবেদনে, প্রতিবেদনে বলা হয়েছে/প্রকাশ পেয়েছে, দুই ভিন্ন শিরোনামে, একাধিক সংবাদমাধ্যম...), invented anonymous observers (BANNED_INVENTED_ACTORS: পর্যবক্ষকরা মনে করছেন, বিশেষজ্ঞরা, সংশ্লিষ্টরা, কয়েকটি সূত্র, এ ধরনের পরিস্থিতিতে, অনেকে মনে করছেন...); (2) writer prompt rewritten: ONE fact pool, write the event, actors only for real attribution, sources only in frontmatter সূত্র block AFTER the news; (3) template headings per 40-pt proposal #4: মূল খবর / কী জানা গেছে (opt) / কী এখনো জানা যায়নি (retired কী ঘটেছে/যা এখনো); (4) audit c8 + tests aligned; old national-473 phrasing now blocked. Tests 91/91. Parallel cluster.mjs hybrid WIP left untouched."
     }
   ],
   "sources": [
@@ -797,5 +803,5 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 40
+  "sessionsCount": 41
 }
