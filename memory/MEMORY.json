@@ -34,6 +34,20 @@
   },
   "decisions": [
     {
+      "id": "D68",
+      "date": "2026-09-24",
+      "title": "P1 temporal truth: claim verification ledger + reverify R5",
+      "summary": "Append-only claim_snapshots (valid_from/valid_until range per claim status; status change closes open period + opens new one). recordSnapshot/claimStatusAt/claimTimeline/claimTransitions; applyClaimVerification stamps updated_at + writes ledger. reverify R5 flip-flop trigger (CONFLICTING->recovered = durability signal). Schema idempotent on raced store.db; backfills on next extract. Suite 129/129. Commit f19ea21.",
+      "files": [
+        "pipeline/lib/db.mjs",
+        "pipeline/lib/claim-verify.mjs",
+        "pipeline/lib/reverify.mjs",
+        "pipeline/tools/reverify_stories.mjs",
+        "pipeline/test/temporal-truth.test.mjs",
+        "pipeline/test/reverify.test.mjs"
+      ]
+    },
+    {
       "id": "D67",
       "date": "2026-09-24",
       "title": "SITE DEPLOY FIXED — invalid YAML frontmatter was breaking every Vercel build; national-473 fresh-news rewrite finally LIVE",
@@ -845,9 +859,10 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 44,
+  "sessionsCount": 45,
   "p0Progress": {
     "P0-10": "done",
-    "N-deploy-batch-1": "done"
+    "N-deploy-batch-1": "done",
+    "P1-temporal-truth": "done"
   }
 }
