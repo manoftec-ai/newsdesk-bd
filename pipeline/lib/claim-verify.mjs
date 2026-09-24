@@ -15,50 +15,40 @@
 //   REFUTED       — a contradicion resolved against the claim (future: typed)
 //   OUTDATED      — superseded temporally (future: valid_from/valid_until)
 import { loadTrust } from './verify.mjs';
+import { loadLineage, groupEvidence, isOfficialSource } from './lineage.mjs';
 
 // Map evidence rows → claim verification. `evidence` = rows from claim_evidence,
 // `conflicts` = rows from conflicts (optional). Returns full status object.
-export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = null } = {}) {
+// Independence is measured by EVIDENCE GROUP (source-independence lineage), not
+// by counting distinct URLs: two outlets sharing one wire = one group.
+export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = null, lineage = null } = {}) {
   const tr = trust ?? loadTrust();
   const reps = tr.sources ?? {};
+  const lin = lineage ?? loadLineage();
   const support = [];
   const contradict = [];
-  const official = [];
-  const seen = new Set(); // independent = distinct source_id (start; source-independence groups later)
 
   for (const e of evidence) {
-    const rel = e.relation || 'supports';
-    const rep = reps[e.source_id] ?? 'top';
-    const isOfficial = rep === 'official' || rep === 'agency';
-    if (rel === 'contradicts') {
-      contradict.push(e);
-    } else {
-      support.push(e);
-      if (isOfficial) official.push(e);
-    }
-    // de-dup by source for independence counting
+    if ((e.relation || 'supports') === 'contradicts') contradict.push(e);
+    else support.push(e);
   }
 
-  const distinctSources = new Set();
-  for (const e of support) if (!seen.has(e.source_id)) { seen.add(e.source_id); distinctSources.add(e.source_id); }
-
-  const supportCount = distinctSources.size;
-  const contradictionCount = contradict.length + conflicts.filter((c) => (c.resolution ?? 'unresolved') === 'unresolved').length;
-  const hasConflict = contradictionCount > 0;
-  const hasOfficial = official.length > 0;
+  const { independentCount } = groupEvidence(support, lin);
+  // official can come from lineage (source_type) OR legacy trust.json reputation
+  const officialRows = support.filter((e) => isOfficialSource(e.source_id, lin) || ['official', 'agency'].includes(reps[e.source_id]));
+  const contradictions = contradict.length + conflicts.filter((c) => (c.resolution ?? 'unresolved') === 'unresolved').length;
+  const hasConflict = contradictions > 0;
+  const hasOfficial = officialRows.length > 0;
 
   let status = 'UNCONFIRMED';
-  if (supportCount === 0 && !hasConflict) status = 'UNCONFIRMED';
-  else if (supportCount === 0 && hasConflict) status = 'CONFLICTING';
+  if (independentCount === 0 && !hasConflict) status = 'UNCONFIRMED';
+  else if (independentCount === 0 && hasConflict) status = 'CONFLICTING';
   else if (hasConflict) status = 'CONFLICTING';
-  else if (hasOfficial && supportCount >= 1) status = 'OFFICIAL';
-  else if (supportCount >= 2) status = 'VERIFIED';
+  else if (hasOfficial && independentCount >= 1) status = 'OFFICIAL';
+  else if (independentCount >= 2) status = 'VERIFIED';
   else status = 'SINGLE_SOURCE';
 
-  // confidence: base on independent source count + official, capped, with
-  // ceiling penalty when contradiction present — this is NOT a truth
-  // probability, just a supporting-signal strength.
-  let confidence = Math.min(1, supportCount / 3) + (hasOfficial ? 0.15 : 0);
+  let confidence = Math.min(1, independentCount / 3) + (hasOfficial ? 0.15 : 0);
   if (hasConflict) confidence *= 0.4;
   confidence = Math.round(Math.min(1, Math.max(0, confidence)) * 100);
 
@@ -67,13 +57,15 @@ export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = 
     status,
     confidence,
     support_count: support.length,
-    support_independent_sources: supportCount,
-    contradiction_count: contradictionCount,
-    official_count: official.length,
+    support_independent_sources: independentCount,
+    support_independent_groups: independentCount,
+    contradiction_count: contradictions,
+    official_count: officialRows.length,
     has_official: hasOfficial,
     unresolved_conflict: hasConflict,
     evidence: support.map((e) => ({
       source_id: e.source_id,
+      group: groupKey_(e.source_id, lin),
       url: e.url,
       excerpt: e.excerpt,
       relation: e.relation,
@@ -88,14 +80,17 @@ export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = 
   };
 }
 
-export function applyClaimVerification(db, { trust = null } = {}) {
+function groupKey_(sourceId, lineage) { return lineage[sourceId] ? (lineage[sourceId].ownership_group ?? lineage[sourceId].wire_origin ?? lineage[sourceId].syndication_group ?? sourceId) : sourceId; }
+
+export function applyClaimVerification(db, { trust = null, lineage = null } = {}) {
   const claims = db.prepare('SELECT id, cluster_id, claim_text, story_slug FROM claims').all();
+  const lin = lineage ?? loadLineage();
   const evSt = db.prepare('SELECT * FROM claim_evidence WHERE claim_id = ?').all;
   let n = 0;
   for (const c of claims) {
     const evidence = db.prepare('SELECT * FROM claim_evidence WHERE claim_id = ?').all(c.id);
     const conflicts = db.prepare('SELECT * FROM conflicts WHERE claim_id = ? OR cluster_id = ?').all(c.cluster_id, c.cluster_id);
-    const v = verifyClaim(c.claim_text, { evidence, conflicts, trust });
+    const v = verifyClaim(c.claim_text, { evidence, conflicts, trust, lineage: lin });
     db.prepare(`
       UPDATE claims SET status=?, confidence=?, support_count=?, contradiction_count=? WHERE id=?
     `).run(v.status, v.confidence, v.support_count, v.contradiction_count, c.id);

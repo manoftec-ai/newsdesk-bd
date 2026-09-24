@@ -29,7 +29,11 @@
       "web": "https://fireservice.gov.bd/",
       "facebook": "https://www.facebook.com/fscd.bd",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -39,7 +43,11 @@
       "web": "https://www.police.gov.bd/",
       "facebook": "https://www.facebook.com/BangladeshPoliceOfficialPage",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "ECONNRESET; verified page has ~2.7M followers" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "ECONNRESET; verified page has ~2.7M followers"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -49,7 +57,11 @@
       "web": "https://dmp.gov.bd/",
       "facebook": "https://www.facebook.com/dmp.dhaka",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UND_ERR_CONNECT_TIMEOUT; FB URL from official dmp.gov.bd site text" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "UND_ERR_CONNECT_TIMEOUT; FB URL from official dmp.gov.bd site text"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -59,7 +71,11 @@
       "web": "https://www.bmd.gov.bd/",
       "facebook": "https://www.facebook.com/bmd.gov.bd",
       "method": "facebook+web",
-      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "probe": {
+        "homeReachable": true,
+        "httpStatus": 200,
+        "note": "no feed; site reachable"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -69,7 +85,11 @@
       "web": "https://www.bbs.gov.bd/",
       "facebook": "https://www.facebook.com/bbs.gov.bd",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -79,7 +99,11 @@
       "web": "https://www.pid.gov.bd/",
       "facebook": "https://www.facebook.com/pid.bangladesh",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "ENOTFOUND; fb from archived official posts" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "ENOTFOUND; fb from archived official posts"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -89,7 +113,11 @@
       "web": "https://www.pmo.gov.bd/",
       "facebook": "https://www.facebook.com/bdpmoffice",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "DEPTH_ZERO_SELF_SIGNED_CERT; NEW official page launched 2026-02-18 under 11th PM" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "DEPTH_ZERO_SELF_SIGNED_CERT; NEW official page launched 2026-02-18 under 11th PM"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -99,7 +127,11 @@
       "web": "https://www.btrc.gov.bd/",
       "facebook": "https://www.facebook.com/btrc.gov",
       "method": "facebook+search",
-      "probe": { "homeReachable": false, "httpStatus": 0, "note": "DEPTH_ZERO_SELF_SIGNED_CERT" },
+      "probe": {
+        "homeReachable": false,
+        "httpStatus": 0,
+        "note": "DEPTH_ZERO_SELF_SIGNED_CERT"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -109,7 +141,11 @@
       "web": "https://dghs.gov.bd/",
       "facebook": "https://www.facebook.com/dghsbd",
       "method": "facebook+web",
-      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "probe": {
+        "homeReachable": true,
+        "httpStatus": 200,
+        "note": "no feed; site reachable"
+      },
       "fbVerified": "2026-09-19"
     },
     {
@@ -119,7 +155,11 @@
       "web": "https://www.nbr.gov.bd/",
       "facebook": "https://www.facebook.com/nbr.bangladesh",
       "method": "facebook+search",
-      "probe": { "homeReachable": true, "httpStatus": 200, "note": "no feed; site reachable" },
+      "probe": {
+        "homeReachable": true,
+        "httpStatus": 200,
+        "note": "no feed; site reachable"
+      },
       "fbVerified": "2026-09-19"
     }
   ],
@@ -127,5 +167,69 @@
     "Most .gov.bd hosts are flaky (self-signed certs, resets, timeouts). VERIFY gather will primarily use SearXNG meta-search + official Facebook pages (checked above) rather than direct TLS polling.",
     "blocklist (impersonator/clickbait domains) starts empty; grow ONLY with manually verified examples.",
     "bmd FB page confirmation came via directory/aggregator data (facebook.com/bmd.gov.bd) — re-confirm against the page's verified badge in Phase 4."
-  ]
+  ],
+  "lineage": {
+    "bbc-bengali": {
+      "wire_origin": "bbc",
+      "source_type": "primary_reporter"
+    },
+    "voa-bangla": {
+      "wire_origin": "voa",
+      "source_type": "primary_reporter"
+    },
+    "bdnews24": {
+      "source_type": "major_news"
+    },
+    "dailystar": {
+      "source_type": "major_news"
+    },
+    "dhakatribune": {
+      "source_type": "major_news"
+    },
+    "tbs": {
+      "source_type": "major_news"
+    },
+    "prothomalo": {
+      "source_type": "major_news"
+    },
+    "independent": {
+      "source_type": "major_news"
+    },
+    "banglatribune": {
+      "source_type": "major_news"
+    },
+    "kalerkantho": {
+      "source_type": "major_news"
+    },
+    "samakal": {
+      "source_type": "major_news"
+    },
+    "jugantor": {
+      "source_type": "major_news"
+    },
+    "ittefaq": {
+      "source_type": "major_news"
+    },
+    "dainikbangla": {
+      "source_type": "major_news"
+    },
+    "jamuna": {
+      "source_type": "major_news"
+    },
+    "atnbangla": {
+      "source_type": "major_news"
+    },
+    "channeli": {
+      "source_type": "major_news"
+    },
+    "deshrupantor": {
+      "source_type": "minor_news"
+    },
+    "daily-observer": {
+      "source_type": "minor_news"
+    },
+    "bd24live": {
+      "source_type": "minor_news"
+    }
+  }
 }
