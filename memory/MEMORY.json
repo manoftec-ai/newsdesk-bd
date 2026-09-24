@@ -35,6 +35,12 @@
   "decisions": [
     {
       "date": "2026-09-24",
+      "id": "D60",
+      "title": "P0-7 corrections + automatic re-verification engine",
+      "context": "pipeline/lib/reverify.mjs — detectCorrections (R1 verdict != passed / R2 badge rank drop / R3 CONFLICTING claim / R4 headline overclaim) + applyCorrection (additive frontmatter only: corrected:true, updated, correctionNote, updates[] label সংশোধন; validated + idempotent). tools/reverify_stories.mjs maps story->cluster via brief clusterId, reads live verdict+claims+headline, freshness-gated (REVERIFY_STALE_HOURS 26 — never correct on stale evidence). Wired into pipeline.yml after extract. Dry-run: 459 checked / 14 R1-correct / 125 skipped. Tests 6 -> suite 72/72."
+    },
+    {
+      "date": "2026-09-24",
       "id": "D59",
       "title": "P0 headline verification + claims FK fix",
       "context": "verifyHeadline pits headline vs strongest supported claim (supported/weak/poor/overclaim + hype) deterministically; briefs carry claims (confidence DESC) for the strongest; frontmatter shows verification.headline; upsertClaim switched to RETURNING id (last_insert_rowid stale on unchanged DO UPDATE → FK cascade bug, most briefs had zero claims). 66/66 tests."
@@ -773,5 +779,5 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 37
+  "sessionsCount": 38
 }
