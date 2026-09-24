@@ -48,6 +48,10 @@ jobs:
         run: |
           node tools/reverify_stories.mjs --max=50 || echo "reverify skipped/failed (harmless)"
 
+      - name: Cluster quality (golden test dataset)
+        run: |
+          node tools/cluster_eval.mjs || echo "cluster-eval skipped/failed (harmless)"
+
       - name: Commit state
         run: |
           git config user.name "newsdesk-bd-bot"

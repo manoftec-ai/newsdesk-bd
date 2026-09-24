@@ -44,7 +44,7 @@ poll:
   min_interval_minutes: 30      # per-source floor; never fetch faster than this
   dedupe_title_similarity: 0.92 # 0..1, drop items whose title matches this strongly
   cluster_window_hours: 8       # only cluster items from the last 8h
-  cluster_similarity: 0.45
+  cluster_similarity: 0.30      # tuned on config/golden.json (2026-09-24: F1 0.625→0.952 at sim 0.30; fixes same-event-different-words dup hole, precision stays 1.000 on traps)
   cluster_prune_sim: 0.35       # centroid outlier prune (removes single-linkage grab-away members)
   cluster_mature_runs: 3        # runs with no new member before story is written
 

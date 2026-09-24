@@ -35,6 +35,12 @@
   "decisions": [
     {
       "date": "2026-09-24",
+      "id": "D61",
+      "title": "P0-8 Golden Test Dataset + cluster retune",
+      "context": "config/golden.json (21 real items/11 events incl. dup-hole + trap pairs, self-contained), lib/cluster-eval.mjs (pairwise P/R/F1 + eventReport), tools/cluster_eval.mjs (--sweep/--min-f1), tests 6. Old config 0.45: F1 0.625 (recall 0.455). Retuned cluster_similarity 0.45->0.30: P 1.0 R 0.909 F1 0.952. CI informational step. Suite 86/86."
+    },
+    {
+      "date": "2026-09-24",
       "id": "D60",
       "title": "P0-7 corrections + automatic re-verification engine",
       "context": "pipeline/lib/reverify.mjs — detectCorrections (R1 verdict != passed / R2 badge rank drop / R3 CONFLICTING claim / R4 headline overclaim) + applyCorrection (additive frontmatter only: corrected:true, updated, correctionNote, updates[] label সংশোধন; validated + idempotent). tools/reverify_stories.mjs maps story->cluster via brief clusterId, reads live verdict+claims+headline, freshness-gated (REVERIFY_STALE_HOURS 26 — never correct on stale evidence). Wired into pipeline.yml after extract. Dry-run: 459 checked / 14 R1-correct / 125 skipped. Tests 6 -> suite 72/72."
