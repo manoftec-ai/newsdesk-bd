@@ -4,8 +4,8 @@
     "project": "newsdesk-bd (Bangla News Synth)",
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
-    "lastUpdated": "2026-09-23",
-    "sessionsCount": 36,
+    "lastUpdated": "2026-09-24",
+    "sessionsCount": 39,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,25 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "date": "2026-09-24",
+      "id": "D58",
+      "title": "P0 AI Auditor (two-stage Writer→Auditor, PASS with bounded retries)",
+      "context": "10 points derived from locked editorial rules; mechanical gate always runs, LLM judges 10 points, re-runs writer w/ feedback up to 2 retries; finalize only on PASS."
+    },
+    {
+      "date": "2026-09-24",
+      "id": "D57",
+      "title": "P0 source independence: lineage + independent evidence groups",
+      "context": "Evidence groups (ownership/wire) replace distinct-URL counting; additive (no cluster-badge change)."
+    },
+    {
+      "date": "2026-09-24",
+      "id": "D56",
+      "title": "P0 evidence-architecture batch — governance gate + Claim→Evidence graph (automation-only)",
+      "context": "User: full automation, no human touch, do tasks one-by-one, keep in memory/tests/backups.",
+      "detail": "verify.mjs forces status=human_check unless passed; extract skips non-passed + Tier A requires confirmed/verified; finalize refuses non-passed verdicts (+blocked counter). New SQLite claims/claim_evidence/conflicts tables + upsertClaim/addClaimEvidence/recordConflict; populateClaimsFromBrief dual-writes event+headline claims w/ evidence. Committed fc9f9e9."
+    },
     {
       "date": "2026-09-23",
       "id": "D53",
@@ -734,6 +753,6 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "sessionsCount": 36
 }

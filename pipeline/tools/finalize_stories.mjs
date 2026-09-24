@@ -58,7 +58,7 @@ for (const f of bodies) {
     // Enforce automation-only: never publish if verdict not passed
     if (brief.verdict && brief.verdict.status !== 'passed') {
       console.log(`- ${slug}: verdict.status=${brief.verdict.status} -> blocked (not passed), skip`);
-      skipped++; continue;
+      skipped++; blocked++; continue;
     }
     const out = finalizeStory(slug, body, { siteDir });
     finalized++;

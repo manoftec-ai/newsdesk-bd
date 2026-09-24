@@ -13,8 +13,9 @@
 //   Env: LLM_API_KEY (GH secret), LLM_BASE_URL, LLM_MODEL; flags below.
 import { mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { listBriefs, loadBrief, writingPrompt, finalizeStory, storyExists } from '../lib/synth.mjs';
-import { chatComplete, LLM_CFG } from '../lib/llm.mjs';
+import { listBriefs, loadBrief, finalizeStory, storyExists } from '../lib/synth.mjs';
+import { LLM_CFG } from '../lib/llm.mjs';
+import { writeThenAudit, MAX_AUDIT_RETRIES } from '../lib/audit.mjs';
 
 const SITE_DIR = resolve(import.meta.dirname, '../../../site/src/content');
 const AVAIL_MAX = 24; // hard cap per run regardless of strategy — free-tier friendly
@@ -44,25 +45,24 @@ async function main() {
     return;
   }
   const targets = pending.slice(0, AVAIL_MAX);
-  out(`provider=${LLM_CFG.baseUrl} model=${LLM_CFG.model} targets=${targets.length}`);
-  let ok = 0, fail = 0;
+  out(`provider=${LLM_CFG.baseUrl} model=${LLM_CFG.model} targets=${targets.length} (two-stage writer+auditor, max retries=${MAX_AUDIT_RETRIES})`);
+  let ok = 0, fail = 0, blocked = 0;
   for (const slug of targets) {
     try {
       const brief = loadBrief(slug);
-      const body = await chatComplete(
-        [{ role: 'system', content: 'You are the newsdesk-bd staff writer. Follow the task exactly.' },
-         { role: 'user', content: writingPrompt(brief) }],
-      );
-      if (!body || !String(body).trim()) throw new Error('empty completion');
-      const f = finalizeStory(slug, body, { siteDir: SITE_DIR });
+      // TWO-STAGE AUDIT: writer -> mechanical gate -> LLM 10-point audit, with
+      // bounded retries (writer re-runs on auditor feedback). Finalize only on PASS.
+      const { pass, body: finalBody } = await writeThenAudit(brief);
+      if (!pass || !finalBody) { blocked++; out(`- ${slug}: AUDIT FAILED, skip (blocked)`); continue; }
+      const f = finalizeStory(slug, finalBody, { siteDir: SITE_DIR });
       ok++;
-      out(`+ authored ${slug} -> ${f.split('/site/src/content/')[1]} (${(body.length)} chars)`);
+      out(`+ authored ${slug} -> ${f.split('/site/src/content/')[1]} (${finalBody.length} chars, PASS)`);
     } catch (e) {
       fail++;
       out(`- failed ${slug}: ${e?.message ?? e}`);
     }
   }
-  out(`done ok=${ok} fail=${fail}`);
+  out(`done ok=${ok} fail=${fail} blocked=${blocked}`);
   process.exit(fail ? 1 : 0);
 }
 

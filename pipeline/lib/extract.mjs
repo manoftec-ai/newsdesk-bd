@@ -4,7 +4,8 @@
 // Flow: cluster(mature) -> verdict(passed) -> brief -> synth(writer) -> draft .md.
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
-import { openDb } from './db.mjs';
+import { openDb, upsertClaim, addClaimEvidence } from './db.mjs';
+import { applyClaimVerification } from './claim-verify.mjs';
 import { loadConfig, tierForCategory } from './config.mjs';
 import { loadTrust } from './verify.mjs';
 import { loadPublishedTitles, isTitleDuplicate } from './published.mjs';
@@ -148,9 +149,16 @@ export function exportBriefs({ status = 'passed' } = {}) {
   for (const { cluster_id } of query) {
     const brief = buildBrief(cluster_id, { db });
     if (!brief || !brief.verdict) { skipped++; continue; }
+    if (brief.verdict.status !== 'passed') { skipped++; continue; }
+    // Automation-only: Tier A must be confirmed/verified
+    if (brief.verdict.tier === 'A' && brief.verdict.badge !== 'verified' && brief.verdict.badge !== 'confirmed') {
+      skipped++; continue;
+    }
     if (isTitleDuplicate(brief.headline, brief.date, published)) { dups++; continue; }
     const f = join(BRIEFS_DIR, `${brief.slug}.json`);
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');
+    try { populateClaimsFromBrief(db, brief); } catch (e) {}
+    try { applyClaimVerification(db); } catch (e) {}
     written++;
   }
   console.log(`extract done. briefs written=${written} skipped=${skipped} title-dups=${dups} dir=${BRIEFS_DIR}`);
@@ -166,4 +174,27 @@ export function uniqueSources(sources) {
 
 export function briefExists(slug) {
   return existsSync(join(BRIEFS_DIR, `${slug}.json`));
+}
+export function populateClaimsFromBrief(db, brief) {
+  if (!brief || !brief.clusterId) return 0;
+  let n = 0;
+  try {
+    const base = String(brief.headline || '').trim();
+    if (base) {
+      const cid = upsertClaim(db, { cluster_id: brief.clusterId, claim_text: base, claim_type: 'event' });
+      for (const m of brief.members || []) {
+        addClaimEvidence(db, { claim_id: cid, source_id: m.source_id, url: m.url, excerpt: m.lead, relation: 'supports', evidence_type: 'news', published_at: m.published_at });
+      }
+      n++;
+    }
+    for (const m of brief.members || []) {
+      const t = String(m.title || '').trim();
+      if (t && t !== base) {
+        const cid2 = upsertClaim(db, { cluster_id: brief.clusterId, claim_text: t, claim_type: 'headline' });
+        addClaimEvidence(db, { claim_id: cid2, source_id: m.source_id, url: m.url, excerpt: m.lead, relation: 'supports', evidence_type: 'news', published_at: m.published_at });
+        n++;
+      }
+    }
+  } catch (e) { console.error('populateClaimsFromBrief ERR:', e.message); }
+  return n;
 }
