@@ -53,6 +53,15 @@ const title = `খুঁজুন — ${SITE.name}`;
 
 <script>
   const searchRoot = document.getElementById("search");
+
+  const loadStylesheet = () => {
+    if (document.querySelector('link[href="/pagefind/pagefind-ui.css"]')) return;
+    const linkEl = document.createElement("link");
+    linkEl.rel = "stylesheet";
+    linkEl.href = "/pagefind/pagefind-ui.css";
+    document.head.appendChild(linkEl);
+  };
+
   const loadScript = (src) =>
     new Promise((resolve) => {
       const script = document.createElement("script");
@@ -66,8 +75,8 @@ const title = `খুঁজুন — ${SITE.name}`;
   const init = async () => {
     if (!searchRoot || searchRoot.dataset.busy === "true") return;
     searchRoot.dataset.busy = "true";
+    loadStylesheet();
     try {
-      await loadScript("/pagefind/pagefind-entry.js");
       await loadScript("/pagefind/pagefind-ui.js");
       if (window.PagefindUI) {
         searchRoot.innerHTML = "";
@@ -80,5 +89,9 @@ const title = `খুঁজুন — ${SITE.name}`;
     }
   };
 
-  searchRoot?.addEventListener("focusin", init, { once: true });
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
 </script>

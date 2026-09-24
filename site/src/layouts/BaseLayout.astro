@@ -93,7 +93,7 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
     <a href="#main-content" class="skip-link">প্রধান অংশে যান</a>
     <div class="flex min-h-dvh flex-col">
       <Header />
-      <main id="main-content" class="flex-1">
+      <main id="main-content" class="flex-1" data-pagefind-body>
         <slot />
       </main>
       <Footer flush={flushFooter} />
