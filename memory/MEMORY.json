@@ -34,6 +34,20 @@
   },
   "decisions": [
     {
+      "id": "D74",
+      "date": "2026-09-24",
+      "title": "P1 versioning: append-only per-claim ledger surfaced on the site (সংস্করণ ইতিহাস)",
+      "summary": "storyVersions(db, clusterId) in lib/event-graph.mjs returns each claim full snapshot ledger (ordered periods: status/confidence/support+contradiction+evidence counts/evidence_hash/valid_from/valid_until/reason). tools/event_graph.mjs now emits versions[] per story (diff-write). StoryTimeline.astro adds a collapsible version-history per claim (badge status, date range, reason chip, counts line) using existing badge-- classes (no new CSS) + reasonLabel() in lib/graph.js (verify/re-verify/conflict labels). Rebased over worker b35d571/8c2a14d/7963e7b (worker regenerated event-graph.json without versions -> conflict resolved by regenerating merged file: 349 stories now 65 with events/versions). Suite 166/166. Commit 84b5196 -> ad9386e (SYNCED).",
+      "files": [
+        "pipeline/lib/event-graph.mjs",
+        "pipeline/tools/event_graph.mjs",
+        "pipeline/test/event-graph.test.mjs",
+        "site/src/components/StoryTimeline.astro",
+        "site/src/lib/graph.js",
+        "site/src/data/event-graph.json"
+      ]
+    },
+    {
       "id": "D72",
       "date": "2026-09-24",
       "title": "P1 story event graph — কেমনভাবে উন্মোচিত হলো",
@@ -912,13 +926,14 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 48,
+  "sessionsCount": 49,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
     "P1-temporal-truth": "done",
     "P1-evidence-snapshots": "done",
     "P1-source-health": "done",
-    "P1-event-graph": "done"
+    "P1-event-graph": "done",
+    "P1-versioning": "done"
   }
 }
