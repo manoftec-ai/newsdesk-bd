@@ -35,6 +35,12 @@
   "decisions": [
     {
       "date": "2026-09-24",
+      "id": "D63",
+      "title": "P0-10 Entity resolution + actor registry",
+      "context": "lib/identity.mjs (honorifics, ALIASES transliteration->canonical, normalizeName NFC, identityKey requires Bangla+danda/digit/clause rejection, extractActors per-sentence strict/normal with comma-clause subject + guardPass junk-tail filter); actors + actors_claims tables; tools/entity_index.mjs (rebuild-safe, strict); CI info step. Critical UTF fix: Bengali য় composed U+09DF vs decomposed য+় — normalize NFC both input and regex source. Tests +7 -> suite 106/106."
+    },
+    {
+      "date": "2026-09-24",
       "id": "D62",
       "title": "P0-9 Hybrid clustering (cosine OR strong-token agreement)",
       "context": "lib/entities.mjs (numberTokensOf incl concatenated ছয়জনের, digitClose 1868~1866, strongTokenSet excludes pure-ASCII/raw-digit/stopwords, strongAgree >=2 shared OR close-3+-digit w/ coverage>=0.3); cluster.mjs hybridClusterItems + findClusters opts; run.js cluster uses poll.cluster_strong_sim 0.30. Golden: P 1.0 R 1.0 F1 1.0 (dengue residual merged, traps clean). tools/cluster_eval default mirrors production. Tests +7 -> suite 99/99."

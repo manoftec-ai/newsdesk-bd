@@ -102,6 +102,25 @@ export function openDb(path = DB_PATH) {
       created_at TEXT NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_conflicts_cluster ON conflicts(cluster_id);
+
+    -- Actor registry + claim link (entity resolution, P0-10)
+    CREATE TABLE IF NOT EXISTS actors(
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      canonical TEXT NOT NULL UNIQUE,
+      aliases_json TEXT NOT NULL DEFAULT '[]',
+      kind TEXT DEFAULT 'person',
+      first_seen TEXT NOT NULL,
+      last_seen TEXT NOT NULL,
+      claim_count INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE TABLE IF NOT EXISTS actors_claims(
+      actor_id INTEGER NOT NULL,
+      claim_id INTEGER NOT NULL,
+      mention TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      PRIMARY KEY(actor_id, claim_id)
+    );
+    CREATE INDEX IF NOT EXISTS idx_ac_claim ON actors_claims(claim_id);
   `);
   return db;
 }
