@@ -76,7 +76,7 @@ export function eventReport(golden, clusters) {
 }
 
 // Run the full evaluation on an items array (shape {id,title,body}).
-export function evaluateClusters(items, { similarity = 0.45, prune = 0.35, golden } = {}) {
-  const clusters = findClusters(items, similarity, prune).filter((c) => c.length > 0);
+export function evaluateClusters(items, { similarity = 0.45, prune = 0.35, golden, strong = null } = {}) {
+  const clusters = findClusters(items, similarity, prune, strong == null ? {} : { hybrid: true, strong }).filter((c) => c.length > 0);
   return { scores: pairwiseScores(clusters, golden), events: eventReport(golden, clusters), clusters };
 }
