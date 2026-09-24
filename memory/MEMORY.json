@@ -34,6 +34,18 @@
   },
   "decisions": [
     {
+      "id": "D69",
+      "date": "2026-09-24",
+      "title": "P1 evidence snapshots: source fingerprints + age-weighted verification",
+      "summary": "claim_snapshots records evidence_hash (sha256 of supporting source/url/date set), evidence_count, oldest_evidence_at; new evidence opens a new period even when status/confidence unchanged. ensureColumn migration for raced store.db. verifyClaim: evidence_age profile + stale-only confidence discount x0.75 (no hard status change, history archive intact). Suite 133/133. Commit 15d3f55.",
+      "files": [
+        "pipeline/lib/db.mjs",
+        "pipeline/lib/claim-verify.mjs",
+        "pipeline/test/claim-verify.test.mjs",
+        "pipeline/test/temporal-truth.test.mjs"
+      ]
+    },
+    {
       "id": "D68",
       "date": "2026-09-24",
       "title": "P1 temporal truth: claim verification ledger + reverify R5",
@@ -859,10 +871,11 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 45,
+  "sessionsCount": 46,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
-    "P1-temporal-truth": "done"
+    "P1-temporal-truth": "done",
+    "P1-evidence-snapshots": "done"
   }
 }
