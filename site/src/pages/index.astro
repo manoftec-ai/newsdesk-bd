@@ -14,6 +14,7 @@ import {
   postsByCategory,
   getCategory,
   getBadge,
+  getAuthor,
   formatDateTimeBDShort,
 } from "../lib/news-data.js";
 
@@ -24,8 +25,14 @@ const rest = all.filter((p) => p.slug !== lead?.slug);
 const secondLine = rest.slice(0, 4);
 const tickerItems = all.slice(0, 10);
 
+const shownSlugs = new Set([
+  lead?.slug,
+  ...secondLine.map((p) => p.slug),
+].filter(Boolean));
+
 const leadBadge = lead ? getBadge(lead) : null;
 const leadCategory = lead ? getCategory(lead.category) : null;
+const leadAuthor = lead ? getAuthor(lead.author) : null;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -62,10 +69,12 @@ const homeSections = await Promise.all(
   categories
     .filter((category) => category.slug !== "latest")
     .slice(0, 4)
-    .map(async (category) => ({
-      category,
-      posts: (await postsByCategory(category.slug)).slice(0, 3),
-    })),
+    .map(async (category) => {
+      const posts = (await postsByCategory(category.slug))
+        .filter((p) => !shownSlugs.has(p.slug))
+        .slice(0, 3);
+      return { category, posts };
+    }),
 );
 
 const dateTime = new Intl.DateTimeFormat("bn-BD", {
@@ -120,6 +129,12 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
                 <time datetime={lead.date} class="text-muted-foreground">
                   {lead.date}
                 </time>
+                {leadAuthor && (
+                  <span class="flex items-center gap-1 text-muted-foreground">
+                    <span aria-hidden="true">✍️</span>
+                    {leadAuthor.shortName || leadAuthor.name}
+                  </span>
+                )}
               </div>
               <h2>{lead.title}</h2>
               <p class="mt-3 max-w-3xl text-muted-foreground">{lead.excerpt}</p>
@@ -137,26 +152,32 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
       secondLine.length > 0 && (
         <section class="mt-8" aria-label="আরও খবর">
           <div class="grid gap-x-8 gap-y-4 md:grid-cols-2">
-            {secondLine.map((post) => (
-              <div class="mini-row">
-                {post.thumbnail && (
-                  <a href={`/article/${post.slug}`} class="mini-row-thumb">
-                    <img
-                      src={post.thumbnail}
-                      alt={post.thumbnailAlt || ""}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </a>
-                )}
-                <div class="mini-row-body">
-                  <a href={`/article/${post.slug}`}>{post.title}</a>
-                  <time class="mini-row-datetime" datetime={new Date(post.ts).toISOString()}>
-                    {formatDateTimeBDShort(post.ts)}
-                  </time>
+            {secondLine.map((post) => {
+              const author = getAuthor(post.author);
+              return (
+                <div class="mini-row">
+                  {post.thumbnail && (
+                    <a href={`/article/${post.slug}`} class="mini-row-thumb">
+                      <img
+                        src={post.thumbnail}
+                        alt={post.thumbnailAlt || ""}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                  )}
+                  <div class="mini-row-body">
+                    <a href={`/article/${post.slug}`}>{post.title}</a>
+                    <div class="mini-row-meta flex flex-wrap items-center gap-3 mt-1 text-xs text-muted-foreground">
+                      <time datetime={new Date(post.ts).toISOString()}>
+                        {formatDateTimeBDShort(post.ts)}
+                      </time>
+                      {author && <span class="flex items-center gap-1">✍️ {author.shortName || author.name}</span>}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       )
@@ -165,34 +186,37 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
     <!-- Category sections with cards -->
     {homeSections
       .filter((section) => section.posts.length > 0)
-      .map((section) => (
-        <section class="mt-12" aria-labelledby={`cat-${section.category.slug}`}>
-          <div class="mb-4 flex items-center justify-between border-b border-border/60 pb-2">
-            <a
-              id={`cat-${section.category.slug}`}
-              href={`/category/${section.category.slug}`}
-              class="font-serif text-2xl font-bold"
-            >
-              <span
-                class="category-pill"
-                style={`background-color:${section.category.color}`}
+      .map((section, index) => (
+        <>
+          {index > 0 && <hr class="home-section-divider" />}
+          <section class="mt-12" aria-labelledby={`cat-${section.category.slug}`}>
+            <div class="mb-4 flex items-center justify-between border-b border-border/60 pb-2">
+              <a
+                id={`cat-${section.category.slug}`}
+                href={`/category/${section.category.slug}`}
+                class="font-serif text-2xl font-bold"
               >
-                {section.category.name}
-              </span>
-            </a>
-            <a
-              href={`/category/${section.category.slug}`}
-              class="text-sm text-muted-foreground hover:text-primary"
-            >
-              সব দেখুন →
-            </a>
-          </div>
-          <div class="grid gap-8 sm:grid-cols-3">
-            {section.posts.map((post) => (
-              <PostCard post={post} />
-            ))}
-          </div>
-        </section>
+                <span
+                  class="category-pill"
+                  style={`background-color:${section.category.color}`}
+                >
+                  {section.category.name}
+                </span>
+              </a>
+              <a
+                href={`/category/${section.category.slug}`}
+                class="text-sm text-muted-foreground hover:text-primary"
+              >
+                সব দেখুন →
+              </a>
+            </div>
+            <div class="grid gap-8 sm:grid-cols-3">
+              {section.posts.map((post) => (
+                <PostCard post={post} />
+              ))}
+            </div>
+          </section>
+        </>
       ))}
   </div>
 </BaseLayout>

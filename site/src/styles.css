@@ -1050,6 +1050,45 @@
   white-space: nowrap;
 }
 
+.mini-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.72rem;
+}
+
+/* Homepage section dividers for clearer visual separation */
+.home-section-divider {
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+/* Stronger lead article treatment */
+.lead-article {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--color-primary) 10%, var(--color-card));
+  box-shadow: 0 4px 20px -8px color-mix(in oklab, var(--color-primary) 30%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 20%, var(--color-border));
+}
+
+.lead-article-content {
+  position: relative;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.lead-article h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 4.5vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
 /* Bengali article body: slightly larger, comfortable line height. */
 .prose-article {
   letter-spacing: 0;
