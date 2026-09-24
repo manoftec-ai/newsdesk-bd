@@ -70,15 +70,28 @@
 > the 40-point spec assumed human editors; we auto-publish keyless on 30-min cadence — rules are high
 > ROI, heavy UX/infra is not. See memory/sessions/2026-09-24-editorial-proposal-40.md + TODO assessment.
 - [x] N1 **docs/editorial-style-guide.md** (#28) — the permanent JachaiDesk editorial spec doc — DONE 2026-09-24 (docs/editorial-style-guide.md; 11 sections; banned-table mirrors the exact gate lists)
-- [ ] N2 **Auditor LLM alignment** (#29/#36): rename/expand LLM audit points to the spec checklist
+- [x] N2 **Auditor LLM alignment** (#29/#36): rename/expand LLM audit points to the spec checklist
   (factuality, source support, claim coverage, natural Bengali, repetition, speculation, AI
-  filler, headline accuracy, quote integrity, context relevance, attribution, readability) — DEPLOY
-- [ ] N3 **Claim-level writing rules in prompt** (#13): VERIFIED/CORROBORATED/SINGLE_SOURCE/
-  UNCONFIRMED/CONFLICTING → how each may be written — DEPLOY
-- [ ] N4 **Source disagreement in body** (#12): when leads conflict, writer must SAY the
-  difference, never silently choose (ties to claims graph CONFLICTING) — DEPLOY
-- [ ] N6 **Quote integrity floor** (#15): audit check that any quoted line exists verbatim in
-  member leads, else FAIL (reuse claims/evidence store) — DEPLOY
+  filler, headline accuracy, quote integrity, context relevance, attribution, readability) —
+  DONE 1c3924c (SPEC_AUDIT_POINTS n1..n12 + delete-sentence rules in auditPrompt)
+- [x] N3 **Claim-level writing rules in prompt** (#13): VERIFIED/CORROBORATED/SINGLE_SOURCE/
+  UNCONFIRMED/CONFLICTING → how each may be written —
+  DONE 1c3924c (claimRules() in synth + mirrored in auto-author.yml)
+- [x] N4 **Source disagreement in body** (#12): when leads conflict, writer must SAY the
+  difference, never silently choose (ties to claims graph CONFLICTING) —
+  DONE 1c3924c (mechanical gate n13, DISAGREEMENT_RE)
+- [x] N6 **Quote integrity floor** (#15): audit check that any quoted line exists verbatim in
+  member leads, else FAIL (reuse claims/evidence store) —
+  DONE 1c3924c (mechanical gate n14, extractQuotes())
+
+## P1 depth items (engine — continue after editorial deploy)
+- [x] **Temporal truth: claim verification ledger** — append-only `claim_snapshots`
+  (valid_from/valid_until range per claim status; status change closes open period +
+  opens new one; never mutated). `recordSnapshot`/`claimStatusAt`/`claimTimeline`/
+  `claimTransitions` in claim-verify.mjs; reverify **R5 flip-flop trigger** (a claim that
+  went CONFLICTING then recovered surfaces a renewal/correction note). Backfills
+  automatically on next pipeline extract. Tests +9 (7 temporal-truth, 2 reverify R5) →
+  suite 129/129. Commit f19ea21.
 
 ## Parked (low ROI for this project right now — per user-approved 2026-09-24 assessment)
 - [ ] N5 **Length tiers to proposal ranges** (#6): allow 300-600 developing / 600-1000+ complex
