@@ -35,6 +35,12 @@
   "decisions": [
     {
       "date": "2026-09-24",
+      "id": "D64",
+      "title": "ROI triage of 40-pt editorial proposal — user-approved deployment list",
+      "context": "User asked if the 40-point proposal was worth it. Verdict (approved): spec assumed human editors; we auto-publish keyless/30min so only mechanical cheap rules are high-ROI now. DEPLOY: N2 auditor alignment, N3 claim-level writing rules, N4 source-disagreement-in-body, N6 quote-integrity floor. PARKED: N5 length tiers, N7 breaking mode, N8 What-Changed UI, N9 evidence panel, N10 political rules, N11 fact-check template, #31 hierarchy, #37 metrics, #38 golden dataset. Flagged: #34 conflicts with Q3 (no human gate) — avoid gate stacking / D53 starvation. TODO.md reorganized (commit 885cc75)."
+    },
+    {
+      "date": "2026-09-24",
       "id": "D63",
       "title": "P0-10 Entity resolution + actor registry",
       "context": "lib/identity.mjs (honorifics, ALIASES transliteration->canonical, normalizeName NFC, identityKey requires Bangla+danda/digit/clause rejection, extractActors per-sentence strict/normal with comma-clause subject + guardPass junk-tail filter); actors + actors_claims tables; tools/entity_index.mjs (rebuild-safe, strict); CI info step. Critical UTF fix: Bengali য় composed U+09DF vs decomposed য+় — normalize NFC both input and regex source. Tests +7 -> suite 106/106."
