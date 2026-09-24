@@ -3,7 +3,7 @@
 // pairwise precision/recall/F1 + per-event status. Use --sweep to find the
 // best similarity threshold, or --min-f1 to act as a CI gate (exit 1 below it).
 //
-// usage: node tools/cluster_eval.mjs [--similarity=0.45] [--prune=0.35]
+// usage: node tools/cluster_eval.mjs [--similarity=0.30] [--prune=0.35]
 //                                     [--sweep] [--min-f1=0] [--report-only]
 import { readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
@@ -39,11 +39,16 @@ function main() {
     return;
   }
 
-  const sim = Number.isFinite(simArg) ? simArg : 0.45;
+  const sim = Number.isFinite(simArg) ? simArg : 0.30;
   const prune = Number.isFinite(pruneArg) ? pruneArg : 0.35;
-  const { scores, events } = evaluateClusters(items, { similarity: sim, prune, golden });
+  // hybrid strong-token agreement (P0-9): --strong=<sim> overrides the tuned
+  // production default (0.30); --strong=0 disables hybrid entirely (pure cosine)
+  const strongArg = process.argv.find((a) => a.startsWith('--strong='))?.split('=')[1];
+  const strong = strongArg === undefined ? 0.30 : Number(strongArg);
+  const hasStrong = strong > 0;
+  const { scores, events } = evaluateClusters(items, { similarity: sim, prune, golden, strong: hasStrong ? strong : null });
 
-  console.log(`golden evaluation (similarity=${fmt(sim)}, prune=${fmt(prune)}):`);
+  console.log(`golden evaluation (similarity=${fmt(sim)}, prune=${fmt(prune)}${hasStrong ? `, strong=${fmt(strong)}` : ', pure cosine'}):`);
   console.log(`  pairwise precision=${fmt(scores.precision)}  recall=${fmt(scores.recall)}  F1=${fmt(scores.f1)}`);
   console.log('  per-event:');
   for (const e of events) console.log(`    ${e.event.padEnd(28)} size=${e.size}  ${e.status}`);

@@ -79,3 +79,14 @@ test('evaluateClusters end-to-end: golden set at production tuning reaches high 
   assert.ok(scores.recall >= 0.9, `recall lost: ${scores.recall}`);
   assert.ok(scores.f1 >= 0.9, `F1 too low: ${scores.f1}`);
 });
+
+test('hybrid strong-token agreement reaches perfect F1 on the golden set (P0-9)', () => {
+  const items = Object.entries(golden.items).map(([id, it]) => ({ id, title: it.title, body: it.body ?? '' }));
+  const { scores, events } = evaluateClusters(items, { similarity: 0.3, prune: 0.35, golden, strong: 0.3 });
+  assert.equal(scores.precision, 1, 'hybrid still avoids every false-merge trap');
+  assert.equal(scores.recall, 1, 'hybrid closes the same-event-different-words gap entirely (inc. dengue 200-crossed)');
+  assert.equal(scores.f1, 1);
+  const by = Object.fromEntries(events.map((r) => [r.event, r.status]));
+  assert.equal(by['dengue-daily-report'], 'merged');
+  assert.equal(by['mesles-11-deaths'], 'merged');
+});

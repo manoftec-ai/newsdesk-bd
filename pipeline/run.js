@@ -69,7 +69,10 @@ async function cmdCluster() {
   const cfg = loadConfig();
   const db = openDb();
   const windowH = cfg.poll.cluster_window_hours ?? 8;
-  const sim = cfg.poll.cluster_similarity ?? 0.45;
+  const sim = cfg.poll.cluster_similarity ?? 0.3;
+  // HYBRID strong-token agreement (P0-9): merges same-event items worded
+  // differently (numbers/rare-vocab signal) on top of cosine. Golden F1 1.000.
+  const strong = cfg.poll.cluster_strong_sim ?? 0.3;
   const minCentroidSim = cfg.poll.cluster_prune_sim ?? 0.35;
   const matureRunsNeeded = cfg.poll.cluster_mature_runs ?? 3;
 
@@ -77,8 +80,9 @@ async function cmdCluster() {
   if (!items.length) { console.log('no items in window — nothing to cluster'); return; }
   const itemsById = new Map(items.map((it) => [it.id, it]));
 
-  // 1) compute clusters on the current window (union-find + centroid outlier prune)
-  const groups = findClusters(items, sim, minCentroidSim);
+  // 1) compute clusters on the current window (hybrid union-find + centroid outlier prune)
+  const groups = findClusters(items, sim, minCentroidSim, { hybrid: true, strong });
+  console.log(`clustering ${items.length} items (sim=${sim}, strong=${strong}, prune=${minCentroidSim}) -> ${groups.length} groups`);
   const memberSets = clusterMemberSets(db);
   const existing = existingClusters(db);
 

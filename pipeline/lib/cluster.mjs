@@ -1,5 +1,10 @@
-// lib/cluster.mjs — Bengali TF-IDF + union-find clustering of news items
+// lib/cluster.mjs — Bengali TF-IDF + union-find clustering of news items.
+// HYBRID (P0-9): the TF-IDF cosine union is OR-ed with a second, independent
+// "strong-token" agreement signal (same normalized numbers / digit-close counts
+// / rare vocab). This is what merges same-event items written with DIFFERENT
+// wording (e.g. the measles ১১-শিশু story) without gluing unrelated news.
 import { tokens } from './normalize.mjs';
+import { strongTokenSet, strongAgree } from './entities.mjs';
 
 // Title tokens are repeated 2x so titles weigh ~2x vs body.
 function docTokens(item) {
@@ -79,11 +84,53 @@ export function clusterItems(items, threshold, vectors = buildVectors(items)) {
   return groups;
 }
 
+// Hybrid union-find (P0-9): cosine OR strong-token agreement. Reversible/extensible—
+// strong tokens are precomputed per item; strongOverlap is symmetric and cheap.
+export function hybridClusterItems(items, threshold, { strong = 0.3, vectors = null, strongTokens = null } = {}) {
+  const parent = new Map(items.map((it) => [it.id, it.id]));
+  const find = (x) => { while (parent.get(x) !== x) { parent.set(x, parent.get(parent.get(x))); x = parent.get(x); } return x; };
+  const union = (a, b) => { const ra = find(a), rb = find(b); if (ra !== rb) parent.set(ra, rb); };
+  const ids = items.map((it) => it.id);
+  const vs = vectors ?? buildVectors(items);
+  const st = strongTokens ?? new Map(ids.map((id) => [id, strongTokenSet(items.find((it) => it.id === id))]));
+  for (let i = 0; i < ids.length; i++) {
+    const vi = vs.get(ids[i]);
+    for (let j = i + 1; j < ids.length; j++) {
+      const doCosine = cosine(vi, vs.get(ids[j])) >= threshold;
+      const doStrong = strongAgree(st.get(ids[i]), st.get(ids[j]), strong);
+      if (doCosine || doStrong) union(ids[i], ids[j]);
+    }
+  }
+  const groups = new Map();
+  for (const id of ids) {
+    const r = find(id);
+    if (!groups.has(r)) groups.set(r, []);
+    groups.get(r).push(id);
+  }
+  return groups;
+}
+
+function batchStrongTokens(items) {
+  // df over the batch for high-IDF lexical "strong" tokens (same df as buildVectors).
+  const df = new Map();
+  for (const it of items) {
+    for (const t of new Set(docTokens(it))) df.set(t, (df.get(t) || 0) + 1);
+  }
+  const N = items.length;
+  const st = new Map();
+  for (const it of items) st.set(it.id, strongTokenSet({ title: it.title, body: it.body, df, N }));
+  return st;
+}
+
 // Full clustering pass: build vectors -> single-linkage union-find -> prune outliers.
-// Returns an array of item-id arrays (singletons included).
-export function findClusters(items, threshold, minCentroidSim = 0.35) {
+// Returns an array of item-id arrays (singletons included). opts.hybrid (+ opts.strong)
+// switches the union to cosine OR strong-token agreement.
+export function findClusters(items, threshold, minCentroidSim = 0.35, opts = {}) {
   const vectors = buildVectors(items);
-  const groups = clusterItems(items, threshold, vectors);
+  const strongTokens = opts.hybrid ? batchStrongTokens(items) : null;
+  const groups = opts.hybrid
+    ? hybridClusterItems(items, threshold, { strong: opts.strong ?? 0.35, vectors, strongTokens })
+    : clusterItems(items, threshold, vectors);
   const pruned = pruneOutliers(vectors, groups, minCentroidSim);
   const assigned = new Set();
   for (const g of pruned) for (const id of g) assigned.add(id);
