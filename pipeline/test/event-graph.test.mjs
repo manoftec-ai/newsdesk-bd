@@ -93,3 +93,32 @@ function seedCluster(db, cid, text, sources) {
       .run(cid * 100, src, T1, T1);
   }
 }
+
+test('storyVersions exposes the full append-only ledger in period order', async () => {
+  const db = openDb(':memory:');
+  const m = await import('../lib/event-graph.mjs');
+  seedCluster(db, 1, 'প্রথম', ['prothomalo']);
+  db.prepare(`INSERT INTO claim_snapshots(claim_id, status, confidence, evidence_hash, valid_from, valid_until, reason, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
+    .run(100, 'VERIFIED', 80, 'h1', T1, T2, 'verify', T1);
+  db.prepare(`INSERT INTO claim_snapshots(claim_id, status, confidence, evidence_hash, valid_from, valid_until, reason, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
+    .run(100, 'CONFLICTING', 20, 'h2', T2, T3, 're-verify', T2);
+  db.prepare(`INSERT INTO claim_snapshots(claim_id, status, confidence, evidence_hash, valid_from, reason, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)`)
+    .run(100, 'VERIFIED', 90, 'h3', T3, 'conflict', T3); // current open period
+  const versions = m.storyVersions(db, 1);
+  assert.equal(versions.length, 1);
+  const periods = versions[0].periods;
+  assert.equal(periods.length, 3);
+  assert.deepEqual(periods.map((p) => p.status), ['VERIFIED', 'CONFLICTING', 'VERIFIED']); // chronological
+  assert.equal(periods[0].valid_until, T2); // closed
+  assert.equal(periods[2].valid_until, null); // current open period
+  assert.equal(periods[2].reason, 'conflict');
+  assert.equal(versions[0].claim_text, 'প্রথম-দাবি');
+  db.close();
+});
+
+test('storyVersions returns empty array for a cluster with no claims', async () => {
+  const db = openDb(':memory:');
+  const m = await import('../lib/event-graph.mjs');
+  assert.deepEqual(m.storyVersions(db, 999), []);
+  db.close();
+});

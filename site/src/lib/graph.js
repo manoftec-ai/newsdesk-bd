@@ -26,6 +26,17 @@ export const KIND_LABELS = {
   conflict: "সূত্রে দ্বন্দ্ব ধরা পড়েছে",
 };
 
+// Why a claim's verification state period was opened/closed — maps the
+// ledger `reason` column to reader-facing Bengali (append-only audit trail).
+export const reasonLabel = (reason) =>
+  ({
+    initial: "প্রাথমিক যাচাই",
+    "re-verify": "পুনর্যালোচনা",
+    verify: "যাচাই",
+    conflict: "দ্বন্দ্ব রেকর্ড",
+    expiry: "মেয়াদোত্তীর্ণ",
+  })[reason] ?? reason ?? "যাচাই";
+
 // The _latest_ verification state for a story's timeline (the last `verify`
 // event) so the reader sees where the chain currently stands without leaving
 // the timeline for the claim card.

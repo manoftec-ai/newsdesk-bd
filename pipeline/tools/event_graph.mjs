@@ -15,7 +15,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openDb } from '../lib/db.mjs';
-import { storyTimeline, storyMeta, relatedStories } from '../lib/event-graph.mjs';
+import { storyTimeline, storyMeta, relatedStories, storyVersions } from '../lib/event-graph.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SITE_DATA = join(HERE, '../../site/src/data');
@@ -56,6 +56,7 @@ export function buildEventGraph(db, { minEvents: minEv = minEvents, slugFilter =
       last_update: meta?.last_update ?? null,
       claim_count: tl.claims.length,
       events: tl.events,
+      versions: storyVersions(db, clusterId),
       related: relatedStories(db, clusterId).map((r) => {
         const m = storyMeta(db, r.cluster_id);
         const rSlug = slugByCluster.get(Number(r.cluster_id));

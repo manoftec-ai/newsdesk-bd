@@ -12,6 +12,7 @@
 // institutions → same unfolding event). Read-only: never writes store.db or
 // any committed state (the tool that emits site data diff-writes only).
 import { loadLineage } from './lineage.mjs';
+import { claimTimeline } from './claim-verify.mjs';
 
 export const EVENT_KINDS = ['claim', 'evidence', 'verify', 'conflict'];
 
@@ -100,6 +101,31 @@ export function storyTimeline(db, clusterId) {
   const snapshots = db.prepare(`SELECT * FROM claim_snapshots WHERE claim_id IN ${ph}`).all(...ids);
   const conflicts = db.prepare('SELECT * FROM conflicts WHERE cluster_id = ?').all(clusterId);
   return { cluster_id: clusterId, claims, events: deriveTimeline({ claims, evidence, snapshots, conflicts }) };
+}
+
+// VERSIONING — the append-only verification ledger, whole and per claim.
+// Each item is one PERIOD a claim's verification state was valid
+// (valid_from..valid_until; valid_until null = still open). Readers see every
+// state the claim ever held, when, and why (initial | re-verify | conflict) —
+// never mutated in place, so the audit trail is complete end-to-end.
+export function storyVersions(db, clusterId) {
+  const claims = db.prepare('SELECT id, claim_text FROM claims WHERE cluster_id = ? ORDER BY id').all(clusterId);
+  const out = [];
+  for (const c of claims) {
+    const periods = claimTimeline(db, c.id).map((r) => ({
+      status: r.status,
+      confidence: r.confidence,
+      support_count: r.support_count,
+      contradiction_count: r.contradiction_count,
+      evidence_count: r.evidence_count,
+      evidence_hash: r.evidence_hash ?? null,
+      valid_from: r.valid_from,
+      valid_until: r.valid_until ?? null,
+      reason: r.reason ?? 'verify',
+    }));
+    out.push({ claim_id: c.id, claim_text: c.claim_text, periods });
+  }
+  return out;
 }
 
 // DB BOUND — headline/lifetime for a cluster (from the clusters row).

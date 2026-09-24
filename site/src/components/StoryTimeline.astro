@@ -1,13 +1,15 @@
 ---
-// StoryTimeline.astro — "কীভাবে উন্মোচিত হলো": the DB-derived chronological
-// event chain for one story (claim appeared → source evidence → verification
-// state changes → conflicts) plus related stories sharing actors/sources.
-// Static: renders the committed site/data/event-graph.json, no JS.
-import { storyGraph, KIND_LABELS } from "../lib/graph.js";
+// StoryTimeline.astro — "কীভাবে উন্মোচিত হলো" + "সংস্করণ ইতিহাস": the DB-derived
+// chronological event chain for one story (claim appeared → source evidence →
+// verification state changes → conflicts), the append-only per-claim ledger
+// (every period a state was valid, with reason), and related stories sharing
+// actors/sources. Static: renders the committed site/data/event-graph.json, no JS.
+import { storyGraph, KIND_LABELS, reasonLabel } from "../lib/graph.js";
 
 const { slug, formatTime, formatDate } = Astro.props;
 const graph = storyGraph(slug);
 const showTimeline = Boolean(graph && (graph.events ?? []).length > 0);
+const showVersions = Boolean(graph?.versions?.some((c) => (c.periods?.length ?? 0) > 0));
 
 const STATUS_LABELS = {
   OFFICIAL: "অফিসিয়াল",
@@ -23,6 +25,17 @@ const STATUS_LABELS = {
 const kindLabel = (kind) => KIND_LABELS[kind] ?? kind;
 const statusBn = (s) => STATUS_LABELS[s] ?? s;
 
+const statusChipClass = (s) => ({
+  OFFICIAL: "badge--verified",
+  VERIFIED: "badge--verified",
+  CORROBORATED: "badge--confirmed",
+  SINGLE_SOURCE: "badge--partial",
+  CONFLICTING: "badge--suspect",
+  UNCONFIRMED: "badge--partial",
+  REFUTED: "badge--suspect",
+  OUTDATED: "badge--partial",
+}[s] ?? "badge--partial");
+
 const kindDotClass = {
   claim: "bg-primary",
   evidence: "bg-blue-500",
@@ -31,7 +44,7 @@ const kindDotClass = {
 };
 ---
 
-{showTimeline && (
+{(showTimeline || showVersions) && (
   <div class="story-timeline mt-6 border-t border-border/60 pt-5">
     <div class="flex flex-wrap items-center justify-between gap-2">
       <h2 class="font-serif text-lg font-bold">কীভাবে উন্মোচিত হলো</h2>
@@ -83,6 +96,61 @@ const kindDotClass = {
         </li>
       ))}
     </ol>
+
+    {showVersions && (
+      <section class="claim-versions mt-6" aria-label="সংস্করণ ইতিহাস">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="text-base font-bold">সংস্করণ ইতিহাস</h3>
+          <span class="text-xs text-muted-foreground">
+            প্রতিটি দাবির যাচাই-স্থিতির পূর্ণ রেকর্ড — কখনো নীরবে মোছা হয় না
+          </span>
+        </div>
+        <div class="mt-3 space-y-2">
+          {graph.versions.map((claim) => (claim.periods?.length ?? 0) > 0 && (
+            <details class="claim-version-periods rounded border border-border/60">
+              <summary class="flex flex-wrap items-center justify-between gap-2 px-3 py-2 text-sm">
+                <span class="line-clamp-2">«{claim.claim_text}»</span>
+                <span class="flex shrink-0 items-center gap-2">
+                  <span class="text-xs text-muted-foreground">{claim.periods.length}টি পর্যায়</span>
+                  {statusBn(claim.periods[claim.periods.length - 1].status) && (
+                    <span class:list={["badge-chip", statusChipClass(claim.periods[claim.periods.length - 1].status)]}>
+                      {statusBn(claim.periods[claim.periods.length - 1].status)}
+                    </span>
+                  )}
+                </span>
+              </summary>
+              <ol class="border-t border-border/50 px-3 py-2 space-y-2">
+                {claim.periods.map((p) => (
+                  <li class="text-xs">
+                    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span class:list={["badge-chip", statusChipClass(p.status)]}>
+                        {statusBn(p.status)}
+                      </span>
+                      <span class="text-muted-foreground">
+                        {formatDate?.(p.valid_from)}
+                        {p.valid_until ? ` → ${formatDate?.(p.valid_until)}` : " → বর্তমান"}
+                      </span>
+                      <span class="rounded bg-muted px-1.5 py-0.5 text-[11px] text-muted-foreground">
+                        {reasonLabel(p.reason)}
+                      </span>
+                    </div>
+                    {(p.support_count != null || p.evidence_count != null) && (
+                      <p class="mt-0.5 text-[11px] text-muted-foreground/80">
+                        {p.support_count != null && `সমর্থন ${p.support_count}`}
+                        {p.support_count != null && p.contradiction_count != null && " · "}
+                        {p.contradiction_count != null && `দ্বন্দ্ব ${p.contradiction_count}`}
+                        {p.evidence_count != null && ` · প্রমাণ ${p.evidence_count}`}
+                        {p.confidence != null && ` · আস্থা ${Math.round(p.confidence)}%`}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
 
     {graph.related?.length > 0 && (
       <aside class="related-stories mt-5 border-t border-border/40 pt-3">
