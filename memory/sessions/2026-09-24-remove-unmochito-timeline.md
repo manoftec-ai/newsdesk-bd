@@ -26,3 +26,52 @@
 ## Notes
 - D72's engine (`lib/event-graph.mjs`, `tools/event_graph.mjs`) is left INTACT — re-enable-able if ever wanted.
 - Next queue (P1 depth): entity pages, then Why-This-Badge (parked till user activation). Next free decision id: D78.
+---
+# Session 2 — hide "সংস্করণ ইতিহাস" (background only)
+
+> 2026-09-24 (same working block, after D77)
+
+## What happened
+- User: "also dont need the below section. it should be only for background not require to visible to reader. সংস্করণ ইতিহাস".
+- `site/src/components/StoryTimeline.astro` slimmed 121→36 lines: removed the whole D74 ledger render
+  (`<section class="claim-versions">` + per-claim `<details>` periods) and its helpers
+  (`STATUS_LABELS`/`statusBn`/`statusChipClass`/`reasonLabel`); component now renders ONLY
+  **সম্পর্কিত খবর** and imports just `storyGraph`; props reduced to `slug` only.
+- `site/src/pages/article/[slug].astro:442`: `<StoryTimeline slug={post.slug} />` (dropped formatTime/formatDate).
+- **Kept as background**: the versions data still flows through `lib/event-graph.mjs` +
+  `tools/event_graph.mjs` into `site/src/data/event-graph.json` + `lib/graph.js` `reasonLabel` —
+  audit trail preserved, just not shown to readers. D74 engine fully intact (re-renderable if ever wanted).
+
+## Verification
+- Braces balanced; grep confirms no reader-visible refs to সংস্করণ ইতিহাস / claim-versions remain in components.
+- No CSS orphans (claim-versions used existing classes).
+- `astro build` not runnable in Termux (satteri binding) — Vercel build is the authority.
+
+## Commits
+- `0f66b0c` feat(site) hide "সংস্করণ ইতিহাস" from readers — pushed, SYNCED.
+- Memory: MEMORY.md (D78 row + header), MEMORY.json (D78 + workInProgress), appended to this log.
+
+---
+# Session 3 — remove "সম্পর্কিত খবর" section
+
+> 2026-09-24 (same working block, after D78)
+
+## What happened
+- User: "also remove the section সম্পর্কিত খবর".
+- After D77/D78 the component rendered ONLY the related-stories aside, so deletion was clean:
+  `git rm site/src/components/StoryTimeline.astro`, removed the import + `<StoryTimeline slug={post.slug} />`
+  render from `site/src/pages/article/[slug].astro`.
+- Verified no remaining refs (src + site-wide ASTRO/JS grep); no CSS orphans (`related-stories` had no bespoke styles).
+- **Kept as separate features**: the "আরও পড়ুন" block (line 478, powered by `relatedPosts(post)`) and the
+  `eventsForPost`/`matchedEvents` evidence section (line 362) — both unrelated to the removed component.
+- **Background data kept**: `relatedStories()` in `lib/event-graph.mjs` still runs → event-graph.json.
+
+## Result (reader article page)
+Body → tags → updates → আরও পড়ুন. All graph/ledger/related engines are background data, not UI.
+
+## Commits
+- `201d646` feat(site) remove "সম্পর্কিত খবর" section — pushed, SYNCED.
+- Memory: MEMORY.md (D79 + header), MEMORY.json (D79 + workInProgress), session log appended.
+
+## Note
+- Next free decision id: D80. Remaining P1 queue: entity pages, Why-This-Badge (parked till user activation).

@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
-import StoryTimeline from "../../components/StoryTimeline.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
 
@@ -438,8 +437,6 @@ const shareLinks = [
           <UpdateHistory updates={post.updates} formatTime={formatTime} formatDate={formatDate} />
         </div>
       )}
-
-      <StoryTimeline slug={post.slug} formatTime={formatTime} formatDate={formatDate} />
 
   {post.tags.length > 0 && (
         <div class="mt-6 flex flex-wrap gap-2">
