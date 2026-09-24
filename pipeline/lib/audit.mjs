@@ -13,7 +13,7 @@
 // finalized (= published). If no LLM key, stage 2 is skipped and the mechanical
 // gate alone decides (backward compatible with existing author path).
 import { writingPrompt, findEditorialViolations, BANNED_SPECULATION, isEditorialFooter } from './synth.mjs';
-import { readerValueCheck } from './editorial.mjs';
+import { readerValueCheck, publicationMode, lengthForMode, repetitionViolations } from './editorial.mjs';
 import { chatComplete, llmApiKey } from './llm.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
 
@@ -87,7 +87,8 @@ export function mechanicalAudit(brief, body) {
   const fails = [];
   const note = (id, msg) => fails.push({ id, ok: false, note: msg });
   const srcCount = (brief.members ?? []).length;
-  const { min, max } = targetLength(srcCount);
+  const mode = publicationMode(brief);
+  const { min, max } = lengthForMode(mode, srcCount);
 
   for (const v of findEditorialViolations(text)) {
     note('c3', `speculation/filler "${v.match}"`);
@@ -110,6 +111,18 @@ export function mechanicalAudit(brief, body) {
   if (!hasLeadPara) note('c8', 'no plain lead paragraph up front');
   const hasKP = /এক\s*নজরে/u.test(text);
   if (srcCount > 2 && !hasKP) note('c8', 'এক নজরে key points missing (≥3 sources)');
+
+  // publication-mode length discipline (Phase-2 #3): the numeric range above
+  // already comes from lengthForMode(publicationMode(brief), srcCount), so a
+  // verified-but-thin NEWS_BRIEF is allowed to be 50–150 words and is not
+  // forced up to the STANDARD tier. The c9 checks below enforce that range.
+
+  // anti-repetition (Phase-2 #4/#5): lead must not merely restate the headline
+  // and মূল খবর paragraphs must not re-state the lead; bul points must be
+  // distinct. Mechanical overlap probe, zero LLM cost.
+  for (const rep of repetitionViolations(brief.headline ?? '', text)) {
+    note('rep1', `${rep.type} (${rep.section})`);
+  }
 
   // #12 source disagreement must be SAID, never silently chosen. Any claim the
   // graph marked CONFLICTING forces the body to show both sides. When exactly
@@ -146,12 +159,6 @@ export function mechanicalAudit(brief, body) {
   if (!rv.ok) note('rv1', `no reader value: body adds no concrete fact beyond headline (${rv.bodyWords}/${rv.headWords} words)`);
 
   return { pass: fails.length === 0, fails, count: fails.length, headline: hdr };
-}
-
-function targetLength(srcCount) {
-  if (srcCount <= 2) return { min: 100, max: 180 };
-  if (srcCount === 3) return { min: 200, max: 350 };
-  return { min: 400, max: 550 };
 }
 
 // ---- Stage 2 — LLM 12-point editorial auditor (proposal #29/#36) -----------

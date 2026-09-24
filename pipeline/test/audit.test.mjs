@@ -5,7 +5,11 @@ import { mechanicalAudit, parseAudit, auditPrompt, AUDIT_POINTS, SPEC_AUDIT_POIN
 
 const brief = (n, headline) => ({
   headline: headline ?? 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু',
-  members: Array.from({ length: n }, (_, i) => ({ source_id: `s${i}`, title: `dashboardd t${i} লাইন চালু`, lead: `l${i} মেট্রোরেল লাইন চালু` })),
+  members: Array.from({ length: n }, (_, i) => ({
+    source_id: `s${i}`,
+    title: `ঢাকায় মেট্রোরেলের নতুন লাইন চালু`,
+    lead: `রবিবার সকাল থেকে ঢাকা মেট্রোরেলের নতুন লাইনে প্রথম দফায় ১০টি স্টেশনে ট্রেন চলাচল শুরু হয়েছে। মন্ত্রণালয় জানায়, ভাড়া চূড়ান্ত হবার আগে পরীক্ষামূলক দৌড় সফলভাবে সম্পন্ন হয়েছে। নির্বাহী প্রকৌশলী জানান, প্রতিটি স্টেশনে সিসিটিভি ও লিফট ব্যবস্থা রাখা হয়েছে।`,
+  })),
 });
 
 function goodBody() {

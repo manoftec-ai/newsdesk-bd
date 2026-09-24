@@ -86,6 +86,161 @@ export function readerValueCheck(headline, body) {
   return { ok, novel: novel.slice(0, 8), bodyWords, headWords };
 }
 
+// ---- #A1/#A2 content sufficiency + publication modes ----------------------
+// Verification ≠ pubitability (Phase-2 editorial correction #1/#3). A brief can
+// be fully VERIFIED yet still contain only the one fact its headline states
+// (e.g. two Google-News header-only items). We measure the FACT POOL
+// deterministically and classify the STORY into a publication mode BEFORE
+// writing, so a thin, verified story becomes a short honest brief — never a
+// padded fake "full article" that merely restates the headline 3×.
+
+export function contentSufficiency(brief) {
+  const members = brief?.members ?? [];
+  const claims = brief?.claims ?? [];
+  let richLeads = 0;
+  let thinLeads = 0;
+  let leadNovel = 0;
+  const pool = [];
+  for (const m of members) {
+    const title = String(m?.title ?? '').trim();
+    const lead = String(m?.lead ?? '').trim();
+    pool.push(title, lead);
+    if (!lead) continue;
+    const titleToks = new Set(tokensOf(title));
+    const leadToks = tokensOf(lead);
+    const novel = leadToks.filter((t) => !titleToks.has(t)).length;
+    leadNovel += novel;
+    // "rich" = the captured lead carries real reporting beyond the headline
+    // (a Google-News item has body == title → zero surplus info).
+    if (lead.length >= 70 && novel >= 8) richLeads += 1;
+    else thinLeads += 1;
+  }
+  const factClaims = claims.filter((c) =>
+    ['VERIFIED', 'OFFICIAL', 'CORROBORATED'].includes(c?.status),
+  ).length;
+  const conflicts = claims.filter((c) => c?.status === 'CONFLICTING').length;
+  const units = richLeads * 8 + factClaims * 4 + conflicts * 3 + Math.min(leadNovel, 40);
+  return {
+    score: Math.min(100, Math.round(units)),
+    units,
+    richLeads,
+    thinLeads,
+    factClaims,
+    conflicts,
+    novelTokens: Math.min(leadNovel, 40),
+    distinctPool: new Set(tokensOf(pool.join(' '))).size,
+  };
+}
+
+// Deterministic publication-mode classifier (pure). 'developing' is decided by
+// recency + unfolding-event markers and takes precedence at call time.
+export function publicationModeOf(s) {
+  if (s.richLeads === 0 && s.factClaims <= 1) return 'news-brief';
+  return 'standard';
+}
+
+export function isDevelopingBrief(brief) {
+  const pool = [
+    brief?.headline ?? '',
+    ...(brief?.members ?? []).map((m) => `${m?.title ?? ''} ${m?.lead ?? ''}`),
+  ].join(' ');
+  const markers = ['জরুরি', 'অবিলম্বে', 'আপডেট', 'চলমান', 'রাত', 'এখনই', 'তদন্ত চলছে', 'প্রতীক্ষায়', 'উদ্ধার'];
+  if (!markers.some((k) => pool.includes(k))) return false;
+  const dates = (brief?.members ?? []).map((m) => Date.parse(m?.published_at ?? '') || 0).filter(Boolean);
+  if (!dates.length) return false;
+  return (Date.now() - Math.max(...dates)) < 12 * 3600 * 1000;
+}
+
+export function publicationMode(brief) {
+  if (isDevelopingBrief(brief)) return 'developing';
+  return publicationModeOf(contentSufficiency(brief));
+}
+
+// Length discipline is mode-aware: a verified-but-thin story must NOT be padded
+// to the STANDARD tier; a developing story allows a middle band. Falls back to
+// the classic member-count tiers for STANDARD stories (backward compatible).
+export function lengthForMode(mode, srcCount) {
+  if (mode === 'news-brief') return { min: 50, max: 150, tier: 'brief' };
+  if (mode === 'developing') return { min: 100, max: 240, tier: 'developing' };
+  if (srcCount <= 2) return { min: 100, max: 180, tier: 'short' };
+  if (srcCount === 3) return { min: 200, max: 350, tier: 'normal' };
+  return { min: 400, max: 550, tier: 'complex' };
+}
+
+// ---- anti-repetition gate (Phase-2 #4/#5) ----------------------------------
+// Mechanical overlap probes between the article's own sections. Catches:
+//   - lead paragraph that only restates the headline
+//   - মূল খবর paragraphs that re-stated the lead
+//   - duplicate/overlapping এক নজরে bullets
+// (Bullet-vs-headline restatement is left to the writer prompt + the n5 LLM
+// audit stage — mechanically it false-positives on legitimately short bullets.)
+
+function overlapRatio(a, b) {
+  const ta = tokensOf(a);
+  if (!ta.length) return 0;
+  const tb = new Set(tokensOf(b));
+  let shared = 0;
+  for (const t of ta) if (tb.has(t)) shared += 1;
+  return shared / ta.length;
+}
+
+export function repetitionViolations(headline, body) {
+  const out = [];
+  const text = String(body ?? '');
+  const paras = text.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  let lead = '';
+  const bullets = [];
+  const mainParas = [];
+  for (const p of paras) {
+    const lines = p.split('\n');
+    // bullet block: a "এক নজরে" heading line (possibly bold / with colon) or a
+    // bare list of bullet lines
+    const headingOrBullets = lines.length > 1 && (
+      /^(?:\*\*)?এক\s*নজরে(?:\*\*)?:?\s*$/.test(lines[0].trim()) ||
+      lines.every((l) => /^\s*[-•*]\s/.test(l))
+    );
+    if (headingOrBullets) {
+      for (const l of lines) {
+        if (/^\s*[-•*]\s/.test(l)) bullets.push(l.replace(/^\s*[-•*]\s*/, '').replace(/\*+$/g, '').trim());
+      }
+      continue;
+    }
+    if (/^#{1,6}\s/u.test(p) || /^\*\*/u.test(p)) continue;
+    if (!lead && p.length > 30) { lead = p; continue; }
+    if (p.length > 30) mainParas.push(p);
+  }
+  // lead restating the headline with essentially no new information: every
+// content token of the headline appears in the lead AND the lead adds no new
+// concrete fact (number/date/quantity) beyond the headline. Short leads only.
+  if (lead && headline) {
+    const leadToks = tokensOf(lead);
+    const headToks = new Set(tokensOf(headline));
+    if (leadToks.length > 2 && leadToks.length <= 40) {
+      const coverage = leadToks.filter((t) => headToks.has(t)).length / headToks.size;
+      const novelConcrete = [...concreteTokens(lead)].filter((t) => !concreteTokens(headline).has(t));
+      if (headToks.size > 0 && coverage >= 0.75 && novelConcrete.length === 0) {
+        out.push({ type: 'lead-repeats-headline', section: 'lead' });
+      }
+    }
+  }
+  // মূল খবর paragraphs that merely re-state the lead (only flag a substantial
+  // restatement — short quote/attribution lines are legitimate lead support)
+  for (const p of mainParas) {
+    if (lead && p.length >= 120 && p.length <= 300 && overlapRatio(p, lead) > 0.8) {
+      out.push({ type: 'para-repeats-lead', section: 'মূল খবর' });
+    }
+  }
+  // duplicate এক নজরে bullets
+  for (let i = 0; i < bullets.length; i++) {
+    for (let j = i + 1; j < bullets.length; j++) {
+      if (bullets[i] && bullets[j] && overlapRatio(bullets[i], bullets[j]) > 0.7) {
+        out.push({ type: 'duplicate-bullets', section: 'এক নজরে' });
+      }
+    }
+  }
+  return out;
+}
+
 // ---- #22 editorial-value ranking (internal only) --------------------------
 // Deterministic 0..100 score from the brief; signals listed for transparency.
 // The score never leaves the pipeline (not shown to readers) — it only informs

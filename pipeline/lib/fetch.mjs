@@ -140,11 +140,46 @@ export async function fetchSource(source) {
 // Feed is a news.google.com/rss/search?q=site:<outlet> URL. Items are decoded to the
 // real article URL and titles get the trailing " - Outlet" suffix stripped.
 const GNEWS_ITEMS_MAX = 60;
+const ENRICH_MAX = 10;          // per gnews run, politeness cap for body scraping
+const ENRICH_DELAY_MS = 400;    // politeness between article fetches
+// A decoded Google-News header-only item carries no real body (body == title text).
+// Thresh: enrichment is attempted only when the captured body is too thin to support
+// a news report (>40 chars) — otherwise we leave a good body alone.
+function needsBodyEnrichment(item) {
+  const body = String(item.body ?? '').trim();
+  return body.length <= 40 || body.length < String(item.title ?? '').length + 20;
+}
+export { needsBodyEnrichment };
+
+// Fetch the real article page behind a decoded gnews item and pull its <p> body
+// (reuses the generic HTML scraper). Failures are swallowed — a 403/blocked page
+// keeps the thin header-only body rather than failing the whole run.
+export async function enrichThinBodies(items) {
+  const out = [];
+  let done = 0;
+  for (let item of items) {
+    if (needsBodyEnrichment(item) && done < ENRICH_MAX && /^https?:/.test(item.url)) {
+      done += 1;
+      try {
+        const page = await get(item.url, ARTICLE_TIMEOUT_MS);
+        if (page.ok) {
+          const $art = cheerio.load(page.text);
+          const m = extractArticleMeta($art, item.url);
+          const full = cleanBody([m.body, m.excerpt, m.title].filter(Boolean).join(' '));
+          if (full.length > (item.body ?? '').length) item = { ...item, body: full };
+        }
+      } catch { /* blocked/protected page — keep thin body */ }
+      await new Promise((r) => setTimeout(r, ENRICH_DELAY_MS)); // politeness
+    }
+    out.push(item);
+  }
+  return out;
+}
 
 async function parseGnewsUrl(source) {
   const parser = new Parser({ timeout: TIMEOUT_MS, headers: { 'user-agent': UA } });
   const feed = await parser.parseURL(source.feed);
-  const items = [];
+  const rawItems = [];
   for (const it of feed.items.slice(0, GNEWS_ITEMS_MAX)) {
     const rawTitle = String(it.title ?? '').trim();
     const link = String(it.link ?? '').trim();
@@ -155,7 +190,7 @@ async function parseGnewsUrl(source) {
     if (!title || isBoilerplateTitle(title)) continue;
     // Drop homepage/epaper prints that Google News site: search surfaces
     if (/\|\|| \| |epaper|e-paper|\|\s*$/.test(rawTitle.toLowerCase())) continue;
-    items.push({
+    rawItems.push({
       source_id: source.id,
       url,
       url_hash: urlHash(url),
@@ -167,6 +202,7 @@ async function parseGnewsUrl(source) {
       lang: source.lang,
     });
   }
+  const items = await enrichThinBodies(rawItems);
   return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 

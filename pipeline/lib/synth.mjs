@@ -7,6 +7,7 @@ import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from './extract.mjs';
 import { loadConfig } from './config.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
+import { publicationMode, lengthForMode } from './editorial.mjs';
 
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
@@ -152,11 +153,20 @@ export function claimRules(brief, { language = 'bn' } = {}) {
 // Writing prompt for the provider. Everything the writer needs in one place.
 export function writingPrompt(brief) {
   const srcs = brief.sources.map((s) => `- ${s.name} — ${s.url}`).join('\n');
-  const { min, max } = targetWords(brief);
+  const mode = publicationMode(brief);
+  const { min, max } = lengthForMode(mode, brief.members.length);
   const leads = brief.members.map((m) =>
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
   ).join('\n\n');
   const claims = claimRules(brief);
+  const modeDesc = {
+    'news-brief': `PUBLICATION MODE: NEWS BRIEF. This story is VERIFIED but THIN — the fact pool carries essentially the headline's one fact and nothing more. Do NOT pad. Write a short brief (${min}–${max} words): a crisp 1-2 sentence lead, then at most one paragraph of what is confirmed. Skip এক নজরে and skip the "মূল খবর" section entirely if they would only repeat the lead. Example shape:
+• Lead (1-2 sentences) — the headline fact, plainly.
+• One short paragraph — anything else that is actually confirmed (the "what/known" facts above).
+That's it. Readers want the verified fact fast, not recycled sentences.`,
+    'developing': `PUBLICATION MODE: DEVELOPING STORY. This is an ongoing situation with verified details still arriving. Write ${min}–${max} words. Lead with the strongest confirmed fact, explicitly say the situation is evolving ("পরিস্থিতি চলমান", "এখনো যাচাই চলছে") where true, and use "## কী এখনো জানা যায়নি" to say what is not yet known. No invented future-tense outcomes.`,
+    'standard': `PUBLICATION MODE: STANDARD NEWS. Write a full ${min}–${max}-word article using the structure below.`,
+  }[mode] ?? '';
   return `# Story task — newsdesk-bd
 
 Write ONE original Bengali news article (সংবাদ) about this verified story.
@@ -167,9 +177,12 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 - The member leads below are ONE fact pool: read them, extract the facts, then
   write the story in your own words as if you were on the scene. NEVER walk through
   the outlets one by one and NEVER compare "one report said X, another said Y".
-- Body structure (in this order — omit any section that would be empty):
+- ${modeDesc}
+- If mode is STANDARD, body structure (in this order — omit any section that would be empty):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
-  2. "এক নজরে" bullet list of 3–4 key points. Format EXACTLY like this (bold label, then bullets, then a blank paragraph before the next block):
+  2. "এক নজরে" bullet list of DISTINCT key points (1–4 bullets — no filler, no
+     repeating the headline; every bullet must name a different fact). Format
+     EXACTLY like this (bold label, then bullets, then a blank paragraph before the next block):
      **এক নজরে**
      - point one
      - point two
@@ -213,6 +226,10 @@ ${claims}
 ## Constraints (hard)
 - ORIGINAL synthesis only. Never reprint any one outlet's article. Rewrite in your own words.
 - Every factual claim must trace to the member leads below.
+- ANTI-REPETITION: never state the same fact more than once. The lead must move
+  past the headline (extra detail, second fact), এক নজরে bullets must each name a
+  DIFFERENT fact (never a rephrase of the headline), and মূল খবর must not re-state
+  the lead. Each sentence must add information the previous one did not have.
 - Neutral, plain editorial Bengali. No hype, NO speculation. Never invent reactions — no
   "পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে বলে মনে করা হচ্ছে…", "বলে মনে করছেন…" —
   unless an outlet explicitly quotes someone saying it.
