@@ -23,13 +23,14 @@ const RAW_TO_SITE = {
   'প্রযুক্তি': 'tech', 'টেক': 'tech', 'বিজ্ঞান': 'tech',
   'মতামত/বিশ্লেষণ': 'opinion', 'কলাম': 'opinion', 'শিল্প সাহিত্য': 'opinion',
   'শিক্ষা': 'national', 'স্বাস্থ্য': 'national', 'ঢাকা': 'national', 'মেট্রো': 'national',
-  'আবহাওয়া': 'national',
+  'আবহাওয়া': 'national', 'ফ্যাক্ট চেক': 'factcheck', 'সত্যতা যাচাই': 'factcheck',
+  'ফ্যাক্টচেক': 'factcheck', 'গুজব যাচাই': 'factcheck',
 };
 export function siteCategory(raw) {
   return RAW_TO_SITE[String(raw ?? '').trim()] ?? 'national';
 }
 
-export const SITE_CATEGORIES = ['national', 'politics', 'economy', 'international', 'sports', 'entertainment', 'tech', 'opinion'];
+export const SITE_CATEGORIES = ['national', 'politics', 'economy', 'international', 'sports', 'entertainment', 'tech', 'opinion', 'factcheck'];
 
 // Latinize a headline for slug keywords. Bengali -> rough ascii via a small map of
 // common words; unknown tokens drop out. Result: lowercase A-Z, 0-9, hyphen.

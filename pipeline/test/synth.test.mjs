@@ -1,7 +1,7 @@
 // test/synth.test.mjs — unit tests for synth helpers
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inferTags, claimRules, writingPrompt } from '../lib/synth.mjs';
+import { inferTags, claimRules, writingPrompt, factCheckBlock } from '../lib/synth.mjs';
 
 test('inferTags emits only defined tags from real keywords', () => {
   const brief = {
@@ -63,4 +63,66 @@ test('writingPrompt includes claim-level rules for known statuses', () => {
   const p = writingPrompt(brief);
   assert.match(p, /Claim-level writing rules/);
   assert.match(p, /CONFLICTING: ১০ হাজার রোগী হাসপাতালে/);
+});
+
+test('writingPrompt: news story has no fact-check template', () => {
+  const p = writingPrompt({
+    headline: 'ঢাকায় নতুন মেট্রো লাইন',
+    category: 'national',
+    sources: [{ name: 'প্রথম আলো', url: 'https://example.com/a' }],
+    members: [{ source_id: 'pal', title: 'মেট্রো', lead: 'চালু হলো', published_at: '2026-09-24' }],
+  });
+  assert.doesNotMatch(p, /FACT-CHECK FORMAT/);
+  assert.doesNotMatch(p, /ANALYSIS FORMAT/);
+  assert.match(p, /PUBLICATION MODE:/u);
+});
+
+test('writingPrompt: factcheck story gets the claim->evidence->verdict template + verdict context', () => {
+  const brief = {
+    headline: 'সত্যতা যাচাই: ভাইরাল দাবি',
+    category: 'factcheck',
+    sources: [{ name: 'রিউমার স্ক্যানার', url: 'https://rumorscanner.example.com/x' }],
+    members: [{ source_id: 'scanner', title: 'রিউমার স্ক্যানার', lead: 'দাবিটি যাচাই করে দেখা গেছে বিভ্রান্তিকর', published_at: '2026-09-24' }],
+    claims: [{ claim_text: 'ভাইরাল দাবি', status: 'VERIFIED' }, { claim_text: 'বাকি অংশ', status: 'UNCONFIRMED' }],
+  };
+  const p = writingPrompt(brief);
+  assert.match(p, /FACT-CHECK FORMAT/);
+  assert.match(p, /## রায়/);
+  assert.match(p, /Fact-check verdict/);
+  assert.match(p, /Verdict: unverifiable/);
+});
+
+test('writingPrompt: analysis story gets analysis template', () => {
+  const p = writingPrompt({
+    headline: 'মেট্রো সম্প্রসারণের অর্থনৈতিক প্রভাব',
+    category: 'opinion',
+    sources: [{ name: 'সমকাল', url: 'https://example.com/a' }],
+    members: [{ source_id: 'samakal', title: 'বিশ্লেষণ', lead: 'কারণ হিসেবে দেখা যাচ্ছে', published_at: '2026-09-24' }],
+  });
+  assert.match(p, /ANALYSIS FORMAT/);
+  assert.match(p, /## উপসংহার/);
+});
+
+test('factCheckBlock: emitted only for factcheck format, honest verdict', () => {
+  const brief = {
+    headline: 'সত্যতা যাচাই: ভাইরাল ভিডিও',
+    category: 'factcheck',
+    date: '2026-09-24T10:00:00.000Z',
+    sources: [],
+    members: [{ source_id: 'scanner', title: 'রিউমার স্ক্যানার', lead: 'দাবি', published_at: '2026-09-24' }],
+    claims: [{ claim_text: 'ভিডিওটির দাবি', status: 'VERIFIED' }],
+  };
+  const block = factCheckBlock(brief);
+  assert.match(block, /^factCheck:/);
+  assert.match(block, /claim: "ভিডিওটির দাবি"/);
+  assert.match(block, /verdict: "true"/);
+  assert.doesNotMatch(block, /keyPoints/);
+});
+
+test('factCheckBlock: empty for plain news story', () => {
+  assert.equal(factCheckBlock({
+    headline: 'ঢাকায় বৃষ্টি',
+    category: 'national',
+    members: [{ source_id: 'pal', title: 'x', lead: 'y' }],
+  }), '');
 });

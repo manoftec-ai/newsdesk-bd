@@ -31,7 +31,7 @@
 | #16 "কী এখনো জানা যায়নি" signature | ✅ | section live + template |
 | #17 "কেন নিশ্চিত?" badge explanation | ✅ 04eab2f LIVE | badge-legend under badge (site-side); clickable = P2 |
 | #18 evidence panel | ⏳ P1 | design note: Q1 stays, panel = evidence, NOT quotes/box; no chain-of-thought |
-| #19 separate normal vs fact-check templates | ⏳ Round-2 2.1 | factcheck category/schema/VERDICTS exist (F1); distinct article template = TODO |
+| #19 separate normal vs fact-check templates | ✅ 2026-09-24 | storyFormat() → 'factcheck' (category / রিউমার স্ক্যানার / সত্যতা যাচাই / ফ্যাক্ট চেক markers) → দাবি→প্রেক্ষাপট→যাচাই→রায়→জানেনা template + factCheck front matter (claim/verdict/verifiedDate/note derived from evidence graph, NEVER invented) |
 | #20 "What Changed?" on living stories | ⏳ P1 | reverify updates[] history exists (D60); UI last-update box = TODO |
 | #21 never silently rewrite important facts | ✅ 4279dc4 (D60) | additive correction surgery (updated/correctionNote/updates[]) only |
 | #22 editorial value | ✅ 516c305 | internal editorialValue() score (pick tiebreak), never public |
@@ -44,7 +44,7 @@
 | #29 editorial AI auditor | ✅ (two-stage, D58, extended rv1) | mechanical + LLM 10-point c1-c10 + rv1; recommend aligning LLM list to this spec |
 | #30 reader value test | ✅ 516c305 | rv1 gate |
 | #31 homepage editorial hierarchy | ⏳ P1 parked | proposal P1 |
-| #32 article quality dynamic (per-format) | 🔶 partial | format= tier (short/normal/complex); fact-check/analysis templates = TODO |
+| #32 article quality dynamic (per-format) | 🔶 partial → ✅ 2026-09-24 | storyFormat(): factcheck (দাবি→যাচাই→রায়) + analysis (opinion: প্রেক্ষাপট→বিশ্লেষণ→উপসংহার, no invented experts) + news retains mode tiers; distinct templates live in writingPrompt |
 | #33 "কেন গুরুত্বপূর্ণ" why-it-matters | ⏳ Round-2 | only when evidence-supported; not built |
 | #34 quality over quantity (can say "don't publish") | ✅ | rv1 + editorial-value + verdict gate all block |
 | #35 recommended editorial pipeline | 🔶 ~80% | claims->evidence->independence->verify->editorial value->writer->auditor->risk->living->reverify all live |

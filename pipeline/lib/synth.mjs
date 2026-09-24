@@ -7,7 +7,16 @@ import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from './extract.mjs';
 import { loadConfig } from './config.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
-import { publicationMode, lengthForMode, whyItMattersSupported, isSensitiveStory } from './editorial.mjs';
+import {
+  publicationMode,
+  lengthForMode,
+  whyItMattersSupported,
+  isSensitiveStory,
+  storyFormat,
+  factCheckClaim,
+  factCheckVerdict,
+  factCheckNote,
+} from './editorial.mjs';
 
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
@@ -95,6 +104,7 @@ export function frontMatter(brief) {
     },
   };
   const tagList = fm.tags.length ? `[${fm.tags.map((t) => `"${t}"`).join(', ')}]` : '[]';
+  const fcBlock = factCheckBlock(brief);
   return `title: "${fm.title}"
 seoTitle: "…"
 excerpt: "…"
@@ -117,7 +127,27 @@ ${fm.verification.headline ? `  headline:
     status: "${fm.verification.headline.status}"
     support: ${fm.verification.headline.support}` : ''}
   evidence:
-${(fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')}`;
+${(fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')}
+${fcBlock}`;
+}
+
+// Deterministic  #19 fact-check front-matter block. Emitted ONLY when a story is
+// classified as a fact-check piece — claim, verdict, date and note all derive
+// from the verified evidence graph (never fabricated). Empty when not a
+// fact-check, so normal news stories keep the current front matter untouched.
+export function factCheckBlock(brief) {
+  if (storyFormat(brief) !== 'factcheck') return '';
+  const claim = factCheckClaim(brief);
+  if (!claim) return '';
+  const verdict = factCheckVerdict(brief);
+  const date = brief.date ? new Date(brief.date).toISOString() : new Date().toISOString();
+  const note = factCheckNote(verdict);
+  const esc = (s) => String(s).replace(/"/g, '\\"');
+  return `factCheck:
+  claim: "${esc(claim)}"
+  verdict: "${verdict}"
+  verifiedDate: ${date}
+  note: "${esc(note)}"`;
 }
 
 // 1.3 — Dynamic target length per story tier. Short briefs (few sources) carry
@@ -154,6 +184,7 @@ export function claimRules(brief, { language = 'bn' } = {}) {
 export function writingPrompt(brief) {
   const srcs = brief.sources.map((s) => `- ${s.name} — ${s.url}`).join('\n');
   const mode = publicationMode(brief);
+  const format = storyFormat(brief);
   const { min, max } = lengthForMode(mode, brief.members.length);
   const leads = brief.members.map((m) =>
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
@@ -182,6 +213,27 @@ That's it. Readers want the verified fact fast, not recycled sentences.`,
 Explicitly say the situation is evolving ("পরিস্থিতি চলমান", "এখনো যাচাই চলছে") where true. No invented future-tense outcomes. Lead with the strongest confirmed fact.`,
     'standard': `PUBLICATION MODE: STANDARD NEWS. Write a full ${min}–${max}-word article using the structure below.`,
   }[mode] ?? '';
+  // #19/#32 — article FORMAT template. Overrides the STANDARD news structure
+  // (below) when the story is a fact-check or an analysis piece. Each format has
+  // its own section order; the claim-level + source rules apply to all.
+  const formatBlock = format === 'factcheck'
+    ? `## FACT-CHECK FORMAT (proposal #19) — THIS IS A FACT-CHECK PIECE, not a plain news story.
+Write it as a VERIFICATION with a clear claim → evidence → verdict arc. Use this structure IN ORDER:
+1. Lead — ONE short paragraph naming the claim to be verified (দাবি) and that this piece checks it (the front-matter factCheck block is authoritative: claim + verdict are already determined from the evidence graph — state the claim exactly as given, NEVER restate it as a fact).
+2. "## প্রেক্ষাপট" — ONLY if the leads carry background on the claim (where it spread, who made it). Short; omit if absent.
+3. "## যাচাই" — the core: walk the EVIDENCE step by step (each check a verified fact from the leads: official record, named agency, multiple independent outlets agreeing). Show the checks as facts: "রিউমার স্ক্যানার/যাচাইয়ে দেখা গেছে…", "বাধ্যবাধকতামূলক রেকর্ড অনুযায়ী…". This section is EVIDENCE, never argument.
+4. "## রায়" — the verdict, stated in ONE short paragraph, matching the front-matter factCheck.verdict exactly and in your own words. Say plainly what the evidence showed. Example shape: "সুতরাং দাবিটি বিভ্রান্তিকর — মূল তথ্য সঠিক নয়" (match actual verdict). NEVER contradict the front-matter verdict.
+5. "## কী জানা যায়নি" — ONLY genuine verified unknowns. Omit if none.
+Rules (HARD): never invent a check; every "যাচাই" assertion must trace to a member lead below; the claim itself is quoted as a claim, not asserted as fact; do NOT switch to a normal news structure (no এক নজরে / মূল খবর).`
+    : format === 'analysis'
+      ? `## ANALYSIS FORMAT (proposal #32) — THIS IS AN ANALYSIS/OPINION PIECE, not a breaking news story.
+Write it as a reasoned examination built ONLY on the verified facts in the leads. Use this structure IN ORDER:
+1. Lead — the question/subject this analysis addresses, plainly.
+2. "## প্রেক্ষাপট" — the verified background facts (who/what/when/where) needed to follow the argument.
+3. "## বিশ্লেষণ" — the analysis: mostly interpretation/explanations. EVERY interpretive claim must be grounded in a member lead OR explicitly flagged as the piece's own reasoning ("কারণ হিসেবে দেখা যাচ্ছে…"); NEVER invent an expert, study, or number that is not in the leads; NEVER attribute analysis to a made-up "বিশ্লেষক"/"পর্যবেক্ষক" (banned); quotes only if they exist verbatim in the leads.
+4. "## উপসংহার" — a short conclusion that follows from the evidence above; no new facts, no speculation beyond what the leads support.
+Rules (HARD): analysis must stay inside what the evidence supports; no invented consequences; political/sensitive rules apply if the topic is sensitive; do NOT fall back to the one-নজরে/মূল খবর news structure.`
+    : '';
   const political = isSensitiveStory(brief)
     ? `## Political / sensitive-topic rules (HARD)
 This is a politically or personally sensitive subject. Apply these strictly:
@@ -212,6 +264,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   write the story in your own words as if you were on the scene. NEVER walk through
   the outlets one by one and NEVER compare "one report said X, another said Y".
 - ${modeDesc}
+${formatBlock ? `- ${formatBlock}` : ''}
 - Five-answer discipline (proposal #2): after drafting, CHECK the article that a
   reader who read the headline learns clear answers to: (1) What happened?
   (2) What do we know? (3) What do we NOT know? (4) Why does it matter? — only
@@ -221,7 +274,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 - ${whyBlock}
 - ${political.trim()}
 ${natBn}
-- If mode is STANDARD, body structure (in this order — omit any section that would be empty):
+- If mode is STANDARD AND format is news, body structure (in this order — omit any section that would be empty):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
   2. "এক নজরে" bullet list of DISTINCT key points (1–4 bullets — no filler, no
      repeating the headline; every bullet must name a different fact). Format
@@ -236,6 +289,7 @@ ${natBn}
   5. "## কী এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
      identities, decisions). Keep it to what is genuinely NOT reported. Omit the whole
      section if nothing is unknown.
+- If format is factcheck or analysis, follow the ${format === 'factcheck' ? 'FACT-CHECK' : format === 'analysis' ? 'ANALYSIS' : ''} template above INSTEAD of the news structure; the news structure below does NOT apply.
 - Source rule (hard): the article is a finished news story. A reader should NOT be
   able to tell which outlet reported what. NEVER name a media outlet, newspaper or
   news agency in the body; NEVER write "...প্রতিবেদনে বলা হয়েছে...", "দুই
@@ -300,6 +354,11 @@ ${brief.headline}
 ### Claim statuses for this brief (from the claim→evidence graph)
 ${claims.trim() === '' ? 'none provided' : claims.trim()}
 
+${format === 'factcheck' ? `### Fact-check verdict (front matter — authoritative)
+Claim: ${factCheckClaim(brief) ?? '—'}
+Verdict: ${factCheckVerdict(brief)}
+Note: ${factCheckNote(factCheckVerdict(brief))}
+` : ''}
 ### Member leads (facts pool)
 ${leads}
 

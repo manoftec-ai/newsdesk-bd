@@ -240,6 +240,78 @@ export function isSensitiveStory(brief) {
   return [...SENSITIVE_MARKERS].some((k) => pool.includes(k));
 }
 
+// ---- #19/#32 article FORMAT classifier --------------------------------------
+// A story's WRITING FORMAT (news / fact-check / analysis) is orthogonal to its
+// publication MODE (news-brief/breaking/developing/standard, which set length,
+// freshness and pacing). The FORMAT picks the TEMPLATE the writer follows; the
+// MODE still governs length. Fully deterministic, consumed by synth.mjs.
+//
+// factcheck: category is 'factcheck', or the fact pool unmistakably marks a
+//   verification piece (rumor-scanner outlet / explicit সত্যতা যাচাই / ফ্যাক্ট
+//   চেক title). A NEWS story about an arrest for spreading a rumor is NOT a
+//   fact-check and never flips format (only the outlet/verify markers above do).
+// analysis: category is 'opinion' (RAW_TO_SITE maps মতামত/বিশ্লেষণ + কলাম there).
+// news: everything else (default).
+export function storyFormat(brief) {
+  const cat = String(brief?.category ?? '');
+  if (cat === 'factcheck') return 'factcheck';
+  if (cat === 'opinion') return 'analysis';
+  const pool = [
+    brief?.headline ?? '',
+    ...(brief?.members ?? []).map((m) => `${m?.title ?? ''} ${m?.lead ?? ''}`),
+  ].join(' ');
+  if (
+    /রিউমার\s*স্ক্যানার|সত্যতা\s+যাচাই|ফ্যাক্ট\s*[- ]?চেক|ফ্যাক্টচেক/u.test(pool)
+  ) return 'factcheck';
+  return 'news';
+}
+
+// The claim a fact-check piece VERIFIES: the primary claim from the claims
+// graph, or the headline when no graph claim exists. Never fabricated.
+export function factCheckClaim(brief) {
+  const claims = brief?.claims ?? [];
+  const claim = claims.find((c) => c?.claim_text) ?? claims[0];
+  return claim?.claim_text ?? brief?.headline ?? null;
+}
+
+// Deterministic #19 verdict from the evidence graph → the site's 7-value
+// VERDICTS enum (true/mostly-true/half/mostly-false/false/misleading/
+// unverifiable). Honest-only: no claims → 'unverifiable'; a contradiction
+// majority → 'false'; a headline that outruns the evidence → 'misleading'.
+export function factCheckVerdict(brief) {
+  const hv = brief?.headlineStatus ?? brief?.verification?.headline?.status;
+  if (hv === 'overclaim') return 'misleading';
+  const statuses = (brief?.claims ?? []).map((c) => c?.status).filter(Boolean);
+  const n = statuses.length;
+  if (!n) return 'unverifiable';
+  const count = (s) => statuses.filter((x) => x === s).length;
+  const strong = count('VERIFIED') + count('OFFICIAL');
+  const single = count('SINGLE_SOURCE');
+  const unconf = count('UNCONFIRMED');
+  const confl = count('CONFLICTING');
+  if (confl >= n / 2) return 'false';
+  if (unconf + single >= n / 2) return 'unverifiable';
+  const ratio = strong / n;
+  if (ratio >= 0.8) return 'true';
+  if (ratio >= 0.5) return 'mostly-true';
+  if (ratio >= 0.25) return 'half';
+  return 'mostly-false';
+}
+
+// Short deterministic Bengali rationale for a verdict (derived from the verdict
+// itself — never a fabricated fact). Feeds the factCheck.note front matter.
+export function factCheckNote(verdict) {
+  return {
+    true: 'দাবির মূল তথ্য যাচাইয়ের পর নিশ্চিত হয়েছে।',
+    'mostly-true': 'দাবির অধিকাংশ তথ্য সঠিক; কিছু অংশ অতিরঞ্জিত।',
+    half: 'দাবিটি আংশিক সঠিক, আংশিক বিভ্রান্তিকর।',
+    'mostly-false': 'দাবির অধিকাংশই ভুল প্রমাণিত।',
+    false: 'দাবিটি যাচাইয়ে ভুল প্রমাণিত।',
+    misleading: 'দাবিটি প্রসঙ্গ বাদ দিয়ে বিভ্রান্তি তৈরি করে।',
+    unverifiable: 'নির্ভরযোগ্য সূত্রে দাবিটি যাচাই করা যায়নি।',
+  }[verdict] ?? '';
+}
+
 // Mechanical #33/#2 check: a "কেন গুরুত্বপূর্ণ" / "কেন গুরুত্বপূর্ণ?" section in
 // the BODY is only legitimate when the fact pool carries a stated consequence;
 // otherwise it is invented importance and blocks publish (proposal #8/#33).
