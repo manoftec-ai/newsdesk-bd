@@ -44,6 +44,10 @@ jobs:
       - name: Extract briefs
         run: node run.js extract || true
 
+      - name: Corrections + auto re-verification
+        run: |
+          node tools/reverify_stories.mjs --max=50 || echo "reverify skipped/failed (harmless)"
+
       - name: Commit state
         run: |
           git config user.name "newsdesk-bd-bot"
