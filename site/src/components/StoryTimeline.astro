@@ -1,15 +1,15 @@
 ---
-// StoryTimeline.astro — "কীভাবে উন্মোচিত হলো" + "সংস্করণ ইতিহাস": the DB-derived
-// chronological event chain for one story (claim appeared → source evidence →
-// verification state changes → conflicts), the append-only per-claim ledger
-// (every period a state was valid, with reason), and related stories sharing
-// actors/sources. Static: renders the committed site/data/event-graph.json, no JS.
-import { storyGraph, KIND_LABELS, reasonLabel } from "../lib/graph.js";
+// StoryTimeline.astro — "সংস্করণ ইতিহাস" (per-claim status ledger, append-only)
+// and related stories sharing actors/sources. The event timeline
+// ("কীভাবে উন্মোচিত হলো") was removed 2026-09-24 by user request.
+// Static: renders the committed site/data/event-graph.json, no JS.
+import { storyGraph, reasonLabel } from "../lib/graph.js";
 
 const { slug, formatTime, formatDate } = Astro.props;
 const graph = storyGraph(slug);
-const showTimeline = Boolean(graph && (graph.events ?? []).length > 0);
 const showVersions = Boolean(graph?.versions?.some((c) => (c.periods?.length ?? 0) > 0));
+const showRelated = Boolean(graph?.related?.length > 0);
+const showAny = showVersions || showRelated;
 
 const STATUS_LABELS = {
   OFFICIAL: "অফিসিয়াল",
@@ -22,7 +22,6 @@ const STATUS_LABELS = {
   OUTDATED: "পুরনো",
 };
 
-const kindLabel = (kind) => KIND_LABELS[kind] ?? kind;
 const statusBn = (s) => STATUS_LABELS[s] ?? s;
 
 const statusChipClass = (s) => ({
@@ -35,68 +34,10 @@ const statusChipClass = (s) => ({
   REFUTED: "badge--suspect",
   OUTDATED: "badge--partial",
 }[s] ?? "badge--partial");
-
-const kindDotClass = {
-  claim: "bg-primary",
-  evidence: "bg-blue-500",
-  verify: "bg-amber-500",
-  conflict: "bg-red-500",
-};
 ---
 
-{(showTimeline || showVersions) && (
+{(showAny) && (
   <div class="story-timeline mt-6 border-t border-border/60 pt-5">
-    <div class="flex flex-wrap items-center justify-between gap-2">
-      <h2 class="font-serif text-lg font-bold">কীভাবে উন্মোচিত হলো</h2>
-      <span class="text-xs text-muted-foreground">
-        {graph.claim_count}টি দাবি · {graph.events.length}টি ঘটনা
-      </span>
-    </div>
-
-    <ol class="story-timeline-list mt-4 space-y-3 border-l-2 border-border/50 pl-5">
-      {graph.events.map((event) => (
-        <li class="relative">
-          <span
-            class:list={[
-              "absolute -left-[26px] top-1.5 h-2.5 w-2.5 rounded-full",
-              kindDotClass[event.kind] ?? "bg-foreground/40",
-            ]}
-            aria-hidden="true"
-          />
-          <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs">
-            <time datetime={event.ts} class="font-medium">
-              {formatDate?.(event.ts)}
-            </time>
-            <span class="text-muted-foreground">
-              {event.kind === "verify" && event.detail?.status
-                ? `${kindLabel(event.kind)} → ${statusBn(event.detail.status)}`
-                : kindLabel(event.kind)}
-            </span>
-            {event.detail?.source_id && (
-              <span class="rounded bg-muted px-1.5 py-0.5 text-[11px] text-muted-foreground">
-                {event.detail.source_id}
-              </span>
-            )}
-            {event.kind === "verify" && event.detail?.from && (
-              <span class="text-muted-foreground/70">
-                (আগে: {statusBn(event.detail.from)})
-              </span>
-            )}
-          </div>
-          {event.claim_text && (
-            <p class="mt-0.5 text-sm leading-relaxed text-foreground/90">
-              «{event.claim_text}»
-            </p>
-          )}
-          {event.kind === "conflict" && event.detail?.field && (
-            <p class="text-xs text-muted-foreground">
-              দ্বন্দ্বের বিষয়: {event.detail.field}
-            </p>
-          )}
-        </li>
-      ))}
-    </ol>
-
     {showVersions && (
       <section class="claim-versions mt-6" aria-label="সংস্করণ ইতিহাস">
         <div class="flex flex-wrap items-center justify-between gap-2">
@@ -152,7 +93,7 @@ const kindDotClass = {
       </section>
     )}
 
-    {graph.related?.length > 0 && (
+    {showRelated && (
       <aside class="related-stories mt-5 border-t border-border/40 pt-3">
         <div class="text-sm font-bold">সম্পর্কিত খবর</div>
         <p class="mt-0.5 text-xs text-muted-foreground">
