@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from './extract.mjs';
 import { loadConfig } from './config.mjs';
+import { verifyHeadline } from './headline-verify.mjs';
 
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
@@ -66,6 +67,14 @@ export function frontMatter(brief) {
   const badge = badgeMap[brief.verdict?.badge] ?? 'partial';
   const tier = brief.verdict?.tier ?? brief.tier ?? 'B';
   const firstDate = brief.date ? new Date(brief.date).toISOString() : new Date().toISOString();
+  let headline = null;
+  try {
+    const hv = verifyHeadline(String(brief.headline ?? ''), {
+      leads: (brief.members ?? []).map((m) => `${m.title ?? ''} ${m.lead ?? ''}`),
+      claim: (brief.claims ?? [])[0] ?? null,
+    });
+    headline = { status: hv.status, support: Math.round(hv.support * 100) };
+  } catch { headline = null; }
   const fm = {
     title: String(brief.headline ?? '').replace(/"/g, '\\"'),
     excerpt: '…',
@@ -81,6 +90,7 @@ export function frontMatter(brief) {
       tier,
       score: brief.verdict?.score ?? 0,
       evidence: brief.evidence ?? [],
+      headline,
     },
   };
   const tagList = fm.tags.length ? `[${fm.tags.map((t) => `"${t}"`).join(', ')}]` : '[]';
@@ -102,6 +112,9 @@ verification:
   badge: "${badge}"
   tier: "${tier}"
   score: ${fm.verification.score}
+${fm.verification.headline ? `  headline:
+    status: "${fm.verification.headline.status}"
+    support: ${fm.verification.headline.support}` : ''}
   evidence:
 ${(fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')}`;
 }

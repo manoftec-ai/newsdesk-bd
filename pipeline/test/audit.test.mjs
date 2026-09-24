@@ -5,7 +5,7 @@ import { mechanicalAudit, parseAudit, AUDIT_POINTS } from '../lib/audit.mjs';
 
 const brief = (n, headline) => ({
   headline: headline ?? 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু',
-  members: Array.from({ length: n }, (_, i) => ({ source_id: `s${i}`, title: `t${i}`, lead: `l${i}` })),
+  members: Array.from({ length: n }, (_, i) => ({ source_id: `s${i}`, title: `dashboardd t${i} লাইন চালু`, lead: `l${i} মেট্রোরেল লাইন চালু` })),
 });
 
 function goodBody() {

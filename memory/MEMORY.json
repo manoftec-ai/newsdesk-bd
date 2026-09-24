@@ -35,6 +35,12 @@
   "decisions": [
     {
       "date": "2026-09-24",
+      "id": "D59",
+      "title": "P0 headline verification + claims FK fix",
+      "context": "verifyHeadline pits headline vs strongest supported claim (supported/weak/poor/overclaim + hype) deterministically; briefs carry claims (confidence DESC) for the strongest; frontmatter shows verification.headline; upsertClaim switched to RETURNING id (last_insert_rowid stale on unchanged DO UPDATE → FK cascade bug, most briefs had zero claims). 66/66 tests."
+    },
+    {
+      "date": "2026-09-24",
       "id": "news-style-session",
       "title": "News-style: strip media names + aggregation boilerplate from bodies/excerpts (live)",
       "context": "Bodies/excerpts must read as fresh original news; outlet names only in the rendered সূত্র: block. Normalizer _scratch/apply_clean3.cjs (cleanExcerpt rewritten: sentence-split, drop outlet clusters/meta/too-short, fallback body-first-sentences; new জামুনা টেলিভিশন outlet alias). Real tree: body changed 83 / excerpt changed 329 / outlet residuals 0 / GARB 0; 6 residual flags all legit. Author prompts (synth.mjs writingPrompt + auto-author.yml) forbid naming outlets in body, attribute to actor, block aggregation chains. Commit 7909032 (443 files) live on origin/main. Pipeline tests 35/35.",
@@ -418,6 +424,12 @@
       "id": "D55",
       "decision": "Extend the homepage thumbnail + BD date-time list system to ALL headline-list pages. (1) article page: byline date -> formatDateTimeBD(post.ts) — required adding ts to the local post object (was missing, caused empty <time> on first deploy, fixed in 972ff8c); \"আরও পড়ুন\" rows upgraded from date-only .mini-row-time to homepage structure (.mini-row-thumb + .mini-row-body + .mini-row-datetime). (2) PostCard.astro all variants (compact/list/default => /news, category, tags, authors, homepage cards) -> <time datetime=ISO>{formatDateTimeBDShort(post.ts)}. (3) tracked.astro: thumbnail left + BD datetime. (4) ghotona/[slug].astro published-news rows: thumbnail + BD datetime (added thumbnail/thumbnailAlt/ts to local allEntries mapping). (5) factcheck.astro cards: formatDateTimeBD. (6) corrections.astro log: BD datetime (post.updated || post.ts). Removed dead CSS .mini-row-time and legacy .mini-row > div > a. Deploys 628e6e4 + 972ff8c; run 35889249269 initially failed only on Lighthouse errors-in-console (Vercel Insights script.js 404, infra flake) — rerun success. Live-verified /news, article byline \"২৩ সেপ্টেম্বর, ২০২৬ · ৯:৩৫ PM\", /tracked, /ghotona/iran-israel-war-2026, /factcheck; /corrections has no corrected posts so empty-state only.",
       "rationale": "user: home page is ok now, i need the same systems in others page also. Consistency: one visual pattern for every headline list; all posts carry ts so BD formatting always works."
+    },
+    {
+      "id": "D59",
+      "date": "2026-09-24",
+      "title": "Editorial Phase 1 (1.1-1.4) complete + verified LIVE; lighthouse PARKED; Phase 1b deferred",
+      "detail": "1.1 fcc9290 synthesize-first prompt; 1.2 4d0bf3a speculation/filler block-gate; 1.3 3e73dc6 dynamic length tiers; 1.4 04eab2f badge legend live (badge-legend line under chip). Verified on live jachaidesk.com national-473 (new template, 0 banned phrases) + tests 35/35. Lighthouse red is PRE-EXISTING ( 404 now Analysis not enabled + image savings) - user parked fixes 2026-09-24. Phase 1b bulk regen (~430 old articles) = do it later. Parallel session WIP (governance gate, claims/evidence graph) + local divergent commit b9b2f8f = keep, user reviews first. Do NOT push until reconciled."
     }
   ],
   "sources": [
@@ -761,5 +773,5 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 36
+  "sessionsCount": 37
 }

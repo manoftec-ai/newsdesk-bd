@@ -175,7 +175,10 @@ export function touchCluster(db, clusterId, { status, headline, memberCount, mat
 }
 export function upsertClaim(db, { cluster_id, story_slug = null, claim_text, claim_type = null, status = 'UNCONFIRMED' }) {
   const now = new Date().toISOString();
-  const st = db.prepare(`
+  // RETURNING gives the deterministic row id on BOTH insert and conflict-update
+  // paths (last_insert_rowid() is STALE on an unchanged DO UPDATE — it can point
+  // at a previous claim_evidence insert → the child FK insert then fails).
+  const row = db.prepare(`
     INSERT INTO claims (cluster_id, story_slug, claim_text, claim_type, status, created_at, updated_at)
     VALUES (?,?,?,?,?,?,?)
     ON CONFLICT(cluster_id, claim_text) DO UPDATE SET
@@ -183,10 +186,9 @@ export function upsertClaim(db, { cluster_id, story_slug = null, claim_text, cla
       claim_type=COALESCE(excluded.claim_type, claim_type),
       status=COALESCE(excluded.status, status),
       updated_at=excluded.updated_at
-  `);
-  const info = st.run(cluster_id, story_slug, claim_text, claim_type, status, now, now);
-  const id = info.lastInsertRowid || db.prepare('SELECT id FROM claims WHERE cluster_id=? AND claim_text=?').get(cluster_id, claim_text)?.id;
-  return Number(id);
+    RETURNING id
+  `).get(cluster_id, story_slug, claim_text, claim_type, status, now, now);
+  return Number(row?.id ?? -1);
 }
 
 export function addClaimEvidence(db, { claim_id, source_id, url = null, excerpt = null, relation = 'supports', evidence_type = null, published_at = null }) {

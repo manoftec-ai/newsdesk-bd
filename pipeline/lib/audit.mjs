@@ -14,6 +14,7 @@
 // gate alone decides (backward compatible with existing author path).
 import { writingPrompt, findEditorialViolations, BANNED_SPECULATION, isEditorialFooter } from './synth.mjs';
 import { chatComplete, llmApiKey } from './llm.mjs';
+import { verifyHeadline } from './headline-verify.mjs';
 
 export const MAX_AUDIT_RETRIES = Number(process.env.AUDIT_MAX_RETRIES || 2);
 
@@ -73,8 +74,17 @@ export function mechanicalAudit(brief, body) {
   if (!hasLeadPara) note('c8', 'no plain lead paragraph up front');
   const hasKP = /এক\s*নজরে/u.test(text);
   if (srcCount > 2 && !hasKP) note('c8', 'এক নজরে key points missing (≥3 sources)');
+  // headline verification (deterministic c6 checking): headline must trace to the
+  // fact pool and never overclaim a conflicting/unconfirmed claim.
+  const hdr = verifyHeadline(brief.headline ?? '', {
+    leads: (brief.members ?? []).map((m) => `${m.title ?? ''} ${m.lead ?? ''}`),
+    claim: (brief.claims ?? [])[0] ?? null,
+  });
+  if (hdr.status === 'poor') note('c6', `headline barely traces to facts (${Math.round(hdr.support * 100)}% tokens)`);
+  if (hdr.status === 'overclaim') note('c6', `headline overclaims an ${hdr.claim_status} claim`);
+  if (hdr.flags.includes('hype')) note('c6', `headline hype term detected`);
 
-  return { pass: fails.length === 0, fails, count: fails.length };
+  return { pass: fails.length === 0, fails, count: fails.length, headline: hdr };
 }
 
 function targetLength(srcCount) {

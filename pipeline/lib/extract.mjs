@@ -159,6 +159,12 @@ export function exportBriefs({ status = 'passed' } = {}) {
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');
     try { populateClaimsFromBrief(db, brief); } catch (e) {}
     try { applyClaimVerification(db); } catch (e) {}
+    // Attach the cluster's verified claims to the brief (so headline verification +
+    // the auditor can judge headline vs strongest supported claim without re-joining).
+    try {
+      const crows = db.prepare('SELECT claim_text, status, confidence FROM claims WHERE cluster_id=? ORDER BY confidence DESC').all(brief.clusterId);
+      if (crows.length) { brief.claims = crows; writeFileSync(f, JSON.stringify(brief, null, 2) + '\n'); }
+    } catch (e) {}
     written++;
   }
   console.log(`extract done. briefs written=${written} skipped=${skipped} title-dups=${dups} dir=${BRIEFS_DIR}`);
