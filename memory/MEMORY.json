@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-24",
-    "sessionsCount": 38,
+    "sessionsCount": 39,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,12 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "date": "2026-09-24",
+      "id": "D58",
+      "title": "P0 AI Auditor (two-stage Writer→Auditor, PASS with bounded retries)",
+      "context": "10 points derived from locked editorial rules; mechanical gate always runs, LLM judges 10 points, re-runs writer w/ feedback up to 2 retries; finalize only on PASS."
+    },
     {
       "date": "2026-09-24",
       "id": "D57",

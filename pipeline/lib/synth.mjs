@@ -242,7 +242,7 @@ function extractKeyPoints(md) {
 // review") that a writer might append. Guarantee: published stories never carry a
 // draft/editorial-review footnote. Only trailing paragraph blocks are inspected,
 // and only when their text clearly matches a disclaimer signature.
-function isEditorialFooter(blockText) {
+export function isEditorialFooter(blockText) {
   const text = blockText.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   return (
     /পর্যালোচনার অপেক্ষায়/u.test(text) ||
