@@ -64,19 +64,25 @@
 - [x] 1.9 Reader-value rv1 gate + editorialValue pick ranking (#21/#22/#23/#30) — 516c305
 - [x] 1.10 Fresh-news voice: source-meta/outlet/invented-actor ban + মূল খবর/কী জানা গেছে/কী এখনো জানা যায়নি headings (#3/#4/#7/#11/#27) — 69e5a53
 
-## Next phase (proposal P0 remainder + P1, in order)
+## Next phase (user-approved deploy list 2026-09-24)
+> Recommendation (user approved): deploy only the MECHANICAL / CHEAP items N2–N4 + N6. Everything else
+> (N5, N7–N11, metrics, golden dataset) is PARKED until real readership + distribution exist. Reason:
+> the 40-point spec assumed human editors; we auto-publish keyless on 30-min cadence — rules are high
+> ROI, heavy UX/infra is not. See memory/sessions/2026-09-24-editorial-proposal-40.md + TODO assessment.
 - [x] N1 **docs/editorial-style-guide.md** (#28) — the permanent JachaiDesk editorial spec doc — DONE 2026-09-24 (docs/editorial-style-guide.md; 11 sections; banned-table mirrors the exact gate lists)
 - [ ] N2 **Auditor LLM alignment** (#29/#36): rename/expand LLM audit points to the spec checklist
   (factuality, source support, claim coverage, natural Bengali, repetition, speculation, AI
-  filler, headline accuracy, quote integrity, context relevance, attribution, readability)
+  filler, headline accuracy, quote integrity, context relevance, attribution, readability) — DEPLOY
 - [ ] N3 **Claim-level writing rules in prompt** (#13): VERIFIED/CORROBORATED/SINGLE_SOURCE/
-  UNCONFIRMED/CONFLICTING → how each may be written
+  UNCONFIRMED/CONFLICTING → how each may be written — DEPLOY
 - [ ] N4 **Source disagreement in body** (#12): when leads conflict, writer must SAY the
-  difference, never silently choose (ties to claims graph CONFLICTING)
+  difference, never silently choose (ties to claims graph CONFLICTING) — DEPLOY
+- [ ] N6 **Quote integrity floor** (#15): audit check that any quoted line exists verbatim in
+  member leads, else FAIL (reuse claims/evidence store) — DEPLOY
+
+## Parked (low ROI for this project right now — per user-approved 2026-09-24 assessment)
 - [ ] N5 **Length tiers to proposal ranges** (#6): allow 300-600 developing / 600-1000+ complex
   explainers (needs a format classifier #32)
-- [ ] N6 **Quote integrity floor** (#15): audit check that any quoted line exists verbatim in
-  member leads, else FAIL (reuse claims/evidence store)
 - [ ] N7 **Breaking-news ultra-short mode** (#24): 30-80 words same-story update, not new 500w
 - [ ] N8 **What Changed / last-update box** (#20): render reverify updates[] on article (P1)
 - [ ] N9 **Evidence panel "প্রমাণ দেখুন"** (#18): clickable badge → evidence list from claims
@@ -89,7 +95,7 @@
 - P1 homepage hierarchy (#31): parked until user asks
 - P2 badge legend site-wide vs tooltip: parked
 - Lighthouse: PARKED 2026-09-24 (pre-existing; Vercel Insights 404 — user action item)
-- #37 metrics dashboard, #38 golden dataset: backlog
+- #37 metrics dashboard, #38 golden dataset: backlog (PARKED per 2026-09-24 recommendation — premature until readership/distribution exist)
 
 ## Notes / constraints
 - English-only in terminal; Bengali only inside site content/prompt instructions.
