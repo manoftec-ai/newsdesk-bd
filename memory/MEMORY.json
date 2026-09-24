@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-24",
-    "sessionsCount": 39,
+    "sessionsCount": 40,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,13 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "date": "2026-09-24",
+      "id": "news-style-session",
+      "title": "News-style: strip media names + aggregation boilerplate from bodies/excerpts (live)",
+      "context": "Bodies/excerpts must read as fresh original news; outlet names only in the rendered সূত্র: block. Normalizer _scratch/apply_clean3.cjs (cleanExcerpt rewritten: sentence-split, drop outlet clusters/meta/too-short, fallback body-first-sentences; new জামুনা টেলিভিশন outlet alias). Real tree: body changed 83 / excerpt changed 329 / outlet residuals 0 / GARB 0; 6 residual flags all legit. Author prompts (synth.mjs writingPrompt + auto-author.yml) forbid naming outlets in body, attribute to actor, block aggregation chains. Commit 7909032 (443 files) live on origin/main. Pipeline tests 35/35.",
+      "detail": "verbShort stays longest-first; do not touch pipeline/lib/audit.mjs, extract.mjs (parallel editor in-progress). See memory/sessions/2026-09-24--news-style-media-stripped.md"
+    },
     {
       "date": "2026-09-24",
       "id": "D58",
