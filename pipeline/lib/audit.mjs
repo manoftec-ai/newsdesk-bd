@@ -13,7 +13,7 @@
 // finalized (= published). If no LLM key, stage 2 is skipped and the mechanical
 // gate alone decides (backward compatible with existing author path).
 import { writingPrompt, findEditorialViolations, BANNED_SPECULATION, isEditorialFooter } from './synth.mjs';
-import { readerValueCheck, publicationMode, lengthForMode, repetitionViolations } from './editorial.mjs';
+import { readerValueCheck, publicationMode, lengthForMode, repetitionViolations, whyItMattersViolation } from './editorial.mjs';
 import { chatComplete, llmApiKey } from './llm.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
 
@@ -88,7 +88,7 @@ export function mechanicalAudit(brief, body) {
   const note = (id, msg) => fails.push({ id, ok: false, note: msg });
   const srcCount = (brief.members ?? []).length;
   const mode = publicationMode(brief);
-  const { min, max } = lengthForMode(mode, srcCount);
+  const { min, max } = lengthForMode(mode, srcCount, brief);
 
   for (const v of findEditorialViolations(text)) {
     note('c3', `speculation/filler "${v.match}"`);
@@ -123,6 +123,11 @@ export function mechanicalAudit(brief, body) {
   for (const rep of repetitionViolations(brief.headline ?? '', text)) {
     note('rep1', `${rep.type} (${rep.section})`);
   }
+
+  // #8/#33 — a "কেন গুরুত্বপূর্ণ" section is only legitimate when the fact pool
+  // carries a stated consequence; otherwise the writer invented importance.
+  const why = whyItMattersViolation(brief, text);
+  if (why) note('n15', why.note);
 
   // #12 source disagreement must be SAID, never silently chosen. Any claim the
   // graph marked CONFLICTING forces the body to show both sides. When exactly

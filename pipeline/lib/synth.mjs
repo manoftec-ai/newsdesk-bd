@@ -7,7 +7,7 @@ import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from './extract.mjs';
 import { loadConfig } from './config.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
-import { publicationMode, lengthForMode } from './editorial.mjs';
+import { publicationMode, lengthForMode, whyItMattersSupported, isSensitiveStory } from './editorial.mjs';
 
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
@@ -159,14 +159,48 @@ export function writingPrompt(brief) {
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
   ).join('\n\n');
   const claims = claimRules(brief);
+  const whySupported = whyItMattersSupported(brief);
+  const whyBlock = whySupported
+    ? `- "কেন গুরুত্বপূর্ণ" — the leads themselves carry a consequence (impact,
+     risk, harm, decision, cost). Write ONE short paragraph titled "## কেন
+     গুরুত্বপূর্ণ" ONLY when the impact you state is one of those consequences.
+     Never invent importance the facts do not support.`
+    : `- "কেন গুরুত্বপূর্ণ" — OMIT entirely. The fact pool carries no stated
+     consequence, so a why-it-matters section would be invented (forbidden).`;
   const modeDesc = {
     'news-brief': `PUBLICATION MODE: NEWS BRIEF. This story is VERIFIED but THIN — the fact pool carries essentially the headline's one fact and nothing more. Do NOT pad. Write a short brief (${min}–${max} words): a crisp 1-2 sentence lead, then at most one paragraph of what is confirmed. Skip এক নজরে and skip the "মূল খবর" section entirely if they would only repeat the lead. Example shape:
 • Lead (1-2 sentences) — the headline fact, plainly.
 • One short paragraph — anything else that is actually confirmed (the "what/known" facts above).
 That's it. Readers want the verified fact fast, not recycled sentences.`,
-    'developing': `PUBLICATION MODE: DEVELOPING STORY. This is an ongoing situation with verified details still arriving. Write ${min}–${max} words. Lead with the strongest confirmed fact, explicitly say the situation is evolving ("পরিস্থিতি চলমান", "এখনো যাচাই চলছে") where true, and use "## কী এখনো জানা যায়নি" to say what is not yet known. No invented future-tense outcomes.`,
+    'breaking': `PUBLICATION MODE: BREAKING NEWS. The event just happened (${min}–${max} words). Lead with the single strongest confirmed fact, immediately add the honest caveat "বিস্তারিত এখনো নিশ্চিত নয়" / "পরিস্থিতি চলমান" if details are unconfirmed. Structure: lead, 1–2 short paragraphs of what IS known, then "## কী জানা যায়নি" listing what is NOT yet confirmed. This is an UP-TO-THE-MINUTE brief — every sentence must be a verified fact or an explicit unknown; no padding, no "ইতিমধ্যে ইন্টারনেটে ভাইরাল", no invented reactions. It will be updated when more is confirmed, so say "আরও তথ্য আসছে" ONLY if true.`,
+    'developing': `PUBLICATION MODE: DEVELOPING STORY. This is an ongoing situation with verified details still arriving (${min}–${max} words). Use this structure:
+## মূল খবর — the strongest confirmed facts so far, written as one flowing narrative (not a list).
+## সর্বশেষ আপডেট — ONLY if a newer development must be highlighted separately from the earlier facts (fresh time-stamped detail). Omit if the narrative already includes it.
+## ঘটনাপঞ্জি — ONLY when there is a genuine sequence of dated steps (2+ distinct events at different times). Omit otherwise.
+## কী জানা গেছে — the confirmed facts, cleanly, only those not already in মূল খবর.
+## কী এখনো জানা যায়নি — explicitly honest: what is NOT yet known (causes, toll, identities, decisions). NEVER fill this with invented outcomes.
+Explicitly say the situation is evolving ("পরিস্থিতি চলমান", "এখনো যাচাই চলছে") where true. No invented future-tense outcomes. Lead with the strongest confirmed fact.`,
     'standard': `PUBLICATION MODE: STANDARD NEWS. Write a full ${min}–${max}-word article using the structure below.`,
   }[mode] ?? '';
+  const political = isSensitiveStory(brief)
+    ? `## Political / sensitive-topic rules (HARD)
+This is a politically or personally sensitive subject. Apply these strictly:
+- STATE FACTS, not motives. Never write "উদেশ্য ছিল", "চাওয়া হয়েছিল", "কারণ হল" for actors unless a source explicitly says it. Prefer "X বলেছেন… / পুলিশ জানিয়েছে… / আদালত বলেছে…" (proposal #26).
+- NEVER turn an allegation into a fact: "অভিযোগ করেছে" not "অপরাধ করেছে"; "দাবি করেছেন" not "করেছেন"; keep the attribution on every accusation.
+- Do not invent public reaction or political consequence ("রাজনৈতিক অঙ্গনে আলোচনা", "জনমনে ক্ষোভ") unless a source states it.
+- Keep the person's name + designation, do not editorialize about them.
+- Quotes: only exact quotes that exist in the member leads; never "clean up" a quote changing its meaning.
+`
+    : '';
+  const natBn = `## Natural Bengali (proposal #10)
+- Write like a careful Bangladeshi reporter: plain, direct, professional Bangla.
+- VARY sentence length and opening words; do NOT start every sentence the same
+  way or repeat a formula ("জানা গেছে…", "বলেছেন…" max once per two paragraphs).
+- Avoid transliterated English where a natural Bangla word exists; use English
+  technical terms only when truly standard (e.g. সিসিটিভি, মেট্রোরেল).
+- No ChatGPT-isms: no "উল্লেখ্য", no "এটি একটি গুরুত্বপূর্ণ বিষয়", no formula.
+`
+
   return `# Story task — newsdesk-bd
 
 Write ONE original Bengali news article (সংবাদ) about this verified story.
@@ -178,6 +212,15 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   write the story in your own words as if you were on the scene. NEVER walk through
   the outlets one by one and NEVER compare "one report said X, another said Y".
 - ${modeDesc}
+- Five-answer discipline (proposal #2): after drafting, CHECK the article that a
+  reader who read the headline learns clear answers to: (1) What happened?
+  (2) What do we know? (3) What do we NOT know? (4) Why does it matter? — only
+  with a real, stated impact (see why-it-matters rule). (5) Where did this come
+  from? — the front-matter sources, never named in the body. Omit an answer only
+  when the facts genuinely don't cover it; never fill it with assumption.
+- ${whyBlock}
+- ${political.trim()}
+${natBn}
 - If mode is STANDARD, body structure (in this order — omit any section that would be empty):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
   2. "এক নজরে" bullet list of DISTINCT key points (1–4 bullets — no filler, no
@@ -203,6 +246,12 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   "পুলিশ জানিয়েছে, …", "মন্ত্রণালয় জানায়, …", "সংবাদ সম্মেলনে তিনি বলেন, …".
   When there is no actor, just state the fact plainly — do not invent a source
   citation. Say each fact once.
+- SOURCE DIFFERENCES (proposal #12, HARD): if the member leads genuinely disagree
+  on a fact — different figures, opposite claims, contradictory descriptions — the
+  article MUST show BOTH sides and say it is not yet settled, e.g. "কোনো কোনো
+  হিসাবে ৩ জন, অন্য হিসাবে ৫ জন — সঠিক সংখ্যা এখনো নিশ্চিত নয়" or "এক পক্ষ বলেছে X,
+  অপর পক্ষ বলেছে Y"। NEVER silently pick the one you prefer or the one that looks
+  "more official". If there is no conflict, say the fact plainly once.
 
 ## Claim-level writing rules (how each verified claim may be written)
 Apply per the claim status given for this brief (proposal #13):

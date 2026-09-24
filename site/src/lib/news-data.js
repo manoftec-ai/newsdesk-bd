@@ -55,9 +55,34 @@ export const postsByAuthor = async (slug) =>
 export const sortedPosts = async () =>
   [...(await posts())].sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0));
 
+// Homepage editorial hierarchy (proposal #31, light version): promotional order
+// is priority rank then recency — featured first, breaking second, then verified
+// (non-suspect/partial) news, and only then everything else. A suspect story is
+// never promoted above a verified one regardless of age.
+const editorialRank = (post) => {
+  if (post.featured) return 0;
+  if (post.breaking) return 1;
+  const badge = getBadge(post);
+  if (badge?.key === "confirmed") return 2;
+  if (badge?.key === "verified" || badge?.key === "partial") return 3;
+  return 4;
+};
+
+export const editorialOrder = async () =>
+  [...(await posts())].sort(
+    (a, b) =>
+      editorialRank(a) - editorialRank(b) ||
+      (b.ts ?? 0) - (a.ts ?? 0),
+  );
+
 export const featuredPost = async () => {
-  const sorted = await sortedPosts();
-  return sorted.find((post) => post.featured) ?? sorted[0];
+  const ordered = await editorialOrder();
+  return (
+    ordered.find((post) => post.featured) ??
+    ordered.find((post) => post.breaking) ??
+    ordered.find((post) => getBadge(post)?.key === "confirmed") ??
+    ordered[0]
+  );
 };
 
 export const breakingItems = async (n = 5) =>

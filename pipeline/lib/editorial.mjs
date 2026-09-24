@@ -37,6 +37,13 @@ const URGENCY_KEYWORDS = [
   'জরুরি', 'অবিলম্বে', 'আজ', 'আজই', 'তৎপর', 'রাত', 'সকালে', 'এখনই',
 ];
 
+// #24 breaking-news markers: an unfolding event where the first reports carry
+// only the initial fact and details are not yet confirmed.
+const BREAKING_MARKERS = new Set([
+  'ভূমিকম্প', 'বিস্ফোরণ', 'অগ্নিকাণ্ড', 'ধস', 'সংঘর্ষ', 'গুলিবর্ষণ', 'দুর্ঘটনা',
+  'জরুরি', 'এখনই', 'ঘূর্ণিঝড়', 'বন্যা', 'আগুন',
+]);
+
 const USEFUL_KEYWORDS = [
   'টিকিট', 'আবেদন', 'সময়সূচি', 'নম্বর', 'হটলাইন', 'রুট', 'ভাড়া', 'কোয়ারেন্টাইন',
   'নিবন্ধন', 'ফোন', 'ঠিকানা',
@@ -151,20 +158,96 @@ export function isDevelopingBrief(brief) {
   return (Date.now() - Math.max(...dates)) < 12 * 3600 * 1000;
 }
 
+// #24 — breaking-news instant mode. An immediate, still-thin event (fresh within
+// BREAKING_WINDOW_MS, only the initial fact confirmed, no time yet for a full
+// story to develop). These get an ultra-short brief that explicitly says the
+// situation is still developing and will be updated — never a padded 500-word
+// article for a 30-word event.
+const BREAKING_WINDOW_MS = 4 * 3600 * 1000;
+
+export function isBreakingBrief(brief) {
+  if (!isDevelopingBrief(brief)) return false;
+  const dates = (brief?.members ?? []).map((m) => Date.parse(m?.published_at ?? '') || 0).filter(Boolean);
+  if (!dates.length) return false;
+  if ((Date.now() - Math.max(...dates)) > BREAKING_WINDOW_MS) return false;
+  const pool = [
+    brief?.headline ?? '',
+    ...(brief?.members ?? []).map((m) => `${m?.title ?? ''} ${m?.lead ?? ''}`),
+  ].join(' ');
+  return [...BREAKING_MARKERS].some((k) => pool.includes(k));
+}
+
 export function publicationMode(brief) {
+  if (isBreakingBrief(brief)) return 'breaking';
   if (isDevelopingBrief(brief)) return 'developing';
   return publicationModeOf(contentSufficiency(brief));
 }
 
 // Length discipline is mode-aware: a verified-but-thin story must NOT be padded
-// to the STANDARD tier; a developing story allows a middle band. Falls back to
-// the classic member-count tiers for STANDARD stories (backward compatible).
-export function lengthForMode(mode, srcCount) {
+// to the STANDARD tier; a breaking/developing story uses the proposal #6 bands
+// when the fact pool justifies them, and complex 600–1000+ only for genuinely
+// rich clusters. NEVER pad — the writer stops when the information stops.
+// The optional `brief` lets length stay information-driven (thin cluster →
+// smaller band), which is the #1 principle applied mechanically.
+export function lengthForMode(mode, srcCount, brief) {
   if (mode === 'news-brief') return { min: 50, max: 150, tier: 'brief' };
-  if (mode === 'developing') return { min: 100, max: 240, tier: 'developing' };
+  if (mode === 'breaking') return { min: 100, max: 180, tier: 'breaking' };
+  if (mode === 'developing') {
+    const s = contentSufficiency((brief ?? {}));
+    if (s.score < 35) return { min: 150, max: 300, tier: 'developing' };
+    return { min: 300, max: 600, tier: 'developing' };
+  }
   if (srcCount <= 2) return { min: 100, max: 180, tier: 'short' };
-  if (srcCount === 3) return { min: 200, max: 350, tier: 'normal' };
-  return { min: 400, max: 550, tier: 'complex' };
+  if (srcCount === 3) return { min: 180, max: 350, tier: 'normal' };
+  const s = contentSufficiency((brief ?? {}));
+  if (s.score < 55) return { min: 300, max: 500, tier: 'complex' };
+  return { min: 600, max: 1000, tier: 'complex' };
+}
+
+// #33 why-it-matters: "কেন গুরুত্বপূর্ণ" may ONLY appear when a member lead
+// actually states a consequence (impact words present in the fact pool). When a
+// brief's facts carry no consequence, inventing importance would violate #8/#33.
+const CONSEQUENCE_WORDS = [
+  'প্রভাব', 'ঝুঁকি', 'যেমন ক্ষতি', 'মৃত্যু', 'নিহত', 'হতাহত', 'সড়ক দুর্ঘটনা',
+  'অনিশ্চিত', 'বন্ধ', 'বাতিল', 'সিদ্ধান্ত', 'দাম', 'দর', 'টাক', 'কম', 'বাড়ি',
+  'আবেদন', 'সময়সূচি', 'সরকারি', 'নিষেধাজ্ঞা', 'হুমকি', 'শঙ্কা', 'জরুরি',
+];
+
+export function whyItMattersSupported(brief) {
+  const pool = [
+    brief?.headline ?? '',
+    ...(brief?.members ?? []).map((m) => `${m?.title ?? ''} ${m?.lead ?? ''}`),
+  ].join(' ');
+  return CONSEQUENCE_WORDS.some((w) => pool.includes(w));
+}
+
+// #26 political/sensitive detection — a brief gets the stricter attribution rules
+// when its topic touches politics, courts, religion, crime-accusation, or
+// disaster/personal harm. Deterministic keyword gate; the strict rules are
+// prompt-side (no mechanical block — the LLM auditor n1/n6/n8 back it).
+const SENSITIVE_MARKERS = new Set([
+  'প্রধানমন্ত্রী', 'সরকার', 'সংসদ', 'আদালত', 'রায়', 'মামলা', 'অভিযোগ', 'হত্যা',
+  'ধর্ষণ', 'সন্ত্রাস', 'হামলা', 'রাজনৈতিক', 'নির্বাচন', 'মন্ত্রী', 'স্বামী',
+  'ধর্ম', 'মসজিদ', 'মন্দির', 'পুলিশের দাবি', 'গ্রেপ্তার', 'আটক', 'সেনাবাহিনী',
+  'সর্বোচ্চ আদালত', 'আপিল', 'তদন্ত', 'অন্তর্বর্তী', 'মৃত্যুদণ্ড',
+]);
+
+export function isSensitiveStory(brief) {
+  const pool = [
+    brief?.headline ?? '',
+    ...(brief?.members ?? []).map((m) => `${m?.title ?? ''} ${m?.lead ?? ''}`),
+  ].join(' ');
+  return [...SENSITIVE_MARKERS].some((k) => pool.includes(k));
+}
+
+// Mechanical #33/#2 check: a "কেন গুরুত্বপূর্ণ" / "কেন গুরুত্বপূর্ণ?" section in
+// the BODY is only legitimate when the fact pool carries a stated consequence;
+// otherwise it is invented importance and blocks publish (proposal #8/#33).
+export function whyItMattersViolation(brief, body) {
+  const text = String(body ?? '');
+  if (!/#*\s*কেন\s*গুরুত্বপূর্ণ/u.test(text)) return null;
+  if (whyItMattersSupported(brief)) return null;
+  return { type: 'why-it-matters-invented', note: 'কেন গুরুত্বপূর্ণ section present but no stated consequence in the fact pool' };
 }
 
 // ---- anti-repetition gate (Phase-2 #4/#5) ----------------------------------

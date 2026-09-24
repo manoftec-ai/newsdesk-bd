@@ -9,7 +9,11 @@ import {
   publicationModeOf,
   lengthForMode,
   isDevelopingBrief,
+  isBreakingBrief,
   repetitionViolations,
+  whyItMattersSupported,
+  whyItMattersViolation,
+  isSensitiveStory,
 } from '../lib/editorial.mjs';
 
 // ---- content sufficiency ----------------------------------------------------
@@ -62,8 +66,8 @@ test('publicationModeOf: only rich leads are rewarded', () => {
   assert.equal(publicationModeOf({ richLeads: 1, factClaims: 1, units: 12 }), 'standard');
 });
 
-// ---- developing --------------------------------------------------------------
-test('recent unfolding story with marker -> developing', () => {
+// ---- developing / breaking --------------------------------------------------
+test('ultra-fresh unfolding story with marker -> breaking', () => {
   const brief = {
     headline: 'চট্টগ্রামে অগ্নিকাণ্ড: উদ্ধার কাজ চলমান',
     members: [{
@@ -71,6 +75,20 @@ test('recent unfolding story with marker -> developing', () => {
       title: 'চট্টগ্রামে অগ্নিকাণ্ড',
       lead: 'চট্টগ্রামের নগরীতে অগ্নিকাণ্ডের ঘটনা ঘটেছে। জরুরি উদ্ধার কাজ চলমান। ক্ষয়ক্ষতির পরিমাণ এখনো নির্ধারণ করা যায়নি।',
       published_at: new Date(Date.now() - 2 * 3600 * 1000).toISOString(),
+    }],
+  };
+  assert.equal(publicationMode(brief), 'breaking');
+  assert.equal(lengthForMode('breaking', 1).tier, 'breaking');
+});
+
+test('recent unfolding story (within 12h, past breaking window) -> developing', () => {
+  const brief = {
+    headline: 'চট্টগ্রামে অগ্নিকাণ্ড: উদ্ধার কাজ চলমান',
+    members: [{
+      source_id: 'a',
+      title: 'চট্টগ্রামে অগ্নিকাণ্ড',
+      lead: 'চট্টগ্রামের নগরীতে অগ্নিকাণ্ডের ঘটনা ঘটেছে। জরুরি উদ্ধার কাজ চলমান। ক্ষয়ক্ষতির পরিমাণ এখনো নির্ধারণ করা যায়নি।',
+      published_at: new Date(Date.now() - 8 * 3600 * 1000).toISOString(),
     }],
   };
   assert.equal(publicationMode(brief), 'developing');
@@ -95,6 +113,55 @@ test('lengthForMode gives brief band for news-brief, classic bands for standard'
   assert.equal(lengthForMode('news-brief', 4).max, 150);
   assert.equal(lengthForMode('developing', 2).tier, 'developing');
   assert.deepEqual(lengthForMode('standard', 2), { min: 100, max: 180, tier: 'short' });
+});
+
+test('lengthForMode: proposal #6 bands — breaking 100–180, complex 600–1000 for rich 4+ clusters', () => {
+  assert.deepEqual(lengthForMode('breaking', 1), { min: 100, max: 180, tier: 'breaking' });
+  // rich 4-source cluster (brief passed) → complex 600–1000
+  const rich = {
+    headline: 'বিশাল প্রকল্পের সিদ্ধান্ত',
+    members: Array.from({ length: 5 }, () => ({
+      source_id: 'x', title: 'বিশাল প্রকল্পের সিদ্ধান্ত',
+      lead: 'সরকার আজ বৃহৎ প্রকল্পটি বাতিল করার সিদ্ধান্ত নিয়েছে। মন্ত্রণালয় জানায়, আর্থিক কারণেই এই সিদ্ধান্ত। প্রকল্পটির ব্যয় ৫০০ কোটি টাকা। পাঁচ হাজার মানুষ কাজ হারাতে পারেন বলে সংশ্লিষ্টরা জানিয়েছেন। স্থানীয় লোকজন প্রতিক্রিয়া জানিয়েছে। ভুক্তভোগীদের ক্ষতিপূরণের বিষয়ে এখনো কিছু জানা যায়নি।',
+    })),
+    claims: [
+      { claim_text: 'সিদ্ধান্তটি বাতিল করা হয়েছে', status: 'VERIFIED' },
+      { claim_text: 'কারণ আর্থিক', status: 'VERIFIED' },
+      { claim_text: 'ব্যয় ৫০০ কোটি টাকা', status: 'VERIFIED' },
+      { claim_text: 'বাতিলের কারণ', status: 'OFFICIAL' },
+    ],
+  };
+  const c = lengthForMode('standard', 5, rich);
+  assert.equal(c.tier, 'complex');
+  assert.equal(c.min, 600);
+  // thin 4+ cluster stays mid (never forced into 600–1000 — anti-pad #1)
+  const thin = { headline: 'তুচ্ছ খবর', members: Array.from({ length: 5 }, () => ({ source_id: 'x', title: 'তুচ্ছ খবর', lead: 'তুচ্ছ খবর' })), claims: [] };
+  const t = lengthForMode('standard', 5, thin);
+  assert.equal(t.tier, 'complex');
+  assert.equal(t.max, 500);
+});
+
+// ---- #33 why-it-matters ------------------------------------------------------
+const IMPACT_BRIEF = {
+  headline: 'বন্যায় সিলেটে ক্ষতি',
+  members: [{ source_id: 'a', title: 'বন্যায় সিলেটে ক্ষতি', lead: 'বন্যায় সিলেটের তিন লাখ মানুষ গৃহহীন হয়েছে। বিদ্যালয়গুলো বন্ধ ঘোষণা করেছে জেলা প্রশাসন।' }],
+};
+test('whyItMattersSupported: consequence word in pool -> true', () => {
+  assert.equal(whyItMattersSupported(IMPACT_BRIEF), true);
+  assert.equal(whyItMattersSupported({ headline: 'একটি সাধারণ খবর', members: [{ title: 'খবর', lead: 'খবর' }] }), false);
+});
+test('whyItMattersViolation blocks invented importance, allows supported', () => {
+  const unsupported = { headline: 'ঢাকায় গাছ পড়েছে', members: [{ source_id: 'a', title: 'ঢাকায় গাছ পড়েছে', lead: 'ঢাকায় একটি গাছ পড়েছে।' }] };
+  const body = 'ঢাকায় একটি গাছ পড়েছে।\n\n## কেন গুরুত্বপূর্ণ\nএটি দেশের অর্থনীতিকে প্রভাবিত করবে।';
+  assert.ok(whyItMattersViolation(unsupported, body));
+  assert.equal(whyItMattersViolation(unsupported, 'ঢাকায় একটি গাছ পড়েছে।'), null);
+  assert.equal(whyItMattersViolation(IMPACT_BRIEF, body), null);
+});
+
+// ---- #26 sensitive-topic detection -------------------------------------------
+test('isSensitiveStory flags political/court/crime topics', () => {
+  assert.equal(isSensitiveStory({ headline: 'আদালতের রায়', members: [{ title: 'আদালতের রায়', lead: 'সর্বোচ্চ আদালত আজ রায় দিয়েছে।' }] }), true);
+  assert.equal(isSensitiveStory({ headline: 'মেট্রো চালু', members: [{ title: 'মেট্রো চালু', lead: 'মেট্রো চালু হয়েছে।' }] }), false);
 });
 
 // ---- anti-repetition gate ----------------------------------------------------

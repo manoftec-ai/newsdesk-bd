@@ -36,6 +36,11 @@ test('clean body passes mechanical audit (3 sources)', () => {
   assert.equal(r.pass, true, JSON.stringify(r.fails));
 });
 
+test('why-it-matters section without evidence blocks (n15)', () => {
+  const r = mechanicalAudit(brief(3), goodBody() + '\n\n## কেন গুরুত্বপূর্ণ\nএটি জাতীয় অর্থনীতিতে বড় প্রভাব ফেলবে।');
+  assert.ok(r.fails.some((f) => f.id === 'n15'), JSON.stringify(r.fails));
+});
+
 test('speculation phrase blocks (c3)', () => {
   const r = mechanicalAudit(brief(3), goodBody() + '\n\nপর্যবক্ষকরা মনে করছেন, ভাড়া বাড়বে।');
   assert.ok(r.fails.some((f) => f.id === 'c3'));
