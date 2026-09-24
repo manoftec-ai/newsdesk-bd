@@ -5,6 +5,7 @@
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { openDb, upsertClaim, addClaimEvidence } from './db.mjs';
+import { applyClaimVerification } from './claim-verify.mjs';
 import { loadConfig, tierForCategory } from './config.mjs';
 import { loadTrust } from './verify.mjs';
 import { loadPublishedTitles, isTitleDuplicate } from './published.mjs';
@@ -157,6 +158,7 @@ export function exportBriefs({ status = 'passed' } = {}) {
     const f = join(BRIEFS_DIR, `${brief.slug}.json`);
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');
     try { populateClaimsFromBrief(db, brief); } catch (e) {}
+    try { applyClaimVerification(db); } catch (e) {}
     written++;
   }
   console.log(`extract done. briefs written=${written} skipped=${skipped} title-dups=${dups} dir=${BRIEFS_DIR}`);
