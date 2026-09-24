@@ -65,7 +65,7 @@
 - [x] 1.10 Fresh-news voice: source-meta/outlet/invented-actor ban + মূল খবর/কী জানা গেছে/কী এখনো জানা যায়নি headings (#3/#4/#7/#11/#27) — 69e5a53
 
 ## Next phase (proposal P0 remainder + P1, in order)
-- [ ] N1 **docs/editorial-style-guide.md** (#28) — the permanent JachaiDesk editorial spec doc
+- [x] N1 **docs/editorial-style-guide.md** (#28) — the permanent JachaiDesk editorial spec doc — DONE 2026-09-24 (docs/editorial-style-guide.md; 11 sections; banned-table mirrors the exact gate lists)
 - [ ] N2 **Auditor LLM alignment** (#29/#36): rename/expand LLM audit points to the spec checklist
   (factuality, source support, claim coverage, natural Bengali, repetition, speculation, AI
   filler, headline accuracy, quote integrity, context relevance, attribution, readability)
