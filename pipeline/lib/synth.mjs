@@ -140,31 +140,35 @@ export function writingPrompt(brief) {
 
 Write ONE original Bengali news article (সংবাদ) about this verified story.
 
-## How to write it (synthesize-first)
-- Treat ALL member leads below as ONE fact pool. Merge them into a single coherent
-  narrative. NEVER walk through the outlets one by one.
-- Body structure (in this order):
+## How to write it (fresh-news voice)
+- Write ONE plain, fresh Bangla news story (সংবাদ). Report the NEWS itself — the
+  event, the facts, what happened — NOT the sources and NOT what each outlet said.
+- The member leads below are ONE fact pool: read them, extract the facts, then
+  write the story in your own words as if you were on the scene. NEVER walk through
+  the outlets one by one and NEVER compare "one report said X, another said Y".
+- Body structure (in this order — omit any section that would be empty):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
   2. "এক নজরে" bullet list of 3–4 key points. Format EXACTLY like this (bold label, then bullets, then a blank paragraph before the next block):
      **এক নজরে**
      - point one
      - point two
      - point three
-  3. "## কী ঘটেছে" — 2–4 short paragraphs telling the story in plain chronology or logic.
-  4. "## যা এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
+  3. "## মূল খবর" — 2–5 short paragraphs telling the story in plain chronology or logic.
+  4. "## কী জানা গেছে" — ONLY when important verified details need their own explanation
+     (numbers, dates, documents, decisions). Omit if the মূল খবর section already carries them.
+  5. "## কী এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
      identities, decisions). Keep it to what is genuinely NOT reported. Omit the whole
      section if nothing is unknown.
-  5. A short closing verification line IN PROSE (no list, no media names): e.g.
-     "সংশ্লিষ্ট সূত্রে বিষয়টি নিশ্চিত করা হয়েছে।"
-- Source attribution rules (hard):
-  - NEVER name a media outlet, newspaper, or news agency in the body text. The outlet names
-    are rendered automatically with links in the 'সূত্র:' section from front matter.
-  - Attribute facts to the ACTOR instead: "পুলিশ জানিয়েছে, …", "মন্ত্রণালয় জানায়, …",
-    "সংবাদ সম্মেলনে তিনি বলেন, …". Only when no actor exists may you use neutral phrasing
-    like "সূত্র জানিয়েছে, …" or "বিষয়টি নিশ্চিত করা হয়েছে।"
-  - FORBIDDEN in body: outlet names (প্রথম আলো, বিডিনিউজ২৪, …), "…প্রতিবেদনে বলা হয়েছে…",
-    "একই খবর প্রকাশ করেছে…", "দুই প্রতিবেদনেই…", "একাধিক সংবাদমাধ্যম…". State each fact once;
-    attribute to the actor once.
+- Source rule (hard): the article is a finished news story. A reader should NOT be
+  able to tell which outlet reported what. NEVER name a media outlet, newspaper or
+  news agency in the body; NEVER write "...প্রতিবেদনে বলা হয়েছে...", "দুই
+  প্রতিবেদনেই...", "একই খবর প্রকাশ করেছে...", "একাধিক সংবাদমাধ্যম...", or a closing
+  "…প্রতিবেদনে বিষয়টি নিশ্চিত করেছে…"। The sources are rendered once, AFTER the news,
+  with links in the automatic 'সূত্র:' section from front matter.
+- Attribute facts to the ACTOR only when it adds journalism (who said/did it):
+  "পুলিশ জানিয়েছে, …", "মন্ত্রণালয় জানায়, …", "সংবাদ সম্মেলনে তিনি বলেন, …".
+  When there is no actor, just state the fact plainly — do not invent a source
+  citation. Say each fact once.
 
 ## Constraints (hard)
 - ORIGINAL synthesis only. Never reprint any one outlet's article. Rewrite in your own words.
@@ -282,17 +286,77 @@ function extractExcerpt(md) {
 // appear in a published body unless the brief explicitly quotes someone saying
 // it. finalize_stories.mjs BLOCKS (never publishes) any body that hits these;
 // the story is simply picked again and re-authored on a later automation run.
-export const BANNED_SPECULATION = [
+//
+// News-style: the reader wants SIMPLE FRESH NEWS, not a comparison of "what the
+// outlets said". Outlet names and source-comparison meta-language are banned from
+// the body everywhere; sources render once AFTER the news in the front-matter
+// 'সূত্র:' block (site-side, linked). audit.mjs also enforces these.
+export const BANNED_OUTLET_NAMES = [
+  'প্রথম আলো', 'দৈনিক ইত্তেফাক', 'কালের কণ্ঠ', 'যুগান্তর', 'সমকাল',
+  'দৈনিক বাংলা', 'ঢাকা ট্রিবিউন', 'ডেইলি স্টার', 'বাংলা ট্রিবিউন',
+  'বিডিনিউজ২৪', 'দ্য ইন্ডিপেন্ডেন্ট', 'দেশ রূপান্তর', 'জামুনা টিভি',
+  'এটিএন বাংলা', 'চ্যানেল আই', 'দ্য বিজনেস স্ট্যান্ডার্ড', 'বিবিসি বাংলা',
+  'ভিওএ বাংলা', 'দ্য ডেইলি অবজারভার', 'বিডি২৪লাইভ', 'দৈনিক আজাদী',
+  'দ্য গার্ডিয়ান', 'রয়টার্স', 'এপি', 'এএফপি', 'ইউএনবি',
+];
+
+// Meta-language that makes the article ABOUT the sources instead of ABOUT the
+// news: reporting-on-reporting. The reader must never see "এক প্রতিবেদনে… অন্য
+// প্রতিবেদনে…", "দুই প্রতিবেদনেই বলা হয়েছে", "প্রতিবেদনে প্রকাশ পেয়েছে",
+// or a closing "…প্রতিবেদনে বিষয়টি নিশ্চিত করা হয়েছে"। Only the front-matter
+// সূত্র block carries sources, AFTER the news.
+export const BANNED_SOURCE_META = [
+  /প্রতিবেদনে\s+বলা\s+হয়েছে/u,
+  /প্রতিবেদনেই\s+বলা\s+হয়েছে/u,
+  /দুই\s+প্রতিবেদনে/u,
+  /দুই\s+ভিন্ন\s+শিরোনামে/u,
+  /একই\s+বিষয়ে\s+দুই\s+দৈনিক/u,
+  /একই\s+খবর\s+প্রকাশ\s+করেছে/u,
+  /একাধিক\s+সংবাদমাধ্যম/u,
+  /সংবাদ\s+মাধ্যমে\s+প্রকাশিত/u,
+  /প্রতিবেদনে\s+প্রকাশ\s+পেয়েছে/u,
+  /প্রতিবেদনে\s+উল্লেখ/u,
+  /প্রতিবেদনে\s+জানা\s+গেছে/u,
+  /প্রতিবেদন\s+দুইটি/u,
+  /দ্বিতীয়\s+প্রতিবেদনে/u,
+  /আরেক\s+প্রতিবেদনে/u,
+  /একটি\s+প্রতিবেদনে/u,
+  /অন্য\s+প্রতিবেদনে/u,
+  /গণমাধ্যমের\s+প্রতিবেদনে/u,
+  /সংবাদমাধ্যমের\s+প্রতিবেদনে/u,
+  /প্রতিবেদনের\s+প্রকাশিত\s+অংশ/u,
+  /বিষয়টি\s+নিশ্চিত\s+করেছে\s+[^\s।]+\s*[।]?$/u, // trailing "…নিশ্চিত করেছে সমকাল।"
+];
+
+// Invented anonymous actors / analysis (proposal #7): a body must NEVER create
+// its own "observers/experts/analysts". Only an explicitly quoted, sourced
+// person may be named. "এদিকে/অন্যদিকে" are intentionally NOT banned — they
+// are normal Bengali transitions and hard-blocking them would false-reject
+// natural bodies; the writer simply must not pad with them.
+export const BANNED_INVENTED_ACTORS = [
   /পর্যবক্ষক(রা)?\s+মনে\s+করছেন/u,
-  /পর্যবক্ষকদের\s+মনে\s+করছেন/u,
+  /পর্যবক্ষক(রা)?\s+বলছেন/u,
   /পর্যবক্ষকদের\s+মতে/u,
+  /বিশেষজ্ঞরা\s+মনে\s+করছেন/u,
+  /বিশেষজ্ঞরা\s+বলছেন/u,
+  /বিশেষজ্ঞদের\s+মতে/u,
+  /সংশ্লিষ্টরা\s+(?:মনে\s+)?[ব]লছেন/u,
+  /সংশ্লিষ্টরা\s+মনে\s+করছেন/u,
+  /অনেকে\s+মনে\s+করছেন/u,
+  /কেউ\s+কেউ\s+মনে\s+করছেন/u,
+  /এ\s+নিয়ে\s+(?:রাজনৈতিক\s+অঙ্গনে\s+)?আলোচনা\s+সৃষ্টি/u,
+  /বিষয়টি\s+গুরুত্বের\s+সাথে\s+দেখছেন/u,
+  /গুরুত্বের\s+সঙ্গে\s+দেখছেন/u,
+  /এ\s+ধরনের\s+পরিস্থিতিতে/u,
+  /কয়েকটি\s+সূত্র/u,
+  /বিভিন্ন\s+সূত্র/u,
+];
+
+export const BANNED_SPECULATION = [
   /বলে\s+মনে\s+করছেন/u,
   /বলে\s+মনে\s+করা হচ্ছে/u,
   /মনে\s+করা হচ্ছে/u,
-  /মনে\s+করছেন\s+অনেকে/u,
-  /অনেকে\s+মনে\s+করছেন/u,
   /আশা\s+করছেন\s+পর্যবক্ষক/u,
-  /পর্যবক্ষকরা\s+আশা\s+করছেন/u,
   /আরও\s+তথ্য\s+প্রকাশ\s+আশা/u,
   /আলোচনার\s+জন্ম\s+দেবে/u,
   /বলে\s+ধারণা/u,
@@ -315,6 +379,15 @@ export function findEditorialViolations(body) {
   }
   for (const re of BANNED_FILLER_SENTENCES) {
     if (re.test(text)) hits.push({ type: 'filler', pattern: re.source, match: re.source });
+  }
+  for (const re of BANNED_SOURCE_META) {
+    if (re.test(text)) hits.push({ type: 'source-meta', pattern: re.source, match: re.source });
+  }
+  for (const re of BANNED_INVENTED_ACTORS) {
+    if (re.test(text)) hits.push({ type: 'invented-actor', pattern: re.source, match: re.source });
+  }
+  for (const name of BANNED_OUTLET_NAMES) {
+    if (text.includes(name)) hits.push({ type: 'outlet-name', pattern: name, match: name });
   }
   return hits;
 }

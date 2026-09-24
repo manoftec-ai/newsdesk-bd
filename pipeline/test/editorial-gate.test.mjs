@@ -9,7 +9,7 @@ test('blocks "পর্যবক্ষকরা মনে করছেন" specu
   const body = `${bn} বৈঠকের পর পর্যবক্ষকরা মনে করছেন, দুই পক্ষের মধ্যে সমঝোতা হবে।`;
   const hits = findEditorialViolations(body);
   assert.equal(hits.length, 1);
-  assert.equal(hits[0].type, 'speculation');
+  assert.equal(hits[0].type, 'invented-actor');
 });
 
 test('blocks "মনে করা হচ্ছে" and "আলোচনার জন্ম দেবে"', () => {
@@ -31,15 +31,15 @@ test('blocks empty predictive "আলোচনা হতে পারে" senten
   assert.equal(hits[0].type, 'filler');
 });
 
-test('allows a clean synthesized factual body', () => {
+test('allows a clean synthesized factual body (fresh-news voice)', () => {
   const body = `${bn} নিউইয়র্কে প্রধানমন্ত্রীর সঙ্গে গেটস ফাউন্ডেশনের সিইওর বৈঠক হয়েছে।
-বাংলা ট্রিবিউন ও যুগান্তর জানিয়েছে, বুধবার একটি স্থানীয় হোটেলে বৈঠকটি অনুষ্ঠিত হয়।
+বুধবার একটি স্থানীয় হোটেলে বৈঠকটি অনুষ্ঠিত হয়।
 
-## কী ঘটেছে
+## মূল খবর
 
-বৈঠকে কোন বিষয় আলোচনা হয়েছে তা দুই প্রতিবেদনে বিস্তারিত বলা হয়নি।
+বৈঠকে কোন বিষয় আলোচনা হয়েছে তা বিস্তারিত জানানো হয়নি।
 
-## যা এখনো জানা যায়নি
+## কী এখনো জানা যায়নি
 
 বৈঠকে কী কী বিষয় নিয়ে আলোচনা হয়েছে এবং কোনো সিদ্ধান্ত হয়েছে কি না, এবিষয়ে বিস্তারিত প্রকাশিত হয়নি।`;
   assert.equal(findEditorialViolations(body).length, 0);
@@ -63,4 +63,33 @@ test('targetWords: 3 sources -> normal (200-350)', () => {
 test('targetWords: ≥4 sources -> complex (400-550)', () => {
   assert.deepEqual(targetWords({ members: [{}, {}, {}, {}] }), { min: 400, max: 550, tier: 'complex' });
   assert.equal(targetWords({ members: [] }).tier, 'short');
+});
+test('blocks outlet name in body (news-style: sources render after news)', () => {
+  const body = `${bn} সমকাল ও কালের কণ্ঠের প্রতিবেদনে বিষয়টি নিশ্চিত করা হয়েছে।`;
+  const hits = findEditorialViolations(body);
+  assert.ok(hits.some((h) => h.type === 'outlet-name'), JSON.stringify(hits));
+});
+
+test('blocks reporting-on-reporting "দুই প্রতিবেদনে বলা হয়েছে" (source-meta)', () => {
+  const body = `${bn} দুই প্রতিবেদনে বলা হয়েছে, বৈঠকটি বুধবার অনুষ্ঠিত হয়েছে।`;
+  const hits = findEditorialViolations(body);
+  assert.ok(hits.some((h) => h.type === 'source-meta'), JSON.stringify(hits));
+});
+
+test('blocks "…প্রতিবেদনে প্রকাশ পেয়েছে" source-meta', () => {
+  const body = `${bn} এই বক্তব্যটিই দুই ভিন্ন শিরোনামে প্রকাশ পেয়েছে।`;
+  const hits = findEditorialViolations(body);
+  assert.ok(hits.some((h) => h.type === 'source-meta'), JSON.stringify(hits));
+});
+
+test('blocks invented anonymous "বিশেষজ্ঞরা মনে করছেন"', () => {
+  const body = `${bn} বিশেষজ্ঞরা মনে করছেন, এটি প্রভাব ফেলবে।`;
+  const hits = findEditorialViolations(body);
+  assert.ok(hits.some((h) => h.type === 'invented-actor'), JSON.stringify(hits));
+});
+
+test('blocks "এ ধরনের পরিস্থিতিতে" filler', () => {
+  const body = `${bn} এ ধরনের পরিস্থিতিতে জরুরি ব্যবস্থা নেওয়া হয়।`;
+  const hits = findEditorialViolations(body);
+  assert.ok(hits.some((h) => h.type === 'invented-actor'), JSON.stringify(hits));
 });

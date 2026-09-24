@@ -41,7 +41,7 @@ export const AUDIT_POINTS = [
   { id: 'c5', en: 'Attribution', rule: 'Facts are attributed to ACTORS (পুলিশ/মন্ত্রণালয়), never to media outlet names.' },
   { id: 'c6', en: 'Headline accuracy', rule: 'Title is an accurate, concise summary of the strongest supported claim.' },
   { id: 'c7', en: 'Finished story', rule: 'Reads as a published news story. No "draft/awaiting review/awaiting expert" footnotes or disclaimers.' },
-  { id: 'c8', en: 'Structure', rule: 'Lead paragraph first, এক নজরে key points, কী ঘটেছে section in order; যা এখনো জানা যায়নি only if real unknowns.' },
+  { id: 'c8', en: 'Structure', rule: 'Lead paragraph first, এক নজরে key points, মূল খবর section in order; কী এখনো জানা যায়নি only if real unknowns.' },
   { id: 'c9', en: 'Length discipline', rule: 'Body length inside the tier target (100–180 / 200–350 / 400–550 words); stops when information stops.' },
   { id: 'c10', en: 'Source hygiene', rule: 'No সূত্র: list, no raw URLs, no media links inside the body — sources render from front matter.' },
 ];
@@ -119,7 +119,7 @@ Rules (audit all 10 rigorously; do NOT rubber-stamp):
 5. c5 attribution — media outlet names in the body FAIL; actor attribution (পুলিশ/মন্ত্রণালয়) required.
 6. c6 headline accuracy — title must match the strongest supported claim without exaggeration.
 7. c7 finished story — draft/editorial-review/awaiting disclaimers FAIL.
-8. c8 structure — lead up front; এক নজরে (if ≥3 sources); কী ঘটেছে present; যা এখনো জানা যায়নি only if real unknowns.
+8. c8 structure — lead up front; এক নজরে (if ≥3 sources); মূল খবর present; কী এখনো জানা যায়নি only if real unknowns.
 9. c9 length discipline — within 100–180 / 200–350 / 400–550 words by source count; no padding.
 10. c10 source hygiene — সূত্র list, raw URLs, or media links in the body FAIL.
 
