@@ -82,9 +82,12 @@ export function evaluateCluster(members, cfg, trust, vcfg = defaultVerifyConfig(
     : 'skeptical';
   const tier = clusterTier(members);
   const minB = vcfg.min_badge[tier];
-  const status = score <= vcfg.single_val - 1 ? 'human_check'           // skeptical: never publish automatically
+  let status = score <= vcfg.single_val - 1 ? 'human_check'           // skeptical: never publish automatically
     : BADGE_RANK[badge] < BADGE_RANK[minB] ? 'human_check'              // below tier floor
     : 'passed';
+  // Automation-only enforcement: publish only when status==='passed'
+  // Tier A: require badge >= tier floor (confirmed minimum) and passed status.
+  if (status !== 'passed') status = 'human_check';
   return { tier, score, badge, status, signals };
 }
 
