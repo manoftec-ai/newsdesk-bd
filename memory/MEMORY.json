@@ -34,6 +34,13 @@
   },
   "decisions": [
     {
+      "date": "2026-09-24",
+      "id": "D56",
+      "title": "P0 evidence-architecture batch — governance gate + Claim→Evidence graph (automation-only)",
+      "context": "User: full automation, no human touch, do tasks one-by-one, keep in memory/tests/backups.",
+      "detail": "verify.mjs forces status=human_check unless passed; extract skips non-passed + Tier A requires confirmed/verified; finalize refuses non-passed verdicts (+blocked counter). New SQLite claims/claim_evidence/conflicts tables + upsertClaim/addClaimEvidence/recordConflict; populateClaimsFromBrief dual-writes event+headline claims w/ evidence. Committed fc9f9e9."
+    },
+    {
       "date": "2026-09-23",
       "id": "D53",
       "decision": "Automation outage root-caused + fixed: auto-author.yml invalid YAML since D50 (column-1 brief; line) -> GitHub could not register workflow -> schedule (:17) + workflow_run:[pipeline] triggers dead since 14:39 UTC; every push made stale-registry error runs (event push, failure, 0 jobs, logs 404). pipeline kept fetching/extracting (c2633e1 14:40) but nothing authored/published -> homepage frozen. Fix commit d6d6359: restored 14-space indent + refined author prompt (short verification closing; do NOT append সূত্র: body list — rendered from frontmatter, aligned D52). Verified: dispatch run 35880916775 success; published d70a6eb 6 stories (economy-446, national-442/445/447/448, sports-443); homepage live new lead. pipeline 15:03 failure = transient Commit-state push race.",
@@ -734,6 +741,6 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "sessionsCount": 36
 }
