@@ -34,6 +34,12 @@ function briefFor(slug) {
 export function buildEventGraph(db, { minEvents: minEv = minEvents, slugFilter = slugArg } = {}) {
   const stories = {};
   const files = readdirSync(join(HERE, '../state/briefs')).filter((f) => f.endsWith('.json')).sort();
+  // cluster_id -> slug (inverts the brief index so related stories resolve to site slugs)
+  const slugByCluster = new Map();
+  for (const f of files) {
+    const brief = briefFor(f.replace(/\.json$/, ''));
+    if (brief?.clusterId) slugByCluster.set(Number(brief.clusterId), f.replace(/\.json$/, ''));
+  }
   for (const f of files) {
     const slug = f.replace(/\.json$/, '');
     if (slugFilter && slug !== slugFilter) continue;
@@ -42,7 +48,7 @@ export function buildEventGraph(db, { minEvents: minEv = minEvents, slugFilter =
     if (!clusterId) continue;
     const meta = storyMeta(db, clusterId);
     const tl = storyTimeline(db, clusterId);
-    if (tl.events.length < minEvents) continue;
+    if (tl.events.length < minEv) continue;
     stories[slug] = {
       cluster_id: clusterId,
       headline: meta?.headline ?? brief?.headline ?? null,
@@ -52,7 +58,15 @@ export function buildEventGraph(db, { minEvents: minEv = minEvents, slugFilter =
       events: tl.events,
       related: relatedStories(db, clusterId).map((r) => {
         const m = storyMeta(db, r.cluster_id);
-        return { cluster_id: r.cluster_id, actor_links: r.actor_links, source_links: r.source_links, claim_count: r.claim_count, headline: m?.headline ?? null };
+        const rSlug = slugByCluster.get(Number(r.cluster_id));
+        return {
+          cluster_id: r.cluster_id,
+          slug: rSlug,
+          actor_links: r.actor_links,
+          source_links: r.source_links,
+          claim_count: r.claim_count,
+          headline: m?.headline ?? null,
+        };
       }),
     };
   }
