@@ -64,6 +64,10 @@ jobs:
         run: |
           node tools/source_health.mjs || echo "source_health skipped/failed (harmless)"
 
+      - name: Story event graph (site data)
+        run: |
+          node tools/event_graph.mjs || echo "event_graph skipped/failed (harmless)"
+
       - name: Commit state
         run: |
           git config user.name "newsdesk-bd-bot"
