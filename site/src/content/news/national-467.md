@@ -1,0 +1,36 @@
+---
+title: "‘কখনোই মাথা নত করব না’, ট্রাম্পকে পেজেশকিয়ানের হুঁশিয়ারি"
+seoTitle: "‘কখনোই মাথা নত করব না’, ট্রাম্পকে পেজেশকিয়ানের হুঁশিয়ারি"
+excerpt: "ইরানের প্রেসিডেন্ট মাসুদ পেজেশকিয়ান জাতিসংঘে দেওয়া এক ভাষণে বলেছেন, ইরান কখনোই মাথা নত করবে না। ট্রাম্পকে উদ্দেশ করে তিনি এই হুঁশিয়ারি দিয়েছেন। তিনি জাতিসংঘের মঞ্চ থেকে বলেন, আ"
+seoDescription: "ইরানের প্রেসিডেন্ট মাসুদ পেজেশকিয়ান জাতিসংঘে দেওয়া এক ভাষণে বলেছেন, ইরান কখনোই মাথা নত করবে না। ট্রাম্পকে উদ্দেশ করে তিনি এই হুঁশিয়ারি দিয়েছেন। তিনি জ…"
+date: 2026-09-24T02:29:21.000Z
+category: "national"
+tags: []
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints: []
+faq: []
+sources:
+  - name: "দৈনিক ইত্তেফাক"
+    url: "https://news.google.com/rss/articles/CBMimwRBVV95cUxNeXFGYzctM3ZVeFVGdERUeXgxdGYyR0tLc2xNYjRRM1czOGRRdHM4SENnZi1SSmdyR2JkZG5mNTZqUWY0cUxfM1d2T0RFRUw1NGdoU2RUYjJYTnUwQlBjWDFJaW9mN3BxUnMtdHBtcndoVS1OSWU0UFdMcFNZRkQ5ckdYckt3dHkyWGpwQ05JekNNd185T2FKOC1CdkZ4ZF84N1BCQ09DNUV5ZFNKeTlGTERoS09qbXgwNXNJa0pOR2hGVHNIU0NoRGRNLVA5TFQ1eEZPamZzVUZaM0xPOXg0MXp4akdyUXNUcGZSMXdpOXotczBsQ24yd1pSaE9BMUdIWGZtYTZTdk9tNUczZnUzdkxJTXlsNDFvN2NXUFpRN2lzd0hSdmJ0UlhuS19fZHF3QVUzY3BBd1VPbGNuY29zUzI0MWs1MDZGdS1uYk1sN0dXZUtjUDdUNUdPSmFOR2FHUFVfSU1FazRxVThUWTR1U3FVdlJ1TkdNek04Y0R5dVByZDJISDZIdDFNWWxDaHZ4RFMtcVBybnJqNmQ5WUNPZG5XWTM2VzB2b1IzYnNhUmc4ZE96RkEtSVM1RUo5MzdfNjQ0Q1I1eHgtVWlhZTNKck1FR2xYbE80RV9Yd01nU1hoNGVWVmN4a05WbFVXTXUtem52VnN5NTNmalFqR3BSR2R2Vzc4THBoQ3R1WFNHTXhLcmhET0hReG1oZ9IBoARBVV95cUxPZXE1NG94VTdyVUlPRk9Cczl5eDd4YnExV25feG5nWDJtazhYRnF2NWhMMzR4X3hjQnZqQTV0OHhKY2xia2N4SlcycldGTTI1Nk5NcnVCdVBPV3JIRks2WHA4Q2oxQTNMdDBfbUMyWVotUmMtUTRIRmFOUTF5azF3Y2ZfejNCZ09uUXBlTUtFYVhnVEtOc1JQdmI4Rk4wUVVpQkcyLTRWMjI3QVYyOEQ1OUVNclZYd0hYNGU3eldQTVJhNTE1eEhiOVpJdnhnZ05ldjBKWTBhaWJtT2FMbU5SVGVwWDJmeXhOclBmMTMxRHA2ZE90dnRodUdaSTBjMWFVOUN4YUhHY2FvUDh1RkdacS1xRzJ3T2V5VG90RjlOY0x3M1k0UFoxWElFaDlPRktkQXk0YS01cHpZejFaTFZrR2RiNFJHd0xoclBiUk41amctN2dBQ3lxRGR2WkJFRWJvVDBGU0pZR2FEQkY5TUcyenQ1ekx3TlNVRG5XZFBmaDZpanBua3hNTGJZVHZCSnc0WktmaHZrSU9yRE54Z3J1ZDFyVERDQ05BcU5RT0xhMGR6ZWlPLTZ5ZkctUWpQa242dExHSGh0MEd3NWtpT25OaWRRLU8tYmtJZnpfejZUUF9yMFhqUzFQQklZbEoyRzZ4V0NndEFVeGR5b0NRaWM0NTQwUHhZXzNKV092UHpaUk0tYTdnOXhmNm5mNm5uZDhw?oc=5"
+  - name: "jugantor"
+    url: "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JN0ZDZVpuSFFJM1BJTGNIeFBza0tiTmhweXFjSmF3ZjJXX1hUU216TDBKRUJHVVNvVHBpM0Y2TWZHb0Y4Z09Udks2a1pad1d0ZDJUQWRCZ0NsQQ?oc=5"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (ittefaq)"
+    - type: "paper"
+      label: "reputable paper corroboration (jugantor)"
+
+---
+
+ইরানের প্রেসিডেন্ট মাসুদ পেজেশকিয়ান জাতিসংঘে দেওয়া এক ভাষণে বলেছেন, ইরান কখনোই মাথা নত করবে না। ট্রাম্পকে উদ্দেশ করে তিনি এই হুঁশিয়ারি দিয়েছেন।
+
+তিনি জাতিসংঘের মঞ্চ থেকে বলেন, আমরা কখনো মাথা নত করব না। জাতিসংঘ সাধারণ পরিষদের চলমান অধিবেশনে ভাষণ দিতে গিয়ে এই মন্তব্য করেন ইরানের প্রেসিডেন্ট।
