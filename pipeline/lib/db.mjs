@@ -101,6 +101,9 @@ export function openDb(path = DB_PATH) {
       confidence REAL NOT NULL DEFAULT 0,
       support_count INTEGER NOT NULL DEFAULT 0,
       contradiction_count INTEGER NOT NULL DEFAULT 0,
+      evidence_hash TEXT,
+      evidence_count INTEGER NOT NULL DEFAULT 0,
+      oldest_evidence_at TEXT,
       valid_from TEXT NOT NULL,
       valid_until TEXT,
       reason TEXT NOT NULL DEFAULT 'verify', -- initial | re-verify | conflict
@@ -140,7 +143,21 @@ export function openDb(path = DB_PATH) {
     );
     CREATE INDEX IF NOT EXISTS idx_ac_claim ON actors_claims(claim_id);
   `);
+  // Migrations for the RACED committed store.db — a parallel worker may already
+  // have created claim_snapshots with the pre-evidence shape. CREATE-or-skip does
+  // not add columns, so ALTER-add any missing ones (idempotent, safe to re-run).
+  ensureColumn(db, 'claim_snapshots', 'evidence_hash', 'TEXT');
+  ensureColumn(db, 'claim_snapshots', 'evidence_count', 'INTEGER NOT NULL DEFAULT 0');
+  ensureColumn(db, 'claim_snapshots', 'oldest_evidence_at', 'TEXT');
   return db;
+}
+
+// Add a column to a table if it does not exist yet (idempotent migration).
+export function ensureColumn(db, table, column, ddl) {
+  const cols = db.prepare(`PRAGMA table_info(${table})`).all().map((c) => c.name);
+  if (!cols.includes(column)) {
+    db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${ddl}`);
+  }
 }
 
 // Insert one raw item. Returns { inserted, id } — url unique constraint guards exact dups.

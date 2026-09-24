@@ -121,3 +121,25 @@ test('applyClaimVerification advances updated_at and dates snapshots with the ru
   row = db.prepare('SELECT updated_at FROM claims WHERE id=1').get();
   assert.equal(row.updated_at, '2026-09-25T09:00:00.000Z');
 });
+
+test('new evidence opens a NEW snapshot even when status/confidence are unchanged (drift)', () => {
+  const db = openDb(':memory:');
+  const trust2 = { sources: { prothomalo: 'top', banglatribune: 'top' } };
+  db.prepare(`INSERT INTO claims(cluster_id, claim_text, created_at, updated_at) VALUES (1, ?, ?, ?)`).run('Dengue cases rising', '2026-09-24T00:00:00.000Z', '2026-09-24T00:00:00.000Z');
+  db.prepare(`INSERT INTO claim_evidence(claim_id, source_id, relation, created_at) VALUES (1, ?, ?, ?)`).run('prothomalo', 'supports', '2026-09-24T08:00:00.000Z');
+  applyClaimVerification(db, { trust: trust2, now: '2026-09-24T09:00:00.000Z' });
+  const h1 = claimStatusAt(db, 1).evidence_hash;
+
+  // same verdict result, but a SECOND independent source appears -> evidence set changed
+  db.prepare(`INSERT INTO claim_evidence(claim_id, source_id, relation, created_at) VALUES (1, ?, ?, ?)`).run('banglatribune', 'supports', '2026-09-25T08:00:00.000Z');
+  applyClaimVerification(db, { trust: trust2, now: '2026-09-25T09:00:00.000Z' });
+
+  const tl = claimTimeline(db, 1);
+  assert.equal(tl.length, 2); // second period opened by evidence drift alone
+  const h2 = claimStatusAt(db, 1).evidence_hash;
+  assert.ok(h1 && h2);
+  assert.notEqual(h1, h2); // fingerprints differ
+  assert.equal(claimStatusAt(db, 1).status, 'VERIFIED');
+  // older row closed at the drift moment
+  assert.equal(tl[0].valid_until, '2026-09-25T09:00:00.000Z');
+});

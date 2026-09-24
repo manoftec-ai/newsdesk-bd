@@ -1,7 +1,7 @@
 // test/claim-verify.test.mjs — unit tests for claim-level verification
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { verifyClaim } from '../lib/claim-verify.mjs';
+import { verifyClaim, evidenceHash } from '../lib/claim-verify.mjs';
 
 const trust = { sources: { prothomalo: 'top', dmp: 'official', banglatribune: 'top', x: 'other' } };
 
@@ -53,4 +53,39 @@ test('contradicting evidence counts, not silently ignored', () => {
     trust,
   });
   assert.equal(v.status, 'CONFLICTING');
+});
+
+test('evidenceHash is stable regardless of order, changes when evidence changes', () => {
+  const a = evidenceHash([{ source_id: 'p1', url: 'u1', published_at: '2026-09-24T00:00:00Z' }, { source_id: 'p2', url: 'u2' }]);
+  const b = evidenceHash([{ source_id: 'p2', url: 'u2' }, { source_id: 'p1', url: 'u1', published_at: '2026-09-24T00:00:00Z' }]);
+  assert.equal(a, b); // order-insensitive
+  const c = evidenceHash([{ source_id: 'p1', url: 'u1', published_at: '2026-09-24T00:00:00Z' }, { source_id: 'p2', url: 'u2' }, { source_id: 'p3', url: 'u3' }]);
+  assert.notEqual(a, c); // new source changes the fingerprint
+  const d = evidenceHash([{ source_id: 'p1', url: 'u1', published_at: '2026-09-24T00:00:00Z', relation: 'contradicts' }, { source_id: 'p2', url: 'u2', relation: 'contradicts' }]);
+  assert.equal(d, evidenceHash([])); // contradicts never count as a fingerprint
+});
+
+test('stale-only supporting evidence trims confidence (no hard status change)', () => {
+  const daysAgo100 = new Date(Date.now() - 100 * 86_400_000).toISOString();
+  const fresh = verifyClaim('new figure', {
+    evidence: [{ source_id: 'prothomalo', published_at: new Date(Date.now() - 1 * 86_400_000).toISOString() }, { source_id: 'banglatribune', published_at: new Date(Date.now() - 1 * 86_400_000).toISOString() }],
+    trust,
+  });
+  const stale = verifyClaim('new figure', {
+    evidence: [{ source_id: 'prothomalo', published_at: daysAgo100 }, { source_id: 'banglatribune', published_at: daysAgo100 }],
+    trust,
+  });
+  assert.equal(fresh.status, 'VERIFIED');
+  assert.equal(stale.status, 'VERIFIED'); // honesty floor: still supported
+  assert.equal(stale.evidence_age.stale, 2);
+  assert.equal(fresh.evidence_age.stale, 0);
+  assert.ok(fresh.confidence > stale.confidence); // old anchors are discounted
+});
+
+test('evidence age profile reports max age and oldest evidence date', () => {
+  const old = new Date(Date.now() - 200 * 86_400_000).toISOString();
+  const v = verifyClaim('X', { evidence: [{ source_id: 'prothomalo', published_at: old }, { source_id: 'banglatribune', published_at: new Date(Date.now() - 2 * 86_400_000).toISOString() }], trust });
+  assert.equal(v.evidence_age.max_days >= 200, true);
+  assert.equal(v.evidence_age.oldest_evidence_at, old);
+  assert.ok('evidence_hash' in v);
 });

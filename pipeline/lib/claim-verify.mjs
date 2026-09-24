@@ -16,6 +16,45 @@
 //   OUTDATED      — superseded temporally (future: valid_from/valid_until)
 import { loadTrust } from './verify.mjs';
 import { loadLineage, groupEvidence, isOfficialSource } from './lineage.mjs';
+import { createHash } from 'node:crypto';
+
+// Evidence freshness windows (days). Age is measured against the verification
+// run time (`asOf`). A claim whose supporting evidence is overwhelmingly old
+// (e.g. a 2023 bulletin backing a 2026 figure) gets a gentle confidence
+// discount — but NO hard status change, so the history archive (legitimately
+// cited-sources) still verifies.
+export const EVIDENCE_AGING_DAYS = 14;   // < this = fresh
+export const EVIDENCE_STALE_DAYS = 90;   // >= this = stale (discounted)
+
+export function evidenceAgeDays(publishedAt, asOfMs = Date.now()) {
+  if (!publishedAt) return null;
+  const t = new Date(publishedAt).getTime();
+  if (Number.isNaN(t)) return null;
+  return Math.max(0, (asOfMs - t) / 86_400_000);
+}
+
+// Deterministic fingerprint of a supporting evidence set — "what sources, at
+// what dates" were behind a snapshot. Sorted+joined so order never changes the
+// hash; url present → source+url, else source+date (bulletin-tied evidence is
+// deduped by source already).
+export function evidenceHash(evidence = []) {
+  const parts = evidence
+    .filter((e) => e.relation !== 'contradicts')
+    .map((e) => [e.source_id, e.url ?? '', e.published_at ?? ''].join('|'))
+    .sort();
+  return createHash('sha256').update(parts.join('\n')).digest('hex').slice(0, 16);
+}
+
+function evidenceAgeProfile(evidence = [], asOfMs) {
+  const support = evidence.filter((e) => e.relation !== 'contradicts');
+  const ages = support.map((e) => evidenceAgeDays(e.published_at, asOfMs)).filter((a) => a !== null);
+  if (!ages.length) return { max_days: null, oldest_evidence_at: null, fresh: 0, stale: 0 };
+  const max = Math.max(...ages);
+  const fresh = ages.filter((a) => a < EVIDENCE_AGING_DAYS).length;
+  const stale = ages.filter((a) => a >= EVIDENCE_STALE_DAYS).length;
+  const oldest = support.map((e) => e.published_at).filter(Boolean).sort()[0] ?? null;
+  return { max_days: Math.round(max * 10) / 10, oldest_evidence_at: oldest, fresh, stale };
+}
 
 // Map evidence rows → claim verification. `evidence` = rows from claim_evidence,
 // `conflicts` = rows from conflicts (optional). Returns full status object.
@@ -48,8 +87,16 @@ export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = 
   else if (independentCount >= 2) status = 'VERIFIED';
   else status = 'SINGLE_SOURCE';
 
+  const ageProf = evidenceAgeProfile(support, Date.now());
   let confidence = Math.min(1, independentCount / 3) + (hasOfficial ? 0.15 : 0);
   if (hasConflict) confidence *= 0.4;
+  // Evidence-age honesty (positive status + stale evidence): if the claim IS
+  // supported but every supporting row is older than EVIDENCE_STALE_DAYS
+  // (nothing fresh), trim confidence — old sources backing a new figure are
+  // weaker anchors. No hard status change: history archive stays verified.
+  if (!hasConflict && (status === 'VERIFIED' || status === 'OFFICIAL') && ageProf.stale > 0 && ageProf.fresh === 0) {
+    confidence *= 0.75;
+  }
   confidence = Math.round(Math.min(1, Math.max(0, confidence)) * 100);
 
   return {
@@ -63,6 +110,8 @@ export function verifyClaim(claimText, { evidence = [], conflicts = [], trust = 
     official_count: officialRows.length,
     has_official: hasOfficial,
     unresolved_conflict: hasConflict,
+    evidence_age: ageProf,
+    evidence_hash: evidenceHash(evidence),
     evidence: support.map((e) => ({
       source_id: e.source_id,
       group: groupKey_(e.source_id, lin),
@@ -109,6 +158,11 @@ export function applyClaimVerification(db, { trust = null, lineage = null, now =
 // "when was this claim VERIFIED? when did it turn CONFLICTING?" for reverify
 // flip-flop detection and future "as of <date>" reader display.
 //
+// An OBSERVATION is (status, confidence, evidence set). A re-verify that finds
+// the same status AND confidence AND evidence_hash (same sources+urls+dates) is
+// idempotent — the open period keeps running. New evidence (or a changed figure)
+// opens a new period even if the verdict text is identical.
+//
 // reason: initial (first recorded state) | re-verify (periodic recheck) |
 //         conflict (typed contradiction surfaced — status -> CONFLICTING)
 export function recordSnapshot(db, claimId, verdict, { reason = 'verify', now = null } = {}) {
@@ -118,40 +172,44 @@ export function recordSnapshot(db, claimId, verdict, { reason = 'verify', now = 
   const conf = Math.round((verdict.confidence ?? 0) * 100) / 100;
   const support = verdict.support_count ?? 0;
   const contrad = verdict.contradiction_count ?? 0;
+  const hash = verdict.evidence_hash ?? evidenceHash(verdict.evidence ?? []);
+  const evCount = (verdict.evidence ?? []).filter((e) => e.relation !== 'contradicts').length;
+  const oldestAt = verdict.evidence_age?.oldest_evidence_at ?? null;
 
   // First record for this claim — open the initial period.
   if (!open) {
     db.prepare(`
       INSERT INTO claim_snapshots(claim_id, status, confidence, support_count, contradiction_count,
-        valid_from, valid_until, reason, created_at)
-      VALUES (?, ?, ?, ?, ?, ?, NULL, ?, ?)
-    `).run(claimId, status, conf, support, contrad, ts, reason === 'initial' ? 'initial' : 'verify', ts);
+        evidence_hash, evidence_count, oldest_evidence_at, valid_from, valid_until, reason, created_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NULL, ?, ?)
+    `).run(claimId, status, conf, support, contrad, hash, evCount, oldestAt, ts, reason === 'initial' ? 'initial' : 'verify', ts);
     return { changed: true, from: null, to: status };
   }
 
-  // No state change — leave the open period running (idempotent re-verify).
-  if (open.status === status && open.confidence === conf) {
+  // No state change AND same evidence — leave the open period running (idempotent).
+  if (open.status === status && open.confidence === conf && (open.evidence_hash ?? null) === hash) {
     return { changed: false, from: open.status, to: open.status };
   }
 
-  // State changed — close the open period, open a new one.
+  // State OR evidence changed — close the open period, open a new one.
   db.prepare('UPDATE claim_snapshots SET valid_until = ? WHERE id = ?').run(ts, open.id);
   db.prepare(`
     INSERT INTO claim_snapshots(claim_id, status, confidence, support_count, contradiction_count,
-      valid_from, valid_until, reason, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, NULL, ?, ?)
-  `).run(claimId, status, conf, support, contrad, ts, reason, ts);
+      evidence_hash, evidence_count, oldest_evidence_at, valid_from, valid_until, reason, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NULL, ?, ?)
+  `).run(claimId, status, conf, support, contrad, hash, evCount, oldestAt, ts, reason, ts);
   return { changed: true, from: open.status, to: status };
 }
 
 // Verification state that was VALID on a given ISO date (or the open one if `at`
-// is null/omitted). Returns { status, confidence, valid_from, valid_until } or null.
+// is null/omitted). Returns { status, confidence, support_count, valid_from,
+// valid_until, evidence_hash } or null.
 export function claimStatusAt(db, claimId, at = null) {
   if (at === null) {
-    return db.prepare('SELECT status, confidence, support_count, contradiction_count, valid_from, valid_until FROM claim_snapshots WHERE claim_id = ? AND valid_until IS NULL').get(claimId) ?? null;
+    return db.prepare('SELECT status, confidence, support_count, contradiction_count, evidence_hash, evidence_count, oldest_evidence_at, valid_from, valid_until FROM claim_snapshots WHERE claim_id = ? AND valid_until IS NULL').get(claimId) ?? null;
   }
   return db.prepare(`
-    SELECT status, confidence, support_count, contradiction_count, valid_from, valid_until
+    SELECT status, confidence, support_count, contradiction_count, evidence_hash, evidence_count, oldest_evidence_at, valid_from, valid_until
     FROM claim_snapshots
     WHERE claim_id = ? AND valid_from <= ? AND (valid_until IS NULL OR valid_until > ?)
     ORDER BY valid_from DESC LIMIT 1
@@ -161,10 +219,17 @@ export function claimStatusAt(db, claimId, at = null) {
 // Full ordered ledger (oldest → newest) of a claim's verification states.
 export function claimTimeline(db, claimId) {
   return db.prepare(`
-    SELECT id, status, confidence, support_count, contradiction_count, valid_from, valid_until, reason
+    SELECT id, status, confidence, support_count, contradiction_count, evidence_hash, evidence_count, oldest_evidence_at, valid_from, valid_until, reason
     FROM claim_snapshots WHERE claim_id = ?
     ORDER BY valid_from ASC, id ASC
   `).all(claimId);
+}
+
+// EVIDENCE DRIFT — has the supporting evidence set changed since the snapshot
+// that is currently open? True the moment recordSnapshot sees new evidence
+// (new period opened). Exposed for reverify to explain WHY a claim moved.
+export function evidenceDrifted(db, claimId) {
+  return claimTransitions(db, claimId).length > 0;
 }
 
 // FLIP-FLOP detection for reverify — a claim whose status went bad then good (or
