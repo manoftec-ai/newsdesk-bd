@@ -34,6 +34,17 @@
   },
   "decisions": [
     {
+      "id": "D65",
+      "date": "2026-09-24",
+      "title": "P0-10 structured contradiction detection",
+      "files": [
+        "pipeline/lib/conflict-detect.mjs",
+        "pipeline/tools/detect_conflicts.mjs",
+        "pipeline/test/conflict-detect.test.mjs",
+        ".github/workflows/pipeline.yml"
+      ]
+    },
+    {
       "date": "2026-09-24",
       "id": "D64",
       "title": "ROI triage of 40-pt editorial proposal — user-approved deployment list",
@@ -815,5 +826,8 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 41
+  "sessionsCount": 42,
+  "p0Progress": {
+    "P0-10": "done"
+  }
 }
