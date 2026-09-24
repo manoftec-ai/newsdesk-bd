@@ -373,7 +373,7 @@ export function finalizeStory(slug, bodyMd, { siteDir } = {}) {
   const brief = loadBrief(slug);
   let content = `---\n${frontMatter(brief)}\n---\n\n`;
   const body = stripEditorialFooters(bodyMd);
-  const excerpt = extractExcerpt(body);
+  const { excerpt, keyPoints, remaining } = prepBody(body);
   if (excerpt) {
     content = content.replace('excerpt: "…"', `excerpt: "${excerpt}"`);
     content = content.replace(
@@ -392,7 +392,6 @@ export function finalizeStory(slug, bodyMd, { siteDir } = {}) {
     'seoTitle: "…"',
     `seoTitle: "${capTitle(title).replace(/"/g, '\\"')}"`,
   );
-  const { keyPoints, remaining } = extractKeyPoints(body);
   if (keyPoints.length) {
     content = content.replace(
       'keyPoints: []',
@@ -446,8 +445,22 @@ function stripEditorialFooters(md) {
 }
 
 function extractExcerpt(md) {
-  const lines = md.split('\n').map((l) => l.trim()).filter(Boolean);
-  return (lines.slice(0, 3).join(' ').replace(/"/g, '\\"')).slice(0, 180);
+  const lines = md
+    .split('\n')
+    .map((l) => l.trim().replace(/\*\*/g, ''))
+    .filter((l) => l && !/^#{1,4}\s/.test(l));
+  return lines.slice(0, 3).join(' ').replace(/"/g, '\\"').slice(0, 180);
+}
+
+// 2026-09-24 (D80): strip the "এক নজরে" bullet block into keyPoints FIRST, then
+// build the excerpt from the remaining body. Previously the excerpt was taken
+// from the raw body BEFORE keyPoints extraction, so a `**এক নজরে**` markdown
+// marker leaked into excerpt/seoDescription front matter (seen on live homepage
+// cards for national-485/486/488). prepBody is the single ordering authority used
+// by finalizeStory, so the excerpt can never contain the stripped block.
+export function prepBody(md) {
+  const { keyPoints, remaining } = extractKeyPoints(md);
+  return { excerpt: extractExcerpt(remaining), keyPoints, remaining };
 }
 
 // 1.2 — Editorial gate: speculation & empty-predictive filler that must NEVER
