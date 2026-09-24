@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-24",
-    "sessionsCount": 39,
+    "sessionsCount": 40,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,20 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D75",
+      "date": "2026-09-24",
+      "title": "#19/#32 per-format templates: fact-check + analysis in synth writer",
+      "summary": "Implemented proposal 40-point #19 (distinct fact-check template) + #32 (per-format templates): storyFormat(brief) classifies factcheck (category / rumor-scanner + সত্যতা যাচাই / ফ্যাক্ট চেক / গুজব যাচাই markers) vs analysis (opinion) vs news (default); factCheckClaim/Verdict/Note deterministic evidence-graph-only (overclaim->misleading, no claims->unverifiable, contradiction-majority->false, unconf+single>=half->unverifiable, ratios 0.8/0.5/0.25 -> true/mostly-true/half); factCheckBlock(brief) emits factCheck: front matter ONLY for factcheck stories; writingPrompt injects FACT-CHECK FORMAT (দাবি->প্রেক্ষাপট->যাচাই->রায়->কী জানা যায়নি; verdict must match front matter) and ANALYSIS FORMAT (প্রেক্ষাপট->বিশ্লেষণ->উপসংহার; no invented experts) templates; STANDARD news structure gated to format==news. extract.mjs maps ফ্যাক্ট চেক/সত্যতা যাচাই/ফ্যাক্টচেক/গুজব যাচাই -> factcheck; SITE_CATEGORIES += factcheck. 17 new tests; suite 183/183. Commit b274c19 -> rebased 0650358 (SYNCED). #37/#38 remain PARKED (user approved #19+#32 only).",
+      "files": [
+        "pipeline/lib/editorial.mjs",
+        "pipeline/lib/extract.mjs",
+        "pipeline/lib/synth.mjs",
+        "pipeline/test/editorial.test.mjs",
+        "pipeline/test/synth.test.mjs",
+        "TODO.md"
+      ]
+    },
     {
       "id": "D74",
       "date": "2026-09-24",
@@ -780,7 +794,7 @@
     "Domain TBD (testing on *.vercel.app)",
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed"
   ],
-  "workInProgress": "REBRAND + DOMAIN DONE 2026-09-23 (D47/D48): jachaidesk.com is main domain, full repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 spelling fix জাচাই→যাচাই all 30 occurrences), deploy green, live HTTP 200. Storage cleanup: 258->2 deployments (live prod + preview) via API. Remaining = user account steps only (GSC add jachaidesk.com + paste verification token into theme.config.ts SEO.googleSiteVerification; Telegram bot/channel secrets; FB Page/App/token; Vercel Analytics dashboard). ---- Author batch 2026-09-23 (national-426 + national-425 — 2 stories finalized, `draft:false`, NOT committed): pick.json picked national-426 (হাম ১১ প্রাণ, banglatribune+channeli, 11:10Z) + national-425 (বিএনপি কথা রাখতে পারেনি: HRW, bbc-bengali+channeli, 07:38Z); neither existed in content; authored bodies 258/263 tokens (Bengali numerals, এক নজরে keyPoints ৩ each, verification closings, no D25 footer). national-425 subject clash (bbc: বিএনপি vs channeli: সরকার) attributed separately, not merged. finalize wrote=2 skipped=0 failed=0; thumbnails pending images.yml (D48 also fixed their thumbnailAlt old-brand suffix). Prior: national-417/415/416 all already-live (D-Q15 skip). see memory/sessions/2026-09-23-rebrand-jachaidesk-domain-and-storage-cleanup.md ---- SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
+  "workInProgress": "D75 DONE 2026-09-24: #19/#32 per-format templates shipped (storyFormat factcheck/analysis/news; FACT-CHECK FORMAT + ANALYSIS FORMAT writer templates; factCheckBlock front matter for factcheck-only; verdicts evidence-derived). Suite 183/183, commit 0650358 SYNCED. See session 2026-09-24-d75-factcheck-analysis-formats.md. ---- Parked: #37 diff-analyze, #38 golden dataset (user approved #19+#32 only). ---- REBRAND + DOMAIN DONE 2026-09-23 (D47/D48): jachaidesk.com is main domain, full repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 spelling fix জাচাই→যাচাই all 30 occurrences), deploy green, live HTTP 200. Storage cleanup: 258->2 deployments (live prod + preview) via API. Remaining = user account steps only (GSC add jachaidesk.com + paste verification token into theme.config.ts SEO.googleSiteVerification; Telegram bot/channel secrets; FB Page/App/token; Vercel Analytics dashboard). ---- Author batch 2026-09-23 (national-426 + national-425 — 2 stories finalized, `draft:false`, NOT committed): pick.json picked national-426 (হাম ১১ প্রাণ, banglatribune+channeli, 11:10Z) + national-425 (বিএনপি কথা রাখতে পারেনি: HRW, bbc-bengali+channeli, 07:38Z); neither existed in content; authored bodies 258/263 tokens (Bengali numerals, এক নজরে keyPoints ৩ each, verification closings, no D25 footer). national-425 subject clash (bbc: বিএনপি vs channeli: সরকার) attributed separately, not merged. finalize wrote=2 skipped=0 failed=0; thumbnails pending images.yml (D48 also fixed their thumbnailAlt old-brand suffix). Prior: national-417/415/416 all already-live (D-Q15 skip). see memory/sessions/2026-09-23-rebrand-jachaidesk-domain-and-storage-cleanup.md ---- SEO/PERF 100/100 DONE 2026-09-20: news-sitemap.xml (Google News) + robots extended + IndexNow key+pipeline poke (fast indexing); default og-image + theme-color; article JSON-LD @graph NewsArticle+BreadcrumbList; Header tap targets 44px; aria regions; font-display optional + ONLY 2 webfont faces (serif-700, sans-400) preloaded; WCAG AA chip/badge colors. Lighthouse CI gate GREEN run 35478722149: PERF 100 / SEO 100 / A11Y 100 / BEST-PRACTICES 100 (median of 3). Commits 6e8aeb5..bd23c4e. Details+lessons in memory/sessions/2026-09-20-lighthouse-100.md. ---- PHASES 5+6 COMPLETE 2026-09-19. extract.mjs + synth.mjs (provider-swappable writer, draft:false auto-publish) + run.js extract|synth commands. First real story LIVE: national-dengue (ডেঙ্গুতে ২ মৃত্যু, confirmed/tierA/8, 4 sources). AUTHOR BATCHES 1-4 DONE: 24 national+mixed bodies in pipeline/tmp/stories/*.b.md. FOOTER FIX: editorial/draft footers banned (synth prompt + stripEditorialFooters guard), pipeline npm test 10/10. NEXT: finalize/publish remaining authored bodies, write rest of briefs, GSC+Bing verification (user-side), PNG og-image upgrade (svg currently fine), monitor cron health.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
@@ -895,6 +909,7 @@
   },
   "testData": "pipeline/tmp/store.db holds 2026-09-19 sample run (refreshable)",
   "nextSteps": [
+    "D75 follow-up (#37/#38 PARKED, user approved #19+#32 only): #37 diff-analyze panel on editor UI when user opts in; #38 golden dataset — verify next factcheck-format story renders FACT-CHECK FORMAT template end-to-end (fetch->extract->synth->Astro factCheck front matter) on a real 30-min run",
     "If next deploy fails: check history batch titles single-line first (D43) before blaming own change",
     "কালানুক্রম: continue event-by-event (4/82 done; suggest june-july-2024-quota, oust-hasina-2024, dengue-outbreak-season)",
     "100-article history archive (D42, IN PROGRESS): 15/100 live (batch 1, pushed bff82be). Continue batches 2-3 toward 100+ (BD + regional events back to 2000: 1991 cyclone, 1998 flood, 2004 tsunami, 2014 election, Sundarbans spill, 2016 Bangladesh Bank heist, 2018 quota/road-safety, Covid 2020, Aug 2024 floods, cricket 2005/2007, Karnaphuli tunnel 2023...). Same publish_history.mjs + fact-pack JSONs at pipeline/state/history/. Each: own Bengali synthesis, >=150 words, curl-verified sources, commit+push per batch. Then optional /history index page.",
@@ -926,7 +941,7 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 49,
+  "sessionsCount": 50,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
