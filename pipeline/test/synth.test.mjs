@@ -1,7 +1,7 @@
 // test/synth.test.mjs — unit tests for synth helpers
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inferTags } from '../lib/synth.mjs';
+import { inferTags, claimRules, writingPrompt } from '../lib/synth.mjs';
 
 test('inferTags emits only defined tags from real keywords', () => {
   const brief = {
@@ -26,4 +26,41 @@ test('inferTags recognizes fact-check keywords', () => {
 
 test('inferTags emits nothing when no keyword appears', () => {
   assert.deepEqual(inferTags({ headline: 'নির্দিষ্ট কোনো ম্যাপিং ছাড়া দাবি', members: [] }), []);
+});
+
+test('claimRules: each status maps to a write-guidance line', () => {
+  const brief = {
+    claims: [
+      { claim_text: 'দুজন মারা গেছেন', status: 'VERIFIED' },
+      { claim_text: '১০টি স্টেশন', status: 'CORROBORATED' },
+      { claim_text: 'ভ্যাকসিন দেওয়া হয়েছে', status: 'SINGLE_SOURCE' },
+      { claim_text: 'আরও একটি হামলা', status: 'CONFLICTING' },
+      { claim_text: 'নতুন তারিখ', status: 'UNCONFIRMED' },
+      { claim_text: 'সরকারি সিদ্ধান্ত', status: 'OFFICIAL' },
+    ],
+  };
+  const r = claimRules(brief);
+  assert.match(r, /VERIFIED: দুজন মারা গেছেন — verified fact/);
+  assert.match(r, /single-source — never present as established fact/);
+  assert.match(r, /UNCONFIRMED/);
+  assert.match(r, /NEVER silently pick one side/);
+  assert.match(r, /OFFICIAL/);
+});
+
+test('claimRules: empty when brief has no claims', () => {
+  assert.equal(claimRules({}), '');
+});
+
+test('writingPrompt includes claim-level rules for known statuses', () => {
+  const brief = {
+    headline: 'ঢাকায় ডেঙ্গু রোগী বাড়ছে',
+    sources: [{ name: 'প্রথম আলো', url: 'https://example.com/a' }],
+    tier: 'B',
+    verdict: { badge: 'confirmed', tier: 'B' },
+    members: [{ source_id: 'pal', title: 'ডেঙ্গু', lead: 'রোগী বাড়ছে', published_at: '2026-09-24' }],
+    claims: [{ claim_text: '১০ হাজার রোগী হাসপাতালে', status: 'CONFLICTING' }],
+  };
+  const p = writingPrompt(brief);
+  assert.match(p, /Claim-level writing rules/);
+  assert.match(p, /CONFLICTING: ১০ হাজার রোগী হাসপাতালে/);
 });

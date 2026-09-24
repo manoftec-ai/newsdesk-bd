@@ -1,7 +1,7 @@
 // test/audit.test.mjs — unit tests for the two-stage auditor (mechanical stage)
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mechanicalAudit, parseAudit, AUDIT_POINTS } from '../lib/audit.mjs';
+import { mechanicalAudit, parseAudit, auditPrompt, AUDIT_POINTS, SPEC_AUDIT_POINTS } from '../lib/audit.mjs';
 
 const brief = (n, headline) => ({
   headline: headline ?? 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু',
@@ -81,6 +81,27 @@ test('AUDIT_POINTS is exactly 10 points c1..c10', () => {
   assert.deepEqual(AUDIT_POINTS.map((p) => p.id), ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c10']);
 });
 
+test('SPEC_AUDIT_POINTS is the 12-point proposal checklist n1..n12', () => {
+  assert.equal(SPEC_AUDIT_POINTS.length, 12);
+  assert.deepEqual(
+    SPEC_AUDIT_POINTS.map((p) => p.id),
+    ['n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'n10', 'n11', 'n12'],
+  );
+  const en = SPEC_AUDIT_POINTS.map((p) => p.en.toLowerCase()).join(',');
+  for (const k of ['factuality', 'source support', 'claim coverage', 'natural bengali', 'repetition', 'speculation', 'fill', 'headline', 'quote integrity', 'context relevance', 'attribution', 'readability']) {
+    assert.ok(en.includes(k), `missing ${k}`);
+  }
+});
+
+test('auditPrompt uses the spec checklist + delete-sentence rules', () => {
+  const p = auditPrompt(brief(3), goodBody());
+  assert.match(p, /checklist \(proposal #29\/#36\)/);
+  assert.match(p, /"n1":/);
+  assert.match(p, /"n12":/);
+  assert.match(p, /Delete-sentence rules/);
+  assert.match(p, /adds no information/);
+});
+
 test('headline restatement with no new facts blocks reader value (rv1)', () => {
   const headline = 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু';
   const body = 'ঢাকায় নতুন একটি মেট্রো লাইন চালু হয়েছে। মেট্রো লাইনটি চালু হয়ে গেছে। নতুন লাইনটি খুলে দেওয়া হয়েছে। তখন থেকে যাত্রীরা এটি ব্যবহার করতে পারবেন।';
@@ -90,5 +111,39 @@ test('headline restatement with no new facts blocks reader value (rv1)', () => {
 
 test('good body passes reader value (rv1 not triggered)', () => {
   const r = mechanicalAudit(brief(3), goodBody());
+  assert.equal(r.pass, true, JSON.stringify(r.fails));
+});
+
+test('#12 disclosure — CONFLICTING claim with silent single side blocks (n13)', () => {
+  const b = { ...brief(3), claims: [{ claim_text: 'সংখ্যা ২০০, অন্য সূত্রে ৫০০', status: 'CONFLICTING', confidence: 0.9 }] };
+  const silentBody = `ঢাকা মেট্রোরেলের নতুন একটি লাইন চালু হয়েছে। পুলিশ জানিয়েছে, এতে ২০০ জন যাত্রী সেবা পাবেন।
+
+**এক নজরে**
+- নতুন লাইন চালু
+- ২০০ জন যাত্রী
+
+## মূল খবর
+সকাল সাড়ে আটটায় প্রথম ট্রেনটি যাত্রা শুরু করে। মন্ত্রণালয় জানায়, ২০০ জন যাত্রীর জন্য এ ব্যবস্থা। কর্মকর্তারা জানিয়েছেন, প্রথম সপ্তাহে প্রতিদিন ট্রেন চলবে।`;
+  const r = mechanicalAudit(b, silentBody);
+  assert.ok(r.fails.some((f) => f.id === 'n13'), JSON.stringify(r.fails.map((f) => f.id)));
+});
+
+test('#12 disclosure — body showing both sides passes (n13 not triggered)', () => {
+  const b = { ...brief(3), claims: [{ claim_text: 'সংখ্যা ২০০, অন্য সূত্রে ৫০০', status: 'CONFLICTING', confidence: 0.9 }] };
+  const body = goodBody() + '\n\nকিছু সূত্রে ৫০০ জন বলা হয়েছে, অন্যদিকে আবার ২০০ জনের কথাও জানা গেছে; কোনটি সঠিক তা এখনো নিশ্চিত নয়।';
+  const r = mechanicalAudit(b, body);
+  assert.ok(!r.fails.some((f) => f.id === 'n13'), JSON.stringify(r.fails.map((f) => f.id)));
+});
+
+test('#15 quote integrity — quote absent from leads blocks (n14)', () => {
+  const r = mechanicalAudit(brief(3), goodBody() + '\n\nপুলিশ বলেছেন, "আমরা এটি পুরোপুরি ভেঙে ফেলেছি সম্পূর্ণ।"');
+  assert.ok(r.fails.some((f) => f.id === 'n14'), JSON.stringify(r.fails));
+});
+
+test('#15 quote integrity — verbatim quote from a lead passes (n14 not triggered)', () => {
+  const b = brief(3);
+  const quote = 'প্রথম দফায় ১০টি স্টেশনে ট্রেন চলবে';
+  b.members[0] = { ...b.members[0], lead: `${b.members[0].lead} ${quote}` };
+  const r = mechanicalAudit(b, goodBody() + `\n\nপুলিশ বলেছেন, "${quote}।"`);
   assert.equal(r.pass, true, JSON.stringify(r.fails));
 });

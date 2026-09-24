@@ -129,6 +129,26 @@ export function targetWords(brief) {
   return { min: 400, max: 550, tier: 'complex' };
 }
 
+// Claim-level writing rules handed to the writer (proposal #13): how each
+// verified claim may be written depends on its status. Returns a short list of
+// "- status: claim_text — how to write it" lines (or '' when no claims known).
+export function claimRules(brief, { language = 'bn' } = {}) {
+  const claims = (brief.claims ?? []).filter((c) => c && c.status);
+  if (!claims.length) return '';
+  const guide = {
+    VERIFIED: 'verified fact — state directly, plainly (…হয়েছে, পুলিশ নিশ্চিত করেছে)',
+    CORROBORATED: 'corroborated — state as fact but softer (…জানা গেছে, …বলে জানিয়েছেন কর্মকর্তারা); do not over-claim certainty',
+    OFFICIAL: 'official — state with the agency attached (মন্ত্রণালয় জানিয়েছে, বিজ্ঞপ্তিতে বলা হয়েছে)',
+    SINGLE_SOURCE: 'single-source — never present as established fact; attribute it (একটি সূত্র জানিয়েছে / …দাবি করেছে)',
+    UNCONFIRMED: 'unconfirmed — do not state as fact; put in কী এখনো জানা যায়নি or attribute with doubt (নিশ্চিত নয়, যাচাই হয়নি)',
+    CONFLICTING: 'conflicting — NEVER silently pick one side; state the disagreement explicitly (কিছু সূত্রে X, অন্যদিকে Y; এখনো নিশ্চিত নয়)',
+  };
+  return claims
+    .slice(0, 6)
+    .map((c) => `- ${c.status}: ${String(c.claim_text ?? '').slice(0, 90)} — ${guide[c.status] ?? 'write carefully per evidence'}`)
+    .join('\n');
+}
+
 // Writing prompt for the provider. Everything the writer needs in one place.
 export function writingPrompt(brief) {
   const srcs = brief.sources.map((s) => `- ${s.name} — ${s.url}`).join('\n');
@@ -136,6 +156,7 @@ export function writingPrompt(brief) {
   const leads = brief.members.map((m) =>
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
   ).join('\n\n');
+  const claims = claimRules(brief);
   return `# Story task — newsdesk-bd
 
 Write ONE original Bengali news article (সংবাদ) about this verified story.
@@ -170,6 +191,25 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   When there is no actor, just state the fact plainly — do not invent a source
   citation. Say each fact once.
 
+## Claim-level writing rules (how each verified claim may be written)
+Apply per the claim status given for this brief (proposal #13):
+- VERIFIED (অন্তত দুইটি স্বতন্ত্র নির্ভরযোগ্য সূত্র): may be stated as fact,
+  plainly and directly — "…হয়েছে", "পুলিশ নিশ্চিত করেছে…".
+- CORROBORATED (দুইটি সূত্র, দুর্বলতর সংকেত): state it as fact but softer —
+  "…জানা গেছে", "…বলে জানিয়েছেন কর্মকর্তারা"। Do NOT write "প্রমাণিত" or claim a
+  certainty the evidence does not support.
+- OFFICIAL (সরকারি/প্রাথমিক সূত্র): state it with the agency attached —
+  "মন্ত্রণালয় জানিয়েছে…", "বিজ্ঞপ্তিতে বলা হয়েছে…"।
+- SINGLE_SOURCE (একক সূত্র): never present as established fact. Attribute it —
+  "একটি সূত্র জানিয়েছে…" or "…দাবি করেছে"। Use cautiously; do not generalize it.
+- UNCONFIRMED (নিশ্চিত নয়): say it plainly in কী এখনো জানা যায়নি, or attribute
+  with doubt — "এখনো নিশ্চিত নয়", "দাবি, তবে যাচাই হয়নি"। Never state it as fact
+  and never headline it.
+- CONFLICTING (সূত্রে সাংঘর্ষিক তথ্য): NEVER silently choose one side. Say the
+  difference explicitly — "কিছু সূত্রে X বলা হয়েছে, অন্যদিকে Y; কোনটি সঠিক তা
+  এখনো নিশ্চিত নয়"। The reader must see both claims.
+
+${claims}
 ## Constraints (hard)
 - ORIGINAL synthesis only. Never reprint any one outlet's article. Rewrite in your own words.
 - Every factual claim must trace to the member leads below.
@@ -190,6 +230,9 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
 
 ## Facts/sources verified
 ${brief.headline}
+
+### Claim statuses for this brief (from the claim→evidence graph)
+${claims.trim() === '' ? 'none provided' : claims.trim()}
 
 ### Member leads (facts pool)
 ${leads}
