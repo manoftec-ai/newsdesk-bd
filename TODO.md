@@ -15,6 +15,7 @@
 - [x] 1.4 Badge legend: "নিশ্চিত [A]" meaning (2+ independent sources matched) — one-line text under the badge (site-side). Assumption: kept tiny, no evidence/quotes added (source display unchanged per Q1) — DONE 04eab2f, LIVE
 - [x] 1.7 Verify: pipeline tests (35/35) + live story national-473 inspected (new template, 0 banned phrases) + badge legend live. Lighthouse = RED (pre-existing, Vercel Insights 404; PARKED 2026-09-24 by user decision)
 - [x] 1.8 (safety) Leave parallel-session WIP + local divergent commit b9b2f8f untouched — user reviews first (2026-09-24)
+- [x] 1.9 Reader-value test + editorial-value ranking (critique #21/#22): deterministic rv1 gate in audit.mjs (body must add a concrete fact beyond the headline) + internal editorialValue() score in pick_briefs (newest-first kept; value breaks date ties; exposed in pick.json) — DONE 516c305, tests 80/80
 
 ## Phase 1b — after user review of new-style articles (Q2=gated)
 - [ ] 1b.1 (if satisfactory) Bulk regenerate ALL existing ~430 articles with the new style + gate; verify deploys green

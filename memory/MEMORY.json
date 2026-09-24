@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-24",
-    "sessionsCount": 40,
+    "sessionsCount": 39,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -436,6 +436,12 @@
       "date": "2026-09-24",
       "title": "Editorial Phase 1 (1.1-1.4) complete + verified LIVE; lighthouse PARKED; Phase 1b deferred",
       "detail": "1.1 fcc9290 synthesize-first prompt; 1.2 4d0bf3a speculation/filler block-gate; 1.3 3e73dc6 dynamic length tiers; 1.4 04eab2f badge legend live (badge-legend line under chip). Verified on live jachaidesk.com national-473 (new template, 0 banned phrases) + tests 35/35. Lighthouse red is PRE-EXISTING ( 404 now Analysis not enabled + image savings) - user parked fixes 2026-09-24. Phase 1b bulk regen (~430 old articles) = do it later. Parallel session WIP (governance gate, claims/evidence graph) + local divergent commit b9b2f8f = keep, user reviews first. Do NOT push until reconciled."
+    },
+    {
+      "id": "D61",
+      "date": "2026-09-24",
+      "title": "Reader-value test (#21) + editorial-value ranking (#22) implemented",
+      "detail": "New pipeline/lib/editorial.mjs. readerValueCheck(): concrete-token novelty probe, PASS only if body adds a concrete fact beyond headline or is >=4x headline length; wired into audit.mjs mechanicalAudit as rv1 gate (blocks publish, separate from 10 LLM points). editorialValue(brief): internal-only 0-100 score (impact/corroboration/consequence/urgency/usefulness/geo relevance); used in pick_briefs.mjs as tiebreak within newest-first batch, exposed in pick.json+console. Tests editorial.test.mjs (8 new) + 2 audit rv1 -> suite 80/80. Commit 516c305. Critique #21/#22; deterministic zero-cost, keyless."
     }
   ],
   "sources": [
@@ -779,5 +785,5 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 38
+  "sessionsCount": 39
 }
