@@ -34,6 +34,18 @@
   },
   "decisions": [
     {
+      "id": "D70",
+      "date": "2026-09-24",
+      "title": "P1 source health: data-driven per-source reliability profile",
+      "summary": "deriveSourceHealth() from claim/evidence/snapshot ledger: claims supported, conflict-affected share, stale-evidence share, independence; score + healthy/mixed/flagged (hard flag at >=50% conflict-prone). loadSourceHealth db wrapper + tools/source_health.mjs + CI step. Read-only. Suite 152/152. Commit 48ab149.",
+      "files": [
+        "pipeline/lib/source-health.mjs",
+        "pipeline/tools/source_health.mjs",
+        "pipeline/test/source-health.test.mjs",
+        ".github/workflows/pipeline.yml"
+      ]
+    },
+    {
       "id": "D69",
       "date": "2026-09-24",
       "title": "P1 evidence snapshots: source fingerprints + age-weighted verification",
@@ -871,11 +883,12 @@
     }
   ],
   "lastUpdated": "2026-09-24",
-  "sessionsCount": 46,
+  "sessionsCount": 47,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
     "P1-temporal-truth": "done",
-    "P1-evidence-snapshots": "done"
+    "P1-evidence-snapshots": "done",
+    "P1-source-health": "done"
   }
 }
