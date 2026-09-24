@@ -74,16 +74,14 @@ for (const p of pending) {
   if (picked.length >= max) break;
 }
 
-if (picked.length) {
-  writeFileSync(
-    outPath,
-    JSON.stringify(
-      { picked: picked.map((p) => ({ slug: p.slug, date: p.date, editorialValue: p.evScore })), pending: pending.length },
-      null,
-      2,
-    ),
-  );
-}
+writeFileSync(
+  outPath,
+  JSON.stringify(
+    { picked: picked.map((p) => ({ slug: p.slug, date: p.date, editorialValue: p.evScore })), pending: pending.length },
+    null,
+    2,
+  ),
+);
 const dupCount = briefs.filter((b) => b.titleDup).length;
 console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, then editorial value, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
 for (const p of picked) console.log(`  ${p.date || 'no-date'}  ev=${p.evScore}  ${p.slug}`);
