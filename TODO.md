@@ -9,11 +9,12 @@
 - [x] **Q3 — Publish volume: as now, no human required.** Keep 30-min auto-publish; duplicates fixed via clustering/rank at Round-2, never a human gate.
 
 ## Phase 1 — Editorial layer (prompt/template/gate, no re-architecture)
-- [ ] 1.1 Rewrite author prompt (auto-author.yml + pipeline/lib/synth.mjs): synthesize-first template — merge sources into ONE narrative (কী ঘটেছে / যা জানা যায়নি / যাচাই), sources named only on divergence or single key-fact attribution; keep "এক নজরে" keyPoints
-- [ ] 1.2 Speculation + filler ban gate in finalize_stories.mjs: BLOCK publish (not strip) on banned phrases ("পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে…", "মনে করা হচ্ছে…" etc.) + retry once with a corrected instruction
-- [ ] 1.3 Dynamic target length per tier (breaking=short / normal / complex) passed in the prompt, drop the fixed 250–290w instruction
-- [ ] 1.4 Badge legend: "নিশ্চিত [A]" meaning (2+ independent sources matched) — one-line text under the badge (site-side). Assumption: kept tiny, no evidence/quotes added (source display unchanged per Q1)
-- [ ] 1.7 Verify: pipeline tests + 1–2 live stories inspected before/after + lighthouse still 100s
+- [x] 1.1 Rewrite author prompt (auto-author.yml + pipeline/lib/synth.mjs): synthesize-first template — merge sources into ONE narrative (কী ঘটেছে / যা জানা যায়নি / যাচাই), sources named only on divergence or single key-fact attribution; keep "এক নজরে" keyPoints — DONE fcc9290
+- [x] 1.2 Speculation + filler ban gate in finalize_stories.mjs: BLOCK publish (not strip) on banned phrases ("পর্যবক্ষকরা মনে করছেন…", "আলোচনার জন্ম দেবে…", "মনে করা হচ্ছে…" etc.) + retry once with a corrected instruction — DONE 4d0bf3a (block+skip; re-authored on later run)
+- [x] 1.3 Dynamic target length per tier (breaking=short / normal / complex) passed in the prompt, drop the fixed 250–290w instruction — DONE 3e73dc6
+- [x] 1.4 Badge legend: "নিশ্চিত [A]" meaning (2+ independent sources matched) — one-line text under the badge (site-side). Assumption: kept tiny, no evidence/quotes added (source display unchanged per Q1) — DONE 04eab2f, LIVE
+- [x] 1.7 Verify: pipeline tests (35/35) + live story national-473 inspected (new template, 0 banned phrases) + badge legend live. Lighthouse = RED (pre-existing, Vercel Insights 404; PARKED 2026-09-24 by user decision)
+- [x] 1.8 (safety) Leave parallel-session WIP + local divergent commit b9b2f8f untouched — user reviews first (2026-09-24)
 
 ## Phase 1b — after user review of new-style articles (Q2=gated)
 - [ ] 1b.1 (if satisfactory) Bulk regenerate ALL existing ~430 articles with the new style + gate; verify deploys green

@@ -13,6 +13,7 @@
 // finalized (= published). If no LLM key, stage 2 is skipped and the mechanical
 // gate alone decides (backward compatible with existing author path).
 import { writingPrompt, findEditorialViolations, BANNED_SPECULATION, isEditorialFooter } from './synth.mjs';
+import { readerValueCheck } from './editorial.mjs';
 import { chatComplete, llmApiKey } from './llm.mjs';
 import { verifyHeadline } from './headline-verify.mjs';
 
@@ -83,6 +84,10 @@ export function mechanicalAudit(brief, body) {
   if (hdr.status === 'poor') note('c6', `headline barely traces to facts (${Math.round(hdr.support * 100)}% tokens)`);
   if (hdr.status === 'overclaim') note('c6', `headline overclaims an ${hdr.claim_status} claim`);
   if (hdr.flags.includes('hype')) note('c6', `headline hype term detected`);
+  // #21 — reader-value check (critique): the article must add a concrete fact
+  // beyond the headline, or the reader who read the headline learns nothing new.
+  const rv = readerValueCheck(brief.headline ?? '', text);
+  if (!rv.ok) note('rv1', `no reader value: body adds no concrete fact beyond headline (${rv.bodyWords}/${rv.headWords} words)`);
 
   return { pass: fails.length === 0, fails, count: fails.length, headline: hdr };
 }

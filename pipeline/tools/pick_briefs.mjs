@@ -10,6 +10,7 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
+import { editorialValue } from '../lib/editorial.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -31,10 +32,12 @@ const briefs = readdirSync(BRIEFS_DIR)
   .map((f) => {
     const slug = f.replace(/\.json$/, '');
     let date = '', headline = '';
+    let ev = { score: 0 };
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
       date = j.date || '';
       headline = j.headline || '';
+      ev = editorialValue(j);
     } catch {
       // unreadable brief -> treat as no-date/headline, never first.
     }
@@ -42,13 +45,21 @@ const briefs = readdirSync(BRIEFS_DIR)
       slug,
       date,
       headline,
+      evScore: ev.score,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
     };
   });
 
 const pending = briefs.filter((b) => !b.published && !b.titleDup);
-pending.sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.slug.localeCompare(b.slug));
+// #22 — editorial-value ranking (internal only): either newest-first, and
+// within the same publish date the higher-value story is picked first.
+pending.sort(
+  (a, b) =>
+    String(b.date).localeCompare(String(a.date)) ||
+    (b.evScore - a.evScore) ||
+    a.slug.localeCompare(b.slug),
+);
 
 // Same-batch guard: two pending briefs can carry the SAME headline (same event
 // clustered twice with identical members, e.g. national-290/292). Pick only the
@@ -67,14 +78,14 @@ if (picked.length) {
   writeFileSync(
     outPath,
     JSON.stringify(
-      { picked: picked.map((p) => ({ slug: p.slug, date: p.date })), pending: pending.length },
+      { picked: picked.map((p) => ({ slug: p.slug, date: p.date, editorialValue: p.evScore })), pending: pending.length },
       null,
       2,
     ),
   );
 }
 const dupCount = briefs.filter((b) => b.titleDup).length;
-console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
-for (const p of picked) console.log(`  ${p.date || 'no-date'}  ${p.slug}`);
+console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, then editorial value, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
+for (const p of picked) console.log(`  ${p.date || 'no-date'}  ev=${p.evScore}  ${p.slug}`);
 if (!picked.length) console.log('  -> no unpublished briefs');
 if (!picked.length) console.log('  -> no unpublished briefs');

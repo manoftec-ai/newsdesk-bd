@@ -80,3 +80,15 @@ test('AUDIT_POINTS is exactly 10 points c1..c10', () => {
   assert.equal(AUDIT_POINTS.length, 10);
   assert.deepEqual(AUDIT_POINTS.map((p) => p.id), ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c10']);
 });
+
+test('headline restatement with no new facts blocks reader value (rv1)', () => {
+  const headline = 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু';
+  const body = 'ঢাকায় নতুন একটি মেট্রো লাইন চালু হয়েছে। মেট্রো লাইনটি চালু হয়ে গেছে। নতুন লাইনটি খুলে দেওয়া হয়েছে। তখন থেকে যাত্রীরা এটি ব্যবহার করতে পারবেন।';
+  const r = mechanicalAudit(brief(3, headline), body);
+  assert.ok(r.fails.some((f) => f.id === 'rv1'), JSON.stringify(r.fails));
+});
+
+test('good body passes reader value (rv1 not triggered)', () => {
+  const r = mechanicalAudit(brief(3), goodBody());
+  assert.equal(r.pass, true, JSON.stringify(r.fails));
+});
