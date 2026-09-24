@@ -34,6 +34,13 @@
   },
   "decisions": [
     {
+      "id": "D71",
+      "date": "2026-09-24",
+      "title": "Desktop layout KEPT — centered max-w-6xl column, no full-bleed change",
+      "summary": "User noticed desktop shows content as a centered 1152px column with side whitespace (mobile fills because column > phone). Explained intentional + standard for news sites; recommended keep. User: 'ok..keep it then'. NO code change. Optional future tweak: max-w-6xl -> max-w-7xl (1280px) in index.astro:92, Header.astro:20+64, Footer.astro:10+53.",
+      "files": []
+    },
+    {
       "id": "D70",
       "date": "2026-09-24",
       "title": "P1 source health: data-driven per-source reliability profile",
