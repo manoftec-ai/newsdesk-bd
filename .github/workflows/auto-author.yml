@@ -71,77 +71,25 @@ jobs:
       # demands auth, set the OPENCODE_API_KEY secret (free, opencode.ai/auth) and
       # this step will pick it up automatically from the environment.
 
-      - name: Author unpublished briefs
+      # Mirrored writer — single source of truth is pipeline/lib/synth.mjs writingPrompt(brief).
+      # This step does NOT contain a copy of the writing instructions. It tells the agent
+      # to RENDER the prompt per slug via pipeline/tools/render_prompt.mjs (which calls
+      # writingPrompt) and then complete it. Any change to synth.mjs ships automatically.
+      - name: Author unpublished briefs (mirrored via synth.mjs)
         id: author
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         run: |
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
-          opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author.
-           Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
-           Task:
-           1. Read pipeline/state/pick.json (written by pick_briefs.mjs — the
-              newest unpublished briefs, pre-computed and sorted by published date).
-              Author a story for EXACTLY the slugs in its 'picked' array. Never
-              substitute, add, or skip any of them.
-           2. If 'picked' is empty (or the file is missing), reply 'no unpublished
-              briefs' and stop (exit 0).
-           3. For each targeted slug, read its brief <slug>.json under
-              pipeline/state/briefs/ for the facts, then write the Bengali article
-              body only to pipeline/tmp/stories/<slug>.b.md.
-           How to write (FRESH-NEWS VOICE):
-           - Write ONE plain, fresh Bangla news story (সংবাদ). Report the NEWS itself —
-             the event and the facts, what happened — NOT the sources and NOT what each
-             outlet said. The member leads are ONE fact pool: read them, extract facts,
-             write the story in your own words as if you were on the scene. NEVER walk
-             through the outlets one by one, NEVER compare 'one report said X, another
-             said Y'.
-           - Body structure IN THIS ORDER (omit any section that would be empty):
-               a) Lead paragraph — most important fact up front (who/what/when/where).
-               b) '**এক নজরে**' bullet list of 3-4 key points (bold label, bullets, blank
-                  paragraph after).
-               c) '## মূল খবর' — 2-5 short paragraphs telling the story in plain logic.
-               d) '## কী জানা গেছে' — ONLY when important verified details need their own
-                  explanation (numbers/dates/documents/decisions). Omit if মূল খবর carries them.
-               e) '## কী এখনো জানা যায়নি' — ONLY if the brief truly leaves unknowns
-                  (agenda/details/identities/decisions). Omit the section if nothing is unknown.
-           - Source rule (HARD): a finished news story must not show which outlet reported
-             what. NEVER name a media outlet in the body and NEVER write any reporting-on-
-             reporting: no '...প্রতিবেদনে বলা হয়েছে...', no 'দুই প্রতিবেদনেই...', no
-             'একই খবর প্রকাশ করেছে...', no 'একাধিক সংবাদমাধ্যম...', no closing
-             '...প্রতিবেদনে বিষয়টি নিশ্চিত করেছে...'। Sources render once AFTER the news,
-             with links, in the automatic 'সূত্র:' section from front matter — never repeat
-             them in the body.
-             - Attribute facts to the ACTOR only when it adds journalism (who said/did it):
-              'পুলিশ জানিয়েছে, ...', 'মন্ত্রণালয় জানায়, ...', 'সংবাদ সম্মেলনে তিনি বলেন, ...'.
-              When there is no actor, just state the fact plainly — do not invent a source
-              citation. Say each fact once.
-            Claim-level writing rules (#13) — apply by the status shown in the brief:
-            - VERIFIED: state as fact, directly (…হয়েছে, পুলিশ নিশ্চিত করেছে)।
-            - CORROBORATED: state as fact but softer (…জানা গেছে) — no over-claiming certainty.
-            - OFFICIAL: attach the agency (মন্ত্রণালয় জানিয়েছে, বিজ্ঞপ্তিতে বলা হয়েছে)।
-            - SINGLE_SOURCE: never as established fact; attribute it (একটি সূত্র জানিয়েছে, …দাবি করেছে)।
-            - UNCONFIRMED: never as fact; put in 'কী এখনো জানা যায়নি' or attribute with doubt।
-            - CONFLICTING: NEVER silently pick a side — state the disagreement explicitly
-              (কিছু সূত্রে X, অন্যদিকে Y; কোনটি সঠিক তা এখনো নিশ্চিত নয়)।
-            Hard rules:
-           - Facts pinned strictly to the brief. NO speculation — never write
-             'পর্যবক্ষকরা মনে করছেন...', 'আলোচনার জন্ম দেবে বলে মনে করা হচ্ছে...' unless the
-             brief quotes someone actually saying it. No generic background padding —
-             context only if it explains why the news matters AND is in the brief.
-           - Headlines in Bengali, numerals in Bengali. Target length BY THE BRIEF:
-             ≤2 sources = 100-180 words; 3 sources = 200-350 words; ≥4 sources =
-             400-550 words. Stop when the information stops, never pad to reach a
-             word count.
-           - (no editorial/draft disclaimer — NEVER such footer); do NOT append a 'সূত্র:'
-             list or any source links in the body (the source links are rendered
-             automatically from front matter — the body must not repeat them; NEVER show a
-             raw/visible full URL).
-           4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
-              (or with --dry-run if DRY_RUN=true).
-           5. Do NOT git commit, do NOT push, do NOT touch anything else.
-           Always finish by printing a short summary listing files created."
+          mkdir -p pipeline/tmp/stories /tmp
+          opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author. Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
+          Task:
+          1. Read pipeline/state/pick.json (written by pick_briefs.mjs — newest unpublished briefs). Author EXACTLY the slugs in its picked array. Never substitute, add, or skip.
+          2. If picked is empty or file missing, reply 'no unpublished briefs' and stop (exit 0).
+          3. For each targeted slug, render its writer prompt via the single source of truth: node pipeline/tools/render_prompt.mjs <slug> --out=/tmp/prompt-<slug>.txt  — this file IS the complete writing instructions (mode, fact-check/analysis template, claim rules, constraints, facts pool) from pipeline/lib/synth.mjs. Read that file and complete the article per it, writing the Bengali article body ONLY to pipeline/tmp/stories/<slug>.b.md (front matter is added later by finalize — do not write it).
+          4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
+          5. Do NOT git commit, do NOT push, do NOT touch anything else. Always finish by printing a short summary listing files created."
 
       - name: Stage and push drafted stories
         if: github.event.inputs.dry_run != 'true'
