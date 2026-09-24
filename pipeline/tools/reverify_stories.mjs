@@ -12,6 +12,7 @@ import { openDb } from '../lib/db.mjs';
 import { loadBrief, storyExists } from '../lib/synth.mjs';
 import { verifyHeadline } from '../lib/headline-verify.mjs';
 import { detectCorrections, applyCorrection, loadFrontmatter } from '../lib/reverify.mjs';
+import { claimTransitions } from '../lib/claim-verify.mjs';
 
 const SITE_DIR = resolve(import.meta.dirname, '../../site/src/content/news');
 const DRY = process.argv.includes('--dry-run');
@@ -54,7 +55,9 @@ function run() {
     if (!clusterId) { skipped++; continue; } // historical/demo stories have no claims graph
 
     const verdict = db.prepare('SELECT tier, score, badge, status, evaluated_at FROM verdicts WHERE cluster_id=?').get(clusterId);
-    const claims = db.prepare('SELECT claim_text, status, contradiction_count FROM claims WHERE cluster_id=?').all(clusterId);
+    const claims = db.prepare('SELECT id, claim_text, status, contradiction_count FROM claims WHERE cluster_id=?').all(clusterId);
+    const timelines = {};
+    for (const c of claims) timelines[c.id] = claimTransitions(db, c.id);
     const hdr = verifyHeadline(front.title ?? '', {
       leads: (brief?.members ?? []).map((m) => `${m.title ?? ''} ${m.lead ?? ''}`),
       claim: (claims ?? [])[0] ?? null,
@@ -62,7 +65,7 @@ function run() {
 
     // freshness guard
     if (!isStale(verdict?.evaluated_at)) {
-      const notes = detectCorrections({ front, verdict, claims, headlineStatus: hdr });
+      const notes = detectCorrections({ front, verdict, claims, headlineStatus: hdr, timelines });
       if (!notes.length) { console.log(`~ ${slug}: ok (no reversal)`); continue; }
       if (DRY) { console.log(`! ${slug}: would correct -> ${notes.length}: ${notes[0]}`); corrected++; continue; }
       try {

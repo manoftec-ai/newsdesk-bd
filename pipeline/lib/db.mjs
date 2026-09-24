@@ -90,6 +90,24 @@ export function openDb(path = DB_PATH) {
       FOREIGN KEY(claim_id) REFERENCES claims(id) ON DELETE CASCADE
     );
     CREATE INDEX IF NOT EXISTS idx_ce_claim ON claim_evidence(claim_id);
+    -- Temporal truth: append-only verification snapshots per claim. Each row is a
+    -- period during which a claim's verification state was VALID (valid_from..valid_until;
+    -- valid_until NULL = the current open period). Never mutated in place — a status
+    -- change closes the open row and opens a new one.
+    CREATE TABLE IF NOT EXISTS claim_snapshots(
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      claim_id INTEGER NOT NULL,
+      status TEXT NOT NULL,
+      confidence REAL NOT NULL DEFAULT 0,
+      support_count INTEGER NOT NULL DEFAULT 0,
+      contradiction_count INTEGER NOT NULL DEFAULT 0,
+      valid_from TEXT NOT NULL,
+      valid_until TEXT,
+      reason TEXT NOT NULL DEFAULT 'verify', -- initial | re-verify | conflict
+      created_at TEXT NOT NULL,
+      FOREIGN KEY(claim_id) REFERENCES claims(id) ON DELETE CASCADE
+    );
+    CREATE INDEX IF NOT EXISTS idx_cs_claim ON claim_snapshots(claim_id);
     CREATE TABLE IF NOT EXISTS conflicts(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       cluster_id INTEGER NOT NULL,

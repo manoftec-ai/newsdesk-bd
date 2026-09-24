@@ -46,6 +46,33 @@ test('detectCorrections: headline overclaim triggers R4', () => {
   assert.ok(notes.some((n) => n.includes('শিরোনাম')));
 });
 
+test('detectCorrections: R5 flip-flop — claim went CONFLICTING then recovered', () => {
+  const notes = detectCorrections({
+    front: { verification: { badge: 'verified' } },
+    verdict: { status: 'passed', badge: 'verified' },
+    claims: [{ id: 7, claim_text: 'Z', status: 'VERIFIED' }],
+    headlineStatus: 'supported',
+    timelines: { 7: [
+      { from: 'VERIFIED', to: 'CONFLICTING', changed_at: '2026-09-24T14:00:00.000Z' },
+      { from: 'CONFLICTING', to: 'VERIFIED', changed_at: '2026-09-26T08:00:00.000Z' },
+    ] },
+  });
+  assert.ok(notes.some((n) => n.includes('দোদুল্যমান')));
+});
+
+test('detectCorrections: no flip-flop (stable timeline) yields no R5 note', () => {
+  const notes = detectCorrections({
+    front: { verification: { badge: 'confirmed' } },
+    verdict: { status: 'passed', badge: 'confirmed' },
+    claims: [{ id: 1, claim_text: 'A', status: 'VERIFIED' }],
+    headlineStatus: 'supported',
+    timelines: { 1: [
+      { from: 'SINGLE_SOURCE', to: 'VERIFIED', changed_at: '2026-09-25T08:00:00.000Z' },
+    ] },
+  });
+  assert.ok(!notes.some((n) => n.includes('দোদুল্যমান')));
+});
+
 test('applyCorrection writes corrected/updated/updates + validates parsed yaml', () => {
   const dir = mkdtempSync(join(tmpdir(), 'reverify-'));
   const mdPath = join(dir, 'x.md');

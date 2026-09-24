@@ -11,6 +11,7 @@
 //   R2 badge downgraded                    (confirmed→partial etc., vs published)
 //   R3 a claim turned CONFLICTING          (unresolved contradiction in evidence)
 //   R4 headline now overclaims             (strongest claim conflict / no support)
+//   R5 a claim flip-flopped                 (temporal ledger: status went bad → good → bad)
 import { readFileSync, writeFileSync } from 'node:fs';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -37,7 +38,9 @@ export function badgeDropped(publishedBadge, currentBadge) {
 }
 
 // Detect all reversal reasons for one story from its live state.
-export function detectCorrections({ front = {}, verdict = null, claims = [], headlineStatus = null, members = [] }) {
+// `timelines` = optional map of claim_id → ordered temporal ledgers (from
+// claimTransitions); enabled R5 (flip-flop) when present.
+export function detectCorrections({ front = {}, verdict = null, claims = [], headlineStatus = null, members = [], timelines = null }) {
   const notes = [];
   if (!verdict) return notes;
 
@@ -63,7 +66,26 @@ export function detectCorrections({ front = {}, verdict = null, claims = [], hea
     notes.push('শিরোনাম দাবির চেয়ে বেশি প্রতিশ্রুতি দিচ্ছে — শিরোনামটি সংশোধন হওয়া উচিত।');
   }
 
+  // R5 — a claim flip-flopped (temporal ledger): went bad → good (or oscillated).
+  // A claim whose status turned CONFLICTING/REFUTED then recovered is a durability
+  // signal: the story's certainty is unstable, so flag it even if current is green.
+  if (timelines) {
+    for (const c of (claims ?? [])) {
+      const flow = claimTransitions_(timelines, c);
+      const badThenGood = flow.some((t, i) => i > 0 && t.to !== 'CONFLICTING' && flow[i - 1].to === 'CONFLICTING');
+      if (badThenGood) {
+        notes.push(`দাবিটির যাচাই-স্থিতি দোদুল্যমান («${String(c.claim_text ?? '').slice(0, 60)}») — একবার সন্দেহজনক ঘোষণার পর আবার নিশ্চিত হয়েছে।`);
+        break;
+      }
+    }
+  }
+
   return [...new Set(notes)];
+}
+
+function claimTransitions_(timelines, claim) {
+  if (!claim || !timelines) return [];
+  return timelines[claim.id] ?? timelines[claim.claim_id] ?? [];
 }
 
 // Write a correction into story frontmatter (additive). Idempotent: a note that
