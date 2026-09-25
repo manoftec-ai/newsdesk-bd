@@ -114,6 +114,41 @@ const jsonLd = {
           },
         ]
       : []),
+    ...(post.factCheck?.claim && post.factCheck?.verdict
+      ? [
+          {
+            "@type": "ClaimReview",
+            url: `${SITE.url}/article/${post.slug}`,
+            claimReviewed: post.factCheck.claim,
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue:
+                post.factCheck.verdict === "true"
+                  ? 5
+                  : post.factCheck.verdict === "mostly-true"
+                    ? 4
+                    : post.factCheck.verdict === "half"
+                      ? 3
+                      : post.factCheck.verdict === "mostly-false"
+                        ? 2
+                        : post.factCheck.verdict === "false"
+                          ? 1
+                          : post.factCheck.verdict === "misleading"
+                            ? 2
+                            : 3,
+              alternateName: getVerdict(post.factCheck)?.label ?? post.factCheck.verdict,
+              bestRating: 5,
+              worstRating: 1,
+            },
+            author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+            itemReviewed: {
+              "@type": "CreativeWork",
+              author: { "@type": "Organization", name: SITE.name },
+              datePublished: isoDate(entry.data.date),
+            },
+          },
+        ]
+      : []),
   ],
 };
 
@@ -177,6 +212,8 @@ const shareLinks = [
           {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
           {" — "}
           {badge.tierNote}
+          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
+          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
         </p>
 
         {(post.verification?.evidence?.length ?? 0) > 0 && (
