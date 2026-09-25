@@ -961,6 +961,19 @@
       "tests": "19 new tests; full suite 286/286 pass (was 267). Real-finalizer end-to-end confirmed: national-556 rejected as CLUSTER_INCOHERENT (minMax 0.083 vs 0.2 required, 7 members, all named as intruders) and nothing written to site.",
       "production": "No site content changed, no workflow edit, no Vercel change, no new dependency, no secret. Guard only runs inside the existing finalizer.",
       "rationale": "User: \"coherence guard is fine. do it. i dont want any more gurbage.\" A fixed fixture plus a corpus envelope test was used instead of naming a live slug in the corpus test, because the bot re-clusters briefs every run and rewrote national-556 out from under the first version of the test."
+    },
+    {
+      "id": "D105",
+      "date": "2026-09-25",
+      "title": "Dead event-graph payload dropped (57MB->45MB) + 38 old Vercel deployments pruned",
+      "summary": "Two cleanups. (1) site/src/data/event-graph.json is uploaded and JSON-parsed on every Vercel build; of its 38MB story payload, the `versions` key was 7.5MB across only 423 claims and NOTHING read it - src/lib/graph.js touches only meta, stories, events and cluster_id, and a repo-wide search for .versions outside the generator returns nothing. Removed the key from the writer in pipeline/tools/event_graph.mjs only; storyVersions() stays exported from lib/event-graph.mjs and stays covered by test/event-graph.test.mjs, so the audit trail is still available on demand. File 57MB -> 45MB, all 415 stories and 59,571 events preserved, all 7 site-read fields present, 286/286 tests pass. (2) Vercel had accumulated 44 retained deployments. Deleted 38 of the oldest (2026-09-19 through 2026-09-25T17:24), keeping the live deployment dpl_9U9aVk5whsBxKuPMjD2wS3EngGCH (which holds all three production aliases jachaidesk.com, newsdesk-bd.vercel.app, newsdesk-bd-man-of-technology.vercel.app) plus the 4 most recent for rollback. 5 remain. Every DELETE returned 200 and the site was verified healthy afterwards: homepage 200, national-551 200 with real content (36KB), national-125 404, sitemap 377.",
+      "files": [
+        "pipeline/tools/event_graph.mjs",
+        "site/src/data/event-graph.json"
+      ],
+      "tests": "286/286 pass. Site verified after the prune: homepage 200, /article/national-551 200 (title renders, 36521 bytes), /article/national-125 404, news-sitemap 377 entries.",
+      "production": "No site content edited, no workflow changed, no dependency, no secret. Deleting a Vercel deployment is reversible in practice: git is the source of truth and any commit can be redeployed.",
+      "rationale": "User reported Vercel deployment storage full against a 10GB limit and asked for old deployments to be cleared. The blocker we had actually hit was api-deployments-free-per-day (a daily deploy COUNT, not storage), and the build root is site/ so pipeline/state/store.db (79MB) never reaches Vercel - but 44 retained deployments were genuinely accumulating storage, so the prune was worth doing. Verified before acting: identified the alias-holding deployment and excluded it by uid rather than by recency, and aborted the script if that uid was ever absent from the list."
     }
   ],
   "sources": [
@@ -1306,7 +1319,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 75,
+  "sessionsCount": 76,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
