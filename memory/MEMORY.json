@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 56,
+    "sessionsCount": 57,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,17 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D85",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-530",
+      "summary": "Read the current pipeline/state/pick.json (one picked slug: national-530), rendered the canonical writingPrompt, authored only the verified life-sentence fact and explicitly attributed both SINGLE_SOURCE murder details to national-530.b.md, and ran finalize_stories.mjs. Output: site/src/content/news/national-530.md, draft:false; wrote=1 skipped=0 failed=0 blocked=0. Did not invent names, dates, locations, motives, case details, or reactions. Target validation passed; synth tests 12/12. Full pipeline suite retains the same four unrelated baseline failures (auditor checklist 14 vs test 12, missing targetWords export, length-tier mismatch). Site build could not start because Astro dependencies are not installed. No commit/push; pre-existing state changes were preserved.",
+      "files": [
+        "pipeline/tmp/stories/national-530.b.md",
+        "site/src/content/news/national-530.md",
+        "memory/sessions/2026-09-25-author-national-530.md"
+      ]
+    },
     {
       "id": "D84",
       "date": "2026-09-25",
