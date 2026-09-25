@@ -19,6 +19,7 @@ import { frontMatter, prepBody, storyExists } from '../lib/synth.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { validatePublicArticle } from './site_preflight.mjs';
 import { bodySubstanceCheck, minPublishWords } from '../lib/editorial.mjs';
+import { clusterCoherence, coherenceMin, COHERENCE_FAILURE_CODE } from '../lib/cluster-coherence.mjs';
 
 const DEFAULT_PICK_PATH = resolve(import.meta.dirname, '../state/pick.json');
 const DEFAULT_SITE_DIR = resolve(import.meta.dirname, '../../site/src/content/news');
@@ -113,6 +114,7 @@ export function finalizeStories({
   max = Infinity,
   minWords = minPublishWords(),
   now = new Date().toISOString(),
+  env = process.env,
 } = {}) {
   const startedAt = now;
   const result = {
@@ -161,6 +163,21 @@ export function finalizeStories({
           continue;
         }
         const brief = JSON.parse(readFileSync(briefPath, 'utf8'));
+        // Cluster-coherence guard: reject a brief whose members are not all about
+        // the same event, BEFORE any body is considered. The 150-word body floor
+        // cannot catch this - a mashed-together cluster still produces plenty of
+        // words, they are just the wrong words. Configurable via COHERENCE_MIN.
+        const coherence = clusterCoherence(brief, { min: coherenceMin(env) });
+        if (!coherence.pass) {
+          result.rejected.push(rejection(slug, COHERENCE_FAILURE_CODE, {
+            minMaxSimilarity: Number(coherence.minMax.toFixed(3)),
+            meanMaxSimilarity: Number(coherence.meanMax.toFixed(3)),
+            minRequired: coherence.minRequired,
+            members: coherence.n,
+            intruders: coherence.intruders,
+          }));
+          continue;
+        }
         if (isTitleDuplicate(brief.headline, brief.date, publishedTitles)) {
           result.skipped.push({ slug, reason: 'DUPLICATE_TITLE' });
           continue;
