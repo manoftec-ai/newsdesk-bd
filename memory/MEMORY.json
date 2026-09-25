@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 68,
+    "sessionsCount": 69,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,22 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D98",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized three picked stories",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-549, national-550, and national-548. Rendered each canonical writingPrompt, authored only those three body files, and ran finalize_stories.mjs --max=3: wrote=3 skipped=0 failed=0 blocked=0. The first generated excerpts and SEO descriptions cut mid-word, so the same three bodies were shortened to their verified headline facts, only those generated articles were removed, and the same finalizer reran. All three site files have draft:false, retain their brief source lists, and have complete excerpt and SEO-description boundaries of 140, 148, and 118 characters. Target validation passed; test/synth.test.mjs passed 12/12; node --check and git diff --check passed. No lint/typecheck scripts are defined. Site dependencies are absent, so the Astro build was unavailable. Pre-existing pipeline/state/pick.json, pipeline/state/store.db, and untracked pipeline/state/briefs/national-550.json changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs. The evidence pools were thin, so the articles were not padded and unrelated single-source material was not blended into the verified headlines.",
+      "files": [
+        "pipeline/tmp/stories/national-549.b.md",
+        "pipeline/tmp/stories/national-550.b.md",
+        "pipeline/tmp/stories/national-548.b.md",
+        "site/src/content/news/national-549.md",
+        "site/src/content/news/national-550.md",
+        "site/src/content/news/national-548.md",
+        "memory/sessions/2026-09-25-author-picked-549-550-548.md"
+      ]
+    },
     {
       "id": "D97",
       "date": "2026-09-25",
