@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 59,
+    "sessionsCount": 60,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,18 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D88",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-534",
+      "summary": "Read pipeline/state/pick.json (one picked slug: national-534), rendered the canonical writing prompt, authored only the thin verified fact pool with the SINGLE_SOURCE wording attributed, and ran finalize_stories.mjs. Output: site/src/content/news/national-534.md with draft:false; wrote=1 skipped=0 failed=0 blocked=0. No names, date or location details, speech detail, troop number, reaction, motive, or outcome was invented. Target validation passed; synth tests 12/12. Full suite retained four unrelated baseline failures (167/171); site build could not start because Astro dependencies are not installed. No commit/push; pre-existing state changes were preserved.",
+      "rationale": "User explicitly required exactly the picked slugs via render_prompt + finalize; thin-news mode prevented padding beyond the available source pool.",
+      "files": [
+        "pipeline/tmp/stories/national-534.b.md",
+        "site/src/content/news/national-534.md",
+        "memory/sessions/2026-09-25-author-national-534.md"
+      ]
+    },
     {
       "id": "D87",
       "date": "2026-09-25",
@@ -1062,7 +1074,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 55,
+  "sessionsCount": 60,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
