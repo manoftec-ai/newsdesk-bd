@@ -110,6 +110,11 @@
 - Lighthouse: PARKED 2026-09-24 (pre-existing; Vercel Insights 404 — user action item)
 - #37 metrics dashboard, #38 golden dataset: backlog (PARKED per 2026-09-24 recommendation — premature until readership/distribution exist)
 
+## Expert Audit 2026-09-24 — broad website roadmap
+> Full checklist extracted to `TODO-EXPERT-2026-09-24.md` (13 items, P0/P1/P2, 0.5–1 day each, zero budget).
+> Summary: P0 trust (badge prominence + ClaimReview, author page + NewsArticle schema, corrections log) + homepage hierarchy (hero + text mini-rows + eager LCP) → P1 SEO (evergreen hubs + related links + truthful sitemap + publisher pages) + perf guards → P2 push/analytics + PWA/monitoring. FB/Telegram = ⏸ user will activate later (code live, secret-gated).
+> Ship order: Week1 P0-1/2/3/5 → Week2 P1-8/7/13 + P0-4 → Week3 P1-6/9/10 + P2-11/12. Each `[x]` needs commit + deploy green + live fetch 200.
+
 ## Notes / constraints
 - English-only in terminal; Bengali only inside site content/prompt instructions.
 - Keep zero-budget + keyless model; auditor = flag-and-retry, not scoring-only.
