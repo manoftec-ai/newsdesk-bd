@@ -1,0 +1,62 @@
+name: whatsapp
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_run:
+    workflows: [auto-author, images, pipeline, watcher, history-author, history-batch]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: whatsapp
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install pipeline deps
+        working-directory: pipeline
+        run: npm ci --no-audit --no-fund
+
+      - name: Post latest story to WhatsApp
+        working-directory: pipeline
+        env:
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
+          WHATSAPP_TO: ${{ secrets.WHATSAPP_TO }}
+        run: node tools/whatsapp_post.mjs
+
+      - name: Commit sent-state
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          git add pipeline/state/whatsapp-sent.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no state change"
+          else
+            git commit -m "whatsapp: sent-post state (auto, $(date -u +%Y%m%dT%H%M))"
+            git fetch origin main
+            if git merge --ff-only origin/main 2>/dev/null; then
+              :
+            elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+              :
+            else
+              echo "merge failed — abandoning push; retried on next run"
+              git merge --abort 2>/dev/null || true
+              exit 0
+            fi
+            git push
+          fi
