@@ -1,0 +1,173 @@
+{
+  "$comment": "Jachaidesk Jev decision catalog. Single reviewable place for every Jev question, criteria and threshold (TypeSafe guidance: keep constants in one file). SHADOW MODE ONLY - nothing here gates or changes the pipeline. Used by pipeline/lib/jev-router.mjs.",
+  "version": 1,
+  "mode": "shadow",
+  "modeNote": "mode=shadow means a Jev decision is recorded and printed but NEVER alters the caller's workflow. mode=disabled means no HTTP call is attempted at all.",
+  "api": {
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "model": "jev-latest",
+    "timeoutMs": 20000,
+    "maxRetries": 2,
+    "retryBaseDelayMs": 400
+  },
+  "routing": {
+    "$comment": "lowConfidenceAt = a choice with confidence below this is treated as 'needs_human_review' for reporting only.",
+    "lowConfidenceAt": 0.5
+  },
+  "decisions": {
+    "AGENT_ROUTE": {
+      "purpose": "Decide the cheapest useful next step before the agent does expensive or repetitive work. Matches the agent-side policy, not the newsroom.",
+      "questions": {
+        "route": {
+          "type": "choice",
+          "instructions": "Given this agent task and the evidence gathered so far, what is the correct next step?",
+          "criteria": {
+            "proceed_directly": "The path is unambiguous and cheap; more analysis adds no information",
+            "gather_more_evidence": "A specific, known fact is still missing and is cheap to obtain",
+            "change_approach": "The current approach has already failed or is repeating itself; a materially different method is needed",
+            "investigate_root_cause": "Failures are unexplained; the cause must be identified before any retry",
+            "ask_human": "The decision is consequential, irreversible, or genuinely ambiguous and a person must choose"
+          }
+        },
+        "would_help": {
+          "type": "noul",
+          "instructions": "Would a structured second opinion measurably change or improve the next action, rather than just adding overhead?"
+        },
+        "repetition_risk": {
+          "type": "score",
+          "instructions": "How much does the current approach look like it is repeating itself or grinding without progress?",
+          "criteria": [
+            "No repetition; forward progress is clear",
+            "Some back-and-forth, but the approach is still sound",
+            "Clearly looping or repeating a failed action",
+            "Stuck; the same approach has already failed multiple times"
+          ]
+        }
+      },
+      "selected": "route"
+    },
+    "RESEARCH_DEPTH": {
+      "purpose": "How much more source research a story still needs. Advisory only - never decides truth.",
+      "questions": {
+        "depth": {
+          "type": "choice",
+          "instructions": "Based only on the supplied source evidence, how much more research does this story need?",
+          "criteria": {
+            "sufficient": "Two or more independent reliable sources already corroborate the core claims",
+            "research_more": "Only one source, or sources repeat each other without adding detail",
+            "primary_source_required": "The key claim is only an attributed statement; an official document or direct statement is needed",
+            "conflicting_information": "Sources materially disagree on a fact that matters to the story"
+          }
+        },
+        "source_independence": {
+          "type": "score",
+          "instructions": "How independent are the sources, ignoring how many there are?",
+          "criteria": [
+            "One outlet, or several restating a single wire report",
+            "Two outlets, at least one adding independent detail",
+            "Multiple independent outlets covering the same event",
+            "Independent outlets plus an official or primary record"
+          ]
+        },
+        "conflict_severity": {
+          "type": "noul",
+          "instructions": "Do two sources directly contradict each other on a fact that would change the article?",
+          "criteria": {
+            "true": "A material factual contradiction exists between sources",
+            "false": "Sources differ only in wording, detail or emphasis"
+          }
+        }
+      },
+      "selected": "depth"
+    },
+    "ARTICLE_MODE": {
+      "purpose": "Which article shape fits the story, for human review. The writer agent still decides the actual prose.",
+      "questions": {
+        "mode": {
+          "type": "choice",
+          "instructions": "Which article shape best fits this story given the available verified material?",
+          "criteria": {
+            "straight_news": "A single clear development; short factual report is enough",
+            "multi_source_synthesis": "Several outlets contribute genuinely different facts that must be combined",
+            "explainer": "Readers need background or context to understand why it matters",
+            "timeline_context": "The story is best understood as part of a longer sequence of events",
+            "breaking_update": "A fast-moving developing situation where facts may still change",
+            "human_review": "The material is too thin, too contradictory or too sensitive to shape automatically"
+          }
+        },
+        "editorial_risk": {
+          "type": "score",
+          "instructions": "How much editorial risk is there in publishing this on the current evidence?",
+          "criteria": [
+            "Low risk; well sourced and uncontested",
+            "Some risk; a detail is unconfirmed",
+            "High risk; key facts are single-sourced or disputed",
+            "Do not auto-publish; needs a human editor"
+          ]
+        }
+      },
+      "selected": "mode"
+    },
+    "FAILURE_ROUTING": {
+      "purpose": "Stop the agent blindly repeating a failed approach. Reports a recommended route; never executes it.",
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Given this failure and what has already been tried, what should happen next?",
+          "criteria": {
+            "retry": "A transient error; the identical action is likely to succeed next time",
+            "change_approach": "The method is wrong; a materially different method is needed",
+            "investigate_root_cause": "The cause is unknown and must be diagnosed before any retry",
+            "request_human_review": "The failure is destructive, ambiguous or needs a decision only a person can make"
+          }
+        },
+        "is_transient": {
+          "type": "noul",
+          "instructions": "Is this failure most likely transient (network, timeout, rate limit, service busy) rather than a logic or data error?"
+        },
+        "already_repeated": {
+          "type": "noul",
+          "instructions": "Has this exact same action already been attempted more than once in this task?",
+          "criteria": {
+            "true": "The identical action was already tried at least twice",
+            "false": "This is the first or second attempt at this action"
+          }
+        }
+      },
+      "selected": "action"
+    },
+    "ARTICLE_READINESS": {
+      "purpose": "Pre-publication readiness signal for a human editor. Cannot verify facts and is not trusted to.",
+      "questions": {
+        "readiness": {
+          "type": "choice",
+          "instructions": "Is this article ready to move to editorial review?",
+          "criteria": {
+            "ready": "Claims are sourced, headline is supported, no unresolved conflict",
+            "needs_more_sources": "Key claims rest on a single source or thin corroboration",
+            "needs_fact_check": "A specific checkable claim is unverified or disputed",
+            "needs_editor_review": "Judgement calls, sensitivity, or unresolved conflicts need a person"
+          }
+        },
+        "unsupported_risk": {
+          "type": "noul",
+          "instructions": "Does the article make any specific factual claim that is not traceable to a cited source line?"
+        }
+      },
+      "selected": "readiness"
+    }
+  },
+  "futureOnly": {
+    "$comment": "PHASE 8 candidates for the newsroom pipeline. DEFINED BUT NOT WIRED - no code path calls these. Do not activate without explicit user approval.",
+    "wired": false,
+    "candidates": [
+      "before extract: is this cluster worth a brief, or is it research noise?",
+      "after verify: does this cluster need cross-checking across outlets, or a primary source?",
+      "before synth: is research becoming repetitive - same outlets, no new facts?",
+      "before finalize: is this a synthesis of new information, or a restatement we already published?",
+      "before publish: is this ready for editorial review, or does it need a human?",
+      "on source failure: is this source dead, temporarily broken, or should we change method?",
+      "on repeated pipeline failure: retry, change approach, or escalate to a human?"
+    ]
+  }
+}

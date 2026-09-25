@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 60,
+    "sessionsCount": 61,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -743,6 +743,33 @@
       "date": "2026-09-24",
       "title": "editorial gates 1–40 #18/#20/#31/#13/#33 — mechanical why-it-matters + evidence panel + home hierarchy",
       "detail": "Fulfills proposal #18 (প্রমাণ panel on article), #20 (কী বদলেছে / What-Changed top note box + latest update link to #update-history), #31 (homepage editorial hierarchy — editorialOrder() keeps lead + top rows by editorial rank: featured → breaking → verified → rest, then recency, replacing raw newest-first), #13 (why-it-matters mechanical gate now enforces: a কেন গুরুত্বপূর্ণ section is only emitted/kept when the fact pool states a REAL consequence — CONSEQUENCE_WORDS in editorial.mjs; whyItMattersSupported(brief) + whyItMattersViolation gate (n15) wired into audit gate + synth prompt gating; SENSITIVE_MARKERS → isSensitiveStory + stricter political/claim-attribution rules in prompt, and sensitive-tier modeDesc dropped for non-sensitive briefs), #24 (breaking mode: BREAKING_WINDOW_MS 4h + isDevelopingBrief + publicationMode=breaking first → tier breaking > developing > standard), #6 (lengthForMode now sufficiency-aware — never pads thin developing/complex clusters: complex 600–1000 only when rich (sufficiency && srcCount>3), else 180–500; breaking 100–180; developing 300–600 only when not thin). Site render: [slug].astro gained `details.evidence-panel` (প্রমাণ দেখুন — why confirmed / why partial, with evidence url links, no chain-of-thought) + `what-changed mt-6` top note box (latest update time + note + link to full ইতিহাস) + heading structure per proposal #4; index.astro now uses editorialOrder(). CSS: .evidence-panel/.evidence-body/.evidence-list + .what-changed rules. Tests: sufficiency.test (breaking/sensitive/whyItMatters/lengthForMode sufficiency-aware) + audit.test (evidence) + synth.test (modeDesc varies by mode → class-based). All 164 pipeline tests green. Deploy layered: code-first (pipeline), then site pages (draft:false auto-publish still gated by sufficiency + mechanical audit incl. the new whyItMatters violation gate — a WHY box can no longer be force-kept without a stated consequence)."
+    },
+    {
+      "id": "D90",
+      "date": "2026-09-25",
+      "title": "Jev (TypeSafe AI) decision router — SHADOW MODE, local-only, not wired to CI or production",
+      "summary": "Jev is TypeSafe AI's System One model (choice/score/noul, no text generation). Official docs state explicitly that Jev is NOT a drop-in LLM for coding agents and name opencode; there is no OpenCode plugin and no local/offline mode. Verified from docs.typesafe.ai: HTTP POST https://api.typesafe.ai/v1/systemone, model jev-latest (= jev-1.13.0), Bearer TYPESAFE_API_KEY required (early access, no documented free tier), $0.042/MTok input with free output, 250k tok/s + 1200 req/min, 64k context, errors 401/422/429/529. Python SDK typesafe-sdk deliberately NOT installed (repo is Node/Astro).",
+      "implementation": "Added, all local-only: pipeline/lib/jev-router.mjs (mode guard, bounded retry on 429/529/timeout only, 401 never retried, never throws), pipeline/lib/shadow-log.mjs (redacting append-only JSONL, mode 0600, into pipeline/logs/ which .gitignore already excludes), pipeline/config/jev-decisions.json (all questions/criteria/thresholds in one reviewable file), pipeline/tools/jev_decide.mjs (CLI, always exit 0), pipeline/config/jev.env.example (no secret), pipeline/test/jev-router.test.mjs (24 offline tests), docs/JEV-INTEGRATION.md, plus the official TypeSafe agent skill at .opencode/skills/typesafe-ai/. AGENTS.md section 5 APPENDED — sections 1-4 verified byte-identical to HEAD.",
+      "decisionTypes": "Agent-routing (shadow): AGENT_ROUTE, FAILURE_ROUTING. Newsroom (defined, NOT wired, asserted by a test): RESEARCH_DEPTH, ARTICLE_MODE, ARTICLE_READINESS — all advisory and deliberately mirroring signals verify.mjs/claim-verify.mjs/conflict-detect.mjs already compute. Jev chooses a verification PATH; sources and evidence decide FACTS.",
+      "dependencies": "ZERO added. Router uses Node built-in fetch, mirroring pipeline/lib/llm.mjs, so pipeline/package.json and package-lock.json are untouched and the GitHub Actions npm ci graph for all five bot workflows is provably unchanged. The official @typesafe-ai/sdk@0.6.0 was verified as real but not added; it is a drop-in swap of postJson if ever wanted.",
+      "safety": "JEV_MODE=shadow is the only accepted non-off mode; active/gate/enforce are REFUSED (refused_mode). Every record carries affectedWorkflow:false. Missing key => not_configured with NO HTTP attempt (test-asserted). No production module imports the router; .github/workflows, site/, run.js, and all pre-existing libs/tools are untouched. No API key exists on this machine and none was requested in chat. Bengali accuracy is an open risk: TypeSafe documents English as primary training language.",
+      "testing": "24/24 offline tests pass. Phase 7: TEST 1 simple task — Jev deliberately SKIPPED, no log entry created (correct skip evidence). TEST 2 complex decision and TEST 3 repeated failure (5x identical satteri android-arm64 build failure) — router invoked via CLI, both returned NOT AVAILABLE / no_api_key_configured, workflow unchanged, agent proceeded on its own reasoning. Full suite 199/201; the 2 failures (editorial-gate, sufficiency proposal #6 length bands) are pre-existing baseline, files byte-identical to HEAD with zero jev references.",
+      "notVerified": "NO real Jev API call has ever succeeded (no key configured) — status B/C/D NOT DONE. Decision quality, thresholds and real cost are untuned and unverified. Free tier NOT documented officially. One disclosure: an early test defect let one request reach the real endpoint with an invalid placeholder key and trivial state; the API answered 401, no decision was returned, no repo data was sent. Defect fixed (postJson now takes fetchImpl) and guarded by a test asserting the exact endpoint and body.",
+      "production": "Production left completely unchanged. Nothing was deployed. Manual action pending user: obtain a key at console.typesafe.ai/keys, store at ~/.config/opencode/.secrets/typesafe.key (chmod 600), export TYPESAFE_API_KEY_FILE. Do not add the key to GitHub Actions or Vercel unless a future approved design needs it.",
+      "filesAdded": [
+        "pipeline/lib/jev-router.mjs",
+        "pipeline/lib/shadow-log.mjs",
+        "pipeline/config/jev-decisions.json",
+        "pipeline/tools/jev_decide.mjs",
+        "pipeline/config/jev.env.example",
+        "pipeline/test/jev-router.test.mjs",
+        "docs/JEV-INTEGRATION.md",
+        ".opencode/skills/typesafe-ai/SKILL.md",
+        ".opencode/skills/typesafe-ai/LICENSE"
+      ],
+      "filesModified": [
+        "AGENTS.md (section 5 appended only)"
+      ]
     }
   ],
   "sources": [
@@ -1088,7 +1115,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 60,
+  "sessionsCount": 61,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
