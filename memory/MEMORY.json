@@ -36,12 +36,10 @@
     {
       "id": "D85",
       "date": "2026-09-25",
-      "title": "Exact-pick authoring finalized national-530",
-      "summary": "Read the current pipeline/state/pick.json (one picked slug: national-530), rendered the canonical writingPrompt, authored only the verified life-sentence fact and explicitly attributed both SINGLE_SOURCE murder details to national-530.b.md, and ran finalize_stories.mjs. Output: site/src/content/news/national-530.md, draft:false; wrote=1 skipped=0 failed=0 blocked=0. Did not invent names, dates, locations, motives, case details, or reactions. Target validation passed; synth tests 12/12. Full pipeline suite retains the same four unrelated baseline failures (auditor checklist 14 vs test 12, missing targetWords export, length-tier mismatch). Site build could not start because Astro dependencies are not installed. No commit/push; pre-existing state changes were preserved.",
+      "title": "Exact-pick authoring remained a safe no-op",
+      "summary": "Re-read pipeline/state/pick.json: it contained picked=[] and pending=0. Because the exact requested target set was empty, no render_prompt command, story body authoring, or finalize_stories run was performed. No story or site content was modified; the pre-existing store.db change was preserved. No commit or push.",
       "files": [
-        "pipeline/tmp/stories/national-530.b.md",
-        "site/src/content/news/national-530.md",
-        "memory/sessions/2026-09-25-author-national-530.md"
+        "memory/sessions/2026-09-25-author-empty-pick-rerun.md"
       ]
     },
     {
