@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 70,
+    "sessionsCount": 71,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -884,6 +884,18 @@
       "filesModified": [
         "AGENTS.md (section 5 appended only)"
       ]
+    },
+    {
+      "id": "D100",
+      "date": "2026-09-25",
+      "title": "Offline Jev validation: simulation mode, agent contract, and a real confidence-escalation bug fix",
+      "summary": "Validated the Jev integration end-to-end with NO API key and NO network call. Added an explicitly-labelled offline simulation (JEV_MODE=simulate) so the plumbing can be proven without a key: a deterministic local keyword heuristic whose rules live in config/jev-decisions.json under simulation.rules. It never fabricates confidence, probabilities, token usage, latency or a jev-* model name (all null) and always carries simulated:true, isRealJev:false, authority:NONE-SIMULATION, agent.source:SIMULATION-NOT-JEV, plus a 4-line CLI banner. Added a flat typed agent contract (decision/confidence/escalate/nextStep/authority/advisoryOnly/source) where nextStep is a STATIC guidance lookup, not generated prose, so the agent can branch without an LLM paragraph.",
+      "bugFound": "REAL BUG found by the validation and fixed: low-confidence escalation in interpret() was hardcoded to answer.type===choice, so a future low-confidence SCORE decision would never escalate. Per the TypeSafe API reference both choice and score carry confidence (noul does not). Now any low-confidence answer escalates. Regression test added, plus functional tests for score-as-selected and noul-as-selected which the catalog never exercised (all selected questions are choice).",
+      "scenarios": "A simple typo fix => skipped by policy, no decision, nothing logged as a decision. B multi-route article task => structured enum gather_more_evidence (SIMULATED, matched keyword research). C failed twice with the same approach => structured enum change_approach (SIMULATED, matched same approach + failed twice).",
+      "tests": "37/37 Jev tests pass (13 new). Full suite 212/214, the same 2 pre-existing baseline failures (editorial-gate, sufficiency proposal #6).",
+      "classification": "A REAL JEV API READY = plumbing complete but unproven against the real service. B OFFLINE SIMULATION ONLY = current state of evidence. C PARTIALLY INTEGRATED = newsroom decision types deliberately unwired. D BROKEN = no.",
+      "stillMissing": "The ONLY missing input is a TYPESAFE_API_KEY. Everything else is in place: endpoint, request body shape, auth header, timeout, retry, parse, interpret, log, agent contract. No real call has ever returned 200.",
+      "production": "Unchanged. No deployment, no Vercel change, no workflow change, no secret."
     }
   ],
   "sources": [
@@ -1229,7 +1241,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 70,
+  "sessionsCount": 71,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",

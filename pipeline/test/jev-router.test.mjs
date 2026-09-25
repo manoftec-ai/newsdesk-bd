@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, readFileSync, existsSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { jevDecide, loadCatalog, listDecisions, interpret, compactState, isConfigured } from '../lib/jev-router.mjs';
+import { jevDecide, loadCatalog, listDecisions, interpret, compactState, isConfigured, simulateChoice, guidanceFor } from '../lib/jev-router.mjs';
 import { redact, readShadowLog } from '../lib/shadow-log.mjs';
 
 const CATALOG = loadCatalog();
@@ -233,6 +233,31 @@ test('a high noul companion flag also escalates', () => {
   assert.equal(interpret(d, answers, CATALOG).escalate, true);
 });
 
+// --- typed handling for score and noul as the SELECTED question ----------------
+// Every currently-selected question is a choice, so these guard the router
+// against a future catalog edit that selects a score or noul.
+
+test('score works as the selected question type (route + confidence)', () => {
+  const d = { selected: 'r', questions: { r: { type: 'score', instructions: 'x', criteria: ['low', 'mid', 'high'] } } };
+  const out = interpret(d, { r: { type: 'score', score: 1.5, confidence: 0.8, probabilities: { 0: 0.1, 1: 0.8, 2: 0.1 } } }, CATALOG);
+  assert.equal(out.route, 1.5);
+  assert.equal(out.confidence, 0.8);
+  assert.equal(out.escalate, false);
+});
+
+test('noul works as the selected question type and correctly has NO confidence', () => {
+  const d = { selected: 'r', questions: { r: { type: 'noul', instructions: 'x' } } };
+  const out = interpret(d, { r: { type: 'noul', noul: 0.77 } }, CATALOG);
+  assert.equal(out.route, 0.77);
+  assert.equal(out.confidence, null, 'noul carries no confidence per the API reference');
+});
+
+test('a low-confidence SCORE also escalates (regression: was choice-only)', () => {
+  const d = { selected: 'r', questions: { r: { type: 'score', instructions: 'x', criteria: ['low', 'high'] } } };
+  assert.equal(interpret(d, { r: { type: 'score', score: 0.1, confidence: 0.2 } }, CATALOG).escalate, true);
+  assert.equal(interpret(d, { r: { type: 'score', score: 1.9, confidence: 0.9 } }, CATALOG).escalate, false);
+});
+
 test('a 429 is retried with backoff, then succeeds', async () => {
   const env = { ...tmpEnv(), TYPESAFE_API_KEY: 'ts-test-key-value' };
   let n = 0;
@@ -333,14 +358,172 @@ test('shadow log is valid JSONL, redacted, and readable back', async () => {
   rmSync(dir.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
 });
 
-test('shadow log records a no-key run as NOT AVAILABLE, not as a decision', async () => {
-  const dir = tmpEnv();
-  const env = { ...dir };
-  const r = await jevDecide('AGENT_ROUTE', { taskId: 'nokey-log', state: 'x', env, now: NOW, fetchImpl: async () => okResponse() });
-  assert.equal(r.ok, false);
-  const rec = readShadowLog(NOW, { env })[0];
-  assert.equal(rec.skipped, 'not_configured');
-  assert.equal(rec.jevResult, null);
-  assert.equal(rec.route, undefined);
-  rmSync(dir.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
+// ------------------------------------------------------------------ simulation
+// The simulation is NOT Jev. These tests exist to prove two things: (1) the
+// offline plumbing works, and (2) a simulated result can never be mistaken for
+// a real TypeSafe call.
+
+test('simulate mode makes NO network call and never needs a key', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  let called = false;
+  const r = await jevDecide('AGENT_ROUTE', {
+    taskId: 'sim-nonet',
+    state: { goal: 'the same approach failed twice and is looping' },
+    env,
+    now: NOW,
+    fetchImpl: async () => {
+      called = true;
+      throw new Error('simulation must never touch the network');
+    },
+  });
+  assert.equal(called, false, 'simulate mode must not call fetch');
+  assert.equal(r.ok, true);
+  assert.equal(r.key, 'absent', 'simulation must not require a key');
 });
+
+test('simulate mode NEVER fabricates confidence, probabilities, usage or a model name', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('AGENT_ROUTE', { taskId: 'sim-nofab', state: 'looping repeatedly', env, now: NOW });
+  assert.equal(r.confidence, null, 'a simulated confidence would be a fabricated number');
+  assert.equal(r.confidenceSource, 'not-available-offline');
+  assert.equal(r.jevResult.usage, null, 'no fabricated token accounting');
+  assert.equal(r.jevResult.model, null, 'no simulated model name that could look like jev-*');
+  assert.equal(r.jevResult.network, 'never-contacted');
+  assert.equal(r.jevResult.attempts, 0);
+  const sel = r.jevResult.answers.route;
+  assert.equal(sel.probabilities, null);
+  // companion questions must be null, not invented numbers
+  assert.equal(r.jevResult.answers.would_help, null);
+  assert.equal(r.jevResult.answers.repetition_risk, null);
+});
+
+test('a simulated result is explicitly marked as NOT real Jev', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('AGENT_ROUTE', { taskId: 'sim-flags', state: 'looping', env, now: NOW });
+  assert.equal(r.simulated, true);
+  assert.equal(r.isRealJev, false);
+  assert.equal(r.authority, 'NONE-SIMULATION');
+  assert.equal(r.agent.source, 'SIMULATION-NOT-JEV');
+  assert.equal(r.agent.authority, 'NONE-SIMULATION');
+  // the serialized record must not contain anything resembling a jev model id
+  assert.ok(!/jev-\d/.test(JSON.stringify(r)), 'no jev-* model string in a simulated record');
+  assert.equal(r.affectedWorkflow, false);
+});
+
+test('simulation never uses a gate mode and logs a simulation note', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('AGENT_ROUTE', { taskId: 'sim-log', state: 'looping', env, now: NOW });
+  const rec = readShadowLog(NOW, { env }).at(-1);
+  assert.equal(rec.simulated, true);
+  assert.equal(rec.authority, 'NONE-SIMULATION');
+  assert.equal(rec.route, r.route);
+  rmSync(env.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
+});
+
+test('simulateChoice is deterministic and auditable (reports which keywords fired)', async () => {
+  const a = simulateChoice('FAILURE_ROUTING', 'the same approach failed twice', CATALOG);
+  const b = simulateChoice('FAILURE_ROUTING', 'the same approach failed twice', CATALOG);
+  assert.deepEqual(a, b, 'must be fully deterministic');
+  assert.ok(a.matchedKeywords.length > 0, 'must report the matched rule keywords');
+  assert.equal(a.fallback, false);
+});
+
+test('simulateChoice says FALLBACK when nothing matched instead of guessing', () => {
+  const a = simulateChoice('ARTICLE_MODE', 'zzz qqq xxx', CATALOG);
+  assert.equal(a.fallback, true);
+  assert.equal(a.matchedKeywords.length, 0);
+  assert.equal(a.option, Object.keys(CATALOG.decisions.ARTICLE_MODE.questions.mode.criteria)[0]);
+});
+
+test('every decision type has guidance for every one of its options', () => {
+  for (const d of listDecisions(CATALOG)) {
+    for (const opt of d.options) {
+      const g = guidanceFor(d.name, opt, CATALOG);
+      assert.ok(g && g.length > 10, `${d.name}/${opt} needs deterministic guidance`);
+    }
+  }
+});
+
+test('agent contract is flat, typed and LLM-free', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('FAILURE_ROUTING', { taskId: 'agent-contract', state: 'same approach failed twice', env, now: NOW });
+  const a = r.agent;
+  assert.deepEqual(Object.keys(a).sort(), ['advisoryOnly', 'authority', 'confidence', 'decision', 'escalate', 'nextStep', 'source']);
+  assert.equal(typeof a.decision, 'string');
+  assert.equal(typeof a.escalate, 'boolean');
+  assert.equal(typeof a.nextStep, 'string');
+  assert.ok(a.decision && CATALOG.decisions.FAILURE_ROUTING.questions.action.criteria[a.decision] !== undefined, 'decision must be a valid option from the catalog');
+  assert.equal(a.advisoryOnly, true);
+});
+
+// ============================ OFFLINE VALIDATION SCENARIOS =====================
+// Exactly the three scenarios requested, run through the real router with no
+// API key and no network. TEST A is a skip by policy; TEST B and TEST C exercise
+// the full plumbing and are SIMULATED, not Jev.
+
+test('SCENARIO A — simple deterministic task: Jev is skipped by policy', async () => {
+  const env = { ...tmpEnv() };
+  const r = await jevDecide('AGENT_ROUTE', {
+    taskId: 'scenario-A',
+    state: { task: 'Fix a typo in one existing file.' },
+    env,
+    now: NOW,
+  });
+  // Policy: the agent skips Jev for routine edits. The router is not called at
+  // all in that case, which is modelled here by the absence of any decision.
+  assert.equal(r.ok, false);
+  assert.equal(r.skipped, 'not_configured');
+  assert.equal(r.affectedWorkflow, false);
+  // and prove the skip is real: nothing was logged as a decision
+  const recs = readShadowLog(NOW, { env });
+  assert.equal(recs.at(-1).jevResult, null);
+  assert.equal(recs.at(-1).route, undefined);
+  rmSync(env.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
+});
+
+test('SCENARIO B — multi-route task: structured decision, not free-form prose', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('AGENT_ROUTE', {
+    taskId: 'scenario-B',
+    state: {
+      task: 'An article-generation task can be solved either by doing more source research, changing the research strategy, or proceeding with the current evidence.',
+    },
+    env,
+    now: NOW,
+  });
+  // structured: an enum route, not a paragraph
+  assert.ok(CATALOG.decisions.AGENT_ROUTE.questions.route.criteria[r.route] !== undefined, 'route must be a catalog option');
+  assert.equal(typeof r.route, 'string');
+  assert.equal(typeof r.nextStep, 'string');
+  assert.equal(typeof r.simulation.matchedKeywords.length, 'number');
+  // explicitly simulated
+  assert.equal(r.simulated, true);
+  assert.equal(r.isRealJev, false);
+  // agent can branch on it directly
+  assert.equal(r.agent.decision, r.route);
+  assert.equal(typeof r.agent.escalate, 'boolean');
+  rmSync(env.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
+});
+
+test('SCENARIO C — repeated failure: structured routing decision', async () => {
+  const env = { ...tmpEnv(), JEV_MODE: 'simulate' };
+  const r = await jevDecide('FAILURE_ROUTING', {
+    taskId: 'scenario-C',
+    state: 'The current implementation has failed twice using the same approach.',
+    env,
+    now: NOW,
+  });
+  const valid = Object.keys(CATALOG.decisions.FAILURE_ROUTING.questions.action.criteria);
+  assert.ok(valid.includes(r.route), `route ${r.route} must be one of ${valid.join('|')}`);
+  // the two strongest "stop repeating" signals are both in the ruleset, so the
+  // heuristic must land on one of them
+  assert.ok(['change_approach', 'investigate_root_cause'].includes(r.route), `expected a stop-repeating route, got ${r.route}`);
+  assert.ok(r.simulation.matchedKeywords.includes('failed twice') || r.simulation.matchedKeywords.includes('same approach'));
+  assert.equal(r.simulated, true);
+  assert.equal(r.isRealJev, false);
+  // deterministic guidance so the agent needs no LLM paragraph
+  assert.equal(r.nextStep, CATALOG.guidance.FAILURE_ROUTING[r.route]);
+  assert.equal(r.affectedWorkflow, false);
+  rmSync(env.JEV_SHADOW_LOG_DIR, { recursive: true, force: true });
+});
+

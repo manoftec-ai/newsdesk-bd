@@ -70,20 +70,42 @@ const result = await jevDecide(decisionType, {
 if (flag('json')) {
   console.log(JSON.stringify(result, null, 2));
 } else {
+  if (result.simulated) {
+    console.log('!! SIMULATED -- NOT THE JEV/TYPESAFE MODEL -- NO API CALL WAS MADE !!');
+    console.log('!! Deterministic local keyword heuristic. No confidence, no scores, no cost. !!');
+    console.log('!! This proves the plumbing only. It is NOT a real Jev decision.            !!');
+    console.log('');
+  }
   console.log(`decision : ${result.decisionType}`);
   console.log(`task     : ${result.taskId}`);
   console.log(`mode     : ${result.mode}   (shadow = advisory only)`);
   console.log(`key      : ${result.key}`);
   console.log(`state    : ${JSON.stringify(result.state)}`);
   if (result.ok) {
-    console.log(`route    : ${result.route}${result.confidence !== null ? `  (confidence ${result.confidence})` : ''}`);
+    console.log(`route    : ${result.route}${result.confidence !== null ? `  (confidence ${result.confidence})` : '  (confidence: n/a — none available offline)'}`);
     console.log(`flags    : ${JSON.stringify(result.flags)}`);
     console.log(`escalate : ${result.escalate}`);
-    console.log(`model    : ${result.jevResult.model}  usage=${JSON.stringify(result.jevResult.usage)}`);
+    if (result.nextStep) console.log(`nextStep : ${result.nextStep}`);
+    if (result.simulation) {
+      console.log(`sim      : ${result.simulation.method}`);
+      console.log(`matched  : ${JSON.stringify(result.simulation.matchedKeywords)}${result.simulation.fallbackToFirstOption ? '  (NO KEYWORD MATCHED — fell back to first declared option, not a guess)' : ''}`);
+    }
+    console.log(`model    : ${result.jevResult.model ?? 'n/a (not a real call)'}  network=${result.jevResult.network}  usage=${JSON.stringify(result.jevResult.usage)}`);
+    console.log(`authority: ${result.authority}`);
   } else {
     console.log(`result   : NOT AVAILABLE (${result.reason || result.skipped})`);
   }
   console.log(`workflow : ${result.affectedWorkflow ? 'CHANGED' : 'unchanged'} (shadow mode never changes it)`);
+  if (result.agent) {
+    console.log('');
+    console.log('--- agent contract (machine-readable, no LLM prose) ---');
+    console.log(`  decision    : ${result.agent.decision}`);
+    console.log(`  confidence  : ${result.agent.confidence}`);
+    console.log(`  escalate    : ${result.agent.escalate}`);
+    console.log(`  nextStep    : ${result.agent.nextStep}`);
+    console.log(`  authority   : ${result.agent.authority}`);
+    console.log(`  source      : ${result.agent.source}`);
+  }
   console.log(`log      : ${result.logFile ?? 'not written'}`);
 }
 process.exit(0);
