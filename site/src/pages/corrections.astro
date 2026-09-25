@@ -61,6 +61,12 @@ const corrected = (await sortedPosts())
       </p>
     </div>
 
+    <div class="mt-4 flex flex-wrap gap-2 text-xs text-muted-foreground">
+      <span class="rounded-full border border-border px-3 py-1">{(await sortedPosts()).length} সংবাদ প্রকাশিত</span>
+      <span class="rounded-full border border-border px-3 py-1">{corrected.length} সংশোধিত</span>
+      <span class="rounded-full border border-border px-3 py-1">শেষ যাচাই: {formatDateTimeBD(Date.now())}</span>
+    </div>
+
     <div class="mt-10 border-t border-border/60 pt-6">
       <h2 class="flex items-center gap-2 font-serif text-2xl font-bold">
         <Icon name="check" class="h-5 w-5 text-primary" />
