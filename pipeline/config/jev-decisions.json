@@ -14,6 +14,82 @@
     "$comment": "lowConfidenceAt = a choice with confidence below this is treated as 'needs_human_review' for reporting only.",
     "lowConfidenceAt": 0.5
   },
+  "guidance": {
+    "$comment": "Deterministic instruction string per (decision, option). This is a static lookup, NOT generated prose - it is what lets the agent act on a typed decision without an LLM writing a paragraph. Advisory only in shadow mode.",
+    "AGENT_ROUTE": {
+      "proceed_directly": "the path is unambiguous; continue with your own plan, do not spend more effort deciding",
+      "gather_more_evidence": "one specific fact is missing; obtain exactly that fact, then re-decide",
+      "change_approach": "the current approach is not working; pick a materially different method before continuing",
+      "investigate_root_cause": "the cause is unknown; diagnose it before any further retry",
+      "ask_human": "stop and hand this to the user; the decision is consequential or genuinely ambiguous"
+    },
+    "FAILURE_ROUTING": {
+      "retry": "the failure looks transient; the identical action is reasonable once more",
+      "change_approach": "do NOT repeat the same action; switch to a materially different method",
+      "investigate_root_cause": "do NOT retry yet; find out why it failed first",
+      "request_human_review": "stop; this needs a human decision, not another automated attempt"
+    },
+    "RESEARCH_DEPTH": {
+      "sufficient": "evidence already corroborates the core claims; no extra research needed",
+      "research_more": "gather more independent sources before writing",
+      "primary_source_required": "an official or primary record is needed for the key claim",
+      "conflicting_information": "sources disagree materially; resolve the conflict or escalate, never pick one silently"
+    },
+    "ARTICLE_MODE": {
+      "straight_news": "a short factual report fits this story",
+      "multi_source_synthesis": "combine genuinely different facts from several outlets",
+      "explainer": "the reader needs background or context to understand why this matters",
+      "timeline_context": "present this as part of a longer sequence of events",
+      "breaking_update": "fast-moving situation; state what is confirmed and attribute what is not",
+      "human_review": "material is too thin, contradictory or sensitive; a human must shape this"
+    },
+    "ARTICLE_READINESS": {
+      "ready": "ready for a human editor to review",
+      "needs_more_sources": "key claims rest on a single source; add corroboration first",
+      "needs_fact_check": "a specific checkable claim is unverified or disputed",
+      "needs_editor_review": "judgement calls or unresolved conflicts need a person"
+    }
+  },
+  "simulation": {
+    "$comment": "OFFLINE SIMULATION ONLY. This is a deterministic local keyword heuristic. It is NOT Jev, NOT the TypeSafe model, and produces NO confidence, NO probabilities, NO token usage and NO latency claim. It exists only to prove the request->parse->interpret->log->agent plumbing works with no API key. Rules live here so a human can review exactly what it does. Enable ONLY with JEV_MODE=simulate.",
+    "authority": "none",
+    "neverProduces": ["confidence", "probabilities", "tokenUsage", "latency", "modelVersion"],
+    "rules": {
+      "AGENT_ROUTE": {
+        "proceed_directly": ["typo", "rename", "spelling", "simple", "deterministic", "one file", "routine", "trivial", "formatting", "whitespace"],
+        "gather_more_evidence": ["missing", "unknown", "need to find", "gather", "look up", "fetch", "research", "read the log", "inspect"],
+        "investigate_root_cause": ["why", "root cause", "unexplained", "diagnose", "cause of", "mystery", "does not make sense"],
+        "change_approach": ["looping", "repeating", "repeatedly", "same approach", "third time", "already failed", "stuck", "no progress"],
+        "ask_human": ["destructive", "irreversible", "delete", "deploy to production", "ambiguous", "user decision", "approval", "which one should"]
+      },
+      "FAILURE_ROUTING": {
+        "retry": ["timeout", "timed out", "transient", "rate limit", "429", "overloaded", "temporarily", "network error", "flaky"],
+        "change_approach": ["same approach", "same action", "failed twice", "failed again", "identical error", "looping", "already tried", "still failing", "another attempt"],
+        "investigate_root_cause": ["unknown why", "no idea why", "root cause", "unexplained", "diagnose", "cause of"],
+        "request_human_review": ["destructive", "irreversible", "ambiguous", "needs approval", "user decision", "cannot continue"]
+      },
+      "RESEARCH_DEPTH": {
+        "primary_source_required": ["official statement", "press release", "gazette", "primary source", "only an attributed", "denied by"],
+        "conflicting_information": ["conflict", "contradict", "disagree", "inconsistent", "conflicting", "different accounts"],
+        "research_more": ["only one source", "single source", "thin", "not corroborated", "more sources", "research more"],
+        "sufficient": ["corroborated", "multiple independent", "two independent", "sufficient", "already verified"]
+      },
+      "ARTICLE_MODE": {
+        "human_review": ["contradict", "conflict", "unverified", "sensitive", "too thin", "allegation"],
+        "multi_source_synthesis": ["synthesis", "combine", "different facts", "several outlets", "multi source"],
+        "explainer": ["explain", "background", "context for", "why it matters", "explainer"],
+        "timeline_context": ["timeline", "sequence of events", "chronology", "over time", "history of"],
+        "breaking_update": ["breaking", "developing", "still unfolding", "live update", "rapidly changing"],
+        "straight_news": ["simple", "single clear", "short factual", "straight news"]
+      },
+      "ARTICLE_READINESS": {
+        "needs_fact_check": ["unverified claim", "disputed", "fact check", "contradict", "cannot be traced"],
+        "needs_more_sources": ["single source", "not corroborated", "thin evidence", "needs more sources"],
+        "needs_editor_review": ["editor", "judgement", "ambiguous", "sensitive", "unresolved"],
+        "ready": ["verified", "corroborated", "all claims sourced", "ready"]
+      }
+    }
+  },
   "decisions": {
     "AGENT_ROUTE": {
       "purpose": "Decide the cheapest useful next step before the agent does expensive or repetitive work. Matches the agent-side policy, not the newsroom.",

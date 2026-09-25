@@ -204,17 +204,78 @@ existing workflow continues unchanged
 
 Enforced in code, not just in prose:
 
-* `JEV_MODE=shadow` is the only non-off mode accepted. A value of `active`, `gate` or
-  `enforce` is **refused** (`skipped: 'refused_mode'`) rather than silently honoured.
+* `JEV_MODE=shadow` is the only mode that reaches the network. A value of `active`, `gate`
+  or `enforce` is **refused** (`skipped: 'refused_mode'`) rather than silently honoured.
+* `JEV_MODE=simulate` is the only other accepted mode. It is a **local simulation, not Jev** —
+  see §6.1. It never touches the network and never needs a key.
+* `JEV_MODE=disabled` (or `off`) means no HTTP call is attempted at all.
 * Every record carries `affectedWorkflow: false`. A successful call can never report that it
   changed anything.
 * No workflow, pipeline stage, or site module imports the router.
-* `jevDecide()` resolves on every path — unknown decision type, missing key, 401, 429, 529,
-  timeout. It never throws and never blocks a caller.
+* `jevDecide()` resolves on every path — unknown decision type, missing key, 401, 422, 429,
+  529, timeout. It never throws and never blocks a caller.
 * Missing key ⇒ `skipped: 'not_configured'`, and **no HTTP request is attempted** (asserted by
   a test that injects a `fetchImpl` which fails if called).
 * Retry policy: only `429`, `529` and network/timeout errors are retried, at most twice, with
   exponential backoff. `401` is never retried. Mirrors the documented TypeSafe behaviour.
+
+### 6.1 Offline simulation — NOT Jev
+
+Added 2026-09-25 so the plumbing can be validated with no API key, which is the current
+state of this project.
+
+```bash
+JEV_MODE=simulate node tools/jev_decide.mjs FAILURE_ROUTING \
+  --state='The same approach failed twice' --json
+```
+
+**What it is:** a deterministic local keyword heuristic. The rules live in
+`pipeline/config/jev-decisions.json` under `simulation.rules` so a human can read exactly
+what it does. It picks the option whose keyword list scores the most substring matches in
+the state text, and reports which keywords fired. No randomness, no model, no network.
+
+**What it is NOT, and this is enforced by tests:**
+
+| Never produced | Enforced how |
+|---|---|
+| `confidence` | `null`, with `confidenceSource: "not-available-offline"` |
+| `probabilities` | `null` |
+| token `usage` | `null` |
+| a `model` name | `null` — a simulated `jev-*` string would be a lie; a test asserts no `jev-<digit>` appears anywhere in a simulated record |
+| latency | not measured or claimed |
+| companion question answers | `null`, marked as not simulated |
+
+Every simulated result carries `simulated: true`, `isRealJev: false`,
+`authority: "NONE-SIMULATION"`, and `agent.source: "SIMULATION-NOT-JEV"`. The CLI prints a
+four-line `!! SIMULATED — NOT THE JEV/TYPESAFE MODEL !!` banner. The shadow log stores the
+same flags. When no keyword matches, the heuristic reports `fallbackToFirstOption: true`
+rather than inventing a plausible-looking answer.
+
+**If a real key is later configured, `JEV_MODE=simulate` still short-circuits before the key
+is even read**, so a simulation can never be produced by accident from a live account.
+
+### 6.2 The agent contract (no LLM-generated paragraph)
+
+Every result — real or simulated — carries a flat, typed `agent` block, so the agent branches
+on enum values and never needs an LLM to write a paragraph about the decision:
+
+```json
+{
+  "agent": {
+    "decision": "change_approach",
+    "confidence": null,
+    "escalate": false,
+    "nextStep": "do NOT repeat the same action; switch to a materially different method",
+    "authority": "NONE-SIMULATION",
+    "advisoryOnly": true,
+    "source": "SIMULATION-NOT-JEV"
+  }
+}
+```
+
+`nextStep` is a **static lookup** from `guidance` in the decision catalog, keyed by
+`(decisionType, option)`. It is a string constant, not generated text. A test asserts every
+decision type has guidance for every one of its options.
 
 ### Shadow log
 
@@ -396,13 +457,58 @@ node tools/jev_decide.mjs AGENT_ROUTE --task=t1 \
 node tools/jev_decide.mjs FAILURE_ROUTING --state='{"error":"…","attempts":5}' --json
 node tools/jev_decide.mjs AGENT_ROUTE --state-file=/tmp/s.json --bypass   # explicit skip
 JEV_MODE=disabled node tools/jev_decide.mjs --list    # verify without any call
+JEV_MODE=simulate node tools/jev_decide.mjs FAILURE_ROUTING --state='same approach failed twice'
 
 tail -f logs/jev-shadow-$(date -u +%F).jsonl         # watch the shadow log
 ```
 
 Always exits `0` unless the arguments are unusable, so it can never fail a script or a test.
 
-## 12. Activation path (requires explicit approval — do not do it yet)
+## 12. Offline validation run — 2026-09-25 (no API key, no network)
+
+Run because no TypeSafe key exists. **No real API call was made and none was attempted.**
+
+| Capability required | Verdict | Evidence |
+|---|---|---|
+| Jev decision interface | PRESENT | `export async function jevDecide` (single entry point) |
+| Typed decision / choice handling | PRESENT | `answer?.choice`, route is a catalog enum |
+| Score handling | PRESENT | `answer?.score`; verified functionally as a selected type |
+| Noul handling | PRESENT | `answer?.noul`; verified functionally as a selected type |
+| Confidence handling | PRESENT | `answer?.confidence` + `lowConfidenceAt` threshold; `null` for noul, per the API spec |
+| Routing / action interpretation | PRESENT | `interpret()` → `route`, `confidence`, `flags`, `escalate` |
+| Error handling | PRESENT | `if (!res.ok)` → typed status; 401/422/429/529 handled |
+| Timeout / failure handling | PRESENT | `AbortSignal.timeout(20000)`; bounded retry with exponential backoff; never throws |
+| Logging | PRESENT | redacted append-only JSONL, mode `0600`, gitignored |
+| Shadow mode | PRESENT | enforced; gating modes refused |
+| Bypass behaviour | PRESENT | `--bypass` flag and `bypassed_by_caller` |
+| Offline simulation (labelled) | PRESENT | `JEV_MODE=simulate`, `SIMULATION-NOT-JEV` |
+| Agent contract without LLM prose | PRESENT | static `guidance` lookup + flat `agent` block |
+
+**Scenarios.** A — "Fix a typo in one existing file": skipped by policy, no decision
+produced, nothing logged as a decision. B — multi-route article task: structured enum
+`gather_more_evidence` (SIMULATED, matched keyword `research`), machine-readable, no prose.
+C — "failed twice using the same approach": structured enum `change_approach` (SIMULATED,
+matched `same approach`, `failed twice`).
+
+**One real bug found and fixed by this validation:** low-confidence escalation was hardcoded
+to `answer.type === 'choice'`, so a future low-confidence **score** decision would never have
+escalated. Per the TypeSafe API reference both choice and score carry `confidence` (noul does
+not). Now any low-confidence answer escalates. Regression test added, along with functional
+tests for score-as-selected and noul-as-selected, which the catalog never exercised because
+every selected question is a choice.
+
+**Tests: 37/37 Jev tests pass** (13 new). Full suite 212/214, the same 2 pre-existing
+baseline failures.
+
+### Classification
+
+* **A. REAL JEV API READY** — plumbing complete, but unproven against the real service. A key
+  is the only missing input. Cannot be claimed until a real call returns 200.
+* **B. OFFLINE SIMULATION ONLY** — this is the current state of *evidence*.
+* **C. PARTIALLY INTEGRATED** — the newsroom decision types are deliberately unwired.
+* **D. BROKEN** — no.
+
+## 13. Activation path (requires explicit approval — do not do it yet)
 
 1. Obtain a key and store it locally as in §3.
 2. Run the full test set with the key present; confirm real responses, real `confidence`
