@@ -11,6 +11,7 @@ import { join } from 'node:path';
 import { buildRequest, decide, ENGINE, ACTIONS, PRIORITY } from '../lib/decision-router.mjs';
 import { ORDERED_RULES, rulesFor, THRESHOLDS } from '../lib/decision-rules.mjs';
 import { normalizeState, detectSecrets, summarizeState } from '../lib/decision-state.mjs';
+import { DEFAULT_MIN_PUBLISH_WORDS } from '../lib/editorial.mjs';
 
 const NOW = new Date('2026-09-25T12:00:00.000Z');
 const tmpEnv = () => ({ LDR_LOG_DIR: mkdtempSync(join(tmpdir(), 'ldr-')) });
@@ -257,6 +258,7 @@ test('every rule is individually reachable by its own condition', () => {
     RESEARCH_002: { primarySourceNeeded: true, primarySourceAvailable: false },
     RESEARCH_001: { researchSourceCount: 1 },
     ROUTE_006: { availableApproaches: 2 },
+    ARTICLE_010: { bodyWordCount: 14 },
     TASK_002: { isKnownFileEdit: true },
     TASK_001: { taskType: 'deterministic_edit' },
     SPLIT_007: { filesAffected: 9 },
@@ -267,6 +269,31 @@ test('every rule is individually reachable by its own condition', () => {
     const got = run(dt, reach[r.id] ?? {});
     assert.equal(got.ruleId, r.id, `${r.id} is not reachable as the winner (got ${got.ruleId})`);
   }
+});
+
+test('ARTICLE_010 — a body below the publish floor => HUMAN_REVIEW', () => {
+  const r = run('ARTICLE_READINESS', { bodyWordCount: 14, researchSourceCount: 3 });
+  assert.equal(r.ruleId, 'ARTICLE_010');
+  assert.equal(r.action, ACTIONS.HUMAN_REVIEW);
+  assert.equal(r.requiresHumanApproval, true);
+  assert.ok(r.reason.includes('14'));
+  assert.ok(r.reason.includes(String(THRESHOLDS.ARTICLE_MIN_WORDS)));
+});
+
+test('ARTICLE_010 does not fire at or above the floor', () => {
+  const r = run('ARTICLE_READINESS', { bodyWordCount: THRESHOLDS.ARTICLE_MIN_WORDS, researchSourceCount: 3 });
+  assert.notEqual(r.ruleId, 'ARTICLE_010');
+});
+
+test('ARTICLE_010 does not fire when the body length is unknown', () => {
+  const r = run('ARTICLE_READINESS', { researchSourceCount: 3 });
+  assert.notEqual(r.ruleId, 'ARTICLE_010', 'unknown length must not be treated as zero');
+  assert.equal(r.bodyWordCount, undefined);
+});
+
+test('the router floor matches the publisher floor', () => {
+  assert.equal(THRESHOLDS.ARTICLE_MIN_WORDS, DEFAULT_MIN_PUBLISH_WORDS,
+    'decision router and publisher must agree, or the advisory signal lies');
 });
 
 // ================================================== no-probability / safety contract

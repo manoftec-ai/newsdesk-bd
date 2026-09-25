@@ -94,6 +94,48 @@ export function readerValueCheck(headline, body) {
   return { ok, novel: novel.slice(0, 8), bodyWords, headWords };
 }
 
+// ---- body-substance gate (2026-09-25) --------------------------------------
+// The `rv1` reader-value probe above is wired into audit.mjs, which only runs on
+// the parked LLM authoring path. The finalizer path (tools/finalize_stories.mjs)
+// calls runPublicationGate + validatePublicArticle — neither of which looks at
+// whether the BODY is a real article. That gap let 14-26 word headline
+// restatements publish with `badge: confirmed, tier: A`.
+//
+// This check is the missing floor. It is deliberately two objective parts:
+//   1. NO_READER_VALUE — rv1: the body adds no concrete fact beyond the headline.
+//   2. BODY_TOO_THIN   — the body is below an absolute word floor.
+// Both are deterministic and configurable; neither judges whether a claim is true.
+export const DEFAULT_MIN_PUBLISH_WORDS = 100;
+
+export function minPublishWords(env = process.env) {
+  const raw = Number(env.PUBLISH_MIN_WORDS);
+  return Number.isFinite(raw) && raw >= 0 ? raw : DEFAULT_MIN_PUBLISH_WORDS;
+}
+
+/** Count real words (Bengali or Latin runs), ignoring markdown punctuation. */
+export function bodyWordCount(text) {
+  return String(text ?? '')
+    .replace(/[#*>|`[\]()]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => /[ঀ-৿A-Za-z0-9]/u.test(w)).length;
+}
+
+/**
+ * Decide whether a body is substantive enough to publish.
+ * Returns { pass, code, bodyWords, minWords, novel }.
+ */
+export function bodySubstanceCheck(headline, body, { minWords = DEFAULT_MIN_PUBLISH_WORDS } = {}) {
+  const rv = readerValueCheck(headline, body);
+  const words = bodyWordCount(body);
+  if (!rv.ok) {
+    return { pass: false, code: 'NO_READER_VALUE', bodyWords: words, minWords, novel: rv.novel };
+  }
+  if (words < minWords) {
+    return { pass: false, code: 'BODY_TOO_THIN', bodyWords: words, minWords, novel: rv.novel };
+  }
+  return { pass: true, code: null, bodyWords: words, minWords, novel: rv.novel };
+}
+
 // ---- #A1/#A2 content sufficiency + publication modes ----------------------
 // Verification ≠ pubitability (Phase-2 editorial correction #1/#3). A brief can
 // be fully VERIFIED yet still contain only the one fact its headline states

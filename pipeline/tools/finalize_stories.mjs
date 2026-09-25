@@ -18,6 +18,7 @@ import { runPublicationGate } from '../lib/publication-gate.mjs';
 import { frontMatter, prepBody, storyExists } from '../lib/synth.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { validatePublicArticle } from './site_preflight.mjs';
+import { bodySubstanceCheck, minPublishWords } from '../lib/editorial.mjs';
 
 const DEFAULT_PICK_PATH = resolve(import.meta.dirname, '../state/pick.json');
 const DEFAULT_SITE_DIR = resolve(import.meta.dirname, '../../site/src/content/news');
@@ -110,6 +111,7 @@ export function finalizeStories({
   bodiesDir = DEFAULT_BODIES_DIR,
   rejectionsPath = DEFAULT_REJECTIONS_PATH,
   max = Infinity,
+  minWords = minPublishWords(),
   now = new Date().toISOString(),
 } = {}) {
   const startedAt = now;
@@ -179,6 +181,19 @@ export function finalizeStories({
             failureCodes: publication.failureCodes,
             claimIds: publication.claimIds,
             evidenceHash: publication.evidenceHash,
+          }));
+          continue;
+        }
+        // Body-substance floor: evidence checks alone cannot tell a real article
+        // from a headline restatement. Blocks NO_READER_VALUE (rv1) and
+        // BODY_TOO_THIN. Configurable via PUBLISH_MIN_WORDS.
+        const substance = bodySubstanceCheck(brief.headline ?? '', body, { minWords });
+        if (!substance.pass) {
+          result.rejected.push(rejection(slug, 'BODY_SUBSTANCE_BLOCKED', {
+            code: substance.code,
+            bodyWords: substance.bodyWords,
+            minWords: substance.minWords,
+            novelTokens: substance.novel.length,
           }));
           continue;
         }

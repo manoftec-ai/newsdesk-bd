@@ -45,6 +45,7 @@ export const THRESHOLDS = Object.freeze({
   SPLIT_FILE_THRESHOLD: 5, // more files than this -> split the work
   SPLIT_SUBTASK_THRESHOLD: 3, // more parts than this -> split the work
   ROUTE_MIN_APPROACHES: 2, // how many routes before it counts as ambiguous
+  ARTICLE_MIN_WORDS: 100, // must match DEFAULT_MIN_PUBLISH_WORDS in lib/editorial.mjs
 });
 
 export const RULES = [
@@ -188,6 +189,15 @@ export const RULES = [
   },
 
   // -------------------------------------------------------- priority 6: TASK SHAPE
+  {
+    id: 'ARTICLE_010',
+    priority: PRIORITY.TASK_SHAPE,
+    action: ACTIONS.HUMAN_REVIEW,
+    appliesTo: [DECISION_TYPES.ARTICLE_READINESS, DECISION_TYPES.ARTICLE_MODE, DECISION_TYPES.AGENT_ROUTE],
+    description: 'A body below the publish floor: too thin to publish, but the evidence is fine.',
+    when: (s) => typeof s.bodyWordCount === 'number' && s.bodyWordCount < THRESHOLDS.ARTICLE_MIN_WORDS,
+    reason: (s) => `Body is ${s.bodyWordCount} words, below the ${THRESHOLDS.ARTICLE_MIN_WORDS}-word publish floor; the evidence may be solid but the article has not been written yet`,
+  },
   {
     id: 'TASK_002',
     priority: PRIORITY.TASK_SHAPE,
