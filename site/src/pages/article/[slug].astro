@@ -110,6 +110,27 @@ const jsonLd = {
         },
       ],
     },
+    ...(post.breaking
+      ? [
+          {
+            "@type": "LiveBlogPosting",
+            "@id": `${SITE.url}/article/${post.slug}#liveblog`,
+            headline: post.title,
+            description,
+            coverageStartTime: isoDate(entry.data.date),
+            datePublished: isoDate(entry.data.date),
+            ...(entry.data.updated ? { dateModified: isoDate(entry.data.updated) } : {}),
+            liveBlogUpdate: [
+              {
+                "@type": "BlogPosting",
+                headline: post.title,
+                datePublished: isoDate(entry.data.date),
+                articleBody: post.excerpt,
+              },
+            ],
+          },
+        ]
+      : []),
     ...(post.faq?.length
       ? [
           {
