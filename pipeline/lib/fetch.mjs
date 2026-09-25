@@ -21,6 +21,26 @@ async function get(url, timeout = TIMEOUT_MS) {
   } finally { clearTimeout(t); }
 }
 
+async function postForm(url, body, timeout = ARTICLE_TIMEOUT_MS) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), timeout);
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      redirect: 'follow',
+      signal: ctrl.signal,
+      headers: {
+        'user-agent': UA,
+        accept: '*/*',
+        'content-type': 'application/x-www-form-urlencoded;charset=UTF-8',
+      },
+      body,
+    });
+    const text = await res.text();
+    return { ok: res.ok, status: res.status, url: res.url, text, headers: res.headers };
+  } finally { clearTimeout(t); }
+}
+
 // ---------- RSS ----------
 export async function fetchRss(source) {
   const parser = new Parser({ timeout: TIMEOUT_MS, headers: { 'user-agent': UA } });
@@ -58,6 +78,58 @@ function sameOrigin(a, b) {
   try { return new URL(a, b).origin === new URL(b).origin; } catch { return false; }
 }
 
+function collectJsonLdBodies(value, out) {
+  if (Array.isArray(value)) {
+    for (const entry of value) collectJsonLdBodies(entry, out);
+    return;
+  }
+  if (typeof value === 'string') {
+    out.push(value);
+    return;
+  }
+  if (!value || typeof value !== 'object') return;
+  if (value.articleBody) collectJsonLdBodies(value.articleBody, out);
+  for (const entry of Object.values(value)) {
+    if (entry && typeof entry === 'object') collectJsonLdBodies(entry, out);
+  }
+}
+
+function jsonLdArticleBody($) {
+  const bodies = [];
+  $('script[type="application/ld+json"]').each((_, el) => {
+    const raw = $(el).html() ?? $(el).text();
+    if (!String(raw).trim()) return;
+    try { collectJsonLdBodies(JSON.parse(String(raw)), bodies); } catch {}
+  });
+  return bodies.map((body) => cleanBody(body)).sort((a, b) => b.length - a.length)[0] ?? '';
+}
+
+function articleNodeStats($, node) {
+  const copy = $(node).clone();
+  copy.find('script,style,nav,aside,footer,header,form,button,.ad,.ads,.social,.related,.recommendations').remove();
+  const paragraphTexts = copy.find('p').map((_, p) => cleanBody($(p).text())).get().filter((text) => text.length > 0);
+  const text = paragraphTexts.length
+    ? cleanBody(paragraphTexts.join(' '))
+    : cleanBody(copy.text());
+  const linkChars = cleanBody(copy.find('a').text()).replace(/\s+/gu, '').length;
+  const linkDensity = linkChars / Math.max(1, text.replace(/\s+/gu, '').length);
+  return { text, score: text.length + paragraphTexts.length * 40 - linkDensity * text.length * 2 };
+}
+
+export function extractArticleBody($) {
+  const jsonLd = jsonLdArticleBody($);
+  const nodes = new Set();
+  $('article,main,[itemprop="articleBody"],.article-content,.story-content,.news-content,.post-content,.entry-content').each((_, node) => {
+    nodes.add(node);
+  });
+  const candidates = [...nodes]
+    .map((node) => articleNodeStats($, node))
+    .filter(({ text }) => text.length >= 80)
+    .sort((a, b) => b.score - a.score);
+  const fallback = cleanBody($('p').map((_, el) => cleanBody($(el).text())).get().join(' '));
+  return [jsonLd, ...candidates.map(({ text }) => text), fallback].find((text) => text.length >= 100) ?? '';
+}
+
 function extractArticleMeta($, u) {
   const ogTitle = $('meta[property="og:title"]').attr('content') || '';
   const ogDesc = $('meta[property="og:description"]').attr('content') || '';
@@ -65,17 +137,9 @@ function extractArticleMeta($, u) {
     $('meta[property="og:updated_time"]').attr('content') || '';
   const h1 = $('h1').first().text();
   const timeAttr = $('time[datetime]').first().attr('datetime') || '';
-  let body = '';
-  const art = $('article').first();
-  if (art.length) {
-    art.find('h1,h2,script,style,nav,button,.ad,.ads,.social').remove();
-    body = cleanBody(art.find('p').map((_, el) => $(el).text()).get().join(' '));
-  }
-  if (!body) body = cleanBody($('main .content p, .article-content p, .post-content p').map((_, el) => $(el).text()).get().join(' '));
-  if (!body) body = cleanBody($('p').map((_, el) => $(el).text()).get().join(' '));
   return {
     title: normalizeTitle(ogTitle || h1 || ''),
-    body,
+    body: extractArticleBody($),
     published_at: parseDate(ogTime || timeAttr),
     excerpt: cleanBody(ogDesc),
   };
@@ -154,26 +218,132 @@ export { needsBodyEnrichment };
 // Fetch the real article page behind a decoded gnews item and pull its <p> body
 // (reuses the generic HTML scraper). Failures are swallowed — a 403/blocked page
 // keeps the thin header-only body rather than failing the whole run.
-export async function enrichThinBodies(items) {
+export async function enrichThinBodies(
+  items,
+  { getImpl = get, resolveImpl = resolveGoogleNewsUrl, max = ENRICH_MAX, delayMs = ENRICH_DELAY_MS } = {},
+) {
   const out = [];
   let done = 0;
   for (let item of items) {
-    if (needsBodyEnrichment(item) && done < ENRICH_MAX && /^https?:/.test(item.url)) {
+    if (needsBodyEnrichment(item) && done < max && /^https?:/.test(item.url)) {
       done += 1;
       try {
-        const page = await get(item.url, ARTICLE_TIMEOUT_MS);
+        const targetUrl = await resolveImpl(item.url);
+        if (targetUrl !== item.url) item = { ...item, url: targetUrl, url_hash: urlHash(targetUrl) };
+        const page = await getImpl(item.url, ARTICLE_TIMEOUT_MS);
         if (page.ok) {
           const $art = cheerio.load(page.text);
           const m = extractArticleMeta($art, item.url);
-          const full = cleanBody([m.body, m.excerpt, m.title].filter(Boolean).join(' '));
+          const full = cleanBody(m.body.length >= m.excerpt.length ? m.body : m.excerpt);
           if (full.length > (item.body ?? '').length) item = { ...item, body: full };
+          if (/^https?:/u.test(page.url ?? '') && !googleNewsArticleId(page.url)) {
+            item = { ...item, url: page.url, url_hash: urlHash(page.url) };
+          }
         }
-      } catch { /* blocked/protected page — keep thin body */ }
-      await new Promise((r) => setTimeout(r, ENRICH_DELAY_MS)); // politeness
+      } catch {}
+      await new Promise((r) => setTimeout(r, delayMs));
     }
     out.push(item);
   }
   return out;
+}
+
+export function googleNewsArticleId(link) {
+  try {
+    const url = new URL(String(link));
+    const parts = url.pathname.split('/').filter(Boolean);
+    const marker = parts.at(-2);
+    const token = parts.at(-1);
+    if (url.hostname === 'news.google.com' && ['articles', 'read'].includes(marker) && token) return token;
+  } catch {}
+  return null;
+}
+
+export function parseGoogleNewsDecodingParams(html) {
+  const $ = cheerio.load(String(html ?? ''));
+  const node = $('[data-n-a-sg][data-n-a-ts]').first();
+  const signature = node.attr('data-n-a-sg');
+  const timestamp = node.attr('data-n-a-ts');
+  return signature && timestamp ? { signature, timestamp } : null;
+}
+
+function findGoogleNewsDestination(value) {
+  if (typeof value === 'string') {
+    if (!value.includes('garturlres')) return null;
+    try { return findGoogleNewsDestination(JSON.parse(value)); } catch { return null; }
+  }
+  if (Array.isArray(value)) {
+    if (value[0] === 'garturlres' && typeof value[1] === 'string') return value[1];
+    for (const entry of value) {
+      const found = findGoogleNewsDestination(entry);
+      if (found) return found;
+    }
+    return null;
+  }
+  if (!value || typeof value !== 'object') return null;
+  if (typeof value.garturlres === 'string') return value.garturlres;
+  for (const entry of Object.values(value)) {
+    const found = findGoogleNewsDestination(entry);
+    if (found) return found;
+  }
+  return null;
+}
+
+export function parseGoogleNewsBatchResponse(text) {
+  for (const chunk of String(text ?? '').split(/\n\n/u)) {
+    if (!chunk.trim()) continue;
+    try {
+      const found = findGoogleNewsDestination(JSON.parse(chunk));
+      if (found) {
+        const url = new URL(found);
+        if (['http:', 'https:'].includes(url.protocol) && url.hostname !== 'news.google.com') return url.href;
+      }
+    } catch {}
+  }
+  return null;
+}
+
+export async function resolveGoogleNewsUrl(link, { getImpl = get, postImpl = postForm } = {}) {
+  const original = String(link ?? '');
+  if (!/^https?:/u.test(original)) return original;
+  const legacy = decodeGoogleNewsUrl(original);
+  if (legacy !== original) return legacy;
+  const articleId = googleNewsArticleId(original);
+  if (!articleId) return original;
+  let params = null;
+  for (const path of [
+    `https://news.google.com/articles/${articleId}`,
+    `https://news.google.com/rss/articles/${articleId}`,
+  ]) {
+    try {
+      const page = await getImpl(path, ARTICLE_TIMEOUT_MS);
+      if (!page?.ok) continue;
+      params = parseGoogleNewsDecodingParams(page.text);
+      if (params) break;
+    } catch {}
+  }
+  if (!params) return original;
+  const request = [
+    'garturlreq',
+    [
+      ['X', 'X', ['X', 'X'], null, null, 1, 1, 'US:en', null, 1, null, null, null, null, null, 0, 1],
+      'X', 'X', 1, [1, 1, 1], 1, 1, null, 0, 0, null, 0,
+    ],
+    articleId,
+    Number(params.timestamp),
+    params.signature,
+  ];
+  const payload = ['Fbv4je', JSON.stringify(request)];
+  const body = new URLSearchParams({ 'f.req': JSON.stringify([[payload]]) }).toString();
+  try {
+    const response = await postImpl(
+      'https://news.google.com/_/DotsSplashUi/data/batchexecute?rpcids=Fbv4je',
+      body,
+      ARTICLE_TIMEOUT_MS,
+    );
+    if (response?.ok) return parseGoogleNewsBatchResponse(response.text) ?? original;
+  } catch {}
+  return original;
 }
 
 async function parseGnewsUrl(source) {
@@ -289,7 +459,7 @@ async function fetchGTrends(source) {
       }
     } catch { /* one failing search must not kill the engine */ }
   }
-  return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
+  return { items: await enrichThinBodies(items), feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 
 export async function fetchGnews(source) {

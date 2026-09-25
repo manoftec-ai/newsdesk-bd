@@ -34,6 +34,20 @@
   },
   "decisions": [
     {
+      "id": "D89",
+      "date": "2026-09-25",
+      "title": "List-promise audit and Google News body enrichment",
+      "summary": "mechanicalAudit now fails rv1 when a list-promising headline has fewer than three concrete detail-body items; generic এক নজরে summary bullets are excluded. fetch.mjs decodes current Google News wrappers through Fbv4je, persists the resolved publisher URL/hash, and extracts JSON-LD/article/main/body content for thin gnews and gtrends items. Focused tests pass 30/30; the full suite passes 175/177 with only known unrelated targetWords-import and old length-tier failures. Both national-520 wrappers resolved live; blocked publishers stayed thin, while an accessible Samakal page yielded a 288-character body.",
+      "rationale": "A headline must not promise specifics absent from the story, and title-only Google News items should become full evidence whenever the publisher allows access. Keep buildBrief synchronous; fetch is the correct enrichment boundary.",
+      "files": [
+        "pipeline/lib/audit.mjs",
+        "pipeline/lib/fetch.mjs",
+        "pipeline/test/audit.test.mjs",
+        "pipeline/test/fetch-enrich.test.mjs",
+        "memory/sessions/2026-09-25--list-promise-gnews-enrichment.md"
+      ]
+    },
+    {
       "id": "D88",
       "date": "2026-09-25",
       "title": "Exact-pick authoring finalized national-534",

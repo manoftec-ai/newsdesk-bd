@@ -1,7 +1,7 @@
 // test/audit.test.mjs — unit tests for the two-stage auditor (mechanical stage)
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mechanicalAudit, parseAudit, auditPrompt, AUDIT_POINTS, SPEC_AUDIT_POINTS } from '../lib/audit.mjs';
+import { mechanicalAudit, parseAudit, auditPrompt, listPromiseCheck, AUDIT_POINTS, SPEC_AUDIT_POINTS } from '../lib/audit.mjs';
 
 const brief = (n, headline) => ({
   headline: headline ?? 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু',
@@ -90,23 +90,24 @@ test('AUDIT_POINTS is exactly 10 points c1..c10', () => {
   assert.deepEqual(AUDIT_POINTS.map((p) => p.id), ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c10']);
 });
 
-test('SPEC_AUDIT_POINTS is the 12-point proposal checklist n1..n12', () => {
-  assert.equal(SPEC_AUDIT_POINTS.length, 12);
+test('SPEC_AUDIT_POINTS is the 14-point checklist n1..n14', () => {
+  assert.equal(SPEC_AUDIT_POINTS.length, 14);
   assert.deepEqual(
     SPEC_AUDIT_POINTS.map((p) => p.id),
-    ['n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'n10', 'n11', 'n12'],
+    ['n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'n10', 'n11', 'n12', 'n13', 'n14'],
   );
   const en = SPEC_AUDIT_POINTS.map((p) => p.en.toLowerCase()).join(',');
-  for (const k of ['factuality', 'source support', 'claim coverage', 'natural bengali', 'repetition', 'speculation', 'fill', 'headline', 'quote integrity', 'context relevance', 'attribution', 'readability']) {
+  for (const k of ['factuality', 'source support', 'claim coverage', 'natural bengali', 'repetition', 'speculation', 'fill', 'headline', 'quote integrity', 'context relevance', 'attribution', 'readability', 'translation naturalness', 'date/number consistency']) {
     assert.ok(en.includes(k), `missing ${k}`);
   }
 });
 
 test('auditPrompt uses the spec checklist + delete-sentence rules', () => {
   const p = auditPrompt(brief(3), goodBody());
-  assert.match(p, /checklist \(proposal #29\/#36\)/);
+  assert.match(p, /editorial checklist \(proposal #29\/#36/);
   assert.match(p, /"n1":/);
   assert.match(p, /"n12":/);
+  assert.match(p, /"n14":/);
   assert.match(p, /Delete-sentence rules/);
   assert.match(p, /adds no information/);
 });
@@ -121,6 +122,24 @@ test('headline restatement with no new facts blocks reader value (rv1)', () => {
 test('good body passes reader value (rv1 not triggered)', () => {
   const r = mechanicalAudit(brief(3), goodBody());
   assert.equal(r.pass, true, JSON.stringify(r.fails));
+});
+
+test('list-promise headline requires three concrete body items', () => {
+  const headline = 'রাজধানীর যেসব এলাকায় মার্কেট বন্ধ';
+  assert.deepEqual(listPromiseCheck(headline, 'এলাকাগুলো হলো ধানমন্ডি, মিরপুর, গাজীপুর।'), {
+    promised: true,
+    count: 3,
+    required: 3,
+    ok: true,
+  });
+  const missing = mechanicalAudit(brief(3, headline), goodBody());
+  assert.ok(missing.fails.some((f) => f.id === 'rv1' && /promises a list/u.test(f.note)), JSON.stringify(missing.fails));
+  const fulfilled = mechanicalAudit(brief(3, headline), `${goodBody()}\n\nএলাকাগুলো হলো ধানমন্ডি, মিরপুর, গাজীপুর।`);
+  assert.equal(fulfilled.fails.some((f) => f.id === 'rv1' && /promises a list/u.test(f.note)), false, JSON.stringify(fulfilled.fails));
+});
+
+test('ordinary headline does not trigger the list-promise gate', () => {
+  assert.equal(listPromiseCheck('ঢাকায় নতুন লাইন চালু', 'শুধু একটি ঘটনা ঘটেছে।').promised, false);
 });
 
 test('#12 disclosure — CONFLICTING claim with silent single side blocks (n13)', () => {

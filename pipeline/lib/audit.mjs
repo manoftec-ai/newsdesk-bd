@@ -48,6 +48,50 @@ function extractQuotes(text) {
 // #12 disclosure rule (the draft writer prompt tells it to say conflicts).
 const DISAGREEMENT_RE =
   /(অন্যদিকে|কিছু\s*সূত্র|কোনটি|প্রকৃত\s*সংখ্যা|সংখ্যা\s*এখনো|মিল\s*নেই|ভিন্ন\s*তথ্য|বিরোধপূর্ণ|দাবি,\s*তবে|নিশ্চিত\s*নয়|সঠিক\s*তথ্য\s*নয়)/u;
+const LIST_PROMISE_RE = /(যেসব|তালিকা|যেখানে|কোন\s*কোন)/u;
+const LIST_FRAGMENT_STOP = new Set([
+  'যেখানে', 'যেসব', 'তালিকা', 'কোন কোন', 'কোন', 'এবং', 'ও', 'রয়েছে', 'হয়েছে',
+  'হবে', 'হওয়া', 'জানা', 'দেওয়া', 'করা', 'নয়', 'এর', 'ওই', 'সহ',
+]);
+const LIST_CUE_RE = /(গুলো|এলাকা|তালিকা|যেসব|এরা|এগুলো)/u;
+function normalizeListFragment(value) {
+  return String(value ?? '')
+    .replace(/^[\s*•–—-]+/u, '')
+    .replace(/[\s।,;:]+$/u, '')
+    .replace(/\s+/gu, ' ')
+    .trim();
+}
+function isConcreteListFragment(value) {
+  const item = normalizeListFragment(value);
+  if (item.length < 2 || LIST_FRAGMENT_STOP.has(item)) return false;
+  const words = item.split(/\s+/u);
+  return words.length >= 2 || /[\d০-৯]/u.test(item) || item.length >= 5;
+}
+function listFragmentCount(text) {
+  const explicit = [...String(text ?? '').matchAll(/^\s*(?:[-*•]|\d+[.)])\s+(.+)$/gmu)]
+    .map((m) => m[1]);
+  const inlineCount = Math.max(0, ...String(text ?? '')
+    .split(/[।.!?\n]+/u)
+    .map((sentence) => {
+      if (!LIST_CUE_RE.test(sentence)) return 0;
+      return new Set(
+        sentence
+          .split(/[,;:]+|\s+(?:ও|এবং)\s+/u)
+          .filter(isConcreteListFragment)
+          .map(normalizeListFragment),
+      ).size;
+    }));
+  return Math.max(
+    new Set(explicit.filter(isConcreteListFragment).map(normalizeListFragment)).size,
+    inlineCount,
+  );
+}
+export function listPromiseCheck(headline, body) {
+  const promised = LIST_PROMISE_RE.test(String(headline ?? ''));
+  const detailBody = String(body ?? '').replace(/\*\*এক\s*নজরে\*\*[\s\S]*?(?=\n\s*\n|$)/iu, ' ');
+  const count = promised ? listFragmentCount(detailBody) : 0;
+  return { promised, count, required: 3, ok: !promised || count >= 3 };
+}
 
 // ---- Bengali quality helpers (proposal §4) ----
 const EN_MONTH_RE = /\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/u;
@@ -224,6 +268,10 @@ export function mechanicalAudit(brief, body) {
   // beyond the headline, or the reader who read the headline learns nothing new.
   const rv = readerValueCheck(brief.headline ?? '', text);
   if (!rv.ok) note('rv1', `no reader value: body adds no concrete fact beyond headline (${rv.bodyWords}/${rv.headWords} words)`);
+  const listPromise = listPromiseCheck(brief.headline ?? '', text);
+  if (!listPromise.ok) {
+    note('rv1', `headline promises a list but body has only ${listPromise.count} concrete items (need ${listPromise.required})`);
+  }
 
   // ---- Proposal §4E / §8: Bengali punctuation & date/number consistency (mechanical) ----
   for (const issue of bengaliPunctuationIssues(text)) {
