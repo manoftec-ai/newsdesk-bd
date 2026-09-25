@@ -1,4 +1,28 @@
-# Jev integration (Jachaidesk) — architecture, verification, shadow-mode operation
+# TypeSafe Jev — EVALUATED, VERIFIED, AND DELIBERATELY NOT USED
+
+> **SUPERSEDED 2026-09-25 (project decision D101).** The user decided **not** to use the
+> TypeSafe Jev API. The runtime was retired: `lib/jev-router.mjs`, `tools/jev_decide.mjs`,
+> `config/jev-decisions.json`, `config/jev.env.example`, `test/jev-router.test.mjs` and the
+> `.opencode/skills/typesafe-ai/` skill were all removed. Nothing in this repository calls
+> the TypeSafe API, and no key is configured anywhere.
+>
+> **The active decision layer is `LOCAL_DECISION_ROUTER` — see `docs/DECISION-ROUTER.md`.**
+> It is a local, deterministic, offline framework inspired by Jev-style typed routing. It is
+> NOT the TypeSafe Jev model.
+>
+> This file is kept as the **record of the evaluation**, not as an operating guide. The
+> verification below was real and remains accurate as a record of what the vendor documents.
+> Do not follow the "Operating it" or "Activation path" sections — those describe a path the
+> project deliberately did not take.
+>
+> To restore the Jev runtime, revert the removal commits; the full code is in git history.
+
+---
+
+<details>
+<summary>Original document (evaluation record, 2026-09-25) — expand</summary>
+
+# Jev integration (JachaiDesk) — architecture, verification, shadow-mode operation
 
 > Added 2026-09-25. **Status: SHADOW MODE. Not active, not deployed, not wired into CI.**
 > Nothing in this document authorises production use. Activating Jev as a gate requires
@@ -519,3 +543,7 @@ baseline failures.
    pipeline — still as a log-only signal first.
 6. Active gating, or any Jev call from GitHub Actions or Vercel, is a separate, explicit
    decision that has **not** been made.
+
+---
+
+</details>

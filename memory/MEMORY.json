@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 72,
+    "sessionsCount": 73,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -908,6 +908,23 @@
       "classification": "A REAL JEV API READY = plumbing complete but unproven against the real service. B OFFLINE SIMULATION ONLY = current state of evidence. C PARTIALLY INTEGRATED = newsroom decision types deliberately unwired. D BROKEN = no.",
       "stillMissing": "The ONLY missing input is a TYPESAFE_API_KEY. Everything else is in place: endpoint, request body shape, auth header, timeout, retry, parse, interpret, log, agent contract. No real call has ever returned 200.",
       "production": "Unchanged. No deployment, no Vercel change, no workflow change, no secret."
+    },
+    {
+      "id": "D102",
+      "date": "2026-09-25",
+      "title": "LOCAL_DECISION_ROUTER replaces TypeSafe Jev — local, deterministic, offline, shadow mode",
+      "summary": "User decided NOT to use the TypeSafe Jev API. Built LOCAL_DECISION_ROUTER: a local, fully offline, fully deterministic decision-routing framework inspired by Jev-style typed routing. IT IS NOT the TypeSafe Jev model. No network, no API key, no external AI, no cost, and NO probability of any kind. Shaped to this repo's real gap: pipeline.yml has 12 `|| true` steps and auto-author.yml has 6 more, which make failures silent and get retried by the next cron with the same approach; nothing guarded against that.",
+      "files": "Added pipeline/lib/decision-state.mjs (ACTIONS + DECISION_TYPES enums, normalizeState, detectSecrets, summarizeState), pipeline/lib/decision-rules.mjs (19 rules, id/priority/pure predicate/action/reason, THRESHOLDS), pipeline/lib/decision-router.mjs (buildRequest + decide, priority resolution, shadow log), pipeline/tools/decision_router.mjs (CLI: --list, --rules, <TYPE> --state=... --json), pipeline/test/decision-router.test.mjs (41 offline tests), docs/DECISION-ROUTER.md. Reused the redaction module from the Jev work via git mv shadow-log.mjs -> decision-log.mjs rather than rewriting it. ZERO dependencies added; package.json/package-lock.json untouched.",
+      "contract": "DecisionRequest { decisionType, task, state, history, constraints } — rules read ONLY state, which keeps every predicate pure. DecisionResult carries engine, ts, action, ruleId, rulePriority, reason, ruleConfidence, confidenceKind, confidenceIsProbability:false, requiresHumanApproval, shadowMode, wouldChangeWorkflow:false, state, evaluated[] (full rule trace), durationUs. ruleConfidence is an explicitly-named DETERMINISTIC RULE MATCH STRENGTH (1 safety / 0.75 specific / 0.5 generic), never an AI probability. A test asserts no Jev-shaped field (jevResult/probabilities/noul/systemone/typesafe) ever appears in a result.",
+      "actions": "SKIP, CONTINUE, RESEARCH_MORE, CHANGE_STRATEGY, RETRY, VERIFY, HUMAN_REVIEW, SPLIT_TASK, INVESTIGATE_ROOT_CAUSE, ROUTE_DECISION, STOP_RESEARCH.",
+      "priority": "1 SAFETY (SEC_001 secret in state, PROD_001 irreversible high-impact production, PROD_002 high-impact production) > 2 HUMAN_APPROVAL (APPROVAL_001) > 3 FAILURE (FAILURE_004 >=6 same -> HUMAN_REVIEW, FAILURE_003 >=3 same -> INVESTIGATE_ROOT_CAUSE, FAILURE_002 >=2 same -> CHANGE_STRATEGY, FAILURE_001 transient & <3 -> RETRY) > 4 RESEARCH (RESEARCH_004 conflict -> VERIFY, RESEARCH_006 stagnant+no alternative -> STOP_RESEARCH, RESEARCH_005 stagnant+alternative -> CHANGE_STRATEGY, RESEARCH_002 primary source missing -> RESEARCH_MORE, RESEARCH_001 <2 sources -> RESEARCH_MORE) > 5 ROUTING (ROUTE_006 >=2 routes -> ROUTE_DECISION) > 6 TASK_SHAPE (TASK_002/TASK_001 -> SKIP, SPLIT_007 -> SPLIT_TASK) > 8 DEFAULT_000 -> CONTINUE. Within a tier the more specific rule is declared first because resolution is first-match-wins. A lower-priority rule can never override a safety rule; a test pitting them confirms it, and a second test asserts all 19 rules are individually reachable so none is dead code.",
+      "importantDesignNotes": "RESEARCH_001 requires a KNOWN source count — an unknown count must not be treated as zero or the router would demand research on every story. primarySourceAvailable and newInformationLastRound are nullable so unknown is distinct from false. Secrets are redacted on the way IN and detectSecrets actively scans caller input; any hit sets secretsDetected and routes SEC_001 to HUMAN_REVIEW, so a secret is never stored, returned or logged.",
+      "tests": "41/41 decision-router tests pass, fully offline. All 7 required scenarios pass and were also run live through the CLI: typo fix -> SKIP (TASK_002); same error twice -> CHANGE_STRATEGY (FAILURE_002); three times -> INVESTIGATE_ROOT_CAUSE (FAILURE_003); destructive production migration -> HUMAN_REVIEW (PROD_001); two materially different approaches -> ROUTE_DECISION (ROUTE_006); conflicting sources -> VERIFY (RESEARCH_004); normal known edit -> SKIP (TASK_002). Plus full determinism, one-winner-first-match, shadow invariant, log completeness, state normalisation, secret detection, realistic Jachaidesk states. Full pipeline suite 216/218 — the same 2 pre-existing baseline failures (editorial-gate, sufficiency proposal #6).",
+      "opencodeIntegration": "AGENTS.md section 5 rewritten as the LOCAL_DECISION_ROUTER policy; sections 1-4 verified byte-identical. The policy states plainly that it is NOT the TypeSafe Jev model, that invocation is NOT guaranteed because there is no hook, and that the result is one input rather than authority. Hard rules: never decide factual truth, never bypass an explicit requirement or human decision, destructive/irreversible stays behind confirmation, never wire into a workflow/Vercel/pipeline stage, never commit secrets, report honestly when skipped or unavailable.",
+      "retired": "TypeSafe Jev runtime REMOVED: pipeline/lib/jev-router.mjs, pipeline/tools/jev_decide.mjs, pipeline/config/jev-decisions.json, pipeline/config/jev.env.example, pipeline/test/jev-router.test.mjs and .opencode/skills/typesafe-ai/. Fully reversible — the whole code is in git history (commits 7e160ac, 742060d, 37838a8, 40b9af2). docs/JEV-INTEGRATION.md was git-mv-ed to docs/TYPESAFE-JEV-EVALUATED-NOT-USED.md and given a SUPERSEDED banner: it is kept as the record of what was evaluated and verified, not as an operating guide.",
+      "jachaideskIntegrationPoints": "Identified, NOT activated, no code path calls the router: research depth after verify, source-conflict routing, research stagnation before synth, article mode before render_prompt, repeated generation failure around finalize/audit, fact-check routing, editorial review before publish. The hard line: the router chooses which VERIFICATION action happens next; sources and evidence determine the claim. A test asserts it never emits a truth judgement.",
+      "production": "NONE. No Vercel change, no GitHub Actions change, no new dependency, no secret, no API call, nothing deployed. GitHub Actions may run the deterministic unit tests via the existing `npm test` in pipeline.yml if ever approved — no workflow file was edited.",
+      "limitations": "Only as good as the state passed in; no hook so invocation is agent-chosen; cannot detect semantic sameness of differently-worded errors (agent must set sameError + a stable failureSignature); thresholds 2/3/6, 3 stagnant rounds, 2 sources are judgement calls collected in THRESHOLDS; no learning loop by design; reasons are English prose though predicates are language-agnostic; it cannot judge article quality, only route process."
     }
   ],
   "sources": [
@@ -1253,7 +1270,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 71,
+  "sessionsCount": 73,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",

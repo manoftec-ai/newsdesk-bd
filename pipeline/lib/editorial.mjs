@@ -197,6 +197,12 @@ export function lengthForMode(mode, srcCount, brief) {
     if (mode === 'breaking') return { min: Math.max(100, tw.min), max: Math.min(180, tw.max), tier: 'breaking' };
     if (mode === 'developing') return { min: tw.min, max: Math.min(600, tw.max), tier: 'developing' };
     if (mode === 'news-brief') return { min: 50, max: Math.min(150, tw.max), tier: 'brief' };
+    if (mode === 'standard' && srcCount >= 4) {
+      const s = contentSufficiency(brief);
+      return s.score >= 55
+        ? { min: 600, max: 1000, tier: 'complex' }
+        : { min: 300, max: 500, tier: 'complex' };
+    }
     return tw;
   }
   // Fallback: old member-count logic (when brief not available)

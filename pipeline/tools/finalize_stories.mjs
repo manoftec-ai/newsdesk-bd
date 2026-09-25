@@ -1,76 +1,241 @@
-// tools/finalize_stories.mjs — finalize all pending briefs whose body file exists
-// usage: node tools/finalize_stories.mjs [--site=/path/to/site] [--max=N]
-// bodyfiles: pipeline/tmp/stories/<slug>.b.md (body only, no front matter)
-// --max=N caps how many stories are finalized per run (newest brief first) so a
-// sudden supply spike can never make one run author/publish an unbounded batch.
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
-import { join, resolve } from 'node:path';
-import { finalizeStory, storyExists, findEditorialViolations } from '../lib/synth.mjs';
+// tools/finalize_stories.mjs — finalize only the exact stories selected in pick.json.
+// usage: node tools/finalize_stories.mjs [--pick=/path/to/pick.json] [--site=/path/to/site] [--max=N]
+// body files: pipeline/tmp/stories/<slug>.b.md (body only, no front matter)
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  renameSync,
+  unlinkSync,
+  writeFileSync,
+} from 'node:fs';
+import { randomUUID } from 'node:crypto';
+import { dirname, join, resolve } from 'node:path';
+import { openDb } from '../lib/db.mjs';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
+import { runPublicationGate } from '../lib/publication-gate.mjs';
+import { frontMatter, prepBody, storyExists } from '../lib/synth.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
+import { validatePublicArticle } from './site_preflight.mjs';
 
-const siteArg = process.argv.find((a) => a.startsWith('--site='))?.split('=')[1];
-const siteDir = siteArg
-  ? resolve(siteArg)
-  : resolve(import.meta.dirname, '../../site/src/content/news');
+const DEFAULT_PICK_PATH = resolve(import.meta.dirname, '../state/pick.json');
+const DEFAULT_SITE_DIR = resolve(import.meta.dirname, '../../site/src/content/news');
+const DEFAULT_DB_PATH = resolve(import.meta.dirname, '../state/store.db');
+const DEFAULT_BODIES_DIR = resolve(import.meta.dirname, '../tmp/stories');
+const DEFAULT_REJECTIONS_PATH = resolve(import.meta.dirname, '../tmp/finalize-rejections.json');
+const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
-const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : Infinity;
-
-const bodiesDir = join(import.meta.dirname, '../tmp/stories');
-let bodies = existsSync(bodiesDir) ? readdirSync(bodiesDir).filter((f) => f.endsWith('.b.md')) : [];
-
-// Newest brief first, so a capped run always advances the most recent news.
-const briefDate = (f) => {
-  const slug = f.replace(/\.b\.md$/, '');
-  try {
-    return JSON.parse(readFileSync(join(BRIEFS_DIR, `${slug}.json`), 'utf8')).date || '';
-  } catch {
-    return '';
-  }
-};
-bodies.sort((a, b) => String(briefDate(b)).localeCompare(String(briefDate(a))));
-if (bodies.length > max) {
-  console.log(`cap: ${bodies.length} body files -> finalizing newest ${max} this run`);
-  bodies = bodies.slice(0, max);
+function option(name, fallback = null) {
+  const prefix = `--${name}=`;
+  return process.argv.find((arg) => arg.startsWith(prefix))?.slice(prefix.length) ?? fallback;
 }
 
-const publishedTitles = loadPublishedTitles(siteDir);
+function readPick(pickPath) {
+  const parsed = JSON.parse(readFileSync(pickPath, 'utf8'));
+  const picked = Array.isArray(parsed.picked) ? parsed.picked : [];
+  const slugs = [];
+  const invalid = [];
+  for (const item of picked) {
+    const slug = typeof item === 'string' ? item : item?.slug;
+    if (typeof slug !== 'string' || !SLUG_RE.test(slug)) {
+      invalid.push(slug ?? item);
+      continue;
+    }
+    if (!slugs.includes(slug)) slugs.push(slug);
+  }
+  return { picked, slugs, invalid };
+}
 
-let finalized = 0, skipped = 0, failed = 0, blocked = 0;
-for (const f of bodies) {
-  const slug = f.replace(/\.b\.md$/, '');
+function atomicWrite(filePath, content) {
+  mkdirSync(dirname(filePath), { recursive: true });
+  const temporary = join(dirname(filePath), `.${filePath.split('/').pop()}.${process.pid}.${randomUUID()}.tmp`);
   try {
-    if (storyExists(slug, { siteDir })) { skipped++; console.log(`- ${slug}: already exists, skip`); continue; }
-    const briefFile = join(BRIEFS_DIR, `${slug}.json`);
-    if (!existsSync(briefFile)) { console.log(`- ${slug}: NO BRIEF, skip`); skipped++; continue; }
-    const brief = JSON.parse(readFileSync(briefFile, 'utf8'));
-    if (isTitleDuplicate(brief.headline, brief.date, publishedTitles)) {
-      console.log(`- ${slug}: title already published, skip`); skipped++; continue;
-    }
-    const body = readFileSync(join(bodiesDir, f), 'utf8').trim();
-    // 1.2 editorial gate: never publish speculation/filler (story re-authored later)
-    const violations = findEditorialViolations(body);
-    if (violations.length) {
-      console.log(`- ${slug}: EDITORIAL GATE BLOCKED [${violations.map((v) => v.match).join(' | ')}], skip`);
-      blocked++; continue;
-    }
-    // Enforce automation-only: never publish if verdict not passed
-    if (brief.verdict && brief.verdict.status !== 'passed') {
-      console.log(`- ${slug}: verdict.status=${brief.verdict.status} -> blocked (not passed), skip`);
-      skipped++; blocked++; continue;
-    }
-    const out = finalizeStory(slug, body, { siteDir });
-    finalized++;
-    // Register the headline immediately so a SECOND brief with the SAME title
-    // in this same run (same-batch duplicate, e.g. national-290/292) is skipped
-    // instead of also being published. In-memory mirror of loadPublishedTitles.
-    const key = normTitle(brief.headline);
-    if (!publishedTitles.has(key)) publishedTitles.set(key, brief.date);
-    console.log(`+ ${slug}: wrote ${out}`);
-  } catch (e) {
-    failed++;
-    console.error(`! ${slug}: ${e.message}`);
+    writeFileSync(temporary, content, { encoding: 'utf8', flag: 'wx' });
+    renameSync(temporary, filePath);
+  } catch (error) {
+    try { unlinkSync(temporary); } catch {}
+    throw error;
   }
 }
-console.log(`\nfinalize done. wrote=${finalized} skipped=${skipped} failed=${failed} blocked=${blocked}`);
+
+function renderStory(slug, brief, body, publication) {
+  const { excerpt, keyPoints, remaining } = prepBody(body);
+  const quote = (value) => String(value ?? '').replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+  const capTitle = (value) => {
+    const title = String(value ?? '').trim();
+    if (title.length <= 72) return title;
+    const cut = title.slice(0, 71);
+    const lastSpace = cut.lastIndexOf(' ');
+    return `${(lastSpace > 10 ? cut.slice(0, lastSpace) : cut).trim()}…`;
+  };
+
+  let frontmatter = frontMatter(brief, { publication });
+  frontmatter = frontmatter.replace('excerpt: "…"', `excerpt: "${quote(excerpt)}"`);
+  frontmatter = frontmatter.replace(
+    'seoTitle: "…"',
+    `seoTitle: "${quote(capTitle(brief.headline))}"`,
+  );
+  frontmatter = frontmatter.replace(
+    'seoDescription: "…"',
+    `seoDescription: "${quote(excerpt.length > 155 ? `${excerpt.slice(0, 154)}…` : excerpt)}"`,
+  );
+  if (keyPoints.length) {
+    frontmatter = frontmatter.replace(
+      'keyPoints: []',
+      `keyPoints:\n${keyPoints.map((point) => `  - "${quote(point)}"`).join('\n')}`,
+    );
+  }
+
+  const content = remaining.replace(/\[\[SLUG\]\]/g, slug);
+  return `---\n${frontmatter.trimEnd()}\n---\n\n${content.trim()}\n`;
+}
+
+function rejection(slug, reason, detail = {}) {
+  return { slug, reason, ...detail, at: new Date().toISOString() };
+}
+
+function listBodySlugs(bodiesDir) {
+  if (!existsSync(bodiesDir)) return [];
+  return readdirSync(bodiesDir)
+    .filter((file) => file.endsWith('.b.md'))
+    .map((file) => file.slice(0, -5));
+}
+
+export function finalizeStories({
+  pickPath = DEFAULT_PICK_PATH,
+  siteDir = DEFAULT_SITE_DIR,
+  dbPath = DEFAULT_DB_PATH,
+  briefsDir = BRIEFS_DIR,
+  bodiesDir = DEFAULT_BODIES_DIR,
+  rejectionsPath = DEFAULT_REJECTIONS_PATH,
+  max = Infinity,
+  now = new Date().toISOString(),
+} = {}) {
+  const startedAt = now;
+  const result = {
+    startedAt,
+    finishedAt: null,
+    pickPath,
+    siteDir,
+    written: [],
+    rejected: [],
+    skipped: [],
+  };
+
+  if (!Number.isFinite(max) && max !== Infinity) {
+    throw new Error(`invalid --max=${max}`);
+  }
+
+  const selection = readPick(pickPath);
+  for (const slug of selection.invalid) {
+    result.rejected.push(rejection(String(slug), 'INVALID_PICK_SLUG'));
+  }
+  // Any body outside the exact allowlist is never read, rendered, or staged.
+  const allowed = new Set(selection.slugs);
+  for (const slug of listBodySlugs(bodiesDir)) {
+    if (!allowed.has(slug)) {
+      const item = rejection(slug, 'UNPICKED_BODY_IGNORED');
+      if (!result.rejected.some((entry) => entry.slug === slug && entry.reason === item.reason)) {
+        result.rejected.push(item);
+      }
+    }
+  }
+
+  const selected = selection.slugs.slice(0, max);
+  const publishedTitles = loadPublishedTitles(siteDir);
+  let db;
+  try {
+    db = openDb(dbPath);
+    for (const slug of selected) {
+      try {
+        if (storyExists(slug, { siteDir })) {
+          result.skipped.push({ slug, reason: 'ALREADY_PUBLISHED' });
+          continue;
+        }
+        const briefPath = join(briefsDir, `${slug}.json`);
+        if (!existsSync(briefPath)) {
+          result.rejected.push(rejection(slug, 'BRIEF_MISSING'));
+          continue;
+        }
+        const brief = JSON.parse(readFileSync(briefPath, 'utf8'));
+        if (isTitleDuplicate(brief.headline, brief.date, publishedTitles)) {
+          result.skipped.push({ slug, reason: 'DUPLICATE_TITLE' });
+          continue;
+        }
+        const bodyPath = join(bodiesDir, `${slug}.b.md`);
+        if (!existsSync(bodyPath)) {
+          result.rejected.push(rejection(slug, 'BODY_MISSING'));
+          continue;
+        }
+        const body = readFileSync(bodyPath, 'utf8').trim();
+        if (!body) {
+          result.rejected.push(rejection(slug, 'BODY_EMPTY'));
+          continue;
+        }
+        const publication = runPublicationGate(brief, body, db, now);
+        if (!publication.pass) {
+          result.rejected.push(rejection(slug, 'PUBLICATION_GATE_BLOCKED', {
+            failureCodes: publication.failureCodes,
+            claimIds: publication.claimIds,
+            evidenceHash: publication.evidenceHash,
+          }));
+          continue;
+        }
+        const outPath = join(siteDir, `${slug}.md`);
+        if (existsSync(outPath)) {
+          result.skipped.push({ slug, reason: 'ALREADY_PUBLISHED' });
+          continue;
+        }
+        const content = renderStory(slug, brief, body, { ...publication, slug });
+        const preflight = validatePublicArticle(content, { slug, now });
+        if (!preflight.pass) {
+          result.rejected.push(rejection(slug, 'SITE_PREFLIGHT_BLOCKED', {
+            failureCodes: preflight.failureCodes,
+            errors: preflight.errors,
+          }));
+          continue;
+        }
+        atomicWrite(outPath, content);
+        result.written.push({ slug, path: outPath, evidenceHash: publication.evidenceHash });
+        publishedTitles.set(normTitle(brief.headline), brief.date);
+      } catch (error) {
+        result.rejected.push(rejection(slug, 'FINALIZATION_ERROR', { error: error.message }));
+      }
+    }
+  } finally {
+    db?.close();
+  }
+
+  result.finishedAt = new Date().toISOString();
+  atomicWrite(rejectionsPath, `${JSON.stringify(result, null, 2)}\n`);
+  return result;
+}
+
+function main() {
+  const maxArg = Number(option('max', ''));
+  const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : Infinity;
+  try {
+    const result = finalizeStories({
+      pickPath: resolve(option('pick', DEFAULT_PICK_PATH)),
+      siteDir: resolve(option('site', DEFAULT_SITE_DIR)),
+      dbPath: resolve(option('db', DEFAULT_DB_PATH)),
+      briefsDir: resolve(option('briefs', BRIEFS_DIR)),
+      bodiesDir: resolve(option('bodies', DEFAULT_BODIES_DIR)),
+      rejectionsPath: resolve(option('rejections', DEFAULT_REJECTIONS_PATH)),
+      max,
+    });
+    for (const item of result.written) console.log(`+ ${item.slug}: wrote ${item.path}`);
+    for (const item of result.skipped) console.log(`- ${item.slug}: ${item.reason}`);
+    for (const item of result.rejected) {
+      const codes = item.failureCodes?.length ? ` [${item.failureCodes.join(', ')}]` : '';
+      console.error(`! ${item.slug}: ${item.reason}${codes}`);
+    }
+    console.log(`finalize done. wrote=${result.written.length} skipped=${result.skipped.length} rejected=${result.rejected.length}`);
+  } catch (error) {
+    console.error(`finalize failed: ${error.message}`);
+    process.exitCode = 1;
+  }
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) main();
