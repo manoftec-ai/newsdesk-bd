@@ -286,8 +286,8 @@ ${translationBlock}${formattingBlock}- If mode is STANDARD AND format is news, b
      - point one
      - point two
      - point three
-  3. "## মূল খবর" — 2–5 short paragraphs telling the story in plain chronology or logic.
-  Do NOT add "## কী জানা গেছে" or "## কী এখনো জানা যায়নি" sections — JachaiDesk keeps only এক নজরে + মূল খবর in standard news.
+  3. 2–5 short paragraphs telling the story in plain chronology or logic — directly after এক নজরে, with NO heading like "## মূল খবর". Just the paragraphs.
+  Do NOT add "## মূল খবর", "## কী জানা গেছে" or "## কী এখনো জানা যায়নি" sections — JachaiDesk keeps only lead + এক নজরে + body paragraphs in standard news.
 - If format is factcheck or analysis, follow the ${format === 'factcheck' ? 'FACT-CHECK' : format === 'analysis' ? 'ANALYSIS' : ''} template above INSTEAD of the news structure; the news structure below does NOT apply.
 - Source rule (hard): the article is a finished news story. A reader should NOT be
   able to tell which outlet reported what. NEVER name a media outlet, newspaper or
