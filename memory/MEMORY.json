@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 61,
+    "sessionsCount": 70,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,120 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D98",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized three picked stories",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-549, national-550, and national-548. Rendered each canonical writingPrompt, authored only those three body files, and ran finalize_stories.mjs --max=3: wrote=3 skipped=0 failed=0 blocked=0. The first generated excerpts and SEO descriptions cut mid-word, so the same three bodies were shortened to their verified headline facts, only those generated articles were removed, and the same finalizer reran. All three site files have draft:false, retain their brief source lists, and have complete excerpt and SEO-description boundaries of 140, 148, and 118 characters. Target validation passed; test/synth.test.mjs passed 12/12; node --check and git diff --check passed. No lint/typecheck scripts are defined. Site dependencies are absent, so the Astro build was unavailable. Pre-existing pipeline/state/pick.json, pipeline/state/store.db, and untracked pipeline/state/briefs/national-550.json changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs. The evidence pools were thin, so the articles were not padded and unrelated single-source material was not blended into the verified headlines.",
+      "files": [
+        "pipeline/tmp/stories/national-549.b.md",
+        "pipeline/tmp/stories/national-550.b.md",
+        "pipeline/tmp/stories/national-548.b.md",
+        "site/src/content/news/national-549.md",
+        "site/src/content/news/national-550.md",
+        "site/src/content/news/national-548.md",
+        "memory/sessions/2026-09-25-author-picked-549-550-548.md"
+      ]
+    },
+    {
+      "id": "D97",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized three picked stories",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-545, national-547, and national-546. Rendered each canonical writingPrompt, authored only those three body files, and ran finalize_stories.mjs --max=3: wrote=3 skipped=0 failed=0 blocked=0. Corrected only those same bodies after generated excerpt or SEO text cut mid-word, then reran the same finalizer. All three site files have draft:false, retain their brief source lists, use complete excerpt and SEO-description boundaries, and contain no raw URLs, outlet names, source-list block, or editorial footer. Target validation passed; test/synth.test.mjs passed 12/12; node --check and git diff --check passed. No lint/typecheck scripts are defined. Pre-existing state changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs via render_prompt and finalize. Thin evidence pools were not padded, and metadata truncation was repaired without changing the frozen target set.",
+      "files": [
+        "pipeline/tmp/stories/national-545.b.md",
+        "pipeline/tmp/stories/national-547.b.md",
+        "pipeline/tmp/stories/national-546.b.md",
+        "site/src/content/news/national-545.md",
+        "site/src/content/news/national-547.md",
+        "site/src/content/news/national-546.md",
+        "memory/sessions/2026-09-25-author-picked-three-545-547-546.md"
+      ]
+    },
+    {
+      "id": "D96",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-543",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-543. Rendered its canonical writingPrompt, authored only the verified congratulation and explicitly attributed the single-source assessment, then ran finalize_stories.mjs --max=1. The first generated SEO description cut mid-word, so the same body was shortened and this same slug was regenerated after removing only the generated article. The final output is site/src/content/news/national-543.md with draft:false, two matching source links, two attributed key points, and complete excerpt/SEO-description boundaries. The body has no outlet names, raw URLs, source list, editorial footer, or invented detail. Target validation passed; synth tests passed 12/12; git diff --check and node --check passed. No lint/typecheck scripts are defined. Pre-existing state changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs via render_prompt and finalize. The thin evidence pool was not padded, and the single-source assessment remained attributed.",
+      "files": [
+        "pipeline/tmp/stories/national-543.b.md",
+        "site/src/content/news/national-543.md",
+        "memory/sessions/2026-09-25-author-national-543.md"
+      ]
+    },
+    {
+      "id": "D95",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-540",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-540. Rendered its canonical writingPrompt, authored only the sparse verified allegation and arrest, and ran finalize_stories.mjs --max=1. The first generated excerpt cut mid-word, so the same body was shortened at a sentence boundary and this same slug was regenerated through the finalizer; both runs reported wrote=1 skipped=0 failed=0 blocked=0. site/src/content/news/national-540.md has draft:false, two source links, and complete excerpt/SEO-description boundaries. No names, date or location, motive, case details, reactions, conviction, or outcome were invented. Target validation passed; synth tests passed 12/12. No lint/typecheck scripts are defined. Pre-existing state changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slug via render_prompt and finalize. The thin fact pool was not padded, and the arrest was not presented as a conviction.",
+      "files": [
+        "pipeline/tmp/stories/national-540.b.md",
+        "site/src/content/news/national-540.md",
+        "memory/sessions/2026-09-25-author-national-540.md"
+      ]
+    },
+    {
+      "id": "D94",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized four picked stories",
+      "summary": "Read pipeline/state/pick.json and froze exactly sports-536, national-535, national-538, and national-537; rendered each canonical writingPrompt; authored only the four body files; finalize_stories.mjs --max=4 reported wrote=4 skipped=0 failed=0 blocked=0. All four generated articles are draft:false, retain two source links each, and contain no raw URLs, source lists, outlet names, or editorial footers. Thin briefs were kept short and unknowns were stated without fabrication. Target validation and test/synth.test.mjs (12/12) passed; no lint/typecheck scripts are defined; site build is unavailable because Astro dependencies are not installed. Pre-existing pipeline/state/pick.json and pipeline/state/store.db changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs. The four briefs contained sparse fact pools, so the articles were not padded; verified facts were stated directly and single-source claims remained attributed.",
+      "files": [
+        "pipeline/tmp/stories/sports-536.b.md",
+        "pipeline/tmp/stories/national-535.b.md",
+        "pipeline/tmp/stories/national-538.b.md",
+        "pipeline/tmp/stories/national-537.b.md",
+        "site/src/content/news/sports-536.md",
+        "site/src/content/news/national-535.md",
+        "site/src/content/news/national-538.md",
+        "site/src/content/news/national-537.md",
+        "memory/sessions/2026-09-25-author-picked-four.md"
+      ]
+    },
+    {
+      "id": "D93",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring remained a safe no-op",
+      "summary": "Read pipeline/state/pick.json at the start and again immediately before verification: picked=[] and pending=0. No render_prompt command, body authoring, or finalize_stories run was performed. No story or site-content file was created or modified. The pre-existing pipeline/state/store.db modification was preserved. No commit or push.",
+      "rationale": "The exact target slug set is empty; running finalization without a slug could process unrelated staging bodies.",
+      "files": [
+        "memory/sessions/2026-09-25-author-empty-pick-seventh.md"
+      ]
+    },
+    {
+      "id": "D92",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring remained a safe no-op",
+      "summary": "Read pipeline/state/pick.json at the start and immediately before verification: picked=[] and pending=0. No render_prompt command, body authoring, or finalize_stories run was performed. No story or site-content file was created or modified. The pre-existing pipeline/state/store.db modification was preserved. No commit or push.",
+      "rationale": "The exact target slug set is empty; running finalization without a slug could process unrelated staging bodies.",
+      "files": [
+        "memory/sessions/2026-09-25-author-empty-pick-sixth.md"
+      ]
+    },
+    {
+      "id": "D91",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring remained a safe no-op",
+      "summary": "Re-read pipeline/state/pick.json at the start and immediately before verification: picked=[] and pending=0, with no staging bodies present. No render_prompt command, body authoring, or finalize_stories run was performed. No story or site-content file was created or modified. The pre-existing pipeline/state/store.db modification was preserved. No lint/typecheck scripts are defined; no commit or push.",
+      "rationale": "The exact target slug set is empty; finalizing without a slug could process unrelated staging bodies.",
+      "files": [
+        "memory/sessions/2026-09-25-author-empty-pick-fifth.md"
+      ]
+    },
+    {
+      "id": "D90",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring was a safe no-op",
+      "summary": "Read pipeline/state/pick.json at the start and again before completion: picked=[] and pending=0. The exact target set was empty, so no render_prompt command, body authoring, or finalize_stories run was performed. No story or site-content file was created or modified. Pre-existing pipeline/state/pick.json and store.db modifications were preserved. No commit or push.",
+      "rationale": "Running finalization without a slug could process unrelated staging bodies; an empty exact-pick set must remain a no-op.",
+      "files": [
+        "memory/sessions/2026-09-25-author-empty-pick-fourth.md"
+      ]
+    },
     {
       "id": "D89",
       "date": "2026-09-25",
@@ -745,7 +859,7 @@
       "detail": "Fulfills proposal #18 (প্রমাণ panel on article), #20 (কী বদলেছে / What-Changed top note box + latest update link to #update-history), #31 (homepage editorial hierarchy — editorialOrder() keeps lead + top rows by editorial rank: featured → breaking → verified → rest, then recency, replacing raw newest-first), #13 (why-it-matters mechanical gate now enforces: a কেন গুরুত্বপূর্ণ section is only emitted/kept when the fact pool states a REAL consequence — CONSEQUENCE_WORDS in editorial.mjs; whyItMattersSupported(brief) + whyItMattersViolation gate (n15) wired into audit gate + synth prompt gating; SENSITIVE_MARKERS → isSensitiveStory + stricter political/claim-attribution rules in prompt, and sensitive-tier modeDesc dropped for non-sensitive briefs), #24 (breaking mode: BREAKING_WINDOW_MS 4h + isDevelopingBrief + publicationMode=breaking first → tier breaking > developing > standard), #6 (lengthForMode now sufficiency-aware — never pads thin developing/complex clusters: complex 600–1000 only when rich (sufficiency && srcCount>3), else 180–500; breaking 100–180; developing 300–600 only when not thin). Site render: [slug].astro gained `details.evidence-panel` (প্রমাণ দেখুন — why confirmed / why partial, with evidence url links, no chain-of-thought) + `what-changed mt-6` top note box (latest update time + note + link to full ইতিহাস) + heading structure per proposal #4; index.astro now uses editorialOrder(). CSS: .evidence-panel/.evidence-body/.evidence-list + .what-changed rules. Tests: sufficiency.test (breaking/sensitive/whyItMatters/lengthForMode sufficiency-aware) + audit.test (evidence) + synth.test (modeDesc varies by mode → class-based). All 164 pipeline tests green. Deploy layered: code-first (pipeline), then site pages (draft:false auto-publish still gated by sufficiency + mechanical audit incl. the new whyItMatters violation gate — a WHY box can no longer be force-kept without a stated consequence)."
     },
     {
-      "id": "D90",
+      "id": "D99",
       "date": "2026-09-25",
       "title": "Jev (TypeSafe AI) decision router — SHADOW MODE, local-only, not wired to CI or production",
       "summary": "Jev is TypeSafe AI's System One model (choice/score/noul, no text generation). Official docs state explicitly that Jev is NOT a drop-in LLM for coding agents and name opencode; there is no OpenCode plugin and no local/offline mode. Verified from docs.typesafe.ai: HTTP POST https://api.typesafe.ai/v1/systemone, model jev-latest (= jev-1.13.0), Bearer TYPESAFE_API_KEY required (early access, no documented free tier), $0.042/MTok input with free output, 250k tok/s + 1200 req/min, 64k context, errors 401/422/429/529. Python SDK typesafe-sdk deliberately NOT installed (repo is Node/Astro).",
@@ -1115,7 +1229,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 61,
+  "sessionsCount": 70,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",

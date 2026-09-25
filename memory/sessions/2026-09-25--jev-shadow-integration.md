@@ -1,4 +1,9 @@
-# 2026-09-25 — D90: Jev (TypeSafe AI) decision router, SHADOW MODE
+# 2026-09-25 — D99: Jev (TypeSafe AI) decision router, SHADOW MODE
+
+> Numbering note: this started as D90, but a parallel session independently used D90 for
+> "exact-pick authoring was a safe no-op". Renumbered to **D99** so both records survive.
+> `memory/MEMORY.md` and `memory/MEMORY.json` were hand-merged to keep every other
+> parallel-session decision (D91–D98) intact.
 
 ## What was done
 
