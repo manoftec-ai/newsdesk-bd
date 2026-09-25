@@ -947,6 +947,20 @@
         "The <title> on every page claims \"বাংলাদেশের সবচেয়ে যাচাই-করা সংবাদ\" (most verified news in Bangladesh) - an unverifiable superlative on a site whose premise is verification.",
         "Vercel: 28-29 deployments/day against a 100/day Hobby limit, ~71/day projected, 27 of 28 from bot commits. Proposed gating deploy.yml behind a repo variable AUTO_DEPLOY; awaiting approval, not implemented."
       ]
+    },
+    {
+      "id": "D104",
+      "date": "2026-09-25",
+      "title": "Cluster-coherence guard: refuse briefs that mash together unrelated stories",
+      "summary": "Added pipeline/lib/cluster-coherence.mjs and wired it into tools/finalize_stories.mjs (before the body is read) to reject a brief whose members are not all about the same event. A brief can hold several unrelated stories: national-556 carried 7 members that were 7 different stories (an Asian Games cricket result, a Bangladesh cricket defeat, Ham flood deaths, a murder sentencing, Iran at the UN, a bulldozed clinic, Houthi attacks) and its \"1,286 words of fact\" was those 7 stories mashed together. The 150-word body floor (D103) cannot catch this: a mashed cluster still produces plenty of words, they are just the wrong words. Metric is min-max similarity - for each member the best content-word similarity to any OTHER member (overlap over the smaller token set), then the minimum across members; a cluster passes only if every member has at least one partner it genuinely shares content with. Requiring a partner rather than full pairwise agreement is what stops a 9-outlet cluster of the same fuel-price bulletin from being condemned: it shares only globally-common words, so both IDF-weighted and min-pairwise metrics score it 0.000 and flag it wrongly (that false positive was the reason min-pairwise was rejected). Rejected lib/entities.mjs strongAgree() for this purpose - measured, it flagged 92% of 415 clusters as incoherent including every known-good case, because it is built for the clustering step and needs 2 shared IDF-strong tokens or a near-identical 3+ digit figure, which short title+lead input rarely has. Threshold 0.20, from a measured calibration over 415 briefs: incoherent examples score 0.083, coherent ones 0.33-0.67, with an empty band between. Blocks 2.2% of the corpus (9/415). Guard runs before the body is read so an incoherent brief costs nothing; configurable via COHERENCE_MIN. Guard found real published garbage: national-526 (already live at 256 words) is 9 members covering 5 different cricket matches plus Ham flood deaths, the PM at the UN and a ChatGPT item; national-518 (live at 263 words) is the PM at the UN plus a ChatGPT item.",
+      "files": [
+        "pipeline/lib/cluster-coherence.mjs",
+        "pipeline/test/cluster-coherence.test.mjs",
+        "pipeline/tools/finalize_stories.mjs"
+      ],
+      "tests": "19 new tests; full suite 286/286 pass (was 267). Real-finalizer end-to-end confirmed: national-556 rejected as CLUSTER_INCOHERENT (minMax 0.083 vs 0.2 required, 7 members, all named as intruders) and nothing written to site.",
+      "production": "No site content changed, no workflow edit, no Vercel change, no new dependency, no secret. Guard only runs inside the existing finalizer.",
+      "rationale": "User: \"coherence guard is fine. do it. i dont want any more gurbage.\" A fixed fixture plus a corpus envelope test was used instead of naming a live slug in the corpus test, because the bot re-clusters briefs every run and rewrote national-556 out from under the first version of the test."
     }
   ],
   "sources": [
@@ -1292,7 +1306,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 74,
+  "sessionsCount": 75,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
