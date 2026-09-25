@@ -324,20 +324,31 @@ const shareLinks = [
         </div>
       </header>
 
-      {post.thumbnail && (
-        <figure class="mt-6">
-          <img
-            src={post.thumbnail}
-            alt={post.thumbnailAlt || ""}
-            width="1200"
-            height="630"
-            class="aspect-[16/9] w-full rounded-md object-cover"
-          />
-          {post.thumbnailAlt && (
-            <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
-          )}
-        </figure>
-      )}
+      {post.thumbnail && (() => {
+        const avif = post.thumbnail.replace(/\.webp$/, '.avif');
+        const src640 = post.thumbnail.replace(/\.webp$/, '-640.webp');
+        return (
+          <figure class="mt-6">
+            <picture>
+              <source srcset={avif} type="image/avif" />
+              <source srcset={`${src640} 640w, ${post.thumbnail} 1200w`} sizes="(max-width: 768px) 100vw, 1200px" type="image/webp" />
+              <img
+                src={post.thumbnail}
+                alt={post.thumbnailAlt || ""}
+                width="1200"
+                height="630"
+                class="aspect-[16/9] w-full rounded-md object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+            {post.thumbnailAlt && (
+              <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
+            )}
+          </figure>
+        );
+      })()}
 
       {post.updates && post.updates.length > 0 && (() => {
         const last = post.updates[post.updates.length - 1];
