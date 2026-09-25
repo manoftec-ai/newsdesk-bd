@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 58,
+    "sessionsCount": 59,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,16 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D87",
+      "date": "2026-09-25",
+      "title": "Vercel daily deploy quota recovery verified",
+      "summary": "A single direct vercel deploy --prod completed successfully after the earlier free-plan quota error and built 635 static pages. The deployment was aliased to jachaidesk.com, and live verification of national-496 confirmed the rewritten bus-fare content. The prior retry-loop watcher (PID 31236) was already stopped.",
+      "rationale": "The api-deployments-free-per-day limit counts deployment creation, so deleting older deployments does not restore daily capacity. Do not use a retry shell loop that treats every command exit as success.",
+      "files": [
+        "memory/sessions/2026-09-25--vercel-quota-recovery.md"
+      ]
+    },
     {
       "id": "D86",
       "date": "2026-09-25",
