@@ -21,10 +21,14 @@ const STOPWORDS = new Set([
 ]);
 
 // Aggressive-on-purpose clickbait / hype terms that must never sit in a headline.
+// Expanded per proposal §10 (বড় চমক/তোলপাড়/ভয়াবহ পরিস্থিতি etc).
 export const HYPE_TERMS = [
   'অবিশ্বাস্য', 'চাঞ্চল্যকর', 'চাঞ্চল্য', 'ঐতিহাসিক', 'অভূতপূর্ব', 'আশ্চর্যজনক',
   'ভয়াবহ', 'বিপর্যয়', 'বিস্ময়', 'মহাঘটনা', 'চমক', 'শকে', 'সাড়া জাগিয়েছে',
   'সাড়া ফেলেছে', 'নজিরবিহীন', 'অতুলনীয়',
+  // proposal §10 additions
+  'বড় চমক', 'তোলপাড়', 'ভয়াবহ পরিস্থিতি', 'তুমুল', 'হুলস্থুল', 'আলোড়ন',
+  'ফাঁস হলো', 'ফাঁস', 'ভাইরাল', 'শেষমেশ', 'অবশেষে চমক', 'চরম',
 ];
 
 // Strong-assertion verbs that make a headline a DEFINITIVE claim (relevant when

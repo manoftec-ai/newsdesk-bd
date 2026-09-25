@@ -75,6 +75,40 @@ function bengaliPunctuationIssues(text) {
   return issues;
 }
 
+// Common AI Bangla misspellings — mechanical flag (proposal §4C). Curated high-precision list: wrong → correct.
+const COMMON_MISSPELLINGS = [
+  { wrong: 'সরকারী', correct: 'সরকারি' },
+  { wrong: 'ব্যাবসা', correct: 'ব্যবসা' },
+  { wrong: 'সহযোগীতা', correct: 'সহযোগিতা' },
+  { wrong: 'দায়ীত্ব', correct: 'দায়িত্ব' },
+  { wrong: 'পরিসেবা', correct: 'পরিষেবা' },
+  { wrong: 'শ্রেনী', correct: 'শ্রেণি' },
+  { wrong: 'বানিজ্য', correct: 'বাণিজ্য' },
+];
+function spellingIssues(text) {
+  const issues = [];
+  for (const { wrong, correct } of COMMON_MISSPELLINGS) {
+    if (text.includes(wrong)) issues.push(`spelling "${wrong}" → "${correct}"`);
+  }
+  return issues;
+}
+
+function entityVariantIssues(text, brief) {
+  // Demonym mix: "ইরানের প্রেসিডেন্ট" + "ইরানি প্রেসিডেন্ট" in same article → inconsistent (§7)
+  if (/ইরানের প্রেসিডেন্ট/u.test(text) && /ইরানি প্রেসিডেন্ট/u.test(text)) return ['mixed demonym "ইরানের প্রেসিডেন্ট" + "ইরানি প্রেসিডেন্ট" — pick one form'];
+  if (/বাংলাদেশের প্রধানমন্ত্রী/u.test(text) && /বাংলাদেশি প্রধানমন্ত্রী/u.test(text)) return ['mixed "বাংলাদেশের প্রধানমন্ত্রী" + "বাংলাদেশি প্রধানমন্ত্রী"'];
+  // Generic: headline entity appears in 3+ surface forms
+  const headline = String(brief.headline ?? '');
+  const lastTok = headline.trim().split(/\s+/u).pop();
+  if (lastTok && lastTok.length >= 4) {
+    const variants = new Set();
+    const esc = lastTok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    for (const m of text.matchAll(new RegExp(`(?:প্রেসিডেন্ট|প্রধানমন্ত্রী|মন্ত্রী|সভাপতি)?\\s*${esc}`, 'gu'))) variants.add(m[0].trim());
+    if (variants.size >= 3) return [`entity "${lastTok}" appears in ${variants.size} variant forms — use consistent naming (§7)`];
+  }
+  return [];
+}
+
 // The 10 audit points (encode the writer prompt + locked editorial rules).
 export const AUDIT_POINTS = [
   { id: 'c1', en: 'Original synthesis', rule: 'The article is an ORIGINAL merged narrative, not a reprint/copy of any single outlet article.' },
@@ -193,6 +227,12 @@ export function mechanicalAudit(brief, body) {
 
   // ---- Proposal §4E / §8: Bengali punctuation & date/number consistency (mechanical) ----
   for (const issue of bengaliPunctuationIssues(text)) {
+    note('n14', issue);
+  }
+  for (const issue of spellingIssues(text)) {
+    note('n14', issue);
+  }
+  for (const issue of entityVariantIssues(text, brief)) {
     note('n14', issue);
   }
   // §6 AI translation detection — mechanical flag for obvious English calque in Bengali when English sources present
