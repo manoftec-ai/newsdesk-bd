@@ -36,13 +36,13 @@
     {
       "id": "D95",
       "date": "2026-09-25",
-      "title": "Exact-pick authoring finalized national-542",
-      "summary": "Read pipeline/state/pick.json and froze exactly national-542 (pending: 1); rendered the canonical writingPrompt with tools/render_prompt.mjs; authored only pipeline/tmp/stories/national-542.b.md from the thin verified fact pool; ran finalize_stories.mjs --site=../site/src/content/news --max=1, which reported wrote=1 skipped=0 failed=0 blocked=0. The article is draft:false with two source links, no raw URL or body source list, and no editorial violations. The single-source claim was attributed and unknown details were stated without fabrication. Target validation and node --test test/synth.test.mjs (12/12) passed; full pipeline suite retains two known unrelated baseline failures; no lint/typecheck scripts are defined and site Astro dependencies are unavailable. Pre-existing pick.json/store.db changes were preserved. No commit or push.",
-      "rationale": "The user required exactly the picked slugs. The brief contained only headline-level facts, so the article was kept short, the single-source wording was attributed, and no date, location, motive, or investigative detail was invented.",
+      "title": "Exact-pick authoring finalized national-540",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-540. Rendered its canonical writingPrompt, authored only the sparse verified allegation and arrest, and ran finalize_stories.mjs --max=1. The first generated excerpt cut mid-word, so the same body was shortened at a sentence boundary and this same slug was regenerated through the finalizer; both runs reported wrote=1 skipped=0 failed=0 blocked=0. site/src/content/news/national-540.md has draft:false, two source links, and complete excerpt/SEO-description boundaries. No names, date or location, motive, case details, reactions, conviction, or outcome were invented. Target validation passed; synth tests passed 12/12. No lint/typecheck scripts are defined. Pre-existing state changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slug via render_prompt and finalize. The thin fact pool was not padded, and the arrest was not presented as a conviction.",
       "files": [
-        "pipeline/tmp/stories/national-542.b.md",
-        "site/src/content/news/national-542.md",
-        "memory/sessions/2026-09-25-author-national-542.md"
+        "pipeline/tmp/stories/national-540.b.md",
+        "site/src/content/news/national-540.md",
+        "memory/sessions/2026-09-25-author-national-540.md"
       ]
     },
     {
