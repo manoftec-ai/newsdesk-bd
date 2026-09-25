@@ -1,0 +1,35 @@
+---
+title: "মেয়াদোত্তীর্ণ লাইসেন্স-অবৈধভাবে যৌন উত্তেজক ওষুধ তৈরির অভিযোগে এনসিপি নেতার কারাদণ্ড"
+seoTitle: "মেয়াদোত্তীর্ণ লাইসেন্স-অবৈধভাবে যৌন উত্তেজক ওষুধ তৈরির অভিযোগে এনসিপি…"
+excerpt: "মেয়াদোত্তীর্ণ লাইসেন্সে যৌন উত্তেজক ওষুধ তৈরির অভিযোগে এনসিপির এক নেতাকে কারাদণ্ড দেওয়া হয়েছে। একটি সূত্র জানিয়েছে, কারখানায় যৌথবাহিনীর হানা হয়েছিল।"
+seoDescription: "মেয়াদোত্তীর্ণ লাইসেন্সে যৌন উত্তেজক ওষুধ তৈরির অভিযোগে এনসিপির এক নেতাকে কারাদণ্ড দেওয়া হয়েছে। একটি সূত্র জানিয়েছে, কারখানায় যৌথবাহিনীর হানা হয়েছিল।"
+date: 2026-09-24T07:18:10.000Z
+category: "national"
+tags: []
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "নেতার পরিচয়, কারাদণ্ডের মেয়াদ এবং হানার সময় ও স্থান সম্পর্কে প্রাপ্ত তথ্যে বিস্তারিত নেই।"
+faq: []
+sources:
+  - name: "দৈনিক ইত্তেফাক"
+    url: "https://news.google.com/rss/articles/CBMi1ARBVV95cUxQS1FxSHEtZDg0UUxNYXJRRU8tdm5ES1l2NkFwak9YYnJnNFF0YVczV2t5bkJaR1NzTU1HOFhIdGxySmRtY2FIUzRVc0hpWXNoZWVfOFJJSThOVTA0N0Z0WG1WWV9jS0FMRHBpTUQxOXZsVjM5TnhhVGpsbGxUNDd5YTJ4MFNNcVRKWDZPOG43dkNZV3FaOVpFN2p2MWF2a2JKTWV0bS03ZEVvcjE3T1dzV0hLZDQ4Vi1FSnROclRCQVA5ZUVCTEltVGFmS2ZLVkZJTmpjaVBlY3lRMGpBaDgxVE12QTRRSHRHWEpjaTlGUGhhWGZ5N2hwRlJNVzExbXBUeFhOU3RMcm13QW5QRlhyVGlxdjlQYzJ0ZDBnNTJHbWx4RjVfTVBHWTR5dldSSmw0cnlBZWFHOXUtS0VsS2VGbzYyX1NvRWRZUWY1Qm5NVzdpU0RtSi1uMXhWYWluTUlCSldlNXNCSkxIanl1RWl3ZTVBMWhFUTZtVzRqYTlnZTh4d21OMEJHcHgxTmN5eWRQTG8xVWVqNGpqWkhpQ293Q0o0OGU3Q0ZWbWVVamJ5aXpKNHY1dWhabnd5VmszSE0yekVZam95Vkh0eUwwN0Z0ekNua25MU20yU0lPb3M0bjhRakx2WUpDRk9RLVRyNzRScW9KTXdXOFdOel81ellkY0pwNVZHSXVSQ1ZnNUtJdnJXbDJFRnJtcTBFYzNGR1RFMHU2NWlZYWp2SkRhcE4wbVdBNmRKOTJrWktVQ3lsYUFySjVzUzNVTFM5OGE3VUdLaUI5N9IB2gRBVV95cUxQclVyeGNCVlY3d21FMjNDOUJiMlRuRVlaTGZ5SVJCUU82YXB5Z0kwTnNRN1cycksycXhwaFJlVXF6eDhXU1NWNzV0ZkJnNEFFOE0wM1B1THhLdHhOUTR1T0p5WW4zck9yNzNsLTBWakJMdXMzZE5zcEdRLV9qZ2VNdEVRTXllTjBlay1FcDV2LVBVcUlyWEQ2SnhEaS1ETVYxbEdGdzNvQXh5ay0zMnJ6aFRObndqdVdHT3JCZXEwX1RFTHpMMGNwU3ZPUnRmemdja3pKaFhqSk9ReGRTU01PSlZzdi1LZTRLRnlxdFI4cE5sMnRCRjZ2VUxxLVUtTlVTUEx1OGNhNWYwUkxodkt6Uzc2RnhHWG1zOUJCcXdCQnVYVUc2cXpkTmFtR3o3Ykp5R0xCNWRPeG01WVV0V2ZOX3RRUy1hZFJIX1ZCeHNlWGZ0dmg4NWxEM05LYlY3T1VCZ2Z1Si1jSTVSWlB2ekdSU2F3RkhOQTlyalVtbEUySWs2b1ZQVDRlbXp1MlYwcS0xV1pmRm9pX3ZzV2ZHbHNRNVFldVlyQVZpVVJxQ0lnVWF6enRjWWdoTmRLbkVoRGg0QUVRZlZ2YTlKcUFFalhaLWVNekZzX19mU3lpSmFZTzZLVE40QUhBZ0pxVHA4dWMtRmRIMEJEc1NMdEVLdmhDc0lNODc0ZzZNcTVzemtJRWE1bUJsZnFRRlpuZWhtNVpUbG05ZnRzbDV5dWd6cVNycjZUTF9tckVrR1ZrSXk1Mk9JSy03Y1pTS0txZ2hLdUZsZUszSVFhekVTUQ?oc=5"
+  - name: "kalerkantho"
+    url: "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ucDJlVGdXRjlCRy1RcVdoeFRwd0loU1lQR0dmaThzbXFpNUdGcWk5TVN1V041X2dLbnl6TDQzX0RCQW9uXzl5ellJWHBrNlpaUHl6YlpBOUJUeXpIUWp4UEJaWS1VU3Z6VlVTOVhmMzBaUXNK?oc=5"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (ittefaq)"
+    - type: "paper"
+      label: "reputable paper corroboration (kalerkantho)"
+
+---
+
+মেয়াদোত্তীর্ণ লাইসেন্সে যৌন উত্তেজক ওষুধ তৈরির অভিযোগে এনসিপির এক নেতাকে কারাদণ্ড দেওয়া হয়েছে। একটি সূত্র জানিয়েছে, কারখানায় যৌথবাহিনীর হানা হয়েছিল।
