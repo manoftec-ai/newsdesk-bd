@@ -45,7 +45,8 @@ export const MORE_NAVIGATION = [
 ];
 
 export const CONTACT = {
-  email: "",
+  email: "hello@jachaidesk.com",
+  address: "যাচাইডেস্ক, ঢাকা-১২০৫, বাংলাদেশ",
   socialHandle: "@jachaidesk",
   socialUrl: "https://x.com/jachaidesk",
 };

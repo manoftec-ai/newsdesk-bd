@@ -13,35 +13,79 @@ export async function getStaticPaths() {
 
 const { author } = Astro.props;
 const posts = await postsByAuthor(author.slug);
+const correctedCount = posts.filter((p) => p.corrected).length;
+const factcheckCount = posts.filter((p) => p.category === "factcheck").length;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: author.name,
+  url: `${SITE.url}/authors/${author.slug}`,
+  description: author.longBio ?? author.bio,
+  image: author.avatar ? `${SITE.url}${author.avatar}` : undefined,
+  sameAs: [SITE.url, `${SITE.url}/about`, SITE.repositoryUrl].filter(Boolean),
+};
 ---
 
 <BaseLayout
   title={`${author.name} — ${SITE.name}`}
   description={author.bio}
   canonical={`${SITE.url}/authors/${author.slug}`}
+  jsonLd={jsonLd}
 >
   <div class="mx-auto max-w-6xl px-5">
     <Breadcrumbs crumbs={[{ name: author.name, href: `/authors/${author.slug}`, current: true }]} />
-    <div class="mt-8 flex items-start gap-4">
+    <div class="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start">
       <img
         src={author.avatar}
         alt={author.name}
         width="96"
         height="96"
-        class="h-24 w-24 rounded-full object-cover"
+        class="h-24 w-24 shrink-0 rounded-full object-cover border border-border"
       />
-      <div>
+      <div class="min-w-0">
         <h1 class="font-serif text-3xl font-bold">{author.name}</h1>
-        <p class="mt-2 max-w-2xl text-muted-foreground">{author.longBio}</p>
+        <p class="mt-2 max-w-2xl text-muted-foreground leading-relaxed">{author.longBio}</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs text-muted-foreground">
+          <span class="rounded-full border border-border px-3 py-1">{posts.length} সংবাদ প্রকাশিত</span>
+          {factcheckCount > 0 && <span class="rounded-full border border-border px-3 py-1">{factcheckCount} ফ্যাক্ট চেক</span>}
+          {correctedCount > 0 && (
+            <a href="/corrections" class="rounded-full border border-border px-3 py-1 hover:border-primary hover:text-primary">
+              {correctedCount} সংশোধন
+            </a>
+          )}
+          <a href="/about" class="rounded-full border border-border px-3 py-1 hover:border-primary hover:text-primary">যাচাই পদ্ধতি</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2">
+      <div class="rounded-lg border border-border/60 p-5">
+        <h2 class="font-semibold">যাচাই পদ্ধতি</h2>
+        <ol class="mt-3 list-decimal space-y-1 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong>সংগ্রহ:</strong> ১২+ পত্রিকা ও দাপ্তরিক সূত্র থেকে একই সময়ে প্রতিবেদন সংগ্রহ।</li>
+          <li><strong>ক্লাস্টার:</strong> একই ঘটনার প্রতিবেদন একত্রিত (TF-IDF + strong-token)।</li>
+          <li><strong>যাচাই:</strong> নির্ভরযোগ্য সূত্রে মিল + ভুল/বিরোধ স্ক্যান → ব্যাজ (যাচাইকৃত/নিশ্চিত/আংশিক)।</li>
+          <li><strong>প্রকাশ:</strong> মূল সংশ্লেষ + সূত্র ও প্রমাণসহ প্রকাশ; ভুল হলে সংশোধন লগে দেখানো হয়।</li>
+        </ol>
+      </div>
+      <div class="rounded-lg border border-border/60 p-5">
+        <h2 class="font-semibold">স্বচ্ছতা</h2>
+        <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+          প্রতিটি সংবাদে যাচাই ব্যাজ, স্কোর, প্রমাণ তালিকা ও সূত্রের লিংক থাকে। দাবি-ভিত্তিক গল্পে <em>ClaimReview</em> স্কিমা যুক্ত থাকে।
+          কোনো তথ্য পরিবর্তন হলে <a href="/corrections" class="underline hover:text-primary">সংশোধন নীতি</a> অনুযায়ী `corrected` ও `correctionNote` দেখানো হয়।
+        </p>
+        <p class="mt-3 text-xs text-muted-foreground">প্রকাশক: {SITE.name} · {SITE.url}</p>
       </div>
     </div>
 
     {posts.length > 0 && (
       <div class="mt-10">
-        <h2 class="mb-4 font-serif text-2xl font-bold">প্রকাশিত সংবাদ</h2>
-        {posts.map((post) => (
-          <PostCard post={post} variant="list" />
-        ))}
+        <h2 class="mb-4 font-serif text-2xl font-bold">প্রকাশিত সংবাদ · {posts.length}</h2>
+        <div class="grid gap-6">
+          {posts.map((post) => (
+            <PostCard post={post} variant="list" />
+          ))}
+        </div>
       </div>
     )}
   </div>

@@ -56,7 +56,9 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
     <meta name="twitter:description" content={description} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- FONT GUARD: keep only 2 faces (serif 700 + Hind 400), font-display optional, never add 500/600 — LCP guard P1-9 -->
     <link
       rel="preload"
       href="/fonts/noto-serif-bengali-bengali-700.woff2"
@@ -88,6 +90,13 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-default.svg");
       })();
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").catch(function () {});
+        });
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content" class="skip-link">প্রধান অংশে যান</a>

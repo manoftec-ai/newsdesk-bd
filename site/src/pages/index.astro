@@ -23,7 +23,7 @@ const lead = await featuredPost();
 const all = await editorialOrder();
 const rest = all.filter((p) => p.slug !== lead?.slug);
 const secondLine = rest.slice(0, 4);
-const tickerItems = all.slice(0, 10);
+const tickerItems = all.slice(0, 3);
 
 const shownSlugs = new Set([
   lead?.slug,
@@ -72,7 +72,7 @@ const homeSections = await Promise.all(
     .map(async (category) => {
       const posts = (await postsByCategory(category.slug))
         .filter((p) => !shownSlugs.has(p.slug))
-        .slice(0, 3);
+        .slice(0, 2);
       return { category, posts };
     }),
 );
@@ -112,6 +112,7 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
                   alt={lead.thumbnailAlt || ""}
                   width="1200"
                   height="630"
+                  loading="eager"
                   fetchpriority="high"
                   decoding="async"
                   class="h-full w-full object-cover"
@@ -147,27 +148,24 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
       )
     }
 
-    <!-- Secondary line: 2x2 mini rows -->
+    <!-- Secondary line: 2x2 text-only mini rows -->
     {
       secondLine.length > 0 && (
         <section class="mt-8" aria-label="আরও খবর">
           <div class="grid gap-x-8 gap-y-4 md:grid-cols-2">
             {secondLine.map((post) => {
               const author = getAuthor(post.author);
+              const badge = getBadge(post);
               return (
-                <div class="mini-row">
-                  {post.thumbnail && (
-                    <a href={`/article/${post.slug}`} class="mini-row-thumb">
-                      <img
-                        src={post.thumbnail}
-                        alt={post.thumbnailAlt || ""}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </a>
-                  )}
+                <div class="mini-row !grid-cols-1">
                   <div class="mini-row-body">
-                    <a href={`/article/${post.slug}`}>{post.title}</a>
+                    <div class="flex items-center gap-2 text-xs">
+                      <VerificationBadge badge={badge} compact />
+                      <span class="text-muted-foreground">· {badge.label}</span>
+                    </div>
+                    <a href={`/article/${post.slug}`} class="mt-1 block font-medium leading-snug hover:text-primary">
+                      {post.title}
+                    </a>
                     <div class="mini-row-meta flex flex-wrap items-center gap-3 mt-1 text-xs text-muted-foreground">
                       <time datetime={new Date(post.ts).toISOString()}>
                         {formatDateTimeBDShort(post.ts)}
@@ -210,7 +208,7 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
                 সব দেখুন →
               </a>
             </div>
-            <div class="grid gap-8 sm:grid-cols-3">
+            <div class="grid gap-8 sm:grid-cols-2">
               {section.posts.map((post) => (
                 <PostCard post={post} />
               ))}

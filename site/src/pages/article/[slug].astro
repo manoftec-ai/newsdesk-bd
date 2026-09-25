@@ -66,8 +66,17 @@ const jsonLd = {
       inLanguage: post.lang,
       keywords: (post.tags ?? []).join(", "),
       isAccessibleForFree: true,
-      author: { "@type": "Organization", name: author?.name ?? SITE.name, url: SITE.url },
-      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+      author: {
+        "@type": "Person",
+        name: author?.name ?? SITE.name,
+        url: `${SITE.url}/authors/${author?.slug ?? "desk"}`,
+      },
+      publisher: {
+        "@type": "NewsMediaOrganization",
+        name: SITE.name,
+        url: SITE.url,
+        logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.svg` },
+      },
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id": `${SITE.url}/article/${post.slug}`,

@@ -17,6 +17,7 @@ import {
   factCheckVerdict,
   factCheckNote,
 } from './editorial.mjs';
+import { targetWords } from './length.mjs';
 
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
@@ -148,16 +149,6 @@ export function factCheckBlock(brief) {
   verdict: "${verdict}"
   verifiedDate: ${date}
   note: "${esc(note)}"`;
-}
-
-// 1.3 — Dynamic target length per story tier. Short briefs (few sources) carry
-// little info → short article; rich clusters (many sources) justify a longer
-// piece. The writer must stop when the information stops, never pad.
-export function targetWords(brief) {
-  const n = (brief.members ?? []).length;
-  if (n <= 2) return { min: 100, max: 180, tier: 'short' };
-  if (n === 3) return { min: 200, max: 350, tier: 'normal' };
-  return { min: 400, max: 550, tier: 'complex' };
 }
 
 // Claim-level writing rules handed to the writer (proposal #13): how each
@@ -341,7 +332,7 @@ ${claims}
 - If a fact is unknown, say so briefly or omit it.
 - Title: an accurate, concise Bengali headline (report headline-news style).
 - Excerpt: 1–2 sentence lead summary for cards.
-- Aim ${min}–${max} words body for this brief. Stop when the information stops — never pad to reach a word count.
+- Aim ${min}–${max} words body for this brief. Length follows claim count: include EVERY verified claim from all sources; do not summarize — synthesize. Stop when the information stops — never pad to reach a word count.
 - Do NOT end with a 'সূত্র:' source list — source links are rendered automatically from front matter; never put source URLs in the body, and never write a raw/visible full URL.
 - FORBIDDEN — no editorial/disclaimer footnotes anywhere. Never append lines like
   "এই সংবাদটি একাধিক যাচাইকৃত সূত্র থেকে সংশ্লেষিত" or "...এটি সম্পাদকীয় পর্যালোচনার অপেক্ষায় থাকা একটি খসড়া।"
