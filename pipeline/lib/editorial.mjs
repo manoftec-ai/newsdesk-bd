@@ -105,7 +105,14 @@ export function readerValueCheck(headline, body) {
 //   1. NO_READER_VALUE — rv1: the body adds no concrete fact beyond the headline.
 //   2. BODY_TOO_THIN   — the body is below an absolute word floor.
 // Both are deterministic and configurable; neither judges whether a claim is true.
-export const DEFAULT_MIN_PUBLISH_WORDS = 100;
+// 150, not 100 (2026-09-25). Measured against 51 real articles from Ittefaq,
+// Dhaka Tribune, Deshrupantor, New Age and BDNews24: min 86, p25 185, median
+// 269, mean 348 — and only 2% fall under 100 words. 150 sits just above the
+// bottom of that market distribution, so we publish nothing a real outlet
+// would consider a stub.
+export const DEFAULT_MIN_PUBLISH_WORDS = 150;
+// The length the writer is asked to AIM for, from the same measurement.
+export const TARGET_ARTICLE_WORDS = 250;
 
 export function minPublishWords(env = process.env) {
   const raw = Number(env.PUBLISH_MIN_WORDS);

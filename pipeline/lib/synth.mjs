@@ -18,6 +18,7 @@ import {
   factCheckNote,
 } from './editorial.mjs';
 import { targetWords } from './length.mjs';
+import { DEFAULT_MIN_PUBLISH_WORDS, TARGET_ARTICLE_WORDS } from './editorial.mjs';
 
 // Re-export the length helper for the existing synthesis API consumers.
 export { targetWords };
@@ -196,7 +197,10 @@ export function writingPrompt(brief) {
   const srcs = brief.sources.map((s) => `- ${s.name} — ${s.url}`).join('\n');
   const mode = publicationMode(brief);
   const format = storyFormat(brief);
-  const { min, max } = lengthForMode(mode, brief.members.length);
+  // Pass `brief` so lengthForMode can use the per-story targetWords(). It was
+  // previously called without it, so every prompt silently fell back to the
+  // old member-count bands and the real per-story targets were never applied.
+  const { min, max } = lengthForMode(mode, brief.members.length, brief);
   const leads = brief.members.map((m) =>
     `## [${m.source_id}] ${m.title}\n${m.published_at ?? ''}\n${m.lead}`
   ).join('\n\n');
@@ -224,6 +228,26 @@ That's it. Readers want the verified fact fast, not recycled sentences.`,
 Explicitly say the situation is evolving ("পরিস্থিতি চলমান", "এখনো যাচাই চলছে") where true. No invented future-tense outcomes. Lead with the strongest confirmed fact.`,
     'standard': `PUBLICATION MODE: STANDARD NEWS. Write a full ${min}–${max}-word article using the structure below.`,
   }[mode] ?? '';
+
+  // Market-derived length standard (2026-09-25). Measured from 51 real articles
+  // across Ittefaq, Dhaka Tribune, Deshrupantor, New Age and BDNews24:
+  // median 269, mean 348, p75 405. State it as a target, not a licence to pad:
+  // every sentence must still trace to the fact pool or the claim set.
+  const lengthStandard = `LENGTH STANDARD (measured from real Bangladeshi newspaper articles):
+• Hard minimum ${DEFAULT_MIN_PUBLISH_WORDS} words. Below this the piece is REJECTED by the publisher, not trimmed.
+• Aim for about ${TARGET_ARTICLE_WORDS} words; a well-sourced story should sit between ${TARGET_ARTICLE_WORDS} and 400.
+• Real outlets measure: median 269, mean 348, p75 405. A short piece is fine ONLY when the evidence is genuinely one fact — and then it must not be dressed up as a full article.
+• To reach that length, USE THE MATERIAL: every named person, place, date, number, figure, quote and consequence in the fact pool below is fair game and expected. Do not pad with scene-setting, restated sentences, or filler transitions.
+• If the fact pool genuinely cannot support ${DEFAULT_MIN_PUBLISH_WORDS} words, say so plainly in your summary instead of padding.`;
+
+  // The claim set is the strongest verified material in the brief; surface it
+  // before the raw leads so the writer leads with verified specifics.
+  const claimBlock = (brief.claims || []).length
+    ? `\n## VERIFIED CLAIMS (strongest material — lead with these)\n${(brief.claims || [])
+        .slice(0, 10)
+        .map((c) => `- [${c.status}] ${c.claim_text}`)
+        .join('\n')}\n`
+    : '';
   // #19/#32 — article FORMAT template. Overrides the STANDARD news structure
   // (below) when the story is a fact-check or an analysis piece. Each format has
   // its own section order; the claim-level + source rules apply to all.
@@ -287,6 +311,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   write the story in your own words as if you were on the scene. NEVER walk through
   the outlets one by one and NEVER compare "one report said X, another said Y".
 - ${modeDesc}
+- ${lengthStandard}
 ${formatBlock ? `- ${formatBlock}` : ''}
 - Five-answer discipline (proposal #2): after drafting, CHECK the article that a
   reader who read the headline learns clear answers to: (1) What happened?
@@ -377,7 +402,7 @@ Verdict: ${factCheckVerdict(brief)}
 Note: ${factCheckNote(factCheckVerdict(brief))}
 ` : ''}
 ### Member leads (facts pool)
-${leads}
+${claimBlock}${leads}
 
 ### Sources to cite
 ${srcs}
