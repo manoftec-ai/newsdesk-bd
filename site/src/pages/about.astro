@@ -2,9 +2,20 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { SITE, categories } from "../lib/news-data.js";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  name: SITE.name,
+  url: SITE.url,
+  logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.svg` },
+  foundingDate: "2026-09-19",
+  address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
+  sameAs: ["https://x.com/jachaidesk"],
+};
 ---
 
-<BaseLayout title={`আমাদের সম্পর্কে — ${SITE.name}`} description={SITE.description}>
+<BaseLayout title={`আমাদের সম্পর্কে — ${SITE.name}`} description={SITE.description} jsonLd={jsonLd}>
   <div class="prose prose-lg prose-brown dark:prose-invert mx-auto max-w-3xl px-5">
     <Breadcrumbs crumbs={[{ name: "আমাদের সম্পর্কে", href: "/about", current: true }]} />
     <h1 class="mt-6 font-serif text-4xl font-bold">আমাদের সম্পর্কে</h1>
@@ -54,5 +65,12 @@ import { SITE, categories } from "../lib/news-data.js";
     <p>
       কোনো সংবাদ, সংশোধন বা অভিযোগ থাকলে — <a href="/contact">যোগাযোগ</a> পাতা ব্যবহার করুন।
     </p>
+
+    <h2>প্রকাশক ও ঠিকানা</h2>
+    <p>
+      <strong>{SITE.name}</strong> — ঢাকা-১২০৫, বাংলাদেশ<br />
+      ইমেইল: <a href="mailto:hello@jachaidesk.com">hello@jachaidesk.com</a> · এক্স: <a href="https://x.com/jachaidesk" target="_blank" rel="noreferrer">@jachaidesk</a>
+    </p>
+    <p class="text-sm text-muted-foreground">প্রকাশক: {SITE.name} · NewsMediaOrganization · লোগো: /images/og-default.svg</p>
   </div>
 </BaseLayout>
