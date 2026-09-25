@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 55,
+    "sessionsCount": 56,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,15 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D84",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring was a safe no-op",
+      "summary": "Read pipeline/state/pick.json twice: it contained picked=[] and pending=0 both times. Because the requested target set was empty, no render_prompt command, story body, finalize_stories run, or site content write was performed. No article or staging body was created or modified. Pre-existing modifications to pick.json and store.db were preserved. No commit or push.",
+      "files": [
+        "memory/sessions/2026-09-25-author-empty-pick.md"
+      ]
+    },
     {
       "id": "D83",
       "date": "2026-09-25",
