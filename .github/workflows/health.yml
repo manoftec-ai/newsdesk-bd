@@ -1,0 +1,40 @@
+name: health
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * *' # daily 06:23 UTC
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Pipeline health check
+        run: |
+          node -e "
+          import { readdirSync, statSync } from 'fs';
+          import { join } from 'path';
+          const dir='site/src/content/news';
+          const files=readdirSync(dir).filter(f=>f.endsWith('.md'));
+          const latest=files.map(f=>{ try{ const s=statSync(join(dir,f)); return {f, mtime:s.mtimeMs}; }catch{ return {f,mtime:0}; } }).sort((a,b)=>b.mtime-a.mtime)[0];
+          const hrs = latest ? (Date.now()-latest.mtime)/36e5 : 999;
+          console.log('articles',files.length,'latest',latest?.f, hrs.toFixed(1)+'h ago');
+          const pick=JSON.parse(require('fs').readFileSync('pipeline/state/pick.json','utf8').toString());
+          console.log('pick pending',pick.pending,'picked',pick.picked.length);
+          if(files.length<10) { console.error('FAIL: too few articles'); process.exit(1); }
+          if(hrs>36) { console.error('WARN: no new article in 36h — pipeline may be stalled'); process.exit(1); }
+          console.log('health OK');
+          "
+      - name: Create issue if stalled (on failure)
+        if: failure()
+        run: |
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues \
+            -d "{\"title\":\"Health: pipeline stalled $(date -u +%Y-%m-%d)\",\"body\":\"No new article in 36h or pick pending 0 for long. Check pipeline cron + auto-author logs.\",\"labels\":[\"health\"]}" | head -c 500
