@@ -71,11 +71,11 @@ jobs:
       # demands auth, set the OPENCODE_API_KEY secret (free, opencode.ai/auth) and
       # this step will pick it up automatically from the environment.
 
-      # Mirrored writer — single source of truth is pipeline/lib/synth.mjs writingPrompt(brief).
-      # This step does NOT contain a copy of the writing instructions. It tells the agent
-      # to RENDER the prompt per slug via pipeline/tools/render_prompt.mjs (which calls
-      # writingPrompt) and then complete it. Any change to synth.mjs ships automatically.
-      - name: Author unpublished briefs (mirrored via synth.mjs)
+      # Jachai Lekhok — dedicated writer subagent (single source of truth: pipeline/lib/synth.mjs)
+      # This agent does ONLY writing — no other tasks. Any change to synth.mjs ships automatically.
+      # Globally available: .opencode/agent/jachai-lekhok.md (committed) + ~/.config/opencode/agent/jachai-lekhok.md
+      # Switch model via repo variable OPENCODE_AUTHOR_MODEL (e.g. opencode/muse-spark-1.2-contributor-free)
+      - name: Author unpublished briefs via Jachai Lekhok
         id: author
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
@@ -83,13 +83,7 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           mkdir -p pipeline/tmp/stories /tmp
-          opencode run --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "You are the newsdesk-bd story author. Work ONLY inside this repo. Follow AGENTS.md and memory/MEMORY.md.
-          Task:
-          1. Read pipeline/state/pick.json (written by pick_briefs.mjs — newest unpublished briefs). Author EXACTLY the slugs in its picked array. Never substitute, add, or skip.
-          2. If picked is empty or file missing, reply 'no unpublished briefs' and stop (exit 0).
-          3. For each targeted slug, render its writer prompt via the single source of truth: node pipeline/tools/render_prompt.mjs <slug> --out=/tmp/prompt-<slug>.txt  — this file IS the complete writing instructions (mode, fact-check/analysis template, claim rules, constraints, facts pool) from pipeline/lib/synth.mjs. Read that file and complete the article per it, writing the Bengali article body ONLY to pipeline/tmp/stories/<slug>.b.md (front matter is added later by finalize — do not write it).
-          4. Then run: node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN
-          5. Do NOT git commit, do NOT push, do NOT touch anything else. Always finish by printing a short summary listing files created."
+          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json and author exactly its picked slugs via render_prompt + finalize."
 
       - name: Stage and push drafted stories
         if: github.event.inputs.dry_run != 'true'
