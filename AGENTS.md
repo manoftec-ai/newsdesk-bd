@@ -35,40 +35,53 @@ Precedence: site project memory > hub > global user profile.
 ## 4. Build phases (current in Project memory)
 Phase 1 Fetch → 2 Normalize → 3 Cluster → 4 Extract+Synth → 5 Astro site → 6 Review/deploy → 7 Expand.
 
-## 5. Jev decision router — SHADOW MODE ONLY (added 2026-09-25)
+## 5. LOCAL_DECISION_ROUTER — advisory, local, deterministic (added 2026-09-25)
 
-Jev (TypeSafe AI System One) is an **advisory decision layer for the agent**. It never
-writes articles, never touches facts, and never gates the pipeline. It may help you pick
-the next step before expensive or repetitive work. Full detail: `docs/JEV-INTEGRATION.md`.
+**This is a local deterministic decision framework inspired by Jev-style typed routing.
+It is NOT the TypeSafe Jev model.** It makes no network call, needs no API key, uses no
+external AI, and produces no probability. Full detail: `docs/DECISION-ROUTER.md`.
 
-**When to consider it.** Before substantial research, repeated failed attempts, loading
-multiple tools/skills, choosing between materially different implementation routes,
-spawning additional agents, or proposing a consequential action — ask whether one small
-bounded Jev decision could improve the next step. If yes, run it and use the result as
-**one input** alongside your own reasoning.
+**When to consider it.** Before substantial research, repeated failed attempts, materially
+different implementation routes, risky actions, or expensive multi-step work — consider
+whether one small bounded decision could improve the next step.
 
-**When to skip it.** Simple answers, deterministic operations, routine file edits, and
-any situation where the decision adds no information. Skipping is the expected default.
+**When to skip it.** Simple deterministic tasks, routine file edits, and any situation where
+the decision adds no information. Skipping is the expected default, not a failure.
 
-**How.** `node pipeline/tools/jev_decide.mjs --list` then
-`node pipeline/tools/jev_decide.mjs <DECISION_TYPE> --task=<id> --state-file=<path> --json`.
+**How.**
+
+```bash
+cd pipeline
+node tools/decision_router.mjs --list                     # decision types + actions
+node tools/decision_router.mjs --rules                    # every rule, id + priority + action
+node tools/decision_router.mjs FAILURE_ROUTING --state='{"attempts":3,"sameError":true}'
+node tools/decision_router.mjs RESEARCH_DEPTH --state-file=/tmp/state.json --json
+```
+
 Decision types: `AGENT_ROUTE`, `FAILURE_ROUTING`, `RESEARCH_DEPTH`, `ARTICLE_MODE`,
-`ARTICLE_READINESS`. A no-key environment is normal — the CLI then reports
-`not_configured` and you simply continue. Never treat that as an error.
+`ARTICLE_READINESS`. Actions: `SKIP`, `CONTINUE`, `RESEARCH_MORE`, `CHANGE_STRATEGY`,
+`RETRY`, `VERIFY`, `HUMAN_REVIEW`, `SPLIT_TASK`, `INVESTIGATE_ROOT_CAUSE`,
+`ROUTE_DECISION`, `STOP_RESEARCH`.
+
+**Treat its result as ONE input to your reasoning, not absolute authority.**
 
 **Hard rules.**
-- A Jev decision is **never** a substitute for factual verification. Sources and evidence
-  decide what is true; Jev only suggests which verification path to take.
-- A Jev decision **never** overrides an explicit project requirement, a hard constraint
-  in this file, or a human confirmation. This file and the user always win.
-- Respect an explicit "bypass Jev" instruction, and pass `--bypass` when the user says so.
-- Keep irreversible or production-impacting actions behind confirmation, regardless of any
-  Jev route.
-- **Never add a Jev step to a GitHub Actions workflow, the Vercel deploy path, or any
-  pipeline stage.** Shadow mode is a local developer tool only. If a change would make Jev
-  reachable from CI or production, stop and ask first.
-- Do not commit keys. `TYPESAFE_API_KEY` / `TYPESAFE_API_KEY_FILE` stay in
-  `~/.config/opencode/.secrets/`, never in this repo.
+- Never use it to determine factual truth. Sources and evidence decide claims. The router
+  can only choose which verification or research action happens next.
+- Never bypass an explicit project requirement or a human decision. This file and the user
+  always win over any router action.
+- Keep destructive or irreversible actions behind human confirmation, regardless of what the
+  router returns. `HUMAN_REVIEW` means stop and ask.
+- It is advisory only (shadow mode): `wouldChangeWorkflow` is always `false`. Never claim a
+  router decision changed your behaviour without saying so explicitly.
+- **Never wire it into a GitHub Actions workflow, the Vercel deploy path, or any pipeline
+  stage.** It is a local developer tool. If a change would make it reachable from CI or
+  production, stop and ask first.
+- Do not commit secrets. State is redacted on the way in, and `SEC_001` routes any state
+  containing credential material to `HUMAN_REVIEW`.
+- Report honestly when it is skipped, disabled, or unavailable. Never present a local rule
+  decision as an AI or model judgement.
 
-**Report honestly.** If Jev was skipped, unavailable, or the key is missing, say so.
-Never present an offline run, a mock, or a local heuristic as a real Jev API decision.
+**Invocation is not guaranteed.** The router is a CLI the agent chooses to run; there is no
+automatic hook. If you are not sure whether a decision was worth consulting, say so plainly
+rather than claiming it was consulted.

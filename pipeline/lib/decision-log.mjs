@@ -1,9 +1,10 @@
-// lib/shadow-log.mjs — append-only JSONL shadow log for Jev decisions.
+// lib/decision-log.mjs — append-only JSONL log for LOCAL_DECISION_ROUTER decisions.
 //
 // HARD RULES (do not weaken):
 //   1. Never write a secret. Everything passes through redact() first.
 //   2. Never write to a tracked path. Default dir is pipeline/logs/ which .gitignore
 //      already excludes (patterns: pipeline/logs/, *.log).
+//   3. Never throw. Logging is best-effort and must not break a caller.
 //   3. Never throw. Logging is best-effort and must not break a caller.
 import { appendFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -45,12 +46,12 @@ export function redact(value, depth = 0) {
 }
 
 export function logDir(env = process.env) {
-  return resolve(env.JEV_SHADOW_LOG_DIR || DEFAULT_LOG_DIR);
+  return resolve(env.LDR_LOG_DIR || DEFAULT_LOG_DIR);
 }
 
 export function logFileFor(date = new Date(), env = process.env) {
   const day = date.toISOString().slice(0, 10);
-  return resolve(logDir(env), `jev-shadow-${day}.jsonl`);
+  return resolve(logDir(env), `decision-${day}.jsonl`);
 }
 
 /**
@@ -69,7 +70,7 @@ export function appendShadowLog(record, { env = process.env, now = new Date() } 
   }
 }
 
-/** Read back a day's records. Used by tests and shadow-log reviews. */
+/** Read back a day's records. Used by tests and decision-log reviews. */
 export function readShadowLog(date = new Date(), { env = process.env } = {}) {
   const file = logFileFor(date, env);
   if (!existsSync(file)) return [];
