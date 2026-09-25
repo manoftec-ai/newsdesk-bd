@@ -70,7 +70,16 @@ export async function fetchRss(source) {
       lang: source.lang,
     });
   }
-  return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
+
+  // Root-cause fix (2026-09-25): RSS bodies were never enriched. Most BD outlets
+  // put only the headline + outlet name in `contentSnippet`, so every plain-RSS
+  // item kept a ~70-90 char "body". buildBrief then hands the author agent a
+  // headline and nothing else, and it emits a restatement — which is how 27 of
+  // the last 30 published articles became 14-45 word stubs carrying
+  // `badge: confirmed`. The scraper and Google-News paths already called
+  // enrichThinBodies; this path did not. Same cap, same politeness delay.
+  const enriched = await enrichThinBodies(items, { max: RSS_ENRICH_MAX });
+  return { items: enriched, feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 
 // ---------- HTML scraper (generic; per-source refinements later) ----------
@@ -206,6 +215,7 @@ export async function fetchSource(source) {
 const GNEWS_ITEMS_MAX = 60;
 const ENRICH_MAX = 10;          // per gnews run, politeness cap for body scraping
 const ENRICH_DELAY_MS = 400;    // politeness between article fetches
+const RSS_ENRICH_MAX = 6;          // per RSS source per run (politeness; fetchRss runs per source)
 // A decoded Google-News header-only item carries no real body (body == title text).
 // Thresh: enrichment is attempted only when the captured body is too thin to support
 // a news report (>40 chars) — otherwise we leave a good body alone.
