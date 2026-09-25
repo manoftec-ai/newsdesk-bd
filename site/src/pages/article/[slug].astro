@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
+import Giscus from "../../components/Giscus.astro";
 
 import {
   getCollection,
@@ -547,6 +548,8 @@ const shareLinks = [
           ))}
         </div>
       </div>
+
+      <Giscus slug={post.slug} title={post.title} />
     </article>
   </div>
 

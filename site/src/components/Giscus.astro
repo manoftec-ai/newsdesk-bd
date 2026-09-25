@@ -1,0 +1,40 @@
+---
+const { slug, title } = Astro.props;
+---
+<details class="mt-10 rounded-lg border border-border/60" id="comments">
+  <summary class="cursor-pointer px-4 py-3 text-sm font-medium hover:text-primary">মন্তব্য দেখুন / লিখুন</summary>
+  <div class="p-4 pt-0">
+    <div class="giscus" data-loading="lazy"></div>
+    <script is:inline>
+      (function(){
+        var details=document.getElementById('comments');
+        if(!details) return;
+        var loaded=false;
+        function load(){
+          if(loaded) return;
+          loaded=true;
+          var s=document.createElement('script');
+          s.src='https://giscus.app/client.js';
+          s.setAttribute('data-repo','manoftec-ai/newsdesk-bd');
+          s.setAttribute('data-repo-id','R_kgDOUhobTg');
+          s.setAttribute('data-category','General');
+          s.setAttribute('data-category-id','DIC_kwDOUhobTs4Ccr2H');
+          s.setAttribute('data-mapping','pathname');
+          s.setAttribute('data-strict','0');
+          s.setAttribute('data-reactions-enabled','1');
+          s.setAttribute('data-emit-metadata','0');
+          s.setAttribute('data-input-position','bottom');
+          s.setAttribute('data-theme','light');
+          s.setAttribute('data-lang','bn');
+          s.setAttribute('crossorigin','anonymous');
+          s.async=true;
+          document.querySelector('.giscus').appendChild(s);
+        }
+        details.addEventListener('toggle', function(){ if(details.open) load(); });
+        // auto-load if hash #comments
+        if(location.hash==='#comments') { details.open=true; load(); }
+      })();
+    </script>
+    <p class="mt-2 text-xs text-muted-foreground">মন্তব্য GitHub Discussions-এ সংরক্ষিত — মডারেশন GitHub-এ।</p>
+  </div>
+</details>
