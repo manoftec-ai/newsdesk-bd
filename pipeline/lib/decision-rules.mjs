@@ -45,7 +45,7 @@ export const THRESHOLDS = Object.freeze({
   SPLIT_FILE_THRESHOLD: 5, // more files than this -> split the work
   SPLIT_SUBTASK_THRESHOLD: 3, // more parts than this -> split the work
   ROUTE_MIN_APPROACHES: 2, // how many routes before it counts as ambiguous
-  ARTICLE_MIN_WORDS: 100, // must match DEFAULT_MIN_PUBLISH_WORDS in lib/editorial.mjs
+  ARTICLE_MIN_WORDS: 150, // must match DEFAULT_MIN_PUBLISH_WORDS in lib/editorial.mjs
 });
 
 export const RULES = [

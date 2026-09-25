@@ -60,7 +60,12 @@ export function slugFromHeadline(headline, { categorySlug = 'news', clusterId } 
 }
 
 // Body excerpt limited to a plain-text lead (used as evidence, never full reprint).
-function excerptOf(body, n = 220) {
+// 220 -> 1200 (2026-09-25). At 220 the writer received a median of 44 words of
+// fact per brief and was forbidden to invent, so it physically could not reach
+// 100 words and emitted restatements instead. Real BD outlet articles measure
+// 269 median / 348 mean, so 1200 chars per source is what it takes to write one.
+// Still an excerpt for citation - never a full reprint.
+function excerptOf(body, n = 1200) {
   const plain = String(body ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   return plain.slice(0, n) + (plain.length > n ? '…' : '');
 }

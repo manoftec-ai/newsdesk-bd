@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 73,
+    "sessionsCount": 74,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -925,6 +925,28 @@
       "jachaideskIntegrationPoints": "Identified, NOT activated, no code path calls the router: research depth after verify, source-conflict routing, research stagnation before synth, article mode before render_prompt, repeated generation failure around finalize/audit, fact-check routing, editorial review before publish. The hard line: the router chooses which VERIFICATION action happens next; sources and evidence determine the claim. A test asserts it never emits a truth judgement.",
       "production": "NONE. No Vercel change, no GitHub Actions change, no new dependency, no secret, no API call, nothing deployed. GitHub Actions may run the deterministic unit tests via the existing `npm test` in pipeline.yml if ever approved — no workflow file was edited.",
       "limitations": "Only as good as the state passed in; no hook so invocation is agent-chosen; cannot detect semantic sameness of differently-worded errors (agent must set sameError + a stable failureSignature); thresholds 2/3/6, 3 stagnant rounds, 2 sources are judgement calls collected in THRESHOLDS; no learning loop by design; reasons are English prose though predicates are language-agnostic; it cannot judge article quality, only route process."
+    },
+    {
+      "id": "D103",
+      "date": "2026-09-25",
+      "title": "Live-site audit found the real quality bug, then the body-substance floor + RSS enrichment root-cause fix",
+      "summary": "Audited jachaidesk.com live (HTTP 200, 0.22s TTFB, valid news-sitemap 514 URLs, clean JSON-LD, lazy images, correct lang/viewport/manifest - the technical layer is genuinely strong). Found the journalism layer is not. Output collapsed from a 216-word median (2026-09-19) to 43 words (2026-09-25); 27 of the last 30 published articles are 14-45 word stubs, all carrying badge:confirmed + tier:A. Root cause: the bodies were NEVER CAPTURED. fetchRss set body=cleanBody(contentSnippet||content||summary), which on most BD outlets is just headline+outlet name (66-92 chars). enrichThinBodies was wired into the scraper and gnews paths but NEVER into fetchRss. buildBrief then does lead:excerptOf(m.body), so the author agent was handed a headline and nothing else and emitted a restatement. The enrichment error handler is catch{} so every failure was invisible. Measured: 3,558 of 7,960 raw_items (44.7%) still hold a headline-length body.",
+      "alsoFound": "240 of 514 articles (47%) contain a stray double danda \"।।\"; 276 (54%) have zero tags and only 22 distinct tags exist, with 21% of \"transport\"-tagged articles never mentioning transport (an FBI data breach, an MP remand, an England cricket match, a UN cyber-violence story); 35 article bodies open by repeating their own headline; 9 bodies are byte-identical to their excerpt; 3 duplicate-story pairs exist and one (national-540/542, identical title AND identical timestamp) was live on the homepage during the audit; 44% of articles cite a news.google.com redirect as a \"source\" (not openable by a reader).",
+      "fixes1_bodySubstanceFloor": "First established this was a REGRESSION, not a missing feature: readerValueCheck (rv1) already existed in lib/editorial.mjs and catches exactly this, but was only wired into audit.mjs which runs on the PARKED LLM path. The finalizer rewritten 2 hours earlier in 4ebe4b7 calls runPublicationGate + validatePublicArticle, and NEITHER inspects whether the body is a real article - both verify EVIDENCE, nothing verified the STORY. Added bodySubstanceCheck() to lib/editorial.mjs (NO_READER_VALUE then BODY_TOO_THIN, floor DEFAULT_MIN_PUBLISH_WORDS=100, overridable via PUBLISH_MIN_WORDS) and wired it into tools/finalize_stories.mjs right after the publication gate, rejecting as BODY_SUBSTANCE_BLOCKED into the existing rejections file. Also added ARTICLE_010 to the local decision router (advisory, shadow mode) with a test asserting the router floor and publisher floor stay equal. Verified it blocks the real stubs: national-551 (14w), national-545 (16w), national-534 (50w), national-527 (24w). Calibrated to reject 14.8% of the archive, with a test that FAILS if it would ever exceed 25%, so the newsroom cannot stall on its own output. Forward-only: the 76 already-published stubs are untouched.",
+      "fixes2_rssEnrichment": "Two changes. (1) fetchRss() now calls enrichThinBodies(items, { max: RSS_ENRICH_MAX = 6 }) - same politeness cap and delay as the other paths, per RSS source per run - so NEW items stop being born thin. That is the fix that stops the bleeding. (2) New tools/enrich_bodies.mjs backfills the already-thin items, reusing the SAME extraction code the live pipeline uses (extractArticleBody, cleanBody, needsBodyEnrichment, resolveGoogleNewsUrl) so there is no second divergent extractor. It persists to raw_items.body, the field buildBrief actually reads, because updating only the brief JSON would be overwritten by the next extract run. Dry-run unless --write. Every outcome recorded to state/enrich-report.json by status code, replacing the silent catch{} so failures are countable. Supports --id, --host, --only (gnews|direct), --limit, --resolve-gnews. raw_items.url is UNIQUE so a resolved Google-News URL is recorded in the report but deliberately NOT written back - re-pointing evidence needs its own decision.",
+      "measuredRecoveryRates": "Plain-RSS sources (bd24live, prothomalo, channelionline, bigganchinta) ~100% - gains of 218 to 6000 chars. Google-News wrappers 56% on an 18-item spread sample across the id range: kalerkantho (7) and jugantor (1) sit behind Cloudflare and return 403 to every UA tried; observerbd, samakal, deshrupantor, ittefaq, dhakatribune, bdnews24, prothomalo and banglatribune all serve fine. An earlier 14/14 403 reading was SAMPLING BIAS - ORDER BY id picked one host.",
+      "correction": "I twice reported a \"median 188 words, no stall\" figure that was WRONG - it came from a shell word count that included YAML frontmatter. The real median of the last 30 published is 43 words. The floor is calibrated to 100, which current bot output misses by a lot, so publishing WILL slow substantially until the enrichment catches up. Also: python3 does not exist in this Termux environment - use node for scripted file edits.",
+      "mergeConflict": "store.db is a tracked 76MB SQLite file that the bot rewrites every 30 minutes, so it conflicts on nearly every merge. Resolved in favour of the LOCAL copy because it carries hand-enriched bodies; store.db is a derived cache the pipeline rebuilds anyway, so the bot parallel fetches regenerate, whereas the enrichments are hand work that would not come back.",
+      "tests": "267/267 pass, zero failures, after both fixes. New: test/publish-substance.test.mjs (12) including two that run against the real 514-article archive and assert the gate rejects something but not more than 25%; 4 router tests. Three of my own test expectations were wrong during this (a clobbered fixture, a wrong word count, an unrelated headline/body pairing) and were corrected rather than bending the engine.",
+      "production": "No Vercel config change, no workflow change, no new dependency, no secret. tools/enrich_bodies.mjs is deliberately NOT wired into any workflow - local, developer-invoked.",
+      "openItems": [
+        "76 already-published stubs are untouched and still live. Backfill would make them rewriteable, but extract() skips published stories as title-duplicates, so a rewrite path needs its own decision.",
+        "47% of the archive has the stray \"।।\" - a single cleanup pass in prepBody() would fix it retroactively.",
+        "54% of articles have no tags and the tag map misfires; wrong tags are worse than none.",
+        "3 duplicate-story pairs remain, one of which was live during the audit.",
+        "The <title> on every page claims \"বাংলাদেশের সবচেয়ে যাচাই-করা সংবাদ\" (most verified news in Bangladesh) - an unverifiable superlative on a site whose premise is verification.",
+        "Vercel: 28-29 deployments/day against a 100/day Hobby limit, ~71/day projected, 27 of 28 from bot commits. Proposed gating deploy.yml behind a repo variable AUTO_DEPLOY; awaiting approval, not implemented."
+      ]
     }
   ],
   "sources": [
@@ -1270,7 +1292,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 73,
+  "sessionsCount": 74,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
