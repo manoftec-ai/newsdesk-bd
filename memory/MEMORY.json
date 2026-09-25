@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 64,
+    "sessionsCount": 65,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,24 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D94",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized four picked stories",
+      "summary": "Read pipeline/state/pick.json and froze exactly sports-536, national-535, national-538, and national-537; rendered each canonical writingPrompt; authored only the four body files; finalize_stories.mjs --max=4 reported wrote=4 skipped=0 failed=0 blocked=0. All four generated articles are draft:false, retain two source links each, and contain no raw URLs, source lists, outlet names, or editorial footers. Thin briefs were kept short and unknowns were stated without fabrication. Target validation and test/synth.test.mjs (12/12) passed; no lint/typecheck scripts are defined; site build is unavailable because Astro dependencies are not installed. Pre-existing pipeline/state/pick.json and pipeline/state/store.db changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs. The four briefs contained sparse fact pools, so the articles were not padded; verified facts were stated directly and single-source claims remained attributed.",
+      "files": [
+        "pipeline/tmp/stories/sports-536.b.md",
+        "pipeline/tmp/stories/national-535.b.md",
+        "pipeline/tmp/stories/national-538.b.md",
+        "pipeline/tmp/stories/national-537.b.md",
+        "site/src/content/news/sports-536.md",
+        "site/src/content/news/national-535.md",
+        "site/src/content/news/national-538.md",
+        "site/src/content/news/national-537.md",
+        "memory/sessions/2026-09-25-author-picked-four.md"
+      ]
+    },
     {
       "id": "D93",
       "date": "2026-09-25",
