@@ -65,6 +65,10 @@ function excerptOf(body, n = 220) {
   return plain.slice(0, n) + (plain.length > n ? '…' : '');
 }
 
+function wordCount(text) {
+  return String(text ?? '').trim().split(/\s+/).filter(Boolean).length;
+}
+
 // Build one story brief from a cluster id. Returns null if not writable.
 export function buildBrief(clusterId, { db } = {}) {
   const store = db ?? openDb();
@@ -130,6 +134,7 @@ export function buildBrief(clusterId, { db } = {}) {
       category: m.category,
       lang: m.lang,
       lead: excerptOf(m.body),
+      wordCount: wordCount(m.body),
     })),
     sources,
     evidence,

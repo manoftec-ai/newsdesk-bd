@@ -8,6 +8,7 @@
 //    (public impact, people affected, novelty, consequence, urgency,
 //    geographic relevance, usefulness). Used by pick_briefs as a tiebreak
 //    within the newest-first batch and exposed in pick.json for the author.
+import { targetWords } from './length.mjs';
 
 const QTY_WORDS = new Set([
   'কোটি', 'লাখ', 'লক্ষ', 'হাজার', 'দশ', 'শত', 'হাজার হাজার', 'বিলিয়ন',
@@ -187,9 +188,17 @@ export function publicationMode(brief) {
 // to the STANDARD tier; a breaking/developing story uses the proposal #6 bands
 // when the fact pool justifies them, and complex 600–1000+ only for genuinely
 // rich clusters. NEVER pad — the writer stops when the information stops.
-// The optional `brief` lets length stay information-driven (thin cluster →
-// smaller band), which is the #1 principle applied mechanically.
+// Uses targetWords(brief) when brief is available (source-word-driven).
 export function lengthForMode(mode, srcCount, brief) {
+  if (brief && typeof targetWords === 'function') {
+    const tw = targetWords(brief);
+    // Respect breaking/developing mode adjustments
+    if (mode === 'breaking') return { min: Math.max(100, tw.min), max: Math.min(180, tw.max), tier: 'breaking' };
+    if (mode === 'developing') return { min: tw.min, max: Math.min(600, tw.max), tier: 'developing' };
+    if (mode === 'news-brief') return { min: 50, max: Math.min(150, tw.max), tier: 'brief' };
+    return tw;
+  }
+  // Fallback: old member-count logic (when brief not available)
   if (mode === 'news-brief') return { min: 50, max: 150, tier: 'brief' };
   if (mode === 'breaking') return { min: 100, max: 180, tier: 'breaking' };
   if (mode === 'developing') {
