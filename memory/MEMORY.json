@@ -34,6 +34,17 @@
   },
   "decisions": [
     {
+      "id": "D82",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-527",
+      "summary": "Read the current pipeline/state/pick.json (one picked slug: national-527), rendered the canonical writing prompt, authored only the verified Erdogan–Tarique meeting fact and its explicit unknowns, and ran finalize_stories.mjs. Output: site/src/content/news/national-527.md, draft:false; wrote=1 skipped=0 failed=0 blocked=0. Did not blend the unrelated SINGLE_SOURCE Bhutan–Maldives meeting claim or invent date, venue, agenda, quotes, or outcome. Target-only front-matter validation passed; synth tests 12/12. Full pipeline suite has four unrelated baseline failures (auditor checklist 14 vs test 12, targetWords export mismatch, length-tier mismatch). Site build could not start because Astro dependencies are not installed. No commit/push. The pre-existing pick.json modification was preserved.",
+      "files": [
+        "pipeline/tmp/stories/national-527.b.md",
+        "site/src/content/news/national-527.md",
+        "memory/sessions/2026-09-25-author-national-527.md"
+      ]
+    },
+    {
       "id": "D81",
       "date": "2026-09-24",
       "title": "excerpt markdown leak fixed - **এক নজরে** showing on live homepage cards",
