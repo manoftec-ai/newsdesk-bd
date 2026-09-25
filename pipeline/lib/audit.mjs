@@ -49,6 +49,32 @@ function extractQuotes(text) {
 const DISAGREEMENT_RE =
   /(অন্যদিকে|কিছু\s*সূত্র|কোনটি|প্রকৃত\s*সংখ্যা|সংখ্যা\s*এখনো|মিল\s*নেই|ভিন্ন\s*তথ্য|বিরোধপূর্ণ|দাবি,\s*তবে|নিশ্চিত\s*নয়|সঠিক\s*তথ্য\s*নয়)/u;
 
+// ---- Bengali quality helpers (proposal §4) ----
+const EN_MONTH_RE = /\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/u;
+const EN_TIME_RE = /\b\d{1,2}:\d{2}\s*(AM|PM|am|pm)\b/u;
+const EN_DATE_SLASH_RE = /\b\d{1,2}\/\d{1,2}\/\d{2,4}\b/u;
+const DOUBLE_DARI_RE = /।।/u;
+const DOUBLE_COMMA_RE = /,,/u;
+
+function hasEnglishSource(brief) {
+  return (brief.members ?? []).some((m) => m.lang === 'en' || /^(dailystar|dhakatribune|tbs|guardian|daily-observer|bd24live|independent)$/.test(m.source_id));
+}
+
+function bengaliPunctuationIssues(text) {
+  const issues = [];
+  if (DOUBLE_DARI_RE.test(text)) issues.push('double dari "।।"');
+  if (DOUBLE_COMMA_RE.test(text)) issues.push('double comma ",,"');
+  // English month or AM/PM in Bengali article = inconsistent formatting
+  if (EN_MONTH_RE.test(text)) issues.push('English month name in Bengali body (use ২৩ সেপ্টেম্বর format)');
+  if (EN_TIME_RE.test(text)) issues.push('English time AM/PM in Bengali body (use সকাল ১০টা ৩০ মিনিট)');
+  if (EN_DATE_SLASH_RE.test(text)) issues.push('slash date in Bengali body (use ২৩ সেপ্টেম্বর ২০২৬)');
+  // mixed numeral systems: both Bengali digits and Latin digits for quantities in same body (allow 1-2 Latin for URLs already stripped, but flag clear count mix)
+  const hasBnNum = /[০-৯]/.test(text);
+  const hasLatinNumCount = /\b\d+\s*(টি|জন|টাকা|কোটি|লাখ|হাজার)\b/u.test(text);
+  if (hasBnNum && hasLatinNumCount) issues.push('mixed Bengali/Latin numerals for counts (use ২৫টি consistently)');
+  return issues;
+}
+
 // The 10 audit points (encode the writer prompt + locked editorial rules).
 export const AUDIT_POINTS = [
   { id: 'c1', en: 'Original synthesis', rule: 'The article is an ORIGINAL merged narrative, not a reprint/copy of any single outlet article.' },
@@ -79,6 +105,8 @@ export const SPEC_AUDIT_POINTS = [
   { id: 'n10', en: 'Context relevance', rule: 'Background/context is only included when it explains THIS event; no generic boilerplate.' },
   { id: 'n11', en: 'Attribution', rule: 'Facts are attributed to real actors (পুলিশ/মন্ত্রণালয়); no media outlet names in the body.' },
   { id: 'n12', en: 'Readability', rule: 'Reads as one clear news story; structure, flowing sentence variety, lengths meeting the tier.' },
+  { id: 'n13', en: 'Translation naturalness', rule: 'When any source is English, Bengali does NOT read as literal translation: no English clause cleft (যা/যেখানে/যখন calque), no awkward preposition translation, no English-style long passive; rewritten naturally.' },
+  { id: 'n14', en: 'Date/number consistency', rule: 'Dates/numbers/times use consistent JachaiDesk Bengali format (২৩ সেপ্টেম্বর ২০২৬, সকাল ১০টা ৩০ মিনিট, ২৫টি) — no mixed English month/AM-PM or Latin+Bengali numeral mix; entity names/spellings consistent.' },
 ];
 
 // ---- Stage 1 — mechanical (deterministic, always runs) --------------------
@@ -163,15 +191,27 @@ export function mechanicalAudit(brief, body) {
   const rv = readerValueCheck(brief.headline ?? '', text);
   if (!rv.ok) note('rv1', `no reader value: body adds no concrete fact beyond headline (${rv.bodyWords}/${rv.headWords} words)`);
 
+  // ---- Proposal §4E / §8: Bengali punctuation & date/number consistency (mechanical) ----
+  for (const issue of bengaliPunctuationIssues(text)) {
+    note('n14', issue);
+  }
+  // §6 AI translation detection — mechanical flag for obvious English calque in Bengali when English sources present
+  // (LLM n13 does deep judgment; mechanical catches literal "যা ... যেখানে ... যখন" stacking which is rare in natural Bangla)
+  if (hasEnglishSource(brief)) {
+    const calqueStack = (text.match(/যা\s+\S+\s+যেখানে|\sযেখানে\s+\S+\s+যখন/g) ?? []).length;
+    if (calqueStack >= 2) note('n13', 'possible literal-translation stacking (যা/যেখানে/যখন calque) — rewrite naturally');
+  }
+
   return { pass: fails.length === 0, fails, count: fails.length, headline: hdr };
 }
 
-// ---- Stage 2 — LLM 12-point editorial auditor (proposal #29/#36) -----------
+// ---- Stage 2 — LLM 14-point editorial auditor (proposal #29/#36 + Bengali fine-tuning §4/§6/§8) -----------
 export function auditPrompt(brief, body) {
   const points = SPEC_AUDIT_POINTS.map((p) => `  "${p.id}": { "ok": true_or_false, "note": "one short sentence in English, why/why not" } // ${p.en}: ${p.rule}`).join('\n');
   const rules = SPEC_AUDIT_POINTS.map((p, i) => `${i + 1}. ${p.id} ${p.en.toLowerCase()} — ${p.rule}`).join('\n');
   const leads = (brief.members ?? []).map((m) => `- [${m.source_id}] ${m.title}\n  ${m.lead}`).join('\n');
-  return `You are the newsdesk-bd AUDITOR, a strict second-stage editor using the JachaiDesk editorial checklist (proposal #29/#36). Judge the writer's draft article against all 12 points. The member leads below are the ONLY allowed fact pool — any claim not traceable to a lead, or any invented name/number/quote, FAILS its point. Reply with ONLY a JSON object, no prose, no markdown fences:
+  const count = SPEC_AUDIT_POINTS.length;
+  return `You are the newsdesk-bd AUDITOR, a strict second-stage editor using the JachaiDesk editorial checklist (proposal #29/#36 + Bengali fine-tuning). Judge the writer's draft article against all ${count} points. The member leads below are the ONLY allowed fact pool — any claim not traceable to a lead, or any invented name/number/quote, FAILS its point. Reply with ONLY a JSON object, no prose, no markdown fences:
 
 {
   "pass": true_or_false,
@@ -180,7 +220,7 @@ ${points}
   }
 }
 
-Checklist (audit all 12 rigorously; do NOT rubber-stamp):
+Checklist (audit all ${count} rigorously; do NOT rubber-stamp):
 ${rules}
 Delete-sentence rules (a sentence violating ANY of these must be flagged):
 - adds no information the reader didn't have
