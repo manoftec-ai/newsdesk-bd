@@ -15,7 +15,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openDb } from '../lib/db.mjs';
-import { storyTimeline, storyMeta, relatedStories, storyVersions } from '../lib/event-graph.mjs';
+import { storyTimeline, storyMeta, relatedStories } from '../lib/event-graph.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SITE_DATA = join(HERE, '../../site/src/data');
@@ -56,7 +56,12 @@ export function buildEventGraph(db, { minEvents: minEv = minEvents, slugFilter =
       last_update: meta?.last_update ?? null,
       claim_count: tl.claims.length,
       events: tl.events,
-      versions: storyVersions(db, clusterId),
+      // `versions` (claim_snapshots periods, 7.5 MB across 423 claims) is
+      // deliberately NOT emitted. Nothing in site/ reads it — src/lib/graph.js
+      // only touches meta, stories, events and cluster_id — yet it was being
+      // uploaded and JSON-parsed on every Vercel build. storyVersions() is
+      // still exported from lib/event-graph.mjs and still covered by
+      // test/event-graph.test.mjs; only the dead payload is dropped here.
       related: relatedStories(db, clusterId).map((r) => {
         const m = storyMeta(db, r.cluster_id);
         const rSlug = slugByCluster.get(Number(r.cluster_id));
