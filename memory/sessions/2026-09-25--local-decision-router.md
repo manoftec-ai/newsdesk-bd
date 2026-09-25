@@ -1,4 +1,4 @@
-# 2026-09-25 — D101: LOCAL_DECISION_ROUTER (replaces TypeSafe Jev)
+# 2026-09-25 — D102: LOCAL_DECISION_ROUTER (replaces TypeSafe Jev)
 
 ## What was decided
 

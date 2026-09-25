@@ -4,7 +4,7 @@
 > It is NOT the TypeSafe Jev model.** It makes no network call, needs no API key, uses no
 > external AI, costs nothing, and produces **no probability** of any kind.
 >
-> Added 2026-09-25 (project decision **D101**). Supersedes the TypeSafe Jev evaluation
+> Added 2026-09-25 (project decision **D102**). Supersedes the TypeSafe Jev evaluation
 > recorded in `docs/TYPESAFE-JEV-EVALUATED-NOT-USED.md`.
 
 ---

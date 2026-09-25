@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 72,
+    "sessionsCount": 73,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,18 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D101",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-551",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-551 (pending 1). Rendered its canonical thin-news writingPrompt, authored only pipeline/tmp/stories/national-551.b.md, and ran finalize_stories.mjs --max=1: wrote=1 skipped=0 failed=0 blocked=0. The first generated excerpt and SEO description cut mid-word, so the same body was shortened to its two verified sentences, only the generated target article was removed, and the same finalizer reran. The final site/src/content/news/national-551.md has draft:false, both brief sources, complete 94-character excerpt and SEO-description boundaries, and no invented date, scope, procedure, official reaction, or outcome. Target validation passed; test/synth.test.mjs passed 12/12; node --check and git diff --check passed. Full npm test retained the same two pre-existing baseline failures at 212/214. No lint/typecheck scripts are defined. Site dependencies are absent, so the Astro build was unavailable. Jev was skipped for this prescribed exact-pick run. Pre-existing pipeline/state/pick.json and pipeline/state/store.db changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs. The headline-only evidence was not padded, and the redundant SINGLE_SOURCE restatement was not blended into the verified claim.",
+      "files": [
+        "pipeline/tmp/stories/national-551.b.md",
+        "site/src/content/news/national-551.md",
+        "memory/sessions/2026-09-25-author-national-551.md"
+      ]
+    },
     {
       "id": "D98",
       "date": "2026-09-25",
@@ -898,7 +910,7 @@
       "production": "Unchanged. No deployment, no Vercel change, no workflow change, no secret."
     },
     {
-      "id": "D101",
+      "id": "D102",
       "date": "2026-09-25",
       "title": "LOCAL_DECISION_ROUTER replaces TypeSafe Jev — local, deterministic, offline, shadow mode",
       "summary": "User decided NOT to use the TypeSafe Jev API. Built LOCAL_DECISION_ROUTER: a local, fully offline, fully deterministic decision-routing framework inspired by Jev-style typed routing. IT IS NOT the TypeSafe Jev model. No network, no API key, no external AI, no cost, and NO probability of any kind. Shaped to this repo's real gap: pipeline.yml has 12 `|| true` steps and auto-author.yml has 6 more, which make failures silent and get retried by the next cron with the same approach; nothing guarded against that.",
@@ -1258,7 +1270,7 @@
     }
   ],
   "lastUpdated": "2026-09-25",
-  "sessionsCount": 72,
+  "sessionsCount": 73,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
