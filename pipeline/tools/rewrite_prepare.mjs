@@ -79,9 +79,26 @@ for (const slug of published) {
     continue;
   }
 
-  // Best available source body for this story.
+  // Build the CURRENT brief FIRST and judge eligibility from ITS members.
+  // This ordering matters: the brief on disk can be stale (exportBriefs skips
+  // already-published headlines), so its member list may name different rows
+  // than the ones the cluster actually has now. Judging on the stored brief
+  // while rendering the prompt from buildBrief() can mark a story eligible on
+  // the strength of a source the prompt never shows - i.e. invite a rewrite
+  // written from a headline-only pool.
+  let fresh;
+  try {
+    fresh = buildBrief(stored.clusterId, { db });
+  } catch {
+    fresh = null;
+  }
+  if (!fresh || !Array.isArray(fresh.members) || !fresh.members.length) {
+    noBrief++;
+    continue;
+  }
+
   let bestChars = 0;
-  for (const m of stored.members || []) {
+  for (const m of fresh.members) {
     const r = db.prepare('SELECT length(body) lb FROM raw_items WHERE url = ?').get(m.url);
     if (r?.lb && r.lb > bestChars) bestChars = r.lb;
   }
@@ -90,7 +107,7 @@ for (const slug of published) {
     continue;
   }
 
-  rows.push({ slug, clusterId: stored.clusterId, headline, bestChars });
+  rows.push({ slug, clusterId: stored.clusterId, headline, bestChars, brief: fresh });
 }
 
 rows.sort((a, b) => a.bestChars - b.bestChars);
@@ -126,7 +143,7 @@ const failures = [];
 for (const row of selected) {
   try {
     // Rebuild a CURRENT brief so the leads carry the new 1200-char cap.
-    const fresh = buildBrief(row.clusterId, { db });
+    const fresh = row.brief;
     if (!fresh) {
       failures.push({ slug: row.slug, why: 'buildBrief-null' });
       continue;
