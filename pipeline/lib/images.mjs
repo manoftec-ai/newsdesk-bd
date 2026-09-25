@@ -254,35 +254,18 @@ export async function renderPhotoFromBuffer(imageBuffer, { brand = BRAND } = {})
     .rotate()
     .resize(1200, 675, { fit: "cover", position: "attention" })
     .toBuffer();
-  const withBrand = await sharp(base)
+  return sharp(base)
     .composite([{ input: Buffer.from(brandBadgeSvg(brand)), top: 0, left: 0 }])
+    .webp({ quality: 80 })
     .toBuffer();
-  const webp = await sharp(withBrand).webp({ quality: 80 }).toBuffer();
-  let avif = null;
-  try {
-    avif = await sharp(withBrand).avif({ quality: 50 }).toBuffer();
-  } catch {}
-  // 640 variant for srcset
-  let webp640 = null;
-  try {
-    webp640 = await sharp(withBrand).resize(640, 360, { fit: "cover", position: "attention" }).webp({ quality: 78 }).toBuffer();
-  } catch {}
-  return { webp, avif, webp640 };
 }
 
 export async function renderBrandCard({ title, category, brand = BRAND }) {
   const sharp = await getSharp();
-  const base = sharp(Buffer.from(cardSvg({ title, category, brand }))).resize(1200, 675);
-  const webp = await base.webp({ quality: 82 }).toBuffer();
-  let avif = null;
-  try {
-    avif = await base.avif({ quality: 48 }).toBuffer();
-  } catch {}
-  let webp640 = null;
-  try {
-    webp640 = await sharp(Buffer.from(cardSvg({ title, category, brand }))).resize(640, 360, { fit: "cover", position: "attention" }).webp({ quality: 80 }).toBuffer();
-  } catch {}
-  return { webp, avif, webp640 };
+  return sharp(Buffer.from(cardSvg({ title, category, brand })))
+    .resize(1200, 675)
+    .webp({ quality: 82 })
+    .toBuffer();
 }
 
 // ---- orchestration ----------------------------------------------------------
@@ -325,11 +308,9 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
   if (pick) {
     try {
       const img = await downloadBuffer(pick.url, { referer: pickSource?.referer ?? "" });
-      const { webp, avif, webp640 } = await renderPhotoFromBuffer(img);
+      const webp = await renderPhotoFromBuffer(img);
       return {
         webp,
-        avif,
-        webp640,
         mode: photoMode,
         alt: pickSource
           ? `${title} — ছবি: ${pickSource.title}`
@@ -340,6 +321,6 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
       // fall through to branded card (same semantics as before)
     }
   }
-  const { webp, avif, webp640 } = await renderBrandCard({ title, category });
-  return { webp, avif, webp640, mode: "card", alt: `${title} — ${BRAND}`, credit: "" };
+  const webp = await renderBrandCard({ title, category });
+  return { webp, mode: "card", alt: `${title} — ${BRAND}`, credit: "" };
 }

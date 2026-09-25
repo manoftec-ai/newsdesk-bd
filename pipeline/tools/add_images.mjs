@@ -137,10 +137,8 @@ for (const f of files) {
       made++;
     } else if (result.webp) {
       writeFileSync(join(imagesDir, `${slug}.webp`), result.webp);
-      if (result.avif) writeFileSync(join(imagesDir, `${slug}.avif`), result.avif);
-      if (result.webp640) writeFileSync(join(imagesDir, `${slug}-640.webp`), result.webp640);
       writeFileSync(full, insertThumbnail(content, thumbPath, result.alt));
-      console.log(`+ ${slug}.webp${result.avif ? ' + .avif' : ''}${result.webp640 ? ' + -640.webp' : ''} (${result.mode})`);
+      console.log(`+ ${slug}.webp (${result.mode})`);
       made++;
       if (result.mode === 'photo') photo++; else card++;
     } else {

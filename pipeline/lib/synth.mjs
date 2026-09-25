@@ -277,7 +277,7 @@ ${formatBlock ? `- ${formatBlock}` : ''}
 - ${whyBlock}
 - ${political.trim()}
 ${natBn}
-${translationBlock}${formattingBlock}- If mode is STANDARD AND format is news, body structure (in this order — omit any section that would be empty):
+${translationBlock}${formattingBlock}- If mode is STANDARD AND format is news, body structure (in this order):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
   2. "এক নজরে" bullet list of DISTINCT key points (1–4 bullets — no filler, no
      repeating the headline; every bullet must name a different fact). Format
@@ -287,11 +287,7 @@ ${translationBlock}${formattingBlock}- If mode is STANDARD AND format is news, b
      - point two
      - point three
   3. "## মূল খবর" — 2–5 short paragraphs telling the story in plain chronology or logic.
-  4. "## কী জানা গেছে" — ONLY when important verified details need their own explanation
-     (numbers, dates, documents, decisions). Omit if the মূল খবর section already carries them.
-  5. "## কী এখনো জানা যায়নি" — ONLY if the leads truly leave unknowns (agenda, details,
-     identities, decisions). Keep it to what is genuinely NOT reported. Omit the whole
-     section if nothing is unknown.
+  Do NOT add "## কী জানা গেছে" or "## কী এখনো জানা যায়নি" sections — JachaiDesk keeps only এক নজরে + মূল খবর in standard news.
 - If format is factcheck or analysis, follow the ${format === 'factcheck' ? 'FACT-CHECK' : format === 'analysis' ? 'ANALYSIS' : ''} template above INSTEAD of the news structure; the news structure below does NOT apply.
 - Source rule (hard): the article is a finished news story. A reader should NOT be
   able to tell which outlet reported what. NEVER name a media outlet, newspaper or
@@ -320,10 +316,8 @@ Apply per the claim status given for this brief (proposal #13):
 - OFFICIAL (সরকারি/প্রাথমিক সূত্র): state it with the agency attached —
   "মন্ত্রণালয় জানিয়েছে…", "বিজ্ঞপ্তিতে বলা হয়েছে…"।
 - SINGLE_SOURCE (একক সূত্র): never present as established fact. Attribute it —
-  "একটি সূত্র জানিয়েছে…" or "…দাবি করেছে"। Use cautiously; do not generalize it.
-- UNCONFIRMED (নিশ্চিত নয়): say it plainly in কী এখনো জানা যায়নি, or attribute
-  with doubt — "এখনো নিশ্চিত নয়", "দাবি, তবে যাচাই হয়নি"। Never state it as fact
-  and never headline it.
+   "একটি সূত্র জানিয়েছে…" or "…দাবি করেছে"। Use cautiously; do not generalize it.
+- UNCONFIRMED (নিশ্চিত নয়): attribute with doubt in মূল খবর — "এখনো নিশ্চিত নয়", "দাবি, তবে যাচাই হয়নি"। Never state it as fact and never headline it. Do NOT create a separate section for it.
 - CONFLICTING (সূত্রে সাংঘর্ষিক তথ্য): NEVER silently choose one side. Say the
   difference explicitly — "কিছু সূত্রে X বলা হয়েছে, অন্যদিকে Y; কোনটি সঠিক তা
   এখনো নিশ্চিত নয়"। The reader must see both claims.
