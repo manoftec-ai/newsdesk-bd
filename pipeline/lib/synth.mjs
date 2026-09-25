@@ -19,6 +19,9 @@ import {
 } from './editorial.mjs';
 import { targetWords } from './length.mjs';
 
+// Re-export the length helper for the existing synthesis API consumers.
+export { targetWords };
+
 export function loadBrief(slug) {
   const f = join(BRIEFS_DIR, `${slug}.json`);
   return JSON.parse(readFileSync(f, 'utf8'));
@@ -73,7 +76,7 @@ export function inferTags(brief) {
 
 // Front matter for a story. draft:false = auto-publish (user decision 2026-09-19;
 // overrides original draft-first). Flip to true for manual-review mode later.
-export function frontMatter(brief) {
+export function frontMatter(brief, { publication = null } = {}) {
   const badgeMap = { verified: 'verified', confirmed: 'confirmed', single: 'partial', skeptical: 'suspect' };
   const badge = badgeMap[brief.verdict?.badge] ?? 'partial';
   const tier = brief.verdict?.tier ?? brief.tier ?? 'B';
@@ -124,12 +127,29 @@ verification:
   badge: "${badge}"
   tier: "${tier}"
   score: ${fm.verification.score}
+${publication ? `  status: "passed"
+  evaluatedAt: "${String(publication.checkedAt).replace(/"/g, '\\"') }"
+  clusterId: ${Number(publication.clusterId)}
+  claimIds:
+${(publication.claimIds ?? []).map((id) => `    - ${Number(id)}`).join('\n')}
+  evidenceHash: "${String(publication.evidenceHash ?? '').replace(/"/g, '\\"') }"` : ''}
 ${fm.verification.headline ? `  headline:
     status: "${fm.verification.headline.status}"
     support: ${fm.verification.headline.support}` : ''}
   evidence:
-${(fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')}
-${fcBlock}`;
+${(fm.verification.evidence ?? []).length
+  ? (fm.verification.evidence ?? []).map((e) => `    - type: "${String(e.type).replace(/"/g, '\\"')}"\n      label: "${String(e.label).replace(/"/g, '\\"')}"`).join('\n')
+  : '    []'}
+${publication ? `publication:
+  slug: "${String(publication.slug).replace(/"/g, '\\"') }"
+  gate: "passed"
+  gateVersion: "${String(publication.gateVersion).replace(/"/g, '\\"') }"
+  checkedAt: "${String(publication.checkedAt).replace(/"/g, '\\"') }"
+  clusterId: ${Number(publication.clusterId)}
+  claimIds:
+${(publication.claimIds ?? []).map((id) => `    - ${Number(id)}`).join('\n')}
+  evidenceHash: "${String(publication.evidenceHash ?? '').replace(/"/g, '\\"') }"
+` : ''}${fcBlock}`;
 }
 
 // Deterministic  #19 fact-check front-matter block. Emitted ONLY when a story is

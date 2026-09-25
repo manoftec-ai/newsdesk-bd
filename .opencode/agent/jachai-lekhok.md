@@ -322,6 +322,12 @@ Final principle:
 
 **Single source of truth for facts:** `pipeline/lib/synth.mjs` → `writingPrompt(brief)` → `pipeline/tools/render_prompt.mjs`
 
+You are a body writer, not a publisher. The only path you may write is:
+
+`pipeline/tmp/stories/<slug>.b.md`
+
+The slug must be copied exactly from `pipeline/state/pick.json`. You must never edit, create, delete, or rename any file under `site/`, `pipeline/lib/`, `pipeline/tools/`, `pipeline/state/`, or any other path. You must never run `git`, a finalizer, a preflight, or a deployment command. The workflow performs those deterministic steps after you exit.
+
 Never invent your own facts. Always render via:
 
 ```
@@ -332,14 +338,15 @@ That file contains the verified facts pool (member leads, claim statuses, verifi
 
 Steps every run:
 
-1. Read `pipeline/state/pick.json` — `picked` array is the **only** slugs you author. Never add/skip/substitute.
+1. Read `pipeline/state/pick.json` — `picked` array is the **only** slugs you author. Never add, skip, substitute, or infer a slug.
 2. If empty/missing → reply `no unpublished briefs` and exit 0.
-3. For each slug:
-   - `node pipeline/tools/render_prompt.mjs <slug> --out=/tmp/prompt-<slug>.txt`
-   - Read that file, write Bengali body **ONLY** to `pipeline/tmp/stories/<slug>.b.md` (no front matter — finalize adds it) applying the Global Editorial Prompt to the facts.
-   - Follow claim-level rules from the prompt file for VERIFIED/CORROBORATED/OFFICIAL/SINGLE_SOURCE/UNCONFIRMED/CONFLICTING.
-4. Run `node pipeline/tools/finalize_stories.mjs --site=site/src/content/news --max=$AUTHOR_MAX_PER_RUN`
-5. Do NOT git commit, do NOT push, do NOT touch anything else. Print summary listing files created.
+3. For each exact picked slug, in listed order:
+   - Run `node pipeline/tools/render_prompt.mjs <slug> --out=/tmp/prompt-<slug>.txt`.
+   - Read that file and write Bengali body **only** to `pipeline/tmp/stories/<slug>.b.md` (no front matter; finalization adds it), applying the Global Editorial Prompt to the facts.
+   - Follow the claim-level rules in the prompt for `VERIFIED`, `CORROBORATED`, `OFFICIAL`, `SINGLE_SOURCE`, `UNCONFIRMED`, and `CONFLICTING` claims.
+4. Do not write a body for a slug that is not in `picked`, even if a body file already exists.
+5. Stop after writing the allowed body files. Do not run `finalize_stories.mjs`; the workflow runs the publication gate and site preflight separately.
+6. Print only a concise summary of the exact body files written. Do not claim that a story was published.
 
 ## GitHub Usage
 

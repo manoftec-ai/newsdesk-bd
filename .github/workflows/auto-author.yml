@@ -60,6 +60,11 @@ jobs:
         run: |
           node tools/pick_briefs.mjs --max="$AUTHOR_MAX_PER_RUN" --out=state/pick.json
 
+      - name: Clear stale writer bodies
+        run: |
+          rm -f pipeline/tmp/stories/*.b.md
+          rm -f pipeline/tmp/finalize-rejections.json
+
       - name: Install opencode
         run: |
           curl -fsSL https://opencode.ai/install | bash -s -- --version 1.18.31
@@ -75,7 +80,7 @@ jobs:
       # This agent does ONLY writing — no other tasks. Any change to synth.mjs ships automatically.
       # Globally available: .opencode/agent/jachai-lekhok.md (committed) + ~/.config/opencode/agent/jachai-lekhok.md
       # Switch model via repo variable OPENCODE_AUTHOR_MODEL (e.g. opencode/muse-spark-1.2-contributor-free)
-      - name: Author unpublished briefs via Jachai Lekhok
+      - name: Author picked bodies via Jachai Lekhok
         id: author
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
@@ -83,18 +88,35 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           mkdir -p pipeline/tmp/stories /tmp
-          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json and author exactly its picked slugs via render_prompt + finalize."
+          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json. For every picked slug, run pipeline/tools/render_prompt.mjs and write only that slug's body to pipeline/tmp/stories/<slug>.b.md. Do not edit site Markdown, pipeline source, briefs, or any other path. Do not run git commands."
 
-      - name: Stage and push drafted stories
+      - name: Reject direct public Markdown edits
+        run: |
+          if ! git diff --quiet -- site/src/content/news || ! git diff --cached --quiet -- site/src/content/news || [ -n "$(git ls-files --others --exclude-standard -- site/src/content/news)" ]; then
+            echo "author changed site/src/content/news directly; refusing to continue"
+            exit 1
+          fi
+
+      - name: Finalize gated stories atomically
+        working-directory: pipeline
+        run: |
+          node tools/finalize_stories.mjs --pick=state/pick.json --site=../site/src/content/news --max="$AUTHOR_MAX_PER_RUN" --rejections=tmp/finalize-rejections.json
+
+      - name: Preflight finalized public stories
+        working-directory: pipeline
+        run: |
+          node tools/site_preflight.mjs --written=tmp/finalize-rejections.json --news=../site/src/content/news
+
+      - name: Stage only approved story files
         if: github.event.inputs.dry_run != 'true'
         run: |
-          git config user.name "newsdesk-bd-bot"
-          git config user.email "bot@newsdesk-bd.local"
-          git add -A
+          node pipeline/tools/stage_published.mjs --result=pipeline/tmp/finalize-rejections.json --site=site/src/content/news --stage
           if git diff --cached --quiet; then
             echo "no story changes (nothing new or already committed)"
             exit 0
           fi
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
           git commit -m "auto-author: publish drafted stories ($(date -u +%Y%m%dT%H%M))"
           # Merge-style push that tolerates concurrent work landing on the same
           # files while we author (e.g. a parallel session authoring the same

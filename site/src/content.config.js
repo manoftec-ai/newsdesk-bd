@@ -68,11 +68,27 @@ const news = defineCollection({
         }),
       )
       .default([]),
+    publication: z
+      .object({
+        slug: z.string().min(1),
+        gate: z.literal("passed"),
+        gateVersion: z.string().min(1),
+        checkedAt: z.coerce.date(),
+        clusterId: z.number().int().positive(),
+        claimIds: z.array(z.number().int().positive()).min(1),
+        evidenceHash: z.string().regex(/^[a-f0-9]{16}$/),
+      })
+      .optional(),
     verification: z
       .object({
         badge: z.enum(["verified", "confirmed", "partial", "suspect"]).default("partial"),
         tier: z.enum(["A", "B", "C"]).default("B"),
         score: z.number().optional(),
+        status: z.enum(["passed", "failed", "human_check", "unknown"]).optional(),
+        evaluatedAt: z.coerce.date().optional(),
+        clusterId: z.number().int().positive().optional(),
+        claimIds: z.array(z.number().int().positive()).min(1).optional(),
+        evidenceHash: z.string().regex(/^[a-f0-9]{16}$/).optional(),
         evidence: z
           .array(
             z.object({
