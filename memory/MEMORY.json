@@ -5,7 +5,7 @@
     "location": "~/storage/shared/'OpenCode Work'/projects/'Website Development'/sites/newsdesk-bd",
     "memorySystemVersion": "1.0",
     "lastUpdated": "2026-09-25",
-    "sessionsCount": 66,
+    "sessionsCount": 67,
     "reminders": {
       "mandate": "Surfaced to user at every session start (user request 2026-09-20). DOMAIN + REBRAND DONE (D47/D48, 2026-09-23): jachaidesk.com is main domain, entire repo (site + pipeline + workflows) renamed to যাচাইডেস্ক (D49 fixed D48's জাচাই→যাচাই spelling). Remaining are user account steps only.",
       "pending": [
@@ -33,6 +33,18 @@
     "python": "not installed (pipeline uses Node.js)"
   },
   "decisions": [
+    {
+      "id": "D96",
+      "date": "2026-09-25",
+      "title": "Exact-pick authoring finalized national-543",
+      "summary": "Read pipeline/state/pick.json and froze exactly national-543. Rendered its canonical writingPrompt, authored only the verified congratulation and explicitly attributed the single-source assessment, then ran finalize_stories.mjs --max=1. The first generated SEO description cut mid-word, so the same body was shortened and this same slug was regenerated after removing only the generated article. The final output is site/src/content/news/national-543.md with draft:false, two matching source links, two attributed key points, and complete excerpt/SEO-description boundaries. The body has no outlet names, raw URLs, source list, editorial footer, or invented detail. Target validation passed; synth tests passed 12/12; git diff --check and node --check passed. No lint/typecheck scripts are defined. Pre-existing state changes were preserved. No commit or push.",
+      "rationale": "The user required exactly the picked slugs via render_prompt and finalize. The thin evidence pool was not padded, and the single-source assessment remained attributed.",
+      "files": [
+        "pipeline/tmp/stories/national-543.b.md",
+        "site/src/content/news/national-543.md",
+        "memory/sessions/2026-09-25-author-national-543.md"
+      ]
+    },
     {
       "id": "D95",
       "date": "2026-09-25",
