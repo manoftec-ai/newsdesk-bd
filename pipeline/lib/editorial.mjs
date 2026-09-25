@@ -189,6 +189,7 @@ export function publicationMode(brief) {
 // when the fact pool justifies them, and complex 600–1000+ only for genuinely
 // rich clusters. NEVER pad — the writer stops when the information stops.
 // Uses targetWords(brief) when brief is available (source-word-driven).
+// WEEKLY HERO: when editorialValue >=70 and mode==standard, writer may use 600-1000 hero tier via complex path (score>55) — pick 1/week via cron if needed.
 export function lengthForMode(mode, srcCount, brief) {
   if (brief && typeof targetWords === 'function') {
     const tw = targetWords(brief);

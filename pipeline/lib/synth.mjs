@@ -235,13 +235,25 @@ This is a politically or personally sensitive subject. Apply these strictly:
 - Quotes: only exact quotes that exist in the member leads; never "clean up" a quote changing its meaning.
 `
     : '';
-  const natBn = `## Natural Bengali (proposal #10)
-- Write like a careful Bangladeshi reporter: plain, direct, professional Bangla.
-- VARY sentence length and opening words; do NOT start every sentence the same
-  way or repeat a formula ("জানা গেছে…", "বলেছেন…" max once per two paragraphs).
-- Avoid transliterated English where a natural Bangla word exists; use English
-  technical terms only when truly standard (e.g. সিসিটিভি, মেট্রোরেল).
-- No ChatGPT-isms: no "উল্লেখ্য", no "এটি একটি গুরুত্বপূর্ণ বিষয়", no formula.
+  const hasEnSource = (brief.members ?? []).some((m) => m.lang === 'en');
+  const natBn = `## Natural Bengali (proposal #10 + fine-tuning §4/§5)
+- Write like a careful Bangladeshi reporter: plain, direct, professional Bangla. Target: আধুনিক বাংলাদেশি সংবাদমাধ্যমের ভাষা — NOT সাহিত্যিক, NOT textbook, NOT machine-translated.
+- VARY sentence length and opening words; do NOT start every sentence the same way or repeat a formula ("জানা গেছে…", "বলেছেন…" max once per two paragraphs).
+- Prefer ছোট + সরাসরি + স্বাভাবিক + তথ্যনির্ভর বাক্য। Break overly long sentences. Avoid unnecessary passive/কর্মবাচ্য and ambiguous pronouns.
+- Word choice: common, simple Bangla; no repeated same word, no unnecessary English where Bangla exists; technical terms only when standard (সিসিটিভি, মেট্রোরেল).
+- No ChatGPT-isms: no "উল্লেখ্য", no "এটি একটি গুরুত্বপূর্ণ বিষয়", no generic opening/closing, no "বিষয়টি নিয়ে…" filler, no formula.
+- Before finishing, run internal checks: বাক্য স্বাভাবিকতা (would a Bangladeshi journalist write this?), বানান/ব্যাকরণ/যতিচিহ্ন correct, কর্তা-ক্রিয়া consistent, no translation-like structure.
+`
+  const translationBlock = hasEnSource
+    ? `## AI Translation Detection (§6 — English sources present)
+This brief includes English-language sources. After drafting Bengali, self-check: "Does any sentence read as a literal English translation?" If yes, rewrite naturally. Watch for: awkward preposition translation, excessive "যা/যেখানে/যখন" clauses, English-style long sentences, unnecessary passive, unnatural noun stacking.
+`
+    : '';
+  const formattingBlock = `## Naming & Formatting Consistency (§7/§8 — HARD)
+- Entity naming: first mention full ("ইরানের প্রেসিডেন্ট মাসউদ পেজেশকিয়ান"), thereafter consistent short form ("পেজেশকিয়ান" OR "ইরানের প্রেসিডেন্ট") — do NOT randomly alternate 4 variants in one article.
+- Person/institution/place spelling must be consistent within the article and match sources.
+- Dates/numbers/times: use ONE consistent JachaiDesk format throughout: "২৩ সেপ্টেম্বর ২০২৬", "সকাল ১০টা ৩০ মিনিট", "২৫টি উড়োজাহাজ" (Bengali numerals + Bengali month names). NEVER mix "23 September / ২৩ সেপ্টেম্বর / 10:30 AM" in one article.
+- Punctuation: Bengali dari "।", proper commas, correct quotation marks; no "।।" or ",,"; headline has no unnecessary punctuation.
 `
 
   return `# Story task — newsdesk-bd
@@ -265,7 +277,7 @@ ${formatBlock ? `- ${formatBlock}` : ''}
 - ${whyBlock}
 - ${political.trim()}
 ${natBn}
-- If mode is STANDARD AND format is news, body structure (in this order — omit any section that would be empty):
+${translationBlock}${formattingBlock}- If mode is STANDARD AND format is news, body structure (in this order — omit any section that would be empty):
   1. Lead paragraph — most important fact up front (who/what/when/where), plain and short.
   2. "এক নজরে" bullet list of DISTINCT key points (1–4 bullets — no filler, no
      repeating the headline; every bullet must name a different fact). Format

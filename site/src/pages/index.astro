@@ -105,20 +105,28 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
       lead && (
         <section class="mt-8" aria-label="আজকের প্রধান খবর">
           <a href={`/article/${lead.slug}`} class="lead-article block">
-            {lead.thumbnail && (
-              <div class="aspect-[16/9] overflow-hidden bg-muted md:aspect-[21/9]">
-                <img
-                  src={lead.thumbnail}
-                  alt={lead.thumbnailAlt || ""}
-                  width="1200"
-                  height="630"
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="async"
-                  class="h-full w-full object-cover"
-                />
-              </div>
-            )}
+            {lead.thumbnail && (() => {
+              const avif = lead.thumbnail.replace(/\.webp$/, '.avif');
+              const src640 = lead.thumbnail.replace(/\.webp$/, '-640.webp');
+              return (
+                <div class="aspect-[16/9] overflow-hidden bg-muted md:aspect-[21/9]">
+                  <picture>
+                    <source srcset={avif} type="image/avif" />
+                    <source srcset={`${src640} 640w, ${lead.thumbnail} 1200w`} sizes="(max-width: 768px) 100vw, 1200px" type="image/webp" />
+                    <img
+                      src={lead.thumbnail}
+                      alt={lead.thumbnailAlt || ""}
+                      width="1200"
+                      height="630"
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                      class="h-full w-full object-cover"
+                    />
+                  </picture>
+                </div>
+              );
+            })()}
             <div class="lead-article-content">
               <div class="flex flex-wrap items-center gap-2 text-xs">
                 {leadCategory && (

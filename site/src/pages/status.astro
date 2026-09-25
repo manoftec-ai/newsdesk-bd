@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE, sortedPosts } from "../lib/news-data.js";
+
+const posts = await sortedPosts();
+const total = posts.length;
+const latest = posts[0];
+const latestTime = latest ? new Date(latest.ts).toISOString() : null;
+const hrsAgo = latest ? ((Date.now() - latest.ts) / 36e5).toFixed(1) : "-";
+const byBadge = {
+  verified: posts.filter((p) => p.verification?.badge === "verified").length,
+  confirmed: posts.filter((p) => p.verification?.badge === "confirmed").length,
+  partial: posts.filter((p) => p.verification?.badge === "partial").length,
+};
+const corrected = posts.filter((p) => p.corrected).length;
+---
+
+<BaseLayout title={`স্ট্যাটাস — ${SITE.name}`} description="যাচাইডেস্ক পাইপলাইন স্ট্যাটাস — প্রকাশিত সংবাদ, সর্বশেষ আপডেট, যাচাই বন্টন।" canonical={`${SITE.url}/status`}>
+  <div class="mx-auto max-w-4xl px-5">
+    <Breadcrumbs crumbs={[{ name: "স্ট্যাটাস", href: "/status", current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">স্ট্যাটাস</h1>
+      <p class="mt-2 text-muted-foreground">পাইপলাইন লাইভ — কত খবর, কখন শেষ প্রকাশ, যাচাই বন্টন।</p>
+    </header>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-lg border border-border/60 p-4">
+        <div class="text-2xl font-bold">{total}</div>
+        <div class="text-xs text-muted-foreground">মোট প্রকাশিত</div>
+      </div>
+      <div class="rounded-lg border border-border/60 p-4">
+        <div class="text-sm font-medium">{latest ? latest.title.slice(0, 60) : "-"}</div>
+        <div class="text-xs text-muted-foreground">সর্বশেষ: {hrsAgo} ঘণ্টা আগে {latest ? `· ${latest.date}` : ""}</div>
+      </div>
+      <div class="rounded-lg border border-border/60 p-4">
+        <div class="text-sm">যাচাইকৃত {byBadge.verified} · নিশ্চিত {byBadge.confirmed} · আংশিক {byBadge.partial}</div>
+        <div class="text-xs text-muted-foreground">সংশোধিত {corrected} · ট্র্যাক {posts.filter((p)=>p.tracked).length}</div>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="font-semibold">সর্বশেষ ৫</h2>
+      <ul class="mt-3 space-y-2">
+        {posts.slice(0,5).map((p)=>(
+          <li class="flex justify-between gap-4 text-sm">
+            <a href={`/article/${p.slug}`} class="hover:text-primary underline-offset-2 hover:underline">{p.title.slice(0,70)}</a>
+            <span class="shrink-0 text-xs text-muted-foreground">{p.date}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <p class="mt-6 text-xs text-muted-foreground">সোর্স: Astro getCollection("news") — Vercel build time। পাইপলাইন প্রতি ৩০মি fetch → verify → extract → publish। <a href="/sitemap.xml" class="underline">sitemap.xml</a> · <a href="/news-sitemap.xml" class="underline">news-sitemap.xml</a></p>
+  </div>
+</BaseLayout>

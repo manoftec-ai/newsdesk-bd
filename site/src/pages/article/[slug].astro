@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
+import Giscus from "../../components/Giscus.astro";
 
 import {
   getCollection,
@@ -110,6 +111,27 @@ const jsonLd = {
         },
       ],
     },
+    ...(post.breaking
+      ? [
+          {
+            "@type": "LiveBlogPosting",
+            "@id": `${SITE.url}/article/${post.slug}#liveblog`,
+            headline: post.title,
+            description,
+            coverageStartTime: isoDate(entry.data.date),
+            datePublished: isoDate(entry.data.date),
+            ...(entry.data.updated ? { dateModified: isoDate(entry.data.updated) } : {}),
+            liveBlogUpdate: [
+              {
+                "@type": "BlogPosting",
+                headline: post.title,
+                datePublished: isoDate(entry.data.date),
+                articleBody: post.excerpt,
+              },
+            ],
+          },
+        ]
+      : []),
     ...(post.faq?.length
       ? [
           {
@@ -303,20 +325,31 @@ const shareLinks = [
         </div>
       </header>
 
-      {post.thumbnail && (
-        <figure class="mt-6">
-          <img
-            src={post.thumbnail}
-            alt={post.thumbnailAlt || ""}
-            width="1200"
-            height="630"
-            class="aspect-[16/9] w-full rounded-md object-cover"
-          />
-          {post.thumbnailAlt && (
-            <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
-          )}
-        </figure>
-      )}
+      {post.thumbnail && (() => {
+        const avif = post.thumbnail.replace(/\.webp$/, '.avif');
+        const src640 = post.thumbnail.replace(/\.webp$/, '-640.webp');
+        return (
+          <figure class="mt-6">
+            <picture>
+              <source srcset={avif} type="image/avif" />
+              <source srcset={`${src640} 640w, ${post.thumbnail} 1200w`} sizes="(max-width: 768px) 100vw, 1200px" type="image/webp" />
+              <img
+                src={post.thumbnail}
+                alt={post.thumbnailAlt || ""}
+                width="1200"
+                height="630"
+                class="aspect-[16/9] w-full rounded-md object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+            {post.thumbnailAlt && (
+              <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
+            )}
+          </figure>
+        );
+      })()}
 
       {post.updates && post.updates.length > 0 && (() => {
         const last = post.updates[post.updates.length - 1];
@@ -515,6 +548,8 @@ const shareLinks = [
           ))}
         </div>
       </div>
+
+      <Giscus slug={post.slug} title={post.title} />
     </article>
   </div>
 
