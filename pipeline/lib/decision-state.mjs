@@ -101,6 +101,7 @@ export function normalizeState(raw = {}) {
     searchRounds: Math.max(0, num(input.searchRounds, 0)),
     newInformationLastRound: nullableBool(input.newInformationLastRound),
     isKnownFileEdit: bool(input.isKnownFileEdit, false),
+    bodyWordCount: nullableNum(input.bodyWordCount),
     previousActions: Array.isArray(input.previousActions) ? input.previousActions.filter((a) => typeof a === 'string').slice(0, 20) : [],
     elapsedMs: nullableNum(input.elapsedMs),
     claimVerifiable: nullableBool(input.claimVerifiable),
