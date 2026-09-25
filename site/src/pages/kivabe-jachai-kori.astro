@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE } from "../lib/news-data.js";
+
+const faqs = [
+  { q: "যাচাইডেস্ক কীভাবে খবর যাচাই করে?", a: "একই ঘটনার একাধিক স্বাধীন পত্রিকার প্রতিবেদন মিলিয়ে, তারপর অফিসিয়াল সূত্র ও বিরোধ স্ক্যান করে ব্যাজ দেওয়া হয় — যাচাইকৃত / নিশ্চিত / একক-আংশিক।" },
+  { q: "একটি খবর প্রকাশের আগে কয়টি সূত্র লাগে?", a: "সাধারণ জাতীয়/রাজনীতি খবর কমপক্ষে ২টি স্বাধীন বিশ্বস্ত সূত্রে মিললে 'নিশ্চিত' হয়; অফিসিয়াল নিশ্চিতকরণ থাকলে 'যাচাইকৃত'। একক সূত্রের খবর 'আংশিক' হিসেবে চিহ্নিত থাকে।" },
+  { q: "যাচাই ব্যাজগুলোর অর্থ কী?", a: "যাচাইকৃত = অফিসিয়াল নিশ্চিত, নিশ্চিত = একাধিক সূত্রে মিল, একক/আংশিক = এক সূত্র, সন্দেহজনক = যাচাই হয়নি — প্রকাশযোগ্য নয়।" },
+  { q: "ভুল হলে কী হয়?", a: "ভুল ধরা পড়লে সংশোধন নোটসহ আপডেট করা হয়, পুরনো লেখা মুছে যায় না — সংশোধনের লগে তারিখসহ থাকে।" },
+  { q: "পাঠক কীভাবে সাহায্য করতে পারেন?", a: "যোগাযোগ পাতায় 'সংবাদ সংশোধন' বিষয় বেছে ভুলের লাইন ও সঠিক সূত্রের লিংক পাঠান — দ্রুত যাচাই করা হয়।" },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+---
+
+<BaseLayout title={`কীভাবে যাচাই করি — ${SITE.name}`} description="যাচাইডেস্ক কীভাবে খবর যাচাই করে — ব্যাজ, স্কোর, প্রমাণ ও সংশোধনের পুরো প্রক্রিয়া।" canonical={`${SITE.url}/kivabe-jachai-kori`} jsonLd={jsonLd}>
+  <div class="mx-auto max-w-3xl px-5">
+    <Breadcrumbs crumbs={[{ name: "কীভাবে যাচাই করি", href: "/kivabe-jachai-kori", current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">কীভাবে যাচাই করি</h1>
+      <p class="mt-2 text-muted-foreground">একই ঘটনার একাধিক প্রতিবেদন → মিল → প্রমাণ → ব্যাজ — পুরো প্রক্রিয়া খোলা।</p>
+    </header>
+    <div class="prose prose-lg prose-brown dark:prose-invert mt-8">
+      <p><strong>{SITE.name}</strong> প্রতিটি সংবাদে যাচাই ব্যাজ, স্কোর ও প্রমাণ তালিকা দেখায়। সূত্রের লিংকসহ প্রকাশ — পাঠক নিজেই মিলিয়ে দেখতে পারেন।</p>
+      <ul>
+        <li><a href="/about">আমাদের সম্পর্কে</a> — মিশন ও চার ধাপ</li>
+        <li><a href="/editorial-policy">সম্পাদকীয় নীতি</a> — উৎস ও স্বচ্ছতা</li>
+        <li><a href="/corrections">সংশোধন নীতি</a> — ভুল হলে কী হয়</li>
+      </ul>
+      <h2>প্রশ্নোত্তর</h2>
+      {faqs.map((f) => (
+        <div class="border-b border-border/60 py-4">
+          <h3 class="font-semibold">{f.q}</h3>
+          <p class="mt-2 text-muted-foreground leading-relaxed">{f.a}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

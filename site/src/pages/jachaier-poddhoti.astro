@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE } from "../lib/news-data.js";
+
+const faqs = [
+  { q: "যাচাইডেস্ক কি এআই দিয়ে লেখে?", a: "হ্যাঁ — খসড়া এআই-সহায়তায় তৈরি, কিন্তু প্রতিটি দাবি সূত্র লাইনে বাঁধা; যাচাই প্রক্রিয়ার পরই প্রকাশ।" },
+  { q: "পাইপলাইনের ধাপগুলো কী?", a: "সংগ্রহ → স্বাভাবিককরণ → ক্লাস্টার (একই ঘটনা একত্র) → যাচাই (ব্যাজ/স্কোর) → সংশ্লেষণ → প্রকাশ — প্রতি ৩০ মিনিটে স্বয়ংক্রিয়।" },
+  { q: "একই ঘটনার আপডেট কীভাবে দেখানো হয়?", a: "একই স্লাগ/URL-এ 'কী বদলেছে' ও 'আপডেট ইতিহাস' যোগ হয় — পুরনো লেখা মুছে যায় না।" },
+  { q: "পাঠকের ভূমিকা কী?", a: "ভুল চোখে পড়লে যোগাযোগ পাতায় সূত্রসহ জানান — যাচাই করে সংশোধন লগে প্রকাশ করা হয়।" },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+---
+
+<BaseLayout title={`যাচাইয়ের পদ্ধতি — ${SITE.name}`} description="যাচাইডেস্কের পাইপলাইন — সংগ্রহ থেকে প্রকাশ পর্যন্ত ৬ ধাপের স্বচ্ছ প্রক্রিয়া।" canonical={`${SITE.url}/jachaier-poddhoti`} jsonLd={jsonLd}>
+  <div class="mx-auto max-w-3xl px-5">
+    <Breadcrumbs crumbs={[{ name: "যাচাইয়ের পদ্ধতি", href: "/jachaier-poddhoti", current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">যাচাইয়ের পদ্ধতি</h1>
+      <p class="mt-2 text-muted-foreground">৬ ধাপে স্বয়ংক্রিয় যাচাই — খোলা, পুনরাবৃত্তিযোগ্য, সূত্রসহ।</p>
+    </header>
+    <div class="prose prose-lg prose-brown dark:prose-invert mt-8">
+      <ol>
+        <li><strong>সংগ্রহ:</strong> নির্ধারিত সময়ে ১২+ সূত্র থেকে প্রতিবেদন।</li>
+        <li><strong>স্বাভাবিককরণ:</strong> বয়লারপ্লেট বাদ, ভাষা ও বিভাগ নির্ধারণ।</li>
+        <li><strong>ক্লাস্টার:</strong> একই ঘটনার প্রতিবেদন একত্র (TF-IDF + strong-token)।</li>
+        <li><strong>যাচাই:</strong> মিল + অফিসিয়াল + বিরোধ স্ক্যান → ব্যাজ ও স্কোর।</li>
+        <li><strong>সংশ্লেষণ:</strong> প্রমাণসহ মূল প্রতিবেদন, প্রতিটি দাবি সূত্রে বাঁধা।</li>
+        <li><strong>প্রকাশ:</strong> সাইটে প্রকাশ + সাইটম্যাপ + প্রমাণ-সহ JSON-LD।</li>
+      </ol>
+      <h2>প্রশ্নোত্তর</h2>
+      {faqs.map((f) => (
+        <div class="border-b border-border/60 py-4">
+          <h3 class="font-semibold">{f.q}</h3>
+          <p class="mt-2 text-muted-foreground leading-relaxed">{f.a}</p>
+        </div>
+      ))}
+      <p class="text-sm text-muted-foreground">আরও: <a href="/about">আমাদের সম্পর্কে</a> · <a href="/kivabe-jachai-kori">কীভাবে যাচাই করি</a></p>
+    </div>
+  </div>
+</BaseLayout>

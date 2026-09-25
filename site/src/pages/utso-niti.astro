@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE } from "../lib/news-data.js";
+
+const faqs = [
+  { q: "কোন সূত্রগুলো ব্যবহার করা হয়?", a: "১২টিরও বেশি বাংলাদেশি মূলধারার পত্রিকা (প্রথম আলো, কালের কণ্ঠ, যুগান্তর, সমকাল, ইত্তেফাক, ঢাকা ট্রিবিউন, ডেইলি স্টার, বাংলাট্রিবিউন, বিডিনিউজ২৪ ইত্যাদি) এবং সরকারি/দাপ্তরিক ঘোষণা।" },
+  { q: "কোন সূত্র বাদ দেওয়া হয়?", a: "ক্লিকবেইট/ছদ্মবেশী ডোমেইন ব্লকলিস্টে থাকে — সেগুলো কখনো প্রমাণ হিসেবে গণ্য হয় না।" },
+  { q: "সূত্রের লিংক কোথায় থাকে?", a: "প্রতিটি সংবাদের শেষে 'সূত্র' ব্লকে নাম ও লিংক — পাঠক সরাসরি মূল প্রতিবেদনে যেতে পারেন।" },
+  { q: "একই ঘটনার ভিন্ন সংখ্যা থাকলে কী করা হয়?", a: "উভয় সংখ্যাই দেখানো হয় এবং 'কোনটি সঠিক এখনো নিশ্চিত নয়' বলে স্পষ্ট করা হয় — একটিকে গোপনে বেছে নেওয়া হয় না।" },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+---
+
+<BaseLayout title={`উৎস নীতি — ${SITE.name}`} description="যাচাইডেস্ক কোন সূত্র ব্যবহার করে, কোনটি বাদ দেয় এবং সূত্র কীভাবে দেখানো হয়।" canonical={`${SITE.url}/utso-niti`} jsonLd={jsonLd}>
+  <div class="mx-auto max-w-3xl px-5">
+    <Breadcrumbs crumbs={[{ name: "উৎস নীতি", href: "/utso-niti", current: true }]} />
+    <header class="mt-6 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">উৎস নীতি</h1>
+      <p class="mt-2 text-muted-foreground">কোন সূত্র গণ্য, কোনটি নয় — এবং কেন সূত্রের লিংক খোলা থাকে।</p>
+    </header>
+    <div class="prose prose-lg prose-brown dark:prose-invert mt-8">
+      <p>প্রতিটি তথ্য তার সূত্রে ফিরে যেতে হবে — বানোয়াট তথ্য নয় আমাদের নীতি।</p>
+      <h2>প্রশ্নোত্তর</h2>
+      {faqs.map((f) => (
+        <div class="border-b border-border/60 py-4">
+          <h3 class="font-semibold">{f.q}</h3>
+          <p class="mt-2 text-muted-foreground leading-relaxed">{f.a}</p>
+        </div>
+      ))}
+      <p class="text-sm text-muted-foreground">আরও দেখুন: <a href="/kivabe-jachai-kori">কীভাবে যাচাই করি</a> · <a href="/editorial-policy">সম্পাদকীয় নীতি</a></p>
+    </div>
+  </div>
+</BaseLayout>
