@@ -986,6 +986,21 @@
       "tests": "YAML parses (validated with the repo yaml module). Guard shell logic executed verbatim against the live Vercel API and the real repo. Two real dispatches: first failed on the VERCEL_PROJECT_ID collision, second green with the Vercel deploy step succeeding and a new PROMOTED deployment.",
       "production": "CHANGED .github/workflows/deploy.yml - the only production change. New behaviour: hourly cron + manual dispatch only, with a live-commit diff guard. Site verified after: homepage 200, /article/national-551 200, /article/national-125 404, sitemap 377.",
       "rationale": "User: \"so its fix now\". Chose schedule-only deploys as recommended, and stated the trade-off (up to an hour of publish delay) rather than hiding it. Hourly rather than every 15 min because the old */15 cron was already well-behaved (3 runs, skipped by the diff guard) and was not the main cost - push and workflow_run were."
+    },
+    {
+      "id": "D107",
+      "date": "2026-09-26",
+      "title": "Article pages no longer leak pipeline internals; missing news furniture added",
+      "summary": "Audited all 377 live articles after the user reported the site did not look standard. FIXED, all render-time so the next bot run cannot undo it: (1) 617 occurrences of the English label \"reputable paper corroboration (daily-observer)\" on 263 articles now render in Bengali via new site/src/lib/evidence-label.js; genuine citations of English sources in the curated history archive (NASA, Wikipedia, BBC) keep their own names on purpose. (2) Removed the machine text \"এই নোটটি যাচাই-প্রক্রিয়ার সিদ্ধান্ত দেখায় (কোনো ব্যাখ্যা-প্রক্রিয়া নয়)\" and \"মন্তব্য GitHub Discussions-এ সংরক্ষিত — মডারেশন GitHub-এ।\" (3) Wrong event chips: national-378, a World Bank meeting, was filed under money-laundering and Padma-bridge graft. ROOT CAUSE was not the word list but the match test - Bengali is agglutinative and the scorer used a raw substring search, so keyword \"ব্যাংক\" matched inside \"বিশ্বব্যাংক\" and scored 6.9 alone across title/excerpt/body. Added countWordOccurrences, which only counts a hit not glued to a longer Bengali word, and grew GENERIC_WORDS from 16 to ~55 entries. First attempt over-corrected (required a strong keyword in the headline: 512 chips -> 3, killing all 116 history-* links, exactly where they belong); replaced with the compound fix plus minimum score 10, giving 30 chips of which ~20/23 articles are correct. (4) standfirst (উপশিরোনাম) added, missing on all 377 before - 375/377 now render one; 208 excerpts were two fragments stitched with a stray \"।।\" seam and cut mid-list, so those keep the first complete sentence. (5) reading time was hardcoded to 1; now measured. First fix attempt silently failed because Astro 7 does not expose entry.body - caught by checking the live page, then fixed by reading the markdown file directly. 150 wpm rather than 200 because the longest article in the whole corpus is 283 words, so at 200 wpm all 377 rounded to \"1 মিনিট পাঠ\". (6) dropped \"(ঘটনাপঞ্জি)\" jargon from the event box heading. (7) source outlet names rendered in Bengali where known.",
+      "files": [
+        "site/src/lib/evidence-label.js",
+        "site/src/lib/events.js",
+        "site/src/pages/article/[slug].astro",
+        "site/src/components/Giscus.astro"
+      ],
+      "tests": "Both .astro files parse under @astrojs/compiler-rs. Standfirst logic executed against all 377 articles: 375 render a deck, 0 malformed. Label translator and compound matcher unit-checked. A full local build is NOT possible on this device - satteri, a sharp dependency, has no android-arm64 binary - so the Vercel build is the real gate.",
+      "production": "Deployed and verified live at 8af3987a21: 0 occurrences of the English label across 6 sampled articles, standfirst present on all 3 sampled, machine text gone, national-378 no longer carries the false event chips. The 150-wpm reading-time tweak (a29cfa3) is committed but NOT live - the deploy hit api-deployments-free-per-day because the trailing 24h window still contains 2026-09-25 attempts. Site stayed on the last good build throughout (homepage 200, sitemap 377). D106 hourly-only deploy is holding: no bot-triggered deploy runs since it landed.",
+      "rationale": "User approved the structural batch (items 1-7) and deferred the byline decision. Translated labels at render rather than editing 377 files because the pipeline writes them into front matter and would overwrite the edits on the next run. Recorded two of my own false alarms: apparent paragraph truncation and a run-together source list were both artifacts of my text-stripping, not site bugs."
     }
   ],
   "sources": [
@@ -1331,7 +1346,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 77,
+  "sessionsCount": 78,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
