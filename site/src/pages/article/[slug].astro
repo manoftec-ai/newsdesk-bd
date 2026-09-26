@@ -342,6 +342,20 @@ const shareLinks = [
           {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
         </p>
 
+        {/* 2026-09-26: tier A (national/politics/international) single-source
+            stories are allowed to publish so the site is not silent on the news
+            that matters most, but they must never read as corroborated. The badge
+            above still says "single"; this makes the gap explicit. */}
+        {post.verification?.uncorroborated && (
+          <p
+            class="uncorroborated-notice mt-2 text-sm font-medium text-muted-foreground"
+            role="note"
+          >
+            এই প্রতিবেদনটি একটি মাধ্যমের তথ্যের ভিত্তিতে প্রকাশিত হয়েছে। এটি
+            স্বাধীনভাবে যাচাই করা হয়নি, তাই পাঠের আগে অন্য সূত্রে মিলিয়ে নেওয়া উচিত।
+          </p>
+        )}
+
         {(post.verification?.evidence?.length ?? 0) > 0 && (
           <details class="evidence-panel mt-3" role="group" aria-label="প্রমাণ দেখুন">
             <summary class="evidence-summary">

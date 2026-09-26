@@ -48,7 +48,14 @@ export function defaultVerifyConfig() {
     verified_min: 5,
     confirmed_min: 3,
     single_val: 2,
-    min_badge: { A: 'confirmed', B: 'single', C: 'single' },
+    // 2026-09-26: A was 'confirmed', which meant a tier A (national, politics,
+    // international) story could only publish with 3+ corroborating sources. With
+    // just 7 sources able to enrich, that meant political news almost never
+    // published. Tier A single-source stories are now allowed, but they can only
+    // ever carry the 'single' badge, never 'confirmed' - confirmed still requires
+    // score >= confirmed_min, which is unchanged - and the article must show an
+    // uncorroborated notice. So the floor dropped; the labelling did not.
+    min_badge: { A: 'single', B: 'single', C: 'single' },
   };
 }
 

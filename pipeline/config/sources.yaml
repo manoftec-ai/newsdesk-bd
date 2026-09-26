@@ -60,7 +60,12 @@ verify:
   confirmed_min: 3
   single_val: 2
   min_badge:                   # publish floor per site tier
-    A: confirmed
+    # 2026-09-26: A was "confirmed", i.e. 3+ corroborating sources required. With
+    # only 7 of 20 sources able to enrich from CI, that meant national/politics/
+    # international news almost never published. Tier A may now publish on one
+    # source, but only ever with the "single" badge plus a visible uncorroborated
+    # notice. "confirmed" still requires confirmed_min corroboration.
+    A: single
     B: single
     C: single
 

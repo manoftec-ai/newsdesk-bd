@@ -171,10 +171,19 @@ export function exportBriefs({ status = 'passed' } = {}) {
     const brief = buildBrief(cluster_id, { db });
     if (!brief || !brief.verdict) { skipped++; continue; }
     if (brief.verdict.status !== 'passed') { skipped++; continue; }
-    // Automation-only: Tier A must be confirmed/verified
-    if (brief.verdict.tier === 'A' && brief.verdict.badge !== 'verified' && brief.verdict.badge !== 'confirmed') {
-      skipped++; continue;
-    }
+    // 2026-09-26: this used to drop any tier A story that was not verified or
+    // confirmed, i.e. anything without 3+ corroborating sources. Combined with
+    // only 7 of 20 sources being able to enrich from CI, that meant national,
+    // politics and international news almost never reached publication.
+    //
+    // Tier A single-source stories are now kept, but they are marked
+    // `uncorroborated` so the article can say so plainly. The badge logic is
+    // untouched, so such a story carries `single` and can never be labelled
+    // `confirmed`.
+    const tierA = brief.verdict.tier === 'A';
+    const corroborated =
+      brief.verdict.badge === 'verified' || brief.verdict.badge === 'confirmed';
+    if (tierA && !corroborated) brief.uncorroborated = true;
     if (isTitleDuplicate(brief.headline, brief.date, published)) { dups++; continue; }
     const f = join(BRIEFS_DIR, `${brief.slug}.json`);
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');

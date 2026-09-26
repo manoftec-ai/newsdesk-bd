@@ -43,7 +43,10 @@ export const PUBLICATION_FAILURE_CODES = Object.freeze({
 });
 
 const BADGE_RANK = Object.freeze({ skeptical: 0, single: 1, confirmed: 2, verified: 3 });
-const DEFAULT_MIN_BADGE = Object.freeze({ A: 'confirmed', B: 'single', C: 'single' });
+// 2026-09-26: see lib/verify.mjs - tier A may publish on a single source, but the
+// badge logic is unchanged so it can never be labelled 'confirmed' without
+// corroboration.
+const DEFAULT_MIN_BADGE = Object.freeze({ A: 'single', B: 'single', C: 'single' });
 const PUBLISHABLE_CLAIM_STATUSES = new Set(['VERIFIED', 'CORROBORATED', 'OFFICIAL', 'SINGLE_SOURCE']);
 const BLOCKED_CLAIM_STATUSES = new Set(['UNCONFIRMED', 'CONFLICTING', 'REFUTED', 'OUTDATED']);
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;

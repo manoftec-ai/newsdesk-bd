@@ -130,6 +130,10 @@ verification:
   badge: "${badge}"
   tier: "${tier}"
   score: ${fm.verification.score}
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: ${fm.uncorroborated === true}
 ${publication ? `  status: "passed"
   evaluatedAt: "${String(publication.checkedAt).replace(/"/g, '\\"') }"
   clusterId: ${Number(publication.clusterId)}

@@ -33,6 +33,7 @@ const briefs = readdirSync(BRIEFS_DIR)
     const slug = f.replace(/\.json$/, '');
     let date = '', headline = '';
     let ev = { score: 0 };
+    let tier = null;
     let evidence = { pass: false, evidenceWords: 0, minWords: DEFAULT_MIN_EVIDENCE_WORDS, members: 0 };
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
@@ -40,6 +41,7 @@ const briefs = readdirSync(BRIEFS_DIR)
       headline = j.headline || '';
       ev = editorialValue(j);
       evidence = evidenceSufficiency(j);
+      tier = (j.verdict && j.verdict.tier) || null;
     } catch {
       // unreadable brief -> treat as no-date/headline, never first.
     }
@@ -48,6 +50,7 @@ const briefs = readdirSync(BRIEFS_DIR)
       date,
       headline,
       evScore: ev.score,
+      tier,
       evidence,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
@@ -65,10 +68,14 @@ const pending = briefs.filter(
 );
 // #22 — editorial-value ranking (internal only): either newest-first, and
 // within the same publish date the higher-value story is picked first.
+const TIER_RISK = { B: 0, C: 0, A: 1 };
+const riskOf = (b) => TIER_RISK[b.tier] ?? 1;
+
 pending.sort(
   (a, b) =>
     String(b.date).localeCompare(String(a.date)) ||
     (b.evScore - a.evScore) ||
+    (riskOf(a) - riskOf(b)) ||
     a.slug.localeCompare(b.slug),
 );
 
