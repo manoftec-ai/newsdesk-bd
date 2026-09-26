@@ -419,9 +419,22 @@ function checkHeadline(brief, context, failures) {
   });
 
   const surfacesWeak = Object.values(result.surfaces ?? {}).some((surface) => ['weak', 'poor', 'overclaim'].includes(surface?.status));
-  const claimStatus = String(claim?.status ?? '').toUpperCase();
-  const tier = String(brief?.verdict?.tier ?? brief?.tier ?? '').toUpperCase();
-  if (!headline || !claim || result.status !== 'supported' || surfacesWeak || (tier === 'A' && claimStatus === 'SINGLE_SOURCE')) {
+  // 2026-09-26: this used to also block `(tier === 'A' && claimStatus ===
+  // 'SINGLE_SOURCE')`, which is a FOURTH place tier A was gated — separate from
+  // the three min_badge sites changed for D112. Leaving it in made that whole
+  // policy change almost entirely inert: 94 of 272 unpublished briefs were
+  // blocked here, which is why the site stayed silent no matter what the writer,
+  // the model or the evidence floor did.
+  //
+  // A tier A story resting on a single source now publishes, and the safety
+  // comes from the labelling rather than from suppression: the badge ladder is
+  // untouched, so SINGLE_SOURCE can only ever yield the 'single' badge and never
+  // 'confirmed', and lib/extract.mjs marks the brief uncorroborated so the
+  // article shows a visible "not independently verified" notice.
+  //
+  // Everything that actually protects the headline stays: it must exist, it must
+  // trace to the sources, and no surface may be weak, poor or overclaiming.
+  if (!headline || !claim || result.status !== 'supported' || surfacesWeak) {
     failures.add(PUBLICATION_FAILURE_CODES.HEADLINE_UNSUPPORTED);
   }
   if (result.flags.includes('hype') || variants.some(headlineHasHype) || headlineHasHype(headline)) {
