@@ -10,6 +10,8 @@ import { verifyHeadline } from './headline-verify.mjs';
 import {
   publicationMode,
   lengthForMode,
+  richSourceRule,
+  richSourceThresholds,
   whyItMattersSupported,
   isSensitiveStory,
   storyFormat,
@@ -250,6 +252,14 @@ Explicitly say the situation is evolving ("পরিস্থিতি চলম
 • To reach that length, USE THE MATERIAL: every named person, place, date, number, figure, quote and consequence in the fact pool below is fair game and expected. Do not pad with scene-setting, restated sentences, or filler transitions.
 • If the fact pool genuinely cannot support ${DEFAULT_MIN_PUBLISH_WORDS} words, say so plainly in your summary instead of padding.`;
 
+  // The user's rich-source rule: when enough sources each carry a full article's
+  // worth of text, the publisher REJECTS anything shorter. Say so in the prompt so
+  // the writer aims high rather than discovering the floor as a rejection.
+  const rich = richSourceRule(brief, richSourceThresholds());
+  const richLine = rich.rich
+    ? `\n• THIS STORY IS WELL SOURCED: ${rich.richSources} sources each carry ${rich.perSourceWords}+ words of article text. The publisher REJECTS this piece below ${rich.requiredWords} words, so write a full article - there is real material to use, not padding.`
+    : '';
+
   // The claim set is the strongest verified material in the brief; surface it
   // before the raw leads so the writer leads with verified specifics.
   const claimBlock = (brief.claims || []).length
@@ -321,7 +331,7 @@ Write ONE original Bengali news article (সংবাদ) about this verified st
   write the story in your own words as if you were on the scene. NEVER walk through
   the outlets one by one and NEVER compare "one report said X, another said Y".
 - ${modeDesc}
-- ${lengthStandard}
+- ${lengthStandard}${richLine}
 ${formatBlock ? `- ${formatBlock}` : ''}
 - Five-answer discipline (proposal #2): after drafting, CHECK the article that a
   reader who read the headline learns clear answers to: (1) What happened?
