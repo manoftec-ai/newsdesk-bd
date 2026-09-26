@@ -1,4 +1,5 @@
 ---
+import { readFileSync } from "node:fs";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
@@ -45,10 +46,23 @@ const post = {
 };
 
 // Reading time was hardcoded to 1 whenever the story had no explicit value, so a
-// 200-word article claimed "১ মিনিট পাঠ". Measure it from the raw body, with a
-// floor of 1 so a stub never renders "০ মিনিট".
+// 200-word article claimed "১ মিনিট পাঠ". Astro 7 no longer exposes the raw body
+// on the collection entry, so read the markdown file directly — this is a static
+// build, so a sync read at build time is fine. Floor of 1 so a stub never
+// renders "০ মিনিট".
 const readingMinutes = (() => {
-  const words = String(entry.data.body ?? entry.body ?? "").split(/\s+/).filter(Boolean).length;
+  let raw = "";
+  try {
+    raw = readFileSync(
+      new URL(`../../content/news/${entry.id}.md`, import.meta.url),
+      "utf8",
+    );
+  } catch {
+    raw = "";
+  }
+  // Drop the front matter block before counting.
+  const bodyText = raw.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
+  const words = bodyText.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 200));
 })();
 
