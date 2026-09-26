@@ -1031,6 +1031,22 @@
       "tests": "296/296 pass (was 286). 10 new in evidence-sufficiency.test.mjs including a corpus-level check that the gate bites but does not stop publishing (3-60% band). Three finalizer cases pin minEvidenceWords: 0 because they test write/skip/gate behaviour rather than sufficiency.",
       "production": "No site content changed and no workflow edited. The gate only reduces how many articles are produced per run. Deploy not triggered by this change.",
       "rationale": "User chose \"1+2\" from three offered routes, accepting that volume would fall. Stated the trade-off explicitly rather than cutting the publishing rate silently. Rejected the tempting alternative of raising the writer target, because with 49 words of evidence it would have produced padding."
+    },
+    {
+      "id": "D110",
+      "date": "2026-09-26",
+      "title": "Rich-source rule: 2+ sources at 250+ words each forces a 250+ word article",
+      "summary": "USER RULE: when two sources each have 250+ (or 300+) words of article text, the article must publish at NOT LESS THAN 250 (or 300) words. Companion to the D109 evidence gate: the gate stops a thin story starting, this stops a well-sourced one shipping short. Two 250-word sources is ~500 words of real material, so 250 words is a 2x expansion - honest, not padding. THE RULE WAS IMPOSSIBLE UNTIL THE CAP MOVED: excerptOf() capped each source at 1200 chars (~185 Bangla words), so no member could reach 250 and 0 of 423 briefs qualified - the cap made the condition unreachable. Raised to 2000 chars (~300 words). After re-extract the rule fires on 1 brief (national-468: 6 sources >=250w, 1,108 evidence words). Wired in three places: finalizer floor is max(general 150, requiredWords); the prompt tells the writer the publisher will reject below the floor; a test asserts the excerpt cap stays >=1700 chars so lowering it cannot make the rule dead code. Configurable: RICH_SOURCE_WORDS=250, RICH_ARTICLE_WORDS=250, RICH_SOURCE_COUNT=2; 300 gives the stricter 300/300 variant with no code change. Caught the same class of bug as the previous two commits in review - richLine was computed then never interpolated into the prompt. Raising the cap 1200 -> 2000 also widens every brief fact pool, independently useful.",
+      "files": [
+        "pipeline/lib/editorial.mjs",
+        "pipeline/lib/extract.mjs",
+        "pipeline/lib/synth.mjs",
+        "pipeline/tools/finalize_stories.mjs",
+        "pipeline/test/rich-source-rule.test.mjs"
+      ],
+      "tests": "312/312 pass (was 296), 16 new. Honest limit: a full end-to-end publish needs a brief backed by a live cluster, so synthetic fixtures are rejected with BRIEF_INVALID before the body is read; floor-composition arithmetic covered directly instead.",
+      "production": "No site content changed, no workflow edited, no new dependency. The excerpt cap raise changes brief content on the next extract run, increasing published article length - intended.",
+      "rational": "User specified the rule directly. Chose 250/250 as the default pair as the more conservative reading of \"300/250+\", and made it a one-env-change to 300/300 rather than guessing which pair they meant."
     }
   ],
   "sources": [
@@ -1376,7 +1392,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 80,
+  "sessionsCount": 81,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
