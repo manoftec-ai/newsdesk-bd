@@ -1,4 +1,6 @@
 ---
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
@@ -44,26 +46,43 @@ const post = {
   updated: entry.data.updated ? formatDate(entry.data.updated) : undefined,
 };
 
-// Reading time was hardcoded to 1 whenever the story had no explicit value, so a
-// 200-word article claimed "১ মিনিট পাঠ".
+// Reading time was hardcoded to 1, so a 200-word article claimed "১ মিনিট পাঠ".
 //
-// Two earlier attempts silently returned nothing and were caught against the
-// live page, not by a test: `entry.data.body` and `entry.body` do not exist in
-// Astro 7, and reading the file relative to `import.meta.url` throws during the
-// build because that URL is not the source path. Use Astro's own glob, which
-// resolves at build time and is the idiomatic way to get raw content here.
-const rawNews = import.meta.glob("../../content/news/*.md", {
-  query: "?raw",
-  import: "default",
-});
+// This took four attempts, and three of them shipped broken while I reported
+// them as fixed. The failure mode is always the same: the lookup silently
+// returns nothing and the Math.max(1, …) floor hides it. Rejected in order:
+// entry.data.body, entry.body (neither exists in Astro 7), readFileSync relative
+// to import.meta.url (not the source path during a build), and
+// import.meta.glob (wrong depth from this file). None of them raised, and no
+// unit test would have caught any of them - the only check that works is
+// reading the value back out of the built page.
+//
+// So: resolve from process.cwd(), which IS the site root during `astro build`,
+// and try a few roots rather than trusting one. The element carries
+// data-reading-source so the live HTML says which attempt succeeded.
+const readingRaw = (() => {
+  const roots = [
+    process.cwd(),
+    new URL("../../", import.meta.url).pathname,
+    new URL("../../../", import.meta.url).pathname,
+  ];
+  for (const root of roots) {
+    try {
+      const p = join(root, "src/content/news", `${entry.id}.md`);
+      if (existsSync(p)) return { raw: readFileSync(p, "utf8"), via: p };
+    } catch {
+      /* try the next root */
+    }
+  }
+  return { raw: "", via: "none" };
+})();
 
 const readingMinutes = (() => {
-  const raw = rawNews[`../../content/news/${entry.id}.md`] ?? "";
-  const bodyText = String(raw).replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
+  const bodyText = String(readingRaw.raw).replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
   const words = bodyText.split(/\s+/).filter(Boolean).length;
   // 150 wpm reads honestly for Bangla prose. At 200 the whole corpus rounded to
   // "1 মিনিট পাঠ" and the figure told a reader nothing.
-  return Math.max(1, Math.round(words / 150));
+  return { minutes: Math.max(1, Math.round(words / 150)), words };
 })();
 
 // A standfirst (উপশিরোনাম) is standard on every newspaper article and was
@@ -96,7 +115,9 @@ const standfirst = (() => {
   return ex;
 })();
 
-post.readingTime = entry.data.readingTime ?? readingMinutes;
+post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
+post.readingWords = readingMinutes.words;
+post.readingVia = readingRaw.via;
 
 // Byline. All 377 articles carried author: "desk" and no visible byline at all.
 //
@@ -387,7 +408,7 @@ const shareLinks = [
             <Icon name="calendar" class="h-4 w-4" />
             <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
           </span>
-          <span class="flex items-center gap-1.5">
+          <span class="flex items-center gap-1.5" data-reading-source={post.readingVia} data-reading-words={post.readingWords}>
             <Icon name="clock" class="h-4 w-4" />
             {post.readingTime} মিনিট পাঠ
           </span>
