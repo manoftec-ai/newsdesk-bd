@@ -63,7 +63,9 @@ const readingMinutes = (() => {
   // Drop the front matter block before counting.
   const bodyText = raw.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
   const words = bodyText.split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 200));
+  // 150 wpm reads honestly for Bangla prose. At 200 the whole corpus rounded to
+  // "1 মিনিট পাঠ" and the figure told a reader nothing.
+  return Math.max(1, Math.round(words / 150));
 })();
 
 // A standfirst (উপশিরোনাম) is standard on every newspaper article and was
