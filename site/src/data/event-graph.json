@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 534,
+    "storyCount": 537,
     "kinds": [
       "claim",
       "evidence",
@@ -2637,6 +2637,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জাতিসংঘে তারেক রহমানের সঙ্গে ভুটান-মালদ্বীপের শীর্ষ নেতাদের বৈঠক"
+        },
+        {
+          "cluster_id": 592,
+          "slug": "national-592",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা"
         }
       ]
     },
@@ -42314,7 +42322,7 @@
           "slug": "national-576",
           "actor_links": 1,
           "source_links": 3,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’"
         },
         {
@@ -43107,7 +43115,7 @@
       "cluster_id": 573,
       "headline": "সরকারি চাকরিজীবীদের জন্য বড় সুখবর",
       "first_seen": "2026-09-26T12:57:32.951Z",
-      "last_update": "2026-09-26T18:15:17.770Z",
+      "last_update": "2026-09-26T18:53:22.832Z",
       "claim_count": 2,
       "events": [
         {
@@ -43491,8 +43499,8 @@
       "cluster_id": 576,
       "headline": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’",
       "first_seen": "2026-09-26T13:58:16.889Z",
-      "last_update": "2026-09-26T18:15:17.760Z",
-      "claim_count": 8,
+      "last_update": "2026-09-26T18:53:22.814Z",
+      "claim_count": 9,
       "events": [
         {
           "ts": "2026-09-26T06:38:00.000Z",
@@ -43869,6 +43877,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-09-26T18:59:14.880Z",
+          "kind": "evidence",
+          "claim_id": 49922,
+          "claim_text": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85653"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:14.889Z",
+          "kind": "claim",
+          "claim_id": 56990,
+          "claim_text": "ফেডারেশন কাপেও জয়ে শুরু হলো না আবাহনীর"
+        },
+        {
+          "ts": "2026-09-26T18:59:14.890Z",
+          "kind": "evidence",
+          "claim_id": 56990,
+          "claim_text": "ফেডারেশন কাপেও জয়ে শুরু হলো না আবাহনীর",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85653"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:14.900Z",
+          "kind": "verify",
+          "claim_id": 56990,
+          "claim_text": "ফেডারেশন কাপেও জয়ে শুরু হলো না আবাহনীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -43926,7 +43974,7 @@
       "cluster_id": 577,
       "headline": "রাতভর খুঁটিতে বাঁধা বাবাকে চা-রুটি খাওয়ালেন মেয়ে, ভিডিও ভাইরালের পর মিলল মুক্তি",
       "first_seen": "2026-09-26T13:58:16.897Z",
-      "last_update": "2026-09-26T18:15:17.768Z",
+      "last_update": "2026-09-26T18:53:22.826Z",
       "claim_count": 2,
       "events": [
         {
@@ -44054,7 +44102,7 @@
       "cluster_id": 578,
       "headline": "চিকিৎসার জন্য জায়েদ খানের টাকা নিতে অস্বীকৃতি জানালেন রিফাত চৌধুরী",
       "first_seen": "2026-09-26T13:58:16.901Z",
-      "last_update": "2026-09-26T18:15:17.769Z",
+      "last_update": "2026-09-26T18:53:22.831Z",
       "claim_count": 2,
       "events": [
         {
@@ -44259,16 +44307,27 @@
     },
     "national-580": {
       "cluster_id": 580,
-      "headline": "নেত্রকোনায় পুকুরে ডুবে প্রাণ গেল শিশুর",
+      "headline": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪",
       "first_seen": "2026-09-26T13:58:16.912Z",
-      "last_update": "2026-09-26T15:50:42.020Z",
-      "claim_count": 2,
+      "last_update": "2026-09-26T18:53:22.835Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-09-25T16:03:55.000Z",
           "kind": "evidence",
           "claim_id": 49930,
           "claim_text": "নেত্রকোনায় পুকুরে ডুবে প্রাণ গেল শিশুর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hcGNaSW5ieG1DbzdPV09Jc2x4bE02QWZhb0xzNHlTaXpVZXVhY1J2NHpiVUE4OUpsLTdBVktfUnVQZmdVLU5Ya0ZIME83SENQenNLN2tpSjRjTVBaUjBBUVNnQWhPLVN0cHk4WFh5d3pUQTNf?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-25T16:03:55.000Z",
+          "kind": "evidence",
+          "claim_id": 57002,
+          "claim_text": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -44295,6 +44354,28 @@
             "source_id": "bd24live",
             "relation": "supports",
             "url": "https://www.bd24live.com/bangla/807667"
+          }
+        },
+        {
+          "ts": "2026-09-26T11:05:10.000Z",
+          "kind": "evidence",
+          "claim_id": 57002,
+          "claim_text": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/807667"
+          }
+        },
+        {
+          "ts": "2026-09-26T11:45:38.000Z",
+          "kind": "evidence",
+          "claim_id": 57002,
+          "claim_text": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sV2RzYWU1VHpGQkR5eTlua3Q5UnlMLUgzdjdXa3VWdzZBdkFmMDAxYjJPSzlTbDJOOVZVblRyNURpdW5Tb0xhOUhxbUE1SGpyNGVN?oc=5"
           }
         },
         {
@@ -44332,6 +44413,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-09-26T18:59:19.670Z",
+          "kind": "claim",
+          "claim_id": 57002,
+          "claim_text": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪"
+        },
+        {
+          "ts": "2026-09-26T18:59:19.678Z",
+          "kind": "verify",
+          "claim_id": 57002,
+          "claim_text": "হাম উপসর্গে আরও ৩ জনের মৃত্যু, আক্রান্ত ১০৬৪",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -44339,48 +44438,48 @@
           "cluster_id": 184,
           "slug": "national-184",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
+          "source_links": 3,
+          "claim_count": 3,
           "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
         },
         {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
+          "source_links": 3,
+          "claim_count": 8,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
           "cluster_id": 297,
           "slug": "national-297",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
+          "source_links": 3,
+          "claim_count": 5,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
           "cluster_id": 343,
           "slug": "national-343",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
+          "source_links": 3,
+          "claim_count": 4,
           "headline": "নতুন পে স্কেলে বাড়ি ভাড়ার হিসাব নিয়ে নতুন জটিলতা!"
         },
         {
           "cluster_id": 346,
           "slug": "national-346",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
+          "source_links": 3,
+          "claim_count": 5,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
           "cluster_id": 376,
           "slug": "politics-376",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
+          "source_links": 3,
+          "claim_count": 3,
           "headline": "গাজী নজরুলের এমপি পদ থাকবে কি না, যা জানালেন স্পিকার"
         }
       ]
@@ -44389,7 +44488,7 @@
       "cluster_id": 581,
       "headline": "বর্জ্য থেকে বিদ্যুৎ উৎপাদনে জোর, উখিয়ার রোহিঙ্গা ক্যাম্পে প্রকল্প পরিদর্শনে প্রতিমন্ত্রী",
       "first_seen": "2026-09-26T14:36:36.023Z",
-      "last_update": "2026-09-26T18:15:17.764Z",
+      "last_update": "2026-09-26T18:53:22.822Z",
       "claim_count": 3,
       "events": [
         {
@@ -44557,7 +44656,7 @@
       "cluster_id": 582,
       "headline": "মা-বাবার স্বপ্ন পূরণে মানবিক চিকিৎসক হতে চায় মারিয়া",
       "first_seen": "2026-09-26T14:36:36.027Z",
-      "last_update": "2026-09-26T18:15:17.767Z",
+      "last_update": "2026-09-26T18:53:22.825Z",
       "claim_count": 2,
       "events": [
         {
@@ -44972,7 +45071,7 @@
       "cluster_id": 586,
       "headline": "গণহত্যার বিচারকে বর্তমান সরকার দীর্ঘসূত্রিতায় ফেলেছে: শিবির সভাপতি",
       "first_seen": "2026-09-26T15:15:11.112Z",
-      "last_update": "2026-09-26T18:15:17.765Z",
+      "last_update": "2026-09-26T18:53:22.823Z",
       "claim_count": 2,
       "events": [
         {
@@ -45220,7 +45319,7 @@
       "cluster_id": 588,
       "headline": "‘কমন শত্রুর’ বিরুদ্ধে ঐক্য বহাল রাখার আহ্বান নজরুল ইসলাম খানের",
       "first_seen": "2026-09-26T16:26:19.909Z",
-      "last_update": "2026-09-26T18:15:17.763Z",
+      "last_update": "2026-09-26T18:53:22.820Z",
       "claim_count": 2,
       "events": [
         {
@@ -45348,7 +45447,7 @@
       "cluster_id": 589,
       "headline": "উপজেলা পরিষদের প্রশাসক অতিরিক্ত দায়িত্ব পেলেন ৮ ইউএনও",
       "first_seen": "2026-09-26T17:07:35.295Z",
-      "last_update": "2026-09-26T18:15:17.762Z",
+      "last_update": "2026-09-26T18:53:22.819Z",
       "claim_count": 2,
       "events": [
         {
@@ -45468,7 +45567,7 @@
       "cluster_id": 591,
       "headline": "অপরাধ করলে আমার ভাই হলেও ছাড় পাবে না: হাসনাত আবদুল্লাহ",
       "first_seen": "2026-09-26T17:51:48.224Z",
-      "last_update": "2026-09-26T18:15:17.766Z",
+      "last_update": "2026-09-26T18:53:22.824Z",
       "claim_count": 2,
       "events": [
         {
@@ -45533,6 +45632,309 @@
           "kind": "verify",
           "claim_id": 55240,
           "claim_text": "অপরাধ করলে আমার ভাই হলেও ছাড় পাবে না: হাসনাত আবদুল্লাহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-592": {
+      "cluster_id": 592,
+      "headline": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা",
+      "first_seen": "2026-09-26T18:53:22.815Z",
+      "last_update": "2026-09-26T18:53:22.818Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-25T20:06:14.000Z",
+          "kind": "evidence",
+          "claim_id": 57031,
+          "claim_text": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixwRBVV95cUxQdEZjLWc5NE16TDY2a1ctWk5jRWtzRUpaa092ckNfalhpcHQ1b1dDT1k3VEdaMGpnVnFEZVdCZ0luNnpQWTV5Z0Z6V21QSk9sQVRpQVFneUJnYXpFSllmVUdxSVloN2lMT1Z6LVNDZjVsZExObVZNLURPOU5zaGhnNWpNVTRTZUpuTng4c0NWZEFUcjZLdHFzZ1E4M0xUeTB3WGkyeDNSNE01ZkZHQ190MDBmTzg4VHFKcDRSMnQ3eEtkcngzU0VzUENzXzBoQ1Z3WUx4V0U2VjlEbGhOYk9DSEJhQmhKc3laVmZqanVwOVVGZ2VYOVRsUkRmSmo3OGp5WVNNVEhhQ3VvbmZ5ZldvaEdISjdTcnN4NVRITnRSd25sZnBxQ0gzYXpZUnJveDctbUZVUl9WWGNod0pGSVJEQzVJR1ZhRzVZc25seHhBYTNiQy1Vd2VlcDRac1gwTzR1VnJIV3Y0SEJtYXpoTjRYQ01XZnIxdWpaUzJWLXpyT29wU1d3MU9zQVM2cWI5UDVJYk0tbWVlb1pORWNVSUtKLWFHejd2VGtrYjUybGtvMjZ0RHRMX1VheGpGM3ExVHQtVXhuaG1VZm5GX0ZjRWtvbFQxUXBxXzRtZ084Nml6OHVjdmIycE5tTGNOQkc0WGRweDA2ZXBObE54WUo5T2lTU1pDaEdDczB2cGlTSUE3OTc0LWZJS2Z4eEVwV1c5X2RsbUdWcjROTDdWWUhrdURIalFHek9maUxBckpBeVdOQTNTS2xWeVlR0gHMBEFVX3lxTE40NF9VX2tDX2wwejFvSXBhQ2hScWFsczBVWDgwOUFfa2h2RWh2cXM1V0FFVi1lOFZ6R0xSQUVtYkJVaHVSMmxQNEJKSWgzalRLRmd5WkY3S2E1ODZiZ3d1d3BuZ0s0eGZ3X3lsZWZna0t5TEpDN1VnNnhDU1A1VnBRNTJqNWpkN3dxZDZuYmdzUEkxTmN2aDlyMWFQZnpoZmpBMUFqQlpWRlpWcVFsaGZjMkhpb1FuZ0NSN0lNLWJuTi03V2dzMFFOQnI3RmZ4M0E0QzJiWU9kYy1Xd2w1MVdaYkZIbG8wdnYwRmc4aDMwYkxITHFOM0hCOVVWVUsyY1VqamNIejlnRG9SWWc5RWZDS2NhbGQ1eHg0OS02S3FZMXU3OG5uaFc4OG01QjVqZFVaMlQ4Y1JtVkZ6WUV2b29tcEE0cFZ1TE8xMkY1SnNPUlBCOWRucTZNQ2VJQUZ6T2xXcldISXlxRFZfZmFabUMzQTBfRk9CZ3BlYUlKOWxBSC1EUjZrdjM0SWR6cEp2VnF4eDZMOWxFeEdKVFRuV1hjZ3RVTVZGTGNObWcwMk5JSmN2STVXUy1jdGI2a2JsS0VjLWdJa2x5UlFza29uN2MxOXZYV1Z3bUIxS3czTmhUQUlBNXZYM0l3cnFBZEJ2ajRNVGhLcFBmYmVjWDFEbDlVcGdCMUpzODI5c0tyR2tvMGU3RTU4bmpQVTNYc2ZUVThiN0twbHhZWmlPUklYWmUtOHVMSUNSVjBzd014OWtCNGR6eXhvSFhlT2w0Qw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-25T20:06:14.000Z",
+          "kind": "evidence",
+          "claim_id": 57032,
+          "claim_text": "চুরির অভিযোগে যুবককে খুঁটির সঙ্গে বেঁধে পিটুনি, ভেঙে দেওয়া হলো পা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixwRBVV95cUxQdEZjLWc5NE16TDY2a1ctWk5jRWtzRUpaa092ckNfalhpcHQ1b1dDT1k3VEdaMGpnVnFEZVdCZ0luNnpQWTV5Z0Z6V21QSk9sQVRpQVFneUJnYXpFSllmVUdxSVloN2lMT1Z6LVNDZjVsZExObVZNLURPOU5zaGhnNWpNVTRTZUpuTng4c0NWZEFUcjZLdHFzZ1E4M0xUeTB3WGkyeDNSNE01ZkZHQ190MDBmTzg4VHFKcDRSMnQ3eEtkcngzU0VzUENzXzBoQ1Z3WUx4V0U2VjlEbGhOYk9DSEJhQmhKc3laVmZqanVwOVVGZ2VYOVRsUkRmSmo3OGp5WVNNVEhhQ3VvbmZ5ZldvaEdISjdTcnN4NVRITnRSd25sZnBxQ0gzYXpZUnJveDctbUZVUl9WWGNod0pGSVJEQzVJR1ZhRzVZc25seHhBYTNiQy1Vd2VlcDRac1gwTzR1VnJIV3Y0SEJtYXpoTjRYQ01XZnIxdWpaUzJWLXpyT29wU1d3MU9zQVM2cWI5UDVJYk0tbWVlb1pORWNVSUtKLWFHejd2VGtrYjUybGtvMjZ0RHRMX1VheGpGM3ExVHQtVXhuaG1VZm5GX0ZjRWtvbFQxUXBxXzRtZ084Nml6OHVjdmIycE5tTGNOQkc0WGRweDA2ZXBObE54WUo5T2lTU1pDaEdDczB2cGlTSUE3OTc0LWZJS2Z4eEVwV1c5X2RsbUdWcjROTDdWWUhrdURIalFHek9maUxBckpBeVdOQTNTS2xWeVlR0gHMBEFVX3lxTE40NF9VX2tDX2wwejFvSXBhQ2hScWFsczBVWDgwOUFfa2h2RWh2cXM1V0FFVi1lOFZ6R0xSQUVtYkJVaHVSMmxQNEJKSWgzalRLRmd5WkY3S2E1ODZiZ3d1d3BuZ0s0eGZ3X3lsZWZna0t5TEpDN1VnNnhDU1A1VnBRNTJqNWpkN3dxZDZuYmdzUEkxTmN2aDlyMWFQZnpoZmpBMUFqQlpWRlpWcVFsaGZjMkhpb1FuZ0NSN0lNLWJuTi03V2dzMFFOQnI3RmZ4M0E0QzJiWU9kYy1Xd2w1MVdaYkZIbG8wdnYwRmc4aDMwYkxITHFOM0hCOVVWVUsyY1VqamNIejlnRG9SWWc5RWZDS2NhbGQ1eHg0OS02S3FZMXU3OG5uaFc4OG01QjVqZFVaMlQ4Y1JtVkZ6WUV2b29tcEE0cFZ1TE8xMkY1SnNPUlBCOWRucTZNQ2VJQUZ6T2xXcldISXlxRFZfZmFabUMzQTBfRk9CZ3BlYUlKOWxBSC1EUjZrdjM0SWR6cEp2VnF4eDZMOWxFeEdKVFRuV1hjZ3RVTVZGTGNObWcwMk5JSmN2STVXUy1jdGI2a2JsS0VjLWdJa2x5UlFza29uN2MxOXZYV1Z3bUIxS3czTmhUQUlBNXZYM0l3cnFBZEJ2ajRNVGhLcFBmYmVjWDFEbDlVcGdCMUpzODI5c0tyR2tvMGU3RTU4bmpQVTNYc2ZUVThiN0twbHhZWmlPUklYWmUtOHVMSUNSVjBzd014OWtCNGR6eXhvSFhlT2w0Qw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T17:17:16.000Z",
+          "kind": "evidence",
+          "claim_id": 57031,
+          "claim_text": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/after-her-father-was-tied-to-a-post-on-the-charge-of-the-ft-the-princess-fed-him-with-her-own-hands/"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:34.301Z",
+          "kind": "claim",
+          "claim_id": 57031,
+          "claim_text": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা"
+        },
+        {
+          "ts": "2026-09-26T18:59:34.304Z",
+          "kind": "claim",
+          "claim_id": 57032,
+          "claim_text": "চুরির অভিযোগে যুবককে খুঁটির সঙ্গে বেঁধে পিটুনি, ভেঙে দেওয়া হলো পা"
+        },
+        {
+          "ts": "2026-09-26T18:59:34.308Z",
+          "kind": "verify",
+          "claim_id": 57031,
+          "claim_text": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:34.308Z",
+          "kind": "verify",
+          "claim_id": 57032,
+          "claim_text": "চুরির অভিযোগে যুবককে খুঁটির সঙ্গে বেঁধে পিটুনি, ভেঙে দেওয়া হলো পা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 506,
+          "slug": "international-506",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এফবিআইয়ের ৩৮ হাজার কর্মীর তথ্য চুরির দাবি শাইনি হান্টার্সের"
+        }
+      ]
+    },
+    "national-593": {
+      "cluster_id": 593,
+      "headline": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+      "first_seen": "2026-09-26T18:53:22.827Z",
+      "last_update": "2026-09-26T18:53:22.830Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-26T11:41:16.000Z",
+          "kind": "evidence",
+          "claim_id": 57033,
+          "claim_text": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2MldpazVJc2lmdGxTakV0aTdlamlCZkN3OGpwYlhMbkRtTE52YWJDRklQcFliUjd3NDlsME02QXlWNFh1RXdFSTdONGkzMXlhRkxOSkJQSUpJSGhjVXphYlpoaTJMU0FwWU85OWFsWGRSTzl0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T11:41:16.000Z",
+          "kind": "evidence",
+          "claim_id": 57034,
+          "claim_text": "বিমানবন্দরে আনসার সদস্যের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2MldpazVJc2lmdGxTakV0aTdlamlCZkN3OGpwYlhMbkRtTE52YWJDRklQcFliUjd3NDlsME02QXlWNFh1RXdFSTdONGkzMXlhRkxOSkJQSUpJSGhjVXphYlpoaTJMU0FwWU85OWFsWGRSTzl0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T13:02:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57033,
+          "claim_text": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizARBVV95cUxQbjR0OUdSNXVGSjRoNkh5NWpEUThkeUEtVDdaUWFIb1FIX3pwS041aHlPNVBBc2dGc1JzS2hGaEU5c0JuVmNEbl9La29kM1VFN3dpb0hHZlpHVUNjZjFCUWUyWGxaOWRJaE5pSmNtZmk4ZFlLUWtFRkwtR1M0a3EyUl9fZDAxRU1JQnRWMGowQkZqc0dlWTJQWk51Q2JTMzB0b19nN1E3dWxxQ0txOHR4NFpYS29Udm9hbkNHb0IweGhFRFBTYUgtSkVqajdwbWtSTFFxRV9JbjNadTQwUklKVjZHSVhKbDRlelFZYmFIWWRyN0s0bHNucnppZFhlNmZtRU5henVieEp3ZGtHM3pTT1VxWVRid0JGZjgxRG1CV2tiaTVfVmZsbnBDYTdqSGtMRnZ5bmhJY3FQZlUwVjRmR1NvcEQtbGdPd0VMY292eTByWlNwOHVJUmJNN0RNVVZVVDFtc0tTUE1hZUdrU1U1RU5KNWF6OUw5Q2Qxck5mYWUzTTFzeDBOQjRxVUxRbjBJS2xQWkNRaHFTUHpVVWxMZV85NmpHMmJPeXNfTGtHQ09qZGJuT21tN3E2WlZxN21ObXp3eVIwb01NRjJ1amhtMjhPd0RDOHF1VWJlaVU2RnhuWC11b2syajlZNlVXcm50d0J5NFdsN1k2eWkyTzRob0Jyclp2Uk5qd09UMGJOQnBqbG42SGlHc2JNdnd0VXZXVVdfaU1oTTBEMEN3Vm9yOFhVZWJ6TVBhUzVaTWdOamJoQk5WNHYxRHVpcU0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:35.537Z",
+          "kind": "claim",
+          "claim_id": 57033,
+          "claim_text": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত"
+        },
+        {
+          "ts": "2026-09-26T18:59:35.540Z",
+          "kind": "claim",
+          "claim_id": 57034,
+          "claim_text": "বিমানবন্দরে আনসার সদস্যের গুলিতে পরিচ্ছন্নতাকর্মী আহত"
+        },
+        {
+          "ts": "2026-09-26T18:59:35.543Z",
+          "kind": "verify",
+          "claim_id": 57033,
+          "claim_text": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:35.543Z",
+          "kind": "verify",
+          "claim_id": 57034,
+          "claim_text": "বিমানবন্দরে আনসার সদস্যের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 317,
+          "slug": "national-317",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আলী আফজালের রিহ্যাব সভাপতি পদ শূন্য ঘোষণার সিদ্ধান্ত স্থগিত"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 456,
+          "slug": "national-456",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘শ্রাবণের মেঘগুলো..’ গেয়ে আলোচিত সেই বিউটি পাল জেলার শ্রেষ্ঠ শিক্ষক"
+        },
+        {
+          "cluster_id": 463,
+          "slug": "national-463",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইরান শান্তিপূর্ণ পারমাণবিক প্রযুক্তি ছাড়বে না: জাতিসংঘে পেজেশকিয়ান"
+        }
+      ]
+    },
+    "national-594": {
+      "cluster_id": 594,
+      "headline": "প্রধানমন্ত্রীর সঙ্গে সৌদি পররাষ্ট্রমন্ত্রীর বৈঠক, বন্ধুত্বপূর্ণ সম্পর্ক আরও গভীর করার গুরুত্বারোপ",
+      "first_seen": "2026-09-26T18:53:22.836Z",
+      "last_update": "2026-09-26T18:53:22.838Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-07-28T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57035,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে সৌদি পররাষ্ট্রমন্ত্রীর বৈঠক, বন্ধুত্বপূর্ণ সম্পর্ক আরও গভীর করার গুরুত্বারোপ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/800912/%E0%A6%B9%E0%A6%B0%E0%A6%AE%E0%A7%81%E0%A6%9C-%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A6%B8%E0%A7%8C%E0%A6%A6%E0%A6%BF-%E0%A6%93%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%88%E0%A6%A0%E0%A6%95"
+          }
+        },
+        {
+          "ts": "2026-07-28T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57036,
+          "claim_text": "হরমুজ নিয়ে সৌদি-ওমানের সঙ্গে ইরানের বৈঠক",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/800912/%E0%A6%B9%E0%A6%B0%E0%A6%AE%E0%A7%81%E0%A6%9C-%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A6%B8%E0%A7%8C%E0%A6%A6%E0%A6%BF-%E0%A6%93%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%88%E0%A6%A0%E0%A6%95"
+          }
+        },
+        {
+          "ts": "2026-09-26T03:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 57035,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে সৌদি পররাষ্ট্রমন্ত্রীর বৈঠক, বন্ধুত্বপূর্ণ সম্পর্ক আরও গভীর করার গুরুত্বারোপ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi3wRBVV95cUxORzc5MmhfMi1veENIRlJSamhYWk84VlBKanpwdHVrUl9XU1poWTRuZEpvT2pNLTgtd3JKdXgzX2NkN0FxOVFHZ240T3VvQTZHYndkZGpfYXZWOFpfa2cwbm9TRW10ZktMdVlnTUtUeUNsRGxCZERPeUhpRkk5dkxhakpRMWQyTThXQXM0Y3o1QldObHhGQ1lUV0NEUDVUWFQ1V1d4UHNYVGEwNUR5ZDl6RzZLeXVzSDFsTzlrYzVqM1JiU1hsNGF0ZXlFVXd3UndPN3g0M3pfeVlkd0FJeUFCRzRzazB3aG1vOUMzTjgzWEdxQmNVMWNBaHo3emtUbzJEcDhoUEkzeWxtT2VuNTM2cDJsU2VnU0xoQ0ZCWlpmZ0QtRjdOdEtJN1BJaU9uZmxXeFBwVEh0bjZfcHZhQnozVlo3TmR3cEZFaDFSRHoxYU9yOHFuMjlqY0t0WERfcGl1c1Vzcjhtb0s2YTNmNVNMNnNkeVh5SFNHUkJxd3NZMkxWUjNOT3NTS1FHT1dLZk02WnkxaFlQRFBlZ21uYTY3VUFKTHg5cDloNHJkc1cxSmhwVXRrSzdRTjRMOTY5cGdSLV9uVE9DbkpZcEVFcGctZWJEOHdNY2hESWowN2dyclJ2OG9hMTV4UlVxWm5EaTZCTnV0NWxfVTRvaUJrN3pObGZrSXRFRW8tZ1VodmdmRzZzdlVUQmVaZVdGNVphNnAteUdCRnFMcHhoUU41VHd2U09fa1g3d3NjLXdGM29Wcml5M1lqNUhrWmVKNXdPcnNNZ2hBeEUzX0psVVJISGdn0gHkBEFVX3lxTE9IMnRjakRGTm9hX21fVVVRVE44Y1VucU5DVl9BUGZFN21XZjNZSnJOaGlnOUItM29oMmZONkR4MVJsSjh0X3JUZFpSeVBKTFBTQVBGZlpJcV9BdUhjbkRpeGgtNFJSbjVRcVVnTlNuTmNEM1VpZDR4X0NBeDVBVi03bVBuQkM1M182V2JUS0JhUVJsNm9ZQUNZQU1MdjFWd2dJY042Tm5pVUN6UU54RnhYSm1MaDRuMUxqNnhEeTM3aXJSNkRUcmttVTg3Zm5vb1dLUVZUYzEyZWxuQVRwS0E5MDJ4SjEyckVlcmNTbFVuSXNRb1IxbmJIR0RETm5iYmpLa2N0Sm1aQVY2bEZhN3E3UWpVaFlnSFNITTZabFd3dTNGb3VncmlaR0FKZGdlNkRsaDh5ZEdMSHJIYnhocGlZemxRVlM3RkYzUFVuaUJGRGRxSFNhOHNvTHd5RExSOFNPT240Q1UxN0lUZEJ4WDd4Y0tGWUJXRzB1MllYcnh5cU9QelpkT1F0NFdiWlNCcTBEbHlSNXZyQWJ4SnZ2WndwOTd2djlWM0dMMW9lRVd0bkZNc2I1R2hMQUhEajQwZ1JUTkRGNW5yOG9WUTdIcGRMbXZBQ3Uza2NCQlN5ZHJpeFUwVy0xR0VkWXpYak5IRTlpcVpNSTVVQUplLVdaU1ZRM3hUMHJRdlBCcFNKWl85U2hQZ0pzeW1BVXdLVVVEUnd1VnN6SUI2X2JpZ3FXMVl1MFNEajJrY3BmQTN4Z082VDNvSHZuMHd3OEtCY3Q2ZmlwMDdPWjd2b050cF9QM2FVcFlTZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:36.807Z",
+          "kind": "claim",
+          "claim_id": 57035,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে সৌদি পররাষ্ট্রমন্ত্রীর বৈঠক, বন্ধুত্বপূর্ণ সম্পর্ক আরও গভীর করার গুরুত্বারোপ"
+        },
+        {
+          "ts": "2026-09-26T18:59:36.810Z",
+          "kind": "claim",
+          "claim_id": 57036,
+          "claim_text": "হরমুজ নিয়ে সৌদি-ওমানের সঙ্গে ইরানের বৈঠক"
+        },
+        {
+          "ts": "2026-09-26T18:59:36.813Z",
+          "kind": "verify",
+          "claim_id": 57035,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে সৌদি পররাষ্ট্রমন্ত্রীর বৈঠক, বন্ধুত্বপূর্ণ সম্পর্ক আরও গভীর করার গুরুত্বারোপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:59:36.813Z",
+          "kind": "verify",
+          "claim_id": 57036,
+          "claim_text": "হরমুজ নিয়ে সৌদি-ওমানের সঙ্গে ইরানের বৈঠক",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
