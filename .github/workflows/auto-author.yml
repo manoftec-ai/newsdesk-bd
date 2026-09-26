@@ -88,7 +88,7 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           mkdir -p pipeline/tmp/stories /tmp
-          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json. For every picked slug, run pipeline/tools/render_prompt.mjs and write only that slug's body to pipeline/tmp/stories/<slug>.b.md. Do not edit site Markdown, pipeline source, briefs, or any other path. Do not run git commands."
+          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json. For every picked slug, run pipeline/tools/render_prompt.mjs --authoring and write only that slug's body to pipeline/tmp/stories/<slug>.b.md. Do not edit site Markdown, pipeline source, briefs, or any other path. Do not run git commands."
 
       - name: Reject direct public Markdown edits
         run: |

@@ -408,3 +408,34 @@ export async function writeThenAudit(brief, { key } = {}) {
   }
   return { pass: false, body, result };
 }
+// --- prompt-leak guard (added 2026-09-27) ------------------------------------
+//
+// WHY: for a full day the author model was not writing articles, it was echoing
+// its prompt into the body. The rejection report showed every "quote not found"
+// as a fragment of lib/synth.mjs, bodies at 845-1777 words against bands of
+// 180-1000, plus "editorial/draft footer", "raw URL in body" and "outlet name
+// in body". Dozens of rules fired and the real fault was invisible among them.
+//
+// This names it in one line, so the next occurrence is obvious instead of
+// buried. It is a leak detector, not an editorial rule: a body containing our own
+// prompt is wrong regardless of how well written it is.
+// Only unambiguous prompt strings. An earlier list included "This story" and
+// "tier:", which occur in ordinary prose, and that produced four false
+// positives against the existing test fixtures.
+const PROMPT_LEAK_MARKERS = [
+  'LENGTH STANDARD',
+  'VERIFIED CLAIMS',
+  'RULES (HARD)',
+  'Write one Bengali news article',
+  'Do not print these instructions',
+  "This story's band is",
+  'member leads',
+  '### SOURCES',
+];
+
+export function promptLeakCheck(body) {
+  const text = String(body ?? '');
+  if (!text.trim()) return { pass: true, markers: [] };
+  const markers = PROMPT_LEAK_MARKERS.filter((m) => text.includes(m));
+  return { pass: markers.length === 0, markers };
+}
