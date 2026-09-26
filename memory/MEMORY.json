@@ -974,6 +974,18 @@
       "tests": "286/286 pass. Site verified after the prune: homepage 200, /article/national-551 200 (title renders, 36521 bytes), /article/national-125 404, news-sitemap 377 entries.",
       "production": "No site content edited, no workflow changed, no dependency, no secret. Deleting a Vercel deployment is reversible in practice: git is the source of truth and any commit can be redeployed.",
       "rationale": "User reported Vercel deployment storage full against a 10GB limit and asked for old deployments to be cleared. The blocker we had actually hit was api-deployments-free-per-day (a daily deploy COUNT, not storage), and the build root is site/ so pipeline/state/store.db (79MB) never reaches Vercel - but 44 retained deployments were genuinely accumulating storage, so the prune was worth doing. Verified before acting: identified the alias-holding deployment and excluded it by uid rather than by recency, and aborted the script if that uid was ever absent from the list."
+    },
+    {
+      "id": "D106",
+      "date": "2026-09-26",
+      "title": "Deploy cadence cut from 4 trigger paths to 1 hourly cron (fixes api-deployments-free-per-day)",
+      "summary": "Root-caused the recurring Vercel deploy failure and fixed it. MEASUREMENT: 100 deploy.yml runs in one day (workflow_run 38, workflow_dispatch 30, push 29, schedule 3) against Vercel Hobby 100 deploys/day; 70 succeeded, 30 rejected with api-deployments-free-per-day, after which every deploy failed for the rest of the 24h window. CRITICAL: deleting old deployments does NOT affect this limit - it counts attempts in the trailing 24h, not retained deployments. The D105 storage prune freed real space but is unrelated to this failure; that correction is recorded honestly. FIX: automatic deploying is now hourly (cron 17 * * * *) and nothing else; push and workflow_run triggers removed, workflow_dispatch kept for manual deploys. ~24 deploys/day with headroom. Trade-off accepted: bot pushes go live on the next tick rather than instantly. TWO MORE BUGS FOUND WHILE READING THE OLD CONDITION: (1) the deploy step if-condition treated workflow_dispatch as no-bot-context, so every manual dispatch deployed unconditionally - 30 wasted deploys/day with no content check, a dispatch on a memory-only commit still shipped a build; (2) the content guard compared HEAD~1..HEAD, so a push containing an earlier site-changing commit was skipped, and it could not tell whether a change had already been deployed. Both fixed: the guard now asks the Vercel API which commit is actually live and diffs site/ against that, runs for every trigger, and falls back to deploying when the live commit cannot be read or fetched. SELF-INFLICTED BUG caught by testing: naming the variable VERCEL_PROJECT_ID made the Vercel CLI claim it and refuse to deploy without VERCEL_ORG_ID - renamed to DEPLOY_PROJECT_ID. Verified end-to-end by dispatching: all 4 steps green, new production deployment 0cbae4a2 PROMOTED, site serving latest.",
+      "files": [
+        ".github/workflows/deploy.yml"
+      ],
+      "tests": "YAML parses (validated with the repo yaml module). Guard shell logic executed verbatim against the live Vercel API and the real repo. Two real dispatches: first failed on the VERCEL_PROJECT_ID collision, second green with the Vercel deploy step succeeding and a new PROMOTED deployment.",
+      "production": "CHANGED .github/workflows/deploy.yml - the only production change. New behaviour: hourly cron + manual dispatch only, with a live-commit diff guard. Site verified after: homepage 200, /article/national-551 200, /article/national-125 404, sitemap 377.",
+      "rationale": "User: \"so its fix now\". Chose schedule-only deploys as recommended, and stated the trade-off (up to an hour of publish delay) rather than hiding it. Hourly rather than every 15 min because the old */15 cron was already well-behaved (3 runs, skipped by the diff guard) and was not the main cost - push and workflow_run were."
     }
   ],
   "sources": [
@@ -1318,8 +1330,8 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-25",
-  "sessionsCount": 76,
+  "lastUpdated": "2026-09-26",
+  "sessionsCount": 77,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
