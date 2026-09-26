@@ -1,54 +1,77 @@
 name: deploy
 on:
+  # Manual deploy — use when you want the current main tip live right now.
   workflow_dispatch:
-  # Safety net: even if every bot trigger misses (schedule delivery has been
-  # flaky), redeploy the current main tip at most every 15 min — the content
-  # guard below skips when nothing in site/ changed since the last commit.
+  # The ONLY automatic trigger.
+  #
+  # 2026-09-25: deploys were firing from four paths at once — push (29 runs),
+  # workflow_dispatch (30), workflow_run (38) and this schedule (3). That is 100
+  # attempts in a single day, and Vercel's Hobby plan allows 100 deploys/day.
+  # 70 landed and 30 were rejected with `api-deployments-free-per-day`, after
+  # which every deploy failed for the rest of the 24h window. Deleting old
+  # deployments does NOT help: the counter tracks attempts, not retained
+  # deployments, so pruning storage is unrelated to this limit.
+  #
+  # So: automatic deploying is hourly and nothing else. ~24/day, with headroom.
+  # Bot pushes no longer deploy on their own — they go live on the next tick.
+  # Minute 17 rather than 0, so this does not pile onto the top-of-hour rush
+  # that every other cron on GitHub Actions also lands on.
   schedule:
-    - cron: '*/15 * * * *'
-  push:
-    branches: [main]
-    paths:
-      - 'site/src/**'
-      - 'site/public/**'
-      - 'site/api/**'
-      - 'site/package.json'
-      - 'site/astro.config.mjs'
-  # Bot workflows (auto-author, images, pipeline) push with the default
-  # GITHUB_TOKEN, whose push events do NOT trigger push-based workflows.
-  # So deploy also fires on their successful completion, and checks whether
-  # the pushed commit actually changed site content first.
-  workflow_run:
-    workflows: [auto-author, images, pipeline, watcher, history-author, history-batch]
-    types: [completed]
+    - cron: '17 * * * *'
 
 jobs:
   vercel:
     runs-on: ubuntu-latest
-    if: github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success'
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_PROJECT_ID: prj_FX5YmvjrSM5JnbCm1PNbQuJU6xJO
     steps:
-      # IMPORTANT: do NOT checkout github.event.workflow_run.head_sha here.
-      # For a dispatch/schedule-triggered run that head points at the ref SHA
-      # when the run STARTED, not the commit the run later pushed (observed:
-      # deploy kept deploying the pre-author commit and skipped site changes).
-      # Checkout the current main tip — the triggering bot just pushed there.
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: Check whether site content changed (bot/schedule run)
-        if: github.event.workflow_run != null || github.event.schedule != null
+      # Decide by comparing site/ against what is ACTUALLY LIVE, rather than
+      # against the previous commit.
+      #
+      # The old check was `git diff HEAD~1 HEAD`, which is wrong twice over: a
+      # push can contain an earlier site-changing commit that HEAD~1 misses, and
+      # it cannot tell whether that change was already deployed. Asking Vercel
+      # which commit it is serving answers both.
+      - name: Decide whether a deploy is needed
+        id: decide
         run: |
-          if git rev-parse --verify -q HEAD~1 >/dev/null && \
-             git diff --quiet HEAD~1 HEAD -- site/src site/public site/api site/package.json site/astro.config.mjs; then
-            echo "DEPLOY_CHANGED=false" >> "$GITHUB_ENV"
-          else
-            echo "DEPLOY_CHANGED=true" >> "$GITHUB_ENV"
+          set -uo pipefail
+          SITE_PATHS='site/src site/public site/api site/package.json site/astro.config.mjs'
+
+          LIVE=$(curl -sS -H "Authorization: Bearer $VERCEL_TOKEN" \
+            "https://api.vercel.com/v6/deployments?limit=1&projectId=$VERCEL_PROJECT_ID" \
+            | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{
+                try{const d=JSON.parse(s).deployments||[];
+                process.stdout.write((d[0]&&d[0].meta&&d[0].meta.githubCommitSha)||"");}catch(e){}})')
+
+          if [ -z "$LIVE" ]; then
+            echo "Could not read the live deployment from Vercel; deploying to be safe." >&2
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          echo "Live commit: $LIVE   main: $(git rev-parse HEAD)" >&2
+
+          # The live commit may predate our shallow clone. Pull just that one.
+          git fetch --no-tags --depth=1 origin "$LIVE" 2>/dev/null || true
+
+          if git cat-file -e "$LIVE^{commit}" 2>/dev/null; then
+            if git diff --quiet "$LIVE" HEAD -- $SITE_PATHS; then
+              echo "site/ is identical to the live deployment; skipping." >&2
+              echo "deploy=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "site/ differs from the live deployment; deploying." >&2
+          else
+            echo "Live commit $LIVE not available locally; deploying to be safe." >&2
+          fi
+          echo "deploy=true" >> "$GITHUB_OUTPUT"
 
       - name: Deploy to Vercel (production)
-        if: ${{ (github.event.workflow_run == null && github.event.schedule == null) || env.DEPLOY_CHANGED == 'true' }}
+        if: steps.decide.outputs.deploy == 'true'
         working-directory: site
         run: npx vercel deploy . --prod --yes --token "$VERCEL_TOKEN" --scope man-of-technology --name newsdesk-bd
