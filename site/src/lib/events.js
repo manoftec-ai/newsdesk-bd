@@ -85,6 +85,11 @@ const normalize = (text = "") =>
     .replace(/\s+/g, " ");
 
 // Words too generic to distinguish an event; edge-weighted near zero.
+// Words that appear in almost every story and therefore prove nothing about
+// topical relevance. 2026-09-26: this list was only 16 entries, so a World Bank
+// meeting article was filed under "money laundering" and "Padma bridge graft"
+// because those events list "ব্যাংক" / "ঋণ" / "দুর্নীতি" as keywords and those
+// words occur constantly in ordinary news copy.
 const GENERIC_WORDS = new Set([
   "বাংলাদেশ",
   "ঢাকা",
@@ -102,6 +107,65 @@ const GENERIC_WORDS = new Set([
   "সংশ্লিষ্ট",
   "সন্ধান",
   "এখন",
+  // added 2026-09-26 — institutional / process vocabulary, not topic markers
+  "ব্যাংক",
+  "ঋণ",
+  "দুর্নীতি",
+  "সেতু",
+  "রেল",
+  "সড়ক",
+  "হাসপাতাল",
+  "স্কুল",
+  "বিশ্বব্যাংক",
+  "বৈঠক",
+  "সভা",
+  "সম্মেলন",
+  "কর্মসূচি",
+  "কার্যক্রম",
+  "প্রকল্প",
+  "উদ্বোধন",
+  "চুক্তি",
+  "সম্মান",
+  "প্রধানমন্ত্রী",
+  "মন্ত্রী",
+  "মন্ত্রণালয়",
+  "সংসদ",
+  "আইন",
+  "আদেশ",
+  "বিবরণী",
+  "কর্তৃপক্ষ",
+  "প্রতিষ্ঠান",
+  "কর্তৃপক্ষের",
+  "শিল্প",
+  "বাণিজ্য",
+  "বাজার",
+  "মূল্য",
+  "স্বাস্থ্য",
+  "শিক্ষা",
+  "পরিবহন",
+  "যাত্রী",
+  "নিরাপত্তা",
+  "আইনি",
+  "মামলা",
+  "অভিযোগ",
+  "তদন্ত",
+  "ঘটনা",
+  "খবর",
+  "বিবরণ",
+  "সূত্রে",
+  "জানানো",
+  "উল্লেখ",
+  "বলেছেন",
+  "বলে",
+  "সম্পর্কে",
+  "বিষয়ে",
+  "অনুযায়ী",
+  "প্রসঙ্গে",
+  "ফলে",
+  "এর",
+  "ও",
+  "করা",
+  "হয়",
 ]);
 
 // A keyword is "specific" when it is long enough to be distinctive AND not generic.
@@ -123,6 +187,34 @@ const countOccurrences = (text, keyword) => {
   return count;
 };
 
+// Count occurrences of `keyword` in `text` that are NOT glued to a longer word.
+//
+// Bengali is agglutinative and written without spaces between morphemes, so a
+// naive substring test is unsafe. The observed failure: the 2026-09-26 article
+// "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক" was filed under
+// "money laundering" and "Padma bridge graft", because those events list
+// "ব্যাংক" as a keyword and "ব্যাংক" sits inside "বিশ্বব্যাংক". Repeated across
+// title, excerpt and body it scored 6.9 and passed on its own.
+//
+// A hit therefore only counts when the character before and after it is not a
+// Bengali letter, i.e. the keyword stands as its own word.
+const countWordOccurrences = (text, keyword) => {
+  const key = normalize(keyword);
+  if (!key || !text) return 0;
+  const isBanglaLetter = (ch) => !!ch && /[\u0980-\u09FF]/.test(ch);
+  let count = 0;
+  let from = 0;
+  for (;;) {
+    const at = text.indexOf(key, from);
+    if (at === -1) break;
+    const before = at > 0 ? text[at - 1] : "";
+    const after = text[at + key.length] ?? "";
+    if (!isBanglaLetter(before) && !isBanglaLetter(after)) count++;
+    from = at + 1;
+  }
+  return count;
+};
+
 export const eventMatchScore = (event, post) => {
   const title = normalize(post?.title ?? "");
   const excerpt = normalize(post?.excerpt ?? "");
@@ -132,9 +224,9 @@ export const eventMatchScore = (event, post) => {
   let score = 0;
   for (const keyword of keywords) {
     const weight = strong.has(normalize(keyword)) ? 1 : isSpecific(keyword) ? 1 : 0.1;
-    score += countOccurrences(title, keyword) * 3 * weight;
-    score += countOccurrences(excerpt, keyword) * 1.5 * weight;
-    if (body) score += countOccurrences(body, keyword) * 0.8 * weight;
+    score += countWordOccurrences(title, keyword) * 3 * weight;
+    score += countWordOccurrences(excerpt, keyword) * 1.5 * weight;
+    if (body) score += countWordOccurrences(body, keyword) * 0.8 * weight;
   }
   return score;
 };
@@ -181,6 +273,15 @@ export const matchesEvent = (event, post, minimum = 4) => {
 export const eventsForPost = (post, minimum = 4) =>
   events()
     .filter((event) => matchesEvent(event, post, minimum))
+    .map((event) => ({ ...event, matchScore: eventMatchScore(event, post) }))
+    .sort((a, b) => b.matchScore - a.matchScore);
+
+// Chips on an article page ("এই ঘটনার আরও খবর") claim the article is about that
+// event, so they use the compound-safe score rather than the raw substring count
+// that mis-filed a World Bank meeting under money laundering.
+export const topicalEventsForPost = (post, minimum = 4) =>
+  events()
+    .filter((event) => passesHardGates(event, post) && eventMatchScore(event, post) >= minimum)
     .map((event) => ({ ...event, matchScore: eventMatchScore(event, post) }))
     .sort((a, b) => b.matchScore - a.matchScore);
 
