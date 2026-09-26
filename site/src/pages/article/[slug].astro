@@ -100,6 +100,28 @@ const standfirst = (() => {
 
 post.readingTime = entry.data.readingTime ?? readingMinutes;
 
+// Byline. All 377 articles carried author: "desk" and no visible byline at all.
+//
+// These stories are aggregated from named outlets, not written by us, so
+// attributing them to a reporter would be false and attributing them to the
+// outlet bare would imply that outlet published the page here. The honest form
+// is an explicit sourcing credit, which is also what Bangladeshi papers use when
+// reprinting: "সূত্র: প্রথম আলো".
+const byline = (() => {
+  const names = [
+    ...new Set(
+      (post.sources ?? [])
+        .map((s) => sourceNameBn(s.name) ?? s.name)
+        .map((n) => String(n ?? "").trim())
+        .filter(Boolean),
+    ),
+  ];
+  if (!names.length) return null;
+  if (names.length === 1) return `সূত্র: ${names[0]}`;
+  if (names.length === 2) return `সূত্র: ${names[0]} ও ${names[1]}`;
+  return `সূত্র: ${names[0]} ও অন্যান্য ${names.length - 1}টি মাধ্যম`;
+})();
+
 const category = getCategory(post.category);
 const author = getAuthor(post.author);
 const badge = getBadge(post);
@@ -362,6 +384,7 @@ const shareLinks = [
         )}
 
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+          {byline && <span class="font-medium text-foreground">{byline}</span>}
           <span class="flex items-center gap-1.5">
             <Icon name="calendar" class="h-4 w-4" />
             <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
