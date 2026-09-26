@@ -254,7 +254,8 @@ Explicitly say the situation is evolving ("পরিস্থিতি চলম
 • This story's band is ${min}-${max} words (tier: ${lengthForMode(mode, brief.members.length, brief).tier}). That band comes from how much source material this story actually has, so follow it rather than a generic number.
 • Real outlets measure: median 269, mean 348, p75 405. Aim inside this story's band and you will match them.
 • To reach that length, USE THE MATERIAL: every named person, place, date, number, figure, quote and consequence in the fact pool below is fair game and expected. Do not pad with scene-setting, restated sentences, or filler transitions.
-• If the fact pool genuinely cannot support ${DEFAULT_MIN_PUBLISH_WORDS} words, say so plainly in your summary instead of padding.`;
+• If the fact pool genuinely cannot support ${DEFAULT_MIN_PUBLISH_WORDS} words, say so plainly in your summary instead of padding.
+• QUOTATION MARKS ARE CHECKED. The publisher scans every passage inside "" or '' and rejects the whole article unless each one appears word-for-word in the fact pool below. The simplest way to pass is to use NO quotation marks at all: report speech as plain prose (তিনি জানান, বলেছেন) and only use quotes when copying an exact sentence from a member lead. This single rule is the most common reason an otherwise good article is rejected.`;
 
   // The user's rich-source rule: when enough sources each carry a full article's
   // worth of text, the publisher REJECTS anything shorter. Say so in the prompt so
