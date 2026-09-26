@@ -58,8 +58,8 @@ const post = {
 // reading the value back out of the built page.
 //
 // So: resolve from process.cwd(), which IS the site root during `astro build`,
-// and try a few roots rather than trusting one. The element carries
-// data-reading-source so the live HTML says which attempt succeeded.
+// and try a few roots rather than trusting one. Confirmed working: the build
+// root resolves as /vercel/path0, so the first candidate hits.
 const readingRaw = (() => {
   const roots = [
     process.cwd(),
@@ -116,8 +116,6 @@ const standfirst = (() => {
 })();
 
 post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
-post.readingWords = readingMinutes.words;
-post.readingVia = readingRaw.via;
 
 // Byline. All 377 articles carried author: "desk" and no visible byline at all.
 //
@@ -408,7 +406,7 @@ const shareLinks = [
             <Icon name="calendar" class="h-4 w-4" />
             <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
           </span>
-          <span class="flex items-center gap-1.5" data-reading-source={post.readingVia} data-reading-words={post.readingWords}>
+          <span class="flex items-center gap-1.5">
             <Icon name="clock" class="h-4 w-4" />
             {post.readingTime} মিনিট পাঠ
           </span>
