@@ -429,7 +429,7 @@ function checkHeadline(brief, context, failures) {
   }
 }
 
-function checkBody(brief, body, failures) {
+function checkBody(brief, body, failures, auditFails) {
   if (containsFrontmatter(body)) failures.add(PUBLICATION_FAILURE_CODES.INVALID_FRONTMATTER);
   if (artificialHeadings(body).length) failures.add(PUBLICATION_FAILURE_CODES.ARTIFICIAL_GENERIC_HEADING);
 
@@ -438,6 +438,12 @@ function checkBody(brief, body, failures) {
   if (audit.fails.some((failure) => failure.id === 'n14' && /^quote not found/u.test(String(failure.note)))) {
     failures.add(PUBLICATION_FAILURE_CODES.QUOTE_INTEGRITY_FAILED);
   }
+
+  // 2026-09-26: keep the individual audit failures. They were computed and then
+  // dropped, leaving only a flat list of enum codes in the rejection, which made
+  // a rejected article undiagnosable from CI - you could see WHICH gate fired but
+  // never WHICH rule inside it, nor the note explaining it.
+  for (const f of audit.fails ?? []) auditFails.push({ id: f.id, note: String(f.note ?? '').slice(0, 200) });
 
   const reader = readerValueCheck(brief?.headline ?? '', body);
   if (!reader.ok) failures.add(PUBLICATION_FAILURE_CODES.READER_VALUE_FAILED);
@@ -466,6 +472,8 @@ export function runPublicationGate(input, body, database, now) {
   const options = normalizeGateInput(input, body, database, now);
   const checkedAt = isoNow(options.now);
   const failures = new Set();
+  // Per-rule detail behind MECHANICAL_AUDIT_FAILED, surfaced to the rejection log.
+  const auditFails = [];
   const trust = safeTrust(options.trust);
   const lineage = safeLineage(options.lineage);
   const verifyPolicy = {
@@ -477,6 +485,8 @@ export function runPublicationGate(input, body, database, now) {
     return {
       pass: false,
       failureCodes: [...failures],
+    auditFails,
+      auditFails,
       claimIds: [],
       clusterId: null,
       evidenceHash: evidenceHash([]),
@@ -489,6 +499,8 @@ export function runPublicationGate(input, body, database, now) {
     return {
       pass: false,
       failureCodes: [...failures],
+    auditFails,
+      auditFails,
       claimIds: [],
       clusterId: null,
       evidenceHash: evidenceHash([]),
@@ -505,12 +517,14 @@ export function runPublicationGate(input, body, database, now) {
     checkConflicts(context, failures);
     checkSourcesAndMembers(options.brief, context, trust, lineage, failures);
     checkHeadline(options.brief, context, failures);
-    checkBody(options.brief, draftBody, failures);
+    checkBody(options.brief, draftBody, failures, auditFails);
 
     const claimIds = context.claims.map((claim) => Number(claim.id)).filter(Number.isInteger).sort((a, b) => a - b);
     return {
       pass: failures.size === 0,
       failureCodes: [...failures],
+    auditFails,
+      auditFails,
       claimIds,
       clusterId: context.clusterId,
       evidenceHash: evidenceHash(evidence),
@@ -522,6 +536,7 @@ export function runPublicationGate(input, body, database, now) {
   return {
     pass: false,
     failureCodes: [...failures],
+    auditFails,
     claimIds: [],
     evidenceHash: evidenceHash([]),
     checkedAt,

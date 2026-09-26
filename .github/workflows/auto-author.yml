@@ -107,6 +107,31 @@ jobs:
         run: |
           node tools/site_preflight.mjs --written=tmp/finalize-rejections.json --news=../site/src/content/news
 
+      # 2026-09-26: a rejected article was undiagnosable from CI. The finalizer
+      # printed one line per story (which gate fired) and pipeline/tmp/ is
+      # gitignored, so the per-rule detail - which rule inside the gate, and the
+      # note explaining it - was never visible. Every later diagnosis had to be
+      # inferred from code frequency in the log. This publishes the full record.
+      - name: Report rejections to the run summary
+        if: always()
+        working-directory: pipeline
+        run: |
+          set -uo pipefail
+          F=tmp/finalize-rejections.json
+          if [ -f "$F" ]; then
+            node tools/explain_rejections.mjs "$F" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No rejection record was produced.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload rejection record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: finalize-rejections
+          path: pipeline/tmp/finalize-rejections.json
+          if-no-files-found: ignore
+
       - name: Stage only approved story files
         if: github.event.inputs.dry_run != 'true'
         run: |

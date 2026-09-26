@@ -223,6 +223,9 @@ export function finalizeStories({
         if (!publication.pass) {
           result.rejected.push(rejection(slug, 'PUBLICATION_GATE_BLOCKED', {
             failureCodes: publication.failureCodes,
+            // 2026-09-26: without this the rejection says which gate fired but not
+            // which rule inside it, so a blocked article cannot be diagnosed from CI.
+            auditFails: publication.auditFails ?? [],
             claimIds: publication.claimIds,
             evidenceHash: publication.evidenceHash,
           }));
