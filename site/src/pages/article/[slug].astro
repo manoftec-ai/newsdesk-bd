@@ -1,5 +1,4 @@
 ---
-import { readFileSync } from "node:fs";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
@@ -46,22 +45,21 @@ const post = {
 };
 
 // Reading time was hardcoded to 1 whenever the story had no explicit value, so a
-// 200-word article claimed "১ মিনিট পাঠ". Astro 7 no longer exposes the raw body
-// on the collection entry, so read the markdown file directly — this is a static
-// build, so a sync read at build time is fine. Floor of 1 so a stub never
-// renders "০ মিনিট".
+// 200-word article claimed "১ মিনিট পাঠ".
+//
+// Two earlier attempts silently returned nothing and were caught against the
+// live page, not by a test: `entry.data.body` and `entry.body` do not exist in
+// Astro 7, and reading the file relative to `import.meta.url` throws during the
+// build because that URL is not the source path. Use Astro's own glob, which
+// resolves at build time and is the idiomatic way to get raw content here.
+const rawNews = import.meta.glob("../content/news/*.md", {
+  query: "?raw",
+  import: "default",
+});
+
 const readingMinutes = (() => {
-  let raw = "";
-  try {
-    raw = readFileSync(
-      new URL(`../../content/news/${entry.id}.md`, import.meta.url),
-      "utf8",
-    );
-  } catch {
-    raw = "";
-  }
-  // Drop the front matter block before counting.
-  const bodyText = raw.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
+  const raw = rawNews[`../content/news/${entry.id}.md`] ?? "";
+  const bodyText = String(raw).replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
   const words = bodyText.split(/\s+/).filter(Boolean).length;
   // 150 wpm reads honestly for Bangla prose. At 200 the whole corpus rounded to
   // "1 মিনিট পাঠ" and the figure told a reader nothing.
