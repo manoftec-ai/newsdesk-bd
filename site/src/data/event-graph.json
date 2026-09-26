@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 537,
+    "storyCount": 540,
     "kinds": [
       "claim",
       "evidence",
@@ -42322,7 +42322,7 @@
           "slug": "national-576",
           "actor_links": 1,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’"
         },
         {
@@ -43115,7 +43115,7 @@
       "cluster_id": 573,
       "headline": "সরকারি চাকরিজীবীদের জন্য বড় সুখবর",
       "first_seen": "2026-09-26T12:57:32.951Z",
-      "last_update": "2026-09-26T18:53:22.832Z",
+      "last_update": "2026-09-26T19:31:17.483Z",
       "claim_count": 2,
       "events": [
         {
@@ -43499,8 +43499,8 @@
       "cluster_id": 576,
       "headline": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’",
       "first_seen": "2026-09-26T13:58:16.889Z",
-      "last_update": "2026-09-26T18:53:22.814Z",
-      "claim_count": 9,
+      "last_update": "2026-09-26T19:31:17.463Z",
+      "claim_count": 10,
       "events": [
         {
           "ts": "2026-09-26T06:38:00.000Z",
@@ -43839,6 +43839,28 @@
           }
         },
         {
+          "ts": "2026-09-26T17:10:13.000Z",
+          "kind": "evidence",
+          "claim_id": 49922,
+          "claim_text": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/nsfulfhmmv"
+          }
+        },
+        {
+          "ts": "2026-09-26T17:10:13.000Z",
+          "kind": "evidence",
+          "claim_id": 57895,
+          "claim_text": "ছেলেকে হত্যার সময় পুলিশকে যেভাবে ‘বিভ্রান্ত’ করার চেষ্টা করেন বাবা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/nsfulfhmmv"
+          }
+        },
+        {
           "ts": "2026-09-26T17:56:53.513Z",
           "kind": "evidence",
           "claim_id": 49922,
@@ -43917,6 +43939,36 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-09-26T19:37:17.330Z",
+          "kind": "claim",
+          "claim_id": 57895,
+          "claim_text": "ছেলেকে হত্যার সময় পুলিশকে যেভাবে ‘বিভ্রান্ত’ করার চেষ্টা করেন বাবা"
+        },
+        {
+          "ts": "2026-09-26T19:37:17.333Z",
+          "kind": "verify",
+          "claim_id": 57895,
+          "claim_text": "ছেলেকে হত্যার সময় পুলিশকে যেভাবে ‘বিভ্রান্ত’ করার চেষ্টা করেন বাবা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:46.306Z",
+          "kind": "conflict",
+          "claim_id": 49922,
+          "claim_text": "‘সিনেমায় এমন দেখা যায়, বাস্তব জীবনেও এমন কিছু ঘটবে, তা কল্পনাও করিনি’",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c49922\",\"c57895\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -43974,7 +44026,7 @@
       "cluster_id": 577,
       "headline": "রাতভর খুঁটিতে বাঁধা বাবাকে চা-রুটি খাওয়ালেন মেয়ে, ভিডিও ভাইরালের পর মিলল মুক্তি",
       "first_seen": "2026-09-26T13:58:16.897Z",
-      "last_update": "2026-09-26T18:53:22.826Z",
+      "last_update": "2026-09-26T19:31:17.480Z",
       "claim_count": 2,
       "events": [
         {
@@ -44102,7 +44154,7 @@
       "cluster_id": 578,
       "headline": "চিকিৎসার জন্য জায়েদ খানের টাকা নিতে অস্বীকৃতি জানালেন রিফাত চৌধুরী",
       "first_seen": "2026-09-26T13:58:16.901Z",
-      "last_update": "2026-09-26T18:53:22.831Z",
+      "last_update": "2026-09-26T19:31:17.482Z",
       "claim_count": 2,
       "events": [
         {
@@ -44488,7 +44540,7 @@
       "cluster_id": 581,
       "headline": "বর্জ্য থেকে বিদ্যুৎ উৎপাদনে জোর, উখিয়ার রোহিঙ্গা ক্যাম্পে প্রকল্প পরিদর্শনে প্রতিমন্ত্রী",
       "first_seen": "2026-09-26T14:36:36.023Z",
-      "last_update": "2026-09-26T18:53:22.822Z",
+      "last_update": "2026-09-26T19:31:17.475Z",
       "claim_count": 3,
       "events": [
         {
@@ -44656,7 +44708,7 @@
       "cluster_id": 582,
       "headline": "মা-বাবার স্বপ্ন পূরণে মানবিক চিকিৎসক হতে চায় মারিয়া",
       "first_seen": "2026-09-26T14:36:36.027Z",
-      "last_update": "2026-09-26T18:53:22.825Z",
+      "last_update": "2026-09-26T19:31:17.479Z",
       "claim_count": 2,
       "events": [
         {
@@ -45071,7 +45123,7 @@
       "cluster_id": 586,
       "headline": "গণহত্যার বিচারকে বর্তমান সরকার দীর্ঘসূত্রিতায় ফেলেছে: শিবির সভাপতি",
       "first_seen": "2026-09-26T15:15:11.112Z",
-      "last_update": "2026-09-26T18:53:22.823Z",
+      "last_update": "2026-09-26T19:31:17.476Z",
       "claim_count": 2,
       "events": [
         {
@@ -45319,7 +45371,7 @@
       "cluster_id": 588,
       "headline": "‘কমন শত্রুর’ বিরুদ্ধে ঐক্য বহাল রাখার আহ্বান নজরুল ইসলাম খানের",
       "first_seen": "2026-09-26T16:26:19.909Z",
-      "last_update": "2026-09-26T18:53:22.820Z",
+      "last_update": "2026-09-26T19:31:17.474Z",
       "claim_count": 2,
       "events": [
         {
@@ -45447,7 +45499,7 @@
       "cluster_id": 589,
       "headline": "উপজেলা পরিষদের প্রশাসক অতিরিক্ত দায়িত্ব পেলেন ৮ ইউএনও",
       "first_seen": "2026-09-26T17:07:35.295Z",
-      "last_update": "2026-09-26T18:53:22.819Z",
+      "last_update": "2026-09-26T19:31:17.473Z",
       "claim_count": 2,
       "events": [
         {
@@ -45567,7 +45619,7 @@
       "cluster_id": 591,
       "headline": "অপরাধ করলে আমার ভাই হলেও ছাড় পাবে না: হাসনাত আবদুল্লাহ",
       "first_seen": "2026-09-26T17:51:48.224Z",
-      "last_update": "2026-09-26T18:53:22.824Z",
+      "last_update": "2026-09-26T19:31:17.478Z",
       "claim_count": 2,
       "events": [
         {
@@ -45646,7 +45698,7 @@
       "cluster_id": 592,
       "headline": "চুরির অপবাদে খুঁটির সঙ্গে বেঁধে রাখা বাবার মুখে খাবার তুলে দিল কন্যা",
       "first_seen": "2026-09-26T18:53:22.815Z",
-      "last_update": "2026-09-26T18:53:22.818Z",
+      "last_update": "2026-09-26T19:31:17.472Z",
       "claim_count": 2,
       "events": [
         {
@@ -45742,7 +45794,7 @@
       "cluster_id": 593,
       "headline": "ওসমানী বিমানবন্দরে আনসারের শটগানের গুলিতে পরিচ্ছন্নতাকর্মী আহত",
       "first_seen": "2026-09-26T18:53:22.827Z",
-      "last_update": "2026-09-26T18:53:22.830Z",
+      "last_update": "2026-09-26T19:31:17.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -45944,6 +45996,430 @@
         }
       ],
       "related": []
+    },
+    "national-595": {
+      "cluster_id": 595,
+      "headline": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট",
+      "first_seen": "2026-09-26T19:31:17.464Z",
+      "last_update": "2026-09-26T19:31:17.468Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-26T18:23:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57937,
+          "claim_text": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwVBVV95cUxQWDlBQU1EZWdxRlNnTHJFVm9VNV9ZTEhBQ24xYm9qRE9veGpWb3JIX09xWUZEempNWWpaZGZSWHlFNWV2QU9sZ2xlTzFXWEpDVFhzWjhlMHdyQmwyNGFpODR1YlFMS0NLb0U3X3NVQnAtclRMOUloS3dVaWdkSmVrRmVPeHRjLUN1RnVpTjFiV3VEbXB5TTZXclBxa1daczlsYjZnYjVXbnNOSEFocnRyOTNGMlZDMzJ4NzZpM2YteFQzQTR0RTcwMmFZYzd2RnNfdklMNWRiOC1zc2NVSW5hbkRNUWJ1bm5acjRTQTNaSi1hV0lmMlZHRTBYbmd2dVQtaTVPbU5PYlFTbU9uZlJ4aXp6NEJzbWNXYm90clk1TGRncTE4bGZSY182ODJUNV9Qem9reFA4WFJlaU81dEZZZnlGckh5bnQzMVNXdnpqOE9KRzd1T3FUSGdjTjI0YWExM1V0bERSbTNjMnM5ektWYW9YbTljd0RET3ppaW91WkxyTUdGS3Q0bGdMbU1OWnkySjRkYm5zZ190RUcxbEN3Q0Jadng0SFBvWXlXbFJkb3oyMlJKVEpBVTFBWTBjTnc4THplSTc4eXZCaVJ4NjEwYWZhYnM5bld4b2VIVEhNaF94YThISENLUWNvUTJfRWpSZEkwaFdZUDZ5R0ZyMU1wRGxmSHRkVkEycFVjdmNJOXptWHo1cVNzNl9KbGVWOXJUVF9USWN1b21LcHZUVXR4SGpsLTZsUHZXal9jLUVpcFdQcXFFQU5yRWhGZXRsNDJIZGZPd1p3UUJDRFBDTVZWeDRQWXQxamJaeUxaaXVfczB5eDk3SjNxWHRVMXQ0dktGQlRR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:23:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57938,
+          "claim_text": "পরকীয়ার অভিযোগে সাবেক শিবির নেতাকে মারধর, বাড়িতে আগুন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwVBVV95cUxQWDlBQU1EZWdxRlNnTHJFVm9VNV9ZTEhBQ24xYm9qRE9veGpWb3JIX09xWUZEempNWWpaZGZSWHlFNWV2QU9sZ2xlTzFXWEpDVFhzWjhlMHdyQmwyNGFpODR1YlFMS0NLb0U3X3NVQnAtclRMOUloS3dVaWdkSmVrRmVPeHRjLUN1RnVpTjFiV3VEbXB5TTZXclBxa1daczlsYjZnYjVXbnNOSEFocnRyOTNGMlZDMzJ4NzZpM2YteFQzQTR0RTcwMmFZYzd2RnNfdklMNWRiOC1zc2NVSW5hbkRNUWJ1bm5acjRTQTNaSi1hV0lmMlZHRTBYbmd2dVQtaTVPbU5PYlFTbU9uZlJ4aXp6NEJzbWNXYm90clk1TGRncTE4bGZSY182ODJUNV9Qem9reFA4WFJlaU81dEZZZnlGckh5bnQzMVNXdnpqOE9KRzd1T3FUSGdjTjI0YWExM1V0bERSbTNjMnM5ektWYW9YbTljd0RET3ppaW91WkxyTUdGS3Q0bGdMbU1OWnkySjRkYm5zZ190RUcxbEN3Q0Jadng0SFBvWXlXbFJkb3oyMlJKVEpBVTFBWTBjTnc4THplSTc4eXZCaVJ4NjEwYWZhYnM5bld4b2VIVEhNaF94YThISENLUWNvUTJfRWpSZEkwaFdZUDZ5R0ZyMU1wRGxmSHRkVkEycFVjdmNJOXptWHo1cVNzNl9KbGVWOXJUVF9USWN1b21LcHZUVXR4SGpsLTZsUHZXal9jLUVpcFdQcXFFQU5yRWhGZXRsNDJIZGZPd1p3UUJDRFBDTVZWeDRQWXQxamJaeUxaaXVfczB5eDk3SjNxWHRVMXQ0dktGQlRR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:41:41.000Z",
+          "kind": "evidence",
+          "claim_id": 57937,
+          "claim_text": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/6dln1a39ke"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:41:41.000Z",
+          "kind": "evidence",
+          "claim_id": 57939,
+          "claim_text": "বিবাহবহির্ভূত সম্পর্কের অভিযোগে মারধর, বাড়িতে আগুন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/6dln1a39ke"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:44:55.000Z",
+          "kind": "evidence",
+          "claim_id": 57937,
+          "claim_text": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/anwtx8w9g4"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:41.203Z",
+          "kind": "claim",
+          "claim_id": 57937,
+          "claim_text": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট"
+        },
+        {
+          "ts": "2026-09-26T19:37:41.207Z",
+          "kind": "claim",
+          "claim_id": 57938,
+          "claim_text": "পরকীয়ার অভিযোগে সাবেক শিবির নেতাকে মারধর, বাড়িতে আগুন"
+        },
+        {
+          "ts": "2026-09-26T19:37:41.209Z",
+          "kind": "claim",
+          "claim_id": 57939,
+          "claim_text": "বিবাহবহির্ভূত সম্পর্কের অভিযোগে মারধর, বাড়িতে আগুন"
+        },
+        {
+          "ts": "2026-09-26T19:37:41.212Z",
+          "kind": "verify",
+          "claim_id": 57937,
+          "claim_text": "শিশুর গলাকাটা লাশ উদ্ধার, হত্যায় জড়িত থাকার অভিযোগে এক ব্যক্তির বাড়িতে আগুন, লুটপাট",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:41.212Z",
+          "kind": "verify",
+          "claim_id": 57938,
+          "claim_text": "পরকীয়ার অভিযোগে সাবেক শিবির নেতাকে মারধর, বাড়িতে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:41.212Z",
+          "kind": "verify",
+          "claim_id": 57939,
+          "claim_text": "বিবাহবহির্ভূত সম্পর্কের অভিযোগে মারধর, বাড়িতে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 303,
+          "slug": "national-303",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সুতা-কাপড় আমদানিতে বাণিজ্য মন্ত্রণালয়ের আগাম অনুমতি লাগবে না"
+        },
+        {
+          "cluster_id": 313,
+          "slug": "national-313",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ককটেল ফুটিয়ে, বাসে আগুন দিয়ে সংকট তৈরি করা যাবে না: জাহেদ উর রহমান"
+        },
+        {
+          "cluster_id": 317,
+          "slug": "national-317",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আলী আফজালের রিহ্যাব সভাপতি পদ শূন্য ঘোষণার সিদ্ধান্ত স্থগিত"
+        },
+        {
+          "cluster_id": 320,
+          "slug": "national-320",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যাদের কাছে ধানের শীষে ভোট চেয়েছি, তাদের কাছে মাফ চাই—পোস্ট দেয়া ছাত্রদল নেতা বহিষ্কার"
+        }
+      ]
+    },
+    "national-596": {
+      "cluster_id": 596,
+      "headline": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন",
+      "first_seen": "2026-09-26T19:31:17.468Z",
+      "last_update": "2026-09-26T19:31:17.471Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-26T17:33:04.000Z",
+          "kind": "evidence",
+          "claim_id": 57940,
+          "claim_text": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAVBVV95cUxOXzdtNXY2Zk9JUEVJd2d1SE5KcHFSc1cydTktZ1dKYXh4NjBfM2dmN0ZydU5QcHlCVHhaWF91UG01TEplOE45OXY4elRYeWgzT1BDTThmY2puQ0tYQS05SnFBSXNkZEQ2M1JsZ2dmcEwyTXQ2c04xX3RxTXZxcURFcldtNExvRmYxNk8zWVVLaWNrV2NBM1J3akhrOVdhcXlhalg1ZzZRNXBGdU5kc1dNMENlREZyVWRfeTRjSWltaEs3d3dXb19tUmVhM3ExMV9QbFVvWW9XV2xQM2tXTGVJU0RkUlNScVpaWm5lbVE5a2xtTTRpdFZQaXdTMlhrTHVzeWV3V2lnV3dtbnM2Y3VQV1g4OE9kSDlBUnBrb3pfWkR6cnIteXZRWkRXWG5Wd2ZwUjh1ekxCWlhyWXEyRzNZU1pYemNNc2xPd05EdVZncDNybWpoTFNieHBYclBROHgtMEFPODM3TFRWSmN3SWR4eHRCdHN4eEVxVXNoU0ZEWXpsTFhWcmxJSHVuYVM5c3JFa2swNWRzSnhENGFLT1Z1ZXhWTjhBU2ZERlhHdEthWDRyMjNRMExOZ3VFbklPWkVDa0pReE5JXzVoNC1DQWlnNENKX19KWUVPS2gzNmFPb0ozYkQza2ZHaGxnU3YzckVXZ2FxT0FUWWhXeUdXaHlNVXFkTWpCMFpNOURHWWNvM3VXYWU5X0hGSmo0V0J5QjdSd1Zyb05iWGlsc3ZEcTEtR1lneXZkRVNPZFNHTUdEbkYzckxWdnFQYk9VUlliR0hLU2tqZ0pnT1REc0xENENiVEVxaXQ4VUZzMHgtWWZZNUJwQndNeUhiNXBiR2E2OWpDWWdNcUMzT21SQzltRXk5RjZnc3dndXNVZjJtLVk0amRyQXNfSTcwTWd6Mlk5ZW82VVBZN0NFVjVFdExiN2tFSg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T17:33:04.000Z",
+          "kind": "evidence",
+          "claim_id": 57941,
+          "claim_text": "শিশুর গলা কাটা মরদেহ উদ্ধার, হত্যাকারী সন্দেহে বাড়িঘরে আগুন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAVBVV95cUxOXzdtNXY2Zk9JUEVJd2d1SE5KcHFSc1cydTktZ1dKYXh4NjBfM2dmN0ZydU5QcHlCVHhaWF91UG01TEplOE45OXY4elRYeWgzT1BDTThmY2puQ0tYQS05SnFBSXNkZEQ2M1JsZ2dmcEwyTXQ2c04xX3RxTXZxcURFcldtNExvRmYxNk8zWVVLaWNrV2NBM1J3akhrOVdhcXlhalg1ZzZRNXBGdU5kc1dNMENlREZyVWRfeTRjSWltaEs3d3dXb19tUmVhM3ExMV9QbFVvWW9XV2xQM2tXTGVJU0RkUlNScVpaWm5lbVE5a2xtTTRpdFZQaXdTMlhrTHVzeWV3V2lnV3dtbnM2Y3VQV1g4OE9kSDlBUnBrb3pfWkR6cnIteXZRWkRXWG5Wd2ZwUjh1ekxCWlhyWXEyRzNZU1pYemNNc2xPd05EdVZncDNybWpoTFNieHBYclBROHgtMEFPODM3TFRWSmN3SWR4eHRCdHN4eEVxVXNoU0ZEWXpsTFhWcmxJSHVuYVM5c3JFa2swNWRzSnhENGFLT1Z1ZXhWTjhBU2ZERlhHdEthWDRyMjNRMExOZ3VFbklPWkVDa0pReE5JXzVoNC1DQWlnNENKX19KWUVPS2gzNmFPb0ozYkQza2ZHaGxnU3YzckVXZ2FxT0FUWWhXeUdXaHlNVXFkTWpCMFpNOURHWWNvM3VXYWU5X0hGSmo0V0J5QjdSd1Zyb05iWGlsc3ZEcTEtR1lneXZkRVNPZFNHTUdEbkYzckxWdnFQYk9VUlliR0hLU2tqZ0pnT1REc0xENENiVEVxaXQ4VUZzMHgtWWZZNUJwQndNeUhiNXBiR2E2OWpDWWdNcUMzT21SQzltRXk5RjZnc3dndXNVZjJtLVk0amRyQXNfSTcwTWd6Mlk5ZW82VVBZN0NFVjVFdExiN2tFSg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T18:33:44.000Z",
+          "kind": "evidence",
+          "claim_id": 57940,
+          "claim_text": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxOb2JaTnUyQ2hNN3lPYjZOa1U5NUNnVlVnbTFWQm42SUp2VUhEOGNhZVY1SWt4Tm9fUHZmaUxGZ0VCa1B5RTgxeHAxQ0d3T1hwRkJFTGt6cE90QmhtTVNoRGJzSVp6MEdBWi1tMXJfQlBITFNPZ05ON1dnRE9MUXVjVFY1X2VjQVlPamNiVFdSWjZCbVJocTI4OGp0T3lvVXFOTXppWjBRekozRUF5WWUyYVVja3c4SjRmcHk1NGZwT0xmTnl4M2c2OVFKU2ZnX2J3VnVRREJGLWQzSGE0LW5oVXdvdlp6S1JJQ28tajlxTzItSHd1dmduWHdudGlFOXl2XzJxeFVjeF9wODNXQXZNSUYzVUdMR0VXOUNsZzBwS0o0bkZvQ085eHQxM2x4OEptaElMUUlCV0ZuQnFzT2dhSzc4eW1qV19OTFpqVXQ1dFVwYVN6UW13ZF85YUNneWNfTTRVRnZrWkZJTjAwRTdrOUR2UFBjdy11a01wdWFhMXFQWnVFUzFkZ0lrX3lIUW9pcFVubnNIMFdXNUhYQm9XTTA0Vm9LVm01R2hSenJTQjRqdVRtNFphZWtJb2lNTkxWRWw3Ukx3Y0xNVTZYWk5JdllLY1VSWHQ3eUwxb2NWRWExRHRzUHZ6eUlLTXN5Nm5Pc3ZTZldVTmVjeF8xWFJpb3NRUFpEdHY0THUzYllCQnRGcmgzY29pZ3J4UGRFNUJpZTl5QnRyYjRjVW1sd1hDNlNDZWR6N2JZckNtODM2Z1dEOWZaWnRXM05R0gHPBEFVX3lxTFA0N3BNMzJtMUZyek5rV0FWVWMtRWNjUUozN2F5Z0FsVF90M1FDZTVJbi1XV1l0MGY5YS13TmJwbURmRE9Ra1k1c3pSLXhqZl96c0xsU0VpREpNQ1FqOVdxLWtQOTRySG94d1M5c0cwRkpDWHA0c1NxMS1xMzdUSks2RG1TTllCRDlscTZlU2RSOThuODA4bjlzLVB6a0RESWFvYWxsalo4MWVjbVktTGRhMWpzdG5Za0x3akZtVFdWR19mMi1LTnllZWJpQkM1VmpLa1BOdXFkLTFaMFgxOWV6OFUwclAzSG5zeFRFVTFLd0RnY0RKQ3p4dHktbzZtSS1pelZBM1pick9DcXhsSmZNOEU0Mzd4Q3RLa3NSSWk2RzZhSHl0QTFwZ2JCbkFLTmtrazM5UkNub2trb29qb0RLRkdSeDVEdmo0VlcwSWhEaHoxU0JiUVdoZHNGUVpuZlU3NnNjMFRnUHROSzg1WnlFZGpWQWZwbV9xUk9lNno2R0h0aFJpSHFqNDlXb01jNmRMVURHdWNHZ1Vid2w2aVNyRUM1dGVCWmQzdnVfSnBveWtSNk5waWNNOXV0T256UTFpWE43ckVjNlZrWXVFb3l5bzNLdUJsS2ZKMG5ZQm12dV9yUmp6ZlR0Sm5zOG80aldEcEpiWVgtYmVPNmVqbTFiZWNMQnNoYVIwMkpHd0M5NmNSQWZ6V1ZiRTJjeHBjNjNXQWdJTjBtRUxvVHBFTU5aaFlVR0t0a1F4TjRIdEJTMlRabUNsQzlPRVVrVWl4SQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:42.473Z",
+          "kind": "claim",
+          "claim_id": 57940,
+          "claim_text": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন"
+        },
+        {
+          "ts": "2026-09-26T19:37:42.476Z",
+          "kind": "claim",
+          "claim_id": 57941,
+          "claim_text": "শিশুর গলা কাটা মরদেহ উদ্ধার, হত্যাকারী সন্দেহে বাড়িঘরে আগুন"
+        },
+        {
+          "ts": "2026-09-26T19:37:42.479Z",
+          "kind": "verify",
+          "claim_id": 57940,
+          "claim_text": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:42.479Z",
+          "kind": "verify",
+          "claim_id": 57941,
+          "claim_text": "শিশুর গলা কাটা মরদেহ উদ্ধার, হত্যাকারী সন্দেহে বাড়িঘরে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 211,
+          "slug": "national-211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 367,
+          "slug": "national-367",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকারি হাসপাতালের সামনে নতুন কোনো ক্লিনিকের অনুমোদন নয়: স্বাস্থ্যমন্ত্রী"
+        },
+        {
+          "cluster_id": 457,
+          "slug": "national-457",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিউইয়র্কে প্রধানমন্ত্রী তারেক রহমানের সঙ্গে ইরানের প্রেসিডেন্টের বৈঠক"
+        }
+      ]
+    },
+    "national-597": {
+      "cluster_id": 597,
+      "headline": "দেশের সব শিক্ষা প্রতিষ্ঠানের ছাদে সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+      "first_seen": "2026-09-26T19:31:17.484Z",
+      "last_update": "2026-09-26T19:31:17.490Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-26T09:34:21.000Z",
+          "kind": "evidence",
+          "claim_id": 57942,
+          "claim_text": "দেশের সব শিক্ষা প্রতিষ্ঠানের ছাদে সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA4US1Yd0c4dXE1QnFpOEcwOVhSajVNSjBJQUc0NWwxWGV0WmkwRExTZnEteUJJdm9RZ0xNU0VhUGZ6ekZlWHRsc2w0TGR4TF9mMVRXNjZJdVNhQTBib1NqWDdUXzJkci1sOVVzQjhqaHpZZU9XQ0E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T09:34:21.000Z",
+          "kind": "evidence",
+          "claim_id": 57943,
+          "claim_text": "সব শিক্ষাপ্রতিষ্ঠানে ছাদভিত্তিক সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA4US1Yd0c4dXE1QnFpOEcwOVhSajVNSjBJQUc0NWwxWGV0WmkwRExTZnEteUJJdm9RZ0xNU0VhUGZ6ekZlWHRsc2w0TGR4TF9mMVRXNjZJdVNhQTBib1NqWDdUXzJkci1sOVVzQjhqaHpZZU9XQ0E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T10:44:04.000Z",
+          "kind": "evidence",
+          "claim_id": 57942,
+          "claim_text": "দেশের সব শিক্ষা প্রতিষ্ঠানের ছাদে সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOOVF5bTVuZ3hhM3RURUtTTWpRcmlWX2taRWxCcWk3Z3ZjUEVHaWF0d3UwR0JkaGJSemt2eHVWdVR0cS12YjQ5ZUhUYWw4cGdBNDZMYnZKRGFfQVVkQWhjcVBFQWNEMHd0ajdrY1huMmU4X2hnUU5vT0gyU054b0FCbGM4VmY0T200RDhndVd5YmE1Z1I3MW5nQlJOaXFRaDZxM08yTmtFSG51bHNfckJzR004VnhOUWZET3huU2JOYW1jbk5IZlJzVDJ1VmhhUGk5M1F5S0cwUGlnSktWUVpDMktFaHBlcjNkMUtsaXVQTW8yTEIwcHhFNGxIaWJXWUdkbXdPUHh1M2ZEMjh6dHh5eUNFM3lJd1QzSk9UR3lzcUFJYUxLR2stMzR2anZ4TEpNUUNFY1BmelNad1RFMWdPcFF6LWlMRXdmSy1JSHAxM3l2N3JtUlFpOXNCVG10Y0lvZjRBRXI2RzU4ZGJXRUFwRE1uWlNfT1hyX3c0YmhON0JoZ3dCMXlQb1ZSR2ZOZmthTktPXy1HNi1PR2ZpSzMwWm95RmRyWUVKVVd5eGZVVmpIQWY3ZGNUS29DNXVFeGJnWEtZQVgwRkNhN2ZRNjNjMHJKU0Q5d2ZfUm9YSXNJZXZzcVRtTHZkWUlOd1FaZkhud2xpd0hmTzhMSFprY19SUndWUDYtRmlIMVFhWHV1OTdIM2c4QTBxN0lhbEQ5ZFNfUUZ4WNIBqgRBVV95cUxQOFdMUDJnLW02YnpMSG9EQ0ZIZG5Nb2lCMzlHYVJ3NEVEczBkQ2FEdTVlcTU1N2lYN0JjR3RIY0lPakpSX1dzemxCWmFzWldieVVyZjdlaTJIYmthQkRYZjAwOER3U0c3cDAyUnkwLWJiNVd4Vk5MOFEtLTRiS0YydEh3QUZ1MWNxM3J5Mm5udFJ5ajBzaGFLWU8xdjFONm9BMDRjdW00RDJaZ0dkSm1MX1dYVW5WQzNBdGZsRWN5TFBFd2Z4YnlFSDNtaFNiTU5XX3dQVDh3eEJzdzFpckxwSGN2aUY1WTA5b1dZa25WWkM1bU0tOXFwZ21CaTQ1RUtVQnZPTVA2bHVjcGdDU2YzNkVQTFh5azdBbHljYk5HTTB5dXozMUpWY0dYTmhxNmZ5VTVNOXZjS2xRdDdBd3hnM3ZZS0wxZUgtOWxYM3Jqb2RVdU9paThybGFWYWljcEhWV044VXhxSlF0SEJaRmVPUExaUDA5YUtkdjJSbXN3S1pjblV6Si1JZ1pROTlOdDdwY3ZMRE4yOERmY2x6c2pma1JZVVhrSVlwd1NlQnQwWThPOFl6ZXZnaV9WVHFxck8tb3RqRU9aVzlkNXJHUXN4SGo3emgwODRTX1U5TGVuTHQ2b21lalE0OUVHYk8xdGI4SzJwUFdvNkVKSTk1cjd0M29QRUtnYTBEYW9xaEduMllIM2ZyV1d3aFh1TUpsV2F1R05iTUEtM0dSQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:43.701Z",
+          "kind": "claim",
+          "claim_id": 57942,
+          "claim_text": "দেশের সব শিক্ষা প্রতিষ্ঠানের ছাদে সৌরবিদ্যুৎ স্থাপনের নির্দেশ"
+        },
+        {
+          "ts": "2026-09-26T19:37:43.705Z",
+          "kind": "claim",
+          "claim_id": 57943,
+          "claim_text": "সব শিক্ষাপ্রতিষ্ঠানে ছাদভিত্তিক সৌরবিদ্যুৎ স্থাপনের নির্দেশ"
+        },
+        {
+          "ts": "2026-09-26T19:37:43.708Z",
+          "kind": "verify",
+          "claim_id": 57942,
+          "claim_text": "দেশের সব শিক্ষা প্রতিষ্ঠানের ছাদে সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-26T19:37:43.708Z",
+          "kind": "verify",
+          "claim_id": 57943,
+          "claim_text": "সব শিক্ষাপ্রতিষ্ঠানে ছাদভিত্তিক সৌরবিদ্যুৎ স্থাপনের নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 419,
+          "slug": "national-419",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
+        },
+        {
+          "cluster_id": 493,
+          "slug": "national-493",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শিক্ষাপ্রতিষ্ঠানে মাদক ও জুয়া প্রতিরোধে কমিটি গঠনের সিদ্ধান্ত স্বরাষ্ট্র মন্ত্রণালয়ের"
+        },
+        {
+          "cluster_id": 500,
+          "slug": "national-500",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগামী জানুয়ারিতে স্থানীয় সরকার নির্বাচন হতে পারে: ইসি আনোয়ারুল ইসলাম"
+        }
+      ]
     },
     "national-78": {
       "cluster_id": 78,
