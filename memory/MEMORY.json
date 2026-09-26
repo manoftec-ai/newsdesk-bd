@@ -1013,6 +1013,24 @@
       "tests": "Live verification is the only meaningful test here and it is now green. The self-verifying data-reading-source attribute was the technique that broke the cycle after three blind attempts.",
       "production": "Live and verified: byline renders on 370/377 articles, reading time differs by length, English labels still 0, homepage 200, sitemap 377.",
       "rationale": "User said \"go with your recommendation\", which referred to the D107 byline recommendation (attribute to the source outlet) rather than to the other two open items - median 193 vs 269 words and the 113 Google News wrapper URLs - both of which remain open."
+    },
+    {
+      "id": "D109",
+      "date": "2026-09-26",
+      "title": "Evidence-sufficiency gate + source-yield measurement (the 269-word ask)",
+      "summary": "User asked to close the gap between the 192-word body median and the 269-word market median, and chose \"1+2\": publish less but publish properly, plus add fetchable sources. MEASURED BEFORE REWRITING, and the obvious fix would have been padding. The writer is not the constraint: briefs hand it a median of 49 words of source material and it already produces 192, a 4x expansion, while being explicitly told not to pad. 407 of 423 briefs carry under 250 words of evidence. So the gate is \"do not start a story the evidence cannot finish\", not \"write longer\". At the same 1200-char per-source cap the writer receives, >=100 evidence words clears 70/423 briefs (17%), >=135 clears 48 (11%); measured 68/423 (16%) clear the implemented floor. Added evidenceSufficiency() and evidenceWords() to lib/editorial.mjs, wired into pick_briefs.mjs (142 briefs skipped, so authoring runs are not wasted) and hard-gated in finalize_stories.mjs as EVIDENCE_TOO_THIN because a brief can also arrive via workflow_dispatch without passing through pick. Configurable via MIN_EVIDENCE_WORDS. Observed effect: the 6 picked briefs carry 118-442 evidence words against the 49-word median. A test caught a real flaw - 20 identical members inflated an 8-word brief to 163 - so evidenceWords() counts DISTINCT leads, which matters because the corpus is full of near-duplicate members. SOURCE YIELD: HTTP 200 means nothing. Measured one recent direct article URL per source through the pipeline own extractor: usable bbc-bengali, dainikbangla, tbs, channeli, prothomalo, bd24live, ittefaq, atnbangla, dhakatribune, banglatribune, guardian-world; hollow (200 but ~0 words) bdnews24, samakal, dainikazadi, deshrupantor, daily-observer, voa-bangla; blocked (403 Cloudflare) jamuna, jugantor, kalerkantho. The six hollow sources are the dangerous case because a brief built from them looks multi-sourced when one member carries all the text, which is how the site published confident thin articles. Added tools/measure_source_yield.mjs to reproduce it and config/source-yield.json as the record; do not hand-edit that file. Also fixed enrich_bodies.mjs earlier this session, which had been selecting ORDER BY id and walking the dead tail of the archive (130 attempted, 0 improved; with recent-first targeting 18/40).",
+      "files": [
+        "pipeline/lib/editorial.mjs",
+        "pipeline/tools/pick_briefs.mjs",
+        "pipeline/tools/finalize_stories.mjs",
+        "pipeline/tools/measure_source_yield.mjs",
+        "pipeline/config/source-yield.json",
+        "pipeline/test/evidence-sufficiency.test.mjs",
+        "pipeline/test/finalizer.test.mjs"
+      ],
+      "tests": "296/296 pass (was 286). 10 new in evidence-sufficiency.test.mjs including a corpus-level check that the gate bites but does not stop publishing (3-60% band). Three finalizer cases pin minEvidenceWords: 0 because they test write/skip/gate behaviour rather than sufficiency.",
+      "production": "No site content changed and no workflow edited. The gate only reduces how many articles are produced per run. Deploy not triggered by this change.",
+      "rationale": "User chose \"1+2\" from three offered routes, accepting that volume would fall. Stated the trade-off explicitly rather than cutting the publishing rate silently. Rejected the tempting alternative of raising the writer target, because with 49 words of evidence it would have produced padding."
     }
   ],
   "sources": [
@@ -1358,7 +1376,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 79,
+  "sessionsCount": 80,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",

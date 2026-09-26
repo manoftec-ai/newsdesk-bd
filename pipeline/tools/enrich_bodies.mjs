@@ -105,8 +105,30 @@ if (HOST) {
   where.push('url LIKE ?');
   params.push(`%${HOST}%`);
 }
+// Ordering matters more than it looks.
+//
+// 2026-09-26: this was `ORDER BY id`, oldest first, so every batch walked the
+// dead tail of the archive — pages that now 404, redirect to a homepage, or
+// serve a consent wall. Measured: 130 attempted, 0 improved, across the
+// default pool, --only=direct and --only=gnews.
+//
+// The same tool run against a RECENT direct item (id 271697, ittefaq) improved
+// it by 2,539 chars — 417 words of real article text. Recent direct URLs enrich
+// reliably; the old ones generally cannot.
+//
+// So default to newest-first, and let --days= bound the window. `--order=id`
+// keeps the historical sweep available for when the archive is the goal.
+const ORDER = arg('order') || 'recent';
+const DAYS = Number(arg('days') || '') || 0;
+const ORDER_SQL = {
+  recent: 'seen_at DESC, id DESC',
+  id: 'id',
+  published: 'published_at DESC, id DESC',
+}[ORDER];
+if (!ORDER_SQL) throw new Error(`invalid --order=${ORDER} (use recent|id|published)`);
+
 const rows = db
-  .prepare(`SELECT id, source_id, url, url_hash, title, body, published_at FROM raw_items ${where.length ? `WHERE ${where.join(' AND ')}` : ''} ORDER BY id`)
+  .prepare(`SELECT id, source_id, url, url_hash, title, body, published_at, seen_at FROM raw_items ${where.length ? `WHERE ${where.join(' AND ')}` : ''} ORDER BY ${ORDER_SQL}`)
   .all(...params);
 
 const thin = rows.filter((r) => needsBodyEnrichment(r));
@@ -116,6 +138,15 @@ let pool = thin;
 if (IDS.length) pool = thin.filter((r) => IDS.includes(String(r.id)));
 else if (ONLY === 'gnews') pool = thin.filter((r) => googleNewsArticleId(r.url));
 else if (ONLY === 'direct') pool = thin.filter((r) => !googleNewsArticleId(r.url));
+if (DAYS > 0) {
+  const cutoff = Date.now() - DAYS * 86400000;
+  const kept = pool.filter((r) => {
+    const t = Date.parse(r.seen_at || r.published_at || '') || 0;
+    return t >= cutoff;
+  });
+  console.log(`--days=${DAYS}: ${kept.length} of ${pool.length} candidates are recent enough`);
+  pool = kept;
+}
 console.log(`store.db: ${rows.length} items, ${thin.length} still thin${HOST ? ` (host ~ ${HOST})` : ''}`);
 if (IDS.length) console.log(`filter: ids=${IDS.join(',')} -> ${pool.length} candidates`);
 if (ONLY) console.log(`filter: only=${ONLY} -> ${pool.length} candidates`);

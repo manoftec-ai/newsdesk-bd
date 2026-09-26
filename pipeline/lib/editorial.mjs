@@ -509,3 +509,52 @@ export function editorialValue(brief) {
 }
 
 export const _internal = { DAY_WORDS };
+// --- evidence sufficiency (added 2026-09-26) ---------------------------------
+//
+// WHY. The site published a 192-word median body against a 269-word market
+// median, and the obvious response — tell the writer to write more — would have
+// produced padding. Measuring first showed the writer is not the constraint:
+//
+//   median brief members          2
+//   median source words per brief 49
+//   median article produced      192   (a 4x expansion, already)
+//
+// 407 of 423 briefs carry under 250 words of evidence. So the gate is not "write
+// longer", it is "do not start a story the evidence cannot finish".
+//
+// Measured against the real corpus, using the same per-source 1200-char excerpt
+// cap the writer receives:
+//   >=100 evidence words  70/423 briefs (17%)
+//   >=125                 51/423 (12%)
+//   >=135 (269-word ask) 48/423 (11%)
+//
+// 100 is the floor: below it a 200-word article would be mostly invention.
+export const DEFAULT_MIN_EVIDENCE_WORDS = 100;
+
+// Bangla averages a little over 6 characters per word including the space.
+const CHARS_PER_WORD = 6.5;
+
+export function evidenceWords(brief, { cap = 1200 } = {}) {
+  const members = Array.isArray(brief?.members) ? brief.members : [];
+  // Distinct leads only. Ten copies of one wire story is one piece of evidence,
+  // not ten, and counting them would let a thin brief pass by duplication. The
+  // corpus is full of near-duplicate members, so this is a real case, not a
+  // hypothetical: the 20x-identical test in evidence-sufficiency.test.mjs caught
+  // it inflating a 8-word brief to 163.
+  const leads = new Set(
+    members.map((m) => String(m?.lead ?? '').trim()).filter(Boolean),
+  );
+  const chars = [...leads].reduce((sum, lead) => sum + Math.min(cap, lead.length), 0);
+  return Math.round(chars / CHARS_PER_WORD);
+}
+
+/**
+ * Is there enough source material to write a real article from?
+ * Returns { pass, evidenceWords, minWords, members }.
+ * A brief with no members at all is blocked rather than passed.
+ */
+export function evidenceSufficiency(brief, { min = DEFAULT_MIN_EVIDENCE_WORDS } = {}) {
+  const words = evidenceWords(brief);
+  const members = Array.isArray(brief?.members) ? brief.members.length : 0;
+  return { pass: members > 0 && words >= min, evidenceWords: words, minWords: min, members };
+}
