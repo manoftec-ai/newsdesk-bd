@@ -30,5 +30,35 @@
     "jamuna": 403,
     "jugantor": 403,
     "kalerkantho": 403
+  },
+  "production": {
+    "_comment": "Measured ON THE GITHUB RUNNER 2026-09-26 via .github/workflows/probe-sources.yml, which is the network that actually fetches sources in production. This OVERRIDES the sandbox measurement in usable/hollow/blocked below when they disagree. Cloudflare blocks GitHub Actions IP ranges but not residential IPs, so a source that works locally can be 403 in production.",
+    "measuredAt": "2026-09-26",
+    "runner": "ubuntu-latest",
+    "usable": {
+      "atnbangla": 244,
+      "bbc_bengali": 943,
+      "channeli": 445,
+      "dainikbangla": 919,
+      "guardian_world": 155,
+      "prothomalo": 379,
+      "tbs": 589
+    },
+    "usableCount": 7,
+    "measuredCount": 20,
+    "blockedCount": 9,
+    "hollowCount": 4,
+    "blockedFromCI": [
+      "banglatribune",
+      "bd24live",
+      "daily-observer",
+      "deshrupantor",
+      "dhakatribune",
+      "ittefaq",
+      "jamuna",
+      "jugantor",
+      "kalerkantho"
+    ],
+    "note": "ittefaq is reachable in production only through its gnews site: proxy, which is already how config/sources.yaml fetches it. The other eight are hard-blocked from CI."
   }
 }
