@@ -1081,6 +1081,19 @@
       "tests": "319/319 pass (was 312). 7 new in tier-a-single-source.test.mjs covering the badge ladder being unrelaxed, all three min_badge sites agreeing, the extract mark-instead-of-drop, the frontmatter flag, the rendered notice, the tie-break ordering, and the floors being unchanged.",
       "production": "The uncorroborated notice is live on the deployed article template. Policy change affects which stories publish from the next pipeline run.",
       "rational": "User chose my recommendation over their own proposal after I showed the measurement. The risk being accepted, stated plainly in the commit: a wrong political or national headline can now reach the site on one source, and the badge plus notice reduce the chance a reader is misled but do not eliminate it."
+    },
+    {
+      "id": "D113",
+      "date": "2026-09-26",
+      "title": "Author model switched to opencode/space-bunny-free to fix the publication-gate rejection loop",
+      "summary": "User reported no new news for several hours. DIAGNOSED rather than guessed: last publish 06:31 (national-437); pipeline success 10:02; auto-author success 09:45; 6 briefs picked and ALL 6 rejected (wrote=0 rejected=6). Rejection mix was PUBLICATION_GATE_BLOCKED x5 and CLUSTER_INCOHERENT x1, with MECHANICAL_AUDIT_FAILED on 5/5 and QUOTE_INTEGRITY_FAILED on 5/5. So the bots were healthy and the silence was a gate rejecting the writer output. Explicitly NOT caused by the D109 evidence floor or the D112 tier A policy - those appeared in only one rejection; the other five were the pre-existing publication gate. RULED OUT a mis-calibrated gate by writing a 103-word body for sports-433 from its own member leads: GATE PASS true, zero failure codes. The gate is right; the writer was producing bodies it then rejected. ROOT CAUSE: the writer prompt mentioned quotes only inside the factcheck/analysis sections, so the default news format never saw the rule, and the audit treats any text between quote marks as a quotation that must appear word-for-word in the fact pool - one paraphrased phrase discards an otherwise sound article. FIX 1: added one line to the LENGTH STANDARD block, which every format reads, stating the check exists and recommending no quotation marks at all - report speech as plain prose, quote only when copying an exact sentence from a lead. FIX 2 (the bigger lever, the user decision): created the repo Actions variable OPENCODE_AUTHOR_MODEL = opencode/space-bunny-free, which auto-author.yml already consumed via vars.OPENCODE_AUTHOR_MODEL || opencode/big-pickle. Verified the variable is read in preference to the fallback, HTTP 201 on create, and confirmed present. The previous model was opencode/big-pickle, a small model asked to satisfy a dozen strict mechanical rules at once, which is the likeliest reason the failure rate was near 100%. NOT YET PROVEN: the run that picks up the new model had not completed at the time of writing, so the fix is unverified. I said so rather than claim success.",
+      "files": [
+        "pipeline/lib/synth.mjs",
+        "repo Actions variable OPENCODE_AUTHOR_MODEL"
+      ],
+      "tests": "319/319 pass, unchanged. The prompt line is verified present in the rendered news prompt for a real brief.",
+      "production": "Repo Actions variable OPENCODE_AUTHOR_MODEL set to opencode/space-bunny-free. The auto-author workflow will use it on its next run; big-pickle remains only as a fallback. No workflow file edit was needed.",
+      "rational": "Model choice was put to the user because model and rate-limit cost is their call, and the workflow already exposed the switch as a repo variable. I set it only after they asked for it by name."
     }
   ],
   "sources": [
@@ -1426,7 +1439,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 83,
+  "sessionsCount": 84,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
