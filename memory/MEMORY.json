@@ -1047,6 +1047,21 @@
       "tests": "312/312 pass (was 296), 16 new. Honest limit: a full end-to-end publish needs a brief backed by a live cluster, so synthetic fixtures are rejected with BRIEF_INVALID before the body is read; floor-composition arithmetic covered directly instead.",
       "production": "No site content changed, no workflow edited, no new dependency. The excerpt cap raise changes brief content on the next extract run, increasing published article length - intended.",
       "rational": "User specified the rule directly. Chose 250/250 as the default pair as the more conservative reading of \"300/250+\", and made it a one-env-change to 300/300 rather than guessing which pair they meant."
+    },
+    {
+      "id": "D111",
+      "date": "2026-09-26",
+      "title": "Source expansion: +2 verified, and the sandbox probe was misleading about production",
+      "summary": "User asked for as many usable sources as possible. Built tools/probe_new_sources.mjs, which requires BOTH a working feed AND a real article extracting to 100+ words through the pipeline own extractArticleBody - testing the feed alone would admit the six sources that return HTTP 200 and yield nothing. It also asks each homepage which feed it declares rather than trusting a guessed /feed path. From the sandbox, 2 of 28 candidates passed and were added: prothomalo-en (881 words) and bbc-bengali-com (983 words). THE IMPORTANT FINDING IS THAT THE LOCAL PROBE WAS WRONG IN BOTH DIRECTIONS. Added .github/workflows/probe-sources.yml to measure from the GitHub runner, which is the network that actually fetches sources in production, and it reports: usable 7 of 20 (bbc-bengali 943, dainikbangla 919, tbs 589, channeli 445, prothomalo 379, atnbangla 244, guardian-world 155), blocked by Cloudflare 9 (banglatribune, bd24live, daily-observer, deshrupantor, dhakatribune, ittefaq, jamuna, jugantor, kalerkantho), hollow 4 (bdnews24 46, samakal 34, dainikazadi 1, voa-bangla 0). bd24live, dhakatribune, banglatribune, daily-observer and deshrupantor all extracted fine from the sandbox and are hard 403 from CI - Cloudflare blocks GitHub Actions IP ranges but not residential IPs, so a local probe is NOT evidence about production. ittefaq survives in production only through its gnews site: proxy, already how the config fetches it. Consequence: the evidence problem is WORSE in production than the sandbox suggested, and only 7 sources can actually enrich. The 25 dead candidates are genuinely dead - unreachable from GitHub network too - so the realistic ceiling on evidence per story is low. Recorded the production numbers in config/source-yield.json under a production key that explicitly overrides the sandbox measurement where they disagree.",
+      "files": [
+        "pipeline/tools/probe_new_sources.mjs",
+        "pipeline/config/sources.yaml",
+        "pipeline/config/source-yield.json",
+        ".github/workflows/probe-sources.yml"
+      ],
+      "tests": "312/312 pass, unchanged. probe-sources.yml is read-only by design: it never edits config/sources.yaml, so a flaky network cannot silently add a dead source. Adding one stays a deliberate act after reading the report.",
+      "production": "config/sources.yaml now 25 sources (23 + prothomalo-en + bbc-bengali-com). Both verified usable. New weekly+on-demand probe workflow, permissions: contents:read, no deploy path touched.",
+      "rational": "User said \"add as many as you can\". The honest answer is that only 2 more could be verified, and the far more valuable finding is that 5 sources working locally are hard-blocked in production, which changes what the evidence ceiling really is."
     }
   ],
   "sources": [
@@ -1392,7 +1407,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 81,
+  "sessionsCount": 82,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
