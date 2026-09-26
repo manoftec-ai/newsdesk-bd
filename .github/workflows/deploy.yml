@@ -24,7 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      VERCEL_PROJECT_ID: prj_FX5YmvjrSM5JnbCm1PNbQuJU6xJO
+      # NOT named VERCEL_PROJECT_ID: the Vercel CLI claims that variable and then
+      # demands VERCEL_ORG_ID alongside it, which fails the deploy. This is only
+      # ever read by the guard step below.
+      DEPLOY_PROJECT_ID: prj_FX5YmvjrSM5JnbCm1PNbQuJU6xJO
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,7 +47,7 @@ jobs:
           SITE_PATHS='site/src site/public site/api site/package.json site/astro.config.mjs'
 
           LIVE=$(curl -sS -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v6/deployments?limit=1&projectId=$VERCEL_PROJECT_ID" \
+            "https://api.vercel.com/v6/deployments?limit=1&projectId=$DEPLOY_PROJECT_ID" \
             | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{
                 try{const d=JSON.parse(s).deployments||[];
                 process.stdout.write((d[0]&&d[0].meta&&d[0].meta.githubCommitSha)||"");}catch(e){}})')
