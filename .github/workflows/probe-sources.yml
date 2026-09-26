@@ -1,0 +1,91 @@
+name: probe-sources
+# Measure which sources actually deliver article text — from CI, not from a laptop.
+#
+# WHY THIS EXISTS (2026-09-26)
+#   The site publishes a 192-word median because 96% of briefs carry under 250
+#   words of evidence. That is a source problem. The user asked for as many usable
+#   sources as possible.
+#
+#   A local probe gave a false picture. From the author's sandbox:
+#     zamanbarta.net, swabhumi.com, dailysun.com.bd, ntvnewsbd.com  -> 000 (no route)
+#     risingbd.com                                                   -> 403 Cloudflare
+#     sportsbangla.com                                               -> 503
+#     bssnews.net                                                    -> 200 but no RSS at all
+#   Only 2 of 28 candidates passed. But GitHub Actions runs on GitHub's
+#   infrastructure, which is a completely different network: a 000 from the
+#   sandbox says nothing about whether CI can reach the host, and a local
+#   "unreachable" is very likely a false negative.
+#
+#   So the authoritative measurement has to happen here, in the environment that
+#   will actually fetch them.
+#
+# WHAT IT DOES
+#   Runs tools/probe_new_sources.mjs and tools/measure_source_yield.mjs on the
+#   runner, and posts the result as a workflow summary. Read-only: it never edits
+#   config/sources.yaml, so a flaky network cannot silently add a dead source.
+#
+#   Adding a source is a deliberate act, done after reading this report.
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly. Source reachability changes slowly and this makes 30+ outbound
+    # requests; there is no reason to run it more often.
+    - cron: '41 5 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install
+        working-directory: pipeline
+        run: npm ci
+
+      - name: Probe candidate outlets (feed + article extraction)
+        working-directory: pipeline
+        continue-on-error: true
+        run: node tools/probe_new_sources.mjs | tee probe-new.txt
+
+      - name: Measure yield of already-configured sources
+        working-directory: pipeline
+        continue-on-error: true
+        run: node tools/measure_source_yield.mjs | tee yield.txt
+
+      - name: Publish report
+        if: always()
+        run: |
+          {
+            echo '## Source probe (measured from the GitHub runner)'
+            echo
+            echo '### Candidate outlets not yet configured'
+            echo '```'
+            cat probe-new.txt 2>/dev/null || echo '(probe did not run)'
+            echo '```'
+            echo
+            echo '### Yield of currently configured sources'
+            echo '```'
+            cat yield.txt 2>/dev/null || echo '(measurement did not run)'
+            echo '```'
+            echo
+            echo 'Read-only: nothing was added to config/sources.yaml. A source is'
+            echo 'only worth adding when it shows USABLE, meaning its feed returns'
+            echo 'items AND a real article extracts to at least 100 words.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload raw output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-probe
+          path: |
+            pipeline/probe-new.txt
+            pipeline/yield.txt
+          if-no-files-found: ignore

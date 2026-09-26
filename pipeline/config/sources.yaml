@@ -299,3 +299,22 @@ sources:
 # - headless method deprecated 2026-09-21: kalerkantho/jugantor/jamuna + daily-observer +
 #   bd24live (HTTP 403 on runner) now use gnews (Google News site: proxy). No browser needed.
 # ACTIVE SOURCE SET (2026-09-21) = 13 gnews + 5 rss + 4 scraper + 1 gtrends = 23 sources (up from 12).
+  - id: prothomalo-en
+    nameBn: প্রথম আলো ইংরেজি
+    nameEn: Prothom Alo English
+    lang: bn
+    method: rss
+    feed: https://en.prothomalo.com/feed
+    home: https://en.prothomalo.com/
+    reputation: standard
+    note: "2026-09-26 probe: feed OK, article extraction verified (>=100 words)."
+
+  - id: bbc-bengali-com
+    nameBn: বিবিসি বাংলা
+    nameEn: BBC News Bengali
+    lang: bn
+    method: rss
+    feed: https://feeds.bbci.co.uk/bengali/rss.xml
+    home: https://www.bbc.com/bengali
+    reputation: standard
+    note: "2026-09-26 probe: feed OK, article extraction verified (>=100 words)."
