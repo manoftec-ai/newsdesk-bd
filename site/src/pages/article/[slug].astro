@@ -52,13 +52,13 @@ const post = {
 // Astro 7, and reading the file relative to `import.meta.url` throws during the
 // build because that URL is not the source path. Use Astro's own glob, which
 // resolves at build time and is the idiomatic way to get raw content here.
-const rawNews = import.meta.glob("../content/news/*.md", {
+const rawNews = import.meta.glob("../../content/news/*.md", {
   query: "?raw",
   import: "default",
 });
 
 const readingMinutes = (() => {
-  const raw = rawNews[`../content/news/${entry.id}.md`] ?? "";
+  const raw = rawNews[`../../content/news/${entry.id}.md`] ?? "";
   const bodyText = String(raw).replace(/^---\s*\n[\s\S]*?\n---\s*\n?/, "");
   const words = bodyText.split(/\s+/).filter(Boolean).length;
   // 150 wpm reads honestly for Bangla prose. At 200 the whole corpus rounded to
