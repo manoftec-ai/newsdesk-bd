@@ -65,7 +65,17 @@ export function slugFromHeadline(headline, { categorySlug = 'news', clusterId } 
 // 100 words and emitted restatements instead. Real BD outlet articles measure
 // 269 median / 348 mean, so 1200 chars per source is what it takes to write one.
 // Still an excerpt for citation - never a full reprint.
-function excerptOf(body, n = 1200) {
+// Per-source excerpt handed to the writer, in characters.
+//
+// 2026-09-26: this was 1200, which is ~185 Bangla words. That silently made the
+// user's rule — "when two sources each have 250+ words, publish an article of
+// 250+ words" — impossible to satisfy, because no single member could ever reach
+// 250 words no matter how much text the source actually had. 0 of 423 briefs
+// qualified, and not because they were thin: the cap was the reason.
+//
+// 2000 chars is ~300 words, so a genuinely long source can now register as one.
+// 6.5 chars per word is the measured Bangla average including the space.
+function excerptOf(body, n = 2000) {
   const plain = String(body ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   return plain.slice(0, n) + (plain.length > n ? '…' : '');
 }

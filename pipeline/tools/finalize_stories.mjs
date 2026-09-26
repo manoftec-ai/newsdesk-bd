@@ -18,7 +18,14 @@ import { runPublicationGate } from '../lib/publication-gate.mjs';
 import { frontMatter, prepBody, storyExists } from '../lib/synth.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { validatePublicArticle } from './site_preflight.mjs';
-import { bodySubstanceCheck, minPublishWords, evidenceSufficiency, DEFAULT_MIN_EVIDENCE_WORDS } from '../lib/editorial.mjs';
+import {
+  bodySubstanceCheck,
+  minPublishWords,
+  evidenceSufficiency,
+  DEFAULT_MIN_EVIDENCE_WORDS,
+  richSourceRule,
+  richSourceThresholds,
+} from '../lib/editorial.mjs';
 import { clusterCoherence, coherenceMin, COHERENCE_FAILURE_CODE } from '../lib/cluster-coherence.mjs';
 
 const DEFAULT_PICK_PATH = resolve(import.meta.dirname, '../state/pick.json');
@@ -121,6 +128,7 @@ export function finalizeStories({
   env = process.env,
 } = {}) {
   const evidenceFloor = Number(env.MIN_EVIDENCE_WORDS) || minEvidenceWords;
+  const richThresholds = richSourceThresholds(env);
   const startedAt = now;
   const result = {
     startedAt,
@@ -223,13 +231,30 @@ export function finalizeStories({
         // Body-substance floor: evidence checks alone cannot tell a real article
         // from a headline restatement. Blocks NO_READER_VALUE (rv1) and
         // BODY_TOO_THIN. Configurable via PUBLISH_MIN_WORDS.
-        const substance = bodySubstanceCheck(brief.headline ?? '', body, { minWords });
+        // Rich-source rule: when 2+ sources each carry a full article's worth of
+        // text, the story must be published as a full article. The user set this
+        // explicitly: two sources at 250+ words each means the article is not
+        // less than 250 words. Without it a well-sourced story could still ship
+        // at the 150-word floor, which throws away evidence already paid for.
+        const rich = richSourceRule(brief, richThresholds);
+        const floor = Math.max(minWords, rich.requiredWords);
+        const substance = bodySubstanceCheck(brief.headline ?? '', body, { minWords: floor });
         if (!substance.pass) {
           result.rejected.push(rejection(slug, 'BODY_SUBSTANCE_BLOCKED', {
             code: substance.code,
             bodyWords: substance.bodyWords,
-            minWords: substance.minWords,
+            minWords: floor,
             novelTokens: substance.novel.length,
+            ...(rich.requiredWords > minWords
+              ? {
+                  richSourceRule: {
+                    requiredWords: rich.requiredWords,
+                    sourcesAtOrAbove: rich.richSources,
+                    perSourceWords: rich.perSourceWords,
+                    memberWords: rich.memberWords,
+                  },
+                }
+              : {}),
           }));
           continue;
         }

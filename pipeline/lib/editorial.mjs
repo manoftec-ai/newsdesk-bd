@@ -570,3 +570,70 @@ export function evidenceSufficiency(brief, { min = DEFAULT_MIN_EVIDENCE_WORDS } 
   const members = Array.isArray(brief?.members) ? brief.members.length : 0;
   return { pass: members > 0 && words >= min, evidenceWords: words, minWords: min, members };
 }
+
+// --- rich-source rule (added 2026-09-26) ------------------------------------
+//
+// USER'S RULE, verbatim intent: when the writer/pipeline finds two sources that
+// EACH have more than ~250-300 words, the article must catch that and publish at
+// NOT LESS THAN 250-300 words.
+//
+// This is the companion to the evidence gate above. The gate stops a thin story
+// from starting; this stops a well-sourced one from being published short. A
+// story with two 250-word sources has ~500 words of real material, so a 250-word
+// article is a 2x expansion — well inside honest, and well short of padding.
+//
+// Both thresholds are configurable because the user said "300/250+" and
+// "250/300" without fixing which pair:
+//   RICH_SOURCE_WORDS  how many words ONE source must have   (default 250)
+//   RICH_ARTICLE_WORDS  how long the article must then be    (default 250)
+//   RICH_SOURCE_COUNT   how many sources must qualify        (default 2)
+export const DEFAULT_RICH_SOURCE_WORDS = 250;
+export const DEFAULT_RICH_ARTICLE_WORDS = 250;
+export const DEFAULT_RICH_SOURCE_COUNT = 2;
+
+/** Words of body in each brief member, in source order. */
+export function memberWordCounts(brief) {
+  const members = Array.isArray(brief?.members) ? brief.members : [];
+  return members.map((m) => bodyWordCount(String(m?.lead ?? '')));
+}
+
+/**
+ * Does this story have enough genuinely long sources to demand a full article?
+ * Returns { rich, richSources, requiredWords, perSourceWords, memberWords }.
+ * `requiredWords` is 0 when the rule does not fire, so callers can treat it as
+ * "no extra requirement" without a second lookup.
+ */
+export function richSourceRule(
+  brief,
+  {
+    sourceWords = DEFAULT_RICH_SOURCE_WORDS,
+    articleWords = DEFAULT_RICH_ARTICLE_WORDS,
+    sourceCount = DEFAULT_RICH_SOURCE_COUNT,
+  } = {},
+) {
+  const memberWords = memberWordCounts(brief);
+  const qualifying = memberWords.filter((w) => w >= sourceWords);
+  const rich = qualifying.length >= sourceCount;
+  return {
+    rich,
+    richSources: qualifying.length,
+    requiredWords: rich ? articleWords : 0,
+    perSourceWords: sourceWords,
+    memberWords,
+  };
+}
+
+/** Env-configurable thresholds, falling back to the defaults. */
+export function richSourceThresholds(env = process.env) {
+  const num = (raw, dflt) => {
+    const s = String(raw ?? '').trim();
+    if (s === '') return dflt;
+    const n = Number(s);
+    return Number.isFinite(n) && n > 0 ? Math.round(n) : dflt;
+  };
+  return {
+    sourceWords: num(env.RICH_SOURCE_WORDS, DEFAULT_RICH_SOURCE_WORDS),
+    articleWords: num(env.RICH_ARTICLE_WORDS, DEFAULT_RICH_ARTICLE_WORDS),
+    sourceCount: num(env.RICH_SOURCE_COUNT, DEFAULT_RICH_SOURCE_COUNT),
+  };
+}
