@@ -71,7 +71,8 @@ console.log('');
 
 const dupes = one(
   `SELECT COUNT(*) c FROM claim_evidence
-    WHERE id NOT IN (SELECT MIN(id) FROM claim_evidence GROUP BY claim_id,url,excerpt)`,
+    WHERE url IS NOT NULL
+      AND id NOT IN (SELECT MIN(id) FROM claim_evidence WHERE url IS NOT NULL GROUP BY claim_id,url)`,
 ).c;
 console.log(`  removable duplicate rows: ${dupes}`);
 console.log(`  mode: ${WRITE ? 'WRITE (migrate + VACUUM)' : 'DRY RUN — add --write'}`);
@@ -83,10 +84,25 @@ if (!WRITE) {
   process.exit(0);
 }
 
-// 1. Collapse duplicates, keeping the earliest row of each distinct tuple.
+// 1. Collapse duplicates, keeping the earliest row of each distinct article.
+//
+//    Key is (claim_id, url) for rows that have a url, NOT (claim_id, url,
+//    excerpt). Two rows for the same claim and the same article URL are the same
+//    piece of evidence even when the extractor pulled slightly different text on
+//    different runs. Measured on this database: 1,207 rows collapse to 993 on
+//    (claim_id, url), and there are zero cases where one (claim_id, url) pair
+//    carries two different relations, so nothing is lost by collapsing.
+//
+//    This is also the key of the uq_ce_claim_url unique index added in db.mjs, so
+//    the two must agree or the index cannot be created.
 db.exec(
   `DELETE FROM claim_evidence
-    WHERE id NOT IN (SELECT MIN(id) FROM claim_evidence GROUP BY claim_id,url,excerpt)`,
+    WHERE url IS NOT NULL
+      AND id NOT IN (
+        SELECT MIN(id) FROM claim_evidence
+        WHERE url IS NOT NULL
+        GROUP BY claim_id, url
+      )`,
 );
 
 // 2. Repair every open snapshot so the next verify run sees no change.

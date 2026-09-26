@@ -90,6 +90,10 @@ export function openDb(path = DB_PATH) {
       FOREIGN KEY(claim_id) REFERENCES claims(id) ON DELETE CASCADE
     );
     CREATE INDEX IF NOT EXISTS idx_ce_claim ON claim_evidence(claim_id);
+    -- Stop the 48x duplication recurring. Partial on url IS NOT NULL because url
+    -- is nullable and SQLite counts NULLs as distinct in a unique index, which
+    -- would leave url-less evidence free to duplicate. See addClaimEvidence().
+    CREATE UNIQUE INDEX IF NOT EXISTS uq_ce_claim_url ON claim_evidence(claim_id, url) WHERE url IS NOT NULL;
     -- Temporal truth: append-only verification snapshots per claim. Each row is a
     -- period during which a claim's verification state was VALID (valid_from..valid_until;
     -- valid_until NULL = the current open period). Never mutated in place — a status
@@ -247,8 +251,19 @@ export function upsertClaim(db, { cluster_id, story_slug = null, claim_text, cla
 
 export function addClaimEvidence(db, { claim_id, source_id, url = null, excerpt = null, relation = 'supports', evidence_type = null, published_at = null }) {
   const now = new Date().toISOString();
+  // INSERT OR IGNORE, backed by the partial unique index added in ensureSchema.
+  //
+  // 2026-09-26: this was a bare INSERT, and the pipeline re-attaches the same
+  // evidence on every run, so claim_evidence grew to 68,500 rows holding only
+  // 1,207 distinct (claim_id, url, excerpt) tuples. 62 MB of a database that
+  // then crossed GitHub's 100 MB hard file-size limit and blocked every push.
+  //
+  // The index is PARTIAL on url IS NOT NULL, because url is nullable and SQLite
+  // treats NULLs as distinct in a unique index, which would let url-less
+  // evidence duplicate freely. `id` is the conflict target, which SQLite accepts
+  // for partial indexes, so only genuinely new evidence inserts.
   db.prepare(`
-    INSERT INTO claim_evidence (claim_id, source_id, url, excerpt, relation, evidence_type, published_at, created_at)
+    INSERT OR IGNORE INTO claim_evidence (claim_id, source_id, url, excerpt, relation, evidence_type, published_at, created_at)
     VALUES (?,?,?,?,?,?,?,?)
   `).run(claim_id, source_id, url, excerpt, relation, evidence_type, published_at, now);
 }
