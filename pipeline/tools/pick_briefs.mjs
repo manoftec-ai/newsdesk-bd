@@ -10,7 +10,7 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
-import { editorialValue } from '../lib/editorial.mjs';
+import { editorialValue, evidenceSufficiency, DEFAULT_MIN_EVIDENCE_WORDS } from '../lib/editorial.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -33,11 +33,13 @@ const briefs = readdirSync(BRIEFS_DIR)
     const slug = f.replace(/\.json$/, '');
     let date = '', headline = '';
     let ev = { score: 0 };
+    let evidence = { pass: false, evidenceWords: 0, minWords: DEFAULT_MIN_EVIDENCE_WORDS, members: 0 };
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
       date = j.date || '';
       headline = j.headline || '';
       ev = editorialValue(j);
+      evidence = evidenceSufficiency(j);
     } catch {
       // unreadable brief -> treat as no-date/headline, never first.
     }
@@ -46,12 +48,21 @@ const briefs = readdirSync(BRIEFS_DIR)
       date,
       headline,
       evScore: ev.score,
+      evidence,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
     };
   });
 
-const pending = briefs.filter((b) => !b.published && !b.titleDup);
+// Do not START a story the evidence cannot finish (2026-09-26). Measured: 407
+// of 423 briefs carry under 250 words of source material, and the writer
+// already expands the median 49 words into a 192-word body. Picking these wastes
+// an authoring run to produce a thin article that the finalizer would reject.
+const MIN_EVIDENCE = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS;
+const tooThin = briefs.filter((b) => b.evidence.evidenceWords < MIN_EVIDENCE && !b.published);
+const pending = briefs.filter(
+  (b) => !b.published && !b.titleDup && b.evidence.evidenceWords >= MIN_EVIDENCE,
+);
 // #22 — editorial-value ranking (internal only): either newest-first, and
 // within the same publish date the higher-value story is picked first.
 pending.sort(
@@ -83,6 +94,7 @@ writeFileSync(
   ),
 );
 const dupCount = briefs.filter((b) => b.titleDup).length;
+console.log(`evidence gate: ${tooThin.length} briefs under ${MIN_EVIDENCE} words of source material, skipped`);
 console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, then editorial value, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
 for (const p of picked) console.log(`  ${p.date || 'no-date'}  ev=${p.evScore}  ${p.slug}`);
 if (!picked.length) console.log('  -> no unpublished briefs');

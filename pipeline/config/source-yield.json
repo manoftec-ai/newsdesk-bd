@@ -1,0 +1,34 @@
+{
+  "_comment": "Measured extraction yield per source. Re-measure with `node tools/measure_source_yield.mjs --write` before changing anything here. HTTP 200 does NOT mean the extractor can read the page.",
+  "measuredAt": "2026-09-26",
+  "method": "1 recent non-google-news raw_items.url per source; HTTP 200 + extractArticleBody; words = cleanBody(body) token count; window 5d",
+  "usable": {
+    "bbc-bengali": 943,
+    "dainikbangla": 919,
+    "tbs": 589,
+    "channeli": 445,
+    "prothomalo": 379,
+    "bd24live": 346,
+    "ittefaq": 299,
+    "atnbangla": 244,
+    "dhakatribune": 237,
+    "banglatribune": 203,
+    "guardian-world": 155
+  },
+  "marginal": {},
+  "hollow": {
+    "_comment": "HTTP 200 but the extractor finds almost nothing. Likely JS-rendered, paywalled, or a selector mismatch. Do not trust a brief whose members are all hollow sources.",
+    "bdnews24": 46,
+    "samakal": 26,
+    "dainikazadi": 1,
+    "deshrupantor": 1,
+    "daily-observer": 0,
+    "voa-bangla": 0
+  },
+  "blocked": {
+    "_comment": "HTTP 403. Cloudflare bot protection. Cannot be enriched at all.",
+    "jamuna": 403,
+    "jugantor": 403,
+    "kalerkantho": 403
+  }
+}

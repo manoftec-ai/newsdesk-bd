@@ -105,6 +105,11 @@ function runFixture(fixture) {
   return finalizeStories({
     ...fixture,
     now: NOW,
+    // These cases exercise write/skip/gate behaviour, not evidence sufficiency.
+    // The fixture bodies are short, so pin the floor to 0 and let each test set
+    // what it needs. Test "blocks a brief whose evidence cannot support a
+    // story" covers the real default separately.
+    minEvidenceWords: 0,
   });
 }
 

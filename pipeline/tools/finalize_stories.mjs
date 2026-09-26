@@ -18,7 +18,7 @@ import { runPublicationGate } from '../lib/publication-gate.mjs';
 import { frontMatter, prepBody, storyExists } from '../lib/synth.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { validatePublicArticle } from './site_preflight.mjs';
-import { bodySubstanceCheck, minPublishWords } from '../lib/editorial.mjs';
+import { bodySubstanceCheck, minPublishWords, evidenceSufficiency, DEFAULT_MIN_EVIDENCE_WORDS } from '../lib/editorial.mjs';
 import { clusterCoherence, coherenceMin, COHERENCE_FAILURE_CODE } from '../lib/cluster-coherence.mjs';
 
 const DEFAULT_PICK_PATH = resolve(import.meta.dirname, '../state/pick.json');
@@ -113,9 +113,14 @@ export function finalizeStories({
   rejectionsPath = DEFAULT_REJECTIONS_PATH,
   max = Infinity,
   minWords = minPublishWords(),
+  // `env` is declared below, so a default here cannot read it (TDZ). Use
+  // process.env directly for the default and let an explicit `env` still win
+  // inside the function body.
+  minEvidenceWords = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS,
   now = new Date().toISOString(),
   env = process.env,
 } = {}) {
+  const evidenceFloor = Number(env.MIN_EVIDENCE_WORDS) || minEvidenceWords;
   const startedAt = now;
   const result = {
     startedAt,
@@ -163,6 +168,20 @@ export function finalizeStories({
           continue;
         }
         const brief = JSON.parse(readFileSync(briefPath, 'utf8'));
+        // Evidence-sufficiency gate: refuse to publish a story whose sources cannot
+        // support it. Added 2026-09-26 after measuring why the body median sat at
+        // 192 words against a 269-word market median — briefs hand the writer a
+        // median of 49 words of material and it already expands that 4x, so the
+        // shortfall is evidence, not effort. Configurable via MIN_EVIDENCE_WORDS.
+        const sufficiency = evidenceSufficiency(brief, { min: evidenceFloor });
+        if (!sufficiency.pass) {
+          result.rejected.push(rejection(slug, 'EVIDENCE_TOO_THIN', {
+            evidenceWords: sufficiency.evidenceWords,
+            minEvidenceWords: sufficiency.minWords,
+            members: sufficiency.members,
+          }));
+          continue;
+        }
         // Cluster-coherence guard: reject a brief whose members are not all about
         // the same event, BEFORE any body is considered. The 150-word body floor
         // cannot catch this - a mashed-together cluster still produces plenty of
