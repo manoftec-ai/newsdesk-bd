@@ -119,3 +119,43 @@ test('the evidence floor is unchanged by this policy change', () => {
   const verify = read('../lib/verify.mjs');
   assert.match(verify, /confirmed_min/, 'corroboration threshold must still be config-driven');
 });
+
+// --- the FOURTH tier A gate (found 2026-09-27) --------------------------------
+// D112 relaxed min_badge in three places. This is the fourth, and it is why the
+// site stayed silent afterwards: 94 of 272 unpublished briefs were blocked here,
+// so the policy change was almost entirely inert.
+test('tier A on a single source is no longer blocked at the headline check', () => {
+  const src = read('../lib/publication-gate.mjs');
+  assert.ok(
+    !/tier === 'A' && claimStatus === 'SINGLE_SOURCE'/.test(src),
+    'the tier A + SINGLE_SOURCE clause is back - it silently blocks every single-source tier A story',
+  );
+  assert.match(
+    src,
+    /if \(!headline \|\| !claim \|\| result\.status !== 'supported' \|\| surfacesWeak\)/,
+    'the genuine protections must remain: headline must exist, trace to sources, and no weak surface',
+  );
+});
+
+test('the headline gate keeps every real protection', () => {
+  const src = read('../lib/publication-gate.mjs');
+  // Weakening one clause must not have removed the others.
+  assert.match(src, /!headline/, 'a missing headline must still fail');
+  assert.match(src, /!claim/, 'a missing claim must still fail');
+  assert.match(src, /result\.status !== 'supported'/, 'an unsupported headline must still fail');
+  assert.match(src, /\['weak', 'poor', 'overclaim'\]/, 'a weak surface must still fail');
+  assert.match(src, /headlineHasHype/, 'hype detection must remain');
+  assert.match(src, /HEADLINE_HYPE/, 'hype must still be a separate failure code');
+});
+
+test('a single-source claim still cannot be labelled confirmed', () => {
+  // The safety of the D112/D113 change rests on the badge ladder, not on
+  // suppression. If this ever passes, the "not corroborated" notice becomes a lie.
+  const src = read('../lib/verify.mjs');
+  const confirmed = src.match(/score >= vcfg\.confirmed_min \? 'confirmed'/);
+  assert.ok(confirmed, 'confirmed must still be gated on corroboration');
+  const single = src.match(/score >= vcfg\.single_val \? 'single'/);
+  assert.ok(single, 'a lower score must yield single, not confirmed');
+  // and extract must still mark the story uncorroborated
+  assert.match(read('../lib/extract.mjs'), /if \(tierA && !corroborated\) brief\.uncorroborated = true;/);
+});
