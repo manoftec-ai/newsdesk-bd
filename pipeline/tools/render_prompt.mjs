@@ -10,7 +10,7 @@
 import { writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { loadBrief } from '../lib/synth.mjs';
-import { writingPrompt } from '../lib/synth.mjs';
+import { writingPrompt, authoringPrompt } from '../lib/synth.mjs';
 
 const slug = process.argv[2]?.startsWith('--') ? null : process.argv[2];
 const outArg = process.argv.find((a) => a.startsWith('--out='))?.split('=')[1];
@@ -29,7 +29,10 @@ try {
   process.exit(2);
 }
 
-const prompt = writingPrompt(brief);
+// --authoring emits the minimal facts-only prompt. See authoringPrompt() in
+// lib/synth.mjs for why the full prompt made the model echo it instead of
+// writing an article.
+const prompt = process.argv.includes('--authoring') ? authoringPrompt(brief) : writingPrompt(brief);
 
 if (outArg) {
   const outPath = resolve(outArg);

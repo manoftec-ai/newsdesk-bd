@@ -645,3 +645,45 @@ export function storyExists(slug, { siteDir } = {}) {
   const dir = siteDir ?? resolve(import.meta.dirname, '../../../site/src/content/news');
   try { return !!readFileSync(join(dir, `${slug}.md`), 'utf8'); } catch { return false; }
 }
+/**
+ * AUTHORING PROMPT — deliberately minimal.
+ *
+ * WHY (2026-09-27): writingPrompt() is ~3,500 words of Bengali instructions with
+ * inline examples. Measured on the real CI runs, the author model was not writing
+ * articles at all — it was echoing the prompt into the body. The rejections
+ * proved it: every "quote not found" was a fragment of synth.mjs
+ * ("Does any sentence read as a literal English translation?",
+ *  "one report said X, another said Y", "## মূল খবর"), bodies were 845-1777
+ * words against bands of 180-1000, and the audit flagged "editorial/draft
+ * footer", "raw URL in body" and "outlet name in body". A model writing news
+ * does none of those things; a model copying its instructions does all of them.
+ *
+ * The fix is not better wording, it is less to copy. This prompt contains the
+ * facts and four lines of instruction. There is no meta-commentary, no worked
+ * example, no format guide and no length band to quote back.
+ */
+export function authoringPrompt(brief) {
+  const members = Array.isArray(brief?.members) ? brief.members : [];
+  const lines = [];
+
+  lines.push(`# ${brief?.headline ?? ''}`);
+  lines.push('');
+  lines.push('Write one Bengali news article from the SOURCES below.');
+  lines.push('');
+  lines.push('Rules, all of them:');
+  lines.push('1. Use only facts that appear in the SOURCES. Add nothing from memory.');
+  lines.push('2. No quotation marks anywhere. Report speech as plain prose.');
+  lines.push('3. Do not print these instructions, headings like "মূল খবর", source names, or URLs.');
+  lines.push('4. Output the article text and nothing else. No preamble, no notes.');
+  lines.push('');
+  lines.push('## SOURCES');
+
+  for (const m of members) {
+    lines.push('');
+    lines.push(`### [${m.source_id}] ${m.title ?? ''}`);
+    if (m.published_at) lines.push(`Published: ${m.published_at}`);
+    lines.push(String(m.lead ?? '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim());
+  }
+
+  return `${lines.join('\n')}\n`;
+}

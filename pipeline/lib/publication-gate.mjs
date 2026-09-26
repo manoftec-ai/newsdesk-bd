@@ -3,7 +3,7 @@
 // This gate is intentionally fail-closed. A story is publishable only when the
 // immutable evidence snapshot in store.db, the exported brief, and the writer's
 // body all agree. No network calls and no LLM calls happen here.
-import { mechanicalAudit, listPromiseCheck } from './audit.mjs';
+import { mechanicalAudit, listPromiseCheck, promptLeakCheck } from './audit.mjs';
 import { evidenceHash } from './claim-verify.mjs';
 import { readerValueCheck } from './editorial.mjs';
 import { HYPE_TERMS, lexicalSupport, tokenize, verifyHeadline } from './headline-verify.mjs';
@@ -39,6 +39,7 @@ export const PUBLICATION_FAILURE_CODES = Object.freeze({
   READER_VALUE_FAILED: 'READER_VALUE_FAILED',
   LIST_PROMISE_FAILED: 'LIST_PROMISE_FAILED',
   ARTIFICIAL_GENERIC_HEADING: 'ARTIFICIAL_GENERIC_HEADING',
+  PROMPT_LEAKED: 'PROMPT_LEAKED',
   INVALID_FRONTMATTER: 'INVALID_FRONTMATTER',
 });
 
@@ -457,6 +458,11 @@ function checkBody(brief, body, failures, auditFails) {
   // a rejected article undiagnosable from CI - you could see WHICH gate fired but
   // never WHICH rule inside it, nor the note explaining it.
   for (const f of audit.fails ?? []) auditFails.push({ id: f.id, note: String(f.note ?? '').slice(0, 200) });
+
+  // 2026-09-27: name the prompt-echo failure explicitly. It used to surface as
+  // dozens of unrelated audit errors with the real fault invisible among them.
+  const leak = promptLeakCheck(body);
+  if (!leak.pass) failures.add(PUBLICATION_FAILURE_CODES.PROMPT_LEAKED);
 
   const reader = readerValueCheck(brief?.headline ?? '', body);
   if (!reader.ok) failures.add(PUBLICATION_FAILURE_CODES.READER_VALUE_FAILED);
