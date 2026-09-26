@@ -1062,6 +1062,25 @@
       "tests": "312/312 pass, unchanged. probe-sources.yml is read-only by design: it never edits config/sources.yaml, so a flaky network cannot silently add a dead source. Adding one stays a deliberate act after reading the report.",
       "production": "config/sources.yaml now 25 sources (23 + prothomalo-en + bbc-bengali-com). Both verified usable. New weekly+on-demand probe workflow, permissions: contents:read, no deploy path touched.",
       "rational": "User said \"add as many as you can\". The honest answer is that only 2 more could be verified, and the far more valuable finding is that 5 sources working locally are hard-blocked in production, which changes what the evidence ceiling really is."
+    },
+    {
+      "id": "D112",
+      "date": "2026-09-26",
+      "title": "Tier A may publish on a single source, but can never be labelled corroborated",
+      "summary": "USER ASKED: publish a story even when no second source matches, and only award the corroborated badge when several sources agree. I MEASURED FIRST and told them the fix would differ from what they expected: 427 briefs total, 357 (84%) blocked by the EVIDENCE gate (under 100 words of material), 70 pass it, 55 of those already have 3+ sources, and only 15 have 1-2 sources. So relaxing corroboration would NOT have made the site update much more often - the blockage is missing text, not missing corroboration. I said so plainly rather than implement the ask as written and let them discover it from the volume. The change is still correct for a reason neither of us had spotted: tier A demanded \"confirmed\", and with only 7 of 20 sources able to enrich from CI, national/politics/international news almost never published at all. A site silent on the news that matters most is its own failure. CHANGED: min_badge A confirmed -> single in all three places that must agree (lib/verify.mjs, lib/publication-gate.mjs, config/sources.yaml), asserted equal by test because a story passing one and failing another would be a silent intermittent block. lib/extract.mjs no longer drops a non-confirmed tier A story; it sets brief.uncorroborated, which flows into frontmatter and renders a visible notice: \"এই প্রতিবেদনটি একটি মাধ্যমের তথ্যের ভিত্তিতে প্রকাশিত হয়েছে। এটি স্বাধীনভাবে যাচাই করা হয়নি...\" Picking breaks ties by tier risk, B/C before A, after date and editorial value. UNCHANGED and asserted against drift: the badge ladder is untouched so confirmed still requires score >= confirmed_min (3) and a single-source story can never be labelled corroborated; skeptical never auto-publishes; evidence floor stays 100 and body floor 150, because dropping either to manufacture volume would recreate the stub content this project removed.",
+      "files": [
+        "pipeline/lib/verify.mjs",
+        "pipeline/lib/publication-gate.mjs",
+        "pipeline/lib/extract.mjs",
+        "pipeline/lib/synth.mjs",
+        "pipeline/config/sources.yaml",
+        "pipeline/tools/pick_briefs.mjs",
+        "pipeline/test/tier-a-single-source.test.mjs",
+        "site/src/pages/article/[slug].astro"
+      ],
+      "tests": "319/319 pass (was 312). 7 new in tier-a-single-source.test.mjs covering the badge ladder being unrelaxed, all three min_badge sites agreeing, the extract mark-instead-of-drop, the frontmatter flag, the rendered notice, the tie-break ordering, and the floors being unchanged.",
+      "production": "The uncorroborated notice is live on the deployed article template. Policy change affects which stories publish from the next pipeline run.",
+      "rational": "User chose my recommendation over their own proposal after I showed the measurement. The risk being accepted, stated plainly in the commit: a wrong political or national headline can now reach the site on one source, and the badge plus notice reduce the chance a reader is misled but do not eliminate it."
     }
   ],
   "sources": [
@@ -1407,7 +1426,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 82,
+  "sessionsCount": 83,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
