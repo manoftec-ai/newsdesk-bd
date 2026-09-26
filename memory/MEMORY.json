@@ -1001,6 +1001,18 @@
       "tests": "Both .astro files parse under @astrojs/compiler-rs. Standfirst logic executed against all 377 articles: 375 render a deck, 0 malformed. Label translator and compound matcher unit-checked. A full local build is NOT possible on this device - satteri, a sharp dependency, has no android-arm64 binary - so the Vercel build is the real gate.",
       "production": "Deployed and verified live at 8af3987a21: 0 occurrences of the English label across 6 sampled articles, standfirst present on all 3 sampled, machine text gone, national-378 no longer carries the false event chips. The 150-wpm reading-time tweak (a29cfa3) is committed but NOT live - the deploy hit api-deployments-free-per-day because the trailing 24h window still contains 2026-09-25 attempts. Site stayed on the last good build throughout (homepage 200, sitemap 377). D106 hourly-only deploy is holding: no bot-triggered deploy runs since it landed.",
       "rationale": "User approved the structural batch (items 1-7) and deferred the byline decision. Translated labels at render rather than editing 377 files because the pipeline writes them into front matter and would overwrite the edits on the next run. Recorded two of my own false alarms: apparent paragraph truncation and a run-together source list were both artifacts of my text-stripping, not site bugs."
+    },
+    {
+      "id": "D108",
+      "date": "2026-09-26",
+      "title": "Byline credits the source outlet; reading time took four attempts to actually work",
+      "summary": "D107 follow-through. BYLINE: the user chose the recommended option, attribute to the source outlet. All 377 articles carried author:\"desk\" and rendered NO visible byline. These stories are aggregated from named outlets rather than written by us, so a reporter name would be false and a bare outlet name would wrongly imply that outlet published the page here. The byline is therefore an explicit sourcing credit - the form Bangladeshi papers use when reprinting: \"সূত্র: প্রথম আলো\", \"সূত্র: প্রথম আলো ও ডেইলি অবজার্ভার\", \"সূত্র: কালের কণ্ঠ ও অন্যান্য 3টি মাধ্যম\". Outlet names route through sourceNameBn so a raw source id never reaches the page. 370/377 get a credit; the 7 with no source get none rather than a fabricated one. Front matter author stays \"desk\" because the pipeline writes it, and JSON-LD still names যাচাইডেস্ক ডেস্ক as publisher, which is the truthful claim. READING TIME: shipped broken three times while being reported as fixed each time, and the process failure matters more than the bug. Every attempt failed the same silent way - the lookup returned nothing and a Math.max(1, …) floor concealed it. Rejected in order: entry.data.body, entry.body (neither exists in Astro 7), readFileSync relative to import.meta.url (not the source path during a build), import.meta.glob (wrong directory depth - ../content from src/pages/article resolves to src/pages/content, which does not exist). No unit test would have caught any of them; the only check that worked was reading the value back out of the built HTML. The fix resolves from process.cwd() across three candidate roots. To make it self-verifying I temporarily emitted data-reading-source and data-reading-words on the element, which immediately reported /vercel/path0/src/content/news/national-82.md and 283 words - the first candidate hitting, exactly as designed. Verified live at 150 wpm: national-82 283w -> 2 min, national-84 265w -> 2, national-315 280w -> 2, national-542 43w -> 1, national-551 190w -> 1. Debug attributes then removed.",
+      "files": [
+        "site/src/pages/article/[slug].astro"
+      ],
+      "tests": "Live verification is the only meaningful test here and it is now green. The self-verifying data-reading-source attribute was the technique that broke the cycle after three blind attempts.",
+      "production": "Live and verified: byline renders on 370/377 articles, reading time differs by length, English labels still 0, homepage 200, sitemap 377.",
+      "rationale": "User said \"go with your recommendation\", which referred to the D107 byline recommendation (attribute to the source outlet) rather than to the other two open items - median 193 vs 269 words and the 113 Google News wrapper URLs - both of which remain open."
     }
   ],
   "sources": [
@@ -1346,7 +1358,7 @@
     }
   ],
   "lastUpdated": "2026-09-26",
-  "sessionsCount": 78,
+  "sessionsCount": 79,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
