@@ -233,10 +233,20 @@ Explicitly say the situation is evolving ("পরিস্থিতি চলম
   // across Ittefaq, Dhaka Tribune, Deshrupantor, New Age and BDNews24:
   // median 269, mean 348, p75 405. State it as a target, not a licence to pad:
   // every sentence must still trace to the fact pool or the claim set.
+  // The length instruction must come from lengthForMode, not from a constant.
+  //
+  // 2026-09-26: this block hardcoded "aim for about 250 words ... between 250 and
+  // 400" for EVERY story, while the line above computed the real per-story band
+  // from contentSufficiency. national-555 — 3,692 words of evidence across 20
+  // sources, sufficiency 100 — was told 250-400 here and 600-1000 by
+  // lengthForMode, in the same prompt. The writer took the conservative number,
+  // which is why the corpus sat at a 192-word median with briefs holding
+  // thousands of words. The gate in editorial.mjs stops thin stories starting;
+  // this is what lets well-sourced ones actually reach their length.
   const lengthStandard = `LENGTH STANDARD (measured from real Bangladeshi newspaper articles):
 • Hard minimum ${DEFAULT_MIN_PUBLISH_WORDS} words. Below this the piece is REJECTED by the publisher, not trimmed.
-• Aim for about ${TARGET_ARTICLE_WORDS} words; a well-sourced story should sit between ${TARGET_ARTICLE_WORDS} and 400.
-• Real outlets measure: median 269, mean 348, p75 405. A short piece is fine ONLY when the evidence is genuinely one fact — and then it must not be dressed up as a full article.
+• This story's band is ${min}-${max} words (tier: ${lengthForMode(mode, brief.members.length, brief).tier}). That band comes from how much source material this story actually has, so follow it rather than a generic number.
+• Real outlets measure: median 269, mean 348, p75 405. Aim inside this story's band and you will match them.
 • To reach that length, USE THE MATERIAL: every named person, place, date, number, figure, quote and consequence in the fact pool below is fair game and expected. Do not pad with scene-setting, restated sentences, or filler transitions.
 • If the fact pool genuinely cannot support ${DEFAULT_MIN_PUBLISH_WORDS} words, say so plainly in your summary instead of padding.`;
 

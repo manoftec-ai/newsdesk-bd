@@ -239,13 +239,25 @@ export function publicationMode(brief) {
 // rich clusters. NEVER pad — the writer stops when the information stops.
 // Uses targetWords(brief) when brief is available (source-word-driven).
 // WEEKLY HERO: when editorialValue >=70 and mode==standard, writer may use 600-1000 hero tier via complex path (score>55) — pick 1/week via cron if needed.
+// Clamp a band so min can never exceed max.
+//
+// 2026-09-26: the mode overrides below clamped only `max` to the mode's ceiling.
+// A well-sourced story came back as min 800, max 600 — a band no length can
+// satisfy. It went unnoticed because nothing printed these numbers until the
+// writer prompt started quoting them.
+const clampBand = (min, max) => {
+  const lo = Math.max(0, Math.round(Math.min(min, max)));
+  const hi = Math.max(lo, Math.round(max));
+  return { min: lo, max: hi };
+};
+
 export function lengthForMode(mode, srcCount, brief) {
   if (brief && typeof targetWords === 'function') {
     const tw = targetWords(brief);
     // Respect breaking/developing mode adjustments
-    if (mode === 'breaking') return { min: Math.max(100, tw.min), max: Math.min(180, tw.max), tier: 'breaking' };
-    if (mode === 'developing') return { min: tw.min, max: Math.min(600, tw.max), tier: 'developing' };
-    if (mode === 'news-brief') return { min: 50, max: Math.min(150, tw.max), tier: 'brief' };
+    if (mode === 'breaking') return { ...clampBand(Math.max(100, tw.min), Math.min(180, tw.max)), tier: 'breaking' };
+    if (mode === 'developing') return { ...clampBand(tw.min, Math.min(600, tw.max)), tier: 'developing' };
+    if (mode === 'news-brief') return { ...clampBand(50, Math.min(150, tw.max)), tier: 'brief' };
     if (mode === 'standard' && srcCount >= 4) {
       const s = contentSufficiency(brief);
       return s.score >= 55
