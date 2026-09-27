@@ -12,6 +12,9 @@ import { BRIEFS_DIR } from '../lib/extract.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { editorialValue, evidenceSufficiency, DEFAULT_MIN_EVIDENCE_WORDS } from '../lib/editorial.mjs';
 import { clusterCoherence } from '../lib/cluster-coherence.mjs';
+import { composeBody } from '../lib/compose.mjs';
+import { runPublicationGate } from '../lib/publication-gate.mjs';
+import { openDb, DB_PATH } from '../lib/db.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -26,7 +29,13 @@ const outPath = outArg
   ? resolve(outArg)
   : resolve(import.meta.dirname, '../state/pick.json');
 
+const MIN_EVIDENCE_EARLY = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS;
 const publishedTitles = loadPublishedTitles(siteDir);
+
+// 2026-09-27: the picker now proves a brief can publish before selecting it. See
+// the long note by the gate block below - three gates in a row have been taught
+// to the picker the hard way, and each lesson cost a full authoring run.
+const db = existsSync(DB_PATH) ? openDb(DB_PATH) : null;
 
 const briefs = readdirSync(BRIEFS_DIR)
   .filter((f) => f.endsWith('.json'))
@@ -37,6 +46,7 @@ const briefs = readdirSync(BRIEFS_DIR)
     let tier = null;
     let coherence = { pass: true, minMax: 1, members: 0 };
     let evidence = { pass: false, evidenceWords: 0, minWords: DEFAULT_MIN_EVIDENCE_WORDS, members: 0 };
+    let gate = { pass: false };
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
       date = j.date || '';
@@ -49,6 +59,24 @@ const briefs = readdirSync(BRIEFS_DIR)
       // of the authoring budget was spent on stories that could never ship.
       coherence = clusterCoherence(j);
       tier = (j.verdict && j.verdict.tier) || null;
+
+      // 2026-09-27. The picker has been taught three times to stop selecting
+      // briefs the finalizer will reject - coherence (D107), evidence (D109),
+      // and then Google News wrappers, missing claim evidence and unrelated
+      // cluster members. Every lesson cost a full authoring run spent on stories
+      // that could never ship.
+      //
+      // The lesson generalises, so rather than chase the next rule, the picker
+      // runs the real publication gate itself, against the exact body the
+      // deterministic composer will write. Composing and gating costs
+      // milliseconds per brief and was never the bottleneck, and it makes
+      // "picked" mean "can publish" - so a run can never select a doomed story.
+      if (db && coherence.pass && evidence.evidenceWords >= MIN_EVIDENCE_EARLY) {
+        const composed = composeBody(j);
+        if (composed.body && composed.body.length >= 80 && !composed.short) {
+          gate = runPublicationGate(j, composed.body, db);
+        }
+      }
     } catch {
       // unreadable brief -> treat as no-date/headline, never first.
     }
@@ -60,6 +88,7 @@ const briefs = readdirSync(BRIEFS_DIR)
       tier,
       coherence,
       evidence,
+      gate,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
     };
@@ -77,7 +106,8 @@ const pending = briefs.filter(
     !b.published &&
     !b.titleDup &&
     b.evidence.evidenceWords >= MIN_EVIDENCE &&
-    b.coherence.pass,
+    b.coherence.pass &&
+    b.gate.pass,
 );
 // #22 — editorial-value ranking (internal only): either newest-first, and
 // within the same publish date the higher-value story is picked first.

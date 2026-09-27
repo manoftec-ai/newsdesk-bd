@@ -76,19 +76,28 @@ jobs:
       # demands auth, set the OPENCODE_API_KEY secret (free, opencode.ai/auth) and
       # this step will pick it up automatically from the environment.
 
-      # Jachai Lekhok — dedicated writer subagent (single source of truth: pipeline/lib/synth.mjs)
-      # This agent does ONLY writing — no other tasks. Any change to synth.mjs ships automatically.
-      # Globally available: .opencode/agent/jachai-lekhok.md (committed) + ~/.config/opencode/agent/jachai-lekhok.md
-      # Switch model via repo variable OPENCODE_AUTHOR_MODEL (e.g. opencode/muse-spark-1.2-contributor-free)
-      - name: Author picked bodies via Jachai Lekhok
+      # Authoring is DETERMINISTIC, not model-written. 2026-09-27: three model
+      # configurations in a row failed identically - 6/6 stories rejected with
+      # MECHANICAL_AUDIT_FAILED + PROMPT_LEAKED, bodies ~150 words against a
+      # 180 floor, and the "quote not found" rejections were fragments of
+      # lib/synth.mjs, i.e. the model echoing its own prompt back as the article.
+      #
+      # lib/compose.mjs now builds each body from the brief's own member leads:
+      # every sentence is real source text, mechanically cleaned, and nothing is
+      # invented to reach a word count - a brief whose sources cannot fill the
+      # floor is refused instead. The finalizer below still adjudicates every
+      # article through the full publication gate, so nothing bypasses review.
+      #
+      # tools/pick_briefs.mjs already proved each picked brief passes that gate
+      # against the body the composer will write, so this step can no longer
+      # produce a story that is doomed before the gate sees it.
+      - name: Compose picked bodies deterministically
         id: author
-        env:
-          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         run: |
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
-          mkdir -p pipeline/tmp/stories /tmp
-          opencode run --agent jachai-lekhok --auto --pure --model "${{ vars.OPENCODE_AUTHOR_MODEL || 'opencode/big-pickle' }}" "Read pipeline/state/pick.json. For every picked slug, run pipeline/tools/render_prompt.mjs --authoring and write only that slug's body to pipeline/tmp/stories/<slug>.b.md. Do not edit site Markdown, pipeline source, briefs, or any other path. Do not run git commands."
+          mkdir -p pipeline/tmp/stories
+          node pipeline/tools/compose_stories.mjs --pick=pipeline/state/pick.json --max="${{ vars.AUTHOR_MAX_PER_RUN || 6 }}"
 
       - name: Reject direct public Markdown edits
         run: |

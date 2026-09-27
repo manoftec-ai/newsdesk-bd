@@ -131,9 +131,30 @@ test('lengthForMode: proposal #6 bands — breaking 100–180, complex 600–100
       { claim_text: 'বাতিলের কারণ', status: 'OFFICIAL' },
     ],
   };
+  // 2026-09-27. This assertion used to demand a 600-word minimum from a brief
+  // carrying ~325 words of real source text. That contract is the padding the
+  // site forbids, and c9's ceiling made it worse than merely wasteful: such a
+  // story could never clear its own floor, so it was silently unpublishable -
+  // one of the reasons the site went hours without news. A band is now fitted
+  // to the evidence that exists, and 600 is only reachable when 600 words of
+  // evidence are actually there.
   const c = lengthForMode('standard', 5, rich);
   assert.equal(c.tier, 'complex');
-  assert.equal(c.min, 600);
+  assert.ok(c.min < 325, `must not demand 600 words from ~325 of evidence (got ${c.min})`);
+
+  // a brief that genuinely carries 600+ words of source text still earns 600
+  const wordy = {
+    ...rich,
+    members: Array.from({ length: 5 }, () => ({
+      source_id: 'x',
+      title: 'বিশাল প্রকল্পের সিদ্ধান্ত',
+      lead: Array.from({ length: 14 }, () => 'সরকার আজ বৃহৎ প্রকল্পটি বাতিল করার সিদ্ধান্ত নিয়ে জানিয়েছে।').join(' '),
+    })),
+  };
+  const w = lengthForMode('standard', 5, wordy);
+  assert.equal(w.min, 600);
+  assert.equal(w.max, 1000);
+
   // thin 4+ cluster stays mid (never forced into 600–1000 — anti-pad #1)
   const thin = { headline: 'তুচ্ছ খবর', members: Array.from({ length: 5 }, () => ({ source_id: 'x', title: 'তুচ্ছ খবর', lead: 'তুচ্ছ খবর' })), claims: [] };
   const t = lengthForMode('standard', 5, thin);

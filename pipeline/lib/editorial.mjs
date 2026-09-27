@@ -251,7 +251,66 @@ const clampBand = (min, max) => {
   return { min: lo, max: hi };
 };
 
+/**
+ * How much real text a brief actually carries, in Bengali words.
+ *
+ * 2026-09-27. The composer used to record the band it had chosen onto the brief
+ * object, but tools/finalize_stories.mjs re-reads each brief from disk, so the
+ * decision evaporated and the gate graded a 182-word honest article against an
+ * aspirational 600-word floor ("c9: too short (~182 words, min 600)"). Storing
+ * the band also dirtied 552 git-tracked brief files. Deriving it from the brief
+ * instead makes writer and gate agree by construction, with no state to persist.
+ */
+export function evidenceWordsAvailable(brief) {
+  let words = 0;
+  for (const m of brief?.members ?? []) {
+    const text = String(m?.lead ?? '')
+      .replace(/&lt;[^&]*?&gt;/gu, ' ')
+      .replace(/<[^>]*>/gu, ' ')
+      .replace(/[A-Za-z0-9]/gu, ' ');
+    words += text.trim().split(/\s+/u).filter(Boolean).length;
+  }
+  return words;
+}
+
+/**
+ * Step a band down to what the evidence can actually support. Padding to reach
+ * an aspirational floor would be fabrication, so a brief with 182 real words
+ * declares 50-150 and is published at its true length - the site computes
+ * reading time from the real body. 100 words is the absolute floor: below that
+ * there is no article, and the brief is refused upstream instead.
+ */
+export function fitBandToEvidence(brief, preferred) {
+  // a band topping out below the publish floor can never ship, so the floor is
+  // the publish floor, not 50
+  const floor = minPublishWords();
+  const available = evidenceWordsAvailable(brief);
+  if (!preferred || !Number.isFinite(preferred.min)) return preferred;
+  if (available < floor) return preferred; // caller refuses the brief instead
+  // A composer cannot write N words of article from fewer than N words of
+  // evidence without inventing something, so the floor is simply reachable or
+  // it is lowered. An arbitrary 0.75 fudge factor here also rejected briefs that
+  // genuinely carried enough text (630 words of evidence -> a 600-word story).
+  if (available >= preferred.min) {
+    return preferred.max < floor ? { ...preferred, min: floor, max: floor + 120 } : preferred;
+  }
+  // Not enough evidence for the aspirational floor. Keep the tier label - it
+  // still describes the story - and move only the numbers, with the ceiling
+  // tied to the evidence so c9 stays satisfiable instead of impossible.
+  const max = Math.max(floor + 100, Math.min(preferred.max, Math.round(available * 1.1)));
+  return { min: floor, max, tier: preferred.tier };
+}
+
 export function lengthForMode(mode, srcCount, brief) {
+  return fitBandToEvidence(brief, _lengthForModeRaw(mode, srcCount, brief));
+}
+
+function _lengthForModeRaw(mode, srcCount, brief) {
+  if (brief && brief.lengthBand && Number.isFinite(brief.lengthBand.min) && Number.isFinite(brief.lengthBand.max)) {
+    const lo = Math.max(50, Math.min(1000, Math.round(brief.lengthBand.min)));
+    const hi = Math.max(lo, Math.min(1000, Math.round(brief.lengthBand.max)));
+    return { min: lo, max: hi, tier: brief.lengthBand.tier ?? 'evidence' };
+  }
   if (brief && typeof targetWords === 'function') {
     const tw = targetWords(brief);
     // Respect breaking/developing mode adjustments
