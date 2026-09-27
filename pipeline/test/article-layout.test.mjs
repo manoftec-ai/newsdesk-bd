@@ -203,6 +203,41 @@ test('no date is printed as raw ISO while the rest use the Bengali format', () =
   );
 });
 
+test('times are Bangladesh time, and a date with no time gets no time', () => {
+  const lib = readFileSync(join(SITE, 'lib/news-data.js'), 'utf8');
+
+  // Every formatter that renders a visible Bangladesh time must pin the zone
+  // explicitly. A formatter with no timeZone renders in the SERVER's zone,
+  // which is UTC on Vercel and something else anywhere else - and for a
+  // date-only value, UTC midnight in a zone west of Greenwich is yesterday.
+  for (const name of ['formatDateTimeBD', 'formatDateTimeBDShort', 'formatDateBD']) {
+    const start = lib.indexOf(`export const ${name} =`);
+    assert.ok(start > 0, `${name} is missing from news-data.js`);
+    // body runs to the next export, or 900 characters, whichever is sooner
+    const rest = lib.slice(start);
+    const next = rest.indexOf('export const', 10);
+    const body = rest.slice(0, next > 0 ? next : 900);
+    assert.ok(
+      /timeZone:\s*"Asia\/Dhaka"/.test(body),
+      `${name} does not pin Asia/Dhaka, so it renders in the server's timezone:\n${body.slice(0, 160)}`,
+    );
+  }
+
+  // 2026-09-27: a date-only string is parsed by new Date() as UTC MIDNIGHT, so
+  // rendering it with a time formatter produced "২৬ সেপ্টেম্বর · ৬:০০ AM" - a
+  // precise time the story never had. The lead card must branch instead.
+  assert.ok(
+    /hasTimeComponent/.test(index),
+    'the lead card no longer checks whether the date carries a real time',
+  );
+  assert.ok(
+    /formatDateBD\(lead\.date\)/.test(index),
+    'a date-only lead date is not rendered through the date-only formatter',
+  );
+  // the machine-readable attribute must still be the raw value
+  assert.ok(/<time datetime=\{lead\.date\}/.test(index), 'the <time datetime> attribute must stay raw');
+});
+
 test('attribution is still available where machines need it', () => {
   // removing the visible সূত্র must not remove the record of where the story came from
   assert.ok(/articleBody: post\.excerpt/.test(article), 'JSON-LD articleBody missing');

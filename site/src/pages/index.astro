@@ -17,6 +17,8 @@ import {
   getBadge,
   getAuthor,
   formatDateTimeBDShort,
+  formatDateBD,
+  hasTimeComponent,
 } from "../lib/news-data.js";
 
 const now = new Date();
@@ -133,7 +135,9 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
                     format. Same defect the n14 audit rule exists to catch, in the
                     one place a reader always looks first. */}
                 <time datetime={lead.date} class="text-muted-foreground">
-                  {formatDateTimeBDShort(new Date(lead.date).getTime())}
+                  {hasTimeComponent(lead.date)
+                    ? formatDateTimeBDShort(new Date(lead.date).getTime())
+                    : formatDateBD(lead.date)}
                 </time>
                 {leadAuthor && (
                   <span class="flex items-center gap-1 text-muted-foreground">
