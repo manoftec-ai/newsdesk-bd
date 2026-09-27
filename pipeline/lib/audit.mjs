@@ -188,6 +188,33 @@ export const SPEC_AUDIT_POINTS = [
 ];
 
 // ---- Stage 1 — mechanical (deterministic, always runs) --------------------
+/**
+ * How much of the headline the body actually talks about.
+ *
+ * Content words of the headline, and the share of them the body repeats. Both
+ * sides are stripped to Bengali words of 3+ characters, so a shared number or a
+ * shared Latin token cannot manufacture agreement between two unrelated stories.
+ *
+ * The 0.18 floor is measured, not guessed: it flags 4 of 401 published
+ * articles, and every one of those 4 is genuinely a different story.
+ */
+export function bodyHeadlineRelevance(headline, body) {
+  const words = (s) =>
+    new Set(
+      String(s ?? '')
+        .toLowerCase()
+        .replace(/[^\u0980-\u09FF\s]/gu, ' ')
+        .split(/\s+/u)
+        .filter((w) => w.length > 2),
+    );
+  const H = words(headline);
+  const B = words(body);
+  if (!H.size || !B.size) return { coverage: 1, headlineTokens: H.size };
+  let hit = 0;
+  for (const w of H) if (B.has(w)) hit++;
+  return { coverage: hit / H.size, headlineTokens: H.size };
+}
+
 export function mechanicalAudit(brief, body) {
   const text = String(body ?? '');
   const fails = [];
@@ -228,6 +255,23 @@ export function mechanicalAudit(brief, body) {
   // distinct. Mechanical overlap probe, zero LLM cost.
   for (const rep of repetitionViolations(brief.headline ?? '', text)) {
     note('rep1', `${rep.type} (${rep.section})`);
+  }
+
+  // c12 — the body must be about the headline.
+  //
+  // 2026-09-27. national-532 was published with a headline about the DMP
+  // criminal gang list and a body running to four unrelated stories: teenage
+  // gangs, a UN meeting with Iran's president, university housing, and a
+  // university suspending admissions. Nothing caught it. The coherence guard
+  // compares cluster MEMBERS to each other, and both members of that brief were
+  // the same story, so it passed happily - while the lead TEXT underneath was
+  // the publisher's "আরধু পড়ুন" digest of other headlines.
+  //
+  // So the check the pipeline was missing is not between members. It is between
+  // what the reader was promised and what the reader is given.
+  const relevance = bodyHeadlineRelevance(brief.headline ?? '', text);
+  if (relevance.coverage < 0.18 && relevance.headlineTokens >= 4) {
+    note('c12', `body is about a different story (shares only ${Math.round(relevance.coverage * 100)}% of the headline)`);
   }
 
   // #8/#33 — a "কেন গুরুত্বপূর্ণ" section is only legitimate when the fact pool

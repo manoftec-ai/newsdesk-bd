@@ -103,3 +103,26 @@ test('the lead never opens on a dangling back-reference', () => {
   assert.ok(lead.includes('রিফাত চৌধুরী') || lead.includes('জায়েদ খান'),
     `lead should state the story: ${lead.slice(0, 60)}`);
 });
+
+// 2026-09-27: national-532 was published with BBC's homepage digest as its body,
+// and national-353 with a news-wire page's furniture. Both are compose-time
+// failures, so both are pinned here rather than fixed once and forgotten.
+test('a news-wire page’s furniture is not prose', () => {
+  assert.equal(
+    proseProblem('বিডিনিউজ টোয়েন্টিফোর ডটকম নিউজ সার্ভিস Published : ২১ Sep ২০২৬, ০১:০৯ বিকাল Updated : ২১ Sep ২০২৬'),
+    'wire-furniture',
+  );
+  assert.equal(proseProblem('আজ সোমবার। দেশে ডেঙ্গুতে আরও দুই মৃত্যু হয়েছে।'), null);
+});
+
+test('a paragraph cut mid-word is refused, without flagging normal openers', () => {
+  // national-338 and sports-224 published these
+  assert.equal(proseProblem('ের সূচনায় একই বার্তা—বিশ্বমঞ্চে বাংলাদেশের প্রধানমন্ত্রীর দিকে'), 'midword-opener');
+  assert.equal(proseProblem('েও এসেছে। সোমবার এ তথ্য জানিয়ে সংস্থার বক্তব্য দিয়েছেন।'), 'midword-opener');
+  // a paragraph may legitimately open with a digit, a quote or a Latin acronym.
+  // An earlier version of this check flagged 150 articles by testing "does not
+  // start with a letter", which is not the same question at all.
+  assert.equal(proseProblem('২৬ সেপ্টেম্বর, ২০২৬ সালে ঢাকায় অনুষ্ঠিত সভায় প্রধানমন্ত্রী বক্তব্য রাখেন'), null);
+  assert.equal(proseProblem('“শুক্রবার সকালে” বলে জানিয়েছেন সংশ্লিষ্টরা।'), null);
+  assert.equal(proseProblem('FBI MedLink ও FBI BICS-সহ সংস্থাটির একাধিক সিস্টেম রয়েছে।'), null);
+});

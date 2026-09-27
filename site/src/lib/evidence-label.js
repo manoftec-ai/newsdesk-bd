@@ -179,3 +179,41 @@ export function evidenceWithUrls(evidence, sources) {
 }
 
 export default evidenceLabelBn;
+
+/**
+ * What the sources can actually prove, stated honestly.
+ *
+ * 2026-09-27. national-121 has TWO source entries, both প্রথম আলো, and a badge
+ * of "partial"/একক - yet its panel said "প্রথম আলো-এ একই তথ্য প্রকাশ করেছে"
+ * ("prothomalo also published the same information"). The source was
+ * corroborating itself, because the panel counted source ENTRIES rather than
+ * distinct outlets. Measured across the corpus: 18 articles had a single
+ * distinct outlet listed more than once, and 18 counted a /video/ or /photo/
+ * url as an independent source, so "2 প্রমাণ" could be one outlet's article and
+ * its own video.
+ *
+ * A video url is not a report. A repeated outlet is not a second witness. So
+ * this returns the distinct article outlets only, and the panel says how many
+ * there really are instead of implying corroboration that did not happen.
+ */
+export function corroborationSummary(sources) {
+  const list = Array.isArray(sources) ? sources : [];
+  const articles = list.filter((s) => {
+    const url = String(s?.url ?? "");
+    if (!url) return false;
+    return !/\/(video|photo|live|multimedia|webcam)\//i.test(url);
+  });
+  const byOutlet = new Map();
+  for (const s of articles) {
+    const key = String(s?.name ?? s?.id ?? '').trim().toLowerCase();
+    if (!key) continue;
+    if (!byOutlet.has(key)) byOutlet.set(key, s);
+  }
+  return {
+    outlets: [...byOutlet.values()],
+    count: byOutlet.size,
+    // one outlet cannot corroborate itself, however many of its articles are listed
+    corroborated: byOutlet.size >= 2,
+    droppedNonArticles: list.length - articles.length,
+  };
+}

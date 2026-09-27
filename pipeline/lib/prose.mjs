@@ -29,6 +29,22 @@ const COPYRIGHT = /সর্বস্বত্ব\s*সংরক্ষিত|উ
 const SHARE = /শেয়ার\s*করুন|ফেসবুকে|হোয়াটসঅ্যাপে|টুইটারে|লিংক\s*কপি/u;
 const SUBSCRIBE = /সাবস্ক্রাইব|সাবস্ক্রিপশন|নিউজলেটার|বিজ্ঞাপন\s*দিন/u;
 
+// 2026-09-27. national-353 published with a news-wire page's furniture in the
+// body: "বিডিনিউজ টোয়েন্টিফোর ডটকম নিউজ সার্ভিস Published : ২১ Sep ২০২৬, ০১:০৯
+// বিকাল Updated : ২১ Sep ২০২৬, ০১:২০ বিকাল". The English timestamps are the give-away.
+const WIRE_FURNITURE = /\b(Published|Updated|Read more|Also read|Share this)\s*:|নিউজ\s*সার্ভিস\s+Published/u;
+
+/**
+ * A paragraph opening on a combining mark or a virama was cut mid-word by the
+ * feed, and the clause it belonged to is gone.
+ *
+ * Anchored on those code points rather than on "does not start with a letter":
+ * national-338 published "ের সূচনায় একই বার্তা—বিশ্বমঞ্চে…" and sports-224
+ * published "েও এসেছে। …". A looser version of this check flagged 150 articles,
+ * because paragraphs legitimately start with a digit, a quote or an acronym.
+ */
+const MIDWORD_START = /^[ঁঃ]|^[া-্]/u;
+
 /** Furniture that is unambiguous wherever it appears. */
 export function hardChrome(text) {
   const t = String(text ?? '');
@@ -36,6 +52,7 @@ export function hardChrome(text) {
   if (PHOTO.test(t)) return 'photo-credit';
   if (COPYRIGHT.test(t)) return 'copyright';
   if (SUBSCRIBE.test(t)) return 'subscribe';
+  if (WIRE_FURNITURE.test(t)) return 'wire-furniture';
   return null;
 }
 
@@ -77,6 +94,7 @@ export function isNavList(text) {
 export function proseProblem(text) {
   const hard = hardChrome(text);
   if (hard) return hard;
+  if (MIDWORD_START.test(String(text ?? '').trim())) return 'midword-opener';
   if (isNavList(text)) return 'nav-list';
   if (looksLikeMenuRow(text)) return 'menu-row';
   // a sentence made mostly of institution names is a nav row that slipped past
