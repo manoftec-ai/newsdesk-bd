@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 579,
+    "storyCount": 581,
     "kinds": [
       "claim",
       "evidence",
@@ -33109,8 +33109,8 @@
           "slug": "national-611",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 6,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         }
       ]
     },
@@ -46337,8 +46337,8 @@
           "slug": "national-611",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 6,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 7,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
           "cluster_id": 85,
@@ -53566,10 +53566,10 @@
     },
     "national-611": {
       "cluster_id": 611,
-      "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী",
+      "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
       "first_seen": "2026-09-27T09:50:41.024Z",
-      "last_update": "2026-09-27T15:20:50.901Z",
-      "claim_count": 6,
+      "last_update": "2026-09-27T18:49:55.543Z",
+      "claim_count": 7,
       "events": [
         {
           "ts": "2026-09-27T08:41:59.000Z",
@@ -53950,15 +53950,67 @@
             "sources": "[\"c73316\",\"c75145\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-09-27T18:56:45.965Z",
+          "kind": "evidence",
+          "claim_id": 73316,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:56:45.971Z",
+          "kind": "claim",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন"
+        },
+        {
+          "ts": "2026-09-27T18:56:45.972Z",
+          "kind": "evidence",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:56:45.987Z",
+          "kind": "verify",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:57:24.953Z",
+          "kind": "conflict",
+          "claim_id": 73316,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c73316\",\"c75145\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
         {
           "cluster_id": 617,
           "slug": "national-617",
-          "actor_links": 7,
+          "actor_links": 8,
           "source_links": 2,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
@@ -54415,7 +54467,7 @@
       "cluster_id": 615,
       "headline": "বিএনপি সরকারের প্রশ্রয়ে কিছু নব্য জমিদারের উত্থান ঘটেছে: সাদিক কায়েম",
       "first_seen": "2026-09-27T11:58:29.550Z",
-      "last_update": "2026-09-27T17:13:49.877Z",
+      "last_update": "2026-09-27T18:49:55.559Z",
       "claim_count": 2,
       "events": [
         {
@@ -54543,7 +54595,7 @@
       "cluster_id": 616,
       "headline": "আন্তর্দেশীয় অপরাধ মোকাবেলায় আন্তর্জাতিক সহযোগিতা জোরদারে গুরুত্বারোপ আইনমন্ত্রীর",
       "first_seen": "2026-09-27T12:44:18.890Z",
-      "last_update": "2026-09-27T17:13:49.868Z",
+      "last_update": "2026-09-27T18:49:55.552Z",
       "claim_count": 3,
       "events": [
         {
@@ -55179,10 +55231,10 @@
         {
           "cluster_id": 611,
           "slug": "national-611",
-          "actor_links": 7,
+          "actor_links": 8,
           "source_links": 2,
-          "claim_count": 7,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 9,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
           "cluster_id": 555,
@@ -55214,7 +55266,7 @@
       "cluster_id": 618,
       "headline": "বাংলাদেশের সকল নাগরিকের নিরাপত্তার দায়িত্ব আপনার হাতে: স্বরাষ্ট্রমন্ত্রীকে সালমান",
       "first_seen": "2026-09-27T13:33:43.026Z",
-      "last_update": "2026-09-27T17:13:49.874Z",
+      "last_update": "2026-09-27T18:49:55.555Z",
       "claim_count": 2,
       "events": [
         {
@@ -55293,7 +55345,7 @@
       "cluster_id": 619,
       "headline": "‘ভোট গণনার সময় ফল পাল্টে দেওয়ার চেষ্টা করতে পারেন ট্রাম্প’",
       "first_seen": "2026-09-27T13:33:43.030Z",
-      "last_update": "2026-09-27T17:13:49.875Z",
+      "last_update": "2026-09-27T18:49:55.556Z",
       "claim_count": 2,
       "events": [
         {
@@ -55628,7 +55680,7 @@
       "cluster_id": 622,
       "headline": "স্কুলছাত্রীর দাঁত ভেঙে দেওয়ার ঘটনায় প্রধান অভিযুক্ত ফয়সাল গ্রেফতার",
       "first_seen": "2026-09-27T15:20:50.953Z",
-      "last_update": "2026-09-27T17:13:49.871Z",
+      "last_update": "2026-09-27T18:49:55.553Z",
       "claim_count": 2,
       "events": [
         {
@@ -55884,7 +55936,7 @@
       "cluster_id": 624,
       "headline": "রাবি শিক্ষার্থীকে সাপের কামড়: হল প্রাধ্যক্ষের পদত্যাগ দাবি",
       "first_seen": "2026-09-27T15:20:50.976Z",
-      "last_update": "2026-09-27T17:13:49.876Z",
+      "last_update": "2026-09-27T18:49:55.557Z",
       "claim_count": 2,
       "events": [
         {
@@ -56170,7 +56222,7 @@
       "cluster_id": 627,
       "headline": "ভঙ্গুর অর্থনীতি থেকে ট্রিলিয়ন ডলারের অর্থনীতি গড়ার পথে বাংলাদেশ: ড. তিতুমীর",
       "first_seen": "2026-09-27T16:41:17.412Z",
-      "last_update": "2026-09-27T17:13:49.872Z",
+      "last_update": "2026-09-27T18:49:55.554Z",
       "claim_count": 2,
       "events": [
         {
@@ -56375,61 +56427,61 @@
     },
     "national-629": {
       "cluster_id": 629,
-      "headline": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
-      "first_seen": "2026-09-27T17:37:01.329Z",
-      "last_update": "2026-09-27T17:37:01.333Z",
+      "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
+      "first_seen": "2026-09-27T18:49:55.545Z",
+      "last_update": "2026-09-27T18:49:55.547Z",
       "claim_count": 2,
       "events": [
         {
-          "ts": "2026-09-27T13:27:33.000Z",
+          "ts": "2026-09-27T15:17:23.000Z",
           "kind": "evidence",
-          "claim_id": 78880,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
           "detail": {
-            "source_id": "prothomalo",
+            "source_id": "guardian-world",
             "relation": "supports",
-            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
+            "url": "https://www.theguardian.com/politics/2026/sep/27/andy-burnham-laura-kuenssberg-show-social-care"
           }
         },
         {
-          "ts": "2026-09-27T13:27:33.000Z",
+          "ts": "2026-09-27T18:05:15.000Z",
           "kind": "evidence",
-          "claim_id": 78881,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
           "detail": {
-            "source_id": "prothomalo",
+            "source_id": "guardian-world",
             "relation": "supports",
-            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
+            "url": "https://www.theguardian.com/politics/2026/sep/27/burnham-bounce-gives-labour-a-second-chance-but-budget-realities-are-looming"
           }
         },
         {
-          "ts": "2026-09-27T17:00:00.000Z",
+          "ts": "2026-09-27T18:05:15.000Z",
           "kind": "evidence",
-          "claim_id": 78880,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?",
           "detail": {
-            "source_id": "prothomalo",
+            "source_id": "guardian-world",
             "relation": "supports",
-            "url": "https://www.haal.fashion/travel/abroad/vq4or71gd0"
+            "url": "https://www.theguardian.com/politics/2026/sep/27/burnham-bounce-gives-labour-a-second-chance-but-budget-realities-are-looming"
           }
         },
         {
-          "ts": "2026-09-27T17:44:15.237Z",
+          "ts": "2026-09-27T18:57:17.527Z",
           "kind": "claim",
-          "claim_id": 78880,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প"
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace"
         },
         {
-          "ts": "2026-09-27T17:44:15.240Z",
+          "ts": "2026-09-27T18:57:17.532Z",
           "kind": "claim",
-          "claim_id": 78881,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন"
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?"
         },
         {
-          "ts": "2026-09-27T17:44:15.243Z",
+          "ts": "2026-09-27T18:57:17.537Z",
           "kind": "verify",
-          "claim_id": 78880,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -56438,10 +56490,10 @@
           }
         },
         {
-          "ts": "2026-09-27T17:44:15.243Z",
+          "ts": "2026-09-27T18:57:17.537Z",
           "kind": "verify",
-          "claim_id": 78881,
-          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -56454,73 +56506,73 @@
     },
     "national-630": {
       "cluster_id": 630,
-      "headline": "কারিগরি শিক্ষা অধিদপ্তর থেকে মুক্তির দাবিতে শিক্ষার্থীদের বিক্ষোভ, ১৪ শিক্ষক অবরুদ্ধ",
-      "first_seen": "2026-09-27T17:37:01.334Z",
-      "last_update": "2026-09-27T17:37:01.337Z",
+      "headline": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+      "first_seen": "2026-09-27T18:49:55.548Z",
+      "last_update": "2026-09-27T18:49:55.551Z",
       "claim_count": 2,
       "events": [
         {
-          "ts": "2026-09-27T14:02:50.000Z",
+          "ts": "2026-09-27T13:27:33.000Z",
           "kind": "evidence",
-          "claim_id": 78882,
-          "claim_text": "কারিগরি শিক্ষা অধিদপ্তর থেকে মুক্তির দাবিতে শিক্ষার্থীদের বিক্ষোভ, ১৪ শিক্ষক অবরুদ্ধ",
+          "claim_id": 79766,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
-            "url": "https://www.prothomalo.com/bangladesh/district/5uxsqaiy96"
+            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
           }
         },
         {
-          "ts": "2026-09-27T16:55:08.000Z",
+          "ts": "2026-09-27T13:27:33.000Z",
           "kind": "evidence",
-          "claim_id": 78882,
-          "claim_text": "কারিগরি শিক্ষা অধিদপ্তর থেকে মুক্তির দাবিতে শিক্ষার্থীদের বিক্ষোভ, ১৪ শিক্ষক অবরুদ্ধ",
+          "claim_id": 79767,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
           "detail": {
-            "source_id": "jugantor",
+            "source_id": "prothomalo",
             "relation": "supports",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE11SUFtb2I4TlNvT20wR0Q0NjJsTlEzeGJfX2lWNUpLY3Y3LTBVOURHRGJ5cW5QZ0NWUF85dzZPSFdXdTFTRThZSml6OExRZFZTMDJVRDNhaEs?oc=5"
+            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
           }
         },
         {
-          "ts": "2026-09-27T16:55:08.000Z",
+          "ts": "2026-09-27T17:00:00.000Z",
           "kind": "evidence",
-          "claim_id": 78883,
-          "claim_text": "১৪ শিক্ষককে অবরুদ্ধ করে রেখেছেন সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা",
+          "claim_id": 79766,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
           "detail": {
-            "source_id": "jugantor",
+            "source_id": "prothomalo",
             "relation": "supports",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE11SUFtb2I4TlNvT20wR0Q0NjJsTlEzeGJfX2lWNUpLY3Y3LTBVOURHRGJ5cW5QZ0NWUF85dzZPSFdXdTFTRThZSml6OExRZFZTMDJVRDNhaEs?oc=5"
+            "url": "https://www.haal.fashion/travel/abroad/vq4or71gd0"
           }
         },
         {
-          "ts": "2026-09-27T17:44:16.647Z",
+          "ts": "2026-09-27T18:57:19.321Z",
           "kind": "claim",
-          "claim_id": 78882,
-          "claim_text": "কারিগরি শিক্ষা অধিদপ্তর থেকে মুক্তির দাবিতে শিক্ষার্থীদের বিক্ষোভ, ১৪ শিক্ষক অবরুদ্ধ"
+          "claim_id": 79766,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প"
         },
         {
-          "ts": "2026-09-27T17:44:16.651Z",
+          "ts": "2026-09-27T18:57:19.325Z",
           "kind": "claim",
-          "claim_id": 78883,
-          "claim_text": "১৪ শিক্ষককে অবরুদ্ধ করে রেখেছেন সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা"
+          "claim_id": 79767,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন"
         },
         {
-          "ts": "2026-09-27T17:44:16.654Z",
+          "ts": "2026-09-27T18:57:19.329Z",
           "kind": "verify",
-          "claim_id": 78882,
-          "claim_text": "কারিগরি শিক্ষা অধিদপ্তর থেকে মুক্তির দাবিতে শিক্ষার্থীদের বিক্ষোভ, ১৪ শিক্ষক অবরুদ্ধ",
+          "claim_id": 79766,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
           "detail": {
-            "status": "VERIFIED",
+            "status": "SINGLE_SOURCE",
             "from": null,
-            "confidence": 67,
+            "confidence": 33,
             "reason": "verify"
           }
         },
         {
-          "ts": "2026-09-27T17:44:16.654Z",
+          "ts": "2026-09-27T18:57:19.329Z",
           "kind": "verify",
-          "claim_id": 78883,
-          "claim_text": "১৪ শিক্ষককে অবরুদ্ধ করে রেখেছেন সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা",
+          "claim_id": 79767,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -56529,56 +56581,86 @@
           }
         }
       ],
-      "related": [
+      "related": []
+    },
+    "national-631": {
+      "cluster_id": 631,
+      "headline": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+      "first_seen": "2026-09-27T18:49:55.560Z",
+      "last_update": "2026-09-27T18:49:55.562Z",
+      "claim_count": 2,
+      "events": [
         {
-          "cluster_id": 187,
-          "slug": "politics-187",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+          "ts": "2026-09-27T09:57:20.000Z",
+          "kind": "evidence",
+          "claim_id": 79768,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxNUU9IR2k3UjQwSWFuVnM4N3FrelJkalp6X1pDMk5hbzRaRFlfNEVBQmJlbzZwSWhlTF9iMXBJTHJxczFjdHNDQlYzbzktUlRoZnV0a0lIYWRCRVFHQW9rOEhjQldrZDBoQ29MNUQ1UTdtNnpKa3QtYTViVVlNM2IwMUhLbEhGWUJ1bTdOTDJ3TExJb2tlTS1ZLTV3RjQtbUdfa1VQTkp0N0tKZkpJT1ZRZGhBTzBhQzQweTk3aUNsWTV2SF81RjdfZFJqeG1qWFRxSlFySWNKamNfSGpPdy1kT3NMZHdIckdOZHlpRE5wdDJKQ0FMc05kYm82dTJmZ2phMjYwTllQTjhNYklCS3NTSVdGTHRKQ04wWjBKRi04VjRTOWo0MGlFVUM2dXpGNV94aDQ2Zm1xYnJja0YxdGdZQnZYZVg0WTNCYTM0eFE5c1E5bm55cVRGay1zcWJQcmw3ZEZlY3NCdEpwSUh5b05PYjdVSlRONHdlMEVqSGN4ajJiT3A0R2tzRUZzemRLa2FGSlYyR00wTUY4VlF1UmVONV8welJZS1c0cDRrRWVGb00tTzVQaVZzTmF4dDEtTElqR0NWbW40dG9CVFhxZHBBYll3eHE3MWI4UjlUSU9BNUh1QXQ0Z3RzS0gteUlOLU9GNE1FUG5mY2N2SnVXTUNibzhyTEVlLUdjQjdQR2ptZjFqYXlZN3RSenVn0gGfBEFVX3lxTE5La2RWR05jTS1lRlVaRUpQb0FibkRzZ2E4RFJLdU9idmJMdHJSY1BWdUxKcVktQ1N1Y014UUF4Mkl6ZUtwOG9BeFB5NnlkLWpRSi03RWM1c1RpLXp5MHotc2gxc3NTQ3B3cTRDMzN0UGxfTkpJbzhrNVZtcXY1SXIycjFaYVVoQ2tKVURxMFJjdUtxb1QyNW85ZFRhTW9IV2xYX2U0b0Z6eU5YQXNLSXR3ZklIazJsXzRfekhYUnJVbExkSWZjMERDQlVnMHdYazAzYkJZTXBpQ0VlWmRwYzRjTXY2U0xlV3NxaF9Ecy1OWThGQkREcXNFem8wcnhsZzl2bnVuNkRWZ0lLb296cl9QNFc5em1leDJFVUpJVmpMREU4Szk2YkZmYWhjYUxjSlJRZHc0TjNHUmRTZWM3ZmR1QzQ3TVlwek8wUEY3SEQyUXZ0N08wcmhVVGlGblphdXptaGdfdzJCOUVLdXIxMG5zTGNnQmNKUTE5MVZnNW96RHV5RWxrQVJyZU1reVFnRGRMcnB5elBhZmJZb3lYbGxzRDl0SHc3T1hETjZHc0hpLWs3ZzdTUmdVMEozaC1VWWwxT0pIUUNjQk9yOXM2SWE5Ti1wM2h6eG9RTlE4bTdzTDBvZDVGYVVuaXY2UDNrVXd0QnpvR0Qxa2N0ZG13WS1CUkNURnVrM2ZfQWRlWE1heEZSS1ZzRFE2YWpEM0xLdw?oc=5"
+          }
         },
         {
-          "cluster_id": 191,
-          "slug": "international-191",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পাকিস্তানের সাবেক প্রধানমন্ত্রী ইমরান খানের ৩ বোন গ্রেপ্তার"
+          "ts": "2026-09-27T09:57:20.000Z",
+          "kind": "evidence",
+          "claim_id": 79768,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxNUU9IR2k3UjQwSWFuVnM4N3FrelJkalp6X1pDMk5hbzRaRFlfNEVBQmJlbzZwSWhlTF9iMXBJTHJxczFjdHNDQlYzbzktUlRoZnV0a0lIYWRCRVFHQW9rOEhjQldrZDBoQ29MNUQ1UTdtNnpKa3QtYTViVVlNM2IwMUhLbEhGWUJ1bTdOTDJ3TExJb2tlTS1ZLTV3RjQtbUdfa1VQTkp0N0tKZkpJT1ZRZGhBTzBhQzQweTk3aUNsWTV2SF81RjdfZFJqeG1qWFRxSlFySWNKamNfSGpPdy1kT3NMZHdIckdOZHlpRE5wdDJKQ0FMc05kYm82dTJmZ2phMjYwTllQTjhNYklCS3NTSVdGTHRKQ04wWjBKRi04VjRTOWo0MGlFVUM2dXpGNV94aDQ2Zm1xYnJja0YxdGdZQnZYZVg0WTNCYTM0eFE5c1E5bm55cVRGay1zcWJQcmw3ZEZlY3NCdEpwSUh5b05PYjdVSlRONHdlMEVqSGN4ajJiT3A0R2tzRUZzemRLa2FGSlYyR00wTUY4VlF1UmVONV8welJZS1c0cDRrRWVGb00tTzVQaVZzTmF4dDEtTElqR0NWbW40dG9CVFhxZHBBYll3eHE3MWI4UjlUSU9BNUh1QXQ0Z3RzS0gteUlOLU9GNE1FUG5mY2N2SnVXTUNibzhyTEVlLUdjQjdQR2ptZjFqYXlZN3RSenVn?oc=5"
+          }
         },
         {
-          "cluster_id": 252,
-          "slug": "national-252",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+          "ts": "2026-09-27T09:57:20.000Z",
+          "kind": "evidence",
+          "claim_id": 79769,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxNUU9IR2k3UjQwSWFuVnM4N3FrelJkalp6X1pDMk5hbzRaRFlfNEVBQmJlbzZwSWhlTF9iMXBJTHJxczFjdHNDQlYzbzktUlRoZnV0a0lIYWRCRVFHQW9rOEhjQldrZDBoQ29MNUQ1UTdtNnpKa3QtYTViVVlNM2IwMUhLbEhGWUJ1bTdOTDJ3TExJb2tlTS1ZLTV3RjQtbUdfa1VQTkp0N0tKZkpJT1ZRZGhBTzBhQzQweTk3aUNsWTV2SF81RjdfZFJqeG1qWFRxSlFySWNKamNfSGpPdy1kT3NMZHdIckdOZHlpRE5wdDJKQ0FMc05kYm82dTJmZ2phMjYwTllQTjhNYklCS3NTSVdGTHRKQ04wWjBKRi04VjRTOWo0MGlFVUM2dXpGNV94aDQ2Zm1xYnJja0YxdGdZQnZYZVg0WTNCYTM0eFE5c1E5bm55cVRGay1zcWJQcmw3ZEZlY3NCdEpwSUh5b05PYjdVSlRONHdlMEVqSGN4ajJiT3A0R2tzRUZzemRLa2FGSlYyR00wTUY4VlF1UmVONV8welJZS1c0cDRrRWVGb00tTzVQaVZzTmF4dDEtTElqR0NWbW40dG9CVFhxZHBBYll3eHE3MWI4UjlUSU9BNUh1QXQ0Z3RzS0gteUlOLU9GNE1FUG5mY2N2SnVXTUNibzhyTEVlLUdjQjdQR2ptZjFqYXlZN3RSenVn0gGfBEFVX3lxTE5La2RWR05jTS1lRlVaRUpQb0FibkRzZ2E4RFJLdU9idmJMdHJSY1BWdUxKcVktQ1N1Y014UUF4Mkl6ZUtwOG9BeFB5NnlkLWpRSi03RWM1c1RpLXp5MHotc2gxc3NTQ3B3cTRDMzN0UGxfTkpJbzhrNVZtcXY1SXIycjFaYVVoQ2tKVURxMFJjdUtxb1QyNW85ZFRhTW9IV2xYX2U0b0Z6eU5YQXNLSXR3ZklIazJsXzRfekhYUnJVbExkSWZjMERDQlVnMHdYazAzYkJZTXBpQ0VlWmRwYzRjTXY2U0xlV3NxaF9Ecy1OWThGQkREcXNFem8wcnhsZzl2bnVuNkRWZ0lLb296cl9QNFc5em1leDJFVUpJVmpMREU4Szk2YkZmYWhjYUxjSlJRZHc0TjNHUmRTZWM3ZmR1QzQ3TVlwek8wUEY3SEQyUXZ0N08wcmhVVGlGblphdXptaGdfdzJCOUVLdXIxMG5zTGNnQmNKUTE5MVZnNW96RHV5RWxrQVJyZU1reVFnRGRMcnB5elBhZmJZb3lYbGxzRDl0SHc3T1hETjZHc0hpLWs3ZzdTUmdVMEozaC1VWWwxT0pIUUNjQk9yOXM2SWE5Ti1wM2h6eG9RTlE4bTdzTDBvZDVGYVVuaXY2UDNrVXd0QnpvR0Qxa2N0ZG13WS1CUkNURnVrM2ZfQWRlWE1heEZSS1ZzRFE2YWpEM0xLdw?oc=5"
+          }
         },
         {
-          "cluster_id": 256,
-          "slug": "national-256",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
+          "ts": "2026-09-27T18:57:21.154Z",
+          "kind": "claim",
+          "claim_id": 79768,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন"
         },
         {
-          "cluster_id": 278,
-          "slug": "national-278",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
+          "ts": "2026-09-27T18:57:21.165Z",
+          "kind": "claim",
+          "claim_id": 79769,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন"
         },
         {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+          "ts": "2026-09-27T18:57:21.169Z",
+          "kind": "verify",
+          "claim_id": 79768,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:57:21.169Z",
+          "kind": "verify",
+          "claim_id": 79769,
+          "claim_text": "‘আপসেট হতেই পারে’, মালয়েশিয়াকে নিয়ে সতর্ক কোচ সালাউদ্দিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
-      ]
+      ],
+      "related": []
     },
     "national-78": {
       "cluster_id": 78,
@@ -58247,6 +58329,85 @@
           "kind": "verify",
           "claim_id": 44870,
           "claim_text": "Global Covid cases top 372 million",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-burnham-refreshes-the": {
+      "cluster_id": 629,
+      "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
+      "first_seen": "2026-09-27T18:49:55.545Z",
+      "last_update": "2026-09-27T18:49:55.547Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-27T15:17:23.000Z",
+          "kind": "evidence",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/sep/27/andy-burnham-laura-kuenssberg-show-social-care"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:05:15.000Z",
+          "kind": "evidence",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/sep/27/burnham-bounce-gives-labour-a-second-chance-but-budget-realities-are-looming"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:05:15.000Z",
+          "kind": "evidence",
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/sep/27/burnham-bounce-gives-labour-a-second-chance-but-budget-realities-are-looming"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:57:17.527Z",
+          "kind": "claim",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace"
+        },
+        {
+          "ts": "2026-09-27T18:57:17.532Z",
+          "kind": "claim",
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?"
+        },
+        {
+          "ts": "2026-09-27T18:57:17.537Z",
+          "kind": "verify",
+          "claim_id": 79764,
+          "claim_text": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:57:17.537Z",
+          "kind": "verify",
+          "claim_id": 79765,
+          "claim_text": "‘Don’t squander it’: Can Labour hang on to the Burnham bounce?",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
