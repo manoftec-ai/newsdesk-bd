@@ -1,0 +1,75 @@
+---
+title: "নিউইয়র্কের উদ্দেশে ঢাকা ছাড়লেন প্রধানমন্ত্রী, সফরসঙ্গী কারা?"
+thumbnail: "/images/national-158.webp"
+thumbnailAlt: "নিউইয়র্কের উদ্দেশে ঢাকা ছাড়লেন প্রধানমন্ত্রী, সফরসঙ্গী কারা? — ছবি: dungodung (BY-SA)"
+seoTitle: "নিউইয়র্কের উদ্দেশে ঢাকা ছাড়লেন প্রধানমন্ত্রী, সফরসঙ্গী কারা?"
+excerpt: "জাতিসংঘের ৮১তম অধিবেশনে অংশ নিতে সোমবার (২১ সেপ্টেম্বর) সকালে নিউ ইয়র্কের উদ্দেশে ঢাকা ত্যাগ করবেন প্রধানমন্ত্রী তারেক রহমান। প্রধানমন্ত্রী তারেক রহমান জাতিসংঘ সাধারণ পরিষদের (ইউএন"
+seoDescription: "জাতিসংঘের ৮১তম অধিবেশনে অংশ নিতে সোমবার (২১ সেপ্টেম্বর) সকালে নিউ ইয়র্কের উদ্দেশে ঢাকা ত্যাগ করবেন প্রধানমন্ত্রী তারেক রহমান। প্রধানমন্ত্রী তারেক রহমান জা…"
+date: 2026-09-20T18:01:00.000Z
+category: "national"
+tags: ["dhaka"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "জাতিসংঘের সাধারণ পরিষদের (ইউএনজিএ) ৮১তম অধিবেশনে অংশ নিতে নিউইয়র্কের উদ্দেশে ঢাকা ছেড়েছেন প্রধানমন্ত্রী তারেক রহমান"
+faq: []
+sources:
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/national/969645/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%85%E0%A6%82%E0%A6%B6-%E0%A6%A8%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%87%E0%A7%9F%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87"
+  - name: "দেশ রূপান্তর"
+    url: "https://www.deshrupantor.com/721814/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%A6%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%87%E0%A7%9F%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%97%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/national/969678/%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%87%E0%A7%9F%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%9B%E0%A6%BE%E0%A7%9C%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-09-27T15:42:16.426Z"
+  clusterId: 158
+  claimIds:
+    - 31
+    - 32
+    - 33
+  evidenceHash: "498ec12cab775bae"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+    - type: "paper"
+      label: "reputable paper corroboration (deshrupantor)"
+publication:
+  slug: "national-158"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-09-27T15:42:16.426Z"
+  clusterId: 158
+  claimIds:
+    - 31
+    - 32
+    - 33
+  evidenceHash: "498ec12cab775bae"
+---
+
+জাতিসংঘের ৮১তম অধিবেশনে অংশ নিতে সোমবার (২১ সেপ্টেম্বর) সকালে নিউ ইয়র্কের উদ্দেশে ঢাকা ত্যাগ করবেন প্রধানমন্ত্রী তারেক রহমান।
+
+প্রধানমন্ত্রী তারেক রহমান জাতিসংঘ সাধারণ পরিষদের (ইউএনজিএ) ৮১তম অধিবেশনে যোগ দিতে মার্কিন যুক্তরাষ্ট্রের নিউইয়র্কের উদ্দেশ্যে ঢাকা ত্যাগ করেছেন।
+
+সোমবার (২১ সেপ্টেম্বর) ভোর ৫টা ৫০ মিনিটে তার্কিশ এয়ারলাইন্সের একটি ফ্লাইটে হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দর ত্যাগ করেন প্রধানমন্ত্রী।
+
+রবিবার (২০ সেপ্টেম্বর) রাতে প্রধানমন্ত্রীর প্রেস উইং থেকে জানানো হয়, ভোর সোয়া ৫টায় শাহজালাল আন্তর্জাতিক বিমানবন্দরে পৌঁছাবেন, এরপর বিশেষ ফ্লাইটে ঢাকা ত্যাগ করবেন তিনি।
+
+আগামী ২৪ সেপ্টেম্বর জাতিসংঘ সাধারণ পরিষদের (ইউএনজিএ) ৮১তম অধিবেশনে ভাষণ দেবেন প্রধানমন্ত্রী।
+
+সোমবার (২১ সেপ্টেম্বর) সকাল পৌনে ৬টার দিকে হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দর থেকে নিউইয়র্কের উদ্দেশে যাত্রা করেন তিনি।
+
+ইস্তাম্বুল হয়ে তার নিউইয়র্কের জন এফ কেনেডি আন্তর্জাতিক বিমানবন্দরে পৌঁছানোর কথা রয়েছে।
+
+সফরসঙ্গী হিসেবে রয়েছেন তার সহধর্মিণী ডা. জুবাইদা রহমান।

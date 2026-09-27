@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { cleanAlt } from "../lib/image-alt.js";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import VerificationBadge from "../components/VerificationBadge.astro";
 import { SITE, sortedPosts, getCategory, getBadge, formatDate, formatDateTimeBDShort } from "../lib/news-data.js";
@@ -66,7 +67,7 @@ const fmt = (iso) => (iso ? formatDate(iso) : "—");
                   <a href={`/article/${post.slug}`} class="mini-row-thumb shrink-0" aria-label={post.title}>
                     <img
                       src={post.thumbnail}
-                      alt={post.thumbnailAlt || ""}
+                      alt={cleanAlt(post.thumbnailAlt)}
                       loading="lazy"
                       decoding="async"
                     />
