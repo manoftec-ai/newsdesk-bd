@@ -182,10 +182,10 @@ function audit(slug, raw) {
   const srcUrls = [...srcBlock.matchAll(/url:\s*"([^"\n]*)"/gu)].map((m) => m[1]);
   const nonArticle = srcUrls.filter((u) => /\/(video|photo|live|multimedia|webcam)\//i.test(u));
   if (nonArticle.length) {
-    out.push({ code: 'NON_ARTICLE_SOURCE', detail: `${nonArticle.length} of ${srcUrls.length} sources are video/photo urls: ${nonArticle[0].slice(0, 52)}` });
+    out.push({ code: 'NON_ARTICLE_SOURCE', severity: `${nonArticle.length}/${srcUrls.length}`, detail: `${nonArticle.length} of ${srcUrls.length} sources are video/photo urls: ${nonArticle[0].slice(0, 52)}` });
   }
   if (new Set(sources).size === 1 && sources.length > 1) {
-    out.push({ code: 'SELF_CORROBORATION', detail: sources.join(', ') });
+    out.push({ code: 'SELF_CORROBORATION', severity: String(sources.length), detail: sources.join(', ') });
   }
 
   // 6. tags with no connection to the story
@@ -237,6 +237,7 @@ if (asJson) {
 const CODES = new Set([
   'BODY_OFF_HEADLINE', 'DATELINE_IN_TITLE', 'MOJIBAKE', 'MIXED_LANGUAGE',
   'MIDWORD_OPENER', 'SELF_CORROBORATION', 'OFF_TOPIC_TAGS', 'NON_BENGALI_TITLE',
+  'NON_ARTICLE_SOURCE', 'QUOTED_TITLE',
 ]);
 for (const f of findings) {
   for (const i of f.issues) {

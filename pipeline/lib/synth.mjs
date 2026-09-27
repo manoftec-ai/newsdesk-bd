@@ -131,7 +131,18 @@ export function frontMatter(brief, { publication = null } = {}) {
     author: 'desk',
     lang: 'bn',
     draft: false,
-    sources: brief.sources ?? [],
+    // 2026-07-27: a source list is what the evidence panel is built from, so
+    // two shapes of entry corrupt what the reader is told:
+    //
+    //   a /video/ or /photo/ url is not a report, yet it was counted as an
+    //   independent corroborating source (measured: 17 articles, one with 5 of
+    //   22 'sources' being videos)
+    //   the same outlet listed twice, so a panel could announce that the source
+    //   corroborated itself (measured: 15 articles)
+    //
+    // Both are removed here, at the only place sources are written, rather than
+    // left for the renderer to compensate for.
+    sources: distinctArticleOutlets(brief.sources ?? []),
     verification: {
       badge,
       tier,
@@ -555,6 +566,26 @@ function extractExcerpt(md) {
 // marker leaked into excerpt/seoDescription front matter (seen on live homepage
 // cards for national-485/486/488). prepBody is the single ordering authority used
 // by finalizeStory, so the excerpt can never contain the stripped block.
+/**
+ * Sources as the evidence panel needs them: real articles, one per outlet.
+ *
+ * A /video/ url is a broadcast clip, not a report; a repeated outlet is not a
+ * second witness. Returning one entry per outlet, articles only, is what makes
+ * "N independent sources" mean what a reader takes it to mean.
+ */
+export function distinctArticleOutlets(sources) {
+  const list = Array.isArray(sources) ? sources : [];
+  const byOutlet = new Map();
+  for (const s of list) {
+    const url = String(s?.url ?? '');
+    if (!url) continue;
+    if (/\/(video|photo|live|multimedia|webcam)\//i.test(url)) continue;
+    const key = String(s?.name ?? s?.id ?? '').trim().toLowerCase() || url;
+    if (!byOutlet.has(key)) byOutlet.set(key, s);
+  }
+  return [...byOutlet.values()];
+}
+
 export function prepBody(md) {
   const { keyPoints, remaining } = extractKeyPoints(md);
   return { excerpt: extractExcerpt(remaining), keyPoints, remaining };

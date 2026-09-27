@@ -40,6 +40,10 @@ jobs:
         working-directory: pipeline
         run: npm test
 
+      - name: Content gate — no new defect class in published articles
+        working-directory: pipeline
+        run: node tools/content_gate.mjs
+
       - name: Assert the site templates still satisfy the layout contract
         run: |
           # A short, legible summary in the run log: which template drew what.
