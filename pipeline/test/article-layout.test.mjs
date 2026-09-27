@@ -142,6 +142,41 @@ test('the verification status is stated once, not twice above the story', () => 
   assert.ok(/evidenceLabelBn/.test(panel), 'the evidence panel lost the outlet list');
 });
 
+test('a verification badge is never followed by its own label in plain text', () => {
+  // 2026-09-27, found by auditing the live homepage rather than by being told:
+  // <VerificationBadge> already prints "নিশ্চিত", and four places printed the
+  // same word again as adjacent text - the article page, the homepage mini-rows,
+  // and both PostCard variants. The article-page one was the "two repeated
+  // নিশ্চিত" the user reported: an earlier edit had removed the <p> that wrapped
+  // {badge.label}{badge.tierNote} but left the text nodes behind, so the line
+  // kept rendering, unstyled, directly above the headline.
+  const files = {
+    'article/[slug].astro': article,
+    'index.astro': index,
+    'PostCard.astro': card,
+  };
+  for (const [name, src] of Object.entries(files)) {
+    assert.ok(
+      !/\{badge\.label\}/.test(src),
+      `${name} still renders {badge.label} as text beside the badge chip`,
+    );
+    assert.ok(
+      !/\{badge\.tierNote\}/.test(src),
+      `${name} still renders {badge.tierNote} as stray text`,
+    );
+  }
+  // and no bare, un-wrapped interpolation left sitting between JSX elements -
+  // the exact shape of the leftover that caused this
+  assert.ok(
+    !/\}\s*\n\s*\{badge\./.test(article),
+    'article page has a bare {badge.*} text node with no element around it',
+  );
+  // the badge itself must still be there
+  assert.ok(/<VerificationBadge/.test(article), 'the article VerificationBadge was removed');
+  assert.ok(/<VerificationBadge/.test(index), 'the homepage VerificationBadge was removed');
+  assert.ok(/<VerificationBadge/.test(card), 'the PostCard VerificationBadge was removed');
+});
+
 test('attribution is still available where machines need it', () => {
   // removing the visible সূত্র must not remove the record of where the story came from
   assert.ok(/articleBody: post\.excerpt/.test(article), 'JSON-LD articleBody missing');
