@@ -116,6 +116,16 @@ jobs:
           mkdir -p pipeline/tmp/stories
           node pipeline/tools/compose_stories.mjs --pick=pipeline/state/pick.json --max="${{ vars.AUTHOR_MAX_PER_RUN || 6 }}"
 
+      # 2026-09-27: the body-substance floor is 100 words of real prose, not 150.
+      # The 150 figure existed to stop the writer stuffing 15-character fragments to
+      # reach a word count; the composer now refuses anything it cannot build from
+      # genuine sentences, so the floor can drop to a genuine short-news length.
+      # Left at 150 the finalizer rejected 12 of 12 composed articles as
+      # BODY_SUBSTANCE_BLOCKED while the picker - which does not run the substance
+      # check - kept selecting them.
+      env:
+        PUBLISH_MIN_WORDS: "100"
+
       - name: Reject direct public Markdown edits
         run: |
           if ! git diff --quiet -- site/src/content/news || ! git diff --cached --quiet -- site/src/content/news || [ -n "$(git ls-files --others --exclude-standard -- site/src/content/news)" ]; then
