@@ -11,6 +11,8 @@ tags: ["economy"]
 author: "desk"
 lang: "bn"
 draft: false
+tracked: true
+lastChecked: 2026-09-27T19:10:48Z
 keyPoints:
   - "চেয়ারম্যান পদের জামানত ৫ হাজার থেকে বাড়িয়ে ২৫ হাজার টাকা"
   - "সদস্য পদে জামানত ১ হাজার থেকে বাড়িয়ে ৫ হাজার টাকা"
