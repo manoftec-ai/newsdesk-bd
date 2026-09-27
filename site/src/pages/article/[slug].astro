@@ -86,35 +86,6 @@ const readingMinutes = (() => {
   return { minutes: Math.max(1, Math.round(words / 150)), words };
 })();
 
-// A standfirst (উপশিরোনাম) is standard on every newspaper article and was
-// missing on all 377. Use an explicit one when the story has it, otherwise the
-// excerpt, but only when it says something the headline does not.
-const standfirst = (() => {
-  const explicit = String(entry.data.standfirst ?? entry.data.subhead ?? "").trim();
-  if (explicit) return explicit;
-  const ex = String(post.excerpt ?? "").trim();
-  if (!ex) return "";
-  const titleLength = String(post.title ?? "").length;
-  const h = String(post.title ?? "").replace(/[।\s]+/g, "");
-  const e = ex.replace(/[।\s]+/g, "");
-  if (!e || e === h) return "";
-  // 208 of the 377 excerpts are two fragments stitched together with a stray
-  // "।।" seam (e.g. "...বাড়িয়েছে সরকার।। ডিজেল," — cut mid-list). Rather than
-  // show no deck at all, keep the first complete sentence when there is one.
-  if (/।\s*।/.test(ex)) {
-    const firstSentence = ex.split(/।\s*।/)[0].trim().replace(/[,\s]+$/, "");
-    const clean = firstSentence.includes("।") ? firstSentence : `${firstSentence}।`;
-    return clean.length >= 40 ? clean : "";
-  }
-  // A deck must be a complete sentence. Reject a trailing ellipsis and a
-  // fragment that stops mid-list.
-  if (/[.…]{1,3}$/.test(ex)) return "";
-  if (/[,\s]$/.test(ex)) return "";
-  // A deck that runs most of the headline's length is a second headline, not a
-  // summary.
-  if (ex.length > Math.max(220, titleLength * 2.2)) return "";
-  return ex;
-})();
 
 post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
 
@@ -409,11 +380,14 @@ const shareLinks = [
           {post.title}
         </h1>
 
-        {standfirst && (
-          <p class="standfirst mt-3 font-serif text-lg leading-relaxed text-muted-foreground">
-            {standfirst}
-          </p>
-        )}
+        {/* 2026-09-27: no excerpt/standfirst under the headline, here or on the
+            homepage. The user asked for this twice and it survived the first fix
+            because the homepage lead and the article deck are different render
+            sites. Here it was also worse than redundant: the guard below only
+            compares the deck against the headline, so on national-578 the deck
+            passed and then repeated the body's own opening sentence verbatim,
+            10 lines apart. The excerpt stays in the front matter for the cards
+            and for SEO, where it belongs. */}
 
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
           {byline && <span class="font-medium text-foreground">{byline}</span>}
