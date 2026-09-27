@@ -89,27 +89,6 @@ const readingMinutes = (() => {
 
 post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
 
-// Byline. All 377 articles carried author: "desk" and no visible byline at all.
-//
-// These stories are aggregated from named outlets, not written by us, so
-// attributing them to a reporter would be false and attributing them to the
-// outlet bare would imply that outlet published the page here. The honest form
-// is an explicit sourcing credit, which is also what Bangladeshi papers use when
-// reprinting: "সূত্র: প্রথম আলো".
-const byline = (() => {
-  const names = [
-    ...new Set(
-      (post.sources ?? [])
-        .map((s) => sourceNameBn(s.name) ?? s.name)
-        .map((n) => String(n ?? "").trim())
-        .filter(Boolean),
-    ),
-  ];
-  if (!names.length) return null;
-  if (names.length === 1) return `সূত্র: ${names[0]}`;
-  if (names.length === 2) return `সূত্র: ${names[0]} ও ${names[1]}`;
-  return `সূত্র: ${names[0]} ও অন্যান্য ${names.length - 1}টি মাধ্যম`;
-})();
 
 const category = getCategory(post.category);
 const author = getAuthor(post.author);
@@ -310,71 +289,7 @@ const shareLinks = [
           {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
           {" — "}
           {badge.tierNote}
-          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
-          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
-        </p>
 
-        {/* 2026-09-26: tier A (national/politics/international) single-source
-            stories are allowed to publish so the site is not silent on the news
-            that matters most, but they must never read as corroborated. The badge
-            above still says "single"; this makes the gap explicit. */}
-        {post.verification?.uncorroborated && (
-          <p
-            class="uncorroborated-notice mt-2 text-sm font-medium text-muted-foreground"
-            role="note"
-          >
-            এই প্রতিবেদনটি একটি মাধ্যমের তথ্যের ভিত্তিতে প্রকাশিত হয়েছে। এটি
-            স্বাধীনভাবে যাচাই করা হয়নি, তাই পাঠের আগে অন্য সূত্রে মিলিয়ে নেওয়া উচিত।
-          </p>
-        )}
-
-        {(post.verification?.evidence?.length ?? 0) > 0 && (
-          <details class="evidence-panel mt-3" role="group" aria-label="প্রমাণ দেখুন">
-            <summary class="evidence-summary">
-              <span class="flex items-center gap-1.5">
-                <Icon name="info" class="h-4 w-4" />
-                প্রমাণ দেখুন
-              </span>
-              <span class="text-xs text-muted-foreground">
-                — {post.verification.badge === "partial" ? "কেন একক/আংশিক" : "কেন নিশ্চিত বলছি"}
-              </span>
-            </summary>
-            <div class="evidence-body mt-3">
-              <p class="text-sm leading-relaxed text-muted-foreground">
-                {post.verification.badge === "confirmed"
-                  ? "দুই বা ততোধিক স্বাধীন সূত্রে তথ্যটি মিলেছে — বক্তব্যটি যাচাইকৃত।"
-                  : post.verification.badge === "verified"
-                    ? "অফিসিয়াল বা প্রাথমিক সূত্রে তথ্যটি নিশ্চিত হয়েছে।"
-                    : "একক সূত্রের ভিত্তিতে বা আংশিক তথ্যে যাচাই — আরও সূত্র না মেশা পর্যন্ত সংক্ষিপ্ত থাকল।"}
-              </p>
-              {post.verification.tier && (
-                <p class="mt-1 text-sm text-muted-foreground">
-                  নির্ভরযোগ্যতার স্তর: <span class="font-medium">{post.verification.tier}</span>
-                  {post.verification.score != null ? ` · স্কোর ${post.verification.score}` : ""}
-                </p>
-              )}
-              <ul class="evidence-list mt-3 space-y-1.5">
-                {(post.verification?.evidence ?? []).map((e) => (
-                  <li class="flex items-baseline gap-2 text-sm">
-                    <Icon name="check" class="h-3.5 w-3.5 shrink-0 text-primary" />
-                    {e.url ? (
-                      <a
-                        href={e.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="underline-offset-2 hover:text-primary underline"
-                      >
-                        {evidenceLabelBn(e.label)}
-                      </a>
-                    ) : (
-                      <span>{evidenceLabelBn(e.label)}</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </details>
-        )}
 
         <h1 class="mt-4 font-serif text-3xl font-bold leading-tight sm:text-4xl">
           {post.title}
@@ -390,7 +305,6 @@ const shareLinks = [
             and for SEO, where it belongs. */}
 
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-          {byline && <span class="font-medium text-foreground">{byline}</span>}
           <span class="flex items-center gap-1.5">
             <Icon name="calendar" class="h-4 w-4" />
             <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
@@ -431,6 +345,24 @@ const shareLinks = [
               attribution stays in the front matter and in the source list. */}
         </figure>
       )}
+
+          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
+          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
+        </p>
+
+        {/* 2026-09-26: tier A (national/politics/international) single-source
+            stories are allowed to publish so the site is not silent on the news
+            that matters most, but they must never read as corroborated. The badge
+            above still says "single"; this makes the gap explicit. */}
+        {post.verification?.uncorroborated && (
+          <p
+            class="uncorroborated-notice mt-2 text-sm font-medium text-muted-foreground"
+            role="note"
+          >
+            এই প্রতিবেদনটি একটি মাধ্যমের তথ্যের ভিত্তিতে প্রকাশিত হয়েছে। এটি
+            স্বাধীনভাবে যাচাই করা হয়নি, তাই পাঠের আগে অন্য সূত্রে মিলিয়ে নেওয়া উচিত।
+          </p>
+        )}
 
       {post.updates && post.updates.length > 0 && (() => {
         const last = post.updates[post.updates.length - 1];
@@ -591,6 +523,58 @@ const shareLinks = [
           </div>
         )}
       </div>
+
+      {/* 2026-09-27: the প্রমাণ দেখুন box moved from ABOVE the headline to below
+          the main news, as the user asked. It sat above the h1 and pushed the
+          headline halfway down the page, so a reader met the verification
+          machinery before the story. */}
+      {(post.verification?.evidence?.length ?? 0) > 0 && (
+          <details class="evidence-panel mt-3" role="group" aria-label="প্রমাণ দেখুন">
+            <summary class="evidence-summary">
+              <span class="flex items-center gap-1.5">
+                <Icon name="info" class="h-4 w-4" />
+                প্রমাণ দেখুন
+              </span>
+              <span class="text-xs text-muted-foreground">
+                — {post.verification.badge === "partial" ? "কেন একক/আংশিক" : "কেন নিশ্চিত বলছি"}
+              </span>
+            </summary>
+            <div class="evidence-body mt-3">
+              <p class="text-sm leading-relaxed text-muted-foreground">
+                {post.verification.badge === "confirmed"
+                  ? "দুই বা ততোধিক স্বাধীন সূত্রে তথ্যটি মিলেছে — বক্তব্যটি যাচাইকৃত।"
+                  : post.verification.badge === "verified"
+                    ? "অফিসিয়াল বা প্রাথমিক সূত্রে তথ্যটি নিশ্চিত হয়েছে।"
+                    : "একক সূত্রের ভিত্তিতে বা আংশিক তথ্যে যাচাই — আরও সূত্র না মেশা পর্যন্ত সংক্ষিপ্ত থাকল।"}
+              </p>
+              {post.verification.tier && (
+                <p class="mt-1 text-sm text-muted-foreground">
+                  নির্ভরযোগ্যতার স্তর: <span class="font-medium">{post.verification.tier}</span>
+                  {post.verification.score != null ? ` · স্কোর ${post.verification.score}` : ""}
+                </p>
+              )}
+              <ul class="evidence-list mt-3 space-y-1.5">
+                {(post.verification?.evidence ?? []).map((e) => (
+                  <li class="flex items-baseline gap-2 text-sm">
+                    <Icon name="check" class="h-3.5 w-3.5 shrink-0 text-primary" />
+                    {e.url ? (
+                      <a
+                        href={e.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        class="underline-offset-2 hover:text-primary underline"
+                      >
+                        {evidenceLabelBn(e.label)}
+                      </a>
+                    ) : (
+                      <span>{evidenceLabelBn(e.label)}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </details>
+      )}
 
       {post.updates && post.updates.length > 0 && (
         <div class="mt-3" id="update-history">
