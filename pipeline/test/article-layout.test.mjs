@@ -285,3 +285,21 @@ test('attribution is still available where machines need it', () => {
   const config = readFileSync(join(SITE, 'content.config.js'), 'utf8');
   assert.ok(/sources/.test(config), 'the sources field was removed from the content schema');
 });
+
+test('every astro template has balanced element tags', () => {
+  // 2026-07-27: a duplicated </p> in article/[slug].astro shipped and Vercel
+  // failed the build with "Closing tag '</p>' has no matching opening tag" at
+  // line 579. This is a cheap structural check that would have caught it before
+  // a failed production deploy - the local Astro compiler could not, because it
+  // reported 0 failures on deliberately corrupted markup.
+  const files = walk(join(SITE, 'pages')).concat(walk(join(SITE, 'components')));
+  assert.ok(files.length > 10, `expected to find the templates, found ${files.length}`);
+  for (const file of files) {
+    const src = readFileSync(file, 'utf8');
+    for (const tag of ['p', 'div', 'details', 'ul', 'figure', 'section']) {
+      const open = (src.match(new RegExp(`<${tag}[\\s>]`, 'g')) ?? []).length;
+      const close = (src.match(new RegExp(`</${tag}>`, 'g')) ?? []).length;
+      assert.equal(open, close, `${file}: <${tag}> opened ${open} times, closed ${close}`);
+    }
+  }
+});
