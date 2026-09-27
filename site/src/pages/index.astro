@@ -128,8 +128,12 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
                   </span>
                 )}
                 <VerificationBadge badge={leadBadge} />
+                {/* 2026-09-27: the lead card was the only date on the page printed
+                    as raw ISO - `2026-09-26` - while all 25 others used the Bengali
+                    format. Same defect the n14 audit rule exists to catch, in the
+                    one place a reader always looks first. */}
                 <time datetime={lead.date} class="text-muted-foreground">
-                  {lead.date}
+                  {formatDateTimeBDShort(new Date(lead.date).getTime())}
                 </time>
                 {leadAuthor && (
                   <span class="flex items-center gap-1 text-muted-foreground">

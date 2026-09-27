@@ -177,6 +177,32 @@ test('a verification badge is never followed by its own label in plain text', ()
   assert.ok(/<VerificationBadge/.test(card), 'the PostCard VerificationBadge was removed');
 });
 
+test('no date is printed as raw ISO while the rest use the Bengali format', () => {
+  // 2026-09-27, from auditing the live homepage: exactly one date on the whole
+  // page came out as `2026-09-26` - the lead card - while the other 25 all used
+  // the Bengali format. That is the same mixed-format defect the pipeline's own
+  // n14 audit rule exists to catch, sitting in the first thing a reader sees.
+  // the ISO string is legitimate inside the datetime ATTRIBUTE, so match it as
+  // element text only - a bare >{lead.date}< or on its own line
+  assert.ok(
+    !/>\s*\{lead\.date\}\s*</.test(index),
+    'the lead card renders the raw ISO date as text instead of the formatted one',
+  );
+  assert.ok(
+    !/^\s*\{lead\.date\}\s*$/mu.test(index),
+    'the lead card renders the raw ISO date as text on its own line',
+  );
+  assert.ok(
+    /formatDateTimeBDShort\(/.test(index),
+    'the lead card lost its date formatter',
+  );
+  // the machine-readable attribute must stay ISO - that is correct there
+  assert.ok(
+    /<time datetime=\{lead\.date\}/.test(index),
+    'the <time datetime> attribute should remain the ISO value for machines',
+  );
+});
+
 test('attribution is still available where machines need it', () => {
   // removing the visible সূত্র must not remove the record of where the story came from
   assert.ok(/articleBody: post\.excerpt/.test(article), 'JSON-LD articleBody missing');
