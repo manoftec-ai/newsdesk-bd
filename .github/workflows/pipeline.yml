@@ -67,6 +67,25 @@ jobs:
       - name: Verify
         run: node run.js verify || true
 
+      - name: Backfill thin article bodies
+        run: |
+          # Re-fetch real bodies for stored items that only ever got a headline.
+          #
+          # This tool has existed since 2026-09-25 but was never wired into any
+          # workflow, so it had never run in CI. It has to run BEFORE extract:
+          # the brief builder reads raw_items.body, so enriching afterwards would
+          # be discarded by the next run — which is the same class of bug as
+          # insertRawItem discarding a duplicate's enriched body.
+          #
+          # --days=3 keeps the budget on recent news instead of the 5,800 items
+          # older than a week. --resolve-gnews is required: the top thin items
+          # are news.google.com wrappers, which cannot be fetched until decoded
+          # (4 of 6 in a dry run failed with gnews_not_resolved without it).
+          # --write is needed for it to persist; it is dry-run without.
+          ENRICH_TIMEOUT_MS=10000 node tools/enrich_bodies.mjs \
+            --limit=30 --days=3 --resolve-gnews --write \
+            || echo "body backfill failed or timed out; briefs rebuild from what we have"
+
       - name: Extract briefs
         run: node run.js extract || true
 
