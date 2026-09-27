@@ -3,8 +3,8 @@ title: "Met office forecasts light rain in parts of country"
 thumbnail: "/images/national-met-office-forecasts.webp"
 thumbnailAlt: "Met office forecasts light rain in parts of country — ছবি: ASaber91 (BY)"
 seoTitle: "Met office forecasts light rain in parts of country"
-excerpt: "Met office today forecasted light rain or drizzle at one or two places over Rangpur, Rajshahi, Chattogram and Sylhet divisions. Weather মে remain mainly dry with partly cloudy sky "
-seoDescription: "Met office today forecasted light rain or drizzle at one or two places over Rangpur, Rajshahi, Chattogram and Sylhet divisions. Weather মে remain mainly d…"
+excerpt: "রংপুরসহ চার বিভাগে হালকা বৃষ্টির পূর্বাভাস; ১৪ জেলায় শৈত্যপ্রবাহ, তেঁতুলিয়ায় সর্বনিম্ন ৬.৮ ডিগ্রি।"
+seoDescription: "রংপুরসহ চার বিভাগে হালকা বৃষ্টির পূর্বাভাস; ১৪ জেলায় শৈত্যপ্রবাহ, তেঁতুলিয়ায় সর্বনিম্ন ৬.৮ ডিগ্রি।"
 date: 2026-09-19T15:29:35.259Z
 category: "national"
 tags:
@@ -16,7 +16,11 @@ author: "desk"
 lang: "bn"
 draft: false
 keyPoints: []
-faq: []
+faq:
+  - q: "কোথায় বৃষ্টির পূর্বাভাস?"
+    a: "রংপুর, রাজশাহী, চট্টগ্রাম ও সিলেট বিভাগের দু-এক জায়গায় হালকা বৃষ্টি বা গুঁড়িগুঁড়ি হতে পারে।"
+  - q: "শৈত্যপ্রবাহ কোথায় বইছে?"
+    a: "রাজশাহী, রংপুরসহ ১৪ জেলা ও সীতাকুণ্ডে মৃদু থেকে মাঝারি শৈত্যপ্রবাহ; তেঁতুলিয়ায় সর্বনিম্ন ৬.৮ ডিগ্রি সেলসিয়াস।"
 sources:
   - name: "The Independent"
     url: "https://www.theindependentbd.com/post/272575"
