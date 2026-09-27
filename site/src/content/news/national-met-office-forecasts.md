@@ -1,5 +1,7 @@
 ---
 title: "Met office forecasts light rain in parts of country"
+thumbnail: "/images/national-met-office-forecasts.webp"
+thumbnailAlt: "Met office forecasts light rain in parts of country — ছবি: ASaber91 (BY)"
 seoTitle: "Met office forecasts light rain in parts of country"
 excerpt: "Met office today forecasted light rain or drizzle at one or two places over Rangpur, Rajshahi, Chattogram and Sylhet divisions. Weather মে remain mainly dry with partly cloudy sky "
 seoDescription: "Met office today forecasted light rain or drizzle at one or two places over Rangpur, Rajshahi, Chattogram and Sylhet divisions. Weather মে remain mainly d…"
