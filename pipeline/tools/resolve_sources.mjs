@@ -30,6 +30,8 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
+import { extractArticle } from '../lib/article-text.mjs';
+
 const HERE = import.meta.dirname;
 const BRIEFS_DIR = resolve(HERE, '../state/briefs');
 const SITE_DIR = resolve(HERE, '../../site/src/content/news');
@@ -91,60 +93,39 @@ async function resolveWrapper(wrapper, timeoutMs = 20000) {
   }
 }
 
-/** Publisher page -> plain Bengali article text. */
-export async function extractArticle(url, timeoutMs = 20000) {
-  const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), timeoutMs);
-  try {
-    const res = await fetch(url, {
-      headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml' },
-      signal: ctl.signal,
-      redirect: 'follow',
-    });
-    if (!res.ok) return { ok: false, why: `http-${res.status}` };
-    const html = await res.text();
-    // drop non-content noise before stripping tags
-    const cleaned = html
-      .replace(/<script[\s\S]*?<\/script>/giu, ' ')
-      .replace(/<style[\s\S]*?<\/style>/giu, ' ')
-      .replace(/<nav[\s\S]*?<\/nav>/giu, ' ')
-      .replace(/<header[\s\S]*?<\/header>/giu, ' ')
-      .replace(/<footer[\s\S]*?<\/footer>/giu, ' ')
-      .replace(/<aside[\s\S]*?<\/aside>/giu, ' ')
-      .replace(/<!--[\s\S]*?-->/gu, ' ')
-      .replace(/<[^>]*>/gu, ' ')
-      .replace(/&nbsp;/giu, ' ')
-      .replace(/&amp;/giu, '&')
-      .replace(/&quot;/giu, '"')
-      .replace(/&#0?39;|&apos;/giu, "'")
-      .replace(/&[a-z]+;/giu, ' ')
-      .replace(/\s+/gu, ' ')
-      .trim();
-    const bengali = (cleaned.match(/[ঀ-৿]/g) ?? []).length;
-    if (bengali < 400) return { ok: false, why: `thin-text(${bengali})` };
-    return { ok: true, text: cleaned.slice(0, 4000) };
-  } catch (err) {
-    return { ok: false, why: err?.name === 'AbortError' ? 'timeout' : 'fetch-error' };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 async function main() {
+  const retext = process.argv.includes('--retext');
   const files = readdirSync(BRIEFS_DIR).filter((f) => f.endsWith('.json'));
   const targets = [];
   for (const f of files) {
     const slug = f.replace(/\.json$/, '');
-    if (existsSync(join(SITE_DIR, `${slug}.md`))) continue; // already published
     const brief = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
+
+    if (retext) {
+      // 2026-07-27. The first extractor wrote up to 4,000 characters of stripped
+      // page - menus, bylines, photo credits and "সম্পর্কিত" link farms
+      // included - into brief.members[].lead, and 24 articles were published from
+      // it. Those leads are already resolved to publisher URLs, so the normal
+      // pass never revisits them. Re-extract every lead that the old extractor
+      // touched: page text is far longer than an RSS lead ever is.
+      const dirty = (brief.members ?? []).filter(
+        (m) => !isWrapper(m.url) && String(m.lead ?? '').length > 1200,
+      );
+      if (dirty.length) targets.push({ file: f, brief, wrapped: dirty });
+      continue;
+    }
+
+    if (existsSync(join(SITE_DIR, `${slug}.md`))) continue; // already published
     const wrapped = (brief.members ?? []).filter((m) => isWrapper(m.url));
     if (wrapped.length) targets.push({ file: f, brief, wrapped });
     if (targets.length >= limit) break;
   }
 
   console.log(
-    `resolve: ${targets.length} unpublished briefs carry a google wrapper ` +
-      `(${targets.reduce((n, t) => n + t.wrapped.length, 0)} urls), concurrency ${concurrency}`,
+    retext
+      ? `retext: ${targets.length} briefs carry page text from the old extractor`
+      : `resolve: ${targets.length} unpublished briefs carry a google wrapper ` +
+        `(${targets.reduce((n, t) => n + t.wrapped.length, 0)} urls), concurrency ${concurrency}`,
   );
   if (!targets.length) return;
 
@@ -156,6 +137,15 @@ async function main() {
     for (;;) {
       const job = queue.shift();
       if (!job) return;
+      if (retext) {
+        // URL is already the publisher's; only the text is being rebuilt
+        const art = await extractArticle(job.m.url);
+        if (art.ok) { stats.text++; job.m.lead = art.text; }
+        else stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
+        done++;
+        if (done % 25 === 0) console.log(`  ${done}/${queue.length} re-extracted...`);
+        continue;
+      }
       const r = await resolveWrapper(job.m.url);
       if (!r.ok) {
         stats.failed.set(r.why, (stats.failed.get(r.why) ?? 0) + 1);
