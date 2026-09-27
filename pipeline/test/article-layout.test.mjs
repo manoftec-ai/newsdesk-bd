@@ -120,6 +120,28 @@ test('the প্রমাণ দেখুন panel renders BELOW the story, not 
   );
 });
 
+test('the verification status is stated once, not twice above the story', () => {
+  // 2026-09-27: the header badge and the badge-legend paragraph printed the same
+  // sentence - "নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে" -
+  // one above the headline and one under the date, so the reader met "নিশ্চিত"
+  // twice in the same words before reaching the story.
+  assert.ok(
+    !/class="badge-legend"/.test(article),
+    'the badge-legend paragraph is back - it repeats the header VerificationBadge',
+  );
+  // the compact badge must survive, or the story loses its status indicator
+  assert.ok(
+    /<VerificationBadge/.test(article),
+    'the header VerificationBadge was removed with the duplicate legend',
+  );
+  // and the detail the legend used to carry must still exist somewhere: the
+  // evidence panel below the story owns the tier, the score and the outlet list
+  const panel = article.slice(article.indexOf('class="evidence-panel'));
+  assert.ok(/post\.verification\.tier/.test(panel), 'the evidence panel lost the tier');
+  assert.ok(/post\.verification\.score/.test(panel), 'the evidence panel lost the score');
+  assert.ok(/evidenceLabelBn/.test(panel), 'the evidence panel lost the outlet list');
+});
+
 test('attribution is still available where machines need it', () => {
   // removing the visible সূত্র must not remove the record of where the story came from
   assert.ok(/articleBody: post\.excerpt/.test(article), 'JSON-LD articleBody missing');

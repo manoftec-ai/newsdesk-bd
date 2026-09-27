@@ -345,14 +345,13 @@ const shareLinks = [
         </figure>
       )}
 
-        <p class="badge-legend">
-          {badge.label}
-          {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
-          {" — "}
-          {badge.tierNote}
-          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
-          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
-        </p>
+        {/* 2026-09-27: the badge-legend paragraph is removed. It printed
+            "নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে · 2
+            প্রমাণ · স্কোর 4" directly under the date, and the compact
+            VerificationBadge in the header above the headline prints the same
+            sentence - so the reader met "নিশ্চিত" twice before the story, in the
+            same words. The evidence panel below already carries the tier, the
+            score and the full list of outlets, so nothing was lost. */}
 
         {/* 2026-09-26: tier A (national/politics/international) single-source
             stories are allowed to publish so the site is not silent on the news
