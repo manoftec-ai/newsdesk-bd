@@ -27,7 +27,7 @@ import {
   adjacentPosts,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
-import { evidenceLabelBn, evidenceWithUrls } from "../../lib/evidence-label.js";
+import { evidenceLabelBn, evidenceWithUrls, corroborationSummary } from "../../lib/evidence-label.js";
 
 export async function getStaticPaths() {
   return (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
@@ -90,6 +90,13 @@ const readingMinutes = (() => {
 
 post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
 
+
+// 2026-09-27: the panel used to count source ENTRIES, so an article whose two
+// sources were both প্রথম আলো - one of them a /video/ url - could announce that
+// the story was "also published in প্রথম আলো". The source was corroborating
+// itself. Count DISTINCT article outlets instead, and never imply corroboration
+// that did not happen.
+const corroboration = corroborationSummary(post.sources);
 
 const category = getCategory(post.category);
 const author = getAuthor(post.author);
@@ -561,11 +568,14 @@ const shareLinks = [
             </summary>
             <div class="evidence-body mt-3">
               <p class="text-sm leading-relaxed text-muted-foreground">
-                {post.verification.badge === "confirmed"
-                  ? "দুই বা ততোধিক স্বাধীন সূত্রে তথ্যটি মিলেছে — বক্তব্যটি যাচাইকৃত।"
-                  : post.verification.badge === "verified"
-                    ? "অফিসিয়াল বা প্রাথমিক সূত্রে তথ্যটি নিশ্চিত হয়েছে।"
-                    : "একক সূত্রের ভিত্তিতে বা আংশিক তথ্যে যাচাই — আরও সূত্র না মেশা পর্যন্ত সংক্ষিপ্ত থাকল।"}
+                {corroboration.corroborated
+                  ? `${corroboration.count}টি স্বাধীন পত্রিকায় একই তথ্য মিলেছে — বক্তব্যটি যাচাইকৃত।`
+                  : corroboration.count === 1
+                    ? "একটি মাধ্যমেই এই তথ্য প্রকাশিত হয়েছে। আরও স্বাধীন সূত্রে না মেলা পর্যন্ত এটি একক সূত্রের তথ্য হিসেবেই থাকে।"
+                    : post.verification.badge === "confirmed"
+                      ? "দুই বা ততোধিক স্বাধীন সূত্রে তথ্যটি মিলেছে — বক্তব্যটি যাচাইকৃত।"
+                      : "আংশিক তথ্য — আরও সূত্র না মেশা পর্যন্ত সংক্ষিপ্ত থাকল।"}
+              </p>
               </p>
               {post.verification.tier && (
                 <p class="mt-1 text-sm text-muted-foreground">
@@ -574,7 +584,9 @@ const shareLinks = [
                 </p>
               )}
               <ul class="evidence-list mt-3 space-y-1.5">
-                {evidenceWithUrls(post.verification?.evidence, post.sources).map((e) => (
+                {evidenceWithUrls(post.verification?.evidence, corroboration.outlets)
+                  .filter((e) => !e.outletId || e.url)
+                  .map((e) => (
                   <li class="flex items-baseline gap-2 text-sm">
                     <Icon name="check" class="h-3.5 w-3.5 shrink-0 text-primary" />
                     {e.url ? (
