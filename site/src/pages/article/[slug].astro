@@ -27,7 +27,7 @@ import {
   adjacentPosts,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
-import { evidenceLabelBn } from "../../lib/evidence-label.js";
+import { evidenceLabelBn, evidenceWithUrls } from "../../lib/evidence-label.js";
 
 export async function getStaticPaths() {
   return (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
@@ -574,19 +574,29 @@ const shareLinks = [
                 </p>
               )}
               <ul class="evidence-list mt-3 space-y-1.5">
-                {(post.verification?.evidence ?? []).map((e) => (
+                {evidenceWithUrls(post.verification?.evidence, post.sources).map((e) => (
                   <li class="flex items-baseline gap-2 text-sm">
                     <Icon name="check" class="h-3.5 w-3.5 shrink-0 text-primary" />
                     {e.url ? (
-                      <a
-                        href={e.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="underline-offset-2 hover:text-primary underline"
-                      >
-                        {evidenceLabelBn(e.label)}
-                      </a>
+                      <>
+                        <a
+                          href={e.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          class="evidence-link underline-offset-2 hover:text-primary underline"
+                        >
+                          {evidenceLabelBn(e.label)}
+                        </a>
+                        {e.outletName && (
+                          <span class="evidence-outlet shrink-0 text-xs text-muted-foreground">
+                            ↗ {e.outletName}
+                          </span>
+                        )}
+                      </>
                     ) : (
+                      /* No url to link to. The entry still renders: an unlinked
+                         proof is still proof, and inventing a target would be
+                         worse than plain text. */
                       <span>{evidenceLabelBn(e.label)}</span>
                     )}
                   </li>

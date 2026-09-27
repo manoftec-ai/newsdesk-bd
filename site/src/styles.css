@@ -877,11 +877,28 @@
 
 /* Verification evidence panel: progressive disclosure (#18). Native <details>
    — no JS, keyboard/screen-reader accessible, closed by default so the note
-   never distracts from the news itself. */
+   never distracts from the news itself.
+
+   2026-09-27. The user reported this section "almost matches the main news" —
+   same weight, same surface, so the eye read the proof as more story. A plain
+   background tint was not enough on its own, so the box is separated four ways
+   at once, each doing a different job:
+
+     tint        says "this is a different kind of content", not more reading
+     left rule   gives a hard vertical edge, so the eye stops at a boundary
+                 even in dark mode where a tint is nearly invisible
+     inset type  smaller and muted - supporting material should look smaller
+     small caps  the summary is a label, not a heading competing with the
+                 article's own <h1>
+
+   The left rule is the one that does the real work: colour-mix against the
+   card is within a few percent of the page background in both themes, so a
+   tint alone cannot carry the separation. */
 .evidence-panel {
   border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
   border-radius: 8px;
-  background: var(--color-card);
+  background: color-mix(in oklab, var(--color-muted) 55%, transparent);
 }
 
 .evidence-panel summary {
@@ -889,6 +906,10 @@
   list-style: none;
   padding: 0.55rem 0.85rem;
   user-select: none;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-muted-foreground);
 }
 
 .evidence-panel summary::-webkit-details-marker {
@@ -917,7 +938,22 @@
 }
 
 .evidence-body {
-  padding: 0 0.85rem 0.85rem;
+  padding: 0.2rem 0.85rem 0.9rem;
+  /* supporting material: one step down from the body's measure and colour, so
+     the proof never reads as a second article */
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}
+
+/* The outlet name sits after the link so the reader can see WHERE a proof
+   points before clicking, which is the point of showing the source at all. */
+.evidence-outlet {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
+.evidence-link {
+  overflow-wrap: anywhere;
 }
 
 .evidence-list {

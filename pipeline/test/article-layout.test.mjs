@@ -238,6 +238,45 @@ test('times are Bangladesh time, and a date with no time gets no time', () => {
   assert.ok(/<time datetime=\{lead\.date\}/.test(index), 'the <time datetime> attribute must stay raw');
 });
 
+test('every evidence entry links to its actual source', () => {
+  const lib = readFileSync(join(SITE, 'lib/evidence-label.js'), 'utf8');
+
+  // the panel must CALL the pairing helper, not merely import it - asserting on
+  // the bare name passes even when the call site is gone, because the import
+  // line still contains it
+  assert.ok(
+    /evidenceWithUrls\(\s*post\.verification/.test(article),
+    'the evidence panel does not pair entries with their source urls',
+  );
+  // and it must show which outlet a link points at
+  assert.ok(
+    /evidence-outlet/.test(article),
+    'the evidence panel does not name the outlet a link points to',
+  );
+
+  // the matching itself: labels carry an outlet ID in parentheses, sources carry
+  // the outlet's BANGLA name, so the id is also matched against the source host
+  assert.ok(
+    /hostname[\s\S]{0,200}?includes\(id\)/.test(lib),
+    'evidenceWithUrls no longer falls back to matching the outlet id in the url host',
+  );
+
+  // the styles must actually separate the panel from the article
+  const css = readFileSync(join(SITE, 'styles.css'), 'utf8');
+  // slice exactly the .evidence-panel rule, not everything after it
+  const start = css.indexOf('.evidence-panel {');
+  const rule = css.slice(start, css.indexOf('}', start) + 1);
+  assert.ok(start > 0, '.evidence-panel rule not found in styles.css');
+  assert.ok(
+    /border-left:\s*3px solid/.test(rule),
+    `the evidence panel has no left accent rule:\n${rule}`,
+  );
+  assert.ok(
+    /color-mix/.test(rule),
+    `the evidence panel has no tinted background:\n${rule}`,
+  );
+});
+
 test('attribution is still available where machines need it', () => {
   // removing the visible সূত্র must not remove the record of where the story came from
   assert.ok(/articleBody: post\.excerpt/.test(article), 'JSON-LD articleBody missing');
