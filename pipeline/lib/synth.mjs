@@ -71,8 +71,38 @@ export function inferTags(brief) {
     rangamati: ['রাঙ্গামাটি'],
   };
   const tags = [];
+  // 2026-09-27 interlinking: Bengali is agglutinative, so raw substring
+  // search misfires ('বাস' inside 'বাসা', 'হাম' inside 'হামলা'). A keyword
+  // only counts as a standalone word.
+  const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const WC = '[\\u0980-\\u09FFA-Za-z0-9]';
+  const BN_SUFFIX = '(?:ের|দের|গুলো|গুলি|সহ|কে|টি|টা|ে|র|য়)?';
+  const wordHit = (hay, kw) => {
+    const tail = /[A-Za-z]/.test(kw) ? '(?:s)?' : BN_SUFFIX;
+    return new RegExp(`(?<!${WC})${esc(kw)}${tail}(?!${WC})`).test(hay);
+  };
   for (const [slug, kws] of Object.entries(map)) {
-    if (kws.some((kw) => pool.includes(kw))) tags.push(slug);
+    if (kws.some((kw) => wordHit(pool, kw))) tags.push(slug);
+  }
+  // 2026-09-27 interlinking: tagless articles fall out of every tag cluster
+  // and starve relatedPosts/context-links of signals. Guarantee at least one
+  // navigational tag via the story category (tag pages generate dynamically,
+  // so any slug resolves — no 404 risk).
+  if (!tags.length) {
+    const fallback = {
+      history: 'history',
+      economy: 'economy',
+      factcheck: 'factcheck',
+      sports: 'sports',
+      entertainment: 'entertainment',
+      tech: 'technology',
+      politics: 'politics',
+      international: 'world',
+      opinion: 'opinion',
+      national: 'bangladesh',
+      latest: 'bangladesh',
+    }[brief.category];
+    if (fallback) tags.push(fallback);
   }
   return tags;
 }

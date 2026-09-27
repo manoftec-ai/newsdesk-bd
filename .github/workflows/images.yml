@@ -71,6 +71,11 @@ jobs:
           OPENVERSE_USER_AGENT: "jachaidesk/1.0 (https://jachaidesk.com)"
           NODE_OPTIONS: "--max-old-space-size=1024"
 
+      - name: Ensure fallback social image (og-default.png)
+        run: node tools/make_og_default.mjs
+        env:
+          NODE_OPTIONS: "--max-old-space-size=1024"
+
       - name: Commit + push (branded images + front matter)
         run: |
           cd ..

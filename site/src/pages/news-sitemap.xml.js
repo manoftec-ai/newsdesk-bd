@@ -9,9 +9,15 @@ const escapeXml = (value = "") =>
     .replace(/"/g, "&quot;");
 
 export async function GET(context) {
-  const published = (await getCollection("news", ({ data }) => !data.draft)).sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
-  );
+  // Google News sitemap spec: only URLs from the LAST 2 DAYS (up to 1000).
+  // Listing all 398 articles violated the spec and risked Google ignoring the
+  // whole file (SEO audit 2026-09-27). Evergreen/history pieces stay in the
+  // regular sitemap + sitemap-images, which have no recency rule.
+  const cutoff = Date.now() - 48 * 60 * 60 * 1000;
+  const published = (await getCollection("news", ({ data }) => !data.draft))
+    .filter((entry) => entry.data.date.valueOf() >= cutoff)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .slice(0, 1000);
 
   const url = (path) => new URL(path, context.site).toString();
   const iso = (date) => new Date(date).toISOString();

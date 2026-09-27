@@ -122,12 +122,6 @@ export const relatedTags = async (slug, n = 6) => {
     .map(([tag, count]) => ({
       tag: getTag(tag) ?? { slug: tag, name: tag },
       count,
-      // one sample article id, so callers could link if needed
-      sampleSlugs: withTag
-        .filter((post) => (post.tags ?? []).includes(tag))
-        .slice(0, 3)
-        .map((post) => post.slug),
-      _ids: ids,
     }));
 };
 

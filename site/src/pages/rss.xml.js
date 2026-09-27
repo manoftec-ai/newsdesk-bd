@@ -16,7 +16,11 @@ export async function GET(context) {
   const url = (path) => new URL(path, context.site).toString();
   const formatRfc = (date) => new Date(date).toUTCString();
 
+  // SEO/perf audit 2026-09-27: feed readers poll for recent items — serving all
+  // 398 full-excerpt items on every request wastes bandwidth on both ends.
+  // Cap at the 50 freshest; the archive lives in the sitemaps.
   const items = published
+    .slice(0, 50)
     .map(
       (entry) => `  <item>
     <title>${escapeXml(entry.data.title)}</title>

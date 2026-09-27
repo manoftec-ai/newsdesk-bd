@@ -7,7 +7,9 @@ excerpt: 'নাটোরের লালপুরে বাড়ির পা�
 seoDescription: "নাটোরের লালপুরে বাড়ির পাশের পুকুরের পানিতে ডুবে আপন দুই ভাই-বোনের মৃত্যু হয়েছে। শনিবার (১৯ সেপ্টেম্বর) বিকেল ৪টার দিকে উপজেলার ঈশ্বরপাড়া গ্রামে এ ঘটনা …"
 date: 2026-09-19T13:42:33.000Z
 category: "national"
-tags: []
+tags:
+  - education
+  - disaster
 author: "desk"
 lang: "bn"
 draft: false

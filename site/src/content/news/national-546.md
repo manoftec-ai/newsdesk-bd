@@ -11,6 +11,8 @@ tags: ["health", "transport", "cricket"]
 author: "desk"
 lang: "bn"
 draft: false
+tracked: true
+lastChecked: 2026-09-27T19:10:48Z
 keyPoints:
   - "২৪ সেপ্টেম্বর সাধারণ পরিষদের সভাপতি"
 faq: []

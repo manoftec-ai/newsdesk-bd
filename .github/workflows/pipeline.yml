@@ -22,6 +22,32 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Sync BEFORE doing any work, not after.
+      #
+      # This run owns pipeline/state/store.db, a mutable SQLite file. The old
+      # order was: do all the work, commit, then `git merge -X theirs
+      # origin/main`. That flag means "on conflict keep the other side", and
+      # for a binary database it does not avoid the conflict, it silently
+      # discards the fetch this run just performed. Measured 2026-09-27:
+      # the pipeline commit held max(seen_at)=18:38 with 10,596 rows, the
+      # merge came out at max(seen_at)=17:48 with 10,565 — 31 freshly
+      # enriched rows thrown away, so the author step downstream saw no new
+      # briefs and published nothing, every 30 minutes.
+      #
+      # Rebasing onto origin/main first means the commit is built on the
+      # newest main and the push below is a plain fast-forward, so there is
+      # nothing to merge and nothing to lose.
+      - name: Sync with main before fetching
+        run: |
+          set -uo pipefail
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          git fetch --no-tags origin main
+          git rebase origin/main || {
+            echo "could not rebase onto origin/main; continuing on current HEAD"
+          }
+          echo "synced to $(git rev-parse --short HEAD)"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -82,7 +108,19 @@ jobs:
             if git merge --ff-only origin/main 2>/dev/null; then
               :
             elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
-              :
+              # A concurrent writer (auto-author, images) landed on main while
+              # this run was working. Taking "theirs" is right for the small
+              # JSON state files — the next run re-derives those — but it is
+              # catastrophic for store.db, which is the only copy of the fetch
+              # this run just did. HEAD^1 is our pre-merge commit, so put our
+              # database back and amend the merge.
+              if git diff --quiet HEAD^1 HEAD -- pipeline/state/store.db; then
+                echo "merge kept our store.db (no conflict on it)"
+              else
+                echo "merge replaced our store.db — restoring ours and amending"
+                git checkout HEAD^1 -- pipeline/state/store.db
+                git commit --amend --no-edit
+              fi
             else
               echo "merge failed — abandoning push; briefs re-fetched on a later pipeline run"
               git merge --abort 2>/dev/null || true
