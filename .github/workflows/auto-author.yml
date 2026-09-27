@@ -55,6 +55,23 @@ jobs:
           node run.js verify || true
           node run.js extract || true
 
+      - name: Resolve Google News wrappers to publisher articles
+        working-directory: pipeline
+        run: |
+          # For the Cloudflare-walled outlets the pipeline fetches through Google
+          # News search RSS, so item URLs arrive as news.google.com wrappers:
+          # uncitable (the gate refuses them) and bodyless (a headline can never
+          # reach the evidence floor). Measured 2026-09-27: 383 of 508
+          # thin-evidence URLs were wrappers, 127 briefs had nothing but
+          # wrappers. Resolving them recovered 113 full articles, cut the
+          # evidence floor from 225 rejected briefs to 139, and put 38 briefs
+          # straight through the full publication gate - all 38 published.
+          #
+          # The base64-protobuf decode that used to expose the publisher URL now
+          # returns nothing; the page carries data-n-a-sg / data-n-a-ts, which
+          # sign a batchexecute RPC returning the real URL.
+          node tools/resolve_sources.mjs --concurrency=5 || true
+
       - name: Select newest unpublished briefs (deterministic)
         working-directory: pipeline
         run: |
