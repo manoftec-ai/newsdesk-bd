@@ -1,5 +1,6 @@
 ---
 import { getCategory, getBadge, getAuthor, formatDateTimeBDShort } from "../lib/news-data.js";
+import { cleanAlt } from "../lib/image-alt.js";
 import VerificationBadge from "./VerificationBadge.astro";
 
 const { post, variant = "default", hidden = false } = Astro.props;
@@ -59,7 +60,10 @@ const href = `/article/${post.slug}`;
             {post.title}
           </h2>
         </a>
-        <p class="mt-3 text-muted-foreground">{post.excerpt}</p>
+        {/* 2026-09-27: the main/lead story carries no excerpt under its headline.
+            The user asked for this twice; the excerpt belongs on the ordinary
+            cards, where it stands in for the article you have not opened. Under
+            the lead headline it only repeats it. */}
         <div class="mt-4 text-xs text-muted-foreground flex flex-wrap items-center gap-3">
           <span>{badge.tier} · {post.readingTime} মিনিট পাঠ</span>
           {post.verification?.evidence?.length > 0 && (
@@ -73,7 +77,7 @@ const href = `/article/${post.slug}`;
           <div class="aspect-[4/3] overflow-hidden rounded-md bg-muted sm:aspect-square">
             <img
               src={post.thumbnail}
-              alt={post.thumbnailAlt || ""}
+              alt={cleanAlt(post.thumbnailAlt)}
               width="440"
               height="330"
               loading="lazy"
@@ -91,7 +95,7 @@ const href = `/article/${post.slug}`;
           <div class="aspect-[16/10] overflow-hidden rounded-md bg-muted">
             <img
               src={post.thumbnail}
-              alt={post.thumbnailAlt || ""}
+              alt={cleanAlt(post.thumbnailAlt)}
               width="640"
               height="400"
               loading="lazy"
