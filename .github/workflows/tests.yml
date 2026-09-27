@@ -1,0 +1,57 @@
+name: tests
+
+# 2026-09-27. No workflow ran the test suite. 341 tests existed and were only
+# ever run by hand, which is why four UI regressions of the same kind reached
+# production in a single day - each fixed where it was visible, each returning
+# from a different render site. A test that nobody runs is not a guard.
+#
+# pipeline/test/article-layout.test.mjs locks the article page's layout contract
+# (no standfirst under the headline, no photo credit under the image, no সূত্র
+# beside the date or under the story, evidence panel below the body). This
+# workflow is what makes it one.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  suite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install pipeline deps
+        working-directory: pipeline
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Run pipeline suite
+        working-directory: pipeline
+        run: npm test
+
+      - name: Assert the site templates still satisfy the layout contract
+        run: |
+          # A short, legible summary in the run log: which template drew what.
+          # The suite is the authority; this just makes a failure readable.
+          node --input-type=module -e "
+          import { readFileSync } from 'node:fs';
+          const a = readFileSync('site/src/pages/article/[slug].astro','utf8');
+          const checks = {
+            'standfirst under headline': /standfirst && \(/.test(a),
+            'photo-credit figcaption': /<figcaption[^>]*>\s*\{post\.thumbnailAlt\}/.test(a),
+            'সূত্র beside the date': /\{byline &&/.test(a),
+            'সূত্র under the story': /class=\"source-list/.test(a),
+          };
+          for (const [k,v] of Object.entries(checks)) console.log((v?'REGRESSED  ':'ok         ')+k);
+          "

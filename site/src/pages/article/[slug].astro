@@ -26,7 +26,7 @@ import {
   relatedPosts,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
-import { evidenceLabelBn, sourceNameBn } from "../../lib/evidence-label.js";
+import { evidenceLabelBn } from "../../lib/evidence-label.js";
 
 export async function getStaticPaths() {
   return (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
@@ -345,14 +345,13 @@ const shareLinks = [
         </figure>
       )}
 
-        <p class="badge-legend">
-          {badge.label}
-          {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
-          {" — "}
-          {badge.tierNote}
-          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
-          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
-        </p>
+        {/* 2026-09-27: the badge-legend paragraph is removed. It printed
+            "নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে · 2
+            প্রমাণ · স্কোর 4" directly under the date, and the compact
+            VerificationBadge in the header above the headline prints the same
+            sentence - so the reader met "নিশ্চিত" twice before the story, in the
+            same words. The evidence panel below already carries the tier, the
+            score and the full list of outlets, so nothing was lost. */}
 
         {/* 2026-09-26: tier A (national/politics/international) single-source
             stories are allowed to publish so the site is not silent on the news
@@ -508,25 +507,11 @@ const shareLinks = [
         )}
       </div>
 
-        <div class="mt-8">
-          {post.sources.length > 0 && (
-          <div class="mt-4">
-            <div class="text-sm font-bold">সূত্র</div>
-            <div class="source-list mt-2">
-              {post.sources.map((source) => (
-                <a
-                  href={source.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  class="underline-offset-2 hover:text-primary underline"
-                >
-                  {sourceNameBn(source.name) ?? source.name}
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+      {/* 2026-09-27: the "সূত্র" block under the story is removed. It named the
+          same outlets the প্রমাণ দেখুন panel below already lists, so the reader
+          saw the attribution twice within a few lines. The outlets remain in the
+          article front matter, in the evidence panel's links, in the JSON-LD and
+          in the RSS feed - everything that needs the attribution still has it. */}
 
       {/* 2026-09-27: the প্রমাণ দেখুন box moved from ABOVE the headline to below
           the main news, as the user asked. It sat above the h1 and pushed the
