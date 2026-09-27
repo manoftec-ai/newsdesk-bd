@@ -200,6 +200,35 @@ function audit(slug, raw) {
     }
   }
 
+  // 8. fragmented wire copy.
+  //
+  // 2026-07-27: national-553 reported a DMP press conference as 36 paragraphs in
+  // which the same fact appeared seven times, in five outlets' slightly different
+  // wording, plus paragraphs that open on the tail of a sentence the feed cut away
+  // ("পরে তার দেওয়া তথ্যের ভিত্তিতে…", "আমরা তো এই ৩ দাবিতে…"). It passed every
+  // gate: c12 gave it 100% headline overlap, the sources were five distinct
+  // outlets, and there was no furniture. Nothing had a rule about repetition or
+  // about a paragraph that is a fragment.
+  const CONT_OPENER = /^(পরে তার|এর আগে|আমরা তো|ওই|এরপর|তখন|এই মুহূর্তে|তারপর|এর মধ্যে|এখানে|সেখানে|এর বদলে)/u;
+  const contCount = paras.filter((p) => CONT_OPENER.test(p)).length;
+  let dupPairs = 0;
+  for (let i = 0; i < paras.length; i++) {
+    for (let j = i + 1; j < paras.length; j++) {
+      const A = tokens(paras[i]);
+      const B = tokens(paras[j]);
+      if (A.size < 4 || B.size < 4) continue;
+      let hit = 0;
+      for (const w of A) if (B.has(w)) hit++;
+      if (hit / Math.min(A.size, B.size) > 0.6) dupPairs++;
+    }
+  }
+  if (contCount) {
+    out.push({ code: 'FRAGMENTED_PROSE', severity: String(contCount), detail: `${contCount} paragraph(s) open on a back-reference: ${paras.find((p) => CONT_OPENER.test(p)).slice(0, 50)}` });
+  }
+  if (dupPairs >= 2) {
+    out.push({ code: 'REPEATED_PARAGRAPH', severity: String(dupPairs), detail: `${dupPairs} near-duplicate paragraph pair(s)` });
+  }
+
   // 7. no Bengali in the headline
   if (title && !BENGALI.test(title)) {
     out.push({ code: 'NON_BENGALI_TITLE', detail: title.slice(0, 60) });
@@ -237,7 +266,7 @@ if (asJson) {
 const CODES = new Set([
   'BODY_OFF_HEADLINE', 'DATELINE_IN_TITLE', 'MOJIBAKE', 'MIXED_LANGUAGE',
   'MIDWORD_OPENER', 'SELF_CORROBORATION', 'OFF_TOPIC_TAGS', 'NON_BENGALI_TITLE',
-  'NON_ARTICLE_SOURCE', 'QUOTED_TITLE',
+  'NON_ARTICLE_SOURCE', 'QUOTED_TITLE', 'FRAGMENTED_PROSE', 'REPEATED_PARAGRAPH',
 ]);
 for (const f of findings) {
   for (const i of f.issues) {

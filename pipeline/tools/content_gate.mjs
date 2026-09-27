@@ -37,6 +37,10 @@ const AUDIT = resolve(HERE, 'content_audit.mjs');
 // something someone re-adds by hand later.
 const ADVISORY = new Set(['MIXED_LANGUAGE']);
 
+// REPEATED_PARAGRAPH and FRAGMENTED_PROSE are new and must not be baselined: the
+// point of the baseline is to stop history blocking the build, not to give a
+// class a permanent pass.
+
 const out = execFileSync(process.execPath, [AUDIT, '--json'], {
   cwd: resolve(HERE, '..'),
   encoding: 'utf8',
