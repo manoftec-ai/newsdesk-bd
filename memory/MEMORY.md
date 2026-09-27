@@ -368,3 +368,22 @@ User asked to "completely modify the writer and the terms/search mechanism" afte
 **What I deliberately did NOT do:** 221 live articles have <100 words of clean prose and were published by the old writer hitting its target with fragments. They are **real news with real sources**, so I left them rather than delete two-thirds of the site over prose style. They are replaced as new briefs supersede them; 14 were rewritten.
 
 **Live: 383 articles, 0 contaminated, 0 rejected, 336/336 tests.** `national-578` now leads with the real story; `national-202` has 8 paragraphs all correctly closed.
+
+## D118: no excerpt under the main headline, no photo credit under the image (2026-09-27)
+User: "i dont want two things. i allready fixed that earlier. but it appears again." Both were **regressions**, and each had **two** render sites, not one.
+
+**1. Excerpt under the main headline.** Rendered in two places:
+- `site/src/pages/index.astro` — the lead story itself, `{lead.excerpt}`
+- `site/src/components/PostCard.astro` — the hero variant, `{post.excerpt}`
+
+Both removed. **Ordinary cards keep their excerpt** (8 verified live) — that is what an excerpt is for: standing in for the article you have not opened. Under the lead headline it only repeated the headline. When there is no lead, the cards below still carry theirs, which is what the user asked for.
+
+**2. Photo credit under the image.** Two causes:
+- A **visible `<figcaption>`** on `article/[slug].astro` rendering `{post.thumbnailAlt}` directly. `thumbnailAlt` is written by the thumbnail branding step as `"Headline — ছবি: প্রথম আলো"`, so every picture carried a credit line.
+- The same string was the **`img alt`** on six templates — invisible while the image loads, and the visible line under the picture the moment it does not. **That is almost certainly why it read as a caption**, and why the user believed they had already fixed it: fixing the caption alone leaves the alt to reappear on any slow or failed image load.
+
+**`site/src/lib/image-alt.js` → `cleanAlt()`** strips the credit and the `(BY-SA)` licence suffix at render time, so attribution stays in the front matter and the source list where it belongs, and **no 383-file rewrite** is needed. Applied to `PostCard.astro`, `index.astro`, `article/[slug].astro`, `tracked.astro`, `ghotona/[slug].astro`.
+
+**Live verified:** `ছবি:` 0 occurrences on homepage, 0 `<figcaption>` on article pages, lead block now reads *headline → "1 মিনিট পাঠ →"* with nothing between, 8 card excerpts intact.
+
+**Lesson:** when a user says "I already fixed this", find *every* render site and ask why it could reappear. A credit hidden in `alt` looks fixed until one image fails to load, then it is back — and the user reasonably concludes their fix was lost.
