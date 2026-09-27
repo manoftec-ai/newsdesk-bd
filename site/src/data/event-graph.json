@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 577,
+    "storyCount": 578,
     "kinds": [
       "claim",
       "evidence",
@@ -33109,8 +33109,8 @@
           "slug": "national-611",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 6,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         }
       ]
     },
@@ -46337,8 +46337,8 @@
           "slug": "national-611",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 6,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 7,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
           "cluster_id": 85,
@@ -53566,10 +53566,10 @@
     },
     "national-611": {
       "cluster_id": 611,
-      "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী",
+      "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
       "first_seen": "2026-09-27T09:50:41.024Z",
-      "last_update": "2026-09-27T15:20:50.901Z",
-      "claim_count": 6,
+      "last_update": "2026-09-27T17:59:15.782Z",
+      "claim_count": 7,
       "events": [
         {
           "ts": "2026-09-27T08:41:59.000Z",
@@ -53950,15 +53950,67 @@
             "sources": "[\"c73316\",\"c75145\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-09-27T18:32:06.262Z",
+          "kind": "evidence",
+          "claim_id": 73316,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:32:06.271Z",
+          "kind": "claim",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন"
+        },
+        {
+          "ts": "2026-09-27T18:32:06.272Z",
+          "kind": "evidence",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:32:06.297Z",
+          "kind": "verify",
+          "claim_id": 79716,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:34:08.556Z",
+          "kind": "conflict",
+          "claim_id": 73316,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c73316\",\"c75145\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
         {
           "cluster_id": 617,
           "slug": "national-617",
-          "actor_links": 7,
+          "actor_links": 8,
           "source_links": 2,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
@@ -54415,7 +54467,7 @@
       "cluster_id": 615,
       "headline": "বিএনপি সরকারের প্রশ্রয়ে কিছু নব্য জমিদারের উত্থান ঘটেছে: সাদিক কায়েম",
       "first_seen": "2026-09-27T11:58:29.550Z",
-      "last_update": "2026-09-27T17:13:49.877Z",
+      "last_update": "2026-09-27T17:59:15.824Z",
       "claim_count": 2,
       "events": [
         {
@@ -54543,7 +54595,7 @@
       "cluster_id": 616,
       "headline": "আন্তর্দেশীয় অপরাধ মোকাবেলায় আন্তর্জাতিক সহযোগিতা জোরদারে গুরুত্বারোপ আইনমন্ত্রীর",
       "first_seen": "2026-09-27T12:44:18.890Z",
-      "last_update": "2026-09-27T17:13:49.868Z",
+      "last_update": "2026-09-27T17:59:15.807Z",
       "claim_count": 3,
       "events": [
         {
@@ -55179,10 +55231,10 @@
         {
           "cluster_id": 611,
           "slug": "national-611",
-          "actor_links": 7,
+          "actor_links": 8,
           "source_links": 2,
-          "claim_count": 7,
-          "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলায় বিএনপির বিরুদ্ধে ‘চাঁদাবাজির’ অভিযোগ ঢালাও মন্তব্য: স্বরাষ্ট্রমন্ত্রী"
+          "claim_count": 9,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
           "cluster_id": 555,
@@ -55214,7 +55266,7 @@
       "cluster_id": 618,
       "headline": "বাংলাদেশের সকল নাগরিকের নিরাপত্তার দায়িত্ব আপনার হাতে: স্বরাষ্ট্রমন্ত্রীকে সালমান",
       "first_seen": "2026-09-27T13:33:43.026Z",
-      "last_update": "2026-09-27T17:13:49.874Z",
+      "last_update": "2026-09-27T17:59:15.818Z",
       "claim_count": 2,
       "events": [
         {
@@ -55293,7 +55345,7 @@
       "cluster_id": 619,
       "headline": "‘ভোট গণনার সময় ফল পাল্টে দেওয়ার চেষ্টা করতে পারেন ট্রাম্প’",
       "first_seen": "2026-09-27T13:33:43.030Z",
-      "last_update": "2026-09-27T17:13:49.875Z",
+      "last_update": "2026-09-27T17:59:15.820Z",
       "claim_count": 2,
       "events": [
         {
@@ -55628,7 +55680,7 @@
       "cluster_id": 622,
       "headline": "স্কুলছাত্রীর দাঁত ভেঙে দেওয়ার ঘটনায় প্রধান অভিযুক্ত ফয়সাল গ্রেফতার",
       "first_seen": "2026-09-27T15:20:50.953Z",
-      "last_update": "2026-09-27T17:13:49.871Z",
+      "last_update": "2026-09-27T17:59:15.812Z",
       "claim_count": 2,
       "events": [
         {
@@ -55756,7 +55808,7 @@
       "cluster_id": 623,
       "headline": "সৌদি আছেন বলে এলাকায় প্রচার, সাভার থেকে গ্রেপ্তার সাজাপ্রাপ্ত প্রতারক",
       "first_seen": "2026-09-27T15:20:50.966Z",
-      "last_update": "2026-09-27T17:13:49.873Z",
+      "last_update": "2026-09-27T17:59:15.815Z",
       "claim_count": 2,
       "events": [
         {
@@ -55884,7 +55936,7 @@
       "cluster_id": 624,
       "headline": "রাবি শিক্ষার্থীকে সাপের কামড়: হল প্রাধ্যক্ষের পদত্যাগ দাবি",
       "first_seen": "2026-09-27T15:20:50.976Z",
-      "last_update": "2026-09-27T17:13:49.876Z",
+      "last_update": "2026-09-27T17:59:15.821Z",
       "claim_count": 2,
       "events": [
         {
@@ -56091,7 +56143,7 @@
       "cluster_id": 626,
       "headline": "'এবার ভারত মহাসাগরজুড়ে মার্কিন জাহাজে হামলা চালাবে ইরান'",
       "first_seen": "2026-09-27T16:41:17.407Z",
-      "last_update": "2026-09-27T17:13:49.870Z",
+      "last_update": "2026-09-27T17:59:15.811Z",
       "claim_count": 2,
       "events": [
         {
@@ -56170,7 +56222,7 @@
       "cluster_id": 627,
       "headline": "ভঙ্গুর অর্থনীতি থেকে ট্রিলিয়ন ডলারের অর্থনীতি গড়ার পথে বাংলাদেশ: ড. তিতুমীর",
       "first_seen": "2026-09-27T16:41:17.412Z",
-      "last_update": "2026-09-27T17:13:49.872Z",
+      "last_update": "2026-09-27T17:59:15.813Z",
       "claim_count": 2,
       "events": [
         {
@@ -56363,6 +56415,85 @@
           "kind": "verify",
           "claim_id": 77954,
           "claim_text": "‘প্রকৃতিই পঞ্চগড়ের তেঁতুলিয়ার পর্যটনকে এগিয়ে দিচ্ছে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-629": {
+      "cluster_id": 629,
+      "headline": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+      "first_seen": "2026-09-27T17:59:15.801Z",
+      "last_update": "2026-09-27T17:59:15.806Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-27T13:27:33.000Z",
+          "kind": "evidence",
+          "claim_id": 79764,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
+          }
+        },
+        {
+          "ts": "2026-09-27T13:27:33.000Z",
+          "kind": "evidence",
+          "claim_id": 79765,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/travel/abroad/pp1l6zfrnf"
+          }
+        },
+        {
+          "ts": "2026-09-27T17:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 79764,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/travel/abroad/vq4or71gd0"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:33:52.642Z",
+          "kind": "claim",
+          "claim_id": 79764,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প"
+        },
+        {
+          "ts": "2026-09-27T18:33:52.646Z",
+          "kind": "claim",
+          "claim_id": 79765,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন"
+        },
+        {
+          "ts": "2026-09-27T18:33:52.707Z",
+          "kind": "verify",
+          "claim_id": 79764,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: চূড়ায় পৌঁছানোর গল্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:33:52.707Z",
+          "kind": "verify",
+          "claim_id": 79765,
+          "claim_text": "মাউন্ট এলব্রুসের পথে: দ্বিতীয় দিন",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
