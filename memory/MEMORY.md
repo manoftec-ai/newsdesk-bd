@@ -320,3 +320,28 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 **Result:** evidence-floor rejects **225 → 139**; **38 briefs published, 0 rejected**; site **388 → 426 articles**; 426/426 in the live sitemap, all HTTP 200. 330/330 tests pass. `store.db` 46MB.
 
 **Conflict note:** the bot also writes `store.db`, so merges conflict on it. Take **ours** when the resolver has run — half a URL rewrite is worse than none, because brief-vs-DB membership is compared by URL.
+
+## D116: the resolver was publishing the website's furniture as news (2026-09-27)
+**Reported by the user** on `jachaidesk.com/article/national-578`: the lead was `জাতীয় রাজনীতি সারাবিশ্ব জেলার খবর ক্যাম্পাস ঢাকা বিশ্ববিদ্যালয় জগন্নাথ বিশ্ববিদ্যালয়…` — the navigation menu — plus a `প্রকাশিত :` byline and a `ছবি:` photo credit.
+
+**This was mine.** The D115 resolver's `extractArticle()` strips `<nav>/<header>/<footer>` and then all tags, and these sites put furniture in `<div>`s, so it came through; the composer accepted any 25+ char run as a sentence.
+
+**Measured, not guessed:** briefs with a fetched-page lead were **36%** contaminated (21 of 59); briefs with a plain RSS lead were **0%** (0 of 249). **38** live articles affected.
+
+**A page is also not one story.** bd24live's page for one report carries a `সম্পর্কিত` link farm, so one member mixed three stories and 578's second lead was about a hospital bed. Tag-stripping cannot fix that either.
+
+**Fixes (all shipped, 336/336 tests):**
+- `pipeline/lib/article-text.mjs` — takes the article from **scored `<p>` paragraphs** (long, Bengali, terminator-rich, furniture rejected) and keeps the **longest contiguous run**; a global top-N would splice unrelated stories together, which is the bug.
+- `pipeline/lib/prose.mjs` — defence in depth: byline, photo credit, copyright, subscribe, menu row, nav-vocabulary density, institution list. No future extractor can reintroduce this.
+- `tools/quarantine_chrome.mjs`, `tools/drop_bad_leads.mjs` — remove bad articles; a lead that cannot be re-extracted cleanly **loses its text** and fails the evidence floor honestly rather than keeping the contaminated version.
+- 38 bad articles deleted, **45 republished** from verified-clean text, 33 page-derived articles rebuilt twice.
+
+**Two more real bugs found:**
+- **The lead scorer was optimising the wrong thing.** It minimised headline overlap to dodge `rep1` (lead-restates-headline), which picked true sentences that said nothing about the story. A lede *is* the headline restated — so it now **maximises** overlap, and when the sentence restates the headline completely it **appends a second real sentence carrying a fresh fact**, which is how a news lede is written. Both sentences are source text.
+- **`তবে…`, `অথচ…`, `তাই…` are useless as openers** — they refer to a clause the truncated feed never delivered. Rejected as leads (still fine mid-article).
+
+**Merge note:** the bot regenerates briefs, so `state/briefs/*.json` and `state/store.db` conflict on nearly every run. Take **ours** for both — they hold resolved URLs and clean text, and the workflow re-resolves on the next run anyway.
+
+**Live:** 405 articles, 0 contaminated, `national-578` now leads with the real story and attributes `সূত্র: বিডি২৪লাইভ ও কালের কণ্ঠ`.
+
+**Remaining quality ceiling (honest):** the composer still reads as stitched source sentences — a digest, not reporting. And of resolved URLs, **207 returned 403** at the publisher, so the fetch ceiling is access, not logic.
