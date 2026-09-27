@@ -11,6 +11,7 @@ import { join, resolve } from 'node:path';
 import { BRIEFS_DIR } from '../lib/extract.mjs';
 import { loadPublishedTitles, isTitleDuplicate, normTitle } from '../lib/published.mjs';
 import { editorialValue, evidenceSufficiency, DEFAULT_MIN_EVIDENCE_WORDS } from '../lib/editorial.mjs';
+import { clusterCoherence } from '../lib/cluster-coherence.mjs';
 
 const maxArg = Number(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1]);
 const max = Number.isFinite(maxArg) && maxArg > 0 ? maxArg : 6;
@@ -34,6 +35,7 @@ const briefs = readdirSync(BRIEFS_DIR)
     let date = '', headline = '';
     let ev = { score: 0 };
     let tier = null;
+    let coherence = { pass: true, minMax: 1, members: 0 };
     let evidence = { pass: false, evidenceWords: 0, minWords: DEFAULT_MIN_EVIDENCE_WORDS, members: 0 };
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
@@ -41,6 +43,11 @@ const briefs = readdirSync(BRIEFS_DIR)
       headline = j.headline || '';
       ev = editorialValue(j);
       evidence = evidenceSufficiency(j);
+      // 2026-09-27: the finalizer already refuses an incoherent cluster, but only
+      // AFTER the author has spent a run writing a body for it. Measured on a real
+      // run: 6 picked, 5 rejected CLUSTER_INCOHERENT, 1 published - so four fifths
+      // of the authoring budget was spent on stories that could never ship.
+      coherence = clusterCoherence(j);
       tier = (j.verdict && j.verdict.tier) || null;
     } catch {
       // unreadable brief -> treat as no-date/headline, never first.
@@ -51,6 +58,7 @@ const briefs = readdirSync(BRIEFS_DIR)
       headline,
       evScore: ev.score,
       tier,
+      coherence,
       evidence,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
@@ -63,8 +71,13 @@ const briefs = readdirSync(BRIEFS_DIR)
 // an authoring run to produce a thin article that the finalizer would reject.
 const MIN_EVIDENCE = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS;
 const tooThin = briefs.filter((b) => b.evidence.evidenceWords < MIN_EVIDENCE && !b.published);
+const incoherent = briefs.filter((b) => !b.coherence.pass && !b.published);
 const pending = briefs.filter(
-  (b) => !b.published && !b.titleDup && b.evidence.evidenceWords >= MIN_EVIDENCE,
+  (b) =>
+    !b.published &&
+    !b.titleDup &&
+    b.evidence.evidenceWords >= MIN_EVIDENCE &&
+    b.coherence.pass,
 );
 // #22 — editorial-value ranking (internal only): either newest-first, and
 // within the same publish date the higher-value story is picked first.
@@ -102,6 +115,7 @@ writeFileSync(
 );
 const dupCount = briefs.filter((b) => b.titleDup).length;
 console.log(`evidence gate: ${tooThin.length} briefs under ${MIN_EVIDENCE} words of source material, skipped`);
+console.log(`coherence gate: ${incoherent.length} briefs whose members are not all about the same event, skipped`);
 console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, then editorial value, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);
 for (const p of picked) console.log(`  ${p.date || 'no-date'}  ev=${p.evScore}  ${p.slug}`);
 if (!picked.length) console.log('  -> no unpublished briefs');
