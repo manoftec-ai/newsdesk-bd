@@ -299,3 +299,24 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 **Honest remaining limit:** publishable briefs are currently exhausted — of 552 briefs, 225 are under the evidence floor, 15 incoherent, ~225 title-duplicates, 62 too thin to compose, 8 fail audit. **Sustained volume is now limited by extraction text quality, not by writing.** Per-source `raw_items.body` averages show the cause: kalerkantho 61ch (0/354 usable), jugantor 60ch (0/261), jamuna 78ch, deshrupantor 58ch — vs prothomalo 917ch, dainikbangla 6000ch, tbs 3261ch. Those four sources deliver headlines with no article text, so their briefs can never publish.
 
 **Decision recorded:** user chose the deterministic writer over continued prompt tuning. Cost accepted: prose is more formulaic. Benefit: never fabricates, never leaks a prompt, always hits length, publishes everything publishable.
+
+## D115: resolve the source, or the story can never be written (2026-09-27)
+**Symptom:** after D114 the site had 8 new articles and then nothing. 283 unpublished briefs, 217 rejected by the evidence floor — headline with no article text. The composer cannot invent the missing words and neither can any model.
+
+**Structural cause:** for the Cloudflare-walled outlets the pipeline fetches through **Google News search RSS**, so item URLs arrive as `news.google.com/rss/articles/...` — a redirect, not a source. Such a brief fails twice: the gate refuses an unresolvable source, and a wrapper carries no text to measure. **383 of 508** thin-evidence URLs were wrappers; **127** briefs had nothing but wrappers.
+
+**Two dead ends (worth remembering):**
+- The base64-protobuf decode that used to expose the publisher URL now returns **nothing for all 383** — Google moved to a signed format.
+- Following the wrapper with a browser UA lands on a **590KB JavaScript page** with no publisher URL in it.
+
+**What works:** the wrapper page still carries `data-n-a-sg` / `data-n-a-ts`, which sign a **`batchexecute` RPC** (`Fbv4je` / `garturlreq`) returning the real URL. The resolved page then yields ~3,600 Bengali characters of real article text.
+
+**Tool:** `pipeline/tools/resolve_sources.mjs` — wired into `auto-author.yml` before `pick_briefs.mjs` so it sustains.
+
+**The consistency trap (cost one wasted pass):** the first version resolved 403 URLs and rewrote only `brief.members[].url`, and published **zero**. The gate compares `memberKey = source_id|url|title` between the brief and the cluster it loads from the **database**, and requires every member URL to appear in `brief.sources[]`. So members-only rewrites traded `GOOGLE_NEWS_WRAPPER_UNRESOLVED` for `CLUSTER_MEMBERSHIP_MISMATCH` + `SOURCE_MANIFEST_INVALID` — 56 past the mechanical audit, **0** past the gate. **All four copies of a URL must move together: `brief.members[].url`, `brief.sources[].url`, `raw_items.url`, `claim_evidence.url`.** That took it to 38 through the gate.
+
+**Two UNIQUE indexes turned a duplicate into a crash** (`raw_items.url`, `claim_evidence(claim_id,url)`): two wrappers can resolve to the same article. That is a duplicate, not an error — the losing row is recorded as `dup_of_id` of the winner and redundant evidence is deleted.
+
+**Result:** evidence-floor rejects **225 → 139**; **38 briefs published, 0 rejected**; site **388 → 426 articles**; 426/426 in the live sitemap, all HTTP 200. 330/330 tests pass. `store.db` 46MB.
+
+**Conflict note:** the bot also writes `store.db`, so merges conflict on it. Take **ours** when the resolver has run — half a URL rewrite is worse than none, because brief-vs-DB membership is compared by URL.
