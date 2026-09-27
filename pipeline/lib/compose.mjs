@@ -26,6 +26,7 @@
 //        bullets must be distinct        -> pickLead(), distinctBy()
 
 import { BANNED_OUTLET_NAMES } from './audit.mjs';
+import { proseProblem } from './prose.mjs';
 import {
   lengthForMode,
   publicationMode,
@@ -111,7 +112,12 @@ export function sentences(text) {
     // dangling comma or full stop - "… জানা গেছে। , দুদক জানায়, এক আইনজীবী…" -
     // which then surfaces as an excerpt that opens with ". "
     .map((s) => s.replace(/^[\s.,;:।?!-]+/u, '').trim())
-    .filter((s) => s.length >= 25);
+    .filter((s) => s.length >= 25)
+    // 2026-09-27: 24 published articles carried the website's own furniture
+    // into the body - menu rows, "প্রকাশিত :" bylines, "ছবি:" credits. The
+    // composer accepted any 25+ character run as a sentence, and a fetched page
+    // (21 of 59, 36%) is mostly not prose. Rejected here rather than downstream.
+    .filter((s) => proseProblem(s) === null);
 }
 
 
@@ -140,31 +146,61 @@ const COMPLETE = /[।?!]$/u;
 // A wire lead cut mid-copy often opens with a back-reference whose antecedent
 // was in the part we never got ("তাঁদের মধ্যে সুস্থ হয়ে..." - among whom?).
 // Grammatical, complete, and useless as an opening, so it is not a lead.
-const DANGLING_START = /^(তাঁদের|তাদের|তারা|এরা|ওদের|ওরা|তাঁর|তার|তিনি|তিনিগণ|সেই|ওই|এই|উপরে|এর\s)/u;
+// 2026-09-27: added the discourse connectors as well. "তবে সেই অর্থ তার কাছে
+// পৌঁছানো হয়নি…" is grammatical and useless as an opening - "তবে" (but)
+// refers back to a clause the truncated feed never delivered.
+const DANGLING_START = /^(তাঁদের|তাদের|তারা|এরা|ওদের|ওরা|তাঁর|তার|তিনি|তিনিগণ|সেই|ওই|এই|উপরে|এর\s|তবে|অথচ|তাই|ফলে|তাইলে|অর্থাৎ|যদিও|যদি|এখানে|সেখানে|তখন|এরপর|তারপর|অন্যদিকে|অপরদিকে)/u;
 
-/** rep1: the lead must add a concrete fact the headline does not have. */
+/**
+ * Pick the lede.
+ *
+ * rep1 forbids a lead that restates the headline AND adds no new fact, so the
+ * requirement is not "differ from the headline" - it is "match the headline and
+ * add something". Scoring for *low* overlap, as this did at first,
+ * over-corrected: national-578 opened on "হাসপাতালে ভর্তির পর শুরুতে বেড না
+ * পাওয়ায়…", a true sentence from the same article that says nothing about the
+ * story.
+ *
+ * So the lead is the sentence that best matches the headline. When that
+ * sentence restates the headline completely - which is what a real lede does,
+ * and which rep1 penalises - a second real sentence carrying a fresh fact is
+ * appended. That is how a news lede is actually written: the statement, then the
+ * detail that is not in the headline. Nothing is invented; both sentences are
+ * source text.
+ */
 function pickLead(cands, headline) {
   const H = new Set(tokensOf(headline));
-  const HC = new Set((String(headline).match(/[০-৯০-৯]+|হাজার|লাখ|কোটি|শতাংশ|টাকা|জন|টি|বছর|দিন|ঘণ্টা/gu) || []));
-  let best = null;
-  let bestScore = -Infinity;
-  for (const s of cands) {
+  const facts = (s) =>
+    (String(s).match(/[০-৯০-৯]+|হাজার|লাখ|কোটি|শতাংশ|টাকা|জন|টি|বছর|দিন|ঘণ্টা/gu) ?? []);
+  const HC = new Set(facts(String(headline)));
+
+  const usable = cands.filter((s) => {
+    if (tokensOf(s).length < 8) return false;
+    return !DANGLING_START.test(s);
+  });
+  if (!usable.length) return { lead: cands[0] ?? '', support: '' };
+
+  const score = (s, i) => {
     const T = tokensOf(s);
-    if (T.length < 8) continue;
-    if (DANGLING_START.test(s)) continue;
     const overlap = H.size ? T.filter((t) => H.has(t)).length / H.size : 0;
-    // rep1 fires when every headline token appears in the lead AND the lead adds
-    // no new number/quantity. So require a concrete token the headline lacks -
-    // that alone makes the repetition impossible.
-    const novel = (String(s).match(/[০-৯০-৯]+|হাজার|লাখ|কোটি|শতাংশ|টাকা|জন|টি|বছর|দিন|ঘণ্টা/gu) || []).filter((x) => !HC.has(x));
+    const novel = facts(s).filter((x) => !HC.has(x));
     const complete = COMPLETE.test(s) ? 2 : 0;
-    const sized = s.length >= 60 && s.length <= 260 ? 1 : 0;
-    const score = (novel.length ? 3 : 0) + complete * 2 + sized - overlap * 2;
-    if (score > bestScore) { bestScore = score; best = s; }
-  }
-  if (best) return best;
-  const usable = cands.filter((s) => COMPLETE.test(s) && !DANGLING_START.test(s));
-  return usable.sort((a, b) => b.length - a.length)[0] || cands[0] || '';
+    const sized = s.length >= 60 && s.length <= 300 ? 1 : 0;
+    const early = i < 3 ? 1.5 : 0; // a journalistic lede comes first
+    return { overlap, novel, total: overlap * 4 + complete * 2 + sized + early + novel.length };
+  };
+
+  const ranked = usable
+    .map((s, i) => ({ s, ...score(s, i) }))
+    .sort((a, b) => b.total - a.total);
+
+  const primary = ranked[0];
+  // rep1 fires at coverage >= 0.75 with no new fact: add one
+  const repeats = primary.overlap >= 0.75 && primary.novel.length === 0;
+  if (!repeats) return { lead: primary.s, support: '' };
+
+  const support = ranked.find((r) => r.s !== primary.s && r.novel.length > 0);
+  return { lead: primary.s, support: support ? support.s : '' };
 }
 
 /** rep1: bullets must be mutually distinct (overlap <= 0.7). */
@@ -248,8 +284,9 @@ function assemble(lead, bullets, mainParas, { min, max }) {
 function buildWithBand(brief, pool, srcCount, band) {
   const { min, max } = band;
   const headline = brief?.headline ?? '';
-  const lead = pickLead(pool, headline);
-  const rest = pool.filter((s) => s !== lead);
+  const { lead, support } = pickLead(pool, headline);
+  const lede = support ? `${lead} ${support}` : lead;
+  const rest = pool.filter((s) => !lede.includes(s));
 
   const candBullets = distinctBy(rest, 3).map((b) => shorten(b.replace(/[।?!]\s*$/u, '').trim()));
   const bodySents = rest.filter((s) => !candBullets.includes(s));
@@ -263,7 +300,7 @@ function buildWithBand(brief, pool, srcCount, band) {
   const { blocks, bulletsUsed } = assemble(lead, candBullets, mainParas, band);
 
   const parts = [];
-  if (lead) parts.push(lead);
+  if (lede) parts.push(lede);
   if (bulletsUsed) parts.push(`**এক নজরে**\n${candBullets.map((b) => `- ${b}`).join('\n')}`);
   const keptMain = blocks.filter((b) => b !== lead && !candBullets.includes(b));
   // No "মূল খবর" heading. It is on GENERIC_HEADINGS in publication-gate.mjs, so a
