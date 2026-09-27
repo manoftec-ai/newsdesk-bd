@@ -1,0 +1,59 @@
+name: probe-fetch
+# Throwaway diagnostic. Answers one question: can a GitHub Actions runner reach
+# a third-party reader, and can that reader reach the outlets we cannot scrape
+# directly? Read-only. No secrets, no state, no deploy.
+#
+# Delete once the answer is known.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-fetch
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe readers and direct fetches
+        run: |
+          set -uo pipefail
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36'
+          words() { tr -s '[:space:]' '\n' | grep -cE '[ঀ-৿A-Za-z0-9]' || true; }
+
+          # A real BBC Bengali article plus one Bangladeshi outlet that returns
+          # 403 to us directly. Both taken from live feed/store URLs.
+          BBC='https://www.bbc.com/bengali/articles/ck5ywnxjg53wo'
+          KAL='https://www.kalerkantho.com'
+
+          echo "### runner egress IP"
+          curl -s --max-time 15 https://api.ipify.org || echo "(ip lookup failed)"
+          echo
+
+          for U in "$BBC" "$KAL"; do
+            echo "### direct  $U"
+            code=$(curl -s -o /tmp/d.html -w '%{http_code}' --max-time 25 -A "$UA" "$U" || echo 000)
+            echo "  http=$code bytes=$(wc -c </tmp/d.html) words=$(words </tmp/d.html)"
+            echo
+          done
+
+          for R in "https://r.jina.ai/" ; do
+            echo "### reader  $R"
+            for U in "$BBC" "$KAL"; do
+              code=$(curl -s -o /tmp/r.txt -w '%{http_code}' --max-time 45 "$R$U" || echo 000)
+              echo "  $U"
+              echo "    http=$code bytes=$(wc -c </tmp/r.txt) words=$(sed '1,6d' /tmp/r.txt | words)"
+            done
+            sleep 2
+          done
+
+          echo "### alternatives worth knowing about"
+          for U in "https://www.bbc.com/bengali/articles/ck5ywnxjg53wo.amp" \
+                   "https://www.bbc.com/bengali/articles/ck5ywnxjg53wo?output=amp"; do
+            code=$(curl -s -o /tmp/a.html -w '%{http_code}' --max-time 25 -A "$UA" "$U" || echo 000)
+            echo "  $U -> http=$code bytes=$(wc -c </tmp/a.html)"
+          done
