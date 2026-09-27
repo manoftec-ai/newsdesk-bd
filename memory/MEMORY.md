@@ -405,3 +405,18 @@ Four regressions of ONE kind reached production in a single day: standfirst unde
 **`.github/workflows/tests.yml` (new) runs the suite on every push and PR.** Until now **NOTHING ran the tests** — 341 tests existed and were only ever run by hand. That is the actual reason the four regressions got through, and it is the single most important thing in this entry: a test nobody runs is not a guard.
 
 **Standing lesson for this project:** when the user says a UI change "appears again", grep for *every* render site of that element before editing any of them, and add a test that fails if it returns. Fixing the instance you can see is what produced four rounds of this.
+
+## D120: the duplicate নিশ্চিত above the story (2026-09-27)
+User: "after hero section there are two repeated নিশ্চিত · নিশ্চিত in according with headline. fix it permanently."
+
+**Cause:** two elements printed the same sentence.
+- The header `VerificationBadge` (above the `<h1>`): `নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে`
+- A `<p class="badge-legend">` under the date, printing the identical sentence plus `· 2 প্রমাণ · স্কোর 4`
+
+So the reader met `নিশ্চিত` twice, in the same words, before the story.
+
+**Fix:** removed the `badge-legend` paragraph. It was the redundant half — the compact badge keeps the status, and the `প্রমাণ দেখুন` panel below the story already carries the tier, the score and the full outlet list. `badge`/`badge.tierNote` are still used elsewhere in the header, so nothing else changed.
+
+**Locked in** `article-layout.test.mjs` as a 6th contract, and verified by putting it back (fails: *"the badge-legend paragraph is back — it repeats the header VerificationBadge"*). The test also asserts the two things that must NOT go with it: the header `VerificationBadge`, and tier/score/outlet detail inside the panel. **A fix for a duplicate is exactly the edit that quietly takes the original with it**, so the guard has to check both directions.
+
+**Live:** one `নিশ্চিত` above the headline, `প্রমাণ দেখুন` below the story. 342/342 tests, `tests.yml` green on `c5a60fc` and `6f37985`.
