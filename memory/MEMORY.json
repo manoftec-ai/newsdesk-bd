@@ -1100,6 +1100,12 @@
       "date": "2026-09-27",
       "decision": "Interlinking package shipped (commit 6c4ef7b, pushed in-sync): article context-links box + prev/next nav + related 3->6 with recency tiebreak; /tags pages for every content tag (90 dead chips fixed) + related-tags; /ghotona sibling-events; 92 tagless articles backfilled via tools/backfill_tags.mjs; history_author tags + inferTags standalone-word matching + category fallback; no LLM body links (would hallucinate slugs). Tests 348/348.",
       "context": "User: site in modification, no interlinking done — find opportunity and implement. Audit: 0 in-body links, 92/398 tagless, dead adjacentPosts, 90 tags without pages."
+    },
+    {
+      "id": "D122",
+      "date": "2026-09-27",
+      "decision": "SEO audit fixes shipped (faaa326, pushed in-sync): 48h news-sitemap, sitemap tag parity + fresh lastmod, noindex search/404, /news pagination 30/page, og-default.png generator + images.yml step, article OG meta, 72 meta trims. Tests 348/348.",
+      "context": "User asked what SEO can be improved. Live checks: robots OK, news-sitemap violated recency spec. Open: GSC/FB/TG activation = user steps."
     }
   ],
   "sources": [
@@ -1445,7 +1451,7 @@
     }
   ],
   "lastUpdated": "2026-09-27",
-  "sessionsCount": 85,
+  "sessionsCount": 86,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
