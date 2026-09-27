@@ -7,6 +7,7 @@ import VerificationBadge from "../../components/VerificationBadge.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
 import Giscus from "../../components/Giscus.astro";
+import { cleanAlt } from "../../lib/image-alt.js";
 
 import {
   getCollection,
@@ -442,7 +443,7 @@ const shareLinks = [
         <figure class="mt-6">
           <img
             src={post.thumbnail}
-            alt={post.thumbnailAlt || ""}
+            alt={cleanAlt(post.thumbnailAlt)}
             width="1200"
             height="630"
             class="aspect-[16/9] w-full rounded-md object-cover"
@@ -450,9 +451,10 @@ const shareLinks = [
             fetchpriority="high"
             decoding="async"
           />
-          {post.thumbnailAlt && (
-            <figcaption class="mt-2 text-sm text-muted-foreground">{post.thumbnailAlt}</figcaption>
-          )}
+          {/* 2026-09-27: no photo credit under the image. thumbnailAlt reads
+              "Headline — ছবি: প্রথম আলো" and was rendered as a visible
+              figcaption, so the credit showed under every picture. The
+              attribution stays in the front matter and in the source list. */}
         </figure>
       )}
 
@@ -669,7 +671,7 @@ const shareLinks = [
                 <a href={`/article/${item.slug}`} class="mini-row-thumb">
                   <img
                     src={item.thumbnail}
-                    alt={item.thumbnailAlt || ""}
+                    alt={cleanAlt(item.thumbnailAlt)}
                     loading="lazy"
                     decoding="async"
                   />
