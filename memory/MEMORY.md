@@ -387,3 +387,36 @@ Both removed. **Ordinary cards keep their excerpt** (8 verified live) — that i
 **Live verified:** `ছবি:` 0 occurrences on homepage, 0 `<figcaption>` on article pages, lead block now reads *headline → "1 মিনিট পাঠ →"* with nothing between, 8 card excerpts intact.
 
 **Lesson:** when a user says "I already fixed this", find *every* render site and ask why it could reappear. A credit hidden in `alt` looks fixed until one image fails to load, then it is back — and the user reasonably concludes their fix was lost.
+
+## D119: remove the সূত্র block, and make the layout decisions permanent (2026-09-27)
+User: "delete sutra section from my site. make sure all the changes we are doing will be permanent in future also."
+
+**Removed:** the `সূত্র` source list under the story. It named the same outlets the `প্রমাণ দেখুন` panel below already lists. Attribution survives in the front matter, the evidence panel's links, the JSON-LD `articleBody` and the RSS feed — the record is kept, the duplicate display is gone. This completed the two-part removal: the line beside the date, then the block under the news. `sourceNameBn` import dropped with it (no longer used).
+
+**Final article-page order (verified live):** badge → headline → date → body → `প্রমাণ দেখুন` panel → comments. No standfirst, no figcaption, no `সূত্র:` label, no `source-list`. `সূত্র` still appears 4× but only inside the panel's own prose ("দুই বা ততোধিক স্বাধীন সূত্রে…") and the site tagline — correct, not a label.
+
+## THE PERMANENCE PART — the actual request
+Four regressions of ONE kind reached production in a single day: standfirst under the headline, photo credit under the image, `সূত্র` beside the date, `সূত্র` under the story. Each was fixed where the user could see it; **each returned from a different render site**, because the decision lived only in a commit message.
+
+**`pipeline/test/article-layout.test.mjs`** now records the decisions. Reads template *source*, not rendered output, so it needs no site install and runs in CI. Asserts the removed elements are absent AND that what must not disappear with them survives (JSON-LD `articleBody`, meta description, `sources` in the content schema).
+
+**Verified by deliberately breaking each one** — standfirst back, caption back, byline back, source list back, panel moved above the headline — **5 for 5**, clean tree passing. That step matters: the "check" I wrote earlier this session reported 0 failures on markup I corrupted with a stray `<<<`, and I deleted it. A guard is worth only what its failures are worth.
+
+**`.github/workflows/tests.yml` (new) runs the suite on every push and PR.** Until now **NOTHING ran the tests** — 341 tests existed and were only ever run by hand. That is the actual reason the four regressions got through, and it is the single most important thing in this entry: a test nobody runs is not a guard.
+
+**Standing lesson for this project:** when the user says a UI change "appears again", grep for *every* render site of that element before editing any of them, and add a test that fails if it returns. Fixing the instance you can see is what produced four rounds of this.
+
+## D120: the duplicate নিশ্চিত above the story (2026-09-27)
+User: "after hero section there are two repeated নিশ্চিত · নিশ্চিত in according with headline. fix it permanently."
+
+**Cause:** two elements printed the same sentence.
+- The header `VerificationBadge` (above the `<h1>`): `নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে`
+- A `<p class="badge-legend">` under the date, printing the identical sentence plus `· 2 প্রমাণ · স্কোর 4`
+
+So the reader met `নিশ্চিত` twice, in the same words, before the story.
+
+**Fix:** removed the `badge-legend` paragraph. It was the redundant half — the compact badge keeps the status, and the `প্রমাণ দেখুন` panel below the story already carries the tier, the score and the full outlet list. `badge`/`badge.tierNote` are still used elsewhere in the header, so nothing else changed.
+
+**Locked in** `article-layout.test.mjs` as a 6th contract, and verified by putting it back (fails: *"the badge-legend paragraph is back — it repeats the header VerificationBadge"*). The test also asserts the two things that must NOT go with it: the header `VerificationBadge`, and tier/score/outlet detail inside the panel. **A fix for a duplicate is exactly the edit that quietly takes the original with it**, so the guard has to check both directions.
+
+**Live:** one `নিশ্চিত` above the headline, `প্রমাণ দেখুন` below the story. 342/342 tests, `tests.yml` green on `c5a60fc` and `6f37985`.

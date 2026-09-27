@@ -106,10 +106,36 @@ jobs:
             dispatch pipeline.yml
             poll pipeline.yml "$t0" 50 || echo "pipeline not confirmed, continuing"
             t1=$(date +%s)
+            BEFORE_MAIN=$(git rev-parse origin/main 2>/dev/null || echo "")
             dispatch auto-author.yml
             poll auto-author.yml "$t1" 100 || echo "auto-author not confirmed, continuing"
             t2=$(date +%s)
-            dispatch deploy.yml
+
+            # Deploy only when a reader would actually see something different.
+            #
+            # This used to dispatch deploy.yml unconditionally, and the deploy
+            # guard could not catch it: the guard diffs site/src, and
+            # site/src/data/event-graph.json is rewritten by every pipeline
+            # cycle (29 of the last 58 site/ commits in 12h touched only that
+            # file). So the guard saw a diff every time and deployed every time
+            # — 42 dispatches became 42 real Vercel deployments by 18:20 UTC,
+            # against a 100/day Hobby limit that, once hit, fails every deploy
+            # for the rest of the window. Publishing nothing still cost quota.
+            #
+            # So decide here, where we know what auto-author just did. The hourly
+            # schedule in deploy.yml still ships data-only refreshes, so the
+            # event graph cannot go stale.
+            git fetch --no-tags origin main >/dev/null 2>&1 || true
+            AFTER_MAIN=$(git rev-parse origin/main 2>/dev/null || "")
+            READER_PATHS='site/src/content site/public site/api site/src/pages site/src/components site/src/layouts site/src/lib'
+            if [ -z "$BEFORE_MAIN" ] || [ -z "$AFTER_MAIN" ] || [ "$BEFORE_MAIN" = "$AFTER_MAIN" ]; then
+              echo "$(date -u +%H:%M:%S) main did not move ($AFTER_MAIN); skipping deploy dispatch"
+            elif git cat-file -e "$BEFORE_MAIN^{commit}" 2>/dev/null \
+                 && git diff --quiet "$BEFORE_MAIN" "$AFTER_MAIN" -- $READER_PATHS; then
+              echo "$(date -u +%H:%M:%S) only generated data changed; skipping deploy dispatch"
+            else
+              dispatch deploy.yml
+            fi
             # Pace the cycle to ~30 min so the next pipeline fetch is >= 30 min
             # after the previous one (be-nice-to-sources rule).
             elapsed=$(( $(date +%s) - t0 ))
