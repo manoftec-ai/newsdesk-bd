@@ -29,7 +29,7 @@
 //   node tools/enrich_bodies.mjs --resolve-gnews --limit=10  # decode wrappers first
 //
 // NOT wired into any workflow. Local, developer-invoked only.
-import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import * as cheerio from 'cheerio';
 import { openDb } from '../lib/db.mjs';
@@ -165,9 +165,49 @@ if (unusable.size) {
   console.log(`--skip-unusable: ${unusable.size} source(s) cannot be enriched, dropping ${before - pool.length} of ${before} candidates`);
 }
 
+// Target the members of briefs that cannot clear the evidence gate.
+//
+// Blind newest-first is the wrong target. A brief clears the gate if ANY ONE of
+// its members carries 100+ words, so the cheapest win is the member already
+// closest to the line — not the newest item in the store. Measured 2026-09-27:
+// 464 of 587 briefs fail with a best member of only 16-60 words, while 123
+// already have a member over 100. Enriching one member per failing brief
+// unblocks it; enriching the newest item in the store may not belong to any
+// failing brief at all.
+const TARGET = arg('target') || ''; // 'failing-briefs' | ''
+let targeted = 0;
+if (TARGET === 'failing-briefs') {
+  const BRIEFS_DIR = resolve(import.meta.dirname, '../state/briefs');
+  const wordCount = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
+  const bodyOf = db.prepare('SELECT id, body FROM raw_items WHERE url = ?');
+  const want = new Map(); // raw_items.id -> best word count seen for a failing brief
+  let files = [];
+  try { files = readdirSync(BRIEFS_DIR).filter((f) => f.endsWith('.json')); } catch { /* none yet */ }
+  for (const f of files) {
+    let brief;
+    try { brief = JSON.parse(readFileSync(resolve(BRIEFS_DIR, f), 'utf8')); } catch { continue; }
+    for (const m of Array.isArray(brief.members) ? brief.members : []) {
+      if (!m?.url) continue;
+      const row = bodyOf.get(m.url);
+      if (!row) continue;                       // never fetched, cannot target by id
+      const w = wordCount(row.body);
+      if (w >= 100) continue;                    // this member already carries the brief
+      const prev = want.get(row.id);
+      if (prev === undefined || w > prev) want.set(row.id, w);
+    }
+  }
+  // Closest-to-threshold first: those are the cheapest briefs to unblock.
+  const ids = [...want.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => id);
+  const before = pool.length;
+  pool = pool.filter((r) => want.has(r.id));
+  targeted = pool.length;
+  console.log(`--target=failing-briefs: ${ids.length} member(s) across failing briefs, closest to 100 words first; ${before} candidates -> ${targeted}`);
+}
+
 if (IDS.length) pool = thin.filter((r) => IDS.includes(String(r.id)));
 else if (ONLY === 'gnews') pool = pool.filter((r) => googleNewsArticleId(r.url));
 else if (ONLY === 'direct') pool = pool.filter((r) => !googleNewsArticleId(r.url));
+else if (TARGET === 'failing-briefs') { /* pool already narrowed above */ }
 if (DAYS > 0) {
   const cutoff = Date.now() - DAYS * 86400000;
   const kept = pool.filter((r) => {
