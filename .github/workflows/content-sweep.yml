@@ -53,46 +53,15 @@ jobs:
         working-directory: pipeline
         run: node tools/content_gate.mjs
 
-      - name: Sweep the corpus and quarantine what is broken
+      - name: Sweep the corpus, withhold, commit, push, file an issue
         working-directory: pipeline
-        id: sweep
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node tools/sweep_quarantine.mjs --commit
-
-      - name: Push any removals
-        if: steps.sweep.outputs.removed != '0'
-        run: |
-          git config user.name "newsdesk-bd-bot"
-          git config user.email "bot@newsdesk-bd.local"
-          git add -A site/src/content/news pipeline/state/quarantine.json
-          git commit -m "sweep: withhold articles that fail the content audit" \
-                       -m "Found by the hourly sweep, not by a reader. The audit REFUSES these rather than repairing them: every defect class found so far came from bad source text, and the writer reproduced it faithfully. Rewriting would mean inventing clauses the source never contained."
-          git push || echo "  (nothing to push, or a concurrent push won)"
-
-      - name: Open an issue when something was withheld
-        if: steps.sweep.outputs.removed != '0'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const removed = Number('${{ steps.sweep.outputs.removed }}');
-            const slugs = '${{ steps.sweep.outputs.slugs }}'.split(',').filter(Boolean);
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Content sweep withheld ${removed} article(s)`,
-              body: [
-                'The hourly content sweep found articles that fail the audit and',
-                'withdrew them from the site. They are now quarantined, so the',
-                'picker will not republish them.',
-                '',
-                'They are NOT repaired. Every defect class so far came from bad',
-                'source text that the writer reproduced faithfully, so rewriting',
-                'would mean inventing what the source did not say.',
-                '',
-                ...slugs.map((s) => `- \`${s}\``),
-                '',
-                `Sweep run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              ].join('\n'),
-            });
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        # ONE step, on purpose. The previous version had three, with the commit
+        # and issue gated on steps.sweep.outputs.removed - an output the tool
+        # never wrote, so both were SKIPPED and the run went green having done
+        # nothing. The tool now does the withholding, the commit, the push and
+        # the issue itself.
+        run: node tools/sweep_quarantine.mjs --commit --push
