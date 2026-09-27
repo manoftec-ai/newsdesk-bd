@@ -345,3 +345,26 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 **Live:** 405 articles, 0 contaminated, `national-578` now leads with the real story and attributes `সূত্র: বিডি২৪লাইভ ও কালের কণ্ঠ`.
 
 **Remaining quality ceiling (honest):** the composer still reads as stitched source sentences — a digest, not reporting. And of resolved URLs, **207 returned 403** at the publisher, so the fetch ceiling is access, not logic.
+
+## D117: the articles were not sentences — they were fragments (2026-09-27)
+User asked to "completely modify the writer and the terms/search mechanism" after finding `national-578` full of website menu.
+
+**Measured `national-202` before the rewrite: 23 paragraphs, and only the FIRST ended in a দাঁড়ি.** The other 22 finished mid-word — `ে`, `ন`, `ু`, `e`. The composer stripped terminal punctuation from every sentence and gave each one its own paragraph. It read as machine output because it was machine output.
+
+**Writer now:**
+- **Closes paragraphs** — keeps existing punctuation; a sentence cut mid-word by the feed is *dropped*, not repaired (guessing the ending invents text).
+- **Groups 2–3 sentences per paragraph**, breaking only after a sentence that ends a thought.
+- **Orders by narrative** — headline subject first, new facts early, background last.
+- **Bullets cut at a clause boundary**, never after a connective (no dangling `এবং`), and a bullet's parent sentence is excluded from the body (it was appearing twice).
+
+**Four bugs the rewrite exposed:**
+1. **English mastheads leaked** — `BANNED_OUTLET_NAMES` is Bengali-only, so `…৪ শিশুর মৃত্যু Dhaka Tribune` published. 24 English names now stripped too.
+2. **A sub-heading became a paragraph** — paragraphs now require a finite verb, *except* an enumeration of verbs silently discarded first-person profiles (`পড়েছি`, `করেছি` are verbs). Fix: a long sentence (≥80 chars) is trusted without a match; an in-article heading is never that long.
+3. **The two word counters disagreed ~10%** — composer counted Bengali words, finalizer counted Latin runs too, so 100 arrived as 91 → `BODY_SUBSTANCE_BLOCKED`. Composer now uses `bodyWordCount()`, the grader's ruler.
+4. **The short-body guard measured the wrong thing** — it used the band's tolerance (`min-20`, as low as 16), so a 59-word body passed as "not short". Floor is now `MIN_ARTICLE_WORDS`.
+
+**Floor moved 150 → 100 words** (`PUBLISH_MIN_WORDS`). The 150 existed to stop fragment-stuffing; the composer now refuses what it cannot build from real sentences, so 100 words of real prose is a news brief, not padding. Still 2× the 50-word threshold.
+
+**What I deliberately did NOT do:** 221 live articles have <100 words of clean prose and were published by the old writer hitting its target with fragments. They are **real news with real sources**, so I left them rather than delete two-thirds of the site over prose style. They are replaced as new briefs supersede them; 14 were rewritten.
+
+**Live: 383 articles, 0 contaminated, 0 rejected, 336/336 tests.** `national-578` now leads with the real story; `national-202` has 8 paragraphs all correctly closed.
