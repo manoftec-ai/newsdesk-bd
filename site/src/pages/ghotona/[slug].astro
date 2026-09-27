@@ -94,6 +94,13 @@ const STATUS = {
 };
 const priority = PRIORITY[event.priority] ?? PRIORITY.low;
 const status = STATUS[event.status] ?? STATUS.planned;
+// 2026-09-27 content audit T2: empty hubs (no articles AND no chronology)
+// are thin pages — keep them reachable for readers but out of the index.
+// Covered hubs also get a dynamic summary (report count + year span) so the
+// header is unique per hub instead of boilerplate.
+const isEmptyHub = matching.length === 0 && chrono.length === 0;
+const hubYears = matching.map((post) => (post.date ?? "").slice(0, 4)).filter(Boolean).sort();
+const hubSpan = hubYears.length > 1 ? `${hubYears[0]}–${hubYears[hubYears.length - 1]}` : (hubYears[0] ?? null);
 // 2026-09-27 interlinking: sibling events in the same category so hub pages
 // link sideways instead of only up to /ghotona and down to articles.
 const siblingEvents = events()
@@ -106,6 +113,7 @@ const siblingEvents = events()
   description={description}
   canonical={`${SITE.url}/ghotona/${event.id}`}
   ogType="article"
+  robots={isEmptyHub ? "noindex, follow" : undefined}
   jsonLd={jsonLd}
 >
   <div class="mx-auto max-w-4xl px-5">
@@ -132,6 +140,12 @@ const siblingEvents = events()
       </p>
       <div class="mt-3 text-sm text-muted-foreground">
         <span class="font-medium text-foreground">{matching.length}</span>টি সংবাদ সংগ্রহে আছে
+        {chrono.length > 0 && (
+          <span> · <span class="font-medium text-foreground">{chrono.length}</span>টি কালানুক্রম রেকর্ড</span>
+        )}
+        {hubSpan && (
+          <span> · {hubSpan}</span>
+        )}
       </div>
     </header>
 

@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
 import { categories, tags, authors } from "../config/theme.config.ts";
-import { events } from "../lib/events.js";
+import { events, eventCounts, chronologyCounts } from "../lib/events.js";
 
 export async function GET(context) {
   const published = (await getCollection("news", ({ data }) => !data.draft)).sort(
@@ -52,10 +52,23 @@ export async function GET(context) {
         lastmod: lastmodByCategory.get(c.slug) ?? SITE_LAUNCH,
       })),
     ...[...allTags.values()].map((t) => ({ path: `/tags/${t.slug}`, lastmod: lastmodByTag.get(t.slug) ?? SITE_LAUNCH })),
-    ...events().map((event) => ({
-      path: `/ghotona/${event.id}`,
-      lastmod: SITE_LAUNCH,
-    })),
+    // Content audit T2: 0-coverage event hubs are noindexed, so they must not
+    // be listed here either. eventCounts takes the same shape the hub pages
+    // use (title/excerpt/category, no body — matches production matching).
+    ...(() => {
+      const lite = published.map((entry) => ({
+        title: entry.data.title,
+        excerpt: entry.data.excerpt,
+        category: entry.data.category,
+        date: iso(entry.data.date),
+        year: entry.data.date.getFullYear(),
+      }));
+      const counts = eventCounts(lite);
+      const chrono = chronologyCounts();
+      return events()
+        .filter((event) => (counts.get(event.id) ?? 0) > 0 || (chrono[event.id] ?? 0) > 0)
+        .map((event) => ({ path: `/ghotona/${event.id}`, lastmod: SITE_LAUNCH }));
+    })(),
     ...published.map((entry) => ({
       path: `/article/${entry.id}`,
       lastmod: iso(entry.data.updated ?? entry.data.date) ?? SITE_LAUNCH,
