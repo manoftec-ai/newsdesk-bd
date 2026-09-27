@@ -28,6 +28,7 @@
 import { BANNED_OUTLET_NAMES } from './audit.mjs';
 import { proseProblem } from './prose.mjs';
 import {
+  bodyWordCount,
   lengthForMode,
   publicationMode,
   minPublishWords,
@@ -53,6 +54,21 @@ const MONTHS = [
 // like "… বিস্ফোরণ jugantor.com" loses both the brand and the domain.
 const OUTLET_TAIL = BANNED_OUTLET_NAMES.map((n) => [n, new RegExp(n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gu')]);
 
+// 2026-09-27: BANNED_OUTLET_NAMES is Bengali-only, so the English brand leaked
+// straight through - "হামের উপসর্গে আরও ৪ শিশুর মৃত্যু Dhaka Tribune" was
+// published with the masthead as the last two words of a sentence. An RSS lead
+// routinely appends the English name where the Bengali one would have gone.
+const escapeRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, String.raw`\const ENGLISH_OUTLETS = [`);
+
+const ENGLISH_OUTLETS = [
+  'Dhaka Tribune', 'The Daily Star', 'Daily Star', 'Prothom Alo', 'The Independent',
+  'The Business Standard', 'TBS News', 'The Guardian', 'Reuters', 'AP', 'AFP',
+  'UNB', 'BBC News', 'Al Jazeera', 'New Age', 'The Daily Observer', 'Observer',
+  'BD News24', 'news24', 'Channel i', 'Jamuna TV', 'ATN Bangla', 'GTV', 'BTV',
+  'Voice of America', 'VOA', 'CNN', 'Bloomberg', 'Financial Express', 'FE News',
+  'The Telegraph', 'Telegraph', 'Dhaka Courier', 'The Independentbd', 'Ispahani',
+];
+
 export function toBengaliDigits(s) {
   return String(s ?? '').replace(/[0-9]/g, (d) => BN_DIGITS[Number(d)]);
 }
@@ -66,6 +82,9 @@ export function stripUrls(s) {
 
 function stripOutlet(s) {
   let out = String(s ?? '');
+  for (const name of ENGLISH_OUTLETS) {
+    out = out.replace(new RegExp(escapeRe(name), 'giu'), ' ');
+  }
   // a trailing "… headline <outlet><domain>" that RSS appends to the lead
   for (const [name, re] of OUTLET_TAIL) out = out.replace(re, ' ');
   out = out.replace(/\b(jugantor|prothomalo|banglatribune|kalerkantho|bdnews24|bd24live|samakal|ittefaq|channeli|jamuna|dailystar|dhakatribune|daily-observer|dainikbangla|atnbangla|tbs|voa-bangla|bbc-bengali|guardian-world|dainikazadi|deshrupantor)\b/giu, ' ');
@@ -149,6 +168,11 @@ const COMPLETE = /[।?!]$/u;
 // 2026-09-27: added the discourse connectors as well. "তবে সেই অর্থ তার কাছে
 // পৌঁছানো হয়নি…" is grammatical and useless as an opening - "তবে" (but)
 // refers back to a clause the truncated feed never delivered.
+// A paragraph that opens mid-thought is a continuation, not a paragraph. The RSS
+// lead is cut at arbitrary offsets, so "আর নিশ্চিত হামে মৃত্যু ১০১ জনের।" survives
+// as a standalone line. Same rule as the lead, applied to the body.
+const CONTINUATION_START = /^(আর|এবং|ও|তবে|অথচ|ফলে|তাই|তাইলে|কিন্তু|যা|যার|যারা|সেই|এই|অর্থাৎ|অন্যদিকে|অপরদিকে|এরপর|তারপর|পরে|এখানে|সেখানে)/u;
+
 const DANGLING_START = /^(তাঁদের|তাদের|তারা|এরা|ওদের|ওরা|তাঁর|তার|তিনি|তিনিগণ|সেই|ওই|এই|উপরে|এর\s|তবে|অথচ|তাই|ফলে|তাইলে|অর্থাৎ|যদিও|যদি|এখানে|সেখানে|তখন|এরপর|তারপর|অন্যদিকে|অপরদিকে)/u;
 
 /**
@@ -220,9 +244,13 @@ export function bnWordCount(text) {
 }
 
 /** c9: top up from real sentences only; never invent filler. */
-function fillToBand(paras, pool, { min }) {
+function fillToBand(paras, pool, { min }, skip = new Set()) {
   const out = [...paras];
-  const all = pool.length ? pool : paras;
+  // never re-add a sentence already used as a bullet: otherwise the bullet and
+  // the fact it was cut from both appear, which is how
+  // "১৫ মার্চ থেকে এ পর্যন্ত… মোট ৯৫৬ জন" showed up as a bullet AND the last
+  // paragraph
+  const all = (pool.length ? pool : paras).filter((p) => !skip.has(p));
   let guard = 0;
   while (bnWordCount(out.join('\n\n')) < min && guard < 200) {
     const next = all[guard];
@@ -234,10 +262,96 @@ function fillToBand(paras, pool, { min }) {
   return { paras: out };
 }
 
-/** A bullet is a point, not a paragraph. Keep the clause carrying the fact. */
-function shorten(s) {
-  const w = String(s ?? '').split(/\s+/u);
-  return w.length <= 14 ? String(s ?? '').trim() : w.slice(0, 14).join(' ') + '…';
+/**
+ * A paragraph ends the way a Bengali sentence ends. Stripping the terminal
+ * দাঁড়ি left 22 of 23 paragraphs in national-202 finishing mid-word - "ে",
+ * "ন", "ু" - which is ungrammatical and reads as machine output no matter how
+ * good the source text is. A paragraph that does not already end in punctuation
+ * gets a দাঁড়ি; one that was cut off mid-word is dropped rather than repaired,
+ * because guessing the missing ending invents text.
+ */
+function closeParagraph(text) {
+  const t = String(text ?? '').trim();
+  if (!t) return '';
+  if (/[।?!]$/u.test(t)) return t;
+  // ends mid-word: the feed truncated it, so the ending is unknown
+  if (!/[ঀ-৿]$/u.test(t)) return t;
+  const words = t.split(/\s+/u);
+  const last = words[words.length - 1] ?? '';
+  if (last.length < 4) return '';
+  return `${t}।`;
+}
+
+/**
+ * Group sentences into paragraphs. One sentence per paragraph reads as a
+ * sitemap; two to three reads as an article. Breaks are placed after a sentence
+ * that ends a thought, never mid-sentence, and a paragraph is not allowed to
+ * grow past a readable length.
+ */
+function groupIntoParagraphs(sentences, { maxWords = 55, targetSentences = 3 } = {}) {
+  const paras = [];
+  let current = [];
+  for (const s of sentences) {
+    current.push(s);
+    const words = current.join(' ').split(/\s+/u).filter(Boolean).length;
+    if (current.length >= targetSentences || words >= maxWords) {
+      const closed = closeParagraph(current.join(' '));
+      if (closed) paras.push(closed);
+      current = [];
+    }
+  }
+  if (current.length) {
+    const closed = closeParagraph(current.join(' '));
+    if (closed) paras.push(closed);
+  }
+  return paras;
+}
+
+/**
+ * Narrative order: what happened first, then the detail, then background.
+ * Sentences are ranked by how much of the headline they carry, with sentences
+ * that add a new fact placed early, so the article degrades into context rather
+ * than wandering.
+ */
+function orderForNarrative(sentences, headline) {
+  const H = new Set(tokensOf(headline));
+  const facts = (s) =>
+    (String(s).match(/[০-৯০-৯]+|হাজার|লাখ|কোটি|শতাংশ|টাকা|জন|টি|বছর|দিন|ঘণ্টা/gu) ?? []);
+  return sentences
+    .map((s, i) => {
+      const T = tokensOf(s);
+      const overlap = H.size ? T.filter((t) => H.has(t)).length / H.size : 0;
+      return { s, i, overlap, novel: facts(s).length, words: T.length };
+    })
+    .sort((a, b) => {
+      if (Math.abs(b.overlap - a.overlap) > 0.15) return b.overlap - a.overlap;
+      if (a.novel !== b.novel) return b.novel - a.novel;
+      return a.i - b.i; // otherwise keep source order
+    })
+    .map((x) => x.s);
+}
+
+/**
+ * A bullet is a point, not a truncated clause. Cutting a long sentence at 14
+ * words leaves "…জগন্নাথ বিশ্ববিদ্যালয়", so only sentences that are already
+ * short enough are used, and the tail is trimmed at a clause boundary
+ * (comma, colon, or a connective) rather than mid-word.
+ */
+function asBullet(sentence, maxWords = 16) {
+  const words = String(sentence ?? '').split(/\s+/u).filter(Boolean);
+  if (!words.length) return '';
+  if (words.length <= maxWords) return sentence.replace(/[।?!]\s*$/u, '').trim();
+  // find the last clause boundary within the budget
+  const CONNECTIVE = /^(এবং|ও|যা|যার|যারা|এই|সেই|তবে|অথচ|এর|কিন্তু)$/u;
+  let cut = -1;
+  for (let i = Math.min(words.length, maxWords); i > 4; i--) {
+    // cut after punctuation, never after a connective that needs a following clause
+    if (/[,;:]$/u.test(words[i - 1])) { cut = i; break; }
+    if (CONNECTIVE.test(words[i])) { cut = i; break; }
+  }
+  while (cut > 4 && CONNECTIVE.test(words[cut - 1])) cut--;
+  if (cut < 5) return ''; // no clean boundary: not a point
+  return words.slice(0, cut).join(' ').replace(/[,;:]\s*$/u, '').trim();
 }
 
 /**
@@ -250,11 +364,11 @@ function shorten(s) {
  * and a block that would overflow is dropped whole; paragraphs are never cut
  * mid-sentence, which would leave a dangling clause.
  */
-function assemble(lead, bullets, mainParas, { min, max }) {
+function assemble(lede, bullets, mainParas, { min, max }) {
   const ceiling = max + 40;
   const count = (arr) => bnWordCount(arr.join('\n\n'));
 
-  const blocks = [lead].filter(Boolean);
+  const blocks = [lede].filter(Boolean);
   if (count(blocks) > ceiling) {
     // even the lead alone overflows this band: the brief is longer than the
     // band, not the other way round. Report it rather than mangling the lead.
@@ -284,39 +398,86 @@ function assemble(lead, bullets, mainParas, { min, max }) {
 function buildWithBand(brief, pool, srcCount, band) {
   const { min, max } = band;
   const headline = brief?.headline ?? '';
-  const { lead, support } = pickLead(pool, headline);
+
+  // Filter the SENTENCE POOL, not the assembled paragraphs. Filtering afterwards
+  // left national-202 at 121 words against a 150 floor: the filters removed the
+  // sub-headings and continuation fragments, then fillToBand refilled from the
+  // same pool and hit them again. Clean the pool once and the word budget is
+  // reachable from prose that actually survives.
+  //
+  // A Bengali paragraph carries a finite verb; an in-article sub-heading
+  // ("হামের উপসর্গে আরও ৪ শিশুর মৃত্যু", 35 characters) does not. The verb list
+  // cannot be complete - first-person narrative is legitimate prose and
+  // "পড়েছি", "করেছি", "বলেছিলেন" are all verbs - so a long sentence is trusted
+  // even without a match. An enumeration of verbs was discarding whole
+  // first-person profiles, which are exactly the briefs that read worst.
+  const FINITE =
+    /(হয়েছে|হয়েছেন|হয়েছি|হয়|হবে|হয়ে|করে|করেছে|করেছি|করেছেন|করি|করছে|করছিল|করা|জানায়|জানিয়েছেন|জানিয়ে|বলে|বলেন|বলেছে|বলেছিলেন|বলছে|দিয়ে|দেন|দিয়েছেন|দেওয়া|থেকে|নেই|আছে|ছিল|ছিলেন|ছিলাম|পেয়েছেন|নিয়েছেন|পড়েছি|পড়েছেন|পড়ছি|পড়ছেন|থাকে|থাকেন|হিসেবে|প্রকাশ)/u;
+  const cleanPool = pool.filter(
+    (p) =>
+      p.length >= 45 &&
+      (FINITE.test(p) || p.length >= 80) &&
+      !CONTINUATION_START.test(p) &&
+      !DANGLING_START.test(p) &&
+      proseProblem(p) === null,
+  );
+  const usable = cleanPool.length >= 4 ? cleanPool : pool;
+
+  const { lead, support } = pickLead(usable, headline);
   const lede = support ? `${lead} ${support}` : lead;
-  const rest = pool.filter((s) => !lede.includes(s));
+  const rest = usable.filter((s) => !lede.includes(s));
+  const ordered = orderForNarrative(rest, headline);
 
-  const candBullets = distinctBy(rest, 3).map((b) => shorten(b.replace(/[।?!]\s*$/u, '').trim()));
-  const bodySents = rest.filter((s) => !candBullets.includes(s));
-  const { paras } = fillToBand(bodySents.length ? bodySents : rest, pool, band);
+  // asBullet() strips the terminal punctuation, so the bullet text is not equal
+  // to its parent sentence - matching on the bullet string let both the bullet
+  // and the same fact reappear as the first body paragraph.
+  const bulletPairs = [];
+  for (const s of distinctBy(ordered, 3)) {
+    const bullet = asBullet(s);
+    if (bullet) bulletPairs.push({ bullet, source: s });
+    if (bulletPairs.length === 3) break;
+  }
+  const candBullets = bulletPairs.map((x) => x.bullet);
+  const used = new Set(bulletPairs.map((x) => x.source));
+  const bodySents = ordered.filter((s) => !used.has(s));
+
+  const { paras } = fillToBand(bodySents, usable, band, used);
+  // rep1: a paragraph that mostly re-states the lead adds nothing for a reader
+  // 2026-09-27: a sub-heading inside the article ("হামের উপসর্গে আরও ৪ শিশুর মৃত্যু" -
+  // 35 characters, no finite verb) was published as its own paragraph. A Bengali
+  // paragraph carries a verb; a heading does not.
   const mainParas = paras
-    .filter((p) => p && p.length > 30)
-    .filter((p) => !lead || overlapRatio(p, lead) <= 0.6)
-    .map((p) => p.replace(/[।?!]\s*$/u, '').trim())
-    .filter(Boolean);
+    .filter((p) => p && p.length >= 55)
+    .filter((p) => !lead || overlapRatio(p, lead) <= 0.6);
 
-  const { blocks, bulletsUsed } = assemble(lead, candBullets, mainParas, band);
+  const { blocks, bulletsUsed } = assemble(lede, candBullets, mainParas, band);
 
   const parts = [];
-  if (lede) parts.push(lede);
+  if (lede) parts.push(closeParagraph(lede));
   if (bulletsUsed) parts.push(`**এক নজরে**\n${candBullets.map((b) => `- ${b}`).join('\n')}`);
-  const keptMain = blocks.filter((b) => b !== lead && !candBullets.includes(b));
-  // No "মূল খবর" heading. It is on GENERIC_HEADINGS in publication-gate.mjs, so a
-  // bold "**মূল খবর**" line fails ARTIFICIAL_GENERIC_HEADING - scaffolding that
-  // adds nothing for a reader. repetitionViolations() still treats every
-  // paragraph after the lead as body text, so dropping the heading costs the
-  // rep1 check nothing. "এক নজরে" is not on that list and is required by c8.
+
+  const keptMain = blocks.filter((b) => b !== lede && !candBullets.includes(b));
+  // No "মূল খবর" heading: it is on GENERIC_HEADINGS in publication-gate.mjs, so a
+  // bold "**মূল খবর**" line fails ARTIFICIAL_GENERIC_HEADING. "এক নজরে" is not
+  // on that list and is required by c8 once a brief has 3+ members.
   if (keptMain.length) parts.push(keptMain.join('\n\n'));
 
   const body = parts.filter(Boolean).join('\n\n').trim();
-  const words = bnWordCount(body);
+  // Count words the way tools/finalize_stories.mjs does, not the way the audit
+  // does. bnWordCount() discards Latin runs and digits; bodyWordCount() keeps
+  // them, so the two disagreed by ~10% and a body the composer scored at 100 came
+  // back as 91 and was rejected BODY_SUBSTANCE_BLOCKED. The composer has to
+  // measure with the grader's ruler.
+  const words = bodyWordCount(body);
   return {
     body,
     min,
     max,
     words,
+    // The band's own tolerance is not the floor. A band can bottom out at
+    // min-20 = 16 words, and a 59-word body was passing as "not short" - it then
+    // reached the finalizer and came back BODY_SUBSTANCE_BLOCKED. The floor is
+    // the publish floor, measured with the grader's own counter.
     short: words < Math.max(min - 20, MIN_ARTICLE_WORDS),
     tooLong: words > max + 40,
   };

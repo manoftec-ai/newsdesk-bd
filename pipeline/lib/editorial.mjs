@@ -283,7 +283,12 @@ export function evidenceWordsAvailable(brief) {
 export function fitBandToEvidence(brief, preferred) {
   // a band topping out below the publish floor can never ship, so the floor is
   // the publish floor, not 50
-  const floor = minPublishWords();
+  // 2026-09-27: the floor was minPublishWords() = 150, which existed to stop the
+  // writer stuffing 15-character fragments to reach a word count. It also refused
+  // genuine 100-word news briefs. The floor is now 100 words of real prose: still
+  // four times the 50-word threshold where there is no story at all, but a short
+  // news item is allowed to be short.
+  const floor = 100;
   const available = evidenceWordsAvailable(brief);
   if (!preferred || !Number.isFinite(preferred.min)) return preferred;
   if (available < floor) return preferred; // caller refuses the brief instead
