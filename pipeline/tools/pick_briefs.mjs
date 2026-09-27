@@ -29,6 +29,20 @@ const outPath = outArg
   ? resolve(outArg)
   : resolve(import.meta.dirname, '../state/pick.json');
 
+// 2026-07-27: a slug removed from the site must STAY removed. Deleting the
+// article is not a quarantine - national-422, whose body shares 0% of its
+// headline, was deleted and republished within the hour because its brief was
+// still in the pool. Anything listed here is skipped, whatever else passes.
+const QUARANTINE = (() => {
+  const f = resolve(import.meta.dirname, '../state/quarantine.json');
+  if (!existsSync(f)) return new Set();
+  try {
+    return new Set(Object.keys(JSON.parse(readFileSync(f, 'utf8'))));
+  } catch {
+    return new Set();
+  }
+})();
+
 const MIN_EVIDENCE_EARLY = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS;
 const publishedTitles = loadPublishedTitles(siteDir);
 
@@ -100,9 +114,11 @@ const briefs = readdirSync(BRIEFS_DIR)
 // an authoring run to produce a thin article that the finalizer would reject.
 const MIN_EVIDENCE = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDENCE_WORDS;
 const tooThin = briefs.filter((b) => b.evidence.evidenceWords < MIN_EVIDENCE && !b.published);
+const quarantined = briefs.filter((b) => QUARANTINE.has(b.slug) && !b.published);
 const incoherent = briefs.filter((b) => !b.coherence.pass && !b.published);
 const pending = briefs.filter(
   (b) =>
+    !QUARANTINE.has(b.slug) &&
     !b.published &&
     !b.titleDup &&
     b.evidence.evidenceWords >= MIN_EVIDENCE &&
@@ -144,6 +160,7 @@ writeFileSync(
   ),
 );
 const dupCount = briefs.filter((b) => b.titleDup).length;
+console.log(`quarantine: ${quarantined.length} brief(s) permanently withheld, skipped`);
 console.log(`evidence gate: ${tooThin.length} briefs under ${MIN_EVIDENCE} words of source material, skipped`);
 console.log(`coherence gate: ${incoherent.length} briefs whose members are not all about the same event, skipped`);
 console.log(`pick: ${picked.length}/${pending.length} pending briefs (newest by date, then editorial value, title-unique) -> ${outPath}${dupCount ? `; ${dupCount} title-duplicates filtered` : ''}`);

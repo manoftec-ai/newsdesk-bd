@@ -171,7 +171,14 @@ const COMPLETE = /[।?!]$/u;
 // A paragraph that opens mid-thought is a continuation, not a paragraph. The RSS
 // lead is cut at arbitrary offsets, so "আর নিশ্চিত হামে মৃত্যু ১০১ জনের।" survives
 // as a standalone line. Same rule as the lead, applied to the body.
-const CONTINUATION_START = /^(আর|এবং|ও|তবে|অথচ|ফলে|তাই|তাইলে|কিন্তু|যা|যার|যারা|সেই|এই|অর্থাৎ|অন্যদিকে|অপরদিকে|এরপর|তারপর|পরে|এখানে|সেখানে)/u;
+// 2026-07-27. A press-conference wire feed arrives chopped into sentences, so
+// the pool is full of tails whose antecedent was in the part we never got:
+// national-553 published "পরে তার দেওয়া তথ্যের ভিত্তিতে…", "এর আগে সম্প্রতি…",
+// "আমরা তো এই ৩ দাবিতে…" and "ওই ভিডিওতে…" as standalone paragraphs. Measured
+// across the corpus: 20 articles, 30 such paragraphs, and national-553 is the
+// second worst. The clause they refer to is gone, so they cannot be repaired -
+// only refused.
+const CONTINUATION_START = /^(আর|এবং|ও|তবে|অথচ|ফলে|তাই|তাইলে|কিন্তু|যা|যার|যারা|সেই|এই|অর্থাৎ|অন্যদিকে|অপরদিকে|এরপর|তারপর|পরে|এখানে|সেখানে|পরে তার|এর আগে|আমরা তো|ওই|তখন|এই মুহূর্তে|এর মধ্যে|এর বদলে|সেখানে)/u;
 
 const DANGLING_START = /^(তাঁদের|তাদের|তারা|এরা|ওদের|ওরা|তাঁর|তার|তিনি|তিনিগণ|সেই|ওই|এই|উপরে|এর\s|তবে|অথচ|তাই|ফলে|তাইলে|অর্থাৎ|যদিও|যদি|এখানে|সেখানে|তখন|এরপর|তারপর|অন্যদিকে|অপরদিকে)/u;
 
@@ -332,7 +339,24 @@ function orderForNarrative(sentences, headline) {
 }
 
 /**
- * A bullet is a point, not a truncated clause. Cutting a long sentence at 14
+ * Drop paragraphs that say something already said.
+ *
+ * 2026-07-27. national-553 stated the same fact in seven near-identical
+ * paragraphs - the DMP press conference was reported by five outlets, and the
+ * composer wrote each outlet's version rather than one of them. Measured across
+ * the corpus: 26 articles, 76 such pairs, national-332 worst with 10. Reading
+ * that, a reader concludes seven separate things happened.
+ */
+function dedupeParagraphs(paras) {
+  const out = [];
+  for (const p of paras) {
+    if (out.some((q) => overlapRatio(q, p) > 0.6)) continue;
+    out.push(p);
+  }
+  return out;
+}
+
+/** A bullet is a point, not a truncated clause. Cutting a long sentence at 14
  * words leaves "…জগন্নাথ বিশ্ববিদ্যালয়", so only sentences that are already
  * short enough are used, and the tail is trimmed at a clause boundary
  * (comma, colon, or a connective) rather than mid-word.
@@ -446,9 +470,11 @@ function buildWithBand(brief, pool, srcCount, band) {
   // 2026-09-27: a sub-heading inside the article ("হামের উপসর্গে আরও ৪ শিশুর মৃত্যু" -
   // 35 characters, no finite verb) was published as its own paragraph. A Bengali
   // paragraph carries a verb; a heading does not.
-  const mainParas = paras
-    .filter((p) => p && p.length >= 55)
-    .filter((p) => !lead || overlapRatio(p, lead) <= 0.6);
+  const mainParas = dedupeParagraphs(
+    paras
+      .filter((p) => p && p.length >= 55)
+      .filter((p) => !lead || overlapRatio(p, lead) <= 0.6),
+  );
 
   const { blocks, bulletsUsed } = assemble(lede, candBullets, mainParas, band);
 

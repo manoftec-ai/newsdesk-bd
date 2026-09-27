@@ -14,7 +14,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const OUT = resolve(import.meta.dirname, '../../site/public/images/og-default.png');
+const OUT = resolve(import.meta.dirname, '../../site/public/images/og-default-v2.png');
 const FORCE = process.argv.includes('--force');
 
 async function getSharp() {
@@ -34,7 +34,6 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect x="90" y="120" width="12" height="90" rx="6" fill="#ffffff" opacity="0.9"/>
   <text x="120" y="200" font-family="Noto Serif Bengali, Noto Sans Bengali, serif" font-size="92" font-weight="700" fill="#ffffff">যাচাইডেস্ক</text>
   <text x="122" y="290" font-family="Noto Sans Bengali, sans-serif" font-size="40" font-weight="600" fill="#ffffff" opacity="0.95">বাংলাদেশের সবচেয়ে যাচাই-করা সংবাদ</text>
-  <text x="122" y="540" font-family="Noto Sans Bengali, sans-serif" font-size="30" fill="#ffffff" opacity="0.8">jachaidesk.com</text>
 </svg>`;
 
 async function main() {
