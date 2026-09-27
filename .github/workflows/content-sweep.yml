@@ -1,0 +1,67 @@
+name: content-sweep
+
+# 2026-07-27. The user asked whether they had to visit every article and find the
+# defects themselves. They did not have to, and the reason they had to is that
+# content_audit.mjs only ever ran when a human ran it.
+#
+# This runs it on a schedule over the whole published corpus and quarantines what
+# it finds, so a defect class is caught by a clock rather than by someone
+# happening to open the article. It also opens an ISSUE on the repo when it
+# quarantines something, so a machine removal is still something a human sees.
+#
+# It REFUSES, it never rewrites. A polish pass over a bad article can invent the
+# clauses that were missing - every defect found today came from bad source text,
+# and the writer reproduced it faithfully. Silently repairing that is how a
+# fabricated sentence reaches the homepage.
+
+on:
+  schedule:
+    # 07 past the hour, hourly: after the auto-author run and the fetch, so the
+    # sweep sees what they just produced
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: content-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install pipeline deps
+        working-directory: pipeline
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Run the test suite
+        working-directory: pipeline
+        run: npm test
+
+      - name: Content gate — no new defect class
+        working-directory: pipeline
+        run: node tools/content_gate.mjs
+
+      - name: Sweep the corpus, withhold, commit, push, file an issue
+        working-directory: pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        # ONE step, on purpose. The previous version had three, with the commit
+        # and issue gated on steps.sweep.outputs.removed - an output the tool
+        # never wrote, so both were SKIPPED and the run went green having done
+        # nothing. The tool now does the withholding, the commit, the push and
+        # the issue itself.
+        run: node tools/sweep_quarantine.mjs --commit --push
