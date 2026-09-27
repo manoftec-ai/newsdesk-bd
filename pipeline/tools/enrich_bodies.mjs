@@ -29,7 +29,7 @@
 //   node tools/enrich_bodies.mjs --resolve-gnews --limit=10  # decode wrappers first
 //
 // NOT wired into any workflow. Local, developer-invoked only.
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import * as cheerio from 'cheerio';
 import { openDb } from '../lib/db.mjs';
@@ -135,9 +135,39 @@ const thin = rows.filter((r) => needsBodyEnrichment(r));
 const ONLY = arg('only') || ''; // 'gnews' | 'direct' | ''
 const IDS = (arg('id') || '').split(',').map((s) => s.trim()).filter(Boolean);
 let pool = thin;
+
+// Skip sources that measurement has already proven cannot be enriched.
+//
+// First wired run, 2026-09-27: attempted 30, improved 2, and 20 of the 30
+// failed with http_403. Two thirds of the budget went to Cloudflare-blocked
+// outlets (kalerkantho, jugantor, jamuna) that answer 403 from every host
+// measured — including a phone on a mobile network. Re-attempting them every
+// run cannot succeed, it just crowds out the sources that can.
+//
+// config/source-yield.json already records this per source, from
+// measure_source_yield.mjs. hollow and blocked are both "extraction yield of
+// essentially nothing", so both are skipped.
+const SKIP_UNUSABLE = flag('skip-unusable');
+let unusable = new Set();
+if (SKIP_UNUSABLE) {
+  try {
+    const y = JSON.parse(readFileSync(new URL('../config/source-yield.json', import.meta.url), 'utf8'));
+    for (const bucket of ['hollow', 'blocked']) {
+      for (const id of Object.keys(y[bucket] ?? {})) if (id !== '_comment') unusable.add(id);
+    }
+  } catch {
+    console.log('--skip-unusable: no source-yield.json, skipping nothing');
+  }
+}
+if (unusable.size) {
+  const before = pool.length;
+  pool = pool.filter((r) => !unusable.has(r.source_id));
+  console.log(`--skip-unusable: ${unusable.size} source(s) cannot be enriched, dropping ${before - pool.length} of ${before} candidates`);
+}
+
 if (IDS.length) pool = thin.filter((r) => IDS.includes(String(r.id)));
-else if (ONLY === 'gnews') pool = thin.filter((r) => googleNewsArticleId(r.url));
-else if (ONLY === 'direct') pool = thin.filter((r) => !googleNewsArticleId(r.url));
+else if (ONLY === 'gnews') pool = pool.filter((r) => googleNewsArticleId(r.url));
+else if (ONLY === 'direct') pool = pool.filter((r) => !googleNewsArticleId(r.url));
 if (DAYS > 0) {
   const cutoff = Date.now() - DAYS * 86400000;
   const kept = pool.filter((r) => {
