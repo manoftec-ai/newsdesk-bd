@@ -2,10 +2,26 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostCard from "../../components/PostCard.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { tags, postsByTag, SITE } from "../../lib/news-data.js";
+import { getCollection } from "astro:content";
+import { tags, postsByTag, relatedTags, getTag, SITE } from "../../lib/news-data.js";
 
 export async function getStaticPaths() {
-  return tags.map((tag) => ({
+  // 2026-09-27 interlinking fix: article tag chips link to /tags/<slug> for
+  // EVERY tag in front matter, but paths were generated only for the ~27
+  // config tags — 90 real content tags (e.g. liberation-war, cyclone)
+  // resolved to 404. Now every distinct content tag gets its own page.
+  const seen = new Map();
+  for (const tag of tags) seen.set(tag.slug, tag);
+  const entries = await getCollection("news", ({ data }) => !data.draft);
+  for (const entry of entries) {
+    for (const slug of entry.data.tags ?? []) {
+      if (!seen.has(slug)) {
+        const known = getTag(slug);
+        seen.set(slug, known ?? { slug, name: slug.replace(/-/g, " ") });
+      }
+    }
+  }
+  return [...seen.values()].map((tag) => ({
     params: { slug: tag.slug },
     props: { tag },
   }));
@@ -13,6 +29,9 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 const posts = await postsByTag(tag.slug);
+// 2026-09-27 interlinking: co-occurring tags so thin tag pages link sideways
+// instead of dead-ending.
+const siblingTags = await relatedTags(tag.slug, 6);
 ---
 
 <BaseLayout
@@ -24,7 +43,23 @@ const posts = await postsByTag(tag.slug);
     <Breadcrumbs crumbs={[{ name: `#${tag.name}`, href: `/tags/${tag.slug}`, current: true }]} />
     <header class="mt-6 border-b border-border/60 pb-4">
       <h1 class="font-serif text-4xl font-bold">#{tag.name}</h1>
+      <p class="mt-2 text-sm text-muted-foreground">{posts.length}টি যাচাই-করা সংবাদ</p>
     </header>
+
+    {siblingTags.length > 0 && (
+      <div class="mt-4 flex flex-wrap items-center gap-2 text-xs" aria-label="সম্পর্কিত ট্যাগ">
+        <span class="text-muted-foreground">সম্পর্কিত:</span>
+        {siblingTags.map(({ tag: sibling, count }) => (
+          <a
+            href={`/tags/${sibling.slug}`}
+            class="rounded-full border border-border px-3 py-1 text-muted-foreground hover:border-primary hover:text-primary"
+            title={`${count}টি একই সংবাদ`}
+          >
+            #{sibling.name}
+          </a>
+        ))}
+      </div>
+    )}
 
     {posts.length > 0 ? (
       <div class="mt-8">

@@ -7,7 +7,8 @@ excerpt: "অডিও প্রযোজনার বাজার যখন ক
 seoDescription: "অডিও প্রযোজনার বাজার যখন ক্রমেই সংগীত ছেড়ে নাটক, ওয়েব কনটেন্ট ও দৃশ্যনির্ভর বিনোদনের দিকে সরে যাচ্ছে, ঠিক সেই সময়ে বাংলা গানের প্রতি দায়বদ্ধতা থেকে স্…"
 date: 2026-09-23T05:07:01.000Z
 category: "entertainment"
-tags: []
+tags:
+  - entertainment
 author: "desk"
 lang: "bn"
 draft: false

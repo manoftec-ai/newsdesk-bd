@@ -28,6 +28,24 @@ test('inferTags emits nothing when no keyword appears', () => {
   assert.deepEqual(inferTags({ headline: 'নির্দিষ্ট কোনো ম্যাপিং ছাড়া দাবি', members: [] }), []);
 });
 
+test('inferTags falls back to category so no story ships tagless (interlinking 2026-09-27)', () => {
+  assert.deepEqual(
+    inferTags({ headline: 'নির্দিষ্ট কোনো ম্যাপিং ছাড়া দাবি', members: [], category: 'economy' }),
+    ['economy'],
+  );
+});
+
+test('inferTags ignores substring false friends: বাসা is not transport, হামলা is not health', () => {
+  const tags = inferTags({
+    headline: 'ঢাকার বাসায় হামলা',
+    members: [],
+    category: 'national',
+  });
+  assert.ok(!tags.includes('transport'));
+  assert.ok(!tags.includes('health'));
+  assert.ok(tags.includes('dhaka'));
+});
+
 test('claimRules: each status maps to a write-guidance line', () => {
   const brief = {
     claims: [

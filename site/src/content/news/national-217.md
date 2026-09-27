@@ -7,7 +7,10 @@ excerpt: 'অপ্রতিম হত্যাকাণ্ডের ঘটন�
 seoDescription: "অপ্রতিম হত্যাকাণ্ডের ঘটনায় কুমিল্লা বিশ্ববিদ্যালয়ে (কুবি) রবিবার সাধারণ ছুটি ঘোষণা করা হয়েছে। এদিন বিশ্ববিদ্যালয়ের সব ক্লাস ও পরীক্ষা স্থগিত থাকবে। ঢা…"
 date: 2026-09-19T16:21:48.000Z
 category: "national"
-tags: []
+tags:
+  - education
+  - dhaka
+  - cumilla
 author: "desk"
 lang: "bn"
 draft: false

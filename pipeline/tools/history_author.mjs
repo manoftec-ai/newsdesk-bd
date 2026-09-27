@@ -93,6 +93,12 @@ function author(eventId, publish) {
   const today = new Date();
   const iso = today.toISOString();
   const siteCategory = CATEGORY_MAP[event.category] ?? 'national';
+  // 2026-09-27 interlinking: history anchors used to ship tags:[] which left
+  // them out of every tag cluster and weakened relatedPosts for the whole
+  // corpus. Every anchor now carries at least the history tag plus the event
+  // category as a navigational tag (tag pages generate dynamically, so any
+  // slug resolves — no 404 risk).
+  const anchorTags = ["history", ...(event.category && event.category !== "national" ? [event.category] : [])];
   const frontmatter = `---
 title: "${event.nameBn} — ঘটনাপঞ্জি"
 excerpt: "${description}"
@@ -100,7 +106,8 @@ seoTitle: "${event.nameBn} — ঘটনা সমাচার"
 seoDescription: "${description}"
 date: ${iso}
 category: "${siteCategory}"
-tags: []
+tags:
+${anchorTags.map((t) => `  - ${t}`).join("\n")}
 author: "desk"
 lang: "bn"
 draft: ${publish ? 'false' : 'true'}
