@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 583,
+    "storyCount": 584,
     "kinds": [
       "claim",
       "evidence",
@@ -2113,20 +2113,20 @@
           "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
         },
         {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -5919,6 +5919,14 @@
           "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
         },
         {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -5933,14 +5941,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 321,
-          "slug": "entertainment-321",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "২৭ বছর পর ফিরছে ‘আবার হঠাৎ বৃষ্টি’"
         }
       ]
     },
@@ -7461,27 +7461,336 @@
       "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
       "first_seen": "2026-09-21T02:07:13.789Z",
       "last_update": "2026-09-21T09:09:48.106Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T16:56:05.000Z",
+          "kind": "evidence",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/crime/420284/mp-gazi-nazrul-first-wife-taken-into-custody"
+          }
+        },
+        {
+          "ts": "2026-09-20T16:56:05.000Z",
+          "kind": "evidence",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/crime/420284/mp-gazi-nazrul-first-wife-taken-into-custody"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594603"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:44.392Z",
+          "kind": "claim",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "ts": "2026-09-27T20:08:44.398Z",
+          "kind": "claim",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody"
+        },
+        {
+          "ts": "2026-09-27T20:08:44.402Z",
+          "kind": "verify",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:44.402Z",
+          "kind": "verify",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-164": {
       "cluster_id": 164,
       "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
       "first_seen": "2026-09-21T02:07:13.795Z",
       "last_update": "2026-09-21T09:09:48.107Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T17:39:12.000Z",
+          "kind": "evidence",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/420278/36-missing-children%E2%80%99s-bodies-recovered-in-8"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594606"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594606"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:45.843Z",
+          "kind": "claim",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "ts": "2026-09-27T20:08:45.846Z",
+          "kind": "claim",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK"
+        },
+        {
+          "ts": "2026-09-27T20:08:45.850Z",
+          "kind": "verify",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:45.850Z",
+          "kind": "verify",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 163,
+          "slug": "national-mp-gazi-nazrul",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-165": {
       "cluster_id": 165,
       "headline": "Fuel prices jump by up to Tk20 a litre",
       "first_seen": "2026-09-21T02:07:13.801Z",
       "last_update": "2026-09-21T09:09:48.108Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T17:13:25.000Z",
+          "kind": "evidence",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/420285/fuel-prices-jump-by-up-to-tk20-a-litre"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594607"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594607"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:47.259Z",
+          "kind": "claim",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "ts": "2026-09-27T20:08:47.266Z",
+          "kind": "claim",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre"
+        },
+        {
+          "ts": "2026-09-27T20:08:47.269Z",
+          "kind": "verify",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:47.269Z",
+          "kind": "verify",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 163,
+          "slug": "national-mp-gazi-nazrul",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-166": {
       "cluster_id": 166,
@@ -10248,6 +10557,14 @@
           "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
         },
         {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -10262,14 +10579,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 321,
-          "slug": "entertainment-321",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "২৭ বছর পর ফিরছে ‘আবার হঠাৎ বৃষ্টি’"
         }
       ]
     },
@@ -12605,6 +12914,30 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 163,
+          "slug": "national-mp-gazi-nazrul",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Fuel prices jump by up to Tk20 a litre"
+        },
         {
           "cluster_id": 202,
           "slug": "national-202",
@@ -22255,9 +22588,128 @@
       "headline": "বিশ্বমঞ্চে গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী তারেক রহমান",
       "first_seen": "2026-09-22T12:53:28.169Z",
       "last_update": "2026-09-22T16:45:29.347Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T08:35:18.000Z",
+          "kind": "evidence",
+          "claim_id": 81881,
+          "claim_text": "বিশ্বমঞ্চে গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UX1hxMTkwaUdscWZJQW1SYURic05EQTFZYUEtWGtJMFFhOEZGUFh2S2dhNTRfMy0waFpFSFMtMGJZRlFxVVg0aWp5T2tRTkFXMFpOOXZ0MXJGVHd0UWkxZ2dBSjgxS1dDSVpCSmxISW15RUtxSGJNRktyM2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T08:35:18.000Z",
+          "kind": "evidence",
+          "claim_id": 81882,
+          "claim_text": "‘গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UX1hxMTkwaUdscWZJQW1SYURic05EQTFZYUEtWGtJMFFhOEZGUFh2S2dhNTRfMy0waFpFSFMtMGJZRlFxVVg0aWp5T2tRTkFXMFpOOXZ0MXJGVHd0UWkxZ2dBSjgxS1dDSVpCSmxISW15RUtxSGJNRktyM2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T12:24:49.000Z",
+          "kind": "evidence",
+          "claim_id": 81881,
+          "claim_text": "বিশ্বমঞ্চে গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/xenov85tny"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:10:39.931Z",
+          "kind": "claim",
+          "claim_id": 81881,
+          "claim_text": "বিশ্বমঞ্চে গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "ts": "2026-09-27T20:10:39.934Z",
+          "kind": "claim",
+          "claim_id": 81882,
+          "claim_text": "‘গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী’"
+        },
+        {
+          "ts": "2026-09-27T20:10:39.937Z",
+          "kind": "verify",
+          "claim_id": 81881,
+          "claim_text": "বিশ্বমঞ্চে গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:10:39.937Z",
+          "kind": "verify",
+          "claim_id": 81882,
+          "claim_text": "‘গণমানুষের অধিকার ও অন্তর্ভুক্তিমূলক উন্নয়নের বার্তা দেবেন প্রধানমন্ত্রী’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 292,
+          "slug": "national-292",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কেরানীগঞ্জে জুয়েলারি ব্যবসায়ীসহ দুজনকে গুলি করে ২০–২৫ ভরি সোনা ছিনতাই"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 299,
+          "slug": "sports-299",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাকিস্তানের কাছে হেরে ব্রোঞ্জও জিততে পারল না বাংলাদেশ"
+        },
+        {
+          "cluster_id": 307,
+          "slug": "national-307",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আলী আফজালের রিহ্যাব সভাপতি পদ শূন্য ঘোষণার সিদ্ধান্ত স্থগিত"
+        }
+      ]
     },
     "national-339": {
       "cluster_id": 339,
@@ -23951,9 +24403,112 @@
       "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
       "first_seen": "2026-09-21T02:07:13.795Z",
       "last_update": "2026-09-21T09:09:48.107Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T17:39:12.000Z",
+          "kind": "evidence",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/420278/36-missing-children%E2%80%99s-bodies-recovered-in-8"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594606"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594606"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:45.843Z",
+          "kind": "claim",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "ts": "2026-09-27T20:08:45.846Z",
+          "kind": "claim",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK"
+        },
+        {
+          "ts": "2026-09-27T20:08:45.850Z",
+          "kind": "verify",
+          "claim_id": 81633,
+          "claim_text": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:45.850Z",
+          "kind": "verify",
+          "claim_id": 81634,
+          "claim_text": "36 children’s bodies recovered in 8 months: ASK",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 163,
+          "slug": "national-mp-gazi-nazrul",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-361": {
       "cluster_id": 361,
@@ -44665,6 +45220,14 @@
           "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 12,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -44695,14 +45258,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
-        },
-        {
-          "cluster_id": 346,
-          "slug": "national-346",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 7,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -46357,20 +46912,20 @@
           "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
-        },
-        {
-          "cluster_id": 139,
-          "slug": "national-139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         }
       ]
     },
@@ -48411,6 +48966,14 @@
           "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
@@ -48425,14 +48988,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
-        },
-        {
-          "cluster_id": 147,
-          "slug": "national-147",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
         }
       ]
     },
@@ -52394,6 +52949,14 @@
           "headline": "কুমিল্লায় ছাত্রদল নেতার মিছিলে ‘কিশোর গ্যাং লিডার’ রতন, ভিডিও ভাইরালের পর সমালোচনা"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 611,
           "slug": "national-611",
           "actor_links": 1,
@@ -52424,14 +52987,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
-        },
-        {
-          "cluster_id": 188,
-          "slug": "national-188",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
         }
       ]
     },
@@ -54188,6 +54743,14 @@
           "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 601,
           "slug": "national-601",
           "actor_links": 1,
@@ -54218,14 +54781,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
-        },
-        {
-          "cluster_id": 372,
-          "slug": "national-372",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক শিক্ষামন্ত্রী নওফেলের স্ত্রী ইমা ক্লেয়ারের দেশত্যাগে নিষেধাজ্ঞা"
         }
       ]
     },
@@ -54769,7 +55324,7 @@
       "cluster_id": 616,
       "headline": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতা জোরদারের তাগিদ আইনমন্ত্রীর",
       "first_seen": "2026-09-27T12:44:18.890Z",
-      "last_update": "2026-09-27T19:36:31.657Z",
+      "last_update": "2026-09-27T20:08:02.667Z",
       "claim_count": 3,
       "events": [
         {
@@ -55445,6 +56000,14 @@
           "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
         },
         {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
           "cluster_id": 555,
           "slug": "national-555",
           "actor_links": 0,
@@ -55474,7 +56037,7 @@
       "cluster_id": 618,
       "headline": "বাংলাদেশের সকল নাগরিকের নিরাপত্তার দায়িত্ব আপনার হাতে: স্বরাষ্ট্রমন্ত্রীকে সালমান",
       "first_seen": "2026-09-27T13:33:43.026Z",
-      "last_update": "2026-09-27T19:36:31.666Z",
+      "last_update": "2026-09-27T20:08:02.672Z",
       "claim_count": 2,
       "events": [
         {
@@ -55553,7 +56116,7 @@
       "cluster_id": 619,
       "headline": "‘ভোট গণনার সময় ফল পাল্টে দেওয়ার চেষ্টা করতে পারেন ট্রাম্প’",
       "first_seen": "2026-09-27T13:33:43.030Z",
-      "last_update": "2026-09-27T19:36:31.667Z",
+      "last_update": "2026-09-27T20:08:02.673Z",
       "claim_count": 2,
       "events": [
         {
@@ -55888,7 +56451,7 @@
       "cluster_id": 622,
       "headline": "স্কুলছাত্রীর দাঁত ভেঙে দেওয়ার ঘটনায় প্রধান অভিযুক্ত ফয়সাল গ্রেফতার",
       "first_seen": "2026-09-27T15:20:50.953Z",
-      "last_update": "2026-09-27T19:36:31.662Z",
+      "last_update": "2026-09-27T20:08:02.669Z",
       "claim_count": 2,
       "events": [
         {
@@ -56144,7 +56707,7 @@
       "cluster_id": 624,
       "headline": "রাবি শিক্ষার্থীকে সাপের কামড়: হল প্রাধ্যক্ষের পদত্যাগ দাবি",
       "first_seen": "2026-09-27T15:20:50.976Z",
-      "last_update": "2026-09-27T19:36:31.668Z",
+      "last_update": "2026-09-27T20:08:02.674Z",
       "claim_count": 2,
       "events": [
         {
@@ -56430,7 +56993,7 @@
       "cluster_id": 627,
       "headline": "ভঙ্গুর অর্থনীতি থেকে ট্রিলিয়ন ডলারের অর্থনীতি গড়ার পথে বাংলাদেশ: ড. তিতুমীর",
       "first_seen": "2026-09-27T16:41:17.412Z",
-      "last_update": "2026-09-27T19:36:31.663Z",
+      "last_update": "2026-09-27T20:08:02.670Z",
       "claim_count": 2,
       "events": [
         {
@@ -56716,7 +57279,7 @@
       "cluster_id": 630,
       "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
       "first_seen": "2026-09-27T19:13:34.665Z",
-      "last_update": "2026-09-27T19:36:31.655Z",
+      "last_update": "2026-09-27T20:08:02.666Z",
       "claim_count": 2,
       "events": [
         {
@@ -56795,7 +57358,7 @@
       "cluster_id": 631,
       "headline": "ফলকে নিজের নাম দেখে ভবন উদ্বোধন না করেই ফিরলেন হাসনাত আবদুল্লাহ",
       "first_seen": "2026-09-27T19:13:34.673Z",
-      "last_update": "2026-09-27T19:36:31.664Z",
+      "last_update": "2026-09-27T20:08:02.671Z",
       "claim_count": 3,
       "events": [
         {
@@ -57042,7 +57605,7 @@
       "cluster_id": 633,
       "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছে ৫ সন্দেহভাজন গ্রেপ্তার",
       "first_seen": "2026-09-27T19:36:31.658Z",
-      "last_update": "2026-09-27T19:36:31.661Z",
+      "last_update": "2026-09-27T20:08:02.668Z",
       "claim_count": 2,
       "events": [
         {
@@ -57163,6 +57726,570 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শিক্ষাপ্রতিষ্ঠানে মাদক ও জুয়া প্রতিরোধে কমিটি গঠনের সিদ্ধান্ত স্বরাষ্ট্র মন্ত্রণালয়ের"
+        }
+      ]
+    },
+    "national-634": {
+      "cluster_id": 634,
+      "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+      "first_seen": "2026-09-27T20:08:02.651Z",
+      "last_update": "2026-09-27T20:08:02.665Z",
+      "claim_count": 12,
+      "events": [
+        {
+          "ts": "2026-09-26T04:49:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ck87vnlxxydxo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-26T04:49:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82455,
+          "claim_text": "নিখোঁজ শিশুর জন্য অপেক্ষা-উদ্বেগ, কী করছে পুলিশ?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ck87vnlxxydxo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-26T15:52:18.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm6244njzvv0o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-26T15:52:18.000Z",
+          "kind": "evidence",
+          "claim_id": 82456,
+          "claim_text": "ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্রে হামলা-ভাঙচুরের কারণ কী?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm6244njzvv0o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:20:36.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqwyzzzz8j2po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:20:36.000Z",
+          "kind": "evidence",
+          "claim_id": 82457,
+          "claim_text": "পত্রিকা: 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqwyzzzz8j2po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:49:45.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmn455e0zwx2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:49:45.000Z",
+          "kind": "evidence",
+          "claim_id": 82458,
+          "claim_text": "হরমুজ প্রণালি খুলে দিতে ইরানের দেওয়া প্রস্তাব প্রত্যাখ্যান করলেন ট্রাম্প",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmn455e0zwx2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T12:05:01.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/pgoagtxnt1"
+          }
+        },
+        {
+          "ts": "2026-09-27T12:05:01.000Z",
+          "kind": "evidence",
+          "claim_id": 82459,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/pgoagtxnt1"
+          }
+        },
+        {
+          "ts": "2026-09-27T14:14:17.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ck5ywnxjg53wo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-27T15:56:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/a-pattern-of-vandalism-and-occupation-is-this-becoming-the-new-normal-in-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-09-27T15:56:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82460,
+          "claim_text": "ভাঙচুর-দখলের ধারাবাহিকতা: ‘নরমাল ইন বাংলাদেশ’ হয়ে উঠছে কি?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/a-pattern-of-vandalism-and-occupation-is-this-becoming-the-new-normal-in-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-09-27T17:54:15.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/vpzq0ihvwg"
+          }
+        },
+        {
+          "ts": "2026-09-27T17:54:15.000Z",
+          "kind": "evidence",
+          "claim_id": 82461,
+          "claim_text": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/vpzq0ihvwg"
+          }
+        },
+        {
+          "ts": "2026-09-27T19:36:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/822ebbjiav"
+          }
+        },
+        {
+          "ts": "2026-09-27T19:36:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82462,
+          "claim_text": "অপ্রতিমকে হত্যার ছক ৭ দিন আগে, টিকটকে যোগাযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/822ebbjiav"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:33.981Z",
+          "kind": "claim",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
+          "ts": "2026-09-27T20:15:33.982Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:33.983Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85729"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:33.985Z",
+          "kind": "evidence",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85728"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:33.994Z",
+          "kind": "claim",
+          "claim_id": 82452,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন"
+        },
+        {
+          "ts": "2026-09-27T20:15:33.995Z",
+          "kind": "evidence",
+          "claim_id": 82452,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85730"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:33.996Z",
+          "kind": "claim",
+          "claim_id": 82453,
+          "claim_text": "চোট নিয়ে সুইডেন ক্যাম্প ছাড়লেন ইসাক"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.000Z",
+          "kind": "evidence",
+          "claim_id": 82453,
+          "claim_text": "চোট নিয়ে সুইডেন ক্যাম্প ছাড়লেন ইসাক",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85729"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.001Z",
+          "kind": "claim",
+          "claim_id": 82454,
+          "claim_text": "ভারতের সঙ্গে ড্র নিয়ে আক্ষেপ পানামা কোচের"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.002Z",
+          "kind": "evidence",
+          "claim_id": 82454,
+          "claim_text": "ভারতের সঙ্গে ড্র নিয়ে আক্ষেপ পানামা কোচের",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/85728"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.003Z",
+          "kind": "claim",
+          "claim_id": 82455,
+          "claim_text": "নিখোঁজ শিশুর জন্য অপেক্ষা-উদ্বেগ, কী করছে পুলিশ?"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.005Z",
+          "kind": "claim",
+          "claim_id": 82456,
+          "claim_text": "ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্রে হামলা-ভাঙচুরের কারণ কী?"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.007Z",
+          "kind": "claim",
+          "claim_id": 82457,
+          "claim_text": "পত্রিকা: 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.009Z",
+          "kind": "claim",
+          "claim_id": 82458,
+          "claim_text": "হরমুজ প্রণালি খুলে দিতে ইরানের দেওয়া প্রস্তাব প্রত্যাখ্যান করলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.011Z",
+          "kind": "claim",
+          "claim_id": 82459,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.014Z",
+          "kind": "claim",
+          "claim_id": 82460,
+          "claim_text": "ভাঙচুর-দখলের ধারাবাহিকতা: ‘নরমাল ইন বাংলাদেশ’ হয়ে উঠছে কি?"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.016Z",
+          "kind": "claim",
+          "claim_id": 82461,
+          "claim_text": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.018Z",
+          "kind": "claim",
+          "claim_id": 82462,
+          "claim_text": "অপ্রতিমকে হত্যার ছক ৭ দিন আগে, টিকটকে যোগাযোগ"
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82452,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82453,
+          "claim_text": "চোট নিয়ে সুইডেন ক্যাম্প ছাড়লেন ইসাক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82454,
+          "claim_text": "ভারতের সঙ্গে ড্র নিয়ে আক্ষেপ পানামা কোচের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82455,
+          "claim_text": "নিখোঁজ শিশুর জন্য অপেক্ষা-উদ্বেগ, কী করছে পুলিশ?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82456,
+          "claim_text": "ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্রে হামলা-ভাঙচুরের কারণ কী?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82457,
+          "claim_text": "পত্রিকা: 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82458,
+          "claim_text": "হরমুজ প্রণালি খুলে দিতে ইরানের দেওয়া প্রস্তাব প্রত্যাখ্যান করলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82459,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82460,
+          "claim_text": "ভাঙচুর-দখলের ধারাবাহিকতা: ‘নরমাল ইন বাংলাদেশ’ হয়ে উঠছে কি?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82461,
+          "claim_text": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:34.021Z",
+          "kind": "verify",
+          "claim_id": 82462,
+          "claim_text": "অপ্রতিমকে হত্যার ছক ৭ দিন আগে, টিকটকে যোগাযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:37.480Z",
+          "kind": "conflict",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c82451\",\"c82454\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:37.484Z",
+          "kind": "conflict",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c82451\",\"c82457\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:15:37.489Z",
+          "kind": "conflict",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c82451\",\"c82462\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 611,
+          "slug": "national-611",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
+        },
+        {
+          "cluster_id": 601,
+          "slug": "national-601",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 17,
+          "headline": "রাশিয়ায় ৩০ বাংলাদেশির আটকে পড়ার অভিযোগ: পরিবারের মানববন্ধন, ৩ এজেন্সির বিরুদ্ধে ব্যবস্থা"
+        },
+        {
+          "cluster_id": 617,
+          "slug": "national-617",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
+        },
+        {
+          "cluster_id": 555,
+          "slug": "national-555",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 18,
+          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
+        },
+        {
+          "cluster_id": 565,
+          "slug": "national-565",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
+        },
+        {
+          "cluster_id": 576,
+          "slug": "national-576",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "কুমিল্লায় ছাত্রদল নেতার মিছিলে ‘কিশোর গ্যাং লিডার’ রতন, ভিডিও ভাইরালের পর সমালোচনা"
         }
       ]
     },
@@ -58847,7 +59974,7 @@
       "cluster_id": 630,
       "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
       "first_seen": "2026-09-27T19:13:34.665Z",
-      "last_update": "2026-09-27T19:36:31.655Z",
+      "last_update": "2026-09-27T20:08:02.666Z",
       "claim_count": 2,
       "events": [
         {
@@ -59006,9 +60133,112 @@
       "headline": "Fuel prices jump by up to Tk20 a litre",
       "first_seen": "2026-09-21T02:07:13.801Z",
       "last_update": "2026-09-21T09:09:48.108Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T17:13:25.000Z",
+          "kind": "evidence",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/420285/fuel-prices-jump-by-up-to-tk20-a-litre"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594607"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594607"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:47.259Z",
+          "kind": "claim",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "ts": "2026-09-27T20:08:47.266Z",
+          "kind": "claim",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre"
+        },
+        {
+          "ts": "2026-09-27T20:08:47.269Z",
+          "kind": "verify",
+          "claim_id": 81635,
+          "claim_text": "Fuel prices jump by up to Tk20 a litre",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:47.269Z",
+          "kind": "verify",
+          "claim_id": 81636,
+          "claim_text": "Fuel prices rise by Tk20/litre",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 163,
+          "slug": "national-mp-gazi-nazrul",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-masud-rana-creator": {
       "cluster_id": 108,
@@ -59371,9 +60601,112 @@
       "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
       "first_seen": "2026-09-21T02:07:13.789Z",
       "last_update": "2026-09-21T09:09:48.106Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T16:56:05.000Z",
+          "kind": "evidence",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/crime/420284/mp-gazi-nazrul-first-wife-taken-into-custody"
+          }
+        },
+        {
+          "ts": "2026-09-20T16:56:05.000Z",
+          "kind": "evidence",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://www.dhakatribune.com/bangladesh/crime/420284/mp-gazi-nazrul-first-wife-taken-into-custody"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://observerbd.com/news/594603"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:44.392Z",
+          "kind": "claim",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban"
+        },
+        {
+          "ts": "2026-09-27T20:08:44.398Z",
+          "kind": "claim",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody"
+        },
+        {
+          "ts": "2026-09-27T20:08:44.402Z",
+          "kind": "verify",
+          "claim_id": 81631,
+          "claim_text": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:08:44.402Z",
+          "kind": "verify",
+          "claim_id": 81632,
+          "claim_text": "MP Gazi Nazrul, first wife taken into custody",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Fuel prices jump by up to Tk20 a litre"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 219,
+          "slug": "national-219",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নানার বাড়িতে বেড়াতে এসে পুকুরে ডুবে দুই শিশুর মৃত্যু"
+        }
+      ]
     },
     "national-networks-halt-tv": {
       "cluster_id": 291,
@@ -62567,9 +63900,128 @@
       "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান",
       "first_seen": "2026-09-21T09:40:48.847Z",
       "last_update": "2026-09-21T16:33:02.905Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-21T06:57:35.000Z",
+          "kind": "evidence",
+          "claim_id": 81722,
+          "claim_text": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/army-chief-waker-uz-zaman-has-returned-home-after-the-asian-games/"
+          }
+        },
+        {
+          "ts": "2026-09-21T09:24:40.000Z",
+          "kind": "evidence",
+          "claim_id": 81722,
+          "claim_text": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/hj4lzvvh4h"
+          }
+        },
+        {
+          "ts": "2026-09-21T09:24:40.000Z",
+          "kind": "evidence",
+          "claim_id": 81723,
+          "claim_text": "এশিয়ান গেমস উপলক্ষে জাপান সফর শেষে দেশে ফিরেছেন সেনাপ্রধান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/hj4lzvvh4h"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:09:25.765Z",
+          "kind": "claim",
+          "claim_id": 81722,
+          "claim_text": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
+          "ts": "2026-09-27T20:09:25.768Z",
+          "kind": "claim",
+          "claim_id": 81723,
+          "claim_text": "এশিয়ান গেমস উপলক্ষে জাপান সফর শেষে দেশে ফিরেছেন সেনাপ্রধান"
+        },
+        {
+          "ts": "2026-09-27T20:09:25.771Z",
+          "kind": "verify",
+          "claim_id": 81722,
+          "claim_text": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:09:25.771Z",
+          "kind": "verify",
+          "claim_id": 81723,
+          "claim_text": "এশিয়ান গেমস উপলক্ষে জাপান সফর শেষে দেশে ফিরেছেন সেনাপ্রধান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
     },
     "sports-253": {
       "cluster_id": 253,
@@ -63511,20 +64963,20 @@
           "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
         },
         {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
