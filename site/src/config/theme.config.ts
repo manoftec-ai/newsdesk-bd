@@ -83,20 +83,22 @@ export const authors = [
   },
 ];
 
-const renderCategory = (slug, name, color) => ({ slug, name, color });
+// 2026-09-27 content audit T3: each beat gets one evergreen blurb so category
+// pages have unique meta descriptions + header text (was one shared template).
+const renderCategory = (slug, name, color, blurb = "") => ({ slug, name, color, blurb });
 
 export const categories = [
-  renderCategory("national", "জাতীয়", "#a8281f"),
-  renderCategory("politics", "রাজনীতি", "#7b241c"),
-  renderCategory("economy", "অর্থনীতি", "#0e6f5e"),
-  renderCategory("international", "আন্তর্জাতিক", "#1a6293"),
-  renderCategory("sports", "ক্রীড়া", "#16693b"),
-  renderCategory("entertainment", "বিনোদন", "#6d3490"),
-  renderCategory("tech", "প্রযুক্তি", "#0e6474"),
-  renderCategory("opinion", "মতামত/বিশ্লেষণ", "#8a5a08"),
-  renderCategory("latest", "সর্বশেষ", "#54616d"),
-  renderCategory("factcheck", "ফ্যাক্ট চেক", "#5b21b6"),
-  renderCategory("history", "ইতিহাস", "#a05a2c"),
+  renderCategory("national", "জাতীয়", "#a8281f", "সারাদেশের যাচাই-করা খবর — সরকার, প্রশাসন, দুর্যোগ ও জনজীবন।"),
+  renderCategory("politics", "রাজনীতি", "#7b241c", "নির্বাচন, সংসদ, দল ও আন্দোলন — রাজনীতির যাচাই-করা প্রতিবেদন।"),
+  renderCategory("economy", "অর্থনীতি", "#0e6f5e", "বাজার, ব্যাংক, বাণিজ্য ও জীবনযাত্রার ব্যয় — অর্থনীতির খবর প্রমাণসহ।"),
+  renderCategory("international", "আন্তর্জাতিক", "#1a6293", "বিশ্ব রাজনীতি ও বাংলাদেশ-সংশ্লিষ্ট আন্তর্জাতিক ঘটনার যাচাই-করা খবর।"),
+  renderCategory("sports", "ক্রীড়া", "#16693b", "ক্রিকেট, ফুটবলসহ খেলাধুলার যাচাই-করা ফল ও খবর।"),
+  renderCategory("entertainment", "বিনোদন", "#6d3490", "সিনেমা, সংগীত ও তারকাদের যাচাই-করা খবর।"),
+  renderCategory("tech", "প্রযুক্তি", "#0e6474", "প্রযুক্তি, ইন্টারনেট ও ডিজিটাল বাংলাদেশের যাচাই-করা খবর।"),
+  renderCategory("opinion", "মতামত/বিশ্লেষণ", "#8a5a08", "তথ্য-ভিত্তিক বিশ্লেষণ ও মতামত — সংবাদ প্রতিবেদন থেকে আলাদা।"),
+  renderCategory("latest", "সর্বশেষ", "#54616d", "সব বিভাগের সর্বশেষ যাচাই-করা সংবাদ এক জায়গায়।"),
+  renderCategory("factcheck", "ফ্যাক্ট চেক", "#5b21b6", "ভাইরাল দাবি ও গুজবের তথ্য-যাচাই — সত্য, অর্ধসত্য, না মিথ্যা।"),
+  renderCategory("history", "ইতিহাস", "#a05a2c", "বড় ঘটনার পেছনের ইতিহাস — ঘটনাপঞ্জির স্মরণ প্রতিবেদন।"),
 ];
 
 export const districts = [

@@ -13,11 +13,15 @@ export async function getStaticPaths() {
 
 const { category } = Astro.props;
 const posts = await postsByCategory(category.slug);
+// T3: unique meta description per beat (falls back to the old template when a
+// blurb is missing), and a real empty-state for beats with no stories yet.
+const pageDescription = category.blurb || `${category.name} বিভাগের যাচাই-করা সংবাদ।`;
+const siblingBeats = categories.filter((c) => c.slug !== category.slug && c.slug !== "latest");
 ---
 
 <BaseLayout
   title={`${category.name} সংবাদ — ${SITE.name}`}
-  description={`${category.name} বিভাগের যাচাই-করা সংবাদ।`}
+  description={pageDescription}
   canonical={`${SITE.url}/category/${category.slug}`}
 >
   <div class="mx-auto max-w-6xl px-5">
@@ -32,6 +36,9 @@ const posts = await postsByCategory(category.slug);
         <span class="text-sm text-muted-foreground">{posts.length}টি সংবাদ</span>
       </div>
       <h1 class="mt-3 font-serif text-4xl font-bold">{category.name} সংবাদ</h1>
+      {category.blurb && (
+        <p class="mt-2 max-w-2xl leading-relaxed text-muted-foreground">{category.blurb}</p>
+      )}
     </header>
 
     {posts.length > 0 ? (
@@ -41,7 +48,23 @@ const posts = await postsByCategory(category.slug);
         ))}
       </div>
     ) : (
-      <p class="mt-8 text-muted-foreground">এই বিভাগে এখনো কোনো সংবাদ প্রকাশিত হয়নি।</p>
+      <div class="mt-8">
+        <p class="text-muted-foreground">
+          এই বিভাগে এখনো কোনো সংবাদ প্রকাশিত হয়নি — প্রথম প্রতিবেদন এলে এখানেই দেখা যাবে।
+        </p>
+        <p class="mt-4 text-sm font-medium">ততক্ষণে অন্য বিভাগ দেখুন:</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          {siblingBeats.map((beat) => (
+            <a
+              href={`/category/${beat.slug}`}
+              class="category-pill"
+              style={`background-color:${beat.color}`}
+            >
+              {beat.name}
+            </a>
+          ))}
+        </div>
+      </div>
     )}
   </div>
 </BaseLayout>
