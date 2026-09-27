@@ -121,7 +121,7 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           mkdir -p pipeline/tmp/stories
-          node pipeline/tools/compose_stories.mjs --pick=pipeline/state/pick.json --max="${{ vars.AUTHOR_MAX_PER_RUN || 6 }}"
+          node pipeline/tools/compose_stories.mjs --pick=state/pick.json --max="${{ vars.AUTHOR_MAX_PER_RUN || 6 }}"
 
       - name: Reject direct public Markdown edits
         run: |

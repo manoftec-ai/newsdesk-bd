@@ -82,5 +82,9 @@ console.log(
     `of ${picked.length} picked`,
 );
 
-// a run that composed nothing must not look like a successful publish
-process.exitCode = written > 0 ? 0 : 3;
+// A run that composed nothing is a normal outcome - the publishable pool is
+// finite and gets drained - so it must not fail the job. Failing here skipped
+// the finalizer, the preflight and the rejection report, so an empty run threw
+// away the very diagnostics that explain why it was empty. The summary line and
+// the rejection artifact carry that instead.
+process.exitCode = 0;
