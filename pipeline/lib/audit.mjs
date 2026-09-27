@@ -215,6 +215,23 @@ export function bodyHeadlineRelevance(headline, body) {
   return { coverage: hit / H.size, headlineTokens: H.size };
 }
 
+// 2026-07-27. A wire feed is cut at arbitrary offsets, so a paragraph can open
+// on the tail of a sentence whose antecedent was never delivered. Anchored on
+// these openers rather than on "does not start with a letter", because a
+// paragraph may legitimately start with a digit, a quote or an acronym - a
+// looser test flagged 150 articles.
+const BACK_REFERENCE_OPENER =
+  /^(পরে তার|এর আগে|আমরা তো|ওই|এরপর|তখন|এই মুহূর্তে|তারপর|এর মধ্যে|এখানে|সেখানে|এর বদলে|এর পর|এর আগে)/u;
+
+const contentTokens = (s) =>
+  new Set(
+    String(s ?? '')
+      .toLowerCase()
+      .replace(/[^\u0980-\u09FF\s]/gu, ' ')
+      .split(/\s+/u)
+      .filter((w) => w.length > 2),
+  );
+
 export function mechanicalAudit(brief, body) {
   const text = String(body ?? '');
   const fails = [];
@@ -272,6 +289,43 @@ export function mechanicalAudit(brief, body) {
   const relevance = bodyHeadlineRelevance(brief.headline ?? '', text);
   if (relevance.coverage < 0.18 && relevance.headlineTokens >= 4) {
     note('c12', `body is about a different story (shares only ${Math.round(relevance.coverage * 100)}% of the headline)`);
+  }
+
+  // c13/c14 — a press conference arrives as a wire feed chopped into sentences,
+  // so the pool holds tails whose antecedent was in the part we never got.
+  // national-553 opened paragraphs with "পরে তার দেওয়া তথ্যের ভিত্তিতে…",
+  // "এর আগে সম্প্রতি…", "আমরা তো এই ৩ দাবিতে…" and "ওই ভিডিওতে…", and stated
+  // the same fact seven times because five outlets each carried it.
+  //
+  // These live in lib/compose.mjs too, but that only covers the composer. The
+  // audit covers every write path - author.yml, history-batch.yml, watcher.yml -
+  // which is the point of having it in both places.
+  const fragments = [];
+  const paras = text.split(/\n\s*\n/u).map((p) => p.trim()).filter(Boolean);
+  for (const p of paras) {
+    if (BACK_REFERENCE_OPENER.test(p)) fragments.push(p.slice(0, 40));
+  }
+  if (fragments.length) {
+    note('c13', `${fragments.length} paragraph(s) open on a back-reference: "${fragments[0]}"`);
+  }
+
+  const repeats = [];
+  for (let i = 0; i < paras.length; i++) {
+    for (let j = i + 1; j < paras.length; j++) {
+      const a = contentTokens(paras[i]);
+      const b = contentTokens(paras[j]);
+      if (a.size < 4 || b.size < 4) continue;
+      let hit = 0;
+      for (const w of a) if (b.has(w)) hit++;
+      // An absolute shared-token floor as well as the ratio. The এক নজরে bullet
+      // block is 8 tokens and shares 5 common words with the lead, which is a
+      // summary of it, not a duplicate of it - a ratio alone flagged the clean
+      // body fixture. Verified against that fixture.
+      if (hit / Math.min(a.size, b.size) > 0.65 && hit >= 8) repeats.push(paras[i].slice(0, 40));
+    }
+  }
+  if (repeats.length) {
+    note('c14', `${repeats.length} near-duplicate paragraph(s): "${repeats[0]}"`);
   }
 
   // #8/#33 — a "কেন গুরুত্বপূর্ণ" section is only legitimate when the fact pool

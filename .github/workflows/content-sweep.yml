@@ -1,0 +1,104 @@
+name: content-sweep
+
+# 2026-07-27. The user asked whether they had to visit every article and find the
+# defects themselves. They did not have to, and the reason they had to is that
+# content_audit.mjs only ever ran when a human ran it.
+#
+# This runs it on a schedule over the whole published corpus and quarantines what
+# it finds, so a defect class is caught by a clock rather than by someone
+# happening to open the article. It also opens an ISSUE on the repo when it
+# quarantines something, so a machine removal is still something a human sees.
+#
+# It REFUSES, it never rewrites. A polish pass over a bad article can invent the
+# clauses that were missing - every defect found today came from bad source text,
+# and the writer reproduced it faithfully. Silently repairing that is how a
+# fabricated sentence reaches the homepage.
+
+on:
+  schedule:
+    # 07 past the hour, hourly: after the auto-author run and the fetch, so the
+    # sweep sees what they just produced
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: content-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install pipeline deps
+        working-directory: pipeline
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Run the test suite
+        working-directory: pipeline
+        run: npm test
+
+      - name: Content gate — no new defect class
+        working-directory: pipeline
+        run: node tools/content_gate.mjs
+
+      - name: Sweep the corpus and quarantine what is broken
+        working-directory: pipeline
+        id: sweep
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node tools/sweep_quarantine.mjs --commit
+
+      - name: Push any removals
+        if: steps.sweep.outputs.removed != '0'
+        run: |
+          git config user.name "newsdesk-bd-bot"
+          git config user.email "bot@newsdesk-bd.local"
+          git add -A site/src/content/news pipeline/state/quarantine.json
+          git commit -m "sweep: withhold $(...) articles that fail the content audit
+
+Found by the hourly sweep, not by a reader. The audit REFUSES these rather than
+repairing them: every defect class found so far came from bad source text, and
+the writer reproduced it faithfully. Rewriting would mean inventing the clauses
+the source never contained.
+
+Full report and the reason for each slug are in the run log."
+          git push || echo "  (nothing to push, or a concurrent push won)"
+
+      - name: Open an issue when something was withheld
+        if: steps.sweep.outputs.removed != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const removed = Number('${{ steps.sweep.outputs.removed }}');
+            const slugs = '${{ steps.sweep.outputs.slugs }}'.split(',').filter(Boolean);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Content sweep withheld ${removed} article(s)`,
+              body: [
+                'The hourly content sweep found articles that fail the audit and',
+                'withdrew them from the site. They are now quarantined, so the',
+                'picker will not republish them.',
+                '',
+                'They are NOT repaired. Every defect class so far came from bad',
+                'source text that the writer reproduced faithfully, so rewriting',
+                'would mean inventing what the source did not say.',
+                '',
+                ...slugs.map((s) => `- \`${s}\``),
+                '',
+                `Sweep run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              ].join('\n'),
+            });
