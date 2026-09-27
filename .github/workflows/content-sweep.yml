@@ -67,14 +67,8 @@ jobs:
           git config user.name "newsdesk-bd-bot"
           git config user.email "bot@newsdesk-bd.local"
           git add -A site/src/content/news pipeline/state/quarantine.json
-          git commit -m "sweep: withhold articles that fail the content audit
-
-Found by the hourly sweep, not by a reader. The audit REFUSES these rather than
-repairing them: every defect class found so far came from bad source text, and
-the writer reproduced it faithfully. Rewriting would mean inventing the clauses
-the source never contained.
-
-Full report and the reason for each slug are in the run log."
+          git commit -m "sweep: withhold articles that fail the content audit" \
+                       -m "Found by the hourly sweep, not by a reader. The audit REFUSES these rather than repairing them: every defect class found so far came from bad source text, and the writer reproduced it faithfully. Rewriting would mean inventing clauses the source never contained."
           git push || echo "  (nothing to push, or a concurrent push won)"
 
       - name: Open an issue when something was withheld
