@@ -82,8 +82,16 @@ jobs:
           # are news.google.com wrappers, which cannot be fetched until decoded
           # (4 of 6 in a dry run failed with gnews_not_resolved without it).
           # --write is needed for it to persist; it is dry-run without.
+          # --skip-unusable drops the 9 sources that measurement has proven
+          # cannot be enriched. Without it the first wired run spent 20 of 30
+          # attempts on http_403 and improved 2; with it, 3 of 8 improved and
+          # nothing failed. kalerkantho, jugantor and jamuna answer 403 from
+          # every host measured, including a phone on mobile data.
+          #
+          # --limit=150 is sized from measurement: the step took 0.6 min for 30
+          # items, so 150 is ~3 min against a 26 min job and a 30 min cadence.
           ENRICH_TIMEOUT_MS=10000 node tools/enrich_bodies.mjs \
-            --limit=30 --days=3 --resolve-gnews --write \
+            --limit=150 --days=3 --resolve-gnews --skip-unusable --write \
             || echo "body backfill failed or timed out; briefs rebuild from what we have"
 
       - name: Extract briefs
