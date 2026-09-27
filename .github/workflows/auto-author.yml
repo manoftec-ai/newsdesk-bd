@@ -29,6 +29,13 @@ jobs:
       # spike (e.g. a source fix) turning one run into an unbounded, very long
       # batch. Override per-repo with the AUTHOR_MAX_PER_RUN variable.
       AUTHOR_MAX_PER_RUN: ${{ vars.AUTHOR_MAX_PER_RUN || '6' }}
+      # 2026-09-27: the body-substance floor is 100 words of real prose, not 150.
+      # The 150 existed to stop the writer stuffing 15-character fragments to reach
+      # a count; the composer now refuses anything it cannot build from genuine
+      # sentences. Left at 150 the finalizer rejected 12 of 12 composed articles as
+      # BODY_SUBSTANCE_BLOCKED while the picker, which does not run the substance
+      # check, kept selecting them.
+      PUBLISH_MIN_WORDS: '100'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -115,16 +122,6 @@ jobs:
           git config user.email "bot@newsdesk-bd.local"
           mkdir -p pipeline/tmp/stories
           node pipeline/tools/compose_stories.mjs --pick=pipeline/state/pick.json --max="${{ vars.AUTHOR_MAX_PER_RUN || 6 }}"
-
-      # 2026-09-27: the body-substance floor is 100 words of real prose, not 150.
-      # The 150 figure existed to stop the writer stuffing 15-character fragments to
-      # reach a word count; the composer now refuses anything it cannot build from
-      # genuine sentences, so the floor can drop to a genuine short-news length.
-      # Left at 150 the finalizer rejected 12 of 12 composed articles as
-      # BODY_SUBSTANCE_BLOCKED while the picker - which does not run the substance
-      # check - kept selecting them.
-      env:
-        PUBLISH_MIN_WORDS: "100"
 
       - name: Reject direct public Markdown edits
         run: |
