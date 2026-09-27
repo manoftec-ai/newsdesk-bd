@@ -7,7 +7,10 @@ excerpt: 'জানুয়ারি থেকে জুলাই পর্য�
 seoDescription: "জানুয়ারি থেকে জুলাই পর্যন্ত আট মাসে ৩৬ শিশুর মরদেহ উদ্ধার হয়েছে; এর মধ্যে ২৬ জন ধর্ষণের শিকার হওয়ার পর নিহত হয়েছেন। শিশু নিরাপত্তা নিয়ে গভীর উদ্বেগ প…"
 date: 2026-09-20T17:39:12.000Z
 category: "national"
-tags: []
+tags:
+  - disaster
+  - dhaka
+  - cumilla
 author: "desk"
 lang: "bn"
 draft: false

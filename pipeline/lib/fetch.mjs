@@ -1,6 +1,8 @@
 // lib/fetch.mjs — fetching: RSS via rss-parser; HTML scraper via cheerio.
 import Parser from 'rss-parser';
 import * as cheerio from 'cheerio';
+import { readFileSync } from 'node:fs';
+import { bodyWordCount, DEFAULT_MIN_PUBLISH_WORDS } from './editorial.mjs';
 import { normalizeTitle, urlHash, cleanBody, parseDate, isBoilerplateTitle } from './normalize.mjs';
 import { decodeGoogleNewsUrl, stripSourceFromTitle } from '../tools/tracked_watcher.mjs';
 
@@ -77,8 +79,10 @@ export async function fetchRss(source) {
   // headline and nothing else, and it emits a restatement — which is how 27 of
   // the last 30 published articles became 14-45 word stubs carrying
   // `badge: confirmed`. The scraper and Google-News paths already called
-  // enrichThinBodies; this path did not. Same cap, same politeness delay.
-  const enriched = await enrichThinBodies(items, { max: RSS_ENRICH_MAX });
+  // enrichThinBodies; this path did not. Same politeness delay, but the budget
+  // is now per source and driven by measured yield (see enrichBudgetFor) —
+  // enrichment was never the bottleneck, spending it on hollow sources was.
+  const enriched = await enrichThinBodies(items, { max: enrichBudgetFor(source.id) });
   return { items: enriched, feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 
@@ -215,13 +219,61 @@ export async function fetchSource(source) {
 const GNEWS_ITEMS_MAX = 60;
 const ENRICH_MAX = 10;          // per gnews run, politeness cap for body scraping
 const ENRICH_DELAY_MS = 400;    // politeness between article fetches
-const RSS_ENRICH_MAX = 6;          // per RSS source per run (politeness; fetchRss runs per source)
+const RSS_ENRICH_MAX = 6;          // fallback per RSS source per run, for sources with no measurement
+// Measured per-source enrichment budget.
+//
+// The flat RSS_ENRICH_MAX starved the sources that actually work and still spent
+// the same budget on sources that cannot ever yield a body. On 2026-09-27 a
+// re-measure found 3 sources 403-blocked by Cloudflare and 6 more returning
+// HTTP 200 with no extractable text, so 9 of 25 sources were burning 6 page
+// fetches each per run to produce nothing — while the 12 usable sources, which
+// return 134-973 words, were held to the same 6. Measured yield is what decides
+// the budget now; re-measure with `node tools/measure_source_yield.mjs --write`.
+const ENRICH_BUDGET_USABLE = 24;     // measured >=100 words: worth spending fetches on
+const ENRICH_BUDGET_MARGINAL = 6;    // measured 40-99 words: try, but do not crowd out usable
+const ENRICH_BUDGET_HOLLOW = 0;      // measured empty/blocked: never fetch, always wasted
+
+let yieldTableCache;
+function sourceYieldTable() {
+  if (yieldTableCache) return yieldTableCache;
+  const table = { usable: new Set(), marginal: new Set(), hollow: new Set() };
+  try {
+    const raw = readFileSync(new URL('../config/source-yield.json', import.meta.url), 'utf8');
+    const parsed = JSON.parse(raw);
+    for (const id of Object.keys(parsed.usable ?? {})) table.usable.add(id);
+    for (const id of Object.keys(parsed.marginal ?? {})) table.marginal.add(id);
+    for (const id of Object.keys(parsed.hollow ?? {})) if (id !== '_comment') table.hollow.add(id);
+    for (const id of Object.keys(parsed.blocked ?? {})) if (id !== '_comment') table.hollow.add(id);
+  } catch {
+    // No measurement on disk — fall back to the old flat budget for everything.
+    table.usable.add('*');
+  }
+  yieldTableCache = table;
+  return table;
+}
+
+function enrichBudgetFor(sourceId) {
+  const t = sourceYieldTable();
+  if (t.usable.has('*') || t.usable.has(sourceId)) return ENRICH_BUDGET_USABLE;
+  if (t.marginal.has(sourceId)) return ENRICH_BUDGET_MARGINAL;
+  if (t.hollow.has(sourceId)) return ENRICH_BUDGET_HOLLOW;
+  return RSS_ENRICH_MAX;
+}
+export { enrichBudgetFor, sourceYieldTable };
+
 // A decoded Google-News header-only item carries no real body (body == title text).
-// Thresh: enrichment is attempted only when the captured body is too thin to support
-// a news report (>40 chars) — otherwise we leave a good body alone.
+//
+// The trigger used to be a character heuristic — "body <= 40 chars, or shorter
+// than the title + 20" — which only caught bodies that were *the headline*. A
+// real RSS summary of 200-250 chars (18-37 words) sailed past it and was left
+// alone, even though nothing under DEFAULT_MIN_PUBLISH_WORDS can be published.
+// Measured on bbc-bengali 2026-09-27: all 14 items had 18-37 words, every one
+// skipped enrichment, every one then doomed at the gate. The question worth
+// asking is not "is this the headline?" but "can this body ever be published?".
 function needsBodyEnrichment(item) {
   const body = String(item.body ?? '').trim();
-  return body.length <= 40 || body.length < String(item.title ?? '').length + 20;
+  if (body.length <= 40) return true;
+  return bodyWordCount(body) < DEFAULT_MIN_PUBLISH_WORDS;
 }
 export { needsBodyEnrichment };
 
@@ -382,7 +434,7 @@ async function parseGnewsUrl(source) {
       lang: source.lang,
     });
   }
-  const items = await enrichThinBodies(rawItems);
+  const items = await enrichThinBodies(rawItems, { max: enrichBudgetFor(source.id) });
   return { items, feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 
@@ -469,7 +521,7 @@ async function fetchGTrends(source) {
       }
     } catch { /* one failing search must not kill the engine */ }
   }
-  return { items: await enrichThinBodies(items), feedMeta: { title: feed.title, etag: null, modified: null } };
+  return { items: await enrichThinBodies(items, { max: enrichBudgetFor(source.id) }), feedMeta: { title: feed.title, etag: null, modified: null } };
 }
 
 export async function fetchGnews(source) {

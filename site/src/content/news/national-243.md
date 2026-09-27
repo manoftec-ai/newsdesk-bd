@@ -7,7 +7,10 @@ excerpt: 'ব্যাংকার্স সিলেকশন কমিটি (
 seoDescription: "ব্যাংকার্স সিলেকশন কমিটি (বিএসসিএস) সদস্যভুক্ত তিনটি ব্যাংকে মোট ৬৪ জনের নিয়োগের জন্য অনুষ্ঠিত লিখিত পরীক্ষায় উত্তীর্ণ ৩৩১ জন প্রার্থীর মৌখিক পরীক্ষার স…"
 date: 2026-09-21T05:40:35.000Z
 category: "national"
-tags: []
+tags:
+  - education
+  - economy
+  - dhaka
 author: "desk"
 lang: "bn"
 draft: false

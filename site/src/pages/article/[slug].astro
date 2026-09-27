@@ -24,9 +24,10 @@ import {
   formatDateTimeBD,
   formatDateTimeBDShort,
   relatedPosts,
+  adjacentPosts,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
-import { evidenceLabelBn, sourceNameBn } from "../../lib/evidence-label.js";
+import { evidenceLabelBn } from "../../lib/evidence-label.js";
 
 export async function getStaticPaths() {
   return (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
@@ -93,7 +94,13 @@ post.readingTime = entry.data.readingTime ?? readingMinutes.minutes;
 const category = getCategory(post.category);
 const author = getAuthor(post.author);
 const badge = getBadge(post);
-const related = await relatedPosts(post);
+const related = await relatedPosts(post, 6);
+const { prev, next } = await adjacentPosts(post);
+// Inline context links: the two strongest related stories, rendered with their
+// real headlines as anchor text right after the body (interlinking 2026-09-27).
+// Template-level so all 398 existing articles gain in-body internal links on
+// the next deploy without rewriting any prose.
+const contextLinks = related.slice(0, 2);
 const matchedEvents = topicalEventsForPost(post, 10);
 
 const isoDate = (date) => (date ? new Date(date).toISOString() : undefined);
@@ -122,7 +129,8 @@ const jsonLd = {
         "@type": "NewsMediaOrganization",
         name: SITE.name,
         url: SITE.url,
-        logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.svg` },
+        // Raster logo: Google rich results cannot use the old SVG file.
+        logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.png` },
       },
       mainEntityOfPage: {
         "@type": "WebPage",
@@ -252,6 +260,12 @@ const shareLinks = [
   canonical={`${SITE.url}/article/${post.slug}`}
   ogType="article"
   ogImage={post.thumbnail}
+  article={{
+    publishedTime: isoDate(entry.data.date),
+    ...(entry.data.updated ? { modifiedTime: isoDate(entry.data.updated) } : {}),
+    ...(category ? { section: category.name } : {}),
+    tags: post.tags ?? [],
+  }}
   jsonLd={jsonLd}
   language={post.lang === "en" ? "en" : "bn"}
 >
@@ -284,11 +298,6 @@ const shareLinks = [
             </a>
           )}
         </div>
-          {badge.label}
-          {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
-          {" — "}
-          {badge.tierNote}
-
 
         <h1 class="mt-4 font-serif text-3xl font-bold leading-tight sm:text-4xl">
           {post.title}
@@ -345,14 +354,13 @@ const shareLinks = [
         </figure>
       )}
 
-        <p class="badge-legend">
-          {badge.label}
-          {post.verification?.tier ? ` [${post.verification.tier}]` : ""}
-          {" — "}
-          {badge.tierNote}
-          {post.verification?.evidence?.length > 0 && ` · ${post.verification.evidence.length} প্রমাণ`}
-          {post.verification?.score != null && ` · স্কোর ${post.verification.score}`}
-        </p>
+        {/* 2026-09-27: the badge-legend paragraph is removed. It printed
+            "নিশ্চিত [A] — দুই বা ততোধিক স্বাধীন সংবাদসূত্রে তথ্য মিলে গেছে · 2
+            প্রমাণ · স্কোর 4" directly under the date, and the compact
+            VerificationBadge in the header above the headline prints the same
+            sentence - so the reader met "নিশ্চিত" twice before the story, in the
+            same words. The evidence panel below already carries the tier, the
+            score and the full list of outlets, so nothing was lost. */}
 
         {/* 2026-09-26: tier A (national/politics/international) single-source
             stories are allowed to publish so the site is not silent on the news
@@ -508,25 +516,33 @@ const shareLinks = [
         )}
       </div>
 
-        <div class="mt-8">
-          {post.sources.length > 0 && (
-          <div class="mt-4">
-            <div class="text-sm font-bold">সূত্র</div>
-            <div class="source-list mt-2">
-              {post.sources.map((source) => (
+      {/* 2026-09-27 interlinking: inline context box. Body prose itself has
+          almost no internal links (7/398 articles), so the two strongest
+          related stories render here with headline anchor text — crawlable,
+          keyboard-native, no JS. */}
+      {contextLinks.length > 0 && (
+        <aside class="context-links mt-8 rounded-md border border-border/60 p-4" role="note" aria-label="একই প্রসঙ্গে">
+          <div class="text-sm font-bold">একই প্রসঙ্গে আরও পড়ুন</div>
+          <ul class="mt-2 space-y-1.5">
+            {contextLinks.map((item) => (
+              <li>
                 <a
-                  href={source.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  class="underline-offset-2 hover:text-primary underline"
+                  href={`/article/${item.slug}`}
+                  class="font-medium text-primary underline underline-offset-2 hover:text-foreground"
                 >
-                  {sourceNameBn(source.name) ?? source.name}
+                  {item.title}
                 </a>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
+
+      {/* 2026-09-27: the "সূত্র" block under the story is removed. It named the
+          same outlets the প্রমাণ দেখুন panel below already lists, so the reader
+          saw the attribution twice within a few lines. The outlets remain in the
+          article front matter, in the evidence panel's links, in the JSON-LD and
+          in the RSS feed - everything that needs the attribution still has it. */}
 
       {/* 2026-09-27: the প্রমাণ দেখুন box moved from ABOVE the headline to below
           the main news, as the user asked. It sat above the h1 and pushed the
@@ -619,6 +635,26 @@ const shareLinks = [
       </div>
 
       <Giscus slug={post.slug} title={post.title} />
+
+      {/* 2026-09-27 interlinking: prev/next crawl path. adjacentPosts existed
+          in lib but was never rendered, so article pages were dead-ends for
+          crawlers beyond the related grid. */}
+      {(prev || next) && (
+        <nav class="mt-6 grid gap-3 border-t border-border/60 pt-4 sm:grid-cols-2" aria-label="আগের ও পরের সংবাদ">
+          {prev ? (
+            <a href={`/article/${prev.slug}`} class="rounded-md border border-border/60 p-3 hover:border-primary" rel="prev">
+              <span class="text-xs text-muted-foreground">← আগের সংবাদ</span>
+              <span class="mt-1 block font-medium leading-snug">{prev.title}</span>
+            </a>
+          ) : <span />}
+          {next ? (
+            <a href={`/article/${next.slug}`} class="rounded-md border border-border/60 p-3 text-right hover:border-primary" rel="next">
+              <span class="text-xs text-muted-foreground">পরের সংবাদ →</span>
+              <span class="mt-1 block font-medium leading-snug">{next.title}</span>
+            </a>
+          ) : <span />}
+        </nav>
+      )}
     </article>
   </div>
 

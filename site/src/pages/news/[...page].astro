@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { SITE, sortedPosts } from "../../lib/news-data.js";
+
+// SEO/perf audit 2026-09-27: /news rendered all ~400 cards on one page —
+// heavy HTML and diluted crawl budget. Paginated at 30/page; page 1 keeps the
+// canonical /news URL so existing links never break.
+export async function getStaticPaths({ paginate }) {
+  const all = await sortedPosts();
+  return paginate(all, { pageSize: 30 });
+}
+
+const { page } = Astro.props;
+const pageNum = page.currentPage;
+const isFirst = pageNum === 1;
+const title = isFirst ? `সব খবর — ${SITE.name}` : `সব খবর — পাতা ${pageNum} — ${SITE.name}`;
+const canonical = isFirst ? `${SITE.url}/news` : `${SITE.url}/news/${pageNum}`;
+---
+
+<BaseLayout title={title} description="যাচাইডেস্কের সব যাচাই-করা সংবাদ, ক্রম অনুযায়ী।" canonical={canonical}>
+  <div class="mx-auto max-w-6xl px-5">
+    <Breadcrumbs crumbs={[{ name: "সব খবর", href: "/news", current: isFirst }]} />
+    <header class="mt-6 mb-8 border-b border-border/60 pb-4">
+      <h1 class="font-serif text-4xl font-bold">সব খবর</h1>
+      <p class="mt-2 text-muted-foreground">
+        যাচাই-করা সংবাদ, সূত্রসহ।{!isFirst && ` — পাতা ${pageNum} / ${page.lastPage}`}
+      </p>
+    </header>
+
+    {page.data.map((post) => (
+      <PostCard post={post} variant="list" />
+    ))}
+
+    {page.lastPage > 1 && (
+      <nav class="mt-8 flex items-center justify-between border-t border-border/60 pt-4" aria-label="পাতা">
+        {page.url.prev ? (
+          <a href={page.url.prev} class="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary" rel="prev">
+            ← আগের পাতা
+          </a>
+        ) : <span />}
+        <span class="text-sm text-muted-foreground">পাতা {pageNum} / {page.lastPage}</span>
+        {page.url.next ? (
+          <a href={page.url.next} class="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary" rel="next">
+            পরের পাতা →
+          </a>
+        ) : <span />}
+      </nav>
+    )}
+  </div>
+</BaseLayout>

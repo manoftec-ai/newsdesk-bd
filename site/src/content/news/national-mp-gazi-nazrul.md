@@ -7,7 +7,10 @@ excerpt: 'রাজধানীর ন্যাম ভবনের একটি 
 seoDescription: "রাজধানীর ন্যাম ভবনের একটি ফ্ল্যাট থেকে সাতক্ষীরা-৪ আসনের সংসদ সদস্য গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মোছা. মরিয়ম খাতুনের (১৯) ঝুলন্ত মরদেহ উদ্ধার করেছে…"
 date: 2026-09-20T16:56:05.000Z
 category: "national"
-tags: []
+tags:
+  - politics
+  - metro
+  - dhaka
 author: "desk"
 lang: "bn"
 draft: false

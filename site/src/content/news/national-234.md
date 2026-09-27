@@ -7,7 +7,9 @@ excerpt: 'গত শনিবার রাতে নারায়ণগঞ্�
 seoDescription: "গত শনিবার রাতে নারায়ণগঞ্জের বন্দরের তিনগাঁও এলাকায় লোকালয়ে ঘুরছিল একটি কুমির। কীভাবে কুমিরটি ওই এলাকায় এল, তা জানে না কেউ। পরদিন প্রাণিসম্পদ বিভাগের ক…"
 date: 2026-09-21T07:35:00.000Z
 category: "national"
-tags: []
+tags:
+  - dhaka
+  - narayanganj
 author: "desk"
 lang: "bn"
 draft: false

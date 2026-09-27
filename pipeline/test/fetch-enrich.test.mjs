@@ -12,14 +12,27 @@ import {
   parseGoogleNewsDecodingParams,
   resolveGoogleNewsUrl,
 } from '../lib/fetch.mjs';
+import { bodyWordCount } from '../lib/editorial.mjs';
 
 test('needsBodyEnrichment: true for header-only Google-News item', () => {
   assert.equal(needsBodyEnrichment({ title: 'শান্তিপূর্ণ পারমাণবিক প্রযুক্তি ছাড়বে না ইরান', body: 'শান্তিপূর্ণ পারমাণবিক প্রযুক্তি ছাড়বে না ইরান' }), true);
   assert.equal(needsBodyEnrichment({ title: 'আজকের সংবাদ', body: '' }), true);
 });
 
-test('needsBodyEnrichment: false when a real body is present', () => {
-  const longBody = 'ইরানের প্রেসিডেন্ট মসুদ পেজেশকিয়ান জাতিসংঘের সাধারণ পরিষদে ভাষণে বলেছেন, ইরান শান্তিপূর্ণ পারমাণবিক কর্মসূচিতে প্রতিশ্রুতিবদ্ধ। তিনি বলেন, পরমাণু অস্ত্রের ব্যবহার সবসময় নিষিদ্ধ ছিল। জাতিসংঘের সদর দপ্তরে আয়োজিত সংবাদ সম্মেলনে তিনি আরও বলেন, অঞ্চলে স্থিতিশীলতা বজায় রাখতে ইরান কাজ করছে।';
+test('needsBodyEnrichment: true for a mid-length RSS summary that cannot be published', () => {
+  // 2026-09-27: the old character heuristic (body < title + 20) treated a real
+  // 30-word feed summary as "already a body" and skipped enrichment, so the
+  // item never got the article and then failed the 150-word publish floor.
+  // The trigger is now the publish floor, not the title length.
+  const rssSummary = 'ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্রে আজ সকালে উদ্বোধন করা হয়েছে। জেলা স্বাস্থ্য অধিদপ্তরের তথ্য অনুযায়ী, নতুন ভবনটিতে ডাক্তার, নার্স ও প্রয়োজনীয় যন্ত্রপাতি সরবরাহ করা হয়েছে। উপস্থেল ছিলেন স্থানীয় জনপ্রতিনিধি ও কর্মকর্তারা।';
+  assert.equal(needsBodyEnrichment({ title: 'ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্র উদ্বোধন', body: rssSummary }), true);
+});
+
+test('needsBodyEnrichment: false when a body is already long enough to publish', () => {
+  const longBody = Array.from({ length: 40 }, (_, i) =>
+    `ইরানের প্রেসিডেন্ট মসুদ পেজেশকিয়ান জাতিসংঘের সাধারণ পরিষদে ভাষণে বলেছেন ${i + 1}, ইরান শান্তিপূর্ণ পারমাণবিক কর্মসূচিতে প্রতিশ্রুতিবদ্ধ। তিনি বলেন, পরমাণু অস্ত্রের ব্যবহার সবসময় নিষিদ্ধ ছিল। জাতিসংঘের সদর দপ্তরে আয়োজিত সংবাদ সম্মেলনে তিনি আরও বলেন, অঞ্চলে স্থিতিশীলতা বজায় রাখতে ইরান কাজ করছে।`,
+  ).join(' ');
+  assert.ok(bodyWordCount(longBody) >= 150, 'fixture must clear the publish floor');
   assert.equal(needsBodyEnrichment({ title: 'শান্তিপূর্ণ পারমাণবিক প্রযুক্তি ছাড়বে না', body: longBody }), false);
 });
 

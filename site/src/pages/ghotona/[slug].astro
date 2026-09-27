@@ -94,6 +94,11 @@ const STATUS = {
 };
 const priority = PRIORITY[event.priority] ?? PRIORITY.low;
 const status = STATUS[event.status] ?? STATUS.planned;
+// 2026-09-27 interlinking: sibling events in the same category so hub pages
+// link sideways instead of only up to /ghotona and down to articles.
+const siblingEvents = events()
+  .filter((e) => e.id !== event.id && (e.category ?? "") === (event.category ?? "") && e.nameBn)
+  .slice(0, 6);
 ---
 
 <BaseLayout
@@ -273,6 +278,21 @@ const status = STATUS[event.status] ?? STATUS.planned;
           </section>
         ))}
       </div>
+    )}
+    {siblingEvents.length > 0 && (
+      <section class="mt-10 border-t border-border/60 pt-6" aria-label="একই ধরনের ঘটনা">
+        <h2 class="font-serif text-xl font-bold">একই ধরনের ঘটনা</h2>
+        <div class="mt-3 flex flex-wrap gap-2">
+          {siblingEvents.map((sibling) => (
+            <a
+              href={`/ghotona/${sibling.id}`}
+              class="rounded-full border border-border px-3 py-1 text-xs hover:border-primary hover:text-primary"
+            >
+              {sibling.nameBn}
+            </a>
+          ))}
+        </div>
+      </section>
     )}
   </div>
 </BaseLayout>

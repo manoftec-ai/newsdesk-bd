@@ -90,16 +90,40 @@ export const breakingItems = async (n = 5) =>
 
 export const popularPosts = async (n = 4) => (await sortedPosts()).slice(0, n);
 
-export const relatedPosts = async (post, n = 3) =>
+export const relatedPosts = async (post, n = 6) =>
   (await sortedPosts())
     .filter((candidate) => candidate.slug !== post.slug)
     .sort((a, b) => {
       const score = (candidate) =>
         (candidate.category === post.category ? 2 : 0) +
         candidate.tags.filter((tag) => post.tags.includes(tag)).length;
-      return score(b) - score(a);
+      // Recency breaks ties so fresh stories surface instead of arbitrary
+      // collection order when scores are equal (interlinking upgrade 2026-09-27).
+      return score(b) - score(a) || (b.ts ?? 0) - (a.ts ?? 0);
     })
     .slice(0, n);
+
+// Tags that co-occur with this tag across the corpus, for the "related tags"
+// box on /tags pages. Pure navigation signal — no factual claim.
+export const relatedTags = async (slug, n = 6) => {
+  const all = await sortedPosts();
+  const withTag = all.filter((post) => (post.tags ?? []).includes(slug));
+  const ids = new Set(withTag.map((post) => post.slug));
+  const counts = new Map();
+  for (const post of withTag) {
+    for (const tag of post.tags ?? []) {
+      if (tag === slug) continue;
+      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, n)
+    .map(([tag, count]) => ({
+      tag: getTag(tag) ?? { slug: tag, name: tag },
+      count,
+    }));
+};
 
 export const adjacentPosts = async (post) => {
   const sorted = await sortedPosts();
@@ -118,6 +142,36 @@ const tryDate = (label, value) => {
 };
 
 export const formatDate = (iso) => tryDate("", iso);
+
+/**
+ * Bangladesh date, no time, always in Asia/Dhaka.
+ *
+ * 2026-09-27. The lead card on the homepage rendered its date as raw ISO
+ * (`2026-09-26`) while every other card used the Bengali format. Switching it to
+ * formatDateTimeBDShort() then invented a time: a date-only string like
+ * "2026-09-26" is parsed by `new Date()` as UTC MIDNIGHT, so UTC+6 rendered
+ * "২৬ সেপ্টেম্বর · ৬:০০ AM" - a precise time the story never had.
+ *
+ * tryDate() above has no timeZone, so it formats in the server's local zone.
+ * That happens to be right on Vercel (UTC) and wrong anywhere west of Greenwich,
+ * where a UTC-midnight date renders as the previous day. Pinning Asia/Dhaka
+ * makes it correct everywhere, and a date with no time gets no time.
+ */
+export const formatDateBD = (iso) => {
+  try {
+    return new Intl.DateTimeFormat("bn-BD", {
+      timeZone: "Asia/Dhaka",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(new Date(iso));
+  } catch {
+    return String(iso ?? "");
+  }
+};
+
+/** True when the ISO string carries a real time component, not just a date. */
+export const hasTimeComponent = (iso) => /T\d{2}:\d{2}/.test(String(iso ?? ""));
 
 export const formatTime = (iso) => tryDate("সময়", iso);
 
