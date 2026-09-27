@@ -82,16 +82,20 @@ jobs:
           # are news.google.com wrappers, which cannot be fetched until decoded
           # (4 of 6 in a dry run failed with gnews_not_resolved without it).
           # --write is needed for it to persist; it is dry-run without.
-          # --skip-unusable drops the 9 sources that measurement has proven
-          # cannot be enriched. Without it the first wired run spent 20 of 30
-          # attempts on http_403 and improved 2; with it, 3 of 8 improved and
-          # nothing failed. kalerkantho, jugantor and jamuna answer 403 from
-          # every host measured, including a phone on mobile data.
+          # A brief clears the evidence gate if ANY ONE member carries 100+
+          # words, so the cheapest win is the member already closest to the
+          # line -- not the newest item in the store. Measured on the live
+          # store: 464 of 587 briefs fail with a best member of 16-60 words,
+          # while 123 already have a member over 100. Targeting those members
+          # instead of the newest items took the hit rate from 17% to 70%:
           #
-          # --limit=150 is sized from measurement: the step took 0.6 min for 30
-          # items, so 150 is ~3 min against a 26 min job and a 30 min cadence.
+          #   --days=3 --skip-unusable   attempted 10  improved 3  failed 0
+          #   --target=failing-briefs    attempted 10  improved 7  failed 0
+          #
+          # At 70%, 150 per run unblocks ~105 briefs, so the 464 clear in
+          # roughly five runs rather than months of newest-first grinding.
           ENRICH_TIMEOUT_MS=10000 node tools/enrich_bodies.mjs \
-            --limit=150 --days=3 --resolve-gnews --skip-unusable --write \
+            --limit=150 --target=failing-briefs --resolve-gnews --skip-unusable --write \
             || echo "body backfill failed or timed out; briefs rebuild from what we have"
 
       - name: Extract briefs
