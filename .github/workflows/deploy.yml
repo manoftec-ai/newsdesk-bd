@@ -28,6 +28,9 @@ jobs:
       # demands VERCEL_ORG_ID alongside it, which fails the deploy. This is only
       # ever read by the guard step below.
       DEPLOY_PROJECT_ID: prj_FX5YmvjrSM5JnbCm1PNbQuJU6xJO
+      # The hourly schedule is the guaranteed data-refresh deploy. Dispatches
+      # from heartbeat.yml are guarded and may legitimately skip.
+      FORCE_DEPLOY: ${{ github.event_name == 'schedule' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,7 +47,20 @@ jobs:
         id: decide
         run: |
           set -uo pipefail
-          SITE_PATHS='site/src site/public site/api site/package.json site/astro.config.mjs'
+
+          # Reader-visible paths only. site/src/data is deliberately NOT here:
+          # event-graph.json is regenerated every pipeline cycle, so including
+          # site/src as a whole made this guard fire on every single dispatch
+          # even when not one article had changed. Generated data now rides
+          # along with the next content deploy, and the hourly schedule below
+          # still ships a data-only refresh, so it cannot go stale.
+          SITE_PATHS='site/src/content site/src/pages site/src/components site/src/layouts site/src/lib site/src/config site/src/content.config.js site/src/styles.css site/public site/api site/package.json site/astro.config.mjs'
+
+          if [ "${FORCE_DEPLOY:-false}" = "true" ]; then
+            echo "Scheduled run: deploying regardless of diff, so generated data still refreshes." >&2
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
           LIVE=$(curl -sS -H "Authorization: Bearer $VERCEL_TOKEN" \
             "https://api.vercel.com/v6/deployments?limit=1&projectId=$DEPLOY_PROJECT_ID" \
