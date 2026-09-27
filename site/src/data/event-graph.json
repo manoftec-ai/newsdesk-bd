@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 584,
+    "storyCount": 587,
     "kinds": [
       "claim",
       "evidence",
@@ -949,18 +949,256 @@
       "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ",
       "first_seen": "2026-09-21T15:32:48.788Z",
       "last_update": "2026-09-21T16:33:02.859Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-21T14:16:18.000Z",
+          "kind": "evidence",
+          "claim_id": 82700,
+          "claim_text": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wTWRMRTlEMmlXVjdsOHkzY2dwS1dZU3FPTFNpb0o5aFJXcVY5RVhRWlR4S1lXYlVZcFpCdkJkWHhRTFA4TUN4VS1MZzQ5VEN1enEw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-21T15:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82700,
+          "claim_text": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/44ye8b7aqm"
+          }
+        },
+        {
+          "ts": "2026-09-21T15:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82701,
+          "claim_text": "বাংলাদেশে শিক্ষিত তরুণদের মধ্যে বেকার ৩৬ শতাংশ: আইএমএফ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/44ye8b7aqm"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:03.682Z",
+          "kind": "claim",
+          "claim_id": 82700,
+          "claim_text": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
+          "ts": "2026-09-27T20:38:03.686Z",
+          "kind": "claim",
+          "claim_id": 82701,
+          "claim_text": "বাংলাদেশে শিক্ষিত তরুণদের মধ্যে বেকার ৩৬ শতাংশ: আইএমএফ"
+        },
+        {
+          "ts": "2026-09-27T20:38:03.690Z",
+          "kind": "verify",
+          "claim_id": 82700,
+          "claim_text": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:03.690Z",
+          "kind": "verify",
+          "claim_id": 82701,
+          "claim_text": "বাংলাদেশে শিক্ষিত তরুণদের মধ্যে বেকার ৩৬ শতাংশ: আইএমএফ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 191,
+          "slug": "international-191",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পাকিস্তানের সাবেক প্রধানমন্ত্রী ইমরান খানের ৩ বোন গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
+        },
+        {
+          "cluster_id": 278,
+          "slug": "national-278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
     },
     "economy-264": {
       "cluster_id": 264,
       "headline": "লিটারপ্রতি ১০ টাকা বেড়েছে প্রায় সব ব্র্যান্ডের তরল দুধের দাম",
       "first_seen": "2026-09-21T15:32:48.797Z",
       "last_update": "2026-09-21T23:23:31.817Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-21T10:54:47.000Z",
+          "kind": "evidence",
+          "claim_id": 82702,
+          "claim_text": "লিটারপ্রতি ১০ টাকা বেড়েছে প্রায় সব ব্র্যান্ডের তরল দুধের দাম",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi1wRBVV95cUxQRVR4OXUwLU11RFB5TmVRWC0ya1JpcUoxZklCRElBUi1LWHFBQWpEQUoxSUotbnVCMkptYndqSE5NVldnSVVfUm1SRTdHcW1DSkw3ZjBBc2JnRGpCeFY3S1FLN3llU2dJdHY4N1VfTl9mUl9fYkhsTXp5d0F5SnV6VEhTU0QtZjV2RUIzRDVyczQ1bGlxZ0czclBOSFgxOTl2Z1ZmTjlBLXpBQUhBZjlTRTJvNVpJMG5ONmxvXzU3SU1vYTMwZVpxejdjU2JoRzlHMEpibTRRSVdwRmhEVmMtQ09EMkNGRHJhS2FJLTJPa2x4S3RIdlJGNWFOaVJSVldxb1hlVEcxRjNKcXhodTNoSW43TTRpWTVCcFRCcFJXOEhETFlObmszZTZIeWVwMDBONU5nVzRycVJiRC1aRXY3eVVNcXBDb1RrVTJOcHZnb3plTXFSdWdqS3lOVExtSThjTTZBR0pzS3NrS20zam56cGFaWUNJdENKbGpTSmVKZWd6X3hoa01ZSzdET3lqV2VKVmZkYVA2VjdZVXdST20ydGFqajVfbS16ZlVnQjJNMEIybktWcmYtLXoyQWl2RnBVaFg3dFpVN0JubnJNU1BFckxuNEkyUWRJYllnNlk5R2QtcGROZ0dRWm9NYi1qMWxLNEpBME95cE8xTWh0cTgxdWd4czhNRElTQ2FjRVd6SWRHVGZuWEdSMXB1Y0R0OW5BQmJWSzRDdEhIU2dVdGY1M2RTTHAxbDlxMlJWMVB5aWVQLUY0WkZsRUExNXktejVZRV94Vkg3a9IB3ARBVV95cUxORkc0NlFOS1JHZll1RE1ndFk5Y0R5Tjcxd2dteXJpUXVaMDdBaEhhNGJsV2FEbUIwTzBDeXVudTYwRi1mUC10VmhrYmVrU0UzbmFsS0g0TmRFaksxT19jSmMwcjN0YUExSi02WFlRd09GcW5hc2w0eFBJbG1Ya09yc1VSOUdLX3ZnaTZaOXhoazRfRGZJU2w3dTZQSy0zX0F1MG9BM1REVHBsaUVYTEZLRmQtNWt5RTZsYjFxRy1BY3cwWEN2bUtwQVIyclZUZWVfeVB0aG1LS2R5RjdpY09JOXpmOFhuTG01QjJFZXd4NVBxN3lKMzR3VUJfbHlIS21PYU5IczNVaDhlNGZObkhmdUhnU3U0dnByOEVsNFlITGRZX0dwTWlPaGdqY2NFNWVLUS0ySXJsM3NtRDNBUjIzNlRDNy1lTmtSMWxyU2dlZUlYYUdaZW5USlo3UWlvTFBCREFCYjc1eWxvcFRldmR2VlJfR052X2dOeGVGUDI4VG8taU5MWUlwVHQyeG50MHlCejd6Yk9vdlFCRWN4WVUxT18tRVVZdjIxSGxScHk5RWlVY3RyQkhSOU5YcUZrYVlybDQtbHBqeVYwSTRQanM1LURSQ2R2T28wakJpU2ZXMG9QOFdrNXpCMHEtcDhEZ3JtWVFxajNJWUN6RTdUN3IzbHBwLTZ0eF92azd0ZkJfSTFId3FQUjdJZXpRNUlOdm9WaWJ4NzVEUU00MWJxcjJLU2stZmw2dGxDamh5Y1NqZnU0Nnh3NDI1NkdIeFIySHY4ZWlnNHhOVTI0bksx?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-21T14:42:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82702,
+          "claim_text": "লিটারপ্রতি ১০ টাকা বেড়েছে প্রায় সব ব্র্যান্ডের তরল দুধের দাম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/xyncdbzi81"
+          }
+        },
+        {
+          "ts": "2026-09-21T14:42:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82703,
+          "claim_text": "প্যাকেটের তরল দুধের দাম বাড়ল ১০ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/xyncdbzi81"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:05.165Z",
+          "kind": "claim",
+          "claim_id": 82702,
+          "claim_text": "লিটারপ্রতি ১০ টাকা বেড়েছে প্রায় সব ব্র্যান্ডের তরল দুধের দাম"
+        },
+        {
+          "ts": "2026-09-27T20:38:05.168Z",
+          "kind": "claim",
+          "claim_id": 82703,
+          "claim_text": "প্যাকেটের তরল দুধের দাম বাড়ল ১০ টাকা"
+        },
+        {
+          "ts": "2026-09-27T20:38:05.172Z",
+          "kind": "verify",
+          "claim_id": 82702,
+          "claim_text": "লিটারপ্রতি ১০ টাকা বেড়েছে প্রায় সব ব্র্যান্ডের তরল দুধের দাম",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:05.172Z",
+          "kind": "verify",
+          "claim_id": 82703,
+          "claim_text": "প্যাকেটের তরল দুধের দাম বাড়ল ১০ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
+          "cluster_id": 102,
+          "slug": "politics-102",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
+        },
+        {
+          "cluster_id": 166,
+          "slug": "politics-166",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        }
+      ]
     },
     "economy-294": {
       "cluster_id": 294,
@@ -1359,12 +1597,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -1821,9 +2059,208 @@
       "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
       "first_seen": "2026-09-19T15:29:31.466Z",
       "last_update": "2026-09-19T22:32:02.027Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 4,
+      "events": [
+        {
+          "ts": "2026-09-19T11:20:17.000Z",
+          "kind": "evidence",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/810445/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%9A%E0%A6%BE%E0%A6%95%E0%A6%B0%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%AC%E0%A7%87%E0%A6%A4%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B-%E0%A6%B6%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-19T11:20:17.000Z",
+          "kind": "evidence",
+          "claim_id": 82480,
+          "claim_text": "সরকারি চাকরিতে নতুন বেতনকাঠামো, শীর্ষ কর্মকর্তাদের বেতন দ্বিগুণ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/810445/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%9A%E0%A6%BE%E0%A6%95%E0%A6%B0%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%AC%E0%A7%87%E0%A6%A4%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B-%E0%A6%B6%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-19T12:11:28.000Z",
+          "kind": "evidence",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/byqe8638x6"
+          }
+        },
+        {
+          "ts": "2026-09-19T13:30:02.000Z",
+          "kind": "evidence",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/mm8pr896d5"
+          }
+        },
+        {
+          "ts": "2026-09-19T13:30:02.000Z",
+          "kind": "evidence",
+          "claim_id": 82481,
+          "claim_text": "নতুন পে স্কেলের প্রজ্ঞাপন, জুলাই থেকে বাড়তি বেতন পাবেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/mm8pr896d5"
+          }
+        },
+        {
+          "ts": "2026-09-19T13:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/vhkhyhrodw"
+          }
+        },
+        {
+          "ts": "2026-09-19T13:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82482,
+          "claim_text": "সরকারি চাকরিজীবীরা এখন কে কত বেতন পাবেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/vhkhyhrodw"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:09.352Z",
+          "kind": "claim",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
+          "ts": "2026-09-27T20:36:09.357Z",
+          "kind": "claim",
+          "claim_id": 82480,
+          "claim_text": "সরকারি চাকরিতে নতুন বেতনকাঠামো, শীর্ষ কর্মকর্তাদের বেতন দ্বিগুণ"
+        },
+        {
+          "ts": "2026-09-27T20:36:09.359Z",
+          "kind": "claim",
+          "claim_id": 82481,
+          "claim_text": "নতুন পে স্কেলের প্রজ্ঞাপন, জুলাই থেকে বাড়তি বেতন পাবেন"
+        },
+        {
+          "ts": "2026-09-27T20:36:09.361Z",
+          "kind": "claim",
+          "claim_id": 82482,
+          "claim_text": "সরকারি চাকরিজীবীরা এখন কে কত বেতন পাবেন"
+        },
+        {
+          "ts": "2026-09-27T20:36:09.365Z",
+          "kind": "verify",
+          "claim_id": 82479,
+          "claim_text": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:09.365Z",
+          "kind": "verify",
+          "claim_id": 82480,
+          "claim_text": "সরকারি চাকরিতে নতুন বেতনকাঠামো, শীর্ষ কর্মকর্তাদের বেতন দ্বিগুণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:09.365Z",
+          "kind": "verify",
+          "claim_id": 82481,
+          "claim_text": "নতুন পে স্কেলের প্রজ্ঞাপন, জুলাই থেকে বাড়তি বেতন পাবেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:09.365Z",
+          "kind": "verify",
+          "claim_id": 82482,
+          "claim_text": "সরকারি চাকরিজীবীরা এখন কে কত বেতন পাবেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 102,
+          "slug": "politics-102",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
+        },
+        {
+          "cluster_id": 166,
+          "slug": "politics-166",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        }
+      ]
     },
     "entertainment-321": {
       "cluster_id": 321,
@@ -1984,12 +2421,12 @@
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
         },
         {
-          "cluster_id": 102,
-          "slug": "politics-102",
+          "cluster_id": 90,
+          "slug": "economy-90",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
         }
       ]
     },
@@ -2097,6 +2534,14 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
           "cluster_id": 147,
           "slug": "national-147",
           "actor_links": 0,
@@ -2119,14 +2564,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
-        },
-        {
-          "cluster_id": 252,
-          "slug": "national-252",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         }
       ]
     },
@@ -2259,20 +2696,20 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
           "cluster_id": 182,
           "slug": "national-182",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
-        },
-        {
-          "cluster_id": 185,
-          "slug": "national-185",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদ সদস্য নজরুলকে গ্রেপ্তারে স্পিকারকে চিঠি পাঠাচ্ছে পুলিশ"
         }
       ]
     },
@@ -2290,9 +2727,168 @@
       "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
       "first_seen": "2026-09-20T17:42:14.036Z",
       "last_update": "2026-09-21T01:08:24.977Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-20T14:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/imran-khans-sister-arrested-ahead-of-ptis-programme/"
+          }
+        },
+        {
+          "ts": "2026-09-20T14:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/imran-khans-sister-arrested-ahead-of-ptis-programme/"
+          }
+        },
+        {
+          "ts": "2026-09-20T15:20:23.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/8hcnslep1b"
+          }
+        },
+        {
+          "ts": "2026-09-20T17:13:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/2gpsuhfyjj"
+          }
+        },
+        {
+          "ts": "2026-09-20T17:13:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/2gpsuhfyjj"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.158Z",
+          "kind": "claim",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.162Z",
+          "kind": "claim",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.164Z",
+          "kind": "claim",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        },
+        {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        }
+      ]
     },
     "international-146": {
       "cluster_id": 146,
@@ -2909,12 +3505,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -4155,9 +4751,128 @@
       "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি",
       "first_seen": "2026-09-19T17:42:58.172Z",
       "last_update": "2026-09-19T22:32:01.699Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-19T11:01:40.000Z",
+          "kind": "evidence",
+          "claim_id": 82510,
+          "claim_text": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/810440/%E0%A6%A4%E0%A7%87%E0%A6%9C%E0%A6%97%E0%A6%BE%E0%A6%81%E0%A6%93-%E0%A6%AE%E0%A6%B8%E0%A6%9C%E0%A6%BF%E0%A6%A6%E0%A7%87-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A7%A7%E0%A7%A8-%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A7%A9-%E0%A6%A6%E0%A6%BF%E0%A6%A8-%E0%A6%B0%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1"
+          }
+        },
+        {
+          "ts": "2026-09-19T11:01:40.000Z",
+          "kind": "evidence",
+          "claim_id": 82511,
+          "claim_text": "তেজগাঁও মসজিদে গ্রেপ্তার ১২ জনের ৩ দিন রিমান্ড",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/810440/%E0%A6%A4%E0%A7%87%E0%A6%9C%E0%A6%97%E0%A6%BE%E0%A6%81%E0%A6%93-%E0%A6%AE%E0%A6%B8%E0%A6%9C%E0%A6%BF%E0%A6%A6%E0%A7%87-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A7%A7%E0%A7%A8-%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A7%A9-%E0%A6%A6%E0%A6%BF%E0%A6%A8-%E0%A6%B0%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1"
+          }
+        },
+        {
+          "ts": "2026-09-19T17:28:50.000Z",
+          "kind": "evidence",
+          "claim_id": 82510,
+          "claim_text": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/969474/%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%B2%E0%A7%8B-%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%B2%E0%A7%87-%E0%A6%9A%E0%A6%B2%E0%A6%B2%E0%A7%8B-%E0%A6%9C%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BF-%E0%A6%B8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B9%E0%A7%87-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:21.833Z",
+          "kind": "claim",
+          "claim_id": 82510,
+          "claim_text": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
+          "ts": "2026-09-27T20:36:21.836Z",
+          "kind": "claim",
+          "claim_id": 82511,
+          "claim_text": "তেজগাঁও মসজিদে গ্রেপ্তার ১২ জনের ৩ দিন রিমান্ড"
+        },
+        {
+          "ts": "2026-09-27T20:36:21.840Z",
+          "kind": "verify",
+          "claim_id": 82510,
+          "claim_text": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:21.840Z",
+          "kind": "verify",
+          "claim_id": 82511,
+          "claim_text": "তেজগাঁও মসজিদে গ্রেপ্তার ১২ জনের ৩ দিন রিমান্ড",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 172,
+          "slug": "national-172",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 322,
+          "slug": "national-322",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাবেক মন্ত্রী নওফেলের স্ত্রী ইমা ক্লেয়ারের দেশত্যাগে নিষেধাজ্ঞা"
+        }
+      ]
     },
     "national-113": {
       "cluster_id": 113,
@@ -4619,20 +5334,20 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
           "cluster_id": 182,
           "slug": "national-182",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
-        },
-        {
-          "cluster_id": 185,
-          "slug": "national-185",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদ সদস্য নজরুলকে গ্রেপ্তারে স্পিকারকে চিঠি পাঠাচ্ছে পুলিশ"
         }
       ]
     },
@@ -4764,12 +5479,12 @@
           "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
         },
         {
-          "cluster_id": 157,
-          "slug": "national-157",
+          "cluster_id": 154,
+          "slug": "national-154",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আনসার সদস্যদের বিরুদ্ধে শিক্ষার্থীকে মারধরের অভিযোগ, প্রতিবাদে শিক্ষার্থীদের রেললাইন অবরোধ, ভাঙচুর"
+          "claim_count": 2,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
         }
       ]
     },
@@ -4924,20 +5639,20 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
           "cluster_id": 182,
           "slug": "national-182",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
-        },
-        {
-          "cluster_id": 185,
-          "slug": "national-185",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদ সদস্য নজরুলকে গ্রেপ্তারে স্পিকারকে চিঠি পাঠাচ্ছে পুলিশ"
         }
       ]
     },
@@ -5803,9 +6518,168 @@
       "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
       "first_seen": "2026-09-20T17:42:14.036Z",
       "last_update": "2026-09-21T01:08:24.977Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-20T14:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/imran-khans-sister-arrested-ahead-of-ptis-programme/"
+          }
+        },
+        {
+          "ts": "2026-09-20T14:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/imran-khans-sister-arrested-ahead-of-ptis-programme/"
+          }
+        },
+        {
+          "ts": "2026-09-20T15:20:23.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/8hcnslep1b"
+          }
+        },
+        {
+          "ts": "2026-09-20T17:13:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/2gpsuhfyjj"
+          }
+        },
+        {
+          "ts": "2026-09-20T17:13:35.000Z",
+          "kind": "evidence",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/2gpsuhfyjj"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.158Z",
+          "kind": "claim",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.162Z",
+          "kind": "claim",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.164Z",
+          "kind": "claim",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ"
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82537,
+          "claim_text": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82538,
+          "claim_text": "ইমরান খানের বোন গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:37.168Z",
+          "kind": "verify",
+          "claim_id": 82539,
+          "claim_text": "ইমরান খানের বোন আলিমাকে গ্রেপ্তার করেছে পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        },
+        {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        }
+      ]
     },
     "national-146": {
       "cluster_id": 146,
@@ -5911,6 +6785,14 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
           "cluster_id": 188,
           "slug": "national-188",
           "actor_links": 0,
@@ -5933,14 +6815,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -5958,9 +6832,128 @@
       "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
       "first_seen": "2026-09-20T17:42:14.077Z",
       "last_update": "2026-09-20T20:43:50.458Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T14:00:20.000Z",
+          "kind": "evidence",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/969633/%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%95-%E0%A6%87%E0%A6%89%E0%A6%AA%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-20T14:00:20.000Z",
+          "kind": "evidence",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/969633/%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%95-%E0%A6%87%E0%A6%89%E0%A6%AA%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-20T16:19:09.000Z",
+          "kind": "evidence",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/former-up-member-hacked-to-death-beside-highway-in-tangail/"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:40.135Z",
+          "kind": "claim",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-09-27T20:36:40.138Z",
+          "kind": "claim",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-09-27T20:36:40.142Z",
+          "kind": "verify",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:40.142Z",
+          "kind": "verify",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 125,
+          "slug": "national-125",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 128,
+          "slug": "national-128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় উস্কানির অভিযোগ মাকসুদ কামাল-জাফর ইকবালসহ ৮ জনের বিরুদ্ধে"
+        },
+        {
+          "cluster_id": 134,
+          "slug": "international-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 182,
+          "slug": "national-182",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+        }
+      ]
     },
     "national-150": {
       "cluster_id": 150,
@@ -6160,12 +7153,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 157,
-          "slug": "national-157",
+          "cluster_id": 154,
+          "slug": "national-154",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আনসার সদস্যদের বিরুদ্ধে শিক্ষার্থীকে মারধরের অভিযোগ, প্রতিবাদে শিক্ষার্থীদের রেললাইন অবরোধ, ভাঙচুর"
+          "claim_count": 2,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
         }
       ]
     },
@@ -6262,9 +7255,128 @@
       "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ",
       "first_seen": "2026-09-20T17:42:14.102Z",
       "last_update": "2026-09-20T20:43:50.471Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T12:39:12.000Z",
+          "kind": "evidence",
+          "claim_id": 82550,
+          "claim_text": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/969610/%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BE%E0%A6%A8-%E0%A6%B8%E0%A6%82%E0%A6%B6%E0%A7%8B%E0%A6%A7%E0%A6%A8-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%BF%E0%A6%B0-%E0%A6%B0%E0%A6%BF%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F"
+          }
+        },
+        {
+          "ts": "2026-09-20T12:39:12.000Z",
+          "kind": "evidence",
+          "claim_id": 82551,
+          "claim_text": "ডিসেম্বরের মধ্যে সংবিধান সংশোধন বিষয়ে রিপোর্ট দিতে চায় কমিটি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/969610/%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BE%E0%A6%A8-%E0%A6%B8%E0%A6%82%E0%A6%B6%E0%A7%8B%E0%A6%A7%E0%A6%A8-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%BF%E0%A6%B0-%E0%A6%B0%E0%A6%BF%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F"
+          }
+        },
+        {
+          "ts": "2026-09-20T14:09:18.000Z",
+          "kind": "evidence",
+          "claim_id": 82550,
+          "claim_text": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/0p8fc2qwgr"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:46.023Z",
+          "kind": "claim",
+          "claim_id": 82550,
+          "claim_text": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "ts": "2026-09-27T20:36:46.026Z",
+          "kind": "claim",
+          "claim_id": 82551,
+          "claim_text": "ডিসেম্বরের মধ্যে সংবিধান সংশোধন বিষয়ে রিপোর্ট দিতে চায় কমিটি"
+        },
+        {
+          "ts": "2026-09-27T20:36:46.030Z",
+          "kind": "verify",
+          "claim_id": 82550,
+          "claim_text": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:46.030Z",
+          "kind": "verify",
+          "claim_id": 82551,
+          "claim_text": "ডিসেম্বরের মধ্যে সংবিধান সংশোধন বিষয়ে রিপোর্ট দিতে চায় কমিটি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 611,
+          "slug": "national-611",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
+        },
+        {
+          "cluster_id": 617,
+          "slug": "national-617",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        },
+        {
+          "cluster_id": 129,
+          "slug": "sports-129",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+        }
+      ]
     },
     "national-155": {
       "cluster_id": 155,
@@ -6739,12 +7851,12 @@
           "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
         },
         {
-          "cluster_id": 631,
-          "slug": "national-631",
+          "cluster_id": 198,
+          "slug": "national-198",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ফলকে নিজের নাম দেখে ভবন উদ্বোধন না করেই ফিরলেন হাসনাত আবদুল্লাহ"
+          "headline": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের"
         }
       ]
     },
@@ -8103,20 +9215,20 @@
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 91,
           "slug": "national-91",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিচার চাই না জবাব চাই, আমার ছেলে কী অন্যায় করেছে: অপ্রতীমের মা"
-        },
-        {
-          "cluster_id": 102,
-          "slug": "politics-102",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
         }
       ]
     },
@@ -8614,12 +9726,12 @@
           "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
         },
         {
-          "cluster_id": 631,
-          "slug": "national-631",
+          "cluster_id": 198,
+          "slug": "national-198",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ফলকে নিজের নাম দেখে ভবন উদ্বোধন না করেই ফিরলেন হাসনাত আবদুল্লাহ"
+          "headline": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের"
         }
       ]
     },
@@ -8877,6 +9989,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -8899,14 +10019,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাবেক মন্ত্রী নওফেলের স্ত্রী ইমা ক্লেয়ারের দেশত্যাগে নিষেধাজ্ঞা"
-        },
-        {
-          "cluster_id": 346,
-          "slug": "national-346",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -9170,9 +10282,136 @@
       "headline": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী",
       "first_seen": "2026-09-21T09:00:58.427Z",
       "last_update": "2026-09-21T09:09:48.077Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-21T00:43:16.000Z",
+          "kind": "evidence",
+          "claim_id": 82590,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://www.deshrupantor.com/721814/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%A6%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%87%E0%A7%9F%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%97%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-09-21T00:43:16.000Z",
+          "kind": "evidence",
+          "claim_id": 82591,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিতে নিউইয়র্ক গেলেন প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://www.deshrupantor.com/721814/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%A6%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%87%E0%A7%9F%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%97%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-09-21T08:11:15.000Z",
+          "kind": "evidence",
+          "claim_id": 82590,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/prime-minister-en-route-to-new-york-to-attend-the-un-general-assembly-session/"
+          }
+        },
+        {
+          "ts": "2026-09-21T08:52:57.000Z",
+          "kind": "evidence",
+          "claim_id": 82590,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/prime-ministers-small-delegation-for-un-session-visit/"
+          }
+        },
+        {
+          "ts": "2026-09-21T08:52:57.000Z",
+          "kind": "evidence",
+          "claim_id": 82592,
+          "claim_text": "জাতিসংঘ অধিবেশনে প্রধানমন্ত্রীর সফরসঙ্গী হলেন যারা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/prime-ministers-small-delegation-for-un-session-visit/"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:37:05.656Z",
+          "kind": "claim",
+          "claim_id": 82590,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:37:05.660Z",
+          "kind": "claim",
+          "claim_id": 82591,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিতে নিউইয়র্ক গেলেন প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:37:05.662Z",
+          "kind": "claim",
+          "claim_id": 82592,
+          "claim_text": "জাতিসংঘ অধিবেশনে প্রধানমন্ত্রীর সফরসঙ্গী হলেন যারা"
+        },
+        {
+          "ts": "2026-09-27T20:37:05.665Z",
+          "kind": "verify",
+          "claim_id": 82590,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:37:05.665Z",
+          "kind": "verify",
+          "claim_id": 82591,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিতে নিউইয়র্ক গেলেন প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:37:05.665Z",
+          "kind": "verify",
+          "claim_id": 82592,
+          "claim_text": "জাতিসংঘ অধিবেশনে প্রধানমন্ত্রীর সফরসঙ্গী হলেন যারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 160,
+          "slug": "national-160",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যুক্তরাজ্যের নতুন নিরাপত্তা অডিটে বাংলাদেশের বিমানবন্দরগুলোর স্কোরে বড় উন্নতি"
+        }
+      ]
     },
     "national-182": {
       "cluster_id": 182,
@@ -9757,12 +10996,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -10549,6 +11788,14 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
           "cluster_id": 147,
           "slug": "national-147",
           "actor_links": 0,
@@ -10571,14 +11818,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -11372,6 +12611,134 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        }
+      ]
+    },
+    "national-198": {
+      "cluster_id": 198,
+      "headline": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের",
+      "first_seen": "2026-09-21T09:00:58.679Z",
+      "last_update": "2026-09-21T09:00:58.682Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T15:16:07.000Z",
+          "kind": "evidence",
+          "claim_id": 82632,
+          "claim_text": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://samakal.com/bangladesh-others/article/373848/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF-%E0%A6%9C%E0%A7%8B%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%A8-%E0%A6%AA%E0%A6%AC%E0%A6%A8-%E0%A6%95%E0%A7%81%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%A4%E0%A7%81%E0%A6%B2%E0%A6%B6%E0%A6%BF-%E0%A6%A6%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-20T19:32:59.000Z",
+          "kind": "evidence",
+          "claim_id": 82632,
+          "claim_text": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://www.deshrupantor.com/721783/%E0%A6%AF%E0%A7%8C%E0%A6%A5-%E0%A6%9F%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%AB%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%97%E0%A6%A0%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%A8-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-20T19:32:59.000Z",
+          "kind": "evidence",
+          "claim_id": 82633,
+          "claim_text": "যৌথ টাস্কফোর্স গঠনের আহ্বান ভারতের",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://www.deshrupantor.com/721783/%E0%A6%AF%E0%A7%8C%E0%A6%A5-%E0%A6%9F%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%AB%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%97%E0%A6%A0%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%A8-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:37:20.790Z",
+          "kind": "claim",
+          "claim_id": 82632,
+          "claim_text": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের"
+        },
+        {
+          "ts": "2026-09-27T20:37:20.793Z",
+          "kind": "claim",
+          "claim_id": 82633,
+          "claim_text": "যৌথ টাস্কফোর্স গঠনের আহ্বান ভারতের"
+        },
+        {
+          "ts": "2026-09-27T20:37:20.797Z",
+          "kind": "verify",
+          "claim_id": 82632,
+          "claim_text": "বাংলাদেশ-ভারতের মধ্যে বাণিজ্য জোরদারের আহ্বান পবন কুমার তুলশি দাসের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:37:20.797Z",
+          "kind": "verify",
+          "claim_id": 82633,
+          "claim_text": "যৌথ টাস্কফোর্স গঠনের আহ্বান ভারতের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 91,
+          "slug": "national-91",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "বিচার চাই না জবাব চাই, আমার ছেলে কী অন্যায় করেছে: অপ্রতীমের মা"
+        },
+        {
+          "cluster_id": 159,
+          "slug": "national-159",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ, ৮ নেতাকর্মী বহিষ্কার"
+        },
+        {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "জ্বালানি তেলের দাম ইতিহাসে সর্বোচ্চ, লিটারে বৃদ্ধি ২০ টাকা"
+        },
+        {
+          "cluster_id": 169,
+          "slug": "politics-169",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জুলাই মানবতাবিরোধী অপরাধ: মাকসুদ কামাল-জাফর ইকবালসহ আটজনের বিরুদ্ধে অভিযোগ আমলে"
+        },
+        {
+          "cluster_id": 170,
+          "slug": "national-170",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডিসেম্বরের মধ্যে সংবিধান সংশোধনের চূড়ান্ত রিপোর্ট সংসদে উত্থাপন: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 197,
+          "slug": "national-197",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
         }
       ]
     },
@@ -13743,20 +15110,20 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
+          "cluster_id": 339,
+          "slug": "national-339",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
+        },
+        {
           "cluster_id": 346,
           "slug": "national-346",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 404,
-          "slug": "national-404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ পবিত্র ফাতেহা-ই-ইয়াজদাহম, দেশের সব শিক্ষাপ্রতিষ্ঠানে ছুটি"
         }
       ]
     },
@@ -15363,9 +16730,168 @@
       "headline": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
       "first_seen": "2026-09-21T14:10:07.498Z",
       "last_update": "2026-09-21T20:37:42.085Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-21T09:54:32.000Z",
+          "kind": "evidence",
+          "claim_id": 82694,
+          "claim_text": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxNUUEtdlF6cWJwaDcwQWtkZXNJQjJwaHVLVjVsYWx5enM3R0FkM0J0R2ExaEZDSXkzWXpyU1dic2dsNXNuV2xFc2gxNUZpYWFYNGctMGE2Z3dBYy1zdjRGSGJXVHJVYjNXVGZMc2ZlLXplRlE5OEx6b0tnOGNmQXNmQzdBV2NSU2xxWW1HQnVFWWFKeklwQ3hXSTRsQTlZYU5GeERXOWR5YkJiM2UzLXZhUTdUdXdmUnQ0VXd1SHN1R3luOGxfQzlabGFhejduTEQ0b3BiMHhuMFFiNXl3cmVHdmZ5cTF0ZkwyR1JqZ2VIaEZQRldNUE5fZHg1M2hmZlVGVngxSk5nbVB4X3FXQWg5RGhybm5oRUJ3cFlEczBiRkZ5WFljZDRRNnRDa19lNFRZbkJ5N1dtMUM2Mi14SEpUalhBRDBaMERkUzB6MUhlZ1c1Tk12Ym9ObWh4RnhuakhidXNGbVZlVWVUYjNXMkZvV1JvNUF2VmhCS01MTTdzYW1DQl9XQmM2M09KX1lEb29lYUVtU1N0b1daUzZHTmNpVHJveDZreE4yZzVUakI4QTNTMmdQQTdrdmhDaHIwTExob1RKUUVaZDFxdDBpelBRLUtaU3BUaGU3OHI3anYwRzhodUpTM1NnNFJzZkhXWmgzdVBXVTFmc01EaldjT2NWak9rbUV6U3hPbTBnVkhveEFfYm5zb2UyaXNDYTV1ZWF3d1ktenRzV3ZqeE44ZTI2bHZmbzVRX09sR2t2WUhSU2NHejZ6OERXMEFRQdIB0ARBVV95cUxPMFNBTzltQUVHangweDhEZUpUaU1GVkVwbjhzMjc2LTRCQ2ZsZENndWpuOEE5OEZTWEZrTkxjM2pvcnFqZ1RrWnJOcC1JLXFNZjdzdWhXVHY2anVVenRxeFJZbERkZDFhaVRFOGZVNzBkX3NIXzNzcU1VelVoR1RsSXFaUDVEaUxqdlFvTEVXR2JSUVdzTS1aSFRiWWV4WEM2UnRoUm81ZG1HLTdNU240NWdfWUpUbFZnT3FsaW5tdmREcXd4d0doUkhaM292Z0NBc3V1TDVhWGVObk9lTkZWZFBEQVpnTFBoTmtSelB5czhKd29KTzVtZjlGcWFWd0VPM1U0VmJBNEZoMUtUcTZjdHczaHQzbW9KWmJTT2E2dGVucWR4cENkeGdkSGFwSzQ3SWZMdlhab3MxMU1QeFg1dnY2Vnc3S195b01kZnpaOEtpcEhGZ2s0cG9wWkwxaUpfNGhwLThIOGZiUU1JYnhaNEJRX0FhX3h4VUNBYS1KQXJkRDB6U18yQ0pfZ1luWFc0bU03dDJSRWl6R0FyZ1FyZXBKbkRGM2JfLWNTTjNLRHhFd001ZHVtRldtUnBQWkxfbUFmMGNKb1pNZG9yMGo5UXVldTZiaTJEcVpaaXhOQVZJbzlwdXppb1FualUwRUY3Y2Z3SXk0U0Z0TmhYS1czaW1lWU9rWlRmdFcxbDhldGc1SGNDemNDY180RGdmbTBGM0l2dUZfS0Y3TXBhRVFEYUMyb1ZPU0F2YTdrcnRnWWhJTWxIMUdfRll4REtyd2dP?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-21T11:17:19.000Z",
+          "kind": "evidence",
+          "claim_id": 82694,
+          "claim_text": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/xzcs9z7jwg"
+          }
+        },
+        {
+          "ts": "2026-09-21T11:17:19.000Z",
+          "kind": "evidence",
+          "claim_id": 82695,
+          "claim_text": "জ্বালানি তেলের মূল্য সমন্বয় ছাড়া কোনো বিকল্প ছিল না: জ্বালানি প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/xzcs9z7jwg"
+          }
+        },
+        {
+          "ts": "2026-09-21T13:41:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82694,
+          "claim_text": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxOVEN0X0pNbkt0dFRoakVpVkgteUdiVzlId2RzOWxnTWV2U3djYnJ3WW5vNzdxOXJCOUVoRHg0cExLSW9hTFlTMkludVBQemJUUUswRUZwZG4yWTBwWldfWWJFR09tYmdBZFpNYzkweFRPejRFcjFTTUI3YXowdUhnY2h4MjgzNmlXbFNpVHN1eS1fVXdyTHQ2dEVTNGhPZ1RIU0lwczdsa21lSkxxbHJoanhPWnlBTjZnelY0dWNLdXJKTm1tcFZhOEIteTdweXB4RDl0T1BiWHo2LTV3d2tyUXFMM0ZTU3dCNGtsb2V1V0ZybWJ5ZEZ3YUp0ZGVZZmxqdGRMamlxRzVuQWpvdUlwMk00TlZCX0ZKZ1NFUUdycThXWHZybDJLMFJ6MDRIY01ibWE0VVd0c3cxekFYRUl2X3Zwc29fV2hMU3dSd2plcDBFOUFvdVhHazJWTWlTTDR4RzRiUGtEbzJPOVRoUnBHb3ZVR3NDZEVYR2puSGpCOEFsaGQ2THZSbERJMWN5N1VmeTBJSEl2VGoyUFdWRW9Lb0ZQaGVRQlVja0hacmY1OHN4cWZDQm11VWNSeHluTGs1Qk9yOWJjRk5XMGlrMncwNmtuWXRselRjdTFMZ29qODFLeGRKV1JFZ3VHOVA0VFdYbmFHWjBtM2dZa0FpZEJHUy0tTDNHQVdZZXB4MWtueDg5OGZRVEZZWHhSRUxCMlF5YnQtSjBybjRHbXk3c3ZyaGU3SQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-21T13:41:26.000Z",
+          "kind": "evidence",
+          "claim_id": 82696,
+          "claim_text": "দাম বাড়ানো ছাড়া কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxOVEN0X0pNbkt0dFRoakVpVkgteUdiVzlId2RzOWxnTWV2U3djYnJ3WW5vNzdxOXJCOUVoRHg0cExLSW9hTFlTMkludVBQemJUUUswRUZwZG4yWTBwWldfWWJFR09tYmdBZFpNYzkweFRPejRFcjFTTUI3YXowdUhnY2h4MjgzNmlXbFNpVHN1eS1fVXdyTHQ2dEVTNGhPZ1RIU0lwczdsa21lSkxxbHJoanhPWnlBTjZnelY0dWNLdXJKTm1tcFZhOEIteTdweXB4RDl0T1BiWHo2LTV3d2tyUXFMM0ZTU3dCNGtsb2V1V0ZybWJ5ZEZ3YUp0ZGVZZmxqdGRMamlxRzVuQWpvdUlwMk00TlZCX0ZKZ1NFUUdycThXWHZybDJLMFJ6MDRIY01ibWE0VVd0c3cxekFYRUl2X3Zwc29fV2hMU3dSd2plcDBFOUFvdVhHazJWTWlTTDR4RzRiUGtEbzJPOVRoUnBHb3ZVR3NDZEVYR2puSGpCOEFsaGQ2THZSbERJMWN5N1VmeTBJSEl2VGoyUFdWRW9Lb0ZQaGVRQlVja0hacmY1OHN4cWZDQm11VWNSeHluTGs1Qk9yOWJjRk5XMGlrMncwNmtuWXRselRjdTFMZ29qODFLeGRKV1JFZ3VHOVA0VFdYbmFHWjBtM2dZa0FpZEJHUy0tTDNHQVdZZXB4MWtueDg5OGZRVEZZWHhSRUxCMlF5YnQtSjBybjRHbXk3c3ZyaGU3SQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:00.587Z",
+          "kind": "claim",
+          "claim_id": 82694,
+          "claim_text": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:38:00.591Z",
+          "kind": "claim",
+          "claim_id": 82695,
+          "claim_text": "জ্বালানি তেলের মূল্য সমন্বয় ছাড়া কোনো বিকল্প ছিল না: জ্বালানি প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:38:00.593Z",
+          "kind": "claim",
+          "claim_id": 82696,
+          "claim_text": "দাম বাড়ানো ছাড়া কোনো বিকল্প ছিল না: প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:38:00.597Z",
+          "kind": "verify",
+          "claim_id": 82694,
+          "claim_text": "জ্বালানি তেলের দাম বাড়ানো ছাড়া সরকারের সামনে কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:00.597Z",
+          "kind": "verify",
+          "claim_id": 82695,
+          "claim_text": "জ্বালানি তেলের মূল্য সমন্বয় ছাড়া কোনো বিকল্প ছিল না: জ্বালানি প্রতিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:00.597Z",
+          "kind": "verify",
+          "claim_id": 82696,
+          "claim_text": "দাম বাড়ানো ছাড়া কোনো বিকল্প ছিল না: প্রতিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
+          "cluster_id": 102,
+          "slug": "politics-102",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
+        },
+        {
+          "cluster_id": 166,
+          "slug": "politics-166",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        }
+      ]
     },
     "national-256": {
       "cluster_id": 256,
@@ -16889,20 +18415,20 @@
           "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         },
         {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
           "cluster_id": 297,
           "slug": "national-297",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 332,
-          "slug": "national-332",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
         }
       ]
     },
@@ -18302,9 +19828,128 @@
       "headline": "দেশের বিভিন্ন অঞ্চলে ভারী বৃষ্টির পূর্বাভাস",
       "first_seen": "2026-09-22T05:11:35.746Z",
       "last_update": "2026-09-22T09:02:36.267Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T01:05:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82755,
+          "claim_text": "দেশের বিভিন্ন অঞ্চলে ভারী বৃষ্টির পূর্বাভাস",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/weather/969868/%E0%A6%97%E0%A6%B0%E0%A6%AE%E0%A7%87-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%86%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-22T01:05:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82756,
+          "claim_text": "গরমে স্বস্তির বার্তা আবহাওয়ার পূর্বাভাসে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/weather/969868/%E0%A6%97%E0%A6%B0%E0%A6%AE%E0%A7%87-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%86%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-22T04:54:25.000Z",
+          "kind": "evidence",
+          "claim_id": 82755,
+          "claim_text": "দেশের বিভিন্ন অঞ্চলে ভারী বৃষ্টির পূর্বাভাস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/possibility-of-heavy-rain-various-regions-of-the-country/"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:26.780Z",
+          "kind": "claim",
+          "claim_id": 82755,
+          "claim_text": "দেশের বিভিন্ন অঞ্চলে ভারী বৃষ্টির পূর্বাভাস"
+        },
+        {
+          "ts": "2026-09-27T20:38:26.784Z",
+          "kind": "claim",
+          "claim_id": 82756,
+          "claim_text": "গরমে স্বস্তির বার্তা আবহাওয়ার পূর্বাভাসে"
+        },
+        {
+          "ts": "2026-09-27T20:38:26.788Z",
+          "kind": "verify",
+          "claim_id": 82755,
+          "claim_text": "দেশের বিভিন্ন অঞ্চলে ভারী বৃষ্টির পূর্বাভাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:26.788Z",
+          "kind": "verify",
+          "claim_id": 82756,
+          "claim_text": "গরমে স্বস্তির বার্তা আবহাওয়ার পূর্বাভাসে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 125,
+          "slug": "national-125",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 128,
+          "slug": "national-128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় উস্কানির অভিযোগ মাকসুদ কামাল-জাফর ইকবালসহ ৮ জনের বিরুদ্ধে"
+        },
+        {
+          "cluster_id": 134,
+          "slug": "international-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        }
+      ]
     },
     "national-301": {
       "cluster_id": 301,
@@ -19463,12 +21108,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -19591,12 +21236,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -20072,9 +21717,168 @@
       "headline": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
       "first_seen": "2026-09-22T08:25:04.694Z",
       "last_update": "2026-09-22T16:11:44.553Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 82791,
+          "claim_text": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzeGlYSzFrLVVYTlBNcEhCV0RreTNQS29HSDZvUERHTWcxczVUdXIzaUtZNkFnUWw1bjRwek5XVEgtMU5LTENRaExfWnRMMnAxSDl3dTJRNEQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 82792,
+          "claim_text": "মধ্যরাতে মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzeGlYSzFrLVVYTlBNcEhCV0RreTNQS29HSDZvUERHTWcxczVUdXIzaUtZNkFnUWw1bjRwek5XVEgtMU5LTENRaExfWnRMMnAxSDl3dTJRNEQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T07:50:18.000Z",
+          "kind": "evidence",
+          "claim_id": 82791,
+          "claim_text": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/bmjqh111dr"
+          }
+        },
+        {
+          "ts": "2026-09-22T08:06:30.000Z",
+          "kind": "evidence",
+          "claim_id": 82791,
+          "claim_text": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/yy3tgk31ro"
+          }
+        },
+        {
+          "ts": "2026-09-22T08:06:30.000Z",
+          "kind": "evidence",
+          "claim_id": 82793,
+          "claim_text": "সাতক্ষীরার গাবুরায় গাজী নজরুলের দ্বিতীয় স্ত্রীর দাফন সম্পন্ন, বিচারের দাবি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/yy3tgk31ro"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:49.971Z",
+          "kind": "claim",
+          "claim_id": 82791,
+          "claim_text": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের"
+        },
+        {
+          "ts": "2026-09-27T20:38:49.976Z",
+          "kind": "claim",
+          "claim_id": 82792,
+          "claim_text": "মধ্যরাতে মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের"
+        },
+        {
+          "ts": "2026-09-27T20:38:49.978Z",
+          "kind": "claim",
+          "claim_id": 82793,
+          "claim_text": "সাতক্ষীরার গাবুরায় গাজী নজরুলের দ্বিতীয় স্ত্রীর দাফন সম্পন্ন, বিচারের দাবি"
+        },
+        {
+          "ts": "2026-09-27T20:38:49.981Z",
+          "kind": "verify",
+          "claim_id": 82791,
+          "claim_text": "সাতক্ষীরায় মধ্যরাতে এমপি গাজী নজরুলের দ্বিতীয় স্ত্রী মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:49.981Z",
+          "kind": "verify",
+          "claim_id": 82792,
+          "claim_text": "মধ্যরাতে মরিয়মের দাফন সম্পন্ন, বিচারের দাবি স্বজনদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:49.981Z",
+          "kind": "verify",
+          "claim_id": 82793,
+          "claim_text": "সাতক্ষীরার গাবুরায় গাজী নজরুলের দ্বিতীয় স্ত্রীর দাফন সম্পন্ন, বিচারের দাবি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 191,
+          "slug": "international-191",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পাকিস্তানের সাবেক প্রধানমন্ত্রী ইমরান খানের ৩ বোন গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
+        },
+        {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
+          "cluster_id": 278,
+          "slug": "national-278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
+        }
+      ]
     },
     "national-316": {
       "cluster_id": 316,
@@ -20457,9 +22261,128 @@
       "headline": "এআই নিয়ন্ত্রণে বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব ২০ দেশের",
       "first_seen": "2026-09-22T09:02:36.248Z",
       "last_update": "2026-09-22T15:41:59.624Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T07:20:23.000Z",
+          "kind": "evidence",
+          "claim_id": 82801,
+          "claim_text": "এআই নিয়ন্ত্রণে বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব ২০ দেশের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/twenty-countries-propose-forming-a-global-oversight-body-address-ai-risks/"
+          }
+        },
+        {
+          "ts": "2026-09-22T07:20:23.000Z",
+          "kind": "evidence",
+          "claim_id": 82802,
+          "claim_text": "এআই ঝুঁকি মোকাবিলায় বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/twenty-countries-propose-forming-a-global-oversight-body-address-ai-risks/"
+          }
+        },
+        {
+          "ts": "2026-09-22T08:51:39.000Z",
+          "kind": "evidence",
+          "claim_id": 82801,
+          "claim_text": "এআই নিয়ন্ত্রণে বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব ২০ দেশের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/usa/969935/%E0%A6%8F%E0%A6%86%E0%A6%87-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A7%87-%E0%A6%AC%E0%A7%88%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%95-%E0%A6%A4%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A6%BF-%E0%A6%B8%E0%A6%82%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE-%E0%A6%97%E0%A6%A0%E0%A6%A8%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:54.700Z",
+          "kind": "claim",
+          "claim_id": 82801,
+          "claim_text": "এআই নিয়ন্ত্রণে বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব ২০ দেশের"
+        },
+        {
+          "ts": "2026-09-27T20:38:54.702Z",
+          "kind": "claim",
+          "claim_id": 82802,
+          "claim_text": "এআই ঝুঁকি মোকাবিলায় বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব"
+        },
+        {
+          "ts": "2026-09-27T20:38:54.706Z",
+          "kind": "verify",
+          "claim_id": 82801,
+          "claim_text": "এআই নিয়ন্ত্রণে বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব ২০ দেশের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:38:54.706Z",
+          "kind": "verify",
+          "claim_id": 82802,
+          "claim_text": "এআই ঝুঁকি মোকাবিলায় বৈশ্বিক তদারকি সংস্থা গঠনের প্রস্তাব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 125,
+          "slug": "national-125",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 128,
+          "slug": "national-128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় উস্কানির অভিযোগ মাকসুদ কামাল-জাফর ইকবালসহ ৮ জনের বিরুদ্ধে"
+        },
+        {
+          "cluster_id": 134,
+          "slug": "international-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        }
+      ]
     },
     "national-319": {
       "cluster_id": 319,
@@ -21283,6 +23206,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
           "cluster_id": 172,
           "slug": "national-172",
           "actor_links": 0,
@@ -21305,14 +23236,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -22716,9 +24639,128 @@
       "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন",
       "first_seen": "2026-09-22T12:53:28.185Z",
       "last_update": "2026-09-22T18:07:21.299Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T09:29:29.000Z",
+          "kind": "evidence",
+          "claim_id": 82851,
+          "claim_text": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NUYwbnBRTkZKUk0zMGF4alNfNWEtVmwxY3ZYYjk1NkRDYm9LQUE3b3E5b1JUQzFJLU5FLWkyaUprNE4wQkFJdXh0UVlMMUpkb0I0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T09:29:29.000Z",
+          "kind": "evidence",
+          "claim_id": 82852,
+          "claim_text": "পুলিশের ঊর্ধ্বতন ২২ কর্মকর্তাকে বদলি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NUYwbnBRTkZKUk0zMGF4alNfNWEtVmwxY3ZYYjk1NkRDYm9LQUE3b3E5b1JUQzFJLU5FLWkyaUprNE4wQkFJdXh0UVlMMUpkb0I0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T10:03:50.000Z",
+          "kind": "evidence",
+          "claim_id": 82851,
+          "claim_text": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxNVDVEQXZ0WlZBbU9FdVplc2RJOEZnWHNiZEY1NVhoMWhMTS14aXFqSGNRdUlRVlR0YzBQUWQxMEpvYXJCbGgxRWZKT2VNUGFHNnVLcy1hUmVBa0xCS2txWklBV3hHOVdnY1ZSb0ExWVNhcHNtanVMckZRemV1ckd0ay1LXzBsWUxQaTJkTllGWHRIdzlETUlGNDhkQmUzSXBjbnVOTjVIREJqU2JRbjUtdW1KVnlCTkQyVFA4N1pEcjlWUmR6djB2bnlOQkR1WU5CV3FGanhaNEtVTjRSdktkcnUxRnFWc003VGJyd1p3OTRGc3QxMy1Qbi05WV94TlVGeDFwdHM3TGJrUU01WkFrS1Q5M3Rsb2lJWk9CQm9wNTNtQ3pZeF9CemFqS0Z6LVBYS2ZXNWFoV2k1SGYzU1FhYjM3SnVKT0dZX2JYUEsyUWpQVXZNam0tcW5Hb05CSEJ4eTNoVWV4YkRRbkxfYlJkU0ZlSEZjZGU4bTFldWRkRFlCalZfX3pBc1lqcFFsa0o0X2RQWFVFSE95NjRGRkp6N3J4ajBUdkMwYXN6QWpncVRDZVd3ekpIQ2dmUU9rQW5SeW9yVUtpdGtKWnVqYk9oMno0Vm5RamZoUHdRZHBQWFRzVWNOemNROTZrY2NnbzFrSGpKb2JuMjNCbGVBR3Y1djktb0FwczZ1U08wMWJzamY2Y3IxQkNnQ3dmQS1OOXA2ZlhwYVFR0gGrBEFVX3lxTE9sQ2szbENZXzcxV1ZOX1ZybTJpd0Q4ZnhENVZBcHhsWHl2Wll1VlpEZ0NGWkI0ZlFJaHZPOGRnYkNua0xmd0xJb1NnYnNnVmFLVFdzUS16aWkxY082bTRQSEdpZ3NBb2NQYVZVeUw1Ny1mcUdxRENkaUlCMDJacVlTVzRGQ3VRd0g1aXV6dXZ3VTFWUVVkTVlLX0xYTUZoRkpOOUZsY3VWUTVGX1NDby1uQWJ4Vl9vaEJsb25wR1FCbHdrX0Vkc2dKOHQ5ZjJzQlJERFRtMEZQT0VKVXhCV0tta25wVVZWRGFmUllyZjFVTEpUTEZQVzYxTmxpejR0c1JXZl81ZkdqVExRY1M1eVgwblc0VWtVS0hjTGFEZ2xTXzl6R2xyYkh2WU9MVGR6Tzc1UEE2bnhFSGpSejNBR2gzYTJObTlYMFdSRFhvRU9ZMVFXZFhMOFZvX3V6eWtGMlMwTGM1SmNORXJ3OVdfNVhHcFJjLVRTWnNQeTU1TVMzUURtT1lyVmxWTmFINkpHV2F6MVpzS0FYeGpkMENIREFwQXdQNnJFS0MwUWRzeXl0RWtVNmpTWWxPbjdIZGpYay1IcUkxZm5ydEhhSVFFNEoyOHc5UDh3Y2luMUZzZ3FweWQ2YUttX0dhZ2E2MXZYRFZxazFabzg3TV83MEdUb0gwMWE1OHdqVjFOMWZkSXdVTDRNY0puWjVrMnVEZFZRLWVLTmpfdkhwQlJ2NA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:16.273Z",
+          "kind": "claim",
+          "claim_id": 82851,
+          "claim_text": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
+        },
+        {
+          "ts": "2026-09-27T20:39:16.276Z",
+          "kind": "claim",
+          "claim_id": 82852,
+          "claim_text": "পুলিশের ঊর্ধ্বতন ২২ কর্মকর্তাকে বদলি"
+        },
+        {
+          "ts": "2026-09-27T20:39:16.280Z",
+          "kind": "verify",
+          "claim_id": 82851,
+          "claim_text": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:16.280Z",
+          "kind": "verify",
+          "claim_id": 82852,
+          "claim_text": "পুলিশের ঊর্ধ্বতন ২২ কর্মকর্তাকে বদলি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 211,
+          "slug": "national-211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
+        },
+        {
+          "cluster_id": 239,
+          "slug": "national-239",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যুক্তরাষ্ট্র ফের হামলা করলে ‘নতুন চমক’ দেখানোর হুমকি ইরানের"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        }
+      ]
     },
     "national-340": {
       "cluster_id": 340,
@@ -22839,12 +24881,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -22943,6 +24985,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -22965,14 +25015,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -24062,9 +26104,128 @@
       "headline": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিলেন প্রধানমন্ত্রী",
       "first_seen": "2026-09-22T14:33:21.042Z",
       "last_update": "2026-09-22T14:33:21.045Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T13:01:32.000Z",
+          "kind": "evidence",
+          "claim_id": 82880,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিলেন প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/videos/1158505"
+          }
+        },
+        {
+          "ts": "2026-09-22T13:01:32.000Z",
+          "kind": "evidence",
+          "claim_id": 82881,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিয়েছেন তারেক রহমান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/videos/1158505"
+          }
+        },
+        {
+          "ts": "2026-09-22T13:36:17.000Z",
+          "kind": "evidence",
+          "claim_id": 82880,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিলেন প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sVnlQZEkzLVVfb2pDTlVnNGZfM2JCTGxac0txZ2RtMTVRRkFiOUVtaDJfX014TGFyb3FtX2lONTA0VzloN3NMeVZfd3NhUkVESjZnbERRLXlPZGtuZXpWc1lRalFHTlRKM0o3d2k3bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:26.975Z",
+          "kind": "claim",
+          "claim_id": 82880,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-09-27T20:39:26.978Z",
+          "kind": "claim",
+          "claim_id": 82881,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিয়েছেন তারেক রহমান"
+        },
+        {
+          "ts": "2026-09-27T20:39:26.981Z",
+          "kind": "verify",
+          "claim_id": 82880,
+          "claim_text": "জাতিসংঘের সাধারণ পরিষদের অধিবেশনে যোগ দিলেন প্রধানমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:26.981Z",
+          "kind": "verify",
+          "claim_id": 82881,
+          "claim_text": "জাতিসংঘের অধিবেশনে যোগ দিয়েছেন তারেক রহমান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 184,
+          "slug": "national-184",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 238,
+          "slug": "national-238",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেসির বিদায়ী ম্যাচে থাকবেন দি মারিয়া"
+        },
+        {
+          "cluster_id": 250,
+          "slug": "national-250",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রাশিয়ার নির্বাচনে আবারও জিতল পুতিনের দল, যা বলছে চীন"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 273,
+          "slug": "politics-273",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাম্পের হেলিকপ্টারে বিশ্বের সবচেয়ে আকর্ষণীয় হকি খেলোয়াড়"
+        }
+      ]
     },
     "national-352": {
       "cluster_id": 352,
@@ -25407,9 +27568,112 @@
       "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক",
       "first_seen": "2026-09-22T18:36:21.839Z",
       "last_update": "2026-09-22T18:36:21.842Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-22T18:05:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82908,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWdk0xQjRpX1laaVQzM3d3VTU3cWxYMmJfU0FEN2JIV0RNeWhWNEJNMkt0UkRJNVZBNmVuQ0hnbGJnUGZjVktma05aNEV2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T18:05:00.000Z",
+          "kind": "evidence",
+          "claim_id": 82909,
+          "claim_text": "বিশ্বব্যাংকের প্রেসিডেন্টের সঙ্গে প্রধানমন্ত্রীর বৈঠক",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWdk0xQjRpX1laaVQzM3d3VTU3cWxYMmJfU0FEN2JIV0RNeWhWNEJNMkt0UkRJNVZBNmVuQ0hnbGJnUGZjVktma05aNEV2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-22T18:18:30.000Z",
+          "kind": "evidence",
+          "claim_id": 82908,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/yly55cub6j"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:45.093Z",
+          "kind": "claim",
+          "claim_id": 82908,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক"
+        },
+        {
+          "ts": "2026-09-27T20:39:45.096Z",
+          "kind": "claim",
+          "claim_id": 82909,
+          "claim_text": "বিশ্বব্যাংকের প্রেসিডেন্টের সঙ্গে প্রধানমন্ত্রীর বৈঠক"
+        },
+        {
+          "ts": "2026-09-27T20:39:45.100Z",
+          "kind": "verify",
+          "claim_id": 82908,
+          "claim_text": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংকের প্রেসিডেন্টের বৈঠক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:39:45.100Z",
+          "kind": "verify",
+          "claim_id": 82909,
+          "claim_text": "বিশ্বব্যাংকের প্রেসিডেন্টের সঙ্গে প্রধানমন্ত্রীর বৈঠক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 381,
+          "slug": "national-381",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
+        }
+      ]
     },
     "national-379": {
       "cluster_id": 379,
@@ -26643,7 +28907,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 410,
+          "slug": "national-410",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা"
+        }
+      ]
     },
     "national-397": {
       "cluster_id": 397,
@@ -26804,12 +29077,12 @@
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
         },
         {
-          "cluster_id": 125,
-          "slug": "national-125",
+          "cluster_id": 112,
+          "slug": "national-112",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
         }
       ]
     },
@@ -27654,12 +29927,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -28211,18 +30484,216 @@
       "headline": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা",
       "first_seen": "2026-09-23T08:00:21.542Z",
       "last_update": "2026-09-23T08:26:06.901Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-23T00:16:34.000Z",
+          "kind": "evidence",
+          "claim_id": 82961,
+          "claim_text": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%95%e0%a6%bf%e0%a6%b2%e0%a7%8b%e0%a6%ae%e0%a6%bf%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a4%e0%a6%bf-%e0%a6%ac%e0%a6%be%e0%a6%b8-%e0%a6%ad%e0%a6%be%e0%a7%9c%e0%a6%be/"
+          }
+        },
+        {
+          "ts": "2026-09-23T07:50:16.000Z",
+          "kind": "evidence",
+          "claim_id": 82961,
+          "claim_text": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/970123/%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A7%8D%E0%A6%A8-%E0%A6%AD%E0%A6%BE%E0%A7%9C%E0%A6%BE-%E0%A7%A7%E0%A7%A6-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-09-23T07:50:16.000Z",
+          "kind": "evidence",
+          "claim_id": 82962,
+          "claim_text": "সর্বনিম্ন ভাড়া ১০ টাকা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/970123/%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A7%8D%E0%A6%A8-%E0%A6%AD%E0%A6%BE%E0%A7%9C%E0%A6%BE-%E0%A7%A7%E0%A7%A6-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:08.448Z",
+          "kind": "claim",
+          "claim_id": 82961,
+          "claim_text": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা"
+        },
+        {
+          "ts": "2026-09-27T20:40:08.450Z",
+          "kind": "claim",
+          "claim_id": 82962,
+          "claim_text": "সর্বনিম্ন ভাড়া ১০ টাকা"
+        },
+        {
+          "ts": "2026-09-27T20:40:08.454Z",
+          "kind": "verify",
+          "claim_id": 82961,
+          "claim_text": "কিলোমিটারপ্রতি বাস ভাড়া বাড়ল ১৭ পয়সা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:08.454Z",
+          "kind": "verify",
+          "claim_id": 82962,
+          "claim_text": "সর্বনিম্ন ভাড়া ১০ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 396,
+          "slug": "national-396",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঘুষ নেওয়ার সময় সাব-রেজিস্ট্রার ও তার সহযোগী হাতেনাতে আটক"
+        }
+      ]
     },
     "national-411": {
       "cluster_id": 411,
       "headline": "জার্মানিতে একটি মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
       "first_seen": "2026-09-23T08:17:42.563Z",
       "last_update": "2026-09-23T14:40:48.652Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-23T04:38:56.000Z",
+          "kind": "evidence",
+          "claim_id": 82963,
+          "claim_text": "জার্মানিতে একটি মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ULXdDYlNJeGlvRmM2X081VU1JNEYyZHFjZ1I0Rk9Xc1NmU3dfR1dQVGJXdDFqLUlSMEppLU40SGZfbFBRWTVfZ0tFUlhHaFFIZ3NQSUh4dWpDUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-23T04:38:56.000Z",
+          "kind": "evidence",
+          "claim_id": 82964,
+          "claim_text": "আরও এক মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ULXdDYlNJeGlvRmM2X081VU1JNEYyZHFjZ1I0Rk9Xc1NmU3dfR1dQVGJXdDFqLUlSMEppLU40SGZfbFBRWTVfZ0tFUlhHaFFIZ3NQSUh4dWpDUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-23T06:41:17.000Z",
+          "kind": "evidence",
+          "claim_id": 82963,
+          "claim_text": "জার্মানিতে একটি মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/v6cz8xikp2"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:09.965Z",
+          "kind": "claim",
+          "claim_id": 82963,
+          "claim_text": "জার্মানিতে একটি মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত"
+        },
+        {
+          "ts": "2026-09-27T20:40:09.968Z",
+          "kind": "claim",
+          "claim_id": 82964,
+          "claim_text": "আরও এক মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত"
+        },
+        {
+          "ts": "2026-09-27T20:40:09.971Z",
+          "kind": "verify",
+          "claim_id": 82963,
+          "claim_text": "জার্মানিতে একটি মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:09.971Z",
+          "kind": "verify",
+          "claim_id": 82964,
+          "claim_text": "আরও এক মার্কিন এফ-১৬ যুদ্ধবিমান বিধ্বস্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 191,
+          "slug": "international-191",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পাকিস্তানের সাবেক প্রধানমন্ত্রী ইমরান খানের ৩ বোন গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
+        },
+        {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
+          "cluster_id": 278,
+          "slug": "national-278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
+        }
+      ]
     },
     "national-412": {
       "cluster_id": 412,
@@ -29342,9 +31813,96 @@
       "headline": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি বিএনপি: হিউম্যান রাইটস ওয়াচ",
       "first_seen": "2026-09-23T11:44:35.719Z",
       "last_update": "2026-09-23T15:29:38.840Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-23T07:38:24.000Z",
+          "kind": "evidence",
+          "claim_id": 82985,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি বিএনপি: হিউম্যান রাইটস ওয়াচ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cx4gqy6z46n5o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-23T11:28:19.000Z",
+          "kind": "evidence",
+          "claim_id": 82985,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি বিএনপি: হিউম্যান রাইটস ওয়াচ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bnp-failed-to-keep-its-word-on-human-rights-protection-human-rights-watch/"
+          }
+        },
+        {
+          "ts": "2026-09-23T11:28:19.000Z",
+          "kind": "evidence",
+          "claim_id": 82986,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি সরকার: হিউম্যান রাইটস ওয়াচ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bnp-failed-to-keep-its-word-on-human-rights-protection-human-rights-watch/"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:24.058Z",
+          "kind": "claim",
+          "claim_id": 82985,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি বিএনপি: হিউম্যান রাইটস ওয়াচ"
+        },
+        {
+          "ts": "2026-09-27T20:40:24.067Z",
+          "kind": "claim",
+          "claim_id": 82986,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি সরকার: হিউম্যান রাইটস ওয়াচ"
+        },
+        {
+          "ts": "2026-09-27T20:40:24.071Z",
+          "kind": "verify",
+          "claim_id": 82985,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি বিএনপি: হিউম্যান রাইটস ওয়াচ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:24.071Z",
+          "kind": "verify",
+          "claim_id": 82986,
+          "claim_text": "মানবাধিকার সুরক্ষা প্রশ্নে কথা রাখতে পারেনি সরকার: হিউম্যান রাইটস ওয়াচ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 555,
+          "slug": "national-555",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
+        },
+        {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        }
+      ]
     },
     "national-426": {
       "cluster_id": 426,
@@ -29465,12 +32023,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -29730,12 +32288,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -30194,12 +32752,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -30435,6 +32993,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
           "cluster_id": 172,
           "slug": "national-172",
           "actor_links": 0,
@@ -30457,14 +33023,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 322,
-          "slug": "national-322",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক মন্ত্রী নওফেলের স্ত্রী ইমা ক্লেয়ারের দেশত্যাগে নিষেধাজ্ঞা"
         }
       ]
     },
@@ -30603,6 +33161,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -30625,14 +33191,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -30641,9 +33199,128 @@
       "headline": "মায়ের জমানো টাকায় চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে ক্ষোভ ‘মেঘদল’ ব্যান্ড সদস্যের",
       "first_seen": "2026-09-23T14:40:48.621Z",
       "last_update": "2026-09-23T16:41:01.142Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-23T11:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 83010,
+          "claim_text": "মায়ের জমানো টাকায় চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে ক্ষোভ ‘মেঘদল’ ব্যান্ড সদস্যের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/q6dkjr5y5t"
+          }
+        },
+        {
+          "ts": "2026-09-23T11:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 83011,
+          "claim_text": "মায়ের জমানো টাকায় চলছে চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে শিল্পীর ক্ষোভ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/q6dkjr5y5t"
+          }
+        },
+        {
+          "ts": "2026-09-23T14:27:23.000Z",
+          "kind": "evidence",
+          "claim_id": 83010,
+          "claim_text": "মায়ের জমানো টাকায় চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে ক্ষোভ ‘মেঘদল’ ব্যান্ড সদস্যের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/entertainment/songs/970216/%E0%A6%AE%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8B-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%9A%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A7%8E%E0%A6%B8%E0%A6%BE-%E0%A6%AA%E0%A6%BE%E0%A6%93%E0%A6%A8%E0%A6%BE-%E0%A7%AB%E0%A7%A6-%E0%A6%B2%E0%A6%BE%E0%A6%96-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87%C2%A0"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:43.629Z",
+          "kind": "claim",
+          "claim_id": 83010,
+          "claim_text": "মায়ের জমানো টাকায় চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে ক্ষোভ ‘মেঘদল’ ব্যান্ড সদস্যের"
+        },
+        {
+          "ts": "2026-09-27T20:40:43.632Z",
+          "kind": "claim",
+          "claim_id": 83011,
+          "claim_text": "মায়ের জমানো টাকায় চলছে চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে শিল্পীর ক্ষোভ"
+        },
+        {
+          "ts": "2026-09-27T20:40:43.636Z",
+          "kind": "verify",
+          "claim_id": 83010,
+          "claim_text": "মায়ের জমানো টাকায় চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে ক্ষোভ ‘মেঘদল’ ব্যান্ড সদস্যের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:40:43.636Z",
+          "kind": "verify",
+          "claim_id": 83011,
+          "claim_text": "মায়ের জমানো টাকায় চলছে চিকিৎসা, পাওনা ৫০ লাখ টাকা নিয়ে শিল্পীর ক্ষোভ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        },
+        {
+          "cluster_id": 129,
+          "slug": "sports-129",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 151,
+          "slug": "national-151",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
+        }
+      ]
     },
     "national-444": {
       "cluster_id": 444,
@@ -31286,6 +33963,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -31308,14 +33993,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -33188,12 +35865,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -33780,6 +36457,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -33802,14 +36487,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -34426,6 +37103,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -34448,14 +37133,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -34629,12 +37306,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -36399,12 +39076,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -37646,6 +40323,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -37668,14 +40353,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 202,
-          "slug": "national-202",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
         }
       ]
     },
@@ -38404,12 +41081,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -42639,20 +45316,20 @@
           "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         },
         {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
           "cluster_id": 278,
           "slug": "national-278",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -45996,20 +48673,20 @@
           "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         },
         {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
           "cluster_id": 278,
           "slug": "national-278",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -46124,20 +48801,20 @@
           "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         },
         {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
           "cluster_id": 278,
           "slug": "national-278",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -47836,12 +50513,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -50319,12 +52996,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -52981,12 +55658,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 147,
-          "slug": "national-147",
+          "cluster_id": 145,
+          "slug": "national-145",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
         }
       ]
     },
@@ -54751,6 +57428,14 @@
           "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
         },
         {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
+        },
+        {
           "cluster_id": 601,
           "slug": "national-601",
           "actor_links": 1,
@@ -54773,14 +57458,6 @@
           "source_links": 3,
           "claim_count": 9,
           "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
-        },
-        {
-          "cluster_id": 332,
-          "slug": "national-332",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
         }
       ]
     },
@@ -56008,6 +58685,14 @@
           "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
         },
         {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
+        },
+        {
           "cluster_id": 555,
           "slug": "national-555",
           "actor_links": 0,
@@ -56037,7 +58722,7 @@
       "cluster_id": 618,
       "headline": "বাংলাদেশের সকল নাগরিকের নিরাপত্তার দায়িত্ব আপনার হাতে: স্বরাষ্ট্রমন্ত্রীকে সালমান",
       "first_seen": "2026-09-27T13:33:43.026Z",
-      "last_update": "2026-09-27T20:08:02.672Z",
+      "last_update": "2026-09-27T20:35:24.095Z",
       "claim_count": 2,
       "events": [
         {
@@ -56231,12 +58916,12 @@
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 346,
-          "slug": "national-346",
+          "cluster_id": 339,
+          "slug": "national-339",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "পুলিশের ২২ ঊর্ধ্বতন কর্মকর্তাকে বদলি ও পদায়ন"
         }
       ]
     },
@@ -56451,7 +59136,7 @@
       "cluster_id": 622,
       "headline": "স্কুলছাত্রীর দাঁত ভেঙে দেওয়ার ঘটনায় প্রধান অভিযুক্ত ফয়সাল গ্রেফতার",
       "first_seen": "2026-09-27T15:20:50.953Z",
-      "last_update": "2026-09-27T20:08:02.669Z",
+      "last_update": "2026-09-27T20:35:24.092Z",
       "claim_count": 2,
       "events": [
         {
@@ -56686,20 +59371,20 @@
           "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         },
         {
+          "cluster_id": 263,
+          "slug": "economy-263",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের চাকরির বাজারে প্রবেশ করা প্রতি ১০০ শিক্ষিত তরুণের ৩৬ জনই বেকার: আইএমএফ"
+        },
+        {
           "cluster_id": 278,
           "slug": "national-278",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শিক্ষার্থীদের বিনা মূল্যে জেমিনাই প্রো ও ৪০০ জিবি স্টোরেজ দিচ্ছে গুগল, যেভাবে পাবেন"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -56993,7 +59678,7 @@
       "cluster_id": 627,
       "headline": "ভঙ্গুর অর্থনীতি থেকে ট্রিলিয়ন ডলারের অর্থনীতি গড়ার পথে বাংলাদেশ: ড. তিতুমীর",
       "first_seen": "2026-09-27T16:41:17.412Z",
-      "last_update": "2026-09-27T20:08:02.670Z",
+      "last_update": "2026-09-27T20:35:24.093Z",
       "claim_count": 2,
       "events": [
         {
@@ -57279,7 +59964,7 @@
       "cluster_id": 630,
       "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
       "first_seen": "2026-09-27T19:13:34.665Z",
-      "last_update": "2026-09-27T20:08:02.666Z",
+      "last_update": "2026-09-27T20:35:24.086Z",
       "claim_count": 2,
       "events": [
         {
@@ -57358,7 +60043,7 @@
       "cluster_id": 631,
       "headline": "ফলকে নিজের নাম দেখে ভবন উদ্বোধন না করেই ফিরলেন হাসনাত আবদুল্লাহ",
       "first_seen": "2026-09-27T19:13:34.673Z",
-      "last_update": "2026-09-27T20:08:02.671Z",
+      "last_update": "2026-09-27T20:35:24.094Z",
       "claim_count": 3,
       "events": [
         {
@@ -57605,7 +60290,7 @@
       "cluster_id": 633,
       "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছে ৫ সন্দেহভাজন গ্রেপ্তার",
       "first_seen": "2026-09-27T19:36:31.658Z",
-      "last_update": "2026-09-27T20:08:02.668Z",
+      "last_update": "2026-09-27T20:35:24.090Z",
       "claim_count": 2,
       "events": [
         {
@@ -57733,7 +60418,7 @@
       "cluster_id": 634,
       "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
       "first_seen": "2026-09-27T20:08:02.651Z",
-      "last_update": "2026-09-27T20:08:02.665Z",
+      "last_update": "2026-09-27T20:35:24.080Z",
       "claim_count": 12,
       "events": [
         {
@@ -58240,6 +60925,150 @@
             "sources": "[\"c82451\",\"c82462\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82451,
+          "claim_text": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 40,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82452,
+          "claim_text": "সিলেটে নতুন পেসার হান্টের উদ্বোধন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82453,
+          "claim_text": "চোট নিয়ে সুইডেন ক্যাম্প ছাড়লেন ইসাক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82454,
+          "claim_text": "ভারতের সঙ্গে ড্র নিয়ে আক্ষেপ পানামা কোচের",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82455,
+          "claim_text": "নিখোঁজ শিশুর জন্য অপেক্ষা-উদ্বেগ, কী করছে পুলিশ?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82456,
+          "claim_text": "ঢাকার মিরপুরে স্বাস্থ্যসেবা কেন্দ্রে হামলা-ভাঙচুরের কারণ কী?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82457,
+          "claim_text": "পত্রিকা: 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82458,
+          "claim_text": "হরমুজ প্রণালি খুলে দিতে ইরানের দেওয়া প্রস্তাব প্রত্যাখ্যান করলেন ট্রাম্প",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82459,
+          "claim_text": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82460,
+          "claim_text": "ভাঙচুর-দখলের ধারাবাহিকতা: ‘নরমাল ইন বাংলাদেশ’ হয়ে উঠছে কি?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82461,
+          "claim_text": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:02.887Z",
+          "kind": "verify",
+          "claim_id": 82462,
+          "claim_text": "অপ্রতিমকে হত্যার ছক ৭ দিন আগে, টিকটকে যোগাযোগ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -58290,6 +61119,213 @@
           "source_links": 3,
           "claim_count": 13,
           "headline": "কুমিল্লায় ছাত্রদল নেতার মিছিলে ‘কিশোর গ্যাং লিডার’ রতন, ভিডিও ভাইরালের পর সমালোচনা"
+        }
+      ]
+    },
+    "national-635": {
+      "cluster_id": 635,
+      "headline": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+      "first_seen": "2026-09-27T20:35:24.081Z",
+      "last_update": "2026-09-27T20:35:24.084Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-27T19:47:00.000Z",
+          "kind": "evidence",
+          "claim_id": 83464,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivgRBVV95cUxNdy1vd1dmMEQyU2VPZUszb194dVVQUFNwVDRIQWdtY1ZxRlVCX1ltYm9TLTVFYnFja1FBY1ZkYUFnYTNORE53S1k4U1FBSmZOQUVtRmt2Qzdua0tmNkhtSmJsX1FQU3N0bUF1Y2FyN2x2VXhZWVNSaVRpN3J3VzFzU3FzcUFKWEQ0T3lGc2Y1QlpUanBNWWdyVU1QVGo5UGF3aV8tRnlyZ2o5Z0hTTzdxUDIzSEdGN1k1WkpjUGZpRmtqU0p6SXVzekkxbm9qc21ydlkyeHB2MXBDWF9wZWgzWWpnd01rU1VKcFBBVVVybjZxS2VQMXlZeS1xbVpPai1OQ3doWWNMLTVQWGJuNlZDdTczaFFqZTNjWFVKSVc4YXZDdUp4M2FEWV9DYWkzX1E1bUZGUDZ0TXVvYjBVdjZHMGdvVUltOEZBaFFyVVdEckt5eUZ6UkNQT2RuSUJrdE5yd2hXOVJxclp4NEY0bnJzUlUxdTJpNlFMX3ExZ2NTTzNGak5GYmMyTEp4WEdFNE1ERUxWSUxXU2ZHRlVNTEhqZHdTS255dGFWTHRyV2FzR01qalljREtjSFV3MnhNQVhSdE5kSTl6UkNDdC1ZNk1fTk4yTVVFSlhqTkZ1RkFJdzFXZkJmNFE5V3NSZHJsNS0ta2hCZDNPUEIwUlNhNkdwaFYtZzhkdjNvQlNRMVlyZ29jMUI1TzZfWEd5SnNPc1ZmaTNielNEcWxQa3NGZzZEQ1pmeWppaFNYQ2RtV1hB0gHDBEFVX3lxTE9Kd1BIZ2lkcU5vQ0tmMkttWUJjZnZldko2YjJZTnlrNzNIMTNXajV4QlZEQkcyRE5zWXJKaEdoRXNvQlJfNWZlbWMxYmdiWmJObGRkV2I4M3I5ZmpBSjlyQ3lpMUtodXBvZ2syUV96dV8yd01mWDFOdnJQdmtSUFVBQTlHaHMzSjBENE9uOEJaeE5PMUFzTUwyOE5FYmRSQVVQTy14TjZBYlVGRVVTZjBaRXEzc2NNWXdOMXdfcVZZM3FINDQxQkV0ajhJTWFCWWpldFVFbHNhcGN5cjZZMWk5dEVsTU5ES3pvb2tQc3JwTzEzV2hncWFiQkVzS0ZvdlhoTFRmQm9ISWhnQUNSRDdMSG11bVNsZnpCNHNFcEVRRWRVWjRlRVVyOFFubnNXM2NHUTNNRURWenI2QnVOUHh4akFGYW03ZlFaOVJQb0tPSW9qWFg3eW1ndENXaFpwN0pLODNUM093ZDllMmRSSmdBUzBWaWl4MDFxTnJWelFEbGVZd2lrd001NjRlLUp1c2hRclRmeDV4bHQzcGJVWHZ0b2s0NHpMQnNrRjlrME56VEpSNmFScldUTWt6cDBUTkx4YVpxLWs3TUlXMHFIZVZHaVhPdU02SmQ4TXhMQVo3RUFianRzb1lGNWhTVXZUTnFxeGw1eVpfdG5ldXVMVVRKUDd1Rzl0ZU10a1hLS0VsMFVYT1BVekdsZmNva3d0Nkt6ZlhuWmFkN054SmN6N2VCTVBpTUN6MEF5bmFWZmMxVDU5aw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T19:47:00.000Z",
+          "kind": "evidence",
+          "claim_id": 83464,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivgRBVV95cUxNdy1vd1dmMEQyU2VPZUszb194dVVQUFNwVDRIQWdtY1ZxRlVCX1ltYm9TLTVFYnFja1FBY1ZkYUFnYTNORE53S1k4U1FBSmZOQUVtRmt2Qzdua0tmNkhtSmJsX1FQU3N0bUF1Y2FyN2x2VXhZWVNSaVRpN3J3VzFzU3FzcUFKWEQ0T3lGc2Y1QlpUanBNWWdyVU1QVGo5UGF3aV8tRnlyZ2o5Z0hTTzdxUDIzSEdGN1k1WkpjUGZpRmtqU0p6SXVzekkxbm9qc21ydlkyeHB2MXBDWF9wZWgzWWpnd01rU1VKcFBBVVVybjZxS2VQMXlZeS1xbVpPai1OQ3doWWNMLTVQWGJuNlZDdTczaFFqZTNjWFVKSVc4YXZDdUp4M2FEWV9DYWkzX1E1bUZGUDZ0TXVvYjBVdjZHMGdvVUltOEZBaFFyVVdEckt5eUZ6UkNQT2RuSUJrdE5yd2hXOVJxclp4NEY0bnJzUlUxdTJpNlFMX3ExZ2NTTzNGak5GYmMyTEp4WEdFNE1ERUxWSUxXU2ZHRlVNTEhqZHdTS255dGFWTHRyV2FzR01qalljREtjSFV3MnhNQVhSdE5kSTl6UkNDdC1ZNk1fTk4yTVVFSlhqTkZ1RkFJdzFXZkJmNFE5V3NSZHJsNS0ta2hCZDNPUEIwUlNhNkdwaFYtZzhkdjNvQlNRMVlyZ29jMUI1TzZfWEd5SnNPc1ZmaTNielNEcWxQa3NGZzZEQ1pmeWppaFNYQ2RtV1hB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T19:47:00.000Z",
+          "kind": "evidence",
+          "claim_id": 83465,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivgRBVV95cUxNdy1vd1dmMEQyU2VPZUszb194dVVQUFNwVDRIQWdtY1ZxRlVCX1ltYm9TLTVFYnFja1FBY1ZkYUFnYTNORE53S1k4U1FBSmZOQUVtRmt2Qzdua0tmNkhtSmJsX1FQU3N0bUF1Y2FyN2x2VXhZWVNSaVRpN3J3VzFzU3FzcUFKWEQ0T3lGc2Y1QlpUanBNWWdyVU1QVGo5UGF3aV8tRnlyZ2o5Z0hTTzdxUDIzSEdGN1k1WkpjUGZpRmtqU0p6SXVzekkxbm9qc21ydlkyeHB2MXBDWF9wZWgzWWpnd01rU1VKcFBBVVVybjZxS2VQMXlZeS1xbVpPai1OQ3doWWNMLTVQWGJuNlZDdTczaFFqZTNjWFVKSVc4YXZDdUp4M2FEWV9DYWkzX1E1bUZGUDZ0TXVvYjBVdjZHMGdvVUltOEZBaFFyVVdEckt5eUZ6UkNQT2RuSUJrdE5yd2hXOVJxclp4NEY0bnJzUlUxdTJpNlFMX3ExZ2NTTzNGak5GYmMyTEp4WEdFNE1ERUxWSUxXU2ZHRlVNTEhqZHdTS255dGFWTHRyV2FzR01qalljREtjSFV3MnhNQVhSdE5kSTl6UkNDdC1ZNk1fTk4yTVVFSlhqTkZ1RkFJdzFXZkJmNFE5V3NSZHJsNS0ta2hCZDNPUEIwUlNhNkdwaFYtZzhkdjNvQlNRMVlyZ29jMUI1TzZfWEd5SnNPc1ZmaTNielNEcWxQa3NGZzZEQ1pmeWppaFNYQ2RtV1hB0gHDBEFVX3lxTE9Kd1BIZ2lkcU5vQ0tmMkttWUJjZnZldko2YjJZTnlrNzNIMTNXajV4QlZEQkcyRE5zWXJKaEdoRXNvQlJfNWZlbWMxYmdiWmJObGRkV2I4M3I5ZmpBSjlyQ3lpMUtodXBvZ2syUV96dV8yd01mWDFOdnJQdmtSUFVBQTlHaHMzSjBENE9uOEJaeE5PMUFzTUwyOE5FYmRSQVVQTy14TjZBYlVGRVVTZjBaRXEzc2NNWXdOMXdfcVZZM3FINDQxQkV0ajhJTWFCWWpldFVFbHNhcGN5cjZZMWk5dEVsTU5ES3pvb2tQc3JwTzEzV2hncWFiQkVzS0ZvdlhoTFRmQm9ISWhnQUNSRDdMSG11bVNsZnpCNHNFcEVRRWRVWjRlRVVyOFFubnNXM2NHUTNNRURWenI2QnVOUHh4akFGYW03ZlFaOVJQb0tPSW9qWFg3eW1ndENXaFpwN0pLODNUM093ZDllMmRSSmdBUzBWaWl4MDFxTnJWelFEbGVZd2lrd001NjRlLUp1c2hRclRmeDV4bHQzcGJVWHZ0b2s0NHpMQnNrRjlrME56VEpSNmFScldUTWt6cDBUTkx4YVpxLWs3TUlXMHFIZVZHaVhPdU02SmQ4TXhMQVo3RUFianRzb1lGNWhTVXZUTnFxeGw1eVpfdG5ldXVMVVRKUDd1Rzl0ZU10a1hLS0VsMFVYT1BVekdsZmNva3d0Nkt6ZlhuWmFkN054SmN6N2VCTVBpTUN6MEF5bmFWZmMxVDU5aw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:44:54.760Z",
+          "kind": "claim",
+          "claim_id": 83464,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি"
+        },
+        {
+          "ts": "2026-09-27T20:44:54.763Z",
+          "kind": "claim",
+          "claim_id": 83465,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি"
+        },
+        {
+          "ts": "2026-09-27T20:44:54.767Z",
+          "kind": "verify",
+          "claim_id": 83464,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:44:54.767Z",
+          "kind": "verify",
+          "claim_id": 83465,
+          "claim_text": "সরকারি ভবনে সৌরবিদ্যুৎ স্থাপন, ছাদের আয়তনের তথ্য দিতে চিঠি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-636": {
+      "cluster_id": 636,
+      "headline": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতায় গুরুত্বারোপ আইনমন্ত্রীর",
+      "first_seen": "2026-09-27T20:35:24.086Z",
+      "last_update": "2026-09-27T20:35:24.089Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-27T15:44:26.000Z",
+          "kind": "evidence",
+          "claim_id": 83466,
+          "claim_text": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতায় গুরুত্বারোপ আইনমন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB2SFFBLWl3RXR1YWZ3VTJIYklLdnhmeGVLUU9qMTJIMTdqTWEwU2NMQkQzRHQwa3RITlJjSUR5TW1BT2NCWHJvSHRtQ2dPTHVUVDFMMnZKNmtOaktsSTByQg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 83466,
+          "claim_text": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতায় গুরুত্বারোপ আইনমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBYSkVZb3cyTzdrR0FBUjgxalJIVzRZOWlVajFLT1EwVnBOT2JYSExxVlBRU1llcm1wMjd6LVBZa3BvNkc0MEN5Sk9XVHF4YWpkN2R6OVRSTnF6dkZ3cVdBcVlQR0ZkRzNyNFhraUJUVmxucHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 83467,
+          "claim_text": "অপরাধ মোকাবেলায় আন্তর্জাতিক সহযোগিতা জোরদারে গুরুত্বারোপ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBYSkVZb3cyTzdrR0FBUjgxalJIVzRZOWlVajFLT1EwVnBOT2JYSExxVlBRU1llcm1wMjd6LVBZa3BvNkc0MEN5Sk9XVHF4YWpkN2R6OVRSTnF6dkZ3cVdBcVlQR0ZkRzNyNFhraUJUVmxucHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:44:56.304Z",
+          "kind": "claim",
+          "claim_id": 83466,
+          "claim_text": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতায় গুরুত্বারোপ আইনমন্ত্রীর"
+        },
+        {
+          "ts": "2026-09-27T20:44:56.307Z",
+          "kind": "claim",
+          "claim_id": 83467,
+          "claim_text": "অপরাধ মোকাবেলায় আন্তর্জাতিক সহযোগিতা জোরদারে গুরুত্বারোপ"
+        },
+        {
+          "ts": "2026-09-27T20:44:56.311Z",
+          "kind": "verify",
+          "claim_id": 83466,
+          "claim_text": "আন্তঃদেশীয় অপরাধ মোকাবিলায় আন্তর্জাতিক সহযোগিতায় গুরুত্বারোপ আইনমন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:44:56.311Z",
+          "kind": "verify",
+          "claim_id": 83467,
+          "claim_text": "অপরাধ মোকাবেলায় আন্তর্জাতিক সহযোগিতা জোরদারে গুরুত্বারোপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 184,
+          "slug": "national-184",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 238,
+          "slug": "national-238",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেসির বিদায়ী ম্যাচে থাকবেন দি মারিয়া"
+        },
+        {
+          "cluster_id": 250,
+          "slug": "national-250",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রাশিয়ার নির্বাচনে আবারও জিতল পুতিনের দল, যা বলছে চীন"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 273,
+          "slug": "politics-273",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাম্পের হেলিকপ্টারে বিশ্বের সবচেয়ে আকর্ষণীয় হকি খেলোয়াড়"
         }
       ]
     },
@@ -58950,20 +61986,20 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
-        },
-        {
-          "cluster_id": 127,
-          "slug": "national-127",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
         }
       ]
     },
@@ -59974,7 +63010,7 @@
       "cluster_id": 630,
       "headline": "Burnham refreshes the parts others can’t reach on the Andy and Laura show | John Crace",
       "first_seen": "2026-09-27T19:13:34.665Z",
-      "last_update": "2026-09-27T20:08:02.666Z",
+      "last_update": "2026-09-27T20:35:24.086Z",
       "claim_count": 2,
       "events": [
         {
@@ -61928,6 +64964,14 @@
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 166,
           "slug": "politics-166",
           "actor_links": 0,
@@ -61950,14 +64994,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
-        },
-        {
-          "cluster_id": 252,
-          "slug": "national-252",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         }
       ]
     },
@@ -62290,20 +65326,20 @@
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
         },
         {
+          "cluster_id": 90,
+          "slug": "economy-90",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সরকারি কর্মকর্তা-কর্মচারীদের জন্য নতুন বেতন-ভাতার প্রজ্ঞাপন জারি"
+        },
+        {
           "cluster_id": 91,
           "slug": "national-91",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিচার চাই না জবাব চাই, আমার ছেলে কী অন্যায় করেছে: অপ্রতীমের মা"
-        },
-        {
-          "cluster_id": 102,
-          "slug": "politics-102",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী"
         }
       ]
     },
@@ -63841,12 +66877,12 @@
           "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
         },
         {
-          "cluster_id": 157,
-          "slug": "national-157",
+          "cluster_id": 154,
+          "slug": "national-154",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আনসার সদস্যদের বিরুদ্ধে শিক্ষার্থীকে মারধরের অভিযোগ, প্রতিবাদে শিক্ষার্থীদের রেললাইন অবরোধ, ভাঙচুর"
+          "claim_count": 2,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
         }
       ]
     },
@@ -63864,9 +66900,128 @@
       "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
       "first_seen": "2026-09-20T17:42:14.077Z",
       "last_update": "2026-09-20T20:43:50.458Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-20T14:00:20.000Z",
+          "kind": "evidence",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/969633/%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%95-%E0%A6%87%E0%A6%89%E0%A6%AA%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-20T14:00:20.000Z",
+          "kind": "evidence",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/969633/%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%95-%E0%A6%87%E0%A6%89%E0%A6%AA%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-20T16:19:09.000Z",
+          "kind": "evidence",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/former-up-member-hacked-to-death-beside-highway-in-tangail/"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:40.135Z",
+          "kind": "claim",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-09-27T20:36:40.138Z",
+          "kind": "claim",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-09-27T20:36:40.142Z",
+          "kind": "verify",
+          "claim_id": 82542,
+          "claim_text": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-27T20:36:40.142Z",
+          "kind": "verify",
+          "claim_id": 82543,
+          "claim_text": "পেট্রোল পাম্পের সামনে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 125,
+          "slug": "national-125",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 128,
+          "slug": "national-128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় উস্কানির অভিযোগ মাকসুদ কামাল-জাফর ইকবালসহ ৮ জনের বিরুদ্ধে"
+        },
+        {
+          "cluster_id": 134,
+          "slug": "international-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 182,
+          "slug": "national-182",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+        }
+      ]
     },
     "sports-173": {
       "cluster_id": 173,
@@ -63990,6 +67145,14 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
           "cluster_id": 147,
           "slug": "national-147",
           "actor_links": 0,
@@ -64012,14 +67175,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 297,
-          "slug": "national-297",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -64547,12 +67702,12 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
-          "cluster_id": 182,
-          "slug": "national-182",
+          "cluster_id": 149,
+          "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দক্ষিণ সুদানে শান্তিরক্ষা মিশনে বিদ্যুৎস্পৃষ্ট হয়ে নৌ বাহিনী সদস্যের মৃত্যু"
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
         }
       ]
     },
@@ -64947,6 +68102,14 @@
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         },
         {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
           "cluster_id": 147,
           "slug": "national-147",
           "actor_links": 0,
@@ -64969,14 +68132,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
-        },
-        {
-          "cluster_id": 252,
-          "slug": "national-252",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         }
       ]
     },
