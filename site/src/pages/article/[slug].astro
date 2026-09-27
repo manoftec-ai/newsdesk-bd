@@ -129,7 +129,8 @@ const jsonLd = {
         "@type": "NewsMediaOrganization",
         name: SITE.name,
         url: SITE.url,
-        logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.svg` },
+        // Raster logo: Google rich results cannot use the old SVG file.
+        logo: { "@type": "ImageObject", url: `${SITE.url}/images/og-default.png` },
       },
       mainEntityOfPage: {
         "@type": "WebPage",
@@ -259,6 +260,12 @@ const shareLinks = [
   canonical={`${SITE.url}/article/${post.slug}`}
   ogType="article"
   ogImage={post.thumbnail}
+  article={{
+    publishedTime: isoDate(entry.data.date),
+    ...(entry.data.updated ? { modifiedTime: isoDate(entry.data.updated) } : {}),
+    ...(category ? { section: category.name } : {}),
+    tags: post.tags ?? [],
+  }}
   jsonLd={jsonLd}
   language={post.lang === "en" ? "en" : "bn"}
 >

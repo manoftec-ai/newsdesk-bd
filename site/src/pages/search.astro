@@ -6,7 +6,9 @@ import { categories, tags, SITE } from "../lib/news-data.js";
 const title = `খুঁজুন — ${SITE.name}`;
 ---
 
-<BaseLayout title={title} description="যাচাইডেস্কে খুঁজুন।">
+<BaseLayout title={title} description="যাচাইডেস্কে খুঁজুন।" robots="noindex, follow">
+  {/* noindex: search-result pages are thin/duplicate by nature and must not
+      compete in the index (SEO audit 2026-09-27). follow keeps discovery. */}
   <div class="mx-auto max-w-4xl px-5">
     <Breadcrumbs crumbs={[{ name: "খুঁজুন", href: "/search", current: true }]} />
 
