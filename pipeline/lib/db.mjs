@@ -176,10 +176,29 @@ export function insertRawItem(db, it) {
     it.published_at ?? null, it.seen_at, it.category ?? null, it.lang ?? null,
   );
   if (info.changes === 0) {
-    const existing = db.prepare('SELECT id FROM raw_items WHERE url = ?').get(it.url);
-    return { inserted: false, id: existing?.id ?? null };
+    const existing = db.prepare('SELECT id, body FROM raw_items WHERE url = ?').get(it.url);
+    // Upgrade a thin stored body with the freshly enriched one.
+    //
+    // Feeds return the same items every run, so almost every fetch lands here
+    // as a duplicate. With a bare INSERT OR IGNORE the enrichment — the whole
+    // point of fetching the article page — was computed and then thrown away,
+    // every 30 minutes, forever. Measured 2026-09-27: bbc-bengali has one row
+    // first seen at 19:00 (after the enrichment fix) at 328 words, and
+    // thirteen older rows still at 18-52 words, all of which the fetcher had
+    // already re-enriched and lost.
+    //
+    // Only replace when the new body is meaningfully longer, so a truncated
+    // or blocked re-fetch can never make a good stored body worse.
+    const fresh = it.body ?? '';
+    const stored = existing?.body ?? '';
+    if (existing && fresh.length > stored.length + 40) {
+      db.prepare('UPDATE raw_items SET body = ?, seen_at = ? WHERE id = ?')
+        .run(fresh, it.seen_at, existing.id);
+      return { inserted: false, upgraded: true, id: existing.id };
+    }
+    return { inserted: false, upgraded: false, id: existing?.id ?? null };
   }
-  return { inserted: true, id: Number(info.lastInsertRowid) };
+  return { inserted: true, upgraded: false, id: Number(info.lastInsertRowid) };
 }
 
 export function logFetch(db, { source_id, http_status, etag, modified, item_count }) {
