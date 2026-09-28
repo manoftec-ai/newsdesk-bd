@@ -2,6 +2,40 @@ name: deploy
 on:
   # Manual deploy — use when you want the current main tip live right now.
   workflow_dispatch:
+  # 2026-09-28: the site went several hours with no new articles, and the cause
+  # was not the author - auto-author published 5 articles at 10:26 and pushed
+  # them. It was the trigger. This schedule says '17 * * * *', i.e. hourly, but
+  # the real runs were 20:44, then 00:49, then 06:59: GitHub delayed and
+  # dropped the cron ticks, so a story could sit finished and unpublished for
+  # six hours with every check still green.
+  #
+  # A cron is the wrong clock for publishing news. So a push that changes
+  # reader-visible content now deploys straight away, and the schedule stays as
+  # the backstop for data-only refreshes.
+  #
+  # This does not put us back over Vercel's 100 deploys/day, which is why push
+  # was removed in the first place. The 'Decide whether a deploy is needed' step
+  # below asks Vercel which commit it is actually serving and exits before the
+  # Vercel CLI when site/ is identical, so a push that changed nothing
+  # reader-visible costs no deploy attempt. Only genuine content changes deploy.
+  push:
+    branches: [main]
+    paths:
+      - 'site/src/content/**'
+      - 'site/src/pages/**'
+      - 'site/src/components/**'
+      - 'site/src/layouts/**'
+      - 'site/src/lib/**'
+      - 'site/src/config/**'
+      - 'site/public/**'
+      - 'site/api/**'
+      - 'site/src/styles.css'
+      - 'site/src/content.config.js'
+      - 'site/package.json'
+      - 'site/astro.config.mjs'
+  # site/src/data is deliberately absent: event-graph.json is regenerated every
+  # pipeline cycle, so including it would fire a deploy on every cycle for a
+  # generated file. The hourly schedule still ships that refresh.
   # The ONLY automatic trigger.
   #
   # 2026-09-25: deploys were firing from four paths at once — push (29 runs),
@@ -18,6 +52,13 @@ on:
   # that every other cron on GitHub Actions also lands on.
   schedule:
     - cron: '17 * * * *'
+
+# Auto-author and history-author can both land in the same window. Collapse a
+# burst into one deploy, so the final state of main goes live once rather than
+# twice, and a content push is not queued behind a scheduled tick.
+concurrency:
+  group: vercel-deploy
+  cancel-in-progress: true
 
 jobs:
   vercel:
