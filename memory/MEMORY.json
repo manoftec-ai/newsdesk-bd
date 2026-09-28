@@ -1118,6 +1118,12 @@
       "date": "2026-09-28",
       "decision": "Follow-up sweep fixes (7a7aa45): og-default-v2 without tofu URL line; 8 photo-credit repairs. Live-verified /tracked x8 + new excerpts + og PNG.",
       "context": "User asked for any more improvement. Pipeline-side flags left for newsroom: credit-wrap bug, met-office boilerplate."
+    },
+    {
+      "date": "2026-09-28",
+      "id": "D125",
+      "decision": "No-new-news fix: decodeEntities+cleanBody entity decode (fixes &lt;p&gt; leads), resolve_sources write points use cleanBody, normalize tests 7/7, suite 381/381 (e063427f/b83ac714). Heartbeat pump killer || \"\" -> || echo \"\" (exit 127, chain dead since 15:50 UTC); parallel session shipped identical fix in 313d09d9. Chain restarted via dispatch.",
+      "context": "User: no new news -> root-cause then fix. Homepage sort deliberately unchanged. Open: dainikbangla news_item digest tails (national-110, unpublished). Log: sessions/2026-09-28-no-new-news-fix.md."
     }
   ],
   "sources": [
@@ -1463,7 +1469,7 @@
     }
   ],
   "lastUpdated": "2026-09-28",
-  "sessionsCount": 88,
+  "sessionsCount": 89,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
