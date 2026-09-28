@@ -31,6 +31,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
 import { extractArticle } from '../lib/article-text.mjs';
+import { cleanBody } from '../lib/normalize.mjs';
 
 const HERE = import.meta.dirname;
 const BRIEFS_DIR = resolve(HERE, '../state/briefs');
@@ -140,7 +141,11 @@ async function main() {
       if (retext) {
         // URL is already the publisher's; only the text is being rebuilt
         const art = await extractArticle(job.m.url);
-        if (art.ok) { stats.text++; job.m.lead = art.text; }
+        // 2026-09-28: extractArticle returns raw scorer text — escaped markup
+        // (`&lt;p&gt;`) and runaway whitespace survived into brief leads
+        // (national-251). cleanBody decodes entities and normalizes, same as
+        // the enrich_bodies path.
+        if (art.ok) { stats.text++; job.m.lead = cleanBody(art.text); }
         else stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
         done++;
         if (done % 25 === 0) console.log(`  ${done}/${queue.length} re-extracted...`);
@@ -158,7 +163,8 @@ async function main() {
         if (art.ok) {
           stats.text++;
           // keep the richer text: the RSS lead is a headline, this is the article
-          if (art.text.length > String(job.m.lead ?? '').length) job.m.lead = art.text;
+          const clean = cleanBody(art.text);
+          if (clean.length > String(job.m.lead ?? '').length) job.m.lead = clean;
         } else {
           stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
         }

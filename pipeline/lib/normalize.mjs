@@ -22,9 +22,38 @@ export function urlHash(url) {
   return createHash('sha1').update(url).digest('hex');
 }
 
+const HTML_ENTITIES = {
+  '&lt;': '<', '&gt;': '>', '&quot;': '"', '&apos;': "'", '&#39;': "'",
+  '&nbsp;': ' ', '&amp;': '&',
+};
+
+// Decode HTML entities (named + decimal/hex numeric) in one left-to-right
+// pass. 2026-09-28: extractor output reached brief leads with escaped markup
+// still in it (`&lt;p&gt;...`, national-251 prothomalo member) because
+// cleanBody stripped literal `<...>` tags but never decoded entities first,
+// so `&lt;p&gt;` survived as visible text all the way to the brief JSON.
+// Decoding before tag-stripping turns those into real tags the next step
+// removes. Single-pass alternation keeps `&amp;lt;` correct (yields literal
+// `&lt;` text, not a tag).
+export function decodeEntities(text) {
+  return String(text ?? '').replace(
+    /&(lt|gt|quot|apos|nbsp|amp);|&#(\d+);|&#x([0-9a-f]+);/giu,
+    (m, named, dec, hex) => {
+      if (named) return HTML_ENTITIES[`&${named.toLowerCase()};`] ?? m;
+      const code = dec ? Number(dec) : Number.parseInt(hex, 16);
+      if (!Number.isFinite(code) || code <= 0 || code > 0x10ffff) return m;
+      try {
+        return String.fromCodePoint(code);
+      } catch {
+        return m;
+      }
+    },
+  );
+}
+
 export function cleanBody(text) {
   if (!text) return '';
-  return text
+  return decodeEntities(text)
     .replace(/<[^>]+>/g, ' ')               // strip leftover tags
     .replace(/\s+/g, ' ')
     .replace(/[\u{1F600}-\u{1FAFF}]/gu, '')
