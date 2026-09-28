@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import { bodyWordCount, DEFAULT_MIN_PUBLISH_WORDS } from './editorial.mjs';
 import { normalizeTitle, urlHash, cleanBody, parseDate, isBoilerplateTitle } from './normalize.mjs';
 import { decodeGoogleNewsUrl, stripSourceFromTitle } from '../tools/tracked_watcher.mjs';
+import { extractArticleFromHtml, bengaliChars } from './article-text.mjs';
 
 const UA = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Mobile Safari/537.36';
 const TIMEOUT_MS = 25000;
@@ -129,6 +130,10 @@ function articleNodeStats($, node) {
   return { text, score: text.length + paragraphTexts.length * 40 - linkDensity * text.length * 2 };
 }
 
+// Below this many Bengali characters, a container that "matched" is really a
+// nav block or a related-links list, so the paragraph scorer gets the turn.
+const MIN_CONTAINER_CHARS = 400;
+
 export function extractArticleBody($) {
   const jsonLd = jsonLdArticleBody($);
   const nodes = new Set();
@@ -140,7 +145,29 @@ export function extractArticleBody($) {
     .filter(({ text }) => text.length >= 80)
     .sort((a, b) => b.score - a.score);
   const fallback = cleanBody($('p').map((_, el) => cleanBody($(el).text())).get().join(' '));
-  return [jsonLd, ...candidates.map(({ text }) => text), fallback].find((text) => text.length >= 100) ?? '';
+  const best = [jsonLd, ...candidates.map(({ text }) => text), fallback].find((text) => text.length >= 100) ?? '';
+
+  // 2026-09-28: this function alone decided what a fetched item was worth, and
+  // it reads a different way of building a page than the paragraph scorer in
+  // lib/article-text.mjs. On eight sources it returned nothing usable, so those
+  // items were stored with a headline and no body - bd24live alone accounted for
+  // 39 of the newest 300 - and the brief pool starved while the text was there
+  // all along. Re-extracting samakal, ittefaq and atnbangla by hand returned
+  // 253, 197 and 123 words from the same URLs.
+  //
+  // So when the container reader comes up short, the paragraph scorer gets the
+  // turn. It is stricter about furniture, which is the point: the container
+  // reader's "best" match on these layouts was a related-links block.
+  if (bengaliChars(best) >= MIN_CONTAINER_CHARS) return best;
+
+  // Only take the scorer's output when it genuinely has MORE Bengali content
+  // than what the container reader already found. An earlier version returned
+  // the scorer's text whenever it was merely "ok", and with minBengali: 0 that
+  // is true even when it found nothing at all - so on a page with a working
+  // JSON-LD body the fallback replaced a good extraction with an empty string.
+  // A fallback that can lose to what it is falling back from is not a fallback.
+  const scored = extractArticleFromHtml($.html(), { minBengali: 0 });
+  return bengaliChars(scored.text) > bengaliChars(best) ? scored.text : best;
 }
 
 function extractArticleMeta($, u) {

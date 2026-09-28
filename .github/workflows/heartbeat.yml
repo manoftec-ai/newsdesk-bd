@@ -126,7 +126,7 @@ jobs:
             # schedule in deploy.yml still ships data-only refreshes, so the
             # event graph cannot go stale.
             git fetch --no-tags origin main >/dev/null 2>&1 || true
-            AFTER_MAIN=$(git rev-parse origin/main 2>/dev/null || "")
+            AFTER_MAIN=$(git rev-parse origin/main 2>/dev/null || echo "")
             READER_PATHS='site/src/content site/public site/api site/src/pages site/src/components site/src/layouts site/src/lib'
             if [ -z "$BEFORE_MAIN" ] || [ -z "$AFTER_MAIN" ] || [ "$BEFORE_MAIN" = "$AFTER_MAIN" ]; then
               echo "$(date -u +%H:%M:%S) main did not move ($AFTER_MAIN); skipping deploy dispatch"

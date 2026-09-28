@@ -31,7 +31,7 @@ function decode(s) {
   return out.replace(/&[a-z#0-9]+;/giu, ' ').replace(/\s+/gu, ' ').trim();
 }
 
-const bengaliChars = (s) => (String(s).match(/[ঀ-৿]/g) ?? []).length;
+export const bengaliChars = (s) => (String(s).match(/[ঀ-৿]/g) ?? []).length;
 
 /** Text nodes outside <p>: headlines, image captions, timestamps. */
 function collectParagraphs(html) {
@@ -131,6 +131,39 @@ function longestRun(paragraphs, minScore, maxGap = 0) {
 /** First paragraph is the lede; it must not start with a dangling reference. */
 const DANGLING = /^(তবে|অথচ|তাই|ফলে|তাইলে|অর্থাৎ|যদিও|এই|সেই|ওই|এর\s|তাঁর|তার|তাঁদের|তাদের|তারা|এরা|উপরে)/u;
 
+/**
+ * Score a page we ALREADY have the HTML for.
+ *
+ * 2026-09-28: the fetch step stored headline-only bodies for eight sources
+ * (bd24live 39 items, ittefaq, dhakatribune, samakal, jugantor, deshrupantor,
+ * jamuna, kalerkantho) while this scorer read those same URLs without trouble -
+ * samakal 253 words, ittefaq 197, atnbangla 123. The pages were never the
+ * problem. The fetch path used only lib/fetch.mjs extractArticleBody, which
+ * looks for a large article/main container and returns nothing on these
+ * layouts, so every item looked like a headline. That starved the brief pool:
+ * 223 briefs failed the 100-word evidence floor while the text was sitting
+ * there the whole time.
+ *
+ * So extraction has to be reachable from a page already in hand, not only from
+ * a URL. extractArticle fetches; this does not.
+ */
+export function extractArticleFromHtml(html, { minBengali = 400, maxGap = 2 } = {}) {
+  const paragraphs = collectParagraphs(html);
+  const good = longestRun(paragraphs, 25, maxGap);
+
+  // prefer the run that actually opens the story over the largest run
+  const leadIndex = good.findIndex((p) => !DANGLING.test(p.text));
+  let chosen = good;
+  if (leadIndex > 0) chosen = good.slice(leadIndex - 1);
+
+  const text = chosen.map((p) => p.text).join('\n\n');
+  const bengali = bengaliChars(text);
+  if (bengali < minBengali) {
+    return { ok: false, why: `no-article-run(bengali=${bengali},paras=${good.length}/${paragraphs.length})`, text };
+  }
+  return { ok: true, text: text.slice(0, 4000), paragraphs: chosen.length, bengali };
+}
+
 export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2 } = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeoutMs);
@@ -146,21 +179,7 @@ export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400,
     });
     if (!res.ok) return { ok: false, why: `http-${res.status}` };
     const html = await res.text();
-
-    const paragraphs = collectParagraphs(html);
-    const good = longestRun(paragraphs, 25, maxGap);
-
-    // prefer the run that actually opens the story over the largest run
-    const leadIndex = good.findIndex((p) => !DANGLING.test(p.text));
-    let chosen = good;
-    if (leadIndex > 0) chosen = good.slice(leadIndex - 1);
-
-    const text = chosen.map((p) => p.text).join('\n\n');
-    const bengali = bengaliChars(text);
-    if (bengali < minBengali) {
-      return { ok: false, why: `no-article-run(bengali=${bengali},paras=${good.length}/${paragraphs.length})` };
-    }
-    return { ok: true, text: text.slice(0, 4000), paragraphs: chosen.length, bengali };
+    return extractArticleFromHtml(html, { minBengali, maxGap });
   } catch (err) {
     return { ok: false, why: err?.name === 'AbortError' ? 'timeout' : 'fetch-error' };
   } finally {
