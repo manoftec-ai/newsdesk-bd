@@ -1,0 +1,69 @@
+---
+title: "বেঙ্গল কমার্শিয়াল ব্যাংকের ষষ্ঠ এজিএম অনুষ্ঠিত"
+seoTitle: "বেঙ্গল কমার্শিয়াল ব্যাংকের ষষ্ঠ এজিএম অনুষ্ঠিত"
+excerpt: "ব্যাংকটি এক প্রেস বিজ্ঞপ্তিতে বলেছে, সভায় ২০২৫ সালের ৩১ ডিসেম্বর পর্যন্ত ব্যাংকের আর্থিক বিবরণী, নিরীক্ষিত স্থিতিপত্র ও লাভ-লোকসান হিসাব নিয়ে বিস্তারিত আলোচনা করা হয়। সভায় সভাপতিত্"
+seoDescription: "ব্যাংকটি এক প্রেস বিজ্ঞপ্তিতে বলেছে, সভায় ২০২৫ সালের ৩১ ডিসেম্বর পর্যন্ত ব্যাংকের আর্থিক বিবরণী, নিরীক্ষিত স্থিতিপত্র ও লাভ-লোকসান হিসাব নিয়ে বিস্তারিত আল…"
+date: 2026-09-22T14:39:00.000Z
+category: "national"
+tags: ["dhaka"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "বেঙ্গল কমার্শিয়াল ব্যাংকের ষষ্ঠ বার্ষিক সাধারণ সভা (এজিএম) অনুষ্ঠিত হয়েছে"
+  - "বেঙ্গল কমার্শিয়াল ব্যাংক পিএলসির ষষ্ঠ বার্ষিক সাধারণ সভা (এজিএম) অনুষ্ঠিত হয়েছে"
+  - "এ ছাড়া ব্যাংকের ব্যবস্থাপনা পরিচালক কে এম আওলাদ হোসেন, অতিরিক্ত ব্যবস্থাপনা পরিচালক ও সিবিও নাসিম সিকান্দার"
+faq: []
+sources:
+  - name: "বিডিনিউজ২৪"
+    url: "https://bangla.bdnews24.com/corporate/bipkdw9vay"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/business/corporate/50w6a9wyk1"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-09-28T09:06:29.814Z"
+  clusterId: 415
+  claimIds:
+    - 33869
+    - 33870
+  evidenceHash: "72d8119050b6d064"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (bdnews24)"
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+publication:
+  slug: "national-415"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-09-28T09:06:29.814Z"
+  clusterId: 415
+  claimIds:
+    - 33869
+    - 33870
+  evidenceHash: "72d8119050b6d064"
+---
+
+ব্যাংকটি এক প্রেস বিজ্ঞপ্তিতে বলেছে, সভায় ২০২৫ সালের ৩১ ডিসেম্বর পর্যন্ত ব্যাংকের আর্থিক বিবরণী, নিরীক্ষিত স্থিতিপত্র ও লাভ-লোকসান হিসাব নিয়ে বিস্তারিত আলোচনা করা হয়।
+
+সভায় সভাপতিত্ব করেন ব্যাংকের পরিচালনা পর্ষদের চেয়ারম্যান মো. জসিম উদ্দিন।
+
+এ সময় ব্যাংকের ভাইস চেয়ারম্যান গোলাম মোহাম্মদ আলমগীরসহ অন্যান্য পরিচালক ও শেয়ারধারীরা উপস্থিত ছিলেন।
+
+বার্ষিক সাধারণ সভায় ব্যাংকের ব্যবস্থাপনা পরিচালক (এমডি) কে এম আওলাদ হোসেন এবং অতিরিক্ত ব্যবস্থাপনা পরিচালক (এএমডি) ও সিবিও নাসিম সিকান্দারসহ উপব্যবস্থাপনা পরিচালকেরা ও ঊর্ধ্বতন কর্মকর্তারা উপস্থিত ছিলেন।
+
+একইসঙ্গে সংশ্লিষ্ট বছরের জন্য ৪ দশমিক ৫০ শতাংশ ডিভিডেন্ড অনুমোদন করা হয়েছে।
+
+সভায় ২০২৫ সালের শেয়ারহোল্ডারদের জন্য সাড়ে ৪ শতাংশ লভ্যাংশ অনুমোদন করা হয়।
+
+রাজধানীর বনানীতে শেরাটন হোটেলে সোমবার এ সভার আয়োজন করা হয়।
