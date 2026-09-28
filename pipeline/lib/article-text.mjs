@@ -72,9 +72,47 @@ function scoreParagraph(text) {
  * Keep the longest run of consecutive good paragraphs. Article bodies are
  * contiguous; furniture and link farms sit between them, so a run beats a
  * global top-N that would splice unrelated stories together.
+ *
+ * maxGap lets the window survive a weak paragraph WITHOUT emitting it. That
+ * distinction matters: scoreParagraph rejects anything under 12 words, and real
+ * news copy contains one-sentence paragraphs, so a single short quote in the
+ * middle of a story used to reset the run to zero and the body came back with
+ * one paragraph. A run beats a global top-N for not splicing unrelated stories,
+ * but on its own it was too brittle to cover a normal article.
+ *
+ * The gap may only ever be bridged by a WEAK paragraph, never by FURNITURE.
+ * Furniture is a hard stop, because that is what actually separates two
+ * unrelated stories on a page - bridging across it is how a digest's "আরও
+ * পড়ুন" list gets spliced into the story above it.
  */
-function longestRun(paragraphs, minScore) {
-  const scored = paragraphs.map((p) => ({ ...p, score: scoreParagraph(p.text) }));
+function longestRun(paragraphs, minScore, maxGap = 0) {
+  const scored = paragraphs.map((p) => ({
+    ...p,
+    score: scoreParagraph(p.text),
+    furniture: proseProblem(p.text) !== null,
+  }));
+
+  if (maxGap > 0) {
+    let best = { start: 0, end: 0, len: 0 };
+    let start = 0, gap = 0, len = 0;
+    scored.forEach((p, i) => {
+      const usable = p.score >= minScore && !p.furniture;
+      if (usable) {
+        if (len === 0) start = i;
+        len++;
+        gap = 0;
+        if (len > best.len) best = { start, end: i + 1, len };
+      } else if (len > 0 && !p.furniture && gap < maxGap) {
+        gap++;
+      } else {
+        start = i + 1;
+        gap = 0;
+        len = 0;
+      }
+    });
+    return scored.slice(best.start, best.end).filter((p) => p.score >= minScore && !p.furniture);
+  }
+
   let best = { start: 0, len: 0, sum: 0 };
   let cur = { start: 0, len: 0, sum: 0 };
   scored.forEach((p, i) => {
@@ -93,7 +131,7 @@ function longestRun(paragraphs, minScore) {
 /** First paragraph is the lede; it must not start with a dangling reference. */
 const DANGLING = /^(তবে|অথচ|তাই|ফলে|তাইলে|অর্থাৎ|যদিও|এই|সেই|ওই|এর\s|তাঁর|তার|তাঁদের|তাদের|তারা|এরা|উপরে)/u;
 
-export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400 } = {}) {
+export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2 } = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeoutMs);
   try {
@@ -110,7 +148,7 @@ export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400 
     const html = await res.text();
 
     const paragraphs = collectParagraphs(html);
-    const good = longestRun(paragraphs, 25);
+    const good = longestRun(paragraphs, 25, maxGap);
 
     // prefer the run that actually opens the story over the largest run
     const leadIndex = good.findIndex((p) => !DANGLING.test(p.text));

@@ -232,6 +232,14 @@ const contentTokens = (s) =>
       .filter((w) => w.length > 2),
   );
 
+// The floor below which a body is treated as being about a different story.
+//
+// This lives here, and is imported by tools/content_audit.mjs, because the two
+// copies used to hold the same number separately (0.18 in each) and that is how
+// a threshold drifts out of step with the corpus it is meant to describe. The
+// value is measured, not guessed - see the c12 note in mechanicalAudit.
+export const MIN_HEADLINE_COVERAGE = 0.10;
+
 export function mechanicalAudit(brief, body) {
   const text = String(body ?? '');
   const fails = [];
@@ -286,8 +294,20 @@ export function mechanicalAudit(brief, body) {
   //
   // So the check the pipeline was missing is not between members. It is between
   // what the reader was promised and what the reader is given.
+  // The threshold was 0.18, which was a guess. Measured over the corpus it is
+  // far too tight, and it was withholding correct articles: 94% of published
+  // articles score 40%+, and the six lowest were 13%, 13%, 14%, 17%, 17% and
+  // 17% - all legitimate stories. A long formal Bangla headline is paraphrased
+  // by the body instead of being repeated, so low vocabulary overlap does not
+  // mean off-topic. national-543 scored 14% and its body is plainly about the
+  // UN speech its headline names.
+  //
+  // What actually matters is where the real defect sits. national-532, the
+  // digest-under-a-headline case this check was written for, scores 8%. The
+  // corpus has nothing between 8% and 13%, so 0.10 separates them with room on
+  // both sides: the defect still fails, and the correct articles pass.
   const relevance = bodyHeadlineRelevance(brief.headline ?? '', text);
-  if (relevance.coverage < 0.18 && relevance.headlineTokens >= 4) {
+  if (relevance.coverage < MIN_HEADLINE_COVERAGE && relevance.headlineTokens >= 4) {
     note('c12', `body is about a different story (shares only ${Math.round(relevance.coverage * 100)}% of the headline)`);
   }
 

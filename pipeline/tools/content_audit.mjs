@@ -32,6 +32,7 @@
 
 import { readFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import { MIN_HEADLINE_COVERAGE } from '../lib/audit.mjs';
 
 const HERE = import.meta.dirname;
 const SITE = resolve(HERE, '../../site/src/content/news');
@@ -135,7 +136,7 @@ function audit(slug, raw) {
     let hit = 0;
     for (const w of H) if (B.has(w)) hit++;
     const coverage = hit / H.size;
-    if (coverage < 0.18) {
+    if (coverage < MIN_HEADLINE_COVERAGE) {
       out.push({ code: 'BODY_OFF_HEADLINE', detail: `body shares ${Math.round(coverage * 100)}% of headline vocabulary` });
     }
   }
