@@ -98,6 +98,30 @@ jobs:
             --limit=150 --target=failing-briefs --resolve-gnews --skip-unusable --write \
             || echo "body backfill failed or timed out; briefs rebuild from what we have"
 
+      - name: Re-extract brief evidence with the paragraph scorer
+        run: |
+          # A second, complementary top-up to enrich_bodies above.
+          #
+          # enrich_bodies reads the largest article/main container and is
+          # already effective, but it is a different extractor from the one that
+          # builds brief evidence. resolve_sources --retext uses the paragraph
+          # scorer in lib/article-text.mjs, which is stricter about furniture
+          # and so recovers bodies enrich_bodies gives up on - and which, until
+          # 2026-09-28, rejected any paragraph under 12 words and only kept the
+          # longest CONSECUTIVE run, so a single one-sentence quote truncated a
+          # normal article to one paragraph. A/B on the briefs that were
+          # starving the pipeline: 2794 -> 4001 evidence words across 13 URLs.
+          #
+          # It was in no workflow at all, which is why the pool had to be refilled
+          # by hand. Measured on the run that proved it: 275 bodies recovered,
+          # 109 briefs updated, and pending briefs went 0 -> 3.
+          #
+          # --limit keeps the 30-minute cycle quick; the pool refills over
+          # several cycles rather than in one long step, and a failure here only
+          # means the next cycle tries again.
+          node tools/resolve_sources.mjs --retext --limit=40 \
+            || echo "brief re-extraction failed; the pool will be topped up next cycle"
+
       - name: Extract briefs
         run: node run.js extract || true
 
