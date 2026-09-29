@@ -23,7 +23,12 @@ concurrency:
 jobs:
   author:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 2026-09-29: the refresh safety net alone (fetch+normalize+cluster+verify
+    # +extract on a 60MB store) takes ~28 min on a loaded runner; at 30 min the
+    # job died on the finish line before pick/compose/finalize ever ran, so
+    # nothing published despite a healthy brief pool. Headroom costs nothing
+    # when runs are fast.
+    timeout-minutes: 60
     env:
       # Hard cap on stories authored/published per run. Guards against a supply
       # spike (e.g. a source fix) turning one run into an unbounded, very long
