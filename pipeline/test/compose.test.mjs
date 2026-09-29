@@ -10,6 +10,7 @@ import {
   composeBody,
   cleanEvidence,
   bnWordCount,
+  asBullet,
   MIN_ARTICLE_WORDS,
 } from '../lib/compose.mjs';
 import { mechanicalAudit } from '../lib/audit.mjs';
@@ -172,4 +173,16 @@ test('evidenceWordsAvailable counts duplicated wire sentences once (2026-09-29)'
   };
   const dd = evidenceWordsAvailable(distinct);
   assert.ok(dd >= 18, `distinct leads undercounted: ${dd}`);
+});
+
+test('asBullet never ends inside an open quote (2026-09-29 national-694)', () => {
+  const out = asBullet(
+    'রাজধানীর আদাবরে বাড়ি দখলের চেষ্টা ও ভাঙচুরের ঘটনায় পুলিশ জানায়: ‘বাসায় থাকিস তোদের দেখে নেব’ বলে হুমকি দিয়ে তারা পালিয়ে যায় এবং পরে অভিযান চালিয়ে গ্রেপ্তার করা হয়',
+  );
+  const q = (s) => [...s].filter((c) => /[''""«»]/u.test(c)).length;
+  assert.equal(q(out) % 2, 0, `unbalanced quotes leaked: ${out}`);
+  assert.ok(!out.includes('বাসায়'), 'quoted fragment must be cut, not kept half');
+  assert.ok(out.length > 20, 'kept head must still stand alone: ' + out);
+  // balanced short input passes through
+  assert.ok(asBullet('ছোট সম্পূর্ণ বাক্য।').length > 0);
 });

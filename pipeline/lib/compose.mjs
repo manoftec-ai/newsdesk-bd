@@ -361,7 +361,7 @@ function dedupeParagraphs(paras) {
  * short enough are used, and the tail is trimmed at a clause boundary
  * (comma, colon, or a connective) rather than mid-word.
  */
-function asBullet(sentence, maxWords = 16) {
+export function asBullet(sentence, maxWords = 16) {
   const words = String(sentence ?? '').split(/\s+/u).filter(Boolean);
   if (!words.length) return '';
   if (words.length <= maxWords) return sentence.replace(/[।?!]\s*$/u, '').trim();
@@ -375,7 +375,19 @@ function asBullet(sentence, maxWords = 16) {
   }
   while (cut > 4 && CONNECTIVE.test(words[cut - 1])) cut--;
   if (cut < 5) return ''; // no clean boundary: not a point
-  return words.slice(0, cut).join(' ').replace(/[,;:]\s*$/u, '').trim();
+  let out = words.slice(0, cut).join(' ').replace(/[,;:]\s*$/u, '').trim();
+  // 2026-09-29: never end a bullet inside an open quote. A cut after "...দখলের
+  // চেষ্টা: 'বাসায় থাকিস" published a dangling half-quote as a key point
+  // (national-694). Back off to before the opening quote; drop trailing
+  // punctuation the amputation leaves behind. Too short to stand alone -> skip.
+  const QUOTES = /[''""«»]/u;
+  const qCount = (s) => [...String(s)].filter((c) => QUOTES.test(c)).length;
+  if (qCount(out) % 2 === 1) {
+    const qi = out.search(/[''""«»][^'"'""«»]*$/u);
+    out = (qi > 0 ? out.slice(0, qi) : '').replace(/[,;:\-—–\s]+$/u, '').trim();
+    if (out.split(/\s+/u).filter(Boolean).length < 4) return '';
+  }
+  return out;
 }
 
 /**

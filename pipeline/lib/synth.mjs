@@ -43,7 +43,13 @@ export function inferTags(brief) {
     ...(brief.members ?? []).map((m) => `${m.title ?? ''} ${m.lead ?? ''}`),
   ].join(' ');
   const map = {
-    health: ['ডেঙ্গু', 'হাসপাতাল', 'স্বাস্থ্য', 'কিডনি', 'হাম', 'ভর্তি', 'রোগী', 'ঝুঁকি'],
+    // 2026-09-29: health is split by signal strength. Disease words are strong
+    // (they ARE the story); facility words (হাসপাতাল/ভর্তি/রোগী) also appear
+    // whenever a crime story mentions casualties taken to hospital, so they
+    // only count outside a crime context. 'ঝুঁকি' removed outright — it fires
+    // on anything ("ঝুঁকিতে জিপিটি", "ঝুঁকিতে অর্থনীতি").
+    health: ['ডেঙ্গু', 'হাম', 'কিডনি'],
+    healthFacility: ['স্বাস্থ্য', 'হাসপাতাল', 'ভর্তি', 'রোগী'],
     education: ['শিক্ষা', 'শিক্ষাব্যবস্থা', 'স্কুল', 'কলেজ', 'বিশ্ববিদ্যালয়', 'শিক্ষার্থী', 'সাক্ষরতা'],
     economy: ['গ্যাস', 'বেতন', 'ভাতা', 'ইটভাটা', 'অর্থনীতি', 'বাজেট', 'টাক', 'মুদ্রাস্ফীতি', 'বাণিজ্য'],
     transport: ['মহাসড়ক', 'বাস', 'হাইওয়ে', 'রেল', 'সড়ক', 'মেট্রোরেল', 'ট্রেন', 'গাড়ি'],
@@ -70,6 +76,14 @@ export function inferTags(brief) {
     coxsbazar: ['কক্সবাজার', 'টেকনাফ'],
     rangamati: ['রাঙ্গামাটি'],
   };
+  // Crime markers: a crime story that mentions a hospital (casualties admitted)
+  // is not a health story. Facility words above are suppressed in their presence.
+  const CRIME_MARKERS = ['পুলিশ', 'গ্রেপ্তার', 'আসামি', 'মামলা', 'হামলা', 'আদালত', 'থানা', 'র‍্যাব', 'র্যাব', 'মাদক', 'চাঁদাবাজি', 'সন্ত্রাসী', 'অস্ত্র', 'গুলি', 'খুন', 'ধর্ষণ', 'ডাকাতি', 'চুরি'];
+  // Institution words that also name hospitals: "মেডিকেল কলেজ হাসপাতালে ভর্তি"
+  // is a hospital, not a school (national-694 wrongly tagged education via
+  // 'কলেজ'). Suppressed next to মেডিকেল / before হাসপাতাল; plain শিক্ষা /
+  // শিক্ষার্থী still count (e.g. "মেডিকেল শিক্ষার্থীদের" stays education).
+  const HOSPITAL_NAMED = new Set(['স্কুল', 'কলেজ', 'বিশ্ববিদ্যালয়']);
   const tags = [];
   // 2026-09-27 interlinking: Bengali is agglutinative, so raw substring
   // search misfires ('বাস' inside 'বাসা', 'হাম' inside 'হামলা'). A keyword
@@ -81,9 +95,21 @@ export function inferTags(brief) {
     const tail = /[A-Za-z]/.test(kw) ? '(?:s)?' : BN_SUFFIX;
     return new RegExp(`(?<!${WC})${esc(kw)}${tail}(?!${WC})`).test(hay);
   };
+  const hospitalNamed = (hay, kw) => {
+    if (!HOSPITAL_NAMED.has(kw)) return false;
+    return (
+      new RegExp(`মেডিকেল\\s+${esc(kw)}`).test(hay) ||
+      new RegExp(`${esc(kw)}\\s+হাসপাতাল`).test(hay)
+    );
+  };
   for (const [slug, kws] of Object.entries(map)) {
-    if (kws.some((kw) => wordHit(pool, kw))) tags.push(slug);
+    if (slug === 'healthFacility') continue; // folded into health below
+    if (kws.some((kw) => wordHit(pool, kw) && !hospitalNamed(pool, kw))) tags.push(slug);
   }
+  // Facility words tag health only outside a crime context (casualties taken
+  // to hospital do not make a crime story a health story).
+  const crimeContext = CRIME_MARKERS.some((kw) => wordHit(pool, kw));
+  if (!crimeContext && map.healthFacility.some((kw) => wordHit(pool, kw))) tags.push('health');
   // 2026-09-27 interlinking: tagless articles fall out of every tag cluster
   // and starve relatedPosts/context-links of signals. Guarantee at least one
   // navigational tag via the story category (tag pages generate dynamically,
