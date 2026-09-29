@@ -47,3 +47,13 @@ Verified on real brief: 9-way group → {m0,m1} football pair + 7 singletons.
 Pipeline run with fix (07:31, head 6ac05a23) in progress; confirm next: 672
 splits in fresh briefs, pick pending >0, auto-author publishes, deploy ships,
 jachaidesk shows Sep-29 stories.
+
+## D128 follow-up (same day, ~10:50 UTC)
+Pick still 0/0 at 10:10 (234 thin, 28 incoh, 266 dups) despite clean fresh
+clusters. Root-caused to the MATURITY counter: every touch reset mature_runs
+to 0, including identical re-formations — stable pair 691 never matures.
+Fixed (growth-only reset, c99abe1b). 691/679-class briefs should mature
+within ~3 runs and publish IF they clear the mechanical audit (679 currently
+fails c9-159w<180 + rep1 + c14; 681 fails c14 + c6-hype — flagged, not changed).
+Also: runs queueing on GH runners (pending), deploys lagging (last 08:36),
+push races from all sides (incl. my own pushes — batched going forward).

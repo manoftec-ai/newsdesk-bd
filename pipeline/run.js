@@ -98,11 +98,11 @@ async function cmdCluster() {
   // cluster_members has no per-item uniqueness); the old row persists
   // harmlessly until its brief is refused into irrelevance.
   let created = 0, reused = 0, unclustered = 0, fragmented = 0;
-  const touched = new Set();
+  const grown = new Set();
   const multiSource = [];
   for (const ids of groups) {
     if (ids.length === 1) { unclustered++; continue; } // singletons stay unclustered
-    let target = null, wouldReuse = false;
+    let target = null, wouldReuse = false, targetMem = null;
     for (const ex of existing) {
       const mem = memberSets.get(ex.id);
       if (!mem) continue;
@@ -110,28 +110,38 @@ async function cmdCluster() {
       for (const i of ids) if (mem.has(i)) overlap++;
       if (overlap / ids.length >= 0.6) {
         wouldReuse = true;
-        if (ids.length / mem.size >= 0.5) { target = ex; break; }
+        if (ids.length / mem.size >= 0.5) { target = ex; targetMem = mem; break; }
       }
     }
     const headline = pickClusterHeadline(itemsById, ids);
     const members = ids.map((id) => ({ item_id: id, source_id: itemsById.get(id).source_id }));
     const clusterId = target ? target.id : insertCluster(db, { status: 'open', headline });
     addClusterMembers(db, clusterId, members);
-    touchCluster(db, clusterId, { status: 'open', headline, memberCount: ids.length, matureRuns: 0 });
-    touched.add(clusterId);
+    // 2026-09-29: only genuine GROWTH resets the maturity counter. Before,
+    // every touch reset mature_runs to 0 — including an identical re-formation
+    // of the same members — so a stable, corroborated pair (national-691: 2
+    // fat members, 3h old, re-formed every run) could NEVER mature and its
+    // brief sat at BRIEF_NOT_MATURE forever. A group that brings no new
+    // members keeps its counter and ages in step 3 below.
+    const hasNew = target ? ids.some((id) => !targetMem.has(id)) : true;
+    touchCluster(db, clusterId, {
+      status: 'open', headline, memberCount: ids.length,
+      matureRuns: hasNew ? 0 : (target ? target.mature_runs ?? 0 : 0),
+    });
+    if (hasNew) grown.add(clusterId);
     if (target) reused++; else { created++; if (wouldReuse) fragmented++; }
-    touched.add(clusterId);
-    if (target) reused++; else created++;
 
     const srcs = new Set(ids.map((id) => itemsById.get(id).source_id));
     if (srcs.size >= 2) multiSource.push({ clusterId, n: ids.length, srcs: srcs.size, headline });
   }
 
-  // 3) age open clusters: runs with no new member → mature_runs++; mature when threshold reached
+  // 3) age open clusters: runs with no new member → mature_runs++; mature when threshold reached.
+  // (grown = clusters that gained a genuinely new member this run; identical
+  // re-formation does NOT reset — see the hasNew logic above.)
   const mature = [];
   const openRows = db.prepare('SELECT id, mature_runs FROM clusters WHERE status = ?').all('open');
   for (const c of openRows) {
-    const newRuns = touched.has(c.id) ? 0 : c.mature_runs + 1;
+    const newRuns = grown.has(c.id) ? 0 : c.mature_runs + 1;
     if (newRuns >= matureRunsNeeded) {
       db.prepare('UPDATE clusters SET status=?, mature_runs=? WHERE id=?').run('mature', newRuns, c.id);
       mature.push(c.id);

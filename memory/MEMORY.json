@@ -1136,6 +1136,12 @@
       "id": "D127",
       "decision": "Throughflow fixes (caccaba6): split-aware cluster reuse (>=50% coverage), pipeline push retry 3x, auto-author timeout 60min. Suite 382/382, golden 1.000.",
       "context": "Pick still 0/0 despite clean fresh clusters. Deliberately unchanged: maturity timing, mechanical composer/gate calibration (679/681 fail c9/rep1/c14/c6), blocked-outlet wrappers. See MEMORY.md D127."
+    },
+    {
+      "date": "2026-09-29",
+      "id": "D128",
+      "decision": "Maturity deadlock fix: only genuine growth resets mature_runs; identical re-formation ages (c99abe1b). Suite 382/382.",
+      "context": "691 stable pair 3h old still open proved it. See MEMORY.md D128."
     }
   ],
   "sources": [
@@ -1481,7 +1487,7 @@
     }
   ],
   "lastUpdated": "2026-09-28",
-  "sessionsCount": 91,
+  "sessionsCount": 92,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
