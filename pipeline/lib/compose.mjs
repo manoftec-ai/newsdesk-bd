@@ -473,16 +473,51 @@ function buildWithBand(brief, pool, srcCount, band) {
   const mainParas = dedupeParagraphs(
     paras
       .filter((p) => p && p.length >= 55)
-      .filter((p) => !lead || overlapRatio(p, lead) <= 0.6),
+      // 2026-09-29: dedupe against the FULL lede (lead + support sentence),
+      // not the lead alone. The audit measures repetition against the emitted
+      // first paragraph, so a body para overlapping only the support sentence
+      // slipped through here and fired rep1/c14 downstream (national-679).
+      .filter((p) => !lede || overlapRatio(p, lede) <= 0.6),
   );
 
-  const { blocks, bulletsUsed } = assemble(lede, candBullets, mainParas, band);
+  // 2026-09-29 self-heal: drop what the audit's c14 would flag, using the
+  // audit's own rule (content-token overlap >0.65 with >=8 shared tokens, on
+  // the smaller side), so the composer never ships a body it knows fails.
+  // Only removes duplication — never invents, never pads. A body left too
+  // short is reported short below; padding with near-dupes is what tripped
+  // c14 on wire-overlap stories (national-681: bullet block vs body para
+  // restating the same wire fact). Bullets win over body paras (c8 requires
+  // the section for 3+ members); among bullets the first wins.
+  const auditTokens = (s) =>
+    new Set(
+      String(s ?? '')
+        .toLowerCase()
+        .replace(/[^\u0980-\u09FF\s]/gu, ' ')
+        .split(/\s+/u)
+        .filter((w) => w.length > 2),
+    );
+  const isDup = (a, b) => {
+    const ta = auditTokens(a), tb = auditTokens(b);
+    if (ta.size < 4 || tb.size < 4) return false;
+    let hit = 0;
+    for (const w of ta) if (tb.has(w)) hit++;
+    return hit / Math.min(ta.size, tb.size) > 0.65 && hit >= 8;
+  };
+  const healBullets = [];
+  for (const b of candBullets) {
+    if (healBullets.some((k) => isDup(b, k))) continue;
+    healBullets.push(b);
+  }
+  const bulletBlock = healBullets.join('\n');
+  const healParas = mainParas.filter((p) => !isDup(p, lede) && (healBullets.length === 0 || !isDup(p, bulletBlock)));
+
+  const { blocks, bulletsUsed } = assemble(lede, healBullets, healParas, band);
 
   const parts = [];
   if (lede) parts.push(closeParagraph(lede));
-  if (bulletsUsed) parts.push(`**এক নজরে**\n${candBullets.map((b) => `- ${b}`).join('\n')}`);
+  if (bulletsUsed) parts.push(`**এক নজরে**\n${healBullets.map((b) => `- ${b}`).join('\n')}`);
 
-  const keptMain = blocks.filter((b) => b !== lede && !candBullets.includes(b));
+  const keptMain = blocks.filter((b) => b !== lede && !healBullets.includes(b));
   // No "মূল খবর" heading: it is on GENERIC_HEADINGS in publication-gate.mjs, so a
   // bold "**মূল খবর**" line fails ARTIFICIAL_GENERIC_HEADING. "এক নজরে" is not
   // on that list and is required by c8 once a brief has 3+ members.

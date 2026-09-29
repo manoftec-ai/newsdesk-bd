@@ -262,13 +262,47 @@ const clampBand = (min, max) => {
  * instead makes writer and gate agree by construction, with no state to persist.
  */
 export function evidenceWordsAvailable(brief) {
+  // Unique-word evidence: member leads overlap (the same wire facts carried by
+  // every outlet) and the composer MUST drop the overlap — otherwise c14/rep1
+  // refuse the body for duplication. Counting raw words therefore sets floors
+  // no honest body can reach (2026-09-29: national-679 carried 247 raw words
+  // -> floor 180, but only ~159 unique words exist, so the composer padded
+  // with a lead-overlapping truncated paragraph and the body was refused three
+  // ways at once). Each sentence is counted once: a sentence whose content
+  // tokens are >65% covered by an already-kept sentence (with >=8 shared
+  // tokens — the same c14 rule the audit enforces) adds nothing composable.
+  // Used ONLY for band calibration (fitBandToEvidence); the 100-word publish
+  // gate counts raw evidence separately and is untouched.
+  const contentTokensOf = (s) =>
+    new Set(
+      String(s ?? '')
+        .toLowerCase()
+        .replace(/[^\u0980-\u09FF\s]/gu, ' ')
+        .split(/\s+/u)
+        .filter((w) => w.length > 2),
+    );
+  const kept = [];
   let words = 0;
   for (const m of brief?.members ?? []) {
     const text = String(m?.lead ?? '')
       .replace(/&lt;[^&]*?&gt;/gu, ' ')
       .replace(/<[^>]*>/gu, ' ')
       .replace(/[A-Za-z0-9]/gu, ' ');
-    words += text.trim().split(/\s+/u).filter(Boolean).length;
+    for (const sent of text.split(/[।!?]+/u)) {
+      const s = sent.trim();
+      if (!s) continue;
+      const toks = contentTokensOf(s);
+      let dup = false;
+      for (const k of kept) {
+        if (toks.size < 4 || k.size < 4) continue;
+        let hit = 0;
+        for (const w of toks) if (k.has(w)) hit++;
+        if (hit / Math.min(toks.size, k.size) > 0.65 && hit >= 8) { dup = true; break; }
+      }
+      if (dup) continue;
+      kept.push(toks);
+      words += s.split(/\s+/u).filter(Boolean).length;
+    }
   }
   return words;
 }
