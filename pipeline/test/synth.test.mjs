@@ -167,3 +167,30 @@ test('prepBody: excerpt stripped of এক নজরে block and markdown marke
   assert.doesNotMatch(excerpt, /এক\s*নজরে/);
   assert.doesNotMatch(excerpt, /## /);
 });
+test('inferTags: hospital context is not health or education (2026-09-29 national-694)', () => {
+  const tags = inferTags({
+    headline: 'অভিযানে চাপাতি নিয়ে হামলার চেষ্টা, পাল্টা গুলিতে আহত ২, গ্রেপ্তার ১০ : পুলিশ',
+    members: [
+      {
+        title: 'প্রথম আলো প্রতিবেদন',
+        lead: 'আহতদের শহীদ সোহরাওয়ার্দী মেডিকেল কলেজ হাসপাতালে ভর্তি করা হয়েছে। রাজধানীর আদাবরে পুলিশের অভিযানে গ্রেপ্তার।',
+      },
+    ],
+    category: 'national',
+  });
+  assert.ok(!tags.includes('health'), `crime+casualties mistagged health: ${tags}`);
+  assert.ok(!tags.includes('education'), `medical college mistagged education: ${tags}`);
+  assert.ok(tags.includes('dhaka'));
+});
+
+test('inferTags: genuine health and education stories still tag correctly', () => {
+  assert.ok(
+    inferTags({ headline: 'ডেঙ্গুতে মৃত্যু', members: [{ title: 'x', lead: 'স্বাস্থ্য অধিদপ্তরের তথ্য' }] }).includes('health'),
+  );
+  assert.ok(
+    inferTags({ headline: 'কলেজে ভর্তি', members: [{ title: 'x', lead: 'ঢাকা কলেজে ভর্তি পরীক্ষা' }] }).includes('education'),
+  );
+  assert.ok(
+    inferTags({ headline: 'মেডিকেল শিক্ষার্থীদের দাবি', members: [] }).includes('education'),
+  );
+});
