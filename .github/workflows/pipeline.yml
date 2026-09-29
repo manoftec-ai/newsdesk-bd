@@ -159,29 +159,49 @@ jobs:
           else
             git commit -m "pipeline: fetch/verify/extract (auto, $(date -u +%Y%m%dT%H%M))"
             # Merge-style push tolerant of concurrent workers (auto-author etc.)
-            git fetch origin main
-            if git merge --ff-only origin/main 2>/dev/null; then
-              :
-            elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
-              # A concurrent writer (auto-author, images) landed on main while
-              # this run was working. Taking "theirs" is right for the small
-              # JSON state files — the next run re-derives those — but it is
-              # catastrophic for store.db, which is the only copy of the fetch
-              # this run just did. HEAD^1 is our pre-merge commit, so put our
-              # database back and amend the merge.
-              if git diff --quiet HEAD^1 HEAD -- pipeline/state/store.db; then
-                echo "merge kept our store.db (no conflict on it)"
+            # 2026-09-29: one shot was not enough — with several writers pushing
+            # every few minutes the fetch→merge→push window routinely lost the
+            # race and the run abandoned its state ("merge failed — abandoning
+            # push"), so enrichment/clustering work kept being recomputed and
+            # dropped. Retry the whole fetch→merge→push up to 3 times; each
+            # attempt re-fetches, so a raced push just merges again instead of
+            # abandoning. Conflict semantics unchanged (theirs wins, our
+            # store.db restored below).
+            OURS=""
+            pushed=""
+            for attempt in 1 2 3; do
+              git fetch origin main
+              OURS=$(git rev-parse HEAD)
+              if git merge --ff-only origin/main 2>/dev/null; then
+                :
+              elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+                # A concurrent writer (auto-author, images) landed on main while
+                # this run was working. Taking "theirs" is right for the small
+                # JSON state files — the next run re-derives those — but it is
+                # catastrophic for store.db, which is the only copy of the fetch
+                # this run just did. Put our database back and amend the merge.
+                if git diff --quiet "$OURS" HEAD -- pipeline/state/store.db; then
+                  echo "merge kept our store.db (no conflict on it)"
+                else
+                  echo "merge replaced our store.db — restoring ours and amending"
+                  git checkout "$OURS" -- pipeline/state/store.db
+                  git commit --amend --no-edit
+                fi
               else
-                echo "merge replaced our store.db — restoring ours and amending"
-                git checkout HEAD^1 -- pipeline/state/store.db
-                git commit --amend --no-edit
+                echo "merge failed (attempt $attempt of 3)"
+                git merge --abort 2>/dev/null || true
+                sleep 20
+                continue
               fi
-            else
+              if git push; then pushed=1; break; fi
+              echo "push raced (attempt $attempt of 3); re-merging"
+              sleep 20
+            done
+            if [ -z "$pushed" ]; then
               echo "merge failed — abandoning push; briefs re-fetched on a later pipeline run"
               git merge --abort 2>/dev/null || true
               exit 0
             fi
-            git push
           fi
 
       - name: Poke IndexNow (Bing/Yandex quick index)

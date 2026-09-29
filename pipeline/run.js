@@ -87,25 +87,39 @@ async function cmdCluster() {
   const existing = existingClusters(db);
 
   // 2) persist clusters (reuse existing id when >=60% overlap)
-  let created = 0, reused = 0, unclustered = 0;
+  //
+  // 2026-09-29: reuse ALSO requires the fresh group to cover >=50% of the
+  // existing cluster's members. Without that, any fragment of a mega-cluster
+  // re-attaches to it (overlap/ids is 100% for every subset) and the old row
+  // can never split: national-672 kept all 9 members (football + crime +
+  // Iran + AI) run after run while the fresh grouping had already dissolved
+  // it, so every trapped follow-up died in the coherence gate with it.
+  // Fragments now become their own clusters (items may belong to several —
+  // cluster_members has no per-item uniqueness); the old row persists
+  // harmlessly until its brief is refused into irrelevance.
+  let created = 0, reused = 0, unclustered = 0, fragmented = 0;
   const touched = new Set();
   const multiSource = [];
   for (const ids of groups) {
     if (ids.length === 1) { unclustered++; continue; } // singletons stay unclustered
-    const idSet = new Set(ids);
-    let target = null;
+    let target = null, wouldReuse = false;
     for (const ex of existing) {
       const mem = memberSets.get(ex.id);
       if (!mem) continue;
       let overlap = 0;
       for (const i of ids) if (mem.has(i)) overlap++;
-      if (overlap / ids.length >= 0.6) { target = ex; break; }
+      if (overlap / ids.length >= 0.6) {
+        wouldReuse = true;
+        if (ids.length / mem.size >= 0.5) { target = ex; break; }
+      }
     }
     const headline = pickClusterHeadline(itemsById, ids);
     const members = ids.map((id) => ({ item_id: id, source_id: itemsById.get(id).source_id }));
     const clusterId = target ? target.id : insertCluster(db, { status: 'open', headline });
     addClusterMembers(db, clusterId, members);
     touchCluster(db, clusterId, { status: 'open', headline, memberCount: ids.length, matureRuns: 0 });
+    touched.add(clusterId);
+    if (target) reused++; else { created++; if (wouldReuse) fragmented++; }
     touched.add(clusterId);
     if (target) reused++; else created++;
 
@@ -126,7 +140,7 @@ async function cmdCluster() {
     }
   }
 
-  console.log(`cluster done. window=${windowH}h sim=${sim} prune=${minCentroidSim} created=${created} reused=${reused} singled=${unclustered} matured=${mature.length}`);
+  console.log(`cluster done. window=${windowH}h sim=${sim} prune=${minCentroidSim} created=${created} reused=${reused} fragmented=${fragmented} singled=${unclustered} matured=${mature.length}`);
   console.log(`multi-source clusters (>=2 papers): ${multiSource.length}`);
   console.table(multiSource.slice(0, 15).map((c) => ({ cluster: c.clusterId, members: c.n, sources: c.srcs, headline: c.headline.slice(0, 55) })));
 }
