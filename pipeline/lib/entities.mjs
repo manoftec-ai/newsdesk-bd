@@ -122,32 +122,70 @@ export function strongOverlap(a, b) {
   return union ? inter / union : 0;
 }
 
-// Count shared (digit-close-tolerant) tokens between two strong sets.
-function sharedCount(a, b) {
+// A shared token only distinguishes two items when it is unlikely to
+// co-occur by chance: a lexical token, or a number with 3+ digits that is
+// NOT a calendar year.
+//
+// 2026-09-29: the whole 8h window chained into mega-clusters (national-672:
+// football + crime + Iran + AI in one brief, coherence gate then refuses the
+// lot, pick pending 0, no new news). Measured: all 36 member pairs agreed via
+// mundane small numbers alone (N0/N1/N3 from scores, times, counts, ordinals
+// — present in nearly every Bengali news text) plus the year N2026 that every
+// dated story carries. Rule (1) counted ANY 2 shared tokens, and numbers have
+// no rarity gate (unlike lexical tokens, which need df <= half the batch),
+// so two coincidental small numbers merged unrelated news and union-find did
+// the rest. Years 1900-2100 are excluded because same-day news always shares
+// the year; Bengali calendar years (e.g. 1432) stay distinguishing (rare).
+function isDistinguishing(t) {
+  if (!t.startsWith('N')) return true;
+  const v = Number(t.slice(1));
+  if (!Number.isFinite(v)) return true;
+  if (isYearToken(t)) return false;
+  return v >= 100;
+}
+
+// Shared tokens between two strong sets, digit-close tolerant (returns the
+// tokens from `a` that found a match in `b`).
+function sharedTokens(a, b) {
   const A = [...a], B = [...b];
   const used = new Set();
-  let inter = 0;
+  const out = [];
   for (const x of A) {
     for (let j = 0; j < B.length; j++) {
       if (used.has(j)) continue;
-      if (digitClose(x, B[j])) { inter++; used.add(j); break; }
+      if (digitClose(x, B[j])) { out.push(x); used.add(j); break; }
     }
   }
-  return inter;
+  return out;
+}
+
+// Count shared (digit-close-tolerant) tokens between two strong sets.
+function sharedCount(a, b) {
+  return sharedTokens(a, b).length;
 }
 
 // Is a 3+ digit bare number in A close (<=1 digit edit) to one in B?
+// Calendar years are skipped: consecutive years (2025 vs 2026) are always
+// digit-close by construction, and different years usually mean different
+// events — the 1868/1866 hospital-bulletin tolerance must not become a
+// same-week-news merger.
+function isYearToken(t) {
+  const v = Number(String(t).slice(1));
+  return Number.isFinite(v) && v >= 1900 && v <= 2100;
+}
 function anyCloseLargeDigit(a, b) {
   const B = [...b];
   for (const x of a) {
-    if (!/^N\d{3,}$/.test(x)) continue;
+    if (!/^N\d{3,}$/.test(x) || isYearToken(x)) continue;
     for (const y of B) if (digitClose(x, y)) return true;
   }
   return false;
 }
 
 // HYBRID strong agreement (P0-9). Merge if:
-//   (1) >=2 strong tokens are shared, OR
+//   (1) >=2 strong tokens are shared AND at least one is distinguishing
+//       (lexical, or a 3+ digit non-year number) — two coincidental small
+//       numbers (scores, times, counts) must never merge unrelated news, OR
 //   (2) a distinguishing 3+ digit figure matches within edit distance 1 AND
 //       coverage of the smaller strong set is >= floor (default 0.4).
 // Rules (1)+(2) keep small strong sets from over-merging: a lone shared mundane
@@ -156,10 +194,10 @@ function anyCloseLargeDigit(a, b) {
 // hospital bulletin, the classic Bangladesh health-news framing gap).
 export function strongAgree(a, b, floor = 0.3) {
   if (!a.size || !b.size) return false;
-  const inter = sharedCount(a, b);
-  if (inter >= 2) return true;
+  const shared = sharedTokens(a, b);
+  if (shared.length >= 2 && shared.some(isDistinguishing)) return true;
   const smaller = Math.min(a.size, b.size);
   if (smaller === 0) return false;
-  const coverage = inter / smaller;
+  const coverage = shared.length / smaller;
   return anyCloseLargeDigit(a, b) && coverage >= floor;
 }
