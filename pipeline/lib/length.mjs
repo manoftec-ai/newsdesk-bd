@@ -16,7 +16,14 @@ export function targetWords(brief) {
     return { min: 100, max: 180, tier: 'short' };
   }
   const target = Math.round(totalSourceWords * 0.28); // ~28% of total source material
-  const rawMin = Math.max(180, Math.round(target * 0.8));
+  // 2026-09-29: the 180 hard floor assumed an LLM writer that EXPANDS (49-word
+  // median evidence -> 192-word body). The deterministic composer CONDENSES
+  // (~40-55% yield after quality filtering), so 180 demanded ~350+ source words
+  // and silently banned the entire 2-member verified-pair class the site was
+  // built to publish (national-679: honest 130-word body refused forever).
+  // The legacy branch below already blessed {100,180} for <=2 members; restore
+  // that intent here. 3+ member tiers untouched.
+  const rawMin = Math.max(members.length <= 2 ? 120 : 180, Math.round(target * 0.8));
   const rawMax = Math.min(800, Math.round(target * 1.3));
   const min = Math.min(rawMin, rawMax);
   const max = Math.max(rawMin, rawMax);

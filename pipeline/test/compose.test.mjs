@@ -151,3 +151,25 @@ test('evidenceWordsAvailable measures the real text a brief carries', () => {
   const empty = { members: [{ lead: '' }] };
   assert.equal(evidenceWordsAvailable(empty), 0);
 });
+
+test('evidenceWordsAvailable counts duplicated wire sentences once (2026-09-29)', () => {
+  // national-679: 247 raw words set a 180 floor no honest body could reach,
+  // because the composer must drop the cross-member overlap (else c14 fires).
+  const wire =
+    'ঠাকুরগাঁও আসনের উপনির্বাচনে ছয়জন প্রার্থীর মনোনয়নপত্র বৈধ ঘোষণা করা হয়েছে। ' +
+    'জেলা নির্বাচন কর্মকর্তা কামরুল ইসলাম আজ মঙ্গলবার যাচাই-বাছাই শেষে এই ঘোষণা দেন। ' +
+    'নির্বাচন কমিশন গত ১০ সেপ্টেম্বর এই আসনের উপনির্বাচনের তফসিল ঘোষণা করেছিল।';
+  const same = { members: [{ lead: wire }, { lead: wire }] };
+  const dup = evidenceWordsAvailable(same);
+  const raw = wire.trim().split(/\s+/u).filter(Boolean).length * 2;
+  assert.ok(dup < raw, `duplicated wire counted twice: ${dup} vs raw ${raw}`);
+  assert.ok(dup > 20, `duplicated wire collapsed to nothing: ${dup}`);
+  const distinct = {
+    members: [
+      { lead: 'পদ্মা সেতু ঘিরে দক্ষিণাঞ্চলে পর্যটন সম্ভাবনা বাড়ছে বলে বিশেষজ্ঞরা মনে করছেন।' },
+      { lead: 'বরিশাল বিভাগে নতুন তিনটি অর্থনৈতিক অঞ্চল স্থাপনের সিদ্ধান্ত নিয়েছে সরকার।' },
+    ],
+  };
+  const dd = evidenceWordsAvailable(distinct);
+  assert.ok(dd >= 18, `distinct leads undercounted: ${dd}`);
+});

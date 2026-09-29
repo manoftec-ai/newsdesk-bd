@@ -47,7 +47,7 @@ poll:
   cluster_similarity: 0.30      # tuned on config/golden.json (2026-09-24: F1 0.625→0.952 at sim 0.30; fixes same-event-different-words dup hole, precision stays 1.000 on traps)
   cluster_strong_sim: 0.30    # P0-9 hybrid: strong-token agreement floor (numbers/rare vocab); + strong 0.30 => golden F1 1.000, P=1.0 R=1.0
   cluster_prune_sim: 0.35       # centroid outlier prune (removes single-linkage grab-away members)
-  cluster_mature_runs: 3        # runs with no new member before story is written
+  cluster_mature_runs: 2        # runs with no new member before story is written (2026-09-29: was 3; with 30-min cycles + dropped crons the quiet-wait alone delayed fresh news half a day. Corroboration still comes from 2+ members + verify, not from waiting longer)
 
 # VERIFY scoring (ARCHITECTURE.md §4A). Corroboration-based today; official/search/FB
 # signals plug in as a provider later — same model.
