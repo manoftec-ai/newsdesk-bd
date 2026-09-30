@@ -6,9 +6,13 @@
 // Uses the Page Graph API (POST /{page-id}/feed). The FB link scraper pulls the
 // og:title / og:description / og:image from the article page automatically.
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import yaml from 'yaml';
+import {
+  formatPostText,
+  collectPostCandidates,
+  sortNewestFirst,
+} from '../lib/social-post-text.mjs';
 
 const CONTENT_DIR = resolve(import.meta.dirname, '../../site/src/content/news');
 const STATE_FILE = resolve(import.meta.dirname, '../state/facebook-sent.json');
@@ -17,45 +21,10 @@ const GRAPH_VERSION = 'v21.0';
 const pageId = process.env.FACEBOOK_PAGE_ID;
 const pageToken = process.env.FACEBOOK_PAGE_TOKEN;
 
-const CATEGORY_NAMES = {
-  national: 'জাতীয়',
-  politics: 'রাজনীতি',
-  economy: 'অর্থনীতি',
-  international: 'আন্তর্জাতিক',
-  sports: 'ক্রীড়া',
-  entertainment: 'বিনোদন',
-  tech: 'প্রযুক্তি',
-  opinion: 'মতামত/বিশ্লেষণ',
-  factcheck: 'ফ্যাক্ট চেক',
-};
-
-const BADGE_LABELS = {
-  verified: '✅ যাচাইকৃত',
-  confirmed: '🔵 নিশ্চিত',
-  partial: '🟠 একক/আংশিক',
-  suspect: '🔴 সন্দেহজনক',
-};
-
-export function readFrontmatter(file) {
-  let raw;
-  try {
-    raw = readFileSync(file, 'utf8');
-  } catch {
-    return null;
-  }
-  const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!m) return null;
-  try {
-    const fm = yaml.parse(m[1]);
-    return { raw, fm };
-  } catch {
-    return null;
-  }
-}
+export { readFrontmatter } from '../lib/social-post-text.mjs';
 
 export function latestUnsent(unsent) {
-  if (!unsent.length) return null;
-  return unsent.sort((a, b) => (a.date < b.date ? 1 : -1))[0];
+  return sortNewestFirst(unsent)[0] ?? null;
 }
 
 export async function main() {
@@ -65,19 +34,7 @@ export async function main() {
   }
 
   const files = readdirSync(CONTENT_DIR).filter((f) => f.endsWith('.md'));
-  const posts = [];
-  for (const file of files) {
-    const parsed = readFrontmatter(join(CONTENT_DIR, file));
-    if (!parsed || parsed.fm.draft) continue;
-    posts.push({
-      slug: file.replace(/\.md$/, ''),
-      date: parsed.fm.date ?? '',
-      title: String(parsed.fm.title ?? ''),
-      category: parsed.fm.category ?? '',
-      badge: parsed.fm.verification?.badge ?? 'partial',
-      tags: parsed.fm.tags ?? [],
-    });
-  }
+  const posts = collectPostCandidates(files, CONTENT_DIR);
 
   const sentState = existsSync(STATE_FILE)
     ? JSON.parse(readFileSync(STATE_FILE, 'utf8'))
@@ -90,21 +47,8 @@ export async function main() {
     return { sent: false, reason: 'nothing-new' };
   }
 
-  const categoryName = CATEGORY_NAMES[target.category] ?? target.category;
-  const badgeLabel = BADGE_LABELS[target.badge] ?? BADGE_LABELS.partial;
-  const hashtags = (target.tags ?? [])
-    .slice(0, 4)
-    .map((t) => `#${t.replace(/[^a-z0-9]/gi, '')}`)
-    .join(' ');
   const url = `https://jachaidesk.com/article/${encodeURIComponent(target.slug)}`;
-
-  const message = `🆕 যাচাইডেস্ক
-
-${target.title}
-
-${categoryName} · ${badgeLabel}
-
-${url}${hashtags ? `\n\n${hashtags}` : ''}`;
+  const message = formatPostText(target);
 
   const body = new URLSearchParams({
     message,
