@@ -26,8 +26,9 @@
 // when site/ is byte-identical to what is live.
 //
 // usage: node tools/refresh_developing.mjs [--write] [--limit=N] [--quiet-hours=2] [--recycle-hours=6]
-import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { readdirSync, readFileSync, writeFileSync, renameSync, unlinkSync, existsSync } from 'node:fs';
+import { join, resolve, dirname } from 'node:path';
+import { randomUUID } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { parse as parseYaml, stringify as stringifyYaml } from 'yaml';
 import { openDb, DB_PATH } from '../lib/db.mjs';
@@ -247,6 +248,19 @@ export function splitFrontmatter(content) {
   return { fm: m[1], body: content.slice(m[0].length) };
 }
 
+// Same discipline as finalize_stories' atomicWrite: a refresh that dies
+// mid-write must not leave a half-written article on the site.
+function atomicWrite(filePath, content) {
+  const tmp = join(dirname(filePath), `.${filePath.split('/').pop()}.${process.pid}.${randomUUID()}.tmp`);
+  try {
+    writeFileSync(tmp, content, { encoding: 'utf8', flag: 'wx' });
+    renameSync(tmp, filePath);
+  } catch (error) {
+    try { unlinkSync(tmp); } catch { /* already gone */ }
+    throw error;
+  }
+}
+
 export function refreshDeveloping({
   siteDir = SITE_DIR,
   dbPath = DB_PATH,
@@ -320,7 +334,7 @@ export function refreshDeveloping({
         ? { badge: verdict.badge, from: front.verification?.badge ?? 'single' }
         : null;
       const next = applyRefresh(content, { at: now, notes, upgrade, slug });
-      if (write) writeFileSync(file, next, 'utf8');
+      if (write) atomicWrite(file, next);
       const entry = {
         slug, phase, ageHours: +(ageMs / 3_600_000).toFixed(1),
         outlets: notes.map((n) => n.outlet), badge: upgrade?.badge ?? front.verification?.badge ?? 'partial',

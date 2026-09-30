@@ -77,6 +77,7 @@ jobs:
           NODE_OPTIONS: "--max-old-space-size=1024"
 
       - name: Commit + push (branded images + front matter)
+        id: thumbs
         run: |
           cd ..
           if [ -n "$(git status --porcelain)" ]; then
@@ -95,5 +96,26 @@ jobs:
               git merge --abort 2>/dev/null || true
               exit 0
             fi
-            git push
+            git push && echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # 2026-09-30: same lesson as auto-author (D129) — a bot push made with
+      # GITHUB_TOKEN does not trigger push-workflows, and the hourly deploy
+      # schedule has been dropping ticks for hours at a time (nothing between
+      # 06:46 and 13:48 on Sep-30). New stories went live imageless because
+      # their thumbnails sat in main undeployed. So a run that just landed
+      # thumbnails dispatches the deploy itself. Dispatches only when this run
+      # actually pushed, and deploy.yml's own guard still skips when site/ is
+      # identical to live, so quota is spent only on real content changes.
+      - name: Deploy new thumbnails now
+        if: steps.thumbs.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          code=$(curl -sS -o /dev/null -w '%{http_code}' --retry 3 --retry-delay 10 \
+            -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H 'Accept: application/vnd.github+json' \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches" \
+            -d '{"ref":"main"}')
+          echo "deploy dispatch -> HTTP $code"
