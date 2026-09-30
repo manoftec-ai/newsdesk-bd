@@ -56,3 +56,16 @@ quiet cycle writes nothing at all, so Vercel attempts stay flat.
 ## Note for future sessions
 A parallel session (D131, Facebook auto-post) is editing this same checkout. Always
 `git add` only your own files, and expect push races — merge in a throwaway worktree.
+
+## Overnight verification (user asleep, ~17:00-18:00 UTC)
+- Full pipeline run 36744699240 (head fc62b9ce): **all 22 steps green**, including
+  step 9 "Promote developing first-sightings" and step 18 "Refresh developing
+  stories". Nothing in the existing pipeline broke.
+- Live DB: the promoter created 5 fresh solo clusters (#840-844, all Bangla
+  headlines); Verify scored all five tier=A / score=2 / badge=single /
+  status=passed — exactly the developing-lane shape. The next auto-author cycle
+  should publish the first live `developing: true` articles from them.
+- Suite re-run on the merged tip: 431/431. Promoter dry run: 5/111 candidates.
+  Refresh dry run: 0 developing articles yet (none published — consistent).
+- Vercel usage: 7 deploys in the last 24h of a 100/day limit. The lane + the
+  images dispatch add only real-change deploys; the guard still skips quiet runs.
