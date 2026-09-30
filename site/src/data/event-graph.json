@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 834,
+    "storyCount": 843,
     "kinds": [
       "claim",
       "evidence",
@@ -87087,8 +87087,8 @@
           "slug": "opinion-809",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 2,
-          "headline": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'"
+          "claim_count": 3,
+          "headline": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু"
         },
         {
           "cluster_id": 84,
@@ -89557,7 +89557,7 @@
       "cluster_id": 807,
       "headline": "লক্ষ্মীপুরে যুক্তি-তর্কের লড়াইয়ে চ্যাম্পিয়ন সরকারি বালিকা উচ্চ বিদ্যালয়",
       "first_seen": "2026-09-30T13:12:55.552Z",
-      "last_update": "2026-09-30T20:31:07.707Z",
+      "last_update": "2026-09-30T22:57:11.461Z",
       "claim_count": 4,
       "events": [
         {
@@ -89853,16 +89853,27 @@
     },
     "national-809": {
       "cluster_id": 809,
-      "headline": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+      "headline": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
       "first_seen": "2026-09-30T14:35:05.645Z",
-      "last_update": "2026-09-30T20:31:06.866Z",
-      "claim_count": 9,
+      "last_update": "2026-09-30T22:57:11.420Z",
+      "claim_count": 11,
       "events": [
         {
           "ts": "2026-09-27T03:26:45.000Z",
           "kind": "evidence",
           "claim_id": 161843,
           "claim_text": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqwyzzzz8j2po"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:26:45.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -89892,6 +89903,17 @@
           }
         },
         {
+          "ts": "2026-09-30T13:07:53.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ex7aisjbfc"
+          }
+        },
+        {
           "ts": "2026-09-30T13:56:36.000Z",
           "kind": "evidence",
           "claim_id": 161843,
@@ -89907,6 +89929,17 @@
           "kind": "evidence",
           "claim_id": 161844,
           "claim_text": "'গ্যাস সিলিন্ডার নাই, তবে ২৩০০ দিলে বাসায় দিয়ে আসবো'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/crwyz8qe7y0qo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-30T13:56:36.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -89933,6 +89966,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/opinion/column/6c3oa0rcl5"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:27:43.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/6c3oa0rcl5"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:35:29.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/mllv7projp"
           }
         },
         {
@@ -89994,6 +90049,17 @@
           }
         },
         {
+          "ts": "2026-09-30T15:33:16.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c3wyz0vq12rzo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-09-30T15:50:31.726Z",
           "kind": "claim",
           "claim_id": 163276,
@@ -90046,6 +90112,17 @@
           }
         },
         {
+          "ts": "2026-09-30T15:51:04.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/6houzjc9ac"
+          }
+        },
+        {
           "ts": "2026-09-30T16:33:23.754Z",
           "kind": "claim",
           "claim_id": 164703,
@@ -90064,6 +90141,28 @@
           }
         },
         {
+          "ts": "2026-09-30T16:44:14.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/2g61pvq2qo"
+          }
+        },
+        {
+          "ts": "2026-09-30T16:44:14.000Z",
+          "kind": "evidence",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/2g61pvq2qo"
+          }
+        },
+        {
           "ts": "2026-09-30T19:22:02.000Z",
           "kind": "evidence",
           "claim_id": 161843,
@@ -90079,6 +90178,17 @@
           "kind": "evidence",
           "claim_id": 173627,
           "claim_text": "রাড্ডার ঘটনায় সংরক্ষিত নারী এমপির বিরুদ্ধে কঠোর সিদ্ধান্ত নিতে পারে বিএনপি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/8qrvcdl8cc"
+          }
+        },
+        {
+          "ts": "2026-09-30T19:22:02.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -90119,6 +90229,17 @@
           "kind": "evidence",
           "claim_id": 173628,
           "claim_text": "বহিষ্কার হওয়ার এক বছর পর জানা গেল, আম্মার ছাত্রশিবিরের ‘সাথি’ ছিলেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/wpsp20lz7d"
+          }
+        },
+        {
+          "ts": "2026-09-30T19:41:38.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -90212,6 +90333,53 @@
           "kind": "verify",
           "claim_id": 173628,
           "claim_text": "বহিষ্কার হওয়ার এক বছর পর জানা গেল, আম্মার ছাত্রশিবিরের ‘সাথি’ ছিলেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.592Z",
+          "kind": "claim",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু"
+        },
+        {
+          "ts": "2026-09-30T23:17:25.593Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.614Z",
+          "kind": "claim",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম"
+        },
+        {
+          "ts": "2026-09-30T23:17:25.621Z",
+          "kind": "verify",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.621Z",
+          "kind": "verify",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -91349,7 +91517,7 @@
       "cluster_id": 816,
       "headline": "সশস্ত্র বাহিনীতে আধুনিক সরঞ্জাম ও মেধাভিত্তিক পদায়ন চায় সংসদীয় কমিটি",
       "first_seen": "2026-09-30T14:35:05.689Z",
-      "last_update": "2026-09-30T20:31:07.492Z",
+      "last_update": "2026-09-30T22:57:11.451Z",
       "claim_count": 4,
       "events": [
         {
@@ -91912,7 +92080,7 @@
       "cluster_id": 821,
       "headline": "শিয়ালের টানাটানিতে বের হওয়া লাশের পরিচয় মিলল স্যান্ডেল-ঘড়ি দেখে",
       "first_seen": "2026-09-30T15:22:47.181Z",
-      "last_update": "2026-09-30T20:31:07.694Z",
+      "last_update": "2026-09-30T22:57:11.457Z",
       "claim_count": 3,
       "events": [
         {
@@ -92114,7 +92282,7 @@
       "cluster_id": 822,
       "headline": "প্রবীণদের আর্থিক নিরাপত্তা ও সামাজিক সুরক্ষা নিশ্চিত করবে সরকার : প্রধানমন্ত্রী",
       "first_seen": "2026-09-30T15:22:47.190Z",
-      "last_update": "2026-09-30T20:31:07.700Z",
+      "last_update": "2026-09-30T22:57:11.459Z",
       "claim_count": 2,
       "events": [
         {
@@ -92242,7 +92410,7 @@
       "cluster_id": 823,
       "headline": "যাচাই-বাছাইয়ের আগে ভোজ্যতেলের দাম বাড়ানো হবে না : বাণিজ্যমন্ত্রী",
       "first_seen": "2026-09-30T15:22:47.195Z",
-      "last_update": "2026-09-30T20:31:07.703Z",
+      "last_update": "2026-09-30T22:57:11.460Z",
       "claim_count": 3,
       "events": [
         {
@@ -92743,6 +92911,14 @@
       ],
       "related": [
         {
+          "cluster_id": 881,
+          "slug": "national-881",
+          "actor_links": 4,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন"
+        },
+        {
           "cluster_id": 84,
           "slug": "national-84",
           "actor_links": 0,
@@ -92781,14 +92957,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
-        },
-        {
-          "cluster_id": 151,
-          "slug": "national-151",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
         }
       ]
     },
@@ -92796,7 +92964,7 @@
       "cluster_id": 828,
       "headline": "সাবেক অতিরিক্ত ডিআইজি প্রলয় কুমারকে সম্পদ বিবরণী দাখিলের নির্দেশ",
       "first_seen": "2026-09-30T16:11:58.002Z",
-      "last_update": "2026-09-30T20:31:07.698Z",
+      "last_update": "2026-09-30T22:57:11.458Z",
       "claim_count": 2,
       "events": [
         {
@@ -93530,7 +93698,7 @@
       "cluster_id": 834,
       "headline": "চ্যানেল আই সংবাদ বিভাগে যুক্ত হচ্ছেন একঝাঁক তরুণ সংবাদকর্মী",
       "first_seen": "2026-09-30T16:50:51.325Z",
-      "last_update": "2026-09-30T20:31:07.692Z",
+      "last_update": "2026-09-30T22:57:11.453Z",
       "claim_count": 2,
       "events": [
         {
@@ -94507,8 +94675,8 @@
           "slug": "opinion-809",
           "actor_links": 3,
           "source_links": 0,
-          "claim_count": 2,
-          "headline": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'"
+          "claim_count": 3,
+          "headline": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু"
         }
       ]
     },
@@ -95205,7 +95373,7 @@
       "cluster_id": 852,
       "headline": "সত্য, সুন্দর ও মানবিকতার পথে চ্যানেল আইয়ের যাত্রা অব্যাহত থাকুক",
       "first_seen": "2026-09-30T18:21:03.945Z",
-      "last_update": "2026-09-30T20:31:07.234Z",
+      "last_update": "2026-09-30T22:57:11.437Z",
       "claim_count": 4,
       "events": [
         {
@@ -95525,7 +95693,7 @@
       "cluster_id": 854,
       "headline": "বাংলাদেশসহ ১১ দেশের মার্কিন রাষ্ট্রদূতদের নিয়ে দিল্লিতে বৈঠক, যুক্ত ছিলেন যুক্তরাষ্ট্রের পররাষ্ট্রমন্ত্রী মার্কো রুবিও",
       "first_seen": "2026-09-30T18:21:03.954Z",
-      "last_update": "2026-09-30T20:31:07.239Z",
+      "last_update": "2026-09-30T22:57:11.438Z",
       "claim_count": 2,
       "events": [
         {
@@ -95848,7 +96016,7 @@
       "cluster_id": 867,
       "headline": "মিরপুরে উচ্ছেদ অভিযান: সাংবাদিক ও পুলিশের ওপর হামলাকারী কারা",
       "first_seen": "2026-09-30T19:48:32.160Z",
-      "last_update": "2026-09-30T20:31:07.071Z",
+      "last_update": "2026-09-30T22:57:11.432Z",
       "claim_count": 3,
       "events": [
         {
@@ -96016,7 +96184,7 @@
       "cluster_id": 868,
       "headline": "সালমান মুক্তাদিরের স্টুডিওতে হামলা: অবসরপ্রাপ্ত মেজর জেনারেল মহিউদ্দিন গ্রেপ্তার",
       "first_seen": "2026-09-30T19:48:32.171Z",
-      "last_update": "2026-09-30T20:31:07.621Z",
+      "last_update": "2026-09-30T22:57:11.452Z",
       "claim_count": 4,
       "events": [
         {
@@ -96428,7 +96596,7 @@
       "cluster_id": 874,
       "headline": "রাজধানীতে ছুরিকাঘাতে রিকশাচালক নিহত, পরিচয় শনাক্তে সহযোগিতা চায় পুলিশ",
       "first_seen": "2026-09-30T20:31:06.974Z",
-      "last_update": "2026-09-30T20:31:07.065Z",
+      "last_update": "2026-09-30T22:57:11.431Z",
       "claim_count": 2,
       "events": [
         {
@@ -96556,7 +96724,7 @@
       "cluster_id": 875,
       "headline": "জ্বালানি তেলের বাড়তি দাম অপরিবর্তিত রেখেই প্রজ্ঞাপন জারি",
       "first_seen": "2026-09-30T20:31:07.073Z",
-      "last_update": "2026-09-30T20:31:07.078Z",
+      "last_update": "2026-09-30T22:57:11.436Z",
       "claim_count": 2,
       "events": [
         {
@@ -96895,6 +97063,936 @@
           "kind": "verify",
           "claim_id": 173763,
           "claim_text": "প্রধানমন্ত্রীর জাতিসংঘ সফরে বাংলাদেশের স্বার্থ ও বৈশ্বিক সম্ভাবনার বিষয় গুরুত্ব পেয়েছে: মাহদী আমিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-881": {
+      "cluster_id": 881,
+      "headline": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন",
+      "first_seen": "2026-09-30T22:57:11.421Z",
+      "last_update": "2026-09-30T22:57:11.424Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-30T15:22:33.000Z",
+          "kind": "evidence",
+          "claim_id": 175293,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/obbalhpgub"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:22:33.000Z",
+          "kind": "evidence",
+          "claim_id": 175294,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে শ্রেণিকক্ষে কটূক্তির অভিযোগে কুষ্টিয়ায় শিক্ষক আটক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/obbalhpgub"
+          }
+        },
+        {
+          "ts": "2026-09-30T18:58:44.000Z",
+          "kind": "evidence",
+          "claim_id": 175293,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/971638/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-30T18:58:44.000Z",
+          "kind": "evidence",
+          "claim_id": 175295,
+          "claim_text": "প্রধানমন্ত্রীর নির্দেশে কুষ্টিয়ার সেই শিক্ষককে বাড়ি পৌঁছে দিয়েছে পুলিশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/971638/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-09-30T21:37:46.000Z",
+          "kind": "evidence",
+          "claim_id": 175293,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/jtnterxjcu"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:19:59.160Z",
+          "kind": "claim",
+          "claim_id": 175293,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন"
+        },
+        {
+          "ts": "2026-09-30T23:19:59.163Z",
+          "kind": "claim",
+          "claim_id": 175294,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে শ্রেণিকক্ষে কটূক্তির অভিযোগে কুষ্টিয়ায় শিক্ষক আটক"
+        },
+        {
+          "ts": "2026-09-30T23:19:59.165Z",
+          "kind": "claim",
+          "claim_id": 175295,
+          "claim_text": "প্রধানমন্ত্রীর নির্দেশে কুষ্টিয়ার সেই শিক্ষককে বাড়ি পৌঁছে দিয়েছে পুলিশ"
+        },
+        {
+          "ts": "2026-09-30T23:19:59.169Z",
+          "kind": "verify",
+          "claim_id": 175293,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে কটূক্তির অভিযোগে আটক শিক্ষককে প্রধানমন্ত্রীর নির্দেশেই ছেড়ে দেওয়া হয়েছে: মাহদী আমিন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:19:59.169Z",
+          "kind": "verify",
+          "claim_id": 175294,
+          "claim_text": "প্রধানমন্ত্রীকে নিয়ে শ্রেণিকক্ষে কটূক্তির অভিযোগে কুষ্টিয়ায় শিক্ষক আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:19:59.169Z",
+          "kind": "verify",
+          "claim_id": 175295,
+          "claim_text": "প্রধানমন্ত্রীর নির্দেশে কুষ্টিয়ার সেই শিক্ষককে বাড়ি পৌঁছে দিয়েছে পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 827,
+          "slug": "national-827",
+          "actor_links": 4,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর ‘বাংলা উচ্চারণ’ নিয়ে শ্রেণিকক্ষে মন্তব্য, স্কুলশিক্ষক আটক"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        },
+        {
+          "cluster_id": 129,
+          "slug": "sports-129",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        }
+      ]
+    },
+    "national-883": {
+      "cluster_id": 883,
+      "headline": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+      "first_seen": "2026-09-30T22:57:11.433Z",
+      "last_update": "2026-09-30T22:57:11.435Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-30T18:38:50.000Z",
+          "kind": "evidence",
+          "claim_id": 175298,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxNTzQtZW4wZGlOOHdsZTE3a0RSSHdsVWNvc3JoX3lvMjVza3JaUldNNV94RkVTVkE0WlZ6TWJmd3VuN2M0ek5YTHVraEJTV1M0X0xyU09fVjBGU3lOYnNNMzFjdkdFSm40RHRsSW5sRTNYdmFzdjdtdE9yOGpOWk8tSzUtT1lJTmZUR2VPcUkyS0wwSGlQemY1TFdPc2h6ZFEwX2RQMmZWcmNqdFVPS3NuYUNUWkZXSWdQQ095WjRWb2tJNGtYNGQ1ZGFmaVY4T2hUVU00TUN6OW1pTE1UX2VSSWc2V0g1Yjc0SHMxanVwb2szTFRKa0VSUi1LZ1MyREZkcHZWZzZURDRyaTNuRThhNVhFNWt1dndZaUtnaXVNQXhyOHlTa044UVFLVkMwYW5GQ0h1S1ViWkhBancwcFNkQ3Q3TnBTaHdWb0FsUEFIbVY0OU5ESHRMRjF4LWpNLXE1M1lySXJxTDRsbDhfRnh2R0JGSFRZanJ5OUZiRGhYQVAtVzI4aHdTMjFZOUI3UzVfbGdUV2xrU0EtX2w3NGZaeEhuSWxhaWNycmk1WmJaTndvZ0FqdTZkTjZmXzkxYUF5OUxHNE9EVmotVjJKTTBWWENvcEpFUjJ4b0l2aVpId1ZsdWx4MkI1WUgwcVljSmhXTUswb0t0b1hIdHN2V0lmc1dKMklWYXlBeERLandPeDVPVzhmM0hkQ3pkS3JmWHlaRV8zQWh6NXlkMXd3NmlBV1VEV1ZtVG9aTkdsaHk4U3FxRjJyRWFUdVB1UmljYjBUdFBVRFVR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T18:38:50.000Z",
+          "kind": "evidence",
+          "claim_id": 175298,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxNTzQtZW4wZGlOOHdsZTE3a0RSSHdsVWNvc3JoX3lvMjVza3JaUldNNV94RkVTVkE0WlZ6TWJmd3VuN2M0ek5YTHVraEJTV1M0X0xyU09fVjBGU3lOYnNNMzFjdkdFSm40RHRsSW5sRTNYdmFzdjdtdE9yOGpOWk8tSzUtT1lJTmZUR2VPcUkyS0wwSGlQemY1TFdPc2h6ZFEwX2RQMmZWcmNqdFVPS3NuYUNUWkZXSWdQQ095WjRWb2tJNGtYNGQ1ZGFmaVY4T2hUVU00TUN6OW1pTE1UX2VSSWc2V0g1Yjc0SHMxanVwb2szTFRKa0VSUi1LZ1MyREZkcHZWZzZURDRyaTNuRThhNVhFNWt1dndZaUtnaXVNQXhyOHlTa044UVFLVkMwYW5GQ0h1S1ViWkhBancwcFNkQ3Q3TnBTaHdWb0FsUEFIbVY0OU5ESHRMRjF4LWpNLXE1M1lySXJxTDRsbDhfRnh2R0JGSFRZanJ5OUZiRGhYQVAtVzI4aHdTMjFZOUI3UzVfbGdUV2xrU0EtX2w3NGZaeEhuSWxhaWNycmk1WmJaTndvZ0FqdTZkTjZmXzkxYUF5OUxHNE9EVmotVjJKTTBWWENvcEpFUjJ4b0l2aVpId1ZsdWx4MkI1WUgwcVljSmhXTUswb0t0b1hIdHN2V0lmc1dKMklWYXlBeERLandPeDVPVzhmM0hkQ3pkS3JmWHlaRV8zQWh6NXlkMXd3NmlBV1VEV1ZtVG9aTkdsaHk4U3FxRjJyRWFUdVB1UmljYjBUdFBVRFVR0gHbBEFVX3lxTFBFNzdnWUtCcGZ5Sm5ud1J1c3hxa1pyN1FSR0hrTnVjZ2h2WjNuTTNjYU9VQUlYeHQ0bm1wVS1FTkhaQWxORU5LSjA2RmhqZFo2UDItektEcFE1SDZBOTBBV3k3Ui1pbzZTb0djdDQyVERGY2lLaDRnUWJ5SkFMckUtaVVGNThBVU9hNzNlYTJ3MlNlOHlrYW5IMmFaRjVBYzFzOW9RZVJsYVBUZldkay14ZlZYeGRQYlFiSEJocTVaMGpxYlZSdWdMekh3YWpfc015cEJianp5X3RadW9wbGpJWVVEN1FnN3RWUUlrUHNlOW5fQ3dFczJGZUF0S0poV3V5TzlROWwzUmF0bURGeGhOOUx1XzBDOG5MNlQtTDFiZGxpVVJwNDJQOEdVU3VULWRnTWotbkN1cTZ4ZWwyaXpia2hZTXh4eEZmZEJqdkRBYWxTalV2MGkzWjYybndfQWhSQUMwYVRBUW55aXpSNVV0aWkxTVFCbmNLWV9OaW4wazlJNFlQZ2w4WlQzUjhlWHk3bVhhUlJvMXJPUGxfdE1WVUdzcjBRWVZxNG9nZGczcG9lbkIyekREYzRINFltNjVDWklHaHBwanhzdVJfWHpIRlFoQW9LOGRycnRZVmM3cmlBdGJRZnY5amtwUFAyR2ZQQjVGbUtHdk9aTzRNaVpTZFptWTRtMkRCODhsTUw0emZvNTZkbUl2YXF5aUowQVUxeUM0VGJoSWR5enRDaTYzU1R6RjhDLTg5VFpNV1pBamg2TmxuejdWMXc4aEV4SkN1RHZkbGUxWF9kRQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T18:38:50.000Z",
+          "kind": "evidence",
+          "claim_id": 175299,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxNTzQtZW4wZGlOOHdsZTE3a0RSSHdsVWNvc3JoX3lvMjVza3JaUldNNV94RkVTVkE0WlZ6TWJmd3VuN2M0ek5YTHVraEJTV1M0X0xyU09fVjBGU3lOYnNNMzFjdkdFSm40RHRsSW5sRTNYdmFzdjdtdE9yOGpOWk8tSzUtT1lJTmZUR2VPcUkyS0wwSGlQemY1TFdPc2h6ZFEwX2RQMmZWcmNqdFVPS3NuYUNUWkZXSWdQQ095WjRWb2tJNGtYNGQ1ZGFmaVY4T2hUVU00TUN6OW1pTE1UX2VSSWc2V0g1Yjc0SHMxanVwb2szTFRKa0VSUi1LZ1MyREZkcHZWZzZURDRyaTNuRThhNVhFNWt1dndZaUtnaXVNQXhyOHlTa044UVFLVkMwYW5GQ0h1S1ViWkhBancwcFNkQ3Q3TnBTaHdWb0FsUEFIbVY0OU5ESHRMRjF4LWpNLXE1M1lySXJxTDRsbDhfRnh2R0JGSFRZanJ5OUZiRGhYQVAtVzI4aHdTMjFZOUI3UzVfbGdUV2xrU0EtX2w3NGZaeEhuSWxhaWNycmk1WmJaTndvZ0FqdTZkTjZmXzkxYUF5OUxHNE9EVmotVjJKTTBWWENvcEpFUjJ4b0l2aVpId1ZsdWx4MkI1WUgwcVljSmhXTUswb0t0b1hIdHN2V0lmc1dKMklWYXlBeERLandPeDVPVzhmM0hkQ3pkS3JmWHlaRV8zQWh6NXlkMXd3NmlBV1VEV1ZtVG9aTkdsaHk4U3FxRjJyRWFUdVB1UmljYjBUdFBVRFVR0gHbBEFVX3lxTFBFNzdnWUtCcGZ5Sm5ud1J1c3hxa1pyN1FSR0hrTnVjZ2h2WjNuTTNjYU9VQUlYeHQ0bm1wVS1FTkhaQWxORU5LSjA2RmhqZFo2UDItektEcFE1SDZBOTBBV3k3Ui1pbzZTb0djdDQyVERGY2lLaDRnUWJ5SkFMckUtaVVGNThBVU9hNzNlYTJ3MlNlOHlrYW5IMmFaRjVBYzFzOW9RZVJsYVBUZldkay14ZlZYeGRQYlFiSEJocTVaMGpxYlZSdWdMekh3YWpfc015cEJianp5X3RadW9wbGpJWVVEN1FnN3RWUUlrUHNlOW5fQ3dFczJGZUF0S0poV3V5TzlROWwzUmF0bURGeGhOOUx1XzBDOG5MNlQtTDFiZGxpVVJwNDJQOEdVU3VULWRnTWotbkN1cTZ4ZWwyaXpia2hZTXh4eEZmZEJqdkRBYWxTalV2MGkzWjYybndfQWhSQUMwYVRBUW55aXpSNVV0aWkxTVFCbmNLWV9OaW4wazlJNFlQZ2w4WlQzUjhlWHk3bVhhUlJvMXJPUGxfdE1WVUdzcjBRWVZxNG9nZGczcG9lbkIyekREYzRINFltNjVDWklHaHBwanhzdVJfWHpIRlFoQW9LOGRycnRZVmM3cmlBdGJRZnY5amtwUFAyR2ZQQjVGbUtHdk9aTzRNaVpTZFptWTRtMkRCODhsTUw0emZvNTZkbUl2YXF5aUowQVUxeUM0VGJoSWR5enRDaTYzU1R6RjhDLTg5VFpNV1pBamg2TmxuejdWMXc4aEV4SkN1RHZkbGUxWF9kRQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:03.448Z",
+          "kind": "claim",
+          "claim_id": 175298,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম"
+        },
+        {
+          "ts": "2026-09-30T23:20:03.451Z",
+          "kind": "claim",
+          "claim_id": 175299,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম"
+        },
+        {
+          "ts": "2026-09-30T23:20:03.455Z",
+          "kind": "verify",
+          "claim_id": 175298,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:03.455Z",
+          "kind": "verify",
+          "claim_id": 175299,
+          "claim_text": "রাজু ভাস্কর্যে আত্মাহুতির ঘোষণা দিলেন বিসিএসে বাদ পড়া ঢাবি শিক্ষার্থী জসিম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-884": {
+      "cluster_id": 884,
+      "headline": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা",
+      "first_seen": "2026-09-30T22:57:11.439Z",
+      "last_update": "2026-09-30T22:57:11.442Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-09-30T11:33:00.000Z",
+          "kind": "evidence",
+          "claim_id": 175300,
+          "claim_text": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/campus/8lnywd1fkv"
+          }
+        },
+        {
+          "ts": "2026-09-30T11:33:00.000Z",
+          "kind": "evidence",
+          "claim_id": 175301,
+          "claim_text": "হাদির নাম মুছে ঢাবির হলের ফটকে ফিরছে বঙ্গবন্ধুর নাম",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/campus/8lnywd1fkv"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:32:09.000Z",
+          "kind": "evidence",
+          "claim_id": 175300,
+          "claim_text": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ddhaabite-naamphlke-phirche-shekh-mujibur-rhmaan-hl"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:32:09.000Z",
+          "kind": "evidence",
+          "claim_id": 175302,
+          "claim_text": "ঢাবিতে নামফলকে ফিরছে ‘শেখ মুজিবুর রহমান হল’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ddhaabite-naamphlke-phirche-shekh-mujibur-rhmaan-hl"
+          }
+        },
+        {
+          "ts": "2026-09-30T17:01:07.000Z",
+          "kind": "evidence",
+          "claim_id": 175300,
+          "claim_text": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/971626/%E2%80%98%E0%A6%AB%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%A6-%E0%A6%93-%E0%A6%AE%E0%A7%81%E0%A6%9C%E0%A6%BF%E0%A6%AC%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BE-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8%E2%80%99-%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:05.469Z",
+          "kind": "claim",
+          "claim_id": 175300,
+          "claim_text": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা"
+        },
+        {
+          "ts": "2026-09-30T23:20:05.472Z",
+          "kind": "claim",
+          "claim_id": 175301,
+          "claim_text": "হাদির নাম মুছে ঢাবির হলের ফটকে ফিরছে বঙ্গবন্ধুর নাম"
+        },
+        {
+          "ts": "2026-09-30T23:20:05.474Z",
+          "kind": "claim",
+          "claim_id": 175302,
+          "claim_text": "ঢাবিতে নামফলকে ফিরছে ‘শেখ মুজিবুর রহমান হল’"
+        },
+        {
+          "ts": "2026-09-30T23:20:05.478Z",
+          "kind": "verify",
+          "claim_id": 175300,
+          "claim_text": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:05.478Z",
+          "kind": "verify",
+          "claim_id": 175301,
+          "claim_text": "হাদির নাম মুছে ঢাবির হলের ফটকে ফিরছে বঙ্গবন্ধুর নাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:05.478Z",
+          "kind": "verify",
+          "claim_id": 175302,
+          "claim_text": "ঢাবিতে নামফলকে ফিরছে ‘শেখ মুজিবুর রহমান হল’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 332,
+          "slug": "national-332",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
+        },
+        {
+          "cluster_id": 512,
+          "slug": "national-512",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "জাতিসংঘে সাধারণ পরিষদের সভাপতির দপ্তরে লিগ্যাল অফিসার হলেন জাইমা"
+        },
+        {
+          "cluster_id": 812,
+          "slug": "national-812",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        }
+      ]
+    },
+    "national-885": {
+      "cluster_id": 885,
+      "headline": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+      "first_seen": "2026-09-30T22:57:11.443Z",
+      "last_update": "2026-09-30T22:57:11.450Z",
+      "claim_count": 8,
+      "events": [
+        {
+          "ts": "2026-09-30T14:28:38.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/sfy200lgfr"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:28:38.000Z",
+          "kind": "evidence",
+          "claim_id": 175304,
+          "claim_text": "আড্ডানামা ৯: দ্বিভাষিক কবি শামীম আজাদ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/sfy200lgfr"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:29:06.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/tfk0lb3i8q"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:29:06.000Z",
+          "kind": "evidence",
+          "claim_id": 175305,
+          "claim_text": "রাজশাহীতে ‘সর্বহারা’ পরিচয়ে শিক্ষক-চিকিৎসকসহ কয়েকজনকে প্রাণনাশের হুমকি, চাঁদা দাবি",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/tfk0lb3i8q"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:32:12.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/qz9v1lnl31"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:32:12.000Z",
+          "kind": "evidence",
+          "claim_id": 175306,
+          "claim_text": "দক্ষিণ কোরিয়ায় খালে আটকা পড়েছে হাঙর, দেখতে মানুষের ভিড়",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/qz9v1lnl31"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:48:28.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/gya05drsb8"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:48:28.000Z",
+          "kind": "evidence",
+          "claim_id": 175307,
+          "claim_text": "প্রশাসন জালিমের ভূমিকা পালন করলে আমরা রুখে দাঁড়াব: জামায়াত আমির",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/gya05drsb8"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:44:28.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/qu1of8xka3"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:44:28.000Z",
+          "kind": "evidence",
+          "claim_id": 175308,
+          "claim_text": "কিইভের আকাশে ড্রোনের আনাগোনা, জ্বালানি অবকাঠামোয় রুশ হামলা",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/qu1of8xka3"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:45:46.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/zt05or1xip"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:45:46.000Z",
+          "kind": "evidence",
+          "claim_id": 175309,
+          "claim_text": "টানা চতুর্থ দিনের আন্দোলনে সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/zt05or1xip"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:55:07.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/9ad3f55m72"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:55:07.000Z",
+          "kind": "evidence",
+          "claim_id": 175310,
+          "claim_text": "ভাঙা হবে পুরনো ভবন, স্মৃতির খোঁজে প্রাক্তনরা",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/9ad3f55m72"
+          }
+        },
+        {
+          "ts": "2026-09-30T16:40:11.000Z",
+          "kind": "evidence",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/3c5x3j90u3"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.657Z",
+          "kind": "claim",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.664Z",
+          "kind": "claim",
+          "claim_id": 175304,
+          "claim_text": "আড্ডানামা ৯: দ্বিভাষিক কবি শামীম আজাদ"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.666Z",
+          "kind": "claim",
+          "claim_id": 175305,
+          "claim_text": "রাজশাহীতে ‘সর্বহারা’ পরিচয়ে শিক্ষক-চিকিৎসকসহ কয়েকজনকে প্রাণনাশের হুমকি, চাঁদা দাবি"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.668Z",
+          "kind": "claim",
+          "claim_id": 175306,
+          "claim_text": "দক্ষিণ কোরিয়ায় খালে আটকা পড়েছে হাঙর, দেখতে মানুষের ভিড়"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.669Z",
+          "kind": "claim",
+          "claim_id": 175307,
+          "claim_text": "প্রশাসন জালিমের ভূমিকা পালন করলে আমরা রুখে দাঁড়াব: জামায়াত আমির"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.670Z",
+          "kind": "claim",
+          "claim_id": 175308,
+          "claim_text": "কিইভের আকাশে ড্রোনের আনাগোনা, জ্বালানি অবকাঠামোয় রুশ হামলা"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.672Z",
+          "kind": "claim",
+          "claim_id": 175309,
+          "claim_text": "টানা চতুর্থ দিনের আন্দোলনে সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.673Z",
+          "kind": "claim",
+          "claim_id": 175310,
+          "claim_text": "ভাঙা হবে পুরনো ভবন, স্মৃতির খোঁজে প্রাক্তনরা"
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175303,
+          "claim_text": "আমি যখন ভিক্টিম, তখনই কেন ব্যাংক হিসাব তলব: ভিডিওবার্তায় প্রশ্ন সালমান মুক্তাদিরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175304,
+          "claim_text": "আড্ডানামা ৯: দ্বিভাষিক কবি শামীম আজাদ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175305,
+          "claim_text": "রাজশাহীতে ‘সর্বহারা’ পরিচয়ে শিক্ষক-চিকিৎসকসহ কয়েকজনকে প্রাণনাশের হুমকি, চাঁদা দাবি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175306,
+          "claim_text": "দক্ষিণ কোরিয়ায় খালে আটকা পড়েছে হাঙর, দেখতে মানুষের ভিড়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175307,
+          "claim_text": "প্রশাসন জালিমের ভূমিকা পালন করলে আমরা রুখে দাঁড়াব: জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175308,
+          "claim_text": "কিইভের আকাশে ড্রোনের আনাগোনা, জ্বালানি অবকাঠামোয় রুশ হামলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175309,
+          "claim_text": "টানা চতুর্থ দিনের আন্দোলনে সিলেট ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:07.677Z",
+          "kind": "verify",
+          "claim_id": 175310,
+          "claim_text": "ভাঙা হবে পুরনো ভবন, স্মৃতির খোঁজে প্রাক্তনরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-886": {
+      "cluster_id": 886,
+      "headline": "‘মেয়েদের সঙ্গে অবাধ বিচরণ’সহ যেসব অভিযোগে শিবিরের পদ হারান আম্মার",
+      "first_seen": "2026-09-30T22:57:11.454Z",
+      "last_update": "2026-09-30T22:57:11.456Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-30T14:36:06.000Z",
+          "kind": "evidence",
+          "claim_id": 175311,
+          "claim_text": "‘মেয়েদের সঙ্গে অবাধ বিচরণ’সহ যেসব অভিযোগে শিবিরের পদ হারান আম্মার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmMkdIT0lwR2UzSlFPdkx5Z25sdFBoZXVZR2tUTm1jQTM0ekVQc29vdzlKY2FCanFZY3R6V2N2RVdvSE92c2xtdFBqUnJyZjZHd0pF?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:36:06.000Z",
+          "kind": "evidence",
+          "claim_id": 175312,
+          "claim_text": "শিবিরের ‘সাথী’ পদ হারিয়েছেন রাকসুর জিএস আম্মার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmMkdIT0lwR2UzSlFPdkx5Z25sdFBoZXVZR2tUTm1jQTM0ekVQc29vdzlKY2FCanFZY3R6V2N2RVdvSE92c2xtdFBqUnJyZjZHd0pF?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T15:28:16.000Z",
+          "kind": "evidence",
+          "claim_id": 175311,
+          "claim_text": "‘মেয়েদের সঙ্গে অবাধ বিচরণ’সহ যেসব অভিযোগে শিবিরের পদ হারান আম্মার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaajRsbHRuZk9JQ2JZTm9BbVdTR3ZhNkVnaFB0REFlaFZmTjh0V0xneUF5NS1UOGhibU5kUnJhRzBDcmQxQ21XelBZaGtCd2JDNkFr?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:10.239Z",
+          "kind": "claim",
+          "claim_id": 175311,
+          "claim_text": "‘মেয়েদের সঙ্গে অবাধ বিচরণ’সহ যেসব অভিযোগে শিবিরের পদ হারান আম্মার"
+        },
+        {
+          "ts": "2026-09-30T23:20:10.242Z",
+          "kind": "claim",
+          "claim_id": 175312,
+          "claim_text": "শিবিরের ‘সাথী’ পদ হারিয়েছেন রাকসুর জিএস আম্মার"
+        },
+        {
+          "ts": "2026-09-30T23:20:10.246Z",
+          "kind": "verify",
+          "claim_id": 175311,
+          "claim_text": "‘মেয়েদের সঙ্গে অবাধ বিচরণ’সহ যেসব অভিযোগে শিবিরের পদ হারান আম্মার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:10.246Z",
+          "kind": "verify",
+          "claim_id": 175312,
+          "claim_text": "শিবিরের ‘সাথী’ পদ হারিয়েছেন রাকসুর জিএস আম্মার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-887": {
+      "cluster_id": 887,
+      "headline": "ফ্লাইদুবাইয়ের যাত্রীদের ফেরাতে সামরিক উড়োজাহাজ পাঠাতে চেয়েছিল ইসরায়েল, মানেনি সৌদি আরব",
+      "first_seen": "2026-09-30T22:57:11.726Z",
+      "last_update": "2026-09-30T22:57:11.728Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-09-30T21:41:03.000Z",
+          "kind": "evidence",
+          "claim_id": 175313,
+          "claim_text": "ফ্লাইদুবাইয়ের যাত্রীদের ফেরাতে সামরিক উড়োজাহাজ পাঠাতে চেয়েছিল ইসরায়েল, মানেনি সৌদি আরব",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ybb6i10qwx"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:12.353Z",
+          "kind": "claim",
+          "claim_id": 175313,
+          "claim_text": "ফ্লাইদুবাইয়ের যাত্রীদের ফেরাতে সামরিক উড়োজাহাজ পাঠাতে চেয়েছিল ইসরায়েল, মানেনি সৌদি আরব"
+        },
+        {
+          "ts": "2026-09-30T23:20:12.370Z",
+          "kind": "verify",
+          "claim_id": 175313,
+          "claim_text": "ফ্লাইদুবাইয়ের যাত্রীদের ফেরাতে সামরিক উড়োজাহাজ পাঠাতে চেয়েছিল ইসরায়েল, মানেনি সৌদি আরব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-888": {
+      "cluster_id": 888,
+      "headline": "এলপিজির কৃত্রিম সংকট ও অতিরিক্ত দামে বিক্রি খতিয়ে দেখতে মন্ত্রীর নির্দেশ",
+      "first_seen": "2026-09-30T22:57:11.730Z",
+      "last_update": "2026-09-30T22:57:11.731Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-09-30T19:53:10.000Z",
+          "kind": "evidence",
+          "claim_id": 175314,
+          "claim_text": "এলপিজির কৃত্রিম সংকট ও অতিরিক্ত দামে বিক্রি খতিয়ে দেখতে মন্ত্রীর নির্দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/u5teh93tvj"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:14.710Z",
+          "kind": "claim",
+          "claim_id": 175314,
+          "claim_text": "এলপিজির কৃত্রিম সংকট ও অতিরিক্ত দামে বিক্রি খতিয়ে দেখতে মন্ত্রীর নির্দেশ"
+        },
+        {
+          "ts": "2026-09-30T23:20:14.714Z",
+          "kind": "verify",
+          "claim_id": 175314,
+          "claim_text": "এলপিজির কৃত্রিম সংকট ও অতিরিক্ত দামে বিক্রি খতিয়ে দেখতে মন্ত্রীর নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-889": {
+      "cluster_id": 889,
+      "headline": "আনন্দলোকে মঙ্গলালোকে-প্রবাসে রবীন্দ্র সাংস্কৃতিক উৎসব",
+      "first_seen": "2026-09-30T22:57:11.733Z",
+      "last_update": "2026-09-30T22:57:11.734Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-09-30T19:13:55.000Z",
+          "kind": "evidence",
+          "claim_id": 175315,
+          "claim_text": "আনন্দলোকে মঙ্গলালোকে-প্রবাসে রবীন্দ্র সাংস্কৃতিক উৎসব",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fp3r16u2zg"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:18.955Z",
+          "kind": "claim",
+          "claim_id": 175315,
+          "claim_text": "আনন্দলোকে মঙ্গলালোকে-প্রবাসে রবীন্দ্র সাংস্কৃতিক উৎসব"
+        },
+        {
+          "ts": "2026-09-30T23:20:18.959Z",
+          "kind": "verify",
+          "claim_id": 175315,
+          "claim_text": "আনন্দলোকে মঙ্গলালোকে-প্রবাসে রবীন্দ্র সাংস্কৃতিক উৎসব",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -100170,6 +101268,85 @@
       ],
       "related": []
     },
+    "national-senate-blocks-republican": {
+      "cluster_id": 882,
+      "headline": "Senate blocks Republican bill restricting stock trades by US Congress members",
+      "first_seen": "2026-09-30T22:57:11.425Z",
+      "last_update": "2026-09-30T22:57:11.430Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-30T17:48:30.000Z",
+          "kind": "evidence",
+          "claim_id": 175296,
+          "claim_text": "Senate blocks Republican bill restricting stock trades by US Congress members",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/sep/30/senate-datacenter-energy-bill"
+          }
+        },
+        {
+          "ts": "2026-09-30T17:48:30.000Z",
+          "kind": "evidence",
+          "claim_id": 175297,
+          "claim_text": "Senate Democrats block datacenter energy bill",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/sep/30/senate-datacenter-energy-bill"
+          }
+        },
+        {
+          "ts": "2026-09-30T20:36:35.000Z",
+          "kind": "evidence",
+          "claim_id": 175296,
+          "claim_text": "Senate blocks Republican bill restricting stock trades by US Congress members",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/sep/30/us-senate-stock-trades-bill"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:01.378Z",
+          "kind": "claim",
+          "claim_id": 175296,
+          "claim_text": "Senate blocks Republican bill restricting stock trades by US Congress members"
+        },
+        {
+          "ts": "2026-09-30T23:20:01.380Z",
+          "kind": "claim",
+          "claim_id": 175297,
+          "claim_text": "Senate Democrats block datacenter energy bill"
+        },
+        {
+          "ts": "2026-09-30T23:20:01.384Z",
+          "kind": "verify",
+          "claim_id": 175296,
+          "claim_text": "Senate blocks Republican bill restricting stock trades by US Congress members",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:20:01.384Z",
+          "kind": "verify",
+          "claim_id": 175297,
+          "claim_text": "Senate Democrats block datacenter energy bill",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-senior-greens-figures": {
       "cluster_id": 772,
       "headline": "Senior Greens figures say new leadership must stop Labor approving fossil fuel projects ‘by whatever means’",
@@ -101474,16 +102651,27 @@
     },
     "opinion-809": {
       "cluster_id": 809,
-      "headline": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+      "headline": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
       "first_seen": "2026-09-30T14:35:05.645Z",
-      "last_update": "2026-09-30T20:31:06.866Z",
-      "claim_count": 9,
+      "last_update": "2026-09-30T22:57:11.420Z",
+      "claim_count": 11,
       "events": [
         {
           "ts": "2026-09-27T03:26:45.000Z",
           "kind": "evidence",
           "claim_id": 161843,
           "claim_text": "পত্রিকার খবর (২৭শে সেপ্টেম্বর): 'আওয়ামী লীগের ওপর নিষেধাজ্ঞা, বাংলাদেশের অভ্যন্তরীণ ব্যাপার: যুক্তরাষ্ট্র'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqwyzzzz8j2po"
+          }
+        },
+        {
+          "ts": "2026-09-27T03:26:45.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -101513,6 +102701,17 @@
           }
         },
         {
+          "ts": "2026-09-30T13:07:53.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ex7aisjbfc"
+          }
+        },
+        {
           "ts": "2026-09-30T13:56:36.000Z",
           "kind": "evidence",
           "claim_id": 161843,
@@ -101528,6 +102727,17 @@
           "kind": "evidence",
           "claim_id": 161844,
           "claim_text": "'গ্যাস সিলিন্ডার নাই, তবে ২৩০০ দিলে বাসায় দিয়ে আসবো'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/crwyz8qe7y0qo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-09-30T13:56:36.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -101554,6 +102764,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/opinion/column/6c3oa0rcl5"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:27:43.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/6c3oa0rcl5"
+          }
+        },
+        {
+          "ts": "2026-09-30T14:35:29.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/mllv7projp"
           }
         },
         {
@@ -101615,6 +102847,17 @@
           }
         },
         {
+          "ts": "2026-09-30T15:33:16.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c3wyz0vq12rzo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-09-30T15:50:31.726Z",
           "kind": "claim",
           "claim_id": 163276,
@@ -101667,6 +102910,17 @@
           }
         },
         {
+          "ts": "2026-09-30T15:51:04.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/6houzjc9ac"
+          }
+        },
+        {
           "ts": "2026-09-30T16:33:23.754Z",
           "kind": "claim",
           "claim_id": 164703,
@@ -101685,6 +102939,28 @@
           }
         },
         {
+          "ts": "2026-09-30T16:44:14.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/2g61pvq2qo"
+          }
+        },
+        {
+          "ts": "2026-09-30T16:44:14.000Z",
+          "kind": "evidence",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/2g61pvq2qo"
+          }
+        },
+        {
           "ts": "2026-09-30T19:22:02.000Z",
           "kind": "evidence",
           "claim_id": 161843,
@@ -101700,6 +102976,17 @@
           "kind": "evidence",
           "claim_id": 173627,
           "claim_text": "রাড্ডার ঘটনায় সংরক্ষিত নারী এমপির বিরুদ্ধে কঠোর সিদ্ধান্ত নিতে পারে বিএনপি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/8qrvcdl8cc"
+          }
+        },
+        {
+          "ts": "2026-09-30T19:22:02.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -101740,6 +103027,17 @@
           "kind": "evidence",
           "claim_id": 173628,
           "claim_text": "বহিষ্কার হওয়ার এক বছর পর জানা গেল, আম্মার ছাত্রশিবিরের ‘সাথি’ ছিলেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/wpsp20lz7d"
+          }
+        },
+        {
+          "ts": "2026-09-30T19:41:38.000Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -101833,6 +103131,53 @@
           "kind": "verify",
           "claim_id": 173628,
           "claim_text": "বহিষ্কার হওয়ার এক বছর পর জানা গেল, আম্মার ছাত্রশিবিরের ‘সাথি’ ছিলেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.592Z",
+          "kind": "claim",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু"
+        },
+        {
+          "ts": "2026-09-30T23:17:25.593Z",
+          "kind": "evidence",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.614Z",
+          "kind": "claim",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম"
+        },
+        {
+          "ts": "2026-09-30T23:17:25.621Z",
+          "kind": "verify",
+          "claim_id": 175153,
+          "claim_text": "বিদ্যুৎ বিভাগের আপত্তির পরও মাদ্রাসার তিনতলা ভবন, ছাদে বিদ্যুৎস্পৃষ্টে ২ শিক্ষার্থীর মৃত্যু",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-09-30T23:17:25.621Z",
+          "kind": "verify",
+          "claim_id": 175161,
+          "claim_text": "প্রবাসে প্রথম",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -107570,7 +108915,7 @@
       "cluster_id": 855,
       "headline": "সরোয়ার ইমরানের জায়গায় নারী দলের প্রধান কোচ হেম্প",
       "first_seen": "2026-09-30T18:21:03.959Z",
-      "last_update": "2026-09-30T20:31:07.334Z",
+      "last_update": "2026-09-30T22:57:11.439Z",
       "claim_count": 2,
       "events": [
         {
