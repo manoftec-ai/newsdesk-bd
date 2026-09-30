@@ -2,7 +2,12 @@
 import { BADGES } from "../lib/news-data.js";
 
 const { badge, tier, compact = false } = Astro.props;
-const meta = BADGES[badge?.key] ?? BADGES[badge] ?? BADGES.partial;
+// getBadge() already resolves the wording (the developing lane overrides
+// `partial`'s label while keeping its key), so an object that carries a label
+// is the answer. The key lookup stays for callers passing a bare string key.
+const meta = badge?.label
+  ? badge
+  : BADGES[badge?.key] ?? BADGES[badge] ?? BADGES.partial;
 const tierText = tier ? ` [${tier}]` : "";
 ---
 

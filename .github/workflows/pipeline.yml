@@ -64,6 +64,12 @@ jobs:
       - name: Cluster
         run: node run.js cluster || true
 
+      # Developing lane (2026-09-30): promote qualifying first-sightings to
+      # solo clusters BEFORE verify scores them, so extract briefs them in
+      # this same run. Tier-A outlets, fat direct bodies, capped per run.
+      - name: Promote developing first-sightings
+        run: node tools/promote_developing.mjs --max=5 --write || true
+
       - name: Verify
         run: node run.js verify || true
 
@@ -140,6 +146,23 @@ jobs:
       - name: Contradiction detector (structured conflicts)
         run: |
           node tools/detect_conflicts.mjs || echo "detect_conflicts skipped/failed (harmless)"
+
+      # 2026-09-30 developing lane, second half: the desk goes looking for a
+      # second source on every story promote_developing.mjs put live on one
+      # source. Runs after verify, reverify and detect_conflicts so the badge
+      # decision uses the same evidence the normal publish path uses, and so a
+      # story with an unresolved conflict is left for a human instead of being
+      # upgraded.
+      #
+      # Batch by design: this edits articles inside the same run that the
+      # "Commit state" step below commits, so a cycle produces ONE commit, and
+      # because that commit is pushed with the bot token it does not fire
+      # deploy.yml's push trigger - the updates ride the next hourly deploy
+      # (17 * * * *) together with everything else. A quiet cycle writes
+      # nothing at all, which is what keeps Vercel deploy attempts flat.
+      - name: Refresh developing stories (2h quiet, 6h recycle)
+        run: |
+          node tools/refresh_developing.mjs --write || echo "refresh_developing skipped/failed (harmless)"
 
       - name: Source health (reliability profile)
         run: |

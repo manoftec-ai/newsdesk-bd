@@ -139,6 +139,10 @@ export function buildBrief(clusterId, { db } = {}) {
     category,
     tier,
     date: firstDate,
+    // 2026-09-30 developing lane: a solo cluster carrying a single badge is a
+    // first-sighting story awaiting corroboration — not a thin multi-source
+    // story. Pick + publication gate key the maturity exemption off this flag.
+    developing: members.length === 1 && verdict?.badge === 'single',
     verdict: verdict ? { badge: verdict.badge, tier: verdict.tier, score: verdict.score, status: verdict.status } : null,
     rawCategories: rawCats,
     members: members.map((m) => ({
