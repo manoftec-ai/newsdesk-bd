@@ -3,13 +3,15 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { openDb } from '../lib/db.mjs';
 import { runPublicationGate } from '../lib/publication-gate.mjs';
-import { selectDeveloping } from '../tools/promote_developing.mjs';
+import { selectDeveloping, bengaliShare, isBengaliDominant } from '../tools/promote_developing.mjs';
 import { normTitle } from '../lib/published.mjs';
 
 const FAT_BODY = 'ঢাকায় মেট্রোরেলের নতুন লাইন রবিবার সকালে চালু হয়েছে। প্রথম পর্যায়ে ১০টি স্টেশনে ট্রেন চলবে। মন্ত্রণালয় জানিয়েছে, ভাড়া নির্ধারণের সিদ্ধান্ত পরে জানানো হবে। যাত্রীরা নির্ধারিত সময়ে টিকিট কিনে ট্রেন ব্যবহার করতে পারবেন। প্রথম ট্রেনটি সকাল সাড়ে আটটায় কামরাঙ্গীরচর স্টেশন থেকে ছেড়ে যায়। প্রাথমিক পর্যায়ে প্রতিটি স্টেশনে যাত্রীদের নিরাপত্তার জন্য সিসিটিভি ক্যামেরা ও লিফটের ব্যবস্থা রাখা হবে। কর্মকর্তারা বলেছেন, পরীক্ষামূলক দৌড়ের পর ট্রেন চলাচল শুরু করা হয়েছে। প্রথম সপ্তাহে ট্রেন চলবে সকাল ছয়টা থেকে রাত এগারোটা পর্যন্ত। স্টেশনে যাত্রীদের টিকিট, নিরাপত্তা নির্দেশনা ও পরবর্তী ট্রেনের সময়সূচি জানানো হবে। ভাড়া এখনো চূড়ান্ত হয়নি। কর্তৃপক্ষ বলেছে, ভাড়া ঘোষণার পর সেটি কার্যকর হবে। অতিরিক্ত যাত্রী চাপ সামলাতে আরও ট্রেন যুক্ত করার পরিকল্পনা রয়েছে বলে জানা গেছে। দীর্ঘ প্রতীক্ষার পর প্রথম দিনে যাত্রীদের মধ্যে উৎসাহ দেখা গেছে বলে প্রতিবেদনে বলা হয়েছে।';
 const HEADLINE = 'ঢাকায় মেট্রোরেলের নতুন লাইন চালু';
 const NOW = '2026-09-30T12:00:00.000Z';
 const TRUST = { sources: { prothomalo: 'top', blogspot99: 'low' } };
+
+const ENGLISH_BODY = 'Israeli forces were overwhelmed by violent settlers on Tuesday, officials said, in an attack that left several people dead and forced others to flee the area. The government called the incident a terrorist attack and said it was reviewing the security arrangements around the site.';
 
 const row = (over = {}) => ({
   id: 1, source_id: 'prothomalo', title: HEADLINE,
@@ -26,6 +28,7 @@ test('selectDeveloping picks fat Tier-A direct first-sightings, rejects the rest
     row({ id: 5, category: 'ক্রীড়া' }),
     row({ id: 6, source_id: 'kalerkantho' }),
     row({ id: 7, title: 'চট্টগ্রামে নতুন ফ্লাইওভার উদ্বোধন' }),
+    row({ id: 8, source_id: 'guardian-world', title: 'Israeli forces overwhelmed by violent settlers', body: ENGLISH_BODY }),
   ];
   const published = new Map([[normTitle('চট্টগ্রামে নতুন ফ্লাইওভার উদ্বোধন'), NOW]]);
   const { picked, skipped } = selectDeveloping(rows, {
@@ -39,6 +42,7 @@ test('selectDeveloping picks fat Tier-A direct first-sightings, rejects the rest
   assert.equal(skipped['category-not-A'], 1);
   assert.equal(skipped['source-unenrichable'], 1);
   assert.equal(skipped['title-dup'], 1);
+  assert.equal(skipped['not-bengali'], 1);
 });
 
 test('selectDeveloping respects the per-run cap, newest first', () => {
@@ -107,4 +111,16 @@ test('same solo brief without the developing flag is still held for maturity', (
   assert.equal(result.pass, false);
   assert.ok(result.failureCodes.includes('BRIEF_NOT_MATURE'));
   fx.db.close();
+});
+
+test(`the instant lane refuses English copy for a Bengali site`, () => {
+  // measured on the live dry run 2026-09-30: 11 of 120 recent unclustered
+  // items were English (guardian-world, prothomalo-en) and would have been
+  // promoted onto a Bangla homepage.
+  assert.equal(bengaliShare(`${HEADLINE} ${FAT_BODY}`) > 0.95, true, `a Bangla story is Bangla`);
+  assert.equal(bengaliShare(ENGLISH_BODY) < 0.05, true, `an English wire story is not`);
+  assert.equal(isBengaliDominant({ title: 'Reuters report', body: ENGLISH_BODY }), false);
+  assert.equal(isBengaliDominant({ title: HEADLINE, body: FAT_BODY }), true);
+  // mixed copy is judged on its letters, not on punctuation or digits
+  assert.equal(isBengaliDominant({ title: HEADLINE, body: `${FAT_BODY.slice(0, 300)} ${ENGLISH_BODY.slice(0, 60)}` }), true);
 });

@@ -63,6 +63,23 @@ const verifyCfg = loadVerifyConfig(cfg);
 const unusable = unusableSources();
 const publishedTitles = existsSync(SITE_DIR) ? loadPublishedTitles(SITE_DIR) : new Map();
 
+// A Bengali site cannot publish an English wire story. The instant lane takes a
+// raw body straight from the feed, so this is the only gate that stops
+// guardian-world / prothomalo-en / Daily Star English copy from going live under
+// a Bengali headline. Measured on the text itself rather than on source
+// metadata, because one outlet publishes both editions (dhakatribune is
+// `lang: en` in sources.yaml but carries Bangla too).
+export function bengaliShare(text) {
+  const letters = String(text ?? '').match(/\p{L}/gu);
+  if (!letters?.length) return 0;
+  const bangla = letters.filter((ch) => /\p{Script=Bengali}/u.test(ch)).length;
+  return bangla / letters.length;
+}
+
+export function isBengaliDominant(row, { min = 0.6 } = {}) {
+  return bengaliShare(`${row.title ?? ''} ${row.body ?? ''}`) >= min;
+}
+
 // Pure candidate selection (exported for tests): newest first, first hit wins.
 export function selectDeveloping(rows, { max = MAX, minEvidence = MIN_EVIDENCE, trust: t = trust, unusable: u = unusable, published = publishedTitles } = {}) {
   const picked = [];
@@ -74,6 +91,7 @@ export function selectDeveloping(rows, { max = MAX, minEvidence = MIN_EVIDENCE, 
     if (u.has(row.source_id)) { skip('source-unenrichable'); continue; }
     if (googleNewsArticleId(row.url)) { skip('gnews-wrapper'); continue; }
     if (categoryTier(row.category) !== 'A') { skip('category-not-A'); continue; }
+    if (!isBengaliDominant(row)) { skip('not-bengali'); continue; }
     const ev = evidenceSufficiency({ members: [{ lead: row.body }] }, { min: minEvidence });
     if (!ev.pass) { skip('thin-body'); continue; }
     if (isTitleDuplicate(row.title, row.published_at, published)) { skip('title-dup'); continue; }
