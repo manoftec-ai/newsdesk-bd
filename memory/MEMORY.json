@@ -1193,6 +1193,29 @@
         "first run would have published all 428 pending stories (added --since/FACEBOOK_SINCE)",
         "daemon stack-traced every cycle when logged out"
       ]
+    },
+    {
+      "id": "D132",
+      "date": "2026-09-30",
+      "topic": "Developing lane: instant first-sightings (2h quiet + 6h recycle watch) with batched deploys",
+      "decision": "A qualifying first sighting goes live immediately badged developing, and a deterministic tool (refresh_developing.mjs) then watches it on the user clock: no edit for 2h, attribute a new outlet after that, upgrade the badge only on the cluster verdict, hold conflicts for a human, freeze after 8h. No deploy machinery added: one commit per pipeline cycle, bot pushes do not fire deploy.yml, so updates ride the hourly deploy.",
+      "files": [
+        "pipeline/tools/promote_developing.mjs",
+        "pipeline/tools/refresh_developing.mjs",
+        "pipeline/lib/publication-gate.mjs",
+        "pipeline/lib/extract.mjs",
+        "pipeline/lib/synth.mjs",
+        "site/src/lib/news-data.js",
+        "site/src/components/VerificationBadge.astro",
+        "site/src/pages/article/[slug].astro",
+        ".github/workflows/pipeline.yml"
+      ],
+      "tests": "pipeline suite 431/431 (26 new across promote/refresh/UI), golden clustering F1 1.000",
+      "bugsFound": [
+        "frontMatter wrote fm.uncorroborated (never set) so the tier-A single-source notice never rendered on any article",
+        "VerificationBadge re-resolved BADGES[badge.key] and discarded the developing wording",
+        "instant lane was promoting English wire copy (guardian-world, prothomalo-en) onto a Bangla site"
+      ]
     }
   ],
   "sources": [
