@@ -86,7 +86,9 @@ test('extract marks a tier A single-source story instead of dropping it', () => 
 
 test('the flag reaches the article frontmatter', () => {
   const src = read('../lib/synth.mjs');
-  assert.match(src, /uncorroborated: \$\{fm\.uncorroborated === true\}/, 'frontmatter must carry the flag');
+  // 2026-09-30: this read brief.uncorroborated, not fm.uncorroborated. The fm object has no
+  // such property, so the old expression interpolated `undefined` into every affected story.
+  assert.match(src, /uncorroborated: \$\{brief\.uncorroborated === true\}/, 'frontmatter must carry the flag');
 });
 
 test('the article page tells the reader the story is not corroborated', () => {

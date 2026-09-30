@@ -211,3 +211,31 @@ test('frontMatter stamps publishedAt distinct from the source-event date', () =>
   assert.ok(ts >= before && ts <= Date.now() + 1000, 'publishedAt is now');
   assert.ok(!fm.includes('2026-09-20') || fm.match(/^date: 2026-09-20/m), 'event date untouched');
 });
+
+test('frontMatter marks the developing lane and carries the uncorroborated flag', () => {
+  const base = {
+    headline: 'পরীক্ষা সংবাদ',
+    date: '2026-09-30T00:00:00.000Z',
+    category: 'national',
+    developing: true,
+    uncorroborated: true,
+    members: [{ title: 't', lead: 'x', source_id: 'prothomalo' }],
+    verdict: { badge: 'single', tier: 'A', score: 2 },
+    evidence: [],
+  };
+  const dev = frontMatter(base);
+  assert.match(dev, /^developing: true$/m);
+  assert.match(dev, /^  uncorroborated: true$/m);
+  assert.match(dev, /^  badge: "partial"$/m);
+
+  // A settled, corroborated story must not keep either flag.
+  const done = frontMatter({
+    ...base,
+    developing: false,
+    uncorroborated: false,
+    verdict: { badge: 'verified', tier: 'A', score: 5 },
+  });
+  assert.match(done, /^developing: false$/m);
+  assert.match(done, /^  uncorroborated: false$/m);
+  assert.match(done, /^  badge: "verified"$/m);
+});

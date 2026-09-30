@@ -157,6 +157,12 @@ export function frontMatter(brief, { publication = null } = {}) {
     // any future "just published" display. Written once at finalize; updaters
     // must preserve it, never refresh it.
     publishedAt: new Date().toISOString(),
+    // 2026-09-30 developing lane: true while this story rests on one source and
+    // the desk is still looking for a second one (2h quiet + 6h recycle). The
+    // site renders a distinct "যাচাই চলছে" chip for it, so a reader can tell
+    // "being verified right now" from an ordinary single-source piece. Set once
+    // at finalize; the upgrade path clears it when corroboration lands.
+    developing: brief.developing === true,
     category: brief.category ?? 'national',
     tags: inferTags(brief),
     author: 'desk',
@@ -190,6 +196,7 @@ excerpt: "…"
 seoDescription: "…"
 date: ${fm.date}
 publishedAt: ${fm.publishedAt}
+developing: ${fm.developing}
 category: "${fm.category}"
 tags: ${tagList}
 author: "desk"
@@ -206,7 +213,7 @@ verification:
   # 2026-09-26: true when a tier A (national/politics/international) story is
   # published from a single source. The site must say so on the page, because the
   # badge alone reads as stronger corroboration than one source can support.
-  uncorroborated: ${fm.uncorroborated === true}
+  uncorroborated: ${brief.uncorroborated === true}
 ${publication ? `  status: "passed"
   evaluatedAt: "${String(publication.checkedAt).replace(/"/g, '\\"') }"
   clusterId: ${Number(publication.clusterId)}

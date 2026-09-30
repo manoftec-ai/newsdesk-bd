@@ -20,6 +20,7 @@ const news = defineCollection({
     // date, the source event's hour). Optional so the 400 existing files
     // without it keep building; data-only until a display decision lands.
     publishedAt: z.coerce.date().optional(),
+    developing: z.boolean().default(false),
     corrected: z.boolean().default(false),
     correctionNote: z.string().optional(),
     factCheck: z

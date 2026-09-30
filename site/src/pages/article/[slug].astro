@@ -383,6 +383,20 @@ const shareLinks = [
           </p>
         )}
 
+        {/* 2026-09-30 developing lane: this story went live on one source while
+            the desk kept looking for a second. Say so, and say what happens
+            next, instead of leaving the reader to guess how firm it is. */}
+        {post.developing && (
+          <p
+            class="uncorroborated-notice mt-2 text-sm font-medium text-muted-foreground"
+            role="note"
+          >
+            এই প্রতিবেদনটি এখনো যাচাই চলছে। প্রথম সূত্রে প্রকাশের পর ডেস্ক কয়েক
+            ঘণ্টা ধরে দ্বিতীয় সূত্র খুঁজছে; নতুন ও অলাদা তথ্য পাওয়া গেলে এই পাতাটি
+            সেই তথ্য যুক্ত করে আপডেট হবে।
+          </p>
+        )}
+
       {post.updates && post.updates.length > 0 && (() => {
         const last = post.updates[post.updates.length - 1];
         return (

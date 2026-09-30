@@ -248,6 +248,17 @@ export const BADGES = {
     tierNote: "একক সূত্রের ওপর ভিত্তি করে — আরও সূত্রে নিশ্চিত হলে পরিপূর্ণ হবে",
     className: "badge--partial",
   },
+  // 2026-09-30 developing lane. Same verification state as `partial` (one
+  // source, awaiting a second) but a different promise to the reader: the desk
+  // is actively looking right now, on a 2h quiet + 6h recycle clock. It keeps
+  // key "partial", so sorting and every consumer stay unchanged; only the words
+  // and colour differ.
+  developing: {
+    label: "যাচাই চলছে",
+    tierNote:
+      "একমাত্র সূত্রে প্রকাশিত — ডেস্ক এখন দ্বিতীয় সূত্র খুঁজছে, পাওয়া গেলে সঙ্গে সঙ্গে যুক্ত হবে",
+    className: "badge--developing",
+  },
   suspect: {
     label: "সন্দেহজনক",
     tierNote: "নির্ভরযোগ্য সূত্রে যাচাই করা যায়নি, তাই প্রকাশযোগ্য নয়",
@@ -257,7 +268,12 @@ export const BADGES = {
 
 export const getBadge = (post) => {
   const key = post.verification?.badge ?? "partial";
-  return { key, ...BADGES[key] ?? BADGES.partial };
+  // A story on the developing lane wears the `partial` verification state, but
+  // it is a different editorial situation, so it gets its own words + colour.
+  // Guarded on the key so a stale `developing: true` can never label a story
+  // "যাচাই চলছে" after it has actually been corroborated.
+  const meta = post.developing && key === "partial" ? BADGES.developing : BADGES[key] ?? BADGES.partial;
+  return { key, ...meta };
 };
 
 export const VERDICTS = {
