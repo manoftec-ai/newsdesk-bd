@@ -1,7 +1,7 @@
 // test/synth.test.mjs — unit tests for synth helpers
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inferTags, claimRules, writingPrompt, factCheckBlock, prepBody } from '../lib/synth.mjs';
+import { inferTags, claimRules, writingPrompt, factCheckBlock, prepBody, frontMatter } from '../lib/synth.mjs';
 
 test('inferTags emits only defined tags from real keywords', () => {
   const brief = {
@@ -193,4 +193,21 @@ test('inferTags: genuine health and education stories still tag correctly', () =
   assert.ok(
     inferTags({ headline: 'মেডিকেল শিক্ষার্থীদের দাবি', members: [] }).includes('education'),
   );
+});
+
+test('frontMatter stamps publishedAt distinct from the source-event date', () => {
+  const before = Date.now();
+  const fm = frontMatter({
+    headline: 'পরীক্ষা সংবাদ',
+    date: '2026-09-20T00:00:00.000Z',
+    category: 'national',
+    members: [{ title: 't', lead: 'x', source_id: 'prothomalo' }],
+    verdict: { badge: 'single', tier: 'A', score: 2 },
+    evidence: [],
+  });
+  const m = fm.match(/^publishedAt: (.+)$/m);
+  assert.ok(m, 'publishedAt line present');
+  const ts = new Date(m[1]).getTime();
+  assert.ok(ts >= before && ts <= Date.now() + 1000, 'publishedAt is now');
+  assert.ok(!fm.includes('2026-09-20') || fm.match(/^date: 2026-09-20/m), 'event date untouched');
 });

@@ -64,6 +64,12 @@ jobs:
       - name: Cluster
         run: node run.js cluster || true
 
+      # Developing lane (2026-09-30): promote qualifying first-sightings to
+      # solo clusters BEFORE verify scores them, so extract briefs them in
+      # this same run. Tier-A outlets, fat direct bodies, capped per run.
+      - name: Promote developing first-sightings
+        run: node tools/promote_developing.mjs --max=5 --write || true
+
       - name: Verify
         run: node run.js verify || true
 

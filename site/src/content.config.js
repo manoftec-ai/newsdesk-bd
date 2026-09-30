@@ -16,6 +16,10 @@ const news = defineCollection({
     canonical: z.string().url().optional(),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
+    // 2026-09-30 developing lane: when THIS site published (distinct from
+    // date, the source event's hour). Optional so the 400 existing files
+    // without it keep building; data-only until a display decision lands.
+    publishedAt: z.coerce.date().optional(),
     corrected: z.boolean().default(false),
     correctionNote: z.string().optional(),
     factCheck: z

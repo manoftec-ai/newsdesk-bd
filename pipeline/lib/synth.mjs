@@ -152,6 +152,11 @@ export function frontMatter(brief, { publication = null } = {}) {
     title: String(brief.headline ?? '').replace(/"/g, '\\"'),
     excerpt: '…',
     date: firstDate,
+    // 2026-09-30 developing lane: the moment THIS site published, distinct
+    // from date (the source event's hour). Drives the 2h/6h watch windows and
+    // any future "just published" display. Written once at finalize; updaters
+    // must preserve it, never refresh it.
+    publishedAt: new Date().toISOString(),
     category: brief.category ?? 'national',
     tags: inferTags(brief),
     author: 'desk',
@@ -184,6 +189,7 @@ seoTitle: "…"
 excerpt: "…"
 seoDescription: "…"
 date: ${fm.date}
+publishedAt: ${fm.publishedAt}
 category: "${fm.category}"
 tags: ${tagList}
 author: "desk"

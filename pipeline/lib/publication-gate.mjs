@@ -250,11 +250,23 @@ function checkBriefShape(brief, failures) {
 }
 
 function checkCluster(brief, context, failures) {
-  if (!context?.cluster || !['mature'].includes(String(context.cluster.status))) {
-    failures.add(PUBLICATION_FAILURE_CODES.BRIEF_NOT_MATURE);
-  }
-  if (normalizedText(brief?.status) !== 'mature') {
-    failures.add(PUBLICATION_FAILURE_CODES.BRIEF_NOT_MATURE);
+  // Developing lane (2026-09-30): a first-sighting solo story skips the
+  // quiet-wait. Corroboration (or its absence over the watch windows) is what
+  // the lane tracks — silence adds no information for a story with one
+  // witness. Strict shape: exactly 1 member, single badge, tier A, flagged
+  // developing by the promoter. Every other check below still applies.
+  const developing =
+    brief?.developing === true &&
+    (brief?.members ?? []).length === 1 &&
+    brief?.verdict?.badge === 'single' &&
+    brief?.tier === 'A';
+  if (!developing) {
+    if (!context?.cluster || !['mature'].includes(String(context.cluster.status))) {
+      failures.add(PUBLICATION_FAILURE_CODES.BRIEF_NOT_MATURE);
+    }
+    if (normalizedText(brief?.status) !== 'mature') {
+      failures.add(PUBLICATION_FAILURE_CODES.BRIEF_NOT_MATURE);
+    }
   }
   if (
     !context?.cluster
