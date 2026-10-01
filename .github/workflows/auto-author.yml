@@ -15,6 +15,12 @@ on:
 
 permissions:
   contents: write
+  # 2026-10-01: the "Deploy published stories now" step dispatches deploy.yml
+  # through the API, and that call needs actions:write. Without it every
+  # dispatch died with HTTP 403 while the step still reported success — stories
+  # sat in main undeployed and the site went quiet. The step now also fails
+  # loudly on a non-2xx code so a dead dispatch can never hide again.
+  actions: write
 
 concurrency:
   group: auto-author
@@ -219,3 +225,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches" \
             -d '{"ref":"main"}')
           echo "deploy dispatch -> HTTP $code"
+          if [ "$code" -ge 300 ]; then
+            echo "deploy dispatch FAILED (HTTP $code) — stories are on main but NOT deployed" >&2
+            exit 1
+          fi
