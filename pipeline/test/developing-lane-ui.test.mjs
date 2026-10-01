@@ -124,15 +124,21 @@ test('the hero slider stays minimal, fast and honest', () => {
   assert.match(slider, /scroll-snap-type:\s*x mandatory/, 'swiping works with zero JS');
   // 2026-10-01 (user rule): the slider auto-moves. The timer is allowed, but
   // only with the three brakes: reduced-motion never starts it, and hover /
-  // focus / a hidden tab pause it.
+  // focus / a hidden tab pause it. 2026-10-01 fix: Astro compiles the script
+  // to type="module", where document.currentScript is null and killed the
+  // whole script on line 1 — the root must be found by query.
   assert.match(code, /setInterval\(\(\) => go\(current\(\) \+ 1\), AUTOPLAY_MS\)/, 'auto-advance exists');
   assert.match(code, /if \(reduce \|\| timer/, 'reduced-motion never starts the timer');
   assert.match(code, /mouseenter[^]*stop\(\)/, 'hover pauses');
   assert.match(code, /focusin[^]*stop\(\)/, 'keyboard focus pauses');
   assert.match(code, /visibilitychange/, 'a hidden tab pauses');
+  assert.doesNotMatch(code, /currentScript/, 'no currentScript: null in a module script');
+  assert.match(code, /querySelector\("section\[data-hero\]"\)/, 'the root is found by query');
   assert.doesNotMatch(code, /from ["'](react|swiper|embla|keen-slider|flickity)/, 'no carousel dependency');
   assert.match(slider, /loading=\{i === 0 \? "eager" : "lazy"\}/, 'only slide 0 can be LCP');
   assert.match(slider, /width="1200"[\s\S]{0,40}height="630"/, 'image dimensions are fixed (no layout shift)');
+  assert.match(slider, /-webkit-line-clamp:\s*2/, 'headlines clamp to two lines: every slide the same height');
+  assert.doesNotMatch(slider, /\{p\.thumbnail && \(\n\s*<div class="aspect/, 'the photo box renders even with no photo');
   assert.match(slider, /prefers-reduced-motion/, 'reduced motion gets instant jumps');
   assert.match(slider, /aria-roledescription="carousel"/, 'announced as a carousel');
   assert.match(slider, /aria-roledescription="slide"/, 'each slide is announced');
