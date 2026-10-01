@@ -210,9 +210,12 @@ jobs:
           pushed=""
           for attempt in 1 2 3; do
             git fetch origin main
-            if git merge --ff-only origin/main 2>/dev/null; then
+            # NOTE: no 2>/dev/null on the merges. Suppressing git's stderr hid
+            # the reason for four hours of lost batches ("merge failed —
+            # abandoning push" with nothing to act on).
+            if git merge --ff-only origin/main; then
               :
-            elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+            elif git merge --no-edit -X theirs origin/main; then
               :
             else
               conflicts=$(git diff --name-only --diff-filter=U)
