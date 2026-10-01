@@ -77,3 +77,28 @@ test('the developing chip has its own colour', () => {
   const css = read('src/styles.css');
   assert.match(css, /\.badge--developing \{/);
 });
+
+test(`a developing story is not buried under older confirmed news`, async () => {
+  // 2026-10-01: with developing at rank 3 (below `confirmed`), all 24 developing
+  // stories sorted to positions 395-452 of 452 and the homepage looked dead
+  // while the stories were live. The lane exists to surface a first sighting,
+  // so it must compete with confirmed and let recency decide.
+  const src = read('src/lib/news-data.js');
+  const start = src.indexOf('export const BADGES = {');
+  const g = src.indexOf('export const getBadge =');
+  const gEnd = src.indexOf('\n};', src.indexOf('return { key, ...meta };')) + 3;
+  const rStart = src.indexOf('const editorialRank = (post) => {');
+  const rEnd = src.indexOf('\n};', src.indexOf('return 4;')) + 3;
+  const code = (src.slice(start, g) + src.slice(g, gEnd) + src.slice(rStart, rEnd))
+    .replaceAll('export const', 'const');
+  const { editorialRank } = await import(`data:text/javascript,${encodeURIComponent(`${code}\nexport { editorialRank };`)}`);
+  const post = (over) => ({ verification: { badge: 'confirmed' }, ...over });
+  const devRank = editorialRank(post({ developing: true, verification: { badge: 'partial' } }));
+  const confirmedRank = editorialRank(post({}));
+  const oldConfirmed = editorialRank(post({ verification: { badge: 'confirmed' } }));
+  assert.equal(devRank, confirmedRank, `developing competes with confirmed, recency decides`);
+  assert.ok(devRank < editorialRank(post({ verification: { badge: 'partial' } })), `still ahead of ordinary single-source`);
+  assert.ok(devRank < editorialRank(post({ verification: { badge: 'suspect' } })), `suspect stays last`);
+  assert.equal(oldConfirmed, devRank);
+  assert.match(src, /if \(post\.developing\) return 2;/);
+});
