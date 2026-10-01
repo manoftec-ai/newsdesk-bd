@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 964,
+    "storyCount": 983,
     "kinds": [
       "claim",
       "evidence",
@@ -11,6 +11,124 @@
     ]
   },
   "stories": {
+    "economy-1016": {
+      "cluster_id": 1016,
+      "headline": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত",
+      "first_seen": "2026-10-01T15:26:20.049Z",
+      "last_update": "2026-10-01T15:26:20.052Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T11:31:55.000Z",
+          "kind": "evidence",
+          "claim_id": 198699,
+          "claim_text": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bkxvptcpee"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 198699,
+          "claim_text": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bzlr1aa8lr"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 198700,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bzlr1aa8lr"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:36.928Z",
+          "kind": "claim",
+          "claim_id": 198699,
+          "claim_text": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত"
+        },
+        {
+          "ts": "2026-10-01T15:54:36.931Z",
+          "kind": "claim",
+          "claim_id": 198700,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক"
+        },
+        {
+          "ts": "2026-10-01T15:54:36.934Z",
+          "kind": "verify",
+          "claim_id": 198699,
+          "claim_text": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:36.934Z",
+          "kind": "verify",
+          "claim_id": 198700,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-1025": {
+      "cluster_id": 1025,
+      "headline": "দেশে–বিদেশে প্রায় ৭৭ হাজার কোটি টাকার সম্পদ জব্দ–অবরুদ্ধ",
+      "first_seen": "2026-10-01T15:26:20.364Z",
+      "last_update": "2026-10-01T15:26:20.366Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T15:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 198719,
+          "claim_text": "দেশে–বিদেশে প্রায় ৭৭ হাজার কোটি টাকার সম্পদ জব্দ–অবরুদ্ধ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/g7ohclkf0a"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:57.200Z",
+          "kind": "claim",
+          "claim_id": 198719,
+          "claim_text": "দেশে–বিদেশে প্রায় ৭৭ হাজার কোটি টাকার সম্পদ জব্দ–অবরুদ্ধ"
+        },
+        {
+          "ts": "2026-10-01T15:54:57.204Z",
+          "kind": "verify",
+          "claim_id": 198719,
+          "claim_text": "দেশে–বিদেশে প্রায় ৭৭ হাজার কোটি টাকার সম্পদ জব্দ–অবরুদ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-103": {
       "cluster_id": 103,
       "headline": "তিতাস গ্যাসক্ষেত্র থেকে জাতীয় গ্রিডে আরও সাড়ে ১২ মিলিয়ন ঘনফুট গ্যাসের সরবরাহ শুরু",
@@ -2828,7 +2946,7 @@
       "cluster_id": 942,
       "headline": "ফুচকা বিক্রেতা, রিকশাচালকসহ সবাইকে ডিজিটাল লেনেদেনে আনা হবে: অর্থমন্ত্রী",
       "first_seen": "2026-10-01T08:51:28.074Z",
-      "last_update": "2026-10-01T14:28:49.798Z",
+      "last_update": "2026-10-01T15:26:20.116Z",
       "claim_count": 4,
       "events": [
         {
@@ -3973,6 +4091,134 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        }
+      ]
+    },
+    "international-1023": {
+      "cluster_id": 1023,
+      "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, দুই ডোজ ইনজেকশনের পর হাসপাতালে নারী",
+      "first_seen": "2026-10-01T15:26:20.106Z",
+      "last_update": "2026-10-01T15:26:20.109Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T08:26:47.000Z",
+          "kind": "evidence",
+          "claim_id": 198715,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, দুই ডোজ ইনজেকশনের পর হাসপাতালে নারী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5DMG1VQURNdk1EV3cxLU1kdm92Z2o4UVVUUlZzZ0V2bWZPSFd2clZXSmFqQ2szLVhOdzlVLWdqZ2pzbUdZRG96REotRER4NHBjQlp2aEJLSGJPZ2Y0WUpwUVRwWEJnY0t3QV9r?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T09:27:40.000Z",
+          "kind": "evidence",
+          "claim_id": 198715,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, দুই ডোজ ইনজেকশনের পর হাসপাতালে নারী",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/usa/971723/%E0%A6%A6%E0%A7%81%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81%E0%A6%A6%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B0-%E0%A6%87%E0%A6%A8%E0%A6%9C%E0%A7%87%E0%A6%95%E0%A6%B6%E0%A6%A8-%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE-%E0%A6%B9%E0%A6%B2%E0%A7%8B-%E0%A6%A4%E0%A6%AC%E0%A7%81-%E0%A6%AC%E0%A7%87%E0%A6%81%E0%A6%9A%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T09:27:40.000Z",
+          "kind": "evidence",
+          "claim_id": 198716,
+          "claim_text": "দুইবার মৃত্যুদণ্ডের ইনজেকশন দেওয়া হলো, তবু বেঁচে গেলেন টেনেসির নারী",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/usa/971723/%E0%A6%A6%E0%A7%81%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81%E0%A6%A6%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B0-%E0%A6%87%E0%A6%A8%E0%A6%9C%E0%A7%87%E0%A6%95%E0%A6%B6%E0%A6%A8-%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE-%E0%A6%B9%E0%A6%B2%E0%A7%8B-%E0%A6%A4%E0%A6%AC%E0%A7%81-%E0%A6%AC%E0%A7%87%E0%A6%81%E0%A6%9A%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:52.670Z",
+          "kind": "claim",
+          "claim_id": 198715,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, দুই ডোজ ইনজেকশনের পর হাসপাতালে নারী"
+        },
+        {
+          "ts": "2026-10-01T15:54:52.672Z",
+          "kind": "claim",
+          "claim_id": 198716,
+          "claim_text": "দুইবার মৃত্যুদণ্ডের ইনজেকশন দেওয়া হলো, তবু বেঁচে গেলেন টেনেসির নারী"
+        },
+        {
+          "ts": "2026-10-01T15:54:52.676Z",
+          "kind": "verify",
+          "claim_id": 198715,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, দুই ডোজ ইনজেকশনের পর হাসপাতালে নারী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:52.676Z",
+          "kind": "verify",
+          "claim_id": 198716,
+          "claim_text": "দুইবার মৃত্যুদণ্ডের ইনজেকশন দেওয়া হলো, তবু বেঁচে গেলেন টেনেসির নারী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 419,
+          "slug": "national-419",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘে বাংলায় ভাষণ শুরু করলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 514,
+          "slug": "economy-514",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "আদালতে ৯ লাখ টাকায় ‘আপসের’ কথা জানালেন আইনজীবী"
         }
       ]
     },
@@ -6536,8 +6782,8 @@
       "cluster_id": 1000,
       "headline": "শ্রেণিকক্ষে ঢুকে ষষ্ঠ শ্রেণির ছাত্রকে শূন্যে তুলে আছাড় দিলেন সহপাঠীর ‘অভিভাবক’",
       "first_seen": "2026-10-01T14:28:49.743Z",
-      "last_update": "2026-10-01T14:28:49.747Z",
-      "claim_count": 2,
+      "last_update": "2026-10-01T15:26:20.039Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-01T12:09:05.000Z",
@@ -6570,6 +6816,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/video/bangladesh/dgcjzct92l"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:44:22.000Z",
+          "kind": "evidence",
+          "claim_id": 196854,
+          "claim_text": "শ্রেণিকক্ষে ঢুকে ষষ্ঠ শ্রেণির ছাত্রকে শূন্যে তুলে আছাড় দিলেন সহপাঠীর ‘অভিভাবক’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/dhaka/971810/%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2%E0%A7%87-%E0%A6%A2%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8-%E0%A6%8F%E0%A6%AE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A6%95-%E0%A6%86%E0%A6%B8%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%80-%E0%A6%98%E0%A6%9F%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A6%B2"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:44:22.000Z",
+          "kind": "evidence",
+          "claim_id": 198672,
+          "claim_text": "স্কুলে ঢুকে কেন এমন করলেন অভিভাবক, আসলে কী ঘটেছিল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/dhaka/971810/%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2%E0%A7%87-%E0%A6%A2%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8-%E0%A6%8F%E0%A6%AE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A6%95-%E0%A6%86%E0%A6%B8%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%80-%E0%A6%98%E0%A6%9F%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A6%B2"
           }
         },
         {
@@ -6607,6 +6875,36 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T15:53:59.386Z",
+          "kind": "claim",
+          "claim_id": 198672,
+          "claim_text": "স্কুলে ঢুকে কেন এমন করলেন অভিভাবক, আসলে কী ঘটেছিল"
+        },
+        {
+          "ts": "2026-10-01T15:53:59.390Z",
+          "kind": "verify",
+          "claim_id": 196854,
+          "claim_text": "শ্রেণিকক্ষে ঢুকে ষষ্ঠ শ্রেণির ছাত্রকে শূন্যে তুলে আছাড় দিলেন সহপাঠীর ‘অভিভাবক’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:53:59.390Z",
+          "kind": "verify",
+          "claim_id": 198672,
+          "claim_text": "স্কুলে ঢুকে কেন এমন করলেন অভিভাবক, আসলে কী ঘটেছিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -6617,6 +6915,46 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "শ্রেণিকক্ষে ঢুকে ষষ্ঠ শ্রেণির ছাত্রকে শূন্যে তুলে আছাড় দিলেন সহপাঠীর ‘অভিভাবক’"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        },
+        {
+          "cluster_id": 129,
+          "slug": "sports-129",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
         }
       ]
     },
@@ -6624,7 +6962,7 @@
       "cluster_id": 1001,
       "headline": "ডেঙ্গুতে আরও ৪ জনের মৃত্যু, হাসপাতালে ভর্তি ১৯৭৮",
       "first_seen": "2026-10-01T14:28:49.751Z",
-      "last_update": "2026-10-01T14:28:49.755Z",
+      "last_update": "2026-10-01T15:26:20.080Z",
       "claim_count": 2,
       "events": [
         {
@@ -6752,7 +7090,7 @@
       "cluster_id": 1002,
       "headline": "ফেনীর ‘মুহুরী-কহুয়া’ সেচ প্রকল্পের উদ্বোধন করলেন প্রধানমন্ত্রী",
       "first_seen": "2026-10-01T14:28:49.757Z",
-      "last_update": "2026-10-01T14:28:49.761Z",
+      "last_update": "2026-10-01T15:26:20.081Z",
       "claim_count": 2,
       "events": [
         {
@@ -6880,7 +7218,7 @@
       "cluster_id": 1003,
       "headline": "জানুয়ারি থেকে জুনের মধ্যে স্থানীয় সরকার নির্বাচনের লক্ষ্যে কাজ চলছে: মীর শাহে আলম",
       "first_seen": "2026-10-01T14:28:49.775Z",
-      "last_update": "2026-10-01T14:28:49.780Z",
+      "last_update": "2026-10-01T15:26:20.091Z",
       "claim_count": 3,
       "events": [
         {
@@ -7048,7 +7386,7 @@
       "cluster_id": 1004,
       "headline": "রাষ্ট্রদ্রোহ মামলায় সাবেক ওসি রাকিবুল হাসানের জামিন নাকচ",
       "first_seen": "2026-10-01T14:28:49.781Z",
-      "last_update": "2026-10-01T14:28:49.784Z",
+      "last_update": "2026-10-01T15:26:20.092Z",
       "claim_count": 2,
       "events": [
         {
@@ -7176,7 +7514,7 @@
       "cluster_id": 1005,
       "headline": "কুষ্টিয়ায় বাসচাপায় ভ্যানচালক ও যাত্রী নিহত",
       "first_seen": "2026-10-01T14:28:49.789Z",
-      "last_update": "2026-10-01T14:28:49.792Z",
+      "last_update": "2026-10-01T15:26:20.110Z",
       "claim_count": 2,
       "events": [
         {
@@ -7478,6 +7816,1256 @@
           "kind": "verify",
           "claim_id": 196871,
           "claim_text": "নেতৃত্ব একটি আজীবন চর্চা, বিওয়াইএলসি গ্র্যাজুয়েশন সেরিমনিতে বললেন স্থানীয় সরকারমন্ত্রী আবদুল মঈন খান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1012": {
+      "cluster_id": 1012,
+      "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: হাইকোর্টে প্রধান আসামির জামিন",
+      "first_seen": "2026-10-01T15:26:20.035Z",
+      "last_update": "2026-10-01T15:26:20.037Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T13:05:44.000Z",
+          "kind": "evidence",
+          "claim_id": 198691,
+          "claim_text": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: হাইকোর্টে প্রধান আসামির জামিন",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/971788/%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%AB%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%A5%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%98%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%B8%E0%A7%8B%E0%A6%B9%E0%A6%BE%E0%A6%97-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%B9%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:53:13.000Z",
+          "kind": "evidence",
+          "claim_id": 198691,
+          "claim_text": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: হাইকোর্টে প্রধান আসামির জামিন",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/808260"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:53:13.000Z",
+          "kind": "evidence",
+          "claim_id": 198692,
+          "claim_text": "মিটফোর্ডে সোহাগ হত্যায় জামিন পেলেন প্রধান আসামি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/808260"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:27.854Z",
+          "kind": "claim",
+          "claim_id": 198691,
+          "claim_text": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: হাইকোর্টে প্রধান আসামির জামিন"
+        },
+        {
+          "ts": "2026-10-01T15:54:27.857Z",
+          "kind": "claim",
+          "claim_id": 198692,
+          "claim_text": "মিটফোর্ডে সোহাগ হত্যায় জামিন পেলেন প্রধান আসামি"
+        },
+        {
+          "ts": "2026-10-01T15:54:27.860Z",
+          "kind": "verify",
+          "claim_id": 198691,
+          "claim_text": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: হাইকোর্টে প্রধান আসামির জামিন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:27.860Z",
+          "kind": "verify",
+          "claim_id": 198692,
+          "claim_text": "মিটফোর্ডে সোহাগ হত্যায় জামিন পেলেন প্রধান আসামি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দিল্লিতে পরবর্তী হাইকমিশনার হচ্ছেন পররাষ্ট্র সচিব আসাদ আলম সিয়াম"
+        },
+        {
+          "cluster_id": 332,
+          "slug": "national-332",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিশ্বনেতাদের সম্মানে মার্কিন প্রেসিডেন্টের দেওয়া নৈশভোজে প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
+    },
+    "national-1013": {
+      "cluster_id": 1013,
+      "headline": "তন্দুরি ক্রিমি চিকেনের রেসিপি",
+      "first_seen": "2026-10-01T15:26:20.040Z",
+      "last_update": "2026-10-01T15:26:20.042Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T13:02:24.000Z",
+          "kind": "evidence",
+          "claim_id": 198693,
+          "claim_text": "তন্দুরি ক্রিমি চিকেনের রেসিপি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/recipe/7847dugevf"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:44:09.000Z",
+          "kind": "evidence",
+          "claim_id": 198693,
+          "claim_text": "তন্দুরি ক্রিমি চিকেনের রেসিপি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/recipe/3v72a60crc"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:44:09.000Z",
+          "kind": "evidence",
+          "claim_id": 198694,
+          "claim_text": "পাঁচমিশালি সবজির রেসিপি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/recipe/3v72a60crc"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:30.166Z",
+          "kind": "claim",
+          "claim_id": 198693,
+          "claim_text": "তন্দুরি ক্রিমি চিকেনের রেসিপি"
+        },
+        {
+          "ts": "2026-10-01T15:54:30.168Z",
+          "kind": "claim",
+          "claim_id": 198694,
+          "claim_text": "পাঁচমিশালি সবজির রেসিপি"
+        },
+        {
+          "ts": "2026-10-01T15:54:30.172Z",
+          "kind": "verify",
+          "claim_id": 198693,
+          "claim_text": "তন্দুরি ক্রিমি চিকেনের রেসিপি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:30.172Z",
+          "kind": "verify",
+          "claim_id": 198694,
+          "claim_text": "পাঁচমিশালি সবজির রেসিপি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1015": {
+      "cluster_id": 1015,
+      "headline": "তারেক সাঈদকে কারাবিধি অনুযায়ী চিকিৎসার নির্দেশ ট্রাইব্যুনালের",
+      "first_seen": "2026-10-01T15:26:20.046Z",
+      "last_update": "2026-10-01T15:26:20.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T11:53:48.000Z",
+          "kind": "evidence",
+          "claim_id": 198697,
+          "claim_text": "তারেক সাঈদকে কারাবিধি অনুযায়ী চিকিৎসার নির্দেশ ট্রাইব্যুনালের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/971762/%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%95-%E0%A6%B8%E0%A6%BE%E0%A6%88%E0%A6%A6%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BF-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AF%E0%A6%BE%E0%A7%9F%E0%A7%80-%E0%A6%9A%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A7%8E%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:31:33.000Z",
+          "kind": "evidence",
+          "claim_id": 198697,
+          "claim_text": "তারেক সাঈদকে কারাবিধি অনুযায়ী চিকিৎসার নির্দেশ ট্রাইব্যুনালের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/068u610o9b"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:31:33.000Z",
+          "kind": "evidence",
+          "claim_id": 198698,
+          "claim_text": "কারাগারে তারেক সাঈদকে মারধরের অভিযোগ, চিকিৎসার নির্দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/068u610o9b"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:34.684Z",
+          "kind": "claim",
+          "claim_id": 198697,
+          "claim_text": "তারেক সাঈদকে কারাবিধি অনুযায়ী চিকিৎসার নির্দেশ ট্রাইব্যুনালের"
+        },
+        {
+          "ts": "2026-10-01T15:54:34.687Z",
+          "kind": "claim",
+          "claim_id": 198698,
+          "claim_text": "কারাগারে তারেক সাঈদকে মারধরের অভিযোগ, চিকিৎসার নির্দেশ"
+        },
+        {
+          "ts": "2026-10-01T15:54:34.691Z",
+          "kind": "verify",
+          "claim_id": 198697,
+          "claim_text": "তারেক সাঈদকে কারাবিধি অনুযায়ী চিকিৎসার নির্দেশ ট্রাইব্যুনালের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:34.691Z",
+          "kind": "verify",
+          "claim_id": 198698,
+          "claim_text": "কারাগারে তারেক সাঈদকে মারধরের অভিযোগ, চিকিৎসার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 127,
+          "slug": "national-127",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+        },
+        {
+          "cluster_id": 129,
+          "slug": "sports-129",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 151,
+          "slug": "national-151",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
+        }
+      ]
+    },
+    "national-1017": {
+      "cluster_id": 1017,
+      "headline": "খুঁটিতে বাঁধা বাবার মুখে পাউরুটি তুলে দেওয়া ছোট্ট মেয়েটিকে স্কুলে নিয়ে গেলেন ইউএনও",
+      "first_seen": "2026-10-01T15:26:20.053Z",
+      "last_update": "2026-10-01T15:26:20.056Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T11:01:58.000Z",
+          "kind": "evidence",
+          "claim_id": 198701,
+          "claim_text": "খুঁটিতে বাঁধা বাবার মুখে পাউরুটি তুলে দেওয়া ছোট্ট মেয়েটিকে স্কুলে নিয়ে গেলেন ইউএনও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/gqxu6wv02n"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:28:45.000Z",
+          "kind": "evidence",
+          "claim_id": 198701,
+          "claim_text": "খুঁটিতে বাঁধা বাবার মুখে পাউরুটি তুলে দেওয়া ছোট্ট মেয়েটিকে স্কুলে নিয়ে গেলেন ইউএনও",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/tuba-the-child-who-went-viral-returned-to-school-with-the-unos-assistance/"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:28:45.000Z",
+          "kind": "evidence",
+          "claim_id": 198702,
+          "claim_text": "ইউএনওর সহায়তায় বিদ্যালয়ে ফিরল ভাইরাল সেই শিশু তুবা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/tuba-the-child-who-went-viral-returned-to-school-with-the-unos-assistance/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:39.140Z",
+          "kind": "claim",
+          "claim_id": 198701,
+          "claim_text": "খুঁটিতে বাঁধা বাবার মুখে পাউরুটি তুলে দেওয়া ছোট্ট মেয়েটিকে স্কুলে নিয়ে গেলেন ইউএনও"
+        },
+        {
+          "ts": "2026-10-01T15:54:39.142Z",
+          "kind": "claim",
+          "claim_id": 198702,
+          "claim_text": "ইউএনওর সহায়তায় বিদ্যালয়ে ফিরল ভাইরাল সেই শিশু তুবা"
+        },
+        {
+          "ts": "2026-10-01T15:54:39.146Z",
+          "kind": "verify",
+          "claim_id": 198701,
+          "claim_text": "খুঁটিতে বাঁধা বাবার মুখে পাউরুটি তুলে দেওয়া ছোট্ট মেয়েটিকে স্কুলে নিয়ে গেলেন ইউএনও",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:39.146Z",
+          "kind": "verify",
+          "claim_id": 198702,
+          "claim_text": "ইউএনওর সহায়তায় বিদ্যালয়ে ফিরল ভাইরাল সেই শিশু তুবা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        },
+        {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
+        }
+      ]
+    },
+    "national-1018": {
+      "cluster_id": 1018,
+      "headline": "চ্যানেল আইয়ের ২৮ প্রতিষ্ঠাবার্ষিকীতে পর্তুগাল বাংলা প্রেসক্লাবের শুভেচ্ছা বার্তা",
+      "first_seen": "2026-10-01T15:26:20.059Z",
+      "last_update": "2026-10-01T15:26:20.061Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T04:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 198703,
+          "claim_text": "চ্যানেল আইয়ের ২৮ প্রতিষ্ঠাবার্ষিকীতে পর্তুগাল বাংলা প্রেসক্লাবের শুভেচ্ছা বার্তা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/srfs-greetings-on-channel-is-anniversary/"
+          }
+        },
+        {
+          "ts": "2026-10-01T04:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 198704,
+          "claim_text": "চ্যানেল আইয়ের প্রতিষ্ঠাবার্ষিকীতে এসআরএফের শুভেচ্ছা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/srfs-greetings-on-channel-is-anniversary/"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:21:49.000Z",
+          "kind": "evidence",
+          "claim_id": 198703,
+          "claim_text": "চ্যানেল আইয়ের ২৮ প্রতিষ্ঠাবার্ষিকীতে পর্তুগাল বাংলা প্রেসক্লাবের শুভেচ্ছা বার্তা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/congratulatory-message-from-the-portugal-bangla-press-club-on-the-28th-anniversary-of-channel-i/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:41.364Z",
+          "kind": "claim",
+          "claim_id": 198703,
+          "claim_text": "চ্যানেল আইয়ের ২৮ প্রতিষ্ঠাবার্ষিকীতে পর্তুগাল বাংলা প্রেসক্লাবের শুভেচ্ছা বার্তা"
+        },
+        {
+          "ts": "2026-10-01T15:54:41.366Z",
+          "kind": "claim",
+          "claim_id": 198704,
+          "claim_text": "চ্যানেল আইয়ের প্রতিষ্ঠাবার্ষিকীতে এসআরএফের শুভেচ্ছা"
+        },
+        {
+          "ts": "2026-10-01T15:54:41.370Z",
+          "kind": "verify",
+          "claim_id": 198703,
+          "claim_text": "চ্যানেল আইয়ের ২৮ প্রতিষ্ঠাবার্ষিকীতে পর্তুগাল বাংলা প্রেসক্লাবের শুভেচ্ছা বার্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:41.370Z",
+          "kind": "verify",
+          "claim_id": 198704,
+          "claim_text": "চ্যানেল আইয়ের প্রতিষ্ঠাবার্ষিকীতে এসআরএফের শুভেচ্ছা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1019": {
+      "cluster_id": 1019,
+      "headline": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন",
+      "first_seen": "2026-10-01T15:26:20.062Z",
+      "last_update": "2026-10-01T15:26:20.065Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T11:53:38.000Z",
+          "kind": "evidence",
+          "claim_id": 198705,
+          "claim_text": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFRUYyVTNMVndNWWdqb0RCRGhXcjZBQXcwTU9jMlNfSUU1eFQ0Zk56RnE1ZlFQR19BOWlUZVRJZF82QnVnVm9aOHlYdm9yanM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:19:47.000Z",
+          "kind": "evidence",
+          "claim_id": 198705,
+          "claim_text": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwRBVV95cUxPdldKVzdZdXZpWmR6bDFIVERKMDRBS3VMckFyY0Y5LXNvLUlKM0hYYWNOZGVaejFNQXhoNy1PNVM5aGxnLTJVNmN0Tl9kZlZhamw1OFB0cURzNUFWMjlOaXJkYmhDQkRqSFdXUFN6dkRKek5LdGFRUWplWFE2S0ZiSFNvVW95QVVud3d1R2djRXhlZ2wtQ0o1ZFFaaHRqLXhCQ01PcjQyNXE4cm9SZ3h1dXhtOEtSUjVqRTd6S09XWHcwRHhTYWFpc1FPNjFubUpOc2pLYVlFUnE3dk5YbjVlYmhFdHpuNUVxU0lGZ1N2SEppRFJBVnZvU19kckpOYTh3TmRLeGdIM245NTNHbGxNMjhQY3plVnhkd21mVEtXNzA2eGFHS0hYOUZjZkI4Ny1vTTdWclc0SF9KSGdvT1BvOVUyWTJ2cGZxUU5ad2U5OV9pQ2dvcHFUdG0tZDIzdk1nbHhRY1VjQjJNNXc2X3p3WkVtVkJoQ1l4MTlVay1CRUNTdXRQR0dJYmgyTGlnVktpXzIxWllEaE1IMlhzdmFzRlV6UDAyaXhodUk2NHBqNkp2SmM4TTkwZVFodURMYVpkRklBUzZIZWs1TVdBbUFwN0V5N2RaQ1ZzQ25DZGVXMkN5c0YzQ2RqQ3Z0TVFiX2RURjlSS0VHcEVCU3VXR2xPVWZsTUxmTDZia1hSUjhZMzgxYkNrZnZyZWt0SjF4ZzhYZkpLS1prQkU1YlVWeUFCZE9XeVE0RjhvdTM5aGlCV19pWnM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:19:47.000Z",
+          "kind": "evidence",
+          "claim_id": 198706,
+          "claim_text": "মির্জাপুরে দুর্গামন্দিরের সাত প্রতিমা ভাঙচুর",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwRBVV95cUxPdldKVzdZdXZpWmR6bDFIVERKMDRBS3VMckFyY0Y5LXNvLUlKM0hYYWNOZGVaejFNQXhoNy1PNVM5aGxnLTJVNmN0Tl9kZlZhamw1OFB0cURzNUFWMjlOaXJkYmhDQkRqSFdXUFN6dkRKek5LdGFRUWplWFE2S0ZiSFNvVW95QVVud3d1R2djRXhlZ2wtQ0o1ZFFaaHRqLXhCQ01PcjQyNXE4cm9SZ3h1dXhtOEtSUjVqRTd6S09XWHcwRHhTYWFpc1FPNjFubUpOc2pLYVlFUnE3dk5YbjVlYmhFdHpuNUVxU0lGZ1N2SEppRFJBVnZvU19kckpOYTh3TmRLeGdIM245NTNHbGxNMjhQY3plVnhkd21mVEtXNzA2eGFHS0hYOUZjZkI4Ny1vTTdWclc0SF9KSGdvT1BvOVUyWTJ2cGZxUU5ad2U5OV9pQ2dvcHFUdG0tZDIzdk1nbHhRY1VjQjJNNXc2X3p3WkVtVkJoQ1l4MTlVay1CRUNTdXRQR0dJYmgyTGlnVktpXzIxWllEaE1IMlhzdmFzRlV6UDAyaXhodUk2NHBqNkp2SmM4TTkwZVFodURMYVpkRklBUzZIZWs1TVdBbUFwN0V5N2RaQ1ZzQ25DZGVXMkN5c0YzQ2RqQ3Z0TVFiX2RURjlSS0VHcEVCU3VXR2xPVWZsTUxmTDZia1hSUjhZMzgxYkNrZnZyZWt0SjF4ZzhYZkpLS1prQkU1YlVWeUFCZE9XeVE0RjhvdTM5aGlCV19pWnM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:43.592Z",
+          "kind": "claim",
+          "claim_id": 198705,
+          "claim_text": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন"
+        },
+        {
+          "ts": "2026-10-01T15:54:43.595Z",
+          "kind": "claim",
+          "claim_id": 198706,
+          "claim_text": "মির্জাপুরে দুর্গামন্দিরের সাত প্রতিমা ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-01T15:54:43.598Z",
+          "kind": "verify",
+          "claim_id": 198705,
+          "claim_text": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:43.598Z",
+          "kind": "verify",
+          "claim_id": 198706,
+          "claim_text": "মির্জাপুরে দুর্গামন্দিরের সাত প্রতিমা ভাঙচুর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 197,
+          "slug": "national-197",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+        },
+        {
+          "cluster_id": 211,
+          "slug": "national-211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
+        },
+        {
+          "cluster_id": 237,
+          "slug": "national-237",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জ্বালানি তেলের মূল্যবৃদ্ধির প্রতিবাদ, চবি ছাত্রদল নেতাকে শোকজ"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 266,
+          "slug": "national-266",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জ্বালানির দাম বাড়ায় বাসভাড়া বাড়ানোর প্রস্তাব মন্ত্রণালয়ে"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
+    },
+    "national-1020": {
+      "cluster_id": 1020,
+      "headline": "সাংবাদিক কামরুজ্জামানের বিরুদ্ধে মামলা প্রত্যাহারের দাবি, ১০ দিনের আল্টিমেটাম",
+      "first_seen": "2026-10-01T15:26:20.066Z",
+      "last_update": "2026-10-01T15:26:20.068Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T12:44:48.000Z",
+          "kind": "evidence",
+          "claim_id": 198707,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের বিরুদ্ধে মামলা প্রত্যাহারের দাবি, ১০ দিনের আল্টিমেটাম",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/971779/%E0%A6%B8%E0%A6%BE%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%81%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B0%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%AE%E0%A6%B2%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:18:06.000Z",
+          "kind": "evidence",
+          "claim_id": 198707,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের বিরুদ্ধে মামলা প্রত্যাহারের দাবি, ১০ দিনের আল্টিমেটাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/crab-gives-10-day-ultimatum-to-withdraw-journalist-kamruzzamans-case/"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:18:06.000Z",
+          "kind": "evidence",
+          "claim_id": 198708,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের মামলা প্রত্যাহারে ক্র্যাবের ১০ দিনের আল্টিমেটাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/crab-gives-10-day-ultimatum-to-withdraw-journalist-kamruzzamans-case/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:45.821Z",
+          "kind": "claim",
+          "claim_id": 198707,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের বিরুদ্ধে মামলা প্রত্যাহারের দাবি, ১০ দিনের আল্টিমেটাম"
+        },
+        {
+          "ts": "2026-10-01T15:54:45.823Z",
+          "kind": "claim",
+          "claim_id": 198708,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের মামলা প্রত্যাহারে ক্র্যাবের ১০ দিনের আল্টিমেটাম"
+        },
+        {
+          "ts": "2026-10-01T15:54:45.827Z",
+          "kind": "verify",
+          "claim_id": 198707,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের বিরুদ্ধে মামলা প্রত্যাহারের দাবি, ১০ দিনের আল্টিমেটাম",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:45.827Z",
+          "kind": "verify",
+          "claim_id": 198708,
+          "claim_text": "সাংবাদিক কামরুজ্জামানের মামলা প্রত্যাহারে ক্র্যাবের ১০ দিনের আল্টিমেটাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 125,
+          "slug": "national-125",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 128,
+          "slug": "national-128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় উস্কানির অভিযোগ মাকসুদ কামাল-জাফর ইকবালসহ ৮ জনের বিরুদ্ধে"
+        },
+        {
+          "cluster_id": 134,
+          "slug": "international-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা"
+        }
+      ]
+    },
+    "national-1022": {
+      "cluster_id": 1022,
+      "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+      "first_seen": "2026-10-01T15:26:20.093Z",
+      "last_update": "2026-10-01T15:26:20.103Z",
+      "claim_count": 4,
+      "events": [
+        {
+          "ts": "2026-10-01T07:07:29.000Z",
+          "kind": "evidence",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/htzm77683p"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:11:50.000Z",
+          "kind": "evidence",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/aygli4iww5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:11:50.000Z",
+          "kind": "evidence",
+          "claim_id": 198712,
+          "claim_text": "বিজয়ের মাস ডিসেম্বরে অস্থিরতা তৈরির সুযোগ নেই: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/aygli4iww5"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:16:52.000Z",
+          "kind": "evidence",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pNEE4OHk0aEVpUlh6Nk4xeGNheDg1RnVvVDlwMWpMbjNSdWFMWjdjc1FhaXVMOGppcnNFOHlpYnlqeml4ZFJBRXlmYTJPY1FZTUMw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:16:52.000Z",
+          "kind": "evidence",
+          "claim_id": 198713,
+          "claim_text": "আপনারা ডিসেম্বর ডিসেম্বর করছেন কেন: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pNEE4OHk0aEVpUlh6Nk4xeGNheDg1RnVvVDlwMWpMbjNSdWFMWjdjc1FhaXVMOGppcnNFOHlpYnlqeml4ZFJBRXlmYTJPY1FZTUMw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T10:28:10.000Z",
+          "kind": "evidence",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aYS1pWENWVWZVdGV6U3c4YUxRcWhPMWh2YmJRUHZLd3daQTZxSXBrQnRIZ1llQkhlNTE3R3RSOEZOaG4teWhzVTl4dlhrTHhjcENDcHRvM0RGMk9OdkE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T10:28:10.000Z",
+          "kind": "evidence",
+          "claim_id": 198714,
+          "claim_text": "ডিসেম্বরে কোন অপশক্তি অস্থিরতা সৃষ্টি করতে পারবে না: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aYS1pWENWVWZVdGV6U3c4YUxRcWhPMWh2YmJRUHZLd3daQTZxSXBrQnRIZ1llQkhlNTE3R3RSOEZOaG4teWhzVTl4dlhrTHhjcENDcHRvM0RGMk9OdkE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:50.385Z",
+          "kind": "claim",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-01T15:54:50.389Z",
+          "kind": "claim",
+          "claim_id": 198712,
+          "claim_text": "বিজয়ের মাস ডিসেম্বরে অস্থিরতা তৈরির সুযোগ নেই: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-01T15:54:50.391Z",
+          "kind": "claim",
+          "claim_id": 198713,
+          "claim_text": "আপনারা ডিসেম্বর ডিসেম্বর করছেন কেন: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-01T15:54:50.393Z",
+          "kind": "claim",
+          "claim_id": 198714,
+          "claim_text": "ডিসেম্বরে কোন অপশক্তি অস্থিরতা সৃষ্টি করতে পারবে না: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-01T15:54:50.396Z",
+          "kind": "verify",
+          "claim_id": 198711,
+          "claim_text": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:50.396Z",
+          "kind": "verify",
+          "claim_id": 198712,
+          "claim_text": "বিজয়ের মাস ডিসেম্বরে অস্থিরতা তৈরির সুযোগ নেই: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:50.396Z",
+          "kind": "verify",
+          "claim_id": 198713,
+          "claim_text": "আপনারা ডিসেম্বর ডিসেম্বর করছেন কেন: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:50.396Z",
+          "kind": "verify",
+          "claim_id": 198714,
+          "claim_text": "ডিসেম্বরে কোন অপশক্তি অস্থিরতা সৃষ্টি করতে পারবে না: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 611,
+          "slug": "national-611",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "যুক্তরাজ্যে মার্কিন বিমানঘাঁটির কাছ থেকে গ্রেপ্তার ৫, সরিয়ে নেওয়া হয়েছে ৮৫ বাড়ির লোকজনকে"
+        },
+        {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "cluster_id": 617,
+          "slug": "national-617",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
+        },
+        {
+          "cluster_id": 738,
+          "slug": "national-738",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "তত্ত্বাবধায়ক সরকার গঠন পার্লামেন্টের ওপর ছেড়ে দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 746,
+          "slug": "national-746",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "বিরোধী দলকে সাথে নিয়েই সংবিধান সংশোধনের প্রস্তাব গণমাধ্যম ব্যক্তিত্বদের"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        }
+      ]
+    },
+    "national-1024": {
+      "cluster_id": 1024,
+      "headline": "পে-স্কেল বাস্তবায়ন নিয়ে যে সংকেত দিল সরকার",
+      "first_seen": "2026-10-01T15:26:20.113Z",
+      "last_update": "2026-10-01T15:26:20.115Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-04-19T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 198717,
+          "claim_text": "পে-স্কেল বাস্তবায়ন নিয়ে যে সংকেত দিল সরকার",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihgRBVV95cUxOU29qUVZlX0tyczZkVlA5Q2pDM0VPNkp2SUlPVjNnSlk1eGtIcEFZRVNvSGhUN1NzYVNEbUVldnNEaDRlenc5WkJpT0Rmb051TW45clJwRk00T25ZYnFYem85aWlUbjdIUFJjYWhoQ3ZoT1ZvLU1JM2hpWE5TbnBKNVdaYmNtZHIzS3kzWFVybXo1UzFFNUlINE9jczRQQ01XN2tSQVVRV3JDMDNCc3NQcVM5ZmR4RFA4VDg2VWxpYmprVEVwcFZKbzNfd1JqOW1rQlNWYU5nZDljQklaV2hIWlR3UFRHZDR1cU9YRXc0UndMM241Q2s5bGdRN3hFSjJ2ek1xaXBxeDN1TjIyeE8yeVUxVDg1Y2JYQ0p5MG5vTV9RVDdCel9neGlpcWpXVW1iMG84dlRGN2dJQjF2amk2S1VIaGYyT1oxXzBHR0pLSVpsdEJ6emxLQmNDYUhqckQtSUlweFNBdlNTakdpR0gyNzlQMWxxUjFFU1ZCT2haUDV5cjZuUFhHMVYyTFQ1YUxOdW5MVXBmM0lzX1lGcnA5alJ0Y0dBLXg4RjJlSkNTenBzOF93U21PM2h1X2dXeXoxazl0Q1ZlV18xT2dkblk3cGRiRmFkMTBtamxQUFB6OUUwOFFlbnFGLXJBWHFkUHlObm91TWhIdTNkVnNBNzRLUDM5Mk5xZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:58:53.000Z",
+          "kind": "evidence",
+          "claim_id": 198717,
+          "claim_text": "পে-স্কেল বাস্তবায়ন নিয়ে যে সংকেত দিল সরকার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uaWNPSkRNa3BGZGFzMURaX3BPbHNxeE8tM1E5bVp5X1NGeWFYRVZPTUR3eG54T2xUMTkxbG5vdVVTYWpSSkY3R0dUWWpqOE5McW9N?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:58:53.000Z",
+          "kind": "evidence",
+          "claim_id": 198718,
+          "claim_text": "পে স্কেল বাস্তবায়নে নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uaWNPSkRNa3BGZGFzMURaX3BPbHNxeE8tM1E5bVp5X1NGeWFYRVZPTUR3eG54T2xUMTkxbG5vdVVTYWpSSkY3R0dUWWpqOE5McW9N?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:54.906Z",
+          "kind": "claim",
+          "claim_id": 198717,
+          "claim_text": "পে-স্কেল বাস্তবায়ন নিয়ে যে সংকেত দিল সরকার"
+        },
+        {
+          "ts": "2026-10-01T15:54:54.909Z",
+          "kind": "claim",
+          "claim_id": 198718,
+          "claim_text": "পে স্কেল বাস্তবায়নে নতুন নির্দেশনা"
+        },
+        {
+          "ts": "2026-10-01T15:54:54.912Z",
+          "kind": "verify",
+          "claim_id": 198717,
+          "claim_text": "পে-স্কেল বাস্তবায়ন নিয়ে যে সংকেত দিল সরকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:54.912Z",
+          "kind": "verify",
+          "claim_id": 198718,
+          "claim_text": "পে স্কেল বাস্তবায়নে নতুন নির্দেশনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        }
+      ]
+    },
+    "national-1026": {
+      "cluster_id": 1026,
+      "headline": "ফুটপাত দখলমুক্তে আপসহীন ডিএনসিসি প্রশাসক শফিকুল ইসলাম খান",
+      "first_seen": "2026-10-01T15:26:20.368Z",
+      "last_update": "2026-10-01T15:26:20.370Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T14:56:47.000Z",
+          "kind": "evidence",
+          "claim_id": 198720,
+          "claim_text": "ফুটপাত দখলমুক্তে আপসহীন ডিএনসিসি প্রশাসক শফিকুল ইসলাম খান",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/dncc-administrator-shafiqul-islam-khan-uncompromising-on-clearing-footpaths-of-encroachments/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:59.754Z",
+          "kind": "claim",
+          "claim_id": 198720,
+          "claim_text": "ফুটপাত দখলমুক্তে আপসহীন ডিএনসিসি প্রশাসক শফিকুল ইসলাম খান"
+        },
+        {
+          "ts": "2026-10-01T15:54:59.758Z",
+          "kind": "verify",
+          "claim_id": 198720,
+          "claim_text": "ফুটপাত দখলমুক্তে আপসহীন ডিএনসিসি প্রশাসক শফিকুল ইসলাম খান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1027": {
+      "cluster_id": 1027,
+      "headline": "এশিয়ায় বড় খাদ্যসংকটের আশঙ্কা জয়শঙ্করের",
+      "first_seen": "2026-10-01T15:26:20.372Z",
+      "last_update": "2026-10-01T15:26:20.373Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T14:55:28.000Z",
+          "kind": "evidence",
+          "claim_id": 198721,
+          "claim_text": "এশিয়ায় বড় খাদ্যসংকটের আশঙ্কা জয়শঙ্করের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/egf4y6mm7z"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:55:02.512Z",
+          "kind": "claim",
+          "claim_id": 198721,
+          "claim_text": "এশিয়ায় বড় খাদ্যসংকটের আশঙ্কা জয়শঙ্করের"
+        },
+        {
+          "ts": "2026-10-01T15:55:02.515Z",
+          "kind": "verify",
+          "claim_id": 198721,
+          "claim_text": "এশিয়ায় বড় খাদ্যসংকটের আশঙ্কা জয়শঙ্করের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1028": {
+      "cluster_id": 1028,
+      "headline": "নোয়াখালীর ১০টির বেশি রেস্তোরাঁয় খাবার অপচয়ের হিসাব রাখার উদ্যোগ",
+      "first_seen": "2026-10-01T15:26:20.375Z",
+      "last_update": "2026-10-01T15:26:20.377Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T14:51:09.000Z",
+          "kind": "evidence",
+          "claim_id": 198722,
+          "claim_text": "নোয়াখালীর ১০টির বেশি রেস্তোরাঁয় খাবার অপচয়ের হিসাব রাখার উদ্যোগ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/initiative-to-track-food-waste-in-over-10-restaurants-in-noakhali/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:55:05.179Z",
+          "kind": "claim",
+          "claim_id": 198722,
+          "claim_text": "নোয়াখালীর ১০টির বেশি রেস্তোরাঁয় খাবার অপচয়ের হিসাব রাখার উদ্যোগ"
+        },
+        {
+          "ts": "2026-10-01T15:55:05.183Z",
+          "kind": "verify",
+          "claim_id": 198722,
+          "claim_text": "নোয়াখালীর ১০টির বেশি রেস্তোরাঁয় খাবার অপচয়ের হিসাব রাখার উদ্যোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1029": {
+      "cluster_id": 1029,
+      "headline": "ভোলা-বরিশাল সেতু নিয়ে প্রধানমন্ত্রীর সঙ্গে কথা বলার আশ্বাস প্রতিমন্ত্রী আমিনুল হকের",
+      "first_seen": "2026-10-01T15:26:20.379Z",
+      "last_update": "2026-10-01T15:26:20.380Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T14:49:04.000Z",
+          "kind": "evidence",
+          "claim_id": 198723,
+          "claim_text": "ভোলা-বরিশাল সেতু নিয়ে প্রধানমন্ত্রীর সঙ্গে কথা বলার আশ্বাস প্রতিমন্ত্রী আমিনুল হকের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/aminul-haque-assures-he-will-speak-to-the-prime-minister-about-the-bhola-barishal-bridge/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:55:07.677Z",
+          "kind": "claim",
+          "claim_id": 198723,
+          "claim_text": "ভোলা-বরিশাল সেতু নিয়ে প্রধানমন্ত্রীর সঙ্গে কথা বলার আশ্বাস প্রতিমন্ত্রী আমিনুল হকের"
+        },
+        {
+          "ts": "2026-10-01T15:55:07.681Z",
+          "kind": "verify",
+          "claim_id": 198723,
+          "claim_text": "ভোলা-বরিশাল সেতু নিয়ে প্রধানমন্ত্রীর সঙ্গে কথা বলার আশ্বাস প্রতিমন্ত্রী আমিনুল হকের",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -10688,20 +12276,20 @@
           "headline": "বিরোধী দলকে সাথে নিয়েই সংবিধান সংশোধনের প্রস্তাব গণমাধ্যম ব্যক্তিত্বদের"
         },
         {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 84,
           "slug": "national-84",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
-        },
-        {
-          "cluster_id": 85,
-          "slug": "national-85",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         }
       ]
     },
@@ -24114,6 +25702,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইউপি নির্বাচন বিধিমালার গেজেট প্রকাশ, এসেছে পরিবর্তন"
+        },
+        {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -29864,6 +31460,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা"
+        },
+        {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -41218,12 +42822,12 @@
           "headline": "‘ফ্যাসিবাদ ও মুজিববাদের পাহারা বন্ধ করুন’, ঢাবি প্রশাসনকে ডাকসু নেতা"
         },
         {
-          "cluster_id": 84,
-          "slug": "national-84",
+          "cluster_id": 1022,
+          "slug": "national-1022",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -42339,6 +43943,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সালমান মুক্তাদিরের স্টুডিও ও রাড্ডা স্বাস্থ্যকেন্দ্রে হামলার নেপথ্যের ব্যক্তিরা এখনো ধরা পড়েননি"
+        },
+        {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -61294,6 +62906,14 @@
           "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
         },
         {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 154,
           "slug": "national-154",
           "actor_links": 1,
@@ -61308,14 +62928,6 @@
           "source_links": 0,
           "claim_count": 6,
           "headline": "রাশিয়ায় ৩০ বাংলাদেশির আটকে পড়ার অভিযোগ: পরিবারের মানববন্ধন, ৩ এজেন্সির বিরুদ্ধে ব্যবস্থা"
-        },
-        {
-          "cluster_id": 738,
-          "slug": "national-738",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "তত্ত্বাবধায়ক সরকার গঠন পার্লামেন্টের ওপর ছেড়ে দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -62583,12 +64195,12 @@
           "headline": "বিরোধী দলকে সাথে নিয়েই সংবিধান সংশোধনের প্রস্তাব গণমাধ্যম ব্যক্তিত্বদের"
         },
         {
-          "cluster_id": 555,
-          "slug": "national-555",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 16,
-          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -81566,20 +83178,20 @@
           "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
-        },
-        {
-          "cluster_id": 125,
-          "slug": "national-125",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -82900,20 +84512,20 @@
           "headline": "কেন সাংবাদিকতায় পড়ি, ভবিষ্যৎ নিয়ে কী ভাবনা, পড়ুন শিক্ষার্থীদের মতামত"
         },
         {
+          "cluster_id": 1022,
+          "slug": "national-1022",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দেশে যৌথ অভিযান পরিচালনার কোনো আনুষ্ঠানিক সিদ্ধান্ত হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 714,
           "slug": "national-714",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
           "headline": "রাষ্ট্রপতির সঙ্গে প্রধানমন্ত্রীর প্রথম সৌজন্য সাক্ষাৎ"
-        },
-        {
-          "cluster_id": 916,
-          "slug": "politics-916",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "ঢাকা মহানগর উত্তর বিএনপি-যুবদল ও পশ্চিম ছাত্রদল কমিটি বিলুপ্ত"
         }
       ]
     },
@@ -106004,7 +107616,7 @@
       "cluster_id": 944,
       "headline": "পাকিস্তানের বিমান হামলার দাবি করেছে আফগানিস্তান, নারী, শিশুসহ ৯ জন নিহত",
       "first_seen": "2026-10-01T08:51:28.084Z",
-      "last_update": "2026-10-01T14:28:49.771Z",
+      "last_update": "2026-10-01T15:26:20.088Z",
       "claim_count": 8,
       "events": [
         {
@@ -106988,7 +108600,7 @@
       "cluster_id": 953,
       "headline": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
       "first_seen": "2026-10-01T09:38:25.361Z",
-      "last_update": "2026-10-01T14:28:49.796Z",
+      "last_update": "2026-10-01T15:26:20.112Z",
       "claim_count": 2,
       "events": [
         {
@@ -107116,7 +108728,7 @@
       "cluster_id": 954,
       "headline": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ",
       "first_seen": "2026-10-01T09:38:25.368Z",
-      "last_update": "2026-10-01T14:28:49.794Z",
+      "last_update": "2026-10-01T15:26:20.111Z",
       "claim_count": 3,
       "events": [
         {
@@ -107284,7 +108896,7 @@
       "cluster_id": 956,
       "headline": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা",
       "first_seen": "2026-10-01T09:38:25.543Z",
-      "last_update": "2026-10-01T14:28:49.800Z",
+      "last_update": "2026-10-01T15:26:20.117Z",
       "claim_count": 2,
       "events": [
         {
@@ -107840,7 +109452,7 @@
       "cluster_id": 963,
       "headline": "বিএনপি কোনো অপরাধীকে প্রশ্রয় দেয় না, এটি আবারও প্রমাণিত",
       "first_seen": "2026-10-01T12:51:40.887Z",
-      "last_update": "2026-10-01T14:28:49.766Z",
+      "last_update": "2026-10-01T15:26:20.084Z",
       "claim_count": 2,
       "events": [
         {
@@ -108047,7 +109659,7 @@
       "cluster_id": 965,
       "headline": "কক্ষ থেকে বের হচ্ছিল দুর্গন্ধ, তালা ভেঙে ঢুকে পাওয়া গেল শিক্ষিকার হাত-পা বাঁধা মরদেহ",
       "first_seen": "2026-10-01T12:51:40.893Z",
-      "last_update": "2026-10-01T14:28:49.769Z",
+      "last_update": "2026-10-01T15:26:20.087Z",
       "claim_count": 3,
       "events": [
         {
@@ -108422,7 +110034,7 @@
       "cluster_id": 969,
       "headline": "৬৪ জেলায় ফ্রিল্যান্সিং ও এআই প্রশিক্ষণ উদ্বোধন করলেন যুব ও ক্রীড়া প্রতিমন্ত্রী",
       "first_seen": "2026-10-01T12:51:40.911Z",
-      "last_update": "2026-10-01T14:28:49.785Z",
+      "last_update": "2026-10-01T15:26:20.104Z",
       "claim_count": 2,
       "events": [
         {
@@ -108559,7 +110171,7 @@
       "cluster_id": 970,
       "headline": "পঞ্চগড়ে আন্তর্জাতিক প্রবীণ দিবস: প্রবীণদের সম্মান ও অধিকার নিশ্চিতের আহ্বান",
       "first_seen": "2026-10-01T12:51:40.914Z",
-      "last_update": "2026-10-01T14:28:49.787Z",
+      "last_update": "2026-10-01T15:26:20.105Z",
       "claim_count": 3,
       "events": [
         {
@@ -108678,7 +110290,7 @@
       "cluster_id": 972,
       "headline": "গৃহস্থালির কাজে ব্যস্ত ছিলেন মা, ডোবায় ডুবে প্রাণ গেল দুই শিশুর",
       "first_seen": "2026-10-01T12:51:40.920Z",
-      "last_update": "2026-10-01T14:28:49.788Z",
+      "last_update": "2026-10-01T15:26:20.106Z",
       "claim_count": 2,
       "events": [
         {
@@ -109062,7 +110674,7 @@
       "cluster_id": 975,
       "headline": "স্টেপ ফুটওয়্যারের নতুন টিভিসিতে নুসরাত ফারিয়া",
       "first_seen": "2026-10-01T12:51:40.941Z",
-      "last_update": "2026-10-01T14:28:49.802Z",
+      "last_update": "2026-10-01T15:26:20.119Z",
       "claim_count": 3,
       "events": [
         {
@@ -109419,7 +111031,7 @@
       "cluster_id": 981,
       "headline": "রোনালদোর আইকনিক ‘৭ নম্বর’ জার্সি লিয়াওকে দিলো পর্তুগাল",
       "first_seen": "2026-10-01T13:37:17.188Z",
-      "last_update": "2026-10-01T14:28:49.749Z",
+      "last_update": "2026-10-01T15:26:20.079Z",
       "claim_count": 2,
       "events": [
         {
@@ -109624,16 +111236,27 @@
     },
     "national-983": {
       "cluster_id": 983,
-      "headline": "বাংলাদেশিদের শেনজেন ভিসা নিয়ে সুইডিশ দূতাবাসের নতুন নির্দেশনা",
+      "headline": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
       "first_seen": "2026-10-01T13:37:17.196Z",
-      "last_update": "2026-10-01T14:28:49.763Z",
-      "claim_count": 2,
+      "last_update": "2026-10-01T15:26:20.058Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-01T07:03:06.000Z",
           "kind": "evidence",
           "claim_id": 195045,
           "claim_text": "বাংলাদেশিদের শেনজেন ভিসা নিয়ে সুইডিশ দূতাবাসের নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5BQUhUZVN3ODNBNWdSdnJVelZjeC1qYW12VVRaSVpYZ3Y1UFk1TW14VGlfaW9aQS1qRzdxOUNJbWEzUFBsbXZheFBnNl8zZ2VmMUxGTno5VWU3cWZFUW9PSzdWZFJVMS1rNWpaYTRhbw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:03:06.000Z",
+          "kind": "evidence",
+          "claim_id": 198631,
+          "claim_text": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -109656,6 +111279,17 @@
           "kind": "evidence",
           "claim_id": 195046,
           "claim_text": "শেনজেন ভিসা কী? কেন এটি নিয়ে এতো আলোচনা, আবেদন করবেন যেভাবে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jNC1OM25hekpldzFNRzVDRmNvNWF5Z3Rjang4Mm5Ba0dSMzRRVjM0TE11U1N0N3RiRDRXMTJXdVFBYzNzclRwNW1zc0owWE4xZXJ1alFuNDNnUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:58:01.000Z",
+          "kind": "evidence",
+          "claim_id": 198631,
+          "claim_text": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
           "detail": {
             "source_id": "jugantor",
             "relation": "supports",
@@ -109697,56 +111331,85 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T14:27:39.000Z",
+          "kind": "evidence",
+          "claim_id": 198631,
+          "claim_text": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxOSzJhMGhBaHlXeXo3X3o0QlZYRERRLTdYbFo2ZEtsRXFqem9rSnJzbWMxSUQ2SUEtRVpJMWFsd1U3cmtocGhoci1WY2VNalhjMHVRR1ZSaE94Zm03SzdmWkFHdHNIY1RTMDl2LU0zUzRlVEI3OHp3VC02Mk1IWV9XRE14eHZRZHBLcTVnVFFEU1dtTjhDdGtiTHFMMk1tYnpqaVQzdTJWMDJtS0xlWWdTdkpSSlpvenhqbS1Xak1uc200MGtQT3lzNVNOaFB2MWdjM0FIc0lHQkZVUkd4YnlCcjhkYUY5ZGJBRndPaUVrdmRteVdkSXRBX3dVNDlvcGpYTmN4MHctR0VsclpfVWo2S1Y2dC15X0ljcERnNm9icjVMaFJSc0E5MjRWaUdwTmlCeDJuenZSWF9Vbl9FTVRiTlluVkZvTE4yY1ppYk94YTViNlhWVDVBNTJvdmlhUlpDSmhNdHdDbjFQeVh0bWNneVRIOU9lMVFFVmMxSV9oeHIzRkpySWVqbE5PNXR0RGJwMzB2NEdTcUtTMy0wbkstcFJta2RkOFlkRmphenV4QVVORzJXbFU5ajZJSWc4bXFQd1dlRDcxWjFRdjlwcHU5RkxWLTJpaWVmUzl6Q3huVU9SSDZpaER1MWM4RVBuZHJ5X1JVUVkwT0pVYnFCQ1BvWjZWeklwYjhLVFN5X21lVmZEMGdwdHVrS0J2d0dlWUdGUEhWN0pLbnJDZC0wdnhpMkRDRHVOODJKeVZyQ1hnOGFUYVNkSVNIbtIBzgRBVV95cUxOdkdlSU50NXVqS0RLYWNfTjRNdndIejdhUjBYeWNCNEFDVTdGdWNsekxBUXlfSXpPV3A1SmkwcjFmV2xfRTNHakI0Q3pwTWpFeElKbVFxbUxPYUI5QTlKNlZ6Z053a0pxTG96VVI2MzJHbXZkSFc2Qk9vU0V6SkMyMHdxcElrMXFzSk1lR0pRRUxJYnRIelZGZEFOcVdJTGx1TlNuSHFiaGtvcDBtNFFzZzB1ZGxKcXJBRW1GbUpUZEpuay12bEZXbnd0NEp2Z0JxMFFBellCNUpiNkZETkZQdFNBQ2lESVlIMUdMTUZrV2dBQ05JZldZVWszdnZINVZQNldybHQwY1hzREVSczBPeUN0bDhpeGF1Y1dMeXRoWXpjXzlJbXpBRloxcUJYb3lxb0xzdWlNOGtHVWVCZ3BwaFROY19IdjNpTl9GdWcxQ2tSdnVfNVFlS2NTbjNNeHRTWm53Y012dGYzNDA1ZG9tSi1MZ1NackhyWnVoZ0VoTzYydUpsaWkybHlmR1hIRHJ6MFNmOWtRV0FhLWU5ZVBXLTJMeXFoSWt0cVAwdHM0cnlqRWw5R09uaGtyZmdkMFJZRFFONFVLUktkR0F3QXVRYjVfbzNNSW04OXdWZ21TSTMxTXdtNHpicjlFQlZ6eVNNME9UTkNMQlpWNHhaVWhSSlBaazY0ZG9FVlV0UEJhZEVJM0JDR2xJZ3lRVGV3Q1VHbnNWNnZzU2lSRW1CV2pRblJTejlWekxMdUxQemc0aGh2Y3JpYlhmM09WeDM5Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:53:18.091Z",
+          "kind": "claim",
+          "claim_id": 198631,
+          "claim_text": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা"
+        },
+        {
+          "ts": "2026-10-01T15:53:18.104Z",
+          "kind": "verify",
+          "claim_id": 198631,
+          "claim_text": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 184,
-          "slug": "national-184",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
+          "source_links": 3,
+          "claim_count": 7,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 238,
-          "slug": "national-238",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মেসির বিদায়ী ম্যাচে থাকবেন দি মারিয়া"
-        },
-        {
-          "cluster_id": 250,
-          "slug": "national-250",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "রাশিয়ার নির্বাচনে আবারও জিতল পুতিনের দল, যা বলছে চীন"
         },
         {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
+          "source_links": 3,
+          "claim_count": 7,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
-          "cluster_id": 273,
-          "slug": "politics-273",
+          "cluster_id": 297,
+          "slug": "national-297",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ট্রাম্পের হেলিকপ্টারে বিশ্বের সবচেয়ে আকর্ষণীয় হকি খেলোয়াড়"
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 419,
+          "slug": "national-419",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
+        },
+        {
+          "cluster_id": 513,
+          "slug": "national-513",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ক্যান্টনমেন্ট থানার সাবেক ওসি রাকিবুল হাসান রাষ্ট্রদ্রোহ মামলায় গ্রেপ্তার"
         }
       ]
     },
@@ -109754,7 +111417,7 @@
       "cluster_id": 984,
       "headline": "গ্রামে যাওয়ার পথে বাসে সন্তান প্রসব, পরিবহনের নামে শিশুর নাম, আজীবন ভ্রমণ ‘ফ্রি’",
       "first_seen": "2026-10-01T13:37:17.200Z",
-      "last_update": "2026-10-01T14:28:49.764Z",
+      "last_update": "2026-10-01T15:26:20.082Z",
       "claim_count": 2,
       "events": [
         {
@@ -109882,7 +111545,7 @@
       "cluster_id": 985,
       "headline": "গুগলের সবচেয়ে শক্তিশালী এআই মডেল ‘জেমিনি ৪ আর্গন’ উন্মোচন",
       "first_seen": "2026-10-01T13:37:17.204Z",
-      "last_update": "2026-10-01T14:28:49.765Z",
+      "last_update": "2026-10-01T15:26:20.083Z",
       "claim_count": 2,
       "events": [
         {
@@ -110183,7 +111846,7 @@
       "cluster_id": 992,
       "headline": "এনসিটিতে বিদেশি অপারেটর: ‘জাতিকে অন্ধকারে রেখে’ সিদ্ধান্ত নিয়েছে সরকার",
       "first_seen": "2026-10-01T14:28:49.622Z",
-      "last_update": "2026-10-01T14:28:49.688Z",
+      "last_update": "2026-10-01T15:26:20.073Z",
       "claim_count": 2,
       "events": [
         {
@@ -110271,7 +111934,7 @@
       "cluster_id": 994,
       "headline": "৪৯তম বিসিএসের গেজেট থেকে ৫৭ প্রার্থীকে বাদ দেওয়ার প্রতিবাদে ডাকসুর বিক্ষোভ",
       "first_seen": "2026-10-01T14:28:49.699Z",
-      "last_update": "2026-10-01T14:28:49.704Z",
+      "last_update": "2026-10-01T15:26:20.074Z",
       "claim_count": 2,
       "events": [
         {
@@ -110399,7 +112062,7 @@
       "cluster_id": 996,
       "headline": "চুয়াডাঙ্গায় বিতর্ক প্রতিযোগিতায় চ্যাম্পিয়ন ভিক্টোরিয়া জুবিলী সরকারি উচ্চ বিদ্যালয়",
       "first_seen": "2026-10-01T14:28:49.712Z",
-      "last_update": "2026-10-01T14:28:49.718Z",
+      "last_update": "2026-10-01T15:26:20.076Z",
       "claim_count": 5,
       "events": [
         {
@@ -110598,7 +112261,7 @@
       "cluster_id": 997,
       "headline": "এক মামলায় সাবেক প্রতিমন্ত্রী দীপংকরের জামিন বহাল",
       "first_seen": "2026-10-01T14:28:49.720Z",
-      "last_update": "2026-10-01T14:28:49.725Z",
+      "last_update": "2026-10-01T15:26:20.077Z",
       "claim_count": 2,
       "events": [
         {
@@ -110677,7 +112340,7 @@
       "cluster_id": 998,
       "headline": "বিমানবন্দরে লাগেজ নিয়ে বিড়ম্বনা, জামায়াতের ৪ এমপির লিখিত অভিযোগ",
       "first_seen": "2026-10-01T14:28:49.726Z",
-      "last_update": "2026-10-01T14:28:49.737Z",
+      "last_update": "2026-10-01T15:26:20.078Z",
       "claim_count": 2,
       "events": [
         {
@@ -111733,6 +113396,85 @@
           "kind": "verify",
           "claim_id": 128716,
           "claim_text": "PM will visit Delhi when convenient: Dinesh Trivedi",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-indonesia-beat-bangladesh": {
+      "cluster_id": 1014,
+      "headline": "Indonesia beat Bangladesh 9-2 in ASEAN Cup",
+      "first_seen": "2026-10-01T15:26:20.043Z",
+      "last_update": "2026-10-01T15:26:20.045Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T13:38:10.000Z",
+          "kind": "evidence",
+          "claim_id": 198695,
+          "claim_text": "Indonesia beat Bangladesh 9-2 in ASEAN Cup",
+          "detail": {
+            "source_id": "prothomalo-en",
+            "relation": "supports",
+            "url": "https://en.prothomalo.com/sports/football/npbe40ina6"
+          }
+        },
+        {
+          "ts": "2026-10-01T13:38:10.000Z",
+          "kind": "evidence",
+          "claim_id": 198696,
+          "claim_text": "Half-time: Indonesia lead Bangladesh 6–1",
+          "detail": {
+            "source_id": "prothomalo-en",
+            "relation": "supports",
+            "url": "https://en.prothomalo.com/sports/football/npbe40ina6"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:33:57.000Z",
+          "kind": "evidence",
+          "claim_id": 198695,
+          "claim_text": "Indonesia beat Bangladesh 9-2 in ASEAN Cup",
+          "detail": {
+            "source_id": "prothomalo-en",
+            "relation": "supports",
+            "url": "https://en.prothomalo.com/sports/football/mfhpwl7m78"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:32.427Z",
+          "kind": "claim",
+          "claim_id": 198695,
+          "claim_text": "Indonesia beat Bangladesh 9-2 in ASEAN Cup"
+        },
+        {
+          "ts": "2026-10-01T15:54:32.429Z",
+          "kind": "claim",
+          "claim_id": 198696,
+          "claim_text": "Half-time: Indonesia lead Bangladesh 6–1"
+        },
+        {
+          "ts": "2026-10-01T15:54:32.433Z",
+          "kind": "verify",
+          "claim_id": 198695,
+          "claim_text": "Indonesia beat Bangladesh 9-2 in ASEAN Cup",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:32.433Z",
+          "kind": "verify",
+          "claim_id": 198696,
+          "claim_text": "Half-time: Indonesia lead Bangladesh 6–1",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -113996,7 +115738,7 @@
       "cluster_id": 995,
       "headline": "Tennessee governor halts executions after second botched lethal injection attempt this year – US politics live",
       "first_seen": "2026-10-01T14:28:49.705Z",
-      "last_update": "2026-10-01T14:28:49.710Z",
+      "last_update": "2026-10-01T15:26:20.075Z",
       "claim_count": 3,
       "events": [
         {
@@ -120235,7 +121977,7 @@
       "cluster_id": 993,
       "headline": "একটি গুপ্ত দল আমাদের নসিহত করছে, তাদের লোকেরা নারী নির্যাতনের সঙ্গে জড়িত: প্রধানমন্ত্রী",
       "first_seen": "2026-10-01T14:28:49.689Z",
-      "last_update": "2026-10-01T14:28:49.698Z",
+      "last_update": "2026-10-01T15:26:20.034Z",
       "claim_count": 6,
       "events": [
         {
@@ -120516,6 +122258,213 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        }
+      ]
+    },
+    "sports-1011": {
+      "cluster_id": 1011,
+      "headline": "অস্ট্রেলিয়ায় জন্ম নেওয়া স্ট্রাইকারেই বাংলাদেশের সর্বনাশ!",
+      "first_seen": "2026-10-01T15:26:20.029Z",
+      "last_update": "2026-10-01T15:26:20.032Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T13:29:24.000Z",
+          "kind": "evidence",
+          "claim_id": 198689,
+          "claim_text": "অস্ট্রেলিয়ায় জন্ম নেওয়া স্ট্রাইকারেই বাংলাদেশের সর্বনাশ!",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/971797/%E0%A6%85%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B2%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AE-%E0%A6%A8%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:05:15.000Z",
+          "kind": "evidence",
+          "claim_id": 198689,
+          "claim_text": "অস্ট্রেলিয়ায় জন্ম নেওয়া স্ট্রাইকারেই বাংলাদেশের সর্বনাশ!",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/971815/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%95%E0%A7%87-%E0%A7%AF-%E0%A6%97%E0%A7%8B%E0%A6%B2%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B2%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8B-%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%A8%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%C2%A0"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:05:15.000Z",
+          "kind": "evidence",
+          "claim_id": 198690,
+          "claim_text": "বাংলাদেশকে ৯ গোলে হারের লজ্জা দিলো ইন্দোনেশিয়া",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/971815/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%95%E0%A7%87-%E0%A7%AF-%E0%A6%97%E0%A7%8B%E0%A6%B2%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B2%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8B-%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%A8%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%C2%A0"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:25.492Z",
+          "kind": "claim",
+          "claim_id": 198689,
+          "claim_text": "অস্ট্রেলিয়ায় জন্ম নেওয়া স্ট্রাইকারেই বাংলাদেশের সর্বনাশ!"
+        },
+        {
+          "ts": "2026-10-01T15:54:25.494Z",
+          "kind": "claim",
+          "claim_id": 198690,
+          "claim_text": "বাংলাদেশকে ৯ গোলে হারের লজ্জা দিলো ইন্দোনেশিয়া"
+        },
+        {
+          "ts": "2026-10-01T15:54:25.498Z",
+          "kind": "verify",
+          "claim_id": 198689,
+          "claim_text": "অস্ট্রেলিয়ায় জন্ম নেওয়া স্ট্রাইকারেই বাংলাদেশের সর্বনাশ!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:25.498Z",
+          "kind": "verify",
+          "claim_id": 198690,
+          "claim_text": "বাংলাদেশকে ৯ গোলে হারের লজ্জা দিলো ইন্দোনেশিয়া",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "sports-1021": {
+      "cluster_id": 1021,
+      "headline": "রানআউটসহ ক্রিকেটের যে সকল নিয়মে পরিবর্তন আনল আইসিসি",
+      "first_seen": "2026-10-01T15:26:20.069Z",
+      "last_update": "2026-10-01T15:26:20.072Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T13:29:30.000Z",
+          "kind": "evidence",
+          "claim_id": 198709,
+          "claim_text": "রানআউটসহ ক্রিকেটের যে সকল নিয়মে পরিবর্তন আনল আইসিসি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/eq03zl91hd"
+          }
+        },
+        {
+          "ts": "2026-10-01T13:29:30.000Z",
+          "kind": "evidence",
+          "claim_id": 198710,
+          "claim_text": "আন্তর্জাতিক ক্রিকেটে আজ থেকে কার্যকর নতুন ১০ নিয়ম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/eq03zl91hd"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:09:49.000Z",
+          "kind": "evidence",
+          "claim_id": 198709,
+          "claim_text": "রানআউটসহ ক্রিকেটের যে সকল নিয়মে পরিবর্তন আনল আইসিসি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/icc-run-out-rule/"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:48.032Z",
+          "kind": "claim",
+          "claim_id": 198709,
+          "claim_text": "রানআউটসহ ক্রিকেটের যে সকল নিয়মে পরিবর্তন আনল আইসিসি"
+        },
+        {
+          "ts": "2026-10-01T15:54:48.035Z",
+          "kind": "claim",
+          "claim_id": 198710,
+          "claim_text": "আন্তর্জাতিক ক্রিকেটে আজ থেকে কার্যকর নতুন ১০ নিয়ম"
+        },
+        {
+          "ts": "2026-10-01T15:54:48.053Z",
+          "kind": "verify",
+          "claim_id": 198709,
+          "claim_text": "রানআউটসহ ক্রিকেটের যে সকল নিয়মে পরিবর্তন আনল আইসিসি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:54:48.053Z",
+          "kind": "verify",
+          "claim_id": 198710,
+          "claim_text": "আন্তর্জাতিক ক্রিকেটে আজ থেকে কার্যকর নতুন ১০ নিয়ম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        },
+        {
+          "cluster_id": 224,
+          "slug": "sports-224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এশিয়ান গেমসের জন্য জাপান সফর শেষে ফিরেছেন সেনাপ্রধান ওয়াকার-উজ-জামান"
         }
       ]
     },
@@ -123803,7 +125752,7 @@
       "cluster_id": 966,
       "headline": "এবার মেসি হতে যাচ্ছেন 'ডক্টর' মেসি",
       "first_seen": "2026-10-01T12:51:40.900Z",
-      "last_update": "2026-10-01T14:28:49.772Z",
+      "last_update": "2026-10-01T15:26:20.089Z",
       "claim_count": 3,
       "events": [
         {
@@ -123971,8 +125920,8 @@
       "cluster_id": 986,
       "headline": "এক পরিবর্তন নিয়ে ইন্দোনেশিয়ার বিপক্ষে মাঠে নামছে বাংলাদেশ",
       "first_seen": "2026-10-01T13:37:17.209Z",
-      "last_update": "2026-10-01T14:28:49.768Z",
-      "claim_count": 2,
+      "last_update": "2026-10-01T15:26:20.086Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-01T12:11:37.000Z",
@@ -123983,6 +125932,28 @@
             "source_id": "ittefaq",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxPSnBBZ3ZuQ1h2TVNzQzIxdTB2dnJ1OXl2U2dfVEF5d0JaS2FlRVdUbjNoUVJPRmoyUGt2c0hRZHh2aGFwWFFQZVNtYU1rRHprTVJxTk1rTFNwQVRzSXlkNXFRYjRQWElsdDJRank3ajlXb0JHa1RLR0l4NG45dG94aWdJb0ZYdTdsd3NJVjJodXdmU2lKMnliN1JDcWNEdUVsc0xQd2RVeDlHZnFFQlphYmp0Y1kwR1BJckM2NjhiSkxodDN1RmprOG1pRGdiVk9pdzA4UTlQV2R4MlVSdDhMbHZxUDRRMzRnXzlJQzM1TEdGcHVoWHVjSTF5aEYwSWM5WFo3N3BvWFVmbTUzam1rejlOQWNaVDZEbHJiWFQ1b0oyQkt0NFJvNlI0YnlDQjhQMXR5LUt6T1JXcGhMZkxoV2RUZFFDTzJWWXNRTUlMWXNwWW05UGhOOVhVbXE5TlV1cEFLeUUtVFFoLWJaOVpYQTRNSzBIRWE5MmFXX3hTWnhSOHA5RGZySGc1SUNzRWtoZUl0c2JDNFgwcENzM2tobVNOdGt6ZHFGX3FBVHdKTllXQ0VhM0R5bWx3MmoyUGZqWEVoRGV2dldheWxveVBGNGJyT0NqLWlsMUh1MVNjNEo1VXZNWmNPenp3X0diam9RX245djJyeGN2aXNOcU9NV09wbU5ic0ZuTnRIcS1uT1RHcFdJNUt4WGlISXRJc0JIcXFYWDVXdFhTLTZCUG9xUUdhT3d0MmItdE41aHR5WC00OEpfX18tdnNn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:11:37.000Z",
+          "kind": "evidence",
+          "claim_id": 195051,
+          "claim_text": "এক পরিবর্তন নিয়ে ইন্দোনেশিয়ার বিপক্ষে মাঠে নামছে বাংলাদেশ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxPSnBBZ3ZuQ1h2TVNzQzIxdTB2dnJ1OXl2U2dfVEF5d0JaS2FlRVdUbjNoUVJPRmoyUGt2c0hRZHh2aGFwWFFQZVNtYU1rRHprTVJxTk1rTFNwQVRzSXlkNXFRYjRQWElsdDJRank3ajlXb0JHa1RLR0l4NG45dG94aWdJb0ZYdTdsd3NJVjJodXdmU2lKMnliN1JDcWNEdUVsc0xQd2RVeDlHZnFFQlphYmp0Y1kwR1BJckM2NjhiSkxodDN1RmprOG1pRGdiVk9pdzA4UTlQV2R4MlVSdDhMbHZxUDRRMzRnXzlJQzM1TEdGcHVoWHVjSTF5aEYwSWM5WFo3N3BvWFVmbTUzam1rejlOQWNaVDZEbHJiWFQ1b0oyQkt0NFJvNlI0YnlDQjhQMXR5LUt6T1JXcGhMZkxoV2RUZFFDTzJWWXNRTUlMWXNwWW05UGhOOVhVbXE5TlV1cEFLeUUtVFFoLWJaOVpYQTRNSzBIRWE5MmFXX3hTWnhSOHA5RGZySGc1SUNzRWtoZUl0c2JDNFgwcENzM2tobVNOdGt6ZHFGX3FBVHdKTllXQ0VhM0R5bWx3MmoyUGZqWEVoRGV2dldheWxveVBGNGJyT0NqLWlsMUh1MVNjNEo1VXZNWmNPenp3X0diam9RX245djJyeGN2aXNOcU9NV09wbU5ic0ZuTnRIcS1uT1RHcFdJNUt4WGlISXRJc0JIcXFYWDVXdFhTLTZCUG9xUUdhT3d0MmItdE41aHR5WC00OEpfX18tdnNn0gHPBEFVX3lxTE9qZjBTcjVaZHhjS1NNdFAyUjRsZ3VWcEJYMjRReXNkcnNISThqaVg1WGRXOEJncmQ4RUFUeTNEeFc1bDNReEtmcmJaY1Bzd0w3b3BCcFJhNVRtM1NZRnBhNkpBVmpMenV2SUY4cnQteFFYV2RqVnZCWkxBSHJQQ1QzRzVnSGRhTkhCblJsd1loU1FUcnlsbGo0dk40Mk85OFR2b3IxTm9RNzlOYzdiRnZoZ3pWMWthMFVHSWdDQmthcFVWdnM1dVhqeTRKVTdwZ1o5NURHdUZLYmtITnd1bVVrLTM1aEdNTnpKOEI2bDhOVU1WdDYwcjJIc2NTNGk5YXFCdDZ5eFlWQkQ3ZzBGTlVVVHRVVG5OZTcyS0t0V25kb0IwY2cycXNhcllJMTZLZTkzYnI2ajV4czRSYXcySllTM0VLV1dOT1JIZ0hKcXhoQXZwZU1ERm1VVE5pN21xOUxXTXFzSUU1UjdDeHhwNnAweFNWOVlZVF9DZG95dl9nZF9EQVFxN3RCZGRtQXNEci1FeEI0TGRINXZEeWF6U3FUVUMwVEZvb2MxQ0ptT1YtLWRySkRYdm10cV9hX3p4MEpGclZKSG9QUDRZeC1oS25WczlNNEc0YUhQbE5zVVdlTUdZX2M3XzduUlZvd1kzMzg2RlQzczgzenljYzJ2LWVFaDlJM0Z5cGVSdThjdXZ2cnZLTnJJU3lXV1FCT1llN0hvMDJDdGttU1psQVBVbUE5ZlVZM3o3OWlfMGJFc3M3YVYycWVteXpkOU1GcWdSMA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:11:37.000Z",
+          "kind": "evidence",
+          "claim_id": 198639,
+          "claim_text": "এক পরিবর্তন নিয়ে ইন্দোনেশিয়ার বিপক্ষে মাঠে নামছে বাংলাদেশ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxPSnBBZ3ZuQ1h2TVNzQzIxdTB2dnJ1OXl2U2dfVEF5d0JaS2FlRVdUbjNoUVJPRmoyUGt2c0hRZHh2aGFwWFFQZVNtYU1rRHprTVJxTk1rTFNwQVRzSXlkNXFRYjRQWElsdDJRank3ajlXb0JHa1RLR0l4NG45dG94aWdJb0ZYdTdsd3NJVjJodXdmU2lKMnliN1JDcWNEdUVsc0xQd2RVeDlHZnFFQlphYmp0Y1kwR1BJckM2NjhiSkxodDN1RmprOG1pRGdiVk9pdzA4UTlQV2R4MlVSdDhMbHZxUDRRMzRnXzlJQzM1TEdGcHVoWHVjSTF5aEYwSWM5WFo3N3BvWFVmbTUzam1rejlOQWNaVDZEbHJiWFQ1b0oyQkt0NFJvNlI0YnlDQjhQMXR5LUt6T1JXcGhMZkxoV2RUZFFDTzJWWXNRTUlMWXNwWW05UGhOOVhVbXE5TlV1cEFLeUUtVFFoLWJaOVpYQTRNSzBIRWE5MmFXX3hTWnhSOHA5RGZySGc1SUNzRWtoZUl0c2JDNFgwcENzM2tobVNOdGt6ZHFGX3FBVHdKTllXQ0VhM0R5bWx3MmoyUGZqWEVoRGV2dldheWxveVBGNGJyT0NqLWlsMUh1MVNjNEo1VXZNWmNPenp3X0diam9RX245djJyeGN2aXNOcU9NV09wbU5ic0ZuTnRIcS1uT1RHcFdJNUt4WGlISXRJc0JIcXFYWDVXdFhTLTZCUG9xUUdhT3d0MmItdE41aHR5WC00OEpfX18tdnNn0gHPBEFVX3lxTE9qZjBTcjVaZHhjS1NNdFAyUjRsZ3VWcEJYMjRReXNkcnNISThqaVg1WGRXOEJncmQ4RUFUeTNEeFc1bDNReEtmcmJaY1Bzd0w3b3BCcFJhNVRtM1NZRnBhNkpBVmpMenV2SUY4cnQteFFYV2RqVnZCWkxBSHJQQ1QzRzVnSGRhTkhCblJsd1loU1FUcnlsbGo0dk40Mk85OFR2b3IxTm9RNzlOYzdiRnZoZ3pWMWthMFVHSWdDQmthcFVWdnM1dVhqeTRKVTdwZ1o5NURHdUZLYmtITnd1bVVrLTM1aEdNTnpKOEI2bDhOVU1WdDYwcjJIc2NTNGk5YXFCdDZ5eFlWQkQ3ZzBGTlVVVHRVVG5OZTcyS0t0V25kb0IwY2cycXNhcllJMTZLZTkzYnI2ajV4czRSYXcySllTM0VLV1dOT1JIZ0hKcXhoQXZwZU1ERm1VVE5pN21xOUxXTXFzSUU1UjdDeHhwNnAweFNWOVlZVF9DZG95dl9nZF9EQVFxN3RCZGRtQXNEci1FeEI0TGRINXZEeWF6U3FUVUMwVEZvb2MxQ0ptT1YtLWRySkRYdm10cV9hX3p4MEpGclZKSG9QUDRZeC1oS25WczlNNEc0YUhQbE5zVVdlTUdZX2M3XzduUlZvd1kzMzg2RlQzczgzenljYzJ2LWVFaDlJM0Z5cGVSdThjdXZ2cnZLTnJJU3lXV1FCT1llN0hvMDJDdGttU1psQVBVbUE5ZlVZM3o3OWlfMGJFc3M3YVYycWVteXpkOU1GcWdSMA?oc=5"
           }
         },
         {
@@ -124036,6 +126007,24 @@
           "kind": "verify",
           "claim_id": 195052,
           "claim_text": "ইন্দোনেশিয়ার বিপক্ষে এক পরিবর্তন নিয়ে মাঠে নামছে বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:53:25.312Z",
+          "kind": "claim",
+          "claim_id": 198639,
+          "claim_text": "এক পরিবর্তন নিয়ে ইন্দোনেশিয়ার বিপক্ষে মাঠে নামছে বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-01T15:53:25.317Z",
+          "kind": "verify",
+          "claim_id": 198639,
+          "claim_text": "এক পরিবর্তন নিয়ে ইন্দোনেশিয়ার বিপক্ষে মাঠে নামছে বাংলাদেশ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
