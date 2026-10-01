@@ -1237,6 +1237,19 @@
         "pipeline/state/content-audit-baseline.json"
       ],
       "tests": "pipeline suite 432/432, tests.yml green on 30b0c6fb"
+    },
+    {
+      "id": "D134",
+      "date": "2026-10-01",
+      "topic": "Homepage is a clock (recency sort) + minimal 5-story hero slider",
+      "decision": "editorialOrder sorts by recency only (suspect stays last). New HeroSlider.astro: CSS scroll-snap core, tiny progressive-enhancement script, no autoplay, no dependency, eager only slide 0. My own edit broke the Vercel build (dropped import, ReferenceError at prerender) — fixed plus a new guard test that every component tag resolves to an import.",
+      "files": [
+        "site/src/lib/news-data.js",
+        "site/src/components/HeroSlider.astro",
+        "site/src/pages/index.astro",
+        "pipeline/test/article-layout.test.mjs"
+      ],
+      "tests": "pipeline suite 434/434"
     }
   ],
   "sources": [
