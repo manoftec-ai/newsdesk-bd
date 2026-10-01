@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 1020,
+    "storyCount": 1031,
     "kinds": [
       "claim",
       "evidence",
@@ -88,7 +88,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1072,
+          "slug": "economy-1072",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ"
+        }
+      ]
     },
     "economy-1025": {
       "cluster_id": 1025,
@@ -344,6 +353,94 @@
         }
       ],
       "related": []
+    },
+    "economy-1072": {
+      "cluster_id": 1072,
+      "headline": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ",
+      "first_seen": "2026-10-01T22:10:38.010Z",
+      "last_update": "2026-10-01T22:10:38.015Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T14:14:11.000Z",
+          "kind": "evidence",
+          "claim_id": 208269,
+          "claim_text": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/2e4gtus2ke"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208269,
+          "claim_text": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bzlr1aa8lr"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208270,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bzlr1aa8lr"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:20.118Z",
+          "kind": "claim",
+          "claim_id": 208269,
+          "claim_text": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ"
+        },
+        {
+          "ts": "2026-10-01T22:47:20.121Z",
+          "kind": "claim",
+          "claim_id": 208270,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক"
+        },
+        {
+          "ts": "2026-10-01T22:47:20.126Z",
+          "kind": "verify",
+          "claim_id": 208269,
+          "claim_text": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:20.126Z",
+          "kind": "verify",
+          "claim_id": 208270,
+          "claim_text": "বাড়ি কেনা বা নির্মাণে হোম লোন কতটা সহায়ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1016,
+          "slug": "economy-1016",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নারীদের জন্য হোম লোন: নিজের বাড়ি, নিজের সিদ্ধান্ত"
+        }
+      ]
     },
     "economy-139": {
       "cluster_id": 139,
@@ -7833,12 +7930,12 @@
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
-          "cluster_id": 84,
-          "slug": "national-84",
+          "cluster_id": 1012,
+          "slug": "national-1012",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
         }
       ]
     },
@@ -8162,8 +8259,8 @@
       "cluster_id": 1012,
       "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন",
       "first_seen": "2026-10-01T15:26:20.035Z",
-      "last_update": "2026-10-01T21:13:45.726Z",
-      "claim_count": 4,
+      "last_update": "2026-10-01T22:10:37.986Z",
+      "claim_count": 5,
       "events": [
         {
           "ts": "2026-10-01T13:05:44.000Z",
@@ -8308,6 +8405,28 @@
           }
         },
         {
+          "ts": "2026-10-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 200547,
+          "claim_text": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40V21JZ2RhV1I0c2d2NVBQZUlLc2pEX3Yyczl5UWsxOEYxeVE1NnJpWHdxMmRZSWc4YVZXY1BHejE2LVJ3OWV4MHdvdHgtbzR1amZsTEdFR0ZXWktWeVFVd0ZISTNyWDhxR0N3N1NaSVpxMlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208155,
+          "claim_text": "মিটফোর্ডে সেই লাল চাঁদ হত্যাকাণ্ডের প্রধান আসামির জামিন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40V21JZ2RhV1I0c2d2NVBQZUlLc2pEX3Yyczl5UWsxOEYxeVE1NnJpWHdxMmRZSWc4YVZXY1BHejE2LVJ3OWV4MHdvdHgtbzR1amZsTEdFR0ZXWktWeVFVd0ZISTNyWDhxR0N3N1NaSVpxMlE?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-01T19:56:16.659Z",
           "kind": "claim",
           "claim_id": 202424,
@@ -8324,6 +8443,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T22:44:22.893Z",
+          "kind": "claim",
+          "claim_id": 208155,
+          "claim_text": "মিটফোর্ডে সেই লাল চাঁদ হত্যাকাণ্ডের প্রধান আসামির জামিন"
+        },
+        {
+          "ts": "2026-10-01T22:44:22.898Z",
+          "kind": "verify",
+          "claim_id": 208155,
+          "claim_text": "মিটফোর্ডে সেই লাল চাঁদ হত্যাকাণ্ডের প্রধান আসামির জামিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -8331,49 +8468,49 @@
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 10,
+          "source_links": 5,
+          "claim_count": 12,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
           "cluster_id": 297,
           "slug": "national-297",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
+          "source_links": 5,
+          "claim_count": 5,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
           "cluster_id": 346,
           "slug": "national-346",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 6,
+          "source_links": 5,
+          "claim_count": 8,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 197,
-          "slug": "national-197",
+          "cluster_id": 941,
+          "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 5,
-          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
-          "cluster_id": 211,
-          "slug": "national-211",
+          "cluster_id": 944,
+          "slug": "national-944",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "পাকিস্তানের বিমান হামলার দাবি করেছে আফগানিস্তান, নারী, শিশুসহ ৯ জন নিহত"
         },
         {
-          "cluster_id": 457,
-          "slug": "national-457",
+          "cluster_id": 187,
+          "slug": "politics-187",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 3,
-          "headline": "নিউইয়র্কে প্রধানমন্ত্রী তারেক রহমানের সঙ্গে ইরানের প্রেসিডেন্টের বৈঠক"
+          "claim_count": 9,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
         }
       ]
     },
@@ -8795,7 +8932,7 @@
       "cluster_id": 1019,
       "headline": "মির্জাপুরে পূজার প্রতিমা ভেঙ্গে আচ্ছাদনে তীর চিহ্ন অঙ্কন",
       "first_seen": "2026-10-01T15:26:20.062Z",
-      "last_update": "2026-10-01T21:13:45.734Z",
+      "last_update": "2026-10-01T22:10:38.017Z",
       "claim_count": 2,
       "events": [
         {
@@ -9259,7 +9396,7 @@
       "cluster_id": 1024,
       "headline": "শিক্ষকদের পে স্কেল বাস্তবায়নে নতুন নির্দেশনা, সব শিক্ষাপ্রতিষ্ঠানে চিঠি",
       "first_seen": "2026-10-01T15:26:20.113Z",
-      "last_update": "2026-10-01T21:13:45.748Z",
+      "last_update": "2026-10-01T22:10:38.020Z",
       "claim_count": 4,
       "events": [
         {
@@ -9735,7 +9872,7 @@
       "cluster_id": 1031,
       "headline": "ব্যবসা-বাণিজ্য সহজ করতে প্রশাসনিক জটিলতা কমানোর নির্দেশ বাণিজ্যমন্ত্রীর",
       "first_seen": "2026-10-01T16:17:23.407Z",
-      "last_update": "2026-10-01T21:13:45.728Z",
+      "last_update": "2026-10-01T22:10:38.006Z",
       "claim_count": 2,
       "events": [
         {
@@ -10186,7 +10323,7 @@
       "cluster_id": 1038,
       "headline": "ফতুল্লায় মাদ্রাসার ছাদে বিদ্যুৎস্পৃষ্টের ঘটনায় তিন দিনে তিন কিশোরীর মৃত্যু",
       "first_seen": "2026-10-01T19:24:40.718Z",
-      "last_update": "2026-10-01T21:13:45.714Z",
+      "last_update": "2026-10-01T22:10:37.984Z",
       "claim_count": 2,
       "events": [
         {
@@ -10314,7 +10451,7 @@
       "cluster_id": 1039,
       "headline": "নতুন করে ইরানের আশপাশে তিনটি রণতরি মোতায়েন করছে যুক্তরাষ্ট্র",
       "first_seen": "2026-10-01T19:24:40.722Z",
-      "last_update": "2026-10-01T21:13:45.724Z",
+      "last_update": "2026-10-01T22:10:37.989Z",
       "claim_count": 3,
       "events": [
         {
@@ -10482,7 +10619,7 @@
       "cluster_id": 1040,
       "headline": "চট্টগ্রামে চলন্ত ট্রেনে উঠতে গিয়ে সাবেক ছাত্রলীগ নেতার মৃত্যু",
       "first_seen": "2026-10-01T19:24:40.726Z",
-      "last_update": "2026-10-01T21:13:45.725Z",
+      "last_update": "2026-10-01T22:10:37.991Z",
       "claim_count": 2,
       "events": [
         {
@@ -10570,7 +10707,7 @@
       "cluster_id": 1042,
       "headline": "সৌদি আরবে অবস্থানরত বাংলাদেশিদের জন্য দূতাবাসের জরুরি সতর্কবার্তা",
       "first_seen": "2026-10-01T19:24:40.747Z",
-      "last_update": "2026-10-01T21:13:45.733Z",
+      "last_update": "2026-10-01T22:10:38.016Z",
       "claim_count": 2,
       "events": [
         {
@@ -11169,7 +11306,7 @@
       "cluster_id": 1050,
       "headline": "বাংলামোটরে বহিষ্কৃত যুবদল নেতার আগ্নেয়াস্ত্রের আঘাতে ওষুধ ব্যবসায়ী আহত",
       "first_seen": "2026-10-01T20:20:37.846Z",
-      "last_update": "2026-10-01T21:13:45.706Z",
+      "last_update": "2026-10-01T22:10:37.979Z",
       "claim_count": 4,
       "events": [
         {
@@ -11399,7 +11536,7 @@
       "cluster_id": 1051,
       "headline": "দুই দফা প্রাণঘাতী ইনজেকশনেও বেঁচে গেলেন মৃত্যুদণ্ডপ্রাপ্ত নারী",
       "first_seen": "2026-10-01T20:20:37.850Z",
-      "last_update": "2026-10-01T21:13:45.719Z",
+      "last_update": "2026-10-01T22:10:37.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -11661,7 +11798,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1067,
+          "slug": "national-1067",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন"
+        }
+      ]
     },
     "national-1058": {
       "cluster_id": 1058,
@@ -11795,7 +11941,7 @@
       "cluster_id": 1059,
       "headline": "সাতক্ষীরায় দুবছর পর বসল ঐতিহ্যবাহী গুড়পুকুর মেলা",
       "first_seen": "2026-10-01T21:13:45.720Z",
-      "last_update": "2026-10-01T21:13:45.723Z",
+      "last_update": "2026-10-01T22:10:37.988Z",
       "claim_count": 2,
       "events": [
         {
@@ -12192,6 +12338,735 @@
           "kind": "verify",
           "claim_id": 206321,
           "claim_text": "ক্যানসারে আক্রান্ত কারাবন্দী সাংবাদিক মোজাম্মেল বাবুর স্বাস্থ্য পরীক্ষা চেয়ে ট্রাইব্যুনালে আবেদন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1067": {
+      "cluster_id": 1067,
+      "headline": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন",
+      "first_seen": "2026-10-01T22:10:37.974Z",
+      "last_update": "2026-10-01T22:10:37.977Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T17:38:26.000Z",
+          "kind": "evidence",
+          "claim_id": 208257,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/work-is-underway-to-build-a-skilled-workforce-mahdi-amin/"
+          }
+        },
+        {
+          "ts": "2026-10-01T17:38:26.000Z",
+          "kind": "evidence",
+          "claim_id": 208258,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে সরকারের অগ্রাধিকারমূলক কাজ চলছে: মাহদী আমিন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/work-is-underway-to-build-a-skilled-workforce-mahdi-amin/"
+          }
+        },
+        {
+          "ts": "2026-10-01T21:04:07.000Z",
+          "kind": "evidence",
+          "claim_id": 208257,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ap9vnko263"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:05.645Z",
+          "kind": "claim",
+          "claim_id": 208257,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন"
+        },
+        {
+          "ts": "2026-10-01T22:47:05.648Z",
+          "kind": "claim",
+          "claim_id": 208258,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে সরকারের অগ্রাধিকারমূলক কাজ চলছে: মাহদী আমিন"
+        },
+        {
+          "ts": "2026-10-01T22:47:05.653Z",
+          "kind": "verify",
+          "claim_id": 208257,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:05.653Z",
+          "kind": "verify",
+          "claim_id": 208258,
+          "claim_text": "দক্ষ মানবসম্পদ গড়ে তুলতে সরকারের অগ্রাধিকারমূলক কাজ চলছে: মাহদী আমিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1056,
+          "slug": "national-1056",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দক্ষ মানবসম্পদ গড়ে তুলতে সরকারের অগ্রাধিকারমূলক কাজ চলছে: মাহদী আমিন"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 139,
+          "slug": "national-139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+        },
+        {
+          "cluster_id": 145,
+          "slug": "national-145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইসলামাবাদে পিটিআইয়ের সমাবেশের আগেই গ্রেপ্তার করা হলো ইমরান খানের বোনকে"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "national-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কমলাপুর রেলস্টেশনে দাঁড়িয়ে থাকা ট্রেনে আগুন"
+        },
+        {
+          "cluster_id": 188,
+          "slug": "national-188",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মাকে কুপিয়ে এবং আট মাসের ভাতিজিকে আছাড় দিয়ে হত্যার অভিযোগে তরুণ আটক"
+        }
+      ]
+    },
+    "national-1068": {
+      "cluster_id": 1068,
+      "headline": "শৃঙ্খলা ফেরাতে কঠোর সরকার",
+      "first_seen": "2026-10-01T22:10:37.980Z",
+      "last_update": "2026-10-01T22:10:37.983Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T20:32:19.000Z",
+          "kind": "evidence",
+          "claim_id": 208259,
+          "claim_text": "শৃঙ্খলা ফেরাতে কঠোর সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/hd3x55glj6"
+          }
+        },
+        {
+          "ts": "2026-10-01T20:32:19.000Z",
+          "kind": "evidence",
+          "claim_id": 208259,
+          "claim_text": "শৃঙ্খলা ফেরাতে কঠোর সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/hd3x55glj6"
+          }
+        },
+        {
+          "ts": "2026-10-01T20:32:19.000Z",
+          "kind": "evidence",
+          "claim_id": 208260,
+          "claim_text": "শৃঙ্খলা ফেরাতে সরকার কঠোর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/hd3x55glj6"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:08.504Z",
+          "kind": "claim",
+          "claim_id": 208259,
+          "claim_text": "শৃঙ্খলা ফেরাতে কঠোর সরকার"
+        },
+        {
+          "ts": "2026-10-01T22:47:08.507Z",
+          "kind": "claim",
+          "claim_id": 208260,
+          "claim_text": "শৃঙ্খলা ফেরাতে সরকার কঠোর"
+        },
+        {
+          "ts": "2026-10-01T22:47:08.512Z",
+          "kind": "verify",
+          "claim_id": 208259,
+          "claim_text": "শৃঙ্খলা ফেরাতে কঠোর সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:08.512Z",
+          "kind": "verify",
+          "claim_id": 208260,
+          "claim_text": "শৃঙ্খলা ফেরাতে সরকার কঠোর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1069": {
+      "cluster_id": 1069,
+      "headline": "দুদকের ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে আসিফ মাহমুদের মামলা কার্যতালিকা থেকে বাদ",
+      "first_seen": "2026-10-01T22:10:37.992Z",
+      "last_update": "2026-10-01T22:10:37.995Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-28T10:24:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208261,
+          "claim_text": "দুদকের ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে আসিফ মাহমুদের মামলা কার্যতালিকা থেকে বাদ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/drtvso73jz"
+          }
+        },
+        {
+          "ts": "2026-09-28T10:24:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208262,
+          "claim_text": "দুদকের দুই ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে রিট মামলা আসিফ মাহমুদের",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/drtvso73jz"
+          }
+        },
+        {
+          "ts": "2026-09-29T10:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208261,
+          "claim_text": "দুদকের ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে আসিফ মাহমুদের মামলা কার্যতালিকা থেকে বাদ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/politics/vncgccznyx"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:11.415Z",
+          "kind": "claim",
+          "claim_id": 208261,
+          "claim_text": "দুদকের ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে আসিফ মাহমুদের মামলা কার্যতালিকা থেকে বাদ"
+        },
+        {
+          "ts": "2026-10-01T22:47:11.418Z",
+          "kind": "claim",
+          "claim_id": 208262,
+          "claim_text": "দুদকের দুই ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে রিট মামলা আসিফ মাহমুদের"
+        },
+        {
+          "ts": "2026-10-01T22:47:11.423Z",
+          "kind": "verify",
+          "claim_id": 208261,
+          "claim_text": "দুদকের ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে আসিফ মাহমুদের মামলা কার্যতালিকা থেকে বাদ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:11.423Z",
+          "kind": "verify",
+          "claim_id": 208262,
+          "claim_text": "দুদকের দুই ব্রিফিংয়ের বৈধতা চ্যালেঞ্জ করে রিট মামলা আসিফ মাহমুদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1070": {
+      "cluster_id": 1070,
+      "headline": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+      "first_seen": "2026-10-01T22:10:37.996Z",
+      "last_update": "2026-10-01T22:10:38.001Z",
+      "claim_count": 4,
+      "events": [
+        {
+          "ts": "2026-10-01T14:11:12.000Z",
+          "kind": "evidence",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/0nrlyk7cr0"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:19:44.000Z",
+          "kind": "evidence",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wMUVQX3Azc1VFNnM4dndDY2NUMFk5RjFrRVoxZDRhaTM3MUJxTkVERUZ0NjI3eTN2NjIzQlNja0RQSmFGTlJ3UnI4cTFpT1k?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:19:44.000Z",
+          "kind": "evidence",
+          "claim_id": 208264,
+          "claim_text": "সেপ্টেম্বরে দেশে এলো ২৭৪ কোটি ডলারের বেশি রেমিট্যান্স",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wMUVQX3Azc1VFNnM4dndDY2NUMFk5RjFrRVoxZDRhaTM3MUJxTkVERUZ0NjI3eTN2NjIzQlNja0RQSmFGTlJ3UnI4cTFpT1k?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:46:23.000Z",
+          "kind": "evidence",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/economy/110528/%E0%A6%B0%E0%A7%87%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%A7%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%B2-%E0%A7%A8%E0%A7%AD%E0%A7%AD-%E0%A6%95%E0%A7%8B%E0%A6%9F%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:46:23.000Z",
+          "kind": "evidence",
+          "claim_id": 208265,
+          "claim_text": "রেমিট্যান্স ধাক্কা, সেপ্টেম্বরে নামল ২৭৭ কোটি ডলারে",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/economy/110528/%E0%A6%B0%E0%A7%87%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%A7%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%B2-%E0%A7%A8%E0%A7%AD%E0%A7%AD-%E0%A6%95%E0%A7%8B%E0%A6%9F%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:24:17.000Z",
+          "kind": "evidence",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/971822/%E0%A6%B0%E0%A7%87%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%93-%E0%A6%B0%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%96%E0%A6%BE%E0%A6%A4%E0%A7%87%E0%A6%87-%E0%A6%9A%E0%A6%BE%E0%A6%AA-%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%9B%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:24:17.000Z",
+          "kind": "evidence",
+          "claim_id": 208266,
+          "claim_text": "রেমিট্যান্স ও রফতানি, দুই খাতেই চাপ বাড়ছে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/971822/%E0%A6%B0%E0%A7%87%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%93-%E0%A6%B0%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%96%E0%A6%BE%E0%A6%A4%E0%A7%87%E0%A6%87-%E0%A6%9A%E0%A6%BE%E0%A6%AA-%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%9B%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:14.326Z",
+          "kind": "claim",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার"
+        },
+        {
+          "ts": "2026-10-01T22:47:14.330Z",
+          "kind": "claim",
+          "claim_id": 208264,
+          "claim_text": "সেপ্টেম্বরে দেশে এলো ২৭৪ কোটি ডলারের বেশি রেমিট্যান্স"
+        },
+        {
+          "ts": "2026-10-01T22:47:14.332Z",
+          "kind": "claim",
+          "claim_id": 208265,
+          "claim_text": "রেমিট্যান্স ধাক্কা, সেপ্টেম্বরে নামল ২৭৭ কোটি ডলারে"
+        },
+        {
+          "ts": "2026-10-01T22:47:14.334Z",
+          "kind": "claim",
+          "claim_id": 208266,
+          "claim_text": "রেমিট্যান্স ও রফতানি, দুই খাতেই চাপ বাড়ছে"
+        },
+        {
+          "ts": "2026-10-01T22:47:14.339Z",
+          "kind": "verify",
+          "claim_id": 208263,
+          "claim_text": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:14.339Z",
+          "kind": "verify",
+          "claim_id": 208264,
+          "claim_text": "সেপ্টেম্বরে দেশে এলো ২৭৪ কোটি ডলারের বেশি রেমিট্যান্স",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:14.339Z",
+          "kind": "verify",
+          "claim_id": 208265,
+          "claim_text": "রেমিট্যান্স ধাক্কা, সেপ্টেম্বরে নামল ২৭৭ কোটি ডলারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:14.339Z",
+          "kind": "verify",
+          "claim_id": 208266,
+          "claim_text": "রেমিট্যান্স ও রফতানি, দুই খাতেই চাপ বাড়ছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 13,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 191,
+          "slug": "international-191",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "পাকিস্তানের সাবেক প্রধানমন্ত্রী ইমরান খানের ৩ বোন গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "দিল্লিতে পরবর্তী হাইকমিশনার হচ্ছেন পররাষ্ট্র সচিব আসাদ আলম সিয়াম"
+        },
+        {
+          "cluster_id": 332,
+          "slug": "national-332",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
+        }
+      ]
+    },
+    "national-1071": {
+      "cluster_id": 1071,
+      "headline": "যৌন নির্যাতনের শিকার শিশুকে বিচারকের চিঠি- 'নির্যাতনকারীর বাকি জীবন খাঁচাতেই কাটবে'",
+      "first_seen": "2026-10-01T22:10:38.002Z",
+      "last_update": "2026-10-01T22:10:38.005Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T14:18:06.000Z",
+          "kind": "evidence",
+          "claim_id": 208267,
+          "claim_text": "যৌন নির্যাতনের শিকার শিশুকে বিচারকের চিঠি- 'নির্যাতনকারীর বাকি জীবন খাঁচাতেই কাটবে'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq8040pgx19go?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:21:35.000Z",
+          "kind": "evidence",
+          "claim_id": 208267,
+          "claim_text": "যৌন নির্যাতনের শিকার শিশুকে বিচারকের চিঠি- 'নির্যাতনকারীর বাকি জীবন খাঁচাতেই কাটবে'",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihARBVV95cUxNamdUaGI5QXVRQzdqUEhGZ2QtZkZ4bjdnZ3pYMW5vZDJMUVBOeUxZekYyUmJWbzNBTEFodk9lS294akF6dE1qd3FtRUVPaFNtWTMxUEx3eV9Mam5WVjQ0Tm5WRGppRktiSXBUZzNxTThsbTF6YTI2eTRpYmhYZjJxYXRQNVlzNG9vazZCRnA4c04yRVFzXzlSZ1NLVUludHBUd0tINWlKcWhxWWFySW5SOW93ZHBFVVpSWHR6TE9YeWgzSEtXZDVpQ0RSb2tRWk9EYTV6dlpCNjN2SVk5VFM4Wk9RNzg0WkRPdjhJOXVqcnFDQVJYT0xpcm5oNnM3WjltMnlHMFl6X3AzeGlETWkyTTA5dEFpdXJGRmppYV9Kc1NFekNhR0pHN1dwRHhRbmx0bmhpNHNueHVnT2RDUVQ0LXRsMDdDbDlqblc1dzF1QXI0cjNDNWNQdXhOd3pSZXdubm5NT0owb2ZLdGNKWEdFYzhoZG1KN0ZObzdfUWM4dFVDTnB3MHI4WndNTm1Hb0o4MkkwNldCMTFxLXFLTzlyZXQ5aVFBWldiNGRlT2Qzd2lCQi1DRHZmMUsxSzVNaE8ySENIUjh5ZV9pSUdCdVg2N0p4STZjRF9SMG9QX013elZHQ0NFYjZ5NVltdGNTY3ZaNDdvLWNwYmJkbjRNVEpHaEZFMmnSAYoEQVVfeXFMUHRhY2tzUjczVnB6NlMyRDNTWVE0dkZ1clIzeXY2RW5ZQnBxT3ZENlVUOERfdC1qVXhOMUtZSlFfX1REMGYzRThzeWN6azY2di1waDQtcTd1N2FKNmJWQ2s0cEtaRTdZUVhOS2YxSzFrZjNZLTRKN2ZsRnlOeHNOOUtkeDVLQk5iMHVJVE9vMlJ6Rm1lTVN2VG12YlhqazkzeW5DMkRUckVuYmJma0NMMTVyeVdSREg1TmVlTV9Bc2VZTWdnbUJWbVoweW1yX3hHZ0p3Wm9LaTBETG16WEp1UnNVZFpEeEJYMEtVOXE1cEhMYTZveWxpTHdjdDV0eDlUeWpwT0ZEUXczSk1GNWQ0WWlSUV9nZHhJTGd0Z1g4RDV1VTNxV0paSWUtMjZ3MkwwemVUN3VkaklpNzlSRzlENUd0S1lGUDZ3bVpDUU9pTUNFUFpBLTVQQW5Qc19yczBZdEVzdk41bTJLM2R1dXBoRHM0Q3lkVmp4RzFKRE1BS0pVcktZNm9FeTVhZXN0Y0Noajd0UHUtbEM3aTJWQzJ0NkRRTndaSTk5aHpKQlB5MUhhS3VQbXhzX0haeUVSZ1ZWYnlHOGZnekFlOENEZUFsaDJBNExpSDFjRjBxc19mQ21kVFRDU2JNcjRIZjRidF9xMlA2TmVoNzZ3dnFRYUp2OXFQcmJhMFJjbENR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:21:35.000Z",
+          "kind": "evidence",
+          "claim_id": 208268,
+          "claim_text": "এবার ২০ ইউনিটে বিদ্যুৎ বিল এলো ২৯ হাজার টাকা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihARBVV95cUxNamdUaGI5QXVRQzdqUEhGZ2QtZkZ4bjdnZ3pYMW5vZDJMUVBOeUxZekYyUmJWbzNBTEFodk9lS294akF6dE1qd3FtRUVPaFNtWTMxUEx3eV9Mam5WVjQ0Tm5WRGppRktiSXBUZzNxTThsbTF6YTI2eTRpYmhYZjJxYXRQNVlzNG9vazZCRnA4c04yRVFzXzlSZ1NLVUludHBUd0tINWlKcWhxWWFySW5SOW93ZHBFVVpSWHR6TE9YeWgzSEtXZDVpQ0RSb2tRWk9EYTV6dlpCNjN2SVk5VFM4Wk9RNzg0WkRPdjhJOXVqcnFDQVJYT0xpcm5oNnM3WjltMnlHMFl6X3AzeGlETWkyTTA5dEFpdXJGRmppYV9Kc1NFekNhR0pHN1dwRHhRbmx0bmhpNHNueHVnT2RDUVQ0LXRsMDdDbDlqblc1dzF1QXI0cjNDNWNQdXhOd3pSZXdubm5NT0owb2ZLdGNKWEdFYzhoZG1KN0ZObzdfUWM4dFVDTnB3MHI4WndNTm1Hb0o4MkkwNldCMTFxLXFLTzlyZXQ5aVFBWldiNGRlT2Qzd2lCQi1DRHZmMUsxSzVNaE8ySENIUjh5ZV9pSUdCdVg2N0p4STZjRF9SMG9QX013elZHQ0NFYjZ5NVltdGNTY3ZaNDdvLWNwYmJkbjRNVEpHaEZFMmnSAYoEQVVfeXFMUHRhY2tzUjczVnB6NlMyRDNTWVE0dkZ1clIzeXY2RW5ZQnBxT3ZENlVUOERfdC1qVXhOMUtZSlFfX1REMGYzRThzeWN6azY2di1waDQtcTd1N2FKNmJWQ2s0cEtaRTdZUVhOS2YxSzFrZjNZLTRKN2ZsRnlOeHNOOUtkeDVLQk5iMHVJVE9vMlJ6Rm1lTVN2VG12YlhqazkzeW5DMkRUckVuYmJma0NMMTVyeVdSREg1TmVlTV9Bc2VZTWdnbUJWbVoweW1yX3hHZ0p3Wm9LaTBETG16WEp1UnNVZFpEeEJYMEtVOXE1cEhMYTZveWxpTHdjdDV0eDlUeWpwT0ZEUXczSk1GNWQ0WWlSUV9nZHhJTGd0Z1g4RDV1VTNxV0paSWUtMjZ3MkwwemVUN3VkaklpNzlSRzlENUd0S1lGUDZ3bVpDUU9pTUNFUFpBLTVQQW5Qc19yczBZdEVzdk41bTJLM2R1dXBoRHM0Q3lkVmp4RzFKRE1BS0pVcktZNm9FeTVhZXN0Y0Noajd0UHUtbEM3aTJWQzJ0NkRRTndaSTk5aHpKQlB5MUhhS3VQbXhzX0haeUVSZ1ZWYnlHOGZnekFlOENEZUFsaDJBNExpSDFjRjBxc19mQ21kVFRDU2JNcjRIZjRidF9xMlA2TmVoNzZ3dnFRYUp2OXFQcmJhMFJjbENR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:17.185Z",
+          "kind": "claim",
+          "claim_id": 208267,
+          "claim_text": "যৌন নির্যাতনের শিকার শিশুকে বিচারকের চিঠি- 'নির্যাতনকারীর বাকি জীবন খাঁচাতেই কাটবে'"
+        },
+        {
+          "ts": "2026-10-01T22:47:17.188Z",
+          "kind": "claim",
+          "claim_id": 208268,
+          "claim_text": "এবার ২০ ইউনিটে বিদ্যুৎ বিল এলো ২৯ হাজার টাকা"
+        },
+        {
+          "ts": "2026-10-01T22:47:17.194Z",
+          "kind": "verify",
+          "claim_id": 208267,
+          "claim_text": "যৌন নির্যাতনের শিকার শিশুকে বিচারকের চিঠি- 'নির্যাতনকারীর বাকি জীবন খাঁচাতেই কাটবে'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:17.194Z",
+          "kind": "verify",
+          "claim_id": 208268,
+          "claim_text": "এবার ২০ ইউনিটে বিদ্যুৎ বিল এলো ২৯ হাজার টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1073": {
+      "cluster_id": 1073,
+      "headline": "কুরোসাওয়া পুরস্কার পাচ্ছেন মিপো ও রাসুলফ",
+      "first_seen": "2026-10-01T22:10:38.365Z",
+      "last_update": "2026-10-01T22:10:38.368Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T21:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 208271,
+          "claim_text": "কুরোসাওয়া পুরস্কার পাচ্ছেন মিপো ও রাসুলফ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/world-cinema/ncj6nzu8t6"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:23.014Z",
+          "kind": "claim",
+          "claim_id": 208271,
+          "claim_text": "কুরোসাওয়া পুরস্কার পাচ্ছেন মিপো ও রাসুলফ"
+        },
+        {
+          "ts": "2026-10-01T22:47:23.020Z",
+          "kind": "verify",
+          "claim_id": 208271,
+          "claim_text": "কুরোসাওয়া পুরস্কার পাচ্ছেন মিপো ও রাসুলফ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1074": {
+      "cluster_id": 1074,
+      "headline": "হাজারীবাগে ছাদ থেকে পড়ে কেব্ল ব্যবসায়ী নিহত, স্বজনদের হত্যার অভিযোগ: পুলিশ",
+      "first_seen": "2026-10-01T22:10:38.370Z",
+      "last_update": "2026-10-01T22:10:38.372Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T20:59:12.000Z",
+          "kind": "evidence",
+          "claim_id": 208272,
+          "claim_text": "হাজারীবাগে ছাদ থেকে পড়ে কেব্ল ব্যবসায়ী নিহত, স্বজনদের হত্যার অভিযোগ: পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/4d0epfngft"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:25.883Z",
+          "kind": "claim",
+          "claim_id": 208272,
+          "claim_text": "হাজারীবাগে ছাদ থেকে পড়ে কেব্ল ব্যবসায়ী নিহত, স্বজনদের হত্যার অভিযোগ: পুলিশ"
+        },
+        {
+          "ts": "2026-10-01T22:47:25.888Z",
+          "kind": "verify",
+          "claim_id": 208272,
+          "claim_text": "হাজারীবাগে ছাদ থেকে পড়ে কেব্ল ব্যবসায়ী নিহত, স্বজনদের হত্যার অভিযোগ: পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1075": {
+      "cluster_id": 1075,
+      "headline": "ভারতীয় নাগরিক রবিউল এবার অফিশিয়াল সিক্রেটস অ্যাক্টের মামলায় ৭ দিনের রিমান্ডে",
+      "first_seen": "2026-10-01T22:10:38.374Z",
+      "last_update": "2026-10-01T22:10:38.376Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T20:50:21.000Z",
+          "kind": "evidence",
+          "claim_id": 208273,
+          "claim_text": "ভারতীয় নাগরিক রবিউল এবার অফিশিয়াল সিক্রেটস অ্যাক্টের মামলায় ৭ দিনের রিমান্ডে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/vhr5erfoll"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:28.704Z",
+          "kind": "claim",
+          "claim_id": 208273,
+          "claim_text": "ভারতীয় নাগরিক রবিউল এবার অফিশিয়াল সিক্রেটস অ্যাক্টের মামলায় ৭ দিনের রিমান্ডে"
+        },
+        {
+          "ts": "2026-10-01T22:47:28.709Z",
+          "kind": "verify",
+          "claim_id": 208273,
+          "claim_text": "ভারতীয় নাগরিক রবিউল এবার অফিশিয়াল সিক্রেটস অ্যাক্টের মামলায় ৭ দিনের রিমান্ডে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1076": {
+      "cluster_id": 1076,
+      "headline": "পার্বত্য চট্টগ্রামে সেনা ক্যাম্প পরিদর্শনে সেনাপ্রধান",
+      "first_seen": "2026-10-01T22:10:38.378Z",
+      "last_update": "2026-10-01T22:10:38.380Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T20:46:24.000Z",
+          "kind": "evidence",
+          "claim_id": 208274,
+          "claim_text": "পার্বত্য চট্টগ্রামে সেনা ক্যাম্প পরিদর্শনে সেনাপ্রধান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/oaxiv9jz8w"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:31.613Z",
+          "kind": "claim",
+          "claim_id": 208274,
+          "claim_text": "পার্বত্য চট্টগ্রামে সেনা ক্যাম্প পরিদর্শনে সেনাপ্রধান"
+        },
+        {
+          "ts": "2026-10-01T22:47:31.619Z",
+          "kind": "verify",
+          "claim_id": 208274,
+          "claim_text": "পার্বত্য চট্টগ্রামে সেনা ক্যাম্প পরিদর্শনে সেনাপ্রধান",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -17454,6 +18329,14 @@
           "headline": "একটি গুপ্ত দল আমাদের নসিহত করছে, তাদের লোকেরা নারী নির্যাতনের সঙ্গে জড়িত: প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
@@ -17484,14 +18367,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জ্বালানি তেলের দাম ইতিহাসে সর্বোচ্চ, লিটারে বৃদ্ধি ২০ টাকা"
-        },
-        {
-          "cluster_id": 166,
-          "slug": "politics-166",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
         }
       ]
     },
@@ -24826,6 +25701,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার"
         }
       ]
     },
@@ -34464,6 +35347,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "খসড়া হুবহু পাস হয়ে গেলেও সরকার আওয়ামী লীগের মতো করে সেটি ব্যবহার করবে না: তথ্য উপদেষ্টা"
+        },
+        {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার"
         }
       ]
     },
@@ -60939,20 +61830,20 @@
           "headline": "পাকিস্তানের বিমান হামলার দাবি করেছে আফগানিস্তান, নারী, শিশুসহ ৯ জন নিহত"
         },
         {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
+        },
+        {
           "cluster_id": 184,
           "slug": "national-184",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
-          "cluster_id": 187,
-          "slug": "politics-187",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
         }
       ]
     },
@@ -62785,20 +63676,20 @@
           "headline": "পাকিস্তানে পুলিশ চেকপোস্টে আত্মঘাতী বোমা হামলা, নিহত ১২"
         },
         {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
+        },
+        {
           "cluster_id": 91,
           "slug": "national-91",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "বিচার চাই না জবাব চাই, আমার ছেলে কী অন্যায় করেছে: অপ্রতীমের মা"
-        },
-        {
-          "cluster_id": 92,
-          "slug": "national-92",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাতে লাখ টাকা দাবি করে বাবাকে ফোন, সকালে মিললো ছেলের লাশ"
         }
       ]
     },
@@ -63376,12 +64267,12 @@
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
-          "cluster_id": 184,
-          "slug": "national-184",
+          "cluster_id": 1012,
+          "slug": "national-1012",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
         }
       ]
     },
@@ -64662,20 +65553,20 @@
           "headline": "বাগেরহাটে শিশুর বস্তাবন্দি গলা কাটা মরদেহ উদ্ধার, সন্দেহভাজনের বাড়িতে আগুন"
         },
         {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
+        },
+        {
           "cluster_id": 91,
           "slug": "national-91",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "বিচার চাই না জবাব চাই, আমার ছেলে কী অন্যায় করেছে: অপ্রতীমের মা"
-        },
-        {
-          "cluster_id": 92,
-          "slug": "national-92",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাতে লাখ টাকা দাবি করে বাবাকে ফোন, সকালে মিললো ছেলের লাশ"
         }
       ]
     },
@@ -79874,6 +80765,14 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার"
         }
       ]
     },
@@ -95973,12 +96872,12 @@
           "headline": "পাকিস্তানের বিমান হামলার দাবি করেছে আফগানিস্তান, নারী, শিশুসহ ৯ জন নিহত"
         },
         {
-          "cluster_id": 317,
-          "slug": "national-317",
+          "cluster_id": 1012,
+          "slug": "national-1012",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলী আফজালের রিহ্যাব সভাপতি পদ শূন্য ঘোষণার সিদ্ধান্ত স্থগিত"
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মিটফোর্ডে পাথরের আঘাতে সোহাগ হত্যা: প্রধান আসামি মহিনের ৬ মাসের জামিন"
         }
       ]
     },
@@ -114187,7 +115086,7 @@
       "cluster_id": 981,
       "headline": "রোনালদোর আইকনিক ‘৭ নম্বর’ জার্সি লিয়াওকে দিলো পর্তুগাল",
       "first_seen": "2026-10-01T13:37:17.188Z",
-      "last_update": "2026-10-01T21:13:45.742Z",
+      "last_update": "2026-10-01T22:10:38.019Z",
       "claim_count": 4,
       "events": [
         {
@@ -116691,7 +117590,7 @@
       "cluster_id": 1014,
       "headline": "Indonesia beat Bangladesh 9-2 in ASEAN Cup",
       "first_seen": "2026-10-01T15:26:20.043Z",
-      "last_update": "2026-10-01T21:13:45.732Z",
+      "last_update": "2026-10-01T22:10:38.007Z",
       "claim_count": 2,
       "events": [
         {
@@ -119019,7 +119918,7 @@
       "cluster_id": 995,
       "headline": "Witnesses detail horror of Tennessee woman’s botched execution: ‘None of it was normal’",
       "first_seen": "2026-10-01T14:28:49.705Z",
-      "last_update": "2026-10-01T21:13:45.739Z",
+      "last_update": "2026-10-01T22:10:38.018Z",
       "claim_count": 3,
       "events": [
         {
@@ -119617,7 +120516,7 @@
       "cluster_id": 995,
       "headline": "Witnesses detail horror of Tennessee woman’s botched execution: ‘None of it was normal’",
       "first_seen": "2026-10-01T14:28:49.705Z",
-      "last_update": "2026-10-01T21:13:45.739Z",
+      "last_update": "2026-10-01T22:10:38.018Z",
       "claim_count": 3,
       "events": [
         {
@@ -126215,6 +127114,14 @@
           "headline": "নানাবাড়ির স্মৃতি রোমন্থন প্রধানমন্ত্রীর"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা"
+        },
+        {
           "cluster_id": 525,
           "slug": "national-525",
           "actor_links": 1,
@@ -126237,6 +127144,390 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "মা তো নেই, এখন আপনাদেরই উচিত আমাকে দেখে রাখা, ফুলগাজীতে প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
+    },
+    "sports-1066": {
+      "cluster_id": 1066,
+      "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+      "first_seen": "2026-10-01T22:10:37.962Z",
+      "last_update": "2026-10-01T22:10:37.973Z",
+      "claim_count": 9,
+      "events": [
+        {
+          "ts": "2026-10-01T11:44:47.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/vtzkpcmum7"
+          }
+        },
+        {
+          "ts": "2026-10-01T11:44:47.000Z",
+          "kind": "evidence",
+          "claim_id": 208249,
+          "claim_text": "বাংলাদেশ–ইন্দোনেশিয়া: এক পরিবর্তন বাংলাদেশের একাদশে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/vtzkpcmum7"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:05:23.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ewvxgshh2h"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:05:23.000Z",
+          "kind": "evidence",
+          "claim_id": 208250,
+          "claim_text": "সাড়ে চার হাজারের বেশি সদস্য নিয়ে পুলিশের স্বতন্ত্র ইউনিট হচ্ছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ewvxgshh2h"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:20:04.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ojdq76uwoy"
+          }
+        },
+        {
+          "ts": "2026-10-01T14:20:04.000Z",
+          "kind": "evidence",
+          "claim_id": 208251,
+          "claim_text": "বিদেশযাত্রায় নারীকে একা দেখলেই ইমিগ্রেশনে কেন এত প্রশ্ন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/ojdq76uwoy"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:21:04.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/9rusbpbaj3"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:21:04.000Z",
+          "kind": "evidence",
+          "claim_id": 208252,
+          "claim_text": "‘নাজা’: গাজায় এআই–চালিত হত্যাকাণ্ডের প্রামাণ্যচিত্র",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/9rusbpbaj3"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:26:33.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/c47epyij8u"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:26:33.000Z",
+          "kind": "evidence",
+          "claim_id": 208253,
+          "claim_text": "মিষ্টির পদত্যাগে শূন্য সংরক্ষিত নারী আসনটিতে কীভাবে হবে উপনির্বাচন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/c47epyij8u"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/hj99poacl7"
+          }
+        },
+        {
+          "ts": "2026-10-01T15:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 208254,
+          "claim_text": "তাই বলে ৯ গোলে হারবে বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/hj99poacl7"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:18:45.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/xu9hhy0kw5"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:18:45.000Z",
+          "kind": "evidence",
+          "claim_id": 208255,
+          "claim_text": "ওয়ানডে বিশ্বকাপে বাংলাদেশের প্রথম প্রতিপক্ষ ইংল্যান্ড, গ্রুপে আর কারা আছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/xu9hhy0kw5"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:21:41.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/l7rgy7vvqp"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:35:07.000Z",
+          "kind": "evidence",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/7i3mk0esb1"
+          }
+        },
+        {
+          "ts": "2026-10-01T16:35:07.000Z",
+          "kind": "evidence",
+          "claim_id": 208256,
+          "claim_text": "৯ গোল হজমের পর বাংলাদেশ কোচ বললেন, উন্নতি রাতারাতি আসে না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/7i3mk0esb1"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.656Z",
+          "kind": "claim",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.667Z",
+          "kind": "claim",
+          "claim_id": 208249,
+          "claim_text": "বাংলাদেশ–ইন্দোনেশিয়া: এক পরিবর্তন বাংলাদেশের একাদশে"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.669Z",
+          "kind": "claim",
+          "claim_id": 208250,
+          "claim_text": "সাড়ে চার হাজারের বেশি সদস্য নিয়ে পুলিশের স্বতন্ত্র ইউনিট হচ্ছে"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.671Z",
+          "kind": "claim",
+          "claim_id": 208251,
+          "claim_text": "বিদেশযাত্রায় নারীকে একা দেখলেই ইমিগ্রেশনে কেন এত প্রশ্ন"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.673Z",
+          "kind": "claim",
+          "claim_id": 208252,
+          "claim_text": "‘নাজা’: গাজায় এআই–চালিত হত্যাকাণ্ডের প্রামাণ্যচিত্র"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.675Z",
+          "kind": "claim",
+          "claim_id": 208253,
+          "claim_text": "মিষ্টির পদত্যাগে শূন্য সংরক্ষিত নারী আসনটিতে কীভাবে হবে উপনির্বাচন"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.676Z",
+          "kind": "claim",
+          "claim_id": 208254,
+          "claim_text": "তাই বলে ৯ গোলে হারবে বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.678Z",
+          "kind": "claim",
+          "claim_id": 208255,
+          "claim_text": "ওয়ানডে বিশ্বকাপে বাংলাদেশের প্রথম প্রতিপক্ষ ইংল্যান্ড, গ্রুপে আর কারা আছে"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.680Z",
+          "kind": "claim",
+          "claim_id": 208256,
+          "claim_text": "৯ গোল হজমের পর বাংলাদেশ কোচ বললেন, উন্নতি রাতারাতি আসে না"
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208248,
+          "claim_text": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208249,
+          "claim_text": "বাংলাদেশ–ইন্দোনেশিয়া: এক পরিবর্তন বাংলাদেশের একাদশে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208250,
+          "claim_text": "সাড়ে চার হাজারের বেশি সদস্য নিয়ে পুলিশের স্বতন্ত্র ইউনিট হচ্ছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208251,
+          "claim_text": "বিদেশযাত্রায় নারীকে একা দেখলেই ইমিগ্রেশনে কেন এত প্রশ্ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208252,
+          "claim_text": "‘নাজা’: গাজায় এআই–চালিত হত্যাকাণ্ডের প্রামাণ্যচিত্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208253,
+          "claim_text": "মিষ্টির পদত্যাগে শূন্য সংরক্ষিত নারী আসনটিতে কীভাবে হবে উপনির্বাচন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208254,
+          "claim_text": "তাই বলে ৯ গোলে হারবে বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208255,
+          "claim_text": "ওয়ানডে বিশ্বকাপে বাংলাদেশের প্রথম প্রতিপক্ষ ইংল্যান্ড, গ্রুপে আর কারা আছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T22:47:02.686Z",
+          "kind": "verify",
+          "claim_id": 208256,
+          "claim_text": "৯ গোল হজমের পর বাংলাদেশ কোচ বললেন, উন্নতি রাতারাতি আসে না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1057,
+          "slug": "sports-1057",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা"
+        },
+        {
+          "cluster_id": 168,
+          "slug": "national-168",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "জানুয়ারিতে হতে পারে ইউনিয়ন পরিষদ নির্বাচন: ইসি মাছউদ"
+        },
+        {
+          "cluster_id": 993,
+          "slug": "politics-993",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "একটি গুপ্ত দল আমাদের নসিহত করছে, তাদের লোকেরা নারী নির্যাতনের সঙ্গে জড়িত: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -126761,6 +128052,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "টানা চার মাস প্রবাসী আয় ৩০০ কোটি ডলারের নিচে, সেপ্টেম্বরে এসেছে ২৭৬ কোটি ডলার"
         }
       ]
     },
