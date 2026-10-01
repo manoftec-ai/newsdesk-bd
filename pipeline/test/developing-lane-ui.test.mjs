@@ -122,16 +122,17 @@ test('the hero slider stays minimal, fast and honest', () => {
   const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
   assert.match(page, /<HeroSlider slides=\{heroSlides\} \/>/, 'the hero is the slider');
   assert.match(slider, /scroll-snap-type:\s*x mandatory/, 'swiping works with zero JS');
-  // 2026-10-01 (user rule): the slider auto-moves. The timer is allowed, but
-  // only with the three brakes: reduced-motion never starts it, and hover /
-  // focus / a hidden tab pause it. 2026-10-01 fix: Astro compiles the script
-  // to type="module", where document.currentScript is null and killed the
-  // whole script on line 1 — the root must be found by query.
+  // 2026-10-01 (user rule): the slider auto-moves, and it must ALWAYS move.
+  // Two earlier brakes silently froze it where nobody could tell why: pausing
+  // on hover (a reader's cursor simply rests on the hero) and refusing to
+  // rotate at all under prefers-reduced-motion. Reduced motion now only
+  // changes HOW it steps (instant cut, no animated scroll).
   assert.match(code, /setInterval\(\(\) => go\(current\(\) \+ 1\), AUTOPLAY_MS\)/, 'auto-advance exists');
-  assert.match(code, /if \(reduce \|\| timer/, 'reduced-motion never starts the timer');
-  assert.match(code, /mouseenter[^]*stop\(\)/, 'hover pauses');
-  assert.match(code, /focusin[^]*stop\(\)/, 'keyboard focus pauses');
+  assert.match(code, /if \(timer \|\| count\(\) < 2\) return;/, 'play() has no reduced-motion veto');
+  assert.doesNotMatch(code, /mouseenter|mouseleave/, 'the pointer never freezes the hero');
+  assert.match(code, /focusin[^]*stop\(\)/, 'keyboard focus pauses (accessibility)');
   assert.match(code, /visibilitychange/, 'a hidden tab pauses');
+  assert.match(code, /behavior: reduce \? "auto" : "smooth"/, 'reduced motion = instant cut, still rotating');
   assert.doesNotMatch(code, /currentScript/, 'no currentScript: null in a module script');
   assert.match(code, /querySelector\("section\[data-hero\]"\)/, 'the root is found by query');
   assert.doesNotMatch(code, /from ["'](react|swiper|embla|keen-slider|flickity)/, 'no carousel dependency');
