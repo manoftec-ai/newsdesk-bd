@@ -6,7 +6,6 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
 import UpdateHistory from "../../components/UpdateHistory.astro";
 import Icon from "../../components/Icon.astro";
-import Giscus from "../../components/Giscus.astro";
 import { cleanAlt } from "../../lib/image-alt.js";
 
 import {
@@ -24,7 +23,6 @@ import {
   formatDateTimeBD,
   formatDateTimeBDShort,
   relatedPosts,
-  adjacentPosts,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
 import { evidenceLabelBn, evidenceWithUrls, corroborationSummary } from "../../lib/evidence-label.js";
@@ -102,7 +100,6 @@ const category = getCategory(post.category);
 const author = getAuthor(post.author);
 const badge = getBadge(post);
 const related = await relatedPosts(post, 6);
-const { prev, next } = await adjacentPosts(post);
 // Inline context links: the two strongest related stories, rendered with their
 // real headlines as anchor text right after the body (interlinking 2026-09-27).
 // Template-level so all 398 existing articles gain in-body internal links on
@@ -383,20 +380,6 @@ const shareLinks = [
           </p>
         )}
 
-        {/* 2026-09-30 developing lane: this story went live on one source while
-            the desk kept looking for a second. Say so, and say what happens
-            next, instead of leaving the reader to guess how firm it is. */}
-        {post.developing && (
-          <p
-            class="uncorroborated-notice mt-2 text-sm font-medium text-muted-foreground"
-            role="note"
-          >
-            এই প্রতিবেদনটি এখনো যাচাই চলছে। প্রথম সূত্রে প্রকাশের পর ডেস্ক কয়েক
-            ঘণ্টা ধরে দ্বিতীয় সূত্র খুঁজছে; নতুন ও অলাদা তথ্য পাওয়া গেলে এই পাতাটি
-            সেই তথ্য যুক্ত করে আপডেট হবে।
-          </p>
-        )}
-
       {post.updates && post.updates.length > 0 && (() => {
         const last = post.updates[post.updates.length - 1];
         return (
@@ -669,27 +652,6 @@ const shareLinks = [
         </div>
       </div>
 
-      <Giscus slug={post.slug} title={post.title} />
-
-      {/* 2026-09-27 interlinking: prev/next crawl path. adjacentPosts existed
-          in lib but was never rendered, so article pages were dead-ends for
-          crawlers beyond the related grid. */}
-      {(prev || next) && (
-        <nav class="mt-6 grid gap-3 border-t border-border/60 pt-4 sm:grid-cols-2" aria-label="আগের ও পরের সংবাদ">
-          {prev ? (
-            <a href={`/article/${prev.slug}`} class="rounded-md border border-border/60 p-3 hover:border-primary" rel="prev">
-              <span class="text-xs text-muted-foreground">← আগের সংবাদ</span>
-              <span class="mt-1 block font-medium leading-snug">{prev.title}</span>
-            </a>
-          ) : <span />}
-          {next ? (
-            <a href={`/article/${next.slug}`} class="rounded-md border border-border/60 p-3 text-right hover:border-primary" rel="next">
-              <span class="text-xs text-muted-foreground">পরের সংবাদ →</span>
-              <span class="mt-1 block font-medium leading-snug">{next.title}</span>
-            </a>
-          ) : <span />}
-        </nav>
-      )}
     </article>
   </div>
 

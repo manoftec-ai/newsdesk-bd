@@ -100,16 +100,37 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
     <!-- Hero slider: the 5 latest stories, swipeable, no autoplay -->
     <HeroSlider slides={heroSlides} />
 
-    <!-- Secondary line: 2x2 text-only mini rows -->
+    <!-- Latest headlines: a titled strip under the hero, each row with its
+         thumbnail on the LEFT (2026-10-01, user request). The .mini-row grid is
+         `auto 1fr`, so the thumb simply becomes the first child again — the
+         CSS was always written for it, the markup had drifted to one column. -->
     {
       secondLine.length > 0 && (
-        <section class="mt-8" aria-label="আরও খবর">
-          <div class="grid gap-x-8 gap-y-4 md:grid-cols-2">
+        <section class="mt-8" aria-labelledby="latest-headlines">
+          <h2 id="latest-headlines" class="mb-2 border-b border-border/60 pb-2 font-serif text-2xl font-bold">
+            সাম্প্রতিক খবর
+          </h2>
+          <div class="grid gap-x-8 md:grid-cols-2">
             {secondLine.map((post) => {
               const author = getAuthor(post.author);
               const badge = getBadge(post);
               return (
-                <div class="mini-row !grid-cols-1">
+                <div class="mini-row">
+                  {post.thumbnail && (
+                    /* Not a link: the headline beside it is the link, and two
+                       links to the same article (one hidden from assistive
+                       tech) would be a duplicate control for screen readers. */
+                    <span class="mini-row-thumb">
+                      <img
+                        src={post.thumbnail}
+                        alt=""
+                        width="176"
+                        height="102"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </span>
+                  )}
                   <div class="mini-row-body">
                     <div class="flex items-center gap-2 text-xs">
                       <VerificationBadge badge={badge} compact />
