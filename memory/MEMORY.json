@@ -1216,6 +1216,27 @@
         "VerificationBadge re-resolved BADGES[badge.key] and discarded the developing wording",
         "instant lane was promoting English wire copy (guardian-world, prothomalo-en) onto a Bangla site"
       ]
+    },
+    {
+      "id": "D133",
+      "date": "2026-10-01",
+      "topic": "\"No new news\": deploy dispatch was 403 all along; developing lane was sorted to the bottom of the homepage",
+      "decision": "Grant actions:write to auto-author.yml and images.yml so their deploy dispatches work, and fail the step loudly on non-2xx. Rank a developing story at 2 (with confirmed) instead of 3, so recency decides. The three BODY_OFF_HEADLINE findings were measured as false positives (Bangla inflection, caption headline) and baselined rather than gated.",
+      "rootCauses": [
+        "deploy.yml dispatch from a workflow needs actions:write; only contents:write was granted, so every dispatch since D129 returned 403 while the step stayed green",
+        "editorialRank put confirmed above partial regardless of age, so all 24 developing stories sorted to positions 395-452 of 452"
+      ],
+      "measured": [
+        "content gate: 0/428 ordinary vs 3/24 developing fail BODY_OFF_HEADLINE, all false positives",
+        "auto-author step 5 takes 44 min of every ~50 min run"
+      ],
+      "files": [
+        ".github/workflows/auto-author.yml",
+        ".github/workflows/images.yml",
+        "site/src/lib/news-data.js",
+        "pipeline/state/content-audit-baseline.json"
+      ],
+      "tests": "pipeline suite 432/432, tests.yml green on 30b0c6fb"
     }
   ],
   "sources": [
@@ -1562,7 +1583,7 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-01",
   "sessionsCount": 95,
   "p0Progress": {
     "P0-10": "done",
