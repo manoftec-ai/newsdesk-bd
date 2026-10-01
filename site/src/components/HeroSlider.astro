@@ -1,14 +1,14 @@
 ---
-// HeroSlider: the top-news carousel. Five latest stories, one viewport wide,
-// swipeable with zero JavaScript (CSS scroll-snap) and buttons/dots as a tiny
-// progressive enhancement.
+// HeroSlider: the top-news carousel. Five latest stories, one viewport wide.
+// It moves on its own every 5 seconds (user asked for auto-move); the motion
+// stops the moment the reader takes over — hover, touch-hold, keyboard focus,
+// or a hidden tab — and never starts at all under prefers-reduced-motion.
 //
-// Deliberately minimal, per the theme rules:
-// - no dependencies, no framework runtime, one inline <script> (~20 lines)
-// - every slide is a plain <a> in the static HTML: crawlable, works with JS
-//   disabled (first slide visible, the rest a scroll away)
-// - no autoplay: motion only happens when the reader asks for it, and
-//   `prefers-reduced-motion` gets instant jumps instead of smooth scrolling
+// Still minimal, per the theme rules:
+// - swiping itself is pure CSS scroll-snap (works with JS disabled; every
+//   slide is a plain crawlable <a>)
+// - one inline <script>, no dependencies, no framework runtime
+// - arrows sit ON the slider (overlaid left/right), not above or below it
 // - LCP-safe: only slide 0 is eager/fetchpriority-high; the rest lazy-load,
 //   all with width/height inside a fixed-aspect box (no layout shift)
 import VerificationBadge from "./VerificationBadge.astro";
@@ -28,7 +28,7 @@ const items = slides.slice(0, 5);
 
 {
   items.length > 0 && (
-    <section class="mt-8" aria-label="সর্বশেষ খবর" aria-roledescription="carousel">
+    <section class="hero-wrap mt-8" aria-label="সর্বশেষ খবর" aria-roledescription="carousel">
       <div class="hero-track" data-hero-track tabindex="0" role="group" aria-label="স্লাইড দেখতে স্ক্রল বা তীর চিহ্ন ব্যবহার করুন">
         {items.map((p, i) => {
           const badge = getBadge(p);
@@ -82,32 +82,23 @@ const items = slides.slice(0, 5);
         })}
       </div>
       {items.length > 1 && (
-        <div class="hero-nav" role="group" aria-label="স্লাইড নিয়ন্ত্রণ">
-          <button type="button" class="hero-arrow" data-hero-prev aria-label="আগের খবর">
+        <>
+          <button type="button" class="hero-arrow hero-arrow-left" data-hero-prev aria-label="আগের খবর">
             ‹
           </button>
-          <div class="hero-dots" role="group" aria-label="স্লাইড নির্বাচন">
-            {items.map((p, i) => (
-              <button
-                type="button"
-                class="hero-dot"
-                data-hero-dot={i}
-                aria-label={`স্লাইড ${i + 1}: ${p.title}`}
-                aria-current={i === 0 ? "true" : "false"}
-              />
-            ))}
-          </div>
-          <button type="button" class="hero-arrow" data-hero-next aria-label="পরের খবর">
+          <button type="button" class="hero-arrow hero-arrow-right" data-hero-next aria-label="পরের খবর">
             ›
           </button>
-        </div>
+        </>
       )}
       <script>
-        // Buttons + dots + arrow keys. The carousel itself is pure CSS
-        // scroll-snap, so this whole block is optional enhancement.
+        // Auto-advance every 5s, but only while the reader is NOT engaged:
+        // hover, touch, focus, or a hidden tab all pause it. Reduced-motion
+        // users never get auto-motion at all. Buttons restart the clock so a
+        // manual tap is never immediately overridden.
+        const AUTOPLAY_MS = 5000;
         const root = document.currentScript.parentElement;
         const track = root.querySelector("[data-hero-track]");
-        const dots = [...root.querySelectorAll("[data-hero-dot]")];
         const prev = root.querySelector("[data-hero-prev]");
         const next = root.querySelector("[data-hero-next]");
         const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -117,25 +108,36 @@ const items = slides.slice(0, 5);
           const j = (i + count()) % count();
           track.children[j].scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest", inline: "start" });
         };
-        const paint = () => {
-          const c = current();
-          dots.forEach((d, i) => d.setAttribute("aria-current", String(i === c)));
+        let timer = null;
+        const play = () => {
+          if (reduce || timer || count() < 2) return;
+          timer = setInterval(() => go(current() + 1), AUTOPLAY_MS);
         };
-        prev?.addEventListener("click", () => go(current() - 1));
-        next?.addEventListener("click", () => go(current() + 1));
-        dots.forEach((d, i) => d.addEventListener("click", () => go(i)));
-        track.addEventListener("scroll", () => requestAnimationFrame(paint), { passive: true });
+        const stop = () => {
+          if (timer) { clearInterval(timer); timer = null; }
+        };
+        const nudge = (i) => { stop(); go(i); play(); };
+        prev?.addEventListener("click", () => nudge(current() - 1));
+        next?.addEventListener("click", () => nudge(current() + 1));
+        root.addEventListener("mouseenter", stop);
+        root.addEventListener("mouseleave", play);
+        track.addEventListener("focusin", stop);
+        track.addEventListener("focusout", play);
+        document.addEventListener("visibilitychange", () => (document.hidden ? stop() : play()));
         track.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowLeft") { e.preventDefault(); go(current() - 1); }
-          if (e.key === "ArrowRight") { e.preventDefault(); go(current() + 1); }
+          if (e.key === "ArrowLeft") { e.preventDefault(); nudge(current() - 1); }
+          if (e.key === "ArrowRight") { e.preventDefault(); nudge(current() + 1); }
         });
-        paint();
+        play();
       </script>
     </section>
   )
 }
 
 <style>
+  .hero-wrap {
+    position: relative;
+  }
   .hero-track {
     display: flex;
     overflow-x: auto;
@@ -159,33 +161,32 @@ const items = slides.slice(0, 5);
       scroll-behavior: smooth;
     }
   }
-  .hero-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 0.75rem;
-  }
   .hero-arrow {
-    width: 2rem;
-    height: 2rem;
+    position: absolute;
+    /* ~image-center: the slide is a 16/9 (21/9 on desktop) photo plus a text
+       block below, so 50% would land on the headline. This keeps the arrows
+       over the photo at every breakpoint without any measuring code. */
+    top: 32%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 9999px;
-    border: 1px solid var(--border, #e5e5e5);
-    font-size: 1.1rem;
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-size: 1.4rem;
     line-height: 1;
+    opacity: 0.8;
+    z-index: 1;
   }
-  .hero-dots {
-    display: flex;
-    gap: 0.5rem;
-  }
-  .hero-dot {
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 9999px;
-    background: currentColor;
-    opacity: 0.3;
-  }
-  .hero-dot[aria-current="true"] {
+  .hero-arrow:hover,
+  .hero-arrow:focus-visible {
     opacity: 1;
+  }
+  .hero-arrow-left {
+    left: 0.75rem;
+  }
+  .hero-arrow-right {
+    right: 0.75rem;
   }
 </style>
