@@ -78,27 +78,54 @@ test('the developing chip has its own colour', () => {
   assert.match(css, /\.badge--developing \{/);
 });
 
-test(`a developing story is not buried under older confirmed news`, async () => {
-  // 2026-10-01: with developing at rank 3 (below `confirmed`), all 24 developing
-  // stories sorted to positions 395-452 of 452 and the homepage looked dead
-  // while the stories were live. The lane exists to surface a first sighting,
-  // so it must compete with confirmed and let recency decide.
+test(`the homepage is a clock: newest first, badge never decides`, async () => {
+  // 2026-10-01 (user rule): latest news is always on top. Rank promotion
+  // (featured/breaking/confirmed-first) buried 24 live developing stories at
+  // positions 395-452 of 452, and the site read as dead. Every story now
+  // competes on recency alone; only `suspect` stays pinned at the bottom.
   const src = read('src/lib/news-data.js');
   const start = src.indexOf('export const BADGES = {');
   const g = src.indexOf('export const getBadge =');
   const gEnd = src.indexOf('\n};', src.indexOf('return { key, ...meta };')) + 3;
-  const rStart = src.indexOf('const editorialRank = (post) => {');
-  const rEnd = src.indexOf('\n};', src.indexOf('return 4;')) + 3;
-  const code = (src.slice(start, g) + src.slice(g, gEnd) + src.slice(rStart, rEnd))
+  const oStart = src.indexOf('export const editorialOrder =');
+  const oEnd = src.indexOf('\n  });', src.indexOf('suspectB ||')) + 5;
+  assert.ok(oStart > 0 && oEnd > oStart, 'editorialOrder locatable');
+  const code = (src.slice(start, g) + src.slice(g, gEnd) + src.slice(oStart, oEnd))
     .replaceAll('export const', 'const');
-  const { editorialRank } = await import(`data:text/javascript,${encodeURIComponent(`${code}\nexport { editorialRank };`)}`);
-  const post = (over) => ({ verification: { badge: 'confirmed' }, ...over });
-  const devRank = editorialRank(post({ developing: true, verification: { badge: 'partial' } }));
-  const confirmedRank = editorialRank(post({}));
-  const oldConfirmed = editorialRank(post({ verification: { badge: 'confirmed' } }));
-  assert.equal(devRank, confirmedRank, `developing competes with confirmed, recency decides`);
-  assert.ok(devRank < editorialRank(post({ verification: { badge: 'partial' } })), `still ahead of ordinary single-source`);
-  assert.ok(devRank < editorialRank(post({ verification: { badge: 'suspect' } })), `suspect stays last`);
-  assert.equal(oldConfirmed, devRank);
-  assert.match(src, /if \(post\.developing\) return 2;/);
+  const fixtures = [
+    { slug: 'old-confirmed', verification: { badge: 'confirmed' }, ts: Date.parse('2026-09-29T10:00:00Z') },
+    { slug: 'new-developing', verification: { badge: 'partial' }, developing: true, ts: Date.parse('2026-10-01T08:00:00Z') },
+    { slug: 'new-verified', verification: { badge: 'verified' }, ts: Date.parse('2026-10-01T07:00:00Z') },
+    { slug: 'new-suspect', verification: { badge: 'suspect' }, ts: Date.parse('2026-10-01T09:00:00Z') },
+  ];
+  const stub = `const posts = async () => ${JSON.stringify(fixtures)};`;
+  const { editorialOrder } = await import(`data:text/javascript,${encodeURIComponent(`${code}\n${stub}\nexport { editorialOrder };`)}`);
+  const order = (await editorialOrder()).map((p) => p.slug);
+  assert.deepEqual(order, ['new-developing', 'new-verified', 'old-confirmed', 'new-suspect'],
+    'newest first regardless of badge; even a brand-new suspect stays last');
+});
+
+test('the hero slider stays minimal, fast and honest', () => {
+  // 2026-10-01: the hero shows the 5 latest stories as a swipeable strip.
+  // The theme rules demand minimal JS, no autoplay, crawlable content and no
+  // layout shift — this test pins those properties so the slider cannot
+  // silently grow into a library, a video wall, or a JS-only widget.
+  const slider = read('src/components/HeroSlider.astro');
+  const page = read('src/pages/index.astro');
+  // comments talk about autoplay (saying there is none); the check is about code.
+  const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  assert.match(page, /<HeroSlider slides=\{heroSlides\} \/>/, 'the hero is the slider');
+  assert.match(slider, /scroll-snap-type:\s*x mandatory/, 'swiping works with zero JS');
+  assert.doesNotMatch(code, /setInterval\s*\(|setTimeout\s*\(|autoplay\s*[:=]/i, 'no autoplay, no timers');
+  assert.doesNotMatch(slider, /from ["'](react|swiper|embla|keen-slider|flickity)/, 'no carousel dependency');
+  assert.match(slider, /loading=\{i === 0 \? "eager" : "lazy"\}/, 'only slide 0 can be LCP');
+  assert.match(slider, /width="1200"[\s\S]{0,40}height="630"/, 'image dimensions are fixed (no layout shift)');
+  assert.match(slider, /prefers-reduced-motion/, 'reduced motion gets instant jumps');
+  assert.match(slider, /aria-roledescription="carousel"/, 'announced as a carousel');
+  assert.match(slider, /aria-roledescription="slide"/, 'each slide is announced');
+  assert.match(slider, /data-hero-prev[^]*aria-label="আগের খবর"/, 'prev button is labelled');
+  assert.match(slider, /data-hero-next[^]*aria-label="পরের খবর"/, 'next button is labelled');
+  assert.match(slider, /tabindex="0"/, 'the track is keyboard-focusable');
+  assert.match(slider, /ArrowLeft[\s\S]{0,80}ArrowRight/, 'arrow keys move slides');
+  assert.match(slider, /<a href=\{`\/article\/\$\{p\.slug\}`\}/, 'slides are real crawlable links');
 });

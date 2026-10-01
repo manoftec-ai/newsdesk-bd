@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
-import { cleanAlt } from "../lib/image-alt.js";
+import HeroSlider from "../components/HeroSlider.astro";
 import BreakingBar from "../components/BreakingBar.astro";
 import VerificationBadge from "../components/VerificationBadge.astro";
 
@@ -9,33 +9,27 @@ import {
   SITE,
   CONTACT,
   categories,
-  featuredPost,
-  sortedPosts,
   editorialOrder,
   postsByCategory,
-  getCategory,
   getBadge,
   getAuthor,
   formatDateTimeBDShort,
-  formatDateBD,
-  hasTimeComponent,
 } from "../lib/news-data.js";
 
 const now = new Date();
-const lead = await featuredPost();
 const all = await editorialOrder();
-const rest = all.filter((p) => p.slug !== lead?.slug);
+// 2026-10-01: the hero is a slider of the 5 latest stories, so the top of the
+// page always carries several fresh headlines instead of one.
+const heroSlides = all.slice(0, 5);
+const heroSlugs = new Set(heroSlides.map((p) => p.slug));
+const rest = all.filter((p) => !heroSlugs.has(p.slug));
 const secondLine = rest.slice(0, 4);
 const tickerItems = all.slice(0, 3);
 
 const shownSlugs = new Set([
-  lead?.slug,
+  ...heroSlugs,
   ...secondLine.map((p) => p.slug),
-].filter(Boolean));
-
-const leadBadge = lead ? getBadge(lead) : null;
-const leadCategory = lead ? getCategory(lead.category) : null;
-const leadAuthor = lead ? getAuthor(lead.author) : null;
+]);
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -103,62 +97,8 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
   {tickerItems.length > 0 && <BreakingBar items={tickerItems} />}
 
   <div class="mx-auto max-w-6xl px-5">
-    <!-- Lead story -->
-    {
-      lead && (
-        <section class="mt-8" aria-label="আজকের প্রধান খবর">
-          <a href={`/article/${lead.slug}`} class="lead-article block">
-            {lead.thumbnail && (
-              <div class="aspect-[16/9] overflow-hidden bg-muted md:aspect-[21/9]">
-                <img
-                  src={lead.thumbnail}
-                  alt={cleanAlt(lead.thumbnailAlt)}
-                  width="1200"
-                  height="630"
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="async"
-                  class="h-full w-full object-cover"
-                />
-              </div>
-            )}
-            <div class="lead-article-content">
-              <div class="flex flex-wrap items-center gap-2 text-xs">
-                {leadCategory && (
-                  <span class="category-pill" style={`background-color:${leadCategory.color}`}>
-                    {leadCategory.name}
-                  </span>
-                )}
-                <VerificationBadge badge={leadBadge} />
-                {/* 2026-09-27: the lead card was the only date on the page printed
-                    as raw ISO - `2026-09-26` - while all 25 others used the Bengali
-                    format. Same defect the n14 audit rule exists to catch, in the
-                    one place a reader always looks first. */}
-                <time datetime={lead.date} class="text-muted-foreground">
-                  {hasTimeComponent(lead.date)
-                    ? formatDateTimeBDShort(new Date(lead.date).getTime())
-                    : formatDateBD(lead.date)}
-                </time>
-                {leadAuthor && (
-                  <span class="flex items-center gap-1 text-muted-foreground">
-                    <span aria-hidden="true">✍️</span>
-                    {leadAuthor.shortName || leadAuthor.name}
-                  </span>
-                )}
-              </div>
-              <h2>{lead.title}</h2>
-              {/* 2026-09-27: no excerpt under the main headline. The user asked
-                  for this twice - it is the lead story, so the excerpt only
-                  repeats the headline. When there is no lead, the ordinary cards
-                  below still carry theirs. */}
-              <div class="mt-4 text-sm font-medium text-primary">
-                {lead.readingTime} মিনিট পাঠ →
-              </div>
-            </div>
-          </a>
-        </section>
-      )
-    }
+    <!-- Hero slider: the 5 latest stories, swipeable, no autoplay -->
+    <HeroSlider slides={heroSlides} />
 
     <!-- Secondary line: 2x2 text-only mini rows -->
     {

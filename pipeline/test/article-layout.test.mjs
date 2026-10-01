@@ -183,22 +183,25 @@ test('no date is printed as raw ISO while the rest use the Bengali format', () =
   // the Bengali format. That is the same mixed-format defect the pipeline's own
   // n14 audit rule exists to catch, sitting in the first thing a reader sees.
   // the ISO string is legitimate inside the datetime ATTRIBUTE, so match it as
-  // element text only - a bare >{lead.date}< or on its own line
+  // element text only - a bare >{p.date}< or on its own line.
+  // 2026-10-01: the hero card moved from index.astro into HeroSlider.astro;
+  // the guard follows the markup.
+  const hero = readFileSync(join(SITE, 'components/HeroSlider.astro'), 'utf8');
   assert.ok(
-    !/>\s*\{lead\.date\}\s*</.test(index),
-    'the lead card renders the raw ISO date as text instead of the formatted one',
+    !/>\s*\{p\.date\}\s*</.test(hero),
+    'the hero card renders the raw ISO date as text instead of the formatted one',
   );
   assert.ok(
-    !/^\s*\{lead\.date\}\s*$/mu.test(index),
-    'the lead card renders the raw ISO date as text on its own line',
+    !/^\s*\{p\.date\}\s*$/mu.test(hero),
+    'the hero card renders the raw ISO date as text on its own line',
   );
   assert.ok(
-    /formatDateTimeBDShort\(/.test(index),
-    'the lead card lost its date formatter',
+    /formatDateTimeBDShort\(/.test(hero),
+    'the hero card lost its date formatter',
   );
   // the machine-readable attribute must stay ISO - that is correct there
   assert.ok(
-    /<time datetime=\{lead\.date\}/.test(index),
+    /<time datetime=\{p\.date\}/.test(hero),
     'the <time datetime> attribute should remain the ISO value for machines',
   );
 });
@@ -225,17 +228,20 @@ test('times are Bangladesh time, and a date with no time gets no time', () => {
 
   // 2026-09-27: a date-only string is parsed by new Date() as UTC MIDNIGHT, so
   // rendering it with a time formatter produced "২৬ সেপ্টেম্বর · ৬:০০ AM" - a
-  // precise time the story never had. The lead card must branch instead.
+  // precise time the story never had. The hero card must branch instead.
+  // 2026-10-01: the hero card moved from index.astro into HeroSlider.astro;
+  // the guard follows the markup.
+  const hero = readFileSync(join(SITE, 'components/HeroSlider.astro'), 'utf8');
   assert.ok(
-    /hasTimeComponent/.test(index),
-    'the lead card no longer checks whether the date carries a real time',
+    /hasTimeComponent/.test(hero),
+    'the hero card no longer checks whether the date carries a real time',
   );
   assert.ok(
-    /formatDateBD\(lead\.date\)/.test(index),
-    'a date-only lead date is not rendered through the date-only formatter',
+    /formatDateBD\(p\.date\)/.test(hero),
+    'a date-only hero date is not rendered through the date-only formatter',
   );
   // the machine-readable attribute must still be the raw value
-  assert.ok(/<time datetime=\{lead\.date\}/.test(index), 'the <time datetime> attribute must stay raw');
+  assert.ok(/<time datetime=\{p\.date\}/.test(hero), 'the <time datetime> attribute must stay raw');
 });
 
 test('every evidence entry links to its actual source', () => {
@@ -302,4 +308,37 @@ test('every astro template has balanced element tags', () => {
       assert.equal(open, close, `${file}: <${tag}> opened ${open} times, closed ${close}`);
     }
   }
+});
+
+test('every component used in a template is imported by it', () => {
+  // 2026-10-01: the hero slider edit removed VerificationBadge's import from
+  // index.astro while a usage remained below. Astro compiles fine and only the
+  // production build fails (ReferenceError at prerender), so nothing local
+  // catches it. This test does: capitalized tags must resolve to an import.
+  const BUILTINS = new Set(['Fragment']);
+  const problems = [];
+  for (const file of templates) {
+    const src = readFileSync(file, 'utf8');
+    const used = new Set([...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]));
+    const imported = new Set();
+    for (const m of src.matchAll(/import\s+(?:([A-Za-z0-9_]+)\s*,?\s*)?(?:\{([^}]*)\})?\s*from\s*["'][^"']+["']/g)) {
+      if (m[1]) imported.add(m[1]);
+      for (const n of (m[2] ?? '').split(',')) {
+        const name = n.trim().split(/\s+as\s+/).pop().trim();
+        if (name) imported.add(name);
+      }
+    }
+    // <Content /> comes from `const { Content } = await render(entry)`, not an
+    // import — a real binding all the same, so it counts.
+    for (const m of src.matchAll(/const\s*\{\s*([^}]*?)\s*\}\s*=\s*await\s+\w+\(/g)) {
+      for (const n of m[1].split(',')) {
+        const name = n.trim().split(/\s*[:=]\s*/)[0].trim();
+        if (name) imported.add(name);
+      }
+    }
+    for (const name of used) {
+      if (!imported.has(name) && !BUILTINS.has(name)) problems.push(`${file.split('/site/src/')[1]} uses <${name}> without importing it`);
+    }
+  }
+  assert.deepEqual(problems, [], `unimported components:\n${problems.join('\n')}`);
 });
