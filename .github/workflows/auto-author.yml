@@ -193,18 +193,58 @@ jobs:
           # files while we author (e.g. a parallel session authoring the same
           # brief). Non-conflicting files merge in; on add/add or content
           # conflicts keep the remote (already-published) version.
-          git fetch origin main
-          if git merge --ff-only origin/main 2>/dev/null; then
-            :
-          elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
-            :
-          else
-            echo "merge failed — abandoning push; batch re-authored on a later run"
-            git merge --abort 2>/dev/null || true
+          #
+          # 2026-10-01: one attempt was the reason the site went quiet for four
+          # hours. Run 1550 wrote SIX approved stories, then found main had moved
+          # (31e71a3c -> 40b9455a) while it worked, failed to merge, and threw
+          # the whole batch away with "merge failed — abandoning push". Two
+          # causes, both fixed here:
+          #   a) a single attempt loses any race — pipeline.yml already retries
+          #      3x for exactly this, auto-author never got that fix (D127);
+          #   b) `git merge -X theirs` does NOT resolve add/add conflicts. When
+          #      another writer published the same slug, git refuses the merge
+          #      outright and -X cannot help, so the batch always died. The
+          #      conflicted paths are now resolved explicitly: the remote copy
+          #      wins, because it is already published and must never be
+          #      overwritten by a re-authored version.
+          pushed=""
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if git merge --ff-only origin/main 2>/dev/null; then
+              :
+            elif git merge --no-edit -X theirs origin/main 2>/dev/null; then
+              :
+            else
+              conflicts=$(git diff --name-only --diff-filter=U)
+              if [ -n "$conflicts" ]; then
+                echo "add/add conflict on: $conflicts — keeping the published (remote) file"
+                git checkout --theirs -- $conflicts
+                git add -- $conflicts
+                if git commit --no-edit; then
+                  :
+                else
+                  echo "merge failed (attempt $attempt of 3)"
+                  git merge --abort 2>/dev/null || true
+                  sleep 20
+                  continue
+                fi
+              else
+                echo "merge failed (attempt $attempt of 3)"
+                git merge --abort 2>/dev/null || true
+                sleep 20
+                continue
+              fi
+            fi
+            if git push origin HEAD:main; then pushed=1; break; fi
+            echo "push raced (attempt $attempt of 3); re-merging"
+            sleep 20
+          done
+          if [ -z "$pushed" ]; then
+            echo "could not land the batch after 3 attempts — it will be re-authored next run"
             echo "published=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git push origin HEAD:main && echo "published=true" >> "$GITHUB_OUTPUT"
+          echo "published=true" >> "$GITHUB_OUTPUT"
 
       # 2026-09-29: bot pushes made with GITHUB_TOKEN do not trigger
       # push-workflows (GitHub restriction), and the deploy schedule drops
