@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 905,
+    "storyCount": 915,
     "kinds": [
       "claim",
       "evidence",
@@ -1505,7 +1505,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -2074,15 +2074,15 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
-          "headline": "ঢাকা কেন্দ্রীয় কারাগারের এক বন্দীর মৃত্যু"
+          "headline": "চিকিৎসাধীন অবস্থায় কারাবন্দির মৃত্যু"
         },
         {
-          "cluster_id": 84,
-          "slug": "national-84",
+          "cluster_id": 941,
+          "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -2661,7 +2661,7 @@
       "cluster_id": 911,
       "headline": "বৃহস্পতিবার টানা ৬ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়",
       "first_seen": "2026-10-01T06:13:58.065Z",
-      "last_update": "2026-10-01T08:51:28.101Z",
+      "last_update": "2026-10-01T09:38:25.530Z",
       "claim_count": 2,
       "events": [
         {
@@ -2828,7 +2828,7 @@
       "cluster_id": 942,
       "headline": "ফুচকা বিক্রেতা, রিকশাচালক, ক্ষুদ্র ব্যবসায়ী সবাইকে বাংলা কিউআরের আওতায় আনা হবে: অর্থমন্ত্রী",
       "first_seen": "2026-10-01T08:51:28.074Z",
-      "last_update": "2026-10-01T08:51:28.079Z",
+      "last_update": "2026-10-01T09:38:25.374Z",
       "claim_count": 4,
       "events": [
         {
@@ -3007,6 +3007,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 944,
+          "slug": "national-944",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 4,
+          "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি"
+        },
+        {
           "cluster_id": 381,
           "slug": "national-381",
           "actor_links": 0,
@@ -3021,16 +3029,47 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "জাতিসংঘে সাধারণ পরিষদের সভাপতির দপ্তরে লিগ্যাল অফিসার হলেন জাইমা"
-        },
-        {
-          "cluster_id": 529,
-          "slug": "national-529",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "সৌদির তেল বন্দর পাহারায় সেনা পাঠাচ্ছে ফ্রান্স"
         }
       ]
+    },
+    "economy-960": {
+      "cluster_id": 960,
+      "headline": "ব্যস্ত জীবনে এক কাপ স্বস্তি",
+      "first_seen": "2026-10-01T09:38:26.274Z",
+      "last_update": "2026-10-01T09:38:26.277Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T09:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191531,
+          "claim_text": "ব্যস্ত জীবনে এক কাপ স্বস্তি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/q31ul4nzzw"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:27:56.266Z",
+          "kind": "claim",
+          "claim_id": 191531,
+          "claim_text": "ব্যস্ত জীবনে এক কাপ স্বস্তি"
+        },
+        {
+          "ts": "2026-10-01T12:27:56.271Z",
+          "kind": "verify",
+          "claim_id": 191531,
+          "claim_text": "ব্যস্ত জীবনে এক কাপ স্বস্তি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "entertainment-321": {
       "cluster_id": 321,
@@ -3689,7 +3728,7 @@
       "cluster_id": 945,
       "headline": "টম ক্রুজের ‘ডিগার’ থেকে ‘স্ট্রিট ফাইটার’, অক্টোবরে আসছে ৬ সিনেমা",
       "first_seen": "2026-10-01T08:51:28.090Z",
-      "last_update": "2026-10-01T08:51:28.093Z",
+      "last_update": "2026-10-01T09:38:25.431Z",
       "claim_count": 2,
       "events": [
         {
@@ -5200,20 +5239,20 @@
           "headline": "ফুচকা বিক্রেতা, রিকশাচালক, ক্ষুদ্র ব্যবসায়ী সবাইকে বাংলা কিউআরের আওতায় আনা হবে: অর্থমন্ত্রী"
         },
         {
+          "cluster_id": 944,
+          "slug": "national-944",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি"
+        },
+        {
           "cluster_id": 186,
           "slug": "national-186",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "অপ্রতিম হত্যাকাণ্ড: যে কারণে ৪ আসামির মধ্যে ২ জন যাচ্ছে সংশোধনাগারে"
-        },
-        {
-          "cluster_id": 211,
-          "slug": "national-211",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
         }
       ]
     },
@@ -5776,6 +5815,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 182,
           "slug": "national-182",
           "actor_links": 0,
@@ -5798,14 +5845,6 @@
           "source_links": 2,
           "claim_count": 8,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 256,
-          "slug": "national-256",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পদত্যাগ করলেন ডেপুটি অ্যাটর্নি জেনারেল বেলায়েত হোসেন"
         }
       ]
     },
@@ -6100,7 +6139,7 @@
       "cluster_id": 915,
       "headline": "সময় এসে গেছে, হয়ত ইরানকে উড়িয়ে দিতে হবে: ট্রাম্প",
       "first_seen": "2026-10-01T06:13:58.081Z",
-      "last_update": "2026-10-01T08:51:28.107Z",
+      "last_update": "2026-10-01T09:38:25.536Z",
       "claim_count": 2,
       "events": [
         {
@@ -13861,6 +13900,14 @@
           "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 6,
+          "claim_count": 10,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -13891,14 +13938,6 @@
           "source_links": 4,
           "claim_count": 5,
           "headline": "জ্বালানি তেলের দাম ইতিহাসে সর্বোচ্চ, লিটারে বৃদ্ধি ২০ টাকা"
-        },
-        {
-          "cluster_id": 376,
-          "slug": "politics-376",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "গাজী নজরুলের এমপি পদ থাকবে কি না, যা জানালেন স্পিকার"
         }
       ]
     },
@@ -15307,7 +15346,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 4,
+          "claim_count": 8,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -18829,6 +18868,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 7,
+          "claim_count": 14,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -18851,14 +18898,6 @@
           "source_links": 5,
           "claim_count": 7,
           "headline": "গাজী নজরুলের সঙ্গে মরিয়মের পরিবারের আপসনামা দাখিল, পিপি বললেন আদালত আমলে নেননি"
-        },
-        {
-          "cluster_id": 941,
-          "slug": "politics-941",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 8,
-          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -19269,6 +19308,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -19291,14 +19338,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
-        },
-        {
-          "cluster_id": 252,
-          "slug": "national-252",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         }
       ]
     },
@@ -22022,6 +22061,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 7,
+          "claim_count": 14,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -22044,14 +22091,6 @@
           "source_links": 5,
           "claim_count": 7,
           "headline": "গাজী নজরুলের সঙ্গে মরিয়মের পরিবারের আপসনামা দাখিল, পিপি বললেন আদালত আমলে নেননি"
-        },
-        {
-          "cluster_id": 941,
-          "slug": "politics-941",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 8,
-          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -26188,7 +26227,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 7,
+          "claim_count": 10,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -28238,8 +28277,8 @@
           "cluster_id": 941,
           "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 6,
-          "claim_count": 9,
+          "source_links": 8,
+          "claim_count": 15,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -29071,6 +29110,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 183,
           "slug": "national-183",
           "actor_links": 0,
@@ -29101,14 +29148,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
-        },
-        {
-          "cluster_id": 211,
-          "slug": "national-211",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
         }
       ]
     },
@@ -29951,7 +29990,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -30522,6 +30561,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 5,
+          "claim_count": 10,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -30552,14 +30599,6 @@
           "source_links": 4,
           "claim_count": 5,
           "headline": "রাড্ডার ঘটনায় সংরক্ষিত নারী এমপির বিরুদ্ধে কঠোর সিদ্ধান্ত নিতে পারে বিএনপি"
-        },
-        {
-          "cluster_id": 941,
-          "slug": "politics-941",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 7,
-          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -31378,7 +31417,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 7,
+          "claim_count": 8,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -32096,12 +32135,12 @@
           "headline": "গাজী নজরুলের সঙ্গে মরিয়মের পরিবারের আপসনামা দাখিল, পিপি বললেন আদালত আমলে নেননি"
         },
         {
-          "cluster_id": 85,
-          "slug": "national-85",
+          "cluster_id": 941,
+          "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -32428,7 +32467,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 7,
+          "claim_count": 10,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -33840,6 +33879,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 9,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -33854,14 +33901,6 @@
           "source_links": 3,
           "claim_count": 5,
           "headline": "ক্যান্টনমেন্ট থানার সাবেক ওসি রাকিবুল হাসান রাষ্ট্রদ্রোহ মামলায় গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 794,
-          "slug": "national-794",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "মরিয়মের পরিবারের সঙ্গে এমপি গাজী নজরুলের আপস"
         }
       ]
     },
@@ -34017,28 +34056,28 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
+          "cluster_id": 944,
+          "slug": "national-944",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি"
+        },
+        {
           "cluster_id": 183,
           "slug": "national-183",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "অন্য দেশের তুলনায় বাংলাদেশে জ্বালানি তেলের দাম অনেক কম: রিজভী"
-        },
-        {
-          "cluster_id": 184,
-          "slug": "national-184",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
-          "cluster_id": 187,
-          "slug": "politics-187",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
         }
       ]
     },
@@ -35920,7 +35959,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -39141,7 +39180,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -40987,7 +41026,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -41789,20 +41828,20 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 84,
           "slug": "national-84",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
-        },
-        {
-          "cluster_id": 85,
-          "slug": "national-85",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         }
       ]
     },
@@ -43823,6 +43862,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কক্সবাজারের হোটেল কক্ষে নারীর গলা কাটা লাশ, অক্ষত অবস্থায় উদ্ধার শিশু"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -44393,6 +44440,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -44423,14 +44478,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
-        },
-        {
-          "cluster_id": 184,
-          "slug": "national-184",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
         }
       ]
     },
@@ -47056,20 +47103,20 @@
           "headline": "ফুচকা বিক্রেতা, রিকশাচালক, ক্ষুদ্র ব্যবসায়ী সবাইকে বাংলা কিউআরের আওতায় আনা হবে: অর্থমন্ত্রী"
         },
         {
+          "cluster_id": 944,
+          "slug": "national-944",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি"
+        },
+        {
           "cluster_id": 186,
           "slug": "national-186",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "অপ্রতিম হত্যাকাণ্ড: যে কারণে ৪ আসামির মধ্যে ২ জন যাচ্ছে সংশোধনাগারে"
-        },
-        {
-          "cluster_id": 211,
-          "slug": "national-211",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
         }
       ]
     },
@@ -49416,6 +49463,14 @@
       ],
       "related": [
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 5,
+          "claim_count": 11,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -49454,14 +49509,6 @@
           "source_links": 4,
           "claim_count": 8,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 529,
-          "slug": "national-529",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "সৌদির তেল বন্দর পাহারায় সেনা পাঠাচ্ছে ফ্রান্স"
         }
       ]
     },
@@ -52446,12 +52493,12 @@
           "headline": "ফুচকা বিক্রেতা, রিকশাচালক, ক্ষুদ্র ব্যবসায়ী সবাইকে বাংলা কিউআরের আওতায় আনা হবে: অর্থমন্ত্রী"
         },
         {
-          "cluster_id": 187,
-          "slug": "politics-187",
+          "cluster_id": 944,
+          "slug": "national-944",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি"
         }
       ]
     },
@@ -57432,20 +57479,20 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 184,
           "slug": "national-184",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
-          "cluster_id": 197,
-          "slug": "national-197",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
         }
       ]
     },
@@ -64478,6 +64525,14 @@
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 162,
           "slug": "national-162",
           "actor_links": 0,
@@ -64508,14 +64563,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 419,
-          "slug": "national-419",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
         }
       ]
     },
@@ -75072,7 +75119,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -76369,7 +76416,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 6,
+          "claim_count": 8,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -77203,6 +77250,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -77217,14 +77272,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "দিল্লিতে পরবর্তী হাইকমিশনার হচ্ছেন পররাষ্ট্র সচিব আসাদ আলম সিয়াম"
-        },
-        {
-          "cluster_id": 332,
-          "slug": "national-332",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
         }
       ]
     },
@@ -83505,6 +83552,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কক্সবাজারের হোটেল কক্ষে নারীর গলা কাটা লাশ, অক্ষত অবস্থায় উদ্ধার শিশু"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -85569,12 +85624,12 @@
           "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
         },
         {
-          "cluster_id": 565,
-          "slug": "national-565",
+          "cluster_id": 952,
+          "slug": "national-952",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 9,
-          "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
+          "source_links": 4,
+          "claim_count": 7,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
         }
       ]
     },
@@ -87043,7 +87098,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 7,
+          "claim_count": 8,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -89813,20 +89868,20 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 5,
+          "claim_count": 11,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 4,
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "national-381",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 11,
-          "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
         }
       ]
     },
@@ -93697,6 +93752,14 @@
           "headline": "রাষ্ট্রপতির সঙ্গে প্রধানমন্ত্রীর প্রথম সৌজন্য সাক্ষাৎ"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
@@ -93727,14 +93790,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 419,
-          "slug": "national-419",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা"
         }
       ]
     },
@@ -95735,7 +95790,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 6,
+          "claim_count": 9,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -96464,7 +96519,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 7,
+          "claim_count": 10,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -97619,6 +97674,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
+          "cluster_id": 952,
+          "slug": "national-952",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
         }
       ]
     },
@@ -98455,7 +98518,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 6,
+          "claim_count": 8,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -100104,6 +100167,14 @@
           "headline": "রাজশাহী বিশ্ববিদ্যালয়ে অ্যাম্বুলেন্স দেওয়ার ‘কৃতিত্ব’ নিয়ে ছাত্রশিবির ও আম্মারের ‘টানাটানি’"
         },
         {
+          "cluster_id": 952,
+          "slug": "national-952",
+          "actor_links": 2,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
           "cluster_id": 892,
           "slug": "national-892",
           "actor_links": 2,
@@ -100126,14 +100197,6 @@
           "source_links": 3,
           "claim_count": 10,
           "headline": "সালমান মুক্তাদিরের স্টুডিও ও রাড্ডা স্বাস্থ্যকেন্দ্রে হামলার নেপথ্যের ব্যক্তিরা এখনো ধরা পড়েননি"
-        },
-        {
-          "cluster_id": 771,
-          "slug": "national-771",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 9,
-          "headline": "ইসলামিক ক্রেডিট কার্ডে পরিশোধ করা যাবে না মদ-জুয়া, নাইটক্লাবের বিল"
         }
       ]
     },
@@ -101584,6 +101647,14 @@
       ],
       "related": [
         {
+          "cluster_id": 952,
+          "slug": "national-952",
+          "actor_links": 4,
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
           "cluster_id": 896,
           "slug": "national-896",
           "actor_links": 4,
@@ -101622,14 +101693,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "বলিভিয়াকে ৪ গোলে উড়িয়ে আর্জেন্টিনার নতুন যুগের শুরু"
-        },
-        {
-          "cluster_id": 555,
-          "slug": "national-555",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 19,
-          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
         }
       ]
     },
@@ -101637,7 +101700,7 @@
       "cluster_id": 907,
       "headline": "ঢাকা বিশ্ববিদ্যালয়ের অধ্যাপক জিনাত হুদা সাময়িক বরখাস্ত, তদন্তে ট্রাইব্যুনাল",
       "first_seen": "2026-10-01T06:13:58.046Z",
-      "last_update": "2026-10-01T08:51:28.097Z",
+      "last_update": "2026-10-01T09:38:25.523Z",
       "claim_count": 3,
       "events": [
         {
@@ -101784,20 +101847,20 @@
           "headline": "রাষ্ট্রপতির সঙ্গে প্রধানমন্ত্রীর প্রথম সৌজন্য সাক্ষাৎ"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 85,
           "slug": "national-85",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
-        },
-        {
-          "cluster_id": 125,
-          "slug": "national-125",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জাতিসংঘ সাধারণ পরিষদের ৮১তম অধিবেশনে যোগ দিতে নিউইয়র্ক যাচ্ছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -101805,7 +101868,7 @@
       "cluster_id": 908,
       "headline": "কুষ্টিয়ার সেই শিক্ষককে প্রধানমন্ত্রীর নির্দেশে নিরাপদে বাসায় পৌঁছে দেওয়া হয়েছে",
       "first_seen": "2026-10-01T06:13:58.050Z",
-      "last_update": "2026-10-01T08:51:28.099Z",
+      "last_update": "2026-10-01T09:38:25.525Z",
       "claim_count": 2,
       "events": [
         {
@@ -101917,7 +101980,7 @@
       "cluster_id": 909,
       "headline": "চাঁপাইনবাবগঞ্জে গরুবোঝাই ভটভটি উল্টে বাবা-ছেলেসহ নিহত ৩, আহত ৮",
       "first_seen": "2026-10-01T06:13:58.054Z",
-      "last_update": "2026-10-01T08:51:28.100Z",
+      "last_update": "2026-10-01T09:38:25.527Z",
       "claim_count": 3,
       "events": [
         {
@@ -102876,7 +102939,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
@@ -102885,7 +102948,7 @@
       "cluster_id": 917,
       "headline": "৪ গোলের জয় পেল মেসিবিহীন নতুন যুগের আর্জেন্টিনা",
       "first_seen": "2026-10-01T06:13:58.091Z",
-      "last_update": "2026-10-01T08:51:28.110Z",
+      "last_update": "2026-10-01T09:38:25.539Z",
       "claim_count": 2,
       "events": [
         {
@@ -103386,8 +103449,8 @@
       "cluster_id": 925,
       "headline": "অপারেশন ক্লিন হার্ট চালানোর কোনো পরিকল্পনা সরকারের নেই : স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-10-01T07:00:15.603Z",
-      "last_update": "2026-10-01T08:51:28.096Z",
-      "claim_count": 2,
+      "last_update": "2026-10-01T09:38:25.436Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-01T05:57:20.000Z",
@@ -103420,6 +103483,28 @@
             "source_id": "kalerkantho",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOZXRiTjhEZW5DcW5QZHBnX0trVjg2eDBfVUlVajVTVjF1RmJ5Nk40MUdKQk41bExEY0pXdldRY1F2a1B3VFNKRXE4cUZ5R3pnS3pqMHR1VDF6TzhZNmVYVWhqd09MTjBzSUIzbDFMWQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T06:34:28.000Z",
+          "kind": "evidence",
+          "claim_id": 186450,
+          "claim_text": "অপারেশন ক্লিন হার্ট চালানোর কোনো পরিকল্পনা সরকারের নেই : স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nSi0wdGVlTEQtNE81OE9UTWlvYkdNTzctUUtLbFh0QzFDNHlRdXdpT0EzZHg4dXJqWmhRTFBqN2ZyOXFIQnFxOTJ6UVFUZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T06:34:28.000Z",
+          "kind": "evidence",
+          "claim_id": 191451,
+          "claim_text": "'অপারেশন ক্লিন হার্ট'-এর পরিকল্পনা নেই সরকারের",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nSi0wdGVlTEQtNE81OE9UTWlvYkdNTzctUUtLbFh0QzFDNHlRdXdpT0EzZHg4dXJqWmhRTFBqN2ZyOXFIQnFxOTJ6UVFUZw?oc=5"
           }
         },
         {
@@ -103457,9 +103542,43 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T12:19:43.310Z",
+          "kind": "claim",
+          "claim_id": 191451,
+          "claim_text": "'অপারেশন ক্লিন হার্ট'-এর পরিকল্পনা নেই সরকারের"
+        },
+        {
+          "ts": "2026-10-01T12:19:43.314Z",
+          "kind": "verify",
+          "claim_id": 191451,
+          "claim_text": "'অপারেশন ক্লিন হার্ট'-এর পরিকল্পনা নেই সরকারের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
         {
           "cluster_id": 184,
           "slug": "national-184",
@@ -103467,14 +103586,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
-          "cluster_id": 187,
-          "slug": "politics-187",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
         },
         {
           "cluster_id": 238,
@@ -103499,14 +103610,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
-        },
-        {
-          "cluster_id": 273,
-          "slug": "politics-273",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ট্রাম্পের হেলিকপ্টারে বিশ্বের সবচেয়ে আকর্ষণীয় হকি খেলোয়াড়"
         }
       ]
     },
@@ -103514,7 +103617,7 @@
       "cluster_id": 926,
       "headline": "সিরিয়ায় যাত্রীবাহী বাসে বন্দুক হামলা, নিহত ৭",
       "first_seen": "2026-10-01T07:00:15.613Z",
-      "last_update": "2026-10-01T08:51:28.106Z",
+      "last_update": "2026-10-01T09:38:25.533Z",
       "claim_count": 2,
       "events": [
         {
@@ -103719,6 +103822,14 @@
         {
           "cluster_id": 906,
           "slug": "national-906",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
+          "cluster_id": 952,
+          "slug": "national-952",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 2,
@@ -104060,11 +104171,22 @@
     },
     "national-935": {
       "cluster_id": 935,
-      "headline": "ঢাকা কেন্দ্রীয় কারাগারের এক বন্দীর মৃত্যু",
+      "headline": "চিকিৎসাধীন অবস্থায় কারাবন্দির মৃত্যু",
       "first_seen": "2026-10-01T08:00:42.545Z",
-      "last_update": "2026-10-01T08:51:28.095Z",
+      "last_update": "2026-10-01T09:38:25.433Z",
       "claim_count": 3,
       "events": [
+        {
+          "ts": "2026-10-01T06:32:48.000Z",
+          "kind": "evidence",
+          "claim_id": 188113,
+          "claim_text": "চিকিৎসাধীন অবস্থায় কারাবন্দির মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/51k43wtiko"
+          }
+        },
         {
           "ts": "2026-10-01T06:32:48.000Z",
           "kind": "evidence",
@@ -104228,12 +104350,12 @@
           "headline": "দুদকের ২ ব্রিফিং নিয়ে আসিফ মাহমুদের রিট আদালতের কার্যতালিকা থেকে বাদ"
         },
         {
-          "cluster_id": 84,
-          "slug": "national-84",
+          "cluster_id": 941,
+          "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         }
       ]
     },
@@ -104443,10 +104565,10 @@
     },
     "national-943": {
       "cluster_id": 943,
-      "headline": "বাস চলাচল নিয়ে বিরোধ, হবিগঞ্জে আজ থেকে অনির্দিষ্টকালের পরিবহন ধর্মঘট",
+      "headline": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন",
       "first_seen": "2026-10-01T08:51:28.080Z",
-      "last_update": "2026-10-01T08:51:28.083Z",
-      "claim_count": 2,
+      "last_update": "2026-10-01T09:38:25.360Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-01T04:04:30.000Z",
@@ -104471,6 +104593,17 @@
           }
         },
         {
+          "ts": "2026-10-01T04:04:30.000Z",
+          "kind": "evidence",
+          "claim_id": 191496,
+          "claim_text": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/sylhet/971669/%E0%A6%B9%E0%A6%AC%E0%A6%BF%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87-%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%AE%E0%A6%95-%E0%A6%A7%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%98%E0%A6%9F-%E0%A6%9A%E0%A6%B2%E0%A6%9B%E0%A7%87-%E0%A6%A8%E0%A6%BE-%E0%A6%95%E0%A7%8B%E0%A6%A8%E0%A6%93-%E0%A6%A7%E0%A6%B0%E0%A6%A8%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
           "ts": "2026-10-01T07:04:53.000Z",
           "kind": "evidence",
           "claim_id": 189797,
@@ -104479,6 +104612,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/bangladesh/district/jqhf0n4bgl"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:04:53.000Z",
+          "kind": "evidence",
+          "claim_id": 191496,
+          "claim_text": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/jqhf0n4bgl"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:41:05.000Z",
+          "kind": "evidence",
+          "claim_id": 191496,
+          "claim_text": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiqwZBVV95cUxPVWJTcy02ZW1hbExWamdWel92Z0dPemJZLTZ0d0RSVlFvZWI3OXVoWG9ENjlwdjFxR0lUcHd2elI4aE03a2Z1TmRseGFlcXFFZUFFRlNlTllZUVpiSG51OFd1SnV5WktXWXpHSHF0N3dfYUF1RzFSdE4ySVlJQmV5UDJRZTBBMVRMRHg1Q1BBVHJJVU9SS3RydFNZcHZ6SEE1clRWV2RMU2pkcmQtX1IwVV92Qjk0SWpOeE5RU1pzbXlHUXBNZmlvSjk2RFNfME9mSC1Na3ZLamZrUlZuRU1KdGxCRDJ4ajBhLURoMi1FRlptQnB5ZXRmc3gwcGdWbU5kX1gzMEdTWHRsdW42QTFUNnh6WkFjbUNxU1dzT1BlcUl3cm9Kdm1DYjZZa1hkb1ZvNnp3QVJuZTdicC1laUpKSTJIVFVvQ1lOa29mdnZLcjdpWnJqQ0k5emZlTjg4RXIwZHVNZVpqcWgwMkZBV25JaEJqYkt6Y3FxbDJRLWZpTzZlc0tQMEZtcGRubVEyZ2dJeU1iRXFEclc5bWFIM0w0UWF1VzBkRjdxNTY5MzBhYlBfR1dmQ0gzTVVUdzVvYzVUTHJDVnVCZW80RXdrQmNSUFhwTGtQR1FCREpha1drb19wSnJ2QVRFdjF0SWtWaERZd19NUUgyZWFvbHBOa2x4VmpCZW1wQ29BTGNadEpaWHU2VDRDRkpOWGRZSXhCTlVOWTB5MGtCeU90a29zM2NwaUhUaXp3SnA0X2R2RUgyWC1GdUcwRW5zZGxEYWhMcWxkTU5sWi1LNDlGQk9JVlpoQ19kOFBENll6WDNpb0ZmT1VTcmsyN09XNG8xR01Db281ZDIyNXNacjFGRm16SURKcXJKWDN0RHBpVXRSd3N3SGVndjNEWW1FdnNoMVN6c09GT20xcnpRamg2a2J6anFZQVJyM0JyTFlLMUw4eXRrUk1RSkIxMWZfNkcwMUtLMWpvdUk3dV9NU0hwTDFVUnlCbUw2eTlkVGxkeHJ1OTVvY2RwVkFaRVJSWHRKdDZ6ZGEzbXZkRHk3b29kYUVrdFNmYW1iR0pZOW9JTUJn?oc=5"
           }
         },
         {
@@ -104516,56 +104671,74 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T12:23:34.500Z",
+          "kind": "claim",
+          "claim_id": 191496,
+          "claim_text": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন"
+        },
+        {
+          "ts": "2026-10-01T12:23:34.628Z",
+          "kind": "verify",
+          "claim_id": 191496,
+          "claim_text": "হবিগঞ্জে অনির্দিষ্টকালের পরিবহন ধর্মঘট, মহাসড়কে আটকা শতাধিক যানবাহন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 84,
-          "slug": "national-84",
+          "cluster_id": 252,
+          "slug": "national-252",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
-          "cluster_id": 85,
-          "slug": "national-85",
+          "cluster_id": 297,
+          "slug": "national-297",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
-          "cluster_id": 127,
-          "slug": "national-127",
+          "cluster_id": 320,
+          "slug": "national-320",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃষ্টি ও জলাবদ্ধতায় নটর ডেম কলেজের ক্লাস বন্ধ ঘোষণা"
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "যাদের কাছে ধানের শীষে ভোট চেয়েছি, তাদের কাছে মাফ চাই—পোস্ট দেয়া ছাত্রদল নেতা বহিষ্কার"
         },
         {
-          "cluster_id": 129,
-          "slug": "sports-129",
+          "cluster_id": 335,
+          "slug": "national-335",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের কাছে হেরে ব্রোঞ্জের লড়াইয়ে পাকিস্তানের সামনে বাংলাদেশ"
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ছেলেকে জিম্মি করে মাকে সংঘবদ্ধ ধর্ষণ: প্রধান অভিযুক্তের বাড়িঘর ভাঙচুর"
         },
         {
-          "cluster_id": 139,
-          "slug": "national-139",
+          "cluster_id": 346,
+          "slug": "national-346",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩"
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 151,
-          "slug": "national-151",
+          "cluster_id": 512,
+          "slug": "national-512",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো"
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "জাতিসংঘে সাধারণ পরিষদের সভাপতির দপ্তরে লিগ্যাল অফিসার হলেন জাইমা"
         }
       ]
     },
@@ -104573,9 +104746,31 @@
       "cluster_id": 944,
       "headline": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি",
       "first_seen": "2026-10-01T08:51:28.084Z",
-      "last_update": "2026-10-01T08:51:28.089Z",
-      "claim_count": 4,
+      "last_update": "2026-10-01T09:38:25.429Z",
+      "claim_count": 5,
       "events": [
+        {
+          "ts": "2026-10-01T05:24:38.000Z",
+          "kind": "evidence",
+          "claim_id": 189799,
+          "claim_text": "আফগানিস্তানে পাকিস্তানের বিমান হামলা, হতাহত নিয়ে দুই দেশের ভিন্ন দাবি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tQ01rZVdrR1Q4bzFnNlNOMTdVNl9LMy1TejN0TWVkb1FHRm51NnJqNUVoNEJMYlFXNmdZRDg1MFVzYWJCODRVYnRpejVoTHdVQmdmMWJzZFlCdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T05:24:38.000Z",
+          "kind": "evidence",
+          "claim_id": 191500,
+          "claim_text": "পাকিস্তানের বিমান হামলায় আফগানিস্তানে নিহত ২২",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tQ01rZVdrR1Q4bzFnNlNOMTdVNl9LMy1TejN0TWVkb1FHRm51NnJqNUVoNEJMYlFXNmdZRDg1MFVzYWJCODRVYnRpejVoTHdVQmdmMWJzZFlCdw?oc=5"
+          }
+        },
         {
           "ts": "2026-10-01T05:54:43.000Z",
           "kind": "evidence",
@@ -104724,6 +104919,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T12:23:52.500Z",
+          "kind": "claim",
+          "claim_id": 191500,
+          "claim_text": "পাকিস্তানের বিমান হামলায় আফগানিস্তানে নিহত ২২"
+        },
+        {
+          "ts": "2026-10-01T12:23:52.511Z",
+          "kind": "verify",
+          "claim_id": 191500,
+          "claim_text": "পাকিস্তানের বিমান হামলায় আফগানিস্তানে নিহত ২২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -104731,49 +104944,49 @@
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 10,
+          "source_links": 5,
+          "claim_count": 13,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
           "cluster_id": 297,
           "slug": "national-297",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
+          "source_links": 5,
+          "claim_count": 6,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         },
         {
           "cluster_id": 346,
           "slug": "national-346",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 8,
+          "source_links": 5,
+          "claim_count": 9,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 313,
-          "slug": "national-313",
+          "cluster_id": 529,
+          "slug": "national-529",
           "actor_links": 0,
-          "source_links": 3,
+          "source_links": 4,
           "claim_count": 4,
-          "headline": "ককটেল ফুটিয়ে, বাসে আগুন দিয়ে সংকট তৈরি করা যাবে না: জাহেদ উর রহমান"
+          "headline": "সৌদির তেল বন্দর পাহারায় সেনা পাঠাচ্ছে ফ্রান্স"
         },
         {
-          "cluster_id": 331,
-          "slug": "national-331",
+          "cluster_id": 941,
+          "slug": "politics-941",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "দিল্লিতে পরবর্তী হাইকমিশনার হচ্ছেন পররাষ্ট্র সচিব আসাদ আলম সিয়াম"
+          "source_links": 4,
+          "claim_count": 7,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
-          "cluster_id": 406,
-          "slug": "national-406",
+          "cluster_id": 942,
+          "slug": "economy-942",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "বিশ্বনেতাদের সম্মানে মার্কিন প্রেসিডেন্টের দেওয়া নৈশভোজে প্রধানমন্ত্রী তারেক রহমান"
+          "source_links": 4,
+          "claim_count": 4,
+          "headline": "ফুচকা বিক্রেতা, রিকশাচালক, ক্ষুদ্র ব্যবসায়ী সবাইকে বাংলা কিউআরের আওতায় আনা হবে: অর্থমন্ত্রী"
         }
       ]
     },
@@ -104781,7 +104994,7 @@
       "cluster_id": 946,
       "headline": "চ্যানেল আইয়ের প্রতিষ্ঠাবার্ষিকীতে এসআরএফের শুভেচ্ছা",
       "first_seen": "2026-10-01T08:51:28.102Z",
-      "last_update": "2026-10-01T08:51:28.105Z",
+      "last_update": "2026-10-01T09:38:25.532Z",
       "claim_count": 2,
       "events": [
         {
@@ -105011,6 +105224,842 @@
           "kind": "verify",
           "claim_id": 189811,
           "claim_text": "আর্থিক প্রবৃদ্ধি ধরে রেখেছে মিডল্যান্ড ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-952": {
+      "cluster_id": 952,
+      "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+      "first_seen": "2026-10-01T09:38:25.192Z",
+      "last_update": "2026-10-01T09:38:25.221Z",
+      "claim_count": 7,
+      "events": [
+        {
+          "ts": "2026-08-01T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/jidpxyb4pu"
+          }
+        },
+        {
+          "ts": "2026-08-01T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191516,
+          "claim_text": "বিদ্যুৎ উৎপাদনের চূড়ান্ত ধাপে রূপপুর, বাণিজ্যিকভাবে কবে হতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/jidpxyb4pu"
+          }
+        },
+        {
+          "ts": "2026-09-30T03:33:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/business/2iye2jt7xu"
+          }
+        },
+        {
+          "ts": "2026-10-01T03:05:40.000Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6wyzy8yyq2eo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-01T03:05:40.000Z",
+          "kind": "evidence",
+          "claim_id": 191517,
+          "claim_text": "পত্রিকা: 'গঙ্গা চুক্তিতে নতুন সমীকরণ'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6wyzy8yyq2eo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-01T04:48:15.000Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/8vw2kejp2y"
+          }
+        },
+        {
+          "ts": "2026-10-01T04:48:15.000Z",
+          "kind": "evidence",
+          "claim_id": 191518,
+          "claim_text": "৪৯তম বিসিএসে পিএসসির সুপারিশের পরও বঞ্চনা: ৫৭ জনের দায় কে নেবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/8vw2kejp2y"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:48:06.000Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hkoe7h0t44"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:48:06.000Z",
+          "kind": "evidence",
+          "claim_id": 191519,
+          "claim_text": "মেয়াদোত্তীর্ণ রাজনীতির সংকটে পড়েছে বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hkoe7h0t44"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:57.353Z",
+          "kind": "claim",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
+          "ts": "2026-10-01T12:25:57.354Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86094"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:57.356Z",
+          "kind": "evidence",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86096"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:57.639Z",
+          "kind": "claim",
+          "claim_id": 191514,
+          "claim_text": "বলিভিয়াকে ৪ গোলে উড়িয়ে আর্জেন্টিনার নতুন যুগের শুরু"
+        },
+        {
+          "ts": "2026-10-01T12:25:57.786Z",
+          "kind": "evidence",
+          "claim_id": 191514,
+          "claim_text": "বলিভিয়াকে ৪ গোলে উড়িয়ে আর্জেন্টিনার নতুন যুগের শুরু",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86094"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:57.894Z",
+          "kind": "claim",
+          "claim_id": 191515,
+          "claim_text": "পর্তুগালের ক্যাম্প ছাড়লেন ক্রিশ্চিয়ানো রোনালদো"
+        },
+        {
+          "ts": "2026-10-01T12:25:57.961Z",
+          "kind": "evidence",
+          "claim_id": 191515,
+          "claim_text": "পর্তুগালের ক্যাম্প ছাড়লেন ক্রিশ্চিয়ানো রোনালদো",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86096"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:57.998Z",
+          "kind": "claim",
+          "claim_id": 191516,
+          "claim_text": "বিদ্যুৎ উৎপাদনের চূড়ান্ত ধাপে রূপপুর, বাণিজ্যিকভাবে কবে হতে পারে"
+        },
+        {
+          "ts": "2026-10-01T12:25:58.025Z",
+          "kind": "claim",
+          "claim_id": 191517,
+          "claim_text": "পত্রিকা: 'গঙ্গা চুক্তিতে নতুন সমীকরণ'"
+        },
+        {
+          "ts": "2026-10-01T12:25:58.028Z",
+          "kind": "claim",
+          "claim_id": 191518,
+          "claim_text": "৪৯তম বিসিএসে পিএসসির সুপারিশের পরও বঞ্চনা: ৫৭ জনের দায় কে নেবে"
+        },
+        {
+          "ts": "2026-10-01T12:25:58.031Z",
+          "kind": "claim",
+          "claim_id": 191519,
+          "claim_text": "মেয়াদোত্তীর্ণ রাজনীতির সংকটে পড়েছে বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191513,
+          "claim_text": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191514,
+          "claim_text": "বলিভিয়াকে ৪ গোলে উড়িয়ে আর্জেন্টিনার নতুন যুগের শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191515,
+          "claim_text": "পর্তুগালের ক্যাম্প ছাড়লেন ক্রিশ্চিয়ানো রোনালদো",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191516,
+          "claim_text": "বিদ্যুৎ উৎপাদনের চূড়ান্ত ধাপে রূপপুর, বাণিজ্যিকভাবে কবে হতে পারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191517,
+          "claim_text": "পত্রিকা: 'গঙ্গা চুক্তিতে নতুন সমীকরণ'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191518,
+          "claim_text": "৪৯তম বিসিএসে পিএসসির সুপারিশের পরও বঞ্চনা: ৫৭ জনের দায় কে নেবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:25:58.056Z",
+          "kind": "verify",
+          "claim_id": 191519,
+          "claim_text": "মেয়াদোত্তীর্ণ রাজনীতির সংকটে পড়েছে বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 906,
+          "slug": "national-906",
+          "actor_links": 4,
+          "source_links": 4,
+          "claim_count": 21,
+          "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
+        },
+        {
+          "cluster_id": 896,
+          "slug": "national-896",
+          "actor_links": 2,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "বিদ্যুৎ উৎপাদনের চূড়ান্ত ধাপে রূপপুর, বাণিজ্যিকভাবে কবে হতে পারে"
+        },
+        {
+          "cluster_id": 869,
+          "slug": "national-869",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ঢাবি শিক্ষক সমিতির সাধারণ সম্পাদক জিনাত হুদা সাময়িক বরখাস্ত"
+        },
+        {
+          "cluster_id": 927,
+          "slug": "national-927",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "বলিভিয়াকে ৪ গোলে উড়িয়ে আর্জেন্টিনার নতুন যুগের শুরু"
+        },
+        {
+          "cluster_id": 555,
+          "slug": "national-555",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 18,
+          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
+        },
+        {
+          "cluster_id": 771,
+          "slug": "national-771",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "ইসলামিক ক্রেডিট কার্ডে পরিশোধ করা যাবে না মদ-জুয়া, নাইটক্লাবের বিল"
+        }
+      ]
+    },
+    "national-953": {
+      "cluster_id": 953,
+      "headline": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+      "first_seen": "2026-10-01T09:38:25.361Z",
+      "last_update": "2026-10-01T09:38:25.366Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T08:00:45.000Z",
+          "kind": "evidence",
+          "claim_id": 191520,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/971711/%E0%A6%8B%E0%A6%A3%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A6%BF%E0%A6%B0-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%81%E0%A6%B2-%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE-%E0%A6%AE%E0%A7%8B%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%A6"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:00:45.000Z",
+          "kind": "evidence",
+          "claim_id": 191521,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/971711/%E0%A6%8B%E0%A6%A3%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A6%BF%E0%A6%B0-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%81%E0%A6%B2-%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE-%E0%A6%AE%E0%A7%8B%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%A6"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 191520,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxNYm9MSWVqMUF6eTZ1UG9GdHlpTjh2UW1SX2R1VzVDUlEwbWhZdXpDbGZmR2w3V1dvdkdCNU1XbE5Yb0lJUWIzQUlZc2pGbHl3dDlFOTVKUDducXNnMmhLOXJ0SmEyMFN4ZVJGc04tcjlDSmo0bnAtYlIyeGI0YzNpc2tGdm5JZHpNRGExWm50TU5VeDNwUEFWSlB2VnliQmNObER6MEhFM0dqVEZaOWpwdC01aXNPTi1qbnQ4WjNYTzU0T0xabDhYQTRjSF9EQnVCRVFabjVsNEJpdG5XbXlfbkRjVzdtb0x3V1FERVI5OWVKZVUtanUtenlSRHN5M3ZmeS0xTVhqQWFpWHZ2NGtiWENQSTRubUJfdDJ4RGloT0xDN1lBYlVweUVyY2QtNzhKVWFyR2YzZ25BZXJweWI4Z3JuRlA4amNUMXFLaEw3ZDhnWi12cGFkakVNd21Gd3M4UnkzU1RPY1QyVmkySlJDc2k4ckotTVcyUGRQT1IxTjg3bm9IYXB0ckF6eWlkY1hGX0FWNXAtMmxvNFFacV9jZjBQUXBRaFNRUHNycG44N0VSXzFCUTRpTDBWZWd6XzVqaVVkMHg3Z25xUHJXd2tqQ1lsNWE2dkhLNEJqQTdRVElsbl9qcmNxME5tWXFkNk40U0RqalNoMnZTZHc3NGRKd1JQWUh3MmlPX3hyTXZXM3ZMb2NDNHNUNGVDY0Y3dXdPVzB6aHlZWl9kTV94bnRhZDhsME9MYVdBbGEtRmdWQW14a2o5NHJKcEl3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:07.551Z",
+          "kind": "claim",
+          "claim_id": 191520,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের"
+        },
+        {
+          "ts": "2026-10-01T12:26:07.555Z",
+          "kind": "claim",
+          "claim_id": 191521,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের"
+        },
+        {
+          "ts": "2026-10-01T12:26:07.560Z",
+          "kind": "verify",
+          "claim_id": 191520,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:07.560Z",
+          "kind": "verify",
+          "claim_id": 191521,
+          "claim_text": "ঋণখেলাপির তালিকা থেকে সিরাজুল ইসলাম মোল্লাকে বাদ দেওয়ার নির্দেশ হাইকোর্টের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
+          "cluster_id": 172,
+          "slug": "national-172",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
+    },
+    "national-954": {
+      "cluster_id": 954,
+      "headline": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ",
+      "first_seen": "2026-10-01T09:38:25.368Z",
+      "last_update": "2026-10-01T09:38:25.372Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-01T06:40:52.000Z",
+          "kind": "evidence",
+          "claim_id": 191522,
+          "claim_text": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/971692/%E0%A6%A8%E0%A6%BF%E0%A6%83%E0%A6%B6%E0%A6%B0%E0%A7%8D%E0%A6%A4-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A6%A4%E0%A7%87-%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A6%E0%A6%BE%E0%A6%A4-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%87%E0%A6%B2%E0%A6%BF%E0%A6%AE%E0%A6%95%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T06:40:52.000Z",
+          "kind": "evidence",
+          "claim_id": 191523,
+          "claim_text": "নিঃশর্ত ক্ষমা চাইতে এমপি শাহাদাত হোসেন সেলিমকে লিগ্যাল নোটিশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/971692/%E0%A6%A8%E0%A6%BF%E0%A6%83%E0%A6%B6%E0%A6%B0%E0%A7%8D%E0%A6%A4-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A6%A4%E0%A7%87-%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A6%E0%A6%BE%E0%A6%A4-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%87%E0%A6%B2%E0%A6%BF%E0%A6%AE%E0%A6%95%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:13:25.000Z",
+          "kind": "evidence",
+          "claim_id": 191522,
+          "claim_text": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxNTTNlcXJJY1kteUx1MVF6d2ZiTEVfZ3VMNGdBVngzeEdHbVZsTnZwUEhIcENzbzFiVTJoOG5hNlhReTQ4M0UtazVnTVd3ajdrNGdVOEhVYlVSSnk3b21kVmpMLWxvVkZGT0FHVWxubC1iWUJjaU5laFZjWFBEM3FvdWtXQUplZFJGSEozTE1SOEttcTZ6S2JUSllCdEVGMEdOT0h4dnc4MU1SdVVVcG5uSUJCTmh5WmhDdWI0V2E2VjJsOHBQaXJCX2E5MTdaMVhEYzZoUHZpTVRhamxod0VwUDMxX3dVdXhHMjZ5bl9LY3hydzhxMTdPYUEzdk13YmllTkhocE0zUjdNS0JJVnlCNnRpUERzdmR4eWVFSlZ4V0h4eUpQX2RGdDgzTWxiVDlMR3VveXhIclB1aEtvN0QxUnlrTU9LeW1wRFFuY0dmWU5pSmdac0txY0l1Wldqdm1TQUhPNHA3d1ljdDFaU3A0NnF6MGEtRWNMU3N0WVBKWkNlWURaUVJJb3I0dlY0ZEcteVBfNTdKRXBLeUJQYURCQjlvOHNfTXJkaHcxTzhKeUhrdnVnRkVpcVdxdE5jbXJfYjg5VUlpdVNKaTFTSHBzb25hOG9IcHhKdHZGRF9IZnNSM0tOZ1VwTFgyREdaUGNQNUthRmZSMkVBR0F4T1YwTFpULWpMQTJ1RWh4YThQRWRvUXg5NjRiYkc0RjVlSkZQUlV5NWpNODlVY3NTVjVxdHl2aEJ5NlIyMWF2Skh6VnhWNjR1S2pVONIBzgRBVV95cUxONFd0U1VrRDZPVkpRbDIzOVJJNXZLZUVZZzdDZEpxNmxzRWVDdWh1S1d6Z1ZNTkFOdUFxdGxZVmJNZmVnTnRpbnFxLUMzUjFqdUdtWVRyZG96a21YcHQyZ3Q5TmVEd2YtUWdKd25qQ0hvM1gxX25INnNUMnVqY0J6UWZBdmZaWWZrRUQ3bV9COHlIQnVEZGFFWjNZZUlvYThRLXVGbnU0YTlsdGpidWQ3UXk5YU1pRk1tc3NWUE56QjZDSDVqY1ZhR3U3X0dWcGRFXzJnOUkwQjR5ZXBvRkc1bFVBRHBzanF5MFY4RGM3RDdrVTViVmpGRHRRaVdxOHgxSkJ0djJUWDZhV2NmcE1zV05oSldpa0h4VlBsOEkwM1VGODZsUFBYMUZZUXl0QldYcDlXT1hPS05SYXYtbTk0ZEVIR01SQVlxdzF3VmZsdVNIUjdfZ0thVWtxSlRPT1pNUTVJVldPRjVubG1hdGpDX2Q2dWFsTU9fV1NHZVdJaXU5RlkxSDVURkJVTGpaNk9PQndXeU1Rc2ZaVXNnQ0t3UTI3akxDYnpoRkdCNERHamk1OWNNMXBDcTdxZ21uRC1HU1h4T3kyNFRfenJWamw0UWdmVmNfVDBMcTlBSGU5ZDEtLW9uTy1SYlRRRVpZYnVYT0NGWVpIbVZUUmlZWV9UVTZ5TG9yQnlsNUw0NjhmcjNUTUdTcERfYlpCclh1d05uX2FMeno1cXFRSVBYRXlEV2d5YTRHNnJxeGR4VW4yNUNTd3hMZ1NpVW5xR0h2Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:19.466Z",
+          "kind": "claim",
+          "claim_id": 191522,
+          "claim_text": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ"
+        },
+        {
+          "ts": "2026-10-01T12:26:19.470Z",
+          "kind": "claim",
+          "claim_id": 191523,
+          "claim_text": "নিঃশর্ত ক্ষমা চাইতে এমপি শাহাদাত হোসেন সেলিমকে লিগ্যাল নোটিশ"
+        },
+        {
+          "ts": "2026-10-01T12:26:19.474Z",
+          "kind": "verify",
+          "claim_id": 191522,
+          "claim_text": "আইনজীবীদের নিয়ে ‘আপত্তিকর’ মন্তব্য: লক্ষ্মীপুর-১ আসনের এমপিকে লিগ্যাল নোটিশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:19.474Z",
+          "kind": "verify",
+          "claim_id": 191523,
+          "claim_text": "নিঃশর্ত ক্ষমা চাইতে এমপি শাহাদাত হোসেন সেলিমকে লিগ্যাল নোটিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
+          "cluster_id": 172,
+          "slug": "national-172",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        }
+      ]
+    },
+    "national-956": {
+      "cluster_id": 956,
+      "headline": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা",
+      "first_seen": "2026-10-01T09:38:25.543Z",
+      "last_update": "2026-10-01T09:38:25.547Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-06-30T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191526,
+          "claim_text": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxQczlQRmt2ZWllTUlWU3NXUktta0pFWnpEaE5qakl6R2VFSDhaMVhvaVh5Mkc0aXFPLWswanBiWXVKczY5MU85QXNsWC1zNndsM3UycDZBc0VRaHdIU3hwOTFZX04zSHZicVBpLXlUQll5eEMxampvdzJBLU5PeC1RdEpxanVmcjQtcGdDUmx2VFJ5REMtY251eG9OellmLS1GU2E3QmxiMHdscjUtTWh1a1l5UFByclFTc2VwOWthTkRhZnUzMVN4Z0NDRjFpMXl1eVdDUXU5SW40ZnhPUUdTYm55RWVkWFBwMVFCWnRHQWFxR05WcGVVak1yZ2EtZGVYdHVSVlhNcVJSX2F2WDVoeDF6MWpqSUJEWjRXNkw2blViYnBXdnJpcGdwYUcwQzZHNTNJTFhLRm1jTWMyMGFwRDg1MnkyV3Q0WXFnSGRwT3dnbHFwWHBSdVZBZWFCUG9maUFKQ1M2cFp3WHNmbTc0UFhBT0ZfcTdDYzRVbFZUQzYtb3Z5T0NacmVNNkJVM18tSFlCaE5nUmlMNGpDd18yUjdXbmRlYTU1VHdCaktXWExnVjFXZTRSSmZ0U2hlZnl0QXozRld6Q0NwcTFlVVQ4ZkUtMHlsMTNvanlmemxST2h4T1FNZlJ0UFY3dWFORWpySHNPNG1LNFJkQjVtUnZNOGlQa1lhZEtxTm91MXM1aGRYenBBTmc0UDBNWUhPd2tZUFMwVDNZTk1rSk8zT2JISV9DZDJKdVZobXVfUmZCZjJsQXlsMk1lRktFTlRPemRBVjVVTjFqVHNPVkJ5X285d9IB5gRBVV95cUxNZ0FPTGlmZXpQNlpNemlxSGdudElBUmxfM05iYXl3UWRBbk9DdTRjdUdTcWZHVVJMeDhqVHQwdHZyTDBxSnF4dm5zVHBocE9pQl9QMlFBdHJxRW9NVEZWQXhOLXpYcVh6SVAxLUtQNTZqYnZoQ0F6cTRtdjRLNXZUZWtBd2lPNVJhTmM1NWhmRVcwYm5aZVctUzNkbXZFbDl5Tm5FUmlNd3ljcUtESVc1VlV0TWhIeXdwMl9semFjR0JzVEtRT3BjSHlNTjF1aGVqNW1YYkxqcWZsVWRla3lsTm9FazJXYXd4ZWhNOW1hSFJCVDRPMmExWG0wc0xCTlJSRWllTFNScFJfaHFybVFkODk3NTNCQlAtcUtNazNXV3Axb291M2h5d1Nfa05DMmtueVRLNjEwM1hhazNUa0NzOG81Q0xDUWI3ZGNXeDdadFY4MHRteS1tM2c2UnVwY2lhNjdRWnliNnZFaDJYXzVyUEU1VW5TRkkwaHRDZWVabS1CWVpCclhqMjVUX3ZkZU1pdDdKZk9WNlpuSC1Bb3M3NXZ3VVcwRVUxdzlxVGtPUThNSmhNN3c5d3V6R3VYOV9wRVBCV0l3eVYtNHp0dmtUclBvLXlmdHBuOHh1LWdTaEk4QUQ1LUJ2dHlBNUJIZlB6U0tFbXV2NkdobTB2U2FKbnV4MlM2MGhvRkxqNlFZMERRWVg2Q21TaDMxTUhndXltVEtNam96QmFNaXNWaHRIT1pEdUhac0lHZzZybTYtYlczbkxFVzJSWXY2N01qOTQ5Z0FRSXVGUk9XNjl3TGdmZFh0WVdRUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-06-30T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191527,
+          "claim_text": "এমপিওভুক্ত শিক্ষক একসঙ্গে দুই ভাতা নিতে পারবেন না",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxQczlQRmt2ZWllTUlWU3NXUktta0pFWnpEaE5qakl6R2VFSDhaMVhvaVh5Mkc0aXFPLWswanBiWXVKczY5MU85QXNsWC1zNndsM3UycDZBc0VRaHdIU3hwOTFZX04zSHZicVBpLXlUQll5eEMxampvdzJBLU5PeC1RdEpxanVmcjQtcGdDUmx2VFJ5REMtY251eG9OellmLS1GU2E3QmxiMHdscjUtTWh1a1l5UFByclFTc2VwOWthTkRhZnUzMVN4Z0NDRjFpMXl1eVdDUXU5SW40ZnhPUUdTYm55RWVkWFBwMVFCWnRHQWFxR05WcGVVak1yZ2EtZGVYdHVSVlhNcVJSX2F2WDVoeDF6MWpqSUJEWjRXNkw2blViYnBXdnJpcGdwYUcwQzZHNTNJTFhLRm1jTWMyMGFwRDg1MnkyV3Q0WXFnSGRwT3dnbHFwWHBSdVZBZWFCUG9maUFKQ1M2cFp3WHNmbTc0UFhBT0ZfcTdDYzRVbFZUQzYtb3Z5T0NacmVNNkJVM18tSFlCaE5nUmlMNGpDd18yUjdXbmRlYTU1VHdCaktXWExnVjFXZTRSSmZ0U2hlZnl0QXozRld6Q0NwcTFlVVQ4ZkUtMHlsMTNvanlmemxST2h4T1FNZlJ0UFY3dWFORWpySHNPNG1LNFJkQjVtUnZNOGlQa1lhZEtxTm91MXM1aGRYenBBTmc0UDBNWUhPd2tZUFMwVDNZTk1rSk8zT2JISV9DZDJKdVZobXVfUmZCZjJsQXlsMk1lRktFTlRPemRBVjVVTjFqVHNPVkJ5X285d9IB5gRBVV95cUxNZ0FPTGlmZXpQNlpNemlxSGdudElBUmxfM05iYXl3UWRBbk9DdTRjdUdTcWZHVVJMeDhqVHQwdHZyTDBxSnF4dm5zVHBocE9pQl9QMlFBdHJxRW9NVEZWQXhOLXpYcVh6SVAxLUtQNTZqYnZoQ0F6cTRtdjRLNXZUZWtBd2lPNVJhTmM1NWhmRVcwYm5aZVctUzNkbXZFbDl5Tm5FUmlNd3ljcUtESVc1VlV0TWhIeXdwMl9semFjR0JzVEtRT3BjSHlNTjF1aGVqNW1YYkxqcWZsVWRla3lsTm9FazJXYXd4ZWhNOW1hSFJCVDRPMmExWG0wc0xCTlJSRWllTFNScFJfaHFybVFkODk3NTNCQlAtcUtNazNXV3Axb291M2h5d1Nfa05DMmtueVRLNjEwM1hhazNUa0NzOG81Q0xDUWI3ZGNXeDdadFY4MHRteS1tM2c2UnVwY2lhNjdRWnliNnZFaDJYXzVyUEU1VW5TRkkwaHRDZWVabS1CWVpCclhqMjVUX3ZkZU1pdDdKZk9WNlpuSC1Bb3M3NXZ3VVcwRVUxdzlxVGtPUThNSmhNN3c5d3V6R3VYOV9wRVBCV0l3eVYtNHp0dmtUclBvLXlmdHBuOHh1LWdTaEk4QUQ1LUJ2dHlBNUJIZlB6U0tFbXV2NkdobTB2U2FKbnV4MlM2MGhvRkxqNlFZMERRWVg2Q21TaDMxTUhndXltVEtNam96QmFNaXNWaHRIT1pEdUhac0lHZzZybTYtYlczbkxFVzJSWXY2N01qOTQ5Z0FRSXVGUk9XNjl3TGdmZFh0WVdRUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-09-30T13:49:43.000Z",
+          "kind": "evidence",
+          "claim_id": 191526,
+          "claim_text": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiggRBVV95cUxOakJzWlRrSkh4UUZMY1N3R2xEMjBmbkdBVmIybDZzLWxLODVlMXZIbjRvNUhabTVBSTVFM3pDZndZM0tSYmlPRFJVMnZnNjB3LUpxYTZvVE52VnFjQS1HQkFFM2lNOXlCTlJnWDdoTmpSY01RdHVubC1LNXJLaS12Ykp6ajgxR1piWU1scWZKVURtdHRBSUM3SF96QXhJSDdnUnZPSUw3WHNZR2xfTTN5enAxSUlBa3A0azVtWnI4N3dwSGxOdHN1Qy1wSnp1Ym1KSW8zS3NkdXR3YVV1R3ZwR2hTZmlFWmFibG5GYUJMZ2dIUHJBYTVOYWgzcHlRZXM3OWVvR3M5OWdZMGkwTDBLNmxXTnA0NjVJQVdsMW9IdHdfNEZWMjIzZFpkRVZ3MS1RVWI4S1V3S0xjM1l5OFo1UW05dFVHYVBZNW0wRGZOYU1vUmpaNk96a1V3OGVYaE1IY2tpOU9NMXFlSUhCNGV5ekwwMGtqOEJvMTFWc3duLURWbThVclkzZk55NTFPaDNaMHVLc0xJSGc1NXhSSDExNUY4YnBzTHJTMWgzeERyQ3lMSEwtUWdrZ0RwNjNUelUxamtwbUE4MTFYVVRMQWtYYVlHc05tbzRweldzdzUtUzJOWmp5aXgzYWV3RFlhMFZpTjVscXhBVmkwd3ZEZkhydUVR0gGHBEFVX3lxTE9BbmEwVWs3ZFpMbFU1ZldXNDZ4ZWZrZkpXSTVQX0N3NGowMjdyTlZoM0MtVDkzTkVaTEdQRUtqRFgtYW1vM3NSNUlicDQwTHVaRWpMQmQ3Tk5jcXJ3YzJRWDVvV0NTZzUyMGozQzNRRThpOUFQTk1iY0p3N3AzdXJKUE1jS1FYeTVPcFhZa3VBVzBhUUN3MFFPcUthZDF2anRoN1ZmN2UzeE15elNTNTVaUndfM1g0dE5EVGwyRE9vRnROYkV3SkFYUnZJa1ViZjMxWVo1SzVCekVyemEwVERpYk1Kc0c5Y0dWcHZmMUMybEdZaFlPN3VDcFBiOWtacmhwM2p2Wlg0d0ZWTDBmVXZIZFJ6cU9kZGFTbWtTcVlDMjBFR2RHX2hUWlp0alNIcDJNZEItc1M3c1RjTEE0b0x6LXBUVWNmTGNmQ291UGZkY2xyNmo3NmM4TXdKT2dZRTZxdXBBbHNUbkhCV3Y4emVDQWdEVFlMb0FSNjdrd0hmZFdWWXdudno0V1hlYm42S1lwZDhQblUzbjNnRVB4VDBPNEo3d2lRYVQ4a2VFREJEbDNZRDVZa2JEMG5vbHlxYVZjT0hwMDlMTlhjWEttSTZHMUphZHlNa3k4V1pGM291WThMUTNOakZmNm1qS2xKN3RhS1RCYW1hb29abHc5NjNralBqMC1waw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:45.044Z",
+          "kind": "claim",
+          "claim_id": 191526,
+          "claim_text": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা"
+        },
+        {
+          "ts": "2026-10-01T12:26:45.061Z",
+          "kind": "claim",
+          "claim_id": 191527,
+          "claim_text": "এমপিওভুক্ত শিক্ষক একসঙ্গে দুই ভাতা নিতে পারবেন না"
+        },
+        {
+          "ts": "2026-10-01T12:26:45.066Z",
+          "kind": "verify",
+          "claim_id": 191526,
+          "claim_text": "নতুন পে-স্কেলেই বেতন-ভাতা পাবেন এমপিওভুক্ত শিক্ষক-কর্মচারীরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:45.066Z",
+          "kind": "verify",
+          "claim_id": 191527,
+          "claim_text": "এমপিওভুক্ত শিক্ষক একসঙ্গে দুই ভাতা নিতে পারবেন না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 202,
+          "slug": "national-202",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামের উপসর্গে আরও ৬ মৃত্যু, মোট মৃত্যু ১,০৬৩"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        }
+      ]
+    },
+    "national-957": {
+      "cluster_id": 957,
+      "headline": "বিএনপির নেতা–কর্মীদের বিরুদ্ধে আদালত চত্বরে আওয়ামীপন্থী তিন আইনজীবীকে মারধরের অভিযোগ",
+      "first_seen": "2026-10-01T09:38:25.965Z",
+      "last_update": "2026-10-01T09:38:26.034Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T09:06:59.000Z",
+          "kind": "evidence",
+          "claim_id": 191528,
+          "claim_text": "বিএনপির নেতা–কর্মীদের বিরুদ্ধে আদালত চত্বরে আওয়ামীপন্থী তিন আইনজীবীকে মারধরের অভিযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/mpxe8kea9f"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:27:00.948Z",
+          "kind": "claim",
+          "claim_id": 191528,
+          "claim_text": "বিএনপির নেতা–কর্মীদের বিরুদ্ধে আদালত চত্বরে আওয়ামীপন্থী তিন আইনজীবীকে মারধরের অভিযোগ"
+        },
+        {
+          "ts": "2026-10-01T12:27:00.953Z",
+          "kind": "verify",
+          "claim_id": 191528,
+          "claim_text": "বিএনপির নেতা–কর্মীদের বিরুদ্ধে আদালত চত্বরে আওয়ামীপন্থী তিন আইনজীবীকে মারধরের অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-958": {
+      "cluster_id": 958,
+      "headline": "উড়োজাহাজের ঘটনা নিয়ে সস্তা রাজনীতি করছে নেতানিয়াহু সরকার, কেন এমন অভিযোগ করছেন বিরোধী নেতা",
+      "first_seen": "2026-10-01T09:38:26.154Z",
+      "last_update": "2026-10-01T09:38:26.261Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T09:06:21.000Z",
+          "kind": "evidence",
+          "claim_id": 191529,
+          "claim_text": "উড়োজাহাজের ঘটনা নিয়ে সস্তা রাজনীতি করছে নেতানিয়াহু সরকার, কেন এমন অভিযোগ করছেন বিরোধী নেতা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/p5ncqq0rgk"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:27:16.452Z",
+          "kind": "claim",
+          "claim_id": 191529,
+          "claim_text": "উড়োজাহাজের ঘটনা নিয়ে সস্তা রাজনীতি করছে নেতানিয়াহু সরকার, কেন এমন অভিযোগ করছেন বিরোধী নেতা"
+        },
+        {
+          "ts": "2026-10-01T12:27:16.457Z",
+          "kind": "verify",
+          "claim_id": 191529,
+          "claim_text": "উড়োজাহাজের ঘটনা নিয়ে সস্তা রাজনীতি করছে নেতানিয়াহু সরকার, কেন এমন অভিযোগ করছেন বিরোধী নেতা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-959": {
+      "cluster_id": 959,
+      "headline": "রবীন্দ্রনাথের ইতালি ভ্রমণের শতবর্ষ",
+      "first_seen": "2026-10-01T09:38:26.266Z",
+      "last_update": "2026-10-01T09:38:26.271Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T09:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 191530,
+          "claim_text": "রবীন্দ্রনাথের ইতালি ভ্রমণের শতবর্ষ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/onnoalo/treatise/9abtjwetxp"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:27:37.024Z",
+          "kind": "claim",
+          "claim_id": 191530,
+          "claim_text": "রবীন্দ্রনাথের ইতালি ভ্রমণের শতবর্ষ"
+        },
+        {
+          "ts": "2026-10-01T12:27:37.154Z",
+          "kind": "verify",
+          "claim_id": 191530,
+          "claim_text": "রবীন্দ্রনাথের ইতালি ভ্রমণের শতবর্ষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-961": {
+      "cluster_id": 961,
+      "headline": "আরএএফ ফেয়ারফোর্ড মার্কিন বিমানঘাঁটির ঘটনায় ইরান জড়িত: যুক্তরাজ্যের দাবি",
+      "first_seen": "2026-10-01T09:38:26.280Z",
+      "last_update": "2026-10-01T09:38:26.444Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-01T08:59:45.000Z",
+          "kind": "evidence",
+          "claim_id": 191532,
+          "claim_text": "আরএএফ ফেয়ারফোর্ড মার্কিন বিমানঘাঁটির ঘটনায় ইরান জড়িত: যুক্তরাজ্যের দাবি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/ua6d2sv5br"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:28:16.621Z",
+          "kind": "claim",
+          "claim_id": 191532,
+          "claim_text": "আরএএফ ফেয়ারফোর্ড মার্কিন বিমানঘাঁটির ঘটনায় ইরান জড়িত: যুক্তরাজ্যের দাবি"
+        },
+        {
+          "ts": "2026-10-01T12:28:16.702Z",
+          "kind": "verify",
+          "claim_id": 191532,
+          "claim_text": "আরএএফ ফেয়ারফোর্ড মার্কিন বিমানঘাঁটির ঘটনায় ইরান জড়িত: যুক্তরাজ্যের দাবি",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -111204,6 +112253,14 @@
           "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 6,
+          "claim_count": 10,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -111234,14 +112291,6 @@
           "source_links": 4,
           "claim_count": 5,
           "headline": "জ্বালানি তেলের দাম ইতিহাসে সর্বোচ্চ, লিটারে বৃদ্ধি ২০ টাকা"
-        },
-        {
-          "cluster_id": 376,
-          "slug": "politics-376",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "গাজী নজরুলের এমপি পদ থাকবে কি না, যা জানালেন স্পিকার"
         }
       ]
     },
@@ -111582,20 +112631,20 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 7,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
           "cluster_id": 184,
           "slug": "national-184",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "ফিলিস্তিন ইস্যুতে বিতর্কের মুখে মঞ্চে দাঁড়িয়ে ক্ষমা চাইলেন এড শিরান"
-        },
-        {
-          "cluster_id": 332,
-          "slug": "national-332",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
         }
       ]
     },
@@ -113061,7 +114110,7 @@
       "cluster_id": 916,
       "headline": "ঢাকা মহানগর উত্তর বিএনপি ও যুবদলের কমিটি বিলুপ্ত",
       "first_seen": "2026-10-01T06:13:58.086Z",
-      "last_update": "2026-10-01T08:51:28.108Z",
+      "last_update": "2026-10-01T09:38:25.538Z",
       "claim_count": 3,
       "events": [
         {
@@ -113428,7 +114477,7 @@
           "slug": "politics-941",
           "actor_links": 0,
           "source_links": 5,
-          "claim_count": 9,
+          "claim_count": 11,
           "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
         },
         {
@@ -113477,8 +114526,8 @@
       "cluster_id": 941,
       "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
       "first_seen": "2026-10-01T08:51:28.046Z",
-      "last_update": "2026-10-01T08:51:28.068Z",
-      "claim_count": 10,
+      "last_update": "2026-10-01T09:38:25.337Z",
+      "claim_count": 16,
       "events": [
         {
           "ts": "2026-10-01T06:47:52.000Z",
@@ -113522,6 +114571,28 @@
             "source_id": "daily-observer",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Rc2ExZnVYalhsUTZMbkNhUVVzdUhTaEFDbTk0TDNJMkxvZnRNNEdLZm9iZVJKd3M3QUtFakJlU0l2MEdDdHdlZ3pFMmtMQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:02:13.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1KYm9iYlA3emxsS2NHZGNYSV8yLVpaa1NDc0d4YmhzOVJyZzdWRmJ0NWVxNF80XzRELXJDTVpONDl3Z0ZQOV9Ba3YyQjBwajBZcVhMMlVsWW41VWRIVkp1aHhqNFltMF9XTVJDZWN0bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T07:02:13.000Z",
+          "kind": "evidence",
+          "claim_id": 191479,
+          "claim_text": "পদত্যাগ করছেন এমপি ফেরদৌস আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1KYm9iYlA3emxsS2NHZGNYSV8yLVpaa1NDc0d4YmhzOVJyZzdWRmJ0NWVxNF80XzRELXJDTVpONDl3Z0ZQOV9Ba3YyQjBwajBZcVhMMlVsWW41VWRIVkp1aHhqNFltMF9XTVJDZWN0bw?oc=5"
           }
         },
         {
@@ -113646,6 +114717,28 @@
           }
         },
         {
+          "ts": "2026-10-01T08:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxNUVJvRHZXbjhyYjVva1Z2T3hVdkZJTUZMcm5zT1k3UzVlWWdVc1dnd01PcEFDRTNoTTNZYWZIWU1WZVF2emtnX21HWnNMLUROYXlKUGYtSzhnRzF2VTNibi01N0llcmlHTFpDZE0zSTlocDhMWWNkWXBZUl95WFlnN1Vrc2xMT1RrTk9FUUlqOGtFbGpKaVcwRWgxM3dIUjZMNHd2UkFsRmFFV0hPM3hsSTYySXgwR3o2TUltSTRGZFRfRHQzMjJ2R3FJVUpRUHFHdGRLNTdFMlh3SFBJNm5GNG1ob21tdGJfU0RWSFQzZzdxWjdWdXFqalMxTi1rSXhlQkM0Qno2T29yQTQ4Q0JfOUJSVVNFYlM5ZElvb1d3Z1JtZlRweDhXaDlnWThFMkRwWU1iYmI0TlMtMHNuM0lVeWJIZVVEZHVNWHVfZ0NqdkNqRjZ6cmRVOFJrWjZLR3lRRnAtY0puWXRlaVVtTTdpZU91YXhWRVVOSnJmNFBUVHFLdzRIT1RWRGVrNFlibzk3UmZEMm5wVU5SRWFpOGR6V09CRlBvOWYtUWxGVFJ1UEtMcGNiMm44cmhEd3dDeEt6UTAxcmNXd1V6ZGprQUhKYUdWamtyM3Z3Wmx4RVJDSmg4cXZNQVk1ekJZNXljc29YUWlRSEk1RlVwdEc4NHplbVZJRkVqeDdjTF9PZlVGNk0teWtOdktJTHZEUV8tVEVfaFR2YXdn0gGrBEFVX3lxTE1UTTBkUDlBaTJSbTdRNFY0d3NCeTlCX1ZvbjE1cXJ6aHFTT3pBLS0zdlhybTFJdnRNM3pPUnZWQzVMLXgzZzA4R0pyUGlmd0tfNkF6VjItSGRNamdaalVBVDVQZ2RTZll6eS1RdGdhSVBmUE9kTkZKRVMwTkpSX2piczhuSldzLTVjMFB2N3FCNXFHT2NVQkp0WE9OYjgwZTFqNU1KSlBYRlQyYUlleTd3dURhQkFfcVNzZGwyc0Z6SWZPd2hMTWFTZmdZbHJkcDZwUGxHaEpwczFNMVJQOENObjRwbmtBOHNFQUs3NzU4bnZPNVU3SEVQeDlfaDc2VGgyakFab05BUU9USGFwM2Nwd2VrN0NEZnVjazk4NlBQV1k5MUNObS1yaFFCaENPTk5wQWNIcnhRUWJEYWtUUk5KRjNmR2lGNW56endXcnNlOW5DRzZuWHJJbUx0d0M5OHNXcl9XdlE5djNtUjZLdlBGa0VMLUNIV0RSdlhud1BnN1RNbkE0VzZOQ2llSXBGcjV1ZEEzcGNVUmFtcEFQN3pMMW9JNWRyVFVxSkJnT3lLdkZ2cmlneng2TEozc2x3UHU5bjhvNUxXamdqLUdoTmdCc2FUSHVmOFdCekxDSFhtRlk2WnlDeW5UUDZRenZIb3llZFlXa2ZMRjA5bGl0a2tERElubnRLdk5aMzJuWTVYUENUeU5MRjlSVVp3V0Ztam05Q0RyMHNUUmJMbw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 191485,
+          "claim_text": "পদত্যাগপত্র জমা দিতে সংসদে এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxNUVJvRHZXbjhyYjVva1Z2T3hVdkZJTUZMcm5zT1k3UzVlWWdVc1dnd01PcEFDRTNoTTNZYWZIWU1WZVF2emtnX21HWnNMLUROYXlKUGYtSzhnRzF2VTNibi01N0llcmlHTFpDZE0zSTlocDhMWWNkWXBZUl95WFlnN1Vrc2xMT1RrTk9FUUlqOGtFbGpKaVcwRWgxM3dIUjZMNHd2UkFsRmFFV0hPM3hsSTYySXgwR3o2TUltSTRGZFRfRHQzMjJ2R3FJVUpRUHFHdGRLNTdFMlh3SFBJNm5GNG1ob21tdGJfU0RWSFQzZzdxWjdWdXFqalMxTi1rSXhlQkM0Qno2T29yQTQ4Q0JfOUJSVVNFYlM5ZElvb1d3Z1JtZlRweDhXaDlnWThFMkRwWU1iYmI0TlMtMHNuM0lVeWJIZVVEZHVNWHVfZ0NqdkNqRjZ6cmRVOFJrWjZLR3lRRnAtY0puWXRlaVVtTTdpZU91YXhWRVVOSnJmNFBUVHFLdzRIT1RWRGVrNFlibzk3UmZEMm5wVU5SRWFpOGR6V09CRlBvOWYtUWxGVFJ1UEtMcGNiMm44cmhEd3dDeEt6UTAxcmNXd1V6ZGprQUhKYUdWamtyM3Z3Wmx4RVJDSmg4cXZNQVk1ekJZNXljc29YUWlRSEk1RlVwdEc4NHplbVZJRkVqeDdjTF9PZlVGNk0teWtOdktJTHZEUV8tVEVfaFR2YXdn0gGrBEFVX3lxTE1UTTBkUDlBaTJSbTdRNFY0d3NCeTlCX1ZvbjE1cXJ6aHFTT3pBLS0zdlhybTFJdnRNM3pPUnZWQzVMLXgzZzA4R0pyUGlmd0tfNkF6VjItSGRNamdaalVBVDVQZ2RTZll6eS1RdGdhSVBmUE9kTkZKRVMwTkpSX2piczhuSldzLTVjMFB2N3FCNXFHT2NVQkp0WE9OYjgwZTFqNU1KSlBYRlQyYUlleTd3dURhQkFfcVNzZGwyc0Z6SWZPd2hMTWFTZmdZbHJkcDZwUGxHaEpwczFNMVJQOENObjRwbmtBOHNFQUs3NzU4bnZPNVU3SEVQeDlfaDc2VGgyakFab05BUU9USGFwM2Nwd2VrN0NEZnVjazk4NlBQV1k5MUNObS1yaFFCaENPTk5wQWNIcnhRUWJEYWtUUk5KRjNmR2lGNW56endXcnNlOW5DRzZuWHJJbUx0d0M5OHNXcl9XdlE5djNtUjZLdlBGa0VMLUNIV0RSdlhud1BnN1RNbkE0VzZOQ2llSXBGcjV1ZEEzcGNVUmFtcEFQN3pMMW9JNWRyVFVxSkJnT3lLdkZ2cmlneng2TEozc2x3UHU5bjhvNUxXamdqLUdoTmdCc2FUSHVmOFdCekxDSFhtRlk2WnlDeW5UUDZRenZIb3llZFlXa2ZMRjA5bGl0a2tERElubnRLdk5aMzJuWTVYUENUeU5MRjlSVVp3V0Ztam05Q0RyMHNUUmJMbw?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-01T08:13:01.000Z",
           "kind": "evidence",
           "claim_id": 189783,
@@ -113668,6 +114761,50 @@
           }
         },
         {
+          "ts": "2026-10-01T08:19:29.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/pdtyaag-krchen-bienpir-empi-pherdausii"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:19:29.000Z",
+          "kind": "evidence",
+          "claim_id": 191487,
+          "claim_text": "পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/pdtyaag-krchen-bienpir-empi-pherdausii"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:25:18.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ybmhjQmMwdElfdGlYYVlmaEN0RTVudmNDT0Z1S3c4ZWVGRjRCaVJyR1JwVDJFZDkwdFROLTVkb1lnb29ta3ZxNi1Fd3FhWWFE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:25:18.000Z",
+          "kind": "evidence",
+          "claim_id": 191488,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টিকে পদত্যাগের নির্দেশ দিয়েছেন প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ybmhjQmMwdElfdGlYYVlmaEN0RTVudmNDT0Z1S3c4ZWVGRjRCaVJyR1JwVDJFZDkwdFROLTVkb1lnb29ta3ZxNi1Fd3FhWWFE?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-01T08:28:36.000Z",
           "kind": "evidence",
           "claim_id": 189783,
@@ -113687,6 +114824,50 @@
             "source_id": "banglatribune",
             "relation": "supports",
             "url": "https://www.banglatribune.com/politics/ncp/971707/%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF%E0%A6%95%E0%A7%87-%E0%A6%AA%E0%A6%A6%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%97%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE-%E0%A6%AF%E0%A6%BE-%E0%A6%AC%E0%A6%B2%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:40:10.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE01WXFfZVRzdWZ6Z0RyVTNvTXJnNXhxR3pRSDNSaWhaX3BpM2htLTczZW96NEY5MVV1Qk5wZ0l0SHF2a1hWR1VOUUxqQWlGdHM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T08:40:10.000Z",
+          "kind": "evidence",
+          "claim_id": 191490,
+          "claim_text": "এমপি পদ থেকে পদত্যাগ করলেন মিষ্টি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE01WXFfZVRzdWZ6Z0RyVTNvTXJnNXhxR3pRSDNSaWhaX3BpM2htLTczZW96NEY5MVV1Qk5wZ0l0SHF2a1hWR1VOUUxqQWlGdHM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T09:02:09.000Z",
+          "kind": "evidence",
+          "claim_id": 189783,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/ycgh5g387t"
+          }
+        },
+        {
+          "ts": "2026-10-01T09:02:09.000Z",
+          "kind": "evidence",
+          "claim_id": 191491,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টি বললেন, ‘আমাকে স্পিকার ডেকেছেন, দেখা করেছি’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/ycgh5g387t"
           }
         },
         {
@@ -113868,6 +115049,114 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.222Z",
+          "kind": "claim",
+          "claim_id": 191479,
+          "claim_text": "পদত্যাগ করছেন এমপি ফেরদৌস আহমেদ মিষ্টি"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.550Z",
+          "kind": "claim",
+          "claim_id": 191485,
+          "claim_text": "পদত্যাগপত্র জমা দিতে সংসদে এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.556Z",
+          "kind": "claim",
+          "claim_id": 191487,
+          "claim_text": "পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.559Z",
+          "kind": "claim",
+          "claim_id": 191488,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টিকে পদত্যাগের নির্দেশ দিয়েছেন প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.565Z",
+          "kind": "claim",
+          "claim_id": 191490,
+          "claim_text": "এমপি পদ থেকে পদত্যাগ করলেন মিষ্টি"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.567Z",
+          "kind": "claim",
+          "claim_id": 191491,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টি বললেন, ‘আমাকে স্পিকার ডেকেছেন, দেখা করেছি’"
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191479,
+          "claim_text": "পদত্যাগ করছেন এমপি ফেরদৌস আহমেদ মিষ্টি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191485,
+          "claim_text": "পদত্যাগপত্র জমা দিতে সংসদে এমপি ফেরদৌসী আহমেদ মিষ্টি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191487,
+          "claim_text": "পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191488,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টিকে পদত্যাগের নির্দেশ দিয়েছেন প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191490,
+          "claim_text": "এমপি পদ থেকে পদত্যাগ করলেন মিষ্টি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:22:59.571Z",
+          "kind": "verify",
+          "claim_id": 191491,
+          "claim_text": "ফেরদৌসী আহমেদ মিষ্টি বললেন, ‘আমাকে স্পিকার ডেকেছেন, দেখা করেছি’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -113875,49 +115164,177 @@
           "cluster_id": 346,
           "slug": "national-346",
           "actor_links": 0,
-          "source_links": 6,
-          "claim_count": 11,
+          "source_links": 8,
+          "claim_count": 14,
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 13,
+          "source_links": 7,
+          "claim_count": 18,
           "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
         },
         {
           "cluster_id": 297,
           "slug": "national-297",
           "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 6,
+          "source_links": 7,
+          "claim_count": 9,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 933,
-          "slug": "politics-933",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 5,
-          "headline": "ফেরদৌসী আহমেদ মিষ্টিকে এমপি পদ থেকে পদত্যাগের নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 85,
-          "slug": "national-85",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
         },
         {
           "cluster_id": 187,
           "slug": "politics-187",
           "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 9,
+          "source_links": 6,
+          "claim_count": 11,
           "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 381,
+          "slug": "national-381",
+          "actor_links": 0,
+          "source_links": 5,
+          "claim_count": 12,
+          "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
+        },
+        {
+          "cluster_id": 553,
+          "slug": "national-553",
+          "actor_links": 0,
+          "source_links": 5,
+          "claim_count": 5,
+          "headline": "ককটেল বিস্ফোরণ নিয়ে প্রয়োজনে নাসীরুদ্দীন পাটওয়ারীকে জিজ্ঞাসাবাদ: ডিএমপি"
+        }
+      ]
+    },
+    "politics-955": {
+      "cluster_id": 955,
+      "headline": "টাইমস হায়ার এডুকেশন ওয়ার্ল্ড ইউনিভার্সিটি র্যাঙ্কিং ২০২৭-এ শীর্ষ অবস্থানে এআইইউবি",
+      "first_seen": "2026-10-01T09:38:25.438Z",
+      "last_update": "2026-10-01T09:38:25.521Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-09-30T16:53:29.000Z",
+          "kind": "evidence",
+          "claim_id": 191524,
+          "claim_text": "টাইমস হায়ার এডুকেশন ওয়ার্ল্ড ইউনিভার্সিটি র্যাঙ্কিং ২০২৭-এ শীর্ষ অবস্থানে এআইইউবি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxObjlSYUk4TzZraXg5R0ZKSnNncG5MSXZiVDJwLWxnejNnLU1ZVjlPZjJCcDlTSmtvc2hENDh2eUJ4WUFnWVduZUhXY3hsS1pPUjN0WlJDdEgtdHhHeUREaTMzUV9iY05qUG1ySHlNYW1CNWNmYmRTVjk2MjZJVjIzNHZiRzdQMXdPUWtEWHk4cUZ0djE4Mlp4bW1wMU5taWlUamd6azVoUXlNUUNNWmtSX0d4TmFGa2Vwd2JMMTc1ajNJNmZFdVlUMHNtYV9aWWlLV2lWcE5SQ1hBcDg4MjF2M0xRVVdQY0RXdldFYkdLZDdjVGVkOERtWE44TG1GbWNUXzJROGhSTkVxMGZVVjZNY1dxdzZJVlkzOE9QZGVZWC1JR3J5Mm85SzltSjdqOVd3Q1Y2NFJYVFY3TjVCY0U4Zl9mZlE2Mm9oWWd3dlJzZXJiRVRtYnRyQnZKRzVHVEY1aTEzM1A2RWhsNHRjMzItNGpDWmptRDVaQy1vZDY4NlNkTmg3cVZLNnI4ZHBXd0ZNenNtdmgwNlRCOG4wcURSOVBRclpkTXNYaXlmUXN4bHlFSGNoeFVnOUhEZkEycHRZdzROVHFjcWJsVEFRYzVRM1hDVjdvSmNmRzhLSUVnZDhtbzBRMFlRQmdnemYxaHpyTmZ6VjZMOHNPVDVRUnJBbnB1X0NoMy01b2Rj0gGQBEFVX3lxTFBxYUFDRy0xdjhDMDc0bXFoYnhRR0Z3aUxybHp1eUxsUzUyeU1uc01KV3ltMkp5MXpoc1ZBaXAtSlJ6aVBaTTQwR25RVFMzS2I0Ti1VUzdUNnpPTC1LUmJIZi0yZlVKUW1QWHctRDRaWWFWdE9Xb1hGdUxiVXZLYmxkNDh4Y0ZyZDl5S3Jkei1aWVNuelItT2xUMkFNWFFMV2oyY2xNOXo3Uzh6aGVUUS04amV2cHFmV3d3Ym10alRrQjZOSkp2ZjJsSHVzYkNZRXpwVi1XY0VWczh5SU83UFJISUx4TEY4VE0xYWVCNEhEZlhXWm9fdlA2amV2MlZ1djI3MXo2dkhxRXFFdXlfbU5MRlRGcmZsYVI3UHgycTVmbFpaRDQyMjhUMHY5VlRrSnAtX0RCOEdoUlpSMDBDOHNRUk5SWXZtMTl5cGxjLXktQXVNUkc4MWR0aHN5REJMYnM3RVBzMldhZm9kdlZlakFtWUllUVJfNlh5TWdPdmNWRUx6b0czYVk4UHhfelZJdHJVWVpwRjcyU19fblJRMlZQYVktbmdmVmZKcVA2WVh0MUtYbGlCRzRZaXpycG9pT3ROQjJfQ25mUWxVUFl3UmdpcEwtQnhqUEFUMUZQbXdnWDNIWDdaNmtoelV5bHRfZzFtVmpOUDB1bl9ZaGdybV9aQVpaYmJHZGU0bTJTbUV3Sw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-01T05:55:24.000Z",
+          "kind": "evidence",
+          "claim_id": 191524,
+          "claim_text": "টাইমস হায়ার এডুকেশন ওয়ার্ল্ড ইউনিভার্সিটি র্যাঙ্কিং ২০২৭-এ শীর্ষ অবস্থানে এআইইউবি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/other-politics/971683/%E0%A6%A8%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%B6%E0%A6%BF%E0%A6%AA-%E0%A6%96%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A6%E0%A6%BE-%E0%A6%9C%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%89%E0%A7%8E%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%97-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%B2"
+          }
+        },
+        {
+          "ts": "2026-10-01T05:55:24.000Z",
+          "kind": "evidence",
+          "claim_id": 191525,
+          "claim_text": "নিজের স্কলারশিপ খালেদা জিয়াকে উৎসর্গ করলেন ছাত্রদল নেতা আউয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/other-politics/971683/%E0%A6%A8%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%B6%E0%A6%BF%E0%A6%AA-%E0%A6%96%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A6%E0%A6%BE-%E0%A6%9C%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%89%E0%A7%8E%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%97-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%B2"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:33.625Z",
+          "kind": "claim",
+          "claim_id": 191524,
+          "claim_text": "টাইমস হায়ার এডুকেশন ওয়ার্ল্ড ইউনিভার্সিটি র্যাঙ্কিং ২০২৭-এ শীর্ষ অবস্থানে এআইইউবি"
+        },
+        {
+          "ts": "2026-10-01T12:26:33.629Z",
+          "kind": "claim",
+          "claim_id": 191525,
+          "claim_text": "নিজের স্কলারশিপ খালেদা জিয়াকে উৎসর্গ করলেন ছাত্রদল নেতা আউয়াল"
+        },
+        {
+          "ts": "2026-10-01T12:26:33.634Z",
+          "kind": "verify",
+          "claim_id": 191524,
+          "claim_text": "টাইমস হায়ার এডুকেশন ওয়ার্ল্ড ইউনিভার্সিটি র্যাঙ্কিং ২০২৭-এ শীর্ষ অবস্থানে এআইইউবি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-01T12:26:33.634Z",
+          "kind": "verify",
+          "claim_id": 191525,
+          "claim_text": "নিজের স্কলারশিপ খালেদা জিয়াকে উৎসর্গ করলেন ছাত্রদল নেতা আউয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "শাহজালালের মাজারের ডেগ-দানবাক্সে ৮৯ লাখ টাকা, পাওয়া গেছে স্বর্ণ-বিদেশি মুদ্রাও"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ডেঙ্গুতে আরও দুজনের মৃত্যু, নতুন করে হাসপাতালে ভর্তি ১,২৩২"
+        },
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোবাইলের আলো জ্বেলে চললো জঙ্গি সন্দেহে গ্রেফতারদের রিমান্ড শুনানি"
+        },
+        {
+          "cluster_id": 172,
+          "slug": "national-172",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ: যুগ্ম আহ্বায়কসহ বহিষ্কার ৮ নেতাকর্মী"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -116787,7 +118204,7 @@
       "cluster_id": 897,
       "headline": "পর্তুগালের ক্যাম্প ছাড়লেন রোনালদো, দিলেন বিস্ফোরক ঘোষণা",
       "first_seen": "2026-10-01T02:00:15.096Z",
-      "last_update": "2026-10-01T08:51:28.111Z",
+      "last_update": "2026-10-01T09:38:25.541Z",
       "claim_count": 3,
       "events": [
         {
