@@ -55,34 +55,18 @@ export const postsByAuthor = async (slug) =>
 export const sortedPosts = async () =>
   [...(await posts())].sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0));
 
-// Homepage editorial hierarchy (proposal #31, light version): promotional order
-// is priority rank then recency — featured first, breaking second, then verified
-// (non-suspect/partial) news, and only then everything else. A suspect story is
-// never promoted above a verified one regardless of age.
-const editorialRank = (post) => {
-  if (post.featured) return 0;
-  if (post.breaking) return 1;
-  // 2026-10-01: a developing-lane story is published, live, and being verified
-  // right now. It was inheriting `partial`'s rank 3, which sits below every
-  // `confirmed` story REGARDLESS of age — so all 24 of them sorted to the very
-  // bottom (positions 395-452 of 452) and the homepage looked dead while the
-  // stories were live and reachable. The lane exists to surface a first
-  // sighting immediately, so it competes with `confirmed` and recency decides.
-  // Its single-source status is still stated on the page: the chip reads
-  // "যাচাই চলছে" and the article carries the in-progress notice.
-  if (post.developing) return 2;
-  const badge = getBadge(post);
-  if (badge?.key === "confirmed") return 2;
-  if (badge?.key === "verified" || badge?.key === "partial") return 3;
-  return 4;
-};
-
+// Homepage order (2026-10-01, user rule): the front page is a clock, not a
+// podium. Every story competes on recency alone — newest first, always. Rank
+// promotion (featured/breaking/confirmed-first) used to bury fresh stories
+// under hundreds of older ones, and the site read as dead while new news was
+// live. The one exception is `suspect`: an unverifiable story is never
+// promoted above real news, regardless of age.
 export const editorialOrder = async () =>
-  [...(await posts())].sort(
-    (a, b) =>
-      editorialRank(a) - editorialRank(b) ||
-      (b.ts ?? 0) - (a.ts ?? 0),
-  );
+  [...(await posts())].sort((a, b) => {
+    const suspectA = getBadge(a)?.key === "suspect" ? 1 : 0;
+    const suspectB = getBadge(b)?.key === "suspect" ? 1 : 0;
+    return suspectA - suspectB || (b.ts ?? 0) - (a.ts ?? 0);
+  });
 
 export const featuredPost = async () => {
   const ordered = await editorialOrder();
