@@ -39,6 +39,10 @@ concurrency:
 
 permissions:
   contents: write
+  # 2026-10-01: the "Deploy new thumbnails now" step dispatches deploy.yml
+  # through the API (actions:write), for the same reason as auto-author — a
+  # 403 here is silent and leaves thumbnails undeployed.
+  actions: write
 
 jobs:
   add:
@@ -119,3 +123,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches" \
             -d '{"ref":"main"}')
           echo "deploy dispatch -> HTTP $code"
+          if [ "$code" -ge 300 ]; then
+            echo "deploy dispatch FAILED (HTTP $code) — thumbnails are on main but NOT deployed" >&2
+            exit 1
+          fi
