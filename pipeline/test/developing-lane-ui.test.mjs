@@ -65,10 +65,16 @@ test('the badge component uses the label it is handed', () => {
   assert.match(comp, /BADGES\[badge\?\.key\] \?\? BADGES\[badge\] \?\? BADGES\.partial/);
 });
 
-test('the article page explains that verification is running', () => {
+test('the article page states its verification state with the badge, not a sentence', () => {
+  // 2026-09-30: the developing lane added an explanatory sentence under the
+  // headline. 2026-10-01 the user removed it — the chip ("যাচাই চলছে") and the
+  // প্রমাণ দেখুন panel already say how firm a story is, and the extra paragraph
+  // was noise. This test now records that decision so the sentence does not
+  // creep back in.
   const page = read('src/pages/article/[slug].astro');
-  assert.match(page, /\{post\.developing && \(/);
-  assert.match(page, /এই প্রতিবেদনটি এখনো যাচাই চলছে/);
+  assert.doesNotMatch(page, /এই প্রতিবেদনটি এখনো যাচাই চলছে/);
+  assert.doesNotMatch(page, /\{post\.developing && \(/);
+  assert.match(page, /<VerificationBadge/, 'the badge chip is how the state is shown');
   // The pre-existing tier A single-source notice must stay conditional.
   assert.match(page, /post\.verification\?\.uncorroborated/);
 });
@@ -138,4 +144,40 @@ test('the hero slider stays minimal, fast and honest', () => {
   assert.match(slider, /tabindex="0"/, 'the track stays keyboard-focusable');
   assert.match(slider, /ArrowLeft[\s\S]{0,120}ArrowRight/, 'arrow keys still move slides');
   assert.match(slider, /<a href=\{`\/article\/\$\{p\.slug\}`\}/, 'slides are real crawlable links');
+});
+
+test(`article page: no dev notice, no prev/next, no comments`, () => {
+  // 2026-10-01 (user request): the in-progress sentence, the "আগের/পরের
+  // সংবাদ" crawl links and the Giscus comment box all came off the article
+  // page — the evidence panel already says how firm a story is, and the
+  // related grid already carries onward reading.
+  const page = read('src/pages/article/[slug].astro');
+  assert.doesNotMatch(page, /এই প্রতিবেদনটি এখনো যাচাই চলছে/, 'the in-progress sentence is gone');
+  assert.doesNotMatch(page, /post\.developing &&/, 'the developing notice block is gone');
+  assert.doesNotMatch(page, /আগের সংবাদ|পরের সংবাদ/, 'prev/next links are gone');
+  assert.doesNotMatch(page, /adjacentPosts/, 'the prev/next query is gone with it');
+  assert.doesNotMatch(page, /Giscus/, 'the comment section is gone');
+  // The tier A single-source notice is a DIFFERENT sentence and stays.
+  assert.match(page, /post\.verification\?\.uncorroborated/, 'the uncorroborated notice stays');
+  // And the badge chip is still there — that is what the user means by
+  // "we already have the proof section".
+  assert.match(page, /<VerificationBadge/, 'the verification badge stays');
+});
+
+test(`homepage latest-headlines strip: titled, thumb on the left`, () => {
+  // 2026-10-01 (user request): a header over the latest headlines, each row
+  // showing a small thumbnail on its LEFT. .mini-row is `grid-template-columns:
+  // auto 1fr`, i.e. it was always designed for thumb-then-text; the markup had
+  // drifted to a forced single column, so the thumb never appeared.
+  const page = read('src/pages/index.astro');
+  assert.match(page, /id="latest-headlines"/, 'the strip has a real heading id');
+  assert.match(page, />\s*সাম্প্রতিক খবর\s*</, 'the heading is named');
+  assert.match(page, /<span class="mini-row-thumb">/, 'each row carries a thumbnail');
+  assert.match(page, /<div class="mini-row">/, 'the row uses the two-column mini-row grid');
+  assert.doesNotMatch(page, /mini-row !grid-cols-1/, 'the forced single column is gone');
+  assert.match(page, /width="176"[\s\S]{0,40}height="102"/, 'thumb has fixed dims (no layout shift)');
+  assert.match(page, /loading="lazy"/, 'thumbs below the fold are lazy');
+  assert.match(page, /alt=""/, 'the decorative thumb has empty alt');
+  const css = read('src/styles.css');
+  assert.match(css, /\.mini-row \{[^}]*grid-template-columns:\s*auto 1fr/, 'thumb column is first = left');
 });
