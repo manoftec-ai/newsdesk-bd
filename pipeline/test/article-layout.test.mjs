@@ -309,3 +309,36 @@ test('every astro template has balanced element tags', () => {
     }
   }
 });
+
+test('every component used in a template is imported by it', () => {
+  // 2026-10-01: the hero slider edit removed VerificationBadge's import from
+  // index.astro while a usage remained below. Astro compiles fine and only the
+  // production build fails (ReferenceError at prerender), so nothing local
+  // catches it. This test does: capitalized tags must resolve to an import.
+  const BUILTINS = new Set(['Fragment']);
+  const problems = [];
+  for (const file of templates) {
+    const src = readFileSync(file, 'utf8');
+    const used = new Set([...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]));
+    const imported = new Set();
+    for (const m of src.matchAll(/import\s+(?:([A-Za-z0-9_]+)\s*,?\s*)?(?:\{([^}]*)\})?\s*from\s*["'][^"']+["']/g)) {
+      if (m[1]) imported.add(m[1]);
+      for (const n of (m[2] ?? '').split(',')) {
+        const name = n.trim().split(/\s+as\s+/).pop().trim();
+        if (name) imported.add(name);
+      }
+    }
+    // <Content /> comes from `const { Content } = await render(entry)`, not an
+    // import — a real binding all the same, so it counts.
+    for (const m of src.matchAll(/const\s*\{\s*([^}]*?)\s*\}\s*=\s*await\s+\w+\(/g)) {
+      for (const n of m[1].split(',')) {
+        const name = n.trim().split(/\s*[:=]\s*/)[0].trim();
+        if (name) imported.add(name);
+      }
+    }
+    for (const name of used) {
+      if (!imported.has(name) && !BUILTINS.has(name)) problems.push(`${file.split('/site/src/')[1]} uses <${name}> without importing it`);
+    }
+  }
+  assert.deepEqual(problems, [], `unimported components:\n${problems.join('\n')}`);
+});
