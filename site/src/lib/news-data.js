@@ -62,6 +62,15 @@ export const sortedPosts = async () =>
 const editorialRank = (post) => {
   if (post.featured) return 0;
   if (post.breaking) return 1;
+  // 2026-10-01: a developing-lane story is published, live, and being verified
+  // right now. It was inheriting `partial`'s rank 3, which sits below every
+  // `confirmed` story REGARDLESS of age — so all 24 of them sorted to the very
+  // bottom (positions 395-452 of 452) and the homepage looked dead while the
+  // stories were live and reachable. The lane exists to surface a first
+  // sighting immediately, so it competes with `confirmed` and recency decides.
+  // Its single-source status is still stated on the page: the chip reads
+  // "যাচাই চলছে" and the article carries the in-progress notice.
+  if (post.developing) return 2;
   const badge = getBadge(post);
   if (badge?.key === "confirmed") return 2;
   if (badge?.key === "verified" || badge?.key === "partial") return 3;
