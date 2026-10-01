@@ -104,3 +104,28 @@ test(`the homepage is a clock: newest first, badge never decides`, async () => {
   assert.deepEqual(order, ['new-developing', 'new-verified', 'old-confirmed', 'new-suspect'],
     'newest first regardless of badge; even a brand-new suspect stays last');
 });
+
+test('the hero slider stays minimal, fast and honest', () => {
+  // 2026-10-01: the hero shows the 5 latest stories as a swipeable strip.
+  // The theme rules demand minimal JS, no autoplay, crawlable content and no
+  // layout shift — this test pins those properties so the slider cannot
+  // silently grow into a library, a video wall, or a JS-only widget.
+  const slider = read('src/components/HeroSlider.astro');
+  const page = read('src/pages/index.astro');
+  // comments talk about autoplay (saying there is none); the check is about code.
+  const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  assert.match(page, /<HeroSlider slides=\{heroSlides\} \/>/, 'the hero is the slider');
+  assert.match(slider, /scroll-snap-type:\s*x mandatory/, 'swiping works with zero JS');
+  assert.doesNotMatch(code, /setInterval\s*\(|setTimeout\s*\(|autoplay\s*[:=]/i, 'no autoplay, no timers');
+  assert.doesNotMatch(slider, /from ["'](react|swiper|embla|keen-slider|flickity)/, 'no carousel dependency');
+  assert.match(slider, /loading=\{i === 0 \? "eager" : "lazy"\}/, 'only slide 0 can be LCP');
+  assert.match(slider, /width="1200"[\s\S]{0,40}height="630"/, 'image dimensions are fixed (no layout shift)');
+  assert.match(slider, /prefers-reduced-motion/, 'reduced motion gets instant jumps');
+  assert.match(slider, /aria-roledescription="carousel"/, 'announced as a carousel');
+  assert.match(slider, /aria-roledescription="slide"/, 'each slide is announced');
+  assert.match(slider, /data-hero-prev[^]*aria-label="আগের খবর"/, 'prev button is labelled');
+  assert.match(slider, /data-hero-next[^]*aria-label="পরের খবর"/, 'next button is labelled');
+  assert.match(slider, /tabindex="0"/, 'the track is keyboard-focusable');
+  assert.match(slider, /ArrowLeft[\s\S]{0,80}ArrowRight/, 'arrow keys move slides');
+  assert.match(slider, /<a href=\{`\/article\/\$\{p\.slug\}`\}/, 'slides are real crawlable links');
+});
