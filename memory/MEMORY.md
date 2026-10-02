@@ -602,3 +602,49 @@ Also fixed while in there: `keyPoints:` with an empty inline value followed by i
 **Result:** 65 articles repaired (52 boxes fixed, 3 boxes removed where no body sentence qualified), then 10 more that `auto-author` published while the merge was in flight. Corpus: **556 articles, 1364 points, 0 incomplete, 0 truncated, 0 under five words.** No body text, no other front-matter key, and no comment changed anywhere — checked file by file against HEAD. Suite 457/457.
 **Live verification:** 30 live articles sampled from `jachaidesk.com/news/` — all 30 render the box, 93 points, 0 incomplete. `tests` and `images` green on the pushed commit; `deploy` green on the follow-up.
 **Pre-existing, NOT mine:** `Lighthouse` fails on EVERY run going back to 05:45 today — `lighthouserc.json` asserts `minScore: 1` (a perfect 1.0) on performance/seo/accessibility/best-practices, which a real news page will not hold. Also still open from D140: `content-sweep` `BODY_OFF_HEADLINE` false positives on poetic headlines, and `heartbeat` holding a job for hours.
+
+## D147: the site had not deployed since 15:54 — four faults, one of them mine to find (2026-10-02)
+
+Verifying the D143 chronicle live exposed the real problem: **`jachaidesk.com` was serving a build from 15:54 while `main` carried the chronicle and two correctness fixes.** Every build after 15:54 had failed. Nothing about the chronicle was wrong; nothing could be *deployed*.
+
+**Fault 1 — Pagefind import killed the build (found by me).** The new search widget did `await import("/pagefind/pagefind.js")`, but `site/scripts/search-index.mjs` writes the index into `dist/` **after** `astro build` exits. A static specifier is therefore a hard `UNRESOLVED_IMPORT`, not a warning, and the whole build died. `/* @vite-ignore */` keeps the specifier opaque so the browser resolves it at runtime — which is what the code always intended.
+
+**Fault 2 — one article's date killed the build (found by me).** `/article/economy-140` threw `RangeError: Invalid time value`. The page builds its own `post` object with `updated: formatDate(...)`, so `post.updated` is the **Bengali string** `"২৪ সেপ্টেম্বর, ২০২৬"`; that was passed to an `isoDate()` helper which calls `Date#toISOString`, and `new Date()` cannot parse a Bengali date. Two defects in one line: the guard compared that Bengali string to an ISO date so it was **always** true, and the attribute itself threw. Fixed at the source — the block now reads and compares the real `Date`, and `isoDate` is replaced by a shared exported `toIsoDateTime` that returns `undefined` for anything unparseable instead of throwing. **A formatting helper must never be able to take a build down.**
+
+**Fault 3 — the build had become quadratic (found by me).** This is why nothing landed. The last good build took **53 seconds**; later ones crawled at ~10s per page across ~584 pages.
+- `relatedPosts()` called `eventsForPost()` **inside its sort comparator**, including `eventsForPost(post)` — same argument, same answer — once per comparison. ~5,000 comparisons ⇒ ~10,000 event scans per article page, each over all 83 events. Now resolved once per candidate, memoised. Ranking provably unchanged (event 10 / category 2 / shared-tag count / recency tiebreak).
+- `getCollection()` re-read and re-parsed all **584** markdown files on every call (~2.4s measured) from per-page code; `posts()` sits under nearly every helper, and the `/ghotona` hub paid it once per event page. Added `newsEntries()`, memoised for **production builds only** — Astro renders a static build in one process and the corpus cannot change mid-build, while dev stays uncached so a new article needs no restart.
+
+**Fault 4 — the deploy queue (operational, not code).** Vercel had 10 builds queued behind one that had been `BUILDING` for over an hour on the slow code, and `deploy.yml`'s `concurrency: cancel-in-progress: true` means a later push cancels the run before it ever creates a Vercel deployment — so the fixed commit had **no deployment at all**. I cancelled the stale queued build and the hour-stuck one (all commits remain in git; live was untouched) and dispatched `deploy.yml` explicitly. Lesson worth keeping: **after pushing a fix, confirm a Vercel deployment actually exists for that SHA** — a green push is not a green deploy.
+
+**Verified live on `ff4de5e`:** all three `active` events render sourced, dated chronology — `iran-israel-war-2026` 2, `dengue-outbreak-season` 8, `nct-lease-story` 4 — every entry with its "আমাদের প্রতিবেদনটি পড়ুন" link **and** a `সূত্র:` external source anchor (entry count == link count == source count, all three). `economy-140` shows প্রকাশিত + হালনাগাদ with 4 valid ISO `datetime` attributes and **zero** Bengali text inside a `datetime`. Pagefind assets live (`pagefind.js`, `pagefind-entry.json` 200). Chronology does **not** leak into `/news` or `rss.xml` (50 items). 21-route sweep all 200.
+
+**Gate so it cannot regress:** `pipeline/test/build-cost.test.mjs` — no `eventsForPost` in the comparator, the caches exist and stay off in dev, no per-page template reads the collection directly; `article-layout.test.mjs` — the throwing local `isoDate` cannot return. Suite **472/472**.
+
+**Still open (pre-existing, not from this work):** `Lighthouse` fails every run (`lighthouserc.json` demands a perfect `minScore: 1`); `health.yml` mixes ESM `import` with `require('fs')` so it always dies with `require is not defined`, and its 36-hour mtime check cannot work after a fresh checkout; `facebook.yml` runs every 20 minutes but `FACEBOOK_PAGE_ID`/`FACEBOOK_PAGE_TOKEN` are absent and `facebook_post.mjs` exits `0` on missing secrets *and* on send failure, so it reports success while posting nothing.
+
+## D148: Facebook automation is not a defect — the user has not set it up (2026-10-02)
+
+**User statement, 2026-10-02: "i did not setup facebook yet."** There is no Facebook page and no intent to have one right now.
+
+So the previously recorded "open problems" — `FACEBOOK_PAGE_ID`/`FACEBOOK_PAGE_TOKEN` absent, and `facebook_post.mjs` exiting `0` on missing secrets — are **the correct behaviour for a site with no Facebook page**, not a bug. Do not "fix" them, do not treat the 20-minute `facebook.yml` schedule as a failure, and do not raise the fail-loud question again unless the user says a page now exists. `facebook_post.mjs` exiting quietly is the right call: it avoids a 20-minutely failing job and a misleading alert while there is nothing to post to.
+
+This retires that item from the open-problems list in D142/D147. **Reopening condition: the user sets up a Facebook page and asks for automatic posting.** At that point the work is (a) add the two secrets, (b) make missing secrets fail loudly, (c) confirm a real post lands.
+
+## D149: the health monitor had never worked — fixed and now able to fail (2026-10-02)
+
+`health.yml` had never once done its job. Two independent faults in an inline `node -e` blob:
+- it mixed ESM `import` with `require('fs')`, so Node ran it as a module and **every run died** with `require is not defined` — the monitor was itself the broken thing while reporting the pipeline broken;
+- it judged staleness by **file mtime**, and `actions/checkout` gives every file the checkout time, so the newest article was always ~0h old and the 36-hour test **could never fire** however long publishing had been dead. A monitor that cannot fail is worse than no monitor, because it looks green.
+
+Recency now comes from `git log -1` on `site/src/content/news` — real history, correct immediately after checkout — so the workflow needs `fetch-depth: 0` and says why. Unknown history raises an explicit `RECENCY_UNKNOWN` failure instead of a false all-clear.
+
+Logic moved into `pipeline/tools/health_check.mjs` (testable outside CI). The inline `curl` that opened a **brand-new issue on every failed run** became `pipeline/tools/health_issue.mjs`: it reuses the open issue and comments the latest reading, so a week-long outage produces one issue rather than seven, and it creates the `health` label first because referencing a missing label makes the issue POST fail with 422.
+
+Also corrected the old issue body's claim that `pick pending 0` is a stall signal — right after a publishing run the queue is legitimately empty. It stays diagnostic, not fatal.
+
+15 new tests: healthy pass, 72h stall fails, exactly-at-limit passes while 36h01m fails, configurable threshold, too-few-articles, unknown recency, unparseable date, unreadable pick state, pending-0 is not a failure, issue reuse, label-before-issue ordering, dry run does no network. Suite **487/487**.
+
+**Verified locally:** `articles 600 / last article commit 0.6h ago / health OK`; simulated 72h silence correctly reports `FAIL PUBLISHING_STALLED` and exits 1. The workflow YAML was parsed and both scripts were run from the repo root.
+
+**Still open (pre-existing):** `Lighthouse` fails every run — `lighthouserc.json` asserts a perfect `minScore: 1`, which no real news page will hold. Needs realistic thresholds, not a perfect score.

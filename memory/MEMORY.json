@@ -1332,6 +1332,27 @@
       "result": "65 articles repaired (52 boxes fixed, 3 boxes removed where no body sentence qualified) plus 10 more that auto-author published during the merge. Corpus 556 articles / 1364 points / 0 incomplete / 0 truncated / 0 under five words. No body text, other front-matter key, or comment changed. Suite 457/457.",
       "liveVerification": "30 articles sampled from jachaidesk.com/news — all 30 render the box, 93 points, 0 incomplete. tests and images green; deploy green on the follow-up commit.",
       "preExistingNotOurs": "Lighthouse fails on every run since 05:45 because lighthouserc.json asserts minScore 1 (a perfect 1.0) on all four categories. content-sweep BODY_OFF_HEADLINE false positives (D140). heartbeat holds a job for hours."
+    },
+    {
+      "id": "D147",
+      "date": "2026-10-02",
+      "title": "Site had not deployed since 15:54: Pagefind import, a Bengali date in a datetime attribute, and a quadratic build each killed it; deploy queue never reached the fix",
+      "decision": "Fixed all three code faults and cleared the queue. Pagefind import gets /* @vite-ignore */ because the index is written after astro build. The article page reads the real Date for হালনাগাদ instead of the Bengali formatDate string, and isoDate is replaced by a shared exported toIsoDateTime that returns undefined rather than throwing. relatedPosts no longer calls eventsForPost inside its comparator (memoised per candidate) and the 584-file getCollection parse is memoised for production builds only, dev uncached. Cancelled the stale queued Vercel build and the one stuck BUILDING for over an hour, then dispatched deploy.yml, because concurrency cancel-in-progress meant the fixed commit had no deployment at all. Verified live on ff4de5e: all 3 active events render sourced dated chronology, chronology absent from /news and rss.xml, 21-route sweep 200, suite 472/472.",
+      "rationale": "A green push is not a green deploy — confirm a Vercel deployment exists for the SHA. And a formatting helper must never be able to take a build down."
+    },
+    {
+      "id": "D148",
+      "date": "2026-10-02",
+      "title": "Facebook automation is not a defect — the user has not set up a page",
+      "decision": "User stated plainly they have not set up Facebook. The absent FACEBOOK_PAGE_ID/TOKEN and facebook_post.mjs exiting 0 on missing secrets are therefore correct behaviour, not bugs: do not fix them, do not treat facebook.yml as failing, and do not revisit the fail-loud question until a page exists. Reopening condition is the user setting up a page and asking for automatic posting; the work then is adding the two secrets, failing loudly on missing secrets, and confirming a real post lands.",
+      "rationale": "Recorded so no future session mistakes an intentional no-op for an outstanding defect and starts fixing working code."
+    },
+    {
+      "id": "D149",
+      "date": "2026-10-02",
+      "title": "Health monitor fixed: it had never worked and could never have detected a stall",
+      "decision": "health.yml died on every run because it mixed ESM import with require(fs), and its stall test used file mtimes that actions/checkout rewrites to now, so it could never fire. Recency now comes from git log -1 on the content dir with fetch-depth 0; unknown history fails as RECENCY_UNKNOWN rather than passing silently. Logic moved to pipeline/tools/health_check.mjs and issue handling to pipeline/tools/health_issue.mjs, which reuses one open issue instead of opening a new one per failed run and creates the health label before referencing it. pick pending 0 is no longer treated as a stall signal. 15 new tests; suite 487/487.",
+      "rationale": "A monitor that cannot fail is worse than no monitor, because it looks green."
     }
   ],
   "sources": [

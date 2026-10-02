@@ -47,8 +47,40 @@ export const normalizePost = (entry) => ({
   readingTime: entry.data.readingTime ?? estimateReadingTime(entry.body),
 });
 
-export const posts = async () =>
-  (await getCollection("news", ({ data }) => !data.draft)).map(normalizePost);
+// 2026-10-02 build-time fix. getCollection() re-reads and re-parses all 584
+// markdown files on every call, and posts() sits under nearly every helper, so
+// each of the ~584 pages paid the full parse (~2.4s measured) again. That alone
+// is ~23 minutes of pure re-parsing, on top of the related-posts fix.
+//
+// Memoized for production builds only. `import.meta.env.PROD` is true while
+// astro build runs the pages in one process, so the collection is read once per
+// build — the corpus cannot change mid-build. In dev it stays uncached, so adding
+// an article still shows up without a restart.
+let cachedEntries = null;
+
+/**
+ * Every published article, memoized for production builds.
+ *
+ * 2026-10-02. getCollection() re-reads and re-parses all 584 markdown files on
+ * every call (~2.4s measured), and it was being called from per-page code — the
+ * /ghotona/[slug] hub in particular, once for each of its 83 event pages. Under
+ * Astro's static build the pages share one process and the corpus cannot change
+ * mid-build, so the parse is done once. Dev stays uncached so a newly written
+ * article appears without a restart.
+ */
+export const newsEntries = async () => {
+  if (!import.meta.env.PROD) return getCollection("news", ({ data }) => !data.draft);
+  cachedEntries ??= getCollection("news", ({ data }) => !data.draft);
+  return cachedEntries;
+};
+
+let cachedPosts = null;
+
+export const posts = async () => {
+  if (!import.meta.env.PROD) return (await newsEntries()).map(normalizePost);
+  cachedPosts ??= (await newsEntries()).map(normalizePost);
+  return cachedPosts;
+};
 
 export const getPost = async (slug) => (await posts()).find((post) => post.slug === slug);
 export const getAuthor = (slug) => authors.find((author) => author.slug === slug);
@@ -103,25 +135,45 @@ export const breakingItems = async (n = 5) =>
 
 export const popularPosts = async (n = 4) => (await sortedPosts()).slice(0, n);
 
-export const relatedPosts = async (post, n = 6) =>
-  (await sortedPosts())
+export const relatedPosts = async (post, n = 6) => {
+  // 2026-10-02 build-time fix. This sort used to call eventsForPost() from
+  // INSIDE the comparator, and eventsForPost(post) — the same argument, the
+  // same answer — once per comparison. Sorting 583 candidates is ~5,000
+  // comparisons, so every article page did ~10,000 event scans (each over all 83
+  // events). Across 584 pages that is hundreds of millions of string matches and
+  // it turned a 53-second build into one that ran for hours, so no deploy ever
+  // reached production.
+  //
+  // The answer does not depend on the comparison, so compute it once per
+  // candidate. Same ranking, ~5,000 scans instead of ~10,000 per page, and the
+  // post's own events are resolved a single time instead of per comparison.
+  const postEventIds = new Set(eventsForPost(post).map((event) => event.id));
+  const eventBonus = new Map();
+  const score = (candidate) => {
+    if (!eventBonus.has(candidate.slug)) {
+      eventBonus.set(
+        candidate.slug,
+        eventsForPost(candidate).some((event) => postEventIds.has(event.id)) ? 10 : 0,
+      );
+    }
+    // 2026-10-02: same tracked event outranks same-category links —
+    // "আরও পড়ুন" should continue the story, not just the beat.
+    return (
+      eventBonus.get(candidate.slug) +
+      (candidate.category === post.category ? 2 : 0) +
+      candidate.tags.filter((tag) => post.tags.includes(tag)).length
+    );
+  };
+
+  return (await sortedPosts())
     .filter((candidate) => candidate.slug !== post.slug)
     .sort((a, b) => {
-      const score = (candidate) =>
-        // 2026-10-02: same tracked event outranks same-category links —
-        // "আরও পড়ুন" should continue the story, not just the beat.
-        (eventsForPost(candidate).some((e) =>
-          eventsForPost(post).map((p) => p.id).includes(e.id),
-        )
-          ? 10
-          : 0) +
-        (candidate.category === post.category ? 2 : 0) +
-        candidate.tags.filter((tag) => post.tags.includes(tag)).length;
       // Recency breaks ties so fresh stories surface instead of arbitrary
       // collection order when scores are equal (interlinking upgrade 2026-09-27).
       return score(b) - score(a) || (b.ts ?? 0) - (a.ts ?? 0);
     })
     .slice(0, n);
+};
 
 // Tags that co-occur with this tag across the corpus, for the "related tags"
 // box on /tags pages. Pure navigation signal — no factual claim.
