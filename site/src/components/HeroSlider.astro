@@ -136,7 +136,19 @@ const items = slides.slice(0, 5);
           let timer = null;
           const play = () => {
             if (timer || count() < 2) return;
-            timer = setInterval(() => go(current() + 1), AUTOPLAY_MS);  // instant cut
+            // Warm the NEXT slide's photo while the current one is on screen.
+            // The auto-advance is an instant cut (see go()), so a lazy image
+            // that has not started downloading shows as an empty box the
+            // moment the slide appears - which is exactly the blank hero seen
+            // in a full-page screenshot. Fetching it early costs nothing (the
+            // browser caches it) and removes the flash on every wrap.
+            const warm = () => {
+              const next = track.children[(current() + 1) % count()];
+              const img = next?.querySelector("img");
+              if (img?.src && !img.complete) new Image().src = img.src;
+            };
+            warm();
+            timer = setInterval(() => { go(current() + 1); warm(); }, AUTOPLAY_MS);
           };
           const stop = () => {
             if (timer) { clearInterval(timer); timer = null; }
