@@ -65,6 +65,22 @@ export function relevanceScore(itemText, { keywords = [], entities = [] }) {
   return terms.filter((t) => t && text.includes(t)).length;
 }
 
+// 2026-10-02: event-match gate. Keyword overlap alone (score >= 1) let
+// unrelated updates into a tracked story (a BRTA story absorbing a motorcycle
+// enforcement). Require at least two distinct fingerprint hits, or one entity
+// hit PLUS one keyword hit — one shared term is never enough.
+export function isStrictEventMatch(itemText, { keywords = [], entities = [] }) {
+  const text = String(itemText ?? '').toLowerCase();
+  const entityHits = [...new Set(entities.filter(Boolean))].filter((t) =>
+    text.includes(String(t).toLowerCase()),
+  ).length;
+  const keywordHits = [...new Set(keywords.filter(Boolean))].filter((t) =>
+    text.includes(String(t).toLowerCase()),
+  ).length;
+  if (entityHits >= 1 && keywordHits >= 1) return true;
+  return entityHits + keywordHits >= 2;
+}
+
 const escRe = /[.*+?^${}()|[\]\\]/g;
 const escYq = (s) => String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 
@@ -171,12 +187,23 @@ async function fetchItems(query) {
   }
 }
 
-function buildQueries(story) {
+export function buildQueries(story) {
   const fp = story.fingerprint ?? {};
-  const kw = [...(fp.keywords ?? []), ...(fp.entities ?? [])].filter(Boolean);
+  const entities = [...new Set((fp.entities ?? []).filter(Boolean))];
+  const keywords = [...new Set((fp.keywords ?? []).filter(Boolean))];
   const qs = [];
-  if (kw.length) qs.push(kw.join(' '));
-  for (const k of kw.slice(0, 3)) if (qs.length < 3) qs.push(k);
+  // 2026-10-02 (event matching v2): prefer entity+keyword PAIRS over a flat
+  // OR of terms — a bare "ডেঙ্গু" or "UN" query drifts into unrelated stories.
+  for (const e of entities.slice(0, 2)) {
+    for (const k of keywords.slice(0, 2)) {
+      if (qs.length < 3) qs.push(`${e} ${k}`);
+    }
+  }
+  for (const e of entities.slice(0, 3)) if (qs.length < 4 && !qs.includes(e)) qs.push(e);
+  if (!qs.length) {
+    const kw = [...keywords, ...entities].filter(Boolean);
+    if (kw.length) qs.push(kw.join(' '));
+  }
   return qs;
 }
 
@@ -216,6 +243,7 @@ async function main() {
         if (item.isoDate.getTime() <= last) continue;
         const score = relevanceScore(`${item.title} ${item.snippet}`, story.fingerprint ?? {});
         if (score === 0) continue;
+        if (!isStrictEventMatch(`${item.title} ${item.snippet}`, story.fingerprint ?? {})) continue;
         matches.push({ score, item });
       }
       if (matches.length >= 10) break;

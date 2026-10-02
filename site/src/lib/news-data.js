@@ -1,4 +1,5 @@
 import { getCollection } from "astro:content";
+import { eventsForPost } from "./events.js";
 export { SITE, SEO, authors, categories, tags, CONTACT, NAVIGATION, MORE_NAVIGATION } from "../config/theme.config.ts";
 import { SITE, authors, categories, tags } from "../config/theme.config.ts";
 
@@ -88,6 +89,13 @@ export const relatedPosts = async (post, n = 6) =>
     .filter((candidate) => candidate.slug !== post.slug)
     .sort((a, b) => {
       const score = (candidate) =>
+        // 2026-10-02: same tracked event outranks same-category links —
+        // "আরও পড়ুন" should continue the story, not just the beat.
+        (eventsForPost(candidate).some((e) =>
+          eventsForPost(post).map((p) => p.id).includes(e.id),
+        )
+          ? 10
+          : 0) +
         (candidate.category === post.category ? 2 : 0) +
         candidate.tags.filter((tag) => post.tags.includes(tag)).length;
       // Recency breaks ties so fresh stories surface instead of arbitrary

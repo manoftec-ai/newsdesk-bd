@@ -8,7 +8,7 @@ seoDescription: "সূত্র দুটি বলেছে, ফ্লাই�
 date: 2026-09-30T21:41:03.000Z
 publishedAt: 2026-10-02T11:17:34.080Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

@@ -173,8 +173,27 @@ const siblingEvents = events()
                       {formatChronoDate(item.date)}
                     </time>
                     <h4 class="mt-1 font-serif text-lg font-semibold leading-snug">
-                      {item.title}
+                      {item.slug ? (
+                        <a
+                          class="hover:text-primary hover:underline decoration-dotted underline-offset-2"
+                          href={`/article/${item.slug}`}
+                        >
+                          {item.title}
+                        </a>
+                      ) : (
+                        item.title
+                      )}
                     </h4>
+                    {item.slug && (
+                      <p class="mt-1 text-xs text-muted-foreground">
+                        <a
+                          class="underline decoration-dotted underline-offset-2 hover:text-primary"
+                          href={`/article/${item.slug}`}
+                        >
+                          আমাদের প্রতিবেদনটি পড়ুন
+                        </a>
+                      </p>
+                    )}
                     {item.summary && (
                       <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                         {item.summary}

@@ -8,7 +8,7 @@ seoDescription: "চট্টগ্রাম বন্দরের নিউম�
 date: 2026-10-02T10:10:53.000Z
 publishedAt: 2026-10-02T12:00:12.958Z
 developing: true
-category: "national"
+category: "economy"
 tags: ["chattogram"]
 author: "desk"
 lang: "bn"

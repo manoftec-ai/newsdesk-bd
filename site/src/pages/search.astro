@@ -17,8 +17,29 @@ const title = `খুঁজুন — ${SITE.name}`;
       <p class="mt-2 text-muted-foreground">সব সংবাদ ও ট্যাগ অনুসন্ধান করুন।</p>
     </header>
 
-    <div id="search" class="mt-6 min-h-14 text-center text-sm text-muted-foreground">
-      খোঁজার বাক্স লোড হচ্ছে…
+    <div class="mt-6">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <input
+          id="q"
+          type="search"
+          placeholder="শিরোনাম, ট্যাগ বা ঘটনা লিখুন…"
+          class="w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-primary"
+          aria-label="অনুসন্ধান"
+        />
+        <select
+          id="cat"
+          class="rounded-md border border-border bg-background px-3 py-2 text-sm"
+          aria-label="বিভাগ"
+        >
+          <option value="">সব বিভাগ</option>
+          {categories.map((c) => (
+            <option value={c.name}>{c.name}</option>
+          ))}
+        </select>
+      </div>
+      <div id="results" class="mt-6 min-h-14 text-sm text-muted-foreground">
+        খোঁজার বাক্স লোড হচ্ছে…
+      </div>
     </div>
 
     <div class="mt-10 grid gap-10 sm:grid-cols-2">
@@ -54,40 +75,51 @@ const title = `খুঁজুন — ${SITE.name}`;
 </BaseLayout>
 
 <script>
-  const searchRoot = document.getElementById("search");
+  const qInput = document.getElementById("q");
+  const catSelect = document.getElementById("cat");
+  const resultsEl = document.getElementById("results");
+  let pagefind = null;
 
-  const loadStylesheet = () => {
-    if (document.querySelector('link[href="/pagefind/pagefind-ui.css"]')) return;
-    const linkEl = document.createElement("link");
-    linkEl.rel = "stylesheet";
-    linkEl.href = "/pagefind/pagefind-ui.css";
-    document.head.appendChild(linkEl);
+  const escapeHtml = (s) =>
+    String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
+  const render = async (query, category) => {
+    if (!pagefind || !query.trim()) {
+      resultsEl.innerHTML = pagefind ? "একটি শব্দ লিখে খুঁজুন…" : resultsEl.innerHTML;
+      return;
+    }
+    const filters = category ? { category } : undefined;
+    const search = await pagefind.search(query, filters ? { filters } : undefined);
+    const items = await Promise.all(search.results.slice(0, 20).map((r) => r.data()));
+    if (!items.length) {
+      resultsEl.innerHTML = '<p class="text-muted-foreground">কিছু পাওয়া যায়নি।</p>';
+      return;
+    }
+    resultsEl.innerHTML = `<p class="mb-3 text-xs text-muted-foreground">${search.results.length}টি ফল</p>` +
+      items
+        .map(
+          (d) => `
+        <a href="${escapeHtml(d.url)}" class="mb-4 block border-b border-border/60 pb-3">
+          <span class="font-medium text-foreground hover:text-primary">${escapeHtml(d.meta?.title ?? d.url)}</span>
+          <span class="mt-1 block text-xs text-muted-foreground">${d.excerpt ?? ""}</span>
+        </a>`,
+        )
+        .join("");
   };
 
-  const loadScript = (src) =>
-    new Promise((resolve) => {
-      const script = document.createElement("script");
-      script.src = src;
-      script.async = true;
-      script.onload = resolve;
-      script.onerror = resolve;
-      document.head.appendChild(script);
-    });
-
   const init = async () => {
-    if (!searchRoot || searchRoot.dataset.busy === "true") return;
-    searchRoot.dataset.busy = "true";
-    loadStylesheet();
     try {
-      await loadScript("/pagefind/pagefind-ui.js");
-      if (window.PagefindUI) {
-        searchRoot.innerHTML = "";
-        new window.PagefindUI({ element: "#search", showSubResults: true });
-      } else {
-        searchRoot.innerHTML = "সরাসরি অনুসন্ধান এই সংস্করণে নেই — উপরের বিভাগ/ট্যাগ ব্যবহার করুন।";
-      }
+      // @vite-ignore is required, not cosmetic. The Pagefind index is written
+      // to dist/ AFTER `astro build` finishes (scripts/search-index.mjs), so at
+      // build time /pagefind/pagefind.js does not exist and Vite fails the whole
+      // deploy with UNRESOLVED_IMPORT. The specifier has to stay opaque so the
+      // browser resolves it at runtime instead.
+      pagefind = await import(/* @vite-ignore */ "/pagefind/pagefind.js");
+      resultsEl.innerHTML = '<p class="text-muted-foreground">একটি শব্দ লিখে খুঁজুন…</p>';
+      qInput.addEventListener("input", () => render(qInput.value, catSelect.value));
+      catSelect.addEventListener("change", () => render(qInput.value, catSelect.value));
     } catch {
-      searchRoot.innerHTML = "সরাসরি অনুসন্ধান চালু করা যায়নি — উপরের বিভাগ/ট্যাগ ব্যবহার করুন।";
+      resultsEl.innerHTML = "সরাসরি অনুসন্ধান এই সংস্করণে নেই — উপরের বিভাগ/ট্যাগ ব্যবহার করুন।";
     }
   };
 

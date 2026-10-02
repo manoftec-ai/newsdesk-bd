@@ -8,7 +8,7 @@ seoDescription: "ইসরায়েলগামী ফ্লাইদুবা�
 date: 2026-10-01T12:52:36.000Z
 publishedAt: 2026-10-02T09:45:26.390Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

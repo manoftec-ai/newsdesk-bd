@@ -8,7 +8,7 @@ seoDescription: "ইরানের আশপাশে তিনটি বিম
 date: 2026-10-01T16:07:38.000Z
 publishedAt: 2026-10-02T08:15:28.679Z
 developing: false
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

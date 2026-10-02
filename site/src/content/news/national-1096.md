@@ -8,7 +8,7 @@ seoDescription: "দূরদর্শী এই নামী সাংবাদ
 date: 2026-10-02T02:00:00.000Z
 publishedAt: 2026-10-02T04:45:00.070Z
 developing: true
-category: "national"
+category: "opinion"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

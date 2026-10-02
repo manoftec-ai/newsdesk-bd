@@ -8,7 +8,7 @@ seoDescription: "হলিউডের জনপ্রিয় অভিনেত�
 date: 2026-10-02T08:01:00.000Z
 publishedAt: 2026-10-02T09:45:26.374Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

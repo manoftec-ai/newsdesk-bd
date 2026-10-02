@@ -8,7 +8,7 @@ seoDescription: "এক বছর কিচ্ছু না করে ছুট�
 date: 2026-10-01T02:00:00.000Z
 publishedAt: 2026-10-01T07:33:50.467Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["health"]
 author: "desk"
 lang: "bn"

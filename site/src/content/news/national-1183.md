@@ -8,7 +8,7 @@ seoDescription: "জটিল কাজ সম্পাদনের জন্য
 date: 2026-10-02T11:42:50.000Z
 publishedAt: 2026-10-02T13:52:26.470Z
 developing: true
-category: "national"
+category: "tech"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

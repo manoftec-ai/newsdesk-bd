@@ -8,7 +8,7 @@ seoDescription: "প্রসঙ্গত, জ্ঞানেশকে অপস
 date: 2026-09-30T16:09:55.000Z
 publishedAt: 2026-10-02T14:23:32.683Z
 developing: true
-category: "national"
+category: "international"
 tags: ["dhaka"]
 author: "desk"
 lang: "bn"

@@ -8,7 +8,7 @@ seoDescription: "সার্বিক হিসাবে ২০২৬ সাল
 date: 2026-10-01T08:15:00.000Z
 publishedAt: 2026-10-01T10:34:08.425Z
 developing: true
-category: "national"
+category: "economy"
 tags: ["economy"]
 author: "desk"
 lang: "bn"

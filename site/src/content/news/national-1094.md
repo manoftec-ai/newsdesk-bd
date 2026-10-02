@@ -8,7 +8,7 @@ seoDescription: "​একদিন ডিমের হালি ৯০ টা�
 date: 2026-10-02T02:00:00.000Z
 publishedAt: 2026-10-02T04:45:00.048Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

@@ -8,7 +8,7 @@ seoDescription: "কমিশন জানিয়েছে, ২০ রাজ্�
 date: 2026-10-02T09:49:34.000Z
 publishedAt: 2026-10-02T12:00:13.003Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

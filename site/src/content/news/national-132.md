@@ -6,7 +6,7 @@ seoTitle: "আইইএলটিএসে ৯-এ ৯ পেয়েছেন র�
 excerpt: "আইইএলটিএসে ৯-এ ৯ পেলেন ঢাবির সাবেক ছাত্রী রাইসা শাম্মা; নিয়মিত শোনার অভ্যাসই সাফল্যের চাবি।"
 seoDescription: "আইইএলটিএসে ৯-এ ৯ পেলেন ঢাবির সাবেক ছাত্রী রাইসা শাম্মা; নিয়মিত শোনার অভ্যাসই সাফল্যের চাবি।"
 date: 2026-09-20T02:04:00.000Z
-category: "national"
+category: "entertainment"
 tags: ["education", "transport", "dhaka"]
 author: "desk"
 lang: "bn"

@@ -8,7 +8,7 @@ seoDescription: "গত রোববার রাতে যুক্তরাজ
 date: 2026-10-01T08:59:45.000Z
 publishedAt: 2026-10-02T11:00:14.986Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

@@ -25,9 +25,63 @@ const RAW_TO_SITE = {
   'শিক্ষা': 'national', 'স্বাস্থ্য': 'national', 'ঢাকা': 'national', 'মেট্রো': 'national',
   'আবহাওয়া': 'national', 'ফ্যাক্ট চেক': 'factcheck', 'সত্যতা যাচাই': 'factcheck',
   'ফ্যাক্টচেক': 'factcheck', 'গুজব যাচাই': 'factcheck',
+  // 2026-10-02: expanded from the real raw-label inventory in briefs — sources
+  // use dozens of labels, and every unmapped one silently became "national".
+  'জাতীয়': 'national', 'দেশ': 'national', 'বাংলাদেশ': 'national', 'bangladesh': 'national',
+  'Bangladesh': 'national', 'সারাদেশ': 'national', 'জনপদ': 'national', 'জেলা': 'national',
+  'রাজধানী': 'national', 'প্রথম পাতা': 'national', 'দ্বিতীয় পাতা': 'national', 'city': 'national',
+  'আইন ও অপরাধ': 'national', 'অপরাধ': 'national', 'আদালত': 'national',
+  'ক্যাম্পাস': 'national', 'আমার ক্যাম্পাস': 'national', 'উচ্চশিক্ষা': 'national', 'পরীক্ষা': 'national',
+  ' সুস্থতা': 'national', 'ভর্তি': 'national', 'ধর্ম ও জীবন': 'national', 'ইসলাম': 'national',
+  'নিয়োগ': 'national', 'চাকরির খবর': 'national', 'করপোরেট নিউজ': 'national', 'কর্পোরেট সংবাদ': 'national',
+  'প্রতিবেদন': 'national', 'খবর': 'national', 'প্রবাস সংবাদ': 'international',
+  'তথ্যপ্রযুক্তি': 'tech', 'এআই': 'tech', 'technology': 'tech', 'SpaceX': 'tech',
+  'হলিউড': 'entertainment', 'বলিউড': 'entertainment', 'টালিউড': 'entertainment', 'ওটিটি': 'entertainment',
+  'গান': 'entertainment', 'ফ্যাশন': 'entertainment', 'লুক': 'entertainment', 'রস+আলো': 'entertainment',
+  'রসনা': 'entertainment', 'যাপন': 'entertainment', 'জীবনযাপন': 'entertainment', 'ভ্রমণ': 'entertainment',
+  'বিশ্ব চলচ্চিত্র': 'entertainment',
+  'যুক্তরাষ্ট্র': 'international', 'ভারত': 'international', 'পাকিস্তান': 'international',
+  'মধ্যপ্রাচ্য': 'international', 'ইউরোপ': 'international', 'চীন': 'international', 'সারাবিশ্ব': 'international',
+  'বিশ্ব': 'international', 'International': 'international', 'international': 'international',
+  'বিদেশ': 'international', 'US news': 'international', 'UK news': 'international', 'US immigration': 'international',
+  'UK security and counter-terrorism': 'international', 'Trump administration': 'international',
+  'Labour conference 2026': 'international', 'Australian Greens': 'international', 'Larissa Waters': 'international',
+  'Donald Trump': 'international', 'Andy Burnham': 'international', 'Piers Morgan': 'international',
+  'Diana, Princess of Wales': 'international', 'Sydney': 'international', 'New York': 'international',
+  'United Nations': 'international', 'France': 'international', 'Europe': 'international', 'Estonia': 'international',
+  'Middle East and north Africa': 'international', 'US Senate': 'international', 'US Congress': 'international',
+  'Hudson river plane crash': 'international', 'New South Wales': 'international', 'Tennessee': 'international',
+  'Florida': 'international', 'One Nation': 'international', 'Cricket': 'sports', 'Football': 'sports',
+  'world': 'international', 'Sports': 'sports', 'Politics': 'politics',
+  'মতামত': 'opinion', 'উপ-সম্পাদকীয়': 'opinion', 'বিশ্লেষণ': 'opinion', 'সাহিত্য': 'opinion',
+  'poem': 'opinion', 'prose': 'opinion', 'treatise': 'opinion', 'writings': 'opinion', 'Op-Ed': 'opinion',
+  'গোলটেবিল': 'opinion', 'আলাপন': 'opinion', 'পাঠক-নাগরিক': 'opinion',
+  'ব্যাংক': 'economy', 'শেয়ারবাজার': 'economy', 'শিল্প': 'economy', 'বিশ্ববাণিজ্য': 'economy',
+  'দূর পরবাস': 'international', 'ভিডিও': 'national', 'ভিডিও নিউজ': 'national', 'মাল্টিমিডিয়া': 'national',
+  'আজকের পত্রিকা': 'national',   'প্রেস রিলিজ': 'national',
+  'আমার ক্যাম্পাস ': 'national', 'টেলিভিশন': 'national', 'Featured': 'national', 'feature': 'national',
+  'article': 'national', 'stories': 'national', 'glimpse': 'national', 'cause': 'national',
+  'activities': 'national',  'culture': 'entertainment',
+  'ইভেন্ট': 'national', 'সামাজিক': 'national', 'কুশল': 'national', 'বৃহত্তর চট্টগ্রাম': 'national',
+  'কুমিল্লা': 'national', 'কক্সবাজার': 'national', 'Social care': 'national', 'আইডেন্টিটি': 'national',
 };
 export function siteCategory(raw) {
   return RAW_TO_SITE[String(raw ?? '').trim()] ?? 'national';
+}
+
+// 2026-10-02: a raw category we do not recognise (or none at all) must never
+// silently become "national" — unknown routing polluted the National feed with
+// Gemini/ChatGPT/Jim Carrey items. Flag the brief for review instead.
+export function isKnownRawCategory(raw) {
+  return Object.prototype.hasOwnProperty.call(RAW_TO_SITE, String(raw ?? '').trim());
+}
+
+// 2026-10-02: two source headlines glued into one title ("স্কলারশিপ…। সুখু ও
+// দুখু…") mean the RSS title itself fused two unrelated items. Refuse to
+// author it as one article.
+export function isFusedHeadline(title) {
+  const parts = String(title ?? '').split('।').map((p) => p.trim()).filter(Boolean);
+  return parts.length >= 2 && parts.some((p) => p.length >= 8);
 }
 
 export const SITE_CATEGORIES = ['national', 'politics', 'economy', 'international', 'sports', 'entertainment', 'tech', 'opinion', 'factcheck'];
@@ -114,6 +168,10 @@ export function buildBrief(clusterId, { db } = {}) {
 
   const rawCats = [...new Set(members.map((m) => m.category).filter(Boolean))];
   const category = siteCategory(rawCats[0] ?? 'জাতীয়');
+  const categoryTrusted = rawCats.length > 0 && rawCats.every((c) => isKnownRawCategory(c));
+  const headlineFused = isFusedHeadline(cluster.headline);
+  const needsReview = !categoryTrusted || headlineFused;
+  const reviewReason = !categoryTrusted ? 'unknown-category' : headlineFused ? 'fused-headline' : null;
   const tier = verdict?.tier ?? 'B';
   const slug = slugFromHeadline(cluster.headline, { categorySlug: category, clusterId: cluster.id });
 
@@ -145,6 +203,8 @@ export function buildBrief(clusterId, { db } = {}) {
     developing: members.length === 1 && verdict?.badge === 'single',
     verdict: verdict ? { badge: verdict.badge, tier: verdict.tier, score: verdict.score, status: verdict.status } : null,
     rawCategories: rawCats,
+    needsReview,
+    reviewReason,
     members: members.map((m) => ({
       source_id: m.source_id,
       title: m.title,
