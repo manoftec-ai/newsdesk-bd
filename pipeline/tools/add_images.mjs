@@ -10,6 +10,7 @@
 // `thumbnailAlt` into the front matter. Idempotent: already-thumbnailed files are
 // skipped unless --force.
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join, resolve } from 'node:path';
 import { chooseThumbnail } from '../lib/images.mjs';
 
@@ -116,6 +117,15 @@ const files = readdirSync(contentDir)
   .filter((f) => (!onlySlugs || onlySlugs.has(f.replace(/\.md$/, ''))))
   .sort();
 
+// 2026-10-02: hashes of the images already in the corpus. A rendered photo whose
+// bytes match one of these is rejected and the next candidate is tried, so a
+// re-render batch can no longer reintroduce a byte-identical copy (136 of them
+// existed before this).
+const usedHashes = new Set();
+for (const f of readdirSync(imagesDir).filter((x) => x.endsWith(".webp"))) {
+  try { usedHashes.add(createHash("sha1").update(readFileSync(join(imagesDir, f))).digest("hex")); } catch {}
+}
+
 let made = 0, skipped = 0, failed = 0, photo = 0, card = 0;
 for (const f of files) {
   if (limit && made >= limit) break;
@@ -141,6 +151,7 @@ for (const f of files) {
       sources: meta.sources,
       dryRun,
       mode: strategy,
+      usedHashes,
     });
     const thumbPath = `/images/${slug}.webp`;
     if (dryRun) {
@@ -149,6 +160,7 @@ for (const f of files) {
       made++;
     } else if (result.webp) {
       writeFileSync(join(imagesDir, `${slug}.webp`), result.webp);
+      usedHashes.add(createHash("sha1").update(result.webp).digest("hex"));
       writeFileSync(full, insertThumbnail(content, thumbPath, result.alt));
       console.log(`+ ${slug}.webp (${result.mode})`);
       made++;

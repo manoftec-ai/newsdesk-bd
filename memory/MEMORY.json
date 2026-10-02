@@ -1267,6 +1267,19 @@
         "deploy dispatch HTTP 204 on the fixed runs"
       ],
       "lesson": "a green job is not a working system; published=false after a discarded batch is silent data loss"
+    },
+    {
+      "id": "D138",
+      "date": "2026-10-02",
+      "topic": "Thumbnail relevance: generic category query was stamping city photos on unrelated stories",
+      "decision": "buildQuery returns {query,specific}; a generic category query no longer buys a photo for the catch-all buckets (national/opinion/latest) which get the branded card instead. Keyword table widened. One photo per run. Re-render via add_images --slugs + images.yml slugs input (CI only: sharp has no android binary).",
+      "measured": [
+        "newest 20: 17 publisher photos, 3 generic city photos (2 byte-identical)",
+        "corpus 503 articles: 309 publisher, 189 stock, 174 byte-identical duplicates",
+        "28 articles still carry the ASaber91 city photo"
+      ],
+      "bugCaught": "--force re-render added a duplicate thumbnail/thumbnailAlt pair; duplicate YAML keys failed the whole Astro build. insertThumbnail now strips the old pair; a corpus-wide duplicate-key test guards it",
+      "tests": "pipeline suite 442/442"
     }
   ],
   "sources": [
