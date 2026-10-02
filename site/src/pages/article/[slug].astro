@@ -23,6 +23,7 @@ import {
   formatDateTimeBD,
   formatDateTimeBDShort,
   relatedPosts,
+  toIsoDateTime,
 } from "../../lib/news-data.js";
 import { topicalEventsForPost } from "../../lib/events.js";
 import { evidenceLabelBn, evidenceWithUrls, corroborationSummary } from "../../lib/evidence-label.js";
@@ -102,7 +103,7 @@ const badge = getBadge(post);
 const related = await relatedPosts(post, 6);
 const matchedEvents = topicalEventsForPost(post, 10);
 
-const isoDate = (date) => (date ? new Date(date).toISOString() : undefined);
+const isoDate = toIsoDateTime;
 const pageTitle = post.seoTitle ?? `${post.title} — ${SITE.name}`;
 const description = post.seoDescription ?? post.excerpt;
 
@@ -319,9 +320,23 @@ const shareLinks = [
           {/* 2026-10-02: Published vs Updated must be separate concepts. Updated
               only appears when the article content actually changed (the
               watcher sets `updated` only on a real update). */}
-          {post.updated && post.updated !== entry.data.date.toISOString().slice(0, 10) && (
+          {/* 2026-10-02 build fix. `post.updated` here is the BENGALI FORMATTED
+              string (post is built above with formatDate()), not a date. Both
+              halves of this block were wrong:
+                - the guard compared that Bengali string against an ISO date, so
+                  it was ALWAYS true and the block rendered even when nothing was
+                  updated on a different day;
+                - isoDate(post.updated) then ran Date#toISOString on
+                  "২৪ সেপ্টেম্বর, ২০২৬", which is Invalid Date, and that THREW —
+                  RangeError: Invalid time value — failing the entire Astro build
+                  and therefore every deploy.
+              Compare and format from the real Date, and display the same text. */}
+          {entry.data.updated && entry.data.updated.getTime() !== entry.data.date.getTime() && (
             <span class="flex items-center gap-1.5">
-              হালনাগাদ: <time datetime={isoDate(post.updated)}>{formatDate(post.updated)}</time>
+              হালনাগাদ:{" "}
+              <time datetime={entry.data.updated.toISOString()}>
+                {formatDate(entry.data.updated)}
+              </time>
             </span>
           )}
           <span class="flex items-center gap-1.5">
