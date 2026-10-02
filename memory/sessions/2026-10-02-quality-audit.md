@@ -30,3 +30,10 @@
 ## Status / next
 - Deploy will run on push; watch Vercel build + a couple of live articles.
 - Next candidates: image-credit caption policy, factcheck verdict tab styling, event-based tracker registry v2.
+
+## Follow-up (D146, same day): raw-category taxonomy + recategorization
+- RAW_TO_SITE extended to the full observed raw-label inventory (এআই, হলিউড, যুক্তরাষ্ট্র, অপরাধ, ক্যাম্পাস, বিদেশ, US/UK labels, etc.) — 192 keys. Unknown labels no longer fall through to জাতীয়.
+- 46 archive articles re-categorized in place from their briefs' rawCategories (national-1135 Jim Carrey -> entertainment, national-1183 Gemini -> tech, national-1151 -> economy, national-403/trust/politics -> international, etc.). Slug filenames still carry the old national- prefix (cosmetic debt; category field drives grouping).
+- relatedPosts now boosts same-event matches first via eventsForPost (event > category > shared tags).
+- Parallel-session tool pipeline/tools/sync_chronicle.mjs (keeps events-news chronicle pointing at our own published, cited articles) was committed alongside — noted for memory.
+- Pushed b3bf5440; content gate green, 457/457 tests pass.
