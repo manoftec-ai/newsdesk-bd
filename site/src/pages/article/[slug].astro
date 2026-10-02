@@ -100,11 +100,6 @@ const category = getCategory(post.category);
 const author = getAuthor(post.author);
 const badge = getBadge(post);
 const related = await relatedPosts(post, 6);
-// Inline context links: the two strongest related stories, rendered with their
-// real headlines as anchor text right after the body (interlinking 2026-09-27).
-// Template-level so all 398 existing articles gain in-body internal links on
-// the next deploy without rewriting any prose.
-const contextLinks = related.slice(0, 2);
 const matchedEvents = topicalEventsForPost(post, 10);
 
 const isoDate = (date) => (date ? new Date(date).toISOString() : undefined);
@@ -520,27 +515,12 @@ const shareLinks = [
         )}
       </div>
 
-      {/* 2026-09-27 interlinking: inline context box. Body prose itself has
-          almost no internal links (7/398 articles), so the two strongest
-          related stories render here with headline anchor text — crawlable,
-          keyboard-native, no JS. */}
-      {contextLinks.length > 0 && (
-        <aside class="context-links mt-8 rounded-md border border-border/60 p-4" role="note" aria-label="একই প্রসঙ্গে">
-          <div class="text-sm font-bold">একই প্রসঙ্গে আরও পড়ুন</div>
-          <ul class="mt-2 space-y-1.5">
-            {contextLinks.map((item) => (
-              <li>
-                <a
-                  href={`/article/${item.slug}`}
-                  class="font-medium text-primary underline underline-offset-2 hover:text-foreground"
-                >
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </aside>
-      )}
+      {/* 2026-10-02: the "একই প্রসঙ্গে আরও পড়ুন" inline box is removed at the
+          user's request. It repeated the two strongest related stories that the
+          "আরও পড়ুন" grid at the foot of the page already shows, so the reader
+          saw the same headlines twice on one page. Interlinking is not lost:
+          that grid is real <a href> markup with headline anchor text, so
+          crawlers still get the related-story path from every article. */}
 
       {/* 2026-09-27: the "সূত্র" block under the story is removed. It named the
           same outlets the প্রমাণ দেখুন panel below already lists, so the reader

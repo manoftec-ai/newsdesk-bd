@@ -342,3 +342,19 @@ test('every component used in a template is imported by it', () => {
   }
   assert.deepEqual(problems, [], `unimported components:\n${problems.join('\n')}`);
 });
+
+test('the "একই প্রসঙ্গে আরও পড়ুন" inline box is not rendered', () => {
+  // 2026-10-02, user request. The aside repeated the two strongest related
+  // stories that the "আরও পড়ুন" grid at the foot of the page already shows, so
+  // the same headlines appeared twice on one page. Interlinking survives: that
+  // grid is real anchor markup with headline text.
+  assert.ok(
+    !/একই প্রসঙ্গে/.test(article.replace(/\{\/\*[\s\S]*?\*\/\}/g, '')),
+    'the একই প্রসঙ্গে aside is rendered again',
+  );
+  assert.ok(!/contextLinks/.test(article), 'its data variable is still computed');
+  assert.ok(!/class="context-links/.test(article), 'its markup is still rendered');
+  // the related grid at the foot must stay — that is where reading continues
+  assert.ok(/আরও পড়ুন/.test(article), 'the আরও পড়ুন grid must remain');
+  assert.ok(/related\.map/.test(article), 'the grid still renders related stories');
+});
