@@ -1267,6 +1267,41 @@
         "deploy dispatch HTTP 204 on the fixed runs"
       ],
       "lesson": "a green job is not a working system; published=false after a discarded batch is silent data loss"
+    },
+    {
+      "id": "D138",
+      "date": "2026-10-02",
+      "topic": "Thumbnail relevance: generic category query was stamping city photos on unrelated stories",
+      "decision": "buildQuery returns {query,specific}; a generic category query no longer buys a photo for the catch-all buckets (national/opinion/latest) which get the branded card instead. Keyword table widened. One photo per run. Re-render via add_images --slugs + images.yml slugs input (CI only: sharp has no android binary).",
+      "measured": [
+        "newest 20: 17 publisher photos, 3 generic city photos (2 byte-identical)",
+        "corpus 503 articles: 309 publisher, 189 stock, 174 byte-identical duplicates",
+        "28 articles still carry the ASaber91 city photo"
+      ],
+      "bugCaught": "--force re-render added a duplicate thumbnail/thumbnailAlt pair; duplicate YAML keys failed the whole Astro build. insertThumbnail now strips the old pair; a corpus-wide duplicate-key test guards it",
+      "tests": "pipeline suite 442/442"
+    },
+    {
+      "id": "D139",
+      "date": "2026-10-02",
+      "topic": "Corpus-wide image re-render: 28 wrong photos fixed, duplicates 136 -> 6",
+      "decision": "5 CI batches over 140 slugs plus 2 cleanup passes. Dedupe now compares RENDERED bytes against a hash set of every image on disk (source-url comparison cannot see that two Openverse records are one photo), and an article whose only candidate is a duplicate gets the branded card instead.",
+      "measured": [
+        "wrong city photos 28 -> 0",
+        "byte-identical duplicates 136 -> 6",
+        "4 of the 6 are the same event published twice, where a shared photo is correct"
+      ],
+      "residual": "keyword->English query map is coarse: a cyclone can land on a glacier photo. Per-story relevance needs Bengali->English topic translation before the image search; not done.",
+      "tests": "pipeline suite 443/443"
+    },
+    {
+      "id": "D140",
+      "date": "2026-10-02",
+      "topic": "Slider auto-advance was scrolling the page (scrollIntoView); publish failures now fail the job",
+      "decision": "Auto-advance scrolls the track itself (track.scrollTo), never scrollIntoView, which scrolls every ancestor and threw readers back to the top every 5s. A story batch that cannot be pushed exits 1 with PUBLISH FAILED in the step summary instead of exiting green.",
+      "health": "auto-author publishing every ~15-30 min; pipeline/images/deploy/watcher/content-sweep green",
+      "openItem": "content-sweep BODY_OFF_HEADLINE false positives recur on poetic/inflected headlines (6 slugs baselined). Durable fix: compare character shingles instead of whole words. Not done - it changes a quality gate.",
+      "tests": "pipeline suite 444/444"
     }
   ],
   "sources": [

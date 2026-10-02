@@ -132,7 +132,8 @@ test('the hero slider stays minimal, fast and honest', () => {
   assert.doesNotMatch(code, /mouseenter|mouseleave/, 'the pointer never freezes the hero');
   assert.match(code, /focusin[^]*stop\(\)/, 'keyboard focus pauses (accessibility)');
   assert.match(code, /visibilitychange/, 'a hidden tab pauses');
-  assert.match(code, /behavior: reduce \? "auto" : "smooth"/, 'reduced motion = instant cut, still rotating');
+  assert.match(code, /const reduce = matchMedia/, 'reduced motion is still read');
+  assert.match(code, /go\(i, !reduce\)/, 'a reduced-motion reader gets instant arrow presses too');
   assert.doesNotMatch(code, /currentScript/, 'no currentScript: null in a module script');
   assert.match(code, /querySelector\("section\[data-hero\]"\)/, 'the root is found by query');
   assert.doesNotMatch(code, /from ["'](react|swiper|embla|keen-slider|flickity)/, 'no carousel dependency');
@@ -187,4 +188,33 @@ test(`homepage latest-headlines strip: titled, thumb on the left`, () => {
   assert.match(page, /alt=""/, 'the decorative thumb has empty alt');
   const css = read('src/styles.css');
   assert.match(css, /\.mini-row \{[^}]*grid-template-columns:\s*auto 1fr/, 'thumb column is first = left');
+});
+
+test('the slider must never scroll the page', () => {
+  // 2026-10-02, user report: "while I scroll down it automatically goes up
+  // while the slider slides". Cause: the auto-advance called
+  // children[j].scrollIntoView(), and scrollIntoView scrolls EVERY scrollable
+  // ancestor — including the document. So each 5-second tick dragged the reader
+  // back to the hero. The track must be scrolled on its own.
+  const slider = read('src/components/HeroSlider.astro');
+  const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  assert.doesNotMatch(code, /scrollIntoView/, 'scrollIntoView moves the page as well as the track');
+  assert.match(code, /track\.scrollTo\(\{ left: j \* track\.clientWidth/, 'scroll the track itself instead');
+});
+
+test('the auto-advance lands on a slide, never between two', () => {
+  // 2026-10-02, found by screenshotting the live homepage: at 7s and at 15s
+  // the hero showed half of one slide and half of the next, while it was
+  // perfectly aligned before the first tick. Cause: a programmatic SMOOTH
+  // scroll under `scroll-snap-type: x mandatory` can settle on a fractional
+  // offset, and `scroll-behavior: smooth` in CSS also turns a
+  // scrollTo({behavior: "auto"}) into a smooth one. The timed advance must be
+  // an instant cut; only the reader's own arrow press animates.
+  const slider = read('src/components/HeroSlider.astro');
+  const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  assert.doesNotMatch(code, /scroll-behavior:\s*smooth/, 'CSS smooth scrolling re-breaks the snap');
+  assert.match(code, /const go = \(i, smooth = false\)/, 'go() must distinguish timed from reader-initiated');
+  assert.match(code, /behavior: smooth \? "smooth" : "auto"/, 'the timed advance must be an instant cut');
+  assert.match(code, /setInterval\(\(\) => go\(current\(\) \+ 1\), AUTOPLAY_MS\)/, 'autoplay takes the default (instant) path');
+  assert.match(code, /const nudge = \(i\) => \{ stop\(\); go\(i, !reduce\); play\(\); \}/, 'arrow/dot presses may animate');
 });
