@@ -25,6 +25,10 @@ const contentDir = join(siteDir, 'src/content/news');
 const imagesDir = join(siteDir, 'public/images');
 const limit = Number(getArg('limit', '0')) || 0;
 const onlySlug = getArg('slug');
+// --slugs=a,b,c — re-render a chosen set (used with --force when a story was
+// given the wrong photo, e.g. a headline that fell through to the generic
+// category query). Runs on the GH runner because sharp has no android binary.
+const onlySlugs = getArg('slugs') ? new Set(getArg('slugs').split(',').map((s) => s.trim()).filter(Boolean)) : null;
 const force = has('force');
 const dryRun = has('dry-run');
 const strategy = getArg('strategy', 'mix');
@@ -92,16 +96,24 @@ function parseFrontMatter(content) {
 
 function insertThumbnail(content, thumbPath, alt) {
   const lines = `thumbnail: "${thumbPath}"\nthumbnailAlt: "${escYaml(alt)}"`;
-  if (/^title:.*$/m.test(content)) {
-    return content.replace(/^(title:.*)$/m, `$1\n${lines}`);
+  // 2026-10-02: a re-render (--force) used to ADD a second thumbnail/
+  // thumbnailAlt pair instead of replacing the first, and duplicate mapping
+  // keys make js-yaml throw — which failed the Astro build for the whole site
+  // (national-1118). The old pair is always removed first.
+  const cleaned = content
+    .replace(/^thumbnailAlt:.*\n?/m, '')
+    .replace(/^thumbnail:.*\n?/m, '');
+  if (/^title:.*$/m.test(cleaned)) {
+    return cleaned.replace(/^(title:.*)$/m, `$1\n${lines}`);
   }
   // fallback: append inside the front matter block
-  return content.replace(/^---\n/, `---\n${lines}\n`);
+  return cleaned.replace(/^---\n/, `---\n${lines}\n`);
 }
 
 const files = readdirSync(contentDir)
   .filter((f) => f.endsWith('.md'))
   .filter((f) => (onlySlug ? f === `${onlySlug}.md` : true))
+  .filter((f) => (!onlySlugs || onlySlugs.has(f.replace(/\.md$/, ''))))
   .sort();
 
 let made = 0, skipped = 0, failed = 0, photo = 0, card = 0;
