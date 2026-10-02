@@ -96,11 +96,18 @@ function parseFrontMatter(content) {
 
 function insertThumbnail(content, thumbPath, alt) {
   const lines = `thumbnail: "${thumbPath}"\nthumbnailAlt: "${escYaml(alt)}"`;
-  if (/^title:.*$/m.test(content)) {
-    return content.replace(/^(title:.*)$/m, `$1\n${lines}`);
+  // 2026-10-02: a re-render (--force) used to ADD a second thumbnail/
+  // thumbnailAlt pair instead of replacing the first, and duplicate mapping
+  // keys make js-yaml throw — which failed the Astro build for the whole site
+  // (national-1118). The old pair is always removed first.
+  const cleaned = content
+    .replace(/^thumbnailAlt:.*\n?/m, '')
+    .replace(/^thumbnail:.*\n?/m, '');
+  if (/^title:.*$/m.test(cleaned)) {
+    return cleaned.replace(/^(title:.*)$/m, `$1\n${lines}`);
   }
   // fallback: append inside the front matter block
-  return content.replace(/^---\n/, `---\n${lines}\n`);
+  return cleaned.replace(/^---\n/, `---\n${lines}\n`);
 }
 
 const files = readdirSync(contentDir)

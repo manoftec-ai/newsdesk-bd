@@ -51,3 +51,34 @@ test('categories whose generic image is itself topical still get a photo', () =>
     assert.equal(specific('একটি সাধারণ কথোপকথন', category), false, `${category} must fall back to the card`);
   }
 });
+
+test('a re-render replaces the thumbnail keys instead of duplicating them', async () => {
+  // 2026-10-02: --force re-rendered national-1118 and produced TWO
+  // thumbnail/thumbnailAlt pairs. Duplicate mapping keys make js-yaml throw,
+  // so the Astro build failed for the WHOLE site and Vercel went ERROR while
+  // the last good deploy stayed live. insertThumbnail must strip the old pair
+  // before writing the new one.
+  const { readFileSync } = await import('node:fs');
+  const src = readFileSync(new URL('../tools/add_images.mjs', import.meta.url), 'utf8');
+  const fn = src.match(/function insertThumbnail[\s\S]*?\n}/)[0];
+  assert.match(fn, /replace\(\/\^thumbnailAlt:/, 'must remove the old thumbnailAlt');
+  assert.match(fn, /replace\(\/\^thumbnail:/, 'must remove the old thumbnail');
+
+  // and the corpus itself must stay free of duplicate top-level keys
+  const dir = new URL('../../site/src/content/news/', import.meta.url);
+  const { readdirSync } = await import('node:fs');
+  const dupes = [];
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.md'))) {
+    const raw = readFileSync(new URL(f, dir), 'utf8');
+    const m = raw.match(/^---\n([\s\S]*?)\n---\n/);
+    if (!m) continue;
+    const seen = new Set();
+    for (const line of m[1].split('\n')) {
+      const k = (line.match(/^([A-Za-z_][A-Za-z0-9_-]*):/) || [])[1];
+      if (!k) continue;
+      if (seen.has(k)) dupes.push(`${f}: ${k}`);
+      seen.add(k);
+    }
+  }
+  assert.deepEqual(dupes, [], `duplicate front matter keys break the Astro build:\n${dupes.join('\n')}`);
+});
