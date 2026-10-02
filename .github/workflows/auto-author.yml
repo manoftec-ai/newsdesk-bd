@@ -168,6 +168,30 @@ jobs:
         run: |
           node tools/site_preflight.mjs --written=tmp/finalize-rejections.json --news=../site/src/content/news
 
+      # 2026-10-02: the ঘটনাপঞ্জি chronicle was hand-typed and had gone stale —
+      # 4 events, 60 records, all historical, and NOTHING in any workflow ever
+      # wrote site/src/data/events-news.json, so every event marked "active" had
+      # an empty chronicle. Run this BEFORE staging so the registry update lands
+      # in the same commit and the same push as the stories themselves: one
+      # atomic publish, one deploy, no window where a story is live but its
+      # chronicle entry is missing.
+      #
+      # Entries are pointers to reports we already published and sourced (the
+      # article's own headline, excerpt, date and primary source), and an
+      # article with no source URL is refused rather than recorded unsourced.
+      - name: Sync ঘটনাপঞ্জি chronicle with what we publish
+        working-directory: pipeline
+        run: |
+          node tools/sync_chronicle.mjs --write --report=tmp/chronicle-sync.json
+
+      - name: Upload chronicle sync record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chronicle-sync
+          path: pipeline/tmp/chronicle-sync.json
+          if-no-files-found: ignore
+
       # 2026-09-26: a rejected article was undiagnosable from CI. The finalizer
       # printed one line per story (which gate fired) and pipeline/tmp/ is
       # gitignored, so the per-rule detail - which rule inside the gate, and the
@@ -198,6 +222,8 @@ jobs:
         if: github.event.inputs.dry_run != 'true'
         run: |
           node pipeline/tools/stage_published.mjs --result=pipeline/tmp/finalize-rejections.json --site=site/src/content/news --stage
+          # The chronicle registry travels with the stories in the same commit.
+          git add site/src/data/events-news.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no story changes (nothing new or already committed)"
             echo "published=false" >> "$GITHUB_OUTPUT"
