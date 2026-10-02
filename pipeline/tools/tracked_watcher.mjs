@@ -65,6 +65,22 @@ export function relevanceScore(itemText, { keywords = [], entities = [] }) {
   return terms.filter((t) => t && text.includes(t)).length;
 }
 
+// 2026-10-02: event-match gate. Keyword overlap alone (score >= 1) let
+// unrelated updates into a tracked story (a BRTA story absorbing a motorcycle
+// enforcement). Require at least two distinct fingerprint hits, or one entity
+// hit PLUS one keyword hit — one shared term is never enough.
+export function isStrictEventMatch(itemText, { keywords = [], entities = [] }) {
+  const text = String(itemText ?? '').toLowerCase();
+  const entityHits = [...new Set(entities.filter(Boolean))].filter((t) =>
+    text.includes(String(t).toLowerCase()),
+  ).length;
+  const keywordHits = [...new Set(keywords.filter(Boolean))].filter((t) =>
+    text.includes(String(t).toLowerCase()),
+  ).length;
+  if (entityHits >= 1 && keywordHits >= 1) return true;
+  return entityHits + keywordHits >= 2;
+}
+
 const escRe = /[.*+?^${}()|[\]\\]/g;
 const escYq = (s) => String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 
@@ -216,6 +232,7 @@ async function main() {
         if (item.isoDate.getTime() <= last) continue;
         const score = relevanceScore(`${item.title} ${item.snippet}`, story.fingerprint ?? {});
         if (score === 0) continue;
+        if (!isStrictEventMatch(`${item.title} ${item.snippet}`, story.fingerprint ?? {})) continue;
         matches.push({ score, item });
       }
       if (matches.length >= 10) break;

@@ -30,6 +30,21 @@ export function siteCategory(raw) {
   return RAW_TO_SITE[String(raw ?? '').trim()] ?? 'national';
 }
 
+// 2026-10-02: a raw category we do not recognise (or none at all) must never
+// silently become "national" — unknown routing polluted the National feed with
+// Gemini/ChatGPT/Jim Carrey items. Flag the brief for review instead.
+export function isKnownRawCategory(raw) {
+  return Object.prototype.hasOwnProperty.call(RAW_TO_SITE, String(raw ?? '').trim());
+}
+
+// 2026-10-02: two source headlines glued into one title ("স্কলারশিপ…। সুখু ও
+// দুখু…") mean the RSS title itself fused two unrelated items. Refuse to
+// author it as one article.
+export function isFusedHeadline(title) {
+  const parts = String(title ?? '').split('।').map((p) => p.trim()).filter(Boolean);
+  return parts.length >= 2 && parts.some((p) => p.length >= 8);
+}
+
 export const SITE_CATEGORIES = ['national', 'politics', 'economy', 'international', 'sports', 'entertainment', 'tech', 'opinion', 'factcheck'];
 
 // Latinize a headline for slug keywords. Bengali -> rough ascii via a small map of
@@ -114,6 +129,10 @@ export function buildBrief(clusterId, { db } = {}) {
 
   const rawCats = [...new Set(members.map((m) => m.category).filter(Boolean))];
   const category = siteCategory(rawCats[0] ?? 'জাতীয়');
+  const categoryTrusted = rawCats.length > 0 && rawCats.every((c) => isKnownRawCategory(c));
+  const headlineFused = isFusedHeadline(cluster.headline);
+  const needsReview = !categoryTrusted || headlineFused;
+  const reviewReason = !categoryTrusted ? 'unknown-category' : headlineFused ? 'fused-headline' : null;
   const tier = verdict?.tier ?? 'B';
   const slug = slugFromHeadline(cluster.headline, { categorySlug: category, clusterId: cluster.id });
 
@@ -145,6 +164,8 @@ export function buildBrief(clusterId, { db } = {}) {
     developing: members.length === 1 && verdict?.badge === 'single',
     verdict: verdict ? { badge: verdict.badge, tier: verdict.tier, score: verdict.score, status: verdict.status } : null,
     rawCategories: rawCats,
+    needsReview,
+    reviewReason,
     members: members.map((m) => ({
       source_id: m.source_id,
       title: m.title,

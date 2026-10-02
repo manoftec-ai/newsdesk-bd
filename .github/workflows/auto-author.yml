@@ -87,7 +87,7 @@ jobs:
             echo "using $count brief(s) committed by the pipeline"
           else
             echo "no briefs on this checkout — extracting once as a fallback"
-            node run.js extract || true
+            node run.js extract || echo "::error::prior pipeline step failed (stage no longer silent)"
           fi
 
       - name: Resolve Google News wrappers to publisher articles
@@ -105,7 +105,7 @@ jobs:
           # The base64-protobuf decode that used to expose the publisher URL now
           # returns nothing; the page carries data-n-a-sg / data-n-a-ts, which
           # sign a batchexecute RPC returning the real URL.
-          node tools/resolve_sources.mjs --concurrency=5 || true
+          node tools/resolve_sources.mjs --concurrency=5 || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Select newest unpublished briefs (deterministic)
         working-directory: pipeline

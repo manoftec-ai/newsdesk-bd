@@ -61,8 +61,10 @@ const briefs = readdirSync(BRIEFS_DIR)
     let coherence = { pass: true, minMax: 1, members: 0 };
     let evidence = { pass: false, evidenceWords: 0, minWords: DEFAULT_MIN_EVIDENCE_WORDS, members: 0 };
     let gate = { pass: false };
+    let needsReview = false;
     try {
       const j = JSON.parse(readFileSync(join(BRIEFS_DIR, f), 'utf8'));
+      needsReview = j.needsReview === true;
       date = j.date || '';
       headline = j.headline || '';
       ev = editorialValue(j);
@@ -105,6 +107,7 @@ const briefs = readdirSync(BRIEFS_DIR)
       gate,
       published: existsSync(join(siteDir, `${slug}.md`)),
       titleDup: isTitleDuplicate(headline, date, publishedTitles),
+      needsReview,
     };
   });
 
@@ -116,11 +119,13 @@ const MIN_EVIDENCE = Number(process.env.MIN_EVIDENCE_WORDS) || DEFAULT_MIN_EVIDE
 const tooThin = briefs.filter((b) => b.evidence.evidenceWords < MIN_EVIDENCE && !b.published);
 const quarantined = briefs.filter((b) => QUARANTINE.has(b.slug) && !b.published);
 const incoherent = briefs.filter((b) => !b.coherence.pass && !b.published);
+const needsReviewList = briefs.filter((b) => b.needsReview && !b.published);
 const pending = briefs.filter(
   (b) =>
     !QUARANTINE.has(b.slug) &&
     !b.published &&
     !b.titleDup &&
+    !b.needsReview &&
     b.evidence.evidenceWords >= MIN_EVIDENCE &&
     b.coherence.pass &&
     b.gate.pass,

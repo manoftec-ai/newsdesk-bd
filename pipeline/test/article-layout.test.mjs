@@ -134,11 +134,10 @@ test('the verification status is stated once, not twice above the story', () => 
     /<VerificationBadge/.test(article),
     'the header VerificationBadge was removed with the duplicate legend',
   );
-  // and the detail the legend used to carry must still exist somewhere: the
-  // evidence panel below the story owns the tier, the score and the outlet list
+  // 2026-10-02: the evidence panel no longer prints the raw tier/score at all
+  // (pseudo-precision); it keeps the human-readable outlet list.
   const panel = article.slice(article.indexOf('class="evidence-panel'));
-  assert.ok(/post\.verification\.tier/.test(panel), 'the evidence panel lost the tier');
-  assert.ok(/post\.verification\.score/.test(panel), 'the evidence panel lost the score');
+  assert.ok(!/post\.verification\.score/.test(panel), 'public score is back in the evidence panel');
   assert.ok(/evidenceLabelBn/.test(panel), 'the evidence panel lost the outlet list');
 });
 

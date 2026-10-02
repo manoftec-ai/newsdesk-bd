@@ -56,22 +56,22 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       - name: Fetch
-        run: node run.js fetch || true
+        run: node run.js fetch || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Normalize
-        run: node run.js normalize || true
+        run: node run.js normalize || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Cluster
-        run: node run.js cluster || true
+        run: node run.js cluster || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       # Developing lane (2026-09-30): promote qualifying first-sightings to
       # solo clusters BEFORE verify scores them, so extract briefs them in
       # this same run. Tier-A outlets, fat direct bodies, capped per run.
       - name: Promote developing first-sightings
-        run: node tools/promote_developing.mjs --max=5 --write || true
+        run: node tools/promote_developing.mjs --max=5 --write || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Verify
-        run: node run.js verify || true
+        run: node run.js verify || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Backfill thin article bodies
         run: |
@@ -129,7 +129,7 @@ jobs:
             || echo "brief re-extraction failed; the pool will be topped up next cycle"
 
       - name: Extract briefs
-        run: node run.js extract || true
+        run: node run.js extract || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Corrections + auto re-verification
         run: |

@@ -314,8 +314,16 @@ const shareLinks = [
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
           <span class="flex items-center gap-1.5">
             <Icon name="calendar" class="h-4 w-4" />
-            <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
+            প্রকাশিত: <time datetime={entry.data.date.toISOString()}>{formatDateTimeBD(post.ts)}</time>
           </span>
+          {/* 2026-10-02: Published vs Updated must be separate concepts. Updated
+              only appears when the article content actually changed (the
+              watcher sets `updated` only on a real update). */}
+          {post.updated && post.updated !== entry.data.date.toISOString().slice(0, 10) && (
+            <span class="flex items-center gap-1.5">
+              হালনাগাদ: <time datetime={isoDate(post.updated)}>{formatDate(post.updated)}</time>
+            </span>
+          )}
           <span class="flex items-center gap-1.5">
             <Icon name="clock" class="h-4 w-4" />
             {post.readingTime} মিনিট পাঠ
@@ -553,12 +561,9 @@ const shareLinks = [
                       ? "দুই বা ততোধিক স্বাধীন সূত্রে তথ্যটি মিলেছে — বক্তব্যটি যাচাইকৃত।"
                       : "আংশিক তথ্য — আরও সূত্র না মেশা পর্যন্ত সংক্ষিপ্ত থাকল।"}
               </p>
-              {post.verification.tier && (
-                <p class="mt-1 text-sm text-muted-foreground">
-                  নির্ভরযোগ্যতার স্তর: <span class="font-medium">{post.verification.tier}</span>
-                  {post.verification.score != null ? ` · স্কোর ${post.verification.score}` : ""}
-                </p>
-              )}
+              {/* 2026-10-02: public "স্তর/স্কোর" numbers removed — they implied a
+                  precision readers could not inspect. The human-readable evidence
+                  explanation above plus the source list carry the meaning now. */}
               <ul class="evidence-list mt-3 space-y-1.5">
                 {evidenceWithUrls(post.verification?.evidence, corroboration.outlets)
                   .filter((e) => !e.outletId || e.url)

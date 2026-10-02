@@ -24,7 +24,7 @@ const heroSlides = all.slice(0, 5);
 const heroSlugs = new Set(heroSlides.map((p) => p.slug));
 const rest = all.filter((p) => !heroSlugs.has(p.slug));
 const secondLine = rest.slice(0, 4);
-const tickerItems = all.slice(0, 3);
+const tickerItems = rest.slice(4, 7);
 
 const shownSlugs = new Set([
   ...heroSlugs,

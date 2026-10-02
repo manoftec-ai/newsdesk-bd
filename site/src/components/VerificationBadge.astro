@@ -8,7 +8,7 @@ const { badge, tier, compact = false } = Astro.props;
 const meta = badge?.label
   ? badge
   : BADGES[badge?.key] ?? BADGES[badge] ?? BADGES.partial;
-const tierText = tier ? ` [${tier}]` : "";
+const tierText = "";
 ---
 
 <span
