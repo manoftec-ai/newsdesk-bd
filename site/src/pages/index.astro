@@ -74,6 +74,15 @@ const homeSections = await Promise.all(
     }),
 );
 
+// 2026-10-02 homepage editorial hierarchy: after the chronological feed show
+// the two signature non-chronological lanes before the category buckets.
+const trackedStories = all
+  .filter((p) => p.tracked && !heroSlugs.has(p.slug))
+  .slice(0, 3);
+const factcheckStories = all
+  .filter((p) => (p.category === "factcheck" || p.factCheck) && !heroSlugs.has(p.slug))
+  .slice(0, 3);
+
 const dateTime = new Intl.DateTimeFormat("bn-BD", {
   hour: "numeric",
   minute: "2-digit",
@@ -152,6 +161,38 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
         </section>
       )
     }
+
+    {trackedStories.length > 0 && (
+      <section class="mt-12" aria-labelledby="tracked-headlines">
+        <h2 id="tracked-headlines" class="mb-2 border-b border-border/60 pb-2 font-serif text-2xl font-bold">
+          ট্র্যাক করা গুরুত্বপূর্ণ ঘটনা
+        </h2>
+        <div class="grid gap-2">
+          {trackedStories.map((post) => (
+            <a href={`/article/${post.slug}`} class="font-medium leading-snug hover:text-primary">
+              {post.title}
+            </a>
+          ))}
+        </div>
+        <a href="/tracked" class="mt-2 inline-block text-sm text-muted-foreground hover:text-primary">সব দেখুন →</a>
+      </section>
+    )}
+
+    {factcheckStories.length > 0 && (
+      <section class="mt-12" aria-labelledby="factcheck-headlines">
+        <h2 id="factcheck-headlines" class="mb-2 border-b border-border/60 pb-2 font-serif text-2xl font-bold">
+          ফ্যাক্ট চেক
+        </h2>
+        <div class="grid gap-2">
+          {factcheckStories.map((post) => (
+            <a href={`/article/${post.slug}`} class="font-medium leading-snug hover:text-primary">
+              {post.title}
+            </a>
+          ))}
+        </div>
+        <a href="/factcheck" class="mt-2 inline-block text-sm text-muted-foreground hover:text-primary">সব দেখুন →</a>
+      </section>
+    )}
 
     <!-- Category sections with cards -->
     {homeSections

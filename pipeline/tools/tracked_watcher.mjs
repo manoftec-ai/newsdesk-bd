@@ -187,12 +187,23 @@ async function fetchItems(query) {
   }
 }
 
-function buildQueries(story) {
+export function buildQueries(story) {
   const fp = story.fingerprint ?? {};
-  const kw = [...(fp.keywords ?? []), ...(fp.entities ?? [])].filter(Boolean);
+  const entities = [...new Set((fp.entities ?? []).filter(Boolean))];
+  const keywords = [...new Set((fp.keywords ?? []).filter(Boolean))];
   const qs = [];
-  if (kw.length) qs.push(kw.join(' '));
-  for (const k of kw.slice(0, 3)) if (qs.length < 3) qs.push(k);
+  // 2026-10-02 (event matching v2): prefer entity+keyword PAIRS over a flat
+  // OR of terms — a bare "ডেঙ্গু" or "UN" query drifts into unrelated stories.
+  for (const e of entities.slice(0, 2)) {
+    for (const k of keywords.slice(0, 2)) {
+      if (qs.length < 3) qs.push(`${e} ${k}`);
+    }
+  }
+  for (const e of entities.slice(0, 3)) if (qs.length < 4 && !qs.includes(e)) qs.push(e);
+  if (!qs.length) {
+    const kw = [...keywords, ...entities].filter(Boolean);
+    if (kw.length) qs.push(kw.join(' '));
+  }
   return qs;
 }
 

@@ -280,7 +280,7 @@ const shareLinks = [
         <div class="flex flex-wrap items-center gap-2">
           {category && (
             <a href={`/category/${category.slug}`} aria-label={category.name}>
-              <span class="category-pill" style={`background-color:${category.color}`}>
+              <span class="category-pill" style={`background-color:${category.color}`} data-pagefind-filter="category">
                 {category.name}
               </span>
             </a>
