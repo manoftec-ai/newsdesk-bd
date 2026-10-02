@@ -25,6 +25,10 @@ const contentDir = join(siteDir, 'src/content/news');
 const imagesDir = join(siteDir, 'public/images');
 const limit = Number(getArg('limit', '0')) || 0;
 const onlySlug = getArg('slug');
+// --slugs=a,b,c — re-render a chosen set (used with --force when a story was
+// given the wrong photo, e.g. a headline that fell through to the generic
+// category query). Runs on the GH runner because sharp has no android binary.
+const onlySlugs = getArg('slugs') ? new Set(getArg('slugs').split(',').map((s) => s.trim()).filter(Boolean)) : null;
 const force = has('force');
 const dryRun = has('dry-run');
 const strategy = getArg('strategy', 'mix');
@@ -102,6 +106,7 @@ function insertThumbnail(content, thumbPath, alt) {
 const files = readdirSync(contentDir)
   .filter((f) => f.endsWith('.md'))
   .filter((f) => (onlySlug ? f === `${onlySlug}.md` : true))
+  .filter((f) => (!onlySlugs || onlySlugs.has(f.replace(/\.md$/, ''))))
   .sort();
 
 let made = 0, skipped = 0, failed = 0, photo = 0, card = 0;

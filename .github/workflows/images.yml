@@ -19,6 +19,17 @@
 name: images
 on:
   workflow_dispatch:
+    inputs:
+      # 2026-10-02: re-render chosen thumbnails. A headline that missed the
+      # keyword table used to get a generic category photo (a "dhaka city"
+      # street scene on a penguin-science story). Fixing those needs --force,
+      # and the slugs must be listed so one dispatch does not rewrite 500
+      # images. Runs here because sharp has no android-arm64 binary, so this
+      # cannot be done from the phone.
+      slugs:
+        description: "Comma-separated slugs to re-render, e.g. national-1118,national-1123"
+        required: false
+        type: string
   push:
     branches: [main]
     paths:
@@ -70,7 +81,7 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       - name: Add branded WebP thumbnails
-        run: node tools/add_images.mjs --write --strategy=mix
+        run: node tools/add_images.mjs --write --strategy=mix ${{ inputs.slugs && format('--slugs={0} --force', inputs.slugs) || '' }}
         env:
           OPENVERSE_USER_AGENT: "jachaidesk/1.0 (https://jachaidesk.com)"
           NODE_OPTIONS: "--max-old-space-size=1024"
