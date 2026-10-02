@@ -1280,6 +1280,19 @@
       ],
       "bugCaught": "--force re-render added a duplicate thumbnail/thumbnailAlt pair; duplicate YAML keys failed the whole Astro build. insertThumbnail now strips the old pair; a corpus-wide duplicate-key test guards it",
       "tests": "pipeline suite 442/442"
+    },
+    {
+      "id": "D139",
+      "date": "2026-10-02",
+      "topic": "Corpus-wide image re-render: 28 wrong photos fixed, duplicates 136 -> 6",
+      "decision": "5 CI batches over 140 slugs plus 2 cleanup passes. Dedupe now compares RENDERED bytes against a hash set of every image on disk (source-url comparison cannot see that two Openverse records are one photo), and an article whose only candidate is a duplicate gets the branded card instead.",
+      "measured": [
+        "wrong city photos 28 -> 0",
+        "byte-identical duplicates 136 -> 6",
+        "4 of the 6 are the same event published twice, where a shared photo is correct"
+      ],
+      "residual": "keyword->English query map is coarse: a cyclone can land on a glacier photo. Per-story relevance needs Bengali->English topic translation before the image search; not done.",
+      "tests": "pipeline suite 443/443"
     }
   ],
   "sources": [
