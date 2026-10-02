@@ -1,10 +1,12 @@
 ---
 title: "ভারতের প্রধান নির্বাচন কমিশনারের পদত্যাগ দাবিতে আন্দোলনে ককরোচ জনতা পার্টি"
+thumbnail: "/images/international-1257.webp"
+thumbnailAlt: "ভারতের প্রধান নির্বাচন কমিশনারের পদত্যাগ দাবিতে আন্দোলনে ককরোচ জনতা পার্টি — ছবি: প্রথম আলো"
 seoTitle: "ভারতের প্রধান নির্বাচন কমিশনারের পদত্যাগ দাবিতে আন্দোলনে ককরোচ জনতা…"
 excerpt: "ভারতের ভোটার তালিকা সংশোধন বিতর্কের জেরে দেশটির প্রধান নির্বাচন কমিশনার জ্ঞানেশ কুমারের পদত্যাগের দাবিতে শুক্রবার মুম্বাইয়ে নতুন করে আন্দোলন করেছে জেন-জি নেতৃত্বাধীন ককরোচ জনতা পা"
 seoDescription: "ভারতের ভোটার তালিকা সংশোধন বিতর্কের জেরে দেশটির প্রধান নির্বাচন কমিশনার জ্ঞানেশ কুমারের পদত্যাগের দাবিতে শুক্রবার মুম্বাইয়ে নতুন করে আন্দোলন করেছে জেন-জি…"
 date: 2026-10-02T19:57:27.000Z
-publishedAt: 2026-10-02T22:28:55.787Z
+publishedAt: 2026-10-02T22:27:24.788Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-02T22:28:55.732Z"
+  evaluatedAt: "2026-10-02T22:27:24.730Z"
   clusterId: 1257
   claimIds:
     - 251420
@@ -43,7 +45,7 @@ publication:
   slug: "international-1257"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-02T22:28:55.732Z"
+  checkedAt: "2026-10-02T22:27:24.730Z"
   clusterId: 1257
   claimIds:
     - 251420
