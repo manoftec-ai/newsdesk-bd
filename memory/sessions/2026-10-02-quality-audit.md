@@ -37,3 +37,10 @@
 - relatedPosts now boosts same-event matches first via eventsForPost (event > category > shared tags).
 - Parallel-session tool pipeline/tools/sync_chronicle.mjs (keeps events-news chronicle pointing at our own published, cited articles) was committed alongside — noted for memory.
 - Pushed b3bf5440; content gate green, 457/457 tests pass.
+
+## P2/P3 free-method batch (D147, same day, pushed bc4d06f0)
+- Search: replaced PagefindUI with custom widget — category <select> filter + live results via /pagefind/pagefind.js; article page category pill now carries data-pagefind-filter="category". Pagefind filters actually used (same index, no new build step).
+- Event tracker v2 (free): buildQueries now prefers entity+keyword PAIRS (top 2x2) over a flat term soup; exported; isStrictEventMatch unit tests added (5/5 watcher tests, suite 468/468).
+- Homepage editorial hierarchy (free): added "ট্র্যাক করা গুরুত্বপূর্ণ ঘটনা" (top 3 tracked) and "ফ্যাক্ট চেক" (top 3) lanes between the latest feed and category sections.
+- Article-type templates: NOT extended — storyFormat() already routes factcheck/analysis/news to distinct writer templates (D75); further types need evidence-model work, deferred deliberately.
+- Recurring-issue note: parallel GH/auto-author session leaves untracked files in the repo dir; `git add -A` twice swept them into my commits. Future: stage by explicit path only.
