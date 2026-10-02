@@ -8,7 +8,7 @@ seoDescription: "দেশি দর্শকের কাছে কোরী
 date: 2026-10-01T01:00:00.000Z
 publishedAt: 2026-10-01T07:33:50.474Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

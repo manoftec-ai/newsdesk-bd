@@ -8,7 +8,7 @@ seoDescription: "মুরগির মাংস: দেড় কেজি আদ�
 date: 2026-10-01T13:02:24.000Z
 publishedAt: 2026-10-02T09:15:19.845Z
 developing: false
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

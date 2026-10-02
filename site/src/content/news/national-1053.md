@@ -8,7 +8,7 @@ seoDescription: "যুক্তরাষ্ট্রে নিত্যপণ�
 date: 2026-10-01T19:33:54.000Z
 publishedAt: 2026-10-02T07:00:53.076Z
 developing: true
-category: "national"
+category: "international"
 tags: ["economy"]
 author: "desk"
 lang: "bn"

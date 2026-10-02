@@ -8,7 +8,7 @@ seoDescription: "সংযুক্ত আরব আমিরাতের (ই�
 date: 2026-10-01T06:07:55.000Z
 publishedAt: 2026-10-01T12:07:20.762Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

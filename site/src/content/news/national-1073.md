@@ -8,7 +8,7 @@ seoDescription: "টোকিও আন্তর্জাতিক চলচ্�
 date: 2026-10-01T21:01:00.000Z
 publishedAt: 2026-10-02T04:45:00.087Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

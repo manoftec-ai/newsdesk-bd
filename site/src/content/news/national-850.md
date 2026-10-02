@@ -8,7 +8,7 @@ seoDescription: "বর্তমানে দৈনিক গড়ে প্রা
 date: 2026-09-30T16:30:00.000Z
 publishedAt: 2026-10-02T14:00:42.172Z
 developing: true
-category: "national"
+category: "economy"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

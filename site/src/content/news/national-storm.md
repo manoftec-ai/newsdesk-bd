@@ -8,7 +8,7 @@ seoDescription: "নেটফ্লিক্সের নতুন সিরি�
 date: 2026-09-30T18:00:00.000Z
 publishedAt: 2026-09-30T21:57:36.618Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

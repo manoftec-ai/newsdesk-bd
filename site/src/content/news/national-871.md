@@ -8,7 +8,7 @@ seoDescription: "উত্তর দিনাজপুর জেলার রা
 date: 2026-09-30T17:14:36.000Z
 publishedAt: 2026-10-02T14:00:42.128Z
 developing: true
-category: "national"
+category: "international"
 tags: ["dinajpur"]
 author: "desk"
 lang: "bn"

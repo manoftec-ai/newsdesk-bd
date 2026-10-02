@@ -8,7 +8,7 @@ seoDescription: "কৃত্রিম বুদ্ধিমত্তা (এআ
 date: 2026-10-02T04:14:37.000Z
 publishedAt: 2026-10-02T05:59:26.131Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

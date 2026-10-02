@@ -8,7 +8,7 @@ seoDescription: "গতকাল বুধবার নেতানিয়াহ�
 date: 2026-09-30T22:46:30.000Z
 publishedAt: 2026-10-01T12:07:20.783Z
 developing: true
-category: "national"
+category: "international"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

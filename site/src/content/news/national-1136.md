@@ -8,7 +8,7 @@ seoDescription: "‘সিগনেচার লুক বাই সামিয়
 date: 2026-10-02T08:00:00.000Z
 publishedAt: 2026-10-02T09:45:26.380Z
 developing: true
-category: "national"
+category: "entertainment"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"

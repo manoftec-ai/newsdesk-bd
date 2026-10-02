@@ -8,7 +8,7 @@ seoDescription: "চ্যাটজিপিটিকে আরও বেশি 
 date: 2026-10-02T11:33:34.000Z
 publishedAt: 2026-10-02T13:52:26.476Z
 developing: true
-category: "national"
+category: "tech"
 tags: ["bangladesh"]
 author: "desk"
 lang: "bn"
