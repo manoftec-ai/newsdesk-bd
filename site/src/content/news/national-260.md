@@ -11,10 +11,6 @@ tags: ["cumilla"]
 author: "desk"
 lang: "bn"
 draft: false
-keyPoints:
-  - "কুমিল্লায় মা ও ভাতিজিকে কুপিয়ে হত্যা"
-  - "ঘটনায় ভাবি আহত হয়েছেন"
-  - "সমকালের খবরে বলা হয়েছে, এ ঘটনায় এক যুবককে আটক করা হয়েছে"
 faq: []
 sources:
   - name: "kalerkantho"
@@ -30,6 +26,10 @@ verification:
       label: "reputable paper corroboration (samakal)"
     - type: "paper"
       label: "reputable paper corroboration (kalerkantho)"
+keyPoints:
+  - "এ ঘটনায় ওই বাড়ির এক ভাবি আহত হয়েছেন"
+  - "মা ও ভাতিজিকে হত্যার ঘটনায় এক যুবককে আটক করেছে আইনশৃঙ্খলা বাহিনী"
+  - "হত্যার সময়, নিহতদের বয়স অথবা ভাতিজির পরিচয়—এসব তথ্যেও আলোকপাত করা হয়নি"
 ---
 কুমিল্লায় এক মা ও ভাতিজিকে কুপিয়ে হত্যার ঘটনা ঘটেছে। এ ঘটনায় ওই বাড়ির এক ভাবি আহত হয়েছেন।
 

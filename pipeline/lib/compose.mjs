@@ -360,22 +360,107 @@ function dedupeParagraphs(paras) {
  * words leaves "…জগন্নাথ বিশ্ববিদ্যালয়", so only sentences that are already
  * short enough are used, and the tail is trimmed at a clause boundary
  * (comma, colon, or a connective) rather than mid-word.
+ *
+ * 2026-10-02, user report: "এক নজরে … sometimes gives an incomplete sentence".
+ * Measured over the last 100 articles: of ~500 bullets, 245 carried no
+ * terminal punctuation and 192 of those ended on a dangling token - so they
+ * read as a half-finished clause. The cut point was chosen from a short
+ * connective list (এবং/ও/যা/এর...), which does not cover the tokens that
+ * actually end a Bengali clause: কে, করে, থেকে, দিয়ে, নিয়ে, জন্য, সঙ্গে,
+ * বলে, হয়ে. A quote sentence could also pass with a mismatched pair, e.g.
+ * '"ট্রান্সলুস তাদের বক্তব্যে বলেছে, "আমরা এই প্রচেষ্টার জন্য …দায়ী করছি না',
+ * which is a fragment, not a point. Both are now rejected outright: a bullet
+ * must end on a complete word, and no box is better than a broken one.
  */
-export function asBullet(sentence, maxWords = 16) {
-  const words = String(sentence ?? '').split(/\s+/u).filter(Boolean);
-  if (!words.length) return '';
-  if (words.length <= maxWords) return sentence.replace(/[।?!]\s*$/u, '').trim();
-  // find the last clause boundary within the budget
-  const CONNECTIVE = /^(এবং|ও|যা|যার|যারা|এই|সেই|তবে|অথচ|এর|কিন্তু)$/u;
-  let cut = -1;
-  for (let i = Math.min(words.length, maxWords); i > 4; i--) {
-    // cut after punctuation, never after a connective that needs a following clause
-    if (/[,;:]$/u.test(words[i - 1])) { cut = i; break; }
-    if (CONNECTIVE.test(words[i])) { cut = i; break; }
+
+// A Bengali clause does not end on one of these. Anything else that ends a
+// bullet is a sign the cut landed mid-clause.
+const DANGLING_END = new Set([
+  // conjunctions - these always need a following clause
+  'এবং', 'ও', 'কিন্তু', 'অথচ', 'তবে', 'অথবা', 'আর', 'যে', 'যা', 'যদি',
+  'যখন', 'তখন', 'যত', 'যথা', 'অথচাও',
+  // case / connective particles
+  'এর', 'ওর', 'এরা', 'তার', 'তাদের', 'কে', 'সঙ্গে', 'মধ্যে', 'জন্য', 'থেকে',
+  'দিয়ে', 'নিয়ে', 'পর্যন্ত', 'দিকে', 'হতে', 'মতো', 'হিসেবে', 'সেই', 'এই', 'ঐ',
+  'সঙ্গে', 'পরে', 'আগে', 'মধ্যে', 'বার', 'বেলা',
+  // NOTE: finite verbs are deliberately NOT here. "… বিবৃতিতে বলেছে",
+  // "হয়েছে", "করেছেন" are complete sentences in Bangla.
+]);
+
+// Quote marks must pair by TYPE, not merely by count: a sentence can open with
+// " and contain a ' and still be unbalanced.
+const QUOTE_PAIRS = { '"': '"', '“': '”', '‘': '’', '«': '»', '”': '“' };
+// Keys AND values: the closing marks are what actually end a quotation, so
+// scanning only the keys skipped every "’" and reported a balanced sentence as
+// unbalanced - which rejected perfectly good points containing a quotation.
+const QUOTE_CHARS = [...new Set([...Object.keys(QUOTE_PAIRS), ...Object.values(QUOTE_PAIRS)])];
+
+/** Quote marks must pair by TYPE, not merely by count. */
+export function quotesBalanced(text) {
+  const chars = [...String(text ?? '')];
+  let open = null;
+  for (let i = 0; i < chars.length; i += 1) {
+    const ch = chars[i];
+    if (!QUOTE_CHARS.includes(ch)) continue;
+    // An apostrophe inside a word is not a quotation: "শি’র", "জে’র" are
+    // single words, and counting their mark as an opener left the quotation
+    // permanently unclosed. The mark BEFORE it is often a vowel sign (Mn), not
+    // a letter, so marks have to count as part of the word.
+    const apostropheInWord = (ch === '’' || ch === "'")
+      && i > 0 && i < chars.length - 1
+      && /[\p{L}\p{M}\p{N}]/u.test(chars[i - 1]) && /[\p{L}\p{N}]/u.test(chars[i + 1]);
+    if (apostropheInWord) continue;
+    if (open === null) open = ch;
+    else if (QUOTE_PAIRS[open] === ch) open = null;
+    else return false;
   }
-  while (cut > 4 && CONNECTIVE.test(words[cut - 1])) cut--;
-  if (cut < 5) return ''; // no clean boundary: not a point
-  let out = words.slice(0, cut).join(' ').replace(/[,;:]\s*$/u, '').trim();
+  return open === null;
+}
+
+/** A complete point, or '' — never a fragment. Exported for the repair tool. */
+export function bulletIsComplete(text) {
+  const t = String(text ?? '').trim();
+  if (!t) return false;
+  const words = t.split(/\s+/u).filter(Boolean);
+  if (words.length < 5) return false;
+  // 1. must not end on a token that needs a following clause
+  if (DANGLING_END.has(words[words.length - 1].replace(/[।?!,;:—–\-]+$/u, ''))) return false;
+  // 2. quote marks must pair by type
+  if (!quotesBalanced(t)) return false;
+  // 3. no leaked site furniture or stray punctuation runs
+  if (/^[\s।?!,;:'"“”‘’«»।\-\*•]+/u.test(t)) return false;
+  if (/[।,;:]\s*$/u.test(t)) return false;
+  return true;
+}
+
+export function asBullet(sentence, maxWords = 16) {
+  // A "sentence" that still contains a NEWLINE is not one sentence: the feed
+  // glued two together across a blank line (national-582). Kept whole, it
+  // renders as invalid yaml - one bullet split over three lines with the quote
+  // never closed - which fails the entire site build. Take the first line and
+  // let the validator judge it on its own merits.
+  const source = String(sentence ?? '').split('\n')[0].replace(/\s+/gu, ' ').trim();
+  const words = source.split(/\s+/u).filter(Boolean);
+  if (!words.length) return '';
+  if (words.length <= maxWords) {
+    const short = source.replace(/[।?!]\s*$/u, '').trim();
+    return bulletIsComplete(short) ? short : '';
+  }
+  // 2026-10-02: a long sentence is no longer CUT into a bullet. The cut
+  // landed mid-phrase and published fragments the reader could not read as a
+  // point - "…যাত্রা শ", "…প্রয়োজ" - which is what the user reported. A bullet is
+  // now always a whole sentence; if the sentence is too long to stand alone,
+  // it simply is not a point and no box is better than a broken one.
+  const whole = source.replace(/[।?!]\s*$/u, '').trim();
+  // Taking the sentence whole reintroduced the quote problem the old cut used
+  // to solve: a sentence that opens a quote and never closes it now ends inside
+  // one (national-694). Refuse it instead of shipping half a quotation.
+  if (!quotesBalanced(whole)) return '';
+  let out = whole;
+  // A whole sentence is usable even when it runs long: the reader gets a
+  // complete thought instead of a fragment. Only a paragraph masquerading as a
+  // sentence is refused.
+  if (words.length > 40) return '';
   // 2026-09-29: never end a bullet inside an open quote. A cut after "...দখলের
   // চেষ্টা: 'বাসায় থাকিস" published a dangling half-quote as a key point
   // (national-694). Back off to before the opening quote; drop trailing
@@ -387,6 +472,10 @@ export function asBullet(sentence, maxWords = 16) {
     out = (qi > 0 ? out.slice(0, qi) : '').replace(/[,;:\-—–\s]+$/u, '').trim();
     if (out.split(/\s+/u).filter(Boolean).length < 4) return '';
   }
+  // 2026-10-02: final gate. Everything above can still hand back a clause
+  // whose last word is a connective the short list missed, or a quote pair of
+  // the wrong type. A fragment must never reach the reader as a "focus point".
+  if (!bulletIsComplete(out)) return '';
   return out;
 }
 
