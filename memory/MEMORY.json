@@ -1293,6 +1293,15 @@
       ],
       "residual": "keyword->English query map is coarse: a cyclone can land on a glacier photo. Per-story relevance needs Bengali->English topic translation before the image search; not done.",
       "tests": "pipeline suite 443/443"
+    },
+    {
+      "id": "D140",
+      "date": "2026-10-02",
+      "topic": "Slider auto-advance was scrolling the page (scrollIntoView); publish failures now fail the job",
+      "decision": "Auto-advance scrolls the track itself (track.scrollTo), never scrollIntoView, which scrolls every ancestor and threw readers back to the top every 5s. A story batch that cannot be pushed exits 1 with PUBLISH FAILED in the step summary instead of exiting green.",
+      "health": "auto-author publishing every ~15-30 min; pipeline/images/deploy/watcher/content-sweep green",
+      "openItem": "content-sweep BODY_OFF_HEADLINE false positives recur on poetic/inflected headlines (6 slugs baselined). Durable fix: compare character shingles instead of whole words. Not done - it changes a quality gate.",
+      "tests": "pipeline suite 444/444"
     }
   ],
   "sources": [
