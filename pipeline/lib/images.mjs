@@ -341,12 +341,15 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
   let pickDefault = null;
   for (let i = 0; i < Math.min(ordered.length, 6); i += 1) {
     const cand = ordered[(seed + i) % ordered.length];
-    if (!pickDefault) pickDefault = cand;
-    if (!usedHashes) break;
+    if (!usedHashes) { pickDefault = cand; break; }
     const probe = await downloadBuffer(cand.url).catch(() => null);
     if (!probe) continue;
     const h = createHash("sha1").update(await renderPhotoFromBuffer(probe)).digest("hex");
     if (!usedHashes.has(h)) { pickDefault = cand; break; }
+    // every candidate is a photo we already publish. Taking it would put the
+    // same picture under a different headline, so we fall through to the
+    // branded card instead - it is unique by construction, because it renders
+    // the story own title.
   }
 
   const pick = pickSource || pickDefault;
