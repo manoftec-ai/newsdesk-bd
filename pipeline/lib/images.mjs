@@ -32,18 +32,32 @@ const CATEGORY_QUERY = {
 };
 // High-signal keywords found in the TITLE (ordered = priority). More reliable than
 // the auto-inferred tags, which can be noisy.
+//
+// 2026-10-02: this list is not a nicety, it is the difference between a
+// relevant photo and a wrong one. When no rule matched, the query fell through
+// to CATEGORY_QUERY — so the penguin story got a "dhaka city" street photo
+// (national-1118), and roughly half the front page looked like it was about
+// something else. A rule hit is now also the signal that a photo is ON TOPIC.
 const KEYWORD_QUERY = [
-  [/ডেঙ্গু|হাসপাতাল|স্বাস্থ্য|কিডনি|ভাইরাস|চিকিৎসা|রোগী|মৃত্যু/, "hospital"],
-  [/ক্রিকেট|টি-?২০|ওয়ানডে|বোলার|ব্যাট|সেঞ্চুরি|ম্যাচ/, "cricket stadium"],
-  [/নির্বাচন|সংসদ|মন্ত্রী|ভোট|রাজনীতি|দলীয়/, "parliament building"],
-  [/মেট্রো/, "metro train"],
-  [/মহাসড়ক|সড়ক|সেতু|রেল|ট্রেন|সড়কপথ/, "highway road"],
-  [/বৃষ্টি|বন্যা|ঝড়|আবহাওয়া|তাপমাত্রা/, "monsoon rain"],
-  [/বিদ্যালয়|শিক্ষা|স্কুল|কলেজ|শিক্ষার্থী|পরীক্ষা/, "school classroom"],
-  [/গ্যাস|বিদ্যুৎ|অর্থনীতি|বাজার|ব্যাংক|টাকা|বাজেট|রপ্তানি|আমদানি|মুদ্রাস্ফীতি/, "business market"],
-  [/মধ্যপ্রাচ্য|ইরান|ইসরায়েল|গাজা|জাতিসংঘ|আন্তর্জাতিক|যুদ্ধ|পররাষ্ট্র/, "world globe"],
-  [/অভিনেতা|অভিনেত্রী|চলচ্চিত্র|সিনেমা|নাটক|সংগীত|শিল্পী/, "cinema film"],
-  [/প্রযুক্তি|মোবাইল|ইন্টারনেট|কৃত্রিম বুদ্ধিমত্তা|কম্পিউটার/, "technology computer"],
+  [/পেঙ্গুইন|প্রজাতি|প্রাণী|পাখি|বন্যপ্রাণী|প্রকৃতি|জীববিজ্ঞান|পরিবেশ|বন|নদী|জলবায়ু/, "wildlife nature landscape"],
+  [/গবেষণা|বিজ্ঞানী|চাঁদ|মহাকাশ|নক্ষত্র|ভূমিকম্প|আবহাওয়া|তাপমাত্রা|ঝড়|বৃষ্টি|বন্যা/, "nature science sky"],
+  [/ডেঙ্গু|হাসপাতাল|স্বাস্থ্য|কিডনি|ভাইরাস|চিকিৎসা|রোগী|মৃত্যু|চিকিৎসক/, "hospital medical"],
+  [/ধর্ষণ|হত্যা|খুন|মামলা|আদালত|গ্রেফতার|অপরাধ|প্রতারণা|জাল|ঠিকাদার/, "courthouse justice"],
+  [/মাছ|খামার|কৃষি|ধান|ফসল|হাট|বাজারে|কাঠাও/, "farmers market agriculture"],
+  [/আগুন|পুড়ে|আগুনে|দাবানল/, "fire flames emergency"],
+  [/দুর্ঘটনা|ছাত্রের মৃত্যু|প্রাণহানি|উদ্ধার|রক্ষাকালীন|অ্যাম্বুলেন্স/, "rescue emergency ambulance"],
+  [/মসজিদ|মন্দির|ঈদ|রমজা|ধর্ম|প্রার্থনা|ওয়াকে|হজ্ব/, "mosque temple worship"],
+  [/ক্রিকেট|টি-?২০|ওয়ানডে|বোলার|ব্যাট|সেঞ্চুরি|ম্যাচ|ফুটবল/, "cricket stadium"],
+  [/নির্বাচন|সংসদ|মন্ত্রী|ভোট|রাজনীতি|দলীয়|প্রধানমন্ত্রী/, "parliament building"],
+  [/মেট্রো|রেল|ট্রেন|বাস|গাড়ি|যানজট|ব্রিজ|সড়ক|মহাসড়ক/, "railway station road"],
+  [/বিদ্যালয়|শিক্ষা|স্কুল|কলেজ|শিক্ষার্থী|পরীক্ষা|বিশ্ববিদ্যালয়/, "school classroom students"],
+  [/গ্যাস|বিদ্যুৎ|অর্থনীতি|ব্যাংক|টাকা|বাজেট|রপ্তানি|আমদানি|মুদ্রাস্ফীতি|বিনিয়োগ/, "business finance market"],
+  [/মধ্যপ্রাচ্য|ইরান|ইসরায়েল|গাজা|জাতিসংঘ|আন্তর্জাতিক|যুদ্ধ|পররাষ্ট্র|যুক্তরাষ্ট্র|রাশিয়া|চীন/, "world globe flags"],
+  [/অভিনেতা|অভিনেত্রী|চলচ্চিত্র|সিনেমা|নাটক|সংগীত|গান|শিল্পী|সরকারি/, "cinema film concert"],
+  [/প্রযুক্তি|মোবাইল|ইন্টারনেট|কৃত্রিম বুদ্ধিমত্তা|কম্পিউটার|ফোন|অ্যাপ/, "technology computer"],
+  [/বিমান|প্লেন|ফ্লাইট|পাইলট|এয়ারপোর্ট|উড়োজ|ককপিট/, "airplane airport aviation"],
+  [/শ্রমিক|মজুরি|কারখানা|শিল্প|চাকুরি|বেকারতা|শ্রম/, "factory workers labour"],
+  [/শিক্ষক|শিক্ষার্থীর|স্কুল|হাসপাতালে|রোগী/, "school hospital students"],
 ];
 const CATEGORY_COLOR = {
   national: "#c0392b",
@@ -66,9 +80,26 @@ function hashSeed(s) {
   return Math.abs(h >>> 0);
 }
 
+// Returns the search query AND whether it is TOPIC-SPECIFIC. A keyword hit
+// means the story's own subject drove the query, so a photo answering it is on
+// topic. Falling through to CATEGORY_QUERY means the query is generic ("dhaka
+// city" for the national bucket), so ANY photo answering it is decoration, not
+// reporting — that is how a penguin-science story ended up with a street photo.
+// Callers must not use a generic-query photo; they use the branded card instead.
+// Categories whose GENERIC image is itself topically meaningful: a parliament
+// building for a political story, a stadium for a sports story. `national` is
+// deliberately absent — it is the catch-all bucket, so "dhaka city" is pure
+// decoration and is exactly how the penguin-science story got a street photo.
+const GENERIC_IS_TOPICAL = new Set(["politics", "sports", "economy", "international", "tech", "entertainment"]);
+
 export function buildQuery(category, tags = [], title = "") {
-  for (const [re, q] of KEYWORD_QUERY) if (re.test(title)) return q;
-  return CATEGORY_QUERY[category] ?? "bangladesh";
+  for (const [re, q] of KEYWORD_QUERY) {
+    if (re.test(title)) return { query: q, specific: true };
+  }
+  return {
+    query: CATEGORY_QUERY[category] ?? "bangladesh",
+    specific: GENERIC_IS_TOPICAL.has(category),
+  };
 }
 
 function escapeXml(s) {
@@ -272,18 +303,29 @@ export async function renderBrandCard({ title, category, brand = BRAND }) {
 // Returns { webp, mode, alt, credit } — webp is a Buffer, or null on dry-run.
 // Priority (user 2026-09-20): 1) the outlet's own og:image from `sources`,
 // 2) Openverse free-license photo, 3) branded card (or none in strict "photo" mode).
+// URLs already used in this run, so two stories in one batch never get the same
+// photo. (The corpus carries ~174 byte-identical copies from before this rule;
+// those are historical and are not retro-fixed by a batch run.)
+const usedPhotoUrls = new Set();
+
 export async function chooseThumbnail({ slug, title, category, tags = [], sources = [], dryRun = false, mode = "mix" }) {
   const seed = hashSeed(slug || title || "x");
-  const query = buildQuery(category, tags, title);
+  const { query, specific } = buildQuery(category, tags, title);
 
+  // The story's OWN publisher image is always the best one: it is the photo the
+  // outlet ran with that report.
   const pickSource = mode === "card"
     ? null
     : await searchSourcePhoto(sources, true);
-  const sourceResults = pickSource ? [pickSource] : [];
 
-  const openverseResults = mode === "card" ? [] : await searchOpenverse(query, 10);
+  // A generic category query only produces decorative photos, so it is not
+  // asked at all unless nothing better is available. The branded card is the
+  // honest fallback: it says what the story is instead of showing something
+  // else.
+  const wantStock = mode !== "card" && (specific || (!pickSource && mode === "photo"));
+  const openverseResults = wantStock ? await searchOpenverse(query, 10) : [];
   const landscape = openverseResults.filter(
-    (r) => r.width >= 1000 && r.height >= 600 && r.width > r.height,
+    (r) => r.width >= 1000 && r.height >= 600 && r.width > r.height && !usedPhotoUrls.has(r.url),
   );
   const pickDefault = landscape.length ? landscape[seed % Math.min(landscape.length, 5)] : null;
 
@@ -294,7 +336,7 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
     return {
       webp: null,
       mode: photoMode,
-      query,
+      query: `${query}${specific ? "" : " [generic]"}`,
       pick: pick
         ? { title: pick.title ?? "", creator: pick.creator, license: pick.license ?? "", url: pick.url, source: !!pickSource }
         : null,
@@ -309,6 +351,7 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
     try {
       const img = await downloadBuffer(pick.url, { referer: pickSource?.referer ?? "" });
       const webp = await renderPhotoFromBuffer(img);
+      if (!pickSource) usedPhotoUrls.add(pick.url);
       return {
         webp,
         mode: photoMode,
