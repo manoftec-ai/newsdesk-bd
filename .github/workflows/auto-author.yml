@@ -34,7 +34,7 @@ jobs:
     # job died on the finish line before pick/compose/finalize ever ran, so
     # nothing published despite a healthy brief pool. Headroom costs nothing
     # when runs are fast.
-    timeout-minutes: 60
+    timeout-minutes: 75
     env:
       # Hard cap on stories authored/published per run. Guards against a supply
       # spike (e.g. a source fix) turning one run into an unbounded, very long
@@ -64,14 +64,31 @@ jobs:
       # auto-author also refreshes briefs itself (deduped by pipeline) instead of
       # waiting for pipeline.yml's cron to land. Exactly duplicates what
       # pipeline.yml does; harmless and idempotent when pipeline already ran.
-      - name: Refresh briefs (redundant safety net)
+      # 2026-10-01: this step used to re-run the ENTIRE pipeline (fetch,
+      # normalize, cluster, verify, extract) before every publish. Measured on
+      # run 1550: fetch 3.5min + normalize 18min + cluster 2s + verify 1s +
+      # extract 22.5min = 44 minutes of a 60-minute job, for state
+      # pipeline.yml had already produced AND committed to main in the same
+      # window. The result was structural: publishing happened with ~15
+      # minutes to spare before the job timeout, and two runs in a row were
+      # killed at exactly 60 minutes (17:36) with a full batch of finished
+      # stories still in the workspace. The site then showed nothing new for
+      # five hours while every job stayed green.
+      #
+      # pipeline.yml owns that work (its own cron, 30 min) and commits
+      # state/briefs, so this job now just uses them. The slow extract remains
+      # ONLY as a fallback for the case where no briefs exist at all, so a
+      # missed pipeline run can never leave this job with nothing to publish.
+      - name: Use the briefs pipeline.yml already extracted
         working-directory: pipeline
         run: |
-          node run.js fetch || true
-          node run.js normalize || true
-          node run.js cluster || true
-          node run.js verify || true
-          node run.js extract || true
+          if compgen -G "state/briefs/*.json" > /dev/null; then
+            count=$(ls state/briefs/*.json | wc -l)
+            echo "using $count brief(s) committed by the pipeline"
+          else
+            echo "no briefs on this checkout — extracting once as a fallback"
+            node run.js extract || true
+          fi
 
       - name: Resolve Google News wrappers to publisher articles
         working-directory: pipeline
