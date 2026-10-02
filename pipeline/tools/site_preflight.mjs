@@ -5,6 +5,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, relative, resolve, sep } from 'node:path';
 import YAML from 'yaml';
 import { PUBLICATION_GATE_VERSION } from '../lib/publication-gate.mjs';
+import { bulletIsComplete } from '../lib/compose.mjs';
 
 export const PREFLIGHT_FAILURE_CODES = Object.freeze([
   'FILE_READ_FAILED',
@@ -25,6 +26,7 @@ export const PREFLIGHT_FAILURE_CODES = Object.freeze([
   'VERIFICATION_STATUS_INVALID',
   'VERIFICATION_METADATA_MISMATCH',
   'SOURCES_MISSING',
+  'KEY_POINT_INCOMPLETE',
   'SOURCE_URL_INVALID',
   'GOOGLE_NEWS_WRAPPER_UNRESOLVED',
   'SLUG_MISMATCH',
@@ -153,6 +155,18 @@ export function validatePublicArticle(content, { slug, now = new Date(), gateVer
       }
       if (seen.has(source.url)) add(errors, 'SOURCE_URL_INVALID', `duplicate source URL: ${source.url}`);
       seen.add(source.url);
+    }
+  }
+
+  // 2026-10-02: the "এক নজরে" box is the first thing a reader reads after
+  // the headline, and the user reported it as "sometimes an incomplete
+  // sentence" with no focus on the news. Measured on the last 100 articles:
+  // 245 of ~500 bullets carried no terminal punctuation and 192 of those ended
+  // on a dangling token. A fragment must not ship - an article with no usable
+  // point simply gets no box.
+  for (const point of data.keyPoints ?? []) {
+    if (!bulletIsComplete(point)) {
+      add(errors, 'KEY_POINT_INCOMPLETE', `keyPoints must be a complete sentence: "${String(point).slice(0, 60)}"`);
     }
   }
 

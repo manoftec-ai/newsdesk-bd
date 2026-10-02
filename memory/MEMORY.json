@@ -1311,6 +1311,27 @@
       "method": "chromium-browser --headless --screenshot works on Termux even though astro build does not. Screenshots at 4s/7s/11s/16s separate a real defect from a capture artifact.",
       "openItem": "a hero slide with no distinct photo shows the branded card, which looks different from photo slides - user may prefer a topical photo in the hero",
       "tests": "pipeline suite 445/445"
+    },
+    {
+      "id": "D142",
+      "date": "2026-10-02",
+      "topic": "Repair of the এক নজরে focus-point box: generator fixed and 75 articles repaired",
+      "decision": "A focus point must be a WHOLE, complete sentence. asBullet no longer cuts a long sentence at a clause boundary (the cut landed mid-phrase and published fragments such as \"…যাত্রা শ\"); over-long sentences are refused instead. An unpaired-quote sentence is refused rather than published ending inside a quotation.",
+      "context": "User reported the box was not really providing a focus point and asked for the last 100 articles to be audited and fixed. Audit: 99/100 had keyPoints, 192 bullets ended on a dangling connective, 53 more had no terminal punctuation.",
+      "rootCauses": [
+        "asBullet cut sentences at a clause boundary to fit a 16-word budget, landing mid-phrase",
+        "quotesBalanced scanned only the KEYS of QUOTE_PAIRS; closing marks (’ ” ») are only VALUES, so every closing mark was skipped and ANY sentence containing a quotation was judged unbalanced",
+        "sentences() could return a blob spanning a blank line, which renders as invalid single-line YAML and fails the entire site build",
+        "keyPoints: with an empty inline value followed by indented items is a BLOCK, not an empty key; treating it as single-line orphaned the items and silently changed draft on economy-263 (why 40 articles were unrepairable)"
+      ],
+      "lesson": "repair_keypoints.mjs guesses the extent of the keyPoints block then VERIFIES the rewrite (must parse, keep all other front-matter keys identical in value, preserve front-matter comments). That guard caught two silent corruption paths: an orphaned fragment that broke the whole site build, and a re-serialise fallback that deleted 69 comment lines across 291 files. A refusal must be reported as blocked, never counted as done: an earlier version reported success while writing the original bytes back, leaving the article broken.",
+      "gates": [
+        "site_preflight KEY_POINT_INCOMPLETE",
+        "corpus test: no published article carries an incomplete key point"
+      ],
+      "result": "65 articles repaired (52 boxes fixed, 3 boxes removed where no body sentence qualified) plus 10 more that auto-author published during the merge. Corpus 556 articles / 1364 points / 0 incomplete / 0 truncated / 0 under five words. No body text, other front-matter key, or comment changed. Suite 457/457.",
+      "liveVerification": "30 articles sampled from jachaidesk.com/news — all 30 render the box, 93 points, 0 incomplete. tests and images green; deploy green on the follow-up commit.",
+      "preExistingNotOurs": "Lighthouse fails on every run since 05:45 because lighthouserc.json asserts minScore 1 (a perfect 1.0) on all four categories. content-sweep BODY_OFF_HEADLINE false positives (D140). heartbeat holds a job for hours."
     }
   ],
   "sources": [
@@ -1658,7 +1679,7 @@
     }
   ],
   "lastUpdated": "2026-10-02",
-  "sessionsCount": 95,
+  "sessionsCount": 96,
   "p0Progress": {
     "P0-10": "done",
     "N-deploy-batch-1": "done",
