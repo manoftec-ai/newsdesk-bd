@@ -260,9 +260,13 @@ jobs:
             sleep 20
           done
           if [ -z "$pushed" ]; then
-            echo "could not land the batch after 3 attempts — it will be re-authored next run"
+            # 2026-10-02: this used to exit 0 with published=false, which is how
+            # a 20-hour outage stayed invisible — every job green, no new news.
+            # A batch that cannot be landed is a REAL failure and now says so.
+            echo "PUBLISH FAILED: the batch could not be pushed after 3 attempts."
+            echo "Stories are written but NOT on main, and NOT deployed." >> "$GITHUB_STEP_SUMMARY"
             echo "published=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            exit 1
           fi
           echo "published=true" >> "$GITHUB_OUTPUT"
 

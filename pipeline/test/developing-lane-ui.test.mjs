@@ -188,3 +188,15 @@ test(`homepage latest-headlines strip: titled, thumb on the left`, () => {
   const css = read('src/styles.css');
   assert.match(css, /\.mini-row \{[^}]*grid-template-columns:\s*auto 1fr/, 'thumb column is first = left');
 });
+
+test('the slider must never scroll the page', () => {
+  // 2026-10-02, user report: "while I scroll down it automatically goes up
+  // while the slider slides". Cause: the auto-advance called
+  // children[j].scrollIntoView(), and scrollIntoView scrolls EVERY scrollable
+  // ancestor — including the document. So each 5-second tick dragged the reader
+  // back to the hero. The track must be scrolled on its own.
+  const slider = read('src/components/HeroSlider.astro');
+  const code = slider.replace(/\/\/[^\n]*/g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  assert.doesNotMatch(code, /scrollIntoView/, 'scrollIntoView moves the page as well as the track');
+  assert.match(code, /track\.scrollTo\(\{ left: j \* track\.clientWidth/, 'scroll the track itself instead');
+});
