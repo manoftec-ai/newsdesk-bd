@@ -181,8 +181,24 @@ test('asBullet never ends inside an open quote (2026-09-29 national-694)', () =>
   );
   const q = (s) => [...s].filter((c) => /[''""«»]/u.test(c)).length;
   assert.equal(q(out) % 2, 0, `unbalanced quotes leaked: ${out}`);
-  assert.ok(!out.includes('বাসায়'), 'quoted fragment must be cut, not kept half');
-  assert.ok(out.length > 20, 'kept head must still stand alone: ' + out);
-  // balanced short input passes through
-  assert.ok(asBullet('ছোট সম্পূর্ণ বাক্য।').length > 0);
+  // 2026-10-02: a bullet is now a WHOLE sentence, never a cut one. The old
+  // behaviour amputated at the opening quote ("…জানায়:") and published the
+  // half-quote as a focus point. Taking the sentence whole removes the class
+  // entirely, so the guarantee is now: whatever comes back is balanced and
+  // stands on its own, and a sentence that genuinely cannot is refused.
+  assert.ok(out.includes('বাসায়'), 'the whole sentence is kept, quote included');
+  assert.ok(out.endsWith('হয়'), 'must not stop mid-sentence: ' + out);
+  assert.ok(out.length > 20, 'must stand alone: ' + out);
+  // a sentence whose quote is never closed is refused outright rather than
+  // published ending inside the quotation
+  assert.equal(
+    asBullet('রাজধানীর আদাবরে বাড়ি দখলের চেষ্টার অভিযোগে পুলিশ জানায় ‘বাসায় থাকিস তোদের দেখে নেব বলে হুমকি দিয়ে তারা পালিয়ে যায় আর পরে অভিযান চালিয়ে গ্রেপ্তার'),
+    '',
+    'an unclosed quotation must not become a point',
+  );
+  // balanced short input passes through. 2026-10-02: a focus point must also
+  // be at least 5 words to say anything, so the control is a real short
+  // sentence rather than the 3-word placeholder this used.
+  assert.ok(asBullet('তিনি আজ সকালে অফিসে ছিলেন।').length > 0);
+  assert.equal(asBullet('ছোট বাক্য।'), '', 'a 3-word fragment is not a focus point');
 });
