@@ -3,8 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { cleanAlt } from "../../lib/image-alt.js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import VerificationBadge from "../../components/VerificationBadge.astro";
-import { getCollection } from "astro:content";
-import { SITE, getCategory, getBadge, formatDate, formatDateTimeBDShort } from "../../lib/news-data.js";
+import {
+  SITE,
+  getCategory,
+  getBadge,
+  formatDate,
+  formatDateTimeBDShort,
+  newsEntries,
+} from "../../lib/news-data.js";
 import {
   events,
   matchesEvent,
@@ -23,7 +29,9 @@ export async function getStaticPaths() {
 
 const { event } = Astro.props;
 
-const allEntries = (await getCollection("news", ({ data }) => !data.draft)).map((entry) => ({
+// 2026-10-02: newsEntries() is the build-memoized collection. This page
+// rendered once per event, and each render used to re-parse all 584 articles.
+const allEntries = (await newsEntries()).map((entry) => ({
   slug: entry.id,
   title: entry.data.title,
   excerpt: entry.data.excerpt,
