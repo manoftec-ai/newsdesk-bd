@@ -357,3 +357,41 @@ test('the "একই প্রসঙ্গে আরও পড়ুন" inline 
   assert.ok(/আরও পড়ুন/.test(article), 'the আরও পড়ুন grid must remain');
   assert.ok(/related\.map/.test(article), 'the grid still renders related stories');
 });
+
+test('a formatted date can never reach Date#toISOString and fail the build', () => {
+  // 2026-10-02. `post.updated` on this page is the BENGALI FORMATTED string
+  // ("২৪ সেপ্টেম্বর, ২০২৬"), built with formatDate() a few lines above. Passing
+  // that to a helper which calls Date#toISOString threw
+  // `RangeError: Invalid time value`, which failed the whole Astro build and
+  // therefore every deploy — one article, one malformed attribute, no site.
+  //
+  // The helper is now shared and total: an unparseable value yields undefined
+  // and the attribute is simply omitted.
+  const helper = readFileSync(join(SITE, 'lib/news-data.js'), 'utf8');
+  assert.match(
+    helper,
+    /export const toIsoDateTime[\s\S]*?Number\.isNaN\(d\.getTime\(\)\) \? undefined : d\.toISOString\(\)/,
+    'toIsoDateTime must return undefined for an unparseable date instead of throwing',
+  );
+  assert.ok(
+    !/const isoDate = \(date\) => \(date \? new Date\(date\)\.toISOString\(\) : undefined\);/.test(article),
+    'the throwing local isoDate is back in the article page',
+  );
+  // The updated block must read the real Date, never the formatted string.
+  const updatedBlock = article.match(/হালনাগাদ:[\s\S]{0,320}/)?.[0] ?? '';
+  assert.ok(updatedBlock, 'the হালনাগাদ block disappeared');
+  assert.ok(
+    /datetime=\{entry\.data\.updated\.toISOString\(\)\}/.test(updatedBlock),
+    'হালনাগাদ must take its datetime from the real Date',
+  );
+  assert.ok(
+    !/datetime=\{isoDate\(post\.updated\)\}/.test(article),
+    'isoDate(post.updated) would parse a Bengali string and throw',
+  );
+  // And the "only when genuinely updated" guard must compare dates to dates;
+  // comparing a Bengali string to an ISO date is always true.
+  assert.ok(
+    !/post\.updated\s*!==\s*entry\.data\.date\.toISOString\(\)/.test(article),
+    'the updated guard still compares a formatted string against an ISO date',
+  );
+});

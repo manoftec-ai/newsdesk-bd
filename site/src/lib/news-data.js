@@ -4,6 +4,25 @@ export { SITE, SEO, authors, categories, tags, CONTACT, NAVIGATION, MORE_NAVIGAT
 import { SITE, authors, categories, tags } from "../config/theme.config.ts";
 
 const isoDate = (date) => date?.toISOString().slice(0, 10);
+
+/**
+ * ISO string for a `<time datetime>` attribute or JSON-LD, or undefined.
+ *
+ * 2026-10-02: this used to be `(date) => (date ? new Date(date).toISOString() : undefined)`
+ * inline in the article page. It threw `RangeError: Invalid time value` on any
+ * truthy-but-unparseable value — most importantly on a Bengali FORMATTED date
+ * such as "২৪ সেপ্টেম্বর, ২০২৬", which `new Date()` cannot parse. One bad call
+ * failed the entire Astro build and therefore every deploy.
+ *
+ * A formatting helper must never be able to take a build down, so an
+ * unparseable value now yields undefined (the attribute is simply omitted)
+ * instead of throwing.
+ */
+export const toIsoDateTime = (value) => {
+  if (value === null || value === undefined || value === "") return undefined;
+  const d = value instanceof Date ? value : new Date(value);
+  return Number.isNaN(d.getTime()) ? undefined : d.toISOString();
+};
 const wordsPerMinuteBn = 200;
 
 const estimateReadingTime = (text = "") => {
