@@ -622,3 +622,29 @@ Verifying the D143 chronicle live exposed the real problem: **`jachaidesk.com` w
 **Gate so it cannot regress:** `pipeline/test/build-cost.test.mjs` — no `eventsForPost` in the comparator, the caches exist and stay off in dev, no per-page template reads the collection directly; `article-layout.test.mjs` — the throwing local `isoDate` cannot return. Suite **472/472**.
 
 **Still open (pre-existing, not from this work):** `Lighthouse` fails every run (`lighthouserc.json` demands a perfect `minScore: 1`); `health.yml` mixes ESM `import` with `require('fs')` so it always dies with `require is not defined`, and its 36-hour mtime check cannot work after a fresh checkout; `facebook.yml` runs every 20 minutes but `FACEBOOK_PAGE_ID`/`FACEBOOK_PAGE_TOKEN` are absent and `facebook_post.mjs` exits `0` on missing secrets *and* on send failure, so it reports success while posting nothing.
+
+## D148: Facebook automation is not a defect — the user has not set it up (2026-10-02)
+
+**User statement, 2026-10-02: "i did not setup facebook yet."** There is no Facebook page and no intent to have one right now.
+
+So the previously recorded "open problems" — `FACEBOOK_PAGE_ID`/`FACEBOOK_PAGE_TOKEN` absent, and `facebook_post.mjs` exiting `0` on missing secrets — are **the correct behaviour for a site with no Facebook page**, not a bug. Do not "fix" them, do not treat the 20-minute `facebook.yml` schedule as a failure, and do not raise the fail-loud question again unless the user says a page now exists. `facebook_post.mjs` exiting quietly is the right call: it avoids a 20-minutely failing job and a misleading alert while there is nothing to post to.
+
+This retires that item from the open-problems list in D142/D147. **Reopening condition: the user sets up a Facebook page and asks for automatic posting.** At that point the work is (a) add the two secrets, (b) make missing secrets fail loudly, (c) confirm a real post lands.
+
+## D149: the health monitor had never worked — fixed and now able to fail (2026-10-02)
+
+`health.yml` had never once done its job. Two independent faults in an inline `node -e` blob:
+- it mixed ESM `import` with `require('fs')`, so Node ran it as a module and **every run died** with `require is not defined` — the monitor was itself the broken thing while reporting the pipeline broken;
+- it judged staleness by **file mtime**, and `actions/checkout` gives every file the checkout time, so the newest article was always ~0h old and the 36-hour test **could never fire** however long publishing had been dead. A monitor that cannot fail is worse than no monitor, because it looks green.
+
+Recency now comes from `git log -1` on `site/src/content/news` — real history, correct immediately after checkout — so the workflow needs `fetch-depth: 0` and says why. Unknown history raises an explicit `RECENCY_UNKNOWN` failure instead of a false all-clear.
+
+Logic moved into `pipeline/tools/health_check.mjs` (testable outside CI). The inline `curl` that opened a **brand-new issue on every failed run** became `pipeline/tools/health_issue.mjs`: it reuses the open issue and comments the latest reading, so a week-long outage produces one issue rather than seven, and it creates the `health` label first because referencing a missing label makes the issue POST fail with 422.
+
+Also corrected the old issue body's claim that `pick pending 0` is a stall signal — right after a publishing run the queue is legitimately empty. It stays diagnostic, not fatal.
+
+15 new tests: healthy pass, 72h stall fails, exactly-at-limit passes while 36h01m fails, configurable threshold, too-few-articles, unknown recency, unparseable date, unreadable pick state, pending-0 is not a failure, issue reuse, label-before-issue ordering, dry run does no network. Suite **487/487**.
+
+**Verified locally:** `articles 600 / last article commit 0.6h ago / health OK`; simulated 72h silence correctly reports `FAIL PUBLISHING_STALLED` and exits 1. The workflow YAML was parsed and both scripts were run from the repo root.
+
+**Still open (pre-existing):** `Lighthouse` fails every run — `lighthouserc.json` asserts a perfect `minScore: 1`, which no real news page will hold. Needs realistic thresholds, not a perfect score.
