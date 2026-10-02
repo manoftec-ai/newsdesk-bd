@@ -1250,6 +1250,23 @@
         "pipeline/test/article-layout.test.mjs"
       ],
       "tests": "pipeline suite 434/434"
+    },
+    {
+      "id": "D137",
+      "date": "2026-10-02",
+      "topic": "Site dark 20h: batches discarded at push + 44min duplicate pipeline work in auto-author",
+      "decision": "auto-author now retries fetch/merge/push 3x, resolves add/add conflicts by keeping the remote (published) file, never hides git stderr, and no longer re-runs the whole pipeline before publishing (uses briefs pipeline.yml committed; timeout 60->75m). published=true only after the push lands.",
+      "rootCauses": [
+        "single-attempt merge discarded 6-story batches when main moved mid-run",
+        "git merge -X theirs cannot resolve add/add conflicts, so slug collisions always killed the batch",
+        "auto-author spent 44 of 60 job minutes redoing pipeline.yml work (normalize 18m, extract 22.5m), leaving ~15m to publish; one run was killed at the 60m timeout"
+      ],
+      "measured": [
+        "last publish 12:07 Oct-1, next 04:45 Oct-2 (20h)",
+        "473 articles on main after recovery",
+        "deploy dispatch HTTP 204 on the fixed runs"
+      ],
+      "lesson": "a green job is not a working system; published=false after a discarded batch is silent data loss"
     }
   ],
   "sources": [
@@ -1596,7 +1613,7 @@
       "replacedBy": "v2 with stage 4 VERIFY + badge/evidence model"
     }
   ],
-  "lastUpdated": "2026-10-01",
+  "lastUpdated": "2026-10-02",
   "sessionsCount": 95,
   "p0Progress": {
     "P0-10": "done",
