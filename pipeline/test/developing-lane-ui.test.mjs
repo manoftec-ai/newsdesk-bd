@@ -127,7 +127,7 @@ test('the hero slider stays minimal, fast and honest', () => {
   // on hover (a reader's cursor simply rests on the hero) and refusing to
   // rotate at all under prefers-reduced-motion. Reduced motion now only
   // changes HOW it steps (instant cut, no animated scroll).
-  assert.match(code, /setInterval\(\(\) => go\(current\(\) \+ 1\), AUTOPLAY_MS\)/, 'auto-advance exists');
+  assert.match(code, /setInterval\(\(\) => \{ go\(current\(\) \+ 1\); warm\(\); \}, AUTOPLAY_MS\)/, 'auto-advance exists');
   assert.match(code, /if \(timer \|\| count\(\) < 2\) return;/, 'play() has no reduced-motion veto');
   assert.doesNotMatch(code, /mouseenter|mouseleave/, 'the pointer never freezes the hero');
   assert.match(code, /focusin[^]*stop\(\)/, 'keyboard focus pauses (accessibility)');
@@ -215,6 +215,7 @@ test('the auto-advance lands on a slide, never between two', () => {
   assert.doesNotMatch(code, /scroll-behavior:\s*smooth/, 'CSS smooth scrolling re-breaks the snap');
   assert.match(code, /const go = \(i, smooth = false\)/, 'go() must distinguish timed from reader-initiated');
   assert.match(code, /behavior: smooth \? "smooth" : "auto"/, 'the timed advance must be an instant cut');
-  assert.match(code, /setInterval\(\(\) => go\(current\(\) \+ 1\), AUTOPLAY_MS\)/, 'autoplay takes the default (instant) path');
+  assert.match(code, /setInterval\(\(\) => \{ go\(current\(\) \+ 1\); warm\(\); \}, AUTOPLAY_MS\)/, 'autoplay takes the default (instant) path and warms the next image');
+  assert.match(code, /new Image\(\)\.src = img\.src/, 'the next slide photo is pre-warmed so the cut never shows an empty box');
   assert.match(code, /const nudge = \(i\) => \{ stop\(\); go\(i, !reduce\); play\(\); \}/, 'arrow/dot presses may animate');
 });

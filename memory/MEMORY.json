@@ -1302,6 +1302,15 @@
       "health": "auto-author publishing every ~15-30 min; pipeline/images/deploy/watcher/content-sweep green",
       "openItem": "content-sweep BODY_OFF_HEADLINE false positives recur on poetic/inflected headlines (6 slugs baselined). Durable fix: compare character shingles instead of whole words. Not done - it changes a quality gate.",
       "tests": "pipeline suite 444/444"
+    },
+    {
+      "id": "D141",
+      "date": "2026-10-02",
+      "topic": "Visual QA of the live homepage with headless Chromium on the phone",
+      "decision": "Two slider defects found only by screenshotting: (1) the timed advance settled between slides - a programmatic smooth scroll under mandatory snapping lands off-snap, and CSS scroll-behavior:smooth also defeats scrollTo behavior:auto; the timed advance is now an instant cut and CSS smooth scrolling is gone. (2) instant cuts exposed a blank hero on wrap-around because the next slide image is lazy; the next photo is now pre-warmed.",
+      "method": "chromium-browser --headless --screenshot works on Termux even though astro build does not. Screenshots at 4s/7s/11s/16s separate a real defect from a capture artifact.",
+      "openItem": "a hero slide with no distinct photo shows the branded card, which looks different from photo slides - user may prefer a topical photo in the hero",
+      "tests": "pipeline suite 445/445"
     }
   ],
   "sources": [
