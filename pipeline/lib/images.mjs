@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 // lib/images.mjs — article thumbnails.
 //
 // Strategy (user 2026-09-20, "real photos build trust"; original 2026-09-19 rule
@@ -308,7 +309,7 @@ export async function renderBrandCard({ title, category, brand = BRAND }) {
 // those are historical and are not retro-fixed by a batch run.)
 const usedPhotoUrls = new Set();
 
-export async function chooseThumbnail({ slug, title, category, tags = [], sources = [], dryRun = false, mode = "mix" }) {
+export async function chooseThumbnail({ slug, title, category, tags = [], sources = [], dryRun = false, mode = "mix", usedHashes = null }) {
   const seed = hashSeed(slug || title || "x");
   const { query, specific } = buildQuery(category, tags, title);
 
@@ -327,7 +328,26 @@ export async function chooseThumbnail({ slug, title, category, tags = [], source
   const landscape = openverseResults.filter(
     (r) => r.width >= 1000 && r.height >= 600 && r.width > r.height && !usedPhotoUrls.has(r.url),
   );
-  const pickDefault = landscape.length ? landscape[seed % Math.min(landscape.length, 5)] : null;
+  // Order the candidates deterministically from the slug seed, then walk them
+  // until one renders to bytes we have not already used. Comparing the RENDERED
+  // bytes (not the source url) is what actually works: two different Openverse
+  // records are routinely the same photograph, and the same query run in a
+  // later batch re-offers the identical file. 136 byte-identical copies existed
+  // in the corpus before this; the corpus is passed in as usedHashes so a batch
+  // cannot reintroduce one.
+  const ordered = landscape.length
+    ? [...landscape].sort((a, b) => (hashSeed(String(a.url)) - hashSeed(String(b.url))) || 0)
+    : [];
+  let pickDefault = null;
+  for (let i = 0; i < Math.min(ordered.length, 6); i += 1) {
+    const cand = ordered[(seed + i) % ordered.length];
+    if (!pickDefault) pickDefault = cand;
+    if (!usedHashes) break;
+    const probe = await downloadBuffer(cand.url).catch(() => null);
+    if (!probe) continue;
+    const h = createHash("sha1").update(await renderPhotoFromBuffer(probe)).digest("hex");
+    if (!usedHashes.has(h)) { pickDefault = cand; break; }
+  }
 
   const pick = pickSource || pickDefault;
   const photoMode = pickSource ? "source" : pickDefault ? "photo" : mode === "photo" ? "none" : "card";

@@ -9,6 +9,7 @@
 // The fallback is now only used where the category image is itself topical.
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { buildQuery } from '../lib/images.mjs';
 
 const specific = (title, category = 'national') => buildQuery(category, [], title).specific;
@@ -81,4 +82,19 @@ test('a re-render replaces the thumbnail keys instead of duplicating them', asyn
     }
   }
   assert.deepEqual(dupes, [], `duplicate front matter keys break the Astro build:\n${dupes.join('\n')}`);
+});
+
+test('a re-render cannot reintroduce a byte-identical copy', () => {
+  // 2026-10-02: 136 images in the corpus were exact copies of another article
+  // before the first pass, and a second pass still left 42 — the same Openverse
+  // query re-offers the same photograph in a later batch. Comparing the SOURCE
+  // url cannot see that (two records are routinely one photo), so the choice now
+  // compares the RENDERED bytes against a hash set built from every image on disk.
+  const src = readFileSync(new URL('../lib/images.mjs', import.meta.url), 'utf8');
+  assert.match(src, /usedHashes/, 'the chooser must accept the corpus hashes');
+  assert.match(src, /createHash\("sha1"\)\.update\(await renderPhotoFromBuffer/, 'it must hash the RENDERED bytes');
+  const tool = readFileSync(new URL('../tools/add_images.mjs', import.meta.url), 'utf8');
+  assert.match(tool, /usedHashes = new Set\(\)/, 'the tool must build the hash set from the corpus');
+  assert.match(tool, /readdirSync\(imagesDir\)/, 'from every image on disk');
+  assert.match(tool, /usedHashes\.add\(createHash\("sha1"\)\.update\(result\.webp\)/, 'and must record what it writes');
 });
