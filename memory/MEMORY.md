@@ -648,3 +648,33 @@ Also corrected the old issue body's claim that `pick pending 0` is a stall signa
 **Verified locally:** `articles 600 / last article commit 0.6h ago / health OK`; simulated 72h silence correctly reports `FAIL PUBLISHING_STALLED` and exits 1. The workflow YAML was parsed and both scripts were run from the repo root.
 
 **Still open (pre-existing):** `Lighthouse` fails every run — `lighthouserc.json` asserts a perfect `minScore: 1`, which no real news page will hold. Needs realistic thresholds, not a perfect score.
+
+## D150: the supplied logo is now the Open Graph card (2026-10-02)
+
+User supplied a ChatGPT share link as the logo and asked for it to be set on the site, then chose **social/OG preview only** and asked for the background to be made transparent. Shipped in `908cb091`.
+
+**The only fetchable asset was a preview, not a source file.** The share page is JS-rendered; its `og:image` points at a 1200x630 JPEG, which is exactly OpenAI's social-preview size. So no original PNG/SVG is available from that link — a re-share from the original tool could still yield a better asset.
+
+**Measured before touching anything, because the background colour decides the approach:**
+- border is **100% `rgb(0,0,0)`**, and there is no near-white anywhere in the frame;
+- artwork is dark navy `(21,38,58)` plus a **light wordmark** (luma up to 163);
+- mark + wordmark occupied only 43% of the width — the rest was dead padding;
+- therefore "transparent" means removing **black, not white** — the opposite of the usual assumption, and worth measuring rather than assuming.
+
+**What that rules out:** the logo is light-on-dark artwork and the header is light (`Header.astro` uses `bg-background/85`), so a transparent version would render the wordmark **invisible** in the header. `og-default-v2.png` is also light cream `(246,234,233)`, so pasting the logo straight onto it would have hidden the wordmark there too.
+
+**Built:**
+- `site/public/brand/jachaidesk-logo.png` — 545x363 RGBA, cropped to the artwork with a 12px pad, black removed at a hard `luma <= 12` cutoff so the navy mark (luma ~35) and the light wordmark stay fully opaque. A soft ramp was rejected: it eats the mark's anti-aliased edge.
+- `site/public/images/og-jachaidesk-logo.png` — the 1200x630 card, transparent artwork at 62% width on the brand dark `#2b231c` already used by `public/favicon.svg`. Verified: corners are brand dark, **zero pure-black pixels** (so no black rectangle around the logo), card luma reaches 173 so the wordmark is intact.
+
+The card is deliberately **opaque**: transparent OG images get composited onto black by some crawlers and ignored by others.
+
+`og-default-v2.png` is **kept**, so reverting is one line.
+
+**Also fixed `og:image:type`**, which was `.png ? image/png : image/webp` — that declared `image/webp` for every JPEG. A wrong MIME type makes some scrapers discard the card.
+
+**Verified live:** `/images/og-jachaidesk-logo.png` → 200, `image/png`, 124,717 bytes, 1200x630 RGB, **byte-identical to the repo file**. Homepage emits `og:image` = the new card with width 1200, height 630, type `image/png`. Article pages still use their own image, unchanged. 6-route sweep 200.
+
+**CAVEAT — nobody has seen this logo.** This model has no vision input, so spelling, colours and visual balance were never checked by eye; every claim above is from pixel measurement. A human should look at it before it is trusted.
+
+**Design change to be aware of:** the default social card is now dark, where every previous card was light cream. `og-default-v2.png` still exists if the light look is preferred.

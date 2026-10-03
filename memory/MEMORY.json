@@ -1353,6 +1353,13 @@
       "title": "Health monitor fixed: it had never worked and could never have detected a stall",
       "decision": "health.yml died on every run because it mixed ESM import with require(fs), and its stall test used file mtimes that actions/checkout rewrites to now, so it could never fire. Recency now comes from git log -1 on the content dir with fetch-depth 0; unknown history fails as RECENCY_UNKNOWN rather than passing silently. Logic moved to pipeline/tools/health_check.mjs and issue handling to pipeline/tools/health_issue.mjs, which reuses one open issue instead of opening a new one per failed run and creates the health label before referencing it. pick pending 0 is no longer treated as a stall signal. 15 new tests; suite 487/487.",
       "rationale": "A monitor that cannot fail is worse than no monitor, because it looks green."
+    },
+    {
+      "id": "D150",
+      "date": "2026-10-02",
+      "title": "Supplied logo installed as the Open Graph card (social previews only)",
+      "decision": "The ChatGPT share link only exposes a 1200x630 JPEG preview, not a source file. Measured it first: border is 100% pure black with no near-white, artwork is dark navy (21,38,58) with a light wordmark, and the mark filled only 43% of the width. So transparent means removing black, not white. Because the wordmark is light and both the header and og-default-v2.png are light, a transparent or naive paste would have made it invisible, so the card composites the transparent artwork onto the brand dark #2b231c used by favicon.svg: 1200x630 opaque PNG, zero pure-black pixels, wordmark luma 173 intact. Artwork also ships at public/brand/ as 545x363 RGBA for future dark-surface use. og-default-v2.png kept so revert is one line. Fixed og:image:type which declared image/webp for JPEGs. 8 new tests; suite 495/495; verified byte-identical live.",
+      "rationale": "Measure the background before assuming it is white, and never let a preview-size asset silently become a brand asset. Nobody has seen this logo - it needs a human eye."
     }
   ],
   "sources": [
