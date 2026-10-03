@@ -40,7 +40,17 @@ const items = slides.slice(0, 5);
                 {/* The photo box always renders, even with no photo: every
                     slide then has identical geometry and the strip never jumps
                     in height between slides. */}
-                <div class="aspect-[16/9] overflow-hidden bg-muted md:aspect-[21/9]">
+                <div class="relative aspect-[16/9] overflow-hidden bg-muted md:aspect-[21/9]" data-hero-photo>
+                  {items.length > 1 && (
+                    <>
+                      <button type="button" class="hero-arrow hero-arrow-left" data-hero-prev aria-label="আগের খবর">
+                        ‹
+                      </button>
+                      <button type="button" class="hero-arrow hero-arrow-right" data-hero-next aria-label="পরের খবর">
+                        ›
+                      </button>
+                    </>
+                  )}
                   {p.thumbnail && (
                     <img
                       src={p.thumbnail}
@@ -84,16 +94,6 @@ const items = slides.slice(0, 5);
           );
         })}
       </div>
-      {items.length > 1 && (
-        <>
-          <button type="button" class="hero-arrow hero-arrow-left" data-hero-prev aria-label="আগের খবর">
-            ‹
-          </button>
-          <button type="button" class="hero-arrow hero-arrow-right" data-hero-next aria-label="পরের খবর">
-            ›
-          </button>
-        </>
-      )}
       <script>
         // Auto-advance every 5s, but only while the reader is NOT engaged:
         // hover, touch, focus, or a hidden tab all pause it. Reduced-motion
@@ -103,12 +103,12 @@ const items = slides.slice(0, 5);
         // NOTE: Astro compiles this to type="module", where
         // document.currentScript is null — so the root is found by query,
         // never by currentScript.
-        const AUTOPLAY_MS = 5000;
+        const AUTOPLAY_MS = 4000;
         const root = document.querySelector("section[data-hero]");
         const track = root?.querySelector("[data-hero-track]");
         if (track) {
-          const prev = root.querySelector("[data-hero-prev]");
-          const next = root.querySelector("[data-hero-next]");
+          const prevs = root.querySelectorAll("[data-hero-prev]");
+          const nexts = root.querySelectorAll("[data-hero-next]");
           // Reduced motion changes HOW it moves (an instant cut, no animated
           // scroll) — it must not switch rotation off, or the hero sits frozen
           // for exactly the readers least served by a static hero.
@@ -154,8 +154,8 @@ const items = slides.slice(0, 5);
             if (timer) { clearInterval(timer); timer = null; }
           };
           const nudge = (i) => { stop(); go(i, !reduce); play(); };
-          prev?.addEventListener("click", () => nudge(current() - 1));
-          next?.addEventListener("click", () => nudge(current() + 1));
+          prevs.forEach((b) => b.addEventListener("click", () => nudge(current() - 1)));
+          nexts.forEach((b) => b.addEventListener("click", () => nudge(current() + 1)));
           // Only three things pause it, and none of them is "the reader's
           // mouse happens to be over the hero": a keyboard user reading the
           // controls, and a backgrounded tab.
@@ -221,10 +221,9 @@ const items = slides.slice(0, 5);
   // the reader pressing an arrow.
   .hero-arrow {
     position: absolute;
-    /* ~image-center: the slide is a 16/9 (21/9 on desktop) photo plus a text
-       block below, so 50% would land on the headline. This keeps the arrows
-       over the photo at every breakpoint without any measuring code. */
-    top: 32%;
+    /* Centered on the photo box (16/9 mobile, 21/9 desktop), which is now the
+       offset parent — no measuring code, correct at every breakpoint. */
+    top: 50%;
     transform: translateY(-50%);
     width: 2.5rem;
     height: 2.5rem;
