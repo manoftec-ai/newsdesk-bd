@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 1433,
+    "storyCount": 1443,
     "kinds": [
       "claim",
       "evidence",
@@ -1022,8 +1022,8 @@
       "cluster_id": 1376,
       "headline": "দেশের অর্থনীতি একাধিক চ্যালেঞ্জের মধ্য দিয়ে যাচ্ছে : অর্থমন্ত্রী",
       "first_seen": "2026-10-03T16:42:26.164Z",
-      "last_update": "2026-10-03T19:18:52.605Z",
-      "claim_count": 2,
+      "last_update": "2026-10-03T20:20:41.977Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-03T14:55:07.000Z",
@@ -1087,6 +1087,46 @@
           "kind": "verify",
           "claim_id": 286225,
           "claim_text": "মূল্যস্ফীতির কারণে সাধারণ মানুষ চাপে রয়েছে: অর্থমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T19:36:23.000Z",
+          "kind": "evidence",
+          "claim_id": 286224,
+          "claim_text": "দেশের অর্থনীতি একাধিক চ্যালেঞ্জের মধ্য দিয়ে যাচ্ছে : অর্থমন্ত্রী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OWFFQRjlJUnFVandTZDFRaDB6LWdUOWNVNnAwRFBEaDZJdVBaTUhnaGlRMHY2Vi0yQ3JoRXpTN1piM25KVFR4dDFyejIyVzY4MlNCdzZDVkd3Y2xfOGMxdktqWDVSTEFuQ2pZbVBQV2lRaG8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T19:36:23.000Z",
+          "kind": "evidence",
+          "claim_id": 293097,
+          "claim_text": "ব্যাংক খাতে আস্থা ফেরানো জরুরি: অর্থমন্ত্রী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OWFFQRjlJUnFVandTZDFRaDB6LWdUOWNVNnAwRFBEaDZJdVBaTUhnaGlRMHY2Vi0yQ3JoRXpTN1piM25KVFR4dDFyejIyVzY4MlNCdzZDVkd3Y2xfOGMxdktqWDVSTEFuQ2pZbVBQV2lRaG8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:06:14.991Z",
+          "kind": "claim",
+          "claim_id": 293097,
+          "claim_text": "ব্যাংক খাতে আস্থা ফেরানো জরুরি: অর্থমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-03T21:06:14.996Z",
+          "kind": "verify",
+          "claim_id": 293097,
+          "claim_text": "ব্যাংক খাতে আস্থা ফেরানো জরুরি: অর্থমন্ত্রী",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -6085,6 +6125,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1416,
+          "slug": "national-1416",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মূল্যস্ফীতি সাধারণ মানুষের ক্রয়ক্ষমতার ওপর চাপ সৃষ্টি করেছে: অর্থমন্ত্রী"
+        },
+        {
           "cluster_id": 252,
           "slug": "national-252",
           "actor_links": 0,
@@ -6123,14 +6171,6 @@
           "source_links": 3,
           "claim_count": 7,
           "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক"
-        },
-        {
-          "cluster_id": 512,
-          "slug": "national-512",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জাতিসংঘে সাধারণ পরিষদের সভাপতির দপ্তরে লিগ্যাল অফিসার হলেন জাইমা"
         }
       ]
     },
@@ -13018,7 +13058,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1355,
+          "slug": "politics-1355",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং"
+        }
+      ]
     },
     "international-1352": {
       "cluster_id": 1352,
@@ -13180,7 +13229,7 @@
       "cluster_id": 1402,
       "headline": "চিন্ময় কৃষ্ণ দাসের মুক্তির দাবিতে কলকাতায় বাংলাদেশ উপহাইকমিশনের সামনে বিক্ষোভ",
       "first_seen": "2026-10-03T19:18:52.596Z",
-      "last_update": "2026-10-03T19:18:52.599Z",
+      "last_update": "2026-10-03T20:20:41.980Z",
       "claim_count": 2,
       "events": [
         {
@@ -13461,6 +13510,45 @@
           "kind": "verify",
           "claim_id": 290836,
           "claim_text": "হুতিদের ওপর ব্যাপক হামলা, বড় অভিযানের পরিকল্পনা সৌদির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1417": {
+      "cluster_id": 1417,
+      "headline": "মৃত্যুদণ্ড কার্যকরে ব্যর্থ হয়ে পদত্যাগ করছেন টেনেসির কারাপ্রধান",
+      "first_seen": "2026-10-03T20:20:42.275Z",
+      "last_update": "2026-10-03T20:20:42.276Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-03T19:30:07.000Z",
+          "kind": "evidence",
+          "claim_id": 293160,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরে ব্যর্থ হয়ে পদত্যাগ করছেন টেনেসির কারাপ্রধান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/pjdq8ww21k"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:04.397Z",
+          "kind": "claim",
+          "claim_id": 293160,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরে ব্যর্থ হয়ে পদত্যাগ করছেন টেনেসির কারাপ্রধান"
+        },
+        {
+          "ts": "2026-10-03T21:08:04.401Z",
+          "kind": "verify",
+          "claim_id": 293160,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরে ব্যর্থ হয়ে পদত্যাগ করছেন টেনেসির কারাপ্রধান",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -16740,20 +16828,20 @@
           "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
         },
         {
+          "cluster_id": 1355,
+          "slug": "politics-1355",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং"
+        },
+        {
           "cluster_id": 565,
           "slug": "national-565",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 8,
           "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
-        },
-        {
-          "cluster_id": 576,
-          "slug": "national-576",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 13,
-          "headline": "কুমিল্লায় ছাত্রদল নেতার মিছিলে ‘কিশোর গ্যাং লিডার’ রতন, ভিডিও ভাইরালের পর সমালোচনা"
         }
       ]
     },
@@ -53326,7 +53414,7 @@
       "cluster_id": 1346,
       "headline": "এভাবে রাষ্ট্র চলতে পারে না, সরকার টিকতে পারে না: আখতারুজ্জামান",
       "first_seen": "2026-10-03T13:10:49.184Z",
-      "last_update": "2026-10-03T19:18:52.617Z",
+      "last_update": "2026-10-03T20:20:42.009Z",
       "claim_count": 2,
       "events": [
         {
@@ -53454,7 +53542,7 @@
       "cluster_id": 1347,
       "headline": "বিশ্ববাজারে আবার স্বর্ণের দামে বড় পতন",
       "first_seen": "2026-10-03T13:10:49.187Z",
-      "last_update": "2026-10-03T19:18:52.618Z",
+      "last_update": "2026-10-03T20:20:42.010Z",
       "claim_count": 2,
       "events": [
         {
@@ -54069,7 +54157,7 @@
       "cluster_id": 1356,
       "headline": "বিএনপি ছেড়ে জামায়াতে যোগ দেয়ায় সরকার আখতারুজ্জামানকে গ্রেপ্তার করেছে: গোলাম পরওয়ার",
       "first_seen": "2026-10-03T14:25:46.940Z",
-      "last_update": "2026-10-03T19:18:52.614Z",
+      "last_update": "2026-10-03T20:20:42.001Z",
       "claim_count": 2,
       "events": [
         {
@@ -54325,7 +54413,7 @@
       "cluster_id": 1358,
       "headline": "খেলতে গিয়ে পানিতে ডুবে দুই বোনের মৃত্যু",
       "first_seen": "2026-10-03T14:25:46.947Z",
-      "last_update": "2026-10-03T19:18:52.615Z",
+      "last_update": "2026-10-03T20:20:42.005Z",
       "claim_count": 3,
       "events": [
         {
@@ -54860,7 +54948,7 @@
       "cluster_id": 1366,
       "headline": "দিল্লির ইশারায় যারা কাজ করছে তারা শয়তানের দোসর : ভূমিমন্ত্রী",
       "first_seen": "2026-10-03T15:32:36.803Z",
-      "last_update": "2026-10-03T19:18:52.611Z",
+      "last_update": "2026-10-03T20:20:41.998Z",
       "claim_count": 2,
       "events": [
         {
@@ -54988,7 +55076,7 @@
       "cluster_id": 1367,
       "headline": "এনসিপির কার্যালয় পরিদর্শন করলেন সার্বিয়ার সাবেক প্রেসিডেন্ট",
       "first_seen": "2026-10-03T15:32:36.810Z",
-      "last_update": "2026-10-03T19:18:52.613Z",
+      "last_update": "2026-10-03T20:20:42.000Z",
       "claim_count": 2,
       "events": [
         {
@@ -55146,7 +55234,7 @@
       "cluster_id": 1369,
       "headline": "দুর্গাপুরে বিজিবির কঠোর বার্তা, ভারতীয় সীমান্তে বসলো সিসি ক্যামেরা",
       "first_seen": "2026-10-03T15:32:36.827Z",
-      "last_update": "2026-10-03T19:18:52.627Z",
+      "last_update": "2026-10-03T20:20:42.013Z",
       "claim_count": 2,
       "events": [
         {
@@ -55304,7 +55392,7 @@
       "cluster_id": 1370,
       "headline": "ব্রাজিল দলে ফেরার অপেক্ষা বাড়ছে জোয়াও পেদ্রোর",
       "first_seen": "2026-10-03T15:32:36.836Z",
-      "last_update": "2026-10-03T19:18:52.634Z",
+      "last_update": "2026-10-03T20:20:42.016Z",
       "claim_count": 2,
       "events": [
         {
@@ -55550,7 +55638,7 @@
       "cluster_id": 1378,
       "headline": "চতুর্থ মাসের কেমোথেরাপি চলছে, লাইভে আরও যা জানালেন তানিয়া বৃষ্টি",
       "first_seen": "2026-10-03T16:42:26.176Z",
-      "last_update": "2026-10-03T19:18:52.606Z",
+      "last_update": "2026-10-03T20:20:41.994Z",
       "claim_count": 2,
       "events": [
         {
@@ -55678,7 +55766,7 @@
       "cluster_id": 1379,
       "headline": "ডিএমপির ১১ পুলিশ কর্মকর্তার বদলি",
       "first_seen": "2026-10-03T16:42:26.179Z",
-      "last_update": "2026-10-03T19:18:52.608Z",
+      "last_update": "2026-10-03T20:20:41.995Z",
       "claim_count": 2,
       "events": [
         {
@@ -55806,7 +55894,7 @@
       "cluster_id": 1382,
       "headline": "ডেঙ্গু প্রতিরোধে মুগদায় র্যালি ও পরিচ্ছন্নতা অভিযান",
       "first_seen": "2026-10-03T16:42:26.192Z",
-      "last_update": "2026-10-03T19:18:52.610Z",
+      "last_update": "2026-10-03T20:20:41.997Z",
       "claim_count": 2,
       "events": [
         {
@@ -56376,9 +56464,31 @@
       "cluster_id": 1391,
       "headline": "সালমান মুক্তাদিরের শ্বশুরের ফুয়াং ক্লাবে এসআরবি-এনবিআরের অভিযান",
       "first_seen": "2026-10-03T18:00:45.861Z",
-      "last_update": "2026-10-03T19:18:52.602Z",
-      "claim_count": 2,
+      "last_update": "2026-10-03T20:20:41.991Z",
+      "claim_count": 3,
       "events": [
+        {
+          "ts": "2026-10-02T06:20:43.000Z",
+          "kind": "evidence",
+          "claim_id": 288519,
+          "claim_text": "সালমান মুক্তাদিরের শ্বশুরের ফুয়াং ক্লাবে এসআরবি-এনবিআরের অভিযান",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBBSVlxOW94Z0JNVWdnYUlMNnJiTXU2MGNjVzJkeHBLcl9nUWtVaWxJT3M3cWt3UEk4S2ZiTXZrQ2hValFVUEpCT0FvU3FHUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-02T06:20:43.000Z",
+          "kind": "evidence",
+          "claim_id": 293119,
+          "claim_text": "গুলশানে সালমান মুক্তাদিরের শ্বশুরের চারটি ‘মদের গুদাম’ সিলগালা",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBBSVlxOW94Z0JNVWdnYUlMNnJiTXU2MGNjVzJkeHBLcl9nUWtVaWxJT3M3cWt3UEk4S2ZiTXZrQ2hValFVUEpCT0FvU3FHUQ?oc=5"
+          }
+        },
         {
           "ts": "2026-10-03T13:43:12.000Z",
           "kind": "evidence",
@@ -56447,9 +56557,59 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-03T21:06:54.447Z",
+          "kind": "claim",
+          "claim_id": 293119,
+          "claim_text": "গুলশানে সালমান মুক্তাদিরের শ্বশুরের চারটি ‘মদের গুদাম’ সিলগালা"
+        },
+        {
+          "ts": "2026-10-03T21:06:54.452Z",
+          "kind": "verify",
+          "claim_id": 293119,
+          "claim_text": "গুলশানে সালমান মুক্তাদিরের শ্বশুরের চারটি ‘মদের গুদাম’ সিলগালা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 553,
+          "slug": "national-553",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "ককটেল বিস্ফোরণ নিয়ে প্রয়োজনে নাসীরুদ্দীন পাটওয়ারীকে জিজ্ঞাসাবাদ: ডিএমপি"
+        },
+        {
+          "cluster_id": 933,
+          "slug": "politics-933",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "ফেরদৌসী আহমেদ মিষ্টিকে এমপি পদ থেকে পদত্যাগের নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি"
+        },
+        {
+          "cluster_id": 187,
+          "slug": "politics-187",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রাজধানীর ন্যাম ভবন থেকে এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার"
+        },
         {
           "cluster_id": 252,
           "slug": "national-252",
@@ -56465,38 +56625,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 331,
-          "slug": "national-331",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে পরবর্তী হাইকমিশনার হচ্ছেন পররাষ্ট্র সচিব আসাদ আলম সিয়াম"
-        },
-        {
-          "cluster_id": 332,
-          "slug": "national-332",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "রিমান্ডে গাজী নজরুলের প্রথম স্ত্রী গুরুত্বপূর্ণ তথ্য দিয়েছেন, আদালতকে জানালেন তদন্ত কর্মকর্তা"
-        },
-        {
-          "cluster_id": 346,
-          "slug": "national-346",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিশ্বনেতাদের সম্মানে মার্কিন প্রেসিডেন্টের দেওয়া নৈশভোজে প্রধানমন্ত্রী তারেক রহমান"
         }
       ]
     },
@@ -56504,7 +56632,7 @@
       "cluster_id": 1392,
       "headline": "মোরেলগঞ্জে মোটরসাইকেল-নসিমনের মুখোমুখি সংঘর্ষে নিহত ৩, আহত ৩",
       "first_seen": "2026-10-03T18:00:45.865Z",
-      "last_update": "2026-10-03T19:18:52.603Z",
+      "last_update": "2026-10-03T20:20:41.992Z",
       "claim_count": 2,
       "events": [
         {
@@ -56632,7 +56760,7 @@
       "cluster_id": 1393,
       "headline": "আমরা কোনো যুদ্ধে জড়াতে চাই না: তথ্যমন্ত্রী",
       "first_seen": "2026-10-03T18:00:45.869Z",
-      "last_update": "2026-10-03T19:18:52.604Z",
+      "last_update": "2026-10-03T20:20:41.993Z",
       "claim_count": 2,
       "events": [
         {
@@ -56760,7 +56888,7 @@
       "cluster_id": 1394,
       "headline": "সংবিধান সংশোধন করতে গিয়ে যেন সুরক্ষামূলক বিধানগুলো বাদ না পড়ে: সারা হোসেন",
       "first_seen": "2026-10-03T18:00:45.884Z",
-      "last_update": "2026-10-03T19:18:52.612Z",
+      "last_update": "2026-10-03T20:20:41.999Z",
       "claim_count": 2,
       "events": [
         {
@@ -56839,7 +56967,7 @@
       "cluster_id": 1395,
       "headline": "বিমানবন্দরে বিশৃঙ্খলা: জামায়াত নেতা আখতারুজ্জামানের ৫ দিনের রিমান্ড চায় পুলিশ",
       "first_seen": "2026-10-03T18:00:45.894Z",
-      "last_update": "2026-10-03T19:18:52.619Z",
+      "last_update": "2026-10-03T20:20:42.011Z",
       "claim_count": 4,
       "events": [
         {
@@ -57373,7 +57501,7 @@
       "cluster_id": 1404,
       "headline": "শেখ হাসিনাকে অবতরণের অনুমতি দেওয়া ছাড়া কোনো বিকল্প ছিল না: দীনেশ ত্রিবেদী",
       "first_seen": "2026-10-03T19:18:52.623Z",
-      "last_update": "2026-10-03T19:18:52.626Z",
+      "last_update": "2026-10-03T20:20:42.012Z",
       "claim_count": 3,
       "events": [
         {
@@ -57541,7 +57669,7 @@
       "cluster_id": 1405,
       "headline": "হাম উপসর্গে ২৪ ঘণ্টায় আরও ৮ জনের মৃত্যু",
       "first_seen": "2026-10-03T19:18:52.628Z",
-      "last_update": "2026-10-03T19:18:52.630Z",
+      "last_update": "2026-10-03T20:20:42.014Z",
       "claim_count": 2,
       "events": [
         {
@@ -57620,7 +57748,7 @@
       "cluster_id": 1406,
       "headline": "ব্যালন ডি'অরের দৌড়ে অবিশ্বাস্য অনুভূতিতে ভাসছেন কেইন",
       "first_seen": "2026-10-03T19:18:52.631Z",
-      "last_update": "2026-10-03T19:18:52.633Z",
+      "last_update": "2026-10-03T20:20:42.015Z",
       "claim_count": 2,
       "events": [
         {
@@ -58170,6 +58298,644 @@
       ],
       "related": []
     },
+    "national-1412": {
+      "cluster_id": 1412,
+      "headline": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+      "first_seen": "2026-10-03T20:20:41.982Z",
+      "last_update": "2026-10-03T20:20:41.985Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-03T14:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 293150,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/kv0cgedpbm"
+          }
+        },
+        {
+          "ts": "2026-10-03T14:45:29.000Z",
+          "kind": "evidence",
+          "claim_id": 293150,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/bicaarkke-biruup-mntby-aadaalte-yaa-krlen-aakhtaarujjaamaan"
+          }
+        },
+        {
+          "ts": "2026-10-03T14:45:29.000Z",
+          "kind": "evidence",
+          "claim_id": 293151,
+          "claim_text": "বিচারককে বিরূপ মন্তব্য, আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/bicaarkke-biruup-mntby-aadaalte-yaa-krlen-aakhtaarujjaamaan"
+          }
+        },
+        {
+          "ts": "2026-10-03T17:09:41.000Z",
+          "kind": "evidence",
+          "claim_id": 293150,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/tm3oyv10zx"
+          }
+        },
+        {
+          "ts": "2026-10-03T17:09:41.000Z",
+          "kind": "evidence",
+          "claim_id": 293152,
+          "claim_text": "প্রিজন ভ্যান থেকে নামার সময় হেলমেট ছুড়ে মারলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/bangladesh/tm3oyv10zx"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:49.239Z",
+          "kind": "claim",
+          "claim_id": 293150,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান"
+        },
+        {
+          "ts": "2026-10-03T21:07:49.242Z",
+          "kind": "claim",
+          "claim_id": 293151,
+          "claim_text": "বিচারককে বিরূপ মন্তব্য, আদালতে যা করলেন আখতারুজ্জামান"
+        },
+        {
+          "ts": "2026-10-03T21:07:49.244Z",
+          "kind": "claim",
+          "claim_id": 293152,
+          "claim_text": "প্রিজন ভ্যান থেকে নামার সময় হেলমেট ছুড়ে মারলেন আখতারুজ্জামান"
+        },
+        {
+          "ts": "2026-10-03T21:07:49.248Z",
+          "kind": "verify",
+          "claim_id": 293150,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:49.248Z",
+          "kind": "verify",
+          "claim_id": 293151,
+          "claim_text": "বিচারককে বিরূপ মন্তব্য, আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:49.248Z",
+          "kind": "verify",
+          "claim_id": 293152,
+          "claim_text": "প্রিজন ভ্যান থেকে নামার সময় হেলমেট ছুড়ে মারলেন আখতারুজ্জামান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1355,
+          "slug": "politics-1355",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং"
+        }
+      ]
+    },
+    "national-1413": {
+      "cluster_id": 1413,
+      "headline": "গুলিস্তান-ফুলবাড়িয়া টার্মিনাল ৩ মাসেই কেরানীগঞ্জে যাবে: ডিএমপি কমিশনার",
+      "first_seen": "2026-10-03T20:20:41.986Z",
+      "last_update": "2026-10-03T20:20:41.989Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-03T12:12:21.000Z",
+          "kind": "evidence",
+          "claim_id": 293153,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়া টার্মিনাল ৩ মাসেই কেরানীগঞ্জে যাবে: ডিএমপি কমিশনার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/972130/%E0%A6%97%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8-%E0%A6%AB%E0%A7%81%E0%A6%B2%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%B2-%E0%A6%95%E0%A6%AC%E0%A7%87-%E0%A6%B8%E0%A6%B0%E0%A6%9B%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-03T12:12:21.000Z",
+          "kind": "evidence",
+          "claim_id": 293154,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়ার বাস টার্মিনাল কবে সরছে, জানালেন ডিএমপি কমিশনার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/972130/%E0%A6%97%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8-%E0%A6%AB%E0%A7%81%E0%A6%B2%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%B2-%E0%A6%95%E0%A6%AC%E0%A7%87-%E0%A6%B8%E0%A6%B0%E0%A6%9B%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-03T16:41:15.000Z",
+          "kind": "evidence",
+          "claim_id": 293153,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়া টার্মিনাল ৩ মাসেই কেরানীগঞ্জে যাবে: ডিএমপি কমিশনার",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivgZBVV95cUxQTjRkakc3Zk12QUNZdkhoWkpXeWc3RGdiY1RJLXpXaEM3OTk3RV92dWFKYzItQXRWT3NRM1A5T0ZKMHJMZ0NzRkVXanNRMlJ0bUdZZWxYZmtIR1JjWkpETmFZeGNrWU1GS0tudDk4ODBMb1RET1dEU016R2VwblZlbWp1S2NPWlR4SHVTVVc4MGNkYXFZeVZEdjFSLU00ZTdYRVhLbml4aXg2ZmhRVmZER2JtUlE2QURrVTJERm1hY3RZOXZVdElJMUdZRDY4Y1NsdnlLRDJRWVpjVGdnWFVLWmdHZzdiVjF3YmoxTEFLTngtcHJlXzU1NTdfQ2VxbElVT1FDb05yU1NkaHNtZjViMURweXNrd3Zpd0ZUS2hNcDZWdUR6T3NDbHBjNnpoMFlLa1ZCeWt2NC1MTVd3WnF5VmJBVjlzOXNWcGxOeXE1eEMwQ2NJcUJrbzhrWktiUnNZXzA0aWM1OXFtX1dEWEdRNVRkdU5uSDFJeXF5VGltNTY3NTJ1UDJpTGNoZlp5ak10b21xTUgxNl9PcTlReHF2cndxdERoM3hueElETl91blNwY2ZnWmw3ZXE4aVhndzZsUHZiN25sazJQY3ZFblVlekU3SndBajBaRHZTQ3NaRHNJdFQzVkVTejQ2VzZNelJHSjhTVC1IRGtUQ3pxY2Fuc0dySFRYX3daNVFGRlREVExaWkFfRDFrSmppRS1oeURKUXVLVEhSbkNBWVNfOFE1VWMzSDd5RFBnT2tLeHVQXy1HaU1TNWJvS0M0NGxhVm1BUjNDRW9CWk5pSlNRNU5rOHVvSDVlNjBVcFJsRXlXWWNrb3pMYldsSkd4X3h6UXR4U2lWLXNVRHkwbmpLZHN6RkZKVG1SUkpDamFoaUtkX0ExRTlxUktHMXM1MzdNWFZMSVJaYlRNa3BqdGprbEc5aG9uTzFOejlqWmZlZU5RdEdsWnZYMXNYYTF4ZzRNb3NXZEJlQmFkQ3ZqNm50aHdfcTNwRlplcG4zZ1FNSUkwN3pWcVYtblZ0ZnA1WTgzV242ZGtPSDRXaG1WTGJhdUtiRjJRNHpLMlBhc25qX0R1VUg5NEhvd3U5dWkxMFNYQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:52.288Z",
+          "kind": "claim",
+          "claim_id": 293153,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়া টার্মিনাল ৩ মাসেই কেরানীগঞ্জে যাবে: ডিএমপি কমিশনার"
+        },
+        {
+          "ts": "2026-10-03T21:07:52.291Z",
+          "kind": "claim",
+          "claim_id": 293154,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়ার বাস টার্মিনাল কবে সরছে, জানালেন ডিএমপি কমিশনার"
+        },
+        {
+          "ts": "2026-10-03T21:07:52.295Z",
+          "kind": "verify",
+          "claim_id": 293153,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়া টার্মিনাল ৩ মাসেই কেরানীগঞ্জে যাবে: ডিএমপি কমিশনার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:52.295Z",
+          "kind": "verify",
+          "claim_id": 293154,
+          "claim_text": "গুলিস্তান-ফুলবাড়িয়ার বাস টার্মিনাল কবে সরছে, জানালেন ডিএমপি কমিশনার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 320,
+          "slug": "national-320",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যাদের কাছে ধানের শীষে ভোট চেয়েছি, তাদের কাছে মাফ চাই—পোস্ট দেয়া ছাত্রদল নেতা বহিষ্কার"
+        },
+        {
+          "cluster_id": 323,
+          "slug": "national-323",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানমন্ডি লেক থেকে মার্কেটিং কনসালট্যান্টের মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছেলেকে জিম্মি করে মাকে সংঘবদ্ধ ধর্ষণ: প্রধান অভিযুক্তের বাড়িঘর ভাঙচুর"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        }
+      ]
+    },
+    "national-1414": {
+      "cluster_id": 1414,
+      "headline": "ট্রাম্পের নৈশভোজে প্রধানমন্ত্রী তারেক রহমান ও জুবাইদা রহমান, ছবি প্রকাশ",
+      "first_seen": "2026-10-03T20:20:42.002Z",
+      "last_update": "2026-10-03T20:20:42.004Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-03T12:46:56.000Z",
+          "kind": "evidence",
+          "claim_id": 293155,
+          "claim_text": "ট্রাম্পের নৈশভোজে প্রধানমন্ত্রী তারেক রহমান ও জুবাইদা রহমান, ছবি প্রকাশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwgZBVV95cUxNUmdpdVpXUWhEc09VMVBMZ0Z3Q08zdmFqS3N2d3l1NlZETWVuLV9ieW5VWHVIRnRuam8zd1RfZmliY2V1SEI0SVZpUFBzVnBQa1l5Y3VSVUg3b0I2dWk1ZUNlOHp5T3JLc2F2dFdFemJjekRJOXlYTkVSMjh1Y0FhSzRMRUFqaTZIX2dwTWlmZWFSSGRXS2lsZ2ROQlV3ellZZi12aTlzckl4eGprMlJTd182MnIxZDhDT2dLS0hyeG8tT2NuWTVxMzRLYXdIUmkwTzhqZVUyOUhuVTR5OF91Q0RCNUM4MDdqWlBHOW4xNXlSQ1lnMDRDaVpsbFVRQ1ZzUGtVcGNDSU5LT21GaXZxRV94dktoLThiRDIxRy1sdHRiWjF1OXMya3dBYXhfNHhKNFNYQjVnYUtHWmtWYmxXUHgzYjRpaHRuMmxVaGVCeDhVSk9NWHVuTTVKMXI4N1EtMDU5TTdsWWdZeWpIZWNsVEhBTHBHRnRuRHh1ZjkyRjJxUmNROGpRbEJxeWphazFvc1IyN20xR3lsMzBCa0JnSC1KZDZQa2xJUzhWb0Z0Vy1GUkhDcWdUc3pLSjlmS2lhQ01ENFB5VWZKb2tEVWZ0UXl4c0dOeUFhZXA2QXMzSFdXNVp0RVVxMUtuSjhsQ005alJwcTB2Y0JRZ2dSNVc0eVptVTMtOEtqd2dvRE9rWWRTVk9aMVNBMldkMWFORGhORFIwR2trN1AxN1NDQ0dqV0IxUHZCOHNqZ0hvUEpSM3NkWDZEc1ZzNU83aHN4UTdrcWpIeDBuQWpEbWwzLVc1NFZoYTNrNEY2X2MwS0FNc3hUTTVSN1Z2VFFWOTBEUVdhZnhUaUJtZ1MzQ2hfV1N5Q0x1X0oyTjdYNmRWM3hKV2V1MDlLSXhHa21OczRBUFNwQ19XdzU2ZEpUZTBVRC1qTHpOXzVzVGZHYVdncDAzVnNIVGZVV0RoeU9lMl9BQ3dyUDBXM0NiYlhaaG1IRkh1REhZOElsalNHcXZqMlNaOGRuYXd0YXcxNHRMNkV3S3UxTVB6R0NMY1J4bmQyUXdjRXFWcWRyWnN3Y0UwZjZzdkxlTDlUYk5mbHVkdUtud2NPUEE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:37:49.000Z",
+          "kind": "evidence",
+          "claim_id": 293155,
+          "claim_text": "ট্রাম্পের নৈশভোজে প্রধানমন্ত্রী তারেক রহমান ও জুবাইদা রহমান, ছবি প্রকাশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsa1hhenYtRVVYd0RoMnhxdTZWb0FMTURNaTBsaTBGSTFqbTlHTEFkdGZiSFBRcnl0OS1neWUwZ2txeDFzRkl1c3d6WGtKN2R1?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:37:49.000Z",
+          "kind": "evidence",
+          "claim_id": 293156,
+          "claim_text": "তারেক রহমান-ডোনাল্ড ট্রাম্পের নৈশভোজের ছবি প্রকাশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsa1hhenYtRVVYd0RoMnhxdTZWb0FMTURNaTBsaTBGSTFqbTlHTEFkdGZiSFBRcnl0OS1neWUwZ2txeDFzRkl1c3d6WGtKN2R1?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:55.299Z",
+          "kind": "claim",
+          "claim_id": 293155,
+          "claim_text": "ট্রাম্পের নৈশভোজে প্রধানমন্ত্রী তারেক রহমান ও জুবাইদা রহমান, ছবি প্রকাশ"
+        },
+        {
+          "ts": "2026-10-03T21:07:55.302Z",
+          "kind": "claim",
+          "claim_id": 293156,
+          "claim_text": "তারেক রহমান-ডোনাল্ড ট্রাম্পের নৈশভোজের ছবি প্রকাশ"
+        },
+        {
+          "ts": "2026-10-03T21:07:55.306Z",
+          "kind": "verify",
+          "claim_id": 293155,
+          "claim_text": "ট্রাম্পের নৈশভোজে প্রধানমন্ত্রী তারেক রহমান ও জুবাইদা রহমান, ছবি প্রকাশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:55.306Z",
+          "kind": "verify",
+          "claim_id": 293156,
+          "claim_text": "তারেক রহমান-ডোনাল্ড ট্রাম্পের নৈশভোজের ছবি প্রকাশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 211,
+          "slug": "national-211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সিলেট মহানগরসহ সাত জেলার যুবদলের আংশিক কমিটি ঘোষণা"
+        },
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 323,
+          "slug": "national-323",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানমন্ডি লেক থেকে মার্কেটিং কনসালট্যান্টের মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 463,
+          "slug": "national-463",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরান শান্তিপূর্ণ পারমাণবিক প্রযুক্তি ছাড়বে না: জাতিসংঘে পেজেশকিয়ান"
+        }
+      ]
+    },
+    "national-1415": {
+      "cluster_id": 1415,
+      "headline": "নিষিদ্ধ ছাত্রলীগ নেতার বাড়ির সামনে ১০টি ককটেল, নিষ্ক্রিয় করলো পুলিশ",
+      "first_seen": "2026-10-03T20:20:42.006Z",
+      "last_update": "2026-10-03T20:20:42.008Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-03T12:59:43.000Z",
+          "kind": "evidence",
+          "claim_id": 293157,
+          "claim_text": "নিষিদ্ধ ছাত্রলীগ নেতার বাড়ির সামনে ১০টি ককটেল, নিষ্ক্রিয় করলো পুলিশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/dhaka/972143/%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A7%87-%E0%A7%A7%E0%A7%A6%E0%A6%9F%E0%A6%BF-%E0%A6%95%E0%A6%95%E0%A6%9F%E0%A7%87%E0%A6%B2"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:28:59.000Z",
+          "kind": "evidence",
+          "claim_id": 293157,
+          "claim_text": "নিষিদ্ধ ছাত্রলীগ নেতার বাড়ির সামনে ১০টি ককটেল, নিষ্ক্রিয় করলো পুলিশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi0ARBVV95cUxPV1gtSlRMSFlHOERjUnNkUmE3NjR3UmlySWFwTFYwellqOHBHLVkxSUppa25mV05Hc1hHQ3Y5S2E4ZXdIUHBDamNMVjY5NnVhLUYtWGFKMTVmUzZzMDRrVU5Eb1d5a01YUHQ2WmpNNmRMTF9ycGx1MlpicDNCSHhNRThaaFNWQWZZT05xYmZyRnY2bzFvVEU1djgwQVowaXgteWZVdkxmZi1UQS1iRmNKUFo4ekhyTTBWdjFXbEtlam5qc25HUTkxaTVVT01ZT1JfLWRlQ0N5SmZtLWlmTFVlNnVOSzBkSHlPcUN1V05jQnNZNThsc0c4MHIwekdERWpCekxqQi1HSzNsRVBxNFZFaTJqa2dJcnFmVGwwaUVpWjhfZWtTdFNXUU54UDB5UjFhVGdBVDlIQmNqOUlfTVJUUjZSWjBrcUdlM1BXYVc0bE5TYlFZbHk1aVo1N3JEY0tIZ2NPanVtTXZ2TFZxbDM1U2FPeXhaZ3ZwT0d6TUVKd3V2bkxfT3FPZ1BpWFRiUlhxSUpfNzNFZVEyRTFaeVhNbjRtOVJ6RG1OTVhUbGVNRjh3TGlGUG1vREY5YVFEbGdYOTV3R0RzZjBFV0Nxc0VSNld6YVVVUE4zbHpwTWlCczNqVFhkdU0wX0JuLWxCeUJUd0hnVGd0QktoZkcweWg2UE9QbE9qajk4T2dlT0l2bDVCV19ud2RHVmtIc2tkemVUQ3ZYLWl3NzhPMjN0YmxucUVacXFSYkhYMnVaV0otQV9ManhCUGRrQmdoTV9saHJn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:28:59.000Z",
+          "kind": "evidence",
+          "claim_id": 293158,
+          "claim_text": "টঙ্গীতে চোর সন্দেহে যুবককে পিটিয়ে হত্যা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi0ARBVV95cUxPV1gtSlRMSFlHOERjUnNkUmE3NjR3UmlySWFwTFYwellqOHBHLVkxSUppa25mV05Hc1hHQ3Y5S2E4ZXdIUHBDamNMVjY5NnVhLUYtWGFKMTVmUzZzMDRrVU5Eb1d5a01YUHQ2WmpNNmRMTF9ycGx1MlpicDNCSHhNRThaaFNWQWZZT05xYmZyRnY2bzFvVEU1djgwQVowaXgteWZVdkxmZi1UQS1iRmNKUFo4ekhyTTBWdjFXbEtlam5qc25HUTkxaTVVT01ZT1JfLWRlQ0N5SmZtLWlmTFVlNnVOSzBkSHlPcUN1V05jQnNZNThsc0c4MHIwekdERWpCekxqQi1HSzNsRVBxNFZFaTJqa2dJcnFmVGwwaUVpWjhfZWtTdFNXUU54UDB5UjFhVGdBVDlIQmNqOUlfTVJUUjZSWjBrcUdlM1BXYVc0bE5TYlFZbHk1aVo1N3JEY0tIZ2NPanVtTXZ2TFZxbDM1U2FPeXhaZ3ZwT0d6TUVKd3V2bkxfT3FPZ1BpWFRiUlhxSUpfNzNFZVEyRTFaeVhNbjRtOVJ6RG1OTVhUbGVNRjh3TGlGUG1vREY5YVFEbGdYOTV3R0RzZjBFV0Nxc0VSNld6YVVVUE4zbHpwTWlCczNqVFhkdU0wX0JuLWxCeUJUd0hnVGd0QktoZkcweWg2UE9QbE9qajk4T2dlT0l2bDVCV19ud2RHVmtIc2tkemVUQ3ZYLWl3NzhPMjN0YmxucUVacXFSYkhYMnVaV0otQV9ManhCUGRrQmdoTV9saHJn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:58.350Z",
+          "kind": "claim",
+          "claim_id": 293157,
+          "claim_text": "নিষিদ্ধ ছাত্রলীগ নেতার বাড়ির সামনে ১০টি ককটেল, নিষ্ক্রিয় করলো পুলিশ"
+        },
+        {
+          "ts": "2026-10-03T21:07:58.353Z",
+          "kind": "claim",
+          "claim_id": 293158,
+          "claim_text": "টঙ্গীতে চোর সন্দেহে যুবককে পিটিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-10-03T21:07:58.378Z",
+          "kind": "verify",
+          "claim_id": 293157,
+          "claim_text": "নিষিদ্ধ ছাত্রলীগ নেতার বাড়ির সামনে ১০টি ককটেল, নিষ্ক্রিয় করলো পুলিশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:07:58.378Z",
+          "kind": "verify",
+          "claim_id": 293158,
+          "claim_text": "টঙ্গীতে চোর সন্দেহে যুবককে পিটিয়ে হত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 297,
+          "slug": "national-297",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "cluster_id": 320,
+          "slug": "national-320",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যাদের কাছে ধানের শীষে ভোট চেয়েছি, তাদের কাছে মাফ চাই—পোস্ট দেয়া ছাত্রদল নেতা বহিষ্কার"
+        },
+        {
+          "cluster_id": 323,
+          "slug": "national-323",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানমন্ডি লেক থেকে মার্কেটিং কনসালট্যান্টের মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছেলেকে জিম্মি করে মাকে সংঘবদ্ধ ধর্ষণ: প্রধান অভিযুক্তের বাড়িঘর ভাঙচুর"
+        },
+        {
+          "cluster_id": 346,
+          "slug": "national-346",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
+        }
+      ]
+    },
+    "national-1416": {
+      "cluster_id": 1416,
+      "headline": "মূল্যস্ফীতি সাধারণ মানুষের ক্রয়ক্ষমতার ওপর চাপ সৃষ্টি করেছে: অর্থমন্ত্রী",
+      "first_seen": "2026-10-03T20:20:42.263Z",
+      "last_update": "2026-10-03T20:20:42.272Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-03T19:47:28.000Z",
+          "kind": "evidence",
+          "claim_id": 293159,
+          "claim_text": "মূল্যস্ফীতি সাধারণ মানুষের ক্রয়ক্ষমতার ওপর চাপ সৃষ্টি করেছে: অর্থমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/he6a9bruni"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:01.400Z",
+          "kind": "claim",
+          "claim_id": 293159,
+          "claim_text": "মূল্যস্ফীতি সাধারণ মানুষের ক্রয়ক্ষমতার ওপর চাপ সৃষ্টি করেছে: অর্থমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-03T21:08:01.404Z",
+          "kind": "verify",
+          "claim_id": 293159,
+          "claim_text": "মূল্যস্ফীতি সাধারণ মানুষের ক্রয়ক্ষমতার ওপর চাপ সৃষ্টি করেছে: অর্থমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 942,
+          "slug": "economy-942",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "ফুচকা বিক্রেতা, রিকশাচালকসহ সবাইকে ডিজিটাল লেনেদেনে আনা হবে: অর্থমন্ত্রী"
+        }
+      ]
+    },
+    "national-1418": {
+      "cluster_id": 1418,
+      "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: ছাত্রদল, যুবদল নেতাসহ গ্রেপ্তার ১৯ জন",
+      "first_seen": "2026-10-03T20:20:42.278Z",
+      "last_update": "2026-10-03T20:20:42.280Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-03T18:53:56.000Z",
+          "kind": "evidence",
+          "claim_id": 293161,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: ছাত্রদল, যুবদল নেতাসহ গ্রেপ্তার ১৯ জন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/699cng5qc3"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:07.419Z",
+          "kind": "claim",
+          "claim_id": 293161,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: ছাত্রদল, যুবদল নেতাসহ গ্রেপ্তার ১৯ জন"
+        },
+        {
+          "ts": "2026-10-03T21:08:07.423Z",
+          "kind": "verify",
+          "claim_id": 293161,
+          "claim_text": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: ছাত্রদল, যুবদল নেতাসহ গ্রেপ্তার ১৯ জন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1419": {
+      "cluster_id": 1419,
+      "headline": "ডিএমপির ১১ পুলিশ পরিদর্শককে ঢাকার বাইরে বদলি",
+      "first_seen": "2026-10-03T20:20:42.282Z",
+      "last_update": "2026-10-03T20:20:42.284Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-03T17:40:53.000Z",
+          "kind": "evidence",
+          "claim_id": 293162,
+          "claim_text": "ডিএমপির ১১ পুলিশ পরিদর্শককে ঢাকার বাইরে বদলি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/11-dmp-police-inspectors-transferred-outside-dhaka/"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:10.430Z",
+          "kind": "claim",
+          "claim_id": 293162,
+          "claim_text": "ডিএমপির ১১ পুলিশ পরিদর্শককে ঢাকার বাইরে বদলি"
+        },
+        {
+          "ts": "2026-10-03T21:08:10.434Z",
+          "kind": "verify",
+          "claim_id": 293162,
+          "claim_text": "ডিএমপির ১১ পুলিশ পরিদর্শককে ঢাকার বাইরে বদলি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-142": {
       "cluster_id": 142,
       "headline": "৪৩ লাখ শিশুকে টিকার আওতায় আনতে সারা দেশে বিশেষ টিকাদান ক্যাম্পেইন",
@@ -58177,6 +58943,45 @@
       "last_update": "2026-09-20T20:43:50.464Z",
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-1420": {
+      "cluster_id": 1420,
+      "headline": "নেপথ্যের কারণ ঝুট-ভাঙারির ব্যবসা এবং চাঁদাবাজি নিয়ে তিন বন্ধুর দ্বন্দ্ব",
+      "first_seen": "2026-10-03T20:20:42.286Z",
+      "last_update": "2026-10-03T20:20:42.287Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-03T16:52:03.000Z",
+          "kind": "evidence",
+          "claim_id": 293163,
+          "claim_text": "নেপথ্যের কারণ ঝুট-ভাঙারির ব্যবসা এবং চাঁদাবাজি নিয়ে তিন বন্ধুর দ্বন্দ্ব",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ap1fytw9qn"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:13.453Z",
+          "kind": "claim",
+          "claim_id": 293163,
+          "claim_text": "নেপথ্যের কারণ ঝুট-ভাঙারির ব্যবসা এবং চাঁদাবাজি নিয়ে তিন বন্ধুর দ্বন্দ্ব"
+        },
+        {
+          "ts": "2026-10-03T21:08:13.457Z",
+          "kind": "verify",
+          "claim_id": 293163,
+          "claim_text": "নেপথ্যের কারণ ঝুট-ভাঙারির ব্যবসা এবং চাঁদাবাজি নিয়ে তিন বন্ধুর দ্বন্দ্ব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-143": {
@@ -122186,12 +122991,12 @@
           "headline": "প্রকল্পের ১৯৫০০ কোটি টাকা তেল আমদানিতে, বিপিসির দাবি কাজে প্রভাব পড়বে না"
         },
         {
-          "cluster_id": 565,
-          "slug": "national-565",
+          "cluster_id": 1355,
+          "slug": "politics-1355",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 8,
-          "headline": "সৌরবিদ্যুৎকেন্দ্রের জন্য কাপাসিয়ার ধাঁধার চর ইজারা চান বিএনপির সাবেক নেতা"
+          "source_links": 4,
+          "claim_count": 10,
+          "headline": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং"
         }
       ]
     },
@@ -167621,6 +168426,478 @@
       ],
       "related": []
     },
+    "politics-1355": {
+      "cluster_id": 1355,
+      "headline": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+      "first_seen": "2026-10-03T14:25:46.932Z",
+      "last_update": "2026-10-03T20:20:41.979Z",
+      "claim_count": 10,
+      "events": [
+        {
+          "ts": "2026-10-03T06:58:18.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/r9dg1ysxb7"
+          }
+        },
+        {
+          "ts": "2026-10-03T06:58:18.000Z",
+          "kind": "evidence",
+          "claim_id": 293063,
+          "claim_text": "মিষ্টি–গাজী নজরুলের আগে বিতর্কে জড়ানো এমপিদের পরিণতি কী হয়েছিল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/r9dg1ysxb7"
+          }
+        },
+        {
+          "ts": "2026-10-03T11:15:19.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/mtohqcdaod"
+          }
+        },
+        {
+          "ts": "2026-10-03T11:15:19.000Z",
+          "kind": "evidence",
+          "claim_id": 293064,
+          "claim_text": "রুদ্ধশ্বাস ১২ মিনিট: কীভাবে পাইলট ও যাত্রীরা উড়োজাহাজকে মাঝআকাশে বিধ্বস্ত হওয়া থেকে বাঁচালেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/mtohqcdaod"
+          }
+        },
+        {
+          "ts": "2026-10-03T11:40:04.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw0k04ezk3rzo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-03T11:40:04.000Z",
+          "kind": "evidence",
+          "claim_id": 293065,
+          "claim_text": "ফ্লাইদুবাইয়ের ক্যাপ্টেনকে 'কুড়াল দিয়ে আঘাত করেছিলেন কো-পাইলট'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw0k04ezk3rzo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-03T12:52:17.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/reaction/zcj5t2svjb"
+          }
+        },
+        {
+          "ts": "2026-10-03T12:52:17.000Z",
+          "kind": "evidence",
+          "claim_id": 293066,
+          "claim_text": "রাড্ডার পর বিএনপির আসল পরীক্ষা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/reaction/zcj5t2svjb"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:29:45.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/what-has-been-revealed-about-the-attack-on-the-captain-aboard-the-aircraft/"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:29:45.000Z",
+          "kind": "evidence",
+          "claim_id": 293067,
+          "claim_text": "উড়োজাহাজে ক্যাপ্টেনকে হামলার বিষয়ে যা জানা গেল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/what-has-been-revealed-about-the-attack-on-the-captain-aboard-the-aircraft/"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:44:07.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c34g1q7lqj2yo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-03T13:44:07.000Z",
+          "kind": "evidence",
+          "claim_id": 293068,
+          "claim_text": "কর্মীদের 'অপরাধ' নিয়ন্ত্রণ কি বিএনপির জন্য কঠিন হয়ে উঠছে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c34g1q7lqj2yo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-03T14:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/kv0cgedpbm"
+          }
+        },
+        {
+          "ts": "2026-10-03T14:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 293069,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/kv0cgedpbm"
+          }
+        },
+        {
+          "ts": "2026-10-03T16:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/mpbp1a7dpe"
+          }
+        },
+        {
+          "ts": "2026-10-03T16:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 293070,
+          "claim_text": "ফ্লাইদুবাইয়ে অভিযুক্ত হামলাকারী আসলে কে, কেন তাঁকে ঘিরে এত রহস্য",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/mpbp1a7dpe"
+          }
+        },
+        {
+          "ts": "2026-10-03T16:55:29.000Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/cxbz77rift"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.885Z",
+          "kind": "claim",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.886Z",
+          "kind": "evidence",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86258"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.895Z",
+          "kind": "claim",
+          "claim_id": 293062,
+          "claim_text": "২২ বছর পর জিম্বাবুয়েতে খেলবে ইংল্যান্ড"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.896Z",
+          "kind": "evidence",
+          "claim_id": 293062,
+          "claim_text": "২২ বছর পর জিম্বাবুয়েতে খেলবে ইংল্যান্ড",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86258"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.897Z",
+          "kind": "claim",
+          "claim_id": 293063,
+          "claim_text": "মিষ্টি–গাজী নজরুলের আগে বিতর্কে জড়ানো এমপিদের পরিণতি কী হয়েছিল"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.900Z",
+          "kind": "claim",
+          "claim_id": 293064,
+          "claim_text": "রুদ্ধশ্বাস ১২ মিনিট: কীভাবে পাইলট ও যাত্রীরা উড়োজাহাজকে মাঝআকাশে বিধ্বস্ত হওয়া থেকে বাঁচালেন"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.902Z",
+          "kind": "claim",
+          "claim_id": 293065,
+          "claim_text": "ফ্লাইদুবাইয়ের ক্যাপ্টেনকে 'কুড়াল দিয়ে আঘাত করেছিলেন কো-পাইলট'"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.903Z",
+          "kind": "claim",
+          "claim_id": 293066,
+          "claim_text": "রাড্ডার পর বিএনপির আসল পরীক্ষা"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.905Z",
+          "kind": "claim",
+          "claim_id": 293067,
+          "claim_text": "উড়োজাহাজে ক্যাপ্টেনকে হামলার বিষয়ে যা জানা গেল"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.907Z",
+          "kind": "claim",
+          "claim_id": 293068,
+          "claim_text": "কর্মীদের 'অপরাধ' নিয়ন্ত্রণ কি বিএনপির জন্য কঠিন হয়ে উঠছে?"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.909Z",
+          "kind": "claim",
+          "claim_id": 293069,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.912Z",
+          "kind": "claim",
+          "claim_id": 293070,
+          "claim_text": "ফ্লাইদুবাইয়ে অভিযুক্ত হামলাকারী আসলে কে, কেন তাঁকে ঘিরে এত রহস্য"
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293062,
+          "claim_text": "২২ বছর পর জিম্বাবুয়েতে খেলবে ইংল্যান্ড",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293063,
+          "claim_text": "মিষ্টি–গাজী নজরুলের আগে বিতর্কে জড়ানো এমপিদের পরিণতি কী হয়েছিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293064,
+          "claim_text": "রুদ্ধশ্বাস ১২ মিনিট: কীভাবে পাইলট ও যাত্রীরা উড়োজাহাজকে মাঝআকাশে বিধ্বস্ত হওয়া থেকে বাঁচালেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293065,
+          "claim_text": "ফ্লাইদুবাইয়ের ক্যাপ্টেনকে 'কুড়াল দিয়ে আঘাত করেছিলেন কো-পাইলট'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293066,
+          "claim_text": "রাড্ডার পর বিএনপির আসল পরীক্ষা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293067,
+          "claim_text": "উড়োজাহাজে ক্যাপ্টেনকে হামলার বিষয়ে যা জানা গেল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293068,
+          "claim_text": "কর্মীদের 'অপরাধ' নিয়ন্ত্রণ কি বিএনপির জন্য কঠিন হয়ে উঠছে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293069,
+          "claim_text": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:05:18.916Z",
+          "kind": "verify",
+          "claim_id": 293070,
+          "claim_text": "ফ্লাইদুবাইয়ে অভিযুক্ত হামলাকারী আসলে কে, কেন তাঁকে ঘিরে এত রহস্য",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:22.663Z",
+          "kind": "conflict",
+          "claim_id": 293061,
+          "claim_text": "কুমিল্লার আতঙ্ক ‘আর স্কোয়াড’, রতনের গ্রেপ্তারে কি থামবে কিশোর গ্যাং",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c293061\",\"c293066\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-03T21:08:22.674Z",
+          "kind": "conflict",
+          "claim_id": 293063,
+          "claim_text": "মিষ্টি–গাজী নজরুলের আগে বিতর্কে জড়ানো এমপিদের পরিণতি কী হয়েছিল",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c293063\",\"c293066\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রুদ্ধশ্বাস ১২ মিনিট: কীভাবে পাইলট ও যাত্রীরা উড়োজাহাজকে মাঝআকাশে বিধ্বস্ত হওয়া থেকে বাঁচালেন"
+        },
+        {
+          "cluster_id": 1412,
+          "slug": "national-1412",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হেলমেট ছুড়ে ফেলা, বিচারককে নিয়ে মন্তব্য—আদালতে যা করলেন আখতারুজ্জামান"
+        },
+        {
+          "cluster_id": 555,
+          "slug": "national-555",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 18,
+          "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী"
+        },
+        {
+          "cluster_id": 634,
+          "slug": "national-634",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 18,
+          "headline": "রাড্ডা ও সালমান মুক্তাদিরের স্টুডিওতে হামলা-লুটপাটের ঘটনায় ফের আলোচনায় বিএনপির চাঁদাবাজি ও দখল"
+        },
+        {
+          "cluster_id": 672,
+          "slug": "national-672",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 14,
+          "headline": "বিবাহিত প্রকৌশলীর সঙ্গে সম্পর্ক, মৃত্যুর আগে কী ঘটেছিল নিধির জীবনে"
+        },
+        {
+          "cluster_id": 709,
+          "slug": "international-709",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 5,
+          "headline": "হরমুজে হামলা চালিয়ে সাফল্যের দাবি ইরানের, বাড়ছে তেল পরিবহন"
+        }
+      ]
+    },
     "politics-1400": {
       "cluster_id": 1400,
       "headline": "রাজনৈতিক লোকজন আমার সঙ্গে আসুক, তাঁর পেছনে যাব না: ঢাবির সাবেক উপাচার্য",
@@ -176369,7 +177646,7 @@
       "cluster_id": 1389,
       "headline": "নাটকের শেষে অনূর্ধ্ব-২৩ দল নিয়ে আর্জেন্টিনার মুখোমুখি হচ্ছে বুরকিনা ফাসো",
       "first_seen": "2026-10-03T18:00:45.850Z",
-      "last_update": "2026-10-03T19:18:52.600Z",
+      "last_update": "2026-10-03T20:20:41.981Z",
       "claim_count": 2,
       "events": [
         {
