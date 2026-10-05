@@ -5,7 +5,6 @@
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { openDb, upsertClaim, addClaimEvidence } from './db.mjs';
-import { applyClaimVerification } from './claim-verify.mjs';
 import { loadConfig, tierForCategory } from './config.mjs';
 import { loadTrust } from './verify.mjs';
 import { loadPublishedTitles, isTitleDuplicate } from './published.mjs';
@@ -252,7 +251,6 @@ export function exportBriefs({ status = 'passed' } = {}) {
     const f = join(BRIEFS_DIR, `${brief.slug}.json`);
     writeFileSync(f, JSON.stringify(brief, null, 2) + '\n');
     try { populateClaimsFromBrief(db, brief); } catch (e) {}
-    try { applyClaimVerification(db); } catch (e) {}
     // Attach the cluster's verified claims to the brief (so headline verification +
     // the auditor can judge headline vs strongest supported claim without re-joining).
     try {

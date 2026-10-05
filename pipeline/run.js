@@ -9,7 +9,7 @@ import {
   insertCluster, addClusterMembers, touchCluster,
 } from './lib/db.mjs';
 import { fetchSource } from './lib/fetch.mjs';
-import { normalizeTitle, titleSimilarity } from './lib/normalize.mjs';
+import { normalizeTitle, titleSimilarity, tokens } from './lib/normalize.mjs';
 import { findClusters, pickClusterHeadline } from './lib/cluster.mjs';
 import { loadTrust, evaluateCluster, loadVerifyConfig } from './lib/verify.mjs';
 import { exportBriefs, buildBrief } from './lib/extract.mjs';
@@ -47,18 +47,41 @@ async function cmdNormalize() {
   // 1. clean titles/bodies, 2. exact-url dedupe already handled by UNIQUE(url), 3. near-dup title matching
   const rows = db.prepare('SELECT id, source_id, title, body, published_at, category FROM raw_items WHERE dup_of_id IS NULL ORDER BY id').all();
   let duped = 0;
-  const seen = []; // {title, id}
+  // 2026-10-05: near-dup scan was O(n^2) over ~19k rows (~177M pairwise
+  // comparisons, ~17 min on CI). Block by bigram inversion: two titles can
+  // only clear the >0 Dice threshold if they share at least one adjacent
+  // token bigram, so we only ever score those pairs. Result identical,
+  // runtime ~seconds.
+  const bigramIndex = new Map(); // bigram -> [seen row ids]
+  const seenRows = [];
+  const bigramsOf = (title) => {
+    const tk = tokens(title);
+    const gs = new Set();
+    for (let i = 0; i < tk.length - 1; i++) gs.add(tk[i] + ' ' + tk[i + 1]);
+    return gs;
+  };
   for (const row of rows) {
     const t = normalizeTitle(row.title);
+    const gs = bigramsOf(t);
+    const candidates = new Set();
+    for (const g of gs) {
+      for (const idx of (bigramIndex.get(g) || [])) candidates.add(idx);
+    }
     let dupTarget = null;
-    for (const s of seen) {
+    for (const idx of candidates) {
+      const s = seenRows[idx];
       if (titleSimilarity(s.title, t) >= cfg.poll.dedupe_title_similarity) { dupTarget = s.id; break; }
     }
     if (dupTarget) {
       db.prepare('UPDATE raw_items SET dup_of_id = ? WHERE id = ?').run(dupTarget, row.id);
       duped++;
     } else {
-      seen.push({ title: t, id: row.id });
+      const idx = seenRows.length;
+      seenRows.push({ title: t, id: row.id });
+      for (const g of gs) {
+        if (!bigramIndex.has(g)) bigramIndex.set(g, []);
+        bigramIndex.get(g).push(idx);
+      }
     }
   }
   const total = db.prepare('SELECT COUNT(*) c FROM raw_items').get().c;
