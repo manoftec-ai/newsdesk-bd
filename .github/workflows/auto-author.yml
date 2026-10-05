@@ -60,6 +60,11 @@ jobs:
         run: npm ci --no-audit --no-fund
         working-directory: pipeline
 
+      # store.db lives on a release asset (>100MB cannot stay in git).
+      - name: Restore store.db from the state release
+        working-directory: pipeline
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} node tools/store_db_release.mjs download
+
       # Redundancy: GitHub has been delivering `schedule` events unreliably, so
       # auto-author also refreshes briefs itself (deduped by pipeline) instead of
       # waiting for pipeline.yml's cron to land. Exactly duplicates what
@@ -191,6 +196,11 @@ jobs:
           name: chronicle-sync
           path: pipeline/tmp/chronicle-sync.json
           if-no-files-found: ignore
+
+      # store.db lives on a release asset (>100MB cannot stay in git).
+      - name: Publish store.db to the state release
+        working-directory: pipeline
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} node tools/store_db_release.mjs upload
 
       # 2026-09-26: a rejected article was undiagnosable from CI. The finalizer
       # printed one line per story (which gate fired) and pipeline/tmp/ is

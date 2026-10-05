@@ -55,6 +55,10 @@ jobs:
       - name: Install pipeline deps
         run: npm ci --no-audit --no-fund
 
+      # store.db lives on a release asset (>100MB cannot stay in git).
+      - name: Restore store.db from the state release
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} node tools/store_db_release.mjs download
+
       - name: Fetch
         run: node run.js fetch || echo "::error::prior pipeline step failed (stage no longer silent)"
 
@@ -226,6 +230,10 @@ jobs:
               exit 0
             fi
           fi
+
+      # store.db lives on a release asset (>100MB cannot stay in git).
+      - name: Publish store.db to the state release
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} node tools/store_db_release.mjs upload
 
       - name: Poke IndexNow (Bing/Yandex quick index)
         run: |
