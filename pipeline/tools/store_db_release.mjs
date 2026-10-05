@@ -7,8 +7,8 @@
 //   node pipeline/tools/store_db_release.mjs download   # before work
 //   node pipeline/tools/store_db_release.mjs upload     # after work
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY;
@@ -51,6 +51,7 @@ if (cmd === 'download') {
   const asset = (rel.assets || []).find((a) => a.name === 'store.db.gz');
   if (!asset) { console.log('no state asset yet; continuing with an empty/local store.db'); process.exit(0); }
   const r = await api(asset.url, { headers: { Accept: 'application/octet-stream' } });
+  mkdirSync(dirname(TMP), { recursive: true });
   writeFileSync(TMP, Buffer.from(await r.arrayBuffer()));
   execFileSync('gunzip', ['-f', TMP]);
   execFileSync('mv', [TMP.replace(/\.gz$/, ''), DB]);
@@ -58,6 +59,7 @@ if (cmd === 'download') {
 } else if (cmd === 'upload') {
   if (!existsSync(DB)) { console.log('no store.db to upload'); process.exit(0); }
   execFileSync('gzip', ['-kf', DB]);
+  mkdirSync(dirname(TMP), { recursive: true });
   execFileSync('mv', [DB + '.gz', TMP]);
   const rel = await getRelease();
   const old = (rel.assets || []).find((a) => a.name === 'store.db.gz');
