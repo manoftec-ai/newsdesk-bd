@@ -99,6 +99,8 @@ const ogImageUrl = absoluteUrl(ogImage || "/images/og-jachaidesk-logo.png");
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <!-- FONT GUARD: keep only 2 faces (serif 700 + Hind 400), font-display optional, never add 500/600 — LCP guard P1-9 -->
     <link
       rel="preload"
