@@ -32,12 +32,32 @@ const posts = await postsByTag(tag.slug);
 // 2026-09-27 interlinking: co-occurring tags so thin tag pages link sideways
 // instead of dead-ending.
 const siblingTags = await relatedTags(tag.slug, 6);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      name: `#${tag.name}`,
+      description: `#${tag.name} ট্যাগের যাচাই-করা সংবাদ।`,
+      url: `${SITE.url}/tags/${tag.slug}`,
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "নীড়", item: SITE.url },
+        { "@type": "ListItem", position: 2, name: `#${tag.name}`, item: `${SITE.url}/tags/${tag.slug}` },
+      ],
+    },
+  ],
+};
 ---
 
 <BaseLayout
   title={`#${tag.name} — ${SITE.name}`}
   description={`#${tag.name} ট্যাগের যাচাই-করা সংবাদ।`}
   canonical={`${SITE.url}/tags/${tag.slug}`}
+  jsonLd={jsonLd}
 >
   <div class="mx-auto max-w-6xl px-5">
     <Breadcrumbs crumbs={[{ name: `#${tag.name}`, href: `/tags/${tag.slug}`, current: true }]} />

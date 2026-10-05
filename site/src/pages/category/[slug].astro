@@ -17,12 +17,32 @@ const posts = await postsByCategory(category.slug);
 // blurb is missing), and a real empty-state for beats with no stories yet.
 const pageDescription = category.blurb || `${category.name} বিভাগের যাচাই-করা সংবাদ।`;
 const siblingBeats = categories.filter((c) => c.slug !== category.slug && c.slug !== "latest");
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      name: `${category.name} সংবাদ`,
+      description: pageDescription,
+      url: `${SITE.url}/category/${category.slug}`,
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "নীড়", item: SITE.url },
+        { "@type": "ListItem", position: 2, name: category.name, item: `${SITE.url}/category/${category.slug}` },
+      ],
+    },
+  ],
+};
 ---
 
 <BaseLayout
   title={`${category.name} সংবাদ — ${SITE.name}`}
   description={pageDescription}
   canonical={`${SITE.url}/category/${category.slug}`}
+  jsonLd={jsonLd}
 >
   <div class="mx-auto max-w-6xl px-5">
     <Breadcrumbs
