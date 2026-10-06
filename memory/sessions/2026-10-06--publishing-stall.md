@@ -26,7 +26,12 @@ User report: "jachaidesk is not publishing no new news."
 - Fresh release asset (updated 16:14:52Z, 94.3 MiB, clusters to 1889) vs HEAD briefs (max clusterId 1878): verdicts+members present for 1874/1878/1889. **No persistent skew.**
 - The earlier mismatch (brief 1874 vs DB max 1868) was a stale mid-rotation download, not a live CI defect. Download path uses the API asset URL (no CDN cache issue); upload is delete-then-create with loud failure.
 - Re-ran pick on HEAD briefs + fresh DB with CI env (PUBLISH_MIN_WORDS=100): **0/0 pending** (529 thin / 116 incoherent / 569 title-dups). Gate never receives a candidate.
-- Conclusion: single live blocker = runner-IP 403s → thin pool. No DB repair needed.
+## Permanent fix — reader fallback (same evening, user chose "permanent")
+- New `pipeline/lib/reader-proxy.mjs`: Jina AI Reader fallback (anonymous tier verified live: full Prothom Alo article, no key). Used ONLY after direct fetch fails/thin. Guards: prose paragraph floor (rejects nav-furniture soft-404s — measured kalerkantho front page), 60-word + 400-Bengali-char floors, Title-overlap check vs expected headline.
+- Wired into `extractArticle` (resolve_sources both paths gain it free) + `enrich_bodies` fetchText/bodyFrom (incl. keeping `--skip-unusable` hosts for reader recovery, `viaReader` report counter).
+- Workflows pass optional `JINA_API_KEY` (empty until user adds free key; anonymous works meanwhile). No user step required.
+- Tests: `test/reader-proxy.test.mjs` 10/10 offline. Full suite 502/505 — the only 3 failures are pre-existing on pristine HEAD (content-gate corpus, real-briefs, health-check stall alert).
+- Live proof from Dhaka: real kalerkantho article (403 direct) recovered via reader, 336 words, title-matched; bogus URL rejected.
 1. One-time unblock: verify release freshness, then upload enriched DB → next cron extracts/publishes.
 2. Permanent runner-side fix options: Jina-reader fallback for 403 pages (needs free key as repo secret), RSS-fulltext source re-weighting, or scheduled enrich-from-home.
 3. Investigate/fix B: cache-bust release download + gate observability (log gate-fail counts in pick).

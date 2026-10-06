@@ -164,9 +164,12 @@ export function extractArticleFromHtml(html, { minBengali = 400, maxGap = 2 } = 
   return { ok: true, text: text.slice(0, 4000), paragraphs: chosen.length, bengali };
 }
 
-export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2 } = {}) {
+import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader } from './reader-proxy.mjs';
+
+export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2, expectTitle = '' } = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeoutMs);
+  let direct;
   try {
     const res = await fetch(url, {
       headers: {
@@ -177,12 +180,28 @@ export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400,
       signal: ctl.signal,
       redirect: 'follow',
     });
-    if (!res.ok) return { ok: false, why: `http-${res.status}` };
-    const html = await res.text();
-    return extractArticleFromHtml(html, { minBengali, maxGap });
+    if (!res.ok) direct = { ok: false, why: `http-${res.status}` };
+    else direct = extractArticleFromHtml(await res.text(), { minBengali, maxGap });
   } catch (err) {
-    return { ok: false, why: err?.name === 'AbortError' ? 'timeout' : 'fetch-error' };
+    direct = { ok: false, why: err?.name === 'AbortError' ? 'timeout' : 'fetch-error' };
   } finally {
     clearTimeout(timer);
+  }
+  if (direct.ok) return direct;
+  // 2026-10-06: publisher sites 403 GitHub-runner IPs while serving the same
+  // URLs elsewhere, starving the brief pool. Fall back to the reader proxy
+  // (publisher's own text via a third-party fetch, attribution unchanged).
+  if (!readerEnabled()) return direct;
+  try {
+    const r = await fetchViaReader(url, { timeoutMs: Math.max(timeoutMs, 25000) });
+    if (!r.ok) return { ...direct, readerWhy: r.why };
+    if (expectTitle && !titleMatchesReader(expectTitle, r.text)) {
+      return { ...direct, readerWhy: 'reader-title-mismatch' };
+    }
+    const art = markdownToArticle(r.text, { minBengali });
+    if (!art.ok) return { ...direct, readerWhy: art.why };
+    return { ok: true, text: art.text, paragraphs: art.paragraphs, bengali: art.bengali, via: 'reader' };
+  } catch {
+    return direct;
   }
 }

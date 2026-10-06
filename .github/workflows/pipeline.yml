@@ -78,6 +78,11 @@ jobs:
         run: node run.js verify || echo "::error::prior pipeline step failed (stage no longer silent)"
 
       - name: Backfill thin article bodies
+        env:
+          # 2026-10-06: reader fallback for 403-blocked publishers (optional;
+          # empty until the free key is added as a repo secret — anonymous
+          # tier works meanwhile).
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: |
           # Re-fetch real bodies for stored items that only ever got a headline.
           #
@@ -109,6 +114,8 @@ jobs:
             || echo "body backfill failed or timed out; briefs rebuild from what we have"
 
       - name: Re-extract brief evidence with the paragraph scorer
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: |
           # A second, complementary top-up to enrich_bodies above.
           #

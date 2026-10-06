@@ -35,6 +35,7 @@ import * as cheerio from 'cheerio';
 import { openDb } from '../lib/db.mjs';
 import { cleanBody, urlHash } from '../lib/normalize.mjs';
 import { extractArticleBody, needsBodyEnrichment, resolveGoogleNewsUrl, googleNewsArticleId } from '../lib/fetch.mjs';
+import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader } from '../lib/reader-proxy.mjs';
 
 const DB_PATH = resolve(import.meta.dirname, '../state/store.db');
 const REPORT_PATH = resolve(import.meta.dirname, '../state/enrich-report.json');
@@ -60,7 +61,19 @@ const MIN_WORDS = Number(arg('min-words') ?? 0);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function fetchText(url) {
+async function tryReader(url, expectTitle = '') {
+  // 2026-10-06: publishers 403 runner IPs; the reader proxy fetches the same
+  // page from its own servers (the publisher's own text, attribution unchanged).
+  if (!readerEnabled()) return null;
+  const r = await fetchViaReader(url, { timeoutMs: Math.max(TIMEOUT_MS, 25000) });
+  if (!r.ok) return { ok: false, status: r.status ?? 0, text: '', finalUrl: url, readerWhy: r.why };
+  if (expectTitle && !titleMatchesReader(expectTitle, r.text)) {
+    return { ok: false, status: 0, text: '', finalUrl: url, readerWhy: 'reader-title-mismatch' };
+  }
+  return { ok: true, status: r.status, text: r.text, via: 'reader', finalUrl: url };
+}
+
+async function fetchText(url, expectTitle = '') {
   for (const ua of UAS) {
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
@@ -74,22 +87,33 @@ async function fetchText(url) {
           'accept-language': 'bn,en;q=0.8',
         },
       });
-      if (!res.ok) return { ok: false, status: res.status, text: '', finalUrl: res.url };
+      if (!res.ok) {
+        clearTimeout(t);
+        return (await tryReader(url, expectTitle)) ?? { ok: false, status: res.status, text: '', finalUrl: res.url };
+      }
       const text = await res.text();
       if (text.length < 200) continue; // 0-byte / challenge page: try the next UA
       return { ok: true, status: res.status, text, finalUrl: res.url };
     } catch (e) {
-      const last = { ok: false, status: 0, text: '', error: e.name };
-      if (ua === UAS[UAS.length - 1]) return last;
+      if (ua === UAS[UAS.length - 1]) {
+        clearTimeout(t);
+        return (await tryReader(url, expectTitle)) ?? { ok: false, status: 0, text: '', error: e.name };
+      }
     } finally {
       clearTimeout(t);
     }
   }
-  return { ok: false, status: 0, text: '', error: 'all-ua-failed' };
+  return (await tryReader(url, expectTitle)) ?? { ok: false, status: 0, text: '', error: 'all-ua-failed' };
 }
 
-function bodyFrom(html, url) {
+function bodyFrom(html, url, via) {
   try {
+    // Reader markdown is already clean prose — score it directly instead of
+    // running the HTML container extractor on it.
+    if (via === 'reader') {
+      const art = markdownToArticle(html);
+      return { body: art.ok ? art.text : '', finalUrl: url, readerWhy: art.ok ? undefined : art.why };
+    }
     const $ = cheerio.load(html);
     const body = cleanBody(extractArticleBody($));
     return { body, finalUrl: url };
@@ -161,8 +185,15 @@ if (SKIP_UNUSABLE) {
 }
 if (unusable.size) {
   const before = pool.length;
-  pool = pool.filter((r) => !unusable.has(r.source_id));
-  console.log(`--skip-unusable: ${unusable.size} source(s) cannot be enriched, dropping ${before - pool.length} of ${before} candidates`);
+  if (readerEnabled()) {
+    // 2026-10-06: "unusable" means direct-fetch-blocked; the reader proxy
+    // recovers exactly these hosts, so keep them (direct fails fast on 403,
+    // then the reader is tried per URL).
+    console.log(`--skip-unusable: ${unusable.size} source(s) direct-blocked, kept for reader fallback (${before} candidates)`);
+  } else {
+    pool = pool.filter((r) => !unusable.has(r.source_id));
+    console.log(`--skip-unusable: ${unusable.size} source(s) cannot be enriched, dropping ${before - pool.length} of ${before} candidates`);
+  }
 }
 
 // Target the members of briefs that cannot clear the evidence gate.
@@ -263,7 +294,7 @@ for (const item of candidates) {
 
   let outcome = { ok: false, status: 0, text: '' };
   try {
-    outcome = await fetchText(target);
+    outcome = await fetchText(target, item.title);
   } catch (e) {
     report.failed++;
     const k = `fetch_threw_${e.name}`;
@@ -280,7 +311,7 @@ for (const item of candidates) {
     continue;
   }
 
-  const { body } = bodyFrom(outcome.text, outcome.finalUrl || target);
+  const { body } = bodyFrom(outcome.text, outcome.finalUrl || target, outcome.via);
   const oldLen = String(item.body ?? '').trim().length;
 
   if (body.length - oldLen < MIN_GAIN || body.length < MIN_WORDS) {
@@ -292,6 +323,7 @@ for (const item of candidates) {
   }
 
   report.improved++;
+  if (outcome.via === 'reader') report.viaReader = (report.viaReader || 0) + 1;
   report.improvedItems.push({
     id: item.id,
     source_id: item.source_id,

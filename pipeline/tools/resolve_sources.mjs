@@ -140,7 +140,7 @@ async function main() {
       if (!job) return;
       if (retext) {
         // URL is already the publisher's; only the text is being rebuilt
-        const art = await extractArticle(job.m.url);
+        const art = await extractArticle(job.m.url, { expectTitle: job.m.title });
         // 2026-09-28: extractArticle returns raw scorer text — escaped markup
         // (`&lt;p&gt;`) and runaway whitespace survived into brief leads
         // (national-251). cleanBody decodes entities and normalizes, same as
@@ -159,7 +159,7 @@ async function main() {
         job.m.__original = job.m.url;
         job.m.__resolved = r.url;
         job.m.url = r.url;
-        const art = await extractArticle(r.url);
+        const art = await extractArticle(r.url, { expectTitle: job.m.title });
         if (art.ok) {
           stats.text++;
           // keep the richer text: the RSS lead is a headline, this is the article

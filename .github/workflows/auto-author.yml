@@ -97,6 +97,8 @@ jobs:
 
       - name: Resolve Google News wrappers to publisher articles
         working-directory: pipeline
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: |
           # For the Cloudflare-walled outlets the pipeline fetches through Google
           # News search RSS, so item URLs arrive as news.google.com wrappers:
