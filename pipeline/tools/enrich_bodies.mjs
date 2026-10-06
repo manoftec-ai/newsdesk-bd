@@ -307,6 +307,11 @@ for (const item of candidates) {
     report.failed++;
     const k = `http_${outcome.status || 'err'}`;
     report.failures[k] = (report.failures[k] || 0) + 1;
+    // 2026-10-06: reader fallback observability.
+    if (outcome.readerWhy) {
+      const rk = `reader_${outcome.readerWhy.replace(/[^a-z0-9]+/gi, '_')}`;
+      report.failures[rk] = (report.failures[rk] || 0) + 1;
+    }
     await sleep(DELAY_MS);
     continue;
   }

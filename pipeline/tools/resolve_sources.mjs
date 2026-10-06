@@ -146,7 +146,13 @@ async function main() {
         // (national-251). cleanBody decodes entities and normalizes, same as
         // the enrich_bodies path.
         if (art.ok) { stats.text++; job.m.lead = cleanBody(art.text); }
-        else stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
+        else {
+          stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
+          // 2026-10-06: reader fallback observability — direct code alone
+          // hides whether the reader also failed and how.
+          if (art.readerWhy) stats.failed.set(`reader:${art.readerWhy}`, (stats.failed.get(`reader:${art.readerWhy}`) ?? 0) + 1);
+          if (art.via === 'reader') stats.readerRecovered = (stats.readerRecovered ?? 0) + 1;
+        }
         done++;
         if (done % 25 === 0) console.log(`  ${done}/${queue.length} re-extracted...`);
         continue;
@@ -165,8 +171,10 @@ async function main() {
           // keep the richer text: the RSS lead is a headline, this is the article
           const clean = cleanBody(art.text);
           if (clean.length > String(job.m.lead ?? '').length) job.m.lead = clean;
+          if (art.via === 'reader') stats.readerRecovered = (stats.readerRecovered ?? 0) + 1;
         } else {
           stats.failed.set(art.why, (stats.failed.get(art.why) ?? 0) + 1);
+          if (art.readerWhy) stats.failed.set(`reader:${art.readerWhy}`, (stats.failed.get(`reader:${art.readerWhy}`) ?? 0) + 1);
         }
       }
       done++;
@@ -246,6 +254,7 @@ async function main() {
 
   console.log(`  urls resolved to publisher : ${stats.resolved}`);
   console.log(`  article text recovered     : ${stats.text}`);
+  if (stats.readerRecovered) console.log(`  of which via reader proxy : ${stats.readerRecovered}`);
   console.log(`  briefs updated             : ${dryRun ? 0 : stats.briefsChanged}`);
   console.log(`  raw_items + claim_evidence urls rewritten: ${map.size}`);
   if (stats.collisions) console.log(`  duplicate articles collapsed        : ${stats.collisions}`);
