@@ -22,7 +22,11 @@ User report: "jachaidesk is not publishing no new news."
 - Backup: `/data/data/com.termux/files/usr/tmp/opencode/store-enriched-20261006.db`. Original pre-enrich backup: `store-backup-20261006.db` (same dir).
 - Working tree restored clean (`git checkout -- pipeline/state/briefs/`); store.db is gitignored. **Enriched DB deliberately NOT uploaded** — upload would overwrite the release asset and may regress clusters 1869+ if the release moved on.
 
-## Next (awaiting user decision)
+## Addendum — DB-skew check CLOSED (same evening, per user choice)
+- Fresh release asset (updated 16:14:52Z, 94.3 MiB, clusters to 1889) vs HEAD briefs (max clusterId 1878): verdicts+members present for 1874/1878/1889. **No persistent skew.**
+- The earlier mismatch (brief 1874 vs DB max 1868) was a stale mid-rotation download, not a live CI defect. Download path uses the API asset URL (no CDN cache issue); upload is delete-then-create with loud failure.
+- Re-ran pick on HEAD briefs + fresh DB with CI env (PUBLISH_MIN_WORDS=100): **0/0 pending** (529 thin / 116 incoherent / 569 title-dups). Gate never receives a candidate.
+- Conclusion: single live blocker = runner-IP 403s → thin pool. No DB repair needed.
 1. One-time unblock: verify release freshness, then upload enriched DB → next cron extracts/publishes.
 2. Permanent runner-side fix options: Jina-reader fallback for 403 pages (needs free key as repo secret), RSS-fulltext source re-weighting, or scheduled enrich-from-home.
 3. Investigate/fix B: cache-bust release download + gate observability (log gate-fail counts in pick).
