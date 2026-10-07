@@ -32,6 +32,7 @@ User report: "jachaidesk is not publishing no new news."
 - Workflows pass optional `JINA_API_KEY` (empty until user adds free key; anonymous works meanwhile). No user step required.
 - Tests: `test/reader-proxy.test.mjs` 10/10 offline. Full suite 502/505 — the only 3 failures are pre-existing on pristine HEAD (content-gate corpus, real-briefs, health-check stall alert).
 - Live proof from Dhaka: real kalerkantho article (403 direct) recovered via reader, 336 words, title-matched; bogus URL rejected.
+- Follow-up: runner logs showed reader fetched pages but title guard rejected 85/85 (Cloudflare challenge pages) + English pages hit Bengali floor. Added SECOND lane: Google Translate proxy (samakal verified live) after reader, tl=en proxy-only for English evidence. Suite 507/510 (same 3 pre-existing). Commit 3bd2a8c1 pushed. Live site still Oct 4 — needs 1-2 cycles.
 1. One-time unblock: verify release freshness, then upload enriched DB → next cron extracts/publishes.
 2. Permanent runner-side fix options: Jina-reader fallback for 403 pages (needs free key as repo secret), RSS-fulltext source re-weighting, or scheduled enrich-from-home.
 3. Investigate/fix B: cache-bust release download + gate observability (log gate-fail counts in pick).
