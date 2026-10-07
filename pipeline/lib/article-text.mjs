@@ -164,9 +164,9 @@ export function extractArticleFromHtml(html, { minBengali = 400, maxGap = 2 } = 
   return { ok: true, text: text.slice(0, 4000), paragraphs: chosen.length, bengali };
 }
 
-import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader } from './reader-proxy.mjs';
+import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader, fetchViaTranslate, titleFromHtml, guessBn } from './reader-proxy.mjs';
 
-export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2, expectTitle = '' } = {}) {
+export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400, maxGap = 2, expectTitle = '', lang = '' } = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeoutMs);
   let direct;
@@ -189,19 +189,49 @@ export async function extractArticle(url, { timeoutMs = 20000, minBengali = 400,
   }
   if (direct.ok) return direct;
   // 2026-10-06: publisher sites 403 GitHub-runner IPs while serving the same
-  // URLs elsewhere, starving the brief pool. Fall back to the reader proxy
-  // (publisher's own text via a third-party fetch, attribution unchanged).
+  // URLs elsewhere, starving the brief pool. Fall back to fetch proxies
+  // (the publisher's own text via a third-party fetch, attribution unchanged):
+  // reader first, then translate (complementary per-outlet coverage).
   if (!readerEnabled()) return direct;
+  let readerWhy = '';
   try {
-    const r = await fetchViaReader(url, { timeoutMs: Math.max(timeoutMs, 25000) });
-    if (!r.ok) return { ...direct, readerWhy: r.why };
-    if (expectTitle && !titleMatchesReader(expectTitle, r.text)) {
-      return { ...direct, readerWhy: 'reader-title-mismatch' };
+    const r = await fetchViaReader(url, { timeoutMs: Math.max(timeoutMs, 20000) });
+    if (r.ok && !(expectTitle && !titleMatchesReader(expectTitle, r.text))) {
+      const art = markdownToArticle(r.text, { minBengali });
+      if (art.ok) {
+        return { ok: true, text: art.text, paragraphs: art.paragraphs, bengali: art.bengali, via: 'reader' };
+      }
+      readerWhy = art.why;
+    } else {
+      readerWhy = !r.ok ? r.why : 'reader-title-mismatch';
     }
-    const art = markdownToArticle(r.text, { minBengali });
-    if (!art.ok) return { ...direct, readerWhy: art.why };
-    return { ok: true, text: art.text, paragraphs: art.paragraphs, bengali: art.bengali, via: 'reader' };
   } catch {
-    return direct;
+    readerWhy = readerWhy || 'reader-error';
   }
+  try {
+    const tr = await extractViaTranslate(url, { timeoutMs, minBengali, maxGap, expectTitle, lang });
+    if (tr.ok) return tr;
+    return { ...direct, readerWhy, translateWhy: tr.translateWhy };
+  } catch {
+    return { ...direct, readerWhy };
+  }
+}
+
+async function extractViaTranslate(url, { timeoutMs, minBengali, maxGap, expectTitle, lang }) {
+  // Translate lane: same title guard as the reader lane. tl follows the
+  // evidence language (proxy-only for English, never translate English
+  // into Bengali), and the scorer floor follows suit.
+  const tl = lang === 'en' ? 'en' : 'bn';
+  const t = await fetchViaTranslate(url, { timeoutMs: Math.max(timeoutMs, 20000), tl });
+  if (!t.ok) return { ok: false, translateWhy: t.why };
+  if (expectTitle) {
+    const ht = titleFromHtml(t.text);
+    if (ht && !titleMatchesReader(expectTitle, `Title: ${ht}`)) {
+      return { ok: false, translateWhy: 'translate-title-mismatch' };
+    }
+  }
+  const floor = lang === 'en' ? 0 : minBengali;
+  const scored = extractArticleFromHtml(t.text, { minBengali: floor, maxGap });
+  if (!scored.ok) return { ok: false, translateWhy: `translate-${scored.why}` };
+  return { ...scored, via: 'translate' };
 }

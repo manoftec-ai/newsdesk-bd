@@ -30,6 +30,71 @@ export function readerUrl(url) {
   return READER_BASE + url;
 }
 
+// Second fallback lane (2026-10-07): Google Translate as a fetch proxy.
+// Measured 2026-10-07: several Cloudflare-challenged outlets (samakal verified
+// live: 95k chars/4702 Bengali) serve translate.google.com while challenging
+// both runner IPs AND the reader proxy ("Just a moment..." pages). Coverage
+// is per-outlet complementary: Jina recovers some hosts (prothomalo,
+// kalerkantho), Translate others — hence the chain direct → reader →
+// translate. Google fetches the page from ITS servers, so runner IP blocks
+// do not apply. Free, no key. Fails safe (recorded, never throws).
+export function translateUrl(url, tl = 'bn') {
+  if (typeof url !== 'string' || !/^https?:\/\//i.test(url)) return null;
+  const lang = tl === 'en' ? 'en' : 'bn';
+  return `https://translate.google.com/translate?sl=auto&tl=${lang}&u=${encodeURIComponent(url)}`;
+}
+
+// Guess whether already-held text is Bengali or English, so the translate
+// lane can proxy (tl=en, byte-identical-ish HTML) instead of TRANSLATING
+// English evidence into Bengali (which would garble quotes/facts).
+export function guessBn(text) {
+  const s = String(text ?? '');
+  const bn = (s.match(/[\u0980-\u09FF]/g) || []).length;
+  const latinWords = s
+    .replace(/[\u0980-\u09FF]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => /[a-zA-Z]/.test(w)).length;
+  if (!bn && !latinWords) return null;
+  return bn >= latinWords;
+}
+
+export async function fetchViaTranslate(
+  url,
+  { timeoutMs = 20000, tl = 'bn', fetchImpl = fetch } = {},
+) {
+  const target = translateUrl(url, tl);
+  if (!target) return { ok: false, status: 0, text: '', why: 'translate-bad-url' };
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetchImpl(target, {
+      headers: {
+        'user-agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+        accept: 'text/html,application/xhtml+xml',
+      },
+      signal: ctrl.signal,
+      redirect: 'follow',
+    });
+    if (!res.ok) return { ok: false, status: res.status, text: '', why: `translate-http-${res.status}` };
+    const text = await res.text();
+    if (text.length < 1000) {
+      return { ok: false, status: res.status, text, why: `translate-thin-response(chars=${text.length})` };
+    }
+    return { ok: true, status: res.status, text, via: 'translate' };
+  } catch (err) {
+    return { ok: false, status: 0, text: '', why: err?.name === 'AbortError' ? 'translate-timeout' : 'translate-fetch-error' };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export function titleFromHtml(html) {
+  if (typeof html !== 'string') return '';
+  const m = html.match(/<title[^>]*>([^<]*)<\/title>/i);
+  return (m ? m[1] : '').replace(/\s+/g, ' ').trim();
+}
+
 function bengaliChars(s) {
   const m = String(s ?? '').match(/[\u0980-\u09FF]/g);
   return m ? m.length : 0;

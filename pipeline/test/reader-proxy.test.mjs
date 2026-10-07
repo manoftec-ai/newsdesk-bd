@@ -9,6 +9,10 @@ import {
   fetchViaReader,
   titleFromReaderMarkdown,
   titleMatchesReader,
+  translateUrl,
+  fetchViaTranslate,
+  titleFromHtml,
+  guessBn,
 } from '../lib/reader-proxy.mjs';
 import { extractArticle } from '../lib/article-text.mjs';
 
@@ -186,5 +190,89 @@ test('extractArticle keeps original failure when reader disabled or also fails',
     globalThis.fetch = prevFetch;
     if (prevFlag === undefined) delete process.env.READER_PROXY;
     else process.env.READER_PROXY = prevFlag;
+  }
+});
+
+test('translateUrl builds a proxy URL with language', () => {
+  assert.equal(
+    translateUrl('https://example.com/a'),
+    'https://translate.google.com/translate?sl=auto&tl=bn&u=https%3A%2F%2Fexample.com%2Fa',
+  );
+  assert.ok(translateUrl('https://example.com/a', 'en').includes('tl=en'));
+  assert.equal(translateUrl('notaurl'), null);
+});
+
+test('guessBn distinguishes Bengali from English text', () => {
+  assert.equal(guessBn('ঢাকায় প্রশিক্ষণ কর্মশালা শুরু হয়েছে আজ'), true);
+  assert.equal(guessBn('Training workshop started today in Dhaka city'), false);
+  assert.equal(guessBn(''), null);
+  assert.equal(titleFromHtml('<html><head><title>পরীক্ষা শিরোনাম</title></head></html>'), 'পরীক্ষা শিরোনাম');
+  assert.equal(titleFromHtml('no title here'), '');
+});
+
+test('fetchViaTranslate maps statuses (injected fetch)', async () => {
+  const html = `<html><head><title>t</title></head><body>${'<p>ঢাকায় প্রশিক্ষণ কর্মশালা শুরু হয়েছে আজ সকালে।</p>'.repeat(40)}</body></html>`;
+  const ok = await fetchViaTranslate('https://example.com/a', {
+    fetchImpl: async () => ({ ok: true, status: 200, text: async () => html }),
+  });
+  assert.equal(ok.ok, true);
+  assert.equal(ok.via, 'translate');
+  const denied = await fetchViaTranslate('https://example.com/a', {
+    fetchImpl: async () => ({ ok: false, status: 403, text: async () => '' }),
+  });
+  assert.equal(denied.why, 'translate-http-403');
+  const thin = await fetchViaTranslate('https://example.com/a', {
+    fetchImpl: async () => ({ ok: true, status: 200, text: async () => 'short' }),
+  });
+  assert.ok(thin.why.startsWith('translate-thin-response'));
+});
+
+test('extractArticle falls through to translate when reader also fails', async () => {
+  const prevFetch = globalThis.fetch;
+  const para = 'ঢাকায় তিন দিনব্যাপী আন্তর্জাতিক প্রশিক্ষণ কর্মশালা শুরু হয়েছে আজ সকালে রাজধানীর একটি হোটেলে। এতে এশিয়ার আটটি দেশের প্রতিনিধিরা অংশ নিচ্ছেন বলে আয়োজকরা জানিয়েছেন।';
+  const html = `<html><head><title>প্রশিক্ষণ কর্মশালা শুরু</title></head><body>${`<p>${para}</p>`.repeat(12)}</body></html>`;
+  globalThis.fetch = async (url) => {
+    if (String(url).startsWith('https://translate.google.com/')) {
+      return { ok: true, status: 200, text: async () => html };
+    }
+    return { ok: false, status: 403, url, text: async () => '' };
+  };
+  try {
+    const art = await extractArticle('https://blocked.example.com/s', {
+      minBengali: 50,
+      expectTitle: 'প্রশিক্ষণ কর্মশালা শুরু হয়েছে',
+    });
+    assert.equal(art.ok, true);
+    assert.equal(art.via, 'translate');
+    assert.ok(art.text.includes('তিন দিনব্যাপী'));
+  } finally {
+    globalThis.fetch = prevFetch;
+  }
+});
+
+test('extractArticle records translate mismatch and uses tl=en for English', async () => {
+  const prevFetch = globalThis.fetch;
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(String(url));
+    if (String(url).startsWith('https://translate.google.com/')) {
+      const filler = '<p>ঢাকায় প্রশিক্ষণ কর্মশালা নিয়ে বিস্তারিত আলোচনা হয়েছে আজকের বৈঠকে উপস্থিত সকলের মধ্যে।</p>'.repeat(20);
+      return { ok: true, status: 200, text: async () => `<html><head><title>Wrong Page</title></head><body>${filler}</body></html>` };
+    }
+    return { ok: false, status: 403, url, text: async () => '' };
+  };
+  try {
+    const art = await extractArticle('https://blocked.example.com/s', {
+      minBengali: 10,
+      expectTitle: 'ঢাকায় প্রশিক্ষণ কর্মশালা',
+    });
+    assert.equal(art.ok, false);
+    assert.equal(art.translateWhy, 'translate-title-mismatch');
+
+    seen.length = 0;
+    await extractArticle('https://blocked.example.com/s', { minBengali: 10, lang: 'en' });
+    assert.ok(seen.some((u) => u.includes('tl=en')), 'english evidence proxies without translating');
+  } finally {
+    globalThis.fetch = prevFetch;
   }
 });
