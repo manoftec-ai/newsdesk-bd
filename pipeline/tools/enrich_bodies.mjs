@@ -35,7 +35,8 @@ import * as cheerio from 'cheerio';
 import { openDb } from '../lib/db.mjs';
 import { cleanBody, urlHash } from '../lib/normalize.mjs';
 import { extractArticleBody, needsBodyEnrichment, resolveGoogleNewsUrl, googleNewsArticleId } from '../lib/fetch.mjs';
-import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader } from '../lib/reader-proxy.mjs';
+import { readerEnabled, fetchViaReader, markdownToArticle, titleMatchesReader, fetchViaTranslate, titleFromHtml, guessBn } from '../lib/reader-proxy.mjs';
+import { extractArticleFromHtml } from '../lib/article-text.mjs';
 
 const DB_PATH = resolve(import.meta.dirname, '../state/store.db');
 const REPORT_PATH = resolve(import.meta.dirname, '../state/enrich-report.json');
@@ -61,19 +62,30 @@ const MIN_WORDS = Number(arg('min-words') ?? 0);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function tryReader(url, expectTitle = '') {
-  // 2026-10-06: publishers 403 runner IPs; the reader proxy fetches the same
-  // page from its own servers (the publisher's own text, attribution unchanged).
+async function tryReader(url, expectTitle = '', lang = '') {
+  // 2026-10-06/07: publishers 403 runner IPs; fetch proxies get the same
+  // page from their own servers (the publisher's own text, attribution
+  // unchanged). Chain: reader first, then translate (complementary
+  // per-outlet coverage — measured 2026-10-07).
   if (!readerEnabled()) return null;
-  const r = await fetchViaReader(url, { timeoutMs: Math.max(TIMEOUT_MS, 25000) });
-  if (!r.ok) return { ok: false, status: r.status ?? 0, text: '', finalUrl: url, readerWhy: r.why };
-  if (expectTitle && !titleMatchesReader(expectTitle, r.text)) {
-    return { ok: false, status: 0, text: '', finalUrl: url, readerWhy: 'reader-title-mismatch' };
+  const r = await fetchViaReader(url, { timeoutMs: Math.max(TIMEOUT_MS, 20000) });
+  if (r.ok && !(expectTitle && !titleMatchesReader(expectTitle, r.text))) {
+    return { ok: true, status: r.status, text: r.text, via: 'reader', finalUrl: url };
   }
-  return { ok: true, status: r.status, text: r.text, via: 'reader', finalUrl: url };
+  const readerWhy = !r.ok ? r.why : 'reader-title-mismatch';
+  const tl = lang === 'en' ? 'en' : guessBn(expectTitle) === false ? 'en' : 'bn';
+  const t = await fetchViaTranslate(url, { timeoutMs: Math.max(TIMEOUT_MS, 20000), tl });
+  if (!t.ok) return { ok: false, status: t.status ?? 0, text: '', finalUrl: url, readerWhy, translateWhy: t.why };
+  if (expectTitle) {
+    const ht = titleFromHtml(t.text);
+    if (ht && !titleMatchesReader(expectTitle, `Title: ${ht}`)) {
+      return { ok: false, status: 0, text: '', finalUrl: url, readerWhy, translateWhy: 'translate-title-mismatch' };
+    }
+  }
+  return { ok: true, status: t.status, text: t.text, via: 'translate', finalUrl: url };
 }
 
-async function fetchText(url, expectTitle = '') {
+async function fetchText(url, expectTitle = '', lang = '') {
   for (const ua of UAS) {
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
@@ -89,7 +101,7 @@ async function fetchText(url, expectTitle = '') {
       });
       if (!res.ok) {
         clearTimeout(t);
-        return (await tryReader(url, expectTitle)) ?? { ok: false, status: res.status, text: '', finalUrl: res.url };
+        return (await tryReader(url, expectTitle, lang)) ?? { ok: false, status: res.status, text: '', finalUrl: res.url };
       }
       const text = await res.text();
       if (text.length < 200) continue; // 0-byte / challenge page: try the next UA
@@ -97,13 +109,13 @@ async function fetchText(url, expectTitle = '') {
     } catch (e) {
       if (ua === UAS[UAS.length - 1]) {
         clearTimeout(t);
-        return (await tryReader(url, expectTitle)) ?? { ok: false, status: 0, text: '', error: e.name };
+        return (await tryReader(url, expectTitle, lang)) ?? { ok: false, status: 0, text: '', error: e.name };
       }
     } finally {
       clearTimeout(t);
     }
   }
-  return (await tryReader(url, expectTitle)) ?? { ok: false, status: 0, text: '', error: 'all-ua-failed' };
+  return (await tryReader(url, expectTitle, lang)) ?? { ok: false, status: 0, text: '', error: 'all-ua-failed' };
 }
 
 function bodyFrom(html, url, via) {
@@ -113,6 +125,13 @@ function bodyFrom(html, url, via) {
     if (via === 'reader') {
       const art = markdownToArticle(html);
       return { body: art.ok ? art.text : '', finalUrl: url, readerWhy: art.ok ? undefined : art.why };
+    }
+    // Translate HTML is a full page behind a proxy — run the paragraph
+    // scorer on it. The Bengali floor follows the page language (English
+    // evidence uses the proxy-only tl=en lane and must not face it).
+    if (via === 'translate') {
+      const art = extractArticleFromHtml(html, { minBengali: guessBn(html) === false ? 0 : 400 });
+      return { body: art.ok ? art.text : '', finalUrl: url, translateWhy: art.ok ? undefined : art.why };
     }
     const $ = cheerio.load(html);
     const body = cleanBody(extractArticleBody($));
@@ -152,7 +171,7 @@ const ORDER_SQL = {
 if (!ORDER_SQL) throw new Error(`invalid --order=${ORDER} (use recent|id|published)`);
 
 const rows = db
-  .prepare(`SELECT id, source_id, url, url_hash, title, body, published_at, seen_at FROM raw_items ${where.length ? `WHERE ${where.join(' AND ')}` : ''} ORDER BY ${ORDER_SQL}`)
+  .prepare(`SELECT id, source_id, url, url_hash, title, body, published_at, seen_at, lang FROM raw_items ${where.length ? `WHERE ${where.join(' AND ')}` : ''} ORDER BY ${ORDER_SQL}`)
   .all(...params);
 
 const thin = rows.filter((r) => needsBodyEnrichment(r));
@@ -294,7 +313,7 @@ for (const item of candidates) {
 
   let outcome = { ok: false, status: 0, text: '' };
   try {
-    outcome = await fetchText(target, item.title);
+    outcome = await fetchText(target, item.title, item.lang);
   } catch (e) {
     report.failed++;
     const k = `fetch_threw_${e.name}`;
@@ -307,16 +326,20 @@ for (const item of candidates) {
     report.failed++;
     const k = `http_${outcome.status || 'err'}`;
     report.failures[k] = (report.failures[k] || 0) + 1;
-    // 2026-10-06: reader fallback observability.
-    if (outcome.readerWhy) {
-      const rk = `reader_${outcome.readerWhy.replace(/[^a-z0-9]+/gi, '_')}`;
+    // 2026-10-06/07: proxy fallback observability.
+    for (const w of [outcome.readerWhy, outcome.translateWhy]) {
+      if (!w) continue;
+      const lane = String(w).startsWith('translate') ? 'translate' : 'reader';
+      const rest = String(w).replace(/^(reader|translate)[-_]/, '').replace(/[^a-z0-9]+/gi, '_');
+      const rk = `${lane}_${rest}`;
       report.failures[rk] = (report.failures[rk] || 0) + 1;
     }
     await sleep(DELAY_MS);
     continue;
   }
 
-  const { body } = bodyFrom(outcome.text, outcome.finalUrl || target, outcome.via);
+  const from = bodyFrom(outcome.text, outcome.finalUrl || target, outcome.via);
+  const body = from.body;
   const oldLen = String(item.body ?? '').trim().length;
 
   if (body.length - oldLen < MIN_GAIN || body.length < MIN_WORDS) {
@@ -329,6 +352,7 @@ for (const item of candidates) {
 
   report.improved++;
   if (outcome.via === 'reader') report.viaReader = (report.viaReader || 0) + 1;
+  if (outcome.via === 'translate') report.viaTranslate = (report.viaTranslate || 0) + 1;
   report.improvedItems.push({
     id: item.id,
     source_id: item.source_id,
