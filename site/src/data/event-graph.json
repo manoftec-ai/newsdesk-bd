@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 2165,
+    "storyCount": 2173,
     "kinds": [
       "claim",
       "evidence",
@@ -3800,6 +3800,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -3838,14 +3846,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
-        },
-        {
-          "cluster_id": 1963,
-          "slug": "international-1963",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভারতের সেনাপ্রধানের সঙ্গে দীনেশ ত্রিবেদীর বৈঠক, আলোচনায় বাংলাদেশ ইস্যু"
         }
       ]
     },
@@ -3961,7 +3961,7 @@
       "cluster_id": 2115,
       "headline": "রাষ্ট্রায়ত্ত ব্যাংক ও স্বশাসিত প্রতিষ্ঠানে পে-স্কেল কার্যকরের নির্দেশ",
       "first_seen": "2026-10-07T11:25:27.878Z",
-      "last_update": "2026-10-07T12:25:01.183Z",
+      "last_update": "2026-10-07T12:56:00.509Z",
       "claim_count": 3,
       "events": [
         {
@@ -4126,6 +4126,138 @@
         }
       ],
       "related": []
+    },
+    "economy-2139": {
+      "cluster_id": 2139,
+      "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু",
+      "first_seen": "2026-10-07T12:56:00.532Z",
+      "last_update": "2026-10-07T12:56:00.536Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-06T05:29:00.000Z",
+          "kind": "evidence",
+          "claim_id": 635333,
+          "claim_text": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihwRBVV95cUxQWEozTTNJRjQ3V191TVlXd0ZqVXQ0U0ZqdG5wR3NEV3FWdzRJYWJyUXNWSUZPYzJ1S1M2MXJid3hwLU1iM05kRFNveWRXUXQ5VHM3eVF2VV9lR2NTbVRoUEYzcnEzREZsM09DUm9DVjYzV3ZJY0dtZ1ZFNW1oVExFY05oNmVrcklxYlhIWkdqN2YyRmt5ZlN4WFFhZ0RNcFluVjdHT2lDS2IxTDNpdXhDQ3FzVWJZQzhwcURON0d0UUJZTXRLNktYODd4b2h0NHpwUlNXdG04QjJkMlpvdVpkZHJqakNtaWllaXRYdjItYm05LVo1Tmw1SmNGZE55OGFYaU1fSGFES18wWHFEdjJGb2ozVnpNT1RpUFVQdU9EZkdHLWx4ems1NGkyU0NoNFROSWFMUnJLV19BZFJZY29kZklyYVhUTGp4MFFPcUlxc3Zqb3lONjJOeGZ0aUhfZFZYeG5xTmd3eVFONDU0R2FROVE2Z0RLdm1MdllkU3pLRjhONUtvZG5fRTBUbmRSVzFnQ2ljMlotY05zUGRBSzhmVkNpdVdmZ2JRMkNFUEZXLXpVazd1SHBDa19NeU83UTktZ19KRUl0NW9zN01lbnVIenlqempKRTVpYWlWdVhhSFpVeXdOZ0hyaWZvWEdYU3RKY3VjNlIyR2czV2dMSjJIcUVTUHJqRUXSAYwEQVVfeXFMUDFTUmE2alQ3eXBrUUw5ZkI0RmE4N1E5NmM2UHlnTGpCYXoxRkhRZnRpdWZhVjhJanlhbThSWUllLTJmZEdIRUZnUFRpUnhnOUp5LTVXV1YzVGJNd1NIMUp4ZHZzcVA0bDQ1eG9vd1I3eExJaU9nZmJCOTViMmhJc3BKclc3THVjZU1iM1JaYWVYSUhScVl2cl9fa1gzRWhoMWVUZWhXeTE3TllhQkFhb21ObDhrZjVPbFFwZHprWEJ1bVZZWnFTY3EzY1JDZFZ0REc5VzVveGd6amt4QkYteENJV1UwRTBvNXFVa1JBUU1kdVJQMXpoWkVZeUdUYVJJLTI1YzNjZG1rbDBjVnVxbkoteTR4R0t1UTB3c2FsYkR0UnZoVmo4NUREYXB3QjZ3eGw1VHM0amdEVlBpWWxKWnRNYjhaLUIzazlHaWpMZkh1ZGpmOXEzNG5sR0JfeWxZTkN3a3RWckNkTllkS0x2MUZZYlVxLTlxWklHNm5RSjBmNW5HTTh4NnZTR1FaSWlhbXpRdFdYdHREZDBCTWQxaXk2cmdUZC1WaEdmTlRfV3RBR2RyLS1wRzFyaHNmdkZFOWJpcmw5Y1FmTjFuak5aOGxZQkhoemN2bTNoV1BOV2NjQ25SRlVVV0RGS3JHa1NuLUxWaEozWHdoVnlLdDFnYzBKZXY2Q3JleFhlRnk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-06T05:29:00.000Z",
+          "kind": "evidence",
+          "claim_id": 635334,
+          "claim_text": "দেশজুড়ে ৩০ ব্যাংকের কার্ড-এটিএম সেবা বন্ধ",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihwRBVV95cUxQWEozTTNJRjQ3V191TVlXd0ZqVXQ0U0ZqdG5wR3NEV3FWdzRJYWJyUXNWSUZPYzJ1S1M2MXJid3hwLU1iM05kRFNveWRXUXQ5VHM3eVF2VV9lR2NTbVRoUEYzcnEzREZsM09DUm9DVjYzV3ZJY0dtZ1ZFNW1oVExFY05oNmVrcklxYlhIWkdqN2YyRmt5ZlN4WFFhZ0RNcFluVjdHT2lDS2IxTDNpdXhDQ3FzVWJZQzhwcURON0d0UUJZTXRLNktYODd4b2h0NHpwUlNXdG04QjJkMlpvdVpkZHJqakNtaWllaXRYdjItYm05LVo1Tmw1SmNGZE55OGFYaU1fSGFES18wWHFEdjJGb2ozVnpNT1RpUFVQdU9EZkdHLWx4ems1NGkyU0NoNFROSWFMUnJLV19BZFJZY29kZklyYVhUTGp4MFFPcUlxc3Zqb3lONjJOeGZ0aUhfZFZYeG5xTmd3eVFONDU0R2FROVE2Z0RLdm1MdllkU3pLRjhONUtvZG5fRTBUbmRSVzFnQ2ljMlotY05zUGRBSzhmVkNpdVdmZ2JRMkNFUEZXLXpVazd1SHBDa19NeU83UTktZ19KRUl0NW9zN01lbnVIenlqempKRTVpYWlWdVhhSFpVeXdOZ0hyaWZvWEdYU3RKY3VjNlIyR2czV2dMSjJIcUVTUHJqRUXSAYwEQVVfeXFMUDFTUmE2alQ3eXBrUUw5ZkI0RmE4N1E5NmM2UHlnTGpCYXoxRkhRZnRpdWZhVjhJanlhbThSWUllLTJmZEdIRUZnUFRpUnhnOUp5LTVXV1YzVGJNd1NIMUp4ZHZzcVA0bDQ1eG9vd1I3eExJaU9nZmJCOTViMmhJc3BKclc3THVjZU1iM1JaYWVYSUhScVl2cl9fa1gzRWhoMWVUZWhXeTE3TllhQkFhb21ObDhrZjVPbFFwZHprWEJ1bVZZWnFTY3EzY1JDZFZ0REc5VzVveGd6amt4QkYteENJV1UwRTBvNXFVa1JBUU1kdVJQMXpoWkVZeUdUYVJJLTI1YzNjZG1rbDBjVnVxbkoteTR4R0t1UTB3c2FsYkR0UnZoVmo4NUREYXB3QjZ3eGw1VHM0amdEVlBpWWxKWnRNYjhaLUIzazlHaWpMZkh1ZGpmOXEzNG5sR0JfeWxZTkN3a3RWckNkTllkS0x2MUZZYlVxLTlxWklHNm5RSjBmNW5HTTh4NnZTR1FaSWlhbXpRdFdYdHREZDBCTWQxaXk2cmdUZC1WaEdmTlRfV3RBR2RyLS1wRzFyaHNmdkZFOWJpcmw5Y1FmTjFuak5aOGxZQkhoemN2bTNoV1BOV2NjQ25SRlVVV0RGS3JHa1NuLUxWaEozWHdoVnlLdDFnYzBKZXY2Q3JleFhlRnk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-07T05:07:02.000Z",
+          "kind": "evidence",
+          "claim_id": 635333,
+          "claim_text": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/news/972910/%E0%A6%AF%E0%A7%87-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A6%B2-%E0%A7%A9%E0%A7%A6-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%8F%E0%A6%9F%E0%A6%BF%E0%A6%8F%E0%A6%AE-%E0%A6%85%E0%A6%A8%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-07T05:07:02.000Z",
+          "kind": "evidence",
+          "claim_id": 635335,
+          "claim_text": "যে কারণে বন্ধ হয়েছিল ৩০ ব্যাংকের এটিএম-অনলাইন সেবা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/news/972910/%E0%A6%AF%E0%A7%87-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A6%B2-%E0%A7%A9%E0%A7%A6-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%8F%E0%A6%9F%E0%A6%BF%E0%A6%8F%E0%A6%AE-%E0%A6%85%E0%A6%A8%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-07T06:52:43.000Z",
+          "kind": "evidence",
+          "claim_id": 635333,
+          "claim_text": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQSG9OVm1VVi1teGVyTUhiQ2lfYTNYc2VUamIteXJMdm9ZMnAtOGYxZ2dYejlaYTR3M3lPbVhEMkZqSlhVSnZGTkdQTmw0QzdnTk4yek9TLW5wS2Q5OUJUMWYzX2VTWDNTMFU1QzVSdDU5a2VSbVJvS3JJMXhwZkk3eGdEeVdpcVROdTZmMGY3UHU0SktSQTlDTUllcDRhQU01MmxtRHloMEVnZHZIemFSY1FaZlpDWTJpWVpMcy0wNU1PQVA0cDZlYS1WbW8zTURaWDdBbDRQc3J4Z1FieE5sY2ZlWFAyZkhEZ3NzOERESjNrTmhPVFZHZ0Z1MlptNEs3eTFrT2JCVXludGJUeWY5WGpyRUxNa2kzbEVEclpfWnRuTUhZRXdGVk95dnBFMUhSeEhNNlNDbVROTnFiREI1UENRVnVaQWZLV3JjLTVPTFFOSGhieVFuOTBYU0RyZFY5X2VkUkRXQmpocEhiV1FmeldmVmdERWt5SXVoNjI3VTJXWGlsXzV6S2RjaWI3d2QxNS1FMlU0N1pCeFJQc3ZHT184VXZSd3VzdDlTVVNYcXNUVHFpakZITGd4WnN4Z0h0Yk4yRmFFaWFBUkg0dW9XVVE0LWVVdVlXb3NnTVlBWEhyT3ViUnhUMk9Kc1FqWVNxTVQ1YjIxUEt2alZ3OUI5ZEhETndPTlpzQmpFc2FZXzNaWjIyemhZNVY4T1FNb0hhcUFINdIBqgRBVV95cUxNTDg2VTF1TnYyM04tWWlHcnhxZ3NnZ1p6blpKTVpvR0NKN09PRXpsMEZxMDV6SEdYRFN1Z3R2emx0RWViX0RNZWV0bm1PQUVyYzg5aVJXcEFtdFA1bDk3Qld2NG1oamVoVUZTQ1E2SUV4ekJkNTI2dGd1YlFKbmphZ2hQdzBtZERtVFhJQ21ZZ2IxVHgxS1hFMHlnQlNjNDdLV2d2VFRKMlRNbmptb2lLLTBPNlpJMHhTbnJCNTNTTHdMU2t5UExTWUZkaVNQTWhSN2E2aUhGUVM2Z3RKSkU2ZzRWNkNxaUxUVHJNeVdlaHdTeEJFOU5CWWxLSVlDRk9fVVhqNjc5UGVmd2tsZTBWYVp4dS05YmhURmpKenRQQTM4WXQtMzFuSlBtdEJ6M2dZbTd3MXE5OG5XUWk4b3lnU0gwMUx0bWZaaS03NThQWmplb2tkbndEcnE4QXdaSWhnN29xTVVITllsQXJoUUxNYmNLVlJUOVl0LVo1UWRfLTRVOGt0NEhrOThhSFhRMmdNVEQ5d2h6ek9lNk5fVnVUUFg3dUNQVTFFN3VKOEZOYVI3ck1WbkZpYXJkazBPVlNUQXFOZVJOVWh1SDVPc0tqLUxrUy05OHE2OTNtLWotRFItZGRRQmx6cndXVE4zYjduNElzNGFOV2pqYXRTZlRxMkEtdEhZUlgzSjZuRWUyZ3V2M1pBRXo4UFp4V3VSTW14RXozQUJBLXNOQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.091Z",
+          "kind": "claim",
+          "claim_id": 635333,
+          "claim_text": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.096Z",
+          "kind": "claim",
+          "claim_id": 635334,
+          "claim_text": "দেশজুড়ে ৩০ ব্যাংকের কার্ড-এটিএম সেবা বন্ধ"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.098Z",
+          "kind": "claim",
+          "claim_id": 635335,
+          "claim_text": "যে কারণে বন্ধ হয়েছিল ৩০ ব্যাংকের এটিএম-অনলাইন সেবা"
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 252,
+          "slug": "national-252",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 8,
+          "headline": "এমপি গাজী নজরুল ও তাঁর প্রথম স্ত্রীর রিমান্ড ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
+          "cluster_id": 2115,
+          "slug": "economy-2115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাষ্ট্রায়ত্ত ব্যাংক ও স্বশাসিত প্রতিষ্ঠানে পে-স্কেল কার্যকরের নির্দেশ"
+        },
+        {
+          "cluster_id": 2066,
+          "slug": "national-2066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শাপলা চত্বর হত্যাকাণ্ড মামলায় অভিযোগ গঠনের শুনানি ১ নভেম্বর"
+        },
+        {
+          "cluster_id": 2064,
+          "slug": "national-2064",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "পূজায় একদিনের সাপ্তাহিক ছুটি বাতিল করে প্রজ্ঞাপন, তবে থাকছে তিনদিনের টানা ছুটি"
+        },
+        {
+          "cluster_id": 1899,
+          "slug": "national-1899",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গ্যাস নিয়ে সুখবর, খনন করা নতুন কূপে মিলেছে গ্যাসের সন্ধান"
+        }
+      ]
     },
     "economy-263": {
       "cluster_id": 263,
@@ -6568,6 +6700,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -6598,22 +6746,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -9981,7 +10113,7 @@
       "cluster_id": 2055,
       "headline": "‘ফায়ার’ থেকে সরে দাঁড়িয়েছিলেন মান্না, ২৪ বছর পর সামনে এল তাঁর বক্তব্য",
       "first_seen": "2026-10-07T07:53:41.792Z",
-      "last_update": "2026-10-07T12:25:01.199Z",
+      "last_update": "2026-10-07T12:56:00.523Z",
       "claim_count": 2,
       "events": [
         {
@@ -10139,7 +10271,7 @@
       "cluster_id": 2080,
       "headline": "দ্বিতীয় সন্তানের বাবা-মা হতে চলেছেন সিদ্ধার্থ-কিয়ারা",
       "first_seen": "2026-10-07T09:02:40.938Z",
-      "last_update": "2026-10-07T12:25:01.197Z",
+      "last_update": "2026-10-07T12:56:00.521Z",
       "claim_count": 2,
       "events": [
         {
@@ -11094,7 +11226,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         }
       ]
@@ -14471,6 +14603,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -14509,14 +14649,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -14949,6 +15081,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -14979,22 +15127,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -15077,6 +15209,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -15115,14 +15255,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -15665,7 +15797,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -15773,6 +15905,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -15803,22 +15951,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -17066,6 +17198,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -17104,14 +17244,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -17400,6 +17532,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -17438,14 +17578,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -18642,12 +18774,12 @@
           "headline": "ফেরদৌসী আহমেদ মিষ্টিকে এমপি পদ থেকে পদত্যাগের নির্দেশ প্রধানমন্ত্রীর"
         },
         {
-          "cluster_id": 2115,
-          "slug": "economy-2115",
+          "cluster_id": 2139,
+          "slug": "economy-2139",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাষ্ট্রায়ত্ত ব্যাংক ও স্বশাসিত প্রতিষ্ঠানে পে-স্কেল কার্যকরের নির্দেশ"
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
         }
       ]
     },
@@ -19646,6 +19778,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -19684,14 +19824,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -20042,7 +20174,7 @@
       "cluster_id": 2049,
       "headline": "ওকিনাওয়ায় মার্কিন সেনাদের ওপর কারফিউ, মদ্যপানে নিষেধাজ্ঞা",
       "first_seen": "2026-10-07T07:32:38.102Z",
-      "last_update": "2026-10-07T12:25:01.201Z",
+      "last_update": "2026-10-07T12:56:00.530Z",
       "claim_count": 2,
       "events": [
         {
@@ -20093,6 +20225,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -20131,14 +20271,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
-        },
-        {
-          "cluster_id": 1963,
-          "slug": "international-1963",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভারতের সেনাপ্রধানের সঙ্গে দীনেশ ত্রিবেদীর বৈঠক, আলোচনায় বাংলাদেশ ইস্যু"
         }
       ]
     },
@@ -20481,6 +20613,60 @@
           "kind": "claim",
           "claim_id": 631691,
           "claim_text": "অস্ট্রেলিয়ার ইতিহাসে সবচেয়ে বড় অভিবাসী ছাঁটাইয়ের ঘোষণা বিরোধী দলের"
+        }
+      ],
+      "related": []
+    },
+    "international-2140": {
+      "cluster_id": 2140,
+      "headline": "অনুদানের অর্থ অপব্যবহারের অভিযোগে শ্রীলঙ্কার সাবেক ফার্স্ট লেডি গ্রেপ্তার",
+      "first_seen": "2026-10-07T12:56:00.962Z",
+      "last_update": "2026-10-07T12:56:00.967Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-07T12:40:27.000Z",
+          "kind": "evidence",
+          "claim_id": 635336,
+          "claim_text": "অনুদানের অর্থ অপব্যবহারের অভিযোগে শ্রীলঙ্কার সাবেক ফার্স্ট লেডি গ্রেপ্তার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/former-sri-lankan-first-lady-arrested-on-charges-of-misusing-grant-funds/"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.101Z",
+          "kind": "claim",
+          "claim_id": 635336,
+          "claim_text": "অনুদানের অর্থ অপব্যবহারের অভিযোগে শ্রীলঙ্কার সাবেক ফার্স্ট লেডি গ্রেপ্তার"
+        }
+      ],
+      "related": []
+    },
+    "international-2141": {
+      "cluster_id": 2141,
+      "headline": "নিউইয়র্কে হামের প্রাদুর্ভাব: দুর্যোগকালীন জরুরি অবস্থা জারি",
+      "first_seen": "2026-10-07T12:56:00.969Z",
+      "last_update": "2026-10-07T12:56:00.971Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-07T12:36:55.000Z",
+          "kind": "evidence",
+          "claim_id": 635337,
+          "claim_text": "নিউইয়র্কে হামের প্রাদুর্ভাব: দুর্যোগকালীন জরুরি অবস্থা জারি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/measles-outbreak-in-new-york-state-of-emergency-declared/"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.103Z",
+          "kind": "claim",
+          "claim_id": 635337,
+          "claim_text": "নিউইয়র্কে হামের প্রাদুর্ভাব: দুর্যোগকালীন জরুরি অবস্থা জারি"
         }
       ],
       "related": []
@@ -22489,6 +22675,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -22527,14 +22721,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -22977,6 +23163,14 @@
           "headline": "জাতিসংঘ অধিবেশনের উদ্বোধনী অনুষ্ঠানে যোগ দিলেন প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -22991,14 +23185,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "দ্বিতীয় স্ত্রীর মৃত্যু: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 2049,
-          "slug": "international-2049",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ওকিনাওয়ায় মার্কিন সেনাদের ওপর কারফিউ, মদ্যপানে নিষেধাজ্ঞা"
         }
       ]
     },
@@ -25776,7 +25962,7 @@
       "cluster_id": 2122,
       "headline": "At least 11 dead, 34 injured after ‘vile’ attack on Ukraine on Putin’s birthday, Zelenskyy says – Europe live",
       "first_seen": "2026-10-07T11:54:39.101Z",
-      "last_update": "2026-10-07T12:25:01.185Z",
+      "last_update": "2026-10-07T12:56:00.511Z",
       "claim_count": 2,
       "events": [
         {
@@ -39425,6 +39611,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -39455,22 +39657,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -43584,6 +43770,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -43614,22 +43816,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -44706,6 +44892,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -44736,22 +44938,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -49490,6 +49676,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -49520,22 +49722,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -56322,6 +56508,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -56352,22 +56554,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -56572,7 +56758,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -63170,6 +63356,22 @@
           "headline": "বিডিনিউজ টুয়েন্টিফোর ডটকমের প্রধান সম্পাদক তৌফিক ইমরোজ খালিদী মারা গেছেন"
         },
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -63192,22 +63394,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "পূজায় একদিনের সাপ্তাহিক ছুটি বাতিল করে প্রজ্ঞাপন, তবে থাকছে তিনদিনের টানা ছুটি"
-        },
-        {
-          "cluster_id": 1872,
-          "slug": "national-1872",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
         }
       ]
     },
@@ -66350,6 +66536,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -66388,14 +66582,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -70648,6 +70834,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -70678,22 +70880,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -71176,7 +71362,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         }
       ]
@@ -72056,6 +72242,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -72094,14 +72288,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -72620,6 +72806,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -72650,22 +72852,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -73547,6 +73733,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -73585,14 +73779,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -79029,6 +79215,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
           "cluster_id": 1570,
           "slug": "national-1570",
           "actor_links": 0,
@@ -79292,6 +79486,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
         {
           "cluster_id": 1569,
           "slug": "national-1569",
@@ -82984,6 +83186,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -83014,22 +83232,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -90511,6 +90713,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -90541,22 +90759,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -94543,6 +94745,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -94573,22 +94791,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
-        },
-        {
-          "cluster_id": 1745,
-          "slug": "national-1745",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দিল্লিতে মোদির সঙ্গে দীনেশ ত্রিবেদীর বৈঠক, আলোচনায় তারেক রহমানের ভারত সফর"
         }
       ]
     },
@@ -97150,6 +97352,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -97188,14 +97398,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -101821,6 +102023,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
           "cluster_id": 1070,
           "slug": "national-1070",
           "actor_links": 0,
@@ -102957,7 +103167,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -107960,6 +108170,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -107998,14 +108216,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1963,
-          "slug": "international-1963",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভারতের সেনাপ্রধানের সঙ্গে দীনেশ ত্রিবেদীর বৈঠক, আলোচনায় বাংলাদেশ ইস্যু"
         }
       ]
     },
@@ -110024,7 +110234,7 @@
       "cluster_id": 2020,
       "headline": "গুজরাটে ‘পবিত্রকরণ আচার’–এর অজুহাতে নারীকে দলবদ্ধ ধর্ষণ, সেই ভিডিও ছাড়ল সামাজিক মাধ্যমে",
       "first_seen": "2026-10-07T05:27:29.244Z",
-      "last_update": "2026-10-07T12:25:01.188Z",
+      "last_update": "2026-10-07T12:56:00.512Z",
       "claim_count": 4,
       "events": [
         {
@@ -110980,7 +111190,7 @@
       "cluster_id": 2041,
       "headline": "নাট্যমঞ্চ থেকে হয়েছিল সিনেমা হল, আগুনে পুড়ল ময়মনসিংহের ‘ঝলমল’",
       "first_seen": "2026-10-07T07:09:50.749Z",
-      "last_update": "2026-10-07T12:25:01.202Z",
+      "last_update": "2026-10-07T12:56:00.538Z",
       "claim_count": 3,
       "events": [
         {
@@ -111703,7 +111913,7 @@
       "cluster_id": 2056,
       "headline": "আগের ওসি গেছেন যেই পথে, আপনিও যাবেন সেই পথে—বলে ওসিকে বিএনপি নেতার হুমকি",
       "first_seen": "2026-10-07T07:53:41.795Z",
-      "last_update": "2026-10-07T12:25:01.196Z",
+      "last_update": "2026-10-07T12:56:00.519Z",
       "claim_count": 3,
       "events": [
         {
@@ -112612,7 +112822,7 @@
       "cluster_id": 2066,
       "headline": "শাপলা চত্বর হত্যাকাণ্ড মামলায় অভিযোগ গঠনের শুনানি ১ নভেম্বর",
       "first_seen": "2026-10-07T08:16:58.698Z",
-      "last_update": "2026-10-07T12:25:01.191Z",
+      "last_update": "2026-10-07T12:56:00.515Z",
       "claim_count": 4,
       "events": [
         {
@@ -113098,7 +113308,7 @@
       "cluster_id": 2073,
       "headline": "ইসির সঙ্গে বৈঠকে নেপালের নির্বাচন কমিশনের প্রতিনিধি দল",
       "first_seen": "2026-10-07T08:40:09.025Z",
-      "last_update": "2026-10-07T12:25:01.193Z",
+      "last_update": "2026-10-07T12:56:00.516Z",
       "claim_count": 2,
       "events": [
         {
@@ -115316,7 +115526,7 @@
       "cluster_id": 2130,
       "headline": "ইউএনও-উপজেলা প্রশাসকদের জরুরি নির্দেশনা সরকারের",
       "first_seen": "2026-10-07T12:25:01.173Z",
-      "last_update": "2026-10-07T12:25:01.176Z",
+      "last_update": "2026-10-07T12:56:00.506Z",
       "claim_count": 2,
       "events": [
         {
@@ -115420,7 +115630,7 @@
       "cluster_id": 2131,
       "headline": "বীরশ্রেষ্ঠের ভাস্কর্যে জুতার মালা, সিসিটিভি দেখে আটক করা এই যুবক কে?",
       "first_seen": "2026-10-07T12:25:01.177Z",
-      "last_update": "2026-10-07T12:25:01.182Z",
+      "last_update": "2026-10-07T12:56:00.508Z",
       "claim_count": 2,
       "events": [
         {
@@ -115574,6 +115784,214 @@
       ],
       "related": []
     },
+    "national-2137": {
+      "cluster_id": 2137,
+      "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন",
+      "first_seen": "2026-10-07T12:56:00.502Z",
+      "last_update": "2026-10-07T12:56:00.505Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-07T09:06:45.000Z",
+          "kind": "evidence",
+          "claim_id": 635329,
+          "claim_text": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxPUUJrcGRnano5OGhOdjE5Y253blo3NS1RZ3JXUUlEWHg4Q2hnWTJOU3VnRzlVZnh2c3huYlVXSkpjdUc5OTdWMUNPQmhBOWdUY1FhTndrNnMyVWxMZVF2R3pPOTBHemNWc3gwUUY5T2l2UlhXSG1MdVhfN0NtOU14WS1zeWQ0b3V0dkgtWFd3WlN3aG1TNmY3WGhKMXpFSWFiWUlQTEFJUDQ0YzhZWlRyY0hRenhfeUV1VkdoazhZT21YNW5hYzlsWDlIVUhneGJ5S3Y3dXRuRmo3Q0JScDFwLWxYZmtmbU1TaUtBa2EzYU10d3lrcGZEWTV2Qkl6a2Z3RGdOd05NajFveWFGamVhTFJwZDMxZGVoWkJSRHdOazhqdUppM1lSOGhkQk16ZDV0UDB3NnlFWVZQUlJWa0hvOENodTE4V19aUS1tOG5BMTRCQktCM1FEQV9uMXc3ZTJZNlVaQXNVNFZfb3kyMGw3SnF4MjhSU0pRODVpV0N5NFh2WU90bmR4UDdmQWpkT2VXeHBIblVwcjd5VWRGdnVjM0duYUVlbV9WVGRENlowbUxGNUlFMUVnd25ENFFPTk9OS2RYZVE5dkR4MGFDYVpWUnp4Z0xLLTlOOVBkeUlscWNUWkpua05obVRUNlliV2k4ams2NUVhdGRjLXk5ZGo0T2x4M01RZThyZlhsM043OG9pRzlxTVo4dkQtcTFTMWlPVVlvTUJ2eDRqLWNra0xfandEQnZZSEdXdW1adTVnNGVyUzJpVWRoRHc1MNIB0ARBVV95cUxOeHJ3cV9OMnhpbFZHR2ZOM0VrRk9FY0JYZ2VISHJDTkdJZDRzUEhkWHpDUXNhcjdDS3FKYTRpbU1ubmhlcGVseUhhSV9IYmxUTEN5c0RfRU5vNWpTTENBMTZLUlRPcWRXTGRGZ210LU5OcWhGWk1yWEhWQVp2b2ZWNjNObDZMaDdrRkI1eHhybzc4aTV3WFdNN0pqWXpzQzNMNDJtMGNnemtQX3hxRE4ybEZQeWlLak5tSFpNbmJIdnlLa2tiazhSdEU5NkxwSFA4SUwtaHV6U2t2NTBKajYzWWFhYTIwTGhRYUtvLXUwSzRYUFBWVy1yY3J4NUQyYllFWTN5RF9ObVZEVXNnSGYtellJTExBU1poWTZHV3MzVGVoOTBSNDRWRWY4SXdEb3hZV3AxMk9uMUp3U3VfazFEeG55VXZ4aTRRc0NlcE42MmotX0JPVXVkUWtLWEg1ZlliWG5pZ203cW1WVDBIQzloQk1Ld2tib0IxNVJjZlhuVkNheVY0OUM4LUtCTWI0amduS2RrY29NZXZNYmpMTEx2MWM0NU5uS05SSTFsdnpvUXAyNERScWZVOHBVa0xSSzJuNHdQVkhXM3laRTgyekY2X1h6VWJoV0VHaWhPVUhFeU1fZ1hYWEVuOC1YTmVzMERhc3RFNTBDWnp4ak5aRE1MQVZKU3ZSSUJEZHNQV05oVG9PS1FWWXVxWjFZcG1GQ0Y0ak9QYUxja3JPYnJnUVZ5M0N3M2xqLW52QzVzYVJJaUVZU0hkVGR6TnlNWS1qVmxy?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-07T09:06:45.000Z",
+          "kind": "evidence",
+          "claim_id": 635330,
+          "claim_text": "মিশনের মায়ের হাতে নিয়োগপত্র তুলে দিলেন রাশেদ খাঁন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxPUUJrcGRnano5OGhOdjE5Y253blo3NS1RZ3JXUUlEWHg4Q2hnWTJOU3VnRzlVZnh2c3huYlVXSkpjdUc5OTdWMUNPQmhBOWdUY1FhTndrNnMyVWxMZVF2R3pPOTBHemNWc3gwUUY5T2l2UlhXSG1MdVhfN0NtOU14WS1zeWQ0b3V0dkgtWFd3WlN3aG1TNmY3WGhKMXpFSWFiWUlQTEFJUDQ0YzhZWlRyY0hRenhfeUV1VkdoazhZT21YNW5hYzlsWDlIVUhneGJ5S3Y3dXRuRmo3Q0JScDFwLWxYZmtmbU1TaUtBa2EzYU10d3lrcGZEWTV2Qkl6a2Z3RGdOd05NajFveWFGamVhTFJwZDMxZGVoWkJSRHdOazhqdUppM1lSOGhkQk16ZDV0UDB3NnlFWVZQUlJWa0hvOENodTE4V19aUS1tOG5BMTRCQktCM1FEQV9uMXc3ZTJZNlVaQXNVNFZfb3kyMGw3SnF4MjhSU0pRODVpV0N5NFh2WU90bmR4UDdmQWpkT2VXeHBIblVwcjd5VWRGdnVjM0duYUVlbV9WVGRENlowbUxGNUlFMUVnd25ENFFPTk9OS2RYZVE5dkR4MGFDYVpWUnp4Z0xLLTlOOVBkeUlscWNUWkpua05obVRUNlliV2k4ams2NUVhdGRjLXk5ZGo0T2x4M01RZThyZlhsM043OG9pRzlxTVo4dkQtcTFTMWlPVVlvTUJ2eDRqLWNra0xfandEQnZZSEdXdW1adTVnNGVyUzJpVWRoRHc1MNIB0ARBVV95cUxOeHJ3cV9OMnhpbFZHR2ZOM0VrRk9FY0JYZ2VISHJDTkdJZDRzUEhkWHpDUXNhcjdDS3FKYTRpbU1ubmhlcGVseUhhSV9IYmxUTEN5c0RfRU5vNWpTTENBMTZLUlRPcWRXTGRGZ210LU5OcWhGWk1yWEhWQVp2b2ZWNjNObDZMaDdrRkI1eHhybzc4aTV3WFdNN0pqWXpzQzNMNDJtMGNnemtQX3hxRE4ybEZQeWlLak5tSFpNbmJIdnlLa2tiazhSdEU5NkxwSFA4SUwtaHV6U2t2NTBKajYzWWFhYTIwTGhRYUtvLXUwSzRYUFBWVy1yY3J4NUQyYllFWTN5RF9ObVZEVXNnSGYtellJTExBU1poWTZHV3MzVGVoOTBSNDRWRWY4SXdEb3hZV3AxMk9uMUp3U3VfazFEeG55VXZ4aTRRc0NlcE42MmotX0JPVXVkUWtLWEg1ZlliWG5pZ203cW1WVDBIQzloQk1Ld2tib0IxNVJjZlhuVkNheVY0OUM4LUtCTWI0amduS2RrY29NZXZNYmpMTEx2MWM0NU5uS05SSTFsdnpvUXAyNERScWZVOHBVa0xSSzJuNHdQVkhXM3laRTgyekY2X1h6VWJoV0VHaWhPVUhFeU1fZ1hYWEVuOC1YTmVzMERhc3RFNTBDWnp4ak5aRE1MQVZKU3ZSSUJEZHNQV05oVG9PS1FWWXVxWjFZcG1GQ0Y0ak9QYUxja3JPYnJnUVZ5M0N3M2xqLW52QzVzYVJJaUVZU0hkVGR6TnlNWS1qVmxy?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-07T12:18:05.000Z",
+          "kind": "evidence",
+          "claim_id": 635329,
+          "claim_text": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/khulna/973002/%E0%A6%AE%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%A3-%E0%A6%A0%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B9%E0%A7%80%E0%A6%A8-%E0%A6%9B%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%9F%E0%A6%BF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A5%E0%A6%AE%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.080Z",
+          "kind": "claim",
+          "claim_id": 635329,
+          "claim_text": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.083Z",
+          "kind": "claim",
+          "claim_id": 635330,
+          "claim_text": "মিশনের মায়ের হাতে নিয়োগপত্র তুলে দিলেন রাশেদ খাঁন"
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2115,
+          "slug": "economy-2115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাষ্ট্রায়ত্ত ব্যাংক ও স্বশাসিত প্রতিষ্ঠানে পে-স্কেল কার্যকরের নির্দেশ"
+        },
+        {
+          "cluster_id": 2066,
+          "slug": "national-2066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শাপলা চত্বর হত্যাকাণ্ড মামলায় অভিযোগ গঠনের শুনানি ১ নভেম্বর"
+        },
+        {
+          "cluster_id": 2064,
+          "slug": "national-2064",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "পূজায় একদিনের সাপ্তাহিক ছুটি বাতিল করে প্রজ্ঞাপন, তবে থাকছে তিনদিনের টানা ছুটি"
+        },
+        {
+          "cluster_id": 1872,
+          "slug": "national-1872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1799,
+          "slug": "national-1799",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
+        }
+      ]
+    },
+    "national-2138": {
+      "cluster_id": 2138,
+      "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান",
+      "first_seen": "2026-10-07T12:56:00.525Z",
+      "last_update": "2026-10-07T12:56:00.528Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-07T05:45:21.000Z",
+          "kind": "evidence",
+          "claim_id": 635331,
+          "claim_text": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/videos/1165434"
+          }
+        },
+        {
+          "ts": "2026-10-07T05:45:21.000Z",
+          "kind": "evidence",
+          "claim_id": 635332,
+          "claim_text": "যে ৩০ ব্যাংকের কার্ডসহ বিভিন্ন সেবা বন্ধ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/videos/1165434"
+          }
+        },
+        {
+          "ts": "2026-10-07T07:04:34.000Z",
+          "kind": "evidence",
+          "claim_id": 635331,
+          "claim_text": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/health/972933/%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%8D%E0%A6%AE%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A7%9F%E0%A7%87-%E0%A6%86%E0%A6%87%E0%A6%B8%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%87-%E0%A7%A7.%E0%A7%AA%E0%A7%AB-%E0%A6%AE%E0%A6%BF%E0%A6%B2%E0%A6%BF%E0%A7%9F%E0%A6%A8-%E0%A6%A1%E0%A6%B2%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.085Z",
+          "kind": "claim",
+          "claim_id": 635331,
+          "claim_text": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.088Z",
+          "kind": "claim",
+          "claim_id": 635332,
+          "claim_text": "যে ৩০ ব্যাংকের কার্ডসহ বিভিন্ন সেবা বন্ধ"
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2115,
+          "slug": "economy-2115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাষ্ট্রায়ত্ত ব্যাংক ও স্বশাসিত প্রতিষ্ঠানে পে-স্কেল কার্যকরের নির্দেশ"
+        },
+        {
+          "cluster_id": 2092,
+          "slug": "national-2092",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দ্বিতীয় স্ত্রীর মৃত্যু: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
+        },
+        {
+          "cluster_id": 2049,
+          "slug": "international-2049",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ওকিনাওয়ায় মার্কিন সেনাদের ওপর কারফিউ, মদ্যপানে নিষেধাজ্ঞা"
+        },
+        {
+          "cluster_id": 2042,
+          "slug": "politics-2042",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশকে অস্থির করার জন্য পতিত দোসররা নানাভাবে কাজ করছে: রিজভী"
+        },
+        {
+          "cluster_id": 2019,
+          "slug": "economy-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
+        },
+        {
+          "cluster_id": 1973,
+          "slug": "national-1973",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
+        }
+      ]
+    },
     "national-214": {
       "cluster_id": 214,
       "headline": "দুই ঘণ্টা অবরোধ শেষে ঢাকা-চট্টগ্রাম মহাসড়ক ছাড়লেন শিক্ষার্থীরা",
@@ -115652,6 +116070,50 @@
         }
       ],
       "related": []
+    },
+    "national-2143": {
+      "cluster_id": 2143,
+      "headline": "প্রতিহিংসার রাজনীতি গণতন্ত্রের বিকাশকে ব্যাহত করে: রাষ্ট্রপতি",
+      "first_seen": "2026-10-07T12:56:00.977Z",
+      "last_update": "2026-10-07T12:56:00.979Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-07T12:35:17.000Z",
+          "kind": "evidence",
+          "claim_id": 635339,
+          "claim_text": "প্রতিহিংসার রাজনীতি গণতন্ত্রের বিকাশকে ব্যাহত করে: রাষ্ট্রপতি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/differences-of-opinion-constructive-criticism-and-peaceful-protest-are-the-beauty-of-democracy-president/"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.108Z",
+          "kind": "claim",
+          "claim_id": 635339,
+          "claim_text": "প্রতিহিংসার রাজনীতি গণতন্ত্রের বিকাশকে ব্যাহত করে: রাষ্ট্রপতি"
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 826,
+          "slug": "national-826",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "সত্য, সুন্দর ও মানবিকতার পথে চ্যানেল আইয়ের যাত্রা অব্যাহত থাকুক"
+        },
+        {
+          "cluster_id": 852,
+          "slug": "national-852",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "সত্য, সুন্দর ও মানবিকতার পথে চ্যানেল আইয়ের যাত্রা অব্যাহত থাকুক"
+        }
+      ]
     },
     "national-215": {
       "cluster_id": 215,
@@ -124835,6 +125297,22 @@
           "headline": "ময়মনসিংহে সড়কে মৃত্যু ৭: একই পরিবারের চারজনসহ ৬ জনকে হারিয়ে শোকে স্তব্ধ রানাগাছা"
         },
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -124849,22 +125327,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শাপলা চত্বর হত্যাকাণ্ড মামলায় অভিযোগ গঠনের শুনানি ১ নভেম্বর"
-        },
-        {
-          "cluster_id": 2064,
-          "slug": "national-2064",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "পূজায় একদিনের সাপ্তাহিক ছুটি বাতিল করে প্রজ্ঞাপন, তবে থাকছে তিনদিনের টানা ছুটি"
-        },
-        {
-          "cluster_id": 2041,
-          "slug": "national-2041",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "নাট্যমঞ্চ থেকে হয়েছিল সিনেমা হল, আগুনে পুড়ল ময়মনসিংহের ‘ঝলমল’"
         }
       ]
     },
@@ -134806,6 +135268,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -134836,22 +135314,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -135968,6 +136430,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -136006,14 +136476,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -151800,7 +152262,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         }
       ]
@@ -153727,7 +154189,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -173015,6 +173477,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -183858,7 +184328,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -192903,6 +193373,14 @@
           "headline": "জন–আস্থা ও পেশাদারত্ব বজায় রেখে সাংবাদিকদের দায়িত্ব পালনের আহ্বান রাষ্ট্রপতির"
         },
         {
+          "cluster_id": 2143,
+          "slug": "national-2143",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রতিহিংসার রাজনীতি গণতন্ত্রের বিকাশকে ব্যাহত করে: রাষ্ট্রপতি"
+        },
+        {
           "cluster_id": 1776,
           "slug": "national-1776",
           "actor_links": 1,
@@ -192925,14 +193403,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "বিডিনিউজ টুয়েন্টিফোর ডটকমের প্রধান সম্পাদক তৌফিক ইমরোজ খালিদী মারা গেছেন"
-        },
-        {
-          "cluster_id": 796,
-          "slug": "national-796",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "যেসব এলাকায় বিএনপির সংসদ সদস্য নির্বাচিত হয়েছেন, সেখানে সারের সংকট নেই: মীর শাহে আলম"
         }
       ]
     },
@@ -195681,6 +196151,14 @@
           "headline": "জন–আস্থা ও পেশাদারত্ব বজায় রেখে সাংবাদিকদের দায়িত্ব পালনের আহ্বান রাষ্ট্রপতির"
         },
         {
+          "cluster_id": 2143,
+          "slug": "national-2143",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রতিহিংসার রাজনীতি গণতন্ত্রের বিকাশকে ব্যাহত করে: রাষ্ট্রপতি"
+        },
+        {
           "cluster_id": 1776,
           "slug": "national-1776",
           "actor_links": 1,
@@ -195703,14 +196181,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "বিডিনিউজ টুয়েন্টিফোর ডটকমের প্রধান সম্পাদক তৌফিক ইমরোজ খালিদী মারা গেছেন"
-        },
-        {
-          "cluster_id": 796,
-          "slug": "national-796",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "যেসব এলাকায় বিএনপির সংসদ সদস্য নির্বাচিত হয়েছেন, সেখানে সারের সংকট নেই: মীর শাহে আলম"
         }
       ]
     },
@@ -201585,6 +202055,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -201615,22 +202101,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -204840,6 +205310,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -204870,22 +205356,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -205135,6 +205605,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
         {
           "cluster_id": 1570,
           "slug": "national-1570",
@@ -208729,6 +209207,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -208767,14 +209253,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -215386,7 +215864,7 @@
           "slug": "opinion-2129",
           "actor_links": 1,
           "source_links": 3,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -215435,8 +215913,8 @@
       "cluster_id": 2129,
       "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই",
       "first_seen": "2026-10-07T12:25:01.160Z",
-      "last_update": "2026-10-07T12:25:01.171Z",
-      "claim_count": 11,
+      "last_update": "2026-10-07T12:56:00.500Z",
+      "claim_count": 12,
       "events": [
         {
           "ts": "2026-10-07T06:46:02.000Z",
@@ -215734,6 +216212,46 @@
           "kind": "claim",
           "claim_id": 631685,
           "claim_text": "অবসরের পর মেসির সময় কাটবে কীভাবে"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.029Z",
+          "kind": "evidence",
+          "claim_id": 631675,
+          "claim_text": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86664"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.046Z",
+          "kind": "claim",
+          "claim_id": 635315,
+          "claim_text": "কেইনের জোড়া গোলে ইংল্যান্ডের জয়"
+        },
+        {
+          "ts": "2026-10-07T13:06:10.047Z",
+          "kind": "evidence",
+          "claim_id": 635315,
+          "claim_text": "কেইনের জোড়া গোলে ইংল্যান্ডের জয়",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/86664"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:22.197Z",
+          "kind": "conflict",
+          "claim_id": 631675,
+          "claim_text": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c631675\",\"c635315\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -215810,6 +216328,33 @@
           "kind": "claim",
           "claim_id": 631690,
           "claim_text": "এখনও টিকে আছে যশোরের মণিহার সিনেমা হল"
+        }
+      ],
+      "related": []
+    },
+    "opinion-2144": {
+      "cluster_id": 2144,
+      "headline": "চিকিৎসকদের শুদ্ধাচার: তৃতীয় বিশ্বের রাষ্ট্রে পেশা, পুঁজি ও মানুষের জীবন",
+      "first_seen": "2026-10-07T12:56:00.981Z",
+      "last_update": "2026-10-07T12:56:00.983Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-07T12:34:07.000Z",
+          "kind": "evidence",
+          "claim_id": 635340,
+          "claim_text": "চিকিৎসকদের শুদ্ধাচার: তৃতীয় বিশ্বের রাষ্ট্রে পেশা, পুঁজি ও মানুষের জীবন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/professional-ethics-of-physicians-profession-capital-and-human-life-in-third-world-nations/"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.112Z",
+          "kind": "claim",
+          "claim_id": 635340,
+          "claim_text": "চিকিৎসকদের শুদ্ধাচার: তৃতীয় বিশ্বের রাষ্ট্রে পেশা, পুঁজি ও মানুষের জীবন"
         }
       ],
       "related": []
@@ -218310,6 +218855,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -218348,14 +218901,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -221189,7 +221734,7 @@
       "cluster_id": 2042,
       "headline": "দেশকে অস্থির করার জন্য পতিত দোসররা নানাভাবে কাজ করছে: রিজভী",
       "first_seen": "2026-10-07T07:09:50.753Z",
-      "last_update": "2026-10-07T12:25:01.198Z",
+      "last_update": "2026-10-07T12:56:00.522Z",
       "claim_count": 3,
       "events": [
         {
@@ -221321,7 +221866,7 @@
       "cluster_id": 2074,
       "headline": "তুরস্কের উদ্দেশে ঢাকা ছাড়লেন জামায়াত আমির",
       "first_seen": "2026-10-07T08:40:09.029Z",
-      "last_update": "2026-10-07T12:25:01.194Z",
+      "last_update": "2026-10-07T12:56:00.518Z",
       "claim_count": 2,
       "events": [
         {
@@ -224493,6 +225038,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -224523,22 +225084,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -230027,7 +230572,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         },
         {
@@ -230930,7 +231475,7 @@
           "slug": "opinion-2129",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "চলতি বছর রসায়নে নোবেল পুরস্কার পেয়েছেন ফরাসি বিজ্ঞানী অঁরি কাগান এবং জাপানের বিজ্ঞানী কেনসো সোআই"
         }
       ]
@@ -236650,6 +237195,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -236680,22 +237241,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -236778,6 +237323,22 @@
       ],
       "related": [
         {
+          "cluster_id": 2139,
+          "slug": "economy-2139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশ ব্যাংকের হস্তক্ষেপের পর ৩০ ব্যাংকের এটিএমসহ ডিজিটাল সেবা চালু"
+        },
+        {
+          "cluster_id": 2137,
+          "slug": "national-2137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেধায় উত্তীর্ণ ঠিকানাহীন ছেলেটি প্রাথমিকের শিক্ষকের নিয়োগপত্র হাতে পেলেন"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -236808,22 +237369,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশে এভিয়েশন হাব গড়তে লুফথানসার সঙ্গে কাজ করতে চায় সরকার: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 1799,
-          "slug": "national-1799",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসার অ্যাপয়েন্টমেন্ট দিয়ে নতুন গাইডলাইন দিলো আইভ্যাক"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "international-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগের দাবিতে বিক্ষোভ, পতাকা হাতে ব্যারিকেডে উঠলেন রাহুল গান্ধী"
         }
       ]
     },
@@ -238247,6 +238792,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2138,
+          "slug": "national-2138",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যক্ষ্মা নির্ণয়ে আইসিডিডিআরবিকে ১.৪৫ মিলিয়ন ডলার দেবে জাপান"
+        },
+        {
           "cluster_id": 2115,
           "slug": "economy-2115",
           "actor_links": 0,
@@ -238285,14 +238838,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিখোঁজের একদিন পর ব্যবসায়ীর আগুনে ঝলসানো লাশ উদ্ধার"
         }
       ]
     },
@@ -238347,6 +238892,33 @@
           "kind": "claim",
           "claim_id": 453791,
           "claim_text": "অ্যাসোসিওর ডিজিটাল ও এআই পুরস্কার পেল বাংলাদেশের ৩ প্রতিষ্ঠান"
+        }
+      ],
+      "related": []
+    },
+    "tech-2142": {
+      "cluster_id": 2142,
+      "headline": "বাংলাদেশের নেতৃত্বে এআই অধিকারবিষয়ক প্রস্তাব জাতিসংঘ পরিষদে গৃহীত",
+      "first_seen": "2026-10-07T12:56:00.973Z",
+      "last_update": "2026-10-07T12:56:00.975Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-07T12:36:20.000Z",
+          "kind": "evidence",
+          "claim_id": 635338,
+          "claim_text": "বাংলাদেশের নেতৃত্বে এআই অধিকারবিষয়ক প্রস্তাব জাতিসংঘ পরিষদে গৃহীত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/un-council-adopts-resolution-on-ai-rights-led-by-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-10-07T13:06:10.105Z",
+          "kind": "claim",
+          "claim_id": 635338,
+          "claim_text": "বাংলাদেশের নেতৃত্বে এআই অধিকারবিষয়ক প্রস্তাব জাতিসংঘ পরিষদে গৃহীত"
         }
       ],
       "related": []
