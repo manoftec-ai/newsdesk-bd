@@ -8,7 +8,7 @@ seoDescription: "চট্টগ্রাম বন্দর জাতীয়�
 date: 2026-09-19T10:02:43.000Z
 updated: 2026-10-08T06:29:11.000Z
 tracked: true
-lastChecked: 2026-10-08T08:32:47.735Z
+lastChecked: 2026-10-09T08:36:33.573Z
 category: "national"
 tags:
   - chattogram
