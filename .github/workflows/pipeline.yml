@@ -142,6 +142,25 @@ jobs:
       - name: Extract briefs
         run: node run.js extract || echo "::error::prior pipeline step failed (stage no longer silent)"
 
+      - name: Verify claim statuses on resolved evidence
+        run: |
+          # 2026-10-09: claims are born UNCONFIRMED at extract and STAY that
+          # way unless something evaluates them — no workflow ever ran
+          # verify_claims, so the publication gate failed 800+ briefs with
+          # CLAIM_STATUS_FAILED and the site went quiet for days (all jobs
+          # green). Evaluate AFTER resolve/retext (evidence URLs are only
+          # citable once unwrapped) and BEFORE the snapshot refresh below.
+          # Idempotent: re-evaluates the whole graph from current evidence.
+          node tools/verify_claims.mjs || echo "::error::claim verification failed; briefs keep prior statuses"
+
+      - name: Refresh brief snapshots with evaluated statuses
+        run: |
+          # The gate compares brief-embedded claim snapshots against the live
+          # rows (CLAIM_VERDICT_STALE on any drift), so rebuild the briefs
+          # once more after verification. Upserts preserve evaluated statuses
+          # (lib/db.mjs); only genuinely new claims arrive UNCONFIRMED.
+          node run.js extract || echo "::error::brief refresh failed; snapshots may lag one cycle"
+
       - name: Corrections + auto re-verification
         run: |
           node tools/reverify_stories.mjs --max=50 || echo "reverify skipped/failed (harmless)"
