@@ -36,3 +36,8 @@ User report: "jachaidesk is not publishing no new news."
 1. One-time unblock: verify release freshness, then upload enriched DB → next cron extracts/publishes.
 2. Permanent runner-side fix options: Jina-reader fallback for 403 pages (needs free key as repo secret), RSS-fulltext source re-weighting, or scheduled enrich-from-home.
 3. Investigate/fix B: cache-bust release download + gate observability (log gate-fail counts in pick).
+
+## 2026-10-09 — root cause #2 found and fixed (claims never evaluated)
+- Bodies alone didn't unblock (still 0 pending after 183 merged): gate failed 821 briefs with CLAIM_STATUS_FAILED — claims are born UNCONFIRMED and NO workflow ever ran tools/verify_claims.mjs, so statuses froze forever. Second bug in same path: upsertClaim reset status to UNCONFIRMED on every extract (COALESCE on a non-null default).
+- Local proof: verify_claims → 3661 SINGLE_SOURCE + 1212 VERIFIED; fixed upsert to preserve evaluated status (+ regression test); extract→verify→extract order → pending 422, picked 6 fresh Oct 9 slugs.
+- CI fix (commit 0e46d3e7): verify_claims step + snapshot-refresh extract in pipeline.yml after resolve/retext. Proxies kept (recover ~25/run).
