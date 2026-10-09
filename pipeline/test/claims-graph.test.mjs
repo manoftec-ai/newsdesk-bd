@@ -36,6 +36,21 @@ test('upsertClaim returns the SAME stable id on duplicate text (RETURNING fix)',
   db.close();
 });
 
+test('upsertClaim preserves an evaluated status on conflict (2026-10-09 stall fix)', () => {
+  const db = memDb();
+  const id = upsertClaim(db, { cluster_id: 5, claim_text: 'Y ঘটেছে', claim_type: 'event' });
+  assert.equal(db.prepare('SELECT status s FROM claims WHERE id=?').get(id).s, 'UNCONFIRMED');
+  db.prepare("UPDATE claims SET status='VERIFIED' WHERE id=?").run(id);
+  const id2 = upsertClaim(db, { cluster_id: 5, claim_text: 'Y ঘটেছে', claim_type: 'event' });
+  assert.equal(id2, id);
+  assert.equal(
+    db.prepare('SELECT status s FROM claims WHERE id=?').get(id).s,
+    'VERIFIED',
+    're-upsert (every extract) must not wipe verify_claims output',
+  );
+  db.close();
+});
+
 test('duplicate-title members do NOT break evidence FK insert (was the bug)', () => {
   const db = memDb();
   // two members with the SAME title: second upsert conflicts-noop

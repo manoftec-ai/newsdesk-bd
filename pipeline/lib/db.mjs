@@ -261,7 +261,14 @@ export function upsertClaim(db, { cluster_id, story_slug = null, claim_text, cla
     ON CONFLICT(cluster_id, claim_text) DO UPDATE SET
       story_slug=COALESCE(excluded.story_slug, story_slug),
       claim_type=COALESCE(excluded.claim_type, claim_type),
-      status=COALESCE(excluded.status, status),
+      -- 2026-10-09: NEVER reset an evaluated status. The old
+      -- status=COALESCE(excluded.status, status) always wrote the caller's
+      -- default ('UNCONFIRMED'), so every extract wiped what verify_claims
+      -- had evaluated and the publication gate blocked the whole queue
+      -- (CLAIM_STATUS_FAILED on 800+ briefs, zero publishes for days).
+      -- New claims arrive UNCONFIRMED; evaluated ones keep their status
+      -- until verify_claims re-runs (wired in pipeline.yml after extract).
+      status=COALESCE(status, excluded.status),
       updated_at=excluded.updated_at
     RETURNING id
   `).get(cluster_id, story_slug, claim_text, claim_type, status, now, now);
