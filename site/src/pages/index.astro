@@ -167,12 +167,43 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
         <h2 id="tracked-headlines" class="mb-2 border-b border-border/60 pb-2 font-serif text-2xl font-bold">
           ট্র্যাক করা গুরুত্বপূর্ণ ঘটনা
         </h2>
-        <div class="grid gap-2">
-          {trackedStories.map((post) => (
-            <a href={`/article/${post.slug}`} class="font-medium leading-snug hover:text-primary">
-              {post.title}
-            </a>
-          ))}
+        <div class="grid gap-x-8 md:grid-cols-2">
+          {trackedStories.map((post) => {
+            const author = getAuthor(post.author);
+            const badge = getBadge(post);
+            return (
+              <div class="mini-row">
+                {post.thumbnail && (
+                  /* Not a link: the headline beside it is the link (same
+                     pattern as সাম্প্রতিক খবর above — one link per story). */
+                  <span class="mini-row-thumb">
+                    <img
+                      src={post.thumbnail}
+                      alt=""
+                      width="176"
+                      height="102"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </span>
+                )}
+                <div class="mini-row-body">
+                  <div class="flex items-center gap-2 text-xs">
+                    <VerificationBadge badge={badge} compact />
+                  </div>
+                  <a href={`/article/${post.slug}`} class="mt-1 block font-medium leading-snug hover:text-primary">
+                    {post.title}
+                  </a>
+                  <div class="mini-row-meta flex flex-wrap items-center gap-3 mt-1 text-xs text-muted-foreground">
+                    <time datetime={new Date(post.ts).toISOString()}>
+                      {formatDateTimeBDShort(post.ts)}
+                    </time>
+                    {author && <span class="flex items-center gap-1">✍️ {author.shortName || author.name}</span>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
         <a href="/tracked" class="mt-2 inline-block text-sm text-muted-foreground hover:text-primary">সব দেখুন →</a>
       </section>
@@ -183,12 +214,41 @@ const dateTime = new Intl.DateTimeFormat("bn-BD", {
         <h2 id="factcheck-headlines" class="mb-2 border-b border-border/60 pb-2 font-serif text-2xl font-bold">
           ফ্যাক্ট চেক
         </h2>
-        <div class="grid gap-2">
-          {factcheckStories.map((post) => (
-            <a href={`/article/${post.slug}`} class="font-medium leading-snug hover:text-primary">
-              {post.title}
-            </a>
-          ))}
+        <div class="grid gap-x-8 md:grid-cols-2">
+          {factcheckStories.map((post) => {
+            const author = getAuthor(post.author);
+            const badge = getBadge(post);
+            return (
+              <div class="mini-row">
+                {post.thumbnail && (
+                  <span class="mini-row-thumb">
+                    <img
+                      src={post.thumbnail}
+                      alt=""
+                      width="176"
+                      height="102"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </span>
+                )}
+                <div class="mini-row-body">
+                  <div class="flex items-center gap-2 text-xs">
+                    <VerificationBadge badge={badge} compact />
+                  </div>
+                  <a href={`/article/${post.slug}`} class="mt-1 block font-medium leading-snug hover:text-primary">
+                    {post.title}
+                  </a>
+                  <div class="mini-row-meta flex flex-wrap items-center gap-3 mt-1 text-xs text-muted-foreground">
+                    <time datetime={new Date(post.ts).toISOString()}>
+                      {formatDateTimeBDShort(post.ts)}
+                    </time>
+                    {author && <span class="flex items-center gap-1">✍️ {author.shortName || author.name}</span>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
         <a href="/factcheck" class="mt-2 inline-block text-sm text-muted-foreground hover:text-primary">সব দেখুন →</a>
       </section>
