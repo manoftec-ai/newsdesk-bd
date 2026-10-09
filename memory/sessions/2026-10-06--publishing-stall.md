@@ -41,3 +41,8 @@ User report: "jachaidesk is not publishing no new news."
 - Bodies alone didn't unblock (still 0 pending after 183 merged): gate failed 821 briefs with CLAIM_STATUS_FAILED — claims are born UNCONFIRMED and NO workflow ever ran tools/verify_claims.mjs, so statuses froze forever. Second bug in same path: upsertClaim reset status to UNCONFIRMED on every extract (COALESCE on a non-null default).
 - Local proof: verify_claims → 3661 SINGLE_SOURCE + 1212 VERIFIED; fixed upsert to preserve evaluated status (+ regression test); extract→verify→extract order → pending 422, picked 6 fresh Oct 9 slugs.
 - CI fix (commit 0e46d3e7): verify_claims step + snapshot-refresh extract in pipeline.yml after resolve/retext. Proxies kept (recover ~25/run).
+
+## 2026-10-09 — RECOVERED, publishing resumed
+- 04:59 UTC auto-author published first fresh batch (3a7f2771 + thumbnails 81ddf645 + deploy); live site verified with Oct 9 stories in 4+ categories. 5-day stall over.
+- Fixes that did it: (1) 183 bodies merged from Dhaka IP, (2) reader+translate proxy lanes (~25/run), (3) verify_claims wired post-resolve + upsert status preservation (422 pending proven locally).
+- Watch list (not blocking): 444 needsReview unknown-category briefs; translate 429s from runner IPs (no key — works without); coherence failures climbing (172) as thin clusters linger.
