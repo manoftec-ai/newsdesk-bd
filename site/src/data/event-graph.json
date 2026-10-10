@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3019,
+    "storyCount": 3026,
     "kinds": [
       "claim",
       "evidence",
@@ -15,8 +15,8 @@
       "cluster_id": 1,
       "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T09:25:22.037Z",
-      "claim_count": 23,
+      "last_update": "2026-10-10T09:55:17.377Z",
+      "claim_count": 25,
       "events": [
         {
           "ts": "2026-10-09T07:56:38.000Z",
@@ -214,6 +214,28 @@
             "source_id": "bbc-bengali",
             "relation": "supports",
             "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/2k2t5lqg0k"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/2k2t5lqg0k"
           }
         },
         {
@@ -1417,6 +1439,28 @@
           }
         },
         {
+          "ts": "2026-10-10T09:01:59.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hd9lq9j8r3"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:01:59.000Z",
+          "kind": "evidence",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hd9lq9j8r3"
+          }
+        },
+        {
           "ts": "2026-10-10T09:04:37.875Z",
           "kind": "claim",
           "claim_id": 3237,
@@ -1598,6 +1642,42 @@
             "confidence": 100,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:05:59.498Z",
+          "kind": "claim",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ"
+        },
+        {
+          "ts": "2026-10-10T10:05:59.505Z",
+          "kind": "claim",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -1777,11 +1857,41 @@
     },
     "economy-139": {
       "cluster_id": 139,
-      "headline": "আবার বিয়ে না করার শর্তে আজীবন পেনশন পাবেন বিধবা স্ত্রী বা বিপত্নীক স্বামী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+      "first_seen": "2026-10-10T09:55:17.819Z",
+      "last_update": "2026-10-10T09:55:17.821Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:05:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hj5l7gk1jo"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.107Z",
+          "kind": "claim",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1397": {
@@ -3005,6 +3115,110 @@
       "events": [],
       "related": []
     },
+    "entertainment-131": {
+      "cluster_id": 131,
+      "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+      "first_seen": "2026-10-10T09:55:17.379Z",
+      "last_update": "2026-10-10T09:55:17.382Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T07:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQRV9tUjd4VWk5RTBQdzl4Tk9HUDBUc2FlTTU4ZDY4V1VyUzJ4ckloZ2ZRMFl0SEp3SEs2NURLVmdaeVozRXZHZ2l0MkkwU3F1Q3d4NkZZbTJvbXZvQUVXWXJOOGcwSzhBMEFtXzFzbzVJc1VBd0d3cVppX25jUG1ic1BuZm54YXJ5SDdGNi1SdHBMcENoZVBKYzFpLXE5emI0U3gxd3JPZTBrUVQ1UlEzQmpBNXF0UDdXN1E4NFZzbTYwTVZhREpCOWFTTFowOHJTdkJOZUtXV1ZNT3lfeEpEb1dyRko4UVNzcVlQV3JPZ0lqdC1NaGpuWHZaTHZudEpidzNJUkZoTHh3NmxFSlBSei1ZWG1QN050d1pRdXk3eVhZWnhzSVUzeU94UmY4UWxyVkhRMUNuYVNIU2RfbjJ1amFCRmxoekV1MlN0b0dBZS1tMzlqZE5TTUk5RVFjbjkwc3l0SHJyNzBMMm1vZGhhQkRzak1xbWhKRHBwYVpFR3I4M1N6VlFoN2prTG9ZczRTVHloelBkaE9pZ3c5ZU9SSEJQQjBHbVBCWGpfZ3hSd3JuRjdockx3azdXdzc2REVxMzhhTjlsQm5lUzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQRV9tUjd4VWk5RTBQdzl4Tk9HUDBUc2FlTTU4ZDY4V1VyUzJ4ckloZ2ZRMFl0SEp3SEs2NURLVmdaeVozRXZHZ2l0MkkwU3F1Q3d4NkZZbTJvbXZvQUVXWXJOOGcwSzhBMEFtXzFzbzVJc1VBd0d3cVppX25jUG1ic1BuZm54YXJ5SDdGNi1SdHBMcENoZVBKYzFpLXE5emI0U3gxd3JPZTBrUVQ1UlEzQmpBNXF0UDdXN1E4NFZzbTYwTVZhREpCOWFTTFowOHJTdkJOZUtXV1ZNT3lfeEpEb1dyRko4UVNzcVlQV3JPZ0lqdC1NaGpuWHZaTHZudEpidzNJUkZoTHh3NmxFSlBSei1ZWG1QN050d1pRdXk3eVhZWnhzSVUzeU94UmY4UWxyVkhRMUNuYVNIU2RfbjJ1amFCRmxoekV1MlN0b0dBZS1tMzlqZE5TTUk5RVFjbjkwc3l0SHJyNzBMMm1vZGhhQkRzak1xbWhKRHBwYVpFR3I4M1N6VlFoN2prTG9ZczRTVHloelBkaE9pZ3c5ZU9SSEJQQjBHbVBCWGpfZ3hSd3JuRjdockx3azdXdzc2REVxMzhhTjlsQm5lUzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:17:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/entertainment/songs/973538/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%87%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AA%E0%A7%81-%E0%A6%95%E0%A7%87%E0%A6%AE%E0%A6%A8-%E0%A6%86%E0%A6%9B%E0%A7%87%E0%A6%A8-%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.060Z",
+          "kind": "claim",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.063Z",
+          "kind": "claim",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 86,
+          "slug": "sports-86",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
+    },
     "entertainment-1323": {
       "cluster_id": 1323,
       "headline": "এক সিনেমার দুই সমাপ্তি, পরিচালকও দুই—শতবর্ষে গার্বোর ‘দ্য টেম্পট্রেস’",
@@ -3915,7 +4129,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T09:25:22.048Z",
+      "last_update": "2026-10-10T09:55:17.396Z",
       "claim_count": 2,
       "events": [
         {
@@ -4094,6 +4308,1694 @@
       "claim_count": 0,
       "events": [],
       "related": []
+    },
+    "international-1": {
+      "cluster_id": 1,
+      "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+      "first_seen": "2026-10-10T04:01:51.823Z",
+      "last_update": "2026-10-10T09:55:17.377Z",
+      "claim_count": 25,
+      "events": [
+        {
+          "ts": "2026-10-09T07:56:38.000Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cxyvr35pe7m2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T07:56:38.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cxyvr35pe7m2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T07:56:38.000Z",
+          "kind": "evidence",
+          "claim_id": 17,
+          "claim_text": "'চাঁদা না পেয়ে' ট্রাক এনে লুটপাট; সরকার কেন চাঁদাবাজি-দখল থামাতে পারছে না?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cxyvr35pe7m2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T07:56:38.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cxyvr35pe7m2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T07:56:38.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cxyvr35pe7m2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T11:14:34.000Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw99zy014n2ko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T11:14:34.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw99zy014n2ko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T11:14:34.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw99zy014n2ko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-09T11:14:34.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cw99zy014n2ko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T01:39:55.000Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T01:39:55.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T01:39:55.000Z",
+          "kind": "evidence",
+          "claim_id": 18,
+          "claim_text": "এলপি গ্যাস সিলিন্ডারের দাম বাড়ানো হচ্ছে কীভাবে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T01:39:55.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T01:39:55.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T02:36:39.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T02:36:39.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T02:36:39.000Z",
+          "kind": "evidence",
+          "claim_id": 1868,
+          "claim_text": "পত্রিকা: 'শাহবাগ এলাকায় ৯ মাসে ৬৫ অজ্ঞাত মরদেহ উদ্ধার'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T02:36:39.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/2k2t5lqg0k"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/2k2t5lqg0k"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:17:40.000Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/cj0ciz7v7m"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:17:40.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/cj0ciz7v7m"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:17:40.000Z",
+          "kind": "evidence",
+          "claim_id": 19,
+          "claim_text": "প্রণোদনা তহবিলের ঋণে গতি কম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/cj0ciz7v7m"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:17:40.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/cj0ciz7v7m"
+          }
+        },
+        {
+          "ts": "2026-10-10T03:17:40.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/cj0ciz7v7m"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.554Z",
+          "kind": "claim",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.559Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86867"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.561Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86494"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.563Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86478"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.564Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.565Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85970"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.567Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85499"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.568Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85207"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.570Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/84758"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.571Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83902"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.572Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83726"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.574Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86679"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.575Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86653"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.577Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86651"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.578Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86563"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.579Z",
+          "kind": "evidence",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/85992"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.586Z",
+          "kind": "claim",
+          "claim_id": 2,
+          "claim_text": "প্রবাসী আয়ে শীর্ষে ঢাকা, সেরা দশে চট্টগ্রামের ছয় জেলা"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.588Z",
+          "kind": "evidence",
+          "claim_id": 2,
+          "claim_text": "প্রবাসী আয়ে শীর্ষে ঢাকা, সেরা দশে চট্টগ্রামের ছয় জেলা",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86867"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.589Z",
+          "kind": "claim",
+          "claim_id": 3,
+          "claim_text": "খেলাপির পাহাড় ভাঙতে ঋণে লাগাম"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.590Z",
+          "kind": "evidence",
+          "claim_id": 3,
+          "claim_text": "খেলাপির পাহাড় ভাঙতে ঋণে লাগাম",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86494"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.592Z",
+          "kind": "claim",
+          "claim_id": 4,
+          "claim_text": "খাদ্য নিরাপত্তায় বাংলাদেশকে ৩০০ মিলিয়ন ডলার দেবে বিশ্বব্যাংক"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.593Z",
+          "kind": "evidence",
+          "claim_id": 4,
+          "claim_text": "খাদ্য নিরাপত্তায় বাংলাদেশকে ৩০০ মিলিয়ন ডলার দেবে বিশ্বব্যাংক",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86478"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.595Z",
+          "kind": "claim",
+          "claim_id": 5,
+          "claim_text": "৯.৫০ শতাংশেই অপরিবর্তিত নীতি সুদহার"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.596Z",
+          "kind": "evidence",
+          "claim_id": 5,
+          "claim_text": "৯.৫০ শতাংশেই অপরিবর্তিত নীতি সুদহার",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.597Z",
+          "kind": "claim",
+          "claim_id": 6,
+          "claim_text": "ইসলামিক ক্রেডিট কার্ডে পরিশোধ করা যাবে না মদ-জুয়া, নাইটক্লাবের বিল"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.599Z",
+          "kind": "evidence",
+          "claim_id": 6,
+          "claim_text": "ইসলামিক ক্রেডিট কার্ডে পরিশোধ করা যাবে না মদ-জুয়া, নাইটক্লাবের বিল",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85970"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.601Z",
+          "kind": "claim",
+          "claim_id": 7,
+          "claim_text": "ডিজিটাল ব্যাংক খাতে নতুন চার প্রতিষ্ঠানের অনুমোদন"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.603Z",
+          "kind": "evidence",
+          "claim_id": 7,
+          "claim_text": "ডিজিটাল ব্যাংক খাতে নতুন চার প্রতিষ্ঠানের অনুমোদন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85499"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.605Z",
+          "kind": "claim",
+          "claim_id": 8,
+          "claim_text": "২০ দিনে ৬,৯৭৫ কোটি টাকা উত্তোলনের আবেদন"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.606Z",
+          "kind": "evidence",
+          "claim_id": 8,
+          "claim_text": "২০ দিনে ৬,৯৭৫ কোটি টাকা উত্তোলনের আবেদন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85207"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.607Z",
+          "kind": "claim",
+          "claim_id": 9,
+          "claim_text": "দুই ফ্ল্যাট ক্রোক, আবুল বারকাতের গাড়ি-ব্যাংক হিসাব ফ্রিজ"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.609Z",
+          "kind": "evidence",
+          "claim_id": 9,
+          "claim_text": "দুই ফ্ল্যাট ক্রোক, আবুল বারকাতের গাড়ি-ব্যাংক হিসাব ফ্রিজ",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/84758"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.611Z",
+          "kind": "claim",
+          "claim_id": 10,
+          "claim_text": "১০ লাখ ঋণে শুরু, সাফল্যে মিলবে আরও ১০ লাখ"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.612Z",
+          "kind": "evidence",
+          "claim_id": 10,
+          "claim_text": "১০ লাখ ঋণে শুরু, সাফল্যে মিলবে আরও ১০ লাখ",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83902"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.614Z",
+          "kind": "claim",
+          "claim_id": 11,
+          "claim_text": "মেয়াদ শেষের আগেই তিন রাষ্ট্রায়ত্ত ব্যাংকের এমডির নিয়োগ বাতিল"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.616Z",
+          "kind": "evidence",
+          "claim_id": 11,
+          "claim_text": "মেয়াদ শেষের আগেই তিন রাষ্ট্রায়ত্ত ব্যাংকের এমডির নিয়োগ বাতিল",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83726"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.617Z",
+          "kind": "claim",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.619Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86679"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.620Z",
+          "kind": "claim",
+          "claim_id": 13,
+          "claim_text": "ডেঙ্গুতে একদিনে আরও ৮ জনের মৃত্যু, নতুন আক্রান্ত ১,৮৬০"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.622Z",
+          "kind": "evidence",
+          "claim_id": 13,
+          "claim_text": "ডেঙ্গুতে একদিনে আরও ৮ জনের মৃত্যু, নতুন আক্রান্ত ১,৮৬০",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86653"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.624Z",
+          "kind": "claim",
+          "claim_id": 14,
+          "claim_text": "২৪ ঘণ্টায় হাম উপসর্গে আরও ৬ জনের মৃত্যু, মোট ১০৩৬ জন"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.625Z",
+          "kind": "evidence",
+          "claim_id": 14,
+          "claim_text": "২৪ ঘণ্টায় হাম উপসর্গে আরও ৬ জনের মৃত্যু, মোট ১০৩৬ জন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86651"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.627Z",
+          "kind": "claim",
+          "claim_id": 15,
+          "claim_text": "দেশের সব হাসপাতালে শয্যা বাড়ানোর নির্দেশ স্বাস্থ্য মন্ত্রণালয়ের"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.628Z",
+          "kind": "evidence",
+          "claim_id": 15,
+          "claim_text": "দেশের সব হাসপাতালে শয্যা বাড়ানোর নির্দেশ স্বাস্থ্য মন্ত্রণালয়ের",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86563"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.629Z",
+          "kind": "claim",
+          "claim_id": 16,
+          "claim_text": "হৃদরোগের কোনো সতর্কসংকেত উপেক্ষা করা যাবে না: স্বাস্থ্যমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.631Z",
+          "kind": "evidence",
+          "claim_id": 16,
+          "claim_text": "হৃদরোগের কোনো সতর্কসংকেত উপেক্ষা করা যাবে না: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/85992"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:11.632Z",
+          "kind": "claim",
+          "claim_id": 17,
+          "claim_text": "'চাঁদা না পেয়ে' ট্রাক এনে লুটপাট; সরকার কেন চাঁদাবাজি-দখল থামাতে পারছে না?"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.635Z",
+          "kind": "claim",
+          "claim_id": 18,
+          "claim_text": "এলপি গ্যাস সিলিন্ডারের দাম বাড়ানো হচ্ছে কীভাবে?"
+        },
+        {
+          "ts": "2026-10-10T04:13:11.638Z",
+          "kind": "claim",
+          "claim_id": 19,
+          "claim_text": "প্রণোদনা তহবিলের ঋণে গতি কম"
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 1,
+          "claim_text": "'পাঠাও' থেকে গ্রাহকদের কোন ধরনের তথ্য চুরি গেছে এবং তা কী ঝুঁকি তৈরি করতে পারে?",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 2,
+          "claim_text": "প্রবাসী আয়ে শীর্ষে ঢাকা, সেরা দশে চট্টগ্রামের ছয় জেলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 3,
+          "claim_text": "খেলাপির পাহাড় ভাঙতে ঋণে লাগাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 4,
+          "claim_text": "খাদ্য নিরাপত্তায় বাংলাদেশকে ৩০০ মিলিয়ন ডলার দেবে বিশ্বব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 5,
+          "claim_text": "৯.৫০ শতাংশেই অপরিবর্তিত নীতি সুদহার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 6,
+          "claim_text": "ইসলামিক ক্রেডিট কার্ডে পরিশোধ করা যাবে না মদ-জুয়া, নাইটক্লাবের বিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 7,
+          "claim_text": "ডিজিটাল ব্যাংক খাতে নতুন চার প্রতিষ্ঠানের অনুমোদন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 8,
+          "claim_text": "২০ দিনে ৬,৯৭৫ কোটি টাকা উত্তোলনের আবেদন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 9,
+          "claim_text": "দুই ফ্ল্যাট ক্রোক, আবুল বারকাতের গাড়ি-ব্যাংক হিসাব ফ্রিজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 10,
+          "claim_text": "১০ লাখ ঋণে শুরু, সাফল্যে মিলবে আরও ১০ লাখ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 11,
+          "claim_text": "মেয়াদ শেষের আগেই তিন রাষ্ট্রায়ত্ত ব্যাংকের এমডির নিয়োগ বাতিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 13,
+          "claim_text": "ডেঙ্গুতে একদিনে আরও ৮ জনের মৃত্যু, নতুন আক্রান্ত ১,৮৬০",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 14,
+          "claim_text": "২৪ ঘণ্টায় হাম উপসর্গে আরও ৬ জনের মৃত্যু, মোট ১০৩৬ জন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 15,
+          "claim_text": "দেশের সব হাসপাতালে শয্যা বাড়ানোর নির্দেশ স্বাস্থ্য মন্ত্রণালয়ের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 16,
+          "claim_text": "হৃদরোগের কোনো সতর্কসংকেত উপেক্ষা করা যাবে না: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 17,
+          "claim_text": "'চাঁদা না পেয়ে' ট্রাক এনে লুটপাট; সরকার কেন চাঁদাবাজি-দখল থামাতে পারছে না?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 18,
+          "claim_text": "এলপি গ্যাস সিলিন্ডারের দাম বাড়ানো হচ্ছে কীভাবে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:13:12.124Z",
+          "kind": "verify",
+          "claim_id": 19,
+          "claim_text": "প্রণোদনা তহবিলের ঋণে গতি কম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.280Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86867"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.281Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86494"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.282Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86478"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.283Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.284Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85970"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.285Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85499"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.286Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85207"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.292Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/84758"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.293Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83902"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.294Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83726"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.296Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86653"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.297Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86651"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.298Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86563"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.299Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/85992"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:13:58.754Z",
+          "kind": "verify",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:20:24.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6n4ez0339qlo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:20:24.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6n4ez0339qlo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:20:24.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6n4ez0339qlo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.058Z",
+          "kind": "claim",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি"
+        },
+        {
+          "ts": "2026-10-10T05:41:50.185Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86867"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.186Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86494"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.187Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86478"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.188Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.189Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85970"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.190Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85499"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.191Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85207"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.192Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/84758"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.193Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83902"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.194Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83726"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.195Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86679"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.196Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86653"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.197Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86651"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.198Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86563"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.199Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/85992"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:41:50.666Z",
+          "kind": "verify",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.341Z",
+          "kind": "claim",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:19:24.158Z",
+          "kind": "claim",
+          "claim_id": 1868,
+          "claim_text": "পত্রিকা: 'শাহবাগ এলাকায় ৯ মাসে ৬৫ অজ্ঞাত মরদেহ উদ্ধার'"
+        },
+        {
+          "ts": "2026-10-10T07:19:24.700Z",
+          "kind": "verify",
+          "claim_id": 1868,
+          "claim_text": "পত্রিকা: 'শাহবাগ এলাকায় ৯ মাসে ৬৫ অজ্ঞাত মরদেহ উদ্ধার'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:28:08.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/igrhyo57je"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:01:59.000Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hd9lq9j8r3"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:01:59.000Z",
+          "kind": "evidence",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/hd9lq9j8r3"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.875Z",
+          "kind": "claim",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী"
+        },
+        {
+          "ts": "2026-10-10T09:04:37.878Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86867"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.880Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86494"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.881Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86478"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.882Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/86084"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.883Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85970"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.884Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85499"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.885Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/85207"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.886Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/84758"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.887Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83902"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.889Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/Bank/83726"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.890Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86679"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.891Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86653"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.892Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86651"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.893Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/86563"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:37.894Z",
+          "kind": "evidence",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/health/85992"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:04:38.533Z",
+          "kind": "verify",
+          "claim_id": 3237,
+          "claim_text": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:05:59.498Z",
+          "kind": "claim",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ"
+        },
+        {
+          "ts": "2026-10-10T10:05:59.505Z",
+          "kind": "claim",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4057,
+          "claim_text": "আটকের জন্য প্রস্তুত : দিল্লিতে রওনা হওয়ার আগে অভিজিৎ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4061,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁস: ৩ লাখ চাকরিপ্রার্থীর সঙ্গে কেন এই প্রতারণা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 43,
+          "slug": "international-43",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "নাভি পিল্লাইকে নোবেল শান্তি পুরস্কার দেওয়ার সিদ্ধান্ত ‘লজ্জাজনক’: ট্রাম্প"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
     },
     "international-1023": {
       "cluster_id": 1023,
@@ -4608,12 +6510,91 @@
     },
     "international-134": {
       "cluster_id": 134,
-      "headline": "জাতিসংঘের মহাসচিব হওয়ার প্রতিদ্বন্দ্বিতা থেকে সরে দাঁড়ালেন মিশেল ব্যাশেলেট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+      "first_seen": "2026-10-10T09:55:17.407Z",
+      "last_update": "2026-10-10T09:55:17.410Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-08T15:19:31.000Z",
+          "kind": "evidence",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOSTh4amVuakVfakVmdTF1SF9XLUdyTlB0bUZxMWpXX3ZyTmdOc0JEREdjVVd6ZThEcF9GbHdDV2dKdGJZMUc0QVdDTnFUTjZ6WGphemo5YVRhV3B5b3BaSTRGVHdSVWJ5Rm5ReTV2Ynl0dzIwYllTV0FlRmxCb2hkSklHYW1lb1lVZXRxWVA5Z0tsZDdINlJWVXN4bndiWVNQZlJmS0t6N1R6dV90bF9DcjA4TU1YQ0UycVRCRk9SbXM4WG1BTFJEMnpDX2I2VXkxeFJFS2RsUW9JWHY1dXhKaXd3X0tsckIzZ0pwcVQ5LWt0LVQ4Mllwak5PbTlXYjBuNW16THNUSVhsVW4xamJ6Q2lqQTdULWtZWEtpWFRPRDNpT00yVDhwdzY2c0VwM2pzVDZuN2kyWTUtWXYwMXpGYWRzN1J0T3JYOUFzWGpyMHZLb3hxbThQYWpnSExpV2EwaENES09ZTWNtR0lESWtvMUo1eWt1RE1VTEx6N1ZZenB2X2Q2SWtSX2UxNXdKYzJVcjBBX0c1U0RHZFVoVGFYc1lqM0E0Vkx3ajhJVlRJQU5IemZjTGxvTE13bVl2cUFnbGc3V19hWWNGWTM4NGxTamhMbk9iUGJWM3YtdEpXcTA5b1U0VlVhTmhiTURrSDNfNWttYWVEd1RMSTR5TDJoUUdJQVdSZk1UaExUZjYzVDlDVFdWWWw0WGUxRGtZOEdSWHRiTNIBqgRBVV95cUxOVFpxUEZXRDhEMkpPdE16MThUMHlmZ2tKRWV5Tlg4T2syUm4tQmRMV2p5TlNBS0NCbGxtOGFhQmlrTkJTYmJRRUpYdGdTemYtX2FoQ2hvUy1MeHJPSndZVmkxN3NUX3NZS1V4S0g3WGk0R19JT0dlRHhiaF9vNEIzSXFNQTlFVVI4aXotazNOaDZWVk92SkZLTDJVOG5adXpOVVMxeHBtWEQtekVPRGdqaXBIRHZ4d2drbTByOEIyMGJJaXBxYWVZVTVwdzdyaFFja0Nxa0N4aG52RlhVNkdVTXJBZDBPSE9rSG4yaTV6SGc3R1NBNTQ3emZ5ekFIZndZQWhBTlNHZ0Q4TW8wdGRRUVp4WEJLaXFfTU1hM2lOb1RGd2xrYWFVTXJ6LW5kOF81SUo3MHEtUGJwOWNfNnNWa3U5U21XdTBIV0xqNjlQd1B3NUFQQXBQUVpPV01BeDVpYUFwdzFac2QxTzBnN3loMnhpeHg3MHJTcGZHRWIzZmtkMUs0QVcyc0ZuZVA2QU5MSVVzSGpuNjA3MVJuVlhHREVrbXpaMmh3SmgyT19aZXU0MnhsTjNxOHJJUmlKOERMLVVzUEpsS29vRXEyM2xaNmVOX1JtX0wxaXdhTTZ3SHRUZkhMamRZQ3hnN3JYMG92YXlQSTZGbGgzN2dIWXloRWtwQzZCN0VrdTktUnZxalFjb3NFazdIeHE1YjRFOF9NUDM2cjJ6NTZHUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-08T15:40:03.000Z",
+          "kind": "evidence",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/education/110952/%E0%A7%AB%E0%A7%A6%E0%A6%A4%E0%A6%AE-%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%8F%E0%A6%B8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-10-08T15:40:03.000Z",
+          "kind": "evidence",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/education/110952/%E0%A7%AB%E0%A7%A6%E0%A6%A4%E0%A6%AE-%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%8F%E0%A6%B8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.090Z",
+          "kind": "claim",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.093Z",
+          "kind": "claim",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        }
+      ]
     },
     "international-1343": {
       "cluster_id": 1343,
@@ -4624,6 +6605,45 @@
       "events": [],
       "related": []
     },
+    "international-135": {
+      "cluster_id": 135,
+      "headline": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+      "first_seen": "2026-10-10T09:55:17.802Z",
+      "last_update": "2026-10-10T09:55:17.804Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:42:58.000Z",
+          "kind": "evidence",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/shehbaz-sharif-had-hoped-trump-would-receive-the-nobel-peace-prize/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.095Z",
+          "kind": "claim",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-1352": {
       "cluster_id": 1352,
       "headline": "বাল্যবন্ধু তৌফিকের বিদায়ে কিছু স্মৃতি",
@@ -4631,6 +6651,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "international-136": {
+      "cluster_id": 136,
+      "headline": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+      "first_seen": "2026-10-10T09:55:17.806Z",
+      "last_update": "2026-10-10T09:55:17.810Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:22:02.000Z",
+          "kind": "evidence",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/9vjbghughf"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.098Z",
+          "kind": "claim",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1361": {
@@ -6311,7 +8370,7 @@
       "related": [
         {
           "cluster_id": 1,
-          "slug": "economy-1",
+          "slug": "international-1",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 3,
@@ -7151,7 +9210,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T09:25:22.054Z",
+      "last_update": "2026-10-10T09:55:17.401Z",
       "claim_count": 3,
       "events": [
         {
@@ -7265,6 +9324,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
         {
           "cluster_id": 105,
           "slug": "national-105",
@@ -9158,7 +11225,7 @@
       "cluster_id": 114,
       "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর",
       "first_seen": "2026-10-10T08:55:22.916Z",
-      "last_update": "2026-10-10T09:25:22.047Z",
+      "last_update": "2026-10-10T09:55:17.395Z",
       "claim_count": 2,
       "events": [
         {
@@ -9324,7 +11391,7 @@
       "cluster_id": 115,
       "headline": "সাফারি পার্ক থেকে দুই লেমুর চুরির ঘটনায় দায়ীদের বিরুদ্ধে কঠোর ব্যবস্থা: পরিবেশ মন্ত্রী",
       "first_seen": "2026-10-10T08:55:22.923Z",
-      "last_update": "2026-10-10T09:25:22.050Z",
+      "last_update": "2026-10-10T09:55:17.396Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -9405,7 +11472,7 @@
       "cluster_id": 116,
       "headline": "এনসিটি নিয়ে ডিপি ওয়ার্ল্ডের সঙ্গে চুক্তিতে কী রয়েছে, জানালেন আশিক চৌধুরী",
       "first_seen": "2026-10-10T08:55:22.934Z",
-      "last_update": "2026-10-10T09:25:22.056Z",
+      "last_update": "2026-10-10T09:55:17.403Z",
       "claim_count": 2,
       "events": [
         {
@@ -9556,7 +11623,7 @@
       "cluster_id": 117,
       "headline": "বিমানবন্দরে আটকে দেওয়া হয়েছে বৈষম্যবিরোধী আন্দোলনের নেতা মাহদীকে",
       "first_seen": "2026-10-10T08:55:22.939Z",
-      "last_update": "2026-10-10T09:25:22.058Z",
+      "last_update": "2026-10-10T09:55:17.406Z",
       "claim_count": 2,
       "events": [
         {
@@ -10732,7 +12799,7 @@
       "cluster_id": 125,
       "headline": "মা হওয়ার পর চেহারা নিয়ে কটাক্ষ, জবাব দিলেন ক্যাটরিনা",
       "first_seen": "2026-10-10T09:25:22.041Z",
-      "last_update": "2026-10-10T09:25:22.044Z",
+      "last_update": "2026-10-10T09:55:17.390Z",
       "claim_count": 2,
       "events": [
         {
@@ -11501,12 +13568,107 @@
     },
     "national-131": {
       "cluster_id": 131,
-      "headline": "অপ্রতিম হত্যার বিচারের দাবিতে দেড় ঘণ্টা ঢাকা-চট্টগ্রাম মহাসড়ক অবরোধ, বিক্ষোভ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+      "first_seen": "2026-10-10T09:55:17.379Z",
+      "last_update": "2026-10-10T09:55:17.382Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T07:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQRV9tUjd4VWk5RTBQdzl4Tk9HUDBUc2FlTTU4ZDY4V1VyUzJ4ckloZ2ZRMFl0SEp3SEs2NURLVmdaeVozRXZHZ2l0MkkwU3F1Q3d4NkZZbTJvbXZvQUVXWXJOOGcwSzhBMEFtXzFzbzVJc1VBd0d3cVppX25jUG1ic1BuZm54YXJ5SDdGNi1SdHBMcENoZVBKYzFpLXE5emI0U3gxd3JPZTBrUVQ1UlEzQmpBNXF0UDdXN1E4NFZzbTYwTVZhREpCOWFTTFowOHJTdkJOZUtXV1ZNT3lfeEpEb1dyRko4UVNzcVlQV3JPZ0lqdC1NaGpuWHZaTHZudEpidzNJUkZoTHh3NmxFSlBSei1ZWG1QN050d1pRdXk3eVhZWnhzSVUzeU94UmY4UWxyVkhRMUNuYVNIU2RfbjJ1amFCRmxoekV1MlN0b0dBZS1tMzlqZE5TTUk5RVFjbjkwc3l0SHJyNzBMMm1vZGhhQkRzak1xbWhKRHBwYVpFR3I4M1N6VlFoN2prTG9ZczRTVHloelBkaE9pZ3c5ZU9SSEJQQjBHbVBCWGpfZ3hSd3JuRjdockx3azdXdzc2REVxMzhhTjlsQm5lUzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQRV9tUjd4VWk5RTBQdzl4Tk9HUDBUc2FlTTU4ZDY4V1VyUzJ4ckloZ2ZRMFl0SEp3SEs2NURLVmdaeVozRXZHZ2l0MkkwU3F1Q3d4NkZZbTJvbXZvQUVXWXJOOGcwSzhBMEFtXzFzbzVJc1VBd0d3cVppX25jUG1ic1BuZm54YXJ5SDdGNi1SdHBMcENoZVBKYzFpLXE5emI0U3gxd3JPZTBrUVQ1UlEzQmpBNXF0UDdXN1E4NFZzbTYwTVZhREpCOWFTTFowOHJTdkJOZUtXV1ZNT3lfeEpEb1dyRko4UVNzcVlQV3JPZ0lqdC1NaGpuWHZaTHZudEpidzNJUkZoTHh3NmxFSlBSei1ZWG1QN050d1pRdXk3eVhZWnhzSVUzeU94UmY4UWxyVkhRMUNuYVNIU2RfbjJ1amFCRmxoekV1MlN0b0dBZS1tMzlqZE5TTUk5RVFjbjkwc3l0SHJyNzBMMm1vZGhhQkRzak1xbWhKRHBwYVpFR3I4M1N6VlFoN2prTG9ZczRTVHloelBkaE9pZ3c5ZU9SSEJQQjBHbVBCWGpfZ3hSd3JuRjdockx3azdXdzc2REVxMzhhTjlsQm5lUzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:17:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/entertainment/songs/973538/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%87%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AA%E0%A7%81-%E0%A6%95%E0%A7%87%E0%A6%AE%E0%A6%A8-%E0%A6%86%E0%A6%9B%E0%A7%87%E0%A6%A8-%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.060Z",
+          "kind": "claim",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.063Z",
+          "kind": "claim",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4240,
+          "claim_text": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4241,
+          "claim_text": "জীবন-মৃত্যুর সন্ধিক্ষণে ইবরার টিপু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 86,
+          "slug": "sports-86",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
     },
     "national-1311": {
       "cluster_id": 1311,
@@ -11582,12 +13744,251 @@
     },
     "national-132": {
       "cluster_id": 132,
-      "headline": "আইইএলটিএসে ৯-এ ৯ পেয়েছেন রাইসা, পড়ুন তাঁর পরামর্শ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+      "first_seen": "2026-10-10T09:55:17.383Z",
+      "last_update": "2026-10-10T09:55:17.389Z",
+      "claim_count": 5,
+      "events": [
+        {
+          "ts": "2026-10-07T07:18:13.000Z",
+          "kind": "evidence",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aekFCTU1JSjhoelo5YnYwbXlOTndZY2pPSnl0VktPY1pGdFBMUU8yVWdXaU9GWHNNVmd2Y2FjRTVySXY0ZzJBQnJPUFJYVG43TjZtRnRaUkkyZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:53:24.000Z",
+          "kind": "evidence",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CdUszZC1QUmN5TV9KNmY3RDRVYlRlSXBKdk9hVHpXS2hhNm4yZS1va1NqVmI0OVV6YWtsN1ItS1R0dV9ibWtkQmwtSC0zTzE4OEVra1l5eTJCZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:53:24.000Z",
+          "kind": "evidence",
+          "claim_id": 4243,
+          "claim_text": "দিল্লিতে মমতা বন্দ্যোপাধ্যায় আটক",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CdUszZC1QUmN5TV9KNmY3RDRVYlRlSXBKdk9hVHpXS2hhNm4yZS1va1NqVmI0OVV6YWtsN1ItS1R0dV9ibWtkQmwtSC0zTzE4OEVra1l5eTJCZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4244,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:08:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxPOFF4S3pJek9ON2lFTkgwQ3ItTjF1SUQ2TjFZQkFTWnd1bGxSM2JvQi1vSEUwZ3VkS0c1TGszWjU1amZkdGloVFcyQkpxZHlVaXpFR0piMExocDAxV25zTExsNGtIVmM5cDFLcHYyM2lxUWhFajlxajFtZm9fS3lZVFFtd3o5TzBBMXdTc2RmREpGYkRELXFwWHU3N1ZUeW4tLTEzTVJ6TFhfZ3lFWnJMYlVTcnNIa3N4X2I5NklJSWZSakpPa0s2R1FxVEZyT3A2RGFlZm1CSHEzZWFRTGJoZi1nZFp4SjRMTHA3VWNOVGcxNElzd1RfWm5SMWN5Sy11Uk5zdXZxTjJ0TThKZmJ1a3dJWjloWUxSMHhlYUdXTzhIVlRNLTNSdzFUbER5ckZoMU5xZ1psRm54aFpwRGJWejQxcDNmb25qUlVTT1hMcDVFb3BUbWRybmtCWGNBSXhQaU5IX1Vua1lxaEZfLXZnMkcwWTZOekZCZmtSWGduZ0xCN2dmQmM4LWNrMXJRQjVzS00zbm1oREpDbmRKcVBmTlRHNjdlQW5fcWhmS0hsY3NQcldKWnZaRXJTRzdyRHdjb1RHQ1dtVHBZamM1Rlg2c1Q1WVROMGE5bGppYW1OOHBWLS1Nb2N4S2lEUnMxSHRiZlY2eWFCaVF2UnNoSWFMOEVIT19FdlphOUUzeFJHLTRWbkRDcUE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:08:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4245,
+          "claim_text": "দিল্লিতে বিক্ষোভের জেরে আটক মমতা, নেহা বোরা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxPOFF4S3pJek9ON2lFTkgwQ3ItTjF1SUQ2TjFZQkFTWnd1bGxSM2JvQi1vSEUwZ3VkS0c1TGszWjU1amZkdGloVFcyQkpxZHlVaXpFR0piMExocDAxV25zTExsNGtIVmM5cDFLcHYyM2lxUWhFajlxajFtZm9fS3lZVFFtd3o5TzBBMXdTc2RmREpGYkRELXFwWHU3N1ZUeW4tLTEzTVJ6TFhfZ3lFWnJMYlVTcnNIa3N4X2I5NklJSWZSakpPa0s2R1FxVEZyT3A2RGFlZm1CSHEzZWFRTGJoZi1nZFp4SjRMTHA3VWNOVGcxNElzd1RfWm5SMWN5Sy11Uk5zdXZxTjJ0TThKZmJ1a3dJWjloWUxSMHhlYUdXTzhIVlRNLTNSdzFUbER5ckZoMU5xZ1psRm54aFpwRGJWejQxcDNmb25qUlVTT1hMcDVFb3BUbWRybmtCWGNBSXhQaU5IX1Vua1lxaEZfLXZnMkcwWTZOekZCZmtSWGduZ0xCN2dmQmM4LWNrMXJRQjVzS00zbm1oREpDbmRKcVBmTlRHNjdlQW5fcWhmS0hsY3NQcldKWnZaRXJTRzdyRHdjb1RHQ1dtVHBZamM1Rlg2c1Q1WVROMGE5bGppYW1OOHBWLS1Nb2N4S2lEUnMxSHRiZlY2eWFCaVF2UnNoSWFMOEVIT19FdlphOUUzeFJHLTRWbkRDcUE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:09:33.000Z",
+          "kind": "evidence",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RRmtjeFJnQXhuY2U2cV8yMThJTUVoTHpZS2VtVWVHY3k1TTZkdXNHc0l0VjhwZl9UZkpUVTM4ZWFlWlQzdFhwemM2emJvNDJaZWYtbDZlWE9ldw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:09:33.000Z",
+          "kind": "evidence",
+          "claim_id": 4246,
+          "claim_text": "এবার ছাত্রনেত্রী নেহা বোরা আটক",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RRmtjeFJnQXhuY2U2cV8yMThJTUVoTHpZS2VtVWVHY3k1TTZkdXNHc0l0VjhwZl9UZkpUVTM4ZWFlWlQzdFhwemM2emJvNDJaZWYtbDZlWE9ldw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.067Z",
+          "kind": "claim",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.073Z",
+          "kind": "claim",
+          "claim_id": 4243,
+          "claim_text": "দিল্লিতে মমতা বন্দ্যোপাধ্যায় আটক"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.077Z",
+          "kind": "claim",
+          "claim_id": 4244,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.079Z",
+          "kind": "claim",
+          "claim_id": 4245,
+          "claim_text": "দিল্লিতে বিক্ষোভের জেরে আটক মমতা, নেহা বোরা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.081Z",
+          "kind": "claim",
+          "claim_id": 4246,
+          "claim_text": "এবার ছাত্রনেত্রী নেহা বোরা আটক"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4242,
+          "claim_text": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4243,
+          "claim_text": "দিল্লিতে মমতা বন্দ্যোপাধ্যায় আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4244,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4245,
+          "claim_text": "দিল্লিতে বিক্ষোভের জেরে আটক মমতা, নেহা বোরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4246,
+          "claim_text": "এবার ছাত্রনেত্রী নেহা বোরা আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "cluster_id": 72,
+          "slug": "national-72",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আজ শুভ মহালয়া: মর্ত্যে চণ্ডীপাঠ-তর্পণের মধ্য দিয়ে দেবীপক্ষের সূচনা"
+        },
+        {
+          "cluster_id": 20,
+          "slug": "national-20",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "national-1320": {
       "cluster_id": 1320,
@@ -11642,6 +14043,110 @@
       "claim_count": 0,
       "events": [],
       "related": []
+    },
+    "national-133": {
+      "cluster_id": 133,
+      "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+      "first_seen": "2026-10-10T09:55:17.391Z",
+      "last_update": "2026-10-10T09:55:17.394Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T07:11:56.000Z",
+          "kind": "evidence",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZRVpNNmRYT0J5eVJHUXBZQUhSU29sVUJ1Rm5FeDBqNUtGM3FtT0FaenRpN2NXdGhSbWRKdUZ3aHdyZnRHUENIUFhNMTVZcXpPdU5zVE51UEsyZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:11:56.000Z",
+          "kind": "evidence",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZRVpNNmRYT0J5eVJHUXBZQUhSU29sVUJ1Rm5FeDBqNUtGM3FtT0FaenRpN2NXdGhSbWRKdUZ3aHdyZnRHUENIUFhNMTVZcXpPdU5zVE51UEsyZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:07:05.000Z",
+          "kind": "evidence",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxQa1BrZHN5bFg5R1lTbmdTaGhsM3gwR3pkSkVuN2VBSmkxM25IcGxlN0ljdVhKRHdLMWFjU1QxdzZJcmVrSURvYzZJcXdlZmxvSm1LWUJGRmduUENYdXROTTdub1Z4RlkyNHZOODF0QXZUa2tvbUx0a3hlR1kxNEk0TUJTcFExc1k3Z0xPSnE5czdqU05CSXhyVTN3Y0NUT0JoelBCNDBZLW5QUVdoOXF2dkFVRVlPWl9TM3pCY25Tb2tXZTFyaVpyUDdGYVhsZkdOOE1IZm9WdVN2MVlqajQxdGdVbEtJUmNEY0UzWmlHUnRXaWZoMDdqMnVvcnlCWWZON2NiZUxfX0sxZUR6S2lXZmxFSVlDbjZ2eHdEcmpUakRJS0pHb0g3enNiTlJzQ0NiTEVPb2JlWVlPSHF1NHRPZW44VnpNX05QSGFHTEJwM1F0dS1CUWtlejNrVG1SMU1jQ1EzVHYybF9oTFNwRVpxOGU5b0xDSEwyOG16N3ExM0ZjTEN0RWZCd3NxV0tnSkNLdG1wMkNCdF9Va3MtUjR1c3JPX0o4MlZBU2hfRmVOMG9ucWNqMkthTi1PajUwNkd0NWNPM1ljSm5tZmxmR0lvM2FXR2MwMzkzdWgyakREUExlc2F4MmFjZkgwak1HQmtNeS1aV3RDeUNqZW9MZk1BSWI2OFBsZGh6Sk5hUkQxelA0aTN4YUVDc3c4VVJYamFlUHBqeWphUjVXcHU1ejZvUWl4TU9hQk9nZHNTbS1KanhwaVNlYWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.083Z",
+          "kind": "claim",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.087Z",
+          "kind": "claim",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "national-1330": {
       "cluster_id": 1330,
@@ -11714,6 +14219,94 @@
       "claim_count": 0,
       "events": [],
       "related": []
+    },
+    "national-134": {
+      "cluster_id": 134,
+      "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+      "first_seen": "2026-10-10T09:55:17.407Z",
+      "last_update": "2026-10-10T09:55:17.410Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-08T15:19:31.000Z",
+          "kind": "evidence",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOSTh4amVuakVfakVmdTF1SF9XLUdyTlB0bUZxMWpXX3ZyTmdOc0JEREdjVVd6ZThEcF9GbHdDV2dKdGJZMUc0QVdDTnFUTjZ6WGphemo5YVRhV3B5b3BaSTRGVHdSVWJ5Rm5ReTV2Ynl0dzIwYllTV0FlRmxCb2hkSklHYW1lb1lVZXRxWVA5Z0tsZDdINlJWVXN4bndiWVNQZlJmS0t6N1R6dV90bF9DcjA4TU1YQ0UycVRCRk9SbXM4WG1BTFJEMnpDX2I2VXkxeFJFS2RsUW9JWHY1dXhKaXd3X0tsckIzZ0pwcVQ5LWt0LVQ4Mllwak5PbTlXYjBuNW16THNUSVhsVW4xamJ6Q2lqQTdULWtZWEtpWFRPRDNpT00yVDhwdzY2c0VwM2pzVDZuN2kyWTUtWXYwMXpGYWRzN1J0T3JYOUFzWGpyMHZLb3hxbThQYWpnSExpV2EwaENES09ZTWNtR0lESWtvMUo1eWt1RE1VTEx6N1ZZenB2X2Q2SWtSX2UxNXdKYzJVcjBBX0c1U0RHZFVoVGFYc1lqM0E0Vkx3ajhJVlRJQU5IemZjTGxvTE13bVl2cUFnbGc3V19hWWNGWTM4NGxTamhMbk9iUGJWM3YtdEpXcTA5b1U0VlVhTmhiTURrSDNfNWttYWVEd1RMSTR5TDJoUUdJQVdSZk1UaExUZjYzVDlDVFdWWWw0WGUxRGtZOEdSWHRiTNIBqgRBVV95cUxOVFpxUEZXRDhEMkpPdE16MThUMHlmZ2tKRWV5Tlg4T2syUm4tQmRMV2p5TlNBS0NCbGxtOGFhQmlrTkJTYmJRRUpYdGdTemYtX2FoQ2hvUy1MeHJPSndZVmkxN3NUX3NZS1V4S0g3WGk0R19JT0dlRHhiaF9vNEIzSXFNQTlFVVI4aXotazNOaDZWVk92SkZLTDJVOG5adXpOVVMxeHBtWEQtekVPRGdqaXBIRHZ4d2drbTByOEIyMGJJaXBxYWVZVTVwdzdyaFFja0Nxa0N4aG52RlhVNkdVTXJBZDBPSE9rSG4yaTV6SGc3R1NBNTQ3emZ5ekFIZndZQWhBTlNHZ0Q4TW8wdGRRUVp4WEJLaXFfTU1hM2lOb1RGd2xrYWFVTXJ6LW5kOF81SUo3MHEtUGJwOWNfNnNWa3U5U21XdTBIV0xqNjlQd1B3NUFQQXBQUVpPV01BeDVpYUFwdzFac2QxTzBnN3loMnhpeHg3MHJTcGZHRWIzZmtkMUs0QVcyc0ZuZVA2QU5MSVVzSGpuNjA3MVJuVlhHREVrbXpaMmh3SmgyT19aZXU0MnhsTjNxOHJJUmlKOERMLVVzUEpsS29vRXEyM2xaNmVOX1JtX0wxaXdhTTZ3SHRUZkhMamRZQ3hnN3JYMG92YXlQSTZGbGgzN2dIWXloRWtwQzZCN0VrdTktUnZxalFjb3NFazdIeHE1YjRFOF9NUDM2cjJ6NTZHUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-08T15:40:03.000Z",
+          "kind": "evidence",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/education/110952/%E0%A7%AB%E0%A7%A6%E0%A6%A4%E0%A6%AE-%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%8F%E0%A6%B8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-10-08T15:40:03.000Z",
+          "kind": "evidence",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/education/110952/%E0%A7%AB%E0%A7%A6%E0%A6%A4%E0%A6%AE-%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%8F%E0%A6%B8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.090Z",
+          "kind": "claim",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.093Z",
+          "kind": "claim",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4249,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4250,
+          "claim_text": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য নতুন নির্দেশনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        }
+      ]
     },
     "national-1340": {
       "cluster_id": 1340,
@@ -11789,11 +14382,41 @@
     },
     "national-135": {
       "cluster_id": 135,
-      "headline": "কুমিল্লা বিশ্ববিদ্যালয়ের অপ্রতিমের জানাজায় মানুষের ঢল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+      "first_seen": "2026-10-10T09:55:17.802Z",
+      "last_update": "2026-10-10T09:55:17.804Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:42:58.000Z",
+          "kind": "evidence",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/shehbaz-sharif-had-hoped-trump-would-receive-the-nobel-peace-prize/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.095Z",
+          "kind": "claim",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4251,
+          "claim_text": "ট্রাম্প শান্তিতে নোবেল পাবেন, আশা করেছিলেন শেহবাজ শরিফ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1353": {
@@ -11852,11 +14475,41 @@
     },
     "national-136": {
       "cluster_id": 136,
-      "headline": "ক্যারিবীয় সাগরে নৌযানে হামলা চালিয়ে ৪ জনকে হত্যা করেছে যুক্তরাষ্ট্র",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+      "first_seen": "2026-10-10T09:55:17.806Z",
+      "last_update": "2026-10-10T09:55:17.810Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:22:02.000Z",
+          "kind": "evidence",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/9vjbghughf"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.098Z",
+          "kind": "claim",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4252,
+          "claim_text": "পিটিআইয়ের লংমার্চ ঠেকাতে খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা বা গভর্নরের শাসন জারি হতে পারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1360": {
@@ -11933,11 +14586,41 @@
     },
     "national-137": {
       "cluster_id": 137,
-      "headline": "একাদশে ভর্তি শুরু আজ, চলবে ২২ সেপ্টেম্বর পর্যন্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ময়মনসিংহে দুই বছরের শিশুকে বিষ পান করিয়ে হত্যা, আদালতে সৎমায়ের স্বীকারোক্তি",
+      "first_seen": "2026-10-10T09:55:17.811Z",
+      "last_update": "2026-10-10T09:55:17.813Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4253,
+          "claim_text": "ময়মনসিংহে দুই বছরের শিশুকে বিষ পান করিয়ে হত্যা, আদালতে সৎমায়ের স্বীকারোক্তি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/8i0su8zyvx"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.101Z",
+          "kind": "claim",
+          "claim_id": 4253,
+          "claim_text": "ময়মনসিংহে দুই বছরের শিশুকে বিষ পান করিয়ে হত্যা, আদালতে সৎমায়ের স্বীকারোক্তি"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4253,
+          "claim_text": "ময়মনসিংহে দুই বছরের শিশুকে বিষ পান করিয়ে হত্যা, আদালতে সৎমায়ের স্বীকারোক্তি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1370": {
@@ -11983,6 +14666,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-138": {
+      "cluster_id": 138,
+      "headline": "গভীর রাতে মুখোশ পরে ঘরে ঢুকে হামলা, ছররা গুলিতে আহত ৩",
+      "first_seen": "2026-10-10T09:55:17.815Z",
+      "last_update": "2026-10-10T09:55:17.817Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:12:07.000Z",
+          "kind": "evidence",
+          "claim_id": 4254,
+          "claim_text": "গভীর রাতে মুখোশ পরে ঘরে ঢুকে হামলা, ছররা গুলিতে আহত ৩",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/2jv81308w8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.104Z",
+          "kind": "claim",
+          "claim_id": 4254,
+          "claim_text": "গভীর রাতে মুখোশ পরে ঘরে ঢুকে হামলা, ছররা গুলিতে আহত ৩"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4254,
+          "claim_text": "গভীর রাতে মুখোশ পরে ঘরে ঢুকে হামলা, ছররা গুলিতে আহত ৩",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1382": {
@@ -12041,11 +14763,41 @@
     },
     "national-139": {
       "cluster_id": 139,
-      "headline": "গত ২৪ ঘণ্টায় ডেঙ্গুতে ছয়জনের মৃত্যু, হাসপাতালে ভর্তি ১৫৯৩",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+      "first_seen": "2026-10-10T09:55:17.819Z",
+      "last_update": "2026-10-10T09:55:17.821Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T09:05:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hj5l7gk1jo"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.107Z",
+          "kind": "claim",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4255,
+          "claim_text": "পেশা টিকিয়ে রাখাই কঠিন হয়ে পড়েছে প্রতিমাশিল্পীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1390": {
@@ -18009,6 +20761,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -18031,14 +20791,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কেন রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র নির্মাণে ব্যয় দ্বিগুণের বেশি?"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -19626,7 +22378,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T09:25:22.055Z",
+      "last_update": "2026-10-10T09:55:17.402Z",
       "claim_count": 2,
       "events": [
         {
@@ -21245,7 +23997,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T09:25:22.057Z",
+      "last_update": "2026-10-10T09:55:17.405Z",
       "claim_count": 2,
       "events": [
         {
@@ -22892,6 +25644,14 @@
       ],
       "related": [
         {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
           "cluster_id": 20,
           "slug": "national-20",
           "actor_links": 0,
@@ -22908,6 +25668,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -22922,22 +25690,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 105,
-          "slug": "national-105",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী"
-        },
-        {
-          "cluster_id": 72,
-          "slug": "national-72",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ শুভ মহালয়া: মর্ত্যে চণ্ডীপাঠ-তর্পণের মধ্য দিয়ে দেবীপক্ষের সূচনা"
         }
       ]
     },
@@ -25232,7 +27984,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T09:25:22.052Z",
+      "last_update": "2026-10-10T09:55:17.399Z",
       "claim_count": 2,
       "events": [
         {
@@ -25305,13 +28057,22 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
+        }
+      ]
     },
     "national-30": {
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T09:25:22.060Z",
+      "last_update": "2026-10-10T09:55:17.413Z",
       "claim_count": 2,
       "events": [
         {
@@ -25480,7 +28241,7 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T09:25:22.061Z",
+      "last_update": "2026-10-10T09:55:17.414Z",
       "claim_count": 10,
       "events": [
         {
@@ -27737,7 +30498,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T09:25:22.051Z",
+      "last_update": "2026-10-10T09:55:17.397Z",
       "claim_count": 2,
       "events": [
         {
@@ -28084,7 +30845,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T09:25:22.059Z",
+      "last_update": "2026-10-10T09:55:17.411Z",
       "claim_count": 2,
       "events": [
         {
@@ -28275,7 +31036,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T09:25:22.059Z",
+      "last_update": "2026-10-10T09:55:17.412Z",
       "claim_count": 2,
       "events": [
         {
@@ -31458,6 +34219,14 @@
       ],
       "related": [
         {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
           "cluster_id": 26,
           "slug": "national-26",
           "actor_links": 0,
@@ -32463,6 +35232,22 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
           "cluster_id": 125,
           "slug": "national-125",
           "actor_links": 0,
@@ -32493,22 +35278,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সন্দেহের বশে বাংলাদেশি তকমা দিয়ে দেশছাড়া করা যাবে না: কলকাতা হাইকোর্ট"
-        },
-        {
-          "cluster_id": 18,
-          "slug": "national-18",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "অসংখ্য ডিসেম্বর আসবে, তবু শেখ হাসিনা ফিরতে পারবেন না: রাশেদ খাঁন"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -32903,8 +35672,8 @@
       "cluster_id": 84,
       "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
       "first_seen": "2026-10-10T07:09:36.452Z",
-      "last_update": "2026-10-10T09:25:22.049Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T09:55:17.379Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-10T05:16:43.000Z",
@@ -32974,9 +35743,70 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T09:41:29.000Z",
+          "kind": "evidence",
+          "claim_id": 2001,
+          "claim_text": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/schoolgirl-raped-and-murdered-in-cumilla-cng-driver-arrested/"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:41:29.000Z",
+          "kind": "evidence",
+          "claim_id": 4190,
+          "claim_text": "কুমিল্লায় স্কুলছাত্রীকে ধর্ষণের পর হত্যা, গ্রেপ্তার সিএনজিচালক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/schoolgirl-raped-and-murdered-in-cumilla-cng-driver-arrested/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:05:59.912Z",
+          "kind": "claim",
+          "claim_id": 4190,
+          "claim_text": "কুমিল্লায় স্কুলছাত্রীকে ধর্ষণের পর হত্যা, গ্রেপ্তার সিএনজিচালক"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 2001,
+          "claim_text": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4190,
+          "claim_text": "কুমিল্লায় স্কুলছাত্রীকে ধর্ষণের পর হত্যা, গ্রেপ্তার সিএনজিচালক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 3,
+          "slug": "national-3",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        }
+      ]
     },
     "national-840": {
       "cluster_id": 840,
@@ -33247,7 +36077,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T09:25:22.051Z",
+      "last_update": "2026-10-10T09:55:17.398Z",
       "claim_count": 2,
       "events": [
         {
@@ -33321,6 +36151,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
         {
           "cluster_id": 10,
           "slug": "national-10",
@@ -34168,6 +37006,22 @@
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         },
         {
+          "cluster_id": 134,
+          "slug": "national-134",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা"
+        },
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -34182,22 +37036,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 94,
-          "slug": "national-94",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রবাসীদের জন্য বড় সুখবর দিল মালয়েশিয়া"
-        },
-        {
-          "cluster_id": 85,
-          "slug": "national-85",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মৃত্যুর আগে তাজমিনের সঙ্গে কী ঘটেছিল, চাঞ্চল্যকর তথ্য মিলল সিসিটিভি ফুটেজে"
         }
       ]
     },
@@ -34490,7 +37328,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T09:25:22.048Z",
+      "last_update": "2026-10-10T09:55:17.396Z",
       "claim_count": 2,
       "events": [
         {
@@ -37482,6 +40320,14 @@
       ],
       "related": [
         {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
           "cluster_id": 125,
           "slug": "national-125",
           "actor_links": 0,
@@ -37520,14 +40366,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
-        },
-        {
-          "cluster_id": 8,
-          "slug": "national-8",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
         }
       ]
     },
@@ -37872,12 +40710,107 @@
     },
     "sports-133": {
       "cluster_id": 133,
-      "headline": "আসিয়ান কাপের জন্য নিরাপদে ইন্দোনেশিয়ায় পৌঁছেছে বাংলাদেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+      "first_seen": "2026-10-10T09:55:17.391Z",
+      "last_update": "2026-10-10T09:55:17.394Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T07:11:56.000Z",
+          "kind": "evidence",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZRVpNNmRYT0J5eVJHUXBZQUhSU29sVUJ1Rm5FeDBqNUtGM3FtT0FaenRpN2NXdGhSbWRKdUZ3aHdyZnRHUENIUFhNMTVZcXpPdU5zVE51UEsyZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:11:56.000Z",
+          "kind": "evidence",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZRVpNNmRYT0J5eVJHUXBZQUhSU29sVUJ1Rm5FeDBqNUtGM3FtT0FaenRpN2NXdGhSbWRKdUZ3aHdyZnRHUENIUFhNMTVZcXpPdU5zVE51UEsyZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:07:05.000Z",
+          "kind": "evidence",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxQa1BrZHN5bFg5R1lTbmdTaGhsM3gwR3pkSkVuN2VBSmkxM25IcGxlN0ljdVhKRHdLMWFjU1QxdzZJcmVrSURvYzZJcXdlZmxvSm1LWUJGRmduUENYdXROTTdub1Z4RlkyNHZOODF0QXZUa2tvbUx0a3hlR1kxNEk0TUJTcFExc1k3Z0xPSnE5czdqU05CSXhyVTN3Y0NUT0JoelBCNDBZLW5QUVdoOXF2dkFVRVlPWl9TM3pCY25Tb2tXZTFyaVpyUDdGYVhsZkdOOE1IZm9WdVN2MVlqajQxdGdVbEtJUmNEY0UzWmlHUnRXaWZoMDdqMnVvcnlCWWZON2NiZUxfX0sxZUR6S2lXZmxFSVlDbjZ2eHdEcmpUakRJS0pHb0g3enNiTlJzQ0NiTEVPb2JlWVlPSHF1NHRPZW44VnpNX05QSGFHTEJwM1F0dS1CUWtlejNrVG1SMU1jQ1EzVHYybF9oTFNwRVpxOGU5b0xDSEwyOG16N3ExM0ZjTEN0RWZCd3NxV0tnSkNLdG1wMkNCdF9Va3MtUjR1c3JPX0o4MlZBU2hfRmVOMG9ucWNqMkthTi1PajUwNkd0NWNPM1ljSm5tZmxmR0lvM2FXR2MwMzkzdWgyakREUExlc2F4MmFjZkgwak1HQmtNeS1aV3RDeUNqZW9MZk1BSWI2OFBsZGh6Sk5hUkQxelA0aTN4YUVDc3c4VVJYamFlUHBqeWphUjVXcHU1ejZvUWl4TU9hQk9nZHNTbS1KanhwaVNlYWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.083Z",
+          "kind": "claim",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.087Z",
+          "kind": "claim",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক"
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4247,
+          "claim_text": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:06:00.198Z",
+          "kind": "verify",
+          "claim_id": 4248,
+          "claim_text": "বিক্ষোভে যাওয়ার পথে তুষার গান্ধী আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "sports-1345": {
       "cluster_id": 1345,
@@ -38369,7 +41302,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T09:25:22.051Z",
+      "last_update": "2026-10-10T09:55:17.398Z",
       "claim_count": 2,
       "events": [
         {
@@ -38443,6 +41376,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
         {
           "cluster_id": 10,
           "slug": "national-10",
