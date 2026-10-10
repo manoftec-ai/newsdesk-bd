@@ -16,7 +16,8 @@ export const SITE = {
 };
 
 export const SEO = {
-  googleSiteVerification: "",
+  googleSiteVerification:
+    "google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0",
   bingSiteVerification: "",
 };
 
