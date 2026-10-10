@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3008,
+    "storyCount": 3012,
     "kinds": [
       "claim",
       "evidence",
@@ -13,9 +13,9 @@
   "stories": {
     "economy-1": {
       "cluster_id": 1,
-      "headline": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+      "headline": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T07:55:17.079Z",
+      "last_update": "2026-10-10T08:25:01.887Z",
       "claim_count": 22,
       "events": [
         {
@@ -137,6 +137,17 @@
             "source_id": "bbc-bengali",
             "relation": "supports",
             "url": "https://www.bbc.com/bengali/articles/cmz65l7pwn5xo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T02:36:39.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq1j3gn4x0zpo?at_medium=RSS&at_campaign=rss"
           }
         },
         {
@@ -1046,12 +1057,34 @@
         {
           "ts": "2026-10-10T05:20:24.000Z",
           "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6n4ez0339qlo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:20:24.000Z",
+          "kind": "evidence",
           "claim_id": 709,
           "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
             "url": "https://www.bbc.com/bengali/articles/c6n4ez0339qlo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 12,
+          "claim_text": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
           }
         },
         {
@@ -2563,6 +2596,45 @@
       "events": [],
       "related": []
     },
+    "entertainment-109": {
+      "cluster_id": 109,
+      "headline": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+      "first_seen": "2026-10-10T08:25:02.139Z",
+      "last_update": "2026-10-10T08:25:02.141Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/tollywood/qezzk5mnnb"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.374Z",
+          "kind": "claim",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "entertainment-1095": {
       "cluster_id": 1095,
       "headline": "টাঙ্গাইলের পুরোনো এক জমিদারবাড়ি যেভাবে হয়ে উঠল ভাইরাল শুটিং স্পট",
@@ -3572,7 +3644,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T07:55:17.167Z",
+      "last_update": "2026-10-10T08:25:01.892Z",
       "claim_count": 2,
       "events": [
         {
@@ -3791,6 +3863,45 @@
           "kind": "verify",
           "claim_id": 2697,
           "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-110": {
+      "cluster_id": 110,
+      "headline": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
+      "first_seen": "2026-10-10T08:25:02.142Z",
+      "last_update": "2026-10-10T08:25:02.144Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:43:36.000Z",
+          "kind": "evidence",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/d77mm3p9kd"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.376Z",
+          "kind": "claim",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -5671,8 +5782,8 @@
           "slug": "economy-1",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 1,
-          "headline": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি"
+          "claim_count": 2,
+          "headline": "ক্যান্সার চিকিৎসায় যুক্ত হচ্ছে ১৭ নতুন রেডিওথেরাপি মেশিন: স্বাস্থ্যমন্ত্রী"
         }
       ]
     },
@@ -6508,7 +6619,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T07:55:17.174Z",
+      "last_update": "2026-10-10T08:25:01.897Z",
       "claim_count": 3,
       "events": [
         {
@@ -6622,6 +6733,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 105,
+          "slug": "national-105",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী"
+        },
         {
           "cluster_id": 86,
           "slug": "sports-86",
@@ -7192,12 +7311,107 @@
     },
     "national-105": {
       "cluster_id": 105,
-      "headline": "বরিশালে নিয়ন্ত্রণ হারিয়ে যাত্রীবাহী বাস পুকুরে, নিহত ১",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী",
+      "first_seen": "2026-10-10T08:25:01.889Z",
+      "last_update": "2026-10-10T08:25:01.891Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-08T04:33:21.000Z",
+          "kind": "evidence",
+          "claim_id": 3046,
+          "claim_text": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikARBVV95cUxQSWRhNzZRSERRdVk0Z3Z5djBpcmRHb2pWUElJeU42eVl6NmpxR2JzeUFBYzFpUEpHY19nRG11VXE0ZWt4LVBSNUhKckNIM3pIMEpVRmw3WmsyN2hUenJVWTZUX0NSLWtYdnd3cWR6UGpQMTVqc3pnbFlXaGt4LTBvUTEwbDFOTVJkMEdKZ09QaEptN2thMEVSM1dXd005T25FQzhEaUViZWVmY3hocEFPWWttRUNGNm0tdFZsb1dtekpOakloR21QWXlSeUFLMm4zZkwtVnVGcDNDZ3pxRkgtWTRubTNMdF9xWndFaXluWmpaZlBBZ0VUbzRzaWs3YlRGXzJ5UUJlQ2E0VEpldGhVZXpzMHJ3a1U5cExFWDh2YWFnZmVnNXFNNE1vQUZNOEZ6NFl4NFZpQVVld3dreUFJb2lYQ0ZpaXVDUFRmVi1wVmw3ME1JaVhsdlJqdzRubi1zMUhEWFZHeWJtdjk5eFJNZ2o4R2MxWUlWc3dZd0VPMThTWW51bmdTeFBkY0FidUtGQ3BQQ0puOW5ZcUJtblhSVDZnVkZVZHhqdURoc3NUTVU2b05MdF9SYzBIa3RoSkpxQVZtS3BMVjl1RXlvUHcxeVpFVFY5a1NlTkRIM0RGT1laNDNDWUNCalEwYmhLeEVTYzBxU2ZVLWxJdVhvbWNKR0RmcW90aHc5NTdKaHpGVmvSAZYEQVVfeXFMTUpkWVBqZDg3aWx1OURvcDgxRUI3U2tZQ0IyQVJTZXozVWNUWjhYUXlvNGR4OFZQa0dSNVpwZ1BXT0J5akJmbEZ5ZzVacFFkY3hZT2RwQmtJWFJBWEUwbHhBZGg1Q3dXZl9Ecnl2NFRkUXJWVjl2STBxQlc4NmdnSlN6blJHSkZ1d3dhSkczY1hPdjdJLURKdmwtSFkxMVBqMXktRUJrdzEtZ0hjeVNuUHgzdHhZX2VYdnRiem9oMHptRWt0ZF9BdGxXZm81NVk4empFQnFGR0N4VS02djF0andCcjdsb3c2a0VGSkdqaWNjM01RUU8zWkZKRncyejRnQk1NWktOS1V2SEVmcF9GWnJ0bjR3RzhlUDNXZ2NKUFQya0ctbXNURjEzbFZMay1FTGVjZjQ4VW1MQ3hXOEphejVsaE1IZHNpeDQ0OEdZWklUMi1VMzdQU3lJZ0hMNTJGTmx5M0pCM3BvYjhORWRrRWE2SG9tQTZXQ0hocVA1ekthbndOQlQwbFRXdTRFLVV6UjcteVdYR0JvUXZlbWVXSVpHdHAyd3FEOFM5clBfOGp4V0N3Ujd6eXpndWI0cHBQck83NTZlMEZQWlBIdUNBN290dFZEVG1fUTQzWThZT3F0cjJUWEVud0I0RVU0Vlh3aW5QUEJ2YjZYZ0Zvd2VzWDI5Q3BnZ0pzN0ZzaE5hME9wWE9PVVdB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:36:33.000Z",
+          "kind": "evidence",
+          "claim_id": 3046,
+          "claim_text": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi2wNBVV95cUxPeUdfX3pFeHpnRUNwSVMwbTZxSXc0MVQyR1V1YXpxWWdndHJWTllQZEgxdGRYRjFyU1dLRDNrMENxLUsxYktBdUo1eHhoX3ctVWs3LWpTOXowcVAwN1lsMUU3OWdRVW5pR3lLT3lDX285a1NVSXVHYWM2V2hwWGNEQ1h2M29lTFJFQzBWX2pjXzhlR0xMeVNYME10Q2FVR21qaUlIMFVwSDllVTJvYnpZbnEtb1NURHZkelZXUmh4V3FiMW1wUWo5R1lUbUdIQXNrdFFRcUNmVFlSVGswS3RiMXFRUFl4TG12NXNWdkNiUlFfWjJMY2dUMExReS1wV19Ec3FxbWZEYXlrTk5RcnlQVGRHNXNCY1pqSTRxT2pOc2ViR1hVV0dvVUtWbEpPbnAtWGdBTS1xN0ZKVERBSDJKVzVCMzU1b2cyRWJCb2w4ekRqN1A1V0pES0tPWk5kOXVtODM0dzJKN3drSVZFNWo1akxYSmtfQnduM2cyYmJ6LXBjZk11V2dXTTNSRVhoeURXdXJHRnRoYndVZGxzczhFNWNfemZKbXUxMWVlRWxUSVlULUl3ZlRBNksxTTVkUVJPSmljd3NPbjFpaW5nRUZOVXhVaGlfbFBCcExJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T07:36:33.000Z",
+          "kind": "evidence",
+          "claim_id": 3047,
+          "claim_text": "এ সরকারকে বিদায় নিতে হবে: রাহুল গান্ধী",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi2wNBVV95cUxPeUdfX3pFeHpnRUNwSVMwbTZxSXc0MVQyR1V1YXpxWWdndHJWTllQZEgxdGRYRjFyU1dLRDNrMENxLUsxYktBdUo1eHhoX3ctVWs3LWpTOXowcVAwN1lsMUU3OWdRVW5pR3lLT3lDX285a1NVSXVHYWM2V2hwWGNEQ1h2M29lTFJFQzBWX2pjXzhlR0xMeVNYME10Q2FVR21qaUlIMFVwSDllVTJvYnpZbnEtb1NURHZkelZXUmh4V3FiMW1wUWo5R1lUbUdIQXNrdFFRcUNmVFlSVGswS3RiMXFRUFl4TG12NXNWdkNiUlFfWjJMY2dUMExReS1wV19Ec3FxbWZEYXlrTk5RcnlQVGRHNXNCY1pqSTRxT2pOc2ViR1hVV0dvVUtWbEpPbnAtWGdBTS1xN0ZKVERBSDJKVzVCMzU1b2cyRWJCb2w4ekRqN1A1V0pES0tPWk5kOXVtODM0dzJKN3drSVZFNWo1akxYSmtfQnduM2cyYmJ6LXBjZk11V2dXTTNSRVhoeURXdXJHRnRoYndVZGxzczhFNWNfemZKbXUxMWVlRWxUSVlULUl3ZlRBNksxTTVkUVJPSmljd3NPbjFpaW5nRUZOVXhVaGlfbFBCcExJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.360Z",
+          "kind": "claim",
+          "claim_id": 3046,
+          "claim_text": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.363Z",
+          "kind": "claim",
+          "claim_id": 3047,
+          "claim_text": "এ সরকারকে বিদায় নিতে হবে: রাহুল গান্ধী"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3046,
+          "claim_text": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3047,
+          "claim_text": "এ সরকারকে বিদায় নিতে হবে: রাহুল গান্ধী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বর্ষীয়ান অভিনেতা নানা পাটেকার আর নেই"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        }
+      ]
     },
     "national-1050": {
       "cluster_id": 1050,
@@ -7273,12 +7487,123 @@
     },
     "national-106": {
       "cluster_id": 106,
-      "headline": "কাশিমপুর থেকে পালানো ফাঁসির আসামি দুই বছর পর চট্টগ্রামে গ্রেপ্তার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট",
+      "first_seen": "2026-10-10T08:25:01.898Z",
+      "last_update": "2026-10-10T08:25:01.900Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-09T11:58:59.000Z",
+          "kind": "evidence",
+          "claim_id": 3048,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kenRKc1FZb3pnSUc2NE1xa0k4WFNtc1RCc2c2UFE4UUVrZG53OEhRNFN4VGJta1U1U1hBTU1MVmk3REZyVnJiYlg5MVgzWnFGb1E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-09T13:22:26.000Z",
+          "kind": "evidence",
+          "claim_id": 3048,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizwNBVV95cUxQSXgxa25MSTliRWJrUmlORTBzZ1gzTzhUcHh3c2lwVy11RUl6ZVFrdjZpaEl6YUtNUzdNQWw3d3dVSzRET1NUNjQ4WENSWVJBZnVxVnZILXdGOW9DTGNKTE1CTUx5c2JBVW1hUGY0TUh0eDdyODV2blVkclRVcU01UDFpaW1pYmZDaUdWNFFxT2ZOOUliRmtHc21TcS1yYjQtb1M3bWd0WlVvTjZOTmdDd1gzZ0RfakRWLXExWnpSLVVVZzFtaU5oOHRCSi15X3B1Ymw1c296QzlhaGNpNGZ6c1RjNXI4Ylc0RnA0Rzk2VlFieEtTLW9fcDBwVzFZU0pVMWUxVEY3TlloMEFMRTN2bGFsTjVqNEdPb1hBV3h4ZzNjVENvZmd6VGN0aUx4Z1R3ZEVrZzdLZ05Hd0t2RnJQRVlxT3VRRXV6cHVnSTAwLV82U1AwdWNxNDFWS3dFZVRoZUZGNnVITVd0UXJ0TTRjSFU0aGlEVng2aUFQbUZYMWNUQmtLQ0d6M1JJMm5UTC11Z09rLWZyYUk4ZFBUNWpaNEU1MGRXYUlSUHZ0ZUJRb0VuenBVZ0ZfTHpuVjctcjM2N3h6b3VkMHlJM1E0SEI40gHUA0FVX3lxTE93NjE3M180c0dhdlllOEozZzV3Zy1YUjI1cV9YRENxdzg1Nk5pZW9IMTJxd1VTN0EtYm5FZ2huVDhHRTJsQWlfV21IOWdncVlabkxKckxCZnRaajRyMVQ5OVpjQjFpWXdORGhuN3pDSEtmaEpTeE45WTZQbkZnQlZqN2pEbkNsdmhmSDVEQmszakNBQ29vZGZBeU9xOFdCRk5wLUp4VnczUHVNZE9hZVo2OU9hZHJ2b3NuczlOc2JKdkNhUmlfWFZtTXJlTVA1VGFUN29NclE1TVFTVzFtcXRzWUVRSW43S0p5YlYxQzg0X3NzZUItUVZ5Zml2YkVBS1hHb1dMRFp0eVE0YU16RjJXb0NRbnBCbmNZM1lkbEUyUmpmdUd1UmpHSXpPcDBzdmVZZGNXcUpXMVp5bk9NZ2UtSTVYbkI0UF9GY1F2TUZRSGtCSmhzVG5xV1lqcEdkNlFFSFZGd3RoQm5xazY2b1Awdl96eE9RV0FrWVIzU1JqUXFlX0EtMmJzaGxmd1ktcUY2N1hwZGJReXowRTl4ak53RDNFV3QxbzRCX0FUMjZlMDNvQl91MFNQVi14TUJPSkVQdVRjOHVIVnVjZG1JNDE3eDVfYw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-09T13:22:26.000Z",
+          "kind": "evidence",
+          "claim_id": 3049,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizwNBVV95cUxQSXgxa25MSTliRWJrUmlORTBzZ1gzTzhUcHh3c2lwVy11RUl6ZVFrdjZpaEl6YUtNUzdNQWw3d3dVSzRET1NUNjQ4WENSWVJBZnVxVnZILXdGOW9DTGNKTE1CTUx5c2JBVW1hUGY0TUh0eDdyODV2blVkclRVcU01UDFpaW1pYmZDaUdWNFFxT2ZOOUliRmtHc21TcS1yYjQtb1M3bWd0WlVvTjZOTmdDd1gzZ0RfakRWLXExWnpSLVVVZzFtaU5oOHRCSi15X3B1Ymw1c296QzlhaGNpNGZ6c1RjNXI4Ylc0RnA0Rzk2VlFieEtTLW9fcDBwVzFZU0pVMWUxVEY3TlloMEFMRTN2bGFsTjVqNEdPb1hBV3h4ZzNjVENvZmd6VGN0aUx4Z1R3ZEVrZzdLZ05Hd0t2RnJQRVlxT3VRRXV6cHVnSTAwLV82U1AwdWNxNDFWS3dFZVRoZUZGNnVITVd0UXJ0TTRjSFU0aGlEVng2aUFQbUZYMWNUQmtLQ0d6M1JJMm5UTC11Z09rLWZyYUk4ZFBUNWpaNEU1MGRXYUlSUHZ0ZUJRb0VuenBVZ0ZfTHpuVjctcjM2N3h6b3VkMHlJM1E0SEI40gHUA0FVX3lxTE93NjE3M180c0dhdlllOEozZzV3Zy1YUjI1cV9YRENxdzg1Nk5pZW9IMTJxd1VTN0EtYm5FZ2huVDhHRTJsQWlfV21IOWdncVlabkxKckxCZnRaajRyMVQ5OVpjQjFpWXdORGhuN3pDSEtmaEpTeE45WTZQbkZnQlZqN2pEbkNsdmhmSDVEQmszakNBQ29vZGZBeU9xOFdCRk5wLUp4VnczUHVNZE9hZVo2OU9hZHJ2b3NuczlOc2JKdkNhUmlfWFZtTXJlTVA1VGFUN29NclE1TVFTVzFtcXRzWUVRSW43S0p5YlYxQzg0X3NzZUItUVZ5Zml2YkVBS1hHb1dMRFp0eVE0YU16RjJXb0NRbnBCbmNZM1lkbEUyUmpmdUd1UmpHSXpPcDBzdmVZZGNXcUpXMVp5bk9NZ2UtSTVYbkI0UF9GY1F2TUZRSGtCSmhzVG5xV1lqcEdkNlFFSFZGd3RoQm5xazY2b1Awdl96eE9RV0FrWVIzU1JqUXFlX0EtMmJzaGxmd1ktcUY2N1hwZGJReXowRTl4ak53RDNFV3QxbzRCX0FUMjZlMDNvQl91MFNQVi14TUJPSkVQdVRjOHVIVnVjZG1JNDE3eDVfYw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.365Z",
+          "kind": "claim",
+          "claim_id": 3048,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.368Z",
+          "kind": "claim",
+          "claim_id": 3049,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3048,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3049,
+          "claim_text": "রাজধানীতে মুষলধারে বৃষ্টি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 48,
+          "slug": "national-48",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 20,
+          "slug": "national-20",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
+        },
+        {
+          "cluster_id": 14,
+          "slug": "national-14",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        }
+      ]
     },
     "national-1060": {
       "cluster_id": 1060,
@@ -7361,6 +7686,45 @@
       "events": [],
       "related": []
     },
+    "national-107": {
+      "cluster_id": 107,
+      "headline": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+      "first_seen": "2026-10-10T08:25:02.125Z",
+      "last_update": "2026-10-10T08:25:02.129Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T08:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/wptvekn8jb"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.370Z",
+          "kind": "claim",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-1070": {
       "cluster_id": 1070,
       "headline": "সেপ্টেম্বরে দেশে এলো ২৭৪ কোটি ডলারের বেশি রেমিট্যান্স",
@@ -7440,6 +7804,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-108": {
+      "cluster_id": 108,
+      "headline": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+      "first_seen": "2026-10-10T08:25:02.136Z",
+      "last_update": "2026-10-10T08:25:02.138Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T08:01:14.000Z",
+          "kind": "evidence",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-parul-app-offers-a-range-of-services-from-locating-lost-animals-to-adoption-and-medical-care/"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.372Z",
+          "kind": "claim",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1080": {
@@ -7649,11 +8052,41 @@
     },
     "national-110": {
       "cluster_id": 110,
-      "headline": "হাম ও উপসর্গে আরও ৫ শিশুর মৃত্যু, মোট প্রাণহানি ১ হাজার ৫৩",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
+      "first_seen": "2026-10-10T08:25:02.142Z",
+      "last_update": "2026-10-10T08:25:02.144Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:43:36.000Z",
+          "kind": "evidence",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/d77mm3p9kd"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.376Z",
+          "kind": "claim",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3053,
+          "claim_text": "এমন বজ্র আঁটুনি আগে দেখেনি দিল্লি, আন্দোলনকারীর চেয়ে বেশি পুলিশি বহর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1100": {
@@ -7730,11 +8163,41 @@
     },
     "national-111": {
       "cluster_id": 111,
-      "headline": "মেয়াদ শেষের আগেই তিন রাষ্ট্রায়ত্ত ব্যাংকের এমডির নিয়োগ বাতিল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সিনিয়র শিক্ষক হচ্ছেন সহস্রাধিক, খসড়া তালিকা প্রকাশ করল মাউশি",
+      "first_seen": "2026-10-10T08:25:02.145Z",
+      "last_update": "2026-10-10T08:25:02.147Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:28:19.000Z",
+          "kind": "evidence",
+          "claim_id": 3054,
+          "claim_text": "সিনিয়র শিক্ষক হচ্ছেন সহস্রাধিক, খসড়া তালিকা প্রকাশ করল মাউশি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/4yzuu1zx6t"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.378Z",
+          "kind": "claim",
+          "claim_id": 3054,
+          "claim_text": "সিনিয়র শিক্ষক হচ্ছেন সহস্রাধিক, খসড়া তালিকা প্রকাশ করল মাউশি"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3054,
+          "claim_text": "সিনিয়র শিক্ষক হচ্ছেন সহস্রাধিক, খসড়া তালিকা প্রকাশ করল মাউশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1111": {
@@ -10185,6 +10648,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
         {
           "cluster_id": 48,
           "slug": "national-48",
@@ -15980,6 +16451,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
           "cluster_id": 64,
           "slug": "national-64",
           "actor_links": 0,
@@ -17589,7 +18068,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T07:55:17.296Z",
+      "last_update": "2026-10-10T08:25:01.901Z",
       "claim_count": 2,
       "events": [
         {
@@ -19208,7 +19687,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T07:55:17.430Z",
+      "last_update": "2026-10-10T08:25:01.901Z",
       "claim_count": 2,
       "events": [
         {
@@ -20871,6 +21350,22 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
+          "cluster_id": 105,
+          "slug": "national-105",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী"
+        },
+        {
           "cluster_id": 72,
           "slug": "national-72",
           "actor_links": 0,
@@ -20885,22 +21380,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কেন রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র নির্মাণে ব্যয় দ্বিগুণের বেশি?"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
-        },
-        {
-          "cluster_id": 28,
-          "slug": "national-28",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বর্ষীয়ান অভিনেতা নানা পাটেকার আর নেই"
         }
       ]
     },
@@ -22394,6 +22873,14 @@
       ],
       "related": [
         {
+          "cluster_id": 105,
+          "slug": "national-105",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দুই দিনে তিনবার আটকের পর মুক্তি পেলেন রাহুল ও প্রিয়াঙ্কা গান্ধী"
+        },
+        {
           "cluster_id": 26,
           "slug": "national-26",
           "actor_links": 0,
@@ -23187,7 +23674,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T07:55:17.172Z",
+      "last_update": "2026-10-10T08:25:01.895Z",
       "claim_count": 2,
       "events": [
         {
@@ -23266,7 +23753,7 @@
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T07:55:17.433Z",
+      "last_update": "2026-10-10T08:25:01.904Z",
       "claim_count": 2,
       "events": [
         {
@@ -23435,7 +23922,7 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T07:55:17.434Z",
+      "last_update": "2026-10-10T08:25:01.905Z",
       "claim_count": 9,
       "events": [
         {
@@ -25652,7 +26139,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T07:55:17.171Z",
+      "last_update": "2026-10-10T08:25:01.893Z",
       "claim_count": 2,
       "events": [
         {
@@ -25999,7 +26486,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T07:55:17.431Z",
+      "last_update": "2026-10-10T08:25:01.902Z",
       "claim_count": 2,
       "events": [
         {
@@ -26073,6 +26560,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
         {
           "cluster_id": 26,
           "slug": "national-26",
@@ -26174,7 +26669,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T07:55:17.432Z",
+      "last_update": "2026-10-10T08:25:01.903Z",
       "claim_count": 2,
       "events": [
         {
@@ -30770,7 +31265,7 @@
       "cluster_id": 84,
       "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
       "first_seen": "2026-10-10T07:09:36.452Z",
-      "last_update": "2026-10-10T07:55:17.169Z",
+      "last_update": "2026-10-10T08:25:01.893Z",
       "claim_count": 2,
       "events": [
         {
@@ -31114,7 +31609,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T07:55:17.172Z",
+      "last_update": "2026-10-10T08:25:01.894Z",
       "claim_count": 2,
       "events": [
         {
@@ -32035,6 +32530,14 @@
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         },
         {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
           "cluster_id": 94,
           "slug": "national-94",
           "actor_links": 0,
@@ -32057,14 +32560,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুমিল্লায় স্কুলছাত্রী তাজমিনকে ধর্ষণের পর হত্যা করে সিএনজি চালক সুমন"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র নির্মাণে ব্যয় দ্বিগুণের বেশি?"
         }
       ]
     },
@@ -32357,7 +32852,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T07:55:17.167Z",
+      "last_update": "2026-10-10T08:25:01.892Z",
       "claim_count": 2,
       "events": [
         {
@@ -33379,11 +33874,41 @@
     },
     "national-booster-doses-to": {
       "cluster_id": 109,
-      "headline": "Booster doses to be available for citizens above 40: Minister",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+      "first_seen": "2026-10-10T08:25:02.139Z",
+      "last_update": "2026-10-10T08:25:02.141Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/tollywood/qezzk5mnnb"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.374Z",
+          "kind": "claim",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3052,
+          "claim_text": "মহালয়ার সেই ভোরে উত্তমকুমারের কণ্ঠ শুনে ক্ষুব্ধ শ্রোতারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-british-consulate-in": {
@@ -33665,11 +34190,41 @@
     },
     "national-masud-rana-creator": {
       "cluster_id": 108,
-      "headline": "\"Masud Rana\" creator Qazi Anwar Hussain dies",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+      "first_seen": "2026-10-10T08:25:02.136Z",
+      "last_update": "2026-10-10T08:25:02.138Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T08:01:14.000Z",
+          "kind": "evidence",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-parul-app-offers-a-range-of-services-from-locating-lost-animals-to-adoption-and-medical-care/"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.372Z",
+          "kind": "claim",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3051,
+          "claim_text": "হারানো প্রাণীর খোঁজ থেকে দত্তক ও চিকিৎসা, নানা সেবা নিয়ে ‘পারুল’ অ্যাপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-medieval-and-rather": {
@@ -33683,11 +34238,41 @@
     },
     "national-met-office-forecasts": {
       "cluster_id": 107,
-      "headline": "Met office forecasts light rain in parts of country",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+      "first_seen": "2026-10-10T08:25:02.125Z",
+      "last_update": "2026-10-10T08:25:02.129Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T08:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/wptvekn8jb"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:37:23.370Z",
+          "kind": "claim",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি"
+        },
+        {
+          "ts": "2026-10-10T08:37:23.439Z",
+          "kind": "verify",
+          "claim_id": 3050,
+          "claim_text": "টাচস্ক্রিনওয়ালা প্রথম ম্যাকবুক আনছে অ্যাপল, সঙ্গে আইপ্যাড মিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-mi5-issues-spy": {
@@ -36039,7 +36624,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T07:55:17.172Z",
+      "last_update": "2026-10-10T08:25:01.894Z",
       "claim_count": 2,
       "events": [
         {
