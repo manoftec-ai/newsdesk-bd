@@ -77,3 +77,25 @@ A full Astro build is now ~20 min (~700 pages at ~1.2–1.6 s each) and the pipe
 every few minutes, so a standing QUEUED backlog is normal and is NOT the same fault as a wedged
 build. **Read `/v2/deployments/<uid>/events` first:** a build still printing page lines is healthy;
 only one silent for 15+ minutes is stuck. Cancel only queued deployments OLDER than the target.
+
+---
+
+## 09:30 UTC — D152: the property was a DOMAIN property; on-page methods could never work
+
+User supplied GSC's real error text ("couldn't find your verification token in your domain's TXT
+records") and the DNS instructions. Conclusion: the property is `jachaidesk.com` **Domain** type,
+verified by **DNS TXT** — HTML tag and HTML file are structurally incapable of verifying it.
+
+- DNS check: `jachaidesk.com TXT` → **no records**; NS = `launch1/launch2.spaceship.net`.
+- User must add, at Spaceship: host `@`, type TXT, value
+  `google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0`, TTL 3600.
+- Next step: re-query TXT to confirm propagation, then user presses Verify.
+
+Infrastructure bug found and fixed in the same pass: **`www.jachaidesk.com` was not attached to the
+Vercel project.** Symptom was distinctive — TLS handshake succeeded, then the connection closed
+with no HTTP response (`HTTP 000` in 0.48 s) while the apex returned 200. Added via
+`POST /v10/projects/<id>/domains {"name":"www.jachaidesk.com"}` → www now 200 with the meta tag and
+the verification file. Redirect payload rejected by the API on both v10 POST and v9 PATCH, so www
+serves the site rather than 308-ing to the apex.
+
+Process lesson: **ask for property type + method tab before writing any verification code.**

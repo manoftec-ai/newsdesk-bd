@@ -732,3 +732,31 @@ Live-verified: the homepage now emits `content="iLevWBfpUdnKvXDNAfb2IEnOapdJwvMX
 **Still on the user:** press Verify again. **If they added a DOMAIN property, neither method will ever work** — that needs a DNS TXT record instead.
 
 **Deploy-queue reality check (refines D151):** a full build is now ~20 minutes (~700 pages at ~1.2–1.6 s each) and the pipeline queues a new deploy every few minutes, so a standing QUEUED backlog is normal — not the same failure as a stuck build. **Read the build log before cancelling anything:** a deployment still emitting page lines is healthy; only a build that has been silent for 15+ minutes is wedged.
+
+### D152: the property was a DOMAIN property all along (2026-10-10)
+
+**The user pasted GSC's actual error:** *"Ownership verification failed — We couldn't find your verification token in your domain's TXT records."* That sentence answers everything: the property is **`jachaidesk.com` as a Domain property, verified by DNS**.
+
+A Domain property **cannot** be verified by HTML tag or HTML file. Both D151 passes were correct implementations of a method this property will never use — no amount of on-site work could have passed it. Live DNS confirms the record does not exist:
+
+```
+jachaidesk.com TXT → (no records)
+jachaidesk.com NS  → launch1.spaceship.net / launch2.spaceship.net
+```
+
+**The record the user must add in Spaceship** (host `@` because it is the apex, not a subdomain):
+
+| Field | Value |
+|---|---|
+| Host / Name | `@` |
+| Type | `TXT` |
+| Value | `google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0` |
+| TTL | `3600` |
+
+**Lesson, written down so it is not repeated:** for any webmaster verification token, ask for the **property type** and the **method tab** before writing a single line of code. Domain property → DNS TXT only. URL-prefix property → HTML tag *or* file. Asking one question would have saved the whole first round.
+
+**Separate infrastructure bug found while diagnosing.** `www.jachaidesk.com` was **never assigned to the Vercel project** — `GET /projects/<id>/domains` listed only `jachaidesk.com` and `newsdesk-bd.vercel.app`, contradicting D47's claim of an automatic www→apex redirect. The visible symptom was unusual: TLS handshake **succeeded**, then the connection closed with no HTTP response at all (curl `HTTP 000`, `time_total` 0.48 s), while the apex returned 200 normally.
+
+Fixed by adding `www.jachaidesk.com` as a project domain. www now returns **200** and carries both the meta tag and `/google-site-verification.html`.
+
+**API note:** Vercel rejects the redirect payload for domains — `POST /v10/.../domains` with `redirect` → `Invalid redirect property`; `PATCH /v9/domains/<name>` with `redirect` → `should NOT have additional property redirect`. So **www serves the same site instead of 308-ing to the apex.** Functionally equivalent for verification and visitors; noted as a difference from D47.

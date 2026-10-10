@@ -16,7 +16,7 @@
         "Vercel project newsdesk-bd -> Settings -> Analytics: enable Web Analytics (no CLI; /_vercel/insights/script.js 404 until enabled; defer script already shipped and harmless)"
       ],
       "inProgress": [
-        "GSC verification (D151, 2026-10-10): BOTH methods are live - meta tag with bare token iLevWBfp...dzF0 in theme.config.ts SEO.googleSiteVerification, and /google-site-verification.html containing 'google-site-verification=iLevWB...dzF0' (commit 886048cf, prod dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm, live-verified 09:08 UTC). Note: the first attempt failed because the full 'google-site-verification=TOKEN' string was wrongly placed in the meta content attribute. User action: press Verify in GSC again. If they used a DOMAIN property, HTML tag/file will never work - DNS TXT is required instead. Then submit sitemap.xml + news-sitemap.xml. Optional Bing msvalidate.01 goes in SEO.bingSiteVerification."
+        "GSC is a DOMAIN property (D152, 2026-10-10) so HTML tag/file can NEVER verify it. USER ACTION: add a TXT record at Spaceship (NS launch1/launch2) -> host @ (apex), type TXT, value google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0, TTL 3600 -> then press Verify. Live DNS check confirms no TXT record exists yet. The bare-token meta tag and /google-site-verification.html remain live and are still correct if a URL-prefix property is ever added. After verification: submit sitemap.xml + news-sitemap.xml. Optional Bing msvalidate.01 goes in SEO.bingSiteVerification."
       ]
     }
   },
@@ -1375,6 +1375,17 @@
       ],
       "lesson": "GSC token formats are not interchangeable. HTML-tag method: <meta name=\"google-site-verification\" content=\"TOKEN\"> with the BARE token. HTML-file method: a file at the site root whose entire body is 'google-site-verification=TOKEN'. The user's pasted string was the file payload - ask which tab they copied from, or ship both.",
       "verdict": "awaiting user Verify click (2nd attempt)"
+    },
+    {
+      "id": "D152",
+      "date": "2026-10-10",
+      "title": "GSC is a DOMAIN property -> needs a DNS TXT record at Spaceship; www was never attached to Vercel",
+      "decision": "The user finally showed the real failure text: 'Ownership verification failed - We couldn't find your verification token in your domain's TXT records', and the property is jachaidesk.com verified via DNS. A Domain property CANNOT be verified by HTML tag or HTML file, so the D151 meta-tag/file work could never satisfy it (it is harmless and still valid if a URL-prefix property is ever added). Confirmed by live DNS query: jachaidesk.com has NO TXT record at all; NS = launch1/launch2.spaceship.net, so the record must be added by the user in the Spaceship dashboard: host @ (apex), type TXT, value google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0, TTL 3600. SEPARATE BUG FOUND WHILE DIAGNOSING: www.jachaidesk.com was NOT assigned to the Vercel project (project /domains listed only jachaidesk.com and newsdesk-bd.vercel.app) even though D47 memory claimed an automatic www->apex redirect - so www completed TLS then closed the connection with no HTTP response. Fixed by POSTing www.jachaidesk.com as a project domain; www now returns 200 with the meta tag and the verification file. The redirect variant was rejected by the API ('Invalid redirect property' on v10 POST, and 'should NOT have additional property redirect' on v9 PATCH), so www serves the same site rather than 308-redirecting to the apex.",
+      "rationale": "The two dead ends (HTML tag, HTML file) were both correct implementations of the wrong method. Asking which property type and which tab the token came from would have saved the entire first round.",
+      "lesson": "For any webmaster verification token, ask for the PROPERTY TYPE and the METHOD TAB before writing anything. A Domain property = DNS TXT only.",
+      "userActions": [
+        "Spaceship -> jachaidesk.com -> Advanced DNS -> TXT record: host @, value google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0, TTL 3600 -> then press Verify in GSC"
+      ]
     }
   ],
   "sources": [
@@ -1573,7 +1584,7 @@
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed",
     "D131: Facebook Page distribution is BUILT but UNVERIFIED against the real composer - publish-button selectors and the post-success confirmation signal cannot be tested until the user logs in. --probe exists to surface redesign drift."
   ],
-  "workInProgress": "D151 (2026-10-10) UPDATE 09:08 UTC: GSC verification shipped on the SECOND pass. Pass 1 failed because the full 'google-site-verification=TOKEN' string was put in the meta content attribute (that is the HTML-FILE payload; the meta tag needs the bare token). Pass 2 (commit 886048cf, prod dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm READY+aliased) ships both: bare token in the meta tag AND /google-site-verification.html at the root. Live-verified. Awaiting the user's Verify click. Also learned: the pipeline deploys faster than a full Astro build (~20 min, ~700 pages at ~1.5s each), so a persistent QUEUED backlog is normal - cancel queued deploys older than the one you need, and do NOT cancel a deployment that is actively emitting build-log lines.",
+  "workInProgress": "D152 (2026-10-10): diagnosed why GSC verification kept failing - the property is a DOMAIN property using DNS TXT, not HTML tag/file, so no amount of on-page work could pass it. No TXT record exists on jachaidesk.com (NS = Spaceship). Waiting on the user to add the record in the Spaceship dashboard, then re-query DNS to confirm propagation before they press Verify. Same session, fixed a real infrastructure bug: www.jachaidesk.com was never attached to the Vercel project (TLS connected, no HTTP response); now added and serving 200 with the meta tag + verification file. Vercel API rejects the redirect payload for domains - www serves the site instead of 308-ing to the apex.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,
