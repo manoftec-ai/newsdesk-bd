@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 2996,
+    "storyCount": 2999,
     "kinds": [
       "claim",
       "evidence",
@@ -15,8 +15,8 @@
       "cluster_id": 1,
       "headline": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T06:24:22.928Z",
-      "claim_count": 20,
+      "last_update": "2026-10-10T06:48:24.473Z",
+      "claim_count": 21,
       "events": [
         {
           "ts": "2026-10-09T07:56:38.000Z",
@@ -1033,6 +1033,28 @@
           }
         },
         {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 709,
+          "claim_text": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
+          "ts": "2026-10-10T05:27:46.000Z",
+          "kind": "evidence",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809107"
+          }
+        },
+        {
           "ts": "2026-10-10T05:41:50.058Z",
           "kind": "claim",
           "claim_id": 709,
@@ -1212,6 +1234,24 @@
             "status": "VERIFIED",
             "from": null,
             "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.341Z",
+          "kind": "claim",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1563,
+          "claim_text": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
             "reason": "verify"
           }
         }
@@ -2238,6 +2278,45 @@
       "events": [],
       "related": []
     },
+    "economy-79": {
+      "cluster_id": 79,
+      "headline": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+      "first_seen": "2026-10-10T06:48:24.865Z",
+      "last_update": "2026-10-10T06:48:24.867Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:25:42.000Z",
+          "kind": "evidence",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bangladesh-bank-seeks-tk-60000-crore-from-the-government-to-offset-losses-from-the-plundering/"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.864Z",
+          "kind": "claim",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-841": {
       "cluster_id": 841,
       "headline": "জ্বালানির দাম ও সরকারী কর্মচারীদের বেতন বৃদ্ধি মূল্যস্ফীতি উসকে দিতে পারে",
@@ -3218,11 +3297,41 @@
     },
     "entertainment-81": {
       "cluster_id": 81,
-      "headline": "হাসপাতালে ভর্তি অভিনেতা রিফাত চৌধুরী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+      "first_seen": "2026-10-10T06:48:24.874Z",
+      "last_update": "2026-10-10T06:48:24.876Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:23:05.000Z",
+          "kind": "evidence",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/x1ezyq92er"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.875Z",
+          "kind": "claim",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-905": {
@@ -5541,6 +5650,45 @@
       "events": [],
       "related": []
     },
+    "international-80": {
+      "cluster_id": 80,
+      "headline": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+      "first_seen": "2026-10-10T06:48:24.869Z",
+      "last_update": "2026-10-10T06:48:24.872Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:23:37.000Z",
+          "kind": "evidence",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trump-vows-to-quickly-end-the-war-involving-iran-and-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.867Z",
+          "kind": "claim",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-809": {
       "cluster_id": 809,
       "headline": "রাজশাহী বিশ্ববিদ্যালয়ে অ্যাম্বুলেন্স দেওয়ার ‘কৃতিত্ব’ নিয়ে ছাত্রশিবির ও আম্মারের ‘টানাটানি’",
@@ -5926,7 +6074,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T06:24:22.944Z",
+      "last_update": "2026-10-10T06:48:24.481Z",
       "claim_count": 3,
       "events": [
         {
@@ -14611,7 +14759,7 @@
       "cluster_id": 2,
       "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ",
       "first_seen": "2026-10-10T04:01:51.852Z",
-      "last_update": "2026-10-10T06:24:22.933Z",
+      "last_update": "2026-10-10T06:48:24.475Z",
       "claim_count": 6,
       "events": [
         {
@@ -16829,7 +16977,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T06:24:22.945Z",
+      "last_update": "2026-10-10T06:48:24.482Z",
       "claim_count": 2,
       "events": [
         {
@@ -18448,7 +18596,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T06:24:22.947Z",
+      "last_update": "2026-10-10T06:48:24.482Z",
       "claim_count": 2,
       "events": [
         {
@@ -22427,7 +22575,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T06:24:22.938Z",
+      "last_update": "2026-10-10T06:48:24.478Z",
       "claim_count": 2,
       "events": [
         {
@@ -22506,7 +22654,7 @@
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T06:24:22.950Z",
+      "last_update": "2026-10-10T06:48:24.486Z",
       "claim_count": 2,
       "events": [
         {
@@ -22675,9 +22823,31 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T06:24:22.951Z",
-      "claim_count": 7,
+      "last_update": "2026-10-10T06:48:24.489Z",
+      "claim_count": 9,
       "events": [
+        {
+          "ts": "2026-04-01T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 93,
+          "claim_text": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxPcnRnWUNHWXBGdmpkelRWa0QtY2xRakVDaWRDbUoxN3pVeEV5ckNEOXI1ZkQwTWh0ckhoX2hYUUgxRTV1WGF0SnFwZUhEeVd3aXJGMnliaEstaGRnVEhqRFo0ZDl6UDFNNkRVZ0MtY3RfLXdRT0dGaUVVQkFoaUNmR1dHYjNuSXZ0ckl0cHZobW1jNDhTS0xBNGtydEtKMVNFM205V3Fhdi1QbHhiV0dDcl9GQ2NFN21RdnpSa3FCbEl6enIyYXF5NWdERGF4b0pDWW5RUWJNbFYwaWhoMTl4ektUWmtTTUVBTHd6Q25BRFhZMERBUFhoWnRwR0Ezb29ZR3lSOWplam5JNWlFUmRvMkhQT3ZDaWNPOU0zNU5ZTnF1WHNaZ3JReXNqY042NHVPZWotWDYycjhTRllVaDRoWVVTSC1NalJvQlpIWXZaYmJVU0pkNkpJcGdjVUhYQlhobGIxX2kwQ3hESzFTQUxNZjE2YzhiQUU4N1J3ZF8yTi1pY19XcE1lQW14clJKRldXN1ZqY1d1LWloazZhdU1TY0d2eFBSUW1yNXZMdE9rUm5WMFJUYmxVN0FSMHB0VjlaLV9HLVZwTDZrV21qVVpwSHBSVWdoTzBVYVFhUG5ja3Vwdmd0czVBRlo3Q196MWY3Mm1aa3k1WXF6by1tMVhSSzl0VjJhenhJZ1RhYmNEekg4QdIBlwRBVV95cUxQMmNzb18zaE5lR1hjY3g5U181ZTVyUVJFbjJURkE5QU1FblRRcDdnUmVpOFZjMGpYbFY2bUxVLVhYZ01QMXFSM0wycG51elV0VmF4c1h1ZHF5V1hPWFRuMW1rNGh1S3Fad2FhRS15UWhOd0MzR2cwOG5UT0VLd0xUX1VXSzdNU0syODRJMUwtYUNCcS14MWp4dlVvN3EwTHNidV9yTUk4SG5ucjFtS05sUGtZd2NCQ2VncVZ3SU9xN2k0WEkyTUhud1BNU1Y4TUF1eU0wc1p0dy1UamtNdlFORVZlNzE5QVU1MGFBd3c0eGN2cTU0M0FkLU5wWEYyMTZuM2VuUXJKZWNCX2hqeGdTUWRBVndNdXQ4UDBpSE5DRExiaC1EczZ1bFpvWkh0aFJPdzBhYzAyMFRfX0I0QnIzQUZfb09YQUVtTE83T1FWRkdTbWdaVHhNck9PSFF6WEZIVkZTbkNlSlRqVDFOMHliLWpYOTVCeUxua1ZGd3l5b1J3ejdnZXNnREZ1M2tTX0VMd1NUemtvR2NYWUVQazJJOFV2SVBfbVMyM0FfZVRJVnhxWTBMaG9SYlJHbjdSRVo1dFBJUThhQ3AwdjBqcmJUWVd6YW9OV0FDbXRzZUpFd2tLRmtneVpiWk9POTc4UUlaNmpoN2F1ZnRvVkFUbkZqTWRoaTBHZmthTkdCX3VvNzB6STlnek13?oc=5"
+          }
+        },
+        {
+          "ts": "2026-04-01T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1633,
+          "claim_text": "পে স্কেলের দাবিতে ৬ দিনের নতুন কর্মসূচি",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxPcnRnWUNHWXBGdmpkelRWa0QtY2xRakVDaWRDbUoxN3pVeEV5ckNEOXI1ZkQwTWh0ckhoX2hYUUgxRTV1WGF0SnFwZUhEeVd3aXJGMnliaEstaGRnVEhqRFo0ZDl6UDFNNkRVZ0MtY3RfLXdRT0dGaUVVQkFoaUNmR1dHYjNuSXZ0ckl0cHZobW1jNDhTS0xBNGtydEtKMVNFM205V3Fhdi1QbHhiV0dDcl9GQ2NFN21RdnpSa3FCbEl6enIyYXF5NWdERGF4b0pDWW5RUWJNbFYwaWhoMTl4ektUWmtTTUVBTHd6Q25BRFhZMERBUFhoWnRwR0Ezb29ZR3lSOWplam5JNWlFUmRvMkhQT3ZDaWNPOU0zNU5ZTnF1WHNaZ3JReXNqY042NHVPZWotWDYycjhTRllVaDRoWVVTSC1NalJvQlpIWXZaYmJVU0pkNkpJcGdjVUhYQlhobGIxX2kwQ3hESzFTQUxNZjE2YzhiQUU4N1J3ZF8yTi1pY19XcE1lQW14clJKRldXN1ZqY1d1LWloazZhdU1TY0d2eFBSUW1yNXZMdE9rUm5WMFJUYmxVN0FSMHB0VjlaLV9HLVZwTDZrV21qVVpwSHBSVWdoTzBVYVFhUG5ja3Vwdmd0czVBRlo3Q196MWY3Mm1aa3k1WXF6by1tMVhSSzl0VjJhenhJZ1RhYmNEekg4QdIBlwRBVV95cUxQMmNzb18zaE5lR1hjY3g5U181ZTVyUVJFbjJURkE5QU1FblRRcDdnUmVpOFZjMGpYbFY2bUxVLVhYZ01QMXFSM0wycG51elV0VmF4c1h1ZHF5V1hPWFRuMW1rNGh1S3Fad2FhRS15UWhOd0MzR2cwOG5UT0VLd0xUX1VXSzdNU0syODRJMUwtYUNCcS14MWp4dlVvN3EwTHNidV9yTUk4SG5ucjFtS05sUGtZd2NCQ2VncVZ3SU9xN2k0WEkyTUhud1BNU1Y4TUF1eU0wc1p0dy1UamtNdlFORVZlNzE5QVU1MGFBd3c0eGN2cTU0M0FkLU5wWEYyMTZuM2VuUXJKZWNCX2hqeGdTUWRBVndNdXQ4UDBpSE5DRExiaC1EczZ1bFpvWkh0aFJPdzBhYzAyMFRfX0I0QnIzQUZfb09YQUVtTE83T1FWRkdTbWdaVHhNck9PSFF6WEZIVkZTbkNlSlRqVDFOMHliLWpYOTVCeUxua1ZGd3l5b1J3ejdnZXNnREZ1M2tTX0VMd1NUemtvR2NYWUVQazJJOFV2SVBfbVMyM0FfZVRJVnhxWTBMaG9SYlJHbjdSRVo1dFBJUThhQ3AwdjBqcmJUWVd6YW9OV0FDbXRzZUpFd2tLRmtneVpiWk9POTc4UUlaNmpoN2F1ZnRvVkFUbkZqTWRoaTBHZmthTkdCX3VvNzB6STlnek13?oc=5"
+          }
+        },
         {
           "ts": "2026-04-19T07:00:00.000Z",
           "kind": "evidence",
@@ -22753,6 +22923,28 @@
             "source_id": "deshrupantor",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiuwNBVV95cUxPdm4ySXI1c2xiRk5JMW9qUnF4bGZFdFNRREhuRlZkOUFWOW96NlVIUVA5V0I2N09xeWtPa2tKQmM5Zkpfb2tBM1pGWmlpRVBfYllybnp1RUtIajZCaU52UVo1YTA5ZFp1MGhyWVM1YjBjeXNzVzNlcEJlSkFkVWphTGt3M1lXRWVXb0UzWjJtWjgwTlRSb3FoRzZLU0FWWW1RM0M2YlhnVEVoR1hMRlZFNm53eHo1NFQwS0dycE1wYlJreC0zRkd3MGlPWW5qUFdWU2x4OWdOVnR3WGpMQldOc21Menlob3lDM1M3UkxtM1ppQVI2bXJWT2IxajN5WUUyY21wTHNRZ3pFSjZ3UmpEQU1GLUxablNQb2FYTGdrbDdFWGZHTjlOM05NYlZodFRzcTd5am1nX0tYaEY5QjdTTzlCVUlaM1pCQ2xLMTFHMlU0MWg3U29ESEJiUDBYUWNvZXZyX3JfeU1DaDRuNEZ0a0hKZDd3UFI5TDNxU2cyazltXzMtRHF6aV9rNEhnMFBWNkFaMENzbE45NmpHVFUzY01jY29GekVEcm9IeTJ1dVREWEJNeFEydERmRdIBwANBVV95cUxNY0lkbko0RWl3OVNiaHlmaFRwa2lSQnowQ200RjZFbXJqNExlWUU1eDk5Rjgtdi1oMkdERks1SzFvd3piQmJpVEFMNVhVa1VPejhQWDNQZW5oQTlDMHY0YTFqd08yWkZPTEo3NzN6amtvSklyb3Bfd2tWYW5PZ1hISVhoTXJRejNkdE1YUGl5RUwyM1h3MDBqQnlSMVhxdjdtdWhvVDZfRUtJa2tlS1BXWlF5NWJOVnNRNndKV1pZdE5ySFl2RTBGR3ljM19abVRFdFVKLWpuWkpMSVNMTS02SFFMRFNKdUZWczRTUDNnazZrZWtJNXd3V1pfZW9sOTVnMEM5aTA1azJVTHM3S2ZKblBsMHBKbDdoeURVZmNUTHMzdGZEZ193V3FnV2ljSnBJX1FMbGtBNzNwVHVoSDJNTWR3SHVIU3otNm0tdmxPdDFQa3NFNmhxWkxTTmFnS2xSaUw5U1R5MmFITUE5cWFybFZNQVpDWXNRUjMtQ1RucW0ybVZRMWFuWjY1eUk2M0ZtYWgxd0FsVkN3Y3J6QjBnMUNvLXJjTEhUQ1VUcmJGMXBwVDFheWpnMDNNMHlWMG9M?oc=5"
+          }
+        },
+        {
+          "ts": "2026-07-05T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 93,
+          "claim_text": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxPY3p3SjRDdnA4SDdVYVBJQ0dFcUF6RmI3Rmc2RzI2OHVGR2xDRU1VcGZ2TzVmVmpwc0d2OFZhZ3I5ZGNydlAyeDc4U1ptLWY1aEpwM3U2U0dsZC1MSVVfemZIdVV2c2FOcnVsVDc3Smk4cllPaVNnU2xuVEZCRkVFR1NGSHlqX0MyaGRETGl6VjV4Nk5VUEtDWlhodEgzNEpjUEUxbzJmVnh2WkJSUk1pa09rYjY2b0QwcmxCMU1NdmtTNVpkaER6eXFMU25rQWU3RXdhcjRSYW54dHZ0TzJkSG1nMURDZm5ZNmduaUN1ZVE0V18yWFQ3WVI2bVZvR2RmVGUtVHA1cVFqQzR5S29oQ1ZuRXlTWjhhczhBNFNmaUhWSGFtS2NZMlFEVnAwQ3pEaTVod2tGcm9WLUVLcXJibGxxek5DbDZpclcxcUh0RHpRclhOdkhwejdWck5tZjRad056ZDlvM0x4b3RQOG5qMGFISGhWelZOcUFKaDlRMm0zTGpFamtLRXJHc2FXOGZoZ2lEb0JBNnhZeFVMVkx2RDhLZDJZcXdfNTA0bVNVdlFGN1hxRGd1aUREamlhVVhGUHJ5eUR2dGd1VkZORGlYTW1BbjV3NDM5MDNYbDJZWktDUEtlYVF4WmRQbFpaZ0s2MnA2aWk0dV8zcXpKSFNiSEMxRVVDdzlzUk1yQjRNRzJjUdIBlwRBVV95cUxPaWpmTzZUVE93QzNSLUZRdndPWXlrLTJlM1pYdGhxcE8zTVdHSkFDcUVva1VqNlJmbXpCN0pneDBRekl6X2JLUnV5X25jdGNDRnA2OHg3OEhSM2dsYTNYZjc4bFVpYmpTQ0RJT3ltT0VPRkdQZ3k1Mm1lck1WR2YxOFN4M2NxdE5oVlNtT1pWVEdxMUF4Vm1falNwb1NlaURZNzFFOTA1VXVRaUVPN3hSMGVQaWhiSXV4WGFUZVdvVTJ0WHdXR2cwVUdOVEpPTDJnOWZnd0JSQ3E5WDJFYVQ4cGI0SW5rSTFEQzFXcC1JRG9LaUtzRzVSLVdsTlRlbFdMOWNZNXQ0dl93aFFIV3VBek9LWnBUM3JSV2xrdFprS1JtWU94VlZBTWcwRWdQdWxtbDlMbnRTSC1hVnZRbFlEOUlCaWxBblBtcTVKa25aU3ROWHNXakljUlhqczl0RU1rbm5XWkFfc04xT2Z5ZUVydkVxNEhXQVRpeTFNcnFWaXRvZTBNTllvbVZYazh6cThlQVFfdEozS2p4TkFLd3d5VFg4S3hZTU94ZThLaGhqZnBTaGVfNENTWmFvaWN2cDRZODFxTjRsSFNaN0phQkRlMmZLWExCcHo4MzhWLXdqNzVBa0dpai1QamI2bFFwc25QaW52WWo5UHBsblZTZzVQbS01djU5ZEpfbXh5Q3hpQ19NQ2dZYXA4?oc=5"
+          }
+        },
+        {
+          "ts": "2026-07-05T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1637,
+          "claim_text": "জুলাই মাসেই মিলতে পারে নতুন পে-স্কেলের সুখবর",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxPY3p3SjRDdnA4SDdVYVBJQ0dFcUF6RmI3Rmc2RzI2OHVGR2xDRU1VcGZ2TzVmVmpwc0d2OFZhZ3I5ZGNydlAyeDc4U1ptLWY1aEpwM3U2U0dsZC1MSVVfemZIdVV2c2FOcnVsVDc3Smk4cllPaVNnU2xuVEZCRkVFR1NGSHlqX0MyaGRETGl6VjV4Nk5VUEtDWlhodEgzNEpjUEUxbzJmVnh2WkJSUk1pa09rYjY2b0QwcmxCMU1NdmtTNVpkaER6eXFMU25rQWU3RXdhcjRSYW54dHZ0TzJkSG1nMURDZm5ZNmduaUN1ZVE0V18yWFQ3WVI2bVZvR2RmVGUtVHA1cVFqQzR5S29oQ1ZuRXlTWjhhczhBNFNmaUhWSGFtS2NZMlFEVnAwQ3pEaTVod2tGcm9WLUVLcXJibGxxek5DbDZpclcxcUh0RHpRclhOdkhwejdWck5tZjRad056ZDlvM0x4b3RQOG5qMGFISGhWelZOcUFKaDlRMm0zTGpFamtLRXJHc2FXOGZoZ2lEb0JBNnhZeFVMVkx2RDhLZDJZcXdfNTA0bVNVdlFGN1hxRGd1aUREamlhVVhGUHJ5eUR2dGd1VkZORGlYTW1BbjV3NDM5MDNYbDJZWktDUEtlYVF4WmRQbFpaZ0s2MnA2aWk0dV8zcXpKSFNiSEMxRVVDdzlzUk1yQjRNRzJjUdIBlwRBVV95cUxPaWpmTzZUVE93QzNSLUZRdndPWXlrLTJlM1pYdGhxcE8zTVdHSkFDcUVva1VqNlJmbXpCN0pneDBRekl6X2JLUnV5X25jdGNDRnA2OHg3OEhSM2dsYTNYZjc4bFVpYmpTQ0RJT3ltT0VPRkdQZ3k1Mm1lck1WR2YxOFN4M2NxdE5oVlNtT1pWVEdxMUF4Vm1falNwb1NlaURZNzFFOTA1VXVRaUVPN3hSMGVQaWhiSXV4WGFUZVdvVTJ0WHdXR2cwVUdOVEpPTDJnOWZnd0JSQ3E5WDJFYVQ4cGI0SW5rSTFEQzFXcC1JRG9LaUtzRzVSLVdsTlRlbFdMOWNZNXQ0dl93aFFIV3VBek9LWnBUM3JSV2xrdFprS1JtWU94VlZBTWcwRWdQdWxtbDlMbnRTSC1hVnZRbFlEOUlCaWxBblBtcTVKa25aU3ROWHNXakljUlhqczl0RU1rbm5XWkFfc04xT2Z5ZUVydkVxNEhXQVRpeTFNcnFWaXRvZTBNTllvbVZYazh6cThlQVFfdEozS2p4TkFLd3d5VFg4S3hZTU94ZThLaGhqZnBTaGVfNENTWmFvaWN2cDRZODFxTjRsSFNaN0phQkRlMmZLWExCcHo4MzhWLXdqNzVBa0dpai1QamI2bFFwc25QaW52WWo5UHBsblZTZzVQbS01djU5ZEpfbXh5Q3hpQ19NQ2dZYXA4?oc=5"
           }
         },
         {
@@ -22940,6 +23132,42 @@
           "kind": "verify",
           "claim_id": 1072,
           "claim_text": "প্রশাসনিক ও আর্থিক প্রস্তুতির ঘাটতিতে আটকে আছে পে-স্কেল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.615Z",
+          "kind": "claim",
+          "claim_id": 1633,
+          "claim_text": "পে স্কেলের দাবিতে ৬ দিনের নতুন কর্মসূচি"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.623Z",
+          "kind": "claim",
+          "claim_id": 1637,
+          "claim_text": "জুলাই মাসেই মিলতে পারে নতুন পে-স্কেলের সুখবর"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1633,
+          "claim_text": "পে স্কেলের দাবিতে ৬ দিনের নতুন কর্মসূচি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1637,
+          "claim_text": "জুলাই মাসেই মিলতে পারে নতুন পে-স্কেলের সুখবর",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -24803,7 +25031,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T06:24:22.937Z",
+      "last_update": "2026-10-10T06:48:24.477Z",
       "claim_count": 2,
       "events": [
         {
@@ -25141,7 +25369,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T06:24:22.948Z",
+      "last_update": "2026-10-10T06:48:24.483Z",
       "claim_count": 2,
       "events": [
         {
@@ -25316,7 +25544,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T06:24:22.949Z",
+      "last_update": "2026-10-10T06:48:24.485Z",
       "claim_count": 2,
       "events": [
         {
@@ -28201,7 +28429,7 @@
       "cluster_id": 71,
       "headline": "কুমিল্লায় স্কুলছাত্রী তাজমিনকে ধর্ষণের পর হত্যা করে সিএনজি চালক সুমন",
       "first_seen": "2026-10-10T06:24:22.934Z",
-      "last_update": "2026-10-10T06:24:22.936Z",
+      "last_update": "2026-10-10T06:48:24.476Z",
       "claim_count": 2,
       "events": [
         {
@@ -28360,7 +28588,7 @@
       "cluster_id": 72,
       "headline": "আজ শুভ মহালয়া: মর্ত্যে চণ্ডীপাঠ-তর্পণের মধ্য দিয়ে দেবীপক্ষের সূচনা",
       "first_seen": "2026-10-10T06:24:22.939Z",
-      "last_update": "2026-10-10T06:24:22.942Z",
+      "last_update": "2026-10-10T06:48:24.479Z",
       "claim_count": 2,
       "events": [
         {
@@ -28529,7 +28757,7 @@
       "cluster_id": 73,
       "headline": "যমুনা টেলিভিশনে চাকরির সুযোগ",
       "first_seen": "2026-10-10T06:24:22.953Z",
-      "last_update": "2026-10-10T06:24:22.956Z",
+      "last_update": "2026-10-10T06:48:24.489Z",
       "claim_count": 2,
       "events": [
         {
@@ -29212,11 +29440,41 @@
     },
     "national-79": {
       "cluster_id": 79,
-      "headline": "মিরপুরে যাত্রীবাহী বাসে আগুন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+      "first_seen": "2026-10-10T06:48:24.865Z",
+      "last_update": "2026-10-10T06:48:24.867Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:25:42.000Z",
+          "kind": "evidence",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bangladesh-bank-seeks-tk-60000-crore-from-the-government-to-offset-losses-from-the-plundering/"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.864Z",
+          "kind": "claim",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1691,
+          "claim_text": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-790": {
@@ -29522,6 +29780,45 @@
       "events": [],
       "related": []
     },
+    "national-81": {
+      "cluster_id": 81,
+      "headline": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+      "first_seen": "2026-10-10T06:48:24.874Z",
+      "last_update": "2026-10-10T06:48:24.876Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:23:05.000Z",
+          "kind": "evidence",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/x1ezyq92er"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.875Z",
+          "kind": "claim",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1693,
+          "claim_text": "মা–বাবার ইচ্ছা পূরণে হাতির পিঠে বরযাত্রা, দেখতে ভিড় স্থানীয়দের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-810": {
       "cluster_id": 810,
       "headline": "যুবদল নেতার মামলায় জামায়াতের ২৫ নেতা–কর্মী কারাগারে",
@@ -29596,11 +29893,41 @@
     },
     "national-82": {
       "cluster_id": 82,
-      "headline": "টেকসই উন্নয়ন লক্ষ্যমাত্রা অর্জনে বিশ্বনেতাদের সঙ্গে কাজ করার আহ্বান প্রধানমন্ত্রীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাংলাদেশি ফটোগ্রাফারদের চোখে পাঁচটি পরিযায়ী পাখির চোখধাঁধানো ছবি",
+      "first_seen": "2026-10-10T06:48:24.877Z",
+      "last_update": "2026-10-10T06:48:24.880Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:22:30.000Z",
+          "kind": "evidence",
+          "claim_id": 1694,
+          "claim_text": "বাংলাদেশি ফটোগ্রাফারদের চোখে পাঁচটি পরিযায়ী পাখির চোখধাঁধানো ছবি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cwm247z07j78o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.879Z",
+          "kind": "claim",
+          "claim_id": 1694,
+          "claim_text": "বাংলাদেশি ফটোগ্রাফারদের চোখে পাঁচটি পরিযায়ী পাখির চোখধাঁধানো ছবি"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1694,
+          "claim_text": "বাংলাদেশি ফটোগ্রাফারদের চোখে পাঁচটি পরিযায়ী পাখির চোখধাঁধানো ছবি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-820": {
@@ -29677,11 +30004,41 @@
     },
     "national-83": {
       "cluster_id": 83,
-      "headline": "অপ্রতিম হত্যা: আটক তুহিনের কথাবার্তায় অসংলগ্নতার কথা বললেন উপাচার্য",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কচ্ছপ জোনাথনের ১৯৪ বছর আয়ুর রহস্য জানা গেল",
+      "first_seen": "2026-10-10T06:48:24.882Z",
+      "last_update": "2026-10-10T06:48:24.884Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:22:30.000Z",
+          "kind": "evidence",
+          "claim_id": 1695,
+          "claim_text": "কচ্ছপ জোনাথনের ১৯৪ বছর আয়ুর রহস্য জানা গেল",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/6hhls8mrk3"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.883Z",
+          "kind": "claim",
+          "claim_id": 1695,
+          "claim_text": "কচ্ছপ জোনাথনের ১৯৪ বছর আয়ুর রহস্য জানা গেল"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1695,
+          "claim_text": "কচ্ছপ জোনাথনের ১৯৪ বছর আয়ুর রহস্য জানা গেল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-830": {
@@ -31955,11 +32312,41 @@
     },
     "national-rabiul-target-to": {
       "cluster_id": 80,
-      "headline": "Rabiul: Target to complete six-lane Dhaka-Sylhet highway by June 2029",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+      "first_seen": "2026-10-10T06:48:24.869Z",
+      "last_update": "2026-10-10T06:48:24.872Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:23:37.000Z",
+          "kind": "evidence",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trump-vows-to-quickly-end-the-war-involving-iran-and-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-10T06:58:42.867Z",
+          "kind": "claim",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের"
+        },
+        {
+          "ts": "2026-10-10T06:58:42.973Z",
+          "kind": "verify",
+          "claim_id": 1692,
+          "claim_text": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-raf-fairford-labour": {
@@ -33073,7 +33460,7 @@
       "cluster_id": 70,
       "headline": "নিষিদ্ধঘোষিত ছাত্রলীগের সাবেক নেতা মাহফুজুল হায়দার কলকাতায় মারা গেছেন",
       "first_seen": "2026-10-10T06:24:22.924Z",
-      "last_update": "2026-10-10T06:24:22.927Z",
+      "last_update": "2026-10-10T06:48:24.474Z",
       "claim_count": 2,
       "events": [
         {
