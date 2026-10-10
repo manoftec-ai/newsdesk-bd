@@ -1,5 +1,7 @@
 ---
 title: "৯ বছর পর মৌলিক গান নিয়ে ফিরলেন কুসুম"
+thumbnail: "/images/entertainment-257.webp"
+thumbnailAlt: "৯ বছর পর মৌলিক গান নিয়ে ফিরলেন কুসুম — ছবি: চ্যানেল আই"
 seoTitle: "৯ বছর পর মৌলিক গান নিয়ে ফিরলেন কুসুম"
 excerpt: "Image ৯: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১০: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্রকাশ: শনিবার, ১০ অক্টোবর, ২০২৬"
 seoDescription: "Image ৯: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১০: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্রকাশ…"
