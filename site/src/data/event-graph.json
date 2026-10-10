@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3029,
+    "storyCount": 3033,
     "kinds": [
       "claim",
       "evidence",
@@ -15,7 +15,7 @@
       "cluster_id": 1,
       "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T10:16:49.162Z",
+      "last_update": "2026-10-10T10:37:13.333Z",
       "claim_count": 25,
       "events": [
         {
@@ -1916,9 +1916,31 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:16:49.165Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T10:37:13.347Z",
+      "claim_count": 3,
       "events": [
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
         {
           "ts": "2026-10-10T09:14:55.000Z",
           "kind": "evidence",
@@ -1987,9 +2009,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:46:18.963Z",
+          "kind": "claim",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+        },
         {
           "cluster_id": 84,
           "slug": "national-84",
@@ -2072,6 +2120,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "economy-155": {
+      "cluster_id": 155,
+      "headline": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+      "first_seen": "2026-10-10T10:37:13.668Z",
+      "last_update": "2026-10-10T10:37:13.670Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/market/s6hol8pvvg"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.041Z",
+          "kind": "claim",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-156": {
@@ -3245,7 +3332,7 @@
       "cluster_id": 131,
       "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
       "first_seen": "2026-10-10T09:55:17.379Z",
-      "last_update": "2026-10-10T10:16:49.170Z",
+      "last_update": "2026-10-10T10:37:13.350Z",
       "claim_count": 2,
       "events": [
         {
@@ -3319,6 +3406,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
         {
           "cluster_id": 86,
           "slug": "sports-86",
@@ -4255,7 +4350,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T10:16:49.176Z",
+      "last_update": "2026-10-10T10:37:13.363Z",
       "claim_count": 2,
       "events": [
         {
@@ -4447,7 +4542,7 @@
       "cluster_id": 1,
       "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T10:16:49.162Z",
+      "last_update": "2026-10-10T10:37:13.333Z",
       "claim_count": 25,
       "events": [
         {
@@ -6313,7 +6408,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
+        }
+      ]
     },
     "international-1132": {
       "cluster_id": 1132,
@@ -6508,6 +6612,22 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
+        {
           "cluster_id": 57,
           "slug": "national-57",
           "actor_links": 0,
@@ -6646,7 +6766,7 @@
       "cluster_id": 134,
       "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
       "first_seen": "2026-10-10T09:55:17.407Z",
-      "last_update": "2026-10-10T10:16:49.201Z",
+      "last_update": "2026-10-10T10:37:13.373Z",
       "claim_count": 2,
       "events": [
         {
@@ -6857,9 +6977,31 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:16:49.165Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T10:37:13.347Z",
+      "claim_count": 3,
       "events": [
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
         {
           "ts": "2026-10-10T09:14:55.000Z",
           "kind": "evidence",
@@ -6928,9 +7070,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:46:18.963Z",
+          "kind": "claim",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+        },
         {
           "cluster_id": 84,
           "slug": "national-84",
@@ -7147,6 +7315,118 @@
       "events": [],
       "related": []
     },
+    "international-148": {
+      "cluster_id": 148,
+      "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+      "first_seen": "2026-10-10T10:37:13.335Z",
+      "last_update": "2026-10-10T10:37:13.337Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:59.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi8AVBVV95cUxOODNQQWJBVmdZNnpHbkNNdnRXYkZQU3FyZm1aTGZ4NFVuZGhDaHRtRzJNM1AteEs1RnZ0SFdVOExmTE8yQ1dSbUZkWEx6TTFVRzdCZTlZNUdzY3NQUnJOcGlRV3JNamE2dGg5RWZ3YkRQSFl6UkZBQmtac1ljZVJBZnZSRHNxUTRtdHRxRWhNMFRhR3hBMVAtZ1N1dlFYVzB2ekJZNl9tU0tKNndjaHowZTJLemJ4dU1kbFRZalNYVnctNDZHUEtkZ1BSMlJBS1RNS1l1TGJ6NXBjU1NNb21hS1hITm1YZTRZVnBPYTNGVUFEd0MtdUFOSk1LUzQyZEh3OTBnbHZzRVpIcHFUZEFObzdqTE5uY3RsWnpkakt4dldtZ2Q4cUxyT3owcVAwX255dW5CTndLUERRbzQwTHBBRlpYZUZ6WmczNEZUZVR6REJCTVBIVTNlS2xpdWY5YTFfanBReTBnbmp2SFhYMGd6cHI4NDQ0bmFhVFd4aVZCTktzNVctYS1UbGc1MzBMd1d5akNBSjZrVkNGQy1PRUNyWWNjd3NKYm4zX0oycnFObkYwOHF0Tk52SGVRVDRpNmd6YVI4MWlnT3JNclVpdFg1anJnNUc5d3p6blVadFlEWW1IN0xxazBPMHNZNDhyVmVUNUJqeFhpb2FNNWVIV05mNDR4RVhXR253cE1wR0hsZy0xd1BGa2g3eDd6UUxfMHF2X0pObEx5dGhQcjl2cHJPbE1vU2syb1VuX3B5dUwxYXBVc1ZJc3pMTTZvbVMwc0pLS2dITGdmZTB1RXExUEFuOHd3bzhZN2Jjcng1MklvaHpocjdhR243U1RXbzQ5YmU5RmxKWV9CYTVNUGw4endGQVE0SU9jSDZMUkM2aG02M3FCZXVaZHNQdGlrdW05d3ZIeG5PdXhJYm5YVlF2b0xLRGQ4a0VLTjN2Wkd2TmE4d0kxcDBUdFRJRHVwOXd2OGVISllBRTcyNWFOb0hOZXltcg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.012Z",
+          "kind": "claim",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.015Z",
+          "kind": "claim",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
+          "cluster_id": 86,
+          "slug": "sports-86",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
+    },
     "international-1486": {
       "cluster_id": 1486,
       "headline": "ভারতের সাম্প্রতিক বিক্ষোভ ‘কমিউনিস্ট–মাওবাদী–ইসলামপন্থী ষড়যন্ত্র’: আরএসএস",
@@ -7163,6 +7443,84 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "international-151": {
+      "cluster_id": 151,
+      "headline": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+      "first_seen": "2026-10-10T10:37:13.652Z",
+      "last_update": "2026-10-10T10:37:13.655Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:12:03.000Z",
+          "kind": "evidence",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/protests-and-clashes-in-brussels-over-austerity-measures/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.031Z",
+          "kind": "claim",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-152": {
+      "cluster_id": 152,
+      "headline": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+      "first_seen": "2026-10-10T10:37:13.657Z",
+      "last_update": "2026-10-10T10:37:13.659Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:29.000Z",
+          "kind": "evidence",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/vj2w7jp0ge"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.033Z",
+          "kind": "claim",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1533": {
@@ -9530,7 +9888,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T10:16:49.197Z",
+      "last_update": "2026-10-10T10:37:13.369Z",
       "claim_count": 3,
       "events": [
         {
@@ -9645,6 +10003,22 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
+        {
           "cluster_id": 131,
           "slug": "national-131",
           "actor_links": 0,
@@ -9675,22 +10049,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বর্ষীয়ান অভিনেতা নানা পাটেকার আর নেই"
-        },
-        {
-          "cluster_id": 26,
-          "slug": "national-26",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 70,
-          "slug": "politics-70",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
         }
       ]
     },
@@ -10483,6 +10841,14 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -10521,14 +10887,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -11285,7 +11643,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
+        }
+      ]
     },
     "national-1120": {
       "cluster_id": 1120,
@@ -11438,6 +11805,14 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 106,
           "slug": "national-106",
           "actor_links": 0,
@@ -11476,14 +11851,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -11545,7 +11912,7 @@
       "cluster_id": 114,
       "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর",
       "first_seen": "2026-10-10T08:55:22.916Z",
-      "last_update": "2026-10-10T10:16:49.175Z",
+      "last_update": "2026-10-10T10:37:13.362Z",
       "claim_count": 2,
       "events": [
         {
@@ -11719,7 +12086,7 @@
       "cluster_id": 115,
       "headline": "সাফারি পার্ক থেকে দুই লেমুর চুরির ঘটনায় দায়ীদের বিরুদ্ধে কঠোর ব্যবস্থা: পরিবেশ মন্ত্রী",
       "first_seen": "2026-10-10T08:55:22.923Z",
-      "last_update": "2026-10-10T10:16:49.177Z",
+      "last_update": "2026-10-10T10:37:13.364Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -11800,7 +12167,7 @@
       "cluster_id": 116,
       "headline": "এনসিটি নিয়ে ডিপি ওয়ার্ল্ডের সঙ্গে চুক্তিতে কী রয়েছে, জানালেন আশিক চৌধুরী",
       "first_seen": "2026-10-10T08:55:22.934Z",
-      "last_update": "2026-10-10T10:16:49.199Z",
+      "last_update": "2026-10-10T10:37:13.370Z",
       "claim_count": 2,
       "events": [
         {
@@ -11951,7 +12318,7 @@
       "cluster_id": 117,
       "headline": "বিমানবন্দরে আটকে দেওয়া হয়েছে বৈষম্যবিরোধী আন্দোলনের নেতা মাহদীকে",
       "first_seen": "2026-10-10T08:55:22.939Z",
-      "last_update": "2026-10-10T10:16:49.200Z",
+      "last_update": "2026-10-10T10:37:13.372Z",
       "claim_count": 2,
       "events": [
         {
@@ -12864,6 +13231,22 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
         {
           "cluster_id": 57,
           "slug": "national-57",
@@ -13898,7 +14281,7 @@
       "cluster_id": 131,
       "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
       "first_seen": "2026-10-10T09:55:17.379Z",
-      "last_update": "2026-10-10T10:16:49.170Z",
+      "last_update": "2026-10-10T10:37:13.350Z",
       "claim_count": 2,
       "events": [
         {
@@ -13972,6 +14355,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
         {
           "cluster_id": 86,
           "slug": "sports-86",
@@ -14552,7 +14943,7 @@
       "cluster_id": 134,
       "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
       "first_seen": "2026-10-10T09:55:17.407Z",
-      "last_update": "2026-10-10T10:16:49.201Z",
+      "last_update": "2026-10-10T10:37:13.373Z",
       "claim_count": 2,
       "events": [
         {
@@ -15279,6 +15670,14 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -15317,14 +15716,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -15332,9 +15723,31 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:16:49.165Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T10:37:13.347Z",
+      "claim_count": 3,
       "events": [
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:02:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12c1BGcVY5bEl3dVBGbHc0bEV2ZWVfbDMzcUhDU1ZvcThQeTN4LUJrR3VTVFpXakhUZTVyUWNDdkhNX2FGNjBpLWRESlZOMjlGY1o4Vg?oc=5"
+          }
+        },
         {
           "ts": "2026-10-10T09:14:55.000Z",
           "kind": "evidence",
@@ -15403,9 +15816,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:46:18.963Z",
+          "kind": "claim",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5149,
+          "claim_text": "দিল্লিতে আটক মমতা ব্যানার্জি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 112,
+          "slug": "national-112",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+        },
         {
           "cluster_id": 84,
           "slug": "national-84",
@@ -15482,7 +15921,7 @@
       "cluster_id": 141,
       "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
       "first_seen": "2026-10-10T10:16:49.166Z",
-      "last_update": "2026-10-10T10:16:49.168Z",
+      "last_update": "2026-10-10T10:37:13.348Z",
       "claim_count": 2,
       "events": [
         {
@@ -16385,12 +16824,115 @@
     },
     "national-148": {
       "cluster_id": 148,
-      "headline": "এমপি গাজী নজরুলের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার, জিজ্ঞাসাবাদের জন্য এমপি ও প্রথম স্ত্রী থানায়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+      "first_seen": "2026-10-10T10:37:13.335Z",
+      "last_update": "2026-10-10T10:37:13.337Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:59.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi8AVBVV95cUxOODNQQWJBVmdZNnpHbkNNdnRXYkZQU3FyZm1aTGZ4NFVuZGhDaHRtRzJNM1AteEs1RnZ0SFdVOExmTE8yQ1dSbUZkWEx6TTFVRzdCZTlZNUdzY3NQUnJOcGlRV3JNamE2dGg5RWZ3YkRQSFl6UkZBQmtac1ljZVJBZnZSRHNxUTRtdHRxRWhNMFRhR3hBMVAtZ1N1dlFYVzB2ekJZNl9tU0tKNndjaHowZTJLemJ4dU1kbFRZalNYVnctNDZHUEtkZ1BSMlJBS1RNS1l1TGJ6NXBjU1NNb21hS1hITm1YZTRZVnBPYTNGVUFEd0MtdUFOSk1LUzQyZEh3OTBnbHZzRVpIcHFUZEFObzdqTE5uY3RsWnpkakt4dldtZ2Q4cUxyT3owcVAwX255dW5CTndLUERRbzQwTHBBRlpYZUZ6WmczNEZUZVR6REJCTVBIVTNlS2xpdWY5YTFfanBReTBnbmp2SFhYMGd6cHI4NDQ0bmFhVFd4aVZCTktzNVctYS1UbGc1MzBMd1d5akNBSjZrVkNGQy1PRUNyWWNjd3NKYm4zX0oycnFObkYwOHF0Tk52SGVRVDRpNmd6YVI4MWlnT3JNclVpdFg1anJnNUc5d3p6blVadFlEWW1IN0xxazBPMHNZNDhyVmVUNUJqeFhpb2FNNWVIV05mNDR4RVhXR253cE1wR0hsZy0xd1BGa2g3eDd6UUxfMHF2X0pObEx5dGhQcjl2cHJPbE1vU2syb1VuX3B5dUwxYXBVc1ZJc3pMTTZvbVMwc0pLS2dITGdmZTB1RXExUEFuOHd3bzhZN2Jjcng1MklvaHpocjdhR243U1RXbzQ5YmU5RmxKWV9CYTVNUGw4endGQVE0SU9jSDZMUkM2aG02M3FCZXVaZHNQdGlrdW05d3ZIeG5PdXhJYm5YVlF2b0xLRGQ4a0VLTjN2Wkd2TmE4d0kxcDBUdFRJRHVwOXd2OGVISllBRTcyNWFOb0hOZXltcg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.012Z",
+          "kind": "claim",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.015Z",
+          "kind": "claim",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
+          "cluster_id": 86,
+          "slug": "sports-86",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
     },
     "national-1480": {
       "cluster_id": 1480,
@@ -16466,12 +17008,115 @@
     },
     "national-149": {
       "cluster_id": 149,
-      "headline": "টাঙ্গাইলে মহাসড়কের পাশে সাবেক ইউপি সদস্যকে কুপিয়ে হত্যা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+      "first_seen": "2026-10-10T10:37:13.338Z",
+      "last_update": "2026-10-10T10:37:13.341Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T08:00:50.000Z",
+          "kind": "evidence",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/973528/%E0%A6%8F%E0%A6%B8%E0%A6%8F%E0%A6%B8%E0%A6%B8%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%85%E0%A6%95%E0%A7%83%E0%A6%A4%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A7%A9-%E0%A6%AE%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%AB%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:16:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RNVNkMUd5N3JiMTNWTU41R3d1M3VQcUJXMW9ud0hiQVBnMkc2LXdUc3FxbEFuMV9ydjByR01lNVBBVGM1TVZmdTVra2hUOHdSeFBJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:16:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RNVNkMUd5N3JiMTNWTU41R3d1M3VQcUJXMW9ud0hiQVBnMkc2LXdUc3FxbEFuMV9ydjByR01lNVBBVGM1TVZmdTVra2hUOHdSeFBJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.018Z",
+          "kind": "claim",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.020Z",
+          "kind": "claim",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
+        },
+        {
+          "cluster_id": 57,
+          "slug": "national-57",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্রুতই জাতীয় গ্রিডে রূপপুরের প্রথম ইউনিটের বিদ্যুৎ সরবরাহের আশ্বাস রোসাটমের"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        }
+      ]
     },
     "national-1491": {
       "cluster_id": 1491,
@@ -16617,12 +17262,171 @@
     },
     "national-150": {
       "cluster_id": 150,
-      "headline": "পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদের সঙ্গে আলজেরিয়ার রাষ্ট্রদূতের সাক্ষাৎ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
+      "first_seen": "2026-10-10T10:37:13.358Z",
+      "last_update": "2026-10-10T10:37:13.362Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-10T08:09:49.000Z",
+          "kind": "evidence",
+          "claim_id": 5164,
+          "claim_text": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/973534/%E0%A6%AE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE-%E0%A6%AE%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%95%E0%A7%8B%E0%A6%A8%E0%A6%93-%E0%A6%86%E0%A6%AA%E0%A6%B8-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87-%E0%A6%A8%E0%A6%BE-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:10:19.000Z",
+          "kind": "evidence",
+          "claim_id": 5164,
+          "claim_text": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxQTE51cE9Jb3doc2gwZDVNX1RXYmlWWG1uSHRkVHdZbTkwU0xjVEl3R05KQXN6cHRkb2x5Nm04R1BESXlCNkRMOGI5U0NtY1k3RW1OaWo5RXBON3ZFTVlMeXBiamh4LUZ4V3ZsTi1GMUdVcFVuSDlWODUzb01EanIyMWVDaUUtU3N2RFc0RFRJZ203ZzR0VzdPMGVKZW5EQldRaU1POGE1U3o5bU5sUm55RzVEcjNoY180RUpjc1VtdUIzNEMyVHlRRmtqUHJBV2RzNFVxdzljUnF6RnZFRm1vaXVySTU5RS10bTcxY0RtVFM4dUtRVVhNMFlMUlE4aXdBTDg0ZUQ4VDRpQlhIbktNa25wQ0djXzhQR2w4U2dhZ3h4N0R0TE5feW1rTGVBcjNDdzA4WFpjUzRlZUhvNU1UUDZXc3JrRzVnT0dxMTQ0bERSLWx2eG8tS201dTc0MUgwWWdIQU9CZm8zYTJDbDlQMkZGQWJURE1KeC1CVUlJVUxRZU9uVHBkUHBtLWNRZk5pSWViTmNScmR5WkpYMFU5S3hIRDlQbEEwOHYwckVJVHlwNE1uZzZhampWN0dwXzlCbTdJX09MYm9Dc2VsekFfczFQbUpzTjVVdGgwQ2U0SFF5MWFsUnM4Q3hCNzZ4U1U1SFplcE5najkyeFUtRVFscm9KNkh2dlVGOWs0YXBLZUtjOEppYTYySUU3MlJSU283TnZ0d0NR0gGrBEFVX3lxTE5VTWx5Q0Y2aFF0X2ctNGlQV2ZxVUpLZjFuNEx1REg0MXdYbm5jYnoxeEhOT1F3ZnBuWkVYRzFnZEVJdDR4MDZYWUpyanNfYWlfNHVuVV9mbHRoNWVTMGpnY0dudUJlcjJIdUF0Q0NwNzZ2eXNxM3JDVTdMWHI1b3FXNUN0elZTaFNtamVCcHVDU2QtNlBnRGphenhHNXRKMHZKN2Y4cm1LZERGU3VWNFo5bVBVeWEzZ1hCX25lQkVaZW81aGgxQjNienF6ZmZXbDJpRzlnZFpBTTlnS3kzRUR4T2xVTjhGUjFhU1VodG94UnptOHNheWVCTHc2YVUzWjhzV2Z6aE04MmJzeWFCZ0FOQlg0aTM5MVJ6OFNpbU5TU1Z3RGFlbzAtSHJWdGdLUXAycUNJQktaWFdMOWw2TDc0SXhVQ0dpanNleU9wN0xyNFlPUzd5T3FjeFJZejBKdWNWMXNMQjJndVZicEJDakRsYTJ3ODE4TDFtODRGS1lIOE5penVSNWN4bS1TY3ZaMmN5Tk9MeWdQYUlMbnZHRnFvb0EyTWlkTndiNFdRaXRreTVkX0tWXzF0MDNxVWRFenR0OW5FYjZfTHhNZ1ZxdjJxRVQ2blEteDhjTjBHUHVEWXlHLVRzOHhiOTc1b1c3QUZqMEVvdFdiNG9jVU0wZzBCT1FEZnNTUFlodXJKRXNpbFZqUTNLQUJiSy1ZMUppNVgtT0JuNk9sUVBDdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:10:19.000Z",
+          "kind": "evidence",
+          "claim_id": 5165,
+          "claim_text": "মক্কা-মদিনার নিরাপত্তায় কোনো আপস নয়: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxQTE51cE9Jb3doc2gwZDVNX1RXYmlWWG1uSHRkVHdZbTkwU0xjVEl3R05KQXN6cHRkb2x5Nm04R1BESXlCNkRMOGI5U0NtY1k3RW1OaWo5RXBON3ZFTVlMeXBiamh4LUZ4V3ZsTi1GMUdVcFVuSDlWODUzb01EanIyMWVDaUUtU3N2RFc0RFRJZ203ZzR0VzdPMGVKZW5EQldRaU1POGE1U3o5bU5sUm55RzVEcjNoY180RUpjc1VtdUIzNEMyVHlRRmtqUHJBV2RzNFVxdzljUnF6RnZFRm1vaXVySTU5RS10bTcxY0RtVFM4dUtRVVhNMFlMUlE4aXdBTDg0ZUQ4VDRpQlhIbktNa25wQ0djXzhQR2w4U2dhZ3h4N0R0TE5feW1rTGVBcjNDdzA4WFpjUzRlZUhvNU1UUDZXc3JrRzVnT0dxMTQ0bERSLWx2eG8tS201dTc0MUgwWWdIQU9CZm8zYTJDbDlQMkZGQWJURE1KeC1CVUlJVUxRZU9uVHBkUHBtLWNRZk5pSWViTmNScmR5WkpYMFU5S3hIRDlQbEEwOHYwckVJVHlwNE1uZzZhampWN0dwXzlCbTdJX09MYm9Dc2VsekFfczFQbUpzTjVVdGgwQ2U0SFF5MWFsUnM4Q3hCNzZ4U1U1SFplcE5najkyeFUtRVFscm9KNkh2dlVGOWs0YXBLZUtjOEppYTYySUU3MlJSU283TnZ0d0NR0gGrBEFVX3lxTE5VTWx5Q0Y2aFF0X2ctNGlQV2ZxVUpLZjFuNEx1REg0MXdYbm5jYnoxeEhOT1F3ZnBuWkVYRzFnZEVJdDR4MDZYWUpyanNfYWlfNHVuVV9mbHRoNWVTMGpnY0dudUJlcjJIdUF0Q0NwNzZ2eXNxM3JDVTdMWHI1b3FXNUN0elZTaFNtamVCcHVDU2QtNlBnRGphenhHNXRKMHZKN2Y4cm1LZERGU3VWNFo5bVBVeWEzZ1hCX25lQkVaZW81aGgxQjNienF6ZmZXbDJpRzlnZFpBTTlnS3kzRUR4T2xVTjhGUjFhU1VodG94UnptOHNheWVCTHc2YVUzWjhzV2Z6aE04MmJzeWFCZ0FOQlg0aTM5MVJ6OFNpbU5TU1Z3RGFlbzAtSHJWdGdLUXAycUNJQktaWFdMOWw2TDc0SXhVQ0dpanNleU9wN0xyNFlPUzd5T3FjeFJZejBKdWNWMXNMQjJndVZicEJDakRsYTJ3ODE4TDFtODRGS1lIOE5penVSNWN4bS1TY3ZaMmN5Tk9MeWdQYUlMbnZHRnFvb0EyTWlkTndiNFdRaXRreTVkX0tWXzF0MDNxVWRFenR0OW5FYjZfTHhNZ1ZxdjJxRVQ2blEteDhjTjBHUHVEWXlHLVRzOHhiOTc1b1c3QUZqMEVvdFdiNG9jVU0wZzBCT1FEZnNTUFlodXJKRXNpbFZqUTNLQUJiSy1ZMUppNVgtT0JuNk9sUVBDdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:11:04.000Z",
+          "kind": "evidence",
+          "claim_id": 5164,
+          "claim_text": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DalpYWDJXOG1GSTR3aFJsdG5hSjZFUnh1V2YySDRkOVFWZlFpV1NTcmdLM1lDNU45NDVHbFFNeEVIUzluTFN1STBROUtITDVEQ2F3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:11:04.000Z",
+          "kind": "evidence",
+          "claim_id": 5166,
+          "claim_text": "‘মক্কা-মদিনার নিরাপত্তার প্রশ্নে বাংলাদেশের কোনো দ্বিমত নেই’",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DalpYWDJXOG1GSTR3aFJsdG5hSjZFUnh1V2YySDRkOVFWZlFpV1NTcmdLM1lDNU45NDVHbFFNeEVIUzluTFN1STBROUtITDVEQ2F3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.023Z",
+          "kind": "claim",
+          "claim_id": 5164,
+          "claim_text": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.027Z",
+          "kind": "claim",
+          "claim_id": 5165,
+          "claim_text": "মক্কা-মদিনার নিরাপত্তায় কোনো আপস নয়: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.029Z",
+          "kind": "claim",
+          "claim_id": 5166,
+          "claim_text": "‘মক্কা-মদিনার নিরাপত্তার প্রশ্নে বাংলাদেশের কোনো দ্বিমত নেই’"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5164,
+          "claim_text": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5165,
+          "claim_text": "মক্কা-মদিনার নিরাপত্তায় কোনো আপস নয়: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5166,
+          "claim_text": "‘মক্কা-মদিনার নিরাপত্তার প্রশ্নে বাংলাদেশের কোনো দ্বিমত নেই’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
+        },
+        {
+          "cluster_id": 113,
+          "slug": "national-113",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
+        },
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
+          "cluster_id": 57,
+          "slug": "national-57",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্রুতই জাতীয় গ্রিডে রূপপুরের প্রথম ইউনিটের বিদ্যুৎ সরবরাহের আশ্বাস রোসাটমের"
+        },
+        {
+          "cluster_id": 48,
+          "slug": "national-48",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
+        }
+      ]
     },
     "national-1500": {
       "cluster_id": 1500,
@@ -16707,11 +17511,41 @@
     },
     "national-151": {
       "cluster_id": 151,
-      "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+      "first_seen": "2026-10-10T10:37:13.652Z",
+      "last_update": "2026-10-10T10:37:13.655Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:12:03.000Z",
+          "kind": "evidence",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/protests-and-clashes-in-brussels-over-austerity-measures/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.031Z",
+          "kind": "claim",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5167,
+          "claim_text": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1510": {
@@ -16788,11 +17622,41 @@
     },
     "national-152": {
       "cluster_id": 152,
-      "headline": "ধামরাইয়ে চীনা কর্মকর্তাকে বেঁধে লকার থেকে ৭০ লাখ টাকা লুটের অভিযোগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+      "first_seen": "2026-10-10T10:37:13.657Z",
+      "last_update": "2026-10-10T10:37:13.659Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:29.000Z",
+          "kind": "evidence",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/vj2w7jp0ge"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.033Z",
+          "kind": "claim",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5168,
+          "claim_text": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1520": {
@@ -16860,11 +17724,41 @@
     },
     "national-153": {
       "cluster_id": 153,
-      "headline": "আশুলিয়ায় বিস্ফোরণের পর যেভাবে পোশাক কারখানায় আগুনের সূত্রপাত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "একটি সম্পর্কের গল্প, যার ভেতরে লুকিয়ে আছে অনেক প্রশ্ন",
+      "first_seen": "2026-10-10T10:37:13.661Z",
+      "last_update": "2026-10-10T10:37:13.663Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:00.000Z",
+          "kind": "evidence",
+          "claim_id": 5169,
+          "claim_text": "একটি সম্পর্কের গল্প, যার ভেতরে লুকিয়ে আছে অনেক প্রশ্ন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/monobondu/mb57a4cf46"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.036Z",
+          "kind": "claim",
+          "claim_id": 5169,
+          "claim_text": "একটি সম্পর্কের গল্প, যার ভেতরে লুকিয়ে আছে অনেক প্রশ্ন"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5169,
+          "claim_text": "একটি সম্পর্কের গল্প, যার ভেতরে লুকিয়ে আছে অনেক প্রশ্ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1532": {
@@ -16932,11 +17826,41 @@
     },
     "national-154": {
       "cluster_id": 154,
-      "headline": "ডিসেম্বরের মধ্যে আলোচনা শেষ করতে চায় সংবিধান সংশোধন কমিটি: সালাহউদ্দিন আহমদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ছাত্রীর স্বামীকে হুমকির অভিযোগ, অভিযুক্ত অফিস সহকারীকে শোকজ",
+      "first_seen": "2026-10-10T10:37:13.665Z",
+      "last_update": "2026-10-10T10:37:13.666Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:09:20.000Z",
+          "kind": "evidence",
+          "claim_id": 5170,
+          "claim_text": "ছাত্রীর স্বামীকে হুমকির অভিযোগ, অভিযুক্ত অফিস সহকারীকে শোকজ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/allegation-of-threatening-a-students-husband-accused-office-assistant-issued-a-show-cause-notice/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.038Z",
+          "kind": "claim",
+          "claim_id": 5170,
+          "claim_text": "ছাত্রীর স্বামীকে হুমকির অভিযোগ, অভিযুক্ত অফিস সহকারীকে শোকজ"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5170,
+          "claim_text": "ছাত্রীর স্বামীকে হুমকির অভিযোগ, অভিযুক্ত অফিস সহকারীকে শোকজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1540": {
@@ -17013,11 +17937,41 @@
     },
     "national-155": {
       "cluster_id": 155,
-      "headline": "৮ দিন পর উৎপাদনে ফিরলো রামপাল তাপবিদ্যুৎ কেন্দ্রের দ্বিতীয় ইউনিট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+      "first_seen": "2026-10-10T10:37:13.668Z",
+      "last_update": "2026-10-10T10:37:13.670Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/market/s6hol8pvvg"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.041Z",
+          "kind": "claim",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5171,
+          "claim_text": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1550": {
@@ -21244,6 +22198,22 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
+        {
           "cluster_id": 141,
           "slug": "sports-141",
           "actor_links": 0,
@@ -21266,22 +22236,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
-        },
-        {
-          "cluster_id": 94,
-          "slug": "national-94",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রবাসীদের জন্য বড় সুখবর দিল মালয়েশিয়া"
-        },
-        {
-          "cluster_id": 57,
-          "slug": "national-57",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্রুতই জাতীয় গ্রিডে রূপপুরের প্রথম ইউনিটের বিদ্যুৎ সরবরাহের আশ্বাস রোসাটমের"
         }
       ]
     },
@@ -21532,6 +22486,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 132,
           "slug": "national-132",
           "actor_links": 0,
@@ -21554,14 +22516,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র নির্মাণে ব্যয় দ্বিগুণের বেশি?"
         }
       ]
     },
@@ -23149,7 +24103,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T10:16:49.198Z",
+      "last_update": "2026-10-10T10:37:13.370Z",
       "claim_count": 2,
       "events": [
         {
@@ -24768,7 +25722,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T10:16:49.199Z",
+      "last_update": "2026-10-10T10:37:13.371Z",
       "claim_count": 2,
       "events": [
         {
@@ -26439,6 +27393,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 142,
           "slug": "national-142",
           "actor_links": 0,
@@ -26453,14 +27415,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
-        },
-        {
-          "cluster_id": 113,
-          "slug": "national-113",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
         }
       ]
     },
@@ -28755,7 +29709,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T10:16:49.195Z",
+      "last_update": "2026-10-10T10:37:13.367Z",
       "claim_count": 2,
       "events": [
         {
@@ -28851,7 +29805,7 @@
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T10:16:49.204Z",
+      "last_update": "2026-10-10T10:37:13.376Z",
       "claim_count": 2,
       "events": [
         {
@@ -29020,7 +29974,7 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T10:16:49.205Z",
+      "last_update": "2026-10-10T10:37:13.377Z",
       "claim_count": 10,
       "events": [
         {
@@ -31277,7 +32231,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T10:16:49.178Z",
+      "last_update": "2026-10-10T10:37:13.365Z",
       "claim_count": 2,
       "events": [
         {
@@ -31624,7 +32578,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T10:16:49.202Z",
+      "last_update": "2026-10-10T10:37:13.374Z",
       "claim_count": 2,
       "events": [
         {
@@ -31699,6 +32653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 113,
           "slug": "national-113",
           "actor_links": 0,
@@ -31737,14 +32699,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -31815,7 +32769,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T10:16:49.203Z",
+      "last_update": "2026-10-10T10:37:13.375Z",
       "claim_count": 2,
       "events": [
         {
@@ -32881,6 +33835,22 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
         {
           "cluster_id": 123,
           "slug": "national-123",
@@ -36467,7 +37437,7 @@
       "cluster_id": 84,
       "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
       "first_seen": "2026-10-10T07:09:36.452Z",
-      "last_update": "2026-10-10T10:16:49.169Z",
+      "last_update": "2026-10-10T10:37:13.349Z",
       "claim_count": 3,
       "events": [
         {
@@ -36880,7 +37850,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T10:16:49.179Z",
+      "last_update": "2026-10-10T10:37:13.366Z",
       "claim_count": 2,
       "events": [
         {
@@ -36954,6 +37924,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
         {
           "cluster_id": 131,
           "slug": "national-131",
@@ -37809,6 +38787,14 @@
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 134,
           "slug": "national-134",
           "actor_links": 0,
@@ -37831,14 +38817,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 106,
-          "slug": "national-106",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
         }
       ]
     },
@@ -38131,7 +39109,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T10:16:49.176Z",
+      "last_update": "2026-10-10T10:37:13.363Z",
       "claim_count": 2,
       "events": [
         {
@@ -40538,12 +41516,115 @@
     },
     "politics-148": {
       "cluster_id": 148,
-      "headline": "সংবিধান সংশোধন কমিটির বৈঠক শুরুর পর প্রতিবাদ জানিয়ে বেরিয়ে গেলেন হাসনাত কাইয়ুম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+      "first_seen": "2026-10-10T10:37:13.335Z",
+      "last_update": "2026-10-10T10:37:13.337Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:10:59.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi8AVBVV95cUxOODNQQWJBVmdZNnpHbkNNdnRXYkZQU3FyZm1aTGZ4NFVuZGhDaHRtRzJNM1AteEs1RnZ0SFdVOExmTE8yQ1dSbUZkWEx6TTFVRzdCZTlZNUdzY3NQUnJOcGlRV3JNamE2dGg5RWZ3YkRQSFl6UkZBQmtac1ljZVJBZnZSRHNxUTRtdHRxRWhNMFRhR3hBMVAtZ1N1dlFYVzB2ekJZNl9tU0tKNndjaHowZTJLemJ4dU1kbFRZalNYVnctNDZHUEtkZ1BSMlJBS1RNS1l1TGJ6NXBjU1NNb21hS1hITm1YZTRZVnBPYTNGVUFEd0MtdUFOSk1LUzQyZEh3OTBnbHZzRVpIcHFUZEFObzdqTE5uY3RsWnpkakt4dldtZ2Q4cUxyT3owcVAwX255dW5CTndLUERRbzQwTHBBRlpYZUZ6WmczNEZUZVR6REJCTVBIVTNlS2xpdWY5YTFfanBReTBnbmp2SFhYMGd6cHI4NDQ0bmFhVFd4aVZCTktzNVctYS1UbGc1MzBMd1d5akNBSjZrVkNGQy1PRUNyWWNjd3NKYm4zX0oycnFObkYwOHF0Tk52SGVRVDRpNmd6YVI4MWlnT3JNclVpdFg1anJnNUc5d3p6blVadFlEWW1IN0xxazBPMHNZNDhyVmVUNUJqeFhpb2FNNWVIV05mNDR4RVhXR253cE1wR0hsZy0xd1BGa2g3eDd6UUxfMHF2X0pObEx5dGhQcjl2cHJPbE1vU2syb1VuX3B5dUwxYXBVc1ZJc3pMTTZvbVMwc0pLS2dITGdmZTB1RXExUEFuOHd3bzhZN2Jjcng1MklvaHpocjdhR243U1RXbzQ5YmU5RmxKWV9CYTVNUGw4endGQVE0SU9jSDZMUkM2aG02M3FCZXVaZHNQdGlrdW05d3ZIeG5PdXhJYm5YVlF2b0xLRGQ4a0VLTjN2Wkd2TmE4d0kxcDBUdFRJRHVwOXd2OGVISllBRTcyNWFOb0hOZXltcg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:22:52.000Z",
+          "kind": "evidence",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/india/973567/%E2%80%98%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%86%E0%A6%9F%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%9B%E0%A7%87%E2%80%99-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.012Z",
+          "kind": "claim",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.015Z",
+          "kind": "claim",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5160,
+          "claim_text": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5161,
+          "claim_text": "‘আমাকে আটক করা হয়েছে’, ভিডিও বার্তায় জানালেন কেজরিওয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 131,
+          "slug": "national-131",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি"
+        },
+        {
+          "cluster_id": 86,
+          "slug": "sports-86",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 10,
+          "slug": "national-10",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        }
+      ]
     },
     "politics-1564": {
       "cluster_id": 1564,
@@ -41131,6 +42212,14 @@
       ],
       "related": [
         {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
+        {
           "cluster_id": 141,
           "slug": "sports-141",
           "actor_links": 0,
@@ -41169,14 +42258,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 63,
-          "slug": "national-63",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি"
         }
       ]
     },
@@ -41654,7 +42735,7 @@
       "cluster_id": 141,
       "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
       "first_seen": "2026-10-10T10:16:49.166Z",
-      "last_update": "2026-10-10T10:16:49.168Z",
+      "last_update": "2026-10-10T10:37:13.348Z",
       "claim_count": 2,
       "events": [
         {
@@ -41790,12 +42871,115 @@
     },
     "sports-149": {
       "cluster_id": 149,
-      "headline": "বিসিবির সভায় ক্রিকেটারদের ম্যাচ ফি বাড়লো, এলো আরও যেসব সিদ্ধান্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+      "first_seen": "2026-10-10T10:37:13.338Z",
+      "last_update": "2026-10-10T10:37:13.341Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T08:00:50.000Z",
+          "kind": "evidence",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/national/973528/%E0%A6%8F%E0%A6%B8%E0%A6%8F%E0%A6%B8%E0%A6%B8%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%85%E0%A6%95%E0%A7%83%E0%A6%A4%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A7%A9-%E0%A6%AE%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%AB%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:16:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RNVNkMUd5N3JiMTNWTU41R3d1M3VQcUJXMW9ud0hiQVBnMkc2LXdUc3FxbEFuMV9ydjByR01lNVBBVGM1TVZmdTVra2hUOHdSeFBJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:16:34.000Z",
+          "kind": "evidence",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RNVNkMUd5N3JiMTNWTU41R3d1M3VQcUJXMW9ud0hiQVBnMkc2LXdUc3FxbEFuMV9ydjByR01lNVBBVGM1TVZmdTVra2hUOHdSeFBJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.018Z",
+          "kind": "claim",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.020Z",
+          "kind": "claim",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ"
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5162,
+          "claim_text": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:46:19.112Z",
+          "kind": "verify",
+          "claim_id": 5163,
+          "claim_text": "এসএসসিতে ফেল করা শিক্ষার্থীদের ৩-৬ মাসে ফের পরীক্ষা দেওয়ার সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
+        },
+        {
+          "cluster_id": 57,
+          "slug": "national-57",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্রুতই জাতীয় গ্রিডে রূপপুরের প্রথম ইউনিটের বিদ্যুৎ সরবরাহের আশ্বাস রোসাটমের"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        }
+      ]
     },
     "sports-1499": {
       "cluster_id": 1499,
@@ -42233,7 +43417,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T10:16:49.179Z",
+      "last_update": "2026-10-10T10:37:13.366Z",
       "claim_count": 2,
       "events": [
         {
@@ -42307,6 +43491,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
+        },
         {
           "cluster_id": 131,
           "slug": "national-131",
