@@ -1,5 +1,7 @@
 ---
 title: "ঢামেকে মরদেহ ফেলে পালালেন দুই ব্যক্তি"
+thumbnail: "/images/national-11.webp"
+thumbnailAlt: "ঢামেকে মরদেহ ফেলে পালালেন দুই ব্যক্তি — যাচাইডেস্ক"
 seoTitle: "ঢামেকে মরদেহ ফেলে পালালেন দুই ব্যক্তি"
 excerpt: "Image ১৪: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৫: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন খুলনা মহানগরীতে ছিনতাইকারীদের চ"
 seoDescription: "Image ১৪: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৫: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন খুলনা…"
