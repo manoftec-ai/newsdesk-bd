@@ -4,7 +4,7 @@ seoTitle: "মা–বাবার ইচ্ছা পূরণে হাতি
 excerpt: "ধাপেরহাট ইউনিয়নের ২ নম্বর ওয়ার্ডের সদস্য শাহাদত হোসেন বিষয়টি নিশ্চিত করে মুঠোফোনে কে বলেন, সাকিব মিয়া তিলকপাড়া (চকনদী) গ্রামের ছায়েদ আলীর ছেলে এবং একটি বেসরকারি প্রতিষ্ঠানে চাকরি ক"
 seoDescription: "ধাপেরহাট ইউনিয়নের ২ নম্বর ওয়ার্ডের সদস্য শাহাদত হোসেন বিষয়টি নিশ্চিত করে মুঠোফোনে কে বলেন, সাকিব মিয়া তিলকপাড়া (চকনদী) গ্রামের ছায়েদ আলীর ছেলে এবং একটি বে…"
 date: 2026-10-10T06:23:05.000Z
-publishedAt: 2026-10-10T07:08:53.927Z
+publishedAt: 2026-10-10T07:06:24.286Z
 developing: true
 category: "national"
 tags: ["gaibandha"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T07:08:53.834Z"
+  evaluatedAt: "2026-10-10T07:06:24.184Z"
   clusterId: 81
   claimIds:
     - 1693
@@ -43,7 +43,7 @@ publication:
   slug: "national-81"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T07:08:53.834Z"
+  checkedAt: "2026-10-10T07:06:24.184Z"
   clusterId: 81
   claimIds:
     - 1693

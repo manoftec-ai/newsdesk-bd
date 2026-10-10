@@ -4,7 +4,7 @@ seoTitle: "ইরান ও ইউক্রেন যুদ্ধ দ্রু�
 excerpt: "ইয়েমেনের সরকার বলেছে, গত ২৪ ঘণ্টায় তাদের বাহিনী ২ হাজার ৭৫০টির বেশি হামলা চালিয়েছে এবং ১ হাজার ৪০০-এর বেশি হুতি যোদ্ধাকে নিষ্ক্রিয় করেছে। সৌদি আরবের একটি বিমানবন্দরে হুতিদের হামলায়"
 seoDescription: "ইয়েমেনের সরকার বলেছে, গত ২৪ ঘণ্টায় তাদের বাহিনী ২ হাজার ৭৫০টির বেশি হামলা চালিয়েছে এবং ১ হাজার ৪০০-এর বেশি হুতি যোদ্ধাকে নিষ্ক্রিয় করেছে। সৌদি আরবের একটি …"
 date: 2026-10-10T06:23:37.000Z
-publishedAt: 2026-10-10T07:08:53.905Z
+publishedAt: 2026-10-10T07:06:24.255Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T07:08:53.834Z"
+  evaluatedAt: "2026-10-10T07:06:24.184Z"
   clusterId: 80
   claimIds:
     - 1692
@@ -43,7 +43,7 @@ publication:
   slug: "international-80"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T07:08:53.834Z"
+  checkedAt: "2026-10-10T07:06:24.184Z"
   clusterId: 80
   claimIds:
     - 1692
