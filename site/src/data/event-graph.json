@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3005,
+    "storyCount": 3008,
     "kinds": [
       "claim",
       "evidence",
@@ -15,7 +15,7 @@
       "cluster_id": 1,
       "headline": "ট্রাম্পের ঘোষণা করা রাশিয়ান ডিজেল চুক্তিকে পুতিনের জন্য উপহার বলছেন জেলেনস্কি",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T07:31:42.130Z",
+      "last_update": "2026-10-10T07:55:17.079Z",
       "claim_count": 22,
       "events": [
         {
@@ -1335,11 +1335,41 @@
     },
     "economy-103": {
       "cluster_id": 103,
-      "headline": "তিতাস গ্যাসক্ষেত্র থেকে জাতীয় গ্রিডে আরও সাড়ে ১২ মিলিয়ন ঘনফুট গ্যাসের সরবরাহ শুরু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+      "first_seen": "2026-10-10T07:55:18.312Z",
+      "last_update": "2026-10-10T07:55:18.313Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:51:18.000Z",
+          "kind": "evidence",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/dbi60n25c9"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.428Z",
+          "kind": "claim",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1041": {
@@ -3542,7 +3572,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T07:31:42.135Z",
+      "last_update": "2026-10-10T07:55:17.167Z",
       "claim_count": 2,
       "events": [
         {
@@ -3625,6 +3655,30 @@
             "sources": "[\"c2343\",\"c2344\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2343,
+          "claim_text": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 27,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2344,
+          "claim_text": "শাবানা আজমি থেকে নাসিরউদ্দিন শাহ, ককরোচ জনতা পার্টির আন্দোলনে আর কারা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -3706,6 +3760,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "international-103": {
+      "cluster_id": 103,
+      "headline": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+      "first_seen": "2026-10-10T07:55:18.312Z",
+      "last_update": "2026-10-10T07:55:18.313Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:51:18.000Z",
+          "kind": "evidence",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/dbi60n25c9"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.428Z",
+          "kind": "claim",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2697,
+          "claim_text": "হোয়াইট হাউসের নতুন প্রেস সেক্রেটারি হচ্ছেন কেটি জাকারাইয়া",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1105": {
@@ -6415,7 +6508,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T07:31:42.146Z",
+      "last_update": "2026-10-10T07:55:17.174Z",
       "claim_count": 3,
       "events": [
         {
@@ -6565,11 +6658,41 @@
     },
     "national-100": {
       "cluster_id": 100,
-      "headline": "২০২৯ সালের জুনের মধ্যে শেষ হবে ঢাকা-সিলেট মহাসড়কের কাজ: রেলপথ মন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যমুনা ব্যাংক ফাউন্ডেশনের মেডিক্যাল ক্যাম্পের সমাপ্তি",
+      "first_seen": "2026-10-10T07:55:18.213Z",
+      "last_update": "2026-10-10T07:55:18.303Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:35:56.000Z",
+          "kind": "evidence",
+          "claim_id": 2694,
+          "claim_text": "যমুনা ব্যাংক ফাউন্ডেশনের মেডিক্যাল ক্যাম্পের সমাপ্তি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/corporate/dsakwx93r3"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.329Z",
+          "kind": "claim",
+          "claim_id": 2694,
+          "claim_text": "যমুনা ব্যাংক ফাউন্ডেশনের মেডিক্যাল ক্যাম্পের সমাপ্তি"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2694,
+          "claim_text": "যমুনা ব্যাংক ফাউন্ডেশনের মেডিক্যাল ক্যাম্পের সমাপ্তি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1000": {
@@ -6664,11 +6787,41 @@
     },
     "national-101": {
       "cluster_id": 101,
-      "headline": "হোটেলে খেয়ে প্রাইভেটকার নিয়ে মহাসড়কে উঠতেই বাসের ধাক্কা, নিহত ৪",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "‘গাড়ি উঠলে সেতুটি কেঁপে ওঠে’",
+      "first_seen": "2026-10-10T07:55:18.305Z",
+      "last_update": "2026-10-10T07:55:18.307Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:20:23.000Z",
+          "kind": "evidence",
+          "claim_id": 2695,
+          "claim_text": "‘গাড়ি উঠলে সেতুটি কেঁপে ওঠে’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/1c5m8px0sc"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.423Z",
+          "kind": "claim",
+          "claim_id": 2695,
+          "claim_text": "‘গাড়ি উঠলে সেতুটি কেঁপে ওঠে’"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2695,
+          "claim_text": "‘গাড়ি উঠলে সেতুটি কেঁপে ওঠে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1010": {
@@ -6732,6 +6885,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-102": {
+      "cluster_id": 102,
+      "headline": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+      "first_seen": "2026-10-10T07:55:18.308Z",
+      "last_update": "2026-10-10T07:55:18.310Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:11:32.000Z",
+          "kind": "evidence",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/75fspwjo6l"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.426Z",
+          "kind": "claim",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1020": {
@@ -6885,6 +7077,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-104": {
+      "cluster_id": 104,
+      "headline": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+      "first_seen": "2026-10-10T07:55:18.315Z",
+      "last_update": "2026-10-10T07:55:18.316Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:45:51.000Z",
+          "kind": "evidence",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/tennis/5oaumpd2xn"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.431Z",
+          "kind": "claim",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1040": {
@@ -15140,7 +15371,7 @@
       "cluster_id": 2,
       "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ",
       "first_seen": "2026-10-10T04:01:51.852Z",
-      "last_update": "2026-10-10T07:31:42.141Z",
+      "last_update": "2026-10-10T07:55:17.170Z",
       "claim_count": 6,
       "events": [
         {
@@ -15469,14 +15700,6 @@
           "headline": "প্রবাসীদের জন্য বড় সুখবর দিল মালয়েশিয়া"
         },
         {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
-        },
-        {
           "cluster_id": 70,
           "slug": "politics-70",
           "actor_links": 0,
@@ -15499,6 +15722,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "যা দেখে বুঝবেন সাধারণ জ্বর না ডেঙ্গু"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -17358,7 +17589,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T07:31:42.150Z",
+      "last_update": "2026-10-10T07:55:17.296Z",
       "claim_count": 2,
       "events": [
         {
@@ -18977,7 +19208,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T07:31:42.151Z",
+      "last_update": "2026-10-10T07:55:17.430Z",
       "claim_count": 2,
       "events": [
         {
@@ -22956,7 +23187,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T07:31:42.143Z",
+      "last_update": "2026-10-10T07:55:17.172Z",
       "claim_count": 2,
       "events": [
         {
@@ -23035,7 +23266,7 @@
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T07:31:42.154Z",
+      "last_update": "2026-10-10T07:55:17.433Z",
       "claim_count": 2,
       "events": [
         {
@@ -23204,7 +23435,7 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T07:31:42.155Z",
+      "last_update": "2026-10-10T07:55:17.434Z",
       "claim_count": 9,
       "events": [
         {
@@ -25421,7 +25652,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T07:31:42.142Z",
+      "last_update": "2026-10-10T07:55:17.171Z",
       "claim_count": 2,
       "events": [
         {
@@ -25768,7 +25999,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T07:31:42.152Z",
+      "last_update": "2026-10-10T07:55:17.431Z",
       "claim_count": 2,
       "events": [
         {
@@ -25943,7 +26174,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T07:31:42.153Z",
+      "last_update": "2026-10-10T07:55:17.432Z",
       "claim_count": 2,
       "events": [
         {
@@ -26817,20 +27048,20 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
-        },
-        {
           "cluster_id": 70,
           "slug": "politics-70",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
+        },
+        {
+          "cluster_id": 93,
+          "slug": "national-93",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
         }
       ]
     },
@@ -30539,7 +30770,7 @@
       "cluster_id": 84,
       "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
       "first_seen": "2026-10-10T07:09:36.452Z",
-      "last_update": "2026-10-10T07:31:42.139Z",
+      "last_update": "2026-10-10T07:55:17.169Z",
       "claim_count": 2,
       "events": [
         {
@@ -30883,7 +31114,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T07:31:42.143Z",
+      "last_update": "2026-10-10T07:55:17.172Z",
       "claim_count": 2,
       "events": [
         {
@@ -32126,7 +32357,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T07:31:42.135Z",
+      "last_update": "2026-10-10T07:55:17.167Z",
       "claim_count": 2,
       "events": [
         {
@@ -32208,6 +32439,30 @@
             "field": "সমর্থন",
             "sources": "[\"c2343\",\"c2344\"]",
             "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2343,
+          "claim_text": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 27,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2344,
+          "claim_text": "শাবানা আজমি থেকে নাসিরউদ্দিন শাহ, ককরোচ জনতা পার্টির আন্দোলনে আর কারা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
           }
         }
       ],
@@ -32323,7 +32578,7 @@
       "cluster_id": 94,
       "headline": "প্রবাসীদের জন্য বড় সুখবর দিল মালয়েশিয়া",
       "first_seen": "2026-10-10T07:31:42.147Z",
-      "last_update": "2026-10-10T07:31:42.149Z",
+      "last_update": "2026-10-10T07:55:17.175Z",
       "claim_count": 2,
       "events": [
         {
@@ -34160,11 +34415,41 @@
     },
     "politics-102": {
       "cluster_id": 102,
-      "headline": "১৭ বছর শিক্ষাব্যবস্থা নিয়ে ছেলেখেলা করে জাতির মেরুদণ্ড ভেঙে দেওয়া হয়েছে: রিজভী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+      "first_seen": "2026-10-10T07:55:18.308Z",
+      "last_update": "2026-10-10T07:55:18.310Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T07:11:32.000Z",
+          "kind": "evidence",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/75fspwjo6l"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.426Z",
+          "kind": "claim",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2696,
+          "claim_text": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1045": {
@@ -34897,14 +35182,6 @@
       ],
       "related": [
         {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
-        },
-        {
           "cluster_id": 86,
           "slug": "sports-86",
           "actor_links": 0,
@@ -34943,6 +35220,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মায়ের মাথায় হাত বুলিয়ে নবজাতক চুরি, হাসপাতাল থেকে পালাল নারী"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         }
       ]
     },
@@ -35092,11 +35377,41 @@
     },
     "sports-104": {
       "cluster_id": 104,
-      "headline": "ট্রিপল সেঞ্চুরি করে আফগানিস্তানের বিপক্ষে টেস্ট দলে হৃদয়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+      "first_seen": "2026-10-10T07:55:18.315Z",
+      "last_update": "2026-10-10T07:55:18.316Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T06:45:51.000Z",
+          "kind": "evidence",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/tennis/5oaumpd2xn"
+          }
+        },
+        {
+          "ts": "2026-10-10T08:03:35.431Z",
+          "kind": "claim",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন"
+        },
+        {
+          "ts": "2026-10-10T08:03:35.509Z",
+          "kind": "verify",
+          "claim_id": 2698,
+          "claim_text": "রাজশাহীতে জুনিয়র টেনিসের পর্দা নামল, কোন দেশের কে চ্যাম্পিয়ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1057": {
@@ -35724,7 +36039,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T07:31:42.143Z",
+      "last_update": "2026-10-10T07:55:17.172Z",
       "claim_count": 2,
       "events": [
         {
