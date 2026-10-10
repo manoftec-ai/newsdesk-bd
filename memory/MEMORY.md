@@ -14,7 +14,7 @@ Recorded per user request 2026-09-20: "keep these two points for me … you can 
 1. **[PENDING — needed to activate F5 + F3] Telegram secrets**: user creates a bot (BotFather) + channel, then adds `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` as GitHub repo secrets → the Telegram auto-post workflow and the /api/contact relay both switch on (currently silently skip / return `not_configured`).
 2. **[PENDING — needed to activate FB auto-post (new, D46 2026-09-23)]** Facebook page + token: user creates the FB Page (e.g. "নিউজডেস্ক বিডি"), a FB App + long-lived Page Access Token (`pages_manage_posts`), then adds `FACEBOOK_PAGE_ID` + `FACEBOOK_PAGE_TOKEN` as GitHub repo secrets → `facebook.yml` (cron */20 + workflow_run) auto-posts one newest-unsent story/run. Code live since commit b711029; silently skips until then.
 3. **[PENDING — dashboard-only action] Vercel Web Analytics**: enable in Vercel dashboard (Settings → Analytics, project `newsdesk-bd`). No CLI exists. `/_vercel/insights/script.js` returns 404 until then; script tag is already deployed (defer, harmless).
-4. **[IN PROGRESS — GSC indexing]** Search console + site indexing: the site-side XML stack (sitemap.xml, news-sitemap.xml, robots.txt, IndexNow key + pipeline poke) is ALREADY live. NEW (D46, 2026-09-23): `SEO.googleSiteVerification` + `SEO.bingSiteVerification` slots shipped in theme.config.ts (meta-tag verification auto-rendered in BaseLayout head). User-side: add `https://jachaidesk.com/` in Google Search Console → pick HTML-tag verification → paste the token into theme.config.ts → deploy → click Verify → submit sitemap.xml (+ news-sitemap.xml). Google ignores IndexNow, so GSC verification is required for Google indexing; optional Bing Webmaster `msvalidate.01` token uses the same slot.
+4. **[ONE CLICK LEFT — GSC indexing]** The site-side XML stack (sitemap.xml, news-sitemap.xml, robots.txt, IndexNow key + pipeline poke) is live, and the verification tag is live as of D151 (2026-10-10): `SEO.googleSiteVerification = google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0` in theme.config.ts, deployed (dpl_Ger4DQftRpQb3zL31G9axE12UfZ5, commit 5e80e281), and confirmed present in the live HTML of `https://jachaidesk.com/` and `/article/national-61`. Remaining user-side step: in Google Search Console press **Verify**, then submit sitemap.xml (+ news-sitemap.xml). Optional Bing Webmaster `msvalidate.01` goes into `SEO.bingSiteVerification` (same slot) + redeploy.
 
 ## User
 - Name / handle: manoftec-ai (Vercel team: man-of-technology; account email verified)
@@ -679,3 +679,29 @@ The card is deliberately **opaque**: transparent OG images get composited onto b
 **CAVEAT — nobody has seen this logo.** This model has no vision input, so spelling, colours and visual balance were never checked by eye; every claim above is from pixel measurement. A human should look at it before it is trusted.
 
 **Design change to be aware of:** the default social card is now dark, where every previous card was light cream. `og-default-v2.png` still exists if the light look is preferred.
+
+## D151: the GSC tag went live — and the deploy was hiding behind a build stuck for five hours (2026-10-10)
+
+**The user only asked for the token in the right place; the interesting part was why it took an hour to get there.**
+
+**The one-line change.** `SEO.googleSiteVerification` in `site/src/config/theme.config.ts` now carries the user's GSC HTML-tag token (`iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0`). The D46 slot and the `BaseLayout` conditional `<meta>` already existed, so no template work was needed. Commit `5e80e281`, pushed, deployed to prod as `dpl_Ger4DQftRpQb3zL31G9axE12UfZ5`.
+
+**Verified on the real domain, not on the deploy API** — `https://jachaidesk.com/` (HTTP 200) and `https://jachaidesk.com/article/national-61` (HTTP 200) both return the meta tag in the served HTML.
+
+**Why it looked broken.** The `vercel deploy --prod` CLI was still running after 10 minutes with no output. The API said `QUEUED`. Checking the queue properly showed **36 deployments created that day, 23 of them QUEUED, oldest queued at 02:22**, and exactly one deployment sitting in `BUILDING` since **02:07**.
+
+**Root cause: Vercel Hobby runs one build at a time.** One deployment hung mid-build and never finished or errored, so it held the single build slot for five hours and every later deploy piled up behind it in the queue, invisible. Nothing was wrong with the project, the token, or the code.
+
+**The fix.** `DELETE` the stuck build, plus every queued deploy **older** than the one being shipped — safe because they are strict ancestors of the deploying commit, so nothing they contained is missing. 23 deletes, then the target went `BUILDING` immediately and finished READY in ~10 minutes (Astro renders ~600 article pages at roughly 1 s each).
+
+**Diagnosing it next time — go straight to the API, not the CLI:**
+```bash
+TID=team_iW4eHZzR6FOl25MLZ5WOBVG2
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v6/deployments?projectId=prj_FX5YmvjrSM5JnbCm1PNbQuJU6xJO&limit=100&teamId=$TID"
+```
+Group by `readyState`. Anything in `BUILDING` for more than ~15 min is the culprit; cancel it, then cancel queued deployments older than your target. (Note `v9`/`v13` on the project-scoped list returns 404 — the working calls are `v6` for the list and `v13` for a single deployment. Build progress is readable via `/v2/deployments/<uid>/events`.)
+
+**Also confirmed: the GitHub repo is NOT connected to Vercel.** `gitDeployment` on the project is `null` and every deployment's `source` is `cli`. **Pushing to GitHub does not deploy this site** — only `site/deploy.sh` (and the auto-deploy script) do. Treat git push and deploy as two separate steps, always.
+
+**Left undone, deliberately:** the Bing `msvalidate.01` slot stays empty because no token has been supplied.
