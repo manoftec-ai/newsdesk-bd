@@ -4,7 +4,7 @@ seoTitle: "সিঙ্গাপুরের সঙ্গে বাণিজ্�
 excerpt: "বাংলাদেশ ও সিঙ্গাপুরের মধ্যে বাণিজ্য ও অর্থনৈতিক সহযোগিতা বাড়াতে একটি ওয়ার্কিং কমিটি গঠনের সিদ্ধান্ত হয়েছে। আজ বুধবার বাংলাদেশ ব্যাংকের গভর্নর মোস্তাকুর রহমানের সঙ্গে বাংলাদেশে নিয"
 seoDescription: "বাংলাদেশ ও সিঙ্গাপুরের মধ্যে বাণিজ্য ও অর্থনৈতিক সহযোগিতা বাড়াতে একটি ওয়ার্কিং কমিটি গঠনের সিদ্ধান্ত হয়েছে। আজ বুধবার বাংলাদেশ ব্যাংকের গভর্নর মোস্তাকুর র…"
 date: 2026-10-07T17:30:00.000Z
-publishedAt: 2026-10-10T00:52:40.865Z
+publishedAt: 2026-10-10T00:50:38.598Z
 developing: true
 category: "economy"
 tags: ["economy"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T00:52:40.766Z"
+  evaluatedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2220
   claimIds:
     - 676186
@@ -43,7 +43,7 @@ publication:
   slug: "economy-2220"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T00:52:40.766Z"
+  checkedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2220
   claimIds:
     - 676186

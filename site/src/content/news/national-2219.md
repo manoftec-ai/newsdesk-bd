@@ -4,7 +4,7 @@ seoTitle: "নদীভাঙন রোধে বারবার ব্যয় �
 excerpt: "৩ হাজার ৯৮১ কিলোমিটার নদী পুনঃখনন, ১ হাজার ৬৩০ কিলোমিটার নদী ড্রেজিং এবং ১ হাজার ৭৬৮ কিলোমিটার নদীতীর সংরক্ষণের কাজ বাস্তবায়ন করেছে। ৪০টি ইউনিয়নের ৮৮৪টি মৌজা ‘উচ্চ’ এবং ৬৬টি ইউনিয়ন"
 seoDescription: "৩ হাজার ৯৮১ কিলোমিটার নদী পুনঃখনন, ১ হাজার ৬৩০ কিলোমিটার নদী ড্রেজিং এবং ১ হাজার ৭৬৮ কিলোমিটার নদীতীর সংরক্ষণের কাজ বাস্তবায়ন করেছে। ৪০টি ইউনিয়নের ৮৮৪টি ম…"
 date: 2026-10-07T17:31:33.000Z
-publishedAt: 2026-10-10T00:52:40.848Z
+publishedAt: 2026-10-10T00:50:38.582Z
 developing: true
 category: "national"
 tags: ["weather", "rajshahi"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T00:52:40.766Z"
+  evaluatedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2219
   claimIds:
     - 676185
@@ -43,7 +43,7 @@ publication:
   slug: "national-2219"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T00:52:40.766Z"
+  checkedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2219
   claimIds:
     - 676185

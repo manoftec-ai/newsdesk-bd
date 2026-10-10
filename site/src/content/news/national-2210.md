@@ -4,7 +4,7 @@ seoTitle: "ছুটে আসছিল ভারতীয় স্যাটেল
 excerpt: "১৯৮২ সালের ১০ এপ্রিল উৎক্ষেপণের পর একই বছরের সেপ্টেম্বরে স্যাটেলাইটটি নিষ্ক্রিয় করা হয়েছিল। ধ্বংসাবশেষের গতিপথ বিশ্লেষণ করে ১৩ আগস্ট বিএস-১কে সামান্য বাঁ দিকে সরিয়ে নেওয়ার সিদ্ধান্"
 seoDescription: "১৯৮২ সালের ১০ এপ্রিল উৎক্ষেপণের পর একই বছরের সেপ্টেম্বরে স্যাটেলাইটটি নিষ্ক্রিয় করা হয়েছিল। ধ্বংসাবশেষের গতিপথ বিশ্লেষণ করে ১৩ আগস্ট বিএস-১কে সামান্য বাঁ …"
 date: 2026-10-07T17:16:28.000Z
-publishedAt: 2026-10-10T00:52:40.878Z
+publishedAt: 2026-10-10T00:50:38.611Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T00:52:40.766Z"
+  evaluatedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2210
   claimIds:
     - 672417
@@ -43,7 +43,7 @@ publication:
   slug: "national-2210"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T00:52:40.766Z"
+  checkedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2210
   claimIds:
     - 672417

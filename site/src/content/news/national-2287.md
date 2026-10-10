@@ -4,7 +4,7 @@ seoTitle: "ভুল করে নাটোর রেলস্টেশনে �
 excerpt: "নাটোর রেলস্টেশনে এক জার্মান পর্যটকের ল্যাপটপ, ক্যামেরা ও গুরুত্বপূর্ণ জিনিসপত্র খোয়া গেছে। নাটোর রেলস্টেশনের বিশ্রামাগার থেকে তাঁর জিনিসপত্র ও ব্যাগ চুরি হয়েছে। ভুক্তভোগীকে রেলওয়ে "
 seoDescription: "নাটোর রেলস্টেশনে এক জার্মান পর্যটকের ল্যাপটপ, ক্যামেরা ও গুরুত্বপূর্ণ জিনিসপত্র খোয়া গেছে। নাটোর রেলস্টেশনের বিশ্রামাগার থেকে তাঁর জিনিসপত্র ও ব্যাগ চুরি …"
 date: 2026-10-07T17:29:53.000Z
-publishedAt: 2026-10-10T00:52:40.871Z
+publishedAt: 2026-10-10T00:50:38.605Z
 developing: false
 category: "national"
 tags: ["transport", "rajshahi"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-10T00:52:40.766Z"
+  evaluatedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2287
   claimIds:
     - 737832
@@ -44,7 +44,7 @@ publication:
   slug: "national-2287"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-10T00:52:40.766Z"
+  checkedAt: "2026-10-10T00:50:38.494Z"
   clusterId: 2287
   claimIds:
     - 737832
