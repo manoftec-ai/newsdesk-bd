@@ -1,0 +1,69 @@
+---
+title: "পর্দার ‘মিনিস্টার ফাটাকেষ্ট’ এবার বাস্তবেও মন্ত্রীর মর্যাদায়"
+seoTitle: "পর্দার ‘মিনিস্টার ফাটাকেষ্ট’ এবার বাস্তবেও মন্ত্রীর মর্যাদায়"
+excerpt: "বড় পর্দায় ‘মিনিস্টার ফাটাকেষ্ট’ নামে পরিচিত জনপ্রিয় অভিনেতা মিঠুন চক্রবর্তীকে পশ্চিমবঙ্গ রাজ্যের তথ্য ও সংস্কৃতি বিভাগের উপদেষ্টা হিসেবে নিয়োগ দেওয়া হয়েছে। প্রতিবেদনে বলা হয়েছে, ত"
+seoDescription: "বড় পর্দায় ‘মিনিস্টার ফাটাকেষ্ট’ নামে পরিচিত জনপ্রিয় অভিনেতা মিঠুন চক্রবর্তীকে পশ্চিমবঙ্গ রাজ্যের তথ্য ও সংস্কৃতি বিভাগের উপদেষ্টা হিসেবে নিয়োগ দেওয়া হয়েছ…"
+date: 2026-10-07T17:46:01.000Z
+publishedAt: 2026-10-10T00:44:45.798Z
+developing: false
+category: "international"
+tags: ["world"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "২০১৬ সালের ২৬ ডিসেম্বর তিনি রাজ্যসভার সদস্যপদ থেকে পদত্যাগ করেন এবং বিধানসভা নির্বাচনের আগে ৭ মার্চ বিজেপিতে যোগ দেন"
+  - "এছাড়া আগামী ১৬ ডিসেম্বর থেকে শুরু হতে যাওয়া কলকাতা আন্তর্জাতিক চলচ্চিত্র উৎসব কমিটির প্রধান উপদেষ্টার দায়িত্বেও রয়েছেন তিনি"
+  - "পরবর্তীতে তিনি সর্বভারতীয় তৃণমূল কংগ্রেসের মাধ্যমে নিজের নির্বাচনী রাজনীতি শুরু করেন এবং মমতা বন্দ্যোপাধ্যায়ের দলের টিকিটে ভারতের উচ্চকক্ষ রাজ্যসভার সদস্য হন"
+faq: []
+sources:
+  - name: "দৈনিক ইত্তেফাক"
+    url: "https://www.ittefaq.com.bd/813822/%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A6%BE%E0%A6%B0-%E2%80%98%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AB%E0%A6%BE%E0%A6%9F%"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/foreign/india/973139/%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A6%BE%E0%A6%B0-%E2%80%98%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AB%E0%A6%BE%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A7%87%E0%A6%B7%E0%A7%8D%E0%A6%9F%E2%80%99-%E0%A6%8F%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AC%E0%A7%9C"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-10-10T00:44:45.684Z"
+  clusterId: 2383
+  claimIds:
+    - 801440
+    - 801441
+  evidenceHash: "9ef7084cb8dd6190"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (ittefaq)"
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+publication:
+  slug: "international-2383"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-10T00:44:45.684Z"
+  clusterId: 2383
+  claimIds:
+    - 801440
+    - 801441
+  evidenceHash: "9ef7084cb8dd6190"
+---
+
+বড় পর্দায় ‘মিনিস্টার ফাটাকেষ্ট’ নামে পরিচিত জনপ্রিয় অভিনেতা মিঠুন চক্রবর্তীকে পশ্চিমবঙ্গ রাজ্যের তথ্য ও সংস্কৃতি বিভাগের উপদেষ্টা হিসেবে নিয়োগ দেওয়া হয়েছে।
+
+প্রতিবেদনে বলা হয়েছে, তথ্য ও সংস্কৃতি দফতরের দায়িত্বে থাকা মুখ্যমন্ত্রী শুভেন্দু অধিকারী সম্প্রতি একটি অনুষ্ঠানে এই নিয়োগের ইঙ্গিত দিয়েছিলেন।
+
+রাজ্য সরকার গত বুধবার এই নির্দেশিকা জারি করেছে বলে জানিয়েছে কলকাতাভিত্তিক সংবাদমাধ্যম আনন্দবাজার পত্রিকা।
+
+তথ্য ও সংস্কৃতি বিভাগের উপদেষ্টা হিসেবে মিঠুন চক্রবর্তী ঠিক কী দায়িত্ব পালন করবেন, তা এখনও স্পষ্ট নয়।
+
+সম্প্রতি কলকাতার স্যাটেলাইট টাউন নিউ টাউনে ‘উত্তম কুমার ফিল্ম সেন্টার’-এর ভিত্তিপ্রস্তর স্থাপন অনুষ্ঠানে উপস্থিত ছিলেন শুভেন্দু অধিকারী।
+
+ষাটের ও সত্তরের দশকে নকশাল আন্দোলনের সাথে যুক্ত ছিলেন মিঠুন।
