@@ -16,7 +16,7 @@
         "Vercel project newsdesk-bd -> Settings -> Analytics: enable Web Analytics (no CLI; /_vercel/insights/script.js 404 until enabled; defer script already shipped and harmless)"
       ],
       "inProgress": [
-        "GSC verification tag is LIVE (D151, 2026-10-10): SEO.googleSiteVerification = google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0 in theme.config.ts, deployed to prod (dpl_Ger4DQftRpQb3zL31G9axE12UfZ5, commit 5e80e281) and verified in the HTML of jachaidesk.com homepage + article pages. ONLY remaining user step: in Google Search Console press Verify, then submit sitemap.xml and news-sitemap.xml. Optional Bing msvalidate.01 goes in SEO.bingSiteVerification (same slot)."
+        "GSC verification (D151, 2026-10-10): BOTH methods are live - meta tag with bare token iLevWBfp...dzF0 in theme.config.ts SEO.googleSiteVerification, and /google-site-verification.html containing 'google-site-verification=iLevWB...dzF0' (commit 886048cf, prod dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm, live-verified 09:08 UTC). Note: the first attempt failed because the full 'google-site-verification=TOKEN' string was wrongly placed in the meta content attribute. User action: press Verify in GSC again. If they used a DOMAIN property, HTML tag/file will never work - DNS TXT is required instead. Then submit sitemap.xml + news-sitemap.xml. Optional Bing msvalidate.01 goes in SEO.bingSiteVerification."
       ]
     }
   },
@@ -1364,15 +1364,17 @@
     {
       "id": "D151",
       "date": "2026-10-10",
-      "title": "GSC HTML-tag verification shipped live - and the Vercel build queue was dead behind one stuck build",
-      "decision": "Pasted the user's GSC HTML-tag token (google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0) into site/src/config/theme.config.ts SEO.googleSiteVerification (the D46 slot), commit 5e80e281 pushed, deployed to prod as dpl_Ger4DQftRpQb3zL31G9axE12UfZ5; verified the meta tag in the live HTML of https://jachaidesk.com/ and /article/national-61. Deploy was initially stuck QUEUED for 30+ min: root cause was dpl_FefjzZHDGRtiS121qXk7NbU8sLfB stuck in BUILDING since 02:07, and Hobby allows one concurrent build, so all 23 queued deploys (36 created that day) were blocked behind it. Fix: DELETE the stuck build plus every queued deploy older than the target (all superseded - the target commit is HEAD, so nothing was lost), then the target built in ~10 min. Also confirmed the GitHub repo is NOT connected to Vercel (project gitDeployment is null, every deploy source is 'cli'), so a git push does NOT deploy - only site/deploy.sh / the auto-deploy script do.",
+      "title": "GSC verification shipped live (after a real bug) + Vercel build queue was frozen behind one stuck build",
+      "decision": "Two passes. PASS 1 (WRONG): pasted the user's whole pasted string 'google-site-verification=iLevWB...' into the meta content attribute. That is the HTML-FILE payload, not the HTML-tag payload; Google's meta-tag form needs the BARE token in content. GSC returned 'not verified'. PASS 2 (CORRECT): SEO.googleSiteVerification now holds the bare token 'iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0', AND site/public/google-site-verification.html was added containing the full 'google-site-verification=...' string, so BOTH official methods are satisfied (HTML tag + HTML file). Commit 886048cf, prod dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm (READY+aliased 09:08 UTC). Live-verified: meta tag on https://jachaidesk.com/ now reads content=\"iLevWB...\" and /google-site-verification.html returns 200 text/html with the full string. User then presses Verify in GSC.",
       "rationale": "One stuck BUILDING deployment silently freezes the entire Hobby build queue; the symptom looks like 'deploys stay QUEUED forever'. Cancelling superseded queued builds is safe because they are strict ancestors of the deploying commit. Verified the tag by fetching the real domain (local Termux DNS handled it this time) rather than trusting the deploy API.",
       "files": [
         "site/src/config/theme.config.ts"
       ],
       "userActions": [
         "Press Verify in Google Search Console for jachaidesk.com, then submit sitemap.xml + news-sitemap.xml"
-      ]
+      ],
+      "lesson": "GSC token formats are not interchangeable. HTML-tag method: <meta name=\"google-site-verification\" content=\"TOKEN\"> with the BARE token. HTML-file method: a file at the site root whose entire body is 'google-site-verification=TOKEN'. The user's pasted string was the file payload - ask which tab they copied from, or ship both.",
+      "verdict": "awaiting user Verify click (2nd attempt)"
     }
   ],
   "sources": [
@@ -1571,7 +1573,7 @@
     "Verification delays publication (maturity + signal gathering) -> accepted: trust over speed",
     "D131: Facebook Page distribution is BUILT but UNVERIFIED against the real composer - publish-button selectors and the post-success confirmation signal cannot be tested until the user logs in. --probe exists to surface redesign drift."
   ],
-  "workInProgress": "D151 (2026-10-10): GSC verification tag deployed live + Vercel build-queue recovery (stuck BUILDING deployment dpl_FefjzZHDGRtiS121qXk7NbU8sLfB cancelled, 22 superseded queued deploys cancelled, target dpl_Ger4DQftRpQb3zL31G9axE12UfZ5 READY and aliased). Awaiting the user's Verify click in Google Search Console. Operational rule recorded: Vercel Hobby = 1 concurrent build, so ALWAYS check for a long-stuck BUILDING deployment when new deploys sit QUEUED.",
+  "workInProgress": "D151 (2026-10-10) UPDATE 09:08 UTC: GSC verification shipped on the SECOND pass. Pass 1 failed because the full 'google-site-verification=TOKEN' string was put in the meta content attribute (that is the HTML-FILE payload; the meta tag needs the bare token). Pass 2 (commit 886048cf, prod dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm READY+aliased) ships both: bare token in the meta tag AND /google-site-verification.html at the root. Live-verified. Awaiting the user's Verify click. Also learned: the pipeline deploys faster than a full Astro build (~20 min, ~700 pages at ~1.5s each), so a persistent QUEUED backlog is normal - cancel queued deploys older than the one you need, and do NOT cancel a deployment that is actively emitting build-log lines.",
   "phase3Results": {
     "runDate": "2026-09-19",
     "clusters": 43,

@@ -705,3 +705,30 @@ Group by `readyState`. Anything in `BUILDING` for more than ~15 min is the culpr
 **Also confirmed: the GitHub repo is NOT connected to Vercel.** `gitDeployment` on the project is `null` and every deployment's `source` is `cli`. **Pushing to GitHub does not deploy this site** — only `site/deploy.sh` (and the auto-deploy script) do. Treat git push and deploy as two separate steps, always.
 
 **Left undone, deliberately:** the Bing `msvalidate.01` slot stays empty because no token has been supplied.
+
+### D151 addendum — the first attempt was wrong, and why (2026-10-10, 09:08 UTC)
+
+The user pressed **Verify** and GSC said **not verified**. The fault was mine, not Google's.
+
+I had written the whole pasted string into the `content` attribute:
+
+```html
+<meta name="google-site-verification" content="google-site-verification=iLevWBfp…">   <!-- WRONG -->
+```
+
+**Google's two verification payloads are not interchangeable:**
+- **HTML-tag method** → `<meta name="google-site-verification" content="TOKEN">` with the **bare token**. The `google-site-verification=` prefix belongs in the `name`, never in `content`.
+- **HTML-file method** → a file at the site root whose entire body is `google-site-verification=TOKEN`.
+
+The string the user pasted (`google-site-verification=iLevWBfp…`) is the **file** payload. I fed it to the **tag** method, so the tag never matched.
+
+**Pass 2 ships both, so the question stops mattering:**
+- `SEO.googleSiteVerification` = `iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0` (bare token)
+- `site/public/google-site-verification.html` = `google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0`
+
+Commit `886048cf`, prod `dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm` (READY + aliased 09:08 UTC).
+Live-verified: the homepage now emits `content="iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0"`, and `/google-site-verification.html` returns 200 `text/html` with the full string.
+
+**Still on the user:** press Verify again. **If they added a DOMAIN property, neither method will ever work** — that needs a DNS TXT record instead.
+
+**Deploy-queue reality check (refines D151):** a full build is now ~20 minutes (~700 pages at ~1.2–1.6 s each) and the pipeline queues a new deploy every few minutes, so a standing QUEUED backlog is normal — not the same failure as a stuck build. **Read the build log before cancelling anything:** a deployment still emitting page lines is healthy; only a build that has been silent for 15+ minutes is wedged.

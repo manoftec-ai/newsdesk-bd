@@ -57,3 +57,23 @@ Token: `google-site-verification=iLevWBfpUdnKvXDNAfb2IEnOapdJwvMXLdWVH91dzF0`
 ## Files changed
 - `site/src/config/theme.config.ts` (the token)
 - `memory/MEMORY.md`, `memory/MEMORY.json`, this session log
+
+---
+
+## 09:08 UTC — CORRECTION: the first deployment was wrong, GSC said "not verified"
+
+The user pressed Verify and GSC rejected it. Root cause: **my** payload format.
+
+- Wrong: `<meta name="google-site-verification" content="google-site-verification=iLevWBfp…">`
+- The user's pasted string is the **HTML-file** payload (`google-site-verification=TOKEN`), but I fed it to the **HTML-tag** method, which requires the **bare token** in `content`.
+- Fix (commit `886048cf`): bare token in `SEO.googleSiteVerification`, plus a new
+  `site/public/google-site-verification.html` containing the full string. **Both** official methods
+  are now served, so it no longer matters which tab the user copied from.
+- Prod `dpl_hUpBqu6bottxxL4ysYGxM6sTFCgm` READY + aliased 09:08 UTC. Live-verified both artefacts.
+- If the user added a **Domain** property, neither method can work — DNS TXT would be required.
+
+### Deploy-queue lesson (refines D151)
+A full Astro build is now ~20 min (~700 pages at ~1.2–1.6 s each) and the pipeline queues a deploy
+every few minutes, so a standing QUEUED backlog is normal and is NOT the same fault as a wedged
+build. **Read `/v2/deployments/<uid>/events` first:** a build still printing page lines is healthy;
+only one silent for 15+ minutes is stuck. Cancel only queued deployments OLDER than the target.
