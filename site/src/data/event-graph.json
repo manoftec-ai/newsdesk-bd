@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3033,
+    "storyCount": 3036,
     "kinds": [
       "claim",
       "evidence",
@@ -15,7 +15,7 @@
       "cluster_id": 1,
       "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T10:37:13.333Z",
+      "last_update": "2026-10-10T11:01:27.379Z",
       "claim_count": 25,
       "events": [
         {
@@ -1916,8 +1916,8 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:37:13.347Z",
-      "claim_count": 3,
+      "last_update": "2026-10-10T11:01:27.378Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-10T09:02:34.000Z",
@@ -2011,6 +2011,28 @@
           }
         },
         {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
           "ts": "2026-10-10T10:46:18.963Z",
           "kind": "claim",
           "claim_id": 5149,
@@ -2027,16 +2049,42 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.849Z",
+          "kind": "claim",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 112,
-          "slug": "national-112",
+          "cluster_id": 141,
+          "slug": "sports-141",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+          "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
         },
         {
           "cluster_id": 84,
@@ -2047,12 +2095,28 @@
           "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
         },
         {
+          "cluster_id": 56,
+          "slug": "national-56",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
           "cluster_id": 3,
           "slug": "national-3",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         }
       ]
     },
@@ -2163,11 +2227,81 @@
     },
     "economy-156": {
       "cluster_id": 156,
-      "headline": "১১ খাতে অনলাইন ভ্যাট রিটার্ন বাধ্যতামূলক করলো এনবিআর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+      "first_seen": "2026-10-10T11:01:27.373Z",
+      "last_update": "2026-10-10T11:01:27.376Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:27:42.000Z",
+          "kind": "evidence",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973571/%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%85%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B9%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:27:42.000Z",
+          "kind": "evidence",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973571/%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%85%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B9%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:39:48.000Z",
+          "kind": "evidence",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973575/%E0%A6%98%E0%A6%9F%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A7%81-%E0%A6%A4%E0%A6%A6%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95-%E0%A6%A4%E0%A6%BE%E0%A6%B8%E0%A6%A8%E0%A6%BF%E0%A6%AE-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%9C"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.910Z",
+          "kind": "claim",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.913Z",
+          "kind": "claim",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1585": {
@@ -2199,12 +2333,123 @@
     },
     "economy-162": {
       "cluster_id": 162,
-      "headline": "জ্বালানি তেলের দাম ইতিহাসে সর্বোচ্চ, লিটারে বৃদ্ধি ২০ টাকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+      "first_seen": "2026-10-10T11:01:27.400Z",
+      "last_update": "2026-10-10T11:01:27.402Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T01:55:41.000Z",
+          "kind": "evidence",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi0gZBVV95cUxPaU9pZkwtRFBsbUlwdGxmUUFDeTVXZnhmTXNTVmhrQnkxbjFVS3Q5N1VTRUU4dkZneENBaGRPT0MwZkRZeUxicWphV2R1NVZMbVZ3RkFYWDlTTUU3LVh5dW0yNWo4ZFlXUzQxd3g4TmJxQlFSMDJ6Vm1sN3UzS2s2NW1ZZC02QV82T0lnWm5lOF9mM0FTa3ZjMnFILVktSUw4cnRWSm5QR0F4ckduSHA5V05MbUNoWmpSTzFkUlMzLVVPQnpiaXlpT2swNHlxclo2TFg0RVBoUGdhLTduZnZibGthQzl2YlhhSm9SZFR4OGJxSXY5bkQ2MnBVVURndVJwTUlPTWJ2WHNnblRRTDhMbkpjR0NScW1tSzV3ZEpDd3gwaUdKYkpJVGlzZHdSVWRDVUx6dHVEbVpWeFJmTjdGZTN2TzJzRGtVSmV3TlN5bHRPLXBualhra1JGWlJLSnhjb19jVWZKcmF3cUZUa0pZUEZ6dEhTNnY5ODMzSWh3YzJaUldlQ2MtUFh0UTBIZ2h6VVphZ0RCUm83SUx5SzFDeHhFSzFBUXhGRnZieWFaeXVRZlhzUWpPaGh6ekt2Tjh4YnNaRXE1OUJhYUV2RFpqSUNGUkZIMjJRUmxIMUhKdl9IWjktbWE2cGJ6ZWg5M1VnOTUyQ2hMcmtjbHRGWmxkNDFEeE5GVzlRUmVDVUc2T21lTml1OXY5UWNvS3NyVUZ0alV6TXU5bjYtS3dwVTU1X05jTnJfazFZQVo5Tm9MT19OSDZiVjRzQ2N5UXhkRkprR20tVmxrVWIyR2lJVklBb3NnSUZmRlI0MVY2elU4ZUVTR1RVT3FOQzRKaUp3UnFRRGluVTVYOGxoejRSQXpLN2tpY3ZvbHYyUlhmSkluenh5b2M2bmxqMVZEaDNacTRWNExTWGdWdXY3U2RLaTdTLTBBOFVncUI3X3lQaU1sOGZTZi1iaV9pckRFSXZGQXhKeF8xaHJuSjJjc3JHNnJZNU1nc3I0ckRuYWJzNm1jUlZGMExObVUyci1LVWV0bFlYZVZYNHp3WmRaYkhob1RYNXpkM0Rvb2NLelVEOVMzVTdxU0E2d29hTXJrejFXamFMNk1lbVg0cjI5YVRVVjNpRGdB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:00:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4VFhtSWFVeF9XdlBGQkl4eDBXNmVNN1FicjNQV0tUNXJJdDJkaTVjTjFZb3dwMkpCcEdOdk5ZNm82NFppcldQU2tNLXRMazA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:00:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4VFhtSWFVeF9XdlBGQkl4eDBXNmVNN1FicjNQV0tUNXJJdDJkaTVjTjFZb3dwMkpCcEdOdk5ZNm82NFppcldQU2tNLXRMazA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.944Z",
+          "kind": "claim",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.948Z",
+          "kind": "claim",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "economy-1620": {
       "cluster_id": 1620,
@@ -3332,7 +3577,7 @@
       "cluster_id": 131,
       "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
       "first_seen": "2026-10-10T09:55:17.379Z",
-      "last_update": "2026-10-10T10:37:13.350Z",
+      "last_update": "2026-10-10T11:01:27.404Z",
       "claim_count": 2,
       "events": [
         {
@@ -4350,7 +4595,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T10:37:13.363Z",
+      "last_update": "2026-10-10T11:01:27.407Z",
       "claim_count": 2,
       "events": [
         {
@@ -4465,8 +4710,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         },
         {
           "cluster_id": 114,
@@ -4542,7 +4795,7 @@
       "cluster_id": 1,
       "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী",
       "first_seen": "2026-10-10T04:01:51.823Z",
-      "last_update": "2026-10-10T10:37:13.333Z",
+      "last_update": "2026-10-10T11:01:27.379Z",
       "claim_count": 25,
       "events": [
         {
@@ -6766,7 +7019,7 @@
       "cluster_id": 134,
       "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
       "first_seen": "2026-10-10T09:55:17.407Z",
-      "last_update": "2026-10-10T10:37:13.373Z",
+      "last_update": "2026-10-10T11:01:27.417Z",
       "claim_count": 2,
       "events": [
         {
@@ -6977,8 +7230,8 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:37:13.347Z",
-      "claim_count": 3,
+      "last_update": "2026-10-10T11:01:27.378Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-10T09:02:34.000Z",
@@ -7072,6 +7325,28 @@
           }
         },
         {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
           "ts": "2026-10-10T10:46:18.963Z",
           "kind": "claim",
           "claim_id": 5149,
@@ -7088,16 +7363,42 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.849Z",
+          "kind": "claim",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 112,
-          "slug": "national-112",
+          "cluster_id": 141,
+          "slug": "sports-141",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+          "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
         },
         {
           "cluster_id": 84,
@@ -7108,12 +7409,28 @@
           "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
         },
         {
+          "cluster_id": 56,
+          "slug": "national-56",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
           "cluster_id": 3,
           "slug": "national-3",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         }
       ]
     },
@@ -7319,7 +7636,7 @@
       "cluster_id": 148,
       "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
       "first_seen": "2026-10-10T10:37:13.335Z",
-      "last_update": "2026-10-10T10:37:13.337Z",
+      "last_update": "2026-10-10T11:01:27.391Z",
       "claim_count": 2,
       "events": [
         {
@@ -9888,7 +10205,7 @@
       "cluster_id": 10,
       "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ",
       "first_seen": "2026-10-10T04:01:51.912Z",
-      "last_update": "2026-10-10T10:37:13.369Z",
+      "last_update": "2026-10-10T11:01:27.412Z",
       "claim_count": 3,
       "events": [
         {
@@ -10841,6 +11158,14 @@
       ],
       "related": [
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -10879,14 +11204,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
-        },
-        {
-          "cluster_id": 14,
-          "slug": "national-14",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
         }
       ]
     },
@@ -11805,6 +12122,14 @@
       ],
       "related": [
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -11843,14 +12168,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
-        },
-        {
-          "cluster_id": 14,
-          "slug": "national-14",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
         }
       ]
     },
@@ -11912,7 +12229,7 @@
       "cluster_id": 114,
       "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর",
       "first_seen": "2026-10-10T08:55:22.916Z",
-      "last_update": "2026-10-10T10:37:13.362Z",
+      "last_update": "2026-10-10T11:01:27.406Z",
       "claim_count": 2,
       "events": [
         {
@@ -11991,8 +12308,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         },
         {
           "cluster_id": 56,
@@ -12086,7 +12411,7 @@
       "cluster_id": 115,
       "headline": "সাফারি পার্ক থেকে দুই লেমুর চুরির ঘটনায় দায়ীদের বিরুদ্ধে কঠোর ব্যবস্থা: পরিবেশ মন্ত্রী",
       "first_seen": "2026-10-10T08:55:22.923Z",
-      "last_update": "2026-10-10T10:37:13.364Z",
+      "last_update": "2026-10-10T11:01:27.408Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -12167,7 +12492,7 @@
       "cluster_id": 116,
       "headline": "এনসিটি নিয়ে ডিপি ওয়ার্ল্ডের সঙ্গে চুক্তিতে কী রয়েছে, জানালেন আশিক চৌধুরী",
       "first_seen": "2026-10-10T08:55:22.934Z",
-      "last_update": "2026-10-10T10:37:13.370Z",
+      "last_update": "2026-10-10T11:01:27.414Z",
       "claim_count": 2,
       "events": [
         {
@@ -12318,7 +12643,7 @@
       "cluster_id": 117,
       "headline": "বিমানবন্দরে আটকে দেওয়া হয়েছে বৈষম্যবিরোধী আন্দোলনের নেতা মাহদীকে",
       "first_seen": "2026-10-10T08:55:22.939Z",
-      "last_update": "2026-10-10T10:37:13.372Z",
+      "last_update": "2026-10-10T11:01:27.416Z",
       "claim_count": 2,
       "events": [
         {
@@ -14281,7 +14606,7 @@
       "cluster_id": 131,
       "headline": "ক্যান্সারে আক্রান্ত ইবরার টিপু, কেমন আছেন তিনি",
       "first_seen": "2026-10-10T09:55:17.379Z",
-      "last_update": "2026-10-10T10:37:13.350Z",
+      "last_update": "2026-10-10T11:01:27.404Z",
       "claim_count": 2,
       "events": [
         {
@@ -14668,6 +14993,22 @@
           "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
           "cluster_id": 142,
           "slug": "national-142",
           "actor_links": 0,
@@ -14690,22 +15031,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আজ শুভ মহালয়া: মর্ত্যে চণ্ডীপাঠ-তর্পণের মধ্য দিয়ে দেবীপক্ষের সূচনা"
-        },
-        {
-          "cluster_id": 20,
-          "slug": "national-20",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
-        },
-        {
-          "cluster_id": 9,
-          "slug": "national-9",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         }
       ]
     },
@@ -14842,6 +15167,22 @@
       ],
       "related": [
         {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
           "cluster_id": 132,
           "slug": "national-132",
           "actor_links": 0,
@@ -14943,7 +15284,7 @@
       "cluster_id": 134,
       "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা",
       "first_seen": "2026-10-10T09:55:17.407Z",
-      "last_update": "2026-10-10T10:37:13.373Z",
+      "last_update": "2026-10-10T11:01:27.417Z",
       "claim_count": 2,
       "events": [
         {
@@ -15670,6 +16011,14 @@
       ],
       "related": [
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -15708,14 +16057,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 20,
-          "slug": "national-20",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         }
       ]
     },
@@ -15723,8 +16064,8 @@
       "cluster_id": 140,
       "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
       "first_seen": "2026-10-10T10:16:49.163Z",
-      "last_update": "2026-10-10T10:37:13.347Z",
-      "claim_count": 3,
+      "last_update": "2026-10-10T11:01:27.378Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-10T09:02:34.000Z",
@@ -15818,6 +16159,28 @@
           }
         },
         {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 4692,
+          "claim_text": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:36:05.000Z",
+          "kind": "evidence",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/qbk6wkqa2l"
+          }
+        },
+        {
           "ts": "2026-10-10T10:46:18.963Z",
           "kind": "claim",
           "claim_id": 5149,
@@ -15834,16 +16197,42 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.849Z",
+          "kind": "claim",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5626,
+          "claim_text": "মমতা বন্দ্যোপাধ্যায়কে আটক করেছে দিল্লি পুলিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 112,
-          "slug": "national-112",
+          "cluster_id": 141,
+          "slug": "sports-141",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রান্নাঘরের মেঝে ঝাড়ু দেওয়ার সময়ই নোবেল জয়ের খবর পান অ্যান কার্সন"
+          "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
         },
         {
           "cluster_id": 84,
@@ -15854,12 +16243,28 @@
           "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
         },
         {
+          "cluster_id": 56,
+          "slug": "national-56",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
           "cluster_id": 3,
           "slug": "national-3",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         }
       ]
     },
@@ -15919,10 +16324,10 @@
     },
     "national-141": {
       "cluster_id": 141,
-      "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
+      "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
       "first_seen": "2026-10-10T10:16:49.166Z",
-      "last_update": "2026-10-10T10:37:13.348Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T11:01:27.373Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-10T09:44:55.000Z",
@@ -15947,10 +16352,32 @@
           }
         },
         {
+          "ts": "2026-10-10T09:44:55.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/sxmqf2cic5"
+          }
+        },
+        {
           "ts": "2026-10-10T09:56:47.000Z",
           "kind": "evidence",
           "claim_id": 4694,
           "claim_text": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/cricket/973559/%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%9C%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%B2-%E0%A6%98%E0%A7%8B%E0%A6%B7%E0%A6%A3%E0%A6%BE-%E0%A6%86%E0%A6%9B%E0%A7%87-%E0%A6%9A%E0%A6%AE%E0%A6%95"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:56:47.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -15992,9 +16419,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/liton-aliss-afghanistan-zimbabwe-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.852Z",
+          "kind": "claim",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
+        },
         {
           "cluster_id": 114,
           "slug": "national-114",
@@ -16002,6 +16466,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
         },
         {
           "cluster_id": 56,
@@ -16012,28 +16484,20 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 3,
+          "slug": "national-3",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        },
+        {
           "cluster_id": 2,
           "slug": "national-2",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
-        },
-        {
-          "cluster_id": 70,
-          "slug": "politics-70",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
-        },
-        {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
         }
       ]
     },
@@ -16826,7 +17290,7 @@
       "cluster_id": 148,
       "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
       "first_seen": "2026-10-10T10:37:13.335Z",
-      "last_update": "2026-10-10T10:37:13.337Z",
+      "last_update": "2026-10-10T11:01:27.391Z",
       "claim_count": 2,
       "events": [
         {
@@ -17010,7 +17474,7 @@
       "cluster_id": 149,
       "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
       "first_seen": "2026-10-10T10:37:13.338Z",
-      "last_update": "2026-10-10T10:37:13.341Z",
+      "last_update": "2026-10-10T11:01:27.399Z",
       "claim_count": 2,
       "events": [
         {
@@ -17093,14 +17557,6 @@
           "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
         },
         {
-          "cluster_id": 123,
-          "slug": "national-123",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
-        },
-        {
           "cluster_id": 57,
           "slug": "national-57",
           "actor_links": 0,
@@ -17115,6 +17571,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
         }
       ]
     },
@@ -17264,7 +17728,7 @@
       "cluster_id": 150,
       "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T10:37:13.358Z",
-      "last_update": "2026-10-10T10:37:13.362Z",
+      "last_update": "2026-10-10T11:01:27.405Z",
       "claim_count": 3,
       "events": [
         {
@@ -17379,20 +17843,20 @@
       ],
       "related": [
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 149,
           "slug": "sports-149",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
-        },
-        {
-          "cluster_id": 123,
-          "slug": "national-123",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
         },
         {
           "cluster_id": 113,
@@ -18057,11 +18521,81 @@
     },
     "national-156": {
       "cluster_id": 156,
-      "headline": "মেঘনায় ডুবে যমজ দুই ভাইসহ ৩ স্কুল শিক্ষার্থীর মৃত্যু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+      "first_seen": "2026-10-10T11:01:27.373Z",
+      "last_update": "2026-10-10T11:01:27.376Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:27:42.000Z",
+          "kind": "evidence",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973571/%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%85%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B9%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:27:42.000Z",
+          "kind": "evidence",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973571/%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%85%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B9%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:39:48.000Z",
+          "kind": "evidence",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/973575/%E0%A6%98%E0%A6%9F%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A7%81-%E0%A6%A4%E0%A6%A6%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%A2%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95-%E0%A6%A4%E0%A6%BE%E0%A6%B8%E0%A6%A8%E0%A6%BF%E0%A6%AE-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%9C"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.910Z",
+          "kind": "claim",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.913Z",
+          "kind": "claim",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5648,
+          "claim_text": "ঘটনার সুষ্ঠু তদন্ত চেয়ে ঢাবি শিক্ষক তাসনিম সিরাজ বললেন, ‘ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বিগ্ন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5649,
+          "claim_text": "ঢাবি শিক্ষককে ক্লাস থেকে অব্যাহতির সিদ্ধান্ত ‘বেআইনি’, তদন্ত দাবি শিক্ষক নেটওয়ার্কের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1560": {
@@ -18138,12 +18672,123 @@
     },
     "national-157": {
       "cluster_id": 157,
-      "headline": "আনসার সদস্যদের বিরুদ্ধে শিক্ষার্থীকে মারধরের অভিযোগ, প্রতিবাদে শিক্ষার্থীদের রেললাইন অবরোধ, ভাঙচুর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি",
+      "first_seen": "2026-10-10T11:01:27.380Z",
+      "last_update": "2026-10-10T11:01:27.383Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T04:26:57.000Z",
+          "kind": "evidence",
+          "claim_id": 5650,
+          "claim_text": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwZBVV95cUxONlNqellZOUJrc29rX2JUeFhISi1QUkJuYmM3MkN0cmtaWGNRMGxhcnNiOERpVEJkQmRtcjM3QXVBUnVRT0ZPeUxCSzNFdHNrVmVBaTk1T2JpRHVOVmNGNjJzRjU5VVhubERVRDhMbFJhQkVURElXYzdXSjFwOFg0Ym9kS2MydXpWTlVqODBoUFFzd29SNEN1OEJuOTBxb3NVUlZ0d1JMR3ZWcHNBak1UOGgxNU1PT1ZQbHY2MmYza3VtQ1hET3F3TTJhVVJBVkRENmZibkRCR0NBVFAwUTV3Q1JBS01LU0RDSmNJdmZDYk1EbEZGX21HZlZlb2JkVENZWkl5d3Y0RE50dnVmd0FWSy05U2Z0OXJhdUxxUkFHLVVqR3oyYXgtbnlXM25PaFVXRVJZR2NiSWQ3QmFaRlU5ajB2M0N1MXFPeXhGa2lwU1FtaVNnczA2aF9RUFZVbFRDSmdvNkVYcGlCX3Z6X0g5Y1llV3c2YzBtM2ZiN1pFNmttRDRSQmRLQzRnU1JjMFRtU2FvQ0E4SFZSM09KZW84NVlfRjJhWE9SX0g3OVd3cUU1d2dxa1dBZWFTN19meXVBQlNVZnUyeUN4QldPSEo3U0kyMU5TUW9CXzhZNVJpZTlQanN4NkpBbGxqUW15MUJLOVA4Z0pwcGZ0dGpCVENxdzM4YmZfSy1Cb0xEbE5TOGV0ODNBcTUzUDVwSWlFMl9UdTZ0VzNFLWxTWmFZdWp2UGtyeld6dHdpcGN6TXMwU1VBVkdjNDVsUGxzeF9wNjFjQ0dZSTJBSGNHRGROcDM4TFRNNnlJSDUxdXNlelg1R3JYcDl4TnNBeTNaaF83OEtSbWJfbVNlTkx0TlVZTDhxN0pnZElqY2dFYW1rdmk0b0VnVXdTazc4VFdGNDBpQ0xjaXBQeHlTZVM0VzA1R3JzaVZaRVpQSUhfcTJmb0RhSDM3c2dyYk1SYnVOY095SVJOM3MxUXhCVFl6bHc5WWlKQ3JueExXb1pUQ09lN2E1UmJXYnc3WEswclpfSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T04:26:57.000Z",
+          "kind": "evidence",
+          "claim_id": 5651,
+          "claim_text": "আমাকে নোবেল পুরস্কার না দেওয়া নরওয়ের জন্য ‘অমোচনীয় কলঙ্ক’: ট্রাম্প",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwZBVV95cUxONlNqellZOUJrc29rX2JUeFhISi1QUkJuYmM3MkN0cmtaWGNRMGxhcnNiOERpVEJkQmRtcjM3QXVBUnVRT0ZPeUxCSzNFdHNrVmVBaTk1T2JpRHVOVmNGNjJzRjU5VVhubERVRDhMbFJhQkVURElXYzdXSjFwOFg0Ym9kS2MydXpWTlVqODBoUFFzd29SNEN1OEJuOTBxb3NVUlZ0d1JMR3ZWcHNBak1UOGgxNU1PT1ZQbHY2MmYza3VtQ1hET3F3TTJhVVJBVkRENmZibkRCR0NBVFAwUTV3Q1JBS01LU0RDSmNJdmZDYk1EbEZGX21HZlZlb2JkVENZWkl5d3Y0RE50dnVmd0FWSy05U2Z0OXJhdUxxUkFHLVVqR3oyYXgtbnlXM25PaFVXRVJZR2NiSWQ3QmFaRlU5ajB2M0N1MXFPeXhGa2lwU1FtaVNnczA2aF9RUFZVbFRDSmdvNkVYcGlCX3Z6X0g5Y1llV3c2YzBtM2ZiN1pFNmttRDRSQmRLQzRnU1JjMFRtU2FvQ0E4SFZSM09KZW84NVlfRjJhWE9SX0g3OVd3cUU1d2dxa1dBZWFTN19meXVBQlNVZnUyeUN4QldPSEo3U0kyMU5TUW9CXzhZNVJpZTlQanN4NkpBbGxqUW15MUJLOVA4Z0pwcGZ0dGpCVENxdzM4YmZfSy1Cb0xEbE5TOGV0ODNBcTUzUDVwSWlFMl9UdTZ0VzNFLWxTWmFZdWp2UGtyeld6dHdpcGN6TXMwU1VBVkdjNDVsUGxzeF9wNjFjQ0dZSTJBSGNHRGROcDM4TFRNNnlJSDUxdXNlelg1R3JYcDl4TnNBeTNaaF83OEtSbWJfbVNlTkx0TlVZTDhxN0pnZElqY2dFYW1rdmk0b0VnVXdTazc4VFdGNDBpQ0xjaXBQeHlTZVM0VzA1R3JzaVZaRVpQSUhfcTJmb0RhSDM3c2dyYk1SYnVOY095SVJOM3MxUXhCVFl6bHc5WWlKQ3JueExXb1pUQ09lN2E1UmJXYnc3WEswclpfSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:31:21.000Z",
+          "kind": "evidence",
+          "claim_id": 5650,
+          "claim_text": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wTXFkcXFld3d0a0tzRmd1eWRFOHpiUThvTnlQUnNnSXhSRktwY0gzT3dBa1ZMb0N3SlpCc1I4R0R5T1BHdUp3ajlET2JDMWFObW94MTBzVmZYQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.916Z",
+          "kind": "claim",
+          "claim_id": 5650,
+          "claim_text": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.919Z",
+          "kind": "claim",
+          "claim_id": 5651,
+          "claim_text": "আমাকে নোবেল পুরস্কার না দেওয়া নরওয়ের জন্য ‘অমোচনীয় কলঙ্ক’: ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5650,
+          "claim_text": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5651,
+          "claim_text": "আমাকে নোবেল পুরস্কার না দেওয়া নরওয়ের জন্য ‘অমোচনীয় কলঙ্ক’: ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "national-1570": {
       "cluster_id": 1570,
@@ -18237,11 +18882,81 @@
     },
     "national-158": {
       "cluster_id": 158,
-      "headline": "নিউইয়র্কের উদ্দেশে ঢাকা ছাড়লেন প্রধানমন্ত্রী, সফরসঙ্গী কারা?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+      "first_seen": "2026-10-10T11:01:27.384Z",
+      "last_update": "2026-10-10T11:01:27.387Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T10:27:13.000Z",
+          "kind": "evidence",
+          "claim_id": 5652,
+          "claim_text": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/there-is-sufficient-food-stock-in-the-country-no-fear-of-shortage-during-ramadan-food-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:27:13.000Z",
+          "kind": "evidence",
+          "claim_id": 5652,
+          "claim_text": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/sufficient-food-stock-in-the-country-no-fear-of-shortage-during-ramadan-food-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:27:13.000Z",
+          "kind": "evidence",
+          "claim_id": 5653,
+          "claim_text": "রমজানে খাদ্যপণ্য সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/sufficient-food-stock-in-the-country-no-fear-of-shortage-during-ramadan-food-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.922Z",
+          "kind": "claim",
+          "claim_id": 5652,
+          "claim_text": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.925Z",
+          "kind": "claim",
+          "claim_id": 5653,
+          "claim_text": "রমজানে খাদ্যপণ্য সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5652,
+          "claim_text": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5653,
+          "claim_text": "রমজানে খাদ্যপণ্য সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1581": {
@@ -18309,12 +19024,115 @@
     },
     "national-159": {
       "cluster_id": 159,
-      "headline": "জবিতে ছাত্রদলের দুই গ্রুপের সংঘর্ষ, ৮ নেতাকর্মী বহিষ্কার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি",
+      "first_seen": "2026-10-10T11:01:27.388Z",
+      "last_update": "2026-10-10T11:01:27.390Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-09T16:52:37.000Z",
+          "kind": "evidence",
+          "claim_id": 5654,
+          "claim_text": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMMU5Zd3A4cDRvUTlUOFVQX2xpUnlFVlNMc1ZKUGlkS1VpYTNHX2N6V1Z6cWpsNXc1YklGVGU1TXN0a09vT2pxazE0M253M2M?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:24:16.000Z",
+          "kind": "evidence",
+          "claim_id": 5654,
+          "claim_text": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkNTRBcHRGTktSZGV4bjJRR01BcmM3cmpYY3VGS1NIN1FyUmdjNjRGTFlLSGUxcVU0bW9NX0NDLTYwd2pWLVVrS3E2RW92a3RYcXBXRExRamE5QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:24:16.000Z",
+          "kind": "evidence",
+          "claim_id": 5655,
+          "claim_text": "কলকাতায় মুসলমান কলোনিতে পানি বন্ধ করল বিজেপি, জাতিসংঘে চিঠি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkNTRBcHRGTktSZGV4bjJRR01BcmM3cmpYY3VGS1NIN1FyUmdjNjRGTFlLSGUxcVU0bW9NX0NDLTYwd2pWLVVrS3E2RW92a3RYcXBXRExRamE5QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.927Z",
+          "kind": "claim",
+          "claim_id": 5654,
+          "claim_text": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.931Z",
+          "kind": "claim",
+          "claim_id": 5655,
+          "claim_text": "কলকাতায় মুসলমান কলোনিতে পানি বন্ধ করল বিজেপি, জাতিসংঘে চিঠি"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5654,
+          "claim_text": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5655,
+          "claim_text": "কলকাতায় মুসলমান কলোনিতে পানি বন্ধ করল বিজেপি, জাতিসংঘে চিঠি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সন্দেহের বশে বাংলাদেশি তকমা দিয়ে দেশছাড়া করা যাবে না: কলকাতা হাইকোর্ট"
+        },
+        {
+          "cluster_id": 18,
+          "slug": "national-18",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসংখ্য ডিসেম্বর আসবে, তবু শেখ হাসিনা ফিরতে পারবেন না: রাশেদ খাঁন"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "national-1590": {
       "cluster_id": 1590,
@@ -18520,12 +19338,91 @@
     },
     "national-160": {
       "cluster_id": 160,
-      "headline": "যুক্তরাজ্যের নতুন নিরাপত্তা অডিটে বাংলাদেশের বিমানবন্দরগুলোর স্কোরে বড় উন্নতি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা",
+      "first_seen": "2026-10-10T11:01:27.392Z",
+      "last_update": "2026-10-10T11:01:27.394Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T09:45:29.000Z",
+          "kind": "evidence",
+          "claim_id": 5656,
+          "claim_text": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ockZCMlNhOHlJZTFUWjA3TTQ1WkRZVVY2bVJSc24xWWhDbWNFUmNDSzVxSy1ySTlZUEduSVFNQlhDN0xudjdQMjlWUmt6UlJNa2JUZ05NRjB3eGwtUE9WQVdBa3hqTEZSbnFF?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:21:18.000Z",
+          "kind": "evidence",
+          "claim_id": 5656,
+          "claim_text": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ZnFBM2RpVG0xd05OZHJNZVFsNkJYeWlkeGtjUWNubWpESERudWpncU9kcDNsUElBNWswcFpxa3QzTTdUMDAwWnhEazkwNVU2WmZTVEs1c3hzUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:21:18.000Z",
+          "kind": "evidence",
+          "claim_id": 5657,
+          "claim_text": "দিল্লি হাটই আজ জন্তর মন্তর: নেহা বোরা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ZnFBM2RpVG0xd05OZHJNZVFsNkJYeWlkeGtjUWNubWpESERudWpncU9kcDNsUElBNWswcFpxa3QzTTdUMDAwWnhEazkwNVU2WmZTVEs1c3hzUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.933Z",
+          "kind": "claim",
+          "claim_id": 5656,
+          "claim_text": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.936Z",
+          "kind": "claim",
+          "claim_id": 5657,
+          "claim_text": "দিল্লি হাটই আজ জন্তর মন্তর: নেহা বোরা"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5656,
+          "claim_text": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5657,
+          "claim_text": "দিল্লি হাটই আজ জন্তর মন্তর: নেহা বোরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        }
+      ]
     },
     "national-1601": {
       "cluster_id": 1601,
@@ -18607,6 +19504,134 @@
       "claim_count": 0,
       "events": [],
       "related": []
+    },
+    "national-161": {
+      "cluster_id": 161,
+      "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+      "first_seen": "2026-10-10T11:01:27.395Z",
+      "last_update": "2026-10-10T11:01:27.398Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T09:21:44.000Z",
+          "kind": "evidence",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9halJlMFJURTR5VU52WE1HNk9lT0ZUakpkaXM1ZlJ0aGlkaWNkbGxnSDFqNTRPZFJLTXpLTTBqUGVFLVZCQ2dZNVVvUTdEdnRaVXhJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:19:30.000Z",
+          "kind": "evidence",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwNBVV95cUxNZHhySTRxVUlLMEN2NWwtRHNTcVE0UVpIcjhueDJjQ2dFa0E4VkktZFZUZnY4OEZDbmVNYjhxVFRjNjcwLTYxYWNoTEJMYjlUenBIR1o3cTlUZ2Y5XzB0RmI4dnZhQ3ZZOTI2ZThEcUE1RksxZkZGM2t1dkt5V180RFhSWGVCckRmS0UwQzJpNl91NEhZZHZpN09zX2kzelQta0d5MmZVajQ3alR2eXdpdW9uZWtkaXdmNFlOaW14ZXBzQUlaS0pFbGRGRW9DOWJVUWxpWFU4ejVPMFFOWkRnay1RZTJjalNEazNhWDd4dVFBUXlnalBvR1pqcmJ1U21SMU9rZFpNQ0kxUVdEdmluZFQ1bXZkdE1rNXBDdzk4NGJTSEhuazJla2J3VEw4UGRjeHVCZU1EQjFkQ0hhVHN6bG5HTjZQbjlVSjFSOUxiR3NxNV9uZ2RlaDYya1RWbDlTUHJkbzlzWlI0aEMtVU5jb3E2czRYR0d5N1NWMnZEZ3NuLUstU3dhaFpUWHBXTnZHVmNxZFlocjdpb2pCbEw3QnFHM0NnbVllYVdGNGpnaEh2cHpaRnhLMl9BaVJBekRxeUVR0gHIA0FVX3lxTFBMUU92M3p6bXNlMFRmTDNYbzBqdkN6MW1Za0NtVG80M281OGpLdzZ3SlNwMFRrel85dHJQYmJoYWZGT3dxUk1Jd3Ntc0EwZ2o3Vy02TTdYZVJIQmJtRmh2bVprV2xUSHhsZ3FheEczazFBdDJ0R1plR1NGWHMxRDlOQXpIVDE4SmdGUGZQNG9aU3UyT2pFRlhYNFdzYlY2cjBCeUdlcDhLZ1F4TDZCT1dXT2tYaWE2a3A2aXA3Ym1yTk5mTGtsZ1pjZjhzaWdmRnhxSDdIRWZKcmtiY0xOS1RsY1JGN2d5TGlVczd1OV9Xd2NuY0tQQlExS2tSSWJwdzFpbTE3eHpBNUpib2dSTFBrbE1zdjEwQ0hjb1g1MVFwbGhWcHNkYWhROHFHVUVSVVBvTk5iVmxEZ001TkJSMmNXdG1FNTgwVW5rNHVXb3dRTkljVHpQU3VPU3E1MUxQRklBZXl2dU9rTkoyMU1fTG5TUDZsQ3FmOFR6clBPWVp5aUtTNlltb0J3eFFvZ2dSMkNqeFZ5MFNSdW03bWhMSHhCRlhhT19SS1M0NmpGT0YxZThZMy1oeVB1TFhsWGp5VGRmSUFTek56eA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:19:30.000Z",
+          "kind": "evidence",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwNBVV95cUxNZHhySTRxVUlLMEN2NWwtRHNTcVE0UVpIcjhueDJjQ2dFa0E4VkktZFZUZnY4OEZDbmVNYjhxVFRjNjcwLTYxYWNoTEJMYjlUenBIR1o3cTlUZ2Y5XzB0RmI4dnZhQ3ZZOTI2ZThEcUE1RksxZkZGM2t1dkt5V180RFhSWGVCckRmS0UwQzJpNl91NEhZZHZpN09zX2kzelQta0d5MmZVajQ3alR2eXdpdW9uZWtkaXdmNFlOaW14ZXBzQUlaS0pFbGRGRW9DOWJVUWxpWFU4ejVPMFFOWkRnay1RZTJjalNEazNhWDd4dVFBUXlnalBvR1pqcmJ1U21SMU9rZFpNQ0kxUVdEdmluZFQ1bXZkdE1rNXBDdzk4NGJTSEhuazJla2J3VEw4UGRjeHVCZU1EQjFkQ0hhVHN6bG5HTjZQbjlVSjFSOUxiR3NxNV9uZ2RlaDYya1RWbDlTUHJkbzlzWlI0aEMtVU5jb3E2czRYR0d5N1NWMnZEZ3NuLUstU3dhaFpUWHBXTnZHVmNxZFlocjdpb2pCbEw3QnFHM0NnbVllYVdGNGpnaEh2cHpaRnhLMl9BaVJBekRxeUVR0gHIA0FVX3lxTFBMUU92M3p6bXNlMFRmTDNYbzBqdkN6MW1Za0NtVG80M281OGpLdzZ3SlNwMFRrel85dHJQYmJoYWZGT3dxUk1Jd3Ntc0EwZ2o3Vy02TTdYZVJIQmJtRmh2bVprV2xUSHhsZ3FheEczazFBdDJ0R1plR1NGWHMxRDlOQXpIVDE4SmdGUGZQNG9aU3UyT2pFRlhYNFdzYlY2cjBCeUdlcDhLZ1F4TDZCT1dXT2tYaWE2a3A2aXA3Ym1yTk5mTGtsZ1pjZjhzaWdmRnhxSDdIRWZKcmtiY0xOS1RsY1JGN2d5TGlVczd1OV9Xd2NuY0tQQlExS2tSSWJwdzFpbTE3eHpBNUpib2dSTFBrbE1zdjEwQ0hjb1g1MVFwbGhWcHNkYWhROHFHVUVSVVBvTk5iVmxEZ001TkJSMmNXdG1FNTgwVW5rNHVXb3dRTkljVHpQU3VPU3E1MUxQRklBZXl2dU9rTkoyMU1fTG5TUDZsQ3FmOFR6clBPWVp5aUtTNlltb0J3eFFvZ2dSMkNqeFZ5MFNSdW03bWhMSHhCRlhhT19SS1M0NmpGT0YxZThZMy1oeVB1TFhsWGp5VGRmSUFTek56eA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.938Z",
+          "kind": "claim",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.941Z",
+          "kind": "claim",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 113,
+          "slug": "national-113",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
+        },
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
+          "cluster_id": 48,
+          "slug": "national-48",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 20,
+          "slug": "national-20",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
+        }
+      ]
     },
     "national-1610": {
       "cluster_id": 1610,
@@ -18691,12 +19716,123 @@
     },
     "national-162": {
       "cluster_id": 162,
-      "headline": "জগন্নাথ বিশ্ববিদ্যালয় ছাত্রদলের ২ গ্রুপের মধ্যে ফের সংঘর্ষ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+      "first_seen": "2026-10-10T11:01:27.400Z",
+      "last_update": "2026-10-10T11:01:27.402Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T01:55:41.000Z",
+          "kind": "evidence",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi0gZBVV95cUxPaU9pZkwtRFBsbUlwdGxmUUFDeTVXZnhmTXNTVmhrQnkxbjFVS3Q5N1VTRUU4dkZneENBaGRPT0MwZkRZeUxicWphV2R1NVZMbVZ3RkFYWDlTTUU3LVh5dW0yNWo4ZFlXUzQxd3g4TmJxQlFSMDJ6Vm1sN3UzS2s2NW1ZZC02QV82T0lnWm5lOF9mM0FTa3ZjMnFILVktSUw4cnRWSm5QR0F4ckduSHA5V05MbUNoWmpSTzFkUlMzLVVPQnpiaXlpT2swNHlxclo2TFg0RVBoUGdhLTduZnZibGthQzl2YlhhSm9SZFR4OGJxSXY5bkQ2MnBVVURndVJwTUlPTWJ2WHNnblRRTDhMbkpjR0NScW1tSzV3ZEpDd3gwaUdKYkpJVGlzZHdSVWRDVUx6dHVEbVpWeFJmTjdGZTN2TzJzRGtVSmV3TlN5bHRPLXBualhra1JGWlJLSnhjb19jVWZKcmF3cUZUa0pZUEZ6dEhTNnY5ODMzSWh3YzJaUldlQ2MtUFh0UTBIZ2h6VVphZ0RCUm83SUx5SzFDeHhFSzFBUXhGRnZieWFaeXVRZlhzUWpPaGh6ekt2Tjh4YnNaRXE1OUJhYUV2RFpqSUNGUkZIMjJRUmxIMUhKdl9IWjktbWE2cGJ6ZWg5M1VnOTUyQ2hMcmtjbHRGWmxkNDFEeE5GVzlRUmVDVUc2T21lTml1OXY5UWNvS3NyVUZ0alV6TXU5bjYtS3dwVTU1X05jTnJfazFZQVo5Tm9MT19OSDZiVjRzQ2N5UXhkRkprR20tVmxrVWIyR2lJVklBb3NnSUZmRlI0MVY2elU4ZUVTR1RVT3FOQzRKaUp3UnFRRGluVTVYOGxoejRSQXpLN2tpY3ZvbHYyUlhmSkluenh5b2M2bmxqMVZEaDNacTRWNExTWGdWdXY3U2RLaTdTLTBBOFVncUI3X3lQaU1sOGZTZi1iaV9pckRFSXZGQXhKeF8xaHJuSjJjc3JHNnJZNU1nc3I0ckRuYWJzNm1jUlZGMExObVUyci1LVWV0bFlYZVZYNHp3WmRaYkhob1RYNXpkM0Rvb2NLelVEOVMzVTdxU0E2d29hTXJrejFXamFMNk1lbVg0cjI5YVRVVjNpRGdB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:00:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4VFhtSWFVeF9XdlBGQkl4eDBXNmVNN1FicjNQV0tUNXJJdDJkaTVjTjFZb3dwMkpCcEdOdk5ZNm82NFppcldQU2tNLXRMazA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:00:17.000Z",
+          "kind": "evidence",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4VFhtSWFVeF9XdlBGQkl4eDBXNmVNN1FicjNQV0tUNXJJdDJkaTVjTjFZb3dwMkpCcEdOdk5ZNm82NFppcldQU2tNLXRMazA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.944Z",
+          "kind": "claim",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.948Z",
+          "kind": "claim",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5660,
+          "claim_text": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5661,
+          "claim_text": "আন্দোলনকারীরা কেন ভারতের সিইসির পদত্যাগ চাইছেন?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+        },
+        {
+          "cluster_id": 132,
+          "slug": "national-132",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 8,
+          "slug": "national-8",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
+        }
+      ]
     },
     "national-1623": {
       "cluster_id": 1623,
@@ -18754,11 +19890,41 @@
     },
     "national-163": {
       "cluster_id": 163,
-      "headline": "হাম উপসর্গে আরও ৪ শিশুর মৃত্যু, মোট প্রাণহানি ১০৫৭",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+      "first_seen": "2026-10-10T11:01:27.792Z",
+      "last_update": "2026-10-10T11:01:27.795Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:29:50.000Z",
+          "kind": "evidence",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/jasd-expresses-concern-over-the-cancellation-of-hasanul-haq-inus-division-status-and-the-denial-of-medical-treatment/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.951Z",
+          "kind": "claim",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1630": {
@@ -18826,11 +19992,41 @@
     },
     "national-164": {
       "cluster_id": 164,
-      "headline": "মাদ্রাসা অধ্যক্ষকে গুম-হত্যা: ৫ পুলিশের বিরুদ্ধে অভিযোগ আমলে নিলো ট্রাইব্যুনাল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+      "first_seen": "2026-10-10T11:01:27.797Z",
+      "last_update": "2026-10-10T11:01:27.799Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:25:23.000Z",
+          "kind": "evidence",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/2ogh5ocbr2"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.954Z",
+          "kind": "claim",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1640": {
@@ -18916,11 +20112,41 @@
     },
     "national-165": {
       "cluster_id": 165,
-      "headline": "বেশি লাভের আশায় দীর্ঘদিন হিমাগারে, পচা সাড়ে ২২ হাজার মণ আলু এখন গরুর খাবার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+      "first_seen": "2026-10-10T11:01:27.801Z",
+      "last_update": "2026-10-10T11:01:27.803Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:21:13.000Z",
+          "kind": "evidence",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/cy1vc2ngyd"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.957Z",
+          "kind": "claim",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1650": {
@@ -19006,11 +20232,41 @@
     },
     "national-166": {
       "cluster_id": 166,
-      "headline": "কর্ণফুলীতে নিখোঁজ বিশ্ববিদ্যালয় শিক্ষার্থীর মরদেহ উদ্ধার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+      "first_seen": "2026-10-10T11:01:27.805Z",
+      "last_update": "2026-10-10T11:01:27.807Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:16:31.000Z",
+          "kind": "evidence",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/zn4m2ul5sn"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.960Z",
+          "kind": "claim",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1660": {
@@ -19069,11 +20325,41 @@
     },
     "national-167": {
       "cluster_id": 167,
-      "headline": "জাতিসংঘে দেশের নতুন গণতান্ত্রিক যাত্রা ও রোহিঙ্গা সংকট তুলে ধরবেন প্রধানমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সময়ের শূল-ধ্বনি",
+      "first_seen": "2026-10-10T11:01:27.809Z",
+      "last_update": "2026-10-10T11:01:27.810Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/onnoalo/poem/4zcrf5oqyd"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.962Z",
+          "kind": "claim",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1670": {
@@ -20193,6 +21479,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 159,
+          "slug": "national-159",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি"
+        },
         {
           "cluster_id": 21,
           "slug": "national-21",
@@ -22198,6 +23492,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 160,
+          "slug": "national-160",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নেহা বোরা আটক, পুলিশ বাস ঘিরে বিক্ষোভকারীরা"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -22218,24 +23520,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
         },
         {
-          "cluster_id": 123,
-          "slug": "national-123",
+          "cluster_id": 140,
+          "slug": "national-140",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
-        },
-        {
-          "cluster_id": 114,
-          "slug": "national-114",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         }
       ]
     },
@@ -22486,6 +23780,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -22508,14 +23810,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 106,
-          "slug": "national-106",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
         }
       ]
     },
@@ -23345,6 +24639,14 @@
       ],
       "related": [
         {
+          "cluster_id": 159,
+          "slug": "national-159",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি"
+        },
+        {
           "cluster_id": 18,
           "slug": "national-18",
           "actor_links": 0,
@@ -24103,7 +25405,7 @@
       "cluster_id": 22,
       "headline": "সুদমুক্ত ‘ইসলামিক ক্রেডিট কার্ড’ নিয়ে জরুরি নির্দেশনা বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T04:01:51.974Z",
-      "last_update": "2026-10-10T10:37:13.370Z",
+      "last_update": "2026-10-10T11:01:27.413Z",
       "claim_count": 2,
       "events": [
         {
@@ -25722,7 +27024,7 @@
       "cluster_id": 24,
       "headline": "১২ ডিসেম্বরের আগেই গঙ্গা চুক্তি করতে চায় বাংলাদেশ",
       "first_seen": "2026-10-10T04:01:51.986Z",
-      "last_update": "2026-10-10T10:37:13.371Z",
+      "last_update": "2026-10-10T11:01:27.415Z",
       "claim_count": 2,
       "events": [
         {
@@ -27393,28 +28695,28 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
-          "cluster_id": 150,
-          "slug": "national-150",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 142,
-          "slug": "national-142",
+          "cluster_id": 162,
+          "slug": "national-162",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভের জেরে আটক মমতা, নেহা বোরা"
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
         },
         {
-          "cluster_id": 133,
-          "slug": "sports-133",
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "এবার আটক মহাত্মা গান্ধীর প্রপৌত্র তুষার গান্ধী"
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
         }
       ]
     },
@@ -29709,7 +31011,7 @@
       "cluster_id": 3,
       "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি",
       "first_seen": "2026-10-10T04:01:51.860Z",
-      "last_update": "2026-10-10T10:37:13.367Z",
+      "last_update": "2026-10-10T11:01:27.410Z",
       "claim_count": 2,
       "events": [
         {
@@ -29784,6 +31086,14 @@
       ],
       "related": [
         {
+          "cluster_id": 141,
+          "slug": "sports-141",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
           "cluster_id": 140,
           "slug": "national-140",
           "actor_links": 0,
@@ -29805,7 +31115,7 @@
       "cluster_id": 30,
       "headline": "বসুন্ধরায় জমে উঠেছে জনপ্রিয় ক্যাফে আমাজন",
       "first_seen": "2026-10-10T04:01:52.019Z",
-      "last_update": "2026-10-10T10:37:13.376Z",
+      "last_update": "2026-10-10T11:01:27.419Z",
       "claim_count": 2,
       "events": [
         {
@@ -29974,7 +31284,7 @@
       "cluster_id": 31,
       "headline": "পে-স্কেল: এমপিওভুক্ত শিক্ষকদের বেতন দ্বিগুণ করার প্রস্তাব",
       "first_seen": "2026-10-10T04:01:52.023Z",
-      "last_update": "2026-10-10T10:37:13.377Z",
+      "last_update": "2026-10-10T11:01:27.420Z",
       "claim_count": 10,
       "events": [
         {
@@ -31044,11 +32354,41 @@
     },
     "national-36-missing-children": {
       "cluster_id": 164,
-      "headline": "36 missing children’s bodies recovered in 8 months, 26 killed after rape",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+      "first_seen": "2026-10-10T11:01:27.797Z",
+      "last_update": "2026-10-10T11:01:27.799Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:25:23.000Z",
+          "kind": "evidence",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/2ogh5ocbr2"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.954Z",
+          "kind": "claim",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5663,
+          "claim_text": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-361": {
@@ -32231,7 +33571,7 @@
       "cluster_id": 46,
       "headline": "পিস্তল-গুলিসহ বিভিন্ন সরঞ্জাম উদ্ধার, গ্রেপ্তার ৪",
       "first_seen": "2026-10-10T05:01:38.249Z",
-      "last_update": "2026-10-10T10:37:13.365Z",
+      "last_update": "2026-10-10T11:01:27.409Z",
       "claim_count": 2,
       "events": [
         {
@@ -32578,7 +33918,7 @@
       "cluster_id": 48,
       "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক",
       "first_seen": "2026-10-10T05:01:38.263Z",
-      "last_update": "2026-10-10T10:37:13.374Z",
+      "last_update": "2026-10-10T11:01:27.417Z",
       "claim_count": 2,
       "events": [
         {
@@ -32653,6 +33993,14 @@
       ],
       "related": [
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -32691,14 +34039,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
-        },
-        {
-          "cluster_id": 14,
-          "slug": "national-14",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
         }
       ]
     },
@@ -32769,7 +34109,7 @@
       "cluster_id": 49,
       "headline": "৩০ ব্যাংকের কার্ড-এটিএম সেবা বিঘ্নিত, কিউ-ক্যাশ কর্তৃপক্ষকে তলব বাংলাদেশ ব্যাংকের",
       "first_seen": "2026-10-10T05:01:38.267Z",
-      "last_update": "2026-10-10T10:37:13.375Z",
+      "last_update": "2026-10-10T11:01:27.418Z",
       "claim_count": 2,
       "events": [
         {
@@ -33647,8 +34987,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         },
         {
           "cluster_id": 114,
@@ -33852,20 +35200,20 @@
           "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার"
         },
         {
-          "cluster_id": 123,
-          "slug": "national-123",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
-        },
-        {
           "cluster_id": 2,
           "slug": "national-2",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
         }
       ]
     },
@@ -36997,6 +38345,30 @@
       ],
       "related": [
         {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "cluster_id": 159,
+          "slug": "national-159",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
           "cluster_id": 133,
           "slug": "sports-133",
           "actor_links": 0,
@@ -37019,30 +38391,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মা হওয়ার পর চেহারা নিয়ে কটাক্ষ, জবাব দিলেন ক্যাটরিনা"
-        },
-        {
-          "cluster_id": 63,
-          "slug": "national-63",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভে যোগ দেয়ার আগেই আটক ধ্রুব রাঠি"
-        },
-        {
-          "cluster_id": 26,
-          "slug": "national-26",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 21,
-          "slug": "national-21",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সন্দেহের বশে বাংলাদেশি তকমা দিয়ে দেশছাড়া করা যাবে না: কলকাতা হাইকোর্ট"
         }
       ]
     },
@@ -37437,7 +38785,7 @@
       "cluster_id": 84,
       "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ",
       "first_seen": "2026-10-10T07:09:36.452Z",
-      "last_update": "2026-10-10T10:37:13.349Z",
+      "last_update": "2026-10-10T11:01:27.403Z",
       "claim_count": 3,
       "events": [
         {
@@ -37563,6 +38911,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 141,
+          "slug": "sports-141",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
         {
           "cluster_id": 140,
           "slug": "national-140",
@@ -37850,7 +39206,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T10:37:13.366Z",
+      "last_update": "2026-10-10T11:01:27.409Z",
       "claim_count": 2,
       "events": [
         {
@@ -38787,6 +40143,22 @@
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         },
         {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 159,
+          "slug": "national-159",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কলকাতায় মুসলিমদের পানীয় জল না দেওয়ার অভিযোগ, জাতিসংঘে চিঠি"
+        },
+        {
           "cluster_id": 150,
           "slug": "national-150",
           "actor_links": 0,
@@ -38801,22 +40173,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "৫০তম বিসিএস পরীক্ষার্থীদের জন্য পিএসসির নতুন নির্দেশনা"
-        },
-        {
-          "cluster_id": 132,
-          "slug": "national-132",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ভারতে শিক্ষার্থীদের আন্দোলনের নতুন মুখ কে এই নেহা বোরা?"
-        },
-        {
-          "cluster_id": 113,
-          "slug": "national-113",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
         }
       ]
     },
@@ -39109,7 +40465,7 @@
       "cluster_id": 93,
       "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন",
       "first_seen": "2026-10-10T07:31:42.132Z",
-      "last_update": "2026-10-10T10:37:13.363Z",
+      "last_update": "2026-10-10T11:01:27.407Z",
       "claim_count": 2,
       "events": [
         {
@@ -39224,8 +40580,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         },
         {
           "cluster_id": 114,
@@ -40294,11 +41658,41 @@
     },
     "national-fuel-prices-jump": {
       "cluster_id": 165,
-      "headline": "Fuel prices jump by up to Tk20 a litre",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+      "first_seen": "2026-10-10T11:01:27.801Z",
+      "last_update": "2026-10-10T11:01:27.803Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:21:13.000Z",
+          "kind": "evidence",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/cy1vc2ngyd"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.957Z",
+          "kind": "claim",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5664,
+          "claim_text": "খুলনায় পুলিশ সদস্যদের রাতে একা চলাচল না করার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-ganges-water-sharing": {
@@ -40577,11 +41971,41 @@
     },
     "national-mp-gazi-nazrul": {
       "cluster_id": 163,
-      "headline": "MP Gazi Nazrul’s 2nd wife found hanging in NAM Bhaban",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+      "first_seen": "2026-10-10T11:01:27.792Z",
+      "last_update": "2026-10-10T11:01:27.795Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:29:50.000Z",
+          "kind": "evidence",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/jasd-expresses-concern-over-the-cancellation-of-hasanul-haq-inus-division-status-and-the-denial-of-medical-treatment/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.951Z",
+          "kind": "claim",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-networks-halt-tv": {
@@ -40823,12 +42247,131 @@
     },
     "national-tarique-to-deliver": {
       "cluster_id": 161,
-      "headline": "Tarique to deliver maiden speech at UNGA on Sept 24",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+      "first_seen": "2026-10-10T11:01:27.395Z",
+      "last_update": "2026-10-10T11:01:27.398Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T09:21:44.000Z",
+          "kind": "evidence",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9halJlMFJURTR5VU52WE1HNk9lT0ZUakpkaXM1ZlJ0aGlkaWNkbGxnSDFqNTRPZFJLTXpLTTBqUGVFLVZCQ2dZNVVvUTdEdnRaVXhJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:19:30.000Z",
+          "kind": "evidence",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwNBVV95cUxNZHhySTRxVUlLMEN2NWwtRHNTcVE0UVpIcjhueDJjQ2dFa0E4VkktZFZUZnY4OEZDbmVNYjhxVFRjNjcwLTYxYWNoTEJMYjlUenBIR1o3cTlUZ2Y5XzB0RmI4dnZhQ3ZZOTI2ZThEcUE1RksxZkZGM2t1dkt5V180RFhSWGVCckRmS0UwQzJpNl91NEhZZHZpN09zX2kzelQta0d5MmZVajQ3alR2eXdpdW9uZWtkaXdmNFlOaW14ZXBzQUlaS0pFbGRGRW9DOWJVUWxpWFU4ejVPMFFOWkRnay1RZTJjalNEazNhWDd4dVFBUXlnalBvR1pqcmJ1U21SMU9rZFpNQ0kxUVdEdmluZFQ1bXZkdE1rNXBDdzk4NGJTSEhuazJla2J3VEw4UGRjeHVCZU1EQjFkQ0hhVHN6bG5HTjZQbjlVSjFSOUxiR3NxNV9uZ2RlaDYya1RWbDlTUHJkbzlzWlI0aEMtVU5jb3E2czRYR0d5N1NWMnZEZ3NuLUstU3dhaFpUWHBXTnZHVmNxZFlocjdpb2pCbEw3QnFHM0NnbVllYVdGNGpnaEh2cHpaRnhLMl9BaVJBekRxeUVR0gHIA0FVX3lxTFBMUU92M3p6bXNlMFRmTDNYbzBqdkN6MW1Za0NtVG80M281OGpLdzZ3SlNwMFRrel85dHJQYmJoYWZGT3dxUk1Jd3Ntc0EwZ2o3Vy02TTdYZVJIQmJtRmh2bVprV2xUSHhsZ3FheEczazFBdDJ0R1plR1NGWHMxRDlOQXpIVDE4SmdGUGZQNG9aU3UyT2pFRlhYNFdzYlY2cjBCeUdlcDhLZ1F4TDZCT1dXT2tYaWE2a3A2aXA3Ym1yTk5mTGtsZ1pjZjhzaWdmRnhxSDdIRWZKcmtiY0xOS1RsY1JGN2d5TGlVczd1OV9Xd2NuY0tQQlExS2tSSWJwdzFpbTE3eHpBNUpib2dSTFBrbE1zdjEwQ0hjb1g1MVFwbGhWcHNkYWhROHFHVUVSVVBvTk5iVmxEZ001TkJSMmNXdG1FNTgwVW5rNHVXb3dRTkljVHpQU3VPU3E1MUxQRklBZXl2dU9rTkoyMU1fTG5TUDZsQ3FmOFR6clBPWVp5aUtTNlltb0J3eFFvZ2dSMkNqeFZ5MFNSdW03bWhMSHhCRlhhT19SS1M0NmpGT0YxZThZMy1oeVB1TFhsWGp5VGRmSUFTek56eA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T10:19:30.000Z",
+          "kind": "evidence",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwwNBVV95cUxNZHhySTRxVUlLMEN2NWwtRHNTcVE0UVpIcjhueDJjQ2dFa0E4VkktZFZUZnY4OEZDbmVNYjhxVFRjNjcwLTYxYWNoTEJMYjlUenBIR1o3cTlUZ2Y5XzB0RmI4dnZhQ3ZZOTI2ZThEcUE1RksxZkZGM2t1dkt5V180RFhSWGVCckRmS0UwQzJpNl91NEhZZHZpN09zX2kzelQta0d5MmZVajQ3alR2eXdpdW9uZWtkaXdmNFlOaW14ZXBzQUlaS0pFbGRGRW9DOWJVUWxpWFU4ejVPMFFOWkRnay1RZTJjalNEazNhWDd4dVFBUXlnalBvR1pqcmJ1U21SMU9rZFpNQ0kxUVdEdmluZFQ1bXZkdE1rNXBDdzk4NGJTSEhuazJla2J3VEw4UGRjeHVCZU1EQjFkQ0hhVHN6bG5HTjZQbjlVSjFSOUxiR3NxNV9uZ2RlaDYya1RWbDlTUHJkbzlzWlI0aEMtVU5jb3E2czRYR0d5N1NWMnZEZ3NuLUstU3dhaFpUWHBXTnZHVmNxZFlocjdpb2pCbEw3QnFHM0NnbVllYVdGNGpnaEh2cHpaRnhLMl9BaVJBekRxeUVR0gHIA0FVX3lxTFBMUU92M3p6bXNlMFRmTDNYbzBqdkN6MW1Za0NtVG80M281OGpLdzZ3SlNwMFRrel85dHJQYmJoYWZGT3dxUk1Jd3Ntc0EwZ2o3Vy02TTdYZVJIQmJtRmh2bVprV2xUSHhsZ3FheEczazFBdDJ0R1plR1NGWHMxRDlOQXpIVDE4SmdGUGZQNG9aU3UyT2pFRlhYNFdzYlY2cjBCeUdlcDhLZ1F4TDZCT1dXT2tYaWE2a3A2aXA3Ym1yTk5mTGtsZ1pjZjhzaWdmRnhxSDdIRWZKcmtiY0xOS1RsY1JGN2d5TGlVczd1OV9Xd2NuY0tQQlExS2tSSWJwdzFpbTE3eHpBNUpib2dSTFBrbE1zdjEwQ0hjb1g1MVFwbGhWcHNkYWhROHFHVUVSVVBvTk5iVmxEZ001TkJSMmNXdG1FNTgwVW5rNHVXb3dRTkljVHpQU3VPU3E1MUxQRklBZXl2dU9rTkoyMU1fTG5TUDZsQ3FmOFR6clBPWVp5aUtTNlltb0J3eFFvZ2dSMkNqeFZ5MFNSdW03bWhMSHhCRlhhT19SS1M0NmpGT0YxZThZMy1oeVB1TFhsWGp5VGRmSUFTek56eA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.938Z",
+          "kind": "claim",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
+          "ts": "2026-10-10T11:14:18.941Z",
+          "kind": "claim",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5658,
+          "claim_text": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5659,
+          "claim_text": "ঢাকায় বিমানের ফ্লাইটের জরুরি অবতরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 113,
+          "slug": "national-113",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
+        },
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        },
+        {
+          "cluster_id": 48,
+          "slug": "national-48",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
+        },
+        {
+          "cluster_id": 26,
+          "slug": "national-26",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 20,
+          "slug": "national-20",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
+        }
+      ]
     },
     "national-tennessee-governor-halts": {
       "cluster_id": 995,
@@ -41002,6 +42545,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "opinion-167": {
+      "cluster_id": 167,
+      "headline": "সময়ের শূল-ধ্বনি",
+      "first_seen": "2026-10-10T11:01:27.809Z",
+      "last_update": "2026-10-10T11:01:27.810Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/onnoalo/poem/4zcrf5oqyd"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.962Z",
+          "kind": "claim",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5666,
+          "claim_text": "সময়ের শূল-ধ্বনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "opinion-1692": {
@@ -41518,7 +43100,7 @@
       "cluster_id": 148,
       "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
       "first_seen": "2026-10-10T10:37:13.335Z",
-      "last_update": "2026-10-10T10:37:13.337Z",
+      "last_update": "2026-10-10T11:01:27.391Z",
       "claim_count": 2,
       "events": [
         {
@@ -41635,6 +43217,45 @@
       "events": [],
       "related": []
     },
+    "politics-163": {
+      "cluster_id": 163,
+      "headline": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+      "first_seen": "2026-10-10T11:01:27.792Z",
+      "last_update": "2026-10-10T11:01:27.795Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:29:50.000Z",
+          "kind": "evidence",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/jasd-expresses-concern-over-the-cancellation-of-hasanul-haq-inus-division-status-and-the-denial-of-medical-treatment/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.951Z",
+          "kind": "claim",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5662,
+          "claim_text": "কারাবন্দি ইনুর ডিভিশন বাতিল, চিকিৎসা নিয়ে জাসদের উদ্বেগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "politics-1631": {
       "cluster_id": 1631,
       "headline": "পাচার হওয়া অর্থ উদ্ধার ও দুর্নীতি রোধে স্পিকার বরাবর তিন সংগঠনের স্মারকলিপি",
@@ -41664,11 +43285,41 @@
     },
     "politics-166": {
       "cluster_id": 166,
-      "headline": "দ্বিতীয় স্ত্রীর ঝুলন্ত মরদেহ উদ্ধার, পুলিশ হেফাজতে এমপি গাজী নজরুল ও প্রথম স্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+      "first_seen": "2026-10-10T11:01:27.805Z",
+      "last_update": "2026-10-10T11:01:27.807Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-10T10:16:31.000Z",
+          "kind": "evidence",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/zn4m2ul5sn"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.960Z",
+          "kind": "claim",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5665,
+          "claim_text": "‘আদালতে পা দিলেই মনে হয় এ বুঝি ভবন ধসে পড়বে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1661": {
@@ -42224,8 +43875,16 @@
           "slug": "sports-141",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক"
+          "claim_count": 3,
+          "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
         },
         {
           "cluster_id": 131,
@@ -42250,14 +43909,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
-        },
-        {
-          "cluster_id": 86,
-          "slug": "sports-86",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
         }
       ]
     },
@@ -42679,6 +44330,22 @@
       ],
       "related": [
         {
+          "cluster_id": 162,
+          "slug": "national-162",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+        },
+        {
           "cluster_id": 132,
           "slug": "national-132",
           "actor_links": 0,
@@ -42733,10 +44400,10 @@
     },
     "sports-141": {
       "cluster_id": 141,
-      "headline": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
+      "headline": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
       "first_seen": "2026-10-10T10:16:49.166Z",
-      "last_update": "2026-10-10T10:37:13.348Z",
-      "claim_count": 2,
+      "last_update": "2026-10-10T11:01:27.373Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-10T09:44:55.000Z",
@@ -42761,10 +44428,32 @@
           }
         },
         {
+          "ts": "2026-10-10T09:44:55.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/sxmqf2cic5"
+          }
+        },
+        {
           "ts": "2026-10-10T09:56:47.000Z",
           "kind": "evidence",
           "claim_id": 4694,
           "claim_text": "ত্রিদেশীয় সিরিজে বাংলাদেশের দল ঘোষণা, আছে চমক",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/cricket/973559/%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%9C%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%B2-%E0%A6%98%E0%A7%8B%E0%A6%B7%E0%A6%A3%E0%A6%BE-%E0%A6%86%E0%A6%9B%E0%A7%87-%E0%A6%9A%E0%A6%AE%E0%A6%95"
+          }
+        },
+        {
+          "ts": "2026-10-10T09:56:47.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -42806,9 +44495,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-10T10:47:15.000Z",
+          "kind": "evidence",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/liton-aliss-afghanistan-zimbabwe-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-10-10T11:14:18.852Z",
+          "kind": "claim",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস"
+        },
+        {
+          "ts": "2026-10-10T11:14:19.054Z",
+          "kind": "verify",
+          "claim_id": 5627,
+          "claim_text": "লিটনের নেতৃত্বে ত্রিদেশীয় সিরিজের দল, নতুন মুখ আলিস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 140,
+          "slug": "national-140",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায় ও মানিক সরকার"
+        },
         {
           "cluster_id": 114,
           "slug": "national-114",
@@ -42816,6 +44542,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর"
+        },
+        {
+          "cluster_id": 84,
+          "slug": "national-84",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অটোরিকশাচালক সুমনই স্কুলছাত্রীকে ধর্ষণের পর শ্বাসরোধে হত্যা করে: পুলিশ"
         },
         {
           "cluster_id": 56,
@@ -42826,28 +44560,20 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 3,
+          "slug": "national-3",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকার আকাশ আজ আংশিক মেঘলা, হতে পারে হালকা বৃষ্টি"
+        },
+        {
           "cluster_id": 2,
           "slug": "national-2",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
-        },
-        {
-          "cluster_id": 70,
-          "slug": "politics-70",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
-        },
-        {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ককরোচ জনতা পার্টির আন্দোলনে তারকারা, শাবানা আজমি থেকে নাসিরউদ্দিন শাহ কে কী বলেছেন"
         }
       ]
     },
@@ -42873,7 +44599,7 @@
       "cluster_id": 149,
       "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
       "first_seen": "2026-10-10T10:37:13.338Z",
-      "last_update": "2026-10-10T10:37:13.341Z",
+      "last_update": "2026-10-10T11:01:27.399Z",
       "claim_count": 2,
       "events": [
         {
@@ -42956,14 +44682,6 @@
           "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
         },
         {
-          "cluster_id": 123,
-          "slug": "national-123",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
-        },
-        {
           "cluster_id": 57,
           "slug": "national-57",
           "actor_links": 0,
@@ -42978,6 +44696,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার দিল্লিতে আটক মমতা বন্দ্যোপাধ্যায়"
         }
       ]
     },
@@ -43417,7 +45143,7 @@
       "cluster_id": 86,
       "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী",
       "first_seen": "2026-10-10T07:09:36.464Z",
-      "last_update": "2026-10-10T10:37:13.366Z",
+      "last_update": "2026-10-10T11:01:27.409Z",
       "claim_count": 2,
       "events": [
         {
