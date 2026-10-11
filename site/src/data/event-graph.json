@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3194,
+    "storyCount": 3196,
     "kinds": [
       "claim",
       "evidence",
@@ -2672,14 +2672,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -2718,6 +2710,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -5493,20 +5493,20 @@
           "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
         },
         {
+          "cluster_id": 548,
+          "slug": "national-548",
+          "actor_links": 4,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 457,
           "slug": "national-457",
           "actor_links": 2,
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুক্ত হয়ে ধ্রুব রাঠি বললেন, আমাকে গ্রেপ্তার নয়, ‘অপহরণ’ করা হয়েছে"
-        },
-        {
-          "cluster_id": 425,
-          "slug": "national-425",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "আটক হওয়া অভিনেতা ইমরান খান ও তার প্রেমিকাকে ছেড়ে দিয়েছে পুলিশ"
         }
       ]
     },
@@ -5758,7 +5758,7 @@
       "cluster_id": 480,
       "headline": "ক্ষমতাচ্যুত আ.লীগ আমলের ‘অপ্রয়োজনীয়’ প্রকল্প বাদ দিতে বলল সংসদীয় কমিটি",
       "first_seen": "2026-10-11T12:30:01.588Z",
-      "last_update": "2026-10-11T16:00:36.232Z",
+      "last_update": "2026-10-11T16:30:01.063Z",
       "claim_count": 2,
       "events": [
         {
@@ -6209,11 +6209,41 @@
     },
     "economy-555": {
       "cluster_id": 555,
-      "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+      "first_seen": "2026-10-11T16:30:01.478Z",
+      "last_update": "2026-10-11T16:30:01.480Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T16:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/activities/96e8ttdicp"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.698Z",
+          "kind": "claim",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-671": {
@@ -8483,7 +8513,7 @@
       "cluster_id": 465,
       "headline": "যে অভিযোগে ‘ভায়োলেন্স’ ছাড়লেন অধরা, হাতছাড়া হলিউড প্রজেক্ট!",
       "first_seen": "2026-10-11T11:29:51.036Z",
-      "last_update": "2026-10-11T16:00:36.227Z",
+      "last_update": "2026-10-11T16:30:01.058Z",
       "claim_count": 2,
       "events": [
         {
@@ -8558,6 +8588,14 @@
       ],
       "related": [
         {
+          "cluster_id": 550,
+          "slug": "national-550",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
           "cluster_id": 535,
           "slug": "sports-535",
           "actor_links": 0,
@@ -8596,14 +8634,6 @@
           "source_links": 2,
           "claim_count": 20,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
-        },
-        {
-          "cluster_id": 306,
-          "slug": "national-306",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 22,
-          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         }
       ]
     },
@@ -8723,6 +8753,134 @@
         }
       ],
       "related": []
+    },
+    "entertainment-550": {
+      "cluster_id": 550,
+      "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+      "first_seen": "2026-10-11T16:30:01.045Z",
+      "last_update": "2026-10-11T16:30:01.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-11T14:30:38.000Z",
+          "kind": "evidence",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/actress-nasima-khan-is-no-more/"
+          }
+        },
+        {
+          "ts": "2026-10-11T14:30:38.000Z",
+          "kind": "evidence",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/actress-nasima-khan-is-no-more/"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:00:35.000Z",
+          "kind": "evidence",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/dhallywood/dgysbx0jy2"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.675Z",
+          "kind": "claim",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.679Z",
+          "kind": "claim",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 535,
+          "slug": "sports-535",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফিলিপাইনের কাছে হেরে অনূর্ধ্ব-১৭ মেয়েদের বিদায়"
+        },
+        {
+          "cluster_id": 498,
+          "slug": "national-498",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "উচ্চতর ডিগ্রিধারী তরুণদের কর্মসংস্থানে গুরুত্ব দিচ্ছে সরকার: শিক্ষামন্ত্রী"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 388,
+          "slug": "national-388",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 20,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 306,
+          "slug": "national-306",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 22,
+          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
+        }
+      ]
     },
     "entertainment-565": {
       "cluster_id": 565,
@@ -11319,14 +11477,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -11365,6 +11515,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -15592,14 +15750,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -15638,6 +15788,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -21466,14 +21624,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -21512,6 +21662,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -21918,14 +22076,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -21964,6 +22114,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
         }
       ]
     },
@@ -23577,14 +23735,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
@@ -23623,6 +23773,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "দিল্লিতে বিক্ষোভ: ১৯৭৫ সালের জরুরি অবস্থার স্মৃতি ফিরিয়ে আনছে"
+        },
+        {
+          "cluster_id": 217,
+          "slug": "national-217",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "ভারতে অভিনেতা ইমরান খান আটক, সিজেপির নেতা–কর্মীদের ধরপাকড়ের প্রতিবাদে সরব তারকারা"
         }
       ]
     },
@@ -25943,20 +26101,20 @@
           "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
         },
         {
+          "cluster_id": 548,
+          "slug": "national-548",
+          "actor_links": 4,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
           "cluster_id": 457,
           "slug": "national-457",
           "actor_links": 2,
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুক্ত হয়ে ধ্রুব রাঠি বললেন, আমাকে গ্রেপ্তার নয়, ‘অপহরণ’ করা হয়েছে"
-        },
-        {
-          "cluster_id": 425,
-          "slug": "national-425",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "আটক হওয়া অভিনেতা ইমরান খান ও তার প্রেমিকাকে ছেড়ে দিয়েছে পুলিশ"
         }
       ]
     },
@@ -27095,14 +27253,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -27141,6 +27291,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -27393,7 +27551,7 @@
       "cluster_id": 509,
       "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ",
       "first_seen": "2026-10-11T13:52:31.569Z",
-      "last_update": "2026-10-11T16:00:36.215Z",
+      "last_update": "2026-10-11T16:30:01.052Z",
       "claim_count": 4,
       "events": [
         {
@@ -27839,6 +27997,45 @@
           "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
         }
       ]
+    },
+    "international-556": {
+      "cluster_id": 556,
+      "headline": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+      "first_seen": "2026-10-11T16:30:01.483Z",
+      "last_update": "2026-10-11T16:30:01.485Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T15:53:59.000Z",
+          "kind": "evidence",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/a1dhbi45jz"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.701Z",
+          "kind": "claim",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "international-561": {
       "cluster_id": 561,
@@ -28685,7 +28882,7 @@
       "cluster_id": 499,
       "headline": "ঢাবির ৫৪তম সমাবর্তনে থাকবেন রাষ্ট্রপতি ও প্রধানমন্ত্রী",
       "first_seen": "2026-10-11T13:28:27.919Z",
-      "last_update": "2026-10-11T16:00:36.229Z",
+      "last_update": "2026-10-11T16:30:01.060Z",
       "claim_count": 2,
       "events": [
         {
@@ -28760,14 +28957,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -28806,6 +28995,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -32417,14 +32614,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -32463,6 +32652,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -36505,14 +36702,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -36551,6 +36740,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -36839,14 +37036,6 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -36861,6 +37050,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 500,
+          "slug": "sports-500",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নাহিদ রানাকে বিদেশে পাঠানোর পরিকল্পনা বিসিবির"
         }
       ]
     },
@@ -42921,14 +43118,6 @@
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -42959,6 +43148,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বৃহত্তর স্বার্থে জাতীয় বন্দর কৌশল তৈরি হচ্ছে: নৌপরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
         }
       ]
     },
@@ -46216,7 +46413,7 @@
       "cluster_id": 528,
       "headline": "2 Bangladeshis killed in Houthi missile attack at Riyadh airport, 4 in ICU",
       "first_seen": "2026-10-11T15:10:37.081Z",
-      "last_update": "2026-10-11T16:00:36.217Z",
+      "last_update": "2026-10-11T16:30:01.054Z",
       "claim_count": 2,
       "events": [
         {
@@ -53188,14 +53385,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -53234,6 +53423,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -54187,14 +54384,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -54233,6 +54422,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
         }
       ]
     },
@@ -56108,14 +56305,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -56154,6 +56343,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -56892,6 +57089,14 @@
       ],
       "related": [
         {
+          "cluster_id": 550,
+          "slug": "national-550",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
           "cluster_id": 535,
           "slug": "sports-535",
           "actor_links": 0,
@@ -56930,14 +57135,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সিলেটের কানাইঘাট সীমান্তে গুলিবিদ্ধ যুবকের মরদেহ উদ্ধার"
-        },
-        {
-          "cluster_id": 388,
-          "slug": "national-388",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
         }
       ]
     },
@@ -62405,14 +62602,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -62451,6 +62640,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -66104,14 +66301,6 @@
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -66142,6 +66331,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বৃহত্তর স্বার্থে জাতীয় বন্দর কৌশল তৈরি হচ্ছে: নৌপরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
         }
       ]
     },
@@ -68253,14 +68450,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -68299,6 +68488,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -71943,14 +72140,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -71989,6 +72178,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -72413,14 +72610,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -72459,6 +72648,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 271,
+          "slug": "national-271",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -73140,14 +73337,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -73186,6 +73375,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
         }
       ]
     },
@@ -74075,14 +74272,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -74121,6 +74310,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
         }
       ]
     },
@@ -77100,14 +77297,6 @@
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -77130,6 +77319,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "দিবস উদযাপন-পালন ও ছুটি নিয়ে সরকারি অফিসকে জরুরি নির্দেশনা"
+        },
+        {
+          "cluster_id": 425,
+          "slug": "national-425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আটক হওয়া অভিনেতা ইমরান খান ও তার প্রেমিকাকে ছেড়ে দিয়েছে পুলিশ"
         }
       ]
     },
@@ -77420,14 +77617,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
@@ -77466,6 +77655,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "দিল্লিতে বিক্ষোভ: ১৯৭৫ সালের জরুরি অবস্থার স্মৃতি ফিরিয়ে আনছে"
+        },
+        {
+          "cluster_id": 217,
+          "slug": "national-217",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "ভারতে অভিনেতা ইমরান খান আটক, সিজেপির নেতা–কর্মীদের ধরপাকড়ের প্রতিবাদে সরব তারকারা"
         }
       ]
     },
@@ -77627,14 +77824,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -77673,6 +77862,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -79179,14 +79376,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -79225,6 +79414,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -79232,7 +79429,7 @@
       "cluster_id": 433,
       "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন",
       "first_seen": "2026-10-11T09:39:41.250Z",
-      "last_update": "2026-10-11T16:00:36.225Z",
+      "last_update": "2026-10-11T16:30:01.056Z",
       "claim_count": 4,
       "events": [
         {
@@ -80634,7 +80831,7 @@
       "cluster_id": 453,
       "headline": "বাংলাদেশ-ওয়েস্ট ইন্ডিজ টেস্ট সিরিজের সূচিতে পরিবর্তন",
       "first_seen": "2026-10-11T10:59:59.313Z",
-      "last_update": "2026-10-11T16:00:36.236Z",
+      "last_update": "2026-10-11T16:30:01.067Z",
       "claim_count": 2,
       "events": [
         {
@@ -80762,7 +80959,7 @@
       "cluster_id": 454,
       "headline": "এআই, সাইবার নিরাপত্তা ও জ্বালানি খাতে বিনিয়োগে জাপানি কোম্পানিকে প্রধানমন্ত্রীর আহ্বান",
       "first_seen": "2026-10-11T10:59:59.316Z",
-      "last_update": "2026-10-11T16:00:36.237Z",
+      "last_update": "2026-10-11T16:30:01.068Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -81797,7 +81994,7 @@
       "cluster_id": 465,
       "headline": "যে অভিযোগে ‘ভায়োলেন্স’ ছাড়লেন অধরা, হাতছাড়া হলিউড প্রজেক্ট!",
       "first_seen": "2026-10-11T11:29:51.036Z",
-      "last_update": "2026-10-11T16:00:36.227Z",
+      "last_update": "2026-10-11T16:30:01.058Z",
       "claim_count": 2,
       "events": [
         {
@@ -81872,6 +82069,14 @@
       ],
       "related": [
         {
+          "cluster_id": 550,
+          "slug": "national-550",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
           "cluster_id": 535,
           "slug": "sports-535",
           "actor_links": 0,
@@ -81910,14 +82115,6 @@
           "source_links": 2,
           "claim_count": 20,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
-        },
-        {
-          "cluster_id": 306,
-          "slug": "national-306",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 22,
-          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         }
       ]
     },
@@ -82181,14 +82378,6 @@
       ],
       "related": [
         {
-          "cluster_id": 538,
-          "slug": "national-538",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
-        },
-        {
           "cluster_id": 97,
           "slug": "national-97",
           "actor_links": 1,
@@ -82203,6 +82392,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "চট্টগ্রামের উদ্বোধনের পরদিনই সাইকেল চলার পথ দখল"
+        },
+        {
+          "cluster_id": 538,
+          "slug": "national-538",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
         }
       ]
     },
@@ -82531,14 +82728,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -82577,6 +82766,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
+        },
+        {
+          "cluster_id": 271,
+          "slug": "national-271",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -83095,7 +83292,7 @@
       "cluster_id": 480,
       "headline": "ক্ষমতাচ্যুত আ.লীগ আমলের ‘অপ্রয়োজনীয়’ প্রকল্প বাদ দিতে বলল সংসদীয় কমিটি",
       "first_seen": "2026-10-11T12:30:01.588Z",
-      "last_update": "2026-10-11T16:00:36.232Z",
+      "last_update": "2026-10-11T16:30:01.063Z",
       "claim_count": 2,
       "events": [
         {
@@ -83223,7 +83420,7 @@
       "cluster_id": 481,
       "headline": "সাবেক সাধারণ সম্পাদক রোটনের জানাজা থেকে নিষিদ্ধ ছাত্রলীগের ৪ নেতা-কর্মী আটক",
       "first_seen": "2026-10-11T12:30:01.592Z",
-      "last_update": "2026-10-11T16:00:36.233Z",
+      "last_update": "2026-10-11T16:30:01.065Z",
       "claim_count": 3,
       "events": [
         {
@@ -83583,7 +83780,7 @@
       "cluster_id": 483,
       "headline": "Food Cart Ep 6: Mustakim’s Chap",
       "first_seen": "2026-10-11T12:30:01.615Z",
-      "last_update": "2026-10-11T16:00:36.238Z",
+      "last_update": "2026-10-11T16:30:01.077Z",
       "claim_count": 2,
       "events": [
         {
@@ -83866,7 +84063,7 @@
       "cluster_id": 489,
       "headline": "এমপি গাজী নজরুলের জামিন আবেদন আবারও না-মঞ্জুর",
       "first_seen": "2026-10-11T13:00:37.597Z",
-      "last_update": "2026-10-11T16:00:36.230Z",
+      "last_update": "2026-10-11T16:30:01.061Z",
       "claim_count": 2,
       "events": [
         {
@@ -84860,7 +85057,7 @@
       "cluster_id": 499,
       "headline": "ঢাবির ৫৪তম সমাবর্তনে থাকবেন রাষ্ট্রপতি ও প্রধানমন্ত্রী",
       "first_seen": "2026-10-11T13:28:27.919Z",
-      "last_update": "2026-10-11T16:00:36.229Z",
+      "last_update": "2026-10-11T16:30:01.060Z",
       "claim_count": 2,
       "events": [
         {
@@ -84935,14 +85132,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -84981,6 +85170,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -84988,7 +85185,7 @@
       "cluster_id": 500,
       "headline": "নাহিদ রানাকে বিদেশে পাঠানোর পরিকল্পনা বিসিবির",
       "first_seen": "2026-10-11T13:28:27.924Z",
-      "last_update": "2026-10-11T16:00:36.231Z",
+      "last_update": "2026-10-11T16:30:01.062Z",
       "claim_count": 2,
       "events": [
         {
@@ -85191,14 +85388,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -85237,6 +85426,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -85448,7 +85645,7 @@
       "cluster_id": 507,
       "headline": "উন্নয়ন প্রকল্পের প্রতিটি পয়সার যথাযথ ব্যবহারের নির্দেশ প্রধানমন্ত্রীর",
       "first_seen": "2026-10-11T13:52:31.563Z",
-      "last_update": "2026-10-11T16:00:36.228Z",
+      "last_update": "2026-10-11T16:30:01.059Z",
       "claim_count": 2,
       "events": [
         {
@@ -85523,14 +85720,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 498,
           "slug": "national-498",
           "actor_links": 0,
@@ -85569,6 +85758,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
+        },
+        {
+          "cluster_id": 271,
+          "slug": "national-271",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -85704,7 +85901,7 @@
       "cluster_id": 509,
       "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ",
       "first_seen": "2026-10-11T13:52:31.569Z",
-      "last_update": "2026-10-11T16:00:36.215Z",
+      "last_update": "2026-10-11T16:30:01.052Z",
       "claim_count": 4,
       "events": [
         {
@@ -85951,7 +86148,7 @@
       "cluster_id": 510,
       "headline": "হে কাবার মালিক! মক্কা-মদিনাকে হেফাজত করো: মিজানুর রহমান আজহারী",
       "first_seen": "2026-10-11T13:52:31.579Z",
-      "last_update": "2026-10-11T16:00:36.234Z",
+      "last_update": "2026-10-11T16:30:01.066Z",
       "claim_count": 2,
       "events": [
         {
@@ -86248,20 +86445,20 @@
           "headline": "জার্মান পর্যটকের ল্যাপটপ-ক্যামেরা চুরি, অভিযুক্তকে ধরিয়ে দিতে পুরস্কার ঘোষণা"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "দিবস উদযাপন-পালন ও ছুটি নিয়ে সরকারি অফিসকে জরুরি নির্দেশনা"
+        },
+        {
+          "cluster_id": 459,
+          "slug": "national-459",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -86632,7 +86829,7 @@
       "cluster_id": 518,
       "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ",
       "first_seen": "2026-10-11T14:44:38.935Z",
-      "last_update": "2026-10-11T16:00:36.071Z",
+      "last_update": "2026-10-11T16:30:01.049Z",
       "claim_count": 3,
       "events": [
         {
@@ -86800,7 +86997,7 @@
       "cluster_id": 519,
       "headline": "সাজেক সড়কে চলছে অনির্দিষ্টকালের সড়ক অবরোধ, আটকে পড়েছেন শত শত পর্যটক",
       "first_seen": "2026-10-11T14:44:38.940Z",
-      "last_update": "2026-10-11T16:00:36.226Z",
+      "last_update": "2026-10-11T16:30:01.057Z",
       "claim_count": 3,
       "events": [
         {
@@ -87257,14 +87454,6 @@
       ],
       "related": [
         {
-          "cluster_id": 538,
-          "slug": "national-538",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
-        },
-        {
           "cluster_id": 97,
           "slug": "national-97",
           "actor_links": 1,
@@ -87279,6 +87468,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "‘শাটডাউন’ কর্মসূচিতে শিক্ষার্থীরা, প্রশাসনিক ভবনে তালা, এর মধ্যেই চুয়েট ভিসির রুটিন দায়িত্বে অধ্যাপক আরাফাত"
+        },
+        {
+          "cluster_id": 538,
+          "slug": "national-538",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
         }
       ]
     },
@@ -87847,6 +88044,150 @@
             "sources": "[\"c68329\",\"c71698\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68329,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 40,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68330,
+          "claim_text": "হাসানের হ্যাটট্রিকে আফগানিস্তানকে গুটিয়ে ১০৬ রানের লিড পেল বাংলাদেশ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68331,
+          "claim_text": "সেঞ্চুরির আক্ষেপ শান্ত ও মুশফিকের, বাংলাদেশের লিড ৩২৯ রান",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68332,
+          "claim_text": "ছাড়া পেয়েছেন অভিনেতা ইমরান খান ও তার প্রেমিকা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68333,
+          "claim_text": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68334,
+          "claim_text": "মুক্তি পাওয়ার পর ভিডিও বার্তায় যা জানালেন ধ্রুব রাঠি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68335,
+          "claim_text": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68336,
+          "claim_text": "‘মোদি ভারতের জন্য লজ্জার’ মুক্তি পেয়ে অভিজিতের বার্তা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68337,
+          "claim_text": "কী শর্ত দিয়ে ছাড়া হলো ধ্রুব রাঠিকে, না মানলে হবে যে পরিণতি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 68338,
+          "claim_text": "ওমরাহ করতে গিয়ে হুথির হামলায় প্রাণ হারালেন মাদ্রাসা শিক্ষক নাসরুল্লাহ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 70005,
+          "claim_text": "হাসান মাহমুদের ‘পারফেক্ট হ্যাটট্রিক’, গড়লেন নতুন ইতিহাস",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 71698,
+          "claim_text": "কুমিল্লায় কিশোরী হত্যায় অনেক প্রশ্নের উত্তর অজানা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -87857,6 +88198,14 @@
           "source_links": 4,
           "claim_count": 33,
           "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
+        },
+        {
+          "cluster_id": 548,
+          "slug": "national-548",
+          "actor_links": 5,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
         },
         {
           "cluster_id": 424,
@@ -87889,14 +88238,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ"
-        },
-        {
-          "cluster_id": 469,
-          "slug": "national-469",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "কুমিল্লায় কিশোরী হত্যায় অনেক প্রশ্নের উত্তর অজানা"
         }
       ]
     },
@@ -87904,7 +88245,7 @@
       "cluster_id": 528,
       "headline": "2 Bangladeshis killed in Houthi missile attack at Riyadh airport, 4 in ICU",
       "first_seen": "2026-10-11T15:10:37.081Z",
-      "last_update": "2026-10-11T16:00:36.217Z",
+      "last_update": "2026-10-11T16:30:01.054Z",
       "claim_count": 2,
       "events": [
         {
@@ -88306,7 +88647,7 @@
       "cluster_id": 535,
       "headline": "ফিলিপাইনের কাছে হেরে অনূর্ধ্ব-১৭ মেয়েদের বিদায়",
       "first_seen": "2026-10-11T15:35:18.357Z",
-      "last_update": "2026-10-11T16:00:36.216Z",
+      "last_update": "2026-10-11T16:30:01.053Z",
       "claim_count": 2,
       "events": [
         {
@@ -88381,6 +88722,14 @@
       ],
       "related": [
         {
+          "cluster_id": 550,
+          "slug": "national-550",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
           "cluster_id": 498,
           "slug": "national-498",
           "actor_links": 0,
@@ -88419,14 +88768,6 @@
           "source_links": 2,
           "claim_count": 22,
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -88654,7 +88995,7 @@
       "cluster_id": 541,
       "headline": "জার্মান পর্যটকের ল্যাপটপ-ক্যামেরা চুরি, অভিযুক্তকে ধরিয়ে দিতে পুরস্কার ঘোষণা",
       "first_seen": "2026-10-11T16:00:36.193Z",
-      "last_update": "2026-10-11T16:00:36.210Z",
+      "last_update": "2026-10-11T16:30:01.050Z",
       "claim_count": 2,
       "events": [
         {
@@ -88782,7 +89123,7 @@
       "cluster_id": 542,
       "headline": "অনির্দিষ্টকালের জন্য বন্ধ ঘোষণা সাজেক পর্যটনকেন্দ্র",
       "first_seen": "2026-10-11T16:00:36.211Z",
-      "last_update": "2026-10-11T16:00:36.214Z",
+      "last_update": "2026-10-11T16:30:01.051Z",
       "claim_count": 2,
       "events": [
         {
@@ -89112,18 +89453,177 @@
     },
     "national-548": {
       "cluster_id": 548,
-      "headline": "বাগদানের খবরে মুখ খুললেন অভিনেত্রী জেবিন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+      "first_seen": "2026-10-11T16:30:01.033Z",
+      "last_update": "2026-10-11T16:30:01.037Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-11T08:38:09.000Z",
+          "kind": "evidence",
+          "claim_id": 73417,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/international/1167399"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:38:09.000Z",
+          "kind": "evidence",
+          "claim_id": 73418,
+          "claim_text": "কী শর্ত দিয়ে ছাড়া হলো ধ্রুব রাঠিকে, না মানলে হবে যে পরিণতি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://www.jugantor.com/international/1167399"
+          }
+        },
+        {
+          "ts": "2026-10-11T11:11:54.000Z",
+          "kind": "evidence",
+          "claim_id": 73417,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lNnprNmNiUWlZeU5JZGw2cDBRQl9xNXFWWFdVeUdMZ01JOWdHZi1sQmtDV1VIek1aVlM4MC1ta2FPR3hQcVUzQkxfRWVtOFV3bUVR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T14:12:58.000Z",
+          "kind": "evidence",
+          "claim_id": 73417,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqm26dykgeezo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-11T14:12:58.000Z",
+          "kind": "evidence",
+          "claim_id": 73419,
+          "claim_text": "ওমরাহ করতে গিয়ে হুথির হামলায় প্রাণ হারালেন মাদ্রাসা শিক্ষক নাসরুল্লাহ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqm26dykgeezo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.664Z",
+          "kind": "claim",
+          "claim_id": 73417,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.668Z",
+          "kind": "claim",
+          "claim_id": 73418,
+          "claim_text": "কী শর্ত দিয়ে ছাড়া হলো ধ্রুব রাঠিকে, না মানলে হবে যে পরিণতি"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.670Z",
+          "kind": "claim",
+          "claim_id": 73419,
+          "claim_text": "ওমরাহ করতে গিয়ে হুথির হামলায় প্রাণ হারালেন মাদ্রাসা শিক্ষক নাসরুল্লাহ"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73417,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73418,
+          "claim_text": "কী শর্ত দিয়ে ছাড়া হলো ধ্রুব রাঠিকে, না মানলে হবে যে পরিণতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73419,
+          "claim_text": "ওমরাহ করতে গিয়ে হুথির হামলায় প্রাণ হারালেন মাদ্রাসা শিক্ষক নাসরুল্লাহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 527,
+          "slug": "national-527",
+          "actor_links": 5,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 431,
+          "slug": "international-431",
+          "actor_links": 4,
+          "source_links": 2,
+          "claim_count": 19,
+          "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
+        },
+        {
+          "cluster_id": 424,
+          "slug": "national-424",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "'ইউক্রেনের নতুন প্রেসিডেন্ট দরকার', জেলেনস্কির সমালোচনার জবাবে ট্রাম্প"
+        },
+        {
+          "cluster_id": 388,
+          "slug": "national-388",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 306,
+          "slug": "national-306",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
+        }
+      ]
     },
     "national-549": {
       "cluster_id": 549,
-      "headline": "নেইমারের ‘১০’ রাফিনিয়ার গায়ে, ৭-৮-৯ পেল কারা?",
-      "first_seen": null,
-      "last_update": null,
+      "headline": "দিল্লিতে বিমসটেকের প্রথম স্বরাষ্ট্রমন্ত্রীদের বৈঠকে যাচ্ছেন না বাংলাদেশের স্বরাষ্ট্রমন্ত্রী",
+      "first_seen": "2026-10-11T16:30:01.038Z",
+      "last_update": "2026-10-11T16:30:01.044Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -89209,74 +89709,483 @@
     },
     "national-550": {
       "cluster_id": 550,
-      "headline": "ক্যান্টনমেন্ট থানার সাবেক ওসি রাকিবুলের বিরুদ্ধে রাষ্ট্রদ্রোহ মামলাটির তদন্তে এখন ডিবি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+      "first_seen": "2026-10-11T16:30:01.045Z",
+      "last_update": "2026-10-11T16:30:01.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-11T14:30:38.000Z",
+          "kind": "evidence",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/actress-nasima-khan-is-no-more/"
+          }
+        },
+        {
+          "ts": "2026-10-11T14:30:38.000Z",
+          "kind": "evidence",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/actress-nasima-khan-is-no-more/"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:00:35.000Z",
+          "kind": "evidence",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/dhallywood/dgysbx0jy2"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.675Z",
+          "kind": "claim",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.679Z",
+          "kind": "claim",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73420,
+          "claim_text": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73421,
+          "claim_text": "ষাটের দশকের নায়িকা নাসিমা খান মারা গেছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 535,
+          "slug": "sports-535",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফিলিপাইনের কাছে হেরে অনূর্ধ্ব-১৭ মেয়েদের বিদায়"
+        },
+        {
+          "cluster_id": 498,
+          "slug": "national-498",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "উচ্চতর ডিগ্রিধারী তরুণদের কর্মসংস্থানে গুরুত্ব দিচ্ছে সরকার: শিক্ষামন্ত্রী"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 388,
+          "slug": "national-388",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 20,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 306,
+          "slug": "national-306",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 22,
+          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
+        }
+      ]
     },
     "national-551": {
       "cluster_id": 551,
-      "headline": "কাজীদের ক্ষমতা শেষ, এবার সরকারি রেজিস্ট্রারের হাতে মুসলিম বিয়ে নথিভুক্তির দায়িত্ব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সড়কের পাশে পড়েছিল নারীর বস্তাবন্দি মরদেহ",
+      "first_seen": "2026-10-11T16:30:01.069Z",
+      "last_update": "2026-10-11T16:30:01.072Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-11T08:28:00.000Z",
+          "kind": "evidence",
+          "claim_id": 73422,
+          "claim_text": "সড়কের পাশে পড়েছিল নারীর বস্তাবন্দি মরদেহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXSlpNZkNreXl0a0QzaGY3X1ZTeTRNZUE5TVBJZnZwQ2J4RjZwZGZCekZ3a2NQVmtvNEhTT1c0TEpha0hQMG1ZdlJCZ3gzWnpEM0s5MHJmdElaNFQzNUZ0ZC14Y3FrMzlyQVZyUTcxRElmdXpf?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T09:11:02.000Z",
+          "kind": "evidence",
+          "claim_id": 73422,
+          "claim_text": "সড়কের পাশে পড়েছিল নারীর বস্তাবন্দি মরদেহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XOUI2dTdjd05FcnN2UWVHVjZBM3R0VEN0ckFZTGhWMlRDUllLVVZFc1ptUllhcE9VcnZaLTFld1hjOW5LYjlzWGttbzY3WTdPamtfTk01TVpnTEdCLS1zamVSNEJJQUhEaTc5T3h3NHZGNnlt?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T09:11:02.000Z",
+          "kind": "evidence",
+          "claim_id": 73423,
+          "claim_text": "নবাবগঞ্জে নারীর গলাকাটা মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XOUI2dTdjd05FcnN2UWVHVjZBM3R0VEN0ckFZTGhWMlRDUllLVVZFc1ptUllhcE9VcnZaLTFld1hjOW5LYjlzWGttbzY3WTdPamtfTk01TVpnTEdCLS1zamVSNEJJQUhEaTc5T3h3NHZGNnlt?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.681Z",
+          "kind": "claim",
+          "claim_id": 73422,
+          "claim_text": "সড়কের পাশে পড়েছিল নারীর বস্তাবন্দি মরদেহ"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.684Z",
+          "kind": "claim",
+          "claim_id": 73423,
+          "claim_text": "নবাবগঞ্জে নারীর গলাকাটা মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73422,
+          "claim_text": "সড়কের পাশে পড়েছিল নারীর বস্তাবন্দি মরদেহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73423,
+          "claim_text": "নবাবগঞ্জে নারীর গলাকাটা মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-552": {
       "cluster_id": 552,
-      "headline": "স্বাধীন ও সার্বভৌম ফিলিস্তিনের প্রতি বাংলাদেশের সমর্থন পুনর্ব্যক্ত শামা ওবায়েদের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা",
+      "first_seen": "2026-10-11T16:30:01.073Z",
+      "last_update": "2026-10-11T16:30:01.076Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-10T17:21:06.000Z",
+          "kind": "evidence",
+          "claim_id": 73424,
+          "claim_text": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBGcGtvMEEzRTVfeWpxem01Q3RKbnEyUmJRdHZvc3ZtSk9wYU14VFl6V2NHU3BoR0E1RGNoSHBoNjJNRnA1Q0w4eElJM3loRlhFU214SjBFWGZxbS1lSmhYMEN5VElpWmVfT05qVmhBOA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T03:08:00.000Z",
+          "kind": "evidence",
+          "claim_id": 73424,
+          "claim_text": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB5dURXNC1TM1hUVkdILWkxNjg2b1BaekFyMndVdW05b0hSOFl1cUZoV3FoYy1ScVJIN1B4RUNjNmVKcS1oOXpPQUlOOVNoUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T03:08:00.000Z",
+          "kind": "evidence",
+          "claim_id": 73425,
+          "claim_text": "মালয়েশিয়ার কোরআন প্রতিযোগিতায় প্রথম বাংলাদেশের ইহতিশামুল",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB5dURXNC1TM1hUVkdILWkxNjg2b1BaekFyMndVdW05b0hSOFl1cUZoV3FoYy1ScVJIN1B4RUNjNmVKcS1oOXpPQUlOOVNoUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.687Z",
+          "kind": "claim",
+          "claim_id": 73424,
+          "claim_text": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.689Z",
+          "kind": "claim",
+          "claim_id": 73425,
+          "claim_text": "মালয়েশিয়ার কোরআন প্রতিযোগিতায় প্রথম বাংলাদেশের ইহতিশামুল"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73424,
+          "claim_text": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73425,
+          "claim_text": "মালয়েশিয়ার কোরআন প্রতিযোগিতায় প্রথম বাংলাদেশের ইহতিশামুল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-553": {
       "cluster_id": 553,
-      "headline": "ককটেল বিস্ফোরণ নিয়ে প্রয়োজনে নাসীরুদ্দীন পাটওয়ারীকে জিজ্ঞাসাবাদ: ডিএমপি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শিল্পখাতের চাহিদা মেটাতে প্রকৌশল শিক্ষায় পরিবর্তন চান বিশেষজ্ঞরা",
+      "first_seen": "2026-10-11T16:30:01.470Z",
+      "last_update": "2026-10-11T16:30:01.473Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T16:09:55.000Z",
+          "kind": "evidence",
+          "claim_id": 73426,
+          "claim_text": "শিল্পখাতের চাহিদা মেটাতে প্রকৌশল শিক্ষায় পরিবর্তন চান বিশেষজ্ঞরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/t2ukh1ujo0"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.692Z",
+          "kind": "claim",
+          "claim_id": 73426,
+          "claim_text": "শিল্পখাতের চাহিদা মেটাতে প্রকৌশল শিক্ষায় পরিবর্তন চান বিশেষজ্ঞরা"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73426,
+          "claim_text": "শিল্পখাতের চাহিদা মেটাতে প্রকৌশল শিক্ষায় পরিবর্তন চান বিশেষজ্ঞরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-554": {
       "cluster_id": 554,
-      "headline": "স্থানীয় সরকার বিভাগের জরুরি নির্দেশনা, সব উপজেলায় চিঠি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিমানে ভ্রমণের প্রাধিকারভুক্ত নন, তবু শতাধিকবার বিল তুলে বরখাস্ত কর্মকর্তা",
+      "first_seen": "2026-10-11T16:30:01.474Z",
+      "last_update": "2026-10-11T16:30:01.476Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T16:03:22.000Z",
+          "kind": "evidence",
+          "claim_id": 73427,
+          "claim_text": "বিমানে ভ্রমণের প্রাধিকারভুক্ত নন, তবু শতাধিকবার বিল তুলে বরখাস্ত কর্মকর্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/4iuq4rr9ez"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.695Z",
+          "kind": "claim",
+          "claim_id": 73427,
+          "claim_text": "বিমানে ভ্রমণের প্রাধিকারভুক্ত নন, তবু শতাধিকবার বিল তুলে বরখাস্ত কর্মকর্তা"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73427,
+          "claim_text": "বিমানে ভ্রমণের প্রাধিকারভুক্ত নন, তবু শতাধিকবার বিল তুলে বরখাস্ত কর্মকর্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-555": {
       "cluster_id": 555,
-      "headline": "নায়কের স্ত্রী পছন্দ করতেন না, সিনেমা থেকে বাদ পড়ার অদ্ভুত কারণ জানালেন তাপসী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+      "first_seen": "2026-10-11T16:30:01.478Z",
+      "last_update": "2026-10-11T16:30:01.480Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T16:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/activities/96e8ttdicp"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.698Z",
+          "kind": "claim",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73428,
+          "claim_text": "নভেম্বরে বন্ধুসভার প্রতিষ্ঠাবার্ষিকীতে নৌবিহার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-556": {
       "cluster_id": 556,
-      "headline": "জাতিসংঘে জাইমা রহমানের নিয়োগ: আইন কর্মকর্তা পদটির কাজ কী?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+      "first_seen": "2026-10-11T16:30:01.483Z",
+      "last_update": "2026-10-11T16:30:01.485Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T15:53:59.000Z",
+          "kind": "evidence",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/a1dhbi45jz"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.701Z",
+          "kind": "claim",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73429,
+          "claim_text": "রিয়াদ বিমানবন্দরে আবার হামলা, টার্মিনালে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-557": {
       "cluster_id": 557,
-      "headline": "বাংলাদেশের বোয়িং উড়োজাহাজ কেনা নিয়ে ট্রাম্পের পোস্ট, কী লিখেছেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাইবান্ধায় ছেলে সেজে বিয়ে করার অভিযোগে সালিসে তরুণীকে বেত্রাঘাত",
+      "first_seen": "2026-10-11T16:30:01.487Z",
+      "last_update": "2026-10-11T16:30:01.489Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T13:37:04.000Z",
+          "kind": "evidence",
+          "claim_id": 73430,
+          "claim_text": "গাইবান্ধায় ছেলে সেজে বিয়ে করার অভিযোগে সালিসে তরুণীকে বেত্রাঘাত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/39gzur880i"
+          }
+        },
+        {
+          "ts": "2026-10-11T16:44:33.703Z",
+          "kind": "claim",
+          "claim_id": 73430,
+          "claim_text": "গাইবান্ধায় ছেলে সেজে বিয়ে করার অভিযোগে সালিসে তরুণীকে বেত্রাঘাত"
+        },
+        {
+          "ts": "2026-10-11T16:44:33.798Z",
+          "kind": "verify",
+          "claim_id": 73430,
+          "claim_text": "গাইবান্ধায় ছেলে সেজে বিয়ে করার অভিযোগে সালিসে তরুণীকে বেত্রাঘাত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-558": {
@@ -89585,14 +90494,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -89631,6 +90532,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -93475,14 +94384,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -93521,6 +94422,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -95804,14 +96713,6 @@
       ],
       "related": [
         {
-          "cluster_id": 538,
-          "slug": "national-538",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
-        },
-        {
           "cluster_id": 47,
           "slug": "national-47",
           "actor_links": 1,
@@ -95826,6 +96727,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "চট্টগ্রামের উদ্বোধনের পরদিনই সাইকেল চলার পথ দখল"
+        },
+        {
+          "cluster_id": 538,
+          "slug": "national-538",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘কালকে রাত দুইটায় ফ্লাইট ছিল, এখনো এখানে বসে আছি’"
         }
       ]
     },
@@ -96367,7 +97276,7 @@
       "cluster_id": 483,
       "headline": "Food Cart Ep 6: Mustakim’s Chap",
       "first_seen": "2026-10-11T12:30:01.615Z",
-      "last_update": "2026-10-11T16:00:36.238Z",
+      "last_update": "2026-10-11T16:30:01.077Z",
       "claim_count": 2,
       "events": [
         {
@@ -97304,7 +98213,7 @@
       "cluster_id": 499,
       "headline": "ঢাবির ৫৪তম সমাবর্তনে থাকবেন রাষ্ট্রপতি ও প্রধানমন্ত্রী",
       "first_seen": "2026-10-11T13:28:27.919Z",
-      "last_update": "2026-10-11T16:00:36.229Z",
+      "last_update": "2026-10-11T16:30:01.060Z",
       "claim_count": 2,
       "events": [
         {
@@ -97379,14 +98288,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -97425,6 +98326,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -99210,14 +100119,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -99256,6 +100157,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -99553,14 +100462,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -99599,6 +100500,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -99859,14 +100768,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -99905,6 +100806,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -100703,14 +101612,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -100749,6 +101650,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -100870,14 +101779,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -100916,6 +101817,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
         }
       ]
     },
@@ -101094,14 +102003,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -101140,6 +102041,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -102495,14 +103404,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -102541,6 +103442,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -102734,14 +103643,6 @@
       ],
       "related": [
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -102780,6 +103681,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
+        },
+        {
+          "cluster_id": 355,
+          "slug": "national-355",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু"
         }
       ]
     },
@@ -102944,14 +103853,6 @@
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
         },
         {
-          "cluster_id": 517,
-          "slug": "politics-517",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
           "cluster_id": 507,
           "slug": "national-507",
           "actor_links": 0,
@@ -102982,6 +103883,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বৃহত্তর স্বার্থে জাতীয় বন্দর কৌশল তৈরি হচ্ছে: নৌপরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 433,
+          "slug": "sports-433",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন"
         }
       ]
     },
@@ -103731,7 +104640,7 @@
       "cluster_id": 433,
       "headline": "মুগ্ধ হত্যা মামলায় সাবেক ডিএমপি কমিশনার হাবিবসহ ২৬ জনের বিরুদ্ধে আনুষ্ঠানিক অভিযোগ গঠন",
       "first_seen": "2026-10-11T09:39:41.250Z",
-      "last_update": "2026-10-11T16:00:36.225Z",
+      "last_update": "2026-10-11T16:30:01.056Z",
       "claim_count": 4,
       "events": [
         {
@@ -104060,7 +104969,7 @@
       "cluster_id": 481,
       "headline": "সাবেক সাধারণ সম্পাদক রোটনের জানাজা থেকে নিষিদ্ধ ছাত্রলীগের ৪ নেতা-কর্মী আটক",
       "first_seen": "2026-10-11T12:30:01.592Z",
-      "last_update": "2026-10-11T16:00:36.233Z",
+      "last_update": "2026-10-11T16:30:01.065Z",
       "claim_count": 3,
       "events": [
         {
@@ -104212,7 +105121,7 @@
       "cluster_id": 500,
       "headline": "নাহিদ রানাকে বিদেশে পাঠানোর পরিকল্পনা বিসিবির",
       "first_seen": "2026-10-11T13:28:27.924Z",
-      "last_update": "2026-10-11T16:00:36.231Z",
+      "last_update": "2026-10-11T16:30:01.062Z",
       "claim_count": 2,
       "events": [
         {
@@ -104340,7 +105249,7 @@
       "cluster_id": 535,
       "headline": "ফিলিপাইনের কাছে হেরে অনূর্ধ্ব-১৭ মেয়েদের বিদায়",
       "first_seen": "2026-10-11T15:35:18.357Z",
-      "last_update": "2026-10-11T16:00:36.216Z",
+      "last_update": "2026-10-11T16:30:01.053Z",
       "claim_count": 2,
       "events": [
         {
@@ -104415,6 +105324,14 @@
       ],
       "related": [
         {
+          "cluster_id": 550,
+          "slug": "national-550",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিখোঁজ ছেলেকে ফিরে পাওয়ার আকুতি নিয়েই চিরবিদায় নিলেন অভিনেত্রী নাসিমা খান"
+        },
+        {
           "cluster_id": 498,
           "slug": "national-498",
           "actor_links": 0,
@@ -104453,14 +105370,6 @@
           "source_links": 2,
           "claim_count": 22,
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
