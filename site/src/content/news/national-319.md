@@ -4,7 +4,7 @@ seoTitle: "সৌরবিদ্যুৎ উৎপাদন খাতে ওয
 excerpt: "শিল্পখাতে নবায়নযোগ‌্য জ্বালানি শক্তির ব‌্যবহার বৃদ্ধি, বিদ‌্যুৎ সাশ্রয়, কার্বন নিঃসরণ হ্রাস, পরিবেশবান্ধব উৎপাদন ব‌্যবস্থা গড়ে তোলার মাধ‌্যমে টেকসই উন্নয়নের পথে এক নতুন মাইল ফলক ও "
 seoDescription: "শিল্পখাতে নবায়নযোগ‌্য জ্বালানি শক্তির ব‌্যবহার বৃদ্ধি, বিদ‌্যুৎ সাশ্রয়, কার্বন নিঃসরণ হ্রাস, পরিবেশবান্ধব উৎপাদন ব‌্যবস্থা গড়ে তোলার মাধ‌্যমে টেকসই উন্নয়ন…"
 date: 2026-10-10T17:56:44.000Z
-publishedAt: 2026-10-11T00:50:03.131Z
+publishedAt: 2026-10-11T00:47:30.073Z
 developing: false
 category: "national"
 tags: ["dhaka"]
@@ -29,7 +29,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-11T00:50:03.046Z"
+  evaluatedAt: "2026-10-11T00:47:29.998Z"
   clusterId: 319
   claimIds:
     - 27153
@@ -47,7 +47,7 @@ publication:
   slug: "national-319"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-11T00:50:03.046Z"
+  checkedAt: "2026-10-11T00:47:29.998Z"
   clusterId: 319
   claimIds:
     - 27153
