@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3137,
+    "storyCount": 3139,
     "kinds": [
       "claim",
       "evidence",
@@ -3999,11 +3999,41 @@
     },
     "economy-421": {
       "cluster_id": 421,
-      "headline": "এবার বাড়ল যাত্রীবাহী লঞ্চের ভাড়া",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+      "first_seen": "2026-10-11T08:20:46.762Z",
+      "last_update": "2026-10-11T08:20:46.763Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:09:52.000Z",
+          "kind": "evidence",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/b26e7rpl1j"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.110Z",
+          "kind": "claim",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-431": {
@@ -4559,6 +4589,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -4597,14 +4635,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
-        },
-        {
-          "cluster_id": 86,
-          "slug": "sports-86",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
         }
       ]
     },
@@ -5965,6 +5995,45 @@
       ],
       "related": []
     },
+    "entertainment-422": {
+      "cluster_id": 422,
+      "headline": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+      "first_seen": "2026-10-11T08:20:46.765Z",
+      "last_update": "2026-10-11T08:20:46.767Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/ytjpv5npeo"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.113Z",
+          "kind": "claim",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "entertainment-424": {
       "cluster_id": 424,
       "headline": "১০ বছর পর আসছে কাজী শুভর একক অ্যালবাম",
@@ -6424,14 +6493,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -6462,6 +6523,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -8639,6 +8708,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -8661,14 +8738,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -9493,6 +9562,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -9531,14 +9608,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
@@ -12912,6 +12981,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -12934,14 +13011,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -15257,20 +15326,20 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 388,
           "slug": "national-388",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
           "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
-        },
-        {
-          "cluster_id": 356,
-          "slug": "national-356",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে জড়িয়ে বিভ্রান্তিকর তথ্য, আইএসপিআরের সতর্কবার্তা"
         }
       ]
     },
@@ -18786,6 +18855,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -18800,14 +18877,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -19238,6 +19307,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -19252,14 +19329,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -19645,7 +19714,7 @@
       "cluster_id": 388,
       "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯",
       "first_seen": "2026-10-11T06:56:44.983Z",
-      "last_update": "2026-10-11T07:57:14.766Z",
+      "last_update": "2026-10-11T08:20:46.496Z",
       "claim_count": 17,
       "events": [
         {
@@ -20814,7 +20883,7 @@
       "cluster_id": 408,
       "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, ১০ দিন পর কারাগারে ফিরলেন ক্রিস্টা পাইক",
       "first_seen": "2026-10-11T07:57:14.783Z",
-      "last_update": "2026-10-11T07:57:14.786Z",
+      "last_update": "2026-10-11T08:20:46.507Z",
       "claim_count": 2,
       "events": [
         {
@@ -22312,6 +22381,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 399,
           "slug": "national-399",
           "actor_links": 0,
@@ -22342,14 +22419,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "অর্জিত গণতন্ত্রকে কার্যকর সংসদে রূপ দিতে হবে: জহির উদ্দিন স্বপন"
-        },
-        {
-          "cluster_id": 178,
-          "slug": "national-178",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘শক্তি ও পুষ্টিতে ভরপুর ডিম’ প্রতিপাদ্যে পালিত হচ্ছে বিশ্ব ডিম দিবস"
         }
       ]
     },
@@ -22621,7 +22690,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 418,
+          "slug": "national-418",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি"
+        }
+      ]
     },
     "national-1020": {
       "cluster_id": 1020,
@@ -23166,6 +23244,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -23204,14 +23290,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -24178,6 +24256,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -24216,14 +24302,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -24368,14 +24446,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -24406,6 +24476,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -25621,6 +25699,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -25643,14 +25729,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -26769,6 +26847,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -26807,14 +26893,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
-        },
-        {
-          "cluster_id": 86,
-          "slug": "sports-86",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
         }
       ]
     },
@@ -28123,6 +28201,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -28161,14 +28247,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 106,
-          "slug": "national-106",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
         }
       ]
     },
@@ -29501,6 +29579,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -29539,14 +29625,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
@@ -29709,6 +29787,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -29731,14 +29817,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -30035,6 +30113,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 410,
           "slug": "national-410",
           "actor_links": 0,
@@ -30043,20 +30129,12 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
-          "cluster_id": 399,
-          "slug": "national-399",
+          "cluster_id": 406,
+          "slug": "national-406",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রবীন্দ্রনাথের গ্রাফিতি বিকৃতির ঘটনায় মামলা, গ্রেফতার ৪"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -31923,6 +32001,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -31961,14 +32047,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -33181,12 +33259,12 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 395,
-          "slug": "national-395",
+          "cluster_id": 406,
+          "slug": "national-406",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির"
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -36077,6 +36155,14 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 405,
           "slug": "politics-405",
           "actor_links": 0,
@@ -36107,14 +36193,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -38198,14 +38276,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -38236,6 +38306,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -39717,12 +39795,12 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 388,
-          "slug": "national-388",
+          "cluster_id": 406,
+          "slug": "national-406",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 10,
-          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -39981,6 +40059,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 388,
           "slug": "national-388",
           "actor_links": 0,
@@ -39995,14 +40081,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সেনাবাহিনী ও সেনাপ্রধানকে জড়িয়ে বিভ্রান্তিকর তথ্য, আইএসপিআরের সতর্কবার্তা"
-        },
-        {
-          "cluster_id": 337,
-          "slug": "national-337",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিয়াদ বিমানবন্দরে হামলা, আহত কয়েকজন; বন্ধ উড়োজাহাজ চলাচল"
         }
       ]
     },
@@ -41271,14 +41349,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -41301,6 +41371,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
+        },
+        {
+          "cluster_id": 268,
+          "slug": "politics-268",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
         }
       ]
     },
@@ -46265,6 +46343,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -46287,14 +46373,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -47256,6 +47334,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -47286,14 +47372,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         }
       ]
     },
@@ -47429,14 +47507,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -47467,6 +47537,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -50299,6 +50377,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -50337,14 +50423,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -52804,20 +52882,20 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 331,
           "slug": "national-331",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 19,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 314,
+          "slug": "national-314",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দিল্লিতে আটক ৩ হাজার বিক্ষোভকারী মুক্ত, হেফাজতে দীপকে ও ধ্রুব রাঠি"
         }
       ]
     },
@@ -53069,20 +53147,20 @@
           "headline": "সিলেটের কানাইঘাট সীমান্তে গুলিবিদ্ধ যুবকের মরদেহ উদ্ধার"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 271,
           "slug": "national-271",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
+        },
+        {
+          "cluster_id": 268,
+          "slug": "politics-268",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
         }
       ]
     },
@@ -54964,20 +55042,20 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 388,
           "slug": "national-388",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
           "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
-        },
-        {
-          "cluster_id": 356,
-          "slug": "national-356",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে জড়িয়ে বিভ্রান্তিকর তথ্য, আইএসপিআরের সতর্কবার্তা"
         }
       ]
     },
@@ -61284,6 +61362,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -61314,14 +61400,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
-        },
-        {
-          "cluster_id": 247,
-          "slug": "national-247",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানের সৌদিগামী ২ ফ্লাইট স্থগিত, যাত্রীদের বিমানবন্দরে না যাওয়ার অনুরোধ"
         }
       ]
     },
@@ -64974,6 +65052,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -64988,14 +65074,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -65310,7 +65388,7 @@
       "cluster_id": 355,
       "headline": "সমান সুযোগে এগিয়ে যাক প্রতিটি কন্যাশিশু",
       "first_seen": "2026-10-11T04:37:38.751Z",
-      "last_update": "2026-10-11T07:57:14.791Z",
+      "last_update": "2026-10-11T08:20:46.512Z",
       "claim_count": 3,
       "events": [
         {
@@ -65489,7 +65567,7 @@
       "cluster_id": 356,
       "headline": "সেনাবাহিনী ও সেনাপ্রধানকে জড়িয়ে বিভ্রান্তিকর তথ্য, আইএসপিআরের সতর্কবার্তা",
       "first_seen": "2026-10-11T04:37:38.756Z",
-      "last_update": "2026-10-11T07:57:14.800Z",
+      "last_update": "2026-10-11T08:20:46.517Z",
       "claim_count": 3,
       "events": [
         {
@@ -65869,7 +65947,7 @@
       "cluster_id": 362,
       "headline": "নারায়ণগঞ্জে গ্যাস লিকেজ থেকে বিস্ফোরণ,স্বামী-স্ত্রীসহ দগ্ধ ৪",
       "first_seen": "2026-10-11T05:07:14.421Z",
-      "last_update": "2026-10-11T07:57:14.799Z",
+      "last_update": "2026-10-11T08:20:46.516Z",
       "claim_count": 3,
       "events": [
         {
@@ -66000,6 +66078,14 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -66022,14 +66108,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রোজায় খাদ্য সরবরাহে ‘বড় ধরনের’ সমস্যা হবে না, বিশ্বাস মন্ত্রীর"
-        },
-        {
-          "cluster_id": 177,
-          "slug": "sports-177",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিশ্বকাপে সবচেয়ে বেশি অনলাইন আক্রমণের শিকার আর্জেন্টিনা!"
         }
       ]
     },
@@ -66171,6 +66249,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -66185,14 +66271,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -67106,6 +67184,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 363,
           "slug": "national-363",
           "actor_links": 0,
@@ -67120,14 +67206,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -67435,7 +67513,7 @@
       "cluster_id": 388,
       "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯",
       "first_seen": "2026-10-11T06:56:44.983Z",
-      "last_update": "2026-10-11T07:57:14.766Z",
+      "last_update": "2026-10-11T08:20:46.496Z",
       "claim_count": 17,
       "events": [
         {
@@ -68487,7 +68565,7 @@
       "cluster_id": 389,
       "headline": "সিলেটের কানাইঘাট সীমান্তে গুলিবিদ্ধ যুবকের মরদেহ উদ্ধার",
       "first_seen": "2026-10-11T06:56:45.004Z",
-      "last_update": "2026-10-11T07:57:14.798Z",
+      "last_update": "2026-10-11T08:20:46.515Z",
       "claim_count": 2,
       "events": [
         {
@@ -68843,7 +68921,7 @@
       "cluster_id": 395,
       "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির",
       "first_seen": "2026-10-11T07:27:01.813Z",
-      "last_update": "2026-10-11T07:57:14.782Z",
+      "last_update": "2026-10-11T08:20:46.506Z",
       "claim_count": 3,
       "events": [
         {
@@ -68969,6 +69047,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -69007,14 +69093,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
@@ -69205,7 +69283,7 @@
       "cluster_id": 398,
       "headline": "বরিশালে সাবেক স্বামীর ছবি-ভিডিও ছড়ানোর অভিযোগে শিক্ষিকা গ্রেপ্তার",
       "first_seen": "2026-10-11T07:27:01.837Z",
-      "last_update": "2026-10-11T07:57:14.797Z",
+      "last_update": "2026-10-11T08:20:46.514Z",
       "claim_count": 2,
       "events": [
         {
@@ -69864,7 +69942,7 @@
       "cluster_id": 405,
       "headline": "বিএনপির সংসদীয় দলের বৈঠক ডেকেছেন প্রধানমন্ত্রী",
       "first_seen": "2026-10-11T07:57:14.768Z",
-      "last_update": "2026-10-11T07:57:14.771Z",
+      "last_update": "2026-10-11T08:20:46.503Z",
       "claim_count": 2,
       "events": [
         {
@@ -69960,8 +70038,8 @@
       "cluster_id": 406,
       "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে",
       "first_seen": "2026-10-11T07:57:14.772Z",
-      "last_update": "2026-10-11T07:57:14.775Z",
-      "claim_count": 2,
+      "last_update": "2026-10-11T08:20:46.498Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-11T06:55:00.000Z",
@@ -69994,6 +70072,28 @@
             "source_id": "jugantor",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00Y21LT1FzczFhNWlwUThhQS1KSkxIVDB5Y25uRWtuakl6emdJYS1jeXhfVkpUM1RhSk8waXlzYTd5T2tuM1RPc3BsSFl5ZjFWX2VZ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T07:52:25.000Z",
+          "kind": "evidence",
+          "claim_id": 47545,
+          "claim_text": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/khulna/973748/%E0%A6%AC%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%AA%E0%A7%8B%E0%A6%B2-%E0%A6%A6%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%AB%E0%A6%BF%E0%A6%B0%E0%A6%B2%E0%A7%8B-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%AE%E0%A6%B0%E0%A6%A6%E0%A7%87%E0%A6%B9"
+          }
+        },
+        {
+          "ts": "2026-10-11T07:52:25.000Z",
+          "kind": "evidence",
+          "claim_id": 48879,
+          "claim_text": "বেনাপোল দিয়ে দেশে ফিরলো ছাত্রলীগ নেতার মরদেহ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/khulna/973748/%E0%A6%AC%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%AA%E0%A7%8B%E0%A6%B2-%E0%A6%A6%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%AB%E0%A6%BF%E0%A6%B0%E0%A6%B2%E0%A7%8B-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%AE%E0%A6%B0%E0%A6%A6%E0%A7%87%E0%A6%B9"
           }
         },
         {
@@ -70031,56 +70131,74 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.052Z",
+          "kind": "claim",
+          "claim_id": 48879,
+          "claim_text": "বেনাপোল দিয়ে দেশে ফিরলো ছাত্রলীগ নেতার মরদেহ"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48879,
+          "claim_text": "বেনাপোল দিয়ে দেশে ফিরলো ছাত্রলীগ নেতার মরদেহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 321,
-          "slug": "national-321",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মুম্বাইয়ে বিক্ষোভ থেকে অভিনেতা ইমরান খান আটক"
-        },
-        {
-          "cluster_id": 312,
-          "slug": "national-312",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 5,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 176,
-          "slug": "national-176",
+          "cluster_id": 410,
+          "slug": "national-410",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বিক্ষোভে আটক আইনজীবীদের মুক্তির নির্দেশ ভারতের প্রধান বিচারপতির"
+          "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
-          "cluster_id": 162,
-          "slug": "national-162",
+          "cluster_id": 395,
+          "slug": "national-395",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিইসির পদত্যাগ দাবিতে যন্তর মন্তরে জমায়েত শনিবার, দিল্লিগামী ট্রেন বাতিল"
+          "claim_count": 3,
+          "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির"
         },
         {
-          "cluster_id": 157,
-          "slug": "national-157",
+          "cluster_id": 381,
+          "slug": "politics-381",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "নোবেল শান্তি পুরস্কার না পেয়ে নরওয়ের ওপর ক্ষেপলেন ট্রাম্প, দিলেন যে হুঁশিয়ারি"
+          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
+        },
+        {
+          "cluster_id": 363,
+          "slug": "national-363",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
         }
       ]
     },
@@ -70088,7 +70206,7 @@
       "cluster_id": 407,
       "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪",
       "first_seen": "2026-10-11T07:57:14.776Z",
-      "last_update": "2026-10-11T07:57:14.780Z",
+      "last_update": "2026-10-11T08:20:46.505Z",
       "claim_count": 4,
       "events": [
         {
@@ -70296,7 +70414,7 @@
       "cluster_id": 408,
       "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা ব্যর্থ, ১০ দিন পর কারাগারে ফিরলেন ক্রিস্টা পাইক",
       "first_seen": "2026-10-11T07:57:14.783Z",
-      "last_update": "2026-10-11T07:57:14.786Z",
+      "last_update": "2026-10-11T08:20:46.507Z",
       "claim_count": 2,
       "events": [
         {
@@ -70424,7 +70542,7 @@
       "cluster_id": 409,
       "headline": "মুক্তি পাওয়ার পর ভিডিও বার্তায় যা জানালেন ধ্রুব রাঠি",
       "first_seen": "2026-10-11T07:57:14.787Z",
-      "last_update": "2026-10-11T07:57:14.790Z",
+      "last_update": "2026-10-11T08:20:46.508Z",
       "claim_count": 2,
       "events": [
         {
@@ -70503,7 +70621,7 @@
       "cluster_id": 410,
       "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট",
       "first_seen": "2026-10-11T07:57:14.792Z",
-      "last_update": "2026-10-11T07:57:14.795Z",
+      "last_update": "2026-10-11T08:20:46.513Z",
       "claim_count": 2,
       "events": [
         {
@@ -70578,6 +70696,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -70600,14 +70726,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -70824,38 +70942,296 @@
     },
     "national-416": {
       "cluster_id": 416,
-      "headline": "তেলের দাম বৃদ্ধির পর এবার বাড়ল লঞ্চের ভাড়া",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে",
+      "first_seen": "2026-10-11T08:20:46.500Z",
+      "last_update": "2026-10-11T08:20:46.502Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-11T06:22:45.000Z",
+          "kind": "evidence",
+          "claim_id": 48895,
+          "claim_text": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OQ0V0SDlIeU5EYTlsRzN4blNMZFA3aTBWM2xOeDFZYVlMV29pdlZibURhRDkzcDZzUmdnMGVaYm9KZ3k2RVl0eEhfUGlZcWlDU3FFcGJ6bTJaZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T06:22:45.000Z",
+          "kind": "evidence",
+          "claim_id": 48896,
+          "claim_text": "মোদি সরকারের ‘পরীক্ষা’ নিচ্ছেন অভিজিৎ দীপকে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OQ0V0SDlIeU5EYTlsRzN4blNMZFA3aTBWM2xOeDFZYVlMV29pdlZibURhRDkzcDZzUmdnMGVaYm9KZ3k2RVl0eEhfUGlZcWlDU3FFcGJ6bTJaZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T07:48:33.000Z",
+          "kind": "evidence",
+          "claim_id": 48895,
+          "claim_text": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TXzZsWHRyTkt5R19JTF95a0dic3o3MUJKb29na3hiTmtId2FDZzBrLWdZWXdRNC0yWHhwS2FZbi10VmxHUV9FelU5bmJFaHFTcjNUS0tZa2tkZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.093Z",
+          "kind": "claim",
+          "claim_id": 48895,
+          "claim_text": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.096Z",
+          "kind": "claim",
+          "claim_id": 48896,
+          "claim_text": "মোদি সরকারের ‘পরীক্ষা’ নিচ্ছেন অভিজিৎ দীপকে"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48895,
+          "claim_text": "মোদি ভারতের জন্য লজ্জার: মুক্তি পেয়ে অভিজিৎ দীপকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48896,
+          "claim_text": "মোদি সরকারের ‘পরীক্ষা’ নিচ্ছেন অভিজিৎ দীপকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-417": {
       "cluster_id": 417,
-      "headline": "সাকিবসহ ১৫ জনের বিরুদ্ধে শেয়ারবাজার কারসাজির মামলায় তদন্ত প্রতিবেদন জমার নতুন তারিখ ১৭ নভেম্বর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি",
+      "first_seen": "2026-10-11T08:20:46.508Z",
+      "last_update": "2026-10-11T08:20:46.511Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-11T03:38:43.000Z",
+          "kind": "evidence",
+          "claim_id": 48897,
+          "claim_text": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxPeTJTTmpKVGZJZ045OHRnYnFBb21uV1pxZFNZYmRidDV5OER0OUMxVlczZE1XTEVrVVM4NTVneExHa0d3MmZzTmlBOHF1V2tDdkhZbkcwMml3VmVOOEtqU016bE02MTBqclpyd0tzTi1RZElsZVZXZGYtS25nUGVwczJnT3hZUThUUUV3TzNEdkF5cE1CaTdWaWhrOEd6Y1FRNXlEdXZmWmZVMUZWcnp5YlVNazJJbnZMRGJMZXVfNGhWWVJNcXhlbmthZXFmWWE1R012ZWpULUx6YnFIamJSTXdEVkdGemg5RzJOOWN4VmxGenI2b0l0NUlES3BoakJsN1F5NzM0dnBJRmZoU2ItVS0ySmVVb1MtMFN4MHlNdXk2MUVsb0M0Y3hveTliSXdNdHpmTVFxS19RZVY0UE5wQk1uc0t1ci1vWW11ZS1iaHIxdk1Hdjg0YlpKVzN0bVB6REJjTFBxbmZaQ2ZVMllpYnI1ZFNBS2tDSDlzdG9VS3FLdE1VdkVBQk1tZ2hTRldjOWFDT3hrM3dzWFFIYUc2emVyaTRLdHNkVTFXUkE5aE5yZDFFNkhvbGNsckFxZWpTajFWQUp3MWFQWmItdmNKRWNNTHdxWUVGaDJnVGozcmpUUkdKa0F4YWtPWVo0ZDRMaWE0dHJudXRZblU1ajYxTXVfdnNmRmZwYjhEZkNkb0kzUEIxeHVOd2p3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T03:38:43.000Z",
+          "kind": "evidence",
+          "claim_id": 48898,
+          "claim_text": "শীর্ষ নেতারা আ'টক, দিল্লিতে আন্দোলনের নেতৃত্ব দেবেন কে?",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxPeTJTTmpKVGZJZ045OHRnYnFBb21uV1pxZFNZYmRidDV5OER0OUMxVlczZE1XTEVrVVM4NTVneExHa0d3MmZzTmlBOHF1V2tDdkhZbkcwMml3VmVOOEtqU016bE02MTBqclpyd0tzTi1RZElsZVZXZGYtS25nUGVwczJnT3hZUThUUUV3TzNEdkF5cE1CaTdWaWhrOEd6Y1FRNXlEdXZmWmZVMUZWcnp5YlVNazJJbnZMRGJMZXVfNGhWWVJNcXhlbmthZXFmWWE1R012ZWpULUx6YnFIamJSTXdEVkdGemg5RzJOOWN4VmxGenI2b0l0NUlES3BoakJsN1F5NzM0dnBJRmZoU2ItVS0ySmVVb1MtMFN4MHlNdXk2MUVsb0M0Y3hveTliSXdNdHpmTVFxS19RZVY0UE5wQk1uc0t1ci1vWW11ZS1iaHIxdk1Hdjg0YlpKVzN0bVB6REJjTFBxbmZaQ2ZVMllpYnI1ZFNBS2tDSDlzdG9VS3FLdE1VdkVBQk1tZ2hTRldjOWFDT3hrM3dzWFFIYUc2emVyaTRLdHNkVTFXUkE5aE5yZDFFNkhvbGNsckFxZWpTajFWQUp3MWFQWmItdmNKRWNNTHdxWUVGaDJnVGozcmpUUkdKa0F4YWtPWVo0ZDRMaWE0dHJudXRZblU1ajYxTXVfdnNmRmZwYjhEZkNkb0kzUEIxeHVOd2p3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T07:13:14.000Z",
+          "kind": "evidence",
+          "claim_id": 48897,
+          "claim_text": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBnY1hOcEczLWxrSW1fS3E4blJsbi1tUXZPckNnMXdyLWdjTWl0NUU5eV95RUxHemVlWTBKZ3JjNGt5TFdLYXVKZHFBN0xZVWZOa0llWGs3YWhaZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.098Z",
+          "kind": "claim",
+          "claim_id": 48897,
+          "claim_text": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.101Z",
+          "kind": "claim",
+          "claim_id": 48898,
+          "claim_text": "শীর্ষ নেতারা আ'টক, দিল্লিতে আন্দোলনের নেতৃত্ব দেবেন কে?"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48897,
+          "claim_text": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48898,
+          "claim_text": "শীর্ষ নেতারা আ'টক, দিল্লিতে আন্দোলনের নেতৃত্ব দেবেন কে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 292,
+          "slug": "national-292",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
+        },
+        {
+          "cluster_id": 262,
+          "slug": "national-262",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘প্রশ্নফাঁসের জন্য আমাকে ফাঁসিয়ে দেয়া যায় না কোনোভাবে?’, প্রশ্ন আসিফ মাহমুদের"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "national-tarique-to-deliver",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার থেকে ঢাকাগামী বিমানের চাকা বিচ্ছিন্ন, শাহজালালে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 113,
+          "slug": "national-113",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
+        },
+        {
+          "cluster_id": 106,
+          "slug": "national-106",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
+        }
+      ]
     },
     "national-418": {
       "cluster_id": 418,
-      "headline": "ঢাকার সঙ্গে ইতিবাচক ও ভবিষ্যৎমুখী সম্পর্ক চায় দিল্লি : জয়সওয়াল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি",
+      "first_seen": "2026-10-11T08:20:46.750Z",
+      "last_update": "2026-10-11T08:20:46.753Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:55:59.000Z",
+          "kind": "evidence",
+          "claim_id": 48899,
+          "claim_text": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/qu9m8wx4wp"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.103Z",
+          "kind": "claim",
+          "claim_id": 48899,
+          "claim_text": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48899,
+          "claim_text": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 102,
+          "slug": "politics-102",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শর্টকাটের কথা বলে কিশোরীকে নির্জন পথে নেন চালক, ধর্ষণের পর হত্যা: পুলিশ"
+        }
+      ]
     },
     "national-419": {
       "cluster_id": 419,
-      "headline": "বাংলাদেশের ই-কমার্স সম্প্রসারণে ঢাকায় অফিস খুলতে আগ্রহী মেটা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "একঝলক (১১ অক্টোবর ২০২৬)",
+      "first_seen": "2026-10-11T08:20:46.755Z",
+      "last_update": "2026-10-11T08:20:46.757Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:52:42.000Z",
+          "kind": "evidence",
+          "claim_id": 48900,
+          "claim_text": "একঝলক (১১ অক্টোবর ২০২৬)",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/photo/glimpse/f9jray1t6t"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.106Z",
+          "kind": "claim",
+          "claim_id": 48900,
+          "claim_text": "একঝলক (১১ অক্টোবর ২০২৬)"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48900,
+          "claim_text": "একঝলক (১১ অক্টোবর ২০২৬)",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-42": {
@@ -70899,20 +71275,119 @@
     },
     "national-420": {
       "cluster_id": 420,
-      "headline": "সিম ব্যবহার নিয়ে প্রতিষ্ঠান প্রধানদের জরুরি নির্দেশনা দিল মাদ্রাসা বোর্ড",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আদর্শ শিক্ষকের হাত ধরেই সমাজ বদলের নেতা তৈরি হয়",
+      "first_seen": "2026-10-11T08:20:46.758Z",
+      "last_update": "2026-10-11T08:20:46.760Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:50:17.000Z",
+          "kind": "evidence",
+          "claim_id": 48901,
+          "claim_text": "আদর্শ শিক্ষকের হাত ধরেই সমাজ বদলের নেতা তৈরি হয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/activities/fdxlkh5kjf"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.108Z",
+          "kind": "claim",
+          "claim_id": 48901,
+          "claim_text": "আদর্শ শিক্ষকের হাত ধরেই সমাজ বদলের নেতা তৈরি হয়"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48901,
+          "claim_text": "আদর্শ শিক্ষকের হাত ধরেই সমাজ বদলের নেতা তৈরি হয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-421": {
+      "cluster_id": 421,
+      "headline": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+      "first_seen": "2026-10-11T08:20:46.762Z",
+      "last_update": "2026-10-11T08:20:46.763Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:09:52.000Z",
+          "kind": "evidence",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/b26e7rpl1j"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.110Z",
+          "kind": "claim",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48902,
+          "claim_text": "পৃথিবীর সবচেয়ে নিরাপদ বাহন কোনটি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-422": {
       "cluster_id": 422,
-      "headline": "ডিসেম্বর নয়, বুকের পাটা থাকলে এখন দেশে আসেন: তথ্য প্রতিমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+      "first_seen": "2026-10-11T08:20:46.765Z",
+      "last_update": "2026-10-11T08:20:46.767Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-11T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/ytjpv5npeo"
+          }
+        },
+        {
+          "ts": "2026-10-11T08:37:32.113Z",
+          "kind": "claim",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ"
+        },
+        {
+          "ts": "2026-10-11T08:37:32.181Z",
+          "kind": "verify",
+          "claim_id": 48903,
+          "claim_text": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-423": {
@@ -71668,6 +72143,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -71706,14 +72189,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আওয়ামী লীগ, জামায়াত ও এনসিপির কড়া সমালোচনা রাশেদ খাঁনের"
-        },
-        {
-          "cluster_id": 106,
-          "slug": "national-106",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
         }
       ]
     },
@@ -72666,14 +73141,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -72696,6 +73163,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
+        },
+        {
+          "cluster_id": 268,
+          "slug": "politics-268",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
         }
       ]
     },
@@ -72867,6 +73342,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -72889,14 +73372,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -77126,6 +77601,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -77164,14 +77647,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
@@ -78028,12 +78503,12 @@
           "headline": "ফায়ারিং স্কোয়াডে মৃত্যুদণ্ড সরাসরি সম্প্রচারের সিদ্ধান্ত: কী করেছিলেন মেজর নিদাল হাসান?"
         },
         {
-          "cluster_id": 388,
-          "slug": "national-388",
+          "cluster_id": 417,
+          "slug": "national-417",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 7,
-          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
         }
       ]
     },
@@ -78496,14 +78971,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -78534,6 +79001,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -80505,6 +80980,14 @@
       ],
       "related": [
         {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচের শীর্ষ নেতারা মুক্ত, দিল্লিতে ফের বিক্ষোভের প্রস্তুতি"
+        },
+        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -80543,14 +81026,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাজধানীতে মুষলধারে বৃষ্টি, সড়কে তীব্র যানজট"
-        },
-        {
-          "cluster_id": 48,
-          "slug": "national-48",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তারেক রহমানের সম্ভাব্য ভারত সফর নিয়ে মোদির সঙ্গে ত্রিবেদীর ‘খুব ভালো’ ও ‘দীর্ঘ’ বৈঠক"
         }
       ]
     },
@@ -81257,7 +81732,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 418,
+          "slug": "national-418",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "কিশোরীকে ধর্ষণ ও হত্যার দায় স্বীকার করে সিএনজিচালকের জবানবন্দি"
+        }
+      ]
     },
     "politics-1045": {
       "cluster_id": 1045,
@@ -81503,6 +81987,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -81541,14 +82033,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ক্ষমতায় এসেই জলাশয় দখলমুক্ত করেছে বিএনপি: বিদ্যুৎ প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
@@ -82074,6 +82558,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -82096,14 +82588,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -82417,6 +82901,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -82439,14 +82931,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -83349,20 +83833,20 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 331,
           "slug": "national-331",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 19,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 314,
+          "slug": "national-314",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দিল্লিতে আটক ৩ হাজার বিক্ষোভকারী মুক্ত, হেফাজতে দীপকে ও ধ্রুব রাঠি"
         }
       ]
     },
@@ -83567,6 +84051,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -83597,14 +84089,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
-        },
-        {
-          "cluster_id": 247,
-          "slug": "national-247",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানের সৌদিগামী ২ ফ্লাইট স্থগিত, যাত্রীদের বিমানবন্দরে না যাওয়ার অনুরোধ"
         }
       ]
     },
@@ -83734,6 +84218,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 363,
           "slug": "national-363",
           "actor_links": 0,
@@ -83748,14 +84240,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -83779,7 +84263,7 @@
       "cluster_id": 405,
       "headline": "বিএনপির সংসদীয় দলের বৈঠক ডেকেছেন প্রধানমন্ত্রী",
       "first_seen": "2026-10-11T07:57:14.768Z",
-      "last_update": "2026-10-11T07:57:14.771Z",
+      "last_update": "2026-10-11T08:20:46.503Z",
       "claim_count": 2,
       "events": [
         {
@@ -84119,12 +84603,12 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 395,
-          "slug": "national-395",
+          "cluster_id": 406,
+          "slug": "national-406",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির"
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -84906,6 +85390,14 @@
           "headline": "এবার বন্ধ সৌদির আরেক বিমানবন্দর, বিপাকে বাংলাদেশ বিমানের ফ্লাইট"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 381,
           "slug": "politics-381",
           "actor_links": 0,
@@ -84928,14 +85420,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে হামলা ‘ভয়াবহ ও অগ্রহণযোগ্য’, হুথিদের নিয়ে ট্রাম্পের ক্ষোভ"
-        },
-        {
-          "cluster_id": 327,
-          "slug": "politics-327",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতের আন্দোলনরত তরুণদের পাশে থাকার ঘোষণা নাহিদ ইসলামের"
         },
         {
           "cluster_id": 292,
@@ -85347,6 +85831,14 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 405,
           "slug": "politics-405",
           "actor_links": 0,
@@ -85377,14 +85869,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -85532,14 +86016,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 382,
-          "slug": "national-382",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান"
-        },
-        {
           "cluster_id": 292,
           "slug": "national-292",
           "actor_links": 0,
@@ -85570,6 +86046,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে কালি: জিজ্ঞাসাবাদের জন্য এক নারীসহ ৪ জন ডিবি কার্যালয়ে"
+        },
+        {
+          "cluster_id": 259,
+          "slug": "national-259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেনাবাহিনী ও সেনাপ্রধানকে নিয়ে অপপ্রচারে বিভ্রান্ত না হওয়ার আহ্বান আইএসপিআরের"
         }
       ]
     },
@@ -86305,6 +86789,14 @@
       ],
       "related": [
         {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -86343,14 +86835,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল"
-        },
-        {
-          "cluster_id": 10,
-          "slug": "national-10",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে আবার ফ্যাসিবাদ ফিরলে দায় জামায়াতকে নিতে হবে: শামা ওবায়েদ"
         }
       ]
     },
