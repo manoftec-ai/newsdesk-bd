@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3231,
+    "storyCount": 3235,
     "kinds": [
       "claim",
       "evidence",
@@ -9649,7 +9649,7 @@
       "cluster_id": 668,
       "headline": "Politics live: Greens call for US execution live stream to be blocked; Flydubai pilot’s Australia links ‘disturbing’",
       "first_seen": "2026-10-12T03:49:56.810Z",
-      "last_update": "2026-10-12T03:49:56.813Z",
+      "last_update": "2026-10-12T04:15:14.478Z",
       "claim_count": 2,
       "events": [
         {
@@ -9728,7 +9728,7 @@
       "cluster_id": 669,
       "headline": "চবি মনোবিজ্ঞান বিভাগে বিশ্ব মানসিক স্বাস্থ্য দিবস উদযাপন",
       "first_seen": "2026-10-12T03:49:56.814Z",
-      "last_update": "2026-10-12T03:49:56.817Z",
+      "last_update": "2026-10-12T04:15:14.479Z",
       "claim_count": 2,
       "events": [
         {
@@ -9827,6 +9827,45 @@
           "headline": "ফটিকছড়িতে নিখোঁজের ১৩ ঘণ্টা পর শিশুর মরদেহ উদ্ধার"
         }
       ]
+    },
+    "entertainment-678": {
+      "cluster_id": 678,
+      "headline": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+      "first_seen": "2026-10-12T04:15:14.778Z",
+      "last_update": "2026-10-12T04:15:14.780Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:48:48.000Z",
+          "kind": "evidence",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/rcnp38k0os"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.385Z",
+          "kind": "claim",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "entertainment-753": {
       "cluster_id": 753,
@@ -12369,6 +12408,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -12407,14 +12454,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -16117,20 +16156,20 @@
           "headline": "দিল্লির 'দুর্গে' বিক্ষোভকারী দেখলেই আটক, 'দ্বিতীয় যন্তর মন্তর' হতেই দিল না পুলিশ"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -16511,6 +16550,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -16548,14 +16595,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 527,
-          "slug": "national-527",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
         }
       ]
@@ -16666,6 +16705,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -16704,14 +16751,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -18097,20 +18136,20 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 527,
           "slug": "national-527",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 431,
-          "slug": "international-431",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 21,
-          "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
         }
       ]
     },
@@ -22540,6 +22579,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -22578,14 +22625,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -22992,6 +23031,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -23030,14 +23077,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -24651,6 +24690,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
@@ -24689,14 +24736,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "দিল্লিতে বিক্ষোভ: ১৯৭৫ সালের জরুরি অবস্থার স্মৃতি ফিরিয়ে আনছে"
-        },
-        {
-          "cluster_id": 217,
-          "slug": "national-217",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে অভিনেতা ইমরান খান আটক, সিজেপির নেতা–কর্মীদের ধরপাকড়ের প্রতিবাদে সরব তারকারা"
         }
       ]
     },
@@ -28430,6 +28469,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -28467,14 +28514,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 527,
-          "slug": "national-527",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
         }
       ]
@@ -28654,6 +28693,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -28676,14 +28723,6 @@
           "source_links": 3,
           "claim_count": 26,
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
-        },
-        {
-          "cluster_id": 646,
-          "slug": "national-646",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         }
       ]
     },
@@ -29597,6 +29636,14 @@
       ],
       "related": [
         {
+          "cluster_id": 676,
+          "slug": "national-676",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত"
+        },
+        {
           "cluster_id": 662,
           "slug": "national-662",
           "actor_links": 0,
@@ -29635,14 +29682,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "বাংলাদেশে বিনিয়োগ বাড়াতে চায় জাপানের মারুবেনি, সহযোগিতার আশ্বাস বাণিজ্যমন্ত্রীর"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -31202,7 +31241,7 @@
       "cluster_id": 652,
       "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল",
       "first_seen": "2026-10-12T02:32:27.512Z",
-      "last_update": "2026-10-12T03:49:56.809Z",
+      "last_update": "2026-10-12T04:15:14.471Z",
       "claim_count": 16,
       "events": [
         {
@@ -31925,13 +31964,169 @@
       ],
       "related": []
     },
+    "international-675": {
+      "cluster_id": 675,
+      "headline": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+      "first_seen": "2026-10-12T04:15:14.768Z",
+      "last_update": "2026-10-12T04:15:14.770Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T04:05:46.000Z",
+          "kind": "evidence",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/oil-prices-fell-following-news-of-a-russia-ukraine-agreement/"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.379Z",
+          "kind": "claim",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-676": {
+      "cluster_id": 676,
+      "headline": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+      "first_seen": "2026-10-12T04:15:14.772Z",
+      "last_update": "2026-10-12T04:15:14.774Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:57:15.000Z",
+          "kind": "evidence",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/identities-of-the-2-bangladeshis-killed-and-24-injured-in-the-airport-attack-in-saudi-arabia-have-been-confirmed/"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.381Z",
+          "kind": "claim",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 627,
+          "slug": "national-627",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "রিয়াদে হুতিদের ক্ষেপণাস্ত্র হামলায় ২ বাংলাদেশিসহ নিহত ১২ ও অন্যান্য খবর"
+        }
+      ]
+    },
     "international-678": {
       "cluster_id": 678,
-      "headline": "নিষেধাজ্ঞা প্রত্যাহার ও ইরানের অর্থছাড়ের প্রস্তাব দেওয়ার কথা অস্বীকার ট্রাম্পের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+      "first_seen": "2026-10-12T04:15:14.778Z",
+      "last_update": "2026-10-12T04:15:14.780Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:48:48.000Z",
+          "kind": "evidence",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/rcnp38k0os"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.385Z",
+          "kind": "claim",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122972,
+          "claim_text": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-679": {
+      "cluster_id": 679,
+      "headline": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+      "first_seen": "2026-10-12T04:15:14.781Z",
+      "last_update": "2026-10-12T04:15:14.783Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:48:39.000Z",
+          "kind": "evidence",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/04kfdcdeyv"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.387Z",
+          "kind": "claim",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-695": {
@@ -32220,7 +32415,7 @@
       "cluster_id": 641,
       "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ",
       "first_seen": "2026-10-11T23:26:49.369Z",
-      "last_update": "2026-10-12T03:49:56.821Z",
+      "last_update": "2026-10-12T04:15:14.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -37009,6 +37204,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -37047,14 +37250,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -41113,6 +41308,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -41151,14 +41354,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -41455,20 +41650,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 574,
           "slug": "national-574",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 511,
-          "slug": "national-511",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
         }
       ]
     },
@@ -43030,6 +43225,14 @@
       ],
       "related": [
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 542,
           "slug": "national-542",
           "actor_links": 0,
@@ -43068,14 +43271,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 7,
-          "slug": "national-7",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্কুলছাত্রী তাজমিন হত্যার মূল আসামি চট্টগ্রাম থেকে গ্রেপ্তার, মেলেনি মোবাইল ফোন"
         }
       ]
     },
@@ -44896,6 +45091,14 @@
       ],
       "related": [
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 542,
           "slug": "national-542",
           "actor_links": 0,
@@ -44934,14 +45137,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 7,
-          "slug": "national-7",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্কুলছাত্রী তাজমিন হত্যার মূল আসামি চট্টগ্রাম থেকে গ্রেপ্তার, মেলেনি মোবাইল ফোন"
         }
       ]
     },
@@ -50171,20 +50366,20 @@
           "headline": "দিল্লির 'দুর্গে' বিক্ষোভকারী দেখলেই আটক, 'দ্বিতীয় যন্তর মন্তর' হতেই দিল না পুলিশ"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -51280,6 +51475,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -51294,14 +51497,6 @@
           "source_links": 3,
           "claim_count": 4,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 306,
-          "slug": "national-306",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 26,
-          "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         }
       ]
     },
@@ -54663,12 +54858,12 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
         },
         {
-          "cluster_id": 527,
-          "slug": "national-527",
+          "cluster_id": 662,
+          "slug": "national-662",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
-          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
         }
       ]
     },
@@ -54823,6 +55018,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -54860,14 +55063,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 527,
-          "slug": "national-527",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
         }
       ]
@@ -57844,6 +58039,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -57882,14 +58085,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -58843,6 +59038,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 638,
           "slug": "national-638",
           "actor_links": 0,
@@ -58881,14 +59084,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -60484,20 +60679,20 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 527,
           "slug": "national-527",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 431,
-          "slug": "international-431",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 21,
-          "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
         }
       ]
     },
@@ -72918,6 +73113,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -72956,14 +73159,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -76608,6 +76803,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -76646,14 +76849,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -77805,6 +78000,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -77843,14 +78046,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -78740,6 +78935,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -78778,14 +78981,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 363,
-          "slug": "national-363",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -81870,6 +82065,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 638,
           "slug": "national-638",
           "actor_links": 0,
@@ -81900,14 +82103,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
-        },
-        {
-          "cluster_id": 518,
-          "slug": "national-518",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
         }
       ]
     },
@@ -82198,6 +82393,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
@@ -82236,14 +82439,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "দিল্লিতে বিক্ষোভ: ১৯৭৫ সালের জরুরি অবস্থার স্মৃতি ফিরিয়ে আনছে"
-        },
-        {
-          "cluster_id": 217,
-          "slug": "national-217",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে অভিনেতা ইমরান খান আটক, সিজেপির নেতা–কর্মীদের ধরপাকড়ের প্রতিবাদে সরব তারকারা"
         }
       ]
     },
@@ -82405,6 +82600,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -82443,14 +82646,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -83998,6 +84193,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -84036,14 +84239,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -85923,6 +86118,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 636,
           "slug": "national-636",
           "actor_links": 0,
@@ -85953,14 +86156,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "অনির্দিষ্টকালের জন্য বন্ধ ঘোষণা সাজেক পর্যটনকেন্দ্র"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -88050,20 +88245,20 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 517,
           "slug": "politics-517",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "প্রধানমন্ত্রীর সভাপতিত্বে বসেছে বিএনপির সংসদীয় দলের বৈঠক"
-        },
-        {
-          "cluster_id": 662,
-          "slug": "national-662",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
         },
         {
           "cluster_id": 638,
@@ -89160,6 +89355,14 @@
           "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 574,
           "slug": "national-574",
           "actor_links": 0,
@@ -89182,14 +89385,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
-        },
-        {
-          "cluster_id": 500,
-          "slug": "sports-500",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাহিদ রানাকে বিদেশে পাঠানোর পরিকল্পনা বিসিবির"
         }
       ]
     },
@@ -90905,6 +91100,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -90942,14 +91145,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 527,
-          "slug": "national-527",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
           "headline": "রিয়াদ বিমানবন্দরে হামলায় ২ বাংলাদেশি নিহত, আইসিইউতে ৪ জন: পররাষ্ট্র প্রতিমন্ত্রী"
         }
       ]
@@ -91129,6 +91324,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -91151,14 +91354,6 @@
           "source_links": 3,
           "claim_count": 26,
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
-        },
-        {
-          "cluster_id": 646,
-          "slug": "national-646",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         }
       ]
     },
@@ -91494,6 +91689,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 0,
@@ -91508,14 +91711,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
-        },
-        {
-          "cluster_id": 615,
-          "slug": "national-615",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চাঁদ দেখা যায়নি, জমাদিউল আউয়াল মাস শুরু মঙ্গলবার"
         }
       ]
     },
@@ -91842,20 +92037,20 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "দিবস উদযাপন-পালন ও ছুটি নিয়ে সরকারি অফিসকে জরুরি নির্দেশনা"
-        },
-        {
-          "cluster_id": 662,
-          "slug": "national-662",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
         },
         {
           "cluster_id": 638,
@@ -94330,6 +94525,14 @@
       ],
       "related": [
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 455,
           "slug": "national-455",
           "actor_links": 0,
@@ -94368,14 +94571,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 7,
-          "slug": "national-7",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্কুলছাত্রী তাজমিন হত্যার মূল আসামি চট্টগ্রাম থেকে গ্রেপ্তার, মেলেনি মোবাইল ফোন"
         }
       ]
     },
@@ -96759,6 +96954,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -96797,14 +97000,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -101478,6 +101673,14 @@
       ],
       "related": [
         {
+          "cluster_id": 676,
+          "slug": "national-676",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত"
+        },
+        {
           "cluster_id": 662,
           "slug": "national-662",
           "actor_links": 0,
@@ -101516,14 +101719,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "বাংলাদেশে বিনিয়োগ বাড়াতে চায় জাপানের মারুবেনি, সহযোগিতার আশ্বাস বাণিজ্যমন্ত্রীর"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -103735,7 +103930,7 @@
       "cluster_id": 640,
       "headline": "দিল্লিতে আন্দোলনে দমন ও গণগ্রেফতার বন্ধে শাহবাগে মশাল মিছিল",
       "first_seen": "2026-10-11T23:03:09.175Z",
-      "last_update": "2026-10-12T03:49:56.822Z",
+      "last_update": "2026-10-12T04:15:14.482Z",
       "claim_count": 3,
       "events": [
         {
@@ -103903,7 +104098,7 @@
       "cluster_id": 641,
       "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ",
       "first_seen": "2026-10-11T23:26:49.369Z",
-      "last_update": "2026-10-12T03:49:56.821Z",
+      "last_update": "2026-10-12T04:15:14.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -104915,7 +105110,7 @@
       "cluster_id": 652,
       "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল",
       "first_seen": "2026-10-12T02:32:27.512Z",
-      "last_update": "2026-10-12T03:49:56.809Z",
+      "last_update": "2026-10-12T04:15:14.471Z",
       "claim_count": 16,
       "events": [
         {
@@ -105603,7 +105798,7 @@
       "cluster_id": 653,
       "headline": "স্থানীয় নির্বাচনে প্রভাব বা প্রশাসনিক হস্তক্ষেপ বরদাশত করা হবে না: চিফ হুইপ",
       "first_seen": "2026-10-12T02:32:27.524Z",
-      "last_update": "2026-10-12T03:49:56.820Z",
+      "last_update": "2026-10-12T04:15:14.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -106124,7 +106319,7 @@
       "cluster_id": 661,
       "headline": "বাংলাদেশের হ্যাটট্রিক করা প্রথম পেসার হাসান, টেস্ট ইতিহাসে প্রথম কে?",
       "first_seen": "2026-10-12T03:25:04.672Z",
-      "last_update": "2026-10-12T03:49:56.818Z",
+      "last_update": "2026-10-12T04:15:14.480Z",
       "claim_count": 3,
       "events": [
         {
@@ -106268,8 +106463,8 @@
       "cluster_id": 662,
       "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার",
       "first_seen": "2026-10-12T03:25:04.691Z",
-      "last_update": "2026-10-12T03:49:56.819Z",
-      "claim_count": 3,
+      "last_update": "2026-10-12T04:15:14.473Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-12T02:46:46.000Z",
@@ -106379,6 +106574,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-12T03:54:39.000Z",
+          "kind": "evidence",
+          "claim_id": 118857,
+          "claim_text": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jWkowek1ZRlNoeFZwVS1pWFoxUnhuZ0F5cDdDc0VjMG1pSV8zVDcwX2dzYmNWck1LaFFKdG9WbmZ4VXpab3ZYTFA5YndvUXdZRXF3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T03:54:39.000Z",
+          "kind": "evidence",
+          "claim_id": 122956,
+          "claim_text": "সাবেক ২ সেনা কর্মকর্তা গ্রেফতার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jWkowek1ZRlNoeFZwVS1pWFoxUnhuZ0F5cDdDc0VjMG1pSV8zVDcwX2dzYmNWck1LaFFKdG9WbmZ4VXpab3ZYTFA5YndvUXdZRXF3?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.348Z",
+          "kind": "claim",
+          "claim_id": 122956,
+          "claim_text": "সাবেক ২ সেনা কর্মকর্তা গ্রেফতার"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122956,
+          "claim_text": "সাবেক ২ সেনা কর্মকর্তা গ্রেফতার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -106389,6 +106624,14 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "রিয়াদে হুতিদের ক্ষেপণাস্ত্র হামলায় ২ বাংলাদেশিসহ নিহত ১২ ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         },
         {
           "cluster_id": 507,
@@ -106407,28 +106650,20 @@
           "headline": "উচ্চতর ডিগ্রিধারী তরুণদের কর্মসংস্থানে গুরুত্ব দিচ্ছে সরকার: শিক্ষামন্ত্রী"
         },
         {
+          "cluster_id": 479,
+          "slug": "national-479",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "দিবস উদযাপন-পালন ও ছুটি নিয়ে সরকারি অফিসকে জরুরি নির্দেশনা"
+        },
+        {
           "cluster_id": 465,
           "slug": "national-465",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "পরিচালকের বিরুদ্ধে অভিযোগ তুলে ‘ভায়োলেন্স’ ছাড়লেন অধরা খান"
-        },
-        {
-          "cluster_id": 454,
-          "slug": "national-454",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "বাংলাদেশে বিনিয়োগ বাড়াতে চায় জাপানের মারুবেনি, সহযোগিতার আশ্বাস বাণিজ্যমন্ত্রীর"
-        },
-        {
-          "cluster_id": 271,
-          "slug": "national-271",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "মক্কা-মদিনার নিরাপত্তার বিষয়ে কোনো আপস নেই: হুমায়ুন কবির"
         }
       ]
     },
@@ -106640,7 +106875,7 @@
       "cluster_id": 668,
       "headline": "Politics live: Greens call for US execution live stream to be blocked; Flydubai pilot’s Australia links ‘disturbing’",
       "first_seen": "2026-10-12T03:49:56.810Z",
-      "last_update": "2026-10-12T03:49:56.813Z",
+      "last_update": "2026-10-12T04:15:14.478Z",
       "claim_count": 2,
       "events": [
         {
@@ -106719,7 +106954,7 @@
       "cluster_id": 669,
       "headline": "চবি মনোবিজ্ঞান বিভাগে বিশ্ব মানসিক স্বাস্থ্য দিবস উদযাপন",
       "first_seen": "2026-10-12T03:49:56.814Z",
-      "last_update": "2026-10-12T03:49:56.817Z",
+      "last_update": "2026-10-12T04:15:14.479Z",
       "claim_count": 2,
       "events": [
         {
@@ -106977,47 +107212,295 @@
     },
     "national-674": {
       "cluster_id": 674,
-      "headline": "চাঁপাইনবাবগঞ্জে বাড়িতে ককটেল বিস্ফোরণ, উড়ে গেল টিনের চালা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+      "first_seen": "2026-10-12T04:15:14.474Z",
+      "last_update": "2026-10-12T04:15:14.477Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T03:06:27.000Z",
+          "kind": "evidence",
+          "claim_id": 122967,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxQYUtTWVhVTXNENUxBazVIdjlwRGxRM2s1WG9yX2ZPVC1mTi1CdmdGaUhfS3psQjJlYVg4ZmJHaUNGZ1VqYnZsQlVTR0dZQllBXzFHeG44VHppcWlFQ05WdUllNVg0YzBkRUpVelI5cjhnQ2ZpMW9XdTFOZ0VjLVdMMjlLRkQxTmVYbVRCNk1jdkpSUUtCaUd4dHJOajI2Z3FPOWlHMjZyb3dtNWVOMjF3cDQweVpwZmFXWXhvcmFYclZRZ28tdEJCVlhIUmtPMWdjaDhQZnBkODllMVhoYjBqZ1VDMHk4bXowY0lNdVlvZ3JlQVoyMGxlYlBqQWxkTUtlSXFRd3p5QmhrZWNVWTdKLXBVSzFQQWRqZjNEdzBKemhGTUJjT29HMnNCWXB4VlpQb3VHR21qMUlZTDFnNXlFWVZMSXEtaks0NlplMmNaOWY4SFRPdDVFRVM0N3NjRTdLMHdHUkkwREVSRHNER09UV2RsTHhhb3dFbklicExOYTVNUmRLRHFxNzRab0E3NzhhRV8zSDAxS21GV2MxZWEzOXVsYnlPUVN0QnBCOFJGVWlBeU51bDVBeGlvWklDZ1FueGo4aUhDLWQ0SUtYbUx5dWVES094dmJKUU1pbHZ3OFFmWlBxRHhuQdIB7gNBVV95cUxNU3FiN3NfdEM2ZnNtajVIN01xa2h6b2R3bk5SR1lpMGI2eXhYZzl5RTJ6LW9FVVphVWJIbktrR00tSGhWbkY4QkFaaUFpbC1IR2hVZ2lMVHZjdDA4R1ZaM19mNFdXUDdRc0xRTzVxSWtGeEhPTXhXZlVMbS1XVFVyRUFTcWZpM3BnVjNfbXAtR0ZKMGRoc3lXZW5waUtVM0tVUVRhUExlYW1GOHkzY2tFcUhDTUkta09WbUxvTGgtVnB5Rmh5S18wOXlXY3drNW9DRnhqN0hOelJmZkkyWmxfU2UwWHBtVnRXVUdfSlR2MkpsbXpTNWIzTFhIeUhRTDZOTXkwYzNPeFZhUUt5UnVtRGRKZnMycmpPa05PQmpxMFQyWUJVMWlXMkRHZHlaeHRVU01iRWxCR1Z6SFZieWNaR2tLRHFmd3I4Zk11emRXb0VvaGpST1c3d1dmemx5TjNIR0dzbE1iVlRFbGo0WENpdERwVXgzeU5CQlVSUHhDT2NDSVdKRHJfczhDRmd5Q0hDUDMwek1MRGRnemIwNF90ZWtCNmhQaDA2blRZZW9Kbl96TFlEdTJuVW9veEg0SmFNLXRvTThoaGtnT2t0TUZ6cl8zaTBEa0VfbGxrUC1fOHFDZWxTMk5SWVVZVDdmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T03:06:27.000Z",
+          "kind": "evidence",
+          "claim_id": 122968,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxQYUtTWVhVTXNENUxBazVIdjlwRGxRM2s1WG9yX2ZPVC1mTi1CdmdGaUhfS3psQjJlYVg4ZmJHaUNGZ1VqYnZsQlVTR0dZQllBXzFHeG44VHppcWlFQ05WdUllNVg0YzBkRUpVelI5cjhnQ2ZpMW9XdTFOZ0VjLVdMMjlLRkQxTmVYbVRCNk1jdkpSUUtCaUd4dHJOajI2Z3FPOWlHMjZyb3dtNWVOMjF3cDQweVpwZmFXWXhvcmFYclZRZ28tdEJCVlhIUmtPMWdjaDhQZnBkODllMVhoYjBqZ1VDMHk4bXowY0lNdVlvZ3JlQVoyMGxlYlBqQWxkTUtlSXFRd3p5QmhrZWNVWTdKLXBVSzFQQWRqZjNEdzBKemhGTUJjT29HMnNCWXB4VlpQb3VHR21qMUlZTDFnNXlFWVZMSXEtaks0NlplMmNaOWY4SFRPdDVFRVM0N3NjRTdLMHdHUkkwREVSRHNER09UV2RsTHhhb3dFbklicExOYTVNUmRLRHFxNzRab0E3NzhhRV8zSDAxS21GV2MxZWEzOXVsYnlPUVN0QnBCOFJGVWlBeU51bDVBeGlvWklDZ1FueGo4aUhDLWQ0SUtYbUx5dWVES094dmJKUU1pbHZ3OFFmWlBxRHhuQdIB7gNBVV95cUxNU3FiN3NfdEM2ZnNtajVIN01xa2h6b2R3bk5SR1lpMGI2eXhYZzl5RTJ6LW9FVVphVWJIbktrR00tSGhWbkY4QkFaaUFpbC1IR2hVZ2lMVHZjdDA4R1ZaM19mNFdXUDdRc0xRTzVxSWtGeEhPTXhXZlVMbS1XVFVyRUFTcWZpM3BnVjNfbXAtR0ZKMGRoc3lXZW5waUtVM0tVUVRhUExlYW1GOHkzY2tFcUhDTUkta09WbUxvTGgtVnB5Rmh5S18wOXlXY3drNW9DRnhqN0hOelJmZkkyWmxfU2UwWHBtVnRXVUdfSlR2MkpsbXpTNWIzTFhIeUhRTDZOTXkwYzNPeFZhUUt5UnVtRGRKZnMycmpPa05PQmpxMFQyWUJVMWlXMkRHZHlaeHRVU01iRWxCR1Z6SFZieWNaR2tLRHFmd3I4Zk11emRXb0VvaGpST1c3d1dmemx5TjNIR0dzbE1iVlRFbGo0WENpdERwVXgzeU5CQlVSUHhDT2NDSVdKRHJfczhDRmd5Q0hDUDMwek1MRGRnemIwNF90ZWtCNmhQaDA2blRZZW9Kbl96TFlEdTJuVW9veEg0SmFNLXRvTThoaGtnT2t0TUZ6cl8zaTBEa0VfbGxrUC1fOHFDZWxTMk5SWVVZVDdmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T03:47:55.000Z",
+          "kind": "evidence",
+          "claim_id": 122967,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809312"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.373Z",
+          "kind": "claim",
+          "claim_id": 122967,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.376Z",
+          "kind": "claim",
+          "claim_id": 122968,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122967,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122968,
+          "claim_text": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 542,
+          "slug": "national-542",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অনির্দিষ্টকালের জন্য বন্ধ ঘোষণা সাজেক পর্যটনকেন্দ্র"
+        },
+        {
+          "cluster_id": 455,
+          "slug": "national-455",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
+        },
+        {
+          "cluster_id": 85,
+          "slug": "national-85",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মৃত্যুর আগে তাজমিনের সঙ্গে কী ঘটেছিল, চাঞ্চল্যকর তথ্য মিলল সিসিটিভি ফুটেজে"
+        },
+        {
+          "cluster_id": 17,
+          "slug": "national-17",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাংশায় পরিত্যক্ত অবস্থায় ৪২টি অবিস্ফোরিত ককটেল উদ্ধার করেছে এসআরবি"
+        },
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার রিয়াদ বিমানবন্দরে ভয়াবহ হামলা, পাইলটসহ নিহত ৩"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        }
+      ]
     },
     "national-675": {
       "cluster_id": 675,
-      "headline": "‘অসমাপ্ত আত্মজীবনী’ বিক্রি: ইউপিএলের বাংলাবাজার বিক্রয়কেন্দ্রে ঝুলিয়ে দেওয়া হলো তালা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+      "first_seen": "2026-10-12T04:15:14.768Z",
+      "last_update": "2026-10-12T04:15:14.770Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T04:05:46.000Z",
+          "kind": "evidence",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/oil-prices-fell-following-news-of-a-russia-ukraine-agreement/"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.379Z",
+          "kind": "claim",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122969,
+          "claim_text": "রাশিয়া-ইউক্রেন সমঝোতার খবরে কমল তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-676": {
       "cluster_id": 676,
-      "headline": "শেষ মুহূর্তের ওলিসের দুর্দান্ত গোলে বেলজিয়ামকে হারালো ফ্রান্স",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+      "first_seen": "2026-10-12T04:15:14.772Z",
+      "last_update": "2026-10-12T04:15:14.774Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:57:15.000Z",
+          "kind": "evidence",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/identities-of-the-2-bangladeshis-killed-and-24-injured-in-the-airport-attack-in-saudi-arabia-have-been-confirmed/"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.381Z",
+          "kind": "claim",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122970,
+          "claim_text": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 627,
+          "slug": "national-627",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "রিয়াদে হুতিদের ক্ষেপণাস্ত্র হামলায় ২ বাংলাদেশিসহ নিহত ১২ ও অন্যান্য খবর"
+        }
+      ]
     },
     "national-677": {
       "cluster_id": 677,
-      "headline": "সালমান মুক্তাদির স্টুডিওতে হামলার ঘটনায় জামায়াত এমপির জামাতা গ্রেপ্তার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আজ থেকে শুরু ফ্যামিলি কার্ডের তথ্য সংগ্রহ",
+      "first_seen": "2026-10-12T04:15:14.775Z",
+      "last_update": "2026-10-12T04:15:14.777Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:56:03.000Z",
+          "kind": "evidence",
+          "claim_id": 122971,
+          "claim_text": "আজ থেকে শুরু ফ্যামিলি কার্ডের তথ্য সংগ্রহ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/collection-of-family-card-data-begins-today/"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.383Z",
+          "kind": "claim",
+          "claim_id": 122971,
+          "claim_text": "আজ থেকে শুরু ফ্যামিলি কার্ডের তথ্য সংগ্রহ"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122971,
+          "claim_text": "আজ থেকে শুরু ফ্যামিলি কার্ডের তথ্য সংগ্রহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-679": {
       "cluster_id": 679,
-      "headline": "ঠাকুরগাঁও-১ আসনের উপনির্বাচন: ১১ দলীয় ঐক্যের প্রার্থী দেলাওয়ার হোসেন; মনোনয়নপত্র জমা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+      "first_seen": "2026-10-12T04:15:14.781Z",
+      "last_update": "2026-10-12T04:15:14.783Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T03:48:39.000Z",
+          "kind": "evidence",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/04kfdcdeyv"
+          }
+        },
+        {
+          "ts": "2026-10-12T04:28:21.387Z",
+          "kind": "claim",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা"
+        },
+        {
+          "ts": "2026-10-12T04:28:21.469Z",
+          "kind": "verify",
+          "claim_id": 122973,
+          "claim_text": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-68": {
@@ -107352,6 +107835,14 @@
       ],
       "related": [
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 542,
           "slug": "national-542",
           "actor_links": 0,
@@ -107390,14 +107881,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাংশায় পরিত্যক্ত অবস্থায় ৪২টি অবিস্ফোরিত ককটেল উদ্ধার করেছে এসআরবি"
-        },
-        {
-          "cluster_id": 16,
-          "slug": "national-16",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার রিয়াদ বিমানবন্দরে ভয়াবহ হামলা, পাইলটসহ নিহত ৩"
         }
       ]
     },
@@ -109590,6 +110073,14 @@
       ],
       "related": [
         {
+          "cluster_id": 674,
+          "slug": "national-674",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
+        },
+        {
           "cluster_id": 542,
           "slug": "national-542",
           "actor_links": 0,
@@ -109628,14 +110119,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 7,
-          "slug": "national-7",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্কুলছাত্রী তাজমিন হত্যার মূল আসামি চট্টগ্রাম থেকে গ্রেপ্তার, মেলেনি মোবাইল ফোন"
         }
       ]
     },
@@ -112111,7 +112594,7 @@
       "cluster_id": 641,
       "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ",
       "first_seen": "2026-10-11T23:26:49.369Z",
-      "last_update": "2026-10-12T03:49:56.821Z",
+      "last_update": "2026-10-12T04:15:14.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -113420,7 +113903,7 @@
       "cluster_id": 668,
       "headline": "Politics live: Greens call for US execution live stream to be blocked; Flydubai pilot’s Australia links ‘disturbing’",
       "first_seen": "2026-10-12T03:49:56.810Z",
-      "last_update": "2026-10-12T03:49:56.813Z",
+      "last_update": "2026-10-12T04:15:14.478Z",
       "claim_count": 2,
       "events": [
         {
@@ -116345,6 +116828,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -116383,14 +116874,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -116688,6 +117171,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -116726,14 +117217,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -117838,6 +118321,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -117876,14 +118367,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -118005,6 +118488,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -118043,14 +118534,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 363,
-          "slug": "national-363",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আদালতের নির্দেশে মুক্তি পেলেন দিপকেসহ সিজেপির ৩ নেতা"
         }
       ]
     },
@@ -118245,6 +118728,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -118283,14 +118774,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -118452,20 +118935,20 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 479,
           "slug": "national-479",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "দিবস উদযাপন-পালন ও ছুটি নিয়ে সরকারি অফিসকে জরুরি নির্দেশনা"
-        },
-        {
-          "cluster_id": 662,
-          "slug": "national-662",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
         },
         {
           "cluster_id": 638,
@@ -118985,7 +119468,7 @@
       "cluster_id": 640,
       "headline": "দিল্লিতে আন্দোলনে দমন ও গণগ্রেফতার বন্ধে শাহবাগে মশাল মিছিল",
       "first_seen": "2026-10-11T23:03:09.175Z",
-      "last_update": "2026-10-12T03:49:56.822Z",
+      "last_update": "2026-10-12T04:15:14.482Z",
       "claim_count": 3,
       "events": [
         {
@@ -119153,7 +119636,7 @@
       "cluster_id": 653,
       "headline": "স্থানীয় নির্বাচনে প্রভাব বা প্রশাসনিক হস্তক্ষেপ বরদাশত করা হবে না: চিফ হুইপ",
       "first_seen": "2026-10-12T02:32:27.524Z",
-      "last_update": "2026-10-12T03:49:56.820Z",
+      "last_update": "2026-10-12T04:15:14.481Z",
       "claim_count": 2,
       "events": [
         {
@@ -120269,6 +120752,14 @@
       ],
       "related": [
         {
+          "cluster_id": 662,
+          "slug": "national-662",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লেফটেন্যান্ট কর্নেল (অব.) দেবাশীষ ও কাজী গুলশান আরা গ্রেফতার"
+        },
+        {
           "cluster_id": 511,
           "slug": "national-511",
           "actor_links": 0,
@@ -120307,14 +120798,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 381,
-          "slug": "politics-381",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা"
         }
       ]
     },
@@ -122434,7 +122917,7 @@
       "cluster_id": 661,
       "headline": "বাংলাদেশের হ্যাটট্রিক করা প্রথম পেসার হাসান, টেস্ট ইতিহাসে প্রথম কে?",
       "first_seen": "2026-10-12T03:25:04.672Z",
-      "last_update": "2026-10-12T03:49:56.818Z",
+      "last_update": "2026-10-12T04:15:14.480Z",
       "claim_count": 3,
       "events": [
         {
