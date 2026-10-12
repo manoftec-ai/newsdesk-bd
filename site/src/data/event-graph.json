@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3288,
+    "storyCount": 3292,
     "kinds": [
       "claim",
       "evidence",
@@ -6519,7 +6519,7 @@
       "cluster_id": 715,
       "headline": "ব্র্যাক ও সিটি ব্যাংকের ‘ডিজিবক্স’ সেবা, চেক বই ও কার্ড তোলা যাবে ২৪ ঘণ্টা",
       "first_seen": "2026-10-12T07:13:40.835Z",
-      "last_update": "2026-10-12T11:16:52.894Z",
+      "last_update": "2026-10-12T11:42:59.178Z",
       "claim_count": 2,
       "events": [
         {
@@ -7170,6 +7170,45 @@
       ],
       "related": []
     },
+    "economy-799": {
+      "cluster_id": 799,
+      "headline": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+      "first_seen": "2026-10-12T11:42:59.574Z",
+      "last_update": "2026-10-12T11:42:59.576Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T10:53:22.000Z",
+          "kind": "evidence",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/industry/auf8378nnj"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.311Z",
+          "kind": "claim",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-841": {
       "cluster_id": 841,
       "headline": "জ্বালানির দাম ও সরকারী কর্মচারীদের বেতন বৃদ্ধি মূল্যস্ফীতি উসকে দিতে পারে",
@@ -7555,6 +7594,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -7593,14 +7640,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -10778,7 +10817,7 @@
       "cluster_id": 740,
       "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ",
       "first_seen": "2026-10-12T08:40:17.633Z",
-      "last_update": "2026-10-12T11:16:52.885Z",
+      "last_update": "2026-10-12T11:42:59.167Z",
       "claim_count": 4,
       "events": [
         {
@@ -10971,6 +11010,14 @@
           "headline": "বিশ্বকাপে সবচেয়ে বেশি অনলাইন আক্রমণের শিকার আর্জেন্টিনা!"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -10993,14 +11040,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পরিবার, সমাজ ও অনলাইনে কন্যাশিশুর নিরাপত্তা নিশ্চিত করতে হবে: রাষ্ট্রপতি"
-        },
-        {
-          "cluster_id": 725,
-          "slug": "national-725",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -14514,6 +14553,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -14552,14 +14599,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -17400,12 +17439,12 @@
           "headline": "দিল্লির 'দুর্গে' বিক্ষোভকারী দেখলেই আটক, 'দ্বিতীয় যন্তর মন্তর' হতেই দিল না পুলিশ"
         },
         {
-          "cluster_id": 776,
-          "slug": "national-776",
+          "cluster_id": 786,
+          "slug": "national-786",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
         }
       ]
     },
@@ -34541,7 +34580,7 @@
       "cluster_id": 696,
       "headline": "সৌদি আরব, কাতার ও এসিডব্লিউএ পাওয়ারের সঙ্গে বিদ্যুৎ প্রতিমন্ত্রীর বৈঠক",
       "first_seen": "2026-10-12T06:13:42.713Z",
-      "last_update": "2026-10-12T11:16:52.880Z",
+      "last_update": "2026-10-12T11:42:59.164Z",
       "claim_count": 4,
       "events": [
         {
@@ -34916,7 +34955,7 @@
       "cluster_id": 708,
       "headline": "দিল্লিতে বিরোধী দলের বিক্ষোভের আগে নিরাপত্তা জোরদার, ছয় মেট্রো স্টেশন বন্ধ",
       "first_seen": "2026-10-12T06:43:28.916Z",
-      "last_update": "2026-10-12T11:16:52.895Z",
+      "last_update": "2026-10-12T11:42:59.179Z",
       "claim_count": 2,
       "events": [
         {
@@ -35119,6 +35158,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -35157,14 +35204,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 455,
-          "slug": "national-455",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
         }
       ]
     },
@@ -36122,6 +36161,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 740,
           "slug": "national-740",
           "actor_links": 0,
@@ -36160,14 +36207,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 395,
-          "slug": "national-395",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির"
         }
       ]
     },
@@ -36407,6 +36446,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 455,
           "slug": "national-455",
           "actor_links": 0,
@@ -36421,14 +36468,6 @@
           "source_links": 3,
           "claim_count": 7,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 786,
-          "slug": "national-786",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
         },
         {
           "cluster_id": 777,
@@ -36497,11 +36536,120 @@
     },
     "international-793": {
       "cluster_id": 793,
-      "headline": "ক্ষুদ্রঋণ খাত: কী এমন ভেঙে পড়েছে, যে কারণে এত পরিবর্তন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+      "first_seen": "2026-10-12T11:42:59.159Z",
+      "last_update": "2026-10-12T11:42:59.161Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T04:42:03.000Z",
+          "kind": "evidence",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-countrys-weather-will-be-sunny-and-warm-today-with-temperatures-reaching-up-to-34-degrees/"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:15:57.000Z",
+          "kind": "evidence",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/thunderstorms-and-heavy-rain-in-delhi-department-issues-warning/"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:15:57.000Z",
+          "kind": "evidence",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/thunderstorms-and-heavy-rain-in-delhi-department-issues-warning/"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.294Z",
+          "kind": "claim",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.297Z",
+          "kind": "claim",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-796": {
+      "cluster_id": 796,
+      "headline": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+      "first_seen": "2026-10-12T11:42:59.560Z",
+      "last_update": "2026-10-12T11:42:59.564Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T11:12:15.000Z",
+          "kind": "evidence",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/8jnzvv7a1w"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.303Z",
+          "kind": "claim",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-80": {
@@ -38360,6 +38508,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 784,
           "slug": "national-784",
           "actor_links": 0,
@@ -38390,14 +38546,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "যন্তর মন্তর বাদ, বিক্ষোভস্থল হিসেবে তিন স্থানের নাম ঘোষণা দিল্লি পুলিশের"
-        },
-        {
-          "cluster_id": 740,
-          "slug": "national-740",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ"
         }
       ]
     },
@@ -39255,6 +39403,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -39293,14 +39449,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -40299,6 +40447,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -40337,14 +40493,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -42907,6 +43055,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -42945,14 +43101,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -44269,6 +44417,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -44307,14 +44463,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -45647,6 +45795,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -45685,14 +45841,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -46189,20 +46337,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের প্রথম সপ্তাহে কক্সবাজারে আন্তর্জাতিক ফ্লাইট চালু হবে: বিমানমন্ত্রী"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
         }
       ]
     },
@@ -47546,6 +47694,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -47584,14 +47740,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
-        },
-        {
-          "cluster_id": 435,
-          "slug": "national-435",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
         }
       ]
     },
@@ -48101,6 +48249,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -48139,14 +48295,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -52279,6 +52427,14 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -52301,14 +52457,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পরিবার, সমাজ ও অনলাইনে কন্যাশিশুর নিরাপত্তা নিশ্চিত করতে হবে: রাষ্ট্রপতি"
-        },
-        {
-          "cluster_id": 725,
-          "slug": "national-725",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -52735,6 +52883,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -52773,14 +52929,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
-        },
-        {
-          "cluster_id": 435,
-          "slug": "national-435",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
         }
       ]
     },
@@ -54913,12 +55061,12 @@
           "headline": "দিল্লির 'দুর্গে' বিক্ষোভকারী দেখলেই আটক, 'দ্বিতীয় যন্তর মন্তর' হতেই দিল না পুলিশ"
         },
         {
-          "cluster_id": 776,
-          "slug": "national-776",
+          "cluster_id": 786,
+          "slug": "national-786",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
         }
       ]
     },
@@ -56294,6 +56442,14 @@
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -56308,14 +56464,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
-        },
-        {
-          "cluster_id": 770,
-          "slug": "politics-770",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দুর্গাপূজায় নাশকতা করে সরকারের ভাবমূর্তি নষ্টের ষড়যন্ত্র করছে পরাজিত শক্তি: রিজভী"
         }
       ]
     },
@@ -57440,6 +57588,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -57478,14 +57634,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
-        },
-        {
-          "cluster_id": 435,
-          "slug": "national-435",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
         }
       ]
     },
@@ -63585,6 +63733,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা দেবাশীষ ও কাজী গুলশান আরা গ্রেপ্তার"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -63615,14 +63771,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জনগণের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 588,
-          "slug": "national-588",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
         }
       ]
     },
@@ -66628,6 +66776,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -66666,14 +66822,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -77201,6 +77349,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -77239,14 +77395,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
-        },
-        {
-          "cluster_id": 435,
-          "slug": "national-435",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
         }
       ]
     },
@@ -82376,6 +82524,14 @@
           "headline": "চট্টগ্রাম বন্দরে ‘গণ–অনশন’ কর্মসূচি শুরু, এনসিটি চুক্তি বাতিলের দাবি"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -82398,14 +82554,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
-        },
-        {
-          "cluster_id": 608,
-          "slug": "opinion-cash-grab-one",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধানমন্ডিতে রোটনের জানাজায় অংশ নিতে গিয়ে মারধরের শিকার"
         }
       ]
     },
@@ -85393,6 +85541,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -85431,14 +85587,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -86620,6 +86768,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -86650,14 +86806,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তুরস্কে পর্যটকবাহী বাস ও ট্রাকের সংঘর্ষে নিহত ১১"
-        },
-        {
-          "cluster_id": 662,
-          "slug": "national-662",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা দেবাশীষ ও কাজী গুলশান আরা গ্রেপ্তার"
         }
       ]
     },
@@ -87557,6 +87705,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -87595,14 +87751,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -89270,6 +89418,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -89308,14 +89464,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
-        },
-        {
-          "cluster_id": 331,
-          "slug": "national-331",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 11,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
         }
       ]
     },
@@ -90345,6 +90493,14 @@
           "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 784,
           "slug": "national-784",
           "actor_links": 0,
@@ -90367,14 +90523,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
-        },
-        {
-          "cluster_id": 769,
-          "slug": "national-769",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদি আরব ভ্রমণে নাগরিকদের ‘চরম সতর্কতা’ যুক্তরাষ্ট্রের"
         }
       ]
     },
@@ -90665,6 +90813,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -90679,14 +90835,6 @@
           "source_links": 3,
           "claim_count": 7,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 786,
-          "slug": "national-786",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
         },
         {
           "cluster_id": 777,
@@ -92936,6 +93084,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -92974,14 +93130,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -93926,6 +94074,14 @@
           "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -93948,14 +94104,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুর্গাপূজায় নাশকতা করে সরকারের ভাবমূর্তি নষ্টের ষড়যন্ত্র করছে পরাজিত শক্তি: রিজভী"
-        },
-        {
-          "cluster_id": 769,
-          "slug": "national-769",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদি আরব ভ্রমণে নাগরিকদের ‘চরম সতর্কতা’ যুক্তরাষ্ট্রের"
         }
       ]
     },
@@ -96816,20 +96964,20 @@
           "headline": "চট্টগ্রাম বন্দরে ‘গণ–অনশন’ কর্মসূচি শুরু, এনসিটি চুক্তি বাতিলের দাবি"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "যন্তর মন্তর বাদ, বিক্ষোভস্থল হিসেবে তিন স্থানের নাম ঘোষণা দিল্লি পুলিশের"
-        },
-        {
-          "cluster_id": 740,
-          "slug": "national-740",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ"
         }
       ]
     },
@@ -102026,6 +102174,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -102064,14 +102220,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 455,
-          "slug": "national-455",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
         }
       ]
     },
@@ -102851,6 +102999,14 @@
           "headline": "জার্মান পর্যটকের ল্যাপটপ-ক্যামেরা চুরি, অভিযুক্তকে ধরিয়ে দিতে পুরস্কার ঘোষণা"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -102865,14 +103021,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ"
-        },
-        {
-          "cluster_id": 732,
-          "slug": "national-732",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -105213,6 +105361,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -105251,14 +105407,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের"
-        },
-        {
-          "cluster_id": 331,
-          "slug": "national-331",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 11,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
         }
       ]
     },
@@ -114088,7 +114236,7 @@
       "cluster_id": 696,
       "headline": "সৌদি আরব, কাতার ও এসিডব্লিউএ পাওয়ারের সঙ্গে বিদ্যুৎ প্রতিমন্ত্রীর বৈঠক",
       "first_seen": "2026-10-12T06:13:42.713Z",
-      "last_update": "2026-10-12T11:16:52.880Z",
+      "last_update": "2026-10-12T11:42:59.164Z",
       "claim_count": 4,
       "events": [
         {
@@ -115320,7 +115468,7 @@
       "cluster_id": 708,
       "headline": "দিল্লিতে বিরোধী দলের বিক্ষোভের আগে নিরাপত্তা জোরদার, ছয় মেট্রো স্টেশন বন্ধ",
       "first_seen": "2026-10-12T06:43:28.916Z",
-      "last_update": "2026-10-12T11:16:52.895Z",
+      "last_update": "2026-10-12T11:42:59.179Z",
       "claim_count": 2,
       "events": [
         {
@@ -115523,6 +115671,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -115561,14 +115717,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 455,
-          "slug": "national-455",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
         }
       ]
     },
@@ -118463,7 +118611,7 @@
       "cluster_id": 740,
       "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ",
       "first_seen": "2026-10-12T08:40:17.633Z",
-      "last_update": "2026-10-12T11:16:52.885Z",
+      "last_update": "2026-10-12T11:42:59.167Z",
       "claim_count": 4,
       "events": [
         {
@@ -118656,6 +118804,14 @@
           "headline": "বিশ্বকাপে সবচেয়ে বেশি অনলাইন আক্রমণের শিকার আর্জেন্টিনা!"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -118678,14 +118834,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পরিবার, সমাজ ও অনলাইনে কন্যাশিশুর নিরাপত্তা নিশ্চিত করতে হবে: রাষ্ট্রপতি"
-        },
-        {
-          "cluster_id": 725,
-          "slug": "national-725",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -119969,6 +120117,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 740,
           "slug": "national-740",
           "actor_links": 0,
@@ -120007,14 +120163,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
-        },
-        {
-          "cluster_id": 395,
-          "slug": "national-395",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রতিমন্ত্রীর পদত্যাগসহ ৫ দাবিতে যুব উন্নয়ন অধিদপ্তর ঘেরাও যুবশক্তির"
         }
       ]
     },
@@ -120022,7 +120170,7 @@
       "cluster_id": 762,
       "headline": "জুলাই হত্যাচেষ্টা মামলায় গ্রেপ্তার সাবেক এমপি আবুল কালাম",
       "first_seen": "2026-10-12T09:58:48.718Z",
-      "last_update": "2026-10-12T11:16:52.889Z",
+      "last_update": "2026-10-12T11:42:59.170Z",
       "claim_count": 3,
       "events": [
         {
@@ -120190,7 +120338,7 @@
       "cluster_id": 763,
       "headline": "আনোয়ারায় রাতে ছেলের নিখোঁজের জিডি, সকালে পুকুরে মিলল মরদেহ",
       "first_seen": "2026-10-12T09:58:48.723Z",
-      "last_update": "2026-10-12T11:16:52.892Z",
+      "last_update": "2026-10-12T11:42:59.173Z",
       "claim_count": 2,
       "events": [
         {
@@ -120539,6 +120687,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -120577,14 +120733,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 455,
-          "slug": "national-455",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
         }
       ]
     },
@@ -120592,7 +120740,7 @@
       "cluster_id": 770,
       "headline": "দুর্গাপূজায় নাশকতা করে সরকারের ভাবমূর্তি নষ্টের ষড়যন্ত্র করছে পরাজিত শক্তি: রিজভী",
       "first_seen": "2026-10-12T10:25:51.807Z",
-      "last_update": "2026-10-12T11:16:52.890Z",
+      "last_update": "2026-10-12T11:42:59.172Z",
       "claim_count": 3,
       "events": [
         {
@@ -121031,6 +121179,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 455,
           "slug": "national-455",
           "actor_links": 0,
@@ -121045,14 +121201,6 @@
           "source_links": 3,
           "claim_count": 7,
           "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
-        },
-        {
-          "cluster_id": 786,
-          "slug": "national-786",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
         },
         {
           "cluster_id": 777,
@@ -121159,6 +121307,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -121197,14 +121353,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
-        },
-        {
-          "cluster_id": 455,
-          "slug": "national-455",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
         }
       ]
     },
@@ -121407,7 +121555,7 @@
       "cluster_id": 783,
       "headline": "'স্মাইলিং ডিপ্রেশন' কী, হাসিমুখের আড়ালে লুকিয়ে থাকা বিষণ্ণতা চিনবেন কীভাবে?",
       "first_seen": "2026-10-12T11:16:52.873Z",
-      "last_update": "2026-10-12T11:16:52.876Z",
+      "last_update": "2026-10-12T11:42:59.162Z",
       "claim_count": 2,
       "events": [
         {
@@ -121535,7 +121683,7 @@
       "cluster_id": 784,
       "headline": "সাব্বিরকে নিয়ে হংকং সিক্সেসের দল ঘোষণা বাংলাদেশের",
       "first_seen": "2026-10-12T11:16:52.877Z",
-      "last_update": "2026-10-12T11:16:52.879Z",
+      "last_update": "2026-10-12T11:42:59.163Z",
       "claim_count": 2,
       "events": [
         {
@@ -121663,7 +121811,7 @@
       "cluster_id": 785,
       "headline": "শিক্ষার্থী-শিক্ষক কেউ চায় না, তবুও ভিসি হওয়ার লোভ যাচ্ছে না বিএনপি নেতার: সাদিক কায়েম",
       "first_seen": "2026-10-12T11:16:52.882Z",
-      "last_update": "2026-10-12T11:16:52.884Z",
+      "last_update": "2026-10-12T11:42:59.165Z",
       "claim_count": 2,
       "events": [
         {
@@ -121742,8 +121890,8 @@
       "cluster_id": 786,
       "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ",
       "first_seen": "2026-10-12T11:16:52.886Z",
-      "last_update": "2026-10-12T11:16:52.888Z",
-      "claim_count": 2,
+      "last_update": "2026-10-12T11:42:59.169Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-12T03:31:14.000Z",
@@ -121765,6 +121913,28 @@
             "source_id": "ittefaq",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMi7ARBVV95cUxPSFhYbmtsa01NTHU5b1RQa2FqVVN4b0RKWUZfcFFBYVExa2lUcjF1V1kxLWhSY0EzVG9nNFRhdmRVRUowNEZHTHpWMTd1Mlc1N1JxVlJUUjM1RHYzdmJFRF9fTzl0b29KblpsczNhWndBYldTOTZxWnFEMS1UQ05LeE5kdzNZblpTbUJUVkRRa3RKUzFpRG1OR3VpQlBQYXNjQV9hbmJFNXg5UXNKSTlCaHNCUEpaNnh2M0VGWGV2bDRtb1BrQjU4RDZEQWVQUy13R2ZYeHljNjI5emo0cEF1bUVfbDM1cTdfTkhQZW9LRDV5QWJtMExZSEs4enV0TEV2ZlNRdDcwa1NBWEx1ZDNCdWJzRFZEWE5tZHBaSG9fYS1DMmxlQWhONEV5dUtUMlpqaDZtclIwdzhOTS1GNlRtakpud2VYZHJhT3hYNVBFTWZGRGg3MW5Qa1Vfb0JGYVRlcHFNbm5MRm1WUnMxeEFURFdnN1FWMlhfLWtpSUJZcHUtTnV5TzJnQ2RIUzVnUlZkMWk4MlRwT3NQU2JNTFVMTjZjd2h6cnBqbWVuNGlnMGQ5ZDFwU1JBSG1IMW9Cc0FWcFNaWXNlWnJDZzg1dzJma2N1RGVrdjBUZDJrZ19jNjd6OTJRX25xMHIxbndWaEpCSlpUVVcwODVhbUhHMjNPZTBRTXo2YzVVWDlLcEkzTXpicmNEY3E1RlE3ajFGSTA3akYyck9oQW5WX0dRX295UG01elQzT19MM2huMWtNX3h4TURxN1FTMXVxYWVWdnh0cklDVFA3ekNDT3R2Rm9lYm14b1NZWmJLUXk2MNIB8gRBVV95cUxONnFNT0JSVVZmaWVPN3YyOHFMc2lEZlo1VHRxcmJ5VjZka0pfS1BQbzd0MzRpMDgzaUp0VXg3Qmo2OXBxRVVsaVp0Y1pCOGtJc0ZSVGtsWklCXzJQOWR3U2ZYVWhVRU5mSEQ3b0I1RmpSTXZPTzQ2VTZUb1pYckhGdURhSGVDaXdBaHUyZkRWdmwyem11NFIzZHhwM1FKQWo5eUpkUjBNYTcyY0FyZFhNcmJjaXpMdFdZNEgtY3B2TkFHRUlacm9aMVZLb0NyM0VZNVpwaFJtbnYzc0d6X0FuZ01jYk9ZYWwwbjdWZl9IaWN3V25BR1YwREF4Z0tWUWVHUzA3MFZpLTIxU3FvX3pQdDFQak5Rc21IWVhCTkgzTjA1dWlOanBreEUtcGQ3eUJsNnItN1p6UV9lblZSaWxYNFBwMmFSeERIZHZEckxFeHNKdFVCbmdHWWNHT2pzbDkzZkIwV0tBTEVmd29sSkJQWG5RZklDNWk2WURyYV9XOHluYVFnTTlocTUwZGN2WHlwTFlyT3otaTVrbXR4Z2pDQnoyckUzYUl1d3VRYUVIMGN1cHRvbXZ2ZXJBUjBWbmx0VDh3ZVc3RUd0ampFOUJxMEJmdV9KdUdxMkVyRHRocHRTMU10Xy04QXNxdlJpdURwMGVveDlFUThLallwLXJrYWxoUWdwQjFheGp0by1FWlREVTc5clBhWGdRcTVwVFN0NVIzQnVGcTY3dUxFREZnTnRldHVScGpyUXd1d2dSanJjNFk4cGswQmxTX0c1eFFhMVdWdW1jV3ZZUXo2V212TXNOcFZXSEduOW1xd2hTeFdJdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T08:01:55.000Z",
+          "kind": "evidence",
+          "claim_id": 155928,
+          "claim_text": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4bUtwZDBFWlJscVRkdzJscjZKNVVWVU9WeTVxcm1EM2VIeTFxd1I1bXBWelBENGkyV2hUMktvbmYxak13SVBjRE5XRVZUSlRuV0tJ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T08:01:55.000Z",
+          "kind": "evidence",
+          "claim_id": 158258,
+          "claim_text": "যে কারণে গ্রেফতার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4bUtwZDBFWlJscVRkdzJscjZKNVVWVU9WeTVxcm1EM2VIeTFxd1I1bXBWelBENGkyV2hUMktvbmYxak13SVBjRE5XRVZUSlRuV0tJ?oc=5"
           }
         },
         {
@@ -121813,6 +121983,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.270Z",
+          "kind": "claim",
+          "claim_id": 158258,
+          "claim_text": "যে কারণে গ্রেফতার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158258,
+          "claim_text": "যে কারণে গ্রেফতার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -121820,49 +122008,49 @@
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
+          "source_links": 3,
+          "claim_count": 3,
           "headline": "ডলারের দর ও তেলের দাম কমায় বিশ্ববাজারে বাড়ল স্বর্ণের দাম"
-        },
-        {
-          "cluster_id": 698,
-          "slug": "national-upl-s-banglabazar",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নতুন ঋণচুক্তির বিষয়ে আইএমএফের সঙ্গে আলোচনা এগিয়ে নিচ্ছে বাংলাদেশ: অর্থমন্ত্রী"
-        },
-        {
-          "cluster_id": 697,
-          "slug": "national-we-have-time",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যবসার প্রয়োজনে স্ত্রীর কাছে টাকা দাবি ‘যৌতুক’ হিসেবে গণ্য হবে না: হাইকোর্টের রায়"
-        },
-        {
-          "cluster_id": 674,
-          "slug": "national-674",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "'বাংলাদেশ না চাওয়া জামায়াত প্রতিবাদ করছে রবীন্দ্রনাথ ঢাকা বিশ্ববিদ্যালয় চান নি'"
-        },
-        {
-          "cluster_id": 542,
-          "slug": "national-542",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "অনির্দিষ্টকালের জন্য বন্ধ ঘোষণা সাজেক পর্যটনকেন্দ্র"
         },
         {
           "cluster_id": 455,
           "slug": "national-455",
           "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
+        },
+        {
+          "cluster_id": 9,
+          "slug": "national-9",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ট্যাংকারে হামলা বেড়ে যাওয়ায় হরমুজ প্রণালিতে জাহাজ চলাচল দুই মাসে সর্বনিম্ন"
+        },
+        {
+          "cluster_id": 777,
+          "slug": "national-777",
+          "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "কক্সবাজারে ‘রাজুর স্ত্রী’ পরিচয়ে হোটেলে থাকেন স্কুলছাত্রী তাজমিন, কুমিল্লায় ফিরে সুমনের হাতে খুন"
+          "headline": "নভেম্বরের প্রথম সপ্তাহে কক্সবাজারে আন্তর্জাতিক ফ্লাইট চালু হবে: বিমানমন্ত্রী"
+        },
+        {
+          "cluster_id": 769,
+          "slug": "national-769",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সৌদি আরব ভ্রমণে নাগরিকদের ‘চরম সতর্কতা’ যুক্তরাষ্ট্রের"
+        },
+        {
+          "cluster_id": 709,
+          "slug": "national-709",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টানা পাঁচ দিন বন্ধ থাকবে দেশের সব ব্যাংক"
         }
       ]
     },
@@ -122102,65 +122290,413 @@
     },
     "national-792": {
       "cluster_id": 792,
-      "headline": "ঢাকা-দিল্লি সম্পর্ককে এগিয়ে নিয়ে যাওয়ার ব্যাপারে ভারত আশাবাদী: দীনেশ ত্রিবেদী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+      "first_seen": "2026-10-12T11:42:59.155Z",
+      "last_update": "2026-10-12T11:42:59.158Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T10:43:52.000Z",
+          "kind": "evidence",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/974016/%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A6%A6%E0%A7%8B%E0%A6%B0-%E0%A6%98%E0%A7%8B%E0%A6%B7%E0%A6%A3%E0%A6%BE-%E2%80%98%E0%A6%87%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%B0%E0%A6%BE-%E0%A6%AB%E0%A7%81%E0%A6%9F%E0%A6%AC%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%86%E0%A6%AE%E0%A6%BF%E2%80%99"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:22:14.000Z",
+          "kind": "evidence",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxQRmw5N0FSdV84LUw4ZnQ5T0VqVkNoU3h1NWxVVE1pRVBnalAxeWIwUU9BWDB1Unc2RXRfdVprZGNSQzIxQ2t4ekVISklFQUxVQVZCVUJkdmZzMThOX25iRTVpbzFaMmJ6U3dwX01mOE5mcDJNNXJhdUUwdWU0eHhtdFNKaU9xUm9BZnNnWUFkWjNYWTREa09kR0l1LWNJZkwyVXlNUjVVVzZqeFY5dTkyNUpwU2dJa3dCbU5CeGY3NGdyNUcydGF2c01mRXpRcUlpNlhlX21FY3FRYVdocDJIN0NPeHRfdVhJTUZWeEM3czZ2ZnpNQksyQWZnVjhZTVcyQmFoVTAzYXBBd1Z1bk5USWNsejFYc3Y5eVRRa2ZGbjRxWHJpbzVUd1MyeHk5VmE5b2hFM3UtMDhwcGRPRVFQVElKejdjc0YyN2lNMGd5dUljZ2JTM254bkN5RlVoakNieFNCdmlYcWtQTXY3MjFKUDlRdUk3ejM4WUFxaHlZbGx4WlhGeTdHN3lIa3BVdDY2eDFjUGJMNzluLVVoWWtCdW80S05IdGg3dEg2aFgzTTlPaTFlc2QtdGpvWXNYcGx2Wi1IQWYyUENYOWNaaFZ5TkQ1bHM0X3Z2TFMyRHluakpmM1ljakJ0UDlSeDFnalA0bTRnbC1JRUU5VEZkNi1oeTJ0MFRqekJ6dWJv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:22:14.000Z",
+          "kind": "evidence",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxQRmw5N0FSdV84LUw4ZnQ5T0VqVkNoU3h1NWxVVE1pRVBnalAxeWIwUU9BWDB1Unc2RXRfdVprZGNSQzIxQ2t4ekVISklFQUxVQVZCVUJkdmZzMThOX25iRTVpbzFaMmJ6U3dwX01mOE5mcDJNNXJhdUUwdWU0eHhtdFNKaU9xUm9BZnNnWUFkWjNYWTREa09kR0l1LWNJZkwyVXlNUjVVVzZqeFY5dTkyNUpwU2dJa3dCbU5CeGY3NGdyNUcydGF2c01mRXpRcUlpNlhlX21FY3FRYVdocDJIN0NPeHRfdVhJTUZWeEM3czZ2ZnpNQksyQWZnVjhZTVcyQmFoVTAzYXBBd1Z1bk5USWNsejFYc3Y5eVRRa2ZGbjRxWHJpbzVUd1MyeHk5VmE5b2hFM3UtMDhwcGRPRVFQVElKejdjc0YyN2lNMGd5dUljZ2JTM254bkN5RlVoakNieFNCdmlYcWtQTXY3MjFKUDlRdUk3ejM4WUFxaHlZbGx4WlhGeTdHN3lIa3BVdDY2eDFjUGJMNzluLVVoWWtCdW80S05IdGg3dEg2aFgzTTlPaTFlc2QtdGpvWXNYcGx2Wi1IQWYyUENYOWNaaFZ5TkQ1bHM0X3Z2TFMyRHluakpmM1ljakJ0UDlSeDFnalA0bTRnbC1JRUU5VEZkNi1oeTJ0MFRqekJ6dWJv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.286Z",
+          "kind": "claim",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.290Z",
+          "kind": "claim",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 761,
+          "slug": "national-761",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যন্তর মন্তর বাদ, বিক্ষোভস্থল হিসেবে তিন স্থানের নাম ঘোষণা দিল্লি পুলিশের"
+        },
+        {
+          "cluster_id": 740,
+          "slug": "national-740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
+        },
+        {
+          "cluster_id": 588,
+          "slug": "national-588",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
+        },
+        {
+          "cluster_id": 518,
+          "slug": "national-518",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
+        },
+        {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        }
+      ]
     },
     "national-793": {
       "cluster_id": 793,
-      "headline": "ক্ষুদ্রঋণ খাত: কী এমন ভেঙে পড়েছে, যে কারণে এত পরিবর্তন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+      "first_seen": "2026-10-12T11:42:59.159Z",
+      "last_update": "2026-10-12T11:42:59.161Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T04:42:03.000Z",
+          "kind": "evidence",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-countrys-weather-will-be-sunny-and-warm-today-with-temperatures-reaching-up-to-34-degrees/"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:15:57.000Z",
+          "kind": "evidence",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/thunderstorms-and-heavy-rain-in-delhi-department-issues-warning/"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:15:57.000Z",
+          "kind": "evidence",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/thunderstorms-and-heavy-rain-in-delhi-department-issues-warning/"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.294Z",
+          "kind": "claim",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.297Z",
+          "kind": "claim",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158266,
+          "claim_text": "আজ রোদঝলমলে আবহাওয়া, তাপমাত্রা হতে পারে ৩৪ ডিগ্রি সেলসিয়াস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158267,
+          "claim_text": "দিল্লিতে ভারী বৃষ্টিতে জনজীবন বিঘ্নিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-794": {
       "cluster_id": 794,
-      "headline": "মরিয়মের পরিবারের সঙ্গে এমপি গাজী নজরুলের আপস",
-      "first_seen": null,
-      "last_update": null,
+      "headline": "‘খোঁজ নেই’ সোহেল আফ্রিদির, তিনি কি সত্যিই আটক হয়েছেন",
+      "first_seen": "2026-10-12T11:42:59.175Z",
+      "last_update": "2026-10-12T11:42:59.178Z",
       "claim_count": 0,
       "events": [],
       "related": []
     },
     "national-795": {
       "cluster_id": 795,
-      "headline": "এবার দুর্গাপূজায় ৫ দিন ছুটি, মণ্ডপে ২৪ ঘণ্টা মনিটরিং : স্বরাষ্ট্রমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাংলাদেশি তরুণদের জন্য জার্মানিতে শিক্ষা ও কর্মসংস্থানের নতুন সম্ভাবনা",
+      "first_seen": "2026-10-12T11:42:59.555Z",
+      "last_update": "2026-10-12T11:42:59.558Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T11:27:05.000Z",
+          "kind": "evidence",
+          "claim_id": 158268,
+          "claim_text": "বাংলাদেশি তরুণদের জন্য জার্মানিতে শিক্ষা ও কর্মসংস্থানের নতুন সম্ভাবনা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/new-opportunities-for-education-and-employment-in-germany-for-bangladeshi-youth/"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.301Z",
+          "kind": "claim",
+          "claim_id": 158268,
+          "claim_text": "বাংলাদেশি তরুণদের জন্য জার্মানিতে শিক্ষা ও কর্মসংস্থানের নতুন সম্ভাবনা"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158268,
+          "claim_text": "বাংলাদেশি তরুণদের জন্য জার্মানিতে শিক্ষা ও কর্মসংস্থানের নতুন সম্ভাবনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-796": {
       "cluster_id": 796,
-      "headline": "যেসব এলাকায় বিএনপির সংসদ সদস্য নির্বাচিত হয়েছেন, সেখানে সারের সংকট নেই: মীর শাহে আলম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+      "first_seen": "2026-10-12T11:42:59.560Z",
+      "last_update": "2026-10-12T11:42:59.564Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T11:12:15.000Z",
+          "kind": "evidence",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/8jnzvv7a1w"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.303Z",
+          "kind": "claim",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158269,
+          "claim_text": "বিমানবন্দরে হুতিদের হামলার পর রিয়াদের আকাশ ফাঁকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-797": {
       "cluster_id": 797,
-      "headline": "‘অসমাপ্ত আত্মজীবনী’ বিক্রিতে বাধা: সাবেক উপদেষ্টা আসিফ নজরুলের নিন্দা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ওএসডি, কক্ষ ‘সিলগালা’র পর বিটিআরসির চার উপপরিচালককে কারণ দর্শানোর নোটিশ",
+      "first_seen": "2026-10-12T11:42:59.566Z",
+      "last_update": "2026-10-12T11:42:59.568Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T11:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 158270,
+          "claim_text": "ওএসডি, কক্ষ ‘সিলগালা’র পর বিটিআরসির চার উপপরিচালককে কারণ দর্শানোর নোটিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/22ljqr8wvk"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.306Z",
+          "kind": "claim",
+          "claim_id": 158270,
+          "claim_text": "ওএসডি, কক্ষ ‘সিলগালা’র পর বিটিআরসির চার উপপরিচালককে কারণ দর্শানোর নোটিশ"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158270,
+          "claim_text": "ওএসডি, কক্ষ ‘সিলগালা’র পর বিটিআরসির চার উপপরিচালককে কারণ দর্শানোর নোটিশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-798": {
+      "cluster_id": 798,
+      "headline": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+      "first_seen": "2026-10-12T11:42:59.570Z",
+      "last_update": "2026-10-12T11:42:59.571Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T10:58:59.000Z",
+          "kind": "evidence",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/4xj7c9zr9h"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.309Z",
+          "kind": "claim",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-799": {
       "cluster_id": 799,
-      "headline": "গাজী নজরুলের সঙ্গে মরিয়মের পরিবারের আপসনামা দাখিল, পিপি বললেন আদালত আমলে নেননি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+      "first_seen": "2026-10-12T11:42:59.574Z",
+      "last_update": "2026-10-12T11:42:59.576Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T10:53:22.000Z",
+          "kind": "evidence",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/industry/auf8378nnj"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.311Z",
+          "kind": "claim",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158272,
+          "claim_text": "ব্যবসা সচল রাখতে বেক্সিমকো গ্রুপের দুই কোম্পানিকে বিশেষ ছাড়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-8": {
@@ -122298,6 +122834,14 @@
           "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
         },
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -122320,14 +122864,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
-        },
-        {
-          "cluster_id": 705,
-          "slug": "national-705",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তুরস্কে পর্যটকবাহী বাস ও ট্রাকের সংঘর্ষে নিহত ১১"
         }
       ]
     },
@@ -123292,6 +123828,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -123330,14 +123874,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -124154,6 +124690,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 776,
           "slug": "national-776",
           "actor_links": 0,
@@ -124192,14 +124736,6 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
-        },
-        {
-          "cluster_id": 26,
-          "slug": "national-26",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
         }
       ]
     },
@@ -128017,6 +128553,14 @@
       ],
       "related": [
         {
+          "cluster_id": 786,
+          "slug": "national-786",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে কারণে গ্রেপ্তার হলেন সাবেক সেনা কর্মকর্তা গুলশান আরা ও দেবাশীষ"
+        },
+        {
           "cluster_id": 777,
           "slug": "national-777",
           "actor_links": 0,
@@ -128055,14 +128599,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আত্মগোপনেই মারা গেলেন গোপালগঞ্জ জেলা আওয়ামী লীগের সভাপতি"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -130026,6 +130562,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -130064,14 +130608,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
@@ -133843,7 +134379,7 @@
       "cluster_id": 770,
       "headline": "দুর্গাপূজায় নাশকতা করে সরকারের ভাবমূর্তি নষ্টের ষড়যন্ত্র করছে পরাজিত শক্তি: রিজভী",
       "first_seen": "2026-10-12T10:25:51.807Z",
-      "last_update": "2026-10-12T11:16:52.890Z",
+      "last_update": "2026-10-12T11:42:59.172Z",
       "claim_count": 3,
       "events": [
         {
@@ -135285,6 +135821,14 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         },
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -135307,14 +135851,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পরিবার, সমাজ ও অনলাইনে কন্যাশিশুর নিরাপত্তা নিশ্চিত করতে হবে: রাষ্ট্রপতি"
-        },
-        {
-          "cluster_id": 725,
-          "slug": "national-725",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -137289,13 +137825,171 @@
       ],
       "related": []
     },
+    "sports-792": {
+      "cluster_id": 792,
+      "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+      "first_seen": "2026-10-12T11:42:59.155Z",
+      "last_update": "2026-10-12T11:42:59.158Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T10:43:52.000Z",
+          "kind": "evidence",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/974016/%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A6%A6%E0%A7%8B%E0%A6%B0-%E0%A6%98%E0%A7%8B%E0%A6%B7%E0%A6%A3%E0%A6%BE-%E2%80%98%E0%A6%87%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%B0%E0%A6%BE-%E0%A6%AB%E0%A7%81%E0%A6%9F%E0%A6%AC%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%86%E0%A6%AE%E0%A6%BF%E2%80%99"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:22:14.000Z",
+          "kind": "evidence",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxQRmw5N0FSdV84LUw4ZnQ5T0VqVkNoU3h1NWxVVE1pRVBnalAxeWIwUU9BWDB1Unc2RXRfdVprZGNSQzIxQ2t4ekVISklFQUxVQVZCVUJkdmZzMThOX25iRTVpbzFaMmJ6U3dwX01mOE5mcDJNNXJhdUUwdWU0eHhtdFNKaU9xUm9BZnNnWUFkWjNYWTREa09kR0l1LWNJZkwyVXlNUjVVVzZqeFY5dTkyNUpwU2dJa3dCbU5CeGY3NGdyNUcydGF2c01mRXpRcUlpNlhlX21FY3FRYVdocDJIN0NPeHRfdVhJTUZWeEM3czZ2ZnpNQksyQWZnVjhZTVcyQmFoVTAzYXBBd1Z1bk5USWNsejFYc3Y5eVRRa2ZGbjRxWHJpbzVUd1MyeHk5VmE5b2hFM3UtMDhwcGRPRVFQVElKejdjc0YyN2lNMGd5dUljZ2JTM254bkN5RlVoakNieFNCdmlYcWtQTXY3MjFKUDlRdUk3ejM4WUFxaHlZbGx4WlhGeTdHN3lIa3BVdDY2eDFjUGJMNzluLVVoWWtCdW80S05IdGg3dEg2aFgzTTlPaTFlc2QtdGpvWXNYcGx2Wi1IQWYyUENYOWNaaFZ5TkQ1bHM0X3Z2TFMyRHluakpmM1ljakJ0UDlSeDFnalA0bTRnbC1JRUU5VEZkNi1oeTJ0MFRqekJ6dWJv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T11:22:14.000Z",
+          "kind": "evidence",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxQRmw5N0FSdV84LUw4ZnQ5T0VqVkNoU3h1NWxVVE1pRVBnalAxeWIwUU9BWDB1Unc2RXRfdVprZGNSQzIxQ2t4ekVISklFQUxVQVZCVUJkdmZzMThOX25iRTVpbzFaMmJ6U3dwX01mOE5mcDJNNXJhdUUwdWU0eHhtdFNKaU9xUm9BZnNnWUFkWjNYWTREa09kR0l1LWNJZkwyVXlNUjVVVzZqeFY5dTkyNUpwU2dJa3dCbU5CeGY3NGdyNUcydGF2c01mRXpRcUlpNlhlX21FY3FRYVdocDJIN0NPeHRfdVhJTUZWeEM3czZ2ZnpNQksyQWZnVjhZTVcyQmFoVTAzYXBBd1Z1bk5USWNsejFYc3Y5eVRRa2ZGbjRxWHJpbzVUd1MyeHk5VmE5b2hFM3UtMDhwcGRPRVFQVElKejdjc0YyN2lNMGd5dUljZ2JTM254bkN5RlVoakNieFNCdmlYcWtQTXY3MjFKUDlRdUk3ejM4WUFxaHlZbGx4WlhGeTdHN3lIa3BVdDY2eDFjUGJMNzluLVVoWWtCdW80S05IdGg3dEg2aFgzTTlPaTFlc2QtdGpvWXNYcGx2Wi1IQWYyUENYOWNaaFZ5TkQ1bHM0X3Z2TFMyRHluakpmM1ljakJ0UDlSeDFnalA0bTRnbC1JRUU5VEZkNi1oeTJ0MFRqekJ6dWJv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.286Z",
+          "kind": "claim",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.290Z",
+          "kind": "claim",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158264,
+          "claim_text": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158265,
+          "claim_text": "‘ইতিহাসের সেরা ফুটবলার আমি’, দাবি রোনালদোর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 761,
+          "slug": "national-761",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যন্তর মন্তর বাদ, বিক্ষোভস্থল হিসেবে তিন স্থানের নাম ঘোষণা দিল্লি পুলিশের"
+        },
+        {
+          "cluster_id": 740,
+          "slug": "national-740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সদ্য প্রয়াত অভিনেত্রী নাসিমা খানের ছেলে এখনও নিখোঁজ, যা বলছে পুলিশ"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
+        },
+        {
+          "cluster_id": 588,
+          "slug": "national-588",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
+        },
+        {
+          "cluster_id": 518,
+          "slug": "national-518",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
+        },
+        {
+          "cluster_id": 406,
+          "slug": "national-406",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
+        }
+      ]
+    },
     "sports-798": {
       "cluster_id": 798,
-      "headline": "চোটের শঙ্কা নিয়েই বাংলাদেশ সিরিজের দলে অস্ট্রেলিয়া অধিনায়ক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+      "first_seen": "2026-10-12T11:42:59.570Z",
+      "last_update": "2026-10-12T11:42:59.571Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T10:58:59.000Z",
+          "kind": "evidence",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/4xj7c9zr9h"
+          }
+        },
+        {
+          "ts": "2026-10-12T12:00:45.309Z",
+          "kind": "claim",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ"
+        },
+        {
+          "ts": "2026-10-12T12:00:45.410Z",
+          "kind": "verify",
+          "claim_id": 158271,
+          "claim_text": "বিধবা কার্ড দেওয়া হলেও এমপির বউ সবার আগে পাবে: হাসনাত আবদুল্লাহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-800": {
@@ -137422,6 +138116,14 @@
       ],
       "related": [
         {
+          "cluster_id": 792,
+          "slug": "sports-792",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রোনালদোর ঘোষণা, ‘ইতিহাসের সেরা ফুটবলার আমি’"
+        },
+        {
           "cluster_id": 761,
           "slug": "national-761",
           "actor_links": 0,
@@ -137460,14 +138162,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রেণিকক্ষে মুখে কালো কাপড় বেঁধে অধ্যাপক সামিনা লুৎফার প্রতিবাদ"
-        },
-        {
-          "cluster_id": 406,
-          "slug": "national-406",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক রোটনের মরদেহ দেশে পৌঁছেছে"
         }
       ]
     },
