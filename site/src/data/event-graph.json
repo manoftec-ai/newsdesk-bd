@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3347,
+    "storyCount": 3349,
     "kinds": [
       "claim",
       "evidence",
@@ -6848,6 +6848,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -6886,14 +6894,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -7945,12 +7945,91 @@
     },
     "economy-942": {
       "cluster_id": 942,
-      "headline": "ফুচকা বিক্রেতা, রিকশাচালকসহ সবাইকে ডিজিটাল লেনেদেনে আনা হবে: অর্থমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+      "first_seen": "2026-10-12T21:14:01.611Z",
+      "last_update": "2026-10-12T21:14:01.613Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T20:16:56.000Z",
+          "kind": "evidence",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fnsozewtkc"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.762Z",
+          "kind": "claim",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 3,
+          "source_links": 0,
+          "claim_count": 5,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
+        },
+        {
+          "cluster_id": 652,
+          "slug": "national-652",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 5,
+          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
+        },
+        {
+          "cluster_id": 623,
+          "slug": "national-623",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 916,
+          "slug": "politics-916",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এআই-রোবোটিকসের যুগেও বড় বড় দলের নেতারা মেয়েদের বিয়ের বয়স কমানোর যুক্তি দিচ্ছেন: ববি হাজ্জাজ"
+        },
+        {
+          "cluster_id": 838,
+          "slug": "national-838",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মক্কা-মদিনার ওপর হুমকি এলে বাংলাদেশ বসে থাকবে না: প্রতিমন্ত্রী শামা ওবায়েদ"
+        }
+      ]
     },
     "economy-951": {
       "cluster_id": 951,
@@ -31511,7 +31590,7 @@
           "slug": "national-826",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         }
       ]
@@ -32757,6 +32836,14 @@
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 3,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 578,
           "slug": "national-578",
           "actor_links": 3,
@@ -32779,14 +32866,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "চুরি যাওয়া ল্যাপটপের অবস্থান জানালেন জার্মান পর্যটক, তবু কেন উদ্ধার হচ্ছে না"
-        },
-        {
-          "cluster_id": 646,
-          "slug": "national-646",
-          "actor_links": 3,
-          "source_links": 0,
-          "claim_count": 3,
-          "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         }
       ]
     },
@@ -35051,6 +35130,14 @@
           "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 723,
           "slug": "national-723",
           "actor_links": 1,
@@ -35073,14 +35160,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 916,
-          "slug": "politics-916",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "এআই-রোবোটিকসের যুগেও বড় বড় দলের নেতারা মেয়েদের বিয়ের বয়স কমানোর যুক্তি দিচ্ছেন: ববি হাজ্জাজ"
         }
       ]
     },
@@ -36651,7 +36730,7 @@
           "slug": "national-826",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         },
         {
@@ -37775,8 +37854,8 @@
       "cluster_id": 826,
       "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়",
       "first_seen": "2026-10-12T13:32:17.776Z",
-      "last_update": "2026-10-12T20:44:24.908Z",
-      "claim_count": 8,
+      "last_update": "2026-10-12T21:14:01.236Z",
+      "claim_count": 9,
       "events": [
         {
           "ts": "2026-10-12T12:00:00.000Z",
@@ -37875,6 +37954,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/opinion/column/onlmscz4rd"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:20:52.000Z",
+          "kind": "evidence",
+          "claim_id": 179967,
+          "claim_text": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cvde8l58z9p2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:20:52.000Z",
+          "kind": "evidence",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cvde8l58z9p2o?at_medium=RSS&at_campaign=rss"
           }
         },
         {
@@ -38103,6 +38204,24 @@
           "kind": "verify",
           "claim_id": 203307,
           "claim_text": "বাংলাদেশ থেকে অর্থ পাচার কি কমানো সম্ভব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.442Z",
+          "kind": "claim",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -38635,7 +38754,7 @@
       "cluster_id": 920,
       "headline": "দিল্লিতে রাহুল গান্ধীর নেতৃত্বে বিশাল পদযাত্রা, কমেনি উত্তেজনা",
       "first_seen": "2026-10-12T19:23:18.161Z",
-      "last_update": "2026-10-12T20:44:24.929Z",
+      "last_update": "2026-10-12T21:14:01.248Z",
       "claim_count": 2,
       "events": [
         {
@@ -38714,7 +38833,7 @@
       "cluster_id": 924,
       "headline": "আমিই ইতিহাসের সেরা ফুটবলার: রোনালদো",
       "first_seen": "2026-10-12T19:52:20.529Z",
-      "last_update": "2026-10-12T20:44:24.927Z",
+      "last_update": "2026-10-12T21:14:01.247Z",
       "claim_count": 2,
       "events": [
         {
@@ -39230,7 +39349,7 @@
       "cluster_id": 906,
       "headline": "Federal agents search Ilhan Omar’s home as part of fraud investigation – reports",
       "first_seen": "2026-10-12T18:30:56.088Z",
-      "last_update": "2026-10-12T20:44:24.911Z",
+      "last_update": "2026-10-12T21:14:01.237Z",
       "claim_count": 2,
       "events": [
         {
@@ -50031,6 +50150,14 @@
           "headline": "রোজায় খাদ্য সরবরাহে ‘বড় ধরনের’ সমস্যা হবে না, বিশ্বাস মন্ত্রীর"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -50061,14 +50188,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "রিয়াদে ফ্লাইট বন্ধ: ৩৪৩১ যাত্রীকে বিকল্প পথে সৌদি পাঠানোর চেষ্টা"
-        },
-        {
-          "cluster_id": 652,
-          "slug": "national-652",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 5,
-          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         }
       ]
     },
@@ -65444,6 +65563,14 @@
           "headline": "রমজানে খাদ্যপণ্যের সংকটের শঙ্কা নেই: খাদ্যমন্ত্রী"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -65474,14 +65601,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "রিয়াদে ফ্লাইট বন্ধ: ৩৪৩১ যাত্রীকে বিকল্প পথে সৌদি পাঠানোর চেষ্টা"
-        },
-        {
-          "cluster_id": 652,
-          "slug": "national-652",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 5,
-          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         }
       ]
     },
@@ -94130,6 +94249,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -94168,14 +94295,6 @@
           "source_links": 0,
           "claim_count": 5,
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
-        },
-        {
-          "cluster_id": 636,
-          "slug": "national-636",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -98291,6 +98410,14 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 1,
@@ -98321,14 +98448,6 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 696,
-          "slug": "national-696",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "সৌদি আরব, কাতার ও এসিডব্লিউএ পাওয়ারের সঙ্গে বিদ্যুৎ প্রতিমন্ত্রীর বৈঠক"
         }
       ]
     },
@@ -104143,7 +104262,7 @@
           "slug": "national-826",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         }
       ]
@@ -110527,6 +110646,14 @@
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 3,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 578,
           "slug": "national-578",
           "actor_links": 3,
@@ -110549,14 +110676,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "চুরি যাওয়া ল্যাপটপের অবস্থান জানালেন জার্মান পর্যটক, তবু কেন উদ্ধার হচ্ছে না"
-        },
-        {
-          "cluster_id": 646,
-          "slug": "national-646",
-          "actor_links": 3,
-          "source_links": 0,
-          "claim_count": 3,
-          "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         }
       ]
     },
@@ -114129,6 +114248,14 @@
           "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 723,
           "slug": "national-723",
           "actor_links": 1,
@@ -114151,14 +114278,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 916,
-          "slug": "politics-916",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "এআই-রোবোটিকসের যুগেও বড় বড় দলের নেতারা মেয়েদের বিয়ের বয়স কমানোর যুক্তি দিচ্ছেন: ববি হাজ্জাজ"
         }
       ]
     },
@@ -119942,7 +120061,7 @@
           "slug": "national-826",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         },
         {
@@ -121808,6 +121927,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -121846,14 +121973,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -124368,7 +124487,7 @@
           "slug": "national-826",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         },
         {
@@ -127838,8 +127957,8 @@
       "cluster_id": 826,
       "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়",
       "first_seen": "2026-10-12T13:32:17.776Z",
-      "last_update": "2026-10-12T20:44:24.908Z",
-      "claim_count": 8,
+      "last_update": "2026-10-12T21:14:01.236Z",
+      "claim_count": 9,
       "events": [
         {
           "ts": "2026-10-12T12:00:00.000Z",
@@ -127938,6 +128057,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/opinion/column/onlmscz4rd"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:20:52.000Z",
+          "kind": "evidence",
+          "claim_id": 179967,
+          "claim_text": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cvde8l58z9p2o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:20:52.000Z",
+          "kind": "evidence",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cvde8l58z9p2o?at_medium=RSS&at_campaign=rss"
           }
         },
         {
@@ -128166,6 +128307,24 @@
           "kind": "verify",
           "claim_id": 203307,
           "claim_text": "বাংলাদেশ থেকে অর্থ পাচার কি কমানো সম্ভব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.442Z",
+          "kind": "claim",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208642,
+          "claim_text": "সাবেক দুই সেনা কর্মকর্তাকে গ্রেফতার নিয়ে কী বলছে পুলিশ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -128879,7 +129038,7 @@
       "cluster_id": 837,
       "headline": "মোহাম্মদপুরে পরিত্যক্ত ভ্যানিটি ব্যাগে ছিল ৯টি ককটেল",
       "first_seen": "2026-10-12T14:00:13.244Z",
-      "last_update": "2026-10-12T20:44:24.928Z",
+      "last_update": "2026-10-12T21:14:01.248Z",
       "claim_count": 5,
       "events": [
         {
@@ -129217,7 +129376,7 @@
       "cluster_id": 838,
       "headline": "মক্কা-মদিনার ওপর হুমকি এলে বাংলাদেশ বসে থাকবে না: প্রতিমন্ত্রী শামা ওবায়েদ",
       "first_seen": "2026-10-12T14:00:13.248Z",
-      "last_update": "2026-10-12T20:44:24.931Z",
+      "last_update": "2026-10-12T21:14:01.250Z",
       "claim_count": 4,
       "events": [
         {
@@ -129388,6 +129547,14 @@
           "headline": "নভেম্বরে কক্সবাজার আন্তর্জাতিক বিমানবন্দর উদ্বোধনের প্রস্তুতি: বেসামরিক বিমান পরিবহনমন্ত্রী"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -129410,14 +129577,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "রিয়াদে ফ্লাইট বন্ধ: ৩৪৩১ যাত্রীকে বিকল্প পথে সৌদি পাঠানোর চেষ্টা"
-        },
-        {
-          "cluster_id": 636,
-          "slug": "national-636",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -130005,6 +130164,14 @@
           "headline": "মক্কা-মদিনার ওপর হুমকি এলে বাংলাদেশ বসে থাকবে না: প্রতিমন্ত্রী শামা ওবায়েদ"
         },
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -130035,14 +130202,6 @@
           "source_links": 0,
           "claim_count": 5,
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
-        },
-        {
-          "cluster_id": 636,
-          "slug": "national-636",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 3,
-          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -130541,7 +130700,7 @@
       "cluster_id": 852,
       "headline": "চ্যাম্পিয়ন্স ট্রফিতে বাংলাদেশ দলে যারা, ম্যানেজারের দায়িত্বে রাহুল",
       "first_seen": "2026-10-12T15:02:23.464Z",
-      "last_update": "2026-10-12T20:44:24.924Z",
+      "last_update": "2026-10-12T21:14:01.244Z",
       "claim_count": 3,
       "events": [
         {
@@ -130720,7 +130879,7 @@
       "cluster_id": 853,
       "headline": "বর্জ্য স্থানান্তর কেন্দ্রগুলোর সৌন্দর্যবর্ধন করবে ডিএসসিসি",
       "first_seen": "2026-10-12T15:02:23.470Z",
-      "last_update": "2026-10-12T20:44:24.930Z",
+      "last_update": "2026-10-12T21:14:01.249Z",
       "claim_count": 2,
       "events": [
         {
@@ -131613,7 +131772,7 @@
       "cluster_id": 867,
       "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত",
       "first_seen": "2026-10-12T16:00:13.274Z",
-      "last_update": "2026-10-12T20:44:24.916Z",
+      "last_update": "2026-10-12T21:14:01.240Z",
       "claim_count": 3,
       "events": [
         {
@@ -132762,7 +132921,7 @@
       "cluster_id": 880,
       "headline": "নবায়নযোগ্য জ্বালানির ব্যবহার বাড়ানোর তাগিদ মন্ত্রিসভার",
       "first_seen": "2026-10-12T17:00:25.603Z",
-      "last_update": "2026-10-12T20:44:24.923Z",
+      "last_update": "2026-10-12T21:14:01.243Z",
       "claim_count": 2,
       "events": [
         {
@@ -133386,7 +133545,7 @@
       "cluster_id": 883,
       "headline": "উত্তরায় জাতীয় পার্টির চেয়ারম্যান জি এম কাদেরের বাসভবনে হামলা, ভাঙচুর",
       "first_seen": "2026-10-12T17:00:25.624Z",
-      "last_update": "2026-10-12T20:44:24.922Z",
+      "last_update": "2026-10-12T21:14:01.243Z",
       "claim_count": 6,
       "events": [
         {
@@ -134639,7 +134798,7 @@
       "cluster_id": 893,
       "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা",
       "first_seen": "2026-10-12T17:30:50.475Z",
-      "last_update": "2026-10-12T20:44:24.921Z",
+      "last_update": "2026-10-12T21:14:01.242Z",
       "claim_count": 4,
       "events": [
         {
@@ -135042,7 +135201,7 @@
       "cluster_id": 899,
       "headline": "পাঁচ ধাপে ইউনিয়ন পরিষদ নির্বাচন শুরু ২১ জানুয়ারি; তফসিল ঘোষণা ইসির",
       "first_seen": "2026-10-12T18:04:49.341Z",
-      "last_update": "2026-10-12T20:44:24.932Z",
+      "last_update": "2026-10-12T21:14:01.251Z",
       "claim_count": 3,
       "events": [
         {
@@ -135941,7 +136100,7 @@
       "cluster_id": 906,
       "headline": "Federal agents search Ilhan Omar’s home as part of fraud investigation – reports",
       "first_seen": "2026-10-12T18:30:56.088Z",
-      "last_update": "2026-10-12T20:44:24.911Z",
+      "last_update": "2026-10-12T21:14:01.237Z",
       "claim_count": 2,
       "events": [
         {
@@ -136020,7 +136179,7 @@
       "cluster_id": 907,
       "headline": "সৌদি আরবে বাংলাদেশিদের সতর্ক থাকার আহ্বান দূতাবাসের",
       "first_seen": "2026-10-12T18:30:56.097Z",
-      "last_update": "2026-10-12T20:44:24.926Z",
+      "last_update": "2026-10-12T21:14:01.245Z",
       "claim_count": 4,
       "events": [
         {
@@ -136736,6 +136895,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 838,
           "slug": "national-838",
           "actor_links": 1,
@@ -136774,14 +136941,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -137034,7 +137193,7 @@
       "cluster_id": 920,
       "headline": "দিল্লিতে রাহুল গান্ধীর নেতৃত্বে বিশাল পদযাত্রা, কমেনি উত্তেজনা",
       "first_seen": "2026-10-12T19:23:18.161Z",
-      "last_update": "2026-10-12T20:44:24.929Z",
+      "last_update": "2026-10-12T21:14:01.248Z",
       "claim_count": 2,
       "events": [
         {
@@ -137343,7 +137502,7 @@
       "cluster_id": 924,
       "headline": "আমিই ইতিহাসের সেরা ফুটবলার: রোনালদো",
       "first_seen": "2026-10-12T19:52:20.529Z",
-      "last_update": "2026-10-12T20:44:24.927Z",
+      "last_update": "2026-10-12T21:14:01.247Z",
       "claim_count": 2,
       "events": [
         {
@@ -138137,7 +138296,7 @@
       "cluster_id": 932,
       "headline": "দিল্লিতে বিমসটেকের স্বরাষ্ট্রমন্ত্রী পর্যায়ের বৈঠকে যাচ্ছেন না সালাহউদ্দিন",
       "first_seen": "2026-10-12T20:17:31.353Z",
-      "last_update": "2026-10-12T20:44:24.936Z",
+      "last_update": "2026-10-12T21:14:01.258Z",
       "claim_count": 2,
       "events": [
         {
@@ -138366,7 +138525,7 @@
       "cluster_id": 937,
       "headline": "সরকার বিধবা কার্ড চালু করলে সংসদ সদস্যদের স্ত্রীরাই সবার আগে নেবে: হাসনাত আবদুল্লাহ",
       "first_seen": "2026-10-12T20:44:24.912Z",
-      "last_update": "2026-10-12T20:44:24.915Z",
+      "last_update": "2026-10-12T21:14:01.238Z",
       "claim_count": 2,
       "events": [
         {
@@ -138494,7 +138653,7 @@
       "cluster_id": 938,
       "headline": "সিলেটে কিশোরী ধর্ষণ মামলায় যুবকের মৃত্যুদণ্ড",
       "first_seen": "2026-10-12T20:44:24.917Z",
-      "last_update": "2026-10-12T20:44:24.920Z",
+      "last_update": "2026-10-12T21:14:01.240Z",
       "claim_count": 2,
       "events": [
         {
@@ -138771,12 +138930,266 @@
     },
     "national-940": {
       "cluster_id": 940,
-      "headline": "স্মৃতির পাতায় এক বছর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সংগীতশিল্পী ও অভিনেতা রুশনাফ ওয়াদুদ আর নেই",
+      "first_seen": "2026-10-12T21:14:01.252Z",
+      "last_update": "2026-10-12T21:14:01.254Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T12:51:11.000Z",
+          "kind": "evidence",
+          "claim_id": 208794,
+          "claim_text": "সংগীতশিল্পী ও অভিনেতা রুশনাফ ওয়াদুদ আর নেই",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLWHpNMUNyY2JOa0IydGxOZmg4Mk54eTcyR0lWcVdJRVBYUV8xdzlwNThmQ1NLUlhjd1RFZnpVdm1IUnE4S0lHM016Q2Y2cmVxdlI1bDhIeTd6NmxFODBISEpYQWxNdUtGdnp5cXpUNkxrZnNJYUE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:40:05.000Z",
+          "kind": "evidence",
+          "claim_id": 208794,
+          "claim_text": "সংগীতশিল্পী ও অভিনেতা রুশনাফ ওয়াদুদ আর নেই",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNMUY1TU9Xb1F1aWNxZVBFeFF5aGE0SFdhbFpEdmNybk1WeURSODlUV25wV2R0N1JLUXhWaXhsc2U3OEUxSHItYV9WVE43ZWVvcTlldDd2LWZMNkM4YzNOdDZQeG5SVEUwOU5qemEwc1ZTSXBleFpSOV9weW93VFdHbk5POENzelVqcFNVVVpFRkZGSXl4dUtEbU1vcXJ4WWhvVWhKR0xqOWhkdDhnYnd2UFptS1VyVU9rQ1ZnU3BZM3p3aExnbW9fWV9VUTlUeVJwclFjVURuaFhyYXIwRElqdWhucEJ0QnVnMDdMbGFEckh2US05cGFjTVA0bms0Q1lGNG9GZ0x3TnBhOTh0TTB6SC1GX3MzcXFRT1NPTWNhWGJlM09oRERGblJjQ2xVU0daOTlYUFVRVE1KNHNJNG9kNGJMams0NW9jWkFpdTRlTzUtaG1ibjF0ZWVXRG03cjhma0JjNTlSUWxlU3VmRzVYZmFfNUM4QnJDR1gzazJ3NE01QzlqLWd2RUc4aFFqa1JBXzJfVkt0UXZwdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:40:05.000Z",
+          "kind": "evidence",
+          "claim_id": 208795,
+          "claim_text": "সংগীতশিল্পী রুশনাফ মারা গেছেন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNMUY1TU9Xb1F1aWNxZVBFeFF5aGE0SFdhbFpEdmNybk1WeURSODlUV25wV2R0N1JLUXhWaXhsc2U3OEUxSHItYV9WVE43ZWVvcTlldDd2LWZMNkM4YzNOdDZQeG5SVEUwOU5qemEwc1ZTSXBleFpSOV9weW93VFdHbk5POENzelVqcFNVVVpFRkZGSXl4dUtEbU1vcXJ4WWhvVWhKR0xqOWhkdDhnYnd2UFptS1VyVU9rQ1ZnU3BZM3p3aExnbW9fWV9VUTlUeVJwclFjVURuaFhyYXIwRElqdWhucEJ0QnVnMDdMbGFEckh2US05cGFjTVA0bms0Q1lGNG9GZ0x3TnBhOTh0TTB6SC1GX3MzcXFRT1NPTWNhWGJlM09oRERGblJjQ2xVU0daOTlYUFVRVE1KNHNJNG9kNGJMams0NW9jWkFpdTRlTzUtaG1ibjF0ZWVXRG03cjhma0JjNTlSUWxlU3VmRzVYZmFfNUM4QnJDR1gzazJ3NE01QzlqLWd2RUc4aFFqa1JBXzJfVkt0UXZwdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.753Z",
+          "kind": "claim",
+          "claim_id": 208794,
+          "claim_text": "সংগীতশিল্পী ও অভিনেতা রুশনাফ ওয়াদুদ আর নেই"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.756Z",
+          "kind": "claim",
+          "claim_id": 208795,
+          "claim_text": "সংগীতশিল্পী রুশনাফ মারা গেছেন"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208794,
+          "claim_text": "সংগীতশিল্পী ও অভিনেতা রুশনাফ ওয়াদুদ আর নেই",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208795,
+          "claim_text": "সংগীতশিল্পী রুশনাফ মারা গেছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
+        },
+        {
+          "cluster_id": 292,
+          "slug": "national-292",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
+        }
+      ]
+    },
+    "national-941": {
+      "cluster_id": 941,
+      "headline": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+      "first_seen": "2026-10-12T21:14:01.255Z",
+      "last_update": "2026-10-12T21:14:01.257Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T13:09:54.000Z",
+          "kind": "evidence",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809372"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:35:46.000Z",
+          "kind": "evidence",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEdXNKMmR5NWNlU0lYbjdiWmJEYjJ4OXZJZUpkRHRsd0xNVm0zMVZWdk43YkVqZ0Rpc05RRVBVZlp3blYzaTAwMm1rclBNbzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:35:46.000Z",
+          "kind": "evidence",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEdXNKMmR5NWNlU0lYbjdiWmJEYjJ4OXZJZUpkRHRsd0xNVm0zMVZWdk43YkVqZ0Rpc05RRVBVZlp3blYzaTAwMm1rclBNbzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.758Z",
+          "kind": "claim",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.760Z",
+          "kind": "claim",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
+    },
+    "national-942": {
+      "cluster_id": 942,
+      "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+      "first_seen": "2026-10-12T21:14:01.611Z",
+      "last_update": "2026-10-12T21:14:01.613Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-12T20:16:56.000Z",
+          "kind": "evidence",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fnsozewtkc"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.762Z",
+          "kind": "claim",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208798,
+          "claim_text": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 3,
+          "source_links": 0,
+          "claim_count": 5,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
+        },
+        {
+          "cluster_id": 652,
+          "slug": "national-652",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 5,
+          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
+        },
+        {
+          "cluster_id": 623,
+          "slug": "national-623",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 916,
+          "slug": "politics-916",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এআই-রোবোটিকসের যুগেও বড় বড় দলের নেতারা মেয়েদের বিয়ের বয়স কমানোর যুক্তি দিচ্ছেন: ববি হাজ্জাজ"
+        },
+        {
+          "cluster_id": 838,
+          "slug": "national-838",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মক্কা-মদিনার ওপর হুমকি এলে বাংলাদেশ বসে থাকবে না: প্রতিমন্ত্রী শামা ওবায়েদ"
+        }
+      ]
     },
     "national-943": {
       "cluster_id": 943,
@@ -148374,6 +148787,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 916,
           "slug": "politics-916",
           "actor_links": 1,
@@ -148412,14 +148833,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -148791,7 +149204,7 @@
       "cluster_id": 837,
       "headline": "মোহাম্মদপুরে পরিত্যক্ত ভ্যানিটি ব্যাগে ছিল ৯টি ককটেল",
       "first_seen": "2026-10-12T14:00:13.244Z",
-      "last_update": "2026-10-12T20:44:24.928Z",
+      "last_update": "2026-10-12T21:14:01.248Z",
       "claim_count": 5,
       "events": [
         {
@@ -149491,6 +149904,14 @@
       ],
       "related": [
         {
+          "cluster_id": 942,
+          "slug": "national-942",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
+        },
+        {
           "cluster_id": 838,
           "slug": "national-838",
           "actor_links": 1,
@@ -149529,14 +149950,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 2,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -149659,11 +150072,81 @@
     },
     "politics-941": {
       "cluster_id": 941,
-      "headline": "রাড্ডা স্বাস্থ্যকেন্দ্রে হামলা: পদত্যাগ করছেন বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+      "first_seen": "2026-10-12T21:14:01.255Z",
+      "last_update": "2026-10-12T21:14:01.257Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T13:09:54.000Z",
+          "kind": "evidence",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/809372"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:35:46.000Z",
+          "kind": "evidence",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEdXNKMmR5NWNlU0lYbjdiWmJEYjJ4OXZJZUpkRHRsd0xNVm0zMVZWdk43YkVqZ0Rpc05RRVBVZlp3blYzaTAwMm1rclBNbzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T13:35:46.000Z",
+          "kind": "evidence",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEdXNKMmR5NWNlU0lYbjdiWmJEYjJ4OXZJZUpkRHRsd0xNVm0zMVZWdk43YkVqZ0Rpc05RRVBVZlp3blYzaTAwMm1rclBNbzA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.758Z",
+          "kind": "claim",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.760Z",
+          "kind": "claim",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু"
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208796,
+          "claim_text": "মানিকছড়িতে ফ্যামিলি কার্ড কার্যক্রম বাস্তবায়নে তথ্য সংগ্রহ বিষয়ক অবহিতকরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-12T21:33:40.844Z",
+          "kind": "verify",
+          "claim_id": 208797,
+          "claim_text": "ফুলবাড়িয়ায় ফ্যামিলি কার্ডের তথ্য সংগ্রহ শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-955": {
@@ -153519,7 +154002,7 @@
       "cluster_id": 852,
       "headline": "চ্যাম্পিয়ন্স ট্রফিতে বাংলাদেশ দলে যারা, ম্যানেজারের দায়িত্বে রাহুল",
       "first_seen": "2026-10-12T15:02:23.464Z",
-      "last_update": "2026-10-12T20:44:24.924Z",
+      "last_update": "2026-10-12T21:14:01.244Z",
       "claim_count": 3,
       "events": [
         {
