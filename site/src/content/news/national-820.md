@@ -1,5 +1,7 @@
 ---
 title: "বেপরোয়া গতিতে চলছিল অটোরিকশা, ধাওয়া করে ধরার পর জানা গেলো হত্যাকাণ্ডের কথা"
+thumbnail: "/images/national-820.webp"
+thumbnailAlt: "বেপরোয়া গতিতে চলছিল অটোরিকশা, ধাওয়া করে ধরার পর জানা গেলো হত্যাকাণ্ডের কথা — যাচাইডেস্ক"
 seoTitle: "বেপরোয়া গতিতে চলছিল অটোরিকশা, ধাওয়া করে ধরার পর জানা গেলো হত্যাকাণ্ডের…"
 excerpt: "Image ৬: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৭: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন নারায়ণগঞ্জের বন্দরে ভাঙ্গারি ব্যব"
 seoDescription: "Image ৬: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৭: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন নারায়ণগ…"
