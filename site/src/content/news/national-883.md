@@ -1,5 +1,7 @@
 ---
 title: "উত্তরায় জাতীয় পার্টির চেয়ারম্যান জি এম কাদেরের বাসভবনে হামলা, ভাঙচুর"
+thumbnail: "/images/national-883.webp"
+thumbnailAlt: "উত্তরায় জাতীয় পার্টির চেয়ারম্যান জি এম কাদেরের বাসভবনে হামলা, ভাঙচুর — ছবি: প্রথম আলো"
 seoTitle: "উত্তরায় জাতীয় পার্টির চেয়ারম্যান জি এম কাদেরের বাসভবনে হামলা, ভাঙচুর"
 excerpt: "Image ১৫: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৬: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন চকবাজারে আগুন নেভেনি, অসুস্থ হয়"
 seoDescription: "Image ১৫: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৬: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন চকবাজ…"
