@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3371,
+    "storyCount": 3373,
     "kinds": [
       "claim",
       "evidence",
@@ -8239,7 +8239,7 @@
       "cluster_id": 1000,
       "headline": "‘ব্রেকিং ব্যাড’ অভিনেতার আত্মহত্যা, ৩৪ বছরেই চলে গেলেন আরজে মেটি",
       "first_seen": "2026-10-13T05:37:40.046Z",
-      "last_update": "2026-10-13T05:37:40.049Z",
+      "last_update": "2026-10-13T06:04:25.241Z",
       "claim_count": 2,
       "events": [
         {
@@ -12995,7 +12995,7 @@
       "cluster_id": 999,
       "headline": "বিদ্যুৎ কবে আসবে, সুপর্ণা!",
       "first_seen": "2026-10-13T05:37:40.042Z",
-      "last_update": "2026-10-13T05:37:40.045Z",
+      "last_update": "2026-10-13T06:04:25.240Z",
       "claim_count": 2,
       "events": [
         {
@@ -14837,6 +14837,84 @@
           "kind": "verify",
           "claim_id": 256000,
           "claim_text": "হ্যাকারদের কবলে ফ্রান্সের সুপারমার্কেট, ফ্রিজের তাপমাত্রা ৫০ ডিগ্রিতে উঠে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1006": {
+      "cluster_id": 1006,
+      "headline": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+      "first_seen": "2026-10-13T06:04:25.593Z",
+      "last_update": "2026-10-13T06:04:25.597Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:45:03.000Z",
+          "kind": "evidence",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/37-journalists-detained-while-covering-protests-against-the-election-commission-of-india/"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.946Z",
+          "kind": "claim",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1010": {
+      "cluster_id": 1010,
+      "headline": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
+      "first_seen": "2026-10-13T06:04:25.615Z",
+      "last_update": "2026-10-13T06:04:25.618Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/qpfgd7u1xw"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.960Z",
+          "kind": "claim",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -25276,14 +25354,6 @@
       ],
       "related": [
         {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টানা তৃতীয় দিনের মতো সৌদির রাজধানী রিয়াদ লক্ষ্য করে হুতিদের ক্ষেপণাস্ত্র হামলা"
-        },
-        {
           "cluster_id": 979,
           "slug": "national-979",
           "actor_links": 0,
@@ -25322,6 +25392,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -42396,7 +42474,7 @@
       "cluster_id": 1000,
       "headline": "‘ব্রেকিং ব্যাড’ অভিনেতার আত্মহত্যা, ৩৪ বছরেই চলে গেলেন আরজে মেটি",
       "first_seen": "2026-10-13T05:37:40.046Z",
-      "last_update": "2026-10-13T05:37:40.049Z",
+      "last_update": "2026-10-13T06:04:25.241Z",
       "claim_count": 2,
       "events": [
         {
@@ -42717,38 +42795,158 @@
     },
     "national-1006": {
       "cluster_id": 1006,
-      "headline": "এআই গবেষণায় এআইইউবি ও ব্রেন স্টেশন ২৩-এর সমঝোতা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+      "first_seen": "2026-10-13T06:04:25.593Z",
+      "last_update": "2026-10-13T06:04:25.597Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:45:03.000Z",
+          "kind": "evidence",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/37-journalists-detained-while-covering-protests-against-the-election-commission-of-india/"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.946Z",
+          "kind": "claim",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258882,
+          "claim_text": "ভারতে বিক্ষোভের খবর সংগ্রহে গিয়ে আটক ৩৭ সাংবাদিক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1007": {
       "cluster_id": 1007,
-      "headline": "মা গৃহপরিচারিকা, থাকেন ভাড়া বাসায়, স্থায়ী ঠিকানা না থাকায় আটকে গেল শিক্ষক পদে নিয়োগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নেদারল্যান্ডসের অভিজ্ঞতায় দেশে পানি ব্যবস্থাপনা উন্নয়নে আগ্রহী সরকার: প্রতিমন্ত্রী",
+      "first_seen": "2026-10-13T06:04:25.600Z",
+      "last_update": "2026-10-13T06:04:25.603Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:40:04.000Z",
+          "kind": "evidence",
+          "claim_id": 258883,
+          "claim_text": "নেদারল্যান্ডসের অভিজ্ঞতায় দেশে পানি ব্যবস্থাপনা উন্নয়নে আগ্রহী সরকার: প্রতিমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/government-keen-on-improving-water-management-in-bangladesh-drawing-on-netherlands-experience-state-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.949Z",
+          "kind": "claim",
+          "claim_id": 258883,
+          "claim_text": "নেদারল্যান্ডসের অভিজ্ঞতায় দেশে পানি ব্যবস্থাপনা উন্নয়নে আগ্রহী সরকার: প্রতিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258883,
+          "claim_text": "নেদারল্যান্ডসের অভিজ্ঞতায় দেশে পানি ব্যবস্থাপনা উন্নয়নে আগ্রহী সরকার: প্রতিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1008": {
       "cluster_id": 1008,
-      "headline": "বাংলাদেশ ট্যুরিস্ট পুলিশে চাকরি, বেতন নতুন স্কেল অনুযায়ী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নিউইয়র্কে ড. ইউনূসের সঙ্গে কী ঘটল?",
+      "first_seen": "2026-10-13T06:04:25.605Z",
+      "last_update": "2026-10-13T06:04:25.608Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:34:14.000Z",
+          "kind": "evidence",
+          "claim_id": 258884,
+          "claim_text": "নিউইয়র্কে ড. ইউনূসের সঙ্গে কী ঘটল?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/dr-younus-under-protest-new-york/"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.953Z",
+          "kind": "claim",
+          "claim_id": 258884,
+          "claim_text": "নিউইয়র্কে ড. ইউনূসের সঙ্গে কী ঘটল?"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258884,
+          "claim_text": "নিউইয়র্কে ড. ইউনূসের সঙ্গে কী ঘটল?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1009": {
       "cluster_id": 1009,
-      "headline": "চট্টগ্রাম মেডিকেল কলেজ হাসপাতালের ক্যানটিনে রুটির খামিরে তেলাপোকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নেশার সর্বনাশা প্রভাবে ধীরে ধীরে মানুষের স্বাভাবিক সত্তা হারিয়ে যায়",
+      "first_seen": "2026-10-13T06:04:25.610Z",
+      "last_update": "2026-10-13T06:04:25.613Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 258885,
+          "claim_text": "নেশার সর্বনাশা প্রভাবে ধীরে ধীরে মানুষের স্বাভাবিক সত্তা হারিয়ে যায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://trust.prothomalo.com/activities/drug-abuse/pldv2z5yqm"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.957Z",
+          "kind": "claim",
+          "claim_id": 258885,
+          "claim_text": "নেশার সর্বনাশা প্রভাবে ধীরে ধীরে মানুষের স্বাভাবিক সত্তা হারিয়ে যায়"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258885,
+          "claim_text": "নেশার সর্বনাশা প্রভাবে ধীরে ধীরে মানুষের স্বাভাবিক সত্তা হারিয়ে যায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-101": {
@@ -42792,11 +42990,41 @@
     },
     "national-1010": {
       "cluster_id": 1010,
-      "headline": "নেতৃত্ব একটি আজীবন চর্চা, বিওয়াইএলসি গ্র্যাজুয়েশন সেরিমনিতে বললেন স্থানীয় সরকারমন্ত্রী আবদুল মঈন খান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
+      "first_seen": "2026-10-13T06:04:25.615Z",
+      "last_update": "2026-10-13T06:04:25.618Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T05:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/durporobash/qpfgd7u1xw"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:20:37.960Z",
+          "kind": "claim",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’"
+        },
+        {
+          "ts": "2026-10-13T06:20:38.047Z",
+          "kind": "verify",
+          "claim_id": 258886,
+          "claim_text": "জাপানের মোরিওকা শহরের ঐতিহ্য ও আনন্দের উৎসব ‘সানসা ওদোরি’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1012": {
@@ -80847,14 +81075,6 @@
       ],
       "related": [
         {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টানা তৃতীয় দিনের মতো সৌদির রাজধানী রিয়াদ লক্ষ্য করে হুতিদের ক্ষেপণাস্ত্র হামলা"
-        },
-        {
           "cluster_id": 979,
           "slug": "national-979",
           "actor_links": 0,
@@ -80893,6 +81113,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -101301,14 +101529,6 @@
           "headline": "সাজেকে দুই সংগঠনের বিক্ষোভ, তিন ঘণ্টা সড়কে আটকে ছিল পর্যটকদের গাড়িবহর"
         },
         {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টানা তৃতীয় দিনের মতো সৌদির রাজধানী রিয়াদ লক্ষ্য করে হুতিদের ক্ষেপণাস্ত্র হামলা"
-        },
-        {
           "cluster_id": 979,
           "slug": "national-979",
           "actor_links": 0,
@@ -101339,6 +101559,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 874,
+          "slug": "national-874",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -145040,7 +145268,7 @@
       "cluster_id": 974,
       "headline": "ধর্ষণে অন্তঃসত্ত্বা ষষ্ঠ শ্রেণির ছাত্রী: মাদ্রাসাশিক্ষক ও দুই ছাত্রের বিরুদ্ধে মামলা",
       "first_seen": "2026-10-13T02:55:05.119Z",
-      "last_update": "2026-10-13T05:37:40.052Z",
+      "last_update": "2026-10-13T06:04:25.245Z",
       "claim_count": 2,
       "events": [
         {
@@ -145324,7 +145552,7 @@
       "cluster_id": 979,
       "headline": "রিয়াদে টানা তৃতীয় দিনের মতো ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, বিস্ফোরণে আতঙ্ক",
       "first_seen": "2026-10-13T04:08:50.203Z",
-      "last_update": "2026-10-13T05:37:40.041Z",
+      "last_update": "2026-10-13T06:04:25.237Z",
       "claim_count": 12,
       "events": [
         {
@@ -146118,7 +146346,7 @@
       "cluster_id": 981,
       "headline": "তাজমীন হত্যাকাণ্ড: প্রেমিক রাজুকে নিয়ে কুমিল্লা ডিবির নাটকীয়তা",
       "first_seen": "2026-10-13T04:08:50.219Z",
-      "last_update": "2026-10-13T05:37:40.051Z",
+      "last_update": "2026-10-13T06:04:25.243Z",
       "claim_count": 2,
       "events": [
         {
@@ -162221,7 +162449,7 @@
       "cluster_id": 999,
       "headline": "বিদ্যুৎ কবে আসবে, সুপর্ণা!",
       "first_seen": "2026-10-13T05:37:40.042Z",
-      "last_update": "2026-10-13T05:37:40.045Z",
+      "last_update": "2026-10-13T06:04:25.240Z",
       "claim_count": 2,
       "events": [
         {
