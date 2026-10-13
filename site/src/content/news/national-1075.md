@@ -1,5 +1,7 @@
 ---
 title: "আওয়ামী লীগের সঙ্গে সমঝোতার কোনো সম্ভাবনা নেই: উপদেষ্টা জাহেদ"
+thumbnail: "/images/national-1075.webp"
+thumbnailAlt: "আওয়ামী লীগের সঙ্গে সমঝোতার কোনো সম্ভাবনা নেই: উপদেষ্টা জাহেদ — যাচাইডেস্ক"
 seoTitle: "আওয়ামী লীগের সঙ্গে সমঝোতার কোনো সম্ভাবনা নেই: উপদেষ্টা জাহেদ"
 excerpt: "Image ৬: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৭: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্রকাশ: মঙ্গলবার, ১৩ অক্টোবর, ২০২"
 seoDescription: "Image ৬: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৭: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্রকাশ:…"
