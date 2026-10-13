@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3394,
+    "storyCount": 3397,
     "kinds": [
       "claim",
       "evidence",
@@ -1930,7 +1930,7 @@
       "cluster_id": 1044,
       "headline": "বিশ্বব্যাংক থেকে ‘অতিরিক্ত ১০ বিলিয়ন ডলার ঋণ’ বিষয়ে যা বললেন অর্থমন্ত্রী",
       "first_seen": "2026-10-13T08:36:26.907Z",
-      "last_update": "2026-10-13T08:36:26.911Z",
+      "last_update": "2026-10-13T09:00:49.578Z",
       "claim_count": 2,
       "events": [
         {
@@ -2056,12 +2056,131 @@
     },
     "economy-1054": {
       "cluster_id": 1054,
-      "headline": "এশিয়ান ডুপ্লেক্স টাউন: জীবনের নতুন সংজ্ঞায় এক অভিজাত ঠিকানা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+      "first_seen": "2026-10-13T09:00:49.573Z",
+      "last_update": "2026-10-13T09:00:49.577Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-13T06:24:58.000Z",
+          "kind": "evidence",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ht3vfnvrhs"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:24:58.000Z",
+          "kind": "evidence",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ht3vfnvrhs"
+          }
+        },
+        {
+          "ts": "2026-10-13T08:42:49.000Z",
+          "kind": "evidence",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/rajshahi/974201/%E0%A6%9A%E0%A6%BF%E0%A6%AA%E0%A6%B8-%E0%A6%95%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A5%E0%A6%BE-%E0%A6%AC%E0%A6%B2%E0%A7%87-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B0%E0%A7%87%E0%A6%96%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.688Z",
+          "kind": "claim",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.691Z",
+          "kind": "claim",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1048,
+          "slug": "national-1048",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অধ্যাপক ইউনূসকে হেনস্তার ঘটনায় আইনি পদক্ষেপ নেওয়া হবে: প্রধানমন্ত্রীর তথ্য উপদেষ্টা"
+        },
+        {
+          "cluster_id": 1031,
+          "slug": "national-1031",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মহাসড়ক পার হওয়ার সময় বাসের চাপায় স্বামী–স্ত্রী নিহত"
+        },
+        {
+          "cluster_id": 1030,
+          "slug": "national-1030",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাদারীপুরে বিচারকের বাসভবনের সামনে ককটেল বিস্ফোরণ, বিকালে একই স্থানে এনসিপির সমাবেশ"
+        },
+        {
+          "cluster_id": 1028,
+          "slug": "national-1028",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
+        },
+        {
+          "cluster_id": 957,
+          "slug": "national-957",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
+        },
+        {
+          "cluster_id": 949,
+          "slug": "national-949",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
+        }
+      ]
     },
     "economy-1070": {
       "cluster_id": 1070,
@@ -6107,6 +6226,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -6145,14 +6272,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -8711,7 +8830,7 @@
       "cluster_id": 1047,
       "headline": "চকবাজারে আগুন: উদ্বেগ-উৎকণ্ঠায় ব্যবসায়ীরা",
       "first_seen": "2026-10-13T08:36:26.921Z",
-      "last_update": "2026-10-13T08:36:26.924Z",
+      "last_update": "2026-10-13T09:00:49.581Z",
       "claim_count": 2,
       "events": [
         {
@@ -13184,6 +13303,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -13222,14 +13349,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -13466,7 +13585,7 @@
       "cluster_id": 999,
       "headline": "বিদ্যুৎ কবে আসবে, সুপর্ণা!",
       "first_seen": "2026-10-13T05:37:40.042Z",
-      "last_update": "2026-10-13T08:36:26.935Z",
+      "last_update": "2026-10-13T09:00:49.587Z",
       "claim_count": 2,
       "events": [
         {
@@ -15556,7 +15675,7 @@
       "cluster_id": 1037,
       "headline": "রাহুল গান্ধীর ধাক্কায় মাটিতে লুটিয়ে পড়ার অভিযোগ অন্তঃসত্ত্বা সাংবাদিকের, ‘প্রোপাগান্ডা’ বলছে কংগ্রেস",
       "first_seen": "2026-10-13T08:06:34.309Z",
-      "last_update": "2026-10-13T08:36:26.931Z",
+      "last_update": "2026-10-13T09:00:49.583Z",
       "claim_count": 2,
       "events": [
         {
@@ -27144,6 +27263,14 @@
           "headline": "মিয়ানমারের জান্তা–সংশ্লিষ্ট ব্যবসায়ীর মেয়ের ওপর থেকে নিষেধাজ্ঞা তুলে নিল যুক্তরাষ্ট্র"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -27174,14 +27301,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -41129,6 +41248,14 @@
           "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -41159,14 +41286,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -41683,6 +41802,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -41721,14 +41848,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -42281,6 +42400,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -42319,14 +42446,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -44102,7 +44221,7 @@
       "cluster_id": 1013,
       "headline": "Healey should ‘stay the course’ and repair UK finances, says top IMF economist",
       "first_seen": "2026-10-13T06:34:31.743Z",
-      "last_update": "2026-10-13T08:36:26.934Z",
+      "last_update": "2026-10-13T09:00:49.586Z",
       "claim_count": 3,
       "events": [
         {
@@ -45040,7 +45159,7 @@
       "cluster_id": 1028,
       "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক",
       "first_seen": "2026-10-13T07:36:41.220Z",
-      "last_update": "2026-10-13T08:36:26.932Z",
+      "last_update": "2026-10-13T09:00:49.585Z",
       "claim_count": 4,
       "events": [
         {
@@ -45451,6 +45570,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -45489,14 +45616,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
-        },
-        {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -45579,6 +45698,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -45617,14 +45744,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
-        },
-        {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -45827,7 +45946,7 @@
       "cluster_id": 1037,
       "headline": "রাহুল গান্ধীর ধাক্কায় মাটিতে লুটিয়ে পড়ার অভিযোগ অন্তঃসত্ত্বা সাংবাদিকের, ‘প্রোপাগান্ডা’ বলছে কংগ্রেস",
       "first_seen": "2026-10-13T08:06:34.309Z",
-      "last_update": "2026-10-13T08:36:26.931Z",
+      "last_update": "2026-10-13T09:00:49.583Z",
       "claim_count": 2,
       "events": [
         {
@@ -46189,7 +46308,7 @@
       "cluster_id": 1043,
       "headline": "হুতিরা কি আসলেই এতটা শক্তিশালী হয়ে উঠেছে, সৌদি বাহিনী কেন তাদের ক্ষেপণাস্ত্র ঠেকাতে পারছে না",
       "first_seen": "2026-10-13T08:36:26.897Z",
-      "last_update": "2026-10-13T08:36:26.905Z",
+      "last_update": "2026-10-13T09:00:49.571Z",
       "claim_count": 7,
       "events": [
         {
@@ -46517,7 +46636,7 @@
       "cluster_id": 1044,
       "headline": "বিশ্বব্যাংক থেকে ‘অতিরিক্ত ১০ বিলিয়ন ডলার ঋণ’ বিষয়ে যা বললেন অর্থমন্ত্রী",
       "first_seen": "2026-10-13T08:36:26.907Z",
-      "last_update": "2026-10-13T08:36:26.911Z",
+      "last_update": "2026-10-13T09:00:49.578Z",
       "claim_count": 2,
       "events": [
         {
@@ -46645,7 +46764,7 @@
       "cluster_id": 1045,
       "headline": "দুর্যোগ মোকাবিলায় আগাম প্রস্তুতি ও বাস্তবভিত্তিক যথাযথ নগর পরিকল্পনার আহ্বান রাষ্ট্রপতির",
       "first_seen": "2026-10-13T08:36:26.912Z",
-      "last_update": "2026-10-13T08:36:26.915Z",
+      "last_update": "2026-10-13T09:00:49.579Z",
       "claim_count": 2,
       "events": [
         {
@@ -46773,7 +46892,7 @@
       "cluster_id": 1046,
       "headline": "জয়পুরহাটে আন্তর্জাতিক দুর্যোগ প্রশমন দিবস পালিত",
       "first_seen": "2026-10-13T08:36:26.917Z",
-      "last_update": "2026-10-13T08:36:26.920Z",
+      "last_update": "2026-10-13T09:00:49.580Z",
       "claim_count": 2,
       "events": [
         {
@@ -46852,7 +46971,7 @@
       "cluster_id": 1047,
       "headline": "চকবাজারে আগুন: উদ্বেগ-উৎকণ্ঠায় ব্যবসায়ীরা",
       "first_seen": "2026-10-13T08:36:26.921Z",
-      "last_update": "2026-10-13T08:36:26.924Z",
+      "last_update": "2026-10-13T09:00:49.581Z",
       "claim_count": 2,
       "events": [
         {
@@ -46980,7 +47099,7 @@
       "cluster_id": 1048,
       "headline": "অধ্যাপক ইউনূসকে হেনস্তার ঘটনায় আইনি পদক্ষেপ নেওয়া হবে: প্রধানমন্ত্রীর তথ্য উপদেষ্টা",
       "first_seen": "2026-10-13T08:36:26.926Z",
-      "last_update": "2026-10-13T08:36:26.929Z",
+      "last_update": "2026-10-13T09:00:49.582Z",
       "claim_count": 2,
       "events": [
         {
@@ -47055,6 +47174,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1031,
           "slug": "national-1031",
           "actor_links": 0,
@@ -47093,14 +47220,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
-        },
-        {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -47427,40 +47546,400 @@
       ],
       "related": []
     },
+    "national-1054": {
+      "cluster_id": 1054,
+      "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+      "first_seen": "2026-10-13T09:00:49.573Z",
+      "last_update": "2026-10-13T09:00:49.577Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-13T06:24:58.000Z",
+          "kind": "evidence",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ht3vfnvrhs"
+          }
+        },
+        {
+          "ts": "2026-10-13T06:24:58.000Z",
+          "kind": "evidence",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ht3vfnvrhs"
+          }
+        },
+        {
+          "ts": "2026-10-13T08:42:49.000Z",
+          "kind": "evidence",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/rajshahi/974201/%E0%A6%9A%E0%A6%BF%E0%A6%AA%E0%A6%B8-%E0%A6%95%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A5%E0%A6%BE-%E0%A6%AC%E0%A6%B2%E0%A7%87-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B0%E0%A7%87%E0%A6%96%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.688Z",
+          "kind": "claim",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.691Z",
+          "kind": "claim",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276606,
+          "claim_text": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276607,
+          "claim_text": "বাজারে দুই মেয়েকে রেখে যান মা, পরে স্বজনদের জানান যে সঙ্গে রাখতে চান না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1048,
+          "slug": "national-1048",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অধ্যাপক ইউনূসকে হেনস্তার ঘটনায় আইনি পদক্ষেপ নেওয়া হবে: প্রধানমন্ত্রীর তথ্য উপদেষ্টা"
+        },
+        {
+          "cluster_id": 1031,
+          "slug": "national-1031",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় মহাসড়ক পার হওয়ার সময় বাসের চাপায় স্বামী–স্ত্রী নিহত"
+        },
+        {
+          "cluster_id": 1030,
+          "slug": "national-1030",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাদারীপুরে বিচারকের বাসভবনের সামনে ককটেল বিস্ফোরণ, বিকালে একই স্থানে এনসিপির সমাবেশ"
+        },
+        {
+          "cluster_id": 1028,
+          "slug": "national-1028",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
+        },
+        {
+          "cluster_id": 957,
+          "slug": "national-957",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
+        },
+        {
+          "cluster_id": 949,
+          "slug": "national-949",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
+        }
+      ]
+    },
     "national-1055": {
       "cluster_id": 1055,
-      "headline": "তথ্য অধিকার আইন বিষয়ে জানে মাত্র ১০.৫% মানুষ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট",
+      "first_seen": "2026-10-13T09:00:49.588Z",
+      "last_update": "2026-10-13T09:00:49.595Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-12T12:54:27.000Z",
+          "kind": "evidence",
+          "claim_id": 276608,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iMzZKd3h6Q3hueVZGVXhydDJMeUM1NEU5MGFlZDBaNlgyY3JMWWlHUm1OZTRLSXdIOGN4a3puT2tzS0tiNndfSGdJZ21JQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 276608,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00LXd6bEg3cG5jYmZaMjRtLWR3VE44N2RuVHQ2NWdCM2ZzdEw3U0NJZFlIdzdRQ3J2R0JtUVNtOFV5YTBnbmR6T2FPc0lVck9xT09VZmgxSVFsbFBsaFEtaTNmT3VvOU1HY1pQVzhUdjhsRG8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-12T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 276609,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৯ ইউনিট",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00LXd6bEg3cG5jYmZaMjRtLWR3VE44N2RuVHQ2NWdCM2ZzdEw3U0NJZFlIdzdRQ3J2R0JtUVNtOFV5YTBnbmR6T2FPc0lVck9xT09VZmgxSVFsbFBsaFEtaTNmT3VvOU1HY1pQVzhUdjhsRG8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.694Z",
+          "kind": "claim",
+          "claim_id": 276608,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.697Z",
+          "kind": "claim",
+          "claim_id": 276609,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৯ ইউনিট"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276608,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276609,
+          "claim_text": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৯ ইউনিট",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 931,
+          "slug": "national-931",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তালা ভেঙে কার্যালয়ে ঢুকে অবরুদ্ধ চুয়েটের নতুন ভিসি"
+        },
+        {
+          "cluster_id": 511,
+          "slug": "national-511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
+        },
+        {
+          "cluster_id": 292,
+          "slug": "national-292",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
+        }
+      ]
     },
     "national-1056": {
       "cluster_id": 1056,
-      "headline": "দক্ষ মানবসম্পদ গড়ে তুলতে সরকারের অগ্রাধিকারমূলক কাজ চলছে: মাহদী আমিন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
+      "first_seen": "2026-10-13T09:00:49.978Z",
+      "last_update": "2026-10-13T09:00:49.981Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:51:59.000Z",
+          "kind": "evidence",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/dr-taher-condemns-the-harassment-of-dr-yunus/"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.699Z",
+          "kind": "claim",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1057": {
+      "cluster_id": 1057,
+      "headline": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+      "first_seen": "2026-10-13T09:00:49.983Z",
+      "last_update": "2026-10-13T09:00:49.985Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:47:30.000Z",
+          "kind": "evidence",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/lqj3noy4e1"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.702Z",
+          "kind": "claim",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1058": {
       "cluster_id": 1058,
-      "headline": "এমপি গাজী নজরুল ইসলামের দ্বিতীয় স্ত্রী মরিয়ম খাতুনের মামা ওবায়দুর ৪ দিনের রিমান্ডে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এক দিনে দুই বিমানবন্দরে প্রায় দেড় কোটি টাকার সোনা ও আইফোন জব্দ",
+      "first_seen": "2026-10-13T09:00:49.987Z",
+      "last_update": "2026-10-13T09:00:49.989Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:39:03.000Z",
+          "kind": "evidence",
+          "claim_id": 276612,
+          "claim_text": "এক দিনে দুই বিমানবন্দরে প্রায় দেড় কোটি টাকার সোনা ও আইফোন জব্দ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/u8qt7092ml"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.708Z",
+          "kind": "claim",
+          "claim_id": 276612,
+          "claim_text": "এক দিনে দুই বিমানবন্দরে প্রায় দেড় কোটি টাকার সোনা ও আইফোন জব্দ"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276612,
+          "claim_text": "এক দিনে দুই বিমানবন্দরে প্রায় দেড় কোটি টাকার সোনা ও আইফোন জব্দ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1059": {
       "cluster_id": 1059,
-      "headline": "সাতক্ষীরায় দুবছর পর বসল ঐতিহ্যবাহী গুড়পুকুর মেলা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জাতীয় বিশ্ববিদ্যালয়ে মাস্টার্সে ভর্তি, আবেদন যেভাবে",
+      "first_seen": "2026-10-13T09:00:49.991Z",
+      "last_update": "2026-10-13T09:00:49.992Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:35:23.000Z",
+          "kind": "evidence",
+          "claim_id": 276613,
+          "claim_text": "জাতীয় বিশ্ববিদ্যালয়ে মাস্টার্সে ভর্তি, আবেদন যেভাবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/admission/l879xj19vh"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.711Z",
+          "kind": "claim",
+          "claim_id": 276613,
+          "claim_text": "জাতীয় বিশ্ববিদ্যালয়ে মাস্টার্সে ভর্তি, আবেদন যেভাবে"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276613,
+          "claim_text": "জাতীয় বিশ্ববিদ্যালয়ে মাস্টার্সে ভর্তি, আবেদন যেভাবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-106": {
@@ -47593,11 +48072,41 @@
     },
     "national-1060": {
       "cluster_id": 1060,
-      "headline": "সাংগঠনিক পদক্ষেপ যথেষ্ট নয়, আইনিভাবে কঠোর শাস্তি নিশ্চিত করতে হবে: জামায়াত আমির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সকাল ৯টা থেকে বিকেল ৪টা পর্যন্ত রাজশাহীতে সব কোচিং সেন্টার বন্ধ রাখার নির্দেশ",
+      "first_seen": "2026-10-13T09:00:49.994Z",
+      "last_update": "2026-10-13T09:00:49.996Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:30:06.000Z",
+          "kind": "evidence",
+          "claim_id": 276614,
+          "claim_text": "সকাল ৯টা থেকে বিকেল ৪টা পর্যন্ত রাজশাহীতে সব কোচিং সেন্টার বন্ধ রাখার নির্দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hkhrshe24h"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.716Z",
+          "kind": "claim",
+          "claim_id": 276614,
+          "claim_text": "সকাল ৯টা থেকে বিকেল ৪টা পর্যন্ত রাজশাহীতে সব কোচিং সেন্টার বন্ধ রাখার নির্দেশ"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276614,
+          "claim_text": "সকাল ৯টা থেকে বিকেল ৪টা পর্যন্ত রাজশাহীতে সব কোচিং সেন্টার বন্ধ রাখার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1061": {
@@ -48768,6 +49277,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -48806,14 +49323,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -62735,6 +63244,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -62773,14 +63290,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -65887,6 +66396,14 @@
           "headline": "ফ্যামিলি কার্ডের কথা বলে টিপসই নিয়ে ভুয়া কাবিননামার ঘটনায় এবার থানায় অভিযোগ"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -65917,14 +66434,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -72069,6 +72578,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -72107,14 +72624,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -91945,6 +92454,14 @@
           "headline": "মিয়ানমারের জান্তা–সংশ্লিষ্ট ব্যবসায়ীর মেয়ের ওপর থেকে নিষেধাজ্ঞা তুলে নিল যুক্তরাষ্ট্র"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -91975,14 +92492,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -101431,6 +101940,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -101469,14 +101986,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -104699,12 +105208,12 @@
           "headline": "ফেরদৌসী আহমেদের পদত্যাগে শূন্য হওয়া নারী আসনে উপনির্বাচনের তফসিল ঘোষণা"
         },
         {
-          "cluster_id": 1037,
-          "slug": "national-1037",
+          "cluster_id": 1055,
+          "slug": "national-1055",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাহুল গান্ধীর ধাক্কায় মাটিতে লুটিয়ে পড়ার অভিযোগ অন্তঃসত্ত্বা সাংবাদিকের, ‘প্রোপাগান্ডা’ বলছে কংগ্রেস"
+          "headline": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট"
         }
       ]
     },
@@ -108917,6 +109426,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -108947,14 +109464,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -113092,6 +113601,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -113130,14 +113647,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -117263,6 +117772,14 @@
           "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -117293,14 +117810,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -132897,6 +133406,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -132935,14 +133452,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -138895,6 +139404,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -138933,14 +139450,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -139391,6 +139900,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -139429,14 +139946,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -143936,6 +144445,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -143974,14 +144491,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -144200,6 +144709,14 @@
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
+          "cluster_id": 1055,
+          "slug": "national-1055",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চকবাজারে মার্কেটে আগুন, নিয়ন্ত্রণে ৫টি ইউনিট"
+        },
+        {
           "cluster_id": 932,
           "slug": "national-932",
           "actor_links": 0,
@@ -144230,14 +144747,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মালয়েশিয়ায় কোরআন প্রতিযোগিতায় প্রথম হলেন বাংলাদেশের হিরা"
-        },
-        {
-          "cluster_id": 511,
-          "slug": "national-511",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
         }
       ]
     },
@@ -148347,6 +148856,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -148385,14 +148902,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
-        },
-        {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -151622,6 +152131,14 @@
           "headline": "সাউথ এশিয়ান ইউনিভার্সিটির পরিচালনা পর্ষদের চেয়ারম্যান হলেন ইউজিসি চেয়ারম্যান মামুন আহমেদ"
         },
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -151652,14 +152169,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
-        },
-        {
-          "cluster_id": 957,
-          "slug": "national-957",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
         }
       ]
     },
@@ -152538,7 +153047,7 @@
       "cluster_id": 1013,
       "headline": "Healey should ‘stay the course’ and repair UK finances, says top IMF economist",
       "first_seen": "2026-10-13T06:34:31.743Z",
-      "last_update": "2026-10-13T08:36:26.934Z",
+      "last_update": "2026-10-13T09:00:49.586Z",
       "claim_count": 3,
       "events": [
         {
@@ -153207,6 +153716,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -153245,14 +153762,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -154125,6 +154634,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -154163,14 +154680,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -154331,6 +154840,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -154369,14 +154886,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -154736,7 +155245,7 @@
       "cluster_id": 1013,
       "headline": "Healey should ‘stay the course’ and repair UK finances, says top IMF economist",
       "first_seen": "2026-10-13T06:34:31.743Z",
-      "last_update": "2026-10-13T08:36:26.934Z",
+      "last_update": "2026-10-13T09:00:49.586Z",
       "claim_count": 3,
       "events": [
         {
@@ -157050,7 +157559,7 @@
       "cluster_id": 1045,
       "headline": "দুর্যোগ মোকাবিলায় আগাম প্রস্তুতি ও বাস্তবভিত্তিক যথাযথ নগর পরিকল্পনার আহ্বান রাষ্ট্রপতির",
       "first_seen": "2026-10-13T08:36:26.912Z",
-      "last_update": "2026-10-13T08:36:26.915Z",
+      "last_update": "2026-10-13T09:00:49.579Z",
       "claim_count": 2,
       "events": [
         {
@@ -157203,6 +157712,45 @@
           "kind": "verify",
           "claim_id": 273593,
           "claim_text": "দুর্গাপূজা ঘিরে বিএনপির নেতাকর্মীদের সতর্ক থাকার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "politics-1056": {
+      "cluster_id": 1056,
+      "headline": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
+      "first_seen": "2026-10-13T09:00:49.978Z",
+      "last_update": "2026-10-13T09:00:49.981Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:51:59.000Z",
+          "kind": "evidence",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/dr-taher-condemns-the-harassment-of-dr-yunus/"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.699Z",
+          "kind": "claim",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276610,
+          "claim_text": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -163302,11 +163850,41 @@
     },
     "sports-1057": {
       "cluster_id": 1057,
-      "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+      "first_seen": "2026-10-13T09:00:49.983Z",
+      "last_update": "2026-10-13T09:00:49.985Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-13T08:47:30.000Z",
+          "kind": "evidence",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/lqj3noy4e1"
+          }
+        },
+        {
+          "ts": "2026-10-13T09:14:22.702Z",
+          "kind": "claim",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন"
+        },
+        {
+          "ts": "2026-10-13T09:14:22.811Z",
+          "kind": "verify",
+          "claim_id": 276611,
+          "claim_text": "প্রযুক্তির বিবর্তনে জাপানে হারিয়ে যাচ্ছে আইকনিক ফ্লিপ ফোন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1066": {
@@ -164513,6 +165091,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1054,
+          "slug": "national-1054",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চিপস কিনে দেওয়ার কথা বলে দুই শিশুকে বাজারে রেখে গেলেন মা, খোঁজ নেই বাবারও"
+        },
+        {
           "cluster_id": 1048,
           "slug": "national-1048",
           "actor_links": 0,
@@ -164551,14 +165137,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড. ইউনূসের প্রতিষ্ঠান ‘কর ফাঁকি দেওয়ার একটি ধ্রুপদি উদাহরণ’: হাইকোর্ট"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার থেকেই অনুত্তীর্ণ এইচএসসি পরীক্ষার্থীদের ২-৩ মাসের মধ্যে অন্তর্বর্তী পরীক্ষা"
         }
       ]
     },
@@ -167531,7 +168109,7 @@
       "cluster_id": 999,
       "headline": "বিদ্যুৎ কবে আসবে, সুপর্ণা!",
       "first_seen": "2026-10-13T05:37:40.042Z",
-      "last_update": "2026-10-13T08:36:26.935Z",
+      "last_update": "2026-10-13T09:00:49.587Z",
       "claim_count": 2,
       "events": [
         {
