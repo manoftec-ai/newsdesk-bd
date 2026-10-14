@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3520,
+    "storyCount": 3523,
     "kinds": [
       "claim",
       "evidence",
@@ -3333,7 +3333,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        }
+      ]
     },
     "economy-1342": {
       "cluster_id": 1342,
@@ -3364,6 +3373,173 @@
           "kind": "verify",
           "claim_id": 426345,
           "claim_text": "চীনা কোম্পানির এলএনজি প্রস্তাবে বেশি ফি, মালিকানা হস্তান্তর সুযোগও নেই",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-1343": {
+      "cluster_id": 1343,
+      "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+      "first_seen": "2026-10-14T07:56:35.339Z",
+      "last_update": "2026-10-14T07:56:35.341Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-14T07:11:51.000Z",
+          "kind": "evidence",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/strict-action-for-manipulating-lpg-prices-energy-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:11:51.000Z",
+          "kind": "evidence",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/strict-action-for-manipulating-lpg-prices-energy-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:27:08.000Z",
+          "kind": "evidence",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/mfpyhrbke3"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.438Z",
+          "kind": "claim",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.441Z",
+          "kind": "claim",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1340,
+          "slug": "national-1340",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "cluster_id": 1259,
+          "slug": "sports-1259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+        },
+        {
+          "cluster_id": 1247,
+          "slug": "sports-1247",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+        },
+        {
+          "cluster_id": 1228,
+          "slug": "national-1228",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ড. ইউনূসকে হয়রানির নিন্দা জানালেন অন্তর্বর্তী সরকারের ১২ সাবেক উপদেষ্টা"
+        },
+        {
+          "cluster_id": 1101,
+          "slug": "national-1101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এসএসসিতে ২ বিষয়ে ফেল করলেও ১৫ দিনের মধ্যে পুনঃপরীক্ষা: শিক্ষামন্ত্রী"
+        },
+        {
+          "cluster_id": 1078,
+          "slug": "national-1078",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
+        }
+      ]
+    },
+    "economy-1345": {
+      "cluster_id": 1345,
+      "headline": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
+      "first_seen": "2026-10-14T07:56:35.624Z",
+      "last_update": "2026-10-14T07:56:35.626Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:42:48.000Z",
+          "kind": "evidence",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bank-of-america-fined-1-2-billion-for-money-laundering-and-sanctions-violations/"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.445Z",
+          "kind": "claim",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -9122,12 +9298,12 @@
           "headline": "নারী ও শিশুর প্রতি সহিংসতা রোধে জিরো টলারেন্স নীতি কঠোরভাবে বাস্তবায়নের আহ্বান রাষ্ট্রপতির"
         },
         {
-          "cluster_id": 1259,
-          "slug": "sports-1259",
+          "cluster_id": 1343,
+          "slug": "international-1343",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
         }
       ]
     },
@@ -9853,6 +10029,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -9890,14 +10074,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
@@ -12202,8 +12378,8 @@
           "slug": "opinion-1306",
           "actor_links": 4,
           "source_links": 2,
-          "claim_count": 15,
-          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+          "claim_count": 17,
+          "headline": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল"
         },
         {
           "cluster_id": 1245,
@@ -12535,7 +12711,7 @@
       "cluster_id": 1307,
       "headline": "Leaders of India’s Cockroach party jailed for violating ban on protest site",
       "first_seen": "2026-10-14T05:48:56.723Z",
-      "last_update": "2026-10-14T07:31:51.768Z",
+      "last_update": "2026-10-14T07:56:35.346Z",
       "claim_count": 2,
       "events": [
         {
@@ -15020,6 +15196,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -15057,14 +15241,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
@@ -23152,7 +23328,7 @@
       "cluster_id": 1310,
       "headline": "Saudi says Houthi attacks sparked Aramco fire, wounded 4 in Riyadh",
       "first_seen": "2026-10-14T05:48:56.735Z",
-      "last_update": "2026-10-14T07:31:51.769Z",
+      "last_update": "2026-10-14T07:56:35.346Z",
       "claim_count": 2,
       "events": [
         {
@@ -23719,11 +23895,169 @@
     },
     "international-1343": {
       "cluster_id": 1343,
-      "headline": "রুদ্ধশ্বাস ১২ মিনিট: কীভাবে পাইলট ও যাত্রীরা উড়োজাহাজকে মাঝআকাশে বিধ্বস্ত হওয়া থেকে বাঁচালেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+      "first_seen": "2026-10-14T07:56:35.339Z",
+      "last_update": "2026-10-14T07:56:35.341Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-14T07:11:51.000Z",
+          "kind": "evidence",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/strict-action-for-manipulating-lpg-prices-energy-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:11:51.000Z",
+          "kind": "evidence",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/strict-action-for-manipulating-lpg-prices-energy-minister/"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:27:08.000Z",
+          "kind": "evidence",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/mfpyhrbke3"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.438Z",
+          "kind": "claim",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.441Z",
+          "kind": "claim",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430228,
+          "claim_text": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430229,
+          "claim_text": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1340,
+          "slug": "national-1340",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এলপিজির দাম নিয়ে কারসাজি করলে কঠোর ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
+          "cluster_id": 1259,
+          "slug": "sports-1259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+        },
+        {
+          "cluster_id": 1247,
+          "slug": "sports-1247",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+        },
+        {
+          "cluster_id": 1228,
+          "slug": "national-1228",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ড. ইউনূসকে হয়রানির নিন্দা জানালেন অন্তর্বর্তী সরকারের ১২ সাবেক উপদেষ্টা"
+        },
+        {
+          "cluster_id": 1101,
+          "slug": "national-1101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "এসএসসিতে ২ বিষয়ে ফেল করলেও ১৫ দিনের মধ্যে পুনঃপরীক্ষা: শিক্ষামন্ত্রী"
+        },
+        {
+          "cluster_id": 1078,
+          "slug": "national-1078",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
+        }
+      ]
+    },
+    "international-1347": {
+      "cluster_id": 1347,
+      "headline": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+      "first_seen": "2026-10-14T07:56:35.631Z",
+      "last_update": "2026-10-14T07:56:35.633Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:32:37.000Z",
+          "kind": "evidence",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/in-the-age-of-ai-the-battlefield-is-changing-and-the-risk-of-civilian-casualties-is-rising/"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.450Z",
+          "kind": "claim",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-135": {
@@ -49977,7 +50311,7 @@
       "cluster_id": 1337,
       "headline": "উত্তরায় পোশাকশ্রমিকদের সড়ক অবরোধ, মহাসড়কে তীব্র যানজট",
       "first_seen": "2026-10-14T07:31:51.761Z",
-      "last_update": "2026-10-14T07:31:51.764Z",
+      "last_update": "2026-10-14T07:56:35.342Z",
       "claim_count": 2,
       "events": [
         {
@@ -50911,6 +51245,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -50948,14 +51290,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
@@ -72187,8 +72521,8 @@
           "slug": "opinion-1306",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 2,
-          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+          "claim_count": 3,
+          "headline": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল"
         },
         {
           "cluster_id": 1278,
@@ -79799,8 +80133,8 @@
           "slug": "opinion-1306",
           "actor_links": 4,
           "source_links": 2,
-          "claim_count": 15,
-          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+          "claim_count": 17,
+          "headline": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল"
         },
         {
           "cluster_id": 1245,
@@ -81201,7 +81535,7 @@
       "cluster_id": 1300,
       "headline": "বিশ্বব্যাংকের কাছ থেকে ১০ বিলিয়ন ডলার ঋণসহায়তা নিয়ে আলোচনা চলছে: অর্থমন্ত্রী",
       "first_seen": "2026-10-14T04:58:41.997Z",
-      "last_update": "2026-10-14T07:31:51.770Z",
+      "last_update": "2026-10-14T07:56:35.347Z",
       "claim_count": 2,
       "events": [
         {
@@ -81563,10 +81897,10 @@
     },
     "national-1306": {
       "cluster_id": 1306,
-      "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে",
+      "headline": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
       "first_seen": "2026-10-14T05:48:56.710Z",
-      "last_update": "2026-10-14T07:31:51.760Z",
-      "claim_count": 10,
+      "last_update": "2026-10-14T07:56:35.338Z",
+      "claim_count": 11,
       "events": [
         {
           "ts": "2026-10-14T01:50:00.000Z",
@@ -81584,6 +81918,17 @@
           "kind": "evidence",
           "claim_id": 410887,
           "claim_text": "মা ইলিশ পাহারায় যে ‘বাহিনী’ দরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/aiftw5z0o3"
+          }
+        },
+        {
+          "ts": "2026-10-14T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -81613,6 +81958,17 @@
           }
         },
         {
+          "ts": "2026-10-14T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/vy601w0hjw"
+          }
+        },
+        {
           "ts": "2026-10-14T02:50:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -81628,6 +81984,17 @@
           "kind": "evidence",
           "claim_id": 410889,
           "claim_text": "জাপানের তোইয়ামা যেভাবে শহরকে মানুষের কাছে আনছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/asia/31pv2m8oqr"
+          }
+        },
+        {
+          "ts": "2026-10-14T02:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -81657,10 +82024,32 @@
           }
         },
         {
+          "ts": "2026-10-14T03:00:10.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c68jzenpd7kko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-10-14T03:40:18.000Z",
           "kind": "evidence",
           "claim_id": 410886,
           "claim_text": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c5x2v0d2199po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-14T03:40:18.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -81690,6 +82079,17 @@
           }
         },
         {
+          "ts": "2026-10-14T03:41:05.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/tij5c06g7y"
+          }
+        },
+        {
           "ts": "2026-10-14T03:42:50.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -81705,6 +82105,17 @@
           "kind": "evidence",
           "claim_id": 410892,
           "claim_text": "পোপ লিও ফুসফুসের ক্যানসারে আক্রান্ত, অস্ত্রোপচারের মাধ্যমে অংশবিশেষ অপসারণ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/0pvimkirhv"
+          }
+        },
+        {
+          "ts": "2026-10-14T03:42:50.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -81734,6 +82145,17 @@
           }
         },
         {
+          "ts": "2026-10-14T03:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fdyup2fyhq"
+          }
+        },
+        {
           "ts": "2026-10-14T04:00:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -81756,6 +82178,17 @@
           }
         },
         {
+          "ts": "2026-10-14T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/eaxhq454em"
+          }
+        },
+        {
           "ts": "2026-10-14T04:24:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -81771,6 +82204,17 @@
           "kind": "evidence",
           "claim_id": 410895,
           "claim_text": "জনগণ জরিমানা দিতে চায় না, স্বস্তি চায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/xi11834b7y"
+          }
+        },
+        {
+          "ts": "2026-10-14T04:24:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -81954,6 +82398,35 @@
             "status": "SINGLE_SOURCE",
             "from": null,
             "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:12:45.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/environment/ic170qdhei"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.313Z",
+          "kind": "claim",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
             "reason": "verify"
           }
         }
@@ -82956,7 +83429,7 @@
       "cluster_id": 1321,
       "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা",
       "first_seen": "2026-10-14T06:39:48.608Z",
-      "last_update": "2026-10-14T07:31:51.767Z",
+      "last_update": "2026-10-14T07:56:35.344Z",
       "claim_count": 2,
       "events": [
         {
@@ -83887,7 +84360,7 @@
       "cluster_id": 1331,
       "headline": "যেখানে উপভোগ করা যাবে মেঘনার সৌন্দর্য, নেওয়া যাবে নদীর তাজা ইলিশের স্বাদ",
       "first_seen": "2026-10-14T07:05:05.101Z",
-      "last_update": "2026-10-14T07:31:51.766Z",
+      "last_update": "2026-10-14T07:56:35.343Z",
       "claim_count": 2,
       "events": [
         {
@@ -84180,7 +84653,7 @@
       "cluster_id": 1337,
       "headline": "উত্তরায় পোশাকশ্রমিকদের সড়ক অবরোধ, মহাসড়কে তীব্র যানজট",
       "first_seen": "2026-10-14T07:31:51.761Z",
-      "last_update": "2026-10-14T07:31:51.764Z",
+      "last_update": "2026-10-14T07:56:35.342Z",
       "claim_count": 2,
       "events": [
         {
@@ -84539,7 +85012,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        }
+      ]
     },
     "national-1341": {
       "cluster_id": 1341,
@@ -84621,38 +85103,158 @@
     },
     "national-1344": {
       "cluster_id": 1344,
-      "headline": "গাজীপুর পোশাক কারখানার আগুন সোয়া ৩ ঘণ্টায় নিয়ন্ত্রণে, ৭০ জনকে জীবিত উদ্ধার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নিরাপদ খাদ্য পরীক্ষার ল্যাব পরিদর্শন করলেন প্রধানমন্ত্রী",
+      "first_seen": "2026-10-14T07:56:35.619Z",
+      "last_update": "2026-10-14T07:56:35.622Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:45:29.000Z",
+          "kind": "evidence",
+          "claim_id": 430230,
+          "claim_text": "নিরাপদ খাদ্য পরীক্ষার ল্যাব পরিদর্শন করলেন প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/prime-minister-inspects-mobile-safe-food-testing-lab/"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.443Z",
+          "kind": "claim",
+          "claim_id": 430230,
+          "claim_text": "নিরাপদ খাদ্য পরীক্ষার ল্যাব পরিদর্শন করলেন প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430230,
+          "claim_text": "নিরাপদ খাদ্য পরীক্ষার ল্যাব পরিদর্শন করলেন প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1346": {
       "cluster_id": 1346,
-      "headline": "এভাবে রাষ্ট্র চলতে পারে না, সরকার টিকতে পারে না: আখতারুজ্জামান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কমিউনিটি ব্যাংকে কাস্টমার সার্ভিস এক্সিকিউটিভ পদে চাকরি, বেতন ২৬ হাজার টাকা",
+      "first_seen": "2026-10-14T07:56:35.628Z",
+      "last_update": "2026-10-14T07:56:35.629Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:35:29.000Z",
+          "kind": "evidence",
+          "claim_id": 430232,
+          "claim_text": "কমিউনিটি ব্যাংকে কাস্টমার সার্ভিস এক্সিকিউটিভ পদে চাকরি, বেতন ২৬ হাজার টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/employment/tzrah2pd8h"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.447Z",
+          "kind": "claim",
+          "claim_id": 430232,
+          "claim_text": "কমিউনিটি ব্যাংকে কাস্টমার সার্ভিস এক্সিকিউটিভ পদে চাকরি, বেতন ২৬ হাজার টাকা"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430232,
+          "claim_text": "কমিউনিটি ব্যাংকে কাস্টমার সার্ভিস এক্সিকিউটিভ পদে চাকরি, বেতন ২৬ হাজার টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1347": {
       "cluster_id": 1347,
-      "headline": "বিশ্ববাজারে আবার স্বর্ণের দামে বড় পতন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+      "first_seen": "2026-10-14T07:56:35.631Z",
+      "last_update": "2026-10-14T07:56:35.633Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:32:37.000Z",
+          "kind": "evidence",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/in-the-age-of-ai-the-battlefield-is-changing-and-the-risk-of-civilian-casualties-is-rising/"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.450Z",
+          "kind": "claim",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430233,
+          "claim_text": "এআইয়ের যুগে বদলে যাচ্ছে যুদ্ধক্ষেত্র, বাড়ছে বেসামরিক প্রাণহানির ঝুঁকি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1348": {
       "cluster_id": 1348,
-      "headline": "শেরপুরে ডেঙ্গু প্রতিরোধে ৩ মাসের.পরিচ্ছন্নতা অভিযান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জিয়ারত করতে গিয়ে দেখেন বাবার কবরের চিহ্নও নেই, কান্না থামছে না জাকির হোসেনের",
+      "first_seen": "2026-10-14T07:56:35.634Z",
+      "last_update": "2026-10-14T07:56:35.636Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:30:56.000Z",
+          "kind": "evidence",
+          "claim_id": 430234,
+          "claim_text": "জিয়ারত করতে গিয়ে দেখেন বাবার কবরের চিহ্নও নেই, কান্না থামছে না জাকির হোসেনের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/2oui6c1lv7"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.452Z",
+          "kind": "claim",
+          "claim_id": 430234,
+          "claim_text": "জিয়ারত করতে গিয়ে দেখেন বাবার কবরের চিহ্নও নেই, কান্না থামছে না জাকির হোসেনের"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430234,
+          "claim_text": "জিয়ারত করতে গিয়ে দেখেন বাবার কবরের চিহ্নও নেই, কান্না থামছে না জাকির হোসেনের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1349": {
@@ -107296,6 +107898,14 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত বাংলাদেশির পরিচয় জানা গেছে"
         },
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1337,
           "slug": "national-1337",
           "actor_links": 0,
@@ -107309,14 +107919,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
-        },
-        {
-          "cluster_id": 1247,
-          "slug": "sports-1247",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
           "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
         }
       ]
@@ -139748,6 +140350,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -139785,14 +140395,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
@@ -141022,6 +141624,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -141059,14 +141669,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
@@ -170264,12 +170866,12 @@
           "headline": "নারী ও শিশুর প্রতি সহিংসতা রোধে জিরো টলারেন্স নীতি কঠোরভাবে বাস্তবায়নের আহ্বান রাষ্ট্রপতির"
         },
         {
-          "cluster_id": 1259,
-          "slug": "sports-1259",
+          "cluster_id": 1343,
+          "slug": "international-1343",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
         }
       ]
     },
@@ -186320,7 +186922,7 @@
       "cluster_id": 1307,
       "headline": "Leaders of India’s Cockroach party jailed for violating ban on protest site",
       "first_seen": "2026-10-14T05:48:56.723Z",
-      "last_update": "2026-10-14T07:31:51.768Z",
+      "last_update": "2026-10-14T07:56:35.346Z",
       "claim_count": 2,
       "events": [
         {
@@ -187905,7 +188507,7 @@
       "cluster_id": 1310,
       "headline": "Saudi says Houthi attacks sparked Aramco fire, wounded 4 in Riyadh",
       "first_seen": "2026-10-14T05:48:56.735Z",
-      "last_update": "2026-10-14T07:31:51.769Z",
+      "last_update": "2026-10-14T07:56:35.346Z",
       "claim_count": 2,
       "events": [
         {
@@ -190528,10 +191130,10 @@
     },
     "opinion-1306": {
       "cluster_id": 1306,
-      "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে",
+      "headline": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
       "first_seen": "2026-10-14T05:48:56.710Z",
-      "last_update": "2026-10-14T07:31:51.760Z",
-      "claim_count": 10,
+      "last_update": "2026-10-14T07:56:35.338Z",
+      "claim_count": 11,
       "events": [
         {
           "ts": "2026-10-14T01:50:00.000Z",
@@ -190549,6 +191151,17 @@
           "kind": "evidence",
           "claim_id": 410887,
           "claim_text": "মা ইলিশ পাহারায় যে ‘বাহিনী’ দরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/aiftw5z0o3"
+          }
+        },
+        {
+          "ts": "2026-10-14T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -190578,6 +191191,17 @@
           }
         },
         {
+          "ts": "2026-10-14T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/vy601w0hjw"
+          }
+        },
+        {
           "ts": "2026-10-14T02:50:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -190593,6 +191217,17 @@
           "kind": "evidence",
           "claim_id": 410889,
           "claim_text": "জাপানের তোইয়ামা যেভাবে শহরকে মানুষের কাছে আনছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/asia/31pv2m8oqr"
+          }
+        },
+        {
+          "ts": "2026-10-14T02:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -190622,10 +191257,32 @@
           }
         },
         {
+          "ts": "2026-10-14T03:00:10.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c68jzenpd7kko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-10-14T03:40:18.000Z",
           "kind": "evidence",
           "claim_id": 410886,
           "claim_text": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c5x2v0d2199po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-14T03:40:18.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -190655,6 +191312,17 @@
           }
         },
         {
+          "ts": "2026-10-14T03:41:05.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/tij5c06g7y"
+          }
+        },
+        {
           "ts": "2026-10-14T03:42:50.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -190670,6 +191338,17 @@
           "kind": "evidence",
           "claim_id": 410892,
           "claim_text": "পোপ লিও ফুসফুসের ক্যানসারে আক্রান্ত, অস্ত্রোপচারের মাধ্যমে অংশবিশেষ অপসারণ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/0pvimkirhv"
+          }
+        },
+        {
+          "ts": "2026-10-14T03:42:50.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -190699,6 +191378,17 @@
           }
         },
         {
+          "ts": "2026-10-14T03:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fdyup2fyhq"
+          }
+        },
+        {
           "ts": "2026-10-14T04:00:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -190721,6 +191411,17 @@
           }
         },
         {
+          "ts": "2026-10-14T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/eaxhq454em"
+          }
+        },
+        {
           "ts": "2026-10-14T04:24:00.000Z",
           "kind": "evidence",
           "claim_id": 410886,
@@ -190736,6 +191437,17 @@
           "kind": "evidence",
           "claim_id": 410895,
           "claim_text": "জনগণ জরিমানা দিতে চায় না, স্বস্তি চায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/xi11834b7y"
+          }
+        },
+        {
+          "ts": "2026-10-14T04:24:00.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -190919,6 +191631,35 @@
             "status": "SINGLE_SOURCE",
             "from": null,
             "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-14T07:12:45.000Z",
+          "kind": "evidence",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/environment/ic170qdhei"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.313Z",
+          "kind": "claim",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430179,
+          "claim_text": "বুড়িগণ্ডকীর বন্যায় বাংলাদেশের সরাসরি ঝুঁকি নেই, তবে সতর্কবার্তার শিক্ষা আছে: শাশ্বত সান্যাল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
             "reason": "verify"
           }
         }
@@ -202653,11 +203394,41 @@
     },
     "sports-1345": {
       "cluster_id": 1345,
-      "headline": "নাইজেরিয়ানদের নৈপুণ্যে ৫ গোলে জিতলো আবাহনী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
+      "first_seen": "2026-10-14T07:56:35.624Z",
+      "last_update": "2026-10-14T07:56:35.626Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-14T07:42:48.000Z",
+          "kind": "evidence",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bank-of-america-fined-1-2-billion-for-money-laundering-and-sanctions-violations/"
+          }
+        },
+        {
+          "ts": "2026-10-14T08:12:53.445Z",
+          "kind": "claim",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা"
+        },
+        {
+          "ts": "2026-10-14T08:12:53.525Z",
+          "kind": "verify",
+          "claim_id": 430231,
+          "claim_text": "ব্যাংক অব আমেরিকাকে ১২০ কোটি ডলার জরিমানা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1380": {
@@ -204899,6 +205670,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1343,
+          "slug": "international-1343",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মঘট ডেকে এলপিজির বাজার অস্থির করলে আইনগত ব্যবস্থা: জ্বালানিমন্ত্রী"
+        },
+        {
           "cluster_id": 1259,
           "slug": "sports-1259",
           "actor_links": 0,
@@ -204936,14 +205715,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
-          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
-        },
-        {
-          "cluster_id": 1062,
-          "slug": "national-1062",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
           "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
         }
       ]
