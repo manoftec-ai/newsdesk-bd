@@ -1,0 +1,57 @@
+---
+title: "বিশ্ববাজারে আবারও বাড়ল তেলের দাম"
+seoTitle: "বিশ্ববাজারে আবারও বাড়ল তেলের দাম"
+excerpt: "বুধবার (১৪ অক্টোবর) গ্রিনিচ মান সময় রাত ১২টা ৩০ মিনিটে ব্রেন্ট ক্রুডের ফিউচার মূল্য ব্যারেলপ্রতি ৮৯ সেন্ট বা ০.৮ শতাংশ বেড়ে ১০৬ ডলার ৫৮ সেন্ট হয়েছে। বুধবার (১৪ অক্টোবর) সৌদি আরবে"
+seoDescription: "বুধবার (১৪ অক্টোবর) গ্রিনিচ মান সময় রাত ১২টা ৩০ মিনিটে ব্রেন্ট ক্রুডের ফিউচার মূল্য ব্যারেলপ্রতি ৮৯ সেন্ট বা ০.৮ শতাংশ বেড়ে ১০৬ ডলার ৫৮ সেন্ট হয়েছে। বুধ…"
+date: 2026-10-14T04:26:38.000Z
+publishedAt: 2026-10-14T06:08:08.004Z
+developing: true
+category: "international"
+tags: ["world"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "একই সময়ে যুক্তরাষ্ট্রের ওয়েস্ট টেক্সাস ইন্টারমিডিয়েট (ডব্লিউটিআই) অপরিশোধিত তেলের দাম ৮০ সেন্ট বা ০.৯ শতাংশ বেড়ে ব্যারেলপ্রতি ৯৪ ডলার ৯৪ সেন্টে দাঁড়ায়"
+  - "এতে তেলের দাম আরও বাড়তে পারে বলে আশঙ্কা করছেন সংশ্লিষ্টরা"
+  - "বিশ্বের অন্যতম প্রধান তেল উৎপাদনকারী দেশ সৌদি আরবে সংঘাত বৃদ্ধি পেলে আন্তর্জাতিক বাজারে জ্বালানি তেলের সরবরাহ ব্যাহত হওয়ার ঝুঁকি রয়েছে"
+faq: []
+sources:
+  - name: "চ্যানেল আই"
+    url: "https://www.channelionline.com/oil-prices-rise-again-in-the-global-market-2/"
+verification:
+  badge: "partial"
+  tier: "A"
+  score: 2
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: true
+  status: "passed"
+  evaluatedAt: "2026-10-14T06:08:07.896Z"
+  clusterId: 1305
+  claimIds:
+    - 407092
+  evidenceHash: "3dc6be9f0c9f730d"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (channeli)"
+publication:
+  slug: "international-1305"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-14T06:08:07.896Z"
+  clusterId: 1305
+  claimIds:
+    - 407092
+  evidenceHash: "3dc6be9f0c9f730d"
+---
+
+বুধবার (১৪ অক্টোবর) গ্রিনিচ মান সময় রাত ১২টা ৩০ মিনিটে ব্রেন্ট ক্রুডের ফিউচার মূল্য ব্যারেলপ্রতি ৮৯ সেন্ট বা ০.৮ শতাংশ বেড়ে ১০৬ ডলার ৫৮ সেন্ট হয়েছে।
+
+বুধবার (১৪ অক্টোবর) সৌদি আরবের জ্বালানি মন্ত্রণালয় জানায়, হুথিরা দেশটির পূর্বাঞ্চলীয় শহর ধাহরানে রাষ্ট্রায়ত্ত তেল কোম্পানি সৌদি আরামকোর একটি প্রশাসনিক ভবনে হামলা চালায়।
+
+সৌদি আরবে তেল সরবরাহ বিঘ্নিত হওয়ার আশঙ্কা এবং রাশিয়া থেকে ডিজেল সরবরাহ বাড়ার সম্ভাবনা ঘিরে বিনিয়োগকারীদের মধ্যে অনিশ্চয়তা তৈরি হয়েছে।
