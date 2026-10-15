@@ -1,10 +1,12 @@
 ---
 title: "সৌদি আরবে ক্ষেপণাস্ত্র-ড্রোন হামলা, আরামকোর ভবনে আগুন"
+thumbnail: "/images/international-1465.webp"
+thumbnailAlt: "সৌদি আরবে ক্ষেপণাস্ত্র-ড্রোন হামলা, আরামকোর ভবনে আগুন — ছবি: প্রথম আলো"
 seoTitle: "সৌদি আরবে ক্ষেপণাস্ত্র-ড্রোন হামলা, আরামকোর ভবনে আগুন"
 excerpt: "এদিকে রিয়াদে হুতিদের ছোড়া দুটি ক্ষেপণাস্ত্র প্রতিহত করার পর সেগুলোর ধ্বংসাবশেষ পড়ে চারজন আহত হয়েছেন এবং ১৫টি বাড়ি ক্ষতিগ্রস্ত হয়েছে বলে জানিয়েছে সৌদি কর্তৃপক্ষ। মঙ্গলবার (১৩ অক্টোব"
 seoDescription: "এদিকে রিয়াদে হুতিদের ছোড়া দুটি ক্ষেপণাস্ত্র প্রতিহত করার পর সেগুলোর ধ্বংসাবশেষ পড়ে চারজন আহত হয়েছেন এবং ১৫টি বাড়ি ক্ষতিগ্রস্ত হয়েছে বলে জানিয়েছে সৌদি কর্ত…"
 date: 2026-10-14T03:24:57.000Z
-publishedAt: 2026-10-15T02:25:15.399Z
+publishedAt: 2026-10-15T02:23:10.739Z
 developing: false
 category: "international"
 tags: ["dhaka"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-15T02:25:15.293Z"
+  evaluatedAt: "2026-10-15T02:23:10.634Z"
   clusterId: 1465
   claimIds:
     - 486970
@@ -48,7 +50,7 @@ publication:
   slug: "international-1465"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-15T02:25:15.293Z"
+  checkedAt: "2026-10-15T02:23:10.634Z"
   clusterId: 1465
   claimIds:
     - 486970
