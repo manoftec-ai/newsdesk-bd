@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3645,
+    "storyCount": 3650,
     "kinds": [
       "claim",
       "evidence",
@@ -4883,7 +4883,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 12,
+          "claim_count": 13,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -6127,7 +6127,7 @@
       "cluster_id": 1616,
       "headline": "নভেম্বরের মধ্যেই জাতীয় গ্রিডে বিদ্যুৎ দিতে প্রস্তুত হচ্ছে রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র",
       "first_seen": "2026-10-15T04:18:43.806Z",
-      "last_update": "2026-10-15T06:19:02.219Z",
+      "last_update": "2026-10-15T06:45:04.362Z",
       "claim_count": 4,
       "events": [
         {
@@ -6541,8 +6541,8 @@
       "cluster_id": 1636,
       "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
       "first_seen": "2026-10-15T05:50:20.343Z",
-      "last_update": "2026-10-15T06:19:02.207Z",
-      "claim_count": 13,
+      "last_update": "2026-10-15T06:45:04.348Z",
+      "claim_count": 14,
       "events": [
         {
           "ts": "2026-10-15T02:57:29.000Z",
@@ -7066,6 +7066,28 @@
           }
         },
         {
+          "ts": "2026-10-15T06:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 618050,
+          "claim_text": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/e4iixcerta"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/e4iixcerta"
+          }
+        },
+        {
           "ts": "2026-10-15T06:33:36.944Z",
           "kind": "verify",
           "claim_id": 618050,
@@ -7220,6 +7242,24 @@
             "confidence": 13,
             "reason": "re-verify"
           }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.927Z",
+          "kind": "claim",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -7302,6 +7342,45 @@
           "kind": "verify",
           "claim_id": 622681,
           "claim_text": "গ্রাহকদের মিষ্টিমুখ করিয়ে টাকা ফেরত দিচ্ছে ন্যাশনাল ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-1651": {
+      "cluster_id": 1651,
+      "headline": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
+      "first_seen": "2026-10-15T06:45:04.756Z",
+      "last_update": "2026-10-15T06:45:04.759Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:30:36.000Z",
+          "kind": "evidence",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/d0fud5dzmb"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.984Z",
+          "kind": "claim",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -27712,6 +27791,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -27750,14 +27837,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -33602,7 +33681,7 @@
       "cluster_id": 1624,
       "headline": "As One Nation rises, Victorian Labor has promised to make abortions free. Is the timing pure politics?",
       "first_seen": "2026-10-15T04:49:01.800Z",
-      "last_update": "2026-10-15T06:19:02.218Z",
+      "last_update": "2026-10-15T06:45:04.361Z",
       "claim_count": 2,
       "events": [
         {
@@ -34002,6 +34081,237 @@
           "kind": "verify",
           "claim_id": 618069,
           "claim_text": "ফিলিস্তিনের পশ্চিম তীরে মসজিদে আগুন, দেয়ালে গ্রাফিতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1650": {
+      "cluster_id": 1650,
+      "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+      "first_seen": "2026-10-15T06:45:04.353Z",
+      "last_update": "2026-10-15T06:45:04.356Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T05:54:29.000Z",
+          "kind": "evidence",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/asia/974608/%E0%A6%A6%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BF%E0%A6%A3-%E0%A6%8F%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%81%E0%A6%A7%E0%A6%BE%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%AA%E0%A7%87-%E0%A6%B8%E0%A6%AC%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%B8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-15T05:54:29.000Z",
+          "kind": "evidence",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/asia/974608/%E0%A6%A6%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BF%E0%A6%A3-%E0%A6%8F%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%81%E0%A6%A7%E0%A6%BE%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%AA%E0%A7%87-%E0%A6%B8%E0%A6%AC%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%B8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:15:24.000Z",
+          "kind": "evidence",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01OEloQ28yWUdPX1VlR0F0dkJIaHZwMXJZUmpnQURwZDh5eld2WXhZZEF4THA0SU9EVUdNV1NXcnBQNnZaWGp6QVctZFVaeFhmUWl6eVpuLUN5UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.978Z",
+          "kind": "claim",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
+          "ts": "2026-10-15T07:00:18.981Z",
+          "kind": "claim",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1502,
+          "slug": "national-1502",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আমির নির্বাচন নিয়ে জামায়াতের দুই গ্রুপের সংঘর্ষ, সেক্রেটারির গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1037,
+          "slug": "national-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অন্তঃসত্ত্বা সাংবাদিককে ধাক্কা দিয়েছেন রাহুল গান্ধী? পাল্টাপাল্টি দাবি কংগ্রেস-বিজেপির"
+        },
+        {
+          "cluster_id": 1014,
+          "slug": "sports-indonesia-beat-bangladesh",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টিভিতে আজকের খেলা (১৩ অক্টোবর, ২০২৬)"
+        },
+        {
+          "cluster_id": 867,
+          "slug": "national-867",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
+        },
+        {
+          "cluster_id": 511,
+          "slug": "national-511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
+        },
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
+        }
+      ]
+    },
+    "international-1652": {
+      "cluster_id": 1652,
+      "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+      "first_seen": "2026-10-15T06:45:04.760Z",
+      "last_update": "2026-10-15T06:45:04.763Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:22:17.000Z",
+          "kind": "evidence",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/avjysf02w6"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.987Z",
+          "kind": "claim",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1631,
+          "slug": "politics-1631",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "'যৌনাঙ্গে বুট দিয়ে মেরেছে', 'জামা টেনে তুলে দিয়েছে' - দিল্লিতে আটক বিক্ষোভকারীদের অভিজ্ঞতা"
+        },
+        {
+          "cluster_id": 1614,
+          "slug": "national-1614",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        }
+      ]
+    },
+    "international-1654": {
+      "cluster_id": 1654,
+      "headline": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
+      "first_seen": "2026-10-15T06:45:04.768Z",
+      "last_update": "2026-10-15T06:45:04.770Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:15:28.000Z",
+          "kind": "evidence",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/27sck8u9r5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.992Z",
+          "kind": "claim",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -37247,6 +37557,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -37285,14 +37603,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -43121,6 +43431,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -43159,14 +43477,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -43573,6 +43883,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -43611,14 +43929,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -68553,6 +68863,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -68591,14 +68909,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -82130,6 +82440,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -82168,14 +82486,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -95489,7 +95799,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -99851,7 +100161,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 12,
+          "claim_count": 13,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -107139,6 +107449,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -107177,14 +107495,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -107926,6 +108236,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -107964,14 +108282,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -109091,20 +109401,20 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা দেবাশীষ ও কাজী গুলশান আরা গ্রেপ্তার"
         },
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1637,
           "slug": "national-1637",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
-          "cluster_id": 1625,
-          "slug": "national-1625",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক এমপি ও বিএনপির সিনিয়র নেতা আব্দুল হাই মারা গেছেন"
         }
       ]
     },
@@ -120586,7 +120896,7 @@
           "slug": "national-1636",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 5,
+          "claim_count": 6,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         }
       ]
@@ -120723,7 +121033,7 @@
       "cluster_id": 1616,
       "headline": "নভেম্বরের মধ্যেই জাতীয় গ্রিডে বিদ্যুৎ দিতে প্রস্তুত হচ্ছে রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র",
       "first_seen": "2026-10-15T04:18:43.806Z",
-      "last_update": "2026-10-15T06:19:02.219Z",
+      "last_update": "2026-10-15T06:45:04.362Z",
       "claim_count": 4,
       "events": [
         {
@@ -121215,7 +121525,7 @@
       "cluster_id": 1623,
       "headline": "সরকার ২০২৭ সালের মধ্যে সমন্বিত সড়ক নিরাপত্তা আইন করতে চায়: সড়ক পরিবহনমন্ত্রী",
       "first_seen": "2026-10-15T04:49:01.797Z",
-      "last_update": "2026-10-15T06:19:02.216Z",
+      "last_update": "2026-10-15T06:45:04.359Z",
       "claim_count": 2,
       "events": [
         {
@@ -121343,7 +121653,7 @@
       "cluster_id": 1625,
       "headline": "সাবেক এমপি ও বিএনপির সিনিয়র নেতা আব্দুল হাই মারা গেছেন",
       "first_seen": "2026-10-15T04:49:01.804Z",
-      "last_update": "2026-10-15T06:19:02.213Z",
+      "last_update": "2026-10-15T06:45:04.358Z",
       "claim_count": 3,
       "events": [
         {
@@ -122011,8 +122321,16 @@
           "slug": "national-1636",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 5,
+          "claim_count": 6,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
+        },
+        {
+          "cluster_id": 1652,
+          "slug": "national-1652",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
         },
         {
           "cluster_id": 1349,
@@ -122029,14 +122347,6 @@
           "source_links": 2,
           "claim_count": 13,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1261,
-          "slug": "national-1261",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -122210,8 +122520,8 @@
       "cluster_id": 1636,
       "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
       "first_seen": "2026-10-15T05:50:20.343Z",
-      "last_update": "2026-10-15T06:19:02.207Z",
-      "claim_count": 13,
+      "last_update": "2026-10-15T06:45:04.348Z",
+      "claim_count": 14,
       "events": [
         {
           "ts": "2026-10-15T02:57:29.000Z",
@@ -122735,6 +123045,28 @@
           }
         },
         {
+          "ts": "2026-10-15T06:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 618050,
+          "claim_text": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/e4iixcerta"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:10:10.000Z",
+          "kind": "evidence",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/e4iixcerta"
+          }
+        },
+        {
           "ts": "2026-10-15T06:33:36.944Z",
           "kind": "verify",
           "claim_id": 618050,
@@ -122888,6 +123220,24 @@
             "from": "SINGLE_SOURCE",
             "confidence": 13,
             "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.927Z",
+          "kind": "claim",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627284,
+          "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
           }
         }
       ],
@@ -123681,11 +124031,81 @@
     },
     "national-1649": {
       "cluster_id": 1649,
-      "headline": "গ্রাম সরকার পুনর্বহালের আলোচনা, ৭ নভেম্বর সাধারণ ছুটির সিদ্ধান্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+      "first_seen": "2026-10-15T06:45:04.349Z",
+      "last_update": "2026-10-15T06:45:04.352Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T04:31:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/g3320nw56m"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:13:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/jw27yi1hbc"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:13:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/jw27yi1hbc"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.972Z",
+          "kind": "claim",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল"
+        },
+        {
+          "ts": "2026-10-15T07:00:18.976Z",
+          "kind": "claim",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-165": {
@@ -123738,56 +124158,350 @@
     },
     "national-1650": {
       "cluster_id": 1650,
-      "headline": "ধর্ষণচেষ্টার অভিযোগে চেয়ারম্যানের উপস্থিতিতে কৃষকের ঘরে আগুন, লুটপাট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+      "first_seen": "2026-10-15T06:45:04.353Z",
+      "last_update": "2026-10-15T06:45:04.356Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T05:54:29.000Z",
+          "kind": "evidence",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/asia/974608/%E0%A6%A6%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BF%E0%A6%A3-%E0%A6%8F%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%81%E0%A6%A7%E0%A6%BE%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%AA%E0%A7%87-%E0%A6%B8%E0%A6%AC%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%B8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-15T05:54:29.000Z",
+          "kind": "evidence",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/asia/974608/%E0%A6%A6%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BF%E0%A6%A3-%E0%A6%8F%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%81%E0%A6%A7%E0%A6%BE%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%AA%E0%A7%87-%E0%A6%B8%E0%A6%AC%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%B8%E0%A7%8D%E0%A6%A4"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:15:24.000Z",
+          "kind": "evidence",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01OEloQ28yWUdPX1VlR0F0dkJIaHZwMXJZUmpnQURwZDh5eld2WXhZZEF4THA0SU9EVUdNV1NXcnBQNnZaWGp6QVctZFVaeFhmUWl6eVpuLUN5UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.978Z",
+          "kind": "claim",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
+          "ts": "2026-10-15T07:00:18.981Z",
+          "kind": "claim",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627302,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627303,
+          "claim_text": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বিপর্যস্ত পাকিস্তান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1502,
+          "slug": "national-1502",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আমির নির্বাচন নিয়ে জামায়াতের দুই গ্রুপের সংঘর্ষ, সেক্রেটারির গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1037,
+          "slug": "national-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অন্তঃসত্ত্বা সাংবাদিককে ধাক্কা দিয়েছেন রাহুল গান্ধী? পাল্টাপাল্টি দাবি কংগ্রেস-বিজেপির"
+        },
+        {
+          "cluster_id": 1014,
+          "slug": "sports-indonesia-beat-bangladesh",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টিভিতে আজকের খেলা (১৩ অক্টোবর, ২০২৬)"
+        },
+        {
+          "cluster_id": 867,
+          "slug": "national-867",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
+        },
+        {
+          "cluster_id": 511,
+          "slug": "national-511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
+        },
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
+        }
+      ]
     },
     "national-1651": {
       "cluster_id": 1651,
-      "headline": "চাঁদাবাজির অভিযোগে রাজধানীতে বিএনপি নেতা আটক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
+      "first_seen": "2026-10-15T06:45:04.756Z",
+      "last_update": "2026-10-15T06:45:04.759Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:30:36.000Z",
+          "kind": "evidence",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/bank/d0fud5dzmb"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.984Z",
+          "kind": "claim",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627304,
+          "claim_text": "ন্যাশনাল ব্যাংকের মহাখালী শাখায় ১–২ লাখ টাকা গ্রাহকেরা পাচ্ছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1652": {
       "cluster_id": 1652,
-      "headline": "দুদকের নতুন মামলায় সাবেক নৌমন্ত্রী শাজাহান খান ছেলেসহ ফের গ্রেপ্তার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+      "first_seen": "2026-10-15T06:45:04.760Z",
+      "last_update": "2026-10-15T06:45:04.763Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:22:17.000Z",
+          "kind": "evidence",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/europe/avjysf02w6"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.987Z",
+          "kind": "claim",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627305,
+          "claim_text": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1631,
+          "slug": "politics-1631",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "'যৌনাঙ্গে বুট দিয়ে মেরেছে', 'জামা টেনে তুলে দিয়েছে' - দিল্লিতে আটক বিক্ষোভকারীদের অভিজ্ঞতা"
+        },
+        {
+          "cluster_id": 1614,
+          "slug": "national-1614",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        }
+      ]
     },
     "national-1653": {
       "cluster_id": 1653,
-      "headline": "সরকার গণমাধ্যমকে নিয়ন্ত্রণ করার কোনো চেষ্টা করছে না : তথ্যমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "অগ্নিকাণ্ডের পর টঙ্গীর ড্রাগ ইন্টারন্যাশনাল কারখানা বন্ধ ঘোষণা",
+      "first_seen": "2026-10-15T06:45:04.765Z",
+      "last_update": "2026-10-15T06:45:04.767Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:17:31.000Z",
+          "kind": "evidence",
+          "claim_id": 627306,
+          "claim_text": "অগ্নিকাণ্ডের পর টঙ্গীর ড্রাগ ইন্টারন্যাশনাল কারখানা বন্ধ ঘোষণা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/l8nlc1yy0n"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.989Z",
+          "kind": "claim",
+          "claim_id": 627306,
+          "claim_text": "অগ্নিকাণ্ডের পর টঙ্গীর ড্রাগ ইন্টারন্যাশনাল কারখানা বন্ধ ঘোষণা"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627306,
+          "claim_text": "অগ্নিকাণ্ডের পর টঙ্গীর ড্রাগ ইন্টারন্যাশনাল কারখানা বন্ধ ঘোষণা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1654": {
       "cluster_id": 1654,
-      "headline": "রোহিঙ্গাদের ওপর অমানবিক নির্যাতনের ন্যায়বিচার চাইলেন ত্রাণমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
+      "first_seen": "2026-10-15T06:45:04.768Z",
+      "last_update": "2026-10-15T06:45:04.770Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:15:28.000Z",
+          "kind": "evidence",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/pakistan/27sck8u9r5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.992Z",
+          "kind": "claim",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627307,
+          "claim_text": "ইমরান খানের স্ত্রী–বোনেরা কী ধরনের সন্ত্রাসবাদে জড়িত যে কারাগারে পাঠানো হয়েছে: পিটিআই চেয়ারম্যান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1655": {
       "cluster_id": 1655,
-      "headline": "সাফ ২০২৬ চ্যাম্পিয়নশিপের আয়োজক বাংলাদেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বহু কিশোর-তরুণের স্বপ্নকে নাড়া দিচ্ছে বিজ্ঞানচিন্তা",
+      "first_seen": "2026-10-15T06:45:04.772Z",
+      "last_update": "2026-10-15T06:45:04.774Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T06:11:25.000Z",
+          "kind": "evidence",
+          "claim_id": 627308,
+          "claim_text": "বহু কিশোর-তরুণের স্বপ্নকে নাড়া দিচ্ছে বিজ্ঞানচিন্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/hq7709pa9h"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.995Z",
+          "kind": "claim",
+          "claim_id": 627308,
+          "claim_text": "বহু কিশোর-তরুণের স্বপ্নকে নাড়া দিচ্ছে বিজ্ঞানচিন্তা"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627308,
+          "claim_text": "বহু কিশোর-তরুণের স্বপ্নকে নাড়া দিচ্ছে বিজ্ঞানচিন্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1656": {
@@ -137672,6 +138386,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -137710,14 +138432,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -138687,6 +139401,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা দেবাশীষ ও কাজী গুলশান আরা গ্রেপ্তার"
         },
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1637,
           "slug": "national-1637",
           "actor_links": 0,
@@ -138709,14 +139431,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের মধ্যেই জাতীয় গ্রিডে বিদ্যুৎ দিতে প্রস্তুত হচ্ছে রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র"
-        },
-        {
-          "cluster_id": 1584,
-          "slug": "national-1584",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -152762,6 +153476,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -152800,14 +153522,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -156452,6 +157166,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -156490,14 +157212,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -157649,6 +158363,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -157687,14 +158409,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -158609,6 +159323,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -158647,14 +159369,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -161803,6 +162517,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1602,
           "slug": "national-1602",
           "actor_links": 0,
@@ -161825,14 +162547,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারকে চাপে ফেলতে দেশ অস্থিতিশীল করার চেষ্টা চলছে: রিজভী"
-        },
-        {
-          "cluster_id": 1122,
-          "slug": "national-1122",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
         }
       ]
     },
@@ -162330,6 +163044,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -162368,14 +163090,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -163931,6 +164645,14 @@
           "headline": "জেএফকে বিমানবন্দরে ড. ইউনূসকে হেনস্তার ঘটনায় বিএনপির নিন্দা"
         },
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -163961,14 +164683,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 511,
-          "slug": "national-511",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
         }
       ]
     },
@@ -169174,12 +169888,12 @@
           "headline": "আয়াসের জামিন শুনানি চলাকালে বিচারকের সামনে দুই পক্ষের আইনজীবীদের হাতাহাতি"
         },
         {
-          "cluster_id": 1625,
-          "slug": "national-1625",
+          "cluster_id": 1650,
+          "slug": "national-1650",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাবেক এমপি ও বিএনপির সিনিয়র নেতা আব্দুল হাই মারা গেছেন"
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
         }
       ]
     },
@@ -171532,12 +172246,12 @@
           "headline": "ফেরদৌসী আহমেদের পদত্যাগে শূন্য হওয়া নারী আসনে উপনির্বাচনের তফসিল ঘোষণা"
         },
         {
-          "cluster_id": 1614,
-          "slug": "national-1614",
+          "cluster_id": 1650,
+          "slug": "national-1650",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
         }
       ]
     },
@@ -176869,6 +177583,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -176907,14 +177629,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -198561,6 +199275,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -198599,14 +199321,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -199670,6 +200384,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -199708,14 +200430,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -218854,7 +219568,7 @@
       "cluster_id": 1624,
       "headline": "As One Nation rises, Victorian Labor has promised to make abortions free. Is the timing pure politics?",
       "first_seen": "2026-10-15T04:49:01.800Z",
-      "last_update": "2026-10-15T06:19:02.218Z",
+      "last_update": "2026-10-15T06:45:04.361Z",
       "claim_count": 2,
       "events": [
         {
@@ -220649,6 +221363,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -220687,14 +221409,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -226193,7 +226907,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -228620,6 +229334,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -228658,14 +229380,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -231637,8 +232351,16 @@
           "slug": "national-1636",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 5,
+          "claim_count": 6,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
+        },
+        {
+          "cluster_id": 1652,
+          "slug": "national-1652",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
         },
         {
           "cluster_id": 1349,
@@ -231655,14 +232377,6 @@
           "source_links": 2,
           "claim_count": 13,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1261,
-          "slug": "national-1261",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -232192,6 +232906,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -232230,14 +232952,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -232535,6 +233249,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -232573,14 +233295,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -233685,6 +234399,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -233723,14 +234445,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -233852,6 +234566,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -233890,14 +234612,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -234116,6 +234830,14 @@
           "headline": "জেএফকে বিমানবন্দরে ড. ইউনূসকে হেনস্তার ঘটনায় বিএনপির নিন্দা"
         },
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -234146,14 +234868,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 511,
-          "slug": "national-511",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
         }
       ]
     },
@@ -237281,6 +237995,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -237319,14 +238041,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
     },
@@ -240384,6 +241098,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -240422,14 +241144,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 509,
-          "slug": "national-509",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
         }
       ]
     },
@@ -244621,6 +245335,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1650,
+          "slug": "national-1650",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দক্ষিণ এশিয়ায় ক্ষুধার চাপে সবচেয়ে বেশি বিপর্যস্ত পাকিস্তান"
+        },
+        {
           "cluster_id": 1502,
           "slug": "national-1502",
           "actor_links": 0,
@@ -244659,16 +245381,87 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
-        },
-        {
-          "cluster_id": 489,
-          "slug": "national-489",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দ্বিতীয় স্ত্রীর আত্মহত্যা: এমপি গাজী নজরুলের জামিন নামঞ্জুর"
         }
       ]
+    },
+    "sports-storm": {
+      "cluster_id": 1649,
+      "headline": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+      "first_seen": "2026-10-15T06:45:04.349Z",
+      "last_update": "2026-10-15T06:45:04.352Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T04:31:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/g3320nw56m"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:13:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/jw27yi1hbc"
+          }
+        },
+        {
+          "ts": "2026-10-15T06:13:09.000Z",
+          "kind": "evidence",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/jw27yi1hbc"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:18.972Z",
+          "kind": "claim",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল"
+        },
+        {
+          "ts": "2026-10-15T07:00:18.976Z",
+          "kind": "claim",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’"
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627300,
+          "claim_text": "এনদ্রিক ‘ঈশ্বরের সঙ্গে কথা বলা’র পরই ৭ মিনিট ৪৩ সেকেন্ডের ঝড় তোলে রিয়াল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:19.093Z",
+          "kind": "verify",
+          "claim_id": 627301,
+          "claim_text": "ভিনির নিষেধাজ্ঞা নিয়ে মরিনিও—‘তারা নির্লজ্জভাবে এসব কাজ করে’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "tech-1039": {
       "cluster_id": 1039,
