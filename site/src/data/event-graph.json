@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3617,
+    "storyCount": 3620,
     "kinds": [
       "claim",
       "evidence",
@@ -5807,7 +5807,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        }
+      ]
     },
     "economy-1546": {
       "cluster_id": 1546,
@@ -5968,20 +5977,169 @@
     },
     "economy-1585": {
       "cluster_id": 1585,
-      "headline": "আগামী ১৭ দিন শপিংমল-মার্কেট খোলা থাকবে রাত ১০টা পর্যন্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+      "first_seen": "2026-10-15T01:36:16.844Z",
+      "last_update": "2026-10-15T01:36:16.846Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-14T17:06:03.000Z",
+          "kind": "evidence",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/5ti6vxm282"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/clash-between-two-factions-and-vehicle-vandalism-in-cumilla-over-jamaat-e-islami-chief-election/"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/clash-between-two-factions-and-vehicle-vandalism-in-cumilla-over-jamaat-e-islami-chief-election/"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.645Z",
+          "kind": "claim",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.647Z",
+          "kind": "claim",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1530,
+          "slug": "politics-1530",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1578,
+          "slug": "national-1578",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1574,
+          "slug": "national-1574",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1522,
+          "slug": "national-1522",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1569,
+          "slug": "national-1569",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
+        },
+        {
+          "cluster_id": 1526,
+          "slug": "national-1526",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
+        }
+      ]
     },
     "economy-1587": {
       "cluster_id": 1587,
-      "headline": "দুর্গাপূজার কেনাকাটার জন্য দোকানপাট ও বিপণিবিতান রাত ১০টা পর্যন্ত খোলা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+      "first_seen": "2026-10-15T01:36:17.247Z",
+      "last_update": "2026-10-15T01:36:17.249Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/scholarship/6dhoxcrugb"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.651Z",
+          "kind": "claim",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1600": {
@@ -11280,12 +11438,12 @@
           "headline": "নারী ও শিশুর প্রতি সহিংসতা রোধে জিরো টলারেন্স নীতি কঠোরভাবে বাস্তবায়নের আহ্বান রাষ্ট্রপতির"
         },
         {
-          "cluster_id": 1569,
-          "slug": "national-1569",
+          "cluster_id": 1585,
+          "slug": "national-1585",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -11719,8 +11877,8 @@
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 1551,
-          "slug": "national-1551",
+          "cluster_id": 1584,
+          "slug": "national-1584",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -12011,6 +12169,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -12049,14 +12215,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -15654,6 +15812,494 @@
       ],
       "related": []
     },
+    "entertainment-1584": {
+      "cluster_id": 1584,
+      "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+      "first_seen": "2026-10-15T01:36:16.831Z",
+      "last_update": "2026-10-15T01:36:16.840Z",
+      "claim_count": 11,
+      "events": [
+        {
+          "ts": "2026-10-14T04:49:50.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53ZWZidXNha0ItMzg0MnQwX1JCY0pPRWhRaTcwVHdSaDRneGZTSkNpQy1TekFMSEF3T3pzQ1JqYXhabHdpQ2plR09DdmhQSUZVZEllNzdHYkltVWZ1aWdqbGR1LUp1amtwSWJ0Y25BZEw2b3lu?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T04:49:50.000Z",
+          "kind": "evidence",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53ZWZidXNha0ItMzg0MnQwX1JCY0pPRWhRaTcwVHdSaDRneGZTSkNpQy1TekFMSEF3T3pzQ1JqYXhabHdpQ2plR09DdmhQSUZVZEllNzdHYkltVWZ1aWdqbGR1LUp1amtwSWJ0Y25BZEw2b3lu?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T11:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIaEtCdG9PQnZoQ2J3ejg0bUtZOWZlOE1mdTJfNjltY3FmbEltOEVJajdBM2tPczFFX1pTVV9hZy1JM3VURWJqZkh1OGR6eXpIMGxmN2hYQVNyQlFKWXRWdFFNYzRKaDJET3YwaVRuTWEwYkVz?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T11:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIaEtCdG9PQnZoQ2J3ejg0bUtZOWZlOE1mdTJfNjltY3FmbEltOEVJajdBM2tPczFFX1pTVV9hZy1JM3VURWJqZkh1OGR6eXpIMGxmN2hYQVNyQlFKWXRWdFFNYzRKaDJET3YwaVRuTWEwYkVz?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T16:53:46.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44VzJidnVjaFVJZU1YWU1CTlgwTEpsZEdDR1M5cEdiUnRNSHhkVmxHRkw5MmE0Q0dsSXpFRjlSTmpMQjA1VVAwMGhiVDVFb2ZoM2QzWFpSb1VEUW5kVlpDSlM2WlA0R1RKcVBYa2w3QnpwUnVm?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T16:53:46.000Z",
+          "kind": "evidence",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44VzJidnVjaFVJZU1YWU1CTlgwTEpsZEdDR1M5cEdiUnRNSHhkVmxHRkw5MmE0Q0dsSXpFRjlSTmpMQjA1VVAwMGhiVDVFb2ZoM2QzWFpSb1VEUW5kVlpDSlM2WlA0R1RKcVBYa2w3QnpwUnVm?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T17:59:20.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/5a4ox384um"
+          }
+        },
+        {
+          "ts": "2026-10-14T17:59:20.000Z",
+          "kind": "evidence",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/5a4ox384um"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zQ1RDOTNCWFpLNnd2UjBWem9JVXBaUmtERlRuVHJSSFJQVXZKTV9OZnZsR1RHYUVXZUt0cXhXcFFlOTh1RnM2SEpkRlFESW5TUkt3Sm1TV0JUeUxxMFh1dGZoZktta0Z6ZnNLYzVzNHd4aU0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWp2WUhjSlVoRDd4WnRhWEc1bUtndE1SN21lbTlhSlZNbVdna2pIemlzam9FQl9ORFY2c3lUSFBkaE0xYlhfcUpHRXNMTGhBMlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zQ1RDOTNCWFpLNnd2UjBWem9JVXBaUmtERlRuVHJSSFJQVXZKTV9OZnZsR1RHYUVXZUt0cXhXcFFlOTh1RnM2SEpkRlFESW5TUkt3Sm1TV0JUeUxxMFh1dGZoZktta0Z6ZnNLYzVzNHd4aU0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWp2WUhjSlVoRDd4WnRhWEc1bUtndE1SN21lbTlhSlZNbVdna2pIemlzam9FQl9ORFY2c3lUSFBkaE0xYlhfcUpHRXNMTGhBMlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/aim6q6whwu"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/aim6q6whwu"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/liact0qbvz"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/liact0qbvz"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/svcd9mo24n"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/svcd9mo24n"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:21:54.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/snq2622j8j"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/dozkpx3kn0"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/dozkpx3kn0"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.620Z",
+          "kind": "claim",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.629Z",
+          "kind": "claim",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.631Z",
+          "kind": "claim",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.632Z",
+          "kind": "claim",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.634Z",
+          "kind": "claim",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.635Z",
+          "kind": "claim",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.637Z",
+          "kind": "claim",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.638Z",
+          "kind": "claim",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.639Z",
+          "kind": "claim",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.641Z",
+          "kind": "claim",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.642Z",
+          "kind": "claim",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1578,
+          "slug": "national-1578",
+          "actor_links": 3,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1551,
+          "slug": "national-1551",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1263,
+          "slug": "national-1263",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "সহকারী শিক্ষক স্ত্রীর সঙ্গে স্কুলেই প্রধান শিক্ষকের মারামারি, ভিডিও ভাইরাল"
+        },
+        {
+          "cluster_id": 1196,
+          "slug": "national-1196",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "স্কুলে শিক্ষক–শিক্ষিকার মারামারির ভিডিও ভাইরাল, পরে যা জানা গেল"
+        },
+        {
+          "cluster_id": 652,
+          "slug": "national-652",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 24,
+          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 20,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
+        }
+      ]
+    },
     "entertainment-1702": {
       "cluster_id": 1702,
       "headline": "বেয়ার গ্রিলস ইন অ্যাডভেঞ্চারাস বাংলাদেশ",
@@ -17760,6 +18406,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -17798,14 +18452,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -27764,6 +28410,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 1,
@@ -27796,20 +28450,12 @@
           "headline": "স্কুলে শিক্ষক–শিক্ষিকার মারামারির ভিডিও ভাইরাল, পরে যা জানা গেল"
         },
         {
-          "cluster_id": 1569,
-          "slug": "national-1569",
+          "cluster_id": 1585,
+          "slug": "national-1585",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -28606,6 +29252,14 @@
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -28628,14 +29282,6 @@
           "source_links": 3,
           "claim_count": 26,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 18,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -29050,6 +29696,14 @@
           "headline": "মার্কিন নির্বাচনের আগে তেলের বাজার চড়া রাখতে কৌশল নিয়েছে ইরান, কীভাবে হরমুজ নিয়ন্ত্রণে রাখছে তারা"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -29080,14 +29734,6 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1122,
-          "slug": "national-1122",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
         }
       ]
     },
@@ -29474,6 +30120,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -29512,14 +30166,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -30016,7 +30662,7 @@
       "cluster_id": 1569,
       "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর",
       "first_seen": "2026-10-14T21:21:33.282Z",
-      "last_update": "2026-10-15T01:08:38.977Z",
+      "last_update": "2026-10-15T01:36:16.841Z",
       "claim_count": 2,
       "events": [
         {
@@ -30099,6 +30745,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1526,
           "slug": "national-1526",
           "actor_links": 0,
@@ -30129,14 +30783,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -30270,11 +30916,41 @@
     },
     "international-1587": {
       "cluster_id": 1587,
-      "headline": "স্পেনে কেন আগাম নির্বাচনের ঘোষণা দিলেন সানচেজ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+      "first_seen": "2026-10-15T01:36:17.247Z",
+      "last_update": "2026-10-15T01:36:17.249Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/scholarship/6dhoxcrugb"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.651Z",
+          "kind": "claim",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1615": {
@@ -33384,6 +34060,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -33422,14 +34106,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -45303,6 +45979,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -45341,14 +46025,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -45527,6 +46203,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -45549,14 +46233,6 @@
           "source_links": 3,
           "claim_count": 21,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 26,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -49751,20 +50427,20 @@
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 723,
           "slug": "national-723",
           "actor_links": 1,
           "source_links": 3,
           "claim_count": 13,
           "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল"
-        },
-        {
-          "cluster_id": 507,
-          "slug": "national-507",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -50462,6 +51138,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -50500,14 +51184,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -56966,6 +57642,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -57004,14 +57688,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -73553,6 +74229,14 @@
           "headline": "‘বলল, ওপরের খুব চাপ...এই ওপরের চাপ কোন চাপ’"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -73583,14 +74267,6 @@
           "source_links": 2,
           "claim_count": 22,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1199,
-          "slug": "opinion-1199",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "'অবরুদ্ধ' থাকার ৩০ ঘণ্টা পর চুয়েট ভিসি হাসপাতালে, আন্দোলন 'চালিয়ে যাবেন' শিক্ষার্থীরা"
         }
       ]
     },
@@ -73752,6 +74428,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -73790,14 +74474,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "'অবরুদ্ধ' থাকার ৩০ ঘণ্টা পর চুয়েট ভিসি হাসপাতালে, আন্দোলন 'চালিয়ে যাবেন' শিক্ষার্থীরা"
-        },
-        {
-          "cluster_id": 1182,
-          "slug": "national-1182",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ব্যাংক কর্মকর্তাকে ছুরিকাঘাত করে ১ লাখ ৭৫ হাজার টাকা ছিনতাই"
         }
       ]
     },
@@ -74462,6 +75138,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "সহকারী শিক্ষক স্ত্রীর সঙ্গে স্কুলেই প্রধান শিক্ষকের মারামারি, ভিডিও ভাইরাল"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         },
         {
           "cluster_id": 1578,
@@ -76426,6 +77110,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -76464,14 +77156,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -79252,6 +79936,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -79290,14 +79982,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -83943,6 +84627,14 @@
           "headline": "স্কুলে শিক্ষক–শিক্ষিকার মারামারির ভিডিও ভাইরাল, পরে যা জানা গেল"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 2,
@@ -83973,14 +84665,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাষ্ট্রপতির সঙ্গে ড্যাফোডিল ইউনিভার্সিটির চেয়ারম্যানের সৌজন্য সাক্ষাৎ"
-        },
-        {
-          "cluster_id": 1540,
-          "slug": "national-1540",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জুলাই গণ-অভ্যুত্থান স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, সিএনজি অটোরিকশাচালক আহত"
         }
       ]
     },
@@ -86185,6 +86869,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -86223,14 +86915,6 @@
           "source_links": 2,
           "claim_count": 19,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1241,
-          "slug": "national-1241",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক এমপি সালাহউদ্দিন আহমেদ মারা গেছেন"
         }
       ]
     },
@@ -89511,6 +90195,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 1,
@@ -89549,14 +90241,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জনপ্রশাসনের কাজে অবহেলা ও অসহযোগিতাকারীদের শনাক্ত করে ব্যবস্থা নেওয়ার সুপারিশ"
         }
       ]
     },
@@ -96282,6 +96966,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 1,
@@ -96314,20 +97006,12 @@
           "headline": "স্কুলে শিক্ষক–শিক্ষিকার মারামারির ভিডিও ভাইরাল, পরে যা জানা গেল"
         },
         {
-          "cluster_id": 1569,
-          "slug": "national-1569",
+          "cluster_id": 1585,
+          "slug": "national-1585",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -100317,6 +101001,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -100355,14 +101047,6 @@
           "source_links": 2,
           "claim_count": 19,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1241,
-          "slug": "national-1241",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক এমপি সালাহউদ্দিন আহমেদ মারা গেছেন"
         }
       ]
     },
@@ -100405,6 +101089,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1551,
           "slug": "national-1551",
           "actor_links": 1,
@@ -100443,14 +101135,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 942,
-          "slug": "national-942",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
         }
       ]
     },
@@ -100588,6 +101272,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1551,
           "slug": "national-1551",
           "actor_links": 1,
@@ -100626,14 +101318,6 @@
           "source_links": 0,
           "claim_count": 3,
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 942,
-          "slug": "national-942",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
         }
       ]
     },
@@ -101385,6 +102069,14 @@
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -101407,14 +102099,6 @@
           "source_links": 3,
           "claim_count": 26,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 18,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -102545,6 +103229,14 @@
           "headline": "মার্কিন নির্বাচনের আগে তেলের বাজার চড়া রাখতে কৌশল নিয়েছে ইরান, কীভাবে হরমুজ নিয়ন্ত্রণে রাখছে তারা"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -102575,14 +103267,6 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1122,
-          "slug": "national-1122",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
         }
       ]
     },
@@ -105417,6 +106101,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -105455,14 +106147,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -107132,6 +107816,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 1,
@@ -107287,7 +107979,7 @@
       "cluster_id": 1526,
       "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-10-14T18:19:39.266Z",
-      "last_update": "2026-10-15T01:08:38.978Z",
+      "last_update": "2026-10-15T01:36:16.842Z",
       "claim_count": 3,
       "events": [
         {
@@ -108221,8 +108913,8 @@
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 1551,
-          "slug": "national-1551",
+          "cluster_id": 1584,
+          "slug": "national-1584",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -108273,7 +108965,7 @@
       "cluster_id": 1540,
       "headline": "জুলাই গণ-অভ্যুত্থান স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, সিএনজি অটোরিকশাচালক আহত",
       "first_seen": "2026-10-14T19:19:02.591Z",
-      "last_update": "2026-10-15T01:08:38.979Z",
+      "last_update": "2026-10-15T01:36:16.843Z",
       "claim_count": 2,
       "events": [
         {
@@ -109024,6 +109716,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 652,
           "slug": "national-652",
           "actor_links": 1,
@@ -109062,14 +109762,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
-        },
-        {
-          "cluster_id": 1442,
-          "slug": "national-1442",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "দেশের কল্যাণে ব্যক্তিগত উদ্যোগে কাজ করা মানুষের ভূমিকা অত্যন্ত গুরুত্বপূর্ণ: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -109789,6 +110481,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -109827,14 +110527,6 @@
           "source_links": 2,
           "claim_count": 19,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1241,
-          "slug": "national-1241",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক এমপি সালাহউদ্দিন আহমেদ মারা গেছেন"
         }
       ]
     },
@@ -110037,7 +110729,7 @@
       "cluster_id": 1569,
       "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর",
       "first_seen": "2026-10-14T21:21:33.282Z",
-      "last_update": "2026-10-15T01:08:38.977Z",
+      "last_update": "2026-10-15T01:36:16.841Z",
       "claim_count": 2,
       "events": [
         {
@@ -110120,6 +110812,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1526,
           "slug": "national-1526",
           "actor_links": 0,
@@ -110150,14 +110850,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -110695,6 +111387,14 @@
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
         },
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1522,
           "slug": "national-1522",
           "actor_links": 1,
@@ -110725,14 +111425,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 13,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -111618,6 +112310,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 3,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1574,
           "slug": "national-1574",
           "actor_links": 3,
@@ -111656,14 +112356,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
-        },
-        {
-          "cluster_id": 623,
-          "slug": "national-623",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 9,
-          "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
         }
       ]
     },
@@ -112303,29 +112995,735 @@
     },
     "national-1584": {
       "cluster_id": 1584,
-      "headline": "আমি পোশাক লাগিয়েছি ঘুষের টাকা দিয়ে, ঘুষ খাওয়ার জন্যই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+      "first_seen": "2026-10-15T01:36:16.831Z",
+      "last_update": "2026-10-15T01:36:16.840Z",
+      "claim_count": 11,
+      "events": [
+        {
+          "ts": "2026-10-14T04:49:50.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53ZWZidXNha0ItMzg0MnQwX1JCY0pPRWhRaTcwVHdSaDRneGZTSkNpQy1TekFMSEF3T3pzQ1JqYXhabHdpQ2plR09DdmhQSUZVZEllNzdHYkltVWZ1aWdqbGR1LUp1amtwSWJ0Y25BZEw2b3lu?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T04:49:50.000Z",
+          "kind": "evidence",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53ZWZidXNha0ItMzg0MnQwX1JCY0pPRWhRaTcwVHdSaDRneGZTSkNpQy1TekFMSEF3T3pzQ1JqYXhabHdpQ2plR09DdmhQSUZVZEllNzdHYkltVWZ1aWdqbGR1LUp1amtwSWJ0Y25BZEw2b3lu?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T11:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIaEtCdG9PQnZoQ2J3ejg0bUtZOWZlOE1mdTJfNjltY3FmbEltOEVJajdBM2tPczFFX1pTVV9hZy1JM3VURWJqZkh1OGR6eXpIMGxmN2hYQVNyQlFKWXRWdFFNYzRKaDJET3YwaVRuTWEwYkVz?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T11:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIaEtCdG9PQnZoQ2J3ejg0bUtZOWZlOE1mdTJfNjltY3FmbEltOEVJajdBM2tPczFFX1pTVV9hZy1JM3VURWJqZkh1OGR6eXpIMGxmN2hYQVNyQlFKWXRWdFFNYzRKaDJET3YwaVRuTWEwYkVz?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T16:53:46.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44VzJidnVjaFVJZU1YWU1CTlgwTEpsZEdDR1M5cEdiUnRNSHhkVmxHRkw5MmE0Q0dsSXpFRjlSTmpMQjA1VVAwMGhiVDVFb2ZoM2QzWFpSb1VEUW5kVlpDSlM2WlA0R1RKcVBYa2w3QnpwUnVm?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T16:53:46.000Z",
+          "kind": "evidence",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44VzJidnVjaFVJZU1YWU1CTlgwTEpsZEdDR1M5cEdiUnRNSHhkVmxHRkw5MmE0Q0dsSXpFRjlSTmpMQjA1VVAwMGhiVDVFb2ZoM2QzWFpSb1VEUW5kVlpDSlM2WlA0R1RKcVBYa2w3QnpwUnVm?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T17:59:20.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/5a4ox384um"
+          }
+        },
+        {
+          "ts": "2026-10-14T17:59:20.000Z",
+          "kind": "evidence",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/5a4ox384um"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zQ1RDOTNCWFpLNnd2UjBWem9JVXBaUmtERlRuVHJSSFJQVXZKTV9OZnZsR1RHYUVXZUt0cXhXcFFlOTh1RnM2SEpkRlFESW5TUkt3Sm1TV0JUeUxxMFh1dGZoZktta0Z6ZnNLYzVzNHd4aU0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWp2WUhjSlVoRDd4WnRhWEc1bUtndE1SN21lbTlhSlZNbVdna2pIemlzam9FQl9ORFY2c3lUSFBkaE0xYlhfcUpHRXNMTGhBMlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zQ1RDOTNCWFpLNnd2UjBWem9JVXBaUmtERlRuVHJSSFJQVXZKTV9OZnZsR1RHYUVXZUt0cXhXcFFlOTh1RnM2SEpkRlFESW5TUkt3Sm1TV0JUeUxxMFh1dGZoZktta0Z6ZnNLYzVzNHd4aU0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWp2WUhjSlVoRDd4WnRhWEc1bUtndE1SN21lbTlhSlZNbVdna2pIemlzam9FQl9ORFY2c3lUSFBkaE0xYlhfcUpHRXNMTGhBMlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/aim6q6whwu"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/aim6q6whwu"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/liact0qbvz"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:55:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/events/liact0qbvz"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/svcd9mo24n"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/svcd9mo24n"
+          }
+        },
+        {
+          "ts": "2026-10-14T19:21:54.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/snq2622j8j"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/dozkpx3kn0"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/dozkpx3kn0"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.620Z",
+          "kind": "claim",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.629Z",
+          "kind": "claim",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.631Z",
+          "kind": "claim",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.632Z",
+          "kind": "claim",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.634Z",
+          "kind": "claim",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.635Z",
+          "kind": "claim",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.637Z",
+          "kind": "claim",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.638Z",
+          "kind": "claim",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.639Z",
+          "kind": "claim",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.641Z",
+          "kind": "claim",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.642Z",
+          "kind": "claim",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582033,
+          "claim_text": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582034,
+          "claim_text": "স্কুলের ভেতরেই শিক্ষক-শিক্ষিকার হাতাহাতি, কী ঘটেছিল সেদিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582035,
+          "claim_text": "মহেশপুর সীমান্ত দিয়ে ভারতে অনুপ্রবেশের চেষ্টা, শিশুসহ আটক ৮",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582036,
+          "claim_text": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582037,
+          "claim_text": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582038,
+          "claim_text": "হিন্দু সম্প্রদায়ের পাশে থাকার আশ্বাস জামায়াত আমিরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582039,
+          "claim_text": "ময়মনসিংহে স্কুলেই শিক্ষক-শিক্ষিকার হাতাহাতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582040,
+          "claim_text": "অভিনন্দন, বিজ্ঞানচিন্তা!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582041,
+          "claim_text": "বৈজ্ঞানিক মনন গড়ে তোলার এক নিরবচ্ছিন্ন সংগ্রামের নাম বিজ্ঞানচিন্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582042,
+          "claim_text": "ফ্রিজের ওপর সাইবার হামলার কথা আগে শুনেছেন? ফ্রান্সের শত শত সুপারমার্কেটে এমনটা হলো কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582043,
+          "claim_text": "১৯৬০ সালে বিজ্ঞানীরা ভবিষ্যদ্বাণী করেছিলেন ২০২৬ সালের ১৩ নভেম্বর পৃথিবী ধ্বংস হয়ে যাবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1578,
+          "slug": "national-1578",
+          "actor_links": 3,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1551,
+          "slug": "national-1551",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1263,
+          "slug": "national-1263",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "সহকারী শিক্ষক স্ত্রীর সঙ্গে স্কুলেই প্রধান শিক্ষকের মারামারি, ভিডিও ভাইরাল"
+        },
+        {
+          "cluster_id": 1196,
+          "slug": "national-1196",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "স্কুলে শিক্ষক–শিক্ষিকার মারামারির ভিডিও ভাইরাল, পরে যা জানা গেল"
+        },
+        {
+          "cluster_id": 652,
+          "slug": "national-652",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 24,
+          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 1,
+          "source_links": 2,
+          "claim_count": 20,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
+        }
+      ]
     },
     "national-1585": {
       "cluster_id": 1585,
-      "headline": "স্বামী ঘুরতে নিয়ে যেতে না চাওয়ায় বিচ্ছেদ চাইলেন স্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+      "first_seen": "2026-10-15T01:36:16.844Z",
+      "last_update": "2026-10-15T01:36:16.846Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-14T17:06:03.000Z",
+          "kind": "evidence",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/5ti6vxm282"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/clash-between-two-factions-and-vehicle-vandalism-in-cumilla-over-jamaat-e-islami-chief-election/"
+          }
+        },
+        {
+          "ts": "2026-10-14T18:05:27.000Z",
+          "kind": "evidence",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/clash-between-two-factions-and-vehicle-vandalism-in-cumilla-over-jamaat-e-islami-chief-election/"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.645Z",
+          "kind": "claim",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.647Z",
+          "kind": "claim",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582044,
+          "claim_text": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582045,
+          "claim_text": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1530,
+          "slug": "politics-1530",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "কুমিল্লায় জামায়াতের আমীর নির্বাচন ঘিরে দুই পক্ষের সংঘর্ষ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1578,
+          "slug": "national-1578",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1574,
+          "slug": "national-1574",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1522,
+          "slug": "national-1522",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1569,
+          "slug": "national-1569",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
+        },
+        {
+          "cluster_id": 1526,
+          "slug": "national-1526",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
+        }
+      ]
+    },
+    "national-1586": {
+      "cluster_id": 1586,
+      "headline": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+      "first_seen": "2026-10-15T01:36:17.241Z",
+      "last_update": "2026-10-15T01:36:17.244Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/physics/b6ihv8bhp5"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.649Z",
+          "kind": "claim",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1587": {
+      "cluster_id": 1587,
+      "headline": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+      "first_seen": "2026-10-15T01:36:17.247Z",
+      "last_update": "2026-10-15T01:36:17.249Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/scholarship/6dhoxcrugb"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.651Z",
+          "kind": "claim",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582047,
+          "claim_text": "আইএমএফে ইন্টার্নশিপ, ১০–১২ সপ্তাহ ওয়াশিংটনে কাজের সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1588": {
       "cluster_id": 1588,
-      "headline": "নিউমুরিং টার্মিনাল ইজারা দিলে চট্টগ্রাম বন্দর বন্ধের কর্মসূচির হুঁশিয়ারি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+      "first_seen": "2026-10-15T01:36:17.250Z",
+      "last_update": "2026-10-15T01:36:17.252Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/drama/bckt34hndv"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.653Z",
+          "kind": "claim",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1589": {
@@ -112762,6 +114160,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -112800,14 +114206,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -118275,6 +119673,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -118313,14 +119719,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -120909,6 +122307,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -120923,14 +122329,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "অপারেশন ক্লিনহার্ট করার পরিকল্পনা নেই: চট্টগ্রামে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1278,
-          "slug": "national-1278",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 21,
-          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -124469,6 +125867,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -124507,14 +125913,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -126545,6 +127943,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -126583,14 +127989,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -136350,6 +137748,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -136388,14 +137794,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -136612,6 +138010,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -136650,14 +138056,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -141802,6 +143200,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -141840,14 +143246,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -160657,8 +162055,8 @@
           "headline": "তিস্তা প্রকল্পে কারিগরি সহায়তা দিতে চায় নেদারল্যান্ডস, প্রধানমন্ত্রীর সঙ্গে প্রতিনিধিদলের সাক্ষাৎ"
         },
         {
-          "cluster_id": 1551,
-          "slug": "national-1551",
+          "cluster_id": 1584,
+          "slug": "national-1584",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -160745,6 +162143,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -160783,14 +162189,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -160969,6 +162367,14 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 11,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -160991,14 +162397,6 @@
           "source_links": 3,
           "claim_count": 21,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 26,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -161350,12 +162748,12 @@
           "headline": "ফেরদৌসী আহমেদের পদত্যাগে শূন্য হওয়া নারী আসনে উপনির্বাচনের তফসিল ঘোষণা"
         },
         {
-          "cluster_id": 1578,
-          "slug": "national-1578",
+          "cluster_id": 1584,
+          "slug": "national-1584",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 7,
-          "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         }
       ]
     },
@@ -163702,6 +165100,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -163740,14 +165146,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -164976,6 +166374,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -165014,14 +166420,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
@@ -176599,20 +177997,20 @@
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 723,
           "slug": "national-723",
           "actor_links": 1,
           "source_links": 3,
           "claim_count": 13,
           "headline": "যুবরাজের একের পর এক ভুল হিসাব—সৌদি আরব কীভাবে নতুন করে ইয়েমেন যুদ্ধে জড়িয়ে পড়ল"
-        },
-        {
-          "cluster_id": 507,
-          "slug": "national-507",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -179917,6 +181315,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -179955,14 +181361,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
-        },
-        {
-          "cluster_id": 953,
-          "slug": "national-953",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 10,
-          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -193319,20 +194717,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
-        },
-        {
-          "cluster_id": 1278,
-          "slug": "national-1278",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 14,
-          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -194243,12 +195641,12 @@
           "headline": "নারী ও শিশুর প্রতি সহিংসতা রোধে জিরো টলারেন্স নীতি কঠোরভাবে বাস্তবায়নের আহ্বান রাষ্ট্রপতির"
         },
         {
-          "cluster_id": 1569,
-          "slug": "national-1569",
+          "cluster_id": 1585,
+          "slug": "national-1585",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -202066,8 +203464,8 @@
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 1551,
-          "slug": "national-1551",
+          "cluster_id": 1584,
+          "slug": "national-1584",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -211079,11 +212477,41 @@
     },
     "national-no-10-insists": {
       "cluster_id": 1586,
-      "headline": "No 10 insists RAF Fairford is safe after US withdraws its bombers from base",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+      "first_seen": "2026-10-15T01:36:17.241Z",
+      "last_update": "2026-10-15T01:36:17.244Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/physics/b6ihv8bhp5"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.649Z",
+          "kind": "claim",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-no-snowflakes-mental": {
@@ -215957,11 +217385,41 @@
     },
     "opinion-1588": {
       "cluster_id": 1588,
-      "headline": "সাহিত্যে নোবেল পুরস্কার-২০২৬: যদি পান, তবে সেই নারী কে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+      "first_seen": "2026-10-15T01:36:17.250Z",
+      "last_update": "2026-10-15T01:36:17.252Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/drama/bckt34hndv"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.653Z",
+          "kind": "claim",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582048,
+          "claim_text": "আমিনার ১০ বছরের অপেক্ষা, সতীত্ব নিয়ে নছরের সংশয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "opinion-1622": {
@@ -220486,7 +221944,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        }
+      ]
     },
     "politics-1556": {
       "cluster_id": 1556,
@@ -221297,6 +222764,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে অন্তত দুই দিন ঘরবাড়ি ও আশপাশের এলাকা পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
           "cluster_id": 1578,
           "slug": "national-1578",
           "actor_links": 0,
@@ -221335,14 +222810,6 @@
           "source_links": 2,
           "claim_count": 12,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 19,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -229729,11 +231196,41 @@
     },
     "sports-1586": {
       "cluster_id": 1586,
-      "headline": "যে কারণে ভারত-উইন্ডিজ দুদলকেই গুনতে হল জরিমানা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+      "first_seen": "2026-10-15T01:36:17.241Z",
+      "last_update": "2026-10-15T01:36:17.244Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/physics/b6ihv8bhp5"
+          }
+        },
+        {
+          "ts": "2026-10-15T01:52:44.649Z",
+          "kind": "claim",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন"
+        },
+        {
+          "ts": "2026-10-15T01:52:44.747Z",
+          "kind": "verify",
+          "claim_id": 582046,
+          "claim_text": "মাটির প্লেটে খাবার খেলে স্বাদ অন্য রকম লাগে কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1659": {
@@ -231587,6 +233084,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1585,
+          "slug": "national-1585",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
           "cluster_id": 1569,
           "slug": "national-1569",
           "actor_links": 0,
@@ -231625,14 +233130,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্বামী-স্ত্রী দুই শিক্ষকের মারামারির ভিডিও ভাইরাল, তদন্তে শিক্ষা কর্মকর্তা"
-        },
-        {
-          "cluster_id": 1351,
-          "slug": "politics-1351",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউনাইটেডে লিসান্দ্রো–বোমা, রুনির শঙ্কা, ঐক্য চূর্ণবিচূর্ণ হবে"
         }
       ]
     },
