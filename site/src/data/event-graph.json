@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3678,
+    "storyCount": 3683,
     "kinds": [
       "claim",
       "evidence",
@@ -4883,7 +4883,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -6541,8 +6541,8 @@
       "cluster_id": 1636,
       "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
       "first_seen": "2026-10-15T05:50:20.343Z",
-      "last_update": "2026-10-15T10:08:04.137Z",
-      "claim_count": 14,
+      "last_update": "2026-10-15T10:38:13.425Z",
+      "claim_count": 15,
       "events": [
         {
           "ts": "2026-10-15T02:57:29.000Z",
@@ -7260,6 +7260,46 @@
             "confidence": 13,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.126Z",
+          "kind": "evidence",
+          "claim_id": 618050,
+          "claim_text": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87346"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.147Z",
+          "kind": "claim",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.148Z",
+          "kind": "evidence",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87346"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -7434,7 +7474,7 @@
       "cluster_id": 1675,
       "headline": "আইএমএফের ঋণে শর্ত থাকবে, তা পূরণ করতে হবে: অর্থমন্ত্রী",
       "first_seen": "2026-10-15T08:38:07.840Z",
-      "last_update": "2026-10-15T10:08:04.147Z",
+      "last_update": "2026-10-15T10:38:13.441Z",
       "claim_count": 2,
       "events": [
         {
@@ -7638,11 +7678,41 @@
     },
     "economy-1708": {
       "cluster_id": 1708,
-      "headline": "কিউ–ক্যাশে ৩০ ব্যাংকের কার্ডে লেনদেনে বিঘ্ন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
+      "first_seen": "2026-10-15T10:38:13.840Z",
+      "last_update": "2026-10-15T10:38:13.841Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:03:42.000Z",
+          "kind": "evidence",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/reader/x32yogfobl"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.353Z",
+          "kind": "claim",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-171": {
@@ -12465,14 +12535,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -12511,6 +12573,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -19189,7 +19259,7 @@
       "cluster_id": 1698,
       "headline": "সুস্থ থাকতে কতক্ষণ ধরে হাত ধোয়া জরুরি!",
       "first_seen": "2026-10-15T10:08:04.139Z",
-      "last_update": "2026-10-15T10:08:04.141Z",
+      "last_update": "2026-10-15T10:38:13.435Z",
       "claim_count": 2,
       "events": [
         {
@@ -19371,11 +19441,41 @@
     },
     "entertainment-1709": {
       "cluster_id": 1709,
-      "headline": "লুইপার নতুন শুরু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+      "first_seen": "2026-10-15T10:38:13.843Z",
+      "last_update": "2026-10-15T10:38:13.845Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:00:14.000Z",
+          "kind": "evidence",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/from-jagannath-to-peshawar-a-trail-of-deaths-in-educational-institutions-across-the-subcontinent/"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.355Z",
+          "kind": "claim",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1717": {
@@ -23125,14 +23225,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -23171,6 +23263,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -28939,22 +29039,6 @@
           "headline": "১৪ দিনের দাওয়াতি সফরে যুক্তরাষ্ট্রে গেলেন চরমোনাই পীর"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -28977,6 +29061,22 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -32589,22 +32689,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -32634,6 +32718,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -32772,14 +32872,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -32802,6 +32894,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 14,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -33196,14 +33296,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -33234,6 +33326,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -35260,7 +35360,7 @@
       "cluster_id": 1659,
       "headline": "মক্কায় মসজিদে ‘অনৈতিক কাজ’, বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
       "first_seen": "2026-10-15T07:39:25.208Z",
-      "last_update": "2026-10-15T10:08:04.151Z",
+      "last_update": "2026-10-15T10:38:13.443Z",
       "claim_count": 3,
       "events": [
         {
@@ -35584,7 +35684,7 @@
       "cluster_id": 1683,
       "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার",
       "first_seen": "2026-10-15T09:08:26.108Z",
-      "last_update": "2026-10-15T10:08:04.146Z",
+      "last_update": "2026-10-15T10:38:13.440Z",
       "claim_count": 2,
       "events": [
         {
@@ -35782,7 +35882,7 @@
       "cluster_id": 1692,
       "headline": "ইরান হামলায় ‘মাদার অব অল বম্বস’ ব্যবহারের ভাবনায় যুক্তরাষ্ট্র: সিএনএন",
       "first_seen": "2026-10-15T09:38:05.271Z",
-      "last_update": "2026-10-15T10:08:04.143Z",
+      "last_update": "2026-10-15T10:38:13.436Z",
       "claim_count": 2,
       "events": [
         {
@@ -36025,20 +36125,80 @@
     },
     "international-1707": {
       "cluster_id": 1707,
-      "headline": "আজ ঘোষণা হচ্ছে পদার্থবিজ্ঞানে নোবেল বিজয়ীদের নাম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+      "first_seen": "2026-10-15T10:38:13.836Z",
+      "last_update": "2026-10-15T10:38:13.838Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:05:33.000Z",
+          "kind": "evidence",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/c3twtpoin1"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.350Z",
+          "kind": "claim",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1710": {
       "cluster_id": 1710,
-      "headline": "ভাঙারি কুড়িয়ে চলা বৃদ্ধের ব্যাংকে ৭৭ লাখ টাকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
+      "first_seen": "2026-10-15T10:38:13.847Z",
+      "last_update": "2026-10-15T10:38:13.849Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T09:24:55.000Z",
+          "kind": "evidence",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/arrangement/haal-khobor/2jbac3p60y"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.358Z",
+          "kind": "claim",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1713": {
@@ -38602,14 +38762,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -38648,6 +38800,14 @@
           "source_links": 3,
           "claim_count": 11,
           "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 17,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -39036,14 +39196,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -39074,6 +39226,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -44865,22 +45025,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -44910,6 +45054,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -50955,14 +51115,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -50993,6 +51145,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -56114,14 +56274,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -56152,6 +56304,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -59628,22 +59788,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -59673,6 +59817,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -64046,14 +64206,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -64092,6 +64244,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -66135,14 +66295,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -66181,6 +66333,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -70617,14 +70777,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -70663,6 +70815,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -81092,14 +81252,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -81138,6 +81290,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -87189,22 +87349,6 @@
           "headline": "১৪ দিনের দাওয়াতি সফরে যুক্তরাষ্ট্রে গেলেন চরমোনাই পীর"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -87227,6 +87371,22 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -87309,14 +87469,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -87355,6 +87507,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -97433,7 +97593,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
+          "claim_count": 15,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -101812,7 +101972,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -102119,14 +102279,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -102165,6 +102317,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -103849,14 +104009,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -103895,6 +104047,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1408,
+          "slug": "national-1408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘জমিদারের নাতি সারজিসকে বহিষ্কার, হাসনাতকে শোকজ করেছিলেন নাহিদ’"
         }
       ]
     },
@@ -105691,14 +105851,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -105737,6 +105889,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
+        },
+        {
+          "cluster_id": 1408,
+          "slug": "national-1408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘জমিদারের নাতি সারজিসকে বহিষ্কার, হাসনাতকে শোকজ করেছিলেন নাহিদ’"
         }
       ]
     },
@@ -107884,22 +108044,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -107929,6 +108073,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -108262,14 +108422,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -108292,6 +108444,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 14,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -111068,12 +111228,12 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
+          "cluster_id": 1625,
+          "slug": "national-1625",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
+          "claim_count": 2,
+          "headline": "সাবেক এমপি ও বিএনপির সিনিয়র নেতা আব্দুল হাই মারা গেছেন"
         }
       ]
     },
@@ -111164,14 +111324,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -111202,6 +111354,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -111996,14 +112156,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 943,
           "slug": "national-943",
           "actor_links": 0,
@@ -112042,6 +112194,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         }
       ]
     },
@@ -116472,28 +116632,28 @@
           "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 15,
           "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
         }
       ]
     },
@@ -120149,14 +120309,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -120195,6 +120347,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -123448,7 +123608,7 @@
       "cluster_id": 1625,
       "headline": "সাবেক এমপি ও বিএনপির সিনিয়র নেতা আব্দুল হাই মারা গেছেন",
       "first_seen": "2026-10-15T04:49:01.804Z",
-      "last_update": "2026-10-15T10:08:04.152Z",
+      "last_update": "2026-10-15T10:38:13.444Z",
       "claim_count": 3,
       "events": [
         {
@@ -124315,8 +124475,8 @@
       "cluster_id": 1636,
       "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
       "first_seen": "2026-10-15T05:50:20.343Z",
-      "last_update": "2026-10-15T10:08:04.137Z",
-      "claim_count": 14,
+      "last_update": "2026-10-15T10:38:13.425Z",
+      "claim_count": 15,
       "events": [
         {
           "ts": "2026-10-15T02:57:29.000Z",
@@ -125028,6 +125188,46 @@
           "kind": "verify",
           "claim_id": 627284,
           "claim_text": "ব্যাংকে ‘পরিবারতন্ত্রের’ সুযোগ রেখে আইনের নতুন খসড়া",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.126Z",
+          "kind": "evidence",
+          "claim_id": 618050,
+          "claim_text": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87346"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.147Z",
+          "kind": "claim",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.148Z",
+          "kind": "evidence",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87346"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660136,
+          "claim_text": "নিরাপত্তা শঙ্কায় সৌদি লিগে রোনালদোদের ম্যাচ স্থগিত",
           "detail": {
             "status": "CONFLICTING",
             "from": null,
@@ -126787,14 +126987,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -126817,6 +127009,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 14,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -126824,7 +127024,7 @@
       "cluster_id": 1659,
       "headline": "মক্কায় মসজিদে ‘অনৈতিক কাজ’, বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
       "first_seen": "2026-10-15T07:39:25.208Z",
-      "last_update": "2026-10-15T10:08:04.151Z",
+      "last_update": "2026-10-15T10:38:13.443Z",
       "claim_count": 3,
       "events": [
         {
@@ -127309,14 +127509,6 @@
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -127331,6 +127523,14 @@
           "source_links": 2,
           "claim_count": 10,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1574,
+          "slug": "national-1574",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -127338,7 +127538,7 @@
       "cluster_id": 1662,
       "headline": "সৌদি বিমানবন্দরে কর্মীদের চলাচলে মার্কিন দূতাবাসের কড়া বিধিনিষেধ",
       "first_seen": "2026-10-15T07:39:25.223Z",
-      "last_update": "2026-10-15T10:08:04.153Z",
+      "last_update": "2026-10-15T10:38:13.445Z",
       "claim_count": 2,
       "events": [
         {
@@ -127622,7 +127822,7 @@
       "cluster_id": 1668,
       "headline": "জুলাই স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, অটোরিকশাচালক আহত",
       "first_seen": "2026-10-15T08:07:53.725Z",
-      "last_update": "2026-10-15T10:08:04.158Z",
+      "last_update": "2026-10-15T10:38:13.447Z",
       "claim_count": 2,
       "events": [
         {
@@ -128063,7 +128263,7 @@
       "cluster_id": 1675,
       "headline": "আইএমএফের ঋণে শর্ত থাকবে, তা পূরণ করতে হবে: অর্থমন্ত্রী",
       "first_seen": "2026-10-15T08:38:07.840Z",
-      "last_update": "2026-10-15T10:08:04.147Z",
+      "last_update": "2026-10-15T10:38:13.441Z",
       "claim_count": 2,
       "events": [
         {
@@ -128778,7 +128978,7 @@
       "cluster_id": 1681,
       "headline": "পূজার ছুটিতে বাংলাবান্ধা স্থলবন্দরে ১২ দিন আমদানি-রপ্তানি বন্ধ",
       "first_seen": "2026-10-15T09:08:26.099Z",
-      "last_update": "2026-10-15T10:08:04.144Z",
+      "last_update": "2026-10-15T10:38:13.437Z",
       "claim_count": 2,
       "events": [
         {
@@ -128906,7 +129106,7 @@
       "cluster_id": 1682,
       "headline": "Since when did disrespecting others become a source of income, asks Mehazabien",
       "first_seen": "2026-10-15T09:08:26.104Z",
-      "last_update": "2026-10-15T10:08:04.145Z",
+      "last_update": "2026-10-15T10:38:13.439Z",
       "claim_count": 2,
       "events": [
         {
@@ -128985,7 +129185,7 @@
       "cluster_id": 1683,
       "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার",
       "first_seen": "2026-10-15T09:08:26.108Z",
-      "last_update": "2026-10-15T10:08:04.146Z",
+      "last_update": "2026-10-15T10:38:13.440Z",
       "claim_count": 2,
       "events": [
         {
@@ -129233,7 +129433,7 @@
       "cluster_id": 1685,
       "headline": "নিজেকে রক্ষার জন্য অপরাধটা কি আমাদেরই হলো, প্রশ্ন সেই তরুণীর",
       "first_seen": "2026-10-15T09:08:26.122Z",
-      "last_update": "2026-10-15T10:08:04.149Z",
+      "last_update": "2026-10-15T10:38:13.442Z",
       "claim_count": 2,
       "events": [
         {
@@ -129800,7 +130000,7 @@
       "cluster_id": 1698,
       "headline": "সুস্থ থাকতে কতক্ষণ ধরে হাত ধোয়া জরুরি!",
       "first_seen": "2026-10-15T10:08:04.139Z",
-      "last_update": "2026-10-15T10:08:04.141Z",
+      "last_update": "2026-10-15T10:38:13.435Z",
       "claim_count": 2,
       "events": [
         {
@@ -130305,20 +130505,198 @@
     },
     "national-1704": {
       "cluster_id": 1704,
-      "headline": "রাজধানী থেকে তজুমদ্দিন আওয়ামী লীগ নেতা ফরিদুল গ্রেপ্তার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শামীমের বিরুদ্ধে করা 'মবে' স্থানীয় জামায়াতের নেতা-কর্মীদের সংশ্লিষ্টতার অভিযোগ পরিবারের",
+      "first_seen": "2026-10-15T10:38:13.427Z",
+      "last_update": "2026-10-15T10:38:13.429Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T03:29:16.000Z",
+          "kind": "evidence",
+          "claim_id": 660201,
+          "claim_text": "শামীমের বিরুদ্ধে করা 'মবে' স্থানীয় জামায়াতের নেতা-কর্মীদের সংশ্লিষ্টতার অভিযোগ পরিবারের",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%b8%e0%a6%be%e0%a6%a4%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a7%80%e0%a6%b0%e0%a6%be%e0%a7%9f-%e0%a6%a7%e0%a6%b0%e0%a7%8d%e0%a6%ae-%e0%a6%85%e0%a6%ac%e0%a6%ae%e0%a6%be%e0%a6%a8%e0%a6%a8%e0%a6%be%e0%a6%b0/"
+          }
+        },
+        {
+          "ts": "2026-10-15T03:29:16.000Z",
+          "kind": "evidence",
+          "claim_id": 660202,
+          "claim_text": "সাতক্ষীরায় ধর্ম অবমাননার অভিযোগে দুদফা মারধর হাসপাতালে যুবকের মৃত্যু",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%b8%e0%a6%be%e0%a6%a4%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a7%80%e0%a6%b0%e0%a6%be%e0%a7%9f-%e0%a6%a7%e0%a6%b0%e0%a7%8d%e0%a6%ae-%e0%a6%85%e0%a6%ac%e0%a6%ae%e0%a6%be%e0%a6%a8%e0%a6%a8%e0%a6%be%e0%a6%b0/"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:23:10.000Z",
+          "kind": "evidence",
+          "claim_id": 660201,
+          "claim_text": "শামীমের বিরুদ্ধে করা 'মবে' স্থানীয় জামায়াতের নেতা-কর্মীদের সংশ্লিষ্টতার অভিযোগ পরিবারের",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq3695z2rx23o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.334Z",
+          "kind": "claim",
+          "claim_id": 660201,
+          "claim_text": "শামীমের বিরুদ্ধে করা 'মবে' স্থানীয় জামায়াতের নেতা-কর্মীদের সংশ্লিষ্টতার অভিযোগ পরিবারের"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.338Z",
+          "kind": "claim",
+          "claim_id": 660202,
+          "claim_text": "সাতক্ষীরায় ধর্ম অবমাননার অভিযোগে দুদফা মারধর হাসপাতালে যুবকের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660201,
+          "claim_text": "শামীমের বিরুদ্ধে করা 'মবে' স্থানীয় জামায়াতের নেতা-কর্মীদের সংশ্লিষ্টতার অভিযোগ পরিবারের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660202,
+          "claim_text": "সাতক্ষীরায় ধর্ম অবমাননার অভিযোগে দুদফা মারধর হাসপাতালে যুবকের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1706": {
       "cluster_id": 1706,
-      "headline": "সৌদিতে আরামকোর স্থাপনায় হুতিদের হামলায় বাংলাদেশি নিহত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কাজের মূল্যায়ন, নতুন পরিকল্পনা রংপুর বন্ধুসভার",
+      "first_seen": "2026-10-15T10:38:13.832Z",
+      "last_update": "2026-10-15T10:38:13.834Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:05:52.000Z",
+          "kind": "evidence",
+          "claim_id": 660205,
+          "claim_text": "কাজের মূল্যায়ন, নতুন পরিকল্পনা রংপুর বন্ধুসভার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/activities/0rjv7oeaqq"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.347Z",
+          "kind": "claim",
+          "claim_id": 660205,
+          "claim_text": "কাজের মূল্যায়ন, নতুন পরিকল্পনা রংপুর বন্ধুসভার"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660205,
+          "claim_text": "কাজের মূল্যায়ন, নতুন পরিকল্পনা রংপুর বন্ধুসভার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1707": {
+      "cluster_id": 1707,
+      "headline": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+      "first_seen": "2026-10-15T10:38:13.836Z",
+      "last_update": "2026-10-15T10:38:13.838Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:05:33.000Z",
+          "kind": "evidence",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/c3twtpoin1"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.350Z",
+          "kind": "claim",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660206,
+          "claim_text": "জেমিনাই অ্যাপ ও সার্চে যোগ হল গুগলের ‘জেমিনাই ৪ আর্গন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1709": {
+      "cluster_id": 1709,
+      "headline": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+      "first_seen": "2026-10-15T10:38:13.843Z",
+      "last_update": "2026-10-15T10:38:13.845Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:00:14.000Z",
+          "kind": "evidence",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/from-jagannath-to-peshawar-a-trail-of-deaths-in-educational-institutions-across-the-subcontinent/"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.355Z",
+          "kind": "claim",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660208,
+          "claim_text": "জগন্নাথ থেকে পেশোয়ার: উপমহাদেশে শিক্ষাঙ্গনে মৃত্যুর মিছিল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-171": {
@@ -130350,6 +130728,45 @@
           "kind": "verify",
           "claim_id": 6177,
           "claim_text": "ফিলিস্তিনের যুদ্ধ না থামা পর্যন্ত বন্ধ থাকবে যে ম্যাচ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-1710": {
+      "cluster_id": 1710,
+      "headline": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
+      "first_seen": "2026-10-15T10:38:13.847Z",
+      "last_update": "2026-10-15T10:38:13.849Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T09:24:55.000Z",
+          "kind": "evidence",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/arrangement/haal-khobor/2jbac3p60y"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.358Z",
+          "kind": "claim",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660209,
+          "claim_text": "শিল্প-একাডেমিয়া সমন্বয় ও টেকসই উন্নয়নের বার্তায় ড্যাফোডিলে শেষ হলো সাসটেইনেবিলিটি উইক ২০২৬",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -133302,14 +133719,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -133348,6 +133757,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -135473,14 +135890,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -135519,6 +135928,14 @@
           "source_links": 3,
           "claim_count": 11,
           "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
+        },
+        {
+          "cluster_id": 636,
+          "slug": "national-636",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 17,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         }
       ]
     },
@@ -138065,14 +138482,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -138111,6 +138520,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -140190,14 +140607,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -140228,6 +140637,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -142941,14 +143358,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -142987,6 +143396,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -144234,14 +144651,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1625,
           "slug": "national-1625",
           "actor_links": 0,
@@ -144256,6 +144665,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের মধ্যেই জাতীয় গ্রিডে বিদ্যুৎ দিতে প্রস্তুত হচ্ছে রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -157235,22 +157652,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -157280,6 +157681,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -157850,14 +158267,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -157896,6 +158305,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -169984,14 +170401,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -170030,6 +170439,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -176474,14 +176891,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -176512,6 +176921,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -177763,22 +178180,6 @@
           "headline": "সাজেকে দুই সংগঠনের বিক্ষোভ, তিন ঘণ্টা সড়কে আটকে ছিল পর্যটকদের গাড়িবহর"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -177801,6 +178202,22 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
         }
       ]
     },
@@ -179100,14 +179517,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -179146,6 +179555,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -183338,14 +183755,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -183384,6 +183793,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -183841,14 +184258,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -183887,6 +184296,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -184705,14 +185122,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -184751,6 +185160,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -186128,14 +186545,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -186174,6 +186583,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -187526,14 +187943,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -187572,6 +187981,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 732,
+          "slug": "national-732",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
         }
       ]
     },
@@ -195662,14 +196079,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -195700,6 +196109,14 @@
           "source_links": 2,
           "claim_count": 14,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -199132,14 +199549,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -199178,6 +199587,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ময়নাতদন্তের প্রতিবেদনে জানা গেল নানা পাটেকারের মৃত্যুর কারণ"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         }
       ]
     },
@@ -203860,22 +204277,6 @@
           "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -203890,6 +204291,22 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1520,
+          "slug": "national-1520",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাশিয়ায় চাকরির নামে মানবপাচার, ড্রোন হামলায় ২০ বাংলাদেশির মৃ ত্যু: এসআরবি"
         }
       ]
     },
@@ -204396,14 +204813,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -204442,6 +204851,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         }
       ]
     },
@@ -204524,14 +204941,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -204570,6 +204979,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         }
       ]
     },
@@ -204692,14 +205109,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -204738,6 +205147,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -204820,14 +205237,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -204866,6 +205275,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -209056,20 +209473,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
+        },
+        {
+          "cluster_id": 1614,
+          "slug": "national-1614",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -213450,14 +213867,6 @@
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1228,
           "slug": "national-1228",
           "actor_links": 0,
@@ -213472,6 +213881,14 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "বিএনপির সাবেক সংসদ সদস্য সালাহউদ্দিন আহমেদ মারা গেছেন"
+        },
+        {
+          "cluster_id": 1028,
+          "slug": "national-1028",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
         }
       ]
     },
@@ -214520,14 +214937,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -214566,6 +214975,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -218544,14 +218961,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -218590,6 +218999,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 907,
+          "slug": "national-907",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সৌদি আরবে বাংলাদেশিদের সতর্ক থাকার আহ্বান দূতাবাসের"
         }
       ]
     },
@@ -223129,22 +223546,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -223174,6 +223575,22 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1249,
+          "slug": "politics-1249",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পানির নিচে ইয়াবার ‘গোপন বাহন’, এক চালানে ৩০ লাখ আনার পরিকল্পনা"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
           "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
@@ -223257,14 +223674,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -223303,6 +223712,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -223580,14 +223997,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -223626,6 +224035,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 907,
+          "slug": "national-907",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সৌদি আরবে বাংলাদেশিদের সতর্ক থাকার আহ্বান দূতাবাসের"
         }
       ]
     },
@@ -225171,7 +225588,7 @@
       "cluster_id": 1662,
       "headline": "সৌদি বিমানবন্দরে কর্মীদের চলাচলে মার্কিন দূতাবাসের কড়া বিধিনিষেধ",
       "first_seen": "2026-10-15T07:39:25.223Z",
-      "last_update": "2026-10-15T10:08:04.153Z",
+      "last_update": "2026-10-15T10:38:13.445Z",
       "claim_count": 2,
       "events": [
         {
@@ -225770,11 +226187,81 @@
     },
     "national-i-paid-bribes": {
       "cluster_id": 1705,
-      "headline": "I paid bribes for my uniform to take bribes: ASI’s remarks go viral",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+      "first_seen": "2026-10-15T10:38:13.430Z",
+      "last_update": "2026-10-15T10:38:13.433Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T05:44:12.000Z",
+          "kind": "evidence",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/thursday-briefing-thanks-to-an-erratic-trump-peace-in-ukraine-is-still-far-away"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:14:49.000Z",
+          "kind": "evidence",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:14:49.000Z",
+          "kind": "evidence",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.341Z",
+          "kind": "claim",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.345Z",
+          "kind": "claim",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-icc-world-cup": {
@@ -228277,7 +228764,7 @@
       "cluster_id": 1682,
       "headline": "Since when did disrespecting others become a source of income, asks Mehazabien",
       "first_seen": "2026-10-15T09:08:26.104Z",
-      "last_update": "2026-10-15T10:08:04.145Z",
+      "last_update": "2026-10-15T10:38:13.439Z",
       "claim_count": 2,
       "events": [
         {
@@ -228845,6 +229332,85 @@
           "kind": "verify",
           "claim_id": 267614,
           "claim_text": "Healey should ‘stay the course’ and repair UK finances, says top IMF economist",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-thursday-briefing-thanks": {
+      "cluster_id": 1705,
+      "headline": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+      "first_seen": "2026-10-15T10:38:13.430Z",
+      "last_update": "2026-10-15T10:38:13.433Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T05:44:12.000Z",
+          "kind": "evidence",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/thursday-briefing-thanks-to-an-erratic-trump-peace-in-ukraine-is-still-far-away"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:14:49.000Z",
+          "kind": "evidence",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:14:49.000Z",
+          "kind": "evidence",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.341Z",
+          "kind": "claim",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.345Z",
+          "kind": "claim",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660203,
+          "claim_text": "Thursday briefing: Thanks to an erratic Trump, peace in Ukraine is still far away",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660204,
+          "claim_text": "Russia and Ukraine resume energy strikes despite Trump warnings",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -231938,7 +232504,7 @@
           "slug": "national-1636",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
+          "claim_count": 15,
           "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         },
         {
@@ -232453,7 +233019,7 @@
       "cluster_id": 1692,
       "headline": "ইরান হামলায় ‘মাদার অব অল বম্বস’ ব্যবহারের ভাবনায় যুক্তরাষ্ট্র: সিএনএন",
       "first_seen": "2026-10-15T09:38:05.271Z",
-      "last_update": "2026-10-15T10:08:04.143Z",
+      "last_update": "2026-10-15T10:38:13.436Z",
       "claim_count": 2,
       "events": [
         {
@@ -232606,6 +233172,45 @@
           "kind": "verify",
           "claim_id": 655480,
           "claim_text": "পাঠকের ছবি (১৫ অক্টোবর ২০২৬)",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "opinion-1708": {
+      "cluster_id": 1708,
+      "headline": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
+      "first_seen": "2026-10-15T10:38:13.840Z",
+      "last_update": "2026-10-15T10:38:13.841Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-15T10:03:42.000Z",
+          "kind": "evidence",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://nagorik.prothomalo.com/reader/x32yogfobl"
+          }
+        },
+        {
+          "ts": "2026-10-15T10:54:41.353Z",
+          "kind": "claim",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি"
+        },
+        {
+          "ts": "2026-10-15T10:54:41.460Z",
+          "kind": "verify",
+          "claim_id": 660207,
+          "claim_text": "রবীন্দ্রনাথ-নজরুল সম্পর্ক: প্রভাব ও প্রণতি",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -233388,14 +233993,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1511,
           "slug": "national-1511",
           "actor_links": 0,
@@ -233434,6 +234031,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতকে হারিয়ে লিজেন্ডস লিগে বাংলাদেশের প্রথম জয়"
+        },
+        {
+          "cluster_id": 638,
+          "slug": "national-638",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
         }
       ]
     },
@@ -234089,14 +234694,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -234135,6 +234732,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ছিনতাইয়ের সতর্কবার্তায় এয়ার ইন্ডিয়ার ফ্লাইট জয়পুরে জরুরি অবতরণ"
+        },
+        {
+          "cluster_id": 1425,
+          "slug": "national-1425",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নোয়াখালীতে চুরির অভিযোগে প্রতিবন্ধী যুবককে পিটিয়ে হত্যা, গ্রেফতার ৪"
         }
       ]
     },
@@ -235835,22 +236440,6 @@
           "headline": "১৪ দিনের দাওয়াতি সফরে যুক্তরাষ্ট্রে গেলেন চরমোনাই পীর"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -235873,6 +236462,22 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
+        },
+        {
+          "cluster_id": 1261,
+          "slug": "national-1261",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 13,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -237749,14 +238354,6 @@
           "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -237779,6 +238376,14 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 14,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
         }
       ]
     },
@@ -237975,14 +238580,6 @@
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
         },
         {
-          "cluster_id": 1637,
-          "slug": "national-1637",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পৃথক দুই হামলায় হরমুজের কাছে ডুবে গেছে দুটি জাহাজ"
-        },
-        {
           "cluster_id": 1584,
           "slug": "national-1584",
           "actor_links": 0,
@@ -237997,6 +238594,14 @@
           "source_links": 2,
           "claim_count": 10,
           "headline": "সার সংকটে ১১ দলীয় জোটের এমপিদের লোকজনের হাত থাকতে পারে : প্রতিমন্ত্রী শাহে আলম"
+        },
+        {
+          "cluster_id": 1574,
+          "slug": "national-1574",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জামায়াতের কুমিল্লা মহানগর কমিটি গঠন নিয়ে বিরোধ, ককটেল বিস্ফোরণ, গাড়ি ভাঙচুর"
         }
       ]
     },
@@ -241631,14 +242236,6 @@
           "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা"
         },
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1228,
           "slug": "national-1228",
           "actor_links": 0,
@@ -241661,6 +242258,14 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
+        },
+        {
+          "cluster_id": 907,
+          "slug": "national-907",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "সৌদি আরবে বাংলাদেশিদের সতর্ক থাকার আহ্বান দূতাবাসের"
         }
       ]
     },
@@ -247111,7 +247716,7 @@
       "cluster_id": 1659,
       "headline": "মক্কায় মসজিদে ‘অনৈতিক কাজ’, বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
       "first_seen": "2026-10-15T07:39:25.208Z",
-      "last_update": "2026-10-15T10:08:04.151Z",
+      "last_update": "2026-10-15T10:38:13.443Z",
       "claim_count": 3,
       "events": [
         {
@@ -250102,14 +250707,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1661,
-          "slug": "politics-1661",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আলমডাঙ্গায় শিক্ষার্থীদের উত্ত্যক্তের প্রতিবাদ করায় যুবককে পিটিয়ে হত্যা, অভিযুক্ত যুবক আটক"
-        },
-        {
           "cluster_id": 1122,
           "slug": "national-1122",
           "actor_links": 0,
@@ -250148,6 +250745,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সৌদি আরবে বিমানবন্দর বন্ধ, ঢাকা থেকে ৫১ ফ্লাইট বাতিল–স্থগিত"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
