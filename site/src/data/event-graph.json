@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3773,
+    "storyCount": 3775,
     "kinds": [
       "claim",
       "evidence",
@@ -4703,6 +4703,14 @@
           "headline": "দরপত্র ও ক্রয়প্রক্রিয়া প্রক্রিয়া বন্ধ রাখার নির্দেশ স্থানীয় সরকার বিভাগের"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -4725,14 +4733,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জনপ্রশাসনের কাজে অবহেলা ও অসহযোগিতাকারীদের শনাক্ত করে ব্যবস্থা নেওয়ার সুপারিশ"
         }
       ]
     },
@@ -8200,6 +8200,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -8238,14 +8246,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -9019,8 +9019,8 @@
       "cluster_id": 1886,
       "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
       "first_seen": "2026-10-15T23:14:23.765Z",
-      "last_update": "2026-10-16T03:53:55.311Z",
-      "claim_count": 3,
+      "last_update": "2026-10-16T04:24:01.781Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-15T20:50:15.000Z",
@@ -9114,6 +9114,28 @@
           }
         },
         {
+          "ts": "2026-10-16T00:53:23.000Z",
+          "kind": "evidence",
+          "claim_id": 816320,
+          "claim_text": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nR0pUd2toM19kM0RlN0doZERyRlNZcE05d0dIakxZdUUxTUdFcm9XajZkSjc5azdOdXZJdmVaU3VaY3hGeHd6WlkycDZWUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T00:53:23.000Z",
+          "kind": "evidence",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nR0pUd2toM19kM0RlN0doZERyRlNZcE05d0dIakxZdUUxTUdFcm9XajZkSjc5azdOdXZJdmVaU3VaY3hGeHd6WlkycDZWUQ?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-16T03:20:14.000Z",
           "kind": "evidence",
           "claim_id": 816320,
@@ -9141,6 +9163,24 @@
             "confidence": 100,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.270Z",
+          "kind": "claim",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -9148,9 +9188,25 @@
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
+          "source_links": 4,
+          "claim_count": 5,
           "headline": "মোটরসাইকেলে এসে সাংবাদিককে প্রকাশ্যে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 874,
+          "slug": "national-874",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
           "cluster_id": 1228,
@@ -9169,28 +9225,12 @@
           "headline": "বিএনপির সাবেক সংসদ সদস্য সালাহউদ্দিন আহমেদ মারা গেছেন"
         },
         {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
-        },
-        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা"
-        },
-        {
-          "cluster_id": 874,
-          "slug": "national-874",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -9276,7 +9316,7 @@
       "cluster_id": 1914,
       "headline": "মাদক কারবারিকে ধাওয়া করতে গিয়ে ভারতে প্রবেশ, বিএসএফের হাতে আটক দুই পুলিশ",
       "first_seen": "2026-10-16T03:53:55.307Z",
-      "last_update": "2026-10-16T03:53:55.309Z",
+      "last_update": "2026-10-16T04:24:01.779Z",
       "claim_count": 2,
       "events": [
         {
@@ -9402,11 +9442,41 @@
     },
     "economy-1930": {
       "cluster_id": 1930,
-      "headline": "১০ অক্টোবর ঢাকায় ‘রিয়েল এস্টেট কানেক্ট বাংলাদেশ’, চলছে নিবন্ধন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+      "first_seen": "2026-10-16T04:24:02.064Z",
+      "last_update": "2026-10-16T04:24:02.066Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T03:05:48.000Z",
+          "kind": "evidence",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/iismmnslkm"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.469Z",
+          "kind": "claim",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1998": {
@@ -14983,6 +15053,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -15021,14 +15099,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -21617,6 +21687,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -21655,14 +21733,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -23980,6 +24050,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -24018,14 +24096,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -24244,6 +24314,14 @@
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 0,
@@ -24266,14 +24344,6 @@
           "source_links": 3,
           "claim_count": 5,
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
-        },
-        {
-          "cluster_id": 588,
-          "slug": "national-588",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
         }
       ]
     },
@@ -29477,6 +29547,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -29515,14 +29593,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 459,
-          "slug": "national-459",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -29644,6 +29714,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -29682,14 +29760,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 459,
-          "slug": "national-459",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -33779,6 +33849,14 @@
           "headline": "দরপত্র ও ক্রয়প্রক্রিয়া প্রক্রিয়া বন্ধ রাখার নির্দেশ স্থানীয় সরকার বিভাগের"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -33801,14 +33879,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জনপ্রশাসনের কাজে অবহেলা ও অসহযোগিতাকারীদের শনাক্ত করে ব্যবস্থা নেওয়ার সুপারিশ"
         }
       ]
     },
@@ -36343,6 +36413,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -36373,14 +36451,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের মধ্যেই রূপপুর থেকে বিদ্যুৎ সরবরাহ শুরুর আশা"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -44582,6 +44652,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -44620,14 +44698,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -44841,7 +44911,7 @@
       "cluster_id": 1913,
       "headline": "মাদার অব অল বম্বস দিয়ে ইরানে হামলার কথা ভাবছে যুক্তরাষ্ট্র",
       "first_seen": "2026-10-16T03:53:55.303Z",
-      "last_update": "2026-10-16T03:53:55.306Z",
+      "last_update": "2026-10-16T04:24:01.777Z",
       "claim_count": 2,
       "events": [
         {
@@ -45122,6 +45192,45 @@
           "kind": "verify",
           "claim_id": 816388,
           "claim_text": "আলবেনিয়ায় শিক্ষার্থীদের বিক্ষোভ, পদত্যাগের দাবি প্রত্যাখ্যান প্রধানমন্ত্রীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1928": {
+      "cluster_id": 1928,
+      "headline": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
+      "first_seen": "2026-10-16T04:24:02.056Z",
+      "last_update": "2026-10-16T04:24:02.058Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T04:09:15.000Z",
+          "kind": "evidence",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/un-security-council-strongly-condemns-houthi-attacks/"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.465Z",
+          "kind": "claim",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -57107,6 +57216,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -57145,14 +57262,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 457,
-          "slug": "national-457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মুক্ত হয়ে ধ্রুব রাঠি বললেন, আমাকে গ্রেপ্তার নয়, ‘অপহরণ’ করা হয়েছে"
         }
       ]
     },
@@ -63832,6 +63941,14 @@
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         },
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -63862,14 +63979,6 @@
           "source_links": 3,
           "claim_count": 12,
           "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
-        },
-        {
-          "cluster_id": 826,
-          "slug": "national-826",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 11,
-          "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         }
       ]
     },
@@ -69576,6 +69685,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -69614,14 +69731,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -79460,6 +79569,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -79498,14 +79615,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 459,
-          "slug": "national-459",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -80425,6 +80534,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -80463,14 +80580,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 459,
-          "slug": "national-459",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -89084,6 +89193,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -89122,14 +89239,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -91910,6 +92019,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -91948,14 +92065,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -98867,6 +98976,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -98905,14 +99022,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -108539,6 +108648,14 @@
           "headline": "দরপত্র ও ক্রয়প্রক্রিয়া প্রক্রিয়া বন্ধ রাখার নির্দেশ স্থানীয় সরকার বিভাগের"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -108561,14 +108678,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জনপ্রশাসনের কাজে অবহেলা ও অসহযোগিতাকারীদের শনাক্ত করে ব্যবস্থা নেওয়ার সুপারিশ"
         }
       ]
     },
@@ -113089,6 +113198,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -113127,14 +113244,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -122624,6 +122733,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -122662,14 +122779,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -122955,6 +123064,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -122985,14 +123102,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের মধ্যেই রূপপুর থেকে বিদ্যুৎ সরবরাহ শুরুর আশা"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -127117,6 +127226,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -127155,14 +127272,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জনপ্রশাসনের কাজে অবহেলা ও অসহযোগিতাকারীদের শনাক্ত করে ব্যবস্থা নেওয়ার সুপারিশ"
         }
       ]
     },
@@ -127986,6 +128095,14 @@
           "headline": "জুলাই গণ-অভ্যুত্থান স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, সিএনজি অটোরিকশাচালক আহত"
         },
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -128008,14 +128125,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "নভেম্বরের মধ্যেই রূপপুর থেকে বিদ্যুৎ সরবরাহ শুরুর আশা"
-        },
-        {
-          "cluster_id": 1569,
-          "slug": "national-1569",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
         }
       ]
     },
@@ -128304,6 +128413,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -128342,14 +128459,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -132665,6 +132774,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1929,
+          "slug": "national-1929",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ"
+        },
+        {
           "cluster_id": 217,
           "slug": "national-217",
           "actor_links": 1,
@@ -136103,20 +136220,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1722,
           "slug": "national-1722",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে সচিবালয় স্থানান্তরের সিদ্ধান্তের প্রতিবাদ"
-        },
-        {
-          "cluster_id": 1028,
-          "slug": "national-1028",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "আরব আমিরাতে শ্রমবাজার ও নতুন সুযোগের সম্ভাবনা নিয়ে মাহদী আমিন-রাষ্ট্রদূতের বৈঠক"
         }
       ]
     },
@@ -143009,6 +143126,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -143047,14 +143172,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -149070,6 +149187,14 @@
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 0,
@@ -149084,14 +149209,6 @@
           "source_links": 4,
           "claim_count": 6,
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
-        },
-        {
-          "cluster_id": 292,
-          "slug": "national-292",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         }
       ]
     },
@@ -150379,12 +150496,12 @@
           "headline": "প্রশ্ন ফাঁস ঠেকাতে সচিবালয়ে রাত কাটাচ্ছেন প্রতিমন্ত্রী"
         },
         {
-          "cluster_id": 1885,
-          "slug": "politics-1885",
+          "cluster_id": 1886,
+          "slug": "national-1886",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "দুর্গাপূজা উদযাপনে সর্বাত্মক সহযোগিতা করবে এনসিপি: নাহিদ ইসলাম"
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
         }
       ]
     },
@@ -151466,6 +151583,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -151504,14 +151629,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -152010,6 +152127,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -152048,14 +152173,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -154659,6 +154776,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -154697,14 +154822,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -157051,6 +157168,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -157089,14 +157214,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বীনি শিক্ষার পাশাপাশি ভবিষ্যতের চ্যালেঞ্জ মোকাবিলায় প্রস্তুত হতে হবে-প্রতিমন্ত্রী মীর হেলাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -157659,8 +157776,8 @@
       "cluster_id": 1886,
       "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
       "first_seen": "2026-10-15T23:14:23.765Z",
-      "last_update": "2026-10-16T03:53:55.311Z",
-      "claim_count": 3,
+      "last_update": "2026-10-16T04:24:01.781Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-15T20:50:15.000Z",
@@ -157754,6 +157871,28 @@
           }
         },
         {
+          "ts": "2026-10-16T00:53:23.000Z",
+          "kind": "evidence",
+          "claim_id": 816320,
+          "claim_text": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nR0pUd2toM19kM0RlN0doZERyRlNZcE05d0dIakxZdUUxTUdFcm9XajZkSjc5azdOdXZJdmVaU3VaY3hGeHd6WlkycDZWUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T00:53:23.000Z",
+          "kind": "evidence",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1nR0pUd2toM19kM0RlN0doZERyRlNZcE05d0dIakxZdUUxTUdFcm9XajZkSjc5azdOdXZJdmVaU3VaY3hGeHd6WlkycDZWUQ?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-16T03:20:14.000Z",
           "kind": "evidence",
           "claim_id": 816320,
@@ -157781,6 +157920,24 @@
             "confidence": 100,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.270Z",
+          "kind": "claim",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821667,
+          "claim_text": "বাংলামোটরে এনসিপির কার্যালয়ের সামনে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -157788,9 +157945,25 @@
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
+          "source_links": 4,
+          "claim_count": 5,
           "headline": "মোটরসাইকেলে এসে সাংবাদিককে প্রকাশ্যে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 943,
+          "slug": "national-943",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
+        },
+        {
+          "cluster_id": 874,
+          "slug": "national-874",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 6,
+          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
           "cluster_id": 1228,
@@ -157809,28 +157982,12 @@
           "headline": "বিএনপির সাবেক সংসদ সদস্য সালাহউদ্দিন আহমেদ মারা গেছেন"
         },
         {
-          "cluster_id": 943,
-          "slug": "national-943",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
-        },
-        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 3,
           "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা"
-        },
-        {
-          "cluster_id": 874,
-          "slug": "national-874",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 6,
-          "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         }
       ]
     },
@@ -158653,6 +158810,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -158691,14 +158856,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -158823,7 +158980,7 @@
       "cluster_id": 1897,
       "headline": "মোহাম্মদপুরে দুই কিশোর গ্যাং গ্রুপের গোলাগুলিতে বাবা-ছেলে আহত",
       "first_seen": "2026-10-16T02:32:08.441Z",
-      "last_update": "2026-10-16T03:53:55.335Z",
+      "last_update": "2026-10-16T04:24:01.791Z",
       "claim_count": 3,
       "events": [
         {
@@ -159145,6 +159302,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1893,
           "slug": "national-1893",
           "actor_links": 0,
@@ -159183,14 +159348,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -159326,7 +159483,7 @@
       "cluster_id": 1900,
       "headline": "দুর্গাপূজায় সার্বিক নিরাপত্তা নিশ্চিত করাকে সর্বোচ্চ গুরুত্ব দেওয়া হয়েছে",
       "first_seen": "2026-10-16T02:32:08.455Z",
-      "last_update": "2026-10-16T03:53:55.336Z",
+      "last_update": "2026-10-16T04:24:01.792Z",
       "claim_count": 2,
       "events": [
         {
@@ -159522,7 +159679,7 @@
       "cluster_id": 1905,
       "headline": "আজ বিশ্ব খাদ্য দিবস, জানেন কি কেন পালিত হয় দিনটি?",
       "first_seen": "2026-10-16T02:59:38.543Z",
-      "last_update": "2026-10-16T03:53:55.330Z",
+      "last_update": "2026-10-16T04:24:01.786Z",
       "claim_count": 2,
       "events": [
         {
@@ -159991,8 +160148,8 @@
       "cluster_id": 1910,
       "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ",
       "first_seen": "2026-10-16T03:53:55.280Z",
-      "last_update": "2026-10-16T03:53:55.289Z",
-      "claim_count": 9,
+      "last_update": "2026-10-16T04:24:01.774Z",
+      "claim_count": 10,
       "events": [
         {
           "ts": "2026-10-15T20:13:31.000Z",
@@ -160182,6 +160339,28 @@
           }
         },
         {
+          "ts": "2026-10-16T04:06:09.000Z",
+          "kind": "evidence",
+          "claim_id": 816357,
+          "claim_text": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/18-1-million-people-in-bangladesh-at-risk-of-food-insecurity/"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:06:09.000Z",
+          "kind": "evidence",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/18-1-million-people-in-bangladesh-at-risk-of-food-insecurity/"
+          }
+        },
+        {
           "ts": "2026-10-16T04:12:20.303Z",
           "kind": "claim",
           "claim_id": 816357,
@@ -160342,6 +160521,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.388Z",
+          "kind": "claim",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -160362,36 +160559,36 @@
           "headline": "জুলাইয়ের ‘মানবতাবিরোধী অপরাধ’: সাবেক মন্ত্রী-উপদেষ্টাদের বিরুদ্ধে অভিযোগপত্র ‘প্রায় প্রস্তুত’"
         },
         {
-          "cluster_id": 1868,
-          "slug": "national-1868",
+          "cluster_id": 1614,
+          "slug": "national-1614",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মালয়েশিয়ায় কর্মী নিয়োগ প্রক্রিয়া শুরুর ঘোষণা, যেভাবে নিয়োগ হবে কর্মী"
-        },
-        {
-          "cluster_id": 1754,
-          "slug": "national-1754",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাকিস্তানে স্কুলের ছাদ ধসে ১৮ শিশুর মৃত্যু, ধ্বংসস্তূপের নিচে অনেকে আটকে থাকার শঙ্কা"
-        },
-        {
-          "cluster_id": 1636,
-          "slug": "national-1636",
-          "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 5,
-          "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         },
         {
-          "cluster_id": 1631,
-          "slug": "politics-1631",
+          "cluster_id": 1062,
+          "slug": "national-1062",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "'যৌনাঙ্গে বুট দিয়ে মেরেছে', 'জামা টেনে তুলে দিয়েছে' - দিল্লিতে আটক বিক্ষোভকারীদের অভিজ্ঞতা"
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
+        },
+        {
+          "cluster_id": 979,
+          "slug": "national-979",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "হুতিরা কি আসলেই এতটা শক্তিশালী হয়ে উঠেছে, সৌদি বাহিনী কেন তাদের ক্ষেপণাস্ত্র ঠেকাতে পারছে না"
+        },
+        {
+          "cluster_id": 953,
+          "slug": "national-953",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -160399,7 +160596,7 @@
       "cluster_id": 1911,
       "headline": "পোষা নদীর পিঠে চেপে : নিজাম বিশ্বাস",
       "first_seen": "2026-10-16T03:53:55.290Z",
-      "last_update": "2026-10-16T03:53:55.292Z",
+      "last_update": "2026-10-16T04:24:01.775Z",
       "claim_count": 2,
       "events": [
         {
@@ -160478,7 +160675,7 @@
       "cluster_id": 1912,
       "headline": "সমাজকে এগিয়ে নিতে পৃষ্ঠপোষকতা প্রয়োজন : এ. কে. আজাদ",
       "first_seen": "2026-10-16T03:53:55.293Z",
-      "last_update": "2026-10-16T03:53:55.299Z",
+      "last_update": "2026-10-16T04:24:01.776Z",
       "claim_count": 2,
       "events": [
         {
@@ -160557,7 +160754,7 @@
       "cluster_id": 1913,
       "headline": "মাদার অব অল বম্বস দিয়ে ইরানে হামলার কথা ভাবছে যুক্তরাষ্ট্র",
       "first_seen": "2026-10-16T03:53:55.303Z",
-      "last_update": "2026-10-16T03:53:55.306Z",
+      "last_update": "2026-10-16T04:24:01.777Z",
       "claim_count": 2,
       "events": [
         {
@@ -160685,7 +160882,7 @@
       "cluster_id": 1914,
       "headline": "মাদক কারবারিকে ধাওয়া করতে গিয়ে ভারতে প্রবেশ, বিএসএফের হাতে আটক দুই পুলিশ",
       "first_seen": "2026-10-16T03:53:55.307Z",
-      "last_update": "2026-10-16T03:53:55.309Z",
+      "last_update": "2026-10-16T04:24:01.779Z",
       "claim_count": 2,
       "events": [
         {
@@ -160813,7 +161010,7 @@
       "cluster_id": 1915,
       "headline": "আসছে বছর আবার আসব : নাসরীন জাহান",
       "first_seen": "2026-10-16T03:53:55.312Z",
-      "last_update": "2026-10-16T03:53:55.314Z",
+      "last_update": "2026-10-16T04:24:01.782Z",
       "claim_count": 2,
       "events": [
         {
@@ -160892,7 +161089,7 @@
       "cluster_id": 1916,
       "headline": "সম্মাননা লেখকদের উৎসাহিত করে : শাহেদ মুহাম্মদ আলী",
       "first_seen": "2026-10-16T03:53:55.316Z",
-      "last_update": "2026-10-16T03:53:55.318Z",
+      "last_update": "2026-10-16T04:24:01.783Z",
       "claim_count": 2,
       "events": [
         {
@@ -160971,7 +161168,7 @@
       "cluster_id": 1917,
       "headline": "মাটিতে লুটিয়ে পড়ার পরও থামেনি গুলি, যুবককে খুনের পর ৮–১০ মিনিট ফাঁকা গুলিও ছোড়া হয়",
       "first_seen": "2026-10-16T03:53:55.319Z",
-      "last_update": "2026-10-16T03:53:55.321Z",
+      "last_update": "2026-10-16T04:24:01.784Z",
       "claim_count": 2,
       "events": [
         {
@@ -161178,7 +161375,7 @@
       "cluster_id": 1919,
       "headline": "শাস্তির পর ক্ষমা চাইলেন লিসান্দ্রো মার্তিনেজ",
       "first_seen": "2026-10-16T03:53:55.326Z",
-      "last_update": "2026-10-16T03:53:55.329Z",
+      "last_update": "2026-10-16T04:24:01.785Z",
       "claim_count": 2,
       "events": [
         {
@@ -161513,7 +161710,7 @@
       "cluster_id": 1921,
       "headline": "পাকিস্তানে স্কুলের ভবন ধসে শিক্ষক-শিক্ষার্থীসহ অন্তত ২৮ জন নিহত",
       "first_seen": "2026-10-16T03:53:55.337Z",
-      "last_update": "2026-10-16T03:53:55.339Z",
+      "last_update": "2026-10-16T04:24:01.793Z",
       "claim_count": 2,
       "events": [
         {
@@ -161834,30 +162031,234 @@
     },
     "national-1927": {
       "cluster_id": 1927,
-      "headline": "দর্শক কেন আপনাকে শুনবে? ভালো উপস্থাপক হওয়ার পাঠ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র",
+      "first_seen": "2026-10-16T04:24:01.787Z",
+      "last_update": "2026-10-16T04:24:01.790Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T12:11:04.000Z",
+          "kind": "evidence",
+          "claim_id": 821739,
+          "claim_text": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZckR6S2pYOVVjTGxXLVNaQXQtZUVBdnJWbnFDQUJYVTFuRklkRV9hcmRUMmN0VVdnYTg3WFMtcXA4YVpBaEJVLW1GaFA4MWpoUWdLcnRueVo?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T19:17:57.000Z",
+          "kind": "evidence",
+          "claim_id": 821739,
+          "claim_text": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5PLTZ6MTZvbG1vREpyUGQ1Y1RCUEVWMDhCeUxoaG9EZzl6eW9YaVZFLXRiUUlldjl1ZHhwU1RyVHZKQzFaMlZjY3dsXzlBaXYzWU41cFQ0azFwcHBCUDZjZXI5eFMyTmdoY0F6dDV5a2l5b0FR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T19:17:57.000Z",
+          "kind": "evidence",
+          "claim_id": 821740,
+          "claim_text": "দাবি পূরণ না হওয়ায় সাজেকে ফের অবরোধ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5PLTZ6MTZvbG1vREpyUGQ1Y1RCUEVWMDhCeUxoaG9EZzl6eW9YaVZFLXRiUUlldjl1ZHhwU1RyVHZKQzFaMlZjY3dsXzlBaXYzWU41cFQ0azFwcHBCUDZjZXI5eFMyTmdoY0F6dDV5a2l5b0FR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.459Z",
+          "kind": "claim",
+          "claim_id": 821739,
+          "claim_text": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.462Z",
+          "kind": "claim",
+          "claim_id": 821740,
+          "claim_text": "দাবি পূরণ না হওয়ায় সাজেকে ফের অবরোধ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821739,
+          "claim_text": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821740,
+          "claim_text": "দাবি পূরণ না হওয়ায় সাজেকে ফের অবরোধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1899,
+          "slug": "national-1899",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বসুন্ধরা টেকনিক্যাল ইনস্টিটিউটে নবীন শিক্ষার্থীদের ওরিয়েন্টেশন"
+        },
+        {
+          "cluster_id": 1893,
+          "slug": "national-1893",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রতিপক্ষের চুল টেনে বড় সময়ের জন্য নিষিদ্ধ ভিনিসিয়ুস"
+        },
+        {
+          "cluster_id": 1881,
+          "slug": "national-1881",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জুলাই ও আগস্টের ভ্যাট রিটার্ন জমায় মিলল আরও ১০ দিন"
+        },
+        {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ককরোচদের কর্মসূচিতে অনুমতি দিল্লি হাইকোর্টের"
+        },
+        {
+          "cluster_id": 1847,
+          "slug": "national-1847",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
+        },
+        {
+          "cluster_id": 1748,
+          "slug": "national-1748",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
+        }
+      ]
     },
     "national-1928": {
       "cluster_id": 1928,
-      "headline": "বিয়ের চার মাস পর স্ত্রীকে ভারতে পাচারের চেষ্টা স্বামীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
+      "first_seen": "2026-10-16T04:24:02.056Z",
+      "last_update": "2026-10-16T04:24:02.058Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T04:09:15.000Z",
+          "kind": "evidence",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/un-security-council-strongly-condemns-houthi-attacks/"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.465Z",
+          "kind": "claim",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821741,
+          "claim_text": "হুথিদের হামলার নিন্দা জানিয়েছে জাতিসংঘ নিরাপত্তা পরিষদ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1929": {
       "cluster_id": 1929,
-      "headline": "শাহবাগ থানায় ঢাবি সাংবাদিকদের ওপর হামলা, পাঁচ মাস পর তদন্ত প্রতিবেদন জমা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ",
+      "first_seen": "2026-10-16T04:24:02.061Z",
+      "last_update": "2026-10-16T04:24:02.063Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T03:40:05.000Z",
+          "kind": "evidence",
+          "claim_id": 821742,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/h9luo71q60"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.467Z",
+          "kind": "claim",
+          "claim_id": 821742,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821742,
+          "claim_text": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 217,
+          "slug": "national-217",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 4,
+          "headline": "ভারতে অভিনেতা ইমরান খান আটক, সিজেপির নেতা–কর্মীদের ধরপাকড়ের প্রতিবাদে সরব তারকারা"
+        },
+        {
+          "cluster_id": 174,
+          "slug": "national-174",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 4,
+          "headline": "দিল্লির 'দুর্গে' বিক্ষোভকারী দেখলেই আটক, 'দ্বিতীয় যন্তর মন্তর' হতেই দিল না পুলিশ"
+        },
+        {
+          "cluster_id": 164,
+          "slug": "national-36-missing-children",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুব উন্নয়নের বাতিল পরীক্ষার নতুন তারিখ ঘোষণা, পরীক্ষা বিকেলে"
+        }
+      ]
     },
     "national-193": {
       "cluster_id": 193,
@@ -162227,22 +162628,121 @@
         }
       ]
     },
+    "national-1930": {
+      "cluster_id": 1930,
+      "headline": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+      "first_seen": "2026-10-16T04:24:02.064Z",
+      "last_update": "2026-10-16T04:24:02.066Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T03:05:48.000Z",
+          "kind": "evidence",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/iismmnslkm"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.469Z",
+          "kind": "claim",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821743,
+          "claim_text": "১ বছরে স্মার্টফোনের বিক্রি নেমে গেল ১৪ বছরের তলানিতে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-1931": {
       "cluster_id": 1931,
-      "headline": "ক্যারিবিয়ান বোর্ডকে আর্থিক সহায়তা করে হলেও টেস্ট খেলতে চায় ইংল্যান্ড",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গণিত ভাইয়ার প্রশ্ন:পর্ব ১৬",
+      "first_seen": "2026-10-16T04:24:02.068Z",
+      "last_update": "2026-10-16T04:24:02.069Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T03:05:01.000Z",
+          "kind": "evidence",
+          "claim_id": 821744,
+          "claim_text": "গণিত ভাইয়ার প্রশ্ন:পর্ব ১৬",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/study/6y46it8rjt"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.471Z",
+          "kind": "claim",
+          "claim_id": 821744,
+          "claim_text": "গণিত ভাইয়ার প্রশ্ন:পর্ব ১৬"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821744,
+          "claim_text": "গণিত ভাইয়ার প্রশ্ন:পর্ব ১৬",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1932": {
       "cluster_id": 1932,
-      "headline": "ইমরান খানের সঙ্গে পাকিস্তান সরকারের আচরণে ‘স্তম্ভিত’ শাস্ত্রি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হুতিদের হামলা: বিকল্প দুই রুটে সৌদি আরব যাচ্ছেন যাত্রীরা",
+      "first_seen": "2026-10-16T04:24:02.071Z",
+      "last_update": "2026-10-16T04:24:02.073Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T03:01:12.000Z",
+          "kind": "evidence",
+          "claim_id": 821745,
+          "claim_text": "হুতিদের হামলা: বিকল্প দুই রুটে সৌদি আরব যাচ্ছেন যাত্রীরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/192zf6nthy"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.474Z",
+          "kind": "claim",
+          "claim_id": 821745,
+          "claim_text": "হুতিদের হামলা: বিকল্প দুই রুটে সৌদি আরব যাচ্ছেন যাত্রীরা"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821745,
+          "claim_text": "হুতিদের হামলা: বিকল্প দুই রুটে সৌদি আরব যাচ্ছেন যাত্রীরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1933": {
@@ -166711,6 +167211,14 @@
           "headline": "নতুন ক্যারিয়ার খুঁজতে পিএমপি সার্টিফিকেশন, বাংলাদেশেও আছে বড় ধরনের সুযোগ"
         },
         {
+          "cluster_id": 1929,
+          "slug": "national-1929",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ"
+        },
+        {
           "cluster_id": 164,
           "slug": "national-36-missing-children",
           "actor_links": 1,
@@ -166725,14 +167233,6 @@
           "source_links": 4,
           "claim_count": 27,
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
-        },
-        {
-          "cluster_id": 1656,
-          "slug": "national-1656",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "কেন ও কোন ধারায় ভারত ছাড়ার নোটিশ পেলেন নায়ক ইমরান খান"
         }
       ]
     },
@@ -168634,6 +169134,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -168672,14 +169180,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
-        },
-        {
-          "cluster_id": 71,
-          "slug": "national-71",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কুমিল্লায় স্কুলছাত্রী তাজমিনকে ধর্ষণের পর হত্যা করে সিএনজি চালক সুমন"
         }
       ]
     },
@@ -168963,6 +169463,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -169001,14 +169509,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -178768,6 +179268,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -178806,14 +179314,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -179030,6 +179530,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -179068,14 +179576,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -184220,6 +184720,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -184258,14 +184766,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -189538,6 +190038,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1929,
+          "slug": "national-1929",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "যুব উন্নয়নের প্রশ্নফাঁসে বাতিল পরীক্ষা আজ"
+        },
         {
           "cluster_id": 217,
           "slug": "national-217",
@@ -198667,6 +199175,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -198705,14 +199221,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 457,
-          "slug": "national-457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মুক্ত হয়ে ধ্রুব রাঠি বললেন, আমাকে গ্রেপ্তার নয়, ‘অপহরণ’ করা হয়েছে"
         }
       ]
     },
@@ -206177,6 +206685,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -206215,14 +206731,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -206549,6 +207057,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -206587,14 +207103,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রবীন্দ্রনাথের গ্রাফিতিতে চুনকালি, আটক ৪ জন রাষ্ট্রদ্রোহ মামলায় গ্রেফতার"
-        },
-        {
-          "cluster_id": 459,
-          "slug": "national-459",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইংল্যান্ডে বাঘের খাঁচায় ঢুকে পড়লেন দর্শনার্থী, এরপর যা হলো"
         }
       ]
     },
@@ -207451,6 +207959,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -207489,14 +208005,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -208764,6 +209272,14 @@
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 0,
@@ -208786,14 +209302,6 @@
           "source_links": 3,
           "claim_count": 5,
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুথিদের"
-        },
-        {
-          "cluster_id": 588,
-          "slug": "national-588",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "কুমিল্লার স্কুলছাত্রী তাজমিন হত্যা: কক্সবাজার থেকে আটক কথিত প্রেমিক রাজু"
         }
       ]
     },
@@ -223448,6 +223956,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -223486,14 +224002,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
-        },
-        {
-          "cluster_id": 23,
-          "slug": "national-23",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ বিশ্ব ডিম দিবস, প্রতিপাদ্য ‘শক্তি ও পুষ্টিতে ভরপুর ডিম’"
         }
       ]
     },
@@ -224947,6 +225455,14 @@
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         },
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -224977,14 +225493,6 @@
           "source_links": 3,
           "claim_count": 12,
           "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
-        },
-        {
-          "cluster_id": 826,
-          "slug": "national-826",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 11,
-          "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         }
       ]
     },
@@ -229407,6 +229915,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1614,
           "slug": "national-1614",
           "actor_links": 0,
@@ -229445,14 +229961,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
-        },
-        {
-          "cluster_id": 826,
-          "slug": "national-826",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ফেল করা বিষয়ে ৩ মাসের মধ্যে পরীক্ষা নিতে প্রস্তুত শিক্ষা বোর্ড, সিদ্ধান্ত দেবে মন্ত্রণালয়"
         }
       ]
     },
@@ -237885,6 +238393,14 @@
           "headline": "চকবাজারে আগুন: চার ঘণ্টায়ও নিয়ন্ত্রণে আসেনি"
         },
         {
+          "cluster_id": 1886,
+          "slug": "national-1886",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 4,
+          "headline": "মধ্যরাতে এনসিপির কেন্দ্রীয় কার্যালয়ের সামনে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1819,
           "slug": "national-1819",
           "actor_links": 0,
@@ -237899,14 +238415,6 @@
           "source_links": 4,
           "claim_count": 8,
           "headline": "ছাত্রদল নেতারাসহ উপাচার্যকে ভেতরে রেখে ভবনে তালা দিলেন শিক্ষার্থীরা, বিদ্যুৎও বিচ্ছিন্ন"
-        },
-        {
-          "cluster_id": 457,
-          "slug": "national-457",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 4,
-          "headline": "মুক্ত হয়ে ধ্রুব রাঠি বললেন, আমাকে গ্রেপ্তার নয়, ‘অপহরণ’ করা হয়েছে"
         }
       ]
     },
@@ -267622,8 +268130,8 @@
       "cluster_id": 1910,
       "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ",
       "first_seen": "2026-10-16T03:53:55.280Z",
-      "last_update": "2026-10-16T03:53:55.289Z",
-      "claim_count": 9,
+      "last_update": "2026-10-16T04:24:01.774Z",
+      "claim_count": 10,
       "events": [
         {
           "ts": "2026-10-15T20:13:31.000Z",
@@ -267813,6 +268321,28 @@
           }
         },
         {
+          "ts": "2026-10-16T04:06:09.000Z",
+          "kind": "evidence",
+          "claim_id": 816357,
+          "claim_text": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/18-1-million-people-in-bangladesh-at-risk-of-food-insecurity/"
+          }
+        },
+        {
+          "ts": "2026-10-16T04:06:09.000Z",
+          "kind": "evidence",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/18-1-million-people-in-bangladesh-at-risk-of-food-insecurity/"
+          }
+        },
+        {
           "ts": "2026-10-16T04:12:20.303Z",
           "kind": "claim",
           "claim_id": 816357,
@@ -267973,6 +268503,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-16T04:42:06.388Z",
+          "kind": "claim",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ"
+        },
+        {
+          "ts": "2026-10-16T04:42:06.551Z",
+          "kind": "verify",
+          "claim_id": 821711,
+          "claim_text": "খাদ্য নিরাপত্তাহীনতার ঝুঁকিতে বাংলাদেশের ১ কোটি ৮১ লাখ মানুষ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -267993,36 +268541,36 @@
           "headline": "জুলাইয়ের ‘মানবতাবিরোধী অপরাধ’: সাবেক মন্ত্রী-উপদেষ্টাদের বিরুদ্ধে অভিযোগপত্র ‘প্রায় প্রস্তুত’"
         },
         {
-          "cluster_id": 1868,
-          "slug": "national-1868",
+          "cluster_id": 1614,
+          "slug": "national-1614",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মালয়েশিয়ায় কর্মী নিয়োগ প্রক্রিয়া শুরুর ঘোষণা, যেভাবে নিয়োগ হবে কর্মী"
-        },
-        {
-          "cluster_id": 1754,
-          "slug": "national-1754",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাকিস্তানে স্কুলের ছাদ ধসে ১৮ শিশুর মৃত্যু, ধ্বংসস্তূপের নিচে অনেকে আটকে থাকার শঙ্কা"
-        },
-        {
-          "cluster_id": 1636,
-          "slug": "national-1636",
-          "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 5,
-          "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         },
         {
-          "cluster_id": 1631,
-          "slug": "politics-1631",
+          "cluster_id": 1062,
+          "slug": "national-1062",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "'যৌনাঙ্গে বুট দিয়ে মেরেছে', 'জামা টেনে তুলে দিয়েছে' - দিল্লিতে আটক বিক্ষোভকারীদের অভিজ্ঞতা"
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম"
+        },
+        {
+          "cluster_id": 979,
+          "slug": "national-979",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "হুতিরা কি আসলেই এতটা শক্তিশালী হয়ে উঠেছে, সৌদি বাহিনী কেন তাদের ক্ষেপণাস্ত্র ঠেকাতে পারছে না"
+        },
+        {
+          "cluster_id": 953,
+          "slug": "national-953",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "নিজ দপ্তরে ১২ ঘণ্টা ধরে অবরুদ্ধ চুয়েটের নতুন উপাচার্য, বিদ্যুৎ-সংযোগ বিচ্ছিন্ন"
         }
       ]
     },
@@ -268030,7 +268578,7 @@
       "cluster_id": 1917,
       "headline": "মাটিতে লুটিয়ে পড়ার পরও থামেনি গুলি, যুবককে খুনের পর ৮–১০ মিনিট ফাঁকা গুলিও ছোড়া হয়",
       "first_seen": "2026-10-16T03:53:55.319Z",
-      "last_update": "2026-10-16T03:53:55.321Z",
+      "last_update": "2026-10-16T04:24:01.784Z",
       "claim_count": 2,
       "events": [
         {
@@ -268559,6 +269107,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1927,
+          "slug": "national-1927",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের অনির্দিষ্টকালের অবরোধ, বন্ধ পর্যটনকেন্দ্র"
+        },
+        {
           "cluster_id": 1899,
           "slug": "national-1899",
           "actor_links": 0,
@@ -268597,14 +269153,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংরক্ষিত নারী আসনে উপনির্বাচনে বিএনপির মনোনয়ন ফরম বিতরণ কাল"
-        },
-        {
-          "cluster_id": 1748,
-          "slug": "national-1748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ড্রাগ ইন্টারন্যাশনালের আগুন নিয়ন্ত্রণে বেগ পেতে হচ্ছে দমকল বাহিনীকে"
         }
       ]
     },
@@ -279847,6 +280395,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1910,
+          "slug": "politics-1910",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
+        },
+        {
           "cluster_id": 1656,
           "slug": "national-1656",
           "actor_links": 0,
@@ -279885,14 +280441,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিক আটক, প্রতিক্রিয়া টোকিওর"
-        },
-        {
-          "cluster_id": 1526,
-          "slug": "national-1526",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "হামলায় আহত পুলিশ পরিদর্শককে দেখতে হাসপাতালে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
