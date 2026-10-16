@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3821,
+    "storyCount": 3827,
     "kinds": [
       "claim",
       "evidence",
@@ -6410,6 +6410,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -6448,14 +6456,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -9639,7 +9639,7 @@
       "cluster_id": 2012,
       "headline": "বাংলাদেশের সঙ্গে অংশীদারিত্ব চুক্তি করতে যাচ্ছে বিশ্বব্যাংক: অর্থমন্ত্রী",
       "first_seen": "2026-10-16T10:08:17.708Z",
-      "last_update": "2026-10-16T10:08:17.710Z",
+      "last_update": "2026-10-16T10:36:51.810Z",
       "claim_count": 2,
       "events": [
         {
@@ -9804,20 +9804,169 @@
     },
     "economy-2019": {
       "cluster_id": 2019,
-      "headline": "কিউ-ক্যাশ চালু, স্বাভাবিক হচ্ছে ব্যাংকের এটিএম-কার্ড ও অনলাইন সেবা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+      "first_seen": "2026-10-16T10:36:51.799Z",
+      "last_update": "2026-10-16T10:36:51.802Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T13:24:10.000Z",
+          "kind": "evidence",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9BZVEta2hoMklWamRBYnBrbWt0MGNic292WUhVUTJFUEFiVHJwc211SjlWeHp3Sy1tLUx0U2VhNlNpdkU1S1F2LTh1SGJCX1lV?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxPZUh0X0NxVlBROWtIWERnSVk3X2gtSTcyM2RNNk01bTNRTWVzOExZeGlSYTVzNDNQNFBFVV9pa2I1ZmliRUZzc2d4Ui1oSUpLbHZGb1F6UlFtTlFfVFFGcUUzYWRqT3dHVlR0MWtJa3BTZmVTcUZrM3FNSmV5ZU5UVnMzb2VKa3dKUGlyemJTZ245RU1xNG5YczJQWmctamJqM1R6MXBWR3RIWnhNWGxmU1llOXBfSURqZVFNVzVaRjFZWU1WUldKb1VZaGNsVHR6TXdxQzR4X1E2Znh6VG53bFNmbVJMc0VOcjBrOEhOb3pFdkdJVlQtVjhWNXhFRE8yUV96b2JfdWlmZGNvMjRhUmFvNi1jQnh2a0NHdjRzZEk2M0Z0T2Z5WDZlbmZ4RUpRNVptT2JhMVNJcXlZeDlJZXFGaFp2X2E3TWZDTTZzWWJtTkZCM2RJdElhcnZJV1FMNHV0RHlpLVdqWFhPdHlmQVpXN2VWUzdHc2pYeG9HOTRxZDdEaEcwQWFyM3d5dUkzNjFzVjRpdlg4dHRGT29RWDNKYWlyTm1TUWtUcUVnWGJvT1g1cVNVYy1fWENtbUladHhFYUhSY1ktaGFMN3hIM3I0SDRUY09aeVg1N0hNWHhwbEdaMmRtVVRQSmhBTk1sUklTVldOelI4eGRwbFlaMEpHc2xQNS0xUnctdTR5RjI4V0dxUEMtWUVkajl0S3E0b0lwRWJFa1lseXhlbXl3Q01BZHY4Nlo2Wk5scU1xNmlpV2o4MEp1Nw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxPZUh0X0NxVlBROWtIWERnSVk3X2gtSTcyM2RNNk01bTNRTWVzOExZeGlSYTVzNDNQNFBFVV9pa2I1ZmliRUZzc2d4Ui1oSUpLbHZGb1F6UlFtTlFfVFFGcUUzYWRqT3dHVlR0MWtJa3BTZmVTcUZrM3FNSmV5ZU5UVnMzb2VKa3dKUGlyemJTZ245RU1xNG5YczJQWmctamJqM1R6MXBWR3RIWnhNWGxmU1llOXBfSURqZVFNVzVaRjFZWU1WUldKb1VZaGNsVHR6TXdxQzR4X1E2Znh6VG53bFNmbVJMc0VOcjBrOEhOb3pFdkdJVlQtVjhWNXhFRE8yUV96b2JfdWlmZGNvMjRhUmFvNi1jQnh2a0NHdjRzZEk2M0Z0T2Z5WDZlbmZ4RUpRNVptT2JhMVNJcXlZeDlJZXFGaFp2X2E3TWZDTTZzWWJtTkZCM2RJdElhcnZJV1FMNHV0RHlpLVdqWFhPdHlmQVpXN2VWUzdHc2pYeG9HOTRxZDdEaEcwQWFyM3d5dUkzNjFzVjRpdlg4dHRGT29RWDNKYWlyTm1TUWtUcUVnWGJvT1g1cVNVYy1fWENtbUladHhFYUhSY1ktaGFMN3hIM3I0SDRUY09aeVg1N0hNWHhwbEdaMmRtVVRQSmhBTk1sUklTVldOelI4eGRwbFlaMEpHc2xQNS0xUnctdTR5RjI4V0dxUEMtWUVkajl0S3E0b0lwRWJFa1lseXhlbXl3Q01BZHY4Nlo2Wk5scU1xNmlpV2o4MEp1Nw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.248Z",
+          "kind": "claim",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.251Z",
+          "kind": "claim",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1885,
+          "slug": "politics-1885",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দুর্গাপূজা উদযাপনে সর্বাত্মক সহযোগিতা করবে এনসিপি: নাহিদ ইসলাম"
+        },
+        {
+          "cluster_id": 1122,
+          "slug": "national-1122",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
+        },
+        {
+          "cluster_id": 993,
+          "slug": "politics-993",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দিল্লির যন্তর মন্তরে ঢোকার চেষ্টা, সিজেপির তিন নেতা আটক"
+        },
+        {
+          "cluster_id": 938,
+          "slug": "national-938",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিলেটে কিশোরী ধর্ষণ মামলায় যুবকের মৃত্যুদণ্ড"
+        },
+        {
+          "cluster_id": 867,
+          "slug": "national-867",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
+        },
+        {
+          "cluster_id": 851,
+          "slug": "national-851",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
+        }
+      ]
     },
     "economy-2024": {
       "cluster_id": 2024,
-      "headline": "৪৪২ মেগাওয়াটের সৌরবিদ্যুৎকেন্দ্র নির্মাণের উদ্যোগ, আজ একনেকে উঠবে প্রস্তাব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+      "first_seen": "2026-10-16T10:36:52.258Z",
+      "last_update": "2026-10-16T10:36:52.260Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hwvyomn134"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.270Z",
+          "kind": "claim",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-2062": {
@@ -17830,6 +17979,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -17868,14 +18025,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -22377,12 +22526,12 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 1976,
-          "slug": "national-1976",
+          "cluster_id": 2019,
+          "slug": "national-2019",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্র-পাকিস্তান যুদ্ধ হলে আমরা পাকিস্তানের পাশে থাকবো: বিজেপি নেতা মদন"
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
         }
       ]
     },
@@ -22713,7 +22862,7 @@
       "cluster_id": 1985,
       "headline": "মাদক মামলার আসামিদের ছিনিয়ে নিতে পুলিশ ফাঁড়িতে হামলা, গ্রেফতার ৩",
       "first_seen": "2026-10-16T08:11:45.943Z",
-      "last_update": "2026-10-16T10:08:17.717Z",
+      "last_update": "2026-10-16T10:36:51.817Z",
       "claim_count": 2,
       "events": [
         {
@@ -23792,6 +23941,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -23830,14 +23987,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -42788,6 +42937,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -42826,14 +42983,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 1495,
-          "slug": "national-1495",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃহস্পতিবার দেশের যেসব এলাকায় টানা ৮ ঘণ্টা বিদ্যুৎ থাকবে না"
         }
       ]
     },
@@ -45795,7 +45944,7 @@
       "cluster_id": 1913,
       "headline": "ইরানে ‘মাদার অব অল বোম্বস’ নিক্ষেপ করতে পারে যুক্তরাষ্ট্র",
       "first_seen": "2026-10-16T03:53:55.303Z",
-      "last_update": "2026-10-16T10:08:17.719Z",
+      "last_update": "2026-10-16T10:36:51.820Z",
       "claim_count": 3,
       "events": [
         {
@@ -46727,7 +46876,7 @@
       "cluster_id": 1950,
       "headline": "রেললাইন ধরে হাঁটছিলেন মা ও মেয়ে, ট্রেনে কাটা পড়ে নিহত",
       "first_seen": "2026-10-16T06:12:51.568Z",
-      "last_update": "2026-10-16T10:08:17.721Z",
+      "last_update": "2026-10-16T10:36:51.827Z",
       "claim_count": 2,
       "events": [
         {
@@ -47218,7 +47367,7 @@
       "cluster_id": 1976,
       "headline": "যুক্তরাষ্ট্র-পাকিস্তান যুদ্ধ হলে আমরা পাকিস্তানের পাশে থাকবো: বিজেপি নেতা মদন",
       "first_seen": "2026-10-16T07:41:33.105Z",
-      "last_update": "2026-10-16T10:08:17.725Z",
+      "last_update": "2026-10-16T10:36:51.832Z",
       "claim_count": 2,
       "events": [
         {
@@ -47639,7 +47788,7 @@
       "cluster_id": 1993,
       "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথের অভিযোগ",
       "first_seen": "2026-10-16T08:36:52.521Z",
-      "last_update": "2026-10-16T10:08:17.714Z",
+      "last_update": "2026-10-16T10:36:51.813Z",
       "claim_count": 2,
       "events": [
         {
@@ -48015,22 +48164,250 @@
       ],
       "related": []
     },
+    "international-2020": {
+      "cluster_id": 2020,
+      "headline": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+      "first_seen": "2026-10-16T10:36:51.803Z",
+      "last_update": "2026-10-16T10:36:51.807Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-16T05:05:45.000Z",
+          "kind": "evidence",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/kbuz62wx6g"
+          }
+        },
+        {
+          "ts": "2026-10-16T09:57:25.000Z",
+          "kind": "evidence",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/saudi-aarbe-dui-baanlaadeshir-mrtyudnndd-kaarykr"
+          }
+        },
+        {
+          "ts": "2026-10-16T09:57:25.000Z",
+          "kind": "evidence",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/saudi-aarbe-dui-baanlaadeshir-mrtyudnndd-kaarykr"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.254Z",
+          "kind": "claim",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.257Z",
+          "kind": "claim",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-2021": {
       "cluster_id": 2021,
-      "headline": "৪.৯ মাত্রার ভূমিকম্পে কেঁপে উঠল ভারত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+      "first_seen": "2026-10-16T10:36:51.822Z",
+      "last_update": "2026-10-16T10:36:51.825Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-16T03:51:40.000Z",
+          "kind": "evidence",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fZl9ZSXIteWZ5cFA2ZGFTUFZ5Uk04bUNXM3d5akNFLUFFTFhwTnJ6Y2pCRjg1T2Nqa09sekFvWEtqNVV2WE5lckJxZXEzZHA3YTVn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T03:51:40.000Z",
+          "kind": "evidence",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fZl9ZSXIteWZ5cFA2ZGFTUFZ5Uk04bUNXM3d5akNFLUFFTFhwTnJ6Y2pCRjg1T2Nqa09sekFvWEtqNVV2WE5lckJxZXEzZHA3YTVn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T06:33:57.000Z",
+          "kind": "evidence",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxQOExULTdCQWFYS0JpbE4yRk9VUGRyc1dWcE9kYTRoaldKS1BZd19SaUk3cjI2ZWdMNDN4VG9sd3BWTVg0V3hXU1NoQkcwejJlYUJBWGY3NjZpZjJ0cGhiTkY4dmIzcWdFQTBiOUpRYnFVd0E4dWdpeXFfR05UOHZZSHdCY1hoRXJUMUpwQlgzNkhwVVpoZGxRbUtubFg1czZoMEhiaGtsM1BhRXVNRmd1QkI4a25vSTd0TGVTUWRHc1RQZzRsaUJvcVVZd2lKWEQtdVkxcnE0Qm1LTFIzUWlrQ1FBaGQ4cHQ4RF9VUXpoSzd2NWxDR0Y0aFRsT01QSXNCeGRLNUczQjA1dmdpU09UTGMxOUlxcGl3MjNfYy1hMTlYbnBRVG5rR0tvMHBjVjZSNnA2VjFYNXNIZlJYMDR5SEZsU2tDRTNNaWR4MlNUWVhtNEJubFVLN0UyTFNheVIwZzRVMnhDeTlMV05Xa2pPdUFrbzBNMEtSaV9hRk9BVUtwZGY5NUdYOXJjTEl6WFdfN3VXTzNrbGdnSGZ2aVlpQWRobDdPY0wyVndWV3A5ZHJGWHFIV3FYODVZWGR1ZGxvRmpEWjBKcWRzVGlfNkdfeXRoUGxfMTFoWUZKdVl3S180MWxsWVNVeEE3MXVLeFNhU2dybWFLVUtWemFxRUdQaDhFc2lCdGx2ZXUyelhCWktGQmRJUTNTblBzVURLYkk1RzlhUENB0gGrBEFVX3lxTE1pOVBVVDlabFpHelJKVjZwUGRxb1YtUXQ4NFRVNXkzOGxUS0hwMFlIcHkyLUczLUttbnVnZlhpNTBYOGpBZTg2X1dlMHoxTC1sTXJuSDhhLUVmcks5RFhPeUgxaEIwYXNjMzBlVW9tVFlmMFlIbWhnVkhiT0hSR3p4d1lmVTJPQlpxdGNidkswUDBFNVZfRWtzUDAydkl2U2ZHbnMtUmJsYVBYY1F1VnFqdGpSUXNVZHo1LXB3VlUyQzNGQXFyWkoyQWpUMkVscW1YNVVGNWlGdGR1S3FZVWpRay1WaVZpSElNaTNpOFZzZU82Nm9BX1NIcTdvUDhpXzBORkZlUV9TNFNCbEVPcm5sR0ZFbXRvMk9XS3daY0F0TEhqU1BJVXV5dDNJenZ5SDBKeU1ldzh4b2w5NFRHRWxBYS1WUGV3OVN5bmc4Tzh3d2pReXQ3NHVYVGhPcEFJRzl0SzNFRnkxbUxhNTZlbWpEbzhhOWh6Z0lXWnN4dmkzNnpBWGRGMUp1WDgzUXRzbjhqMzhFVXhLa3J0VDhyNFp0b3JLZUJ3X2RjRzV3VlAwTS1kLURtd2ljUXVkZFBudTdwcl92WnVXRk96c1V3U0pBY1VxZDl4M0xTN3NsS3JNY1kxOGJYYy1mRzFmWXhNV2NBMkR6eHJFNlNEdndBTG9PblJBaXpFZzVOSUFrSzh1T1I5UVZHYzk0MmVqaC1Uc0t2SjdKVnhmS2VTTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.259Z",
+          "kind": "claim",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.263Z",
+          "kind": "claim",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1861,
+          "slug": "national-1861",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা থেকে দাম্মাম এবং রিয়াদগামী বিমানের সব ফ্লাইট ১৮ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
+          "cluster_id": 1779,
+          "slug": "national-1779",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
+        },
+        {
+          "cluster_id": 1747,
+          "slug": "national-1747",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাবেক উপমন্ত্রী আব্দুল হাইয়ের মৃত্যুতে প্রধানমন্ত্রীর শোক"
+        },
+        {
+          "cluster_id": 1692,
+          "slug": "opinion-1692",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "নির্বাচনের আগেই ইরানে নতুন হামলার ছক: ট্রাম্প-নেতানিয়াহুর ফোনালাপ"
+        },
+        {
+          "cluster_id": 1609,
+          "slug": "national-1609",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
+        },
+        {
+          "cluster_id": 1520,
+          "slug": "national-1520",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
+        }
+      ]
     },
     "international-2023": {
       "cluster_id": 2023,
-      "headline": "ইয়েমেনের এডেন বিমানবন্দর লক্ষ্য করে হুতিদের ক্ষেপণাস্ত্র হামলা, তীব্র হচ্ছে লড়াই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআই ও আপনার তথ্য কতটা নিরাপদ",
+      "first_seen": "2026-10-16T10:36:52.254Z",
+      "last_update": "2026-10-16T10:36:52.256Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:20:00.000Z",
+          "kind": "evidence",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/mbxhvrypyx"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.268Z",
+          "kind": "claim",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-2031": {
@@ -57234,6 +57611,14 @@
           "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -57256,14 +57641,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দিল্লির যন্তর মন্তরে ঢোকার চেষ্টা, সিজেপির তিন নেতা আটক"
-        },
-        {
-          "cluster_id": 938,
-          "slug": "national-938",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেটে কিশোরী ধর্ষণ মামলায় যুবকের মৃত্যুদণ্ড"
         }
       ]
     },
@@ -65719,6 +66096,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -65757,14 +66142,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -68653,6 +69030,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -68691,14 +69076,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -72761,6 +73138,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -72799,14 +73184,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -76823,6 +77200,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -76861,14 +77246,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -84009,6 +84386,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -84047,14 +84432,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -91703,6 +92080,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -91741,14 +92126,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -94529,6 +94906,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -94567,14 +94952,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -101191,6 +101568,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -101229,14 +101614,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -104566,6 +104943,14 @@
           "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -104580,14 +104965,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "‘ই-জাতীয় সংসদ প্রকল্প’ কমিটির সভাপতি কায়সার কামাল"
-        },
-        {
-          "cluster_id": 1819,
-          "slug": "national-1819",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মোটরসাইকেলে এসে সাংবাদিককে প্রকাশ্যে গুলি করে হত্যা"
         }
       ]
     },
@@ -105416,6 +105793,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -105454,14 +105839,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -109989,6 +110366,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -110027,14 +110412,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -110814,6 +111191,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -110852,14 +111237,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -111809,6 +112186,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -111847,14 +112232,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -113926,6 +114303,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1887,
           "slug": "national-1887",
           "actor_links": 0,
@@ -113964,14 +114349,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
-        },
-        {
-          "cluster_id": 1747,
-          "slug": "national-1747",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক উপমন্ত্রী আব্দুল হাইয়ের মৃত্যুতে প্রধানমন্ত্রীর শোক"
         }
       ]
     },
@@ -119912,6 +120289,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -119950,14 +120335,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -125574,6 +125951,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -125612,14 +125997,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -131638,6 +132015,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -131676,14 +132061,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 1495,
-          "slug": "national-1495",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃহস্পতিবার দেশের যেসব এলাকায় টানা ৮ ঘণ্টা বিদ্যুৎ থাকবে না"
         }
       ]
     },
@@ -131766,6 +132143,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -131804,14 +132189,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -132831,6 +133208,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -132869,14 +133254,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -145412,6 +145789,14 @@
           "headline": "জেএফকে বিমানবন্দরে ড. ইউনূসকে হেনস্তার ঘটনায় বিএনপির নিন্দা"
         },
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -145426,14 +145811,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
-        },
-        {
-          "cluster_id": 1692,
-          "slug": "opinion-1692",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "নির্বাচনের আগেই ইরানে নতুন হামলার ছক: ট্রাম্প-নেতানিয়াহুর ফোনালাপ"
         }
       ]
     },
@@ -146442,6 +146819,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -146480,14 +146865,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -148166,6 +148543,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -148204,14 +148589,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 1495,
-          "slug": "national-1495",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃহস্পতিবার দেশের যেসব এলাকায় টানা ৮ ঘণ্টা বিদ্যুৎ থাকবে না"
         }
       ]
     },
@@ -156018,6 +156395,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1779,
           "slug": "national-1779",
           "actor_links": 0,
@@ -156056,14 +156441,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 1495,
-          "slug": "national-1495",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বৃহস্পতিবার দেশের যেসব এলাকায় টানা ৮ ঘণ্টা বিদ্যুৎ থাকবে না"
         }
       ]
     },
@@ -160153,12 +160530,12 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 1976,
-          "slug": "national-1976",
+          "cluster_id": 2019,
+          "slug": "national-2019",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্র-পাকিস্তান যুদ্ধ হলে আমরা পাকিস্তানের পাশে থাকবো: বিজেপি নেতা মদন"
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
         }
       ]
     },
@@ -163204,7 +163581,7 @@
       "cluster_id": 1913,
       "headline": "ইরানে ‘মাদার অব অল বোম্বস’ নিক্ষেপ করতে পারে যুক্তরাষ্ট্র",
       "first_seen": "2026-10-16T03:53:55.303Z",
-      "last_update": "2026-10-16T10:08:17.719Z",
+      "last_update": "2026-10-16T10:36:51.820Z",
       "claim_count": 3,
       "events": [
         {
@@ -163534,7 +163911,7 @@
       "cluster_id": 1915,
       "headline": "আসছে বছর আবার আসব : নাসরীন জাহান",
       "first_seen": "2026-10-16T03:53:55.312Z",
-      "last_update": "2026-10-16T10:08:17.727Z",
+      "last_update": "2026-10-16T10:36:51.833Z",
       "claim_count": 2,
       "events": [
         {
@@ -165845,7 +166222,7 @@
       "cluster_id": 1941,
       "headline": "হেঁটে যাচ্ছিলেন বাজারে, পেছন থেকে মোটরসাইকেলের ধাক্কায় প্রাণ গেলো বিএনপি নেতার",
       "first_seen": "2026-10-16T05:19:54.651Z",
-      "last_update": "2026-10-16T10:08:17.723Z",
+      "last_update": "2026-10-16T10:36:51.829Z",
       "claim_count": 2,
       "events": [
         {
@@ -166504,7 +166881,7 @@
       "cluster_id": 1950,
       "headline": "রেললাইন ধরে হাঁটছিলেন মা ও মেয়ে, ট্রেনে কাটা পড়ে নিহত",
       "first_seen": "2026-10-16T06:12:51.568Z",
-      "last_update": "2026-10-16T10:08:17.721Z",
+      "last_update": "2026-10-16T10:36:51.827Z",
       "claim_count": 2,
       "events": [
         {
@@ -166632,7 +167009,7 @@
       "cluster_id": 1951,
       "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা",
       "first_seen": "2026-10-16T06:12:51.573Z",
-      "last_update": "2026-10-16T10:08:17.720Z",
+      "last_update": "2026-10-16T10:36:51.821Z",
       "claim_count": 4,
       "events": [
         {
@@ -166971,7 +167348,7 @@
       "cluster_id": 1953,
       "headline": "আন্তর্জাতিক বিশ্ববিদ্যালয়ে ফুল ফান্ডেড স্কলারশিপ পেতে পারেন যেভাবে",
       "first_seen": "2026-10-16T06:12:51.582Z",
-      "last_update": "2026-10-16T10:08:17.722Z",
+      "last_update": "2026-10-16T10:36:51.828Z",
       "claim_count": 2,
       "events": [
         {
@@ -167399,7 +167776,7 @@
       "cluster_id": 1961,
       "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য",
       "first_seen": "2026-10-16T06:38:56.646Z",
-      "last_update": "2026-10-16T10:08:17.706Z",
+      "last_update": "2026-10-16T10:36:51.809Z",
       "claim_count": 4,
       "events": [
         {
@@ -168001,7 +168378,7 @@
       "cluster_id": 1973,
       "headline": "শ্যামলী ওভারব্রিজের নিচে রাস্তা পারাপারের সময় গাড়ির চাপায় ২ নারী নিহত",
       "first_seen": "2026-10-16T07:41:33.072Z",
-      "last_update": "2026-10-16T10:08:17.718Z",
+      "last_update": "2026-10-16T10:36:51.818Z",
       "claim_count": 3,
       "events": [
         {
@@ -168425,7 +168802,7 @@
       "cluster_id": 1976,
       "headline": "যুক্তরাষ্ট্র-পাকিস্তান যুদ্ধ হলে আমরা পাকিস্তানের পাশে থাকবো: বিজেপি নেতা মদন",
       "first_seen": "2026-10-16T07:41:33.105Z",
-      "last_update": "2026-10-16T10:08:17.725Z",
+      "last_update": "2026-10-16T10:36:51.832Z",
       "claim_count": 2,
       "events": [
         {
@@ -169171,7 +169548,7 @@
       "cluster_id": 1985,
       "headline": "মাদক মামলার আসামিদের ছিনিয়ে নিতে পুলিশ ফাঁড়িতে হামলা, গ্রেফতার ৩",
       "first_seen": "2026-10-16T08:11:45.943Z",
-      "last_update": "2026-10-16T10:08:17.717Z",
+      "last_update": "2026-10-16T10:36:51.817Z",
       "claim_count": 2,
       "events": [
         {
@@ -169299,7 +169676,7 @@
       "cluster_id": 1986,
       "headline": "সাতক্ষীরায় গণপিটুনিতে যুবক নিহতের ঘটনায় মামলা",
       "first_seen": "2026-10-16T08:11:45.960Z",
-      "last_update": "2026-10-16T10:08:17.724Z",
+      "last_update": "2026-10-16T10:36:51.831Z",
       "claim_count": 2,
       "events": [
         {
@@ -169670,7 +170047,7 @@
       "cluster_id": 1992,
       "headline": "বিশ্বকাপে ট্রাম্পের হস্তক্ষেপের পর কঠোর নিয়ম আনছে ফিফা",
       "first_seen": "2026-10-16T08:36:52.443Z",
-      "last_update": "2026-10-16T10:08:17.705Z",
+      "last_update": "2026-10-16T10:36:51.796Z",
       "claim_count": 5,
       "events": [
         {
@@ -169918,7 +170295,7 @@
       "cluster_id": 1993,
       "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথের অভিযোগ",
       "first_seen": "2026-10-16T08:36:52.521Z",
-      "last_update": "2026-10-16T10:08:17.714Z",
+      "last_update": "2026-10-16T10:36:51.813Z",
       "claim_count": 2,
       "events": [
         {
@@ -170241,7 +170618,7 @@
       "cluster_id": 1999,
       "headline": "গুলশানে অবৈধ বারে ডিএনসির অভিযান, বিদেশি মদ-বিয়ার জব্দ",
       "first_seen": "2026-10-16T09:03:13.918Z",
-      "last_update": "2026-10-16T10:08:17.715Z",
+      "last_update": "2026-10-16T10:36:51.815Z",
       "claim_count": 2,
       "events": [
         {
@@ -171032,12 +171409,12 @@
           "headline": "বিক্ষোভে অংশ নেওয়ায় ভারত ছাড়ার নির্দেশ অভিনেতা ইমরানকে"
         },
         {
-          "cluster_id": 1861,
-          "slug": "national-1861",
+          "cluster_id": 2021,
+          "slug": "national-2021",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ঢাকা থেকে দাম্মাম এবং রিয়াদগামী বিমানের সব ফ্লাইট ১৮ অক্টোবর পর্যন্ত স্থগিত"
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
         }
       ]
     },
@@ -171628,7 +172005,7 @@
       "cluster_id": 2012,
       "headline": "বাংলাদেশের সঙ্গে অংশীদারিত্ব চুক্তি করতে যাচ্ছে বিশ্বব্যাংক: অর্থমন্ত্রী",
       "first_seen": "2026-10-16T10:08:17.708Z",
-      "last_update": "2026-10-16T10:08:17.710Z",
+      "last_update": "2026-10-16T10:36:51.810Z",
       "claim_count": 2,
       "events": [
         {
@@ -171756,7 +172133,7 @@
       "cluster_id": 2013,
       "headline": "দেবী দুর্গার আনুষ্ঠানিক জাগরণের মধ্য দিয়ে শুরু হলো শারদীয় দুর্গোৎসব",
       "first_seen": "2026-10-16T10:08:17.711Z",
-      "last_update": "2026-10-16T10:08:17.713Z",
+      "last_update": "2026-10-16T10:36:51.812Z",
       "claim_count": 2,
       "events": [
         {
@@ -172036,6 +172413,134 @@
       ],
       "related": []
     },
+    "national-2019": {
+      "cluster_id": 2019,
+      "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+      "first_seen": "2026-10-16T10:36:51.799Z",
+      "last_update": "2026-10-16T10:36:51.802Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-15T13:24:10.000Z",
+          "kind": "evidence",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9BZVEta2hoMklWamRBYnBrbWt0MGNic292WUhVUTJFUEFiVHJwc211SjlWeHp3Sy1tLUx0U2VhNlNpdkU1S1F2LTh1SGJCX1lV?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxPZUh0X0NxVlBROWtIWERnSVk3X2gtSTcyM2RNNk01bTNRTWVzOExZeGlSYTVzNDNQNFBFVV9pa2I1ZmliRUZzc2d4Ui1oSUpLbHZGb1F6UlFtTlFfVFFGcUUzYWRqT3dHVlR0MWtJa3BTZmVTcUZrM3FNSmV5ZU5UVnMzb2VKa3dKUGlyemJTZ245RU1xNG5YczJQWmctamJqM1R6MXBWR3RIWnhNWGxmU1llOXBfSURqZVFNVzVaRjFZWU1WUldKb1VZaGNsVHR6TXdxQzR4X1E2Znh6VG53bFNmbVJMc0VOcjBrOEhOb3pFdkdJVlQtVjhWNXhFRE8yUV96b2JfdWlmZGNvMjRhUmFvNi1jQnh2a0NHdjRzZEk2M0Z0T2Z5WDZlbmZ4RUpRNVptT2JhMVNJcXlZeDlJZXFGaFp2X2E3TWZDTTZzWWJtTkZCM2RJdElhcnZJV1FMNHV0RHlpLVdqWFhPdHlmQVpXN2VWUzdHc2pYeG9HOTRxZDdEaEcwQWFyM3d5dUkzNjFzVjRpdlg4dHRGT29RWDNKYWlyTm1TUWtUcUVnWGJvT1g1cVNVYy1fWENtbUladHhFYUhSY1ktaGFMN3hIM3I0SDRUY09aeVg1N0hNWHhwbEdaMmRtVVRQSmhBTk1sUklTVldOelI4eGRwbFlaMEpHc2xQNS0xUnctdTR5RjI4V0dxUEMtWUVkajl0S3E0b0lwRWJFa1lseXhlbXl3Q01BZHY4Nlo2Wk5scU1xNmlpV2o4MEp1Nw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxPZUh0X0NxVlBROWtIWERnSVk3X2gtSTcyM2RNNk01bTNRTWVzOExZeGlSYTVzNDNQNFBFVV9pa2I1ZmliRUZzc2d4Ui1oSUpLbHZGb1F6UlFtTlFfVFFGcUUzYWRqT3dHVlR0MWtJa3BTZmVTcUZrM3FNSmV5ZU5UVnMzb2VKa3dKUGlyemJTZ245RU1xNG5YczJQWmctamJqM1R6MXBWR3RIWnhNWGxmU1llOXBfSURqZVFNVzVaRjFZWU1WUldKb1VZaGNsVHR6TXdxQzR4X1E2Znh6VG53bFNmbVJMc0VOcjBrOEhOb3pFdkdJVlQtVjhWNXhFRE8yUV96b2JfdWlmZGNvMjRhUmFvNi1jQnh2a0NHdjRzZEk2M0Z0T2Z5WDZlbmZ4RUpRNVptT2JhMVNJcXlZeDlJZXFGaFp2X2E3TWZDTTZzWWJtTkZCM2RJdElhcnZJV1FMNHV0RHlpLVdqWFhPdHlmQVpXN2VWUzdHc2pYeG9HOTRxZDdEaEcwQWFyM3d5dUkzNjFzVjRpdlg4dHRGT29RWDNKYWlyTm1TUWtUcUVnWGJvT1g1cVNVYy1fWENtbUladHhFYUhSY1ktaGFMN3hIM3I0SDRUY09aeVg1N0hNWHhwbEdaMmRtVVRQSmhBTk1sUklTVldOelI4eGRwbFlaMEpHc2xQNS0xUnctdTR5RjI4V0dxUEMtWUVkajl0S3E0b0lwRWJFa1lseXhlbXl3Q01BZHY4Nlo2Wk5scU1xNmlpV2o4MEp1Nw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.248Z",
+          "kind": "claim",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.251Z",
+          "kind": "claim",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887331,
+          "claim_text": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887332,
+          "claim_text": "৪ রানে হেরে ত্রিদেশীয় সিরিজে রানার্সআপ বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1885,
+          "slug": "politics-1885",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "দুর্গাপূজা উদযাপনে সর্বাত্মক সহযোগিতা করবে এনসিপি: নাহিদ ইসলাম"
+        },
+        {
+          "cluster_id": 1122,
+          "slug": "national-1122",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "যন্তর মন্তরে বিক্ষোভ নিষিদ্ধ, ককরোচ পার্টির আন্দোলনের পথ কি আরও কঠিন হলো?"
+        },
+        {
+          "cluster_id": 993,
+          "slug": "politics-993",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দিল্লির যন্তর মন্তরে ঢোকার চেষ্টা, সিজেপির তিন নেতা আটক"
+        },
+        {
+          "cluster_id": 938,
+          "slug": "national-938",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিলেটে কিশোরী ধর্ষণ মামলায় যুবকের মৃত্যুদণ্ড"
+        },
+        {
+          "cluster_id": 867,
+          "slug": "national-867",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
+        },
+        {
+          "cluster_id": 851,
+          "slug": "national-851",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
+        }
+      ]
+    },
     "national-202": {
       "cluster_id": 202,
       "headline": "বাংলাদেশ হারিয়ে ফেলছে আবাসস্থল বিশেষায়িত পাখিদের",
@@ -172077,29 +172582,326 @@
     },
     "national-2020": {
       "cluster_id": 2020,
-      "headline": "গুজরাটে ‘পবিত্রকরণ আচার’–এর অজুহাতে নারীকে দলবদ্ধ ধর্ষণ, সেই ভিডিও ছাড়ল সামাজিক মাধ্যমে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+      "first_seen": "2026-10-16T10:36:51.803Z",
+      "last_update": "2026-10-16T10:36:51.807Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-16T05:05:45.000Z",
+          "kind": "evidence",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/kbuz62wx6g"
+          }
+        },
+        {
+          "ts": "2026-10-16T09:57:25.000Z",
+          "kind": "evidence",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/saudi-aarbe-dui-baanlaadeshir-mrtyudnndd-kaarykr"
+          }
+        },
+        {
+          "ts": "2026-10-16T09:57:25.000Z",
+          "kind": "evidence",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/saudi-aarbe-dui-baanlaadeshir-mrtyudnndd-kaarykr"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.254Z",
+          "kind": "claim",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.257Z",
+          "kind": "claim",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887333,
+          "claim_text": "পবিত্র মক্কায় মসজিদে ‘অনৈতিক কাজের’ দায়ে বাংলাদেশি নারী ও পুরুষের মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887334,
+          "claim_text": "সৌদি আরবে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
+    },
+    "national-2021": {
+      "cluster_id": 2021,
+      "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+      "first_seen": "2026-10-16T10:36:51.822Z",
+      "last_update": "2026-10-16T10:36:51.825Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-16T03:51:40.000Z",
+          "kind": "evidence",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fZl9ZSXIteWZ5cFA2ZGFTUFZ5Uk04bUNXM3d5akNFLUFFTFhwTnJ6Y2pCRjg1T2Nqa09sekFvWEtqNVV2WE5lckJxZXEzZHA3YTVn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T03:51:40.000Z",
+          "kind": "evidence",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fZl9ZSXIteWZ5cFA2ZGFTUFZ5Uk04bUNXM3d5akNFLUFFTFhwTnJ6Y2pCRjg1T2Nqa09sekFvWEtqNVV2WE5lckJxZXEzZHA3YTVn?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T06:33:57.000Z",
+          "kind": "evidence",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxQOExULTdCQWFYS0JpbE4yRk9VUGRyc1dWcE9kYTRoaldKS1BZd19SaUk3cjI2ZWdMNDN4VG9sd3BWTVg0V3hXU1NoQkcwejJlYUJBWGY3NjZpZjJ0cGhiTkY4dmIzcWdFQTBiOUpRYnFVd0E4dWdpeXFfR05UOHZZSHdCY1hoRXJUMUpwQlgzNkhwVVpoZGxRbUtubFg1czZoMEhiaGtsM1BhRXVNRmd1QkI4a25vSTd0TGVTUWRHc1RQZzRsaUJvcVVZd2lKWEQtdVkxcnE0Qm1LTFIzUWlrQ1FBaGQ4cHQ4RF9VUXpoSzd2NWxDR0Y0aFRsT01QSXNCeGRLNUczQjA1dmdpU09UTGMxOUlxcGl3MjNfYy1hMTlYbnBRVG5rR0tvMHBjVjZSNnA2VjFYNXNIZlJYMDR5SEZsU2tDRTNNaWR4MlNUWVhtNEJubFVLN0UyTFNheVIwZzRVMnhDeTlMV05Xa2pPdUFrbzBNMEtSaV9hRk9BVUtwZGY5NUdYOXJjTEl6WFdfN3VXTzNrbGdnSGZ2aVlpQWRobDdPY0wyVndWV3A5ZHJGWHFIV3FYODVZWGR1ZGxvRmpEWjBKcWRzVGlfNkdfeXRoUGxfMTFoWUZKdVl3S180MWxsWVNVeEE3MXVLeFNhU2dybWFLVUtWemFxRUdQaDhFc2lCdGx2ZXUyelhCWktGQmRJUTNTblBzVURLYkk1RzlhUENB0gGrBEFVX3lxTE1pOVBVVDlabFpHelJKVjZwUGRxb1YtUXQ4NFRVNXkzOGxUS0hwMFlIcHkyLUczLUttbnVnZlhpNTBYOGpBZTg2X1dlMHoxTC1sTXJuSDhhLUVmcks5RFhPeUgxaEIwYXNjMzBlVW9tVFlmMFlIbWhnVkhiT0hSR3p4d1lmVTJPQlpxdGNidkswUDBFNVZfRWtzUDAydkl2U2ZHbnMtUmJsYVBYY1F1VnFqdGpSUXNVZHo1LXB3VlUyQzNGQXFyWkoyQWpUMkVscW1YNVVGNWlGdGR1S3FZVWpRay1WaVZpSElNaTNpOFZzZU82Nm9BX1NIcTdvUDhpXzBORkZlUV9TNFNCbEVPcm5sR0ZFbXRvMk9XS3daY0F0TEhqU1BJVXV5dDNJenZ5SDBKeU1ldzh4b2w5NFRHRWxBYS1WUGV3OVN5bmc4Tzh3d2pReXQ3NHVYVGhPcEFJRzl0SzNFRnkxbUxhNTZlbWpEbzhhOWh6Z0lXWnN4dmkzNnpBWGRGMUp1WDgzUXRzbjhqMzhFVXhLa3J0VDhyNFp0b3JLZUJ3X2RjRzV3VlAwTS1kLURtd2ljUXVkZFBudTdwcl92WnVXRk96c1V3U0pBY1VxZDl4M0xTN3NsS3JNY1kxOGJYYy1mRzFmWXhNV2NBMkR6eHJFNlNEdndBTG9PblJBaXpFZzVOSUFrSzh1T1I5UVZHYzk0MmVqaC1Uc0t2SjdKVnhmS2VTTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.259Z",
+          "kind": "claim",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.263Z",
+          "kind": "claim",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887335,
+          "claim_text": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887336,
+          "claim_text": "‘নুরের মিসাইলে মগবাজার আর বাংলামোটর তছনছ’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1861,
+          "slug": "national-1861",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা থেকে দাম্মাম এবং রিয়াদগামী বিমানের সব ফ্লাইট ১৮ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
+          "cluster_id": 1779,
+          "slug": "national-1779",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
+        },
+        {
+          "cluster_id": 1747,
+          "slug": "national-1747",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাবেক উপমন্ত্রী আব্দুল হাইয়ের মৃত্যুতে প্রধানমন্ত্রীর শোক"
+        },
+        {
+          "cluster_id": 1692,
+          "slug": "opinion-1692",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "নির্বাচনের আগেই ইরানে নতুন হামলার ছক: ট্রাম্প-নেতানিয়াহুর ফোনালাপ"
+        },
+        {
+          "cluster_id": 1609,
+          "slug": "national-1609",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
+        },
+        {
+          "cluster_id": 1520,
+          "slug": "national-1520",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
+        }
+      ]
     },
     "national-2022": {
       "cluster_id": 2022,
-      "headline": "আন্দোলনের মধ্যেই শিক্ষক-কর্মকর্তাদের বেতন আটকে দিলেন চুয়েট ভিসি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ফিলিপিন্সে 'পেঁয়াজ সিন্ডিকেট'কে ২ কোটি ৮০ লাখ ডলার জরিমানা",
+      "first_seen": "2026-10-16T10:36:52.249Z",
+      "last_update": "2026-10-16T10:36:52.252Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:20:40.000Z",
+          "kind": "evidence",
+          "claim_id": 887337,
+          "claim_text": "ফিলিপিন্সে 'পেঁয়াজ সিন্ডিকেট'কে ২ কোটি ৮০ লাখ ডলার জরিমানা",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ck98zjevgl2qo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.265Z",
+          "kind": "claim",
+          "claim_id": 887337,
+          "claim_text": "ফিলিপিন্সে 'পেঁয়াজ সিন্ডিকেট'কে ২ কোটি ৮০ লাখ ডলার জরিমানা"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887337,
+          "claim_text": "ফিলিপিন্সে 'পেঁয়াজ সিন্ডিকেট'কে ২ কোটি ৮০ লাখ ডলার জরিমানা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-2024": {
+      "cluster_id": 2024,
+      "headline": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+      "first_seen": "2026-10-16T10:36:52.258Z",
+      "last_update": "2026-10-16T10:36:52.260Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hwvyomn134"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.270Z",
+          "kind": "claim",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887339,
+          "claim_text": "বিজিবি-বিএসএফের পতাকা বৈঠক শেষে ফিরেছেন দুই পুলিশ সদস্য",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2025": {
       "cluster_id": 2025,
-      "headline": "আজ রাত থেকে শুরু ইলিশ ধরায় ২২ দিনের নিষেধাজ্ঞা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পূজায় সীমান্তবর্তী জেলা ছাড়াও গোপালগঞ্জ–মাদারীপুর–ফরিদপুরে বিজিবি মোতায়েন",
+      "first_seen": "2026-10-16T10:36:52.261Z",
+      "last_update": "2026-10-16T10:36:52.264Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:10:33.000Z",
+          "kind": "evidence",
+          "claim_id": 887340,
+          "claim_text": "পূজায় সীমান্তবর্তী জেলা ছাড়াও গোপালগঞ্জ–মাদারীপুর–ফরিদপুরে বিজিবি মোতায়েন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/3l5buuu7k2"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.273Z",
+          "kind": "claim",
+          "claim_id": 887340,
+          "claim_text": "পূজায় সীমান্তবর্তী জেলা ছাড়াও গোপালগঞ্জ–মাদারীপুর–ফরিদপুরে বিজিবি মোতায়েন"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887340,
+          "claim_text": "পূজায় সীমান্তবর্তী জেলা ছাড়াও গোপালগঞ্জ–মাদারীপুর–ফরিদপুরে বিজিবি মোতায়েন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2026-10-10": {
@@ -172109,6 +172911,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "national-2026": {
+      "cluster_id": 2026,
+      "headline": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+      "first_seen": "2026-10-16T10:36:52.265Z",
+      "last_update": "2026-10-16T10:36:52.267Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/food/street-food/myhye1g4p8"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.275Z",
+          "kind": "claim",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2027": {
@@ -182167,6 +183008,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -182205,14 +183054,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -192884,6 +193725,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -192922,14 +193771,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -202288,6 +203129,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1976,
           "slug": "national-1976",
           "actor_links": 0,
@@ -202302,14 +203151,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
-        },
-        {
-          "cluster_id": 1920,
-          "slug": "national-1920",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রশ্ন ফাঁস ঠেকাতে সচিবালয়ে রাত কাটাচ্ছেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -203209,6 +204050,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -203247,14 +204096,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -204084,6 +204925,14 @@
           "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -204106,14 +204955,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দিল্লির যন্তর মন্তরে ঢোকার চেষ্টা, সিজেপির তিন নেতা আটক"
-        },
-        {
-          "cluster_id": 938,
-          "slug": "national-938",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেটে কিশোরী ধর্ষণ মামলায় যুবকের মৃত্যুদণ্ড"
         }
       ]
     },
@@ -205997,6 +206838,22 @@
           "headline": "মুক্ত বাণিজ্য অঞ্চল ও ইনল্যান্ড কনটেইনার ডিপোতে ডিপি ওয়ার্ল্ডের বিনিয়োগ চান প্রধানমন্ত্রী"
         },
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -206011,22 +206868,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকা থেকে দাম্মাম এবং রিয়াদগামী বিমানের সব ফ্লাইট ১৮ অক্টোবর পর্যন্ত স্থগিত"
-        },
-        {
-          "cluster_id": 1805,
-          "slug": "national-1805",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "দুর্গাপূজায় বুড়িমারী স্থলবন্দরে ৮ দিন আমদানি-রপ্তানি বন্ধ"
-        },
-        {
-          "cluster_id": 1779,
-          "slug": "national-1779",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
         }
       ]
     },
@@ -208614,6 +209455,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -208652,14 +209501,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -217872,6 +218713,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -217910,14 +218759,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -219147,6 +219988,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -219185,14 +220034,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -220914,6 +221755,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -220952,14 +221801,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -231093,6 +231934,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -231131,14 +231980,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -231537,6 +232378,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -231575,14 +232424,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -234263,6 +235104,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -234301,14 +235150,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -236688,6 +237529,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -236726,14 +237575,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -237326,6 +238167,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -237364,14 +238213,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -238880,6 +239721,14 @@
           "headline": "মুম্বাইয়ে বিক্ষোভ থেকে আটক অভিনেতা ইমরান খান, পুলিশের ভ্যান থেকে সেলফি পোস্ট"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1949,
           "slug": "national-1949",
           "actor_links": 0,
@@ -238902,14 +239751,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইয়েমেনে প্রেসিডেন্ট প্রাসাদে হুথিদের ক্ষেপণাস্ত্র হামলা, নিহত ৪"
-        },
-        {
-          "cluster_id": 1819,
-          "slug": "national-1819",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মোটরসাইকেলে এসে সাংবাদিককে প্রকাশ্যে গুলি করে হত্যা"
         }
       ]
     },
@@ -244076,20 +244917,20 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1961,
           "slug": "national-all-i-want",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
-        },
-        {
-          "cluster_id": 1885,
-          "slug": "politics-1885",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দুর্গাপূজা উদযাপনে সর্বাত্মক সহযোগিতা করবে এনসিপি: নাহিদ ইসলাম"
         }
       ]
     },
@@ -251153,6 +251994,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -251191,14 +252040,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -252353,6 +253194,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -252391,14 +253240,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
-        },
-        {
-          "cluster_id": 733,
-          "slug": "national-733",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিষেধাজ্ঞার ভয় আর বিদ্রুপ পেছনে ফেলে অ্যানফিল্ডে সিটির দাপুটে জয়"
         }
       ]
     },
@@ -254715,6 +255556,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -254753,14 +255602,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -259018,6 +259859,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -259056,14 +259905,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
-        },
-        {
-          "cluster_id": 733,
-          "slug": "national-733",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিষেধাজ্ঞার ভয় আর বিদ্রুপ পেছনে ফেলে অ্যানফিল্ডে সিটির দাপুটে জয়"
         }
       ]
     },
@@ -259284,7 +260125,7 @@
       "cluster_id": 1961,
       "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য",
       "first_seen": "2026-10-16T06:38:56.646Z",
-      "last_update": "2026-10-16T10:08:17.706Z",
+      "last_update": "2026-10-16T10:36:51.809Z",
       "claim_count": 4,
       "events": [
         {
@@ -264519,6 +265360,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -264557,14 +265406,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -276065,12 +276906,12 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
-          "cluster_id": 1976,
-          "slug": "national-1976",
+          "cluster_id": 2019,
+          "slug": "national-2019",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্র-পাকিস্তান যুদ্ধ হলে আমরা পাকিস্তানের পাশে থাকবো: বিজেপি নেতা মদন"
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
         }
       ]
     },
@@ -281938,6 +282779,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -281976,14 +282825,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
-        },
-        {
-          "cluster_id": 733,
-          "slug": "national-733",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিষেধাজ্ঞার ভয় আর বিদ্রুপ পেছনে ফেলে অ্যানফিল্ডে সিটির দাপুটে জয়"
         }
       ]
     },
@@ -283343,6 +284184,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -283381,14 +284230,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -284506,6 +285347,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2019,
+          "slug": "national-2019",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিশাঙ্কা-আসালাঙ্কাকে ছাড়াই ত্রিদেশীয় সিরিজে শ্রীলংকা"
+        },
+        {
           "cluster_id": 1885,
           "slug": "politics-1885",
           "actor_links": 0,
@@ -284544,14 +285393,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চাঁদপুরে জেলেদের ৫ টন ভিজিএফের চাল জব্দের অভিযোগে ইউপি সচিব সাময়িক বরখাস্ত"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকার বিধবা কার্ড দিলে এমপির বউ সবার আগে নেবে: হাসনাত আবদুল্লাহ"
         }
       ]
     },
@@ -284801,6 +285642,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1861,
           "slug": "national-1861",
           "actor_links": 0,
@@ -284839,14 +285688,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশে সংখ্যালঘুদের ওপর নির্যাতন বন্ধে সরকার ব্যবস্থা নেবে: প্রত্যাশা ভারতের"
-        },
-        {
-          "cluster_id": 1520,
-          "slug": "national-1520",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সার সংকট তৈরিতে ১১ দলীয় জোটের লোকজন জড়িত থাকতে পারে: প্রতিমন্ত্রী"
         }
       ]
     },
@@ -285227,6 +286068,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2021,
+          "slug": "national-2021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নুরের মিসাইলে মগবাজার-বাংলামোটর তছনছ হয়ে গেছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1887,
           "slug": "national-1887",
           "actor_links": 0,
@@ -285265,14 +286114,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানে স্টারলিংক ব্যবহারের বিরুদ্ধে আরও কঠোর ব্যবস্থা নেওয়ার ঘোষণা"
-        },
-        {
-          "cluster_id": 1747,
-          "slug": "national-1747",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাবেক উপমন্ত্রী আব্দুল হাইয়ের মৃত্যুতে প্রধানমন্ত্রীর শোক"
         }
       ]
     },
@@ -287500,11 +288341,41 @@
     },
     "sports-2026": {
       "cluster_id": 2026,
-      "headline": "বিদায়ী ম্যাচে হলুদ ও লাল কার্ড পেলেন মেসি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+      "first_seen": "2026-10-16T10:36:52.265Z",
+      "last_update": "2026-10-16T10:36:52.267Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/food/street-food/myhye1g4p8"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.275Z",
+          "kind": "claim",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887341,
+          "claim_text": "কারওয়ান বাজারে ২০ টাকার ছোলা-বুন্দিয়া খেয়েছেন?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-2107": {
@@ -291952,6 +292823,45 @@
           "kind": "verify",
           "claim_id": 870740,
           "claim_text": "এআইয়ের উন্নয়ন ও ব্যবহারে করপোরেট স্বার্থ বড় বাধা!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "tech-2023": {
+      "cluster_id": 2023,
+      "headline": "এআই ও আপনার তথ্য কতটা নিরাপদ",
+      "first_seen": "2026-10-16T10:36:52.254Z",
+      "last_update": "2026-10-16T10:36:52.256Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-16T10:20:00.000Z",
+          "kind": "evidence",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/mbxhvrypyx"
+          }
+        },
+        {
+          "ts": "2026-10-16T10:49:49.268Z",
+          "kind": "claim",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ"
+        },
+        {
+          "ts": "2026-10-16T10:49:49.375Z",
+          "kind": "verify",
+          "claim_id": 887338,
+          "claim_text": "এআই ও আপনার তথ্য কতটা নিরাপদ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
