@@ -4,7 +4,7 @@ seoTitle: "কুমিল্লায় যুবদল কর্মীকে ক
 excerpt: "শুক্রবার (১৬ অক্টোবর) বেলা ১১টার দিকে সদর উপজেলার ছত্রখিল এলাকায় তাকে কুপিয়ে জখম করা হয়। নিহত আবু কাউছারের বন্ধু শামীম হোসেনসহ প্রত্যক্ষদর্শীদের ভাষ্য, তৌহিদুল ইসলাম ওরফে তৌহিদের ন"
 seoDescription: "শুক্রবার (১৬ অক্টোবর) বেলা ১১টার দিকে সদর উপজেলার ছত্রখিল এলাকায় তাকে কুপিয়ে জখম করা হয়। নিহত আবু কাউছারের বন্ধু শামীম হোসেনসহ প্রত্যক্ষদর্শীদের ভাষ্য, তৌ…"
 date: 2026-10-16T11:25:05.000Z
-publishedAt: 2026-10-16T20:00:37.494Z
+publishedAt: 2026-10-16T19:58:02.096Z
 developing: false
 category: "national"
 tags: ["cumilla"]
@@ -30,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-16T20:00:37.377Z"
+  evaluatedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2150
   claimIds:
     - 978522
@@ -48,7 +48,7 @@ publication:
   slug: "national-2150"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-16T20:00:37.377Z"
+  checkedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2150
   claimIds:
     - 978522

@@ -4,7 +4,7 @@ seoTitle: "স্ত্রীর ডিভোর্সের হুমকিত�
 excerpt: "স্ত্রীর ডিভোর্সের (বিবাহবিচ্ছেদ) হুমকিতে পুরান ঢাকায় শাহাদত হোসেন (৩২) নামের এক যুবক নিজের গায়ে আগুন দিয়েছেন বলে জানা গেছে। সন্ধ্যায় দুই ব্যক্তি দগ্ধ শাহাদতকে উদ্ধার করে ঢাকা মেডিক"
 seoDescription: "স্ত্রীর ডিভোর্সের (বিবাহবিচ্ছেদ) হুমকিতে পুরান ঢাকায় শাহাদত হোসেন (৩২) নামের এক যুবক নিজের গায়ে আগুন দিয়েছেন বলে জানা গেছে। সন্ধ্যায় দুই ব্যক্তি দগ্ধ শাহা…"
 date: 2026-10-16T18:44:44.000Z
-publishedAt: 2026-10-16T20:00:37.477Z
+publishedAt: 2026-10-16T19:58:02.066Z
 developing: true
 category: "national"
 tags: ["dhaka"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-16T20:00:37.377Z"
+  evaluatedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2164
   claimIds:
     - 990206
@@ -43,7 +43,7 @@ publication:
   slug: "national-2164"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-16T20:00:37.377Z"
+  checkedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2164
   claimIds:
     - 990206

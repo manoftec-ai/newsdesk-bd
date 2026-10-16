@@ -4,7 +4,7 @@ seoTitle: "নেত্রকোনায় সাংবাদিককে গু�
 excerpt: "আইপিটিভিতে দায়িত্ব পালনের পাশাপাশি আলিফ ‘ডিটেকটিভ আর্টিকেল’ নামে একটি ফেসবুক পেজও পরিচালনা করতেন। আইএফজের বিজ্ঞপ্তিতে বলা হয়েছে, নিহত লুৎফুজ্জামান আলিফ ফকির বেসরকারি আইপিটিভি (ইন্ট"
 seoDescription: "আইপিটিভিতে দায়িত্ব পালনের পাশাপাশি আলিফ ‘ডিটেকটিভ আর্টিকেল’ নামে একটি ফেসবুক পেজও পরিচালনা করতেন। আইএফজের বিজ্ঞপ্তিতে বলা হয়েছে, নিহত লুৎফুজ্জামান আলিফ ফক…"
 date: 2026-10-16T18:49:39.000Z
-publishedAt: 2026-10-16T20:00:37.462Z
+publishedAt: 2026-10-16T19:58:02.046Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-16T20:00:37.377Z"
+  evaluatedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2163
   claimIds:
     - 990205
@@ -43,7 +43,7 @@ publication:
   slug: "national-2163"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-16T20:00:37.377Z"
+  checkedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2163
   claimIds:
     - 990205

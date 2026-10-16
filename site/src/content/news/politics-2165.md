@@ -4,7 +4,7 @@ seoTitle: "জামায়াতের সঙ্গে এনসিপি এক
 excerpt: "জামায়াতে ইসলামীর সঙ্গে জাতীয় নাগরিক পার্টির (এনসিপি) রাজনৈতিক জোট এখন আদর্শিক জোট হিসেবে একাকার হয়ে গেছে, এমন অভিযোগ তুলে দল ছাড়ার ঘোষণা দিয়েছেন এক কেন্দ্রীয় নেতা। ’ . জামায়াতের স"
 seoDescription: "জামায়াতে ইসলামীর সঙ্গে জাতীয় নাগরিক পার্টির (এনসিপি) রাজনৈতিক জোট এখন আদর্শিক জোট হিসেবে একাকার হয়ে গেছে, এমন অভিযোগ তুলে দল ছাড়ার ঘোষণা দিয়েছেন এক কেন্দ…"
 date: 2026-10-16T18:39:08.000Z
-publishedAt: 2026-10-16T20:00:37.484Z
+publishedAt: 2026-10-16T19:58:02.075Z
 developing: true
 category: "politics"
 tags: ["education", "dhaka"]
@@ -27,7 +27,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-16T20:00:37.377Z"
+  evaluatedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2165
   claimIds:
     - 990207
@@ -42,7 +42,7 @@ publication:
   slug: "politics-2165"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-16T20:00:37.377Z"
+  checkedAt: "2026-10-16T19:58:01.941Z"
   clusterId: 2165
   claimIds:
     - 990207
