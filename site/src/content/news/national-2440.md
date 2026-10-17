@@ -1,0 +1,67 @@
+---
+title: "প্রধানমন্ত্রীর জাপান সফর দুই দেশের সম্পর্ক উচ্চতর পর্যায়ে উন্নীত করবে: জহির উদ্দিন স্বপন"
+seoTitle: "প্রধানমন্ত্রীর জাপান সফর দুই দেশের সম্পর্ক উচ্চতর পর্যায়ে উন্নীত করবে:…"
+excerpt: "প্রধানমন্ত্রী তারেক রহমানের জাপান সফরের মধ্য দিয়ে দুই দেশের সম্পর্ক নতুন উচ্চতায় পৌঁছাবে বলে আশাবাদ ব্যক্ত করেছেন প্রধানমন্ত্রীর রাজনৈতিক উপদেষ্টা জহির উদ্দিন স্বপন। এ সফর উপলক্ষে "
+seoDescription: "প্রধানমন্ত্রী তারেক রহমানের জাপান সফরের মধ্য দিয়ে দুই দেশের সম্পর্ক নতুন উচ্চতায় পৌঁছাবে বলে আশাবাদ ব্যক্ত করেছেন প্রধানমন্ত্রীর রাজনৈতিক উপদেষ্টা জহির উদ…"
+date: 2026-10-17T13:12:58.000Z
+publishedAt: 2026-10-17T19:24:31.786Z
+developing: false
+category: "national"
+tags: ["economy"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "প্রধানমন্ত্রীর আসন্ন জাপান সফর বাংলাদেশ ও জাপানের মধ্যকার দ্বিপক্ষীয় সম্পর্ক অনন্য উচ্চতর পর্যায়ে উন্নীত করবে বলে আশা প্রকাশ করেন প্রধানমন্ত্রীর রাজনৈতিক উপদেষ্টা জহির উদ্দিন স্বপন"
+  - "প্রধানমন্ত্রীর আসন্ন জাপান সফরকে সামনে রেখে বাংলাদেশ-জাপান ব্যবসা-বাণিজ্যের সম্ভাবনা নিয়ে..."
+  - "প্রধানমন্ত্রী তারেক রহমানের ২৬ অক্টোবর তিন দিনের রাষ্ট্রীয় সফরে জাপান যাওয়ার কথা রয়েছে"
+faq: []
+sources:
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/national/975119/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%9C%E0%A6%BE%E0%A6%AA%E0%A6%BE%E0%A6%A8-%E0%A6%B8%E0%A6%AB%E0%A6%B0%E0%A7%87-%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%80%E0%A7%9F-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8"
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/k5tinp1e8y"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-10-17T19:24:31.634Z"
+  clusterId: 2440
+  claimIds:
+    - 1263347
+    - 1263348
+  evidenceHash: "5247f9c5a83bf5b0"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+publication:
+  slug: "national-2440"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-17T19:24:31.634Z"
+  clusterId: 2440
+  claimIds:
+    - 1263347
+    - 1263348
+  evidenceHash: "5247f9c5a83bf5b0"
+---
+
+প্রধানমন্ত্রী তারেক রহমানের জাপান সফরের মধ্য দিয়ে দুই দেশের সম্পর্ক নতুন উচ্চতায় পৌঁছাবে বলে আশাবাদ ব্যক্ত করেছেন প্রধানমন্ত্রীর রাজনৈতিক উপদেষ্টা জহির উদ্দিন স্বপন।
+
+এ সফর উপলক্ষে বাংলাদেশ ও জাপানের ব্যবসা-বাণিজ্যের সম্ভাবনা নিয়ে আলোচনার জন্য বর্তমানে একটি জাপানি প্রতিনিধিদল ঢাকায় অবস্থান করছে।
+
+এরই ধারাবাহিকতায় আজ সন্ধ্যায় তারা প্রধানমন্ত্রীর রাজনৈতিক উপদেষ্টার সঙ্গে সৌজন্য সাক্ষাৎ করে।
+
+শনিবার (১৭ অক্টোবর) সন্ধ্যায় প্রধানমন্ত্রীর তেজগাঁও কার্যালয়ে সফররত জাপানি প্রতিনিধিদলের সঙ্গে সাক্ষাৎকালে তিনি এ আশাবাদ ব্যক্ত করেন।
+
+প্রতিনিধিদলটি বিভিন্ন সরকারি ও বেসরকারি প্রতিনিধিদের সঙ্গে সাক্ষাৎ করে দুই দেশের স্বার্থসংশ্লিষ্ট বিষয়ে মতবিনিময় করছে।
