@@ -4,7 +4,7 @@ seoTitle: "যোগদানের ৫ দিনেই চাকরি হা�
 excerpt: "মার্কিন প্রেসিডেন্ট ডোনাল্ড ট্রাম্পের প্রেস সেক্রেটারি হিসেবে দায়িত্ব নেওয়ার এক সপ্তাহেরও কম সময়ের মধ্যে পদ হারিয়েছেন কেটি জাকারিয়া। ’ ট্রাম্প আরও বলেন, তিনি জাকারিয়াকে বিষয়"
 seoDescription: "মার্কিন প্রেসিডেন্ট ডোনাল্ড ট্রাম্পের প্রেস সেক্রেটারি হিসেবে দায়িত্ব নেওয়ার এক সপ্তাহেরও কম সময়ের মধ্যে পদ হারিয়েছেন কেটি জাকারিয়া। ’ ট্রাম্প আরও বল…"
 date: 2026-10-16T21:22:00.000Z
-publishedAt: 2026-10-17T06:59:36.380Z
+publishedAt: 2026-10-17T06:57:13.318Z
 developing: false
 category: "international"
 tags: ["world"]
@@ -33,7 +33,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-17T06:59:36.212Z"
+  evaluatedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2243
   claimIds:
     - 1103581
@@ -57,7 +57,7 @@ publication:
   slug: "international-2243"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-17T06:59:36.212Z"
+  checkedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2243
   claimIds:
     - 1103581

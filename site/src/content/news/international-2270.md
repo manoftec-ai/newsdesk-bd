@@ -4,7 +4,7 @@ seoTitle: "ইন্ডিয়া জোটের বিক্ষোভে য
 excerpt: "বিরোধী দলগুলোর জোট ‘ইন্ডিয়া’তে ৩ অক্টোবর যোগ দেওয়ার পর সিইসিবিরোধী কোনো বিক্ষোভে মুখ্যমন্ত্রী থালাপতি বিজয়ের দলের এটিই প্রথম অংশগ্রহণ। এমন পরিস্থিতিতে চেন্নাইয়ের এ কর্মসূচিতে ‘ইন্"
 seoDescription: "বিরোধী দলগুলোর জোট ‘ইন্ডিয়া’তে ৩ অক্টোবর যোগ দেওয়ার পর সিইসিবিরোধী কোনো বিক্ষোভে মুখ্যমন্ত্রী থালাপতি বিজয়ের দলের এটিই প্রথম অংশগ্রহণ। এমন পরিস্থিতিতে চে…"
 date: 2026-10-17T05:52:40.000Z
-publishedAt: 2026-10-17T06:59:36.356Z
+publishedAt: 2026-10-17T06:57:13.304Z
 developing: true
 category: "international"
 tags: ["dhaka"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-17T06:59:36.212Z"
+  evaluatedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2270
   claimIds:
     - 1122102
@@ -43,7 +43,7 @@ publication:
   slug: "international-2270"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-17T06:59:36.212Z"
+  checkedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2270
   claimIds:
     - 1122102

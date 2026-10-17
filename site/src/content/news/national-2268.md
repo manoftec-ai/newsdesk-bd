@@ -4,7 +4,7 @@ seoTitle: "উচ্চ শব্দে মাইক, অপ্রয়োজন�
 excerpt: "দুর্গাপূজা শান্তিপূর্ণ, নিরাপদ ও পরিবেশবান্ধব পরিবেশে উদ্‌যাপনের লক্ষ্যে জেলা ও উপজেলা পর্যায়ের পূজা উদ্‌যাপন কমিটিগুলোর জন্য ২৬ দফা নির্দেশনা দিয়েছে বাংলাদেশ পূজা উদ্‌যাপন পরিষদ। "
 seoDescription: "দুর্গাপূজা শান্তিপূর্ণ, নিরাপদ ও পরিবেশবান্ধব পরিবেশে উদ্‌যাপনের লক্ষ্যে জেলা ও উপজেলা পর্যায়ের পূজা উদ্‌যাপন কমিটিগুলোর জন্য ২৬ দফা নির্দেশনা দিয়েছে বাংল…"
 date: 2026-10-17T06:03:22.000Z
-publishedAt: 2026-10-17T06:59:36.322Z
+publishedAt: 2026-10-17T06:57:13.283Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-17T06:59:36.212Z"
+  evaluatedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2268
   claimIds:
     - 1122100
@@ -43,7 +43,7 @@ publication:
   slug: "national-2268"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-17T06:59:36.212Z"
+  checkedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2268
   claimIds:
     - 1122100

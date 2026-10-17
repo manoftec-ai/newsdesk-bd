@@ -4,7 +4,7 @@ seoTitle: "অ্যাকসেস আমার হাতে নাই"
 excerpt: "মোড়ের চায়ের দোকানে বসে একটা লিকার–চা হাতে নিয়ে অনেকক্ষণ ধরে পা নাড়াচ্ছে পল্টুদা। গত রাইতে জসিমের বিয়ায় গিয়া, উল্টাপাল্টা খায়া আমি ওই ছবি পোস্ট মাইরা দিসি ফেসবুকে, লগে ক্যাপশ"
 seoDescription: "মোড়ের চায়ের দোকানে বসে একটা লিকার–চা হাতে নিয়ে অনেকক্ষণ ধরে পা নাড়াচ্ছে পল্টুদা। গত রাইতে জসিমের বিয়ায় গিয়া, উল্টাপাল্টা খায়া আমি ওই ছবি পোস্ট মাইর…"
 date: 2026-10-17T06:00:00.000Z
-publishedAt: 2026-10-17T06:59:36.348Z
+publishedAt: 2026-10-17T06:57:13.299Z
 developing: true
 category: "entertainment"
 tags: ["education"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-17T06:59:36.212Z"
+  evaluatedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2269
   claimIds:
     - 1122101
@@ -43,7 +43,7 @@ publication:
   slug: "entertainment-2269"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-17T06:59:36.212Z"
+  checkedAt: "2026-10-17T06:57:13.211Z"
   clusterId: 2269
   claimIds:
     - 1122101
