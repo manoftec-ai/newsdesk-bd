@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 3911,
+    "storyCount": 3915,
     "kinds": [
       "claim",
       "evidence",
@@ -11646,11 +11646,80 @@
     },
     "economy-2228": {
       "cluster_id": 2228,
-      "headline": "ইস্টার্ন রিফাইনারির জন্য কেনা হবে ১৪ লাখ টন ক্রুড অয়েল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+      "first_seen": "2026-10-17T04:17:19.870Z",
+      "last_update": "2026-10-17T04:17:19.872Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T04:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/how-israeli-zero-click-malware-is-creating-a-global-security-risk/"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.406Z",
+          "kind": "claim",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-2229": {
+      "cluster_id": 2229,
+      "headline": "আজ খোলা দেশের সব ব্যাংক",
+      "first_seen": "2026-10-17T04:17:19.873Z",
+      "last_update": "2026-10-17T04:17:19.877Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T04:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/all-banks-in-the-country-are-open-today/"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.408Z",
+          "kind": "claim",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-2244": {
@@ -17081,6 +17150,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -17119,14 +17196,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -23587,6 +23656,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -23625,14 +23702,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাকিস্তানে স্কুলের ছাদ ধসে ১৮ শিশুর মৃত্যু, ধ্বংসস্তূপের নিচে অনেকে আটকে থাকার শঙ্কা"
-        },
-        {
-          "cluster_id": 1636,
-          "slug": "national-1636",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         }
       ]
     },
@@ -27819,6 +27888,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -27857,14 +27934,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -40182,6 +40251,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -40212,14 +40289,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথ সিং"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
         }
       ]
     },
@@ -43071,6 +43140,14 @@
           "headline": "চিকিৎসা নিয়ে মালয়েশিয়া থেকে দেশে ফিরলেন মির্জা আব্বাস"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -43085,14 +43162,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "জুলাইয়ের ‘মানবতাবিরোধী অপরাধ’: সাবেক মন্ত্রী-উপদেষ্টাদের বিরুদ্ধে অভিযোগপত্র ‘প্রায় প্রস্তুত’"
-        },
-        {
-          "cluster_id": 1684,
-          "slug": "national-1684",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
         }
       ]
     },
@@ -48158,12 +48227,12 @@
           "headline": "নাভি পিল্লাইকে নোবেল শান্তি পুরস্কার দেওয়ার সিদ্ধান্ত ‘লজ্জাজনক’: ট্রাম্প"
         },
         {
-          "cluster_id": 2214,
-          "slug": "national-2214",
+          "cluster_id": 2231,
+          "slug": "politics-2231",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি কেটি জাকারিয়া"
+          "headline": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি"
         },
         {
           "cluster_id": 431,
@@ -52271,6 +52340,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -52309,14 +52386,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আসামি ‘ছিনিয়ে নিতে’ ফাঁড়িতে হামলা, দুই পুলিশ সদস্য আহত"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 20,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -53736,12 +53805,659 @@
     },
     "international-2224": {
       "cluster_id": 2224,
-      "headline": "জাতিসংঘের মানবাধিকার পরিষদের উপদেষ্টা হলেন সুফিউর রহমান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+      "first_seen": "2026-10-17T04:17:19.421Z",
+      "last_update": "2026-10-17T04:17:19.436Z",
+      "claim_count": 13,
+      "events": [
+        {
+          "ts": "2026-10-16T08:32:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95SVVJZFZlZkFLd3p2T01weDB0QmhsQlBMM3FWZG1mcVRvN1A0VW4zdjdKNVhfU0xMNXNmSXZCeHY3aEprcWZFQWF5SjNJblRFWmFTR2RvdVh4ZlYyNlozbjN1YkhwYXktQVdsWmN1aERlYWpE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T08:32:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95SVVJZFZlZkFLd3p2T01weDB0QmhsQlBMM3FWZG1mcVRvN1A0VW4zdjdKNVhfU0xMNXNmSXZCeHY3aEprcWZFQWF5SjNJblRFWmFTR2RvdVh4ZlYyNlozbjN1YkhwYXktQVdsWmN1aERlYWpE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:19:43.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBdmtJSV8yNF9fOV80VWtvMF94dWxIWVVXOHJBSmdqYWgtcXVRNXBVSWJiNVdQLV95QV9wcHFwcWo1OENSRWhFU1dlR285QzdHd3dIaGgtZFdLRFkxajVtLXNmWm9OMVROT0JiQXFhMmNsUkxk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:19:43.000Z",
+          "kind": "evidence",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBdmtJSV8yNF9fOV80VWtvMF94dWxIWVVXOHJBSmdqYWgtcXVRNXBVSWJiNVdQLV95QV9wcHFwcWo1OENSRWhFU1dlR285QzdHd3dIaGgtZFdLRFkxajVtLXNmWm9OMVROT0JiQXFhMmNsUkxk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:27:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6cDBneGlmSkgwdE00UllobjR3NlF0cUJLQklzYkMzdHFwaGp6VG9oTGVQVFRMcE14MmZRX0taS0RVQk9SeUJWM3lHSGlXT3hRS0xxMzVpTGpQWERoX3drQXZwdEtjbmhuV2xoSkd2RQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:27:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6cDBneGlmSkgwdE00UllobjR3NlF0cUJLQklzYkMzdHFwaGp6VG9oTGVQVFRMcE14MmZRX0taS0RVQk9SeUJWM3lHSGlXT3hRS0xxMzVpTGpQWERoX3drQXZwdEtjbmhuV2xoSkd2RQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T15:45:40.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUZGFsbVE4eEVzZ3JPT0NwN2ZZTGJrSElVYl81TU9jY1k2dkQySjMzMjA5cVV4SFJic3ZoQUlYZWdVbUpES2oyWWFRaHFUWTNMTE5tSnU4Ty10YTR6REhEMGpDN1F5dWU3NmRSZG1VbC1uNXhh?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T15:45:40.000Z",
+          "kind": "evidence",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUZGFsbVE4eEVzZ3JPT0NwN2ZZTGJrSElVYl81TU9jY1k2dkQySjMzMjA5cVV4SFJic3ZoQUlYZWdVbUpES2oyWWFRaHFUWTNMTE5tSnU4Ty10YTR6REhEMGpDN1F5dWU3NmRSZG1VbC1uNXhh?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T16:06:51.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhdmtFTzU4aFhqeWh3QXBNTzVHeVpIb1ozMVlKXzU1MkNDRmZEZmlYa1ZDSEFKQWtXb0t5MkdIRGloZHNqTFRISDYtUTBTOWNrSzgtclJoWmpjeUdCUUs2V20zX0VEbFRQRXN3UFdUaDU?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T16:06:51.000Z",
+          "kind": "evidence",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhdmtFTzU4aFhqeWh3QXBNTzVHeVpIb1ozMVlKXzU1MkNDRmZEZmlYa1ZDSEFKQWtXb0t5MkdIRGloZHNqTFRISDYtUTBTOWNrSzgtclJoWmpjeUdCUUs2V20zX0VEbFRQRXN3UFdUaDU?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QNFNlQ2pUSjhteXBJQi14TXdaLXNFTlhIYUxTcFBrWDZ1Z0FQeVZBRC1oRG9FcDZkR2tpVDllOS1DcEYxemt2dzZQUzExdDFQSGwxZTNrYktXU0trVVc4SUJ4SmM4V29TaXpfOXppS0oyT0tnZnJvaklkTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9za1dzV183cmtvOEVmYVBxYzY5T0gxRGRzZEpLdy1va2ZJYmtFbmRrLXNTRjNFdmxCck1aOU03LTVZTENGWUFrNEVBakVKS2haWUt6VUJGNFFkWkxPS3Fzajd2SFI5cVhVVmJ4ejJydjFzX2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QNFNlQ2pUSjhteXBJQi14TXdaLXNFTlhIYUxTcFBrWDZ1Z0FQeVZBRC1oRG9FcDZkR2tpVDllOS1DcEYxemt2dzZQUzExdDFQSGwxZTNrYktXU0trVVc4SUJ4SmM4V29TaXpfOXppS0oyT0tnZnJvaklkTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9za1dzV183cmtvOEVmYVBxYzY5T0gxRGRzZEpLdy1va2ZJYmtFbmRrLXNTRjNFdmxCck1aOU03LTVZTENGWUFrNEVBakVKS2haWUt6VUJGNFFkWkxPS3Fzajd2SFI5cVhVVmJ4ejJydjFzX2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:30:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NS1RrWTAyUTFzYTNvSE9FTUxIOFBJOWNxSFBMakFTRUZxUEJ4RWNRdWotaG5ObTJxSVFadlpTRFNNYVJIWUhJVlBFQ2xiSXlDbk1udlZJaS12ZHY0bFZEUzgzWnNTaE1GSEw5X3FxZ3g?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T20:41:12.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wbnd5cXo1aElfQ0phd2t4dDV5N01NUzN0aTBDcGdYRXRRejJsSTBfX0p0dFl3ZU8zMmRMakxSZjQxMnF4TFJWT2lUNHlySjJLdEEwQnJMSWpDYmZxSy1kbDZDRW9DVmJmT1Vzd3F2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T20:41:12.000Z",
+          "kind": "evidence",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wbnd5cXo1aElfQ0phd2t4dDV5N01NUzN0aTBDcGdYRXRRejJsSTBfX0p0dFl3ZU8zMmRMakxSZjQxMnF4TFJWT2lUNHlySjJLdEEwQnJMSWpDYmZxSy1kbDZDRW9DVmJmT1Vzd3F2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T22:16:48.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1UNE1ZLUFhLUtfdEpWNThaYWJUYmJvODBqWUM5Y1F0a1NLZzBZWTc1UmpSWFU5QnVSQzZIVzNPaTR5SFlRUHhWUXM0bmViV2I0cm4zLWM0M3pCTEQ5Q24yWEJtZFN5eW9oa2ZhaFNrNA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T22:16:48.000Z",
+          "kind": "evidence",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1UNE1ZLUFhLUtfdEpWNThaYWJUYmJvODBqWUM5Y1F0a1NLZzBZWTc1UmpSWFU5QnVSQzZIVzNPaTR5SFlRUHhWUXM0bmViV2I0cm4zLWM0M3pCTEQ5Q24yWEJtZFN5eW9oa2ZhaFNrNA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/qph8rph6ew"
+          }
+        },
+        {
+          "ts": "2026-10-17T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/qph8rph6ew"
+          }
+        },
+        {
+          "ts": "2026-10-17T02:08:49.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJM09fY1lFUlJ3U3BQMjRfM2tGbkdKRFFvOHpfMUhTa2tYcDZlTWVMZ0pNRWItclA4SXgzTXVJOGFsZzYwNkFkNjZCU01jVDFiVlhyOEFJbExYVWxBWGV0aG9QUVJjT3gxaTNuWXBkUkNxVmNS?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T02:08:49.000Z",
+          "kind": "evidence",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJM09fY1lFUlJ3U3BQMjRfM2tGbkdKRFFvOHpfMUhTa2tYcDZlTWVMZ0pNRWItclA4SXgzTXVJOGFsZzYwNkFkNjZCU01jVDFiVlhyOEFJbExYVWxBWGV0aG9QUVJjT3gxaTNuWXBkUkNxVmNS?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:01:11.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmzxlwgkkv23o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:01:11.000Z",
+          "kind": "evidence",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmzxlwgkkv23o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.344Z",
+          "kind": "claim",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.361Z",
+          "kind": "claim",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.363Z",
+          "kind": "claim",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.365Z",
+          "kind": "claim",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.367Z",
+          "kind": "claim",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.370Z",
+          "kind": "claim",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.372Z",
+          "kind": "claim",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.377Z",
+          "kind": "claim",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.379Z",
+          "kind": "claim",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.381Z",
+          "kind": "claim",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.384Z",
+          "kind": "claim",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.386Z",
+          "kind": "claim",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.389Z",
+          "kind": "claim",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2203,
+          "slug": "national-2203",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
+        },
+        {
+          "cluster_id": 1880,
+          "slug": "national-1880",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 21,
+          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
+        },
+        {
+          "cluster_id": 1614,
+          "slug": "national-1614",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 20,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 22,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
+        }
+      ]
+    },
+    "international-2231": {
+      "cluster_id": 2231,
+      "headline": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+      "first_seen": "2026-10-17T04:17:19.882Z",
+      "last_update": "2026-10-17T04:17:19.884Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T03:10:20.000Z",
+          "kind": "evidence",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/quxliatmbp"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.414Z",
+          "kind": "claim",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1882,
+          "slug": "national-1882",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সমালোচনার মুখে মৃত্যুদণ্ড কার্যকর সরাসরি সম্প্রচারের সিদ্ধান্ত থেকে সরে এল যুক্তরাষ্ট্র সরকার"
+        },
+        {
+          "cluster_id": 431,
+          "slug": "international-431",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
+        },
+        {
+          "cluster_id": 424,
+          "slug": "national-424",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "'ইউক্রেনের নতুন প্রেসিডেন্ট দরকার', জেলেনস্কির সমালোচনার জবাবে ট্রাম্প"
+        },
+        {
+          "cluster_id": 388,
+          "slug": "national-388",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 6,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 1,
+          "slug": "international-1",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী"
+        }
+      ]
     },
     "international-225": {
       "cluster_id": 225,
@@ -62760,12 +63476,12 @@
           "headline": "সমালোচনার মুখে মৃত্যুদণ্ড কার্যকর সরাসরি সম্প্রচারের সিদ্ধান্ত থেকে সরে এল যুক্তরাষ্ট্র সরকার"
         },
         {
-          "cluster_id": 2214,
-          "slug": "national-2214",
+          "cluster_id": 2231,
+          "slug": "politics-2231",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি কেটি জাকারিয়া"
+          "headline": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি"
         },
         {
           "cluster_id": 431,
@@ -77530,6 +78246,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -77568,14 +78292,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -94158,6 +94874,14 @@
           "headline": "‘বলল, ওপরের খুব চাপ...এই ওপরের চাপ কোন চাপ’"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -94188,14 +94912,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মাটিতে লুটিয়ে পড়ার পরও থামেনি গুলি, যুবককে খুনের পর ৮–১০ মিনিট ফাঁকা গুলিও ছোড়া হয়"
-        },
-        {
-          "cluster_id": 1892,
-          "slug": "national-1892",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আসামি ‘ছিনিয়ে নিতে’ ফাঁড়িতে হামলা, দুই পুলিশ সদস্য আহত"
         }
       ]
     },
@@ -94357,6 +95073,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -94395,14 +95119,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আসামি ‘ছিনিয়ে নিতে’ ফাঁড়িতে হামলা, দুই পুলিশ সদস্য আহত"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 20,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -95538,6 +96254,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -95576,14 +96300,6 @@
           "source_links": 3,
           "claim_count": 20,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 22,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -98243,6 +98959,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -98281,14 +99005,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -103438,6 +104154,14 @@
           "headline": "আয়াসের জামিন শুনানি চলাকালে বিচারকের সামনে দুই পক্ষের আইনজীবীদের হাতাহাতি"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2068,
           "slug": "national-2068",
           "actor_links": 0,
@@ -103460,14 +104184,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -109141,20 +109857,20 @@
           "headline": "চুল কাটতে বলায় পরীক্ষার হলে কলম দিয়ে শিক্ষককে রক্তাক্ত করল নবম শ্রেণির ছাত্র"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 14,
           "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 21,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -125241,6 +125957,14 @@
           "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -125271,14 +125995,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
-        },
-        {
-          "cluster_id": 1683,
-          "slug": "national-1683",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -130991,6 +131707,14 @@
           "headline": "রাশিয়ায় গুপ্তচরবৃত্তির অভিযোগে জাপানি সাংবাদিককে গ্রেপ্তার"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -131021,14 +131745,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথ সিং"
-        },
-        {
-          "cluster_id": 1973,
-          "slug": "national-1973",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
         }
       ]
     },
@@ -131345,20 +132061,20 @@
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 5,
           "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
-        },
-        {
-          "cluster_id": 2169,
-          "slug": "national-2169",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "দেশের প্রতিটি নাগরিকের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ: রাষ্ট্রপতি"
         }
       ]
     },
@@ -135153,6 +135869,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -135191,14 +135915,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -136022,6 +136738,14 @@
           "headline": "জুলাই গণ-অভ্যুত্থান স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, সিএনজি অটোরিকশাচালক আহত"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -136044,14 +136768,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সাংবাদিক আলিফ ফকির হত্যার নিরপেক্ষ তদন্ত ও বিচার দাবি আসকের"
-        },
-        {
-          "cluster_id": 1993,
-          "slug": "national-1993",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথ সিং"
         }
       ]
     },
@@ -139268,20 +139984,20 @@
           "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 10,
           "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -144788,6 +145504,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -144826,14 +145550,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
-        },
-        {
-          "cluster_id": 1430,
-          "slug": "national-1430",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অপারেশন ক্লিনহার্ট করার পরিকল্পনা নেই: চট্টগ্রামে স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -151370,6 +152086,14 @@
           "headline": "‘মনে হইছিল আজকাই আমি শেষ, হয়তো বেঁচে ফিরতে পারমু না’"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -151384,14 +152108,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
-        },
-        {
-          "cluster_id": 1910,
-          "slug": "politics-1910",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 9,
-          "headline": "যুক্তরাষ্ট্রে প্রাইমারি স্কুলে ১৬ বছরের কিশোরের গুলি, তিন শিশুসহ নিহত পাঁচ"
         }
       ]
     },
@@ -162129,6 +162845,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -162167,14 +162891,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাকিস্তানে স্কুলের ছাদ ধসে ১৮ শিশুর মৃত্যু, ধ্বংসস্তূপের নিচে অনেকে আটকে থাকার শঙ্কা"
-        },
-        {
-          "cluster_id": 1636,
-          "slug": "national-1636",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "রিজার্ভ চুরি মামলা: খসড়া চার্জশিট নিয়ে কর্মকর্তাদের বরাতে দেওয়া তথ্য সিআইডির নয়"
         }
       ]
     },
@@ -162904,6 +163620,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -162942,14 +163666,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আসামি ‘ছিনিয়ে নিতে’ ফাঁড়িতে হামলা, দুই পুলিশ সদস্য আহত"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 20,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -165345,12 +166061,12 @@
           "headline": "নাভি পিল্লাইকে নোবেল শান্তি পুরস্কার দেওয়ার সিদ্ধান্ত ‘লজ্জাজনক’: ট্রাম্প"
         },
         {
-          "cluster_id": 2214,
-          "slug": "national-2214",
+          "cluster_id": 2231,
+          "slug": "politics-2231",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি কেটি জাকারিয়া"
+          "headline": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি"
         },
         {
           "cluster_id": 431,
@@ -169338,6 +170054,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -169376,14 +170100,6 @@
           "source_links": 2,
           "claim_count": 20,
           "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -171363,6 +172079,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -171401,14 +172125,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -182987,6 +183703,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -183025,14 +183749,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আসামি ‘ছিনিয়ে নিতে’ ফাঁড়িতে হামলা, দুই পুলিশ সদস্য আহত"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 20,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -189226,6 +189942,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 893,
           "slug": "national-893",
           "actor_links": 1,
@@ -193643,7 +194367,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        }
+      ]
     },
     "national-2188": {
       "cluster_id": 2188,
@@ -198643,38 +199376,257 @@
     },
     "national-2225": {
       "cluster_id": 2225,
-      "headline": "দিল্লিতে পাঁচতলা ভবন ধস, বহু মানুষ চাপা পড়ার শঙ্কা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু",
+      "first_seen": "2026-10-17T04:17:19.437Z",
+      "last_update": "2026-10-17T04:17:19.441Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-16T20:51:08.000Z",
+          "kind": "evidence",
+          "claim_id": 1091348,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/4g9d9z9zq1"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:42:54.000Z",
+          "kind": "evidence",
+          "claim_id": 1091348,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/former-additional-secretary-dies-after-being-found-in-a-bloodied-state-at-the-officers-club-building-under-construction/"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:42:54.000Z",
+          "kind": "evidence",
+          "claim_id": 1091349,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে রক্তাক্ত অবস্থায় উদ্ধার, সাবেক অতিরিক্ত সচিবের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/former-additional-secretary-dies-after-being-found-in-a-bloodied-state-at-the-officers-club-building-under-construction/"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:46:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091348,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/lb52e65i1t"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:46:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091350,
+          "claim_text": "অফিসার্স ক্লাব ভবন থেকে পড়ে সাবেক অতিরিক্ত সচিবের মৃত্যু",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/lb52e65i1t"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.392Z",
+          "kind": "claim",
+          "claim_id": 1091348,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.397Z",
+          "kind": "claim",
+          "claim_id": 1091349,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে রক্তাক্ত অবস্থায় উদ্ধার, সাবেক অতিরিক্ত সচিবের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.399Z",
+          "kind": "claim",
+          "claim_id": 1091350,
+          "claim_text": "অফিসার্স ক্লাব ভবন থেকে পড়ে সাবেক অতিরিক্ত সচিবের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091348,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091349,
+          "claim_text": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে রক্তাক্ত অবস্থায় উদ্ধার, সাবেক অতিরিক্ত সচিবের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091350,
+          "claim_text": "অফিসার্স ক্লাব ভবন থেকে পড়ে সাবেক অতিরিক্ত সচিবের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2187,
+          "slug": "national-2187",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
+          "cluster_id": 893,
+          "slug": "national-893",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গুলিবিদ্ধ হয়ে খালে পড়ে যাওয়ার পর ‘ডাকাত সরদার’কে আবার গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 1,
+          "slug": "international-1",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 5,
+          "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী"
+        },
+        {
+          "cluster_id": 2164,
+          "slug": "national-2164",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "স্ত্রীর ডিভোর্সের হুমকিতে নিজের গায়ে আগুন দিলেন যুবক, অবস্থা আশঙ্কাজনক"
+        },
+        {
+          "cluster_id": 1259,
+          "slug": "sports-1259",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বায়ার্নের বিপক্ষে নবাগত ভাইকিংয়ের চমক, সহজ জয় বার্সা-অ্যাটলেটিকো-আর্সেনালের"
+        },
+        {
+          "cluster_id": 652,
+          "slug": "national-652",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 18,
+          "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
+        }
+      ]
     },
     "national-2226": {
       "cluster_id": 2226,
-      "headline": "সরকারি প্রাথমিক বিদ্যালয়ে প্রধান শিক্ষকের শূন্য পদ দ্রুত পূরণে সুপারিশ",
-      "first_seen": null,
-      "last_update": null,
+      "headline": "মেসি-পরবর্তী যুগে আর্জেন্টিনার দুই ম্যাচের প্রতিপক্ষ চূড়ান্ত",
+      "first_seen": "2026-10-17T04:17:19.442Z",
+      "last_update": "2026-10-17T04:17:19.445Z",
       "claim_count": 0,
       "events": [],
       "related": []
     },
     "national-2227": {
       "cluster_id": 2227,
-      "headline": "আওয়ামী লীগের বাতিল করা ৭ নভেম্বর সাধারণ ছুটি আবারও বহাল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জ্বালানি নিরাপত্তা জোরদারে সৌদি আরব ও কাতারের সহযোগিতা চাইল বাংলাদেশ",
+      "first_seen": "2026-10-17T04:17:19.865Z",
+      "last_update": "2026-10-17T04:17:19.868Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T04:07:30.000Z",
+          "kind": "evidence",
+          "claim_id": 1091351,
+          "claim_text": "জ্বালানি নিরাপত্তা জোরদারে সৌদি আরব ও কাতারের সহযোগিতা চাইল বাংলাদেশ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bangladesh-has-sought-cooperation-from-saudi-arabia-and-qatar-to-strengthen-its-energy-security/"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.402Z",
+          "kind": "claim",
+          "claim_id": 1091351,
+          "claim_text": "জ্বালানি নিরাপত্তা জোরদারে সৌদি আরব ও কাতারের সহযোগিতা চাইল বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091351,
+          "claim_text": "জ্বালানি নিরাপত্তা জোরদারে সৌদি আরব ও কাতারের সহযোগিতা চাইল বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2229": {
       "cluster_id": 2229,
-      "headline": "ক্যানসার চিকিৎসা সহজলভ্য করতে ১৭টি নতুন রেডিওথেরাপি মেশিন যুক্ত হচ্ছে: স্বাস্থ্যমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আজ খোলা দেশের সব ব্যাংক",
+      "first_seen": "2026-10-17T04:17:19.873Z",
+      "last_update": "2026-10-17T04:17:19.877Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T04:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/all-banks-in-the-country-are-open-today/"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.408Z",
+          "kind": "claim",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091353,
+          "claim_text": "আজ খোলা দেশের সব ব্যাংক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-223": {
@@ -198718,11 +199670,41 @@
     },
     "national-2230": {
       "cluster_id": 2230,
-      "headline": "বাংলাদেশ-ইইউ মুক্ত বাণিজ্যচুক্তি দ্রুত সম্পন্ন করতে জার্মান রাষ্ট্রদূতের অঙ্গীকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কটিয়াদীর ঐতিহ্যবাহী হাট, যেখানে বাদ্য শুনে বাছাই করা হয় পূজার ঢাকির দল",
+      "first_seen": "2026-10-17T04:17:19.879Z",
+      "last_update": "2026-10-17T04:17:19.880Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T03:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091354,
+          "claim_text": "কটিয়াদীর ঐতিহ্যবাহী হাট, যেখানে বাদ্য শুনে বাছাই করা হয় পূজার ঢাকির দল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/o136e7r266"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.411Z",
+          "kind": "claim",
+          "claim_id": 1091354,
+          "claim_text": "কটিয়াদীর ঐতিহ্যবাহী হাট, যেখানে বাদ্য শুনে বাছাই করা হয় পূজার ঢাকির দল"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091354,
+          "claim_text": "কটিয়াদীর ঐতিহ্যবাহী হাট, যেখানে বাদ্য শুনে বাছাই করা হয় পূজার ঢাকির দল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2233": {
@@ -223782,6 +224764,14 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -223804,14 +224794,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চিকিৎসা শেষে মালয়েশিয়া থেকে দেশে ফিরেছেন মির্জা আব্বাস"
-        },
-        {
-          "cluster_id": 1684,
-          "slug": "national-1684",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
         }
       ]
     },
@@ -225137,20 +226119,20 @@
           "headline": "আয়াসের জামিন শুনানি চলাকালে বিচারকের সামনে দুই পক্ষের আইনজীবীদের হাতাহাতি"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2068,
           "slug": "national-2068",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
           "headline": "সাংবাদিক আলিফ ফকির হত্যার নিরপেক্ষ তদন্ত ও বিচার দাবি আসকের"
-        },
-        {
-          "cluster_id": 1993,
-          "slug": "national-1993",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "‘বাংলাদেশের মতো সহিংসতার মাধ্যমে’ সরকার পরিবর্তনের ষড়যন্ত্র করছে আন্দোলনকারীরা: রাজনাথ সিং"
         }
       ]
     },
@@ -237043,6 +238025,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -237081,14 +238071,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -238317,6 +239299,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -238355,14 +239345,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -244515,6 +245497,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -244553,14 +245543,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
-        },
-        {
-          "cluster_id": 1492,
-          "slug": "national-1492",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
         }
       ]
     },
@@ -244651,6 +245633,14 @@
           "headline": "ঢাকা বিশ্ববিদ্যালয় নিয়ে মন্তব্য: এবি পার্টির ফুয়াদকে উকিল নোটিস"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -244681,14 +245671,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
-        },
-        {
-          "cluster_id": 1683,
-          "slug": "national-1683",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -250172,6 +251154,14 @@
           "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -250202,14 +251192,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
-        },
-        {
-          "cluster_id": 1683,
-          "slug": "national-1683",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -270466,6 +271448,14 @@
           "headline": "স্ত্রীকে হত্যা করে মরদেহের পাশে বসে ছিল স্বামী, পরে ৯৯৯-এ ফোন"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 1659,
           "slug": "sports-1659",
           "actor_links": 0,
@@ -270496,14 +271486,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "রিয়াদে বিমানবন্দরে হুতিদের হামলায় আরেকজন নিহত, দুই দিনে মোট মৃত্যু দাঁড়াল ১৪ জনে"
-        },
-        {
-          "cluster_id": 407,
-          "slug": "national-407",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         }
       ]
     },
@@ -271135,6 +272117,14 @@
           "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2164,
           "slug": "national-2164",
           "actor_links": 1,
@@ -271165,14 +272155,6 @@
           "source_links": 4,
           "claim_count": 4,
           "headline": "ছাত্রলীগের সাবেক সাধারণ সম্পাদক মাহফুজুল হায়দার রোটন কলকাতায় মারা গেছেন"
-        },
-        {
-          "cluster_id": 2135,
-          "slug": "politics-2135",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 6,
-          "headline": "কুমিল্লা সীমান্তে আটক দুই পুলিশ সদস্যকে পতাকা বৈঠকের মাধ্যমে ফেরত দেবে বিএসএফ"
         }
       ]
     },
@@ -279185,6 +280167,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -279223,14 +280213,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -289634,6 +290616,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -289672,14 +290662,6 @@
           "source_links": 3,
           "claim_count": 20,
           "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
-        },
-        {
-          "cluster_id": 1245,
-          "slug": "national-1245",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 22,
-          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -289762,6 +290744,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -289800,14 +290790,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
-        },
-        {
-          "cluster_id": 1492,
-          "slug": "national-1492",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
         }
       ]
     },
@@ -290649,20 +291631,20 @@
           "headline": "চুল কাটতে বলায় পরীক্ষার হলে কলম দিয়ে শিক্ষককে রক্তাক্ত করল নবম শ্রেণির ছাত্র"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 14,
           "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
-        },
-        {
-          "cluster_id": 1880,
-          "slug": "national-1880",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 21,
-          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
         }
       ]
     },
@@ -292964,6 +293946,574 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "ইন্ডিগো’র ফ্লাইটে পাওয়ার ব্যাংক থেকে আগুন, জরুরি অবতরণ"
+        }
+      ]
+    },
+    "opinion-2224": {
+      "cluster_id": 2224,
+      "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+      "first_seen": "2026-10-17T04:17:19.421Z",
+      "last_update": "2026-10-17T04:17:19.436Z",
+      "claim_count": 13,
+      "events": [
+        {
+          "ts": "2026-10-16T08:32:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95SVVJZFZlZkFLd3p2T01weDB0QmhsQlBMM3FWZG1mcVRvN1A0VW4zdjdKNVhfU0xMNXNmSXZCeHY3aEprcWZFQWF5SjNJblRFWmFTR2RvdVh4ZlYyNlozbjN1YkhwYXktQVdsWmN1aERlYWpE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T08:32:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95SVVJZFZlZkFLd3p2T01weDB0QmhsQlBMM3FWZG1mcVRvN1A0VW4zdjdKNVhfU0xMNXNmSXZCeHY3aEprcWZFQWF5SjNJblRFWmFTR2RvdVh4ZlYyNlozbjN1YkhwYXktQVdsWmN1aERlYWpE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:19:43.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBdmtJSV8yNF9fOV80VWtvMF94dWxIWVVXOHJBSmdqYWgtcXVRNXBVSWJiNVdQLV95QV9wcHFwcWo1OENSRWhFU1dlR285QzdHd3dIaGgtZFdLRFkxajVtLXNmWm9OMVROT0JiQXFhMmNsUkxk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:19:43.000Z",
+          "kind": "evidence",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBdmtJSV8yNF9fOV80VWtvMF94dWxIWVVXOHJBSmdqYWgtcXVRNXBVSWJiNVdQLV95QV9wcHFwcWo1OENSRWhFU1dlR285QzdHd3dIaGgtZFdLRFkxajVtLXNmWm9OMVROT0JiQXFhMmNsUkxk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:27:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6cDBneGlmSkgwdE00UllobjR3NlF0cUJLQklzYkMzdHFwaGp6VG9oTGVQVFRMcE14MmZRX0taS0RVQk9SeUJWM3lHSGlXT3hRS0xxMzVpTGpQWERoX3drQXZwdEtjbmhuV2xoSkd2RQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T13:27:19.000Z",
+          "kind": "evidence",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6cDBneGlmSkgwdE00UllobjR3NlF0cUJLQklzYkMzdHFwaGp6VG9oTGVQVFRMcE14MmZRX0taS0RVQk9SeUJWM3lHSGlXT3hRS0xxMzVpTGpQWERoX3drQXZwdEtjbmhuV2xoSkd2RQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T15:45:40.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUZGFsbVE4eEVzZ3JPT0NwN2ZZTGJrSElVYl81TU9jY1k2dkQySjMzMjA5cVV4SFJic3ZoQUlYZWdVbUpES2oyWWFRaHFUWTNMTE5tSnU4Ty10YTR6REhEMGpDN1F5dWU3NmRSZG1VbC1uNXhh?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T15:45:40.000Z",
+          "kind": "evidence",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUZGFsbVE4eEVzZ3JPT0NwN2ZZTGJrSElVYl81TU9jY1k2dkQySjMzMjA5cVV4SFJic3ZoQUlYZWdVbUpES2oyWWFRaHFUWTNMTE5tSnU4Ty10YTR6REhEMGpDN1F5dWU3NmRSZG1VbC1uNXhh?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T16:06:51.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhdmtFTzU4aFhqeWh3QXBNTzVHeVpIb1ozMVlKXzU1MkNDRmZEZmlYa1ZDSEFKQWtXb0t5MkdIRGloZHNqTFRISDYtUTBTOWNrSzgtclJoWmpjeUdCUUs2V20zX0VEbFRQRXN3UFdUaDU?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T16:06:51.000Z",
+          "kind": "evidence",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhdmtFTzU4aFhqeWh3QXBNTzVHeVpIb1ozMVlKXzU1MkNDRmZEZmlYa1ZDSEFKQWtXb0t5MkdIRGloZHNqTFRISDYtUTBTOWNrSzgtclJoWmpjeUdCUUs2V20zX0VEbFRQRXN3UFdUaDU?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QNFNlQ2pUSjhteXBJQi14TXdaLXNFTlhIYUxTcFBrWDZ1Z0FQeVZBRC1oRG9FcDZkR2tpVDllOS1DcEYxemt2dzZQUzExdDFQSGwxZTNrYktXU0trVVc4SUJ4SmM4V29TaXpfOXppS0oyT0tnZnJvaklkTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9za1dzV183cmtvOEVmYVBxYzY5T0gxRGRzZEpLdy1va2ZJYmtFbmRrLXNTRjNFdmxCck1aOU03LTVZTENGWUFrNEVBakVKS2haWUt6VUJGNFFkWkxPS3Fzajd2SFI5cVhVVmJ4ejJydjFzX2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QNFNlQ2pUSjhteXBJQi14TXdaLXNFTlhIYUxTcFBrWDZ1Z0FQeVZBRC1oRG9FcDZkR2tpVDllOS1DcEYxemt2dzZQUzExdDFQSGwxZTNrYktXU0trVVc4SUJ4SmM4V29TaXpfOXppS0oyT0tnZnJvaklkTQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9za1dzV183cmtvOEVmYVBxYzY5T0gxRGRzZEpLdy1va2ZJYmtFbmRrLXNTRjNFdmxCck1aOU03LTVZTENGWUFrNEVBakVKS2haWUt6VUJGNFFkWkxPS3Fzajd2SFI5cVhVVmJ4ejJydjFzX2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T18:30:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NS1RrWTAyUTFzYTNvSE9FTUxIOFBJOWNxSFBMakFTRUZxUEJ4RWNRdWotaG5ObTJxSVFadlpTRFNNYVJIWUhJVlBFQ2xiSXlDbk1udlZJaS12ZHY0bFZEUzgzWnNTaE1GSEw5X3FxZ3g?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T20:41:12.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wbnd5cXo1aElfQ0phd2t4dDV5N01NUzN0aTBDcGdYRXRRejJsSTBfX0p0dFl3ZU8zMmRMakxSZjQxMnF4TFJWT2lUNHlySjJLdEEwQnJMSWpDYmZxSy1kbDZDRW9DVmJmT1Vzd3F2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T20:41:12.000Z",
+          "kind": "evidence",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wbnd5cXo1aElfQ0phd2t4dDV5N01NUzN0aTBDcGdYRXRRejJsSTBfX0p0dFl3ZU8zMmRMakxSZjQxMnF4TFJWT2lUNHlySjJLdEEwQnJMSWpDYmZxSy1kbDZDRW9DVmJmT1Vzd3F2dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T22:16:48.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1UNE1ZLUFhLUtfdEpWNThaYWJUYmJvODBqWUM5Y1F0a1NLZzBZWTc1UmpSWFU5QnVSQzZIVzNPaTR5SFlRUHhWUXM0bmViV2I0cm4zLWM0M3pCTEQ5Q24yWEJtZFN5eW9oa2ZhaFNrNA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-16T22:16:48.000Z",
+          "kind": "evidence",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1UNE1ZLUFhLUtfdEpWNThaYWJUYmJvODBqWUM5Y1F0a1NLZzBZWTc1UmpSWFU5QnVSQzZIVzNPaTR5SFlRUHhWUXM0bmViV2I0cm4zLWM0M3pCTEQ5Q24yWEJtZFN5eW9oa2ZhaFNrNA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/qph8rph6ew"
+          }
+        },
+        {
+          "ts": "2026-10-17T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/qph8rph6ew"
+          }
+        },
+        {
+          "ts": "2026-10-17T02:08:49.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJM09fY1lFUlJ3U3BQMjRfM2tGbkdKRFFvOHpfMUhTa2tYcDZlTWVMZ0pNRWItclA4SXgzTXVJOGFsZzYwNkFkNjZCU01jVDFiVlhyOEFJbExYVWxBWGV0aG9QUVJjT3gxaTNuWXBkUkNxVmNS?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T02:08:49.000Z",
+          "kind": "evidence",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJM09fY1lFUlJ3U3BQMjRfM2tGbkdKRFFvOHpfMUhTa2tYcDZlTWVMZ0pNRWItclA4SXgzTXVJOGFsZzYwNkFkNjZCU01jVDFiVlhyOEFJbExYVWxBWGV0aG9QUVJjT3gxaTNuWXBkUkNxVmNS?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:01:11.000Z",
+          "kind": "evidence",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmzxlwgkkv23o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-17T03:01:11.000Z",
+          "kind": "evidence",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cmzxlwgkkv23o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.344Z",
+          "kind": "claim",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.361Z",
+          "kind": "claim",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.363Z",
+          "kind": "claim",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.365Z",
+          "kind": "claim",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.367Z",
+          "kind": "claim",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.370Z",
+          "kind": "claim",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.372Z",
+          "kind": "claim",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.377Z",
+          "kind": "claim",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.379Z",
+          "kind": "claim",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.381Z",
+          "kind": "claim",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.384Z",
+          "kind": "claim",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.386Z",
+          "kind": "claim",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.389Z",
+          "kind": "claim",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091335,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091336,
+          "claim_text": "নিখোঁজের ২ দিন পর পুকুর থেকে যুবকের মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091337,
+          "claim_text": "দুই দিনেও সন্ধান মেলেনি ইতালি প্রবাসী জাবেরের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091338,
+          "claim_text": "নাগরিকদের ধর্মীয় স্বাধীনতা ও সমঅধিকার নিশ্চিতে সরকার অঙ্গীকারবদ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091339,
+          "claim_text": "সাতক্ষীরায় মাছ চুরির সন্দেহে ঘের ব্যবসায়ীকে পিটিয়ে ও কুপিয়ে হত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091340,
+          "claim_text": "এবিজি ইউনিভার্সিটি কাপ ঘিরে ইউআইইউতে উৎসবের আবহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091341,
+          "claim_text": "এক দিনে ১২৫ কোটি রুপি আয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091342,
+          "claim_text": "শাহজালাল ইসলামী ব্যাংকের সাবেক চেয়ারম্যান সাজ্জাতুজ জুম্মা গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091343,
+          "claim_text": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091344,
+          "claim_text": "মেধা তালিকায় ৪০তম, এএসপি পদে সুপারিশ পেয়েও গেজেট বঞ্চিত বগুড়ার ফাহিম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091345,
+          "claim_text": "মাথাপিছু তিন হাজার ডলার আয়ের দেশে মানুষ কেন হাঁপাচ্ছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091346,
+          "claim_text": "আজ ৫ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091347,
+          "claim_text": "পত্রিকা: 'স্বাক্ষরেই থমকে আছে সংস্কার'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2203,
+          "slug": "national-2203",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
+        },
+        {
+          "cluster_id": 1880,
+          "slug": "national-1880",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 21,
+          "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
+        },
+        {
+          "cluster_id": 1614,
+          "slug": "national-1614",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1584,
+          "slug": "national-1584",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
+        },
+        {
+          "cluster_id": 1278,
+          "slug": "national-1278",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 20,
+          "headline": "ইমরান খানের শক্ত ঘাঁটি অবরুদ্ধ করেছে পাকিস্তান, কিন্তু এর ফল উল্টো হতে পারে"
+        },
+        {
+          "cluster_id": 1245,
+          "slug": "national-1245",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 22,
+          "headline": "রবীন্দ্রনাথকে নিয়ে আম্মারের কটূক্তি, প্রতিবাদে রাকসু ভবনে বিশ্বকবির পোস্টার সাঁটাল ছাত্রদল"
         }
       ]
     },
@@ -297844,20 +299394,20 @@
           "headline": "যুদ্ধক্ষেত্রে ইউক্রেনের ড্রোনের গতি কমার পেছনে যুক্তরাষ্ট্রের হাত, কী বলছেন ইলন মাস্ক"
         },
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 10,
           "headline": "সৌদিতে দুই বাংলাদেশির মৃত্যুদণ্ড কার্যকরের আগে জানানো হয়নি বাংলাদেশকে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -298514,6 +300064,14 @@
           "headline": "চিকিৎসা নিয়ে মালয়েশিয়া থেকে দেশে ফিরলেন মির্জা আব্বাস"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -298528,14 +300086,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "জুলাইয়ের ‘মানবতাবিরোধী অপরাধ’: সাবেক মন্ত্রী-উপদেষ্টাদের বিরুদ্ধে অভিযোগপত্র ‘প্রায় প্রস্তুত’"
-        },
-        {
-          "cluster_id": 1684,
-          "slug": "national-1684",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
         }
       ]
     },
@@ -300202,6 +301752,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2224,
+          "slug": "opinion-2224",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "এবিজি ইউনিভার্সিটি কাপ ঘিরে সরগরম আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি বাংলাদেশ"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -300240,14 +301798,6 @@
           "source_links": 2,
           "claim_count": 20,
           "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ"
-        },
-        {
-          "cluster_id": 1614,
-          "slug": "national-1614",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         }
       ]
     },
@@ -302156,12 +303706,91 @@
     },
     "politics-2231": {
       "cluster_id": 2231,
-      "headline": "আবরার হত্যাকাণ্ড মানুষকে সম্প্রসারণবাদী শক্তির বিরুদ্ধে আরও বেশি ঐক্যবদ্ধ করেছে: রিজভী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+      "first_seen": "2026-10-17T04:17:19.882Z",
+      "last_update": "2026-10-17T04:17:19.884Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T03:10:20.000Z",
+          "kind": "evidence",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/quxliatmbp"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.414Z",
+          "kind": "claim",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091355,
+          "claim_text": "যোগদানের ৫ দিনেই চাকরি হারালেন ট্রাম্পের প্রেস সেক্রেটারি, কোন কোন বিতর্কে জড়ালেন তিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1882,
+          "slug": "national-1882",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সমালোচনার মুখে মৃত্যুদণ্ড কার্যকর সরাসরি সম্প্রচারের সিদ্ধান্ত থেকে সরে এল যুক্তরাষ্ট্র সরকার"
+        },
+        {
+          "cluster_id": 431,
+          "slug": "international-431",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "আমাকে আটক নয়, রীতিমতো অপহরণ করা হয়েছিল; এমনটা উত্তর কোরিয়ায় হয়: ধ্রুব রাঠী"
+        },
+        {
+          "cluster_id": 424,
+          "slug": "national-424",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "'ইউক্রেনের নতুন প্রেসিডেন্ট দরকার', জেলেনস্কির সমালোচনার জবাবে ট্রাম্প"
+        },
+        {
+          "cluster_id": 388,
+          "slug": "national-388",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "সৌদি আরবের বিমানবন্দরে হামলায় নিহত ১২ জনের মধ্যে দুজন বাংলাদেশি, আহত ৩০৯"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 6,
+          "headline": "সৌদি আরবে বিমানবন্দরে হামলায় বাংলাদেশের নিন্দা, হতাহতদের পরিচয় জানতে চেষ্টা চলছে"
+        },
+        {
+          "cluster_id": 1,
+          "slug": "international-1",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "যুব উন্নয়নের চাকরি পরীক্ষা দুই মিনিটের নোটিশে বাতিল, ক্ষতিপূরণ চান ৩ লাখ চাকরিপ্রার্থী"
+        }
+      ]
     },
     "politics-2232": {
       "cluster_id": 2232,
@@ -308905,6 +310534,14 @@
           "headline": "আয়াসের জামিন শুনানি চলাকালে বিচারকের সামনে দুই পক্ষের আইনজীবীদের হাতাহাতি"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2068,
           "slug": "national-2068",
           "actor_links": 0,
@@ -308927,14 +310564,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -309017,6 +310646,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -309055,14 +310692,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
-        },
-        {
-          "cluster_id": 1492,
-          "slug": "national-1492",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
         }
       ]
     },
@@ -314326,6 +315955,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2203,
           "slug": "national-2203",
           "actor_links": 0,
@@ -314364,14 +316001,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্যামলীতে ট্রাকের চাপায় দুজন নিহত, রক্তাক্ত অবস্থায় পড়ে ছিল সড়কে"
-        },
-        {
-          "cluster_id": 1951,
-          "slug": "national-1951",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘বাচ্চাদের খাইয়ে ঘুম পাড়িয়ে দাও, ফিরতে দেরি হবে’, এটাই ছিলো স্ত্রীর সঙ্গে শেষ কথা"
         }
       ]
     },
@@ -314501,6 +316130,14 @@
           "headline": "ঢাকা বিশ্ববিদ্যালয় নিয়ে মন্তব্য: এবি পার্টির ফুয়াদকে উকিল নোটিস"
         },
         {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবন থেকে সাবেক অতিরিক্ত সচিবকে রক্তাক্ত অবস্থায় উদ্ধার, পরে হাসপাতালে মৃত্যু"
+        },
+        {
           "cluster_id": 2119,
           "slug": "national-2119",
           "actor_links": 0,
@@ -314531,14 +316168,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাহাড় কাটায় ঠিকাদারের সঙ্গে জরিমানা গুনতে হবে সরকারি দপ্তরকেও"
-        },
-        {
-          "cluster_id": 1683,
-          "slug": "national-1683",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -318283,6 +319912,45 @@
           "headline": "নভেম্বরের মধ্যেই জাতীয় গ্রিডে বিদ্যুৎ দিতে প্রস্তুত হচ্ছে রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র"
         }
       ]
+    },
+    "tech-2228": {
+      "cluster_id": 2228,
+      "headline": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+      "first_seen": "2026-10-17T04:17:19.870Z",
+      "last_update": "2026-10-17T04:17:19.872Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-17T04:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/how-israeli-zero-click-malware-is-creating-a-global-security-risk/"
+          }
+        },
+        {
+          "ts": "2026-10-17T04:31:44.406Z",
+          "kind": "claim",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি"
+        },
+        {
+          "ts": "2026-10-17T04:31:44.539Z",
+          "kind": "verify",
+          "claim_id": 1091352,
+          "claim_text": "ইসরায়েলি ‘জিরো-ক্লিক’ ম্যালওয়্যার যেভাবে তৈরি করছে বৈশ্বিক নিরাপত্তা ঝুঁকি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "tech-2334": {
       "cluster_id": 2334,
