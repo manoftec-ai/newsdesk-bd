@@ -1,0 +1,63 @@
+---
+title: "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে নিয়োগে আংশিক সংশোধনী প্রকাশ, পদ কমল ১টি, পেছাল তারিখ"
+seoTitle: "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে নিয়োগে আংশিক সংশোধনী প্রকাশ, পদ কমল ১টি,…"
+excerpt: "যুব ও ক্রীড়া মন্ত্রণালয়ের অধীন চাকরি, পদ ৪৩. ৮. পদের নাম: মেডিক্যাল অফিসার পদসংখ্যা: ১ (২৩ সেপ্টেম্বর প্রকাশিত বিজ্ঞপ্তিতে পদ ছিল ২) বেতন স্কেল: ২২,০০০-৫৩,০৬০ টাকা। চাকরির বিবরণ— ১"
+seoDescription: "যুব ও ক্রীড়া মন্ত্রণালয়ের অধীন চাকরি, পদ ৪৩. ৮. পদের নাম: মেডিক্যাল অফিসার পদসংখ্যা: ১ (২৩ সেপ্টেম্বর প্রকাশিত বিজ্ঞপ্তিতে পদ ছিল ২) বেতন স্কেল: ২২,০০০-৫৩…"
+date: 2026-10-17T07:02:40.000Z
+publishedAt: 2026-10-17T07:57:54.683Z
+developing: true
+category: "national"
+tags: ["economy"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "১৩ অক্টোবর প্রকাশিত সংশোধিত নিয়োগে পদ কমেছে ১টি"
+  - "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে বিভিন্ন প্রশাসনিক পদে ৬ থেকে ২০ গ্রেডে নিয়োগ বিজ্ঞপ্তির সংশোধনী প্রকাশ করা হয়েছে"
+  - "বিমান বাংলাদেশে বড় নিয়োগ, পদ ২৩৪. ৩. পদের নাম: ফিজিওথেরাপিস্ট পদসংখ্যা: ২ বেতন স্কেল: ২২,০০০-৫৩,০৬০ টাকা"
+faq: []
+sources:
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/chakri/employment/uvdyoxl3ja"
+verification:
+  badge: "partial"
+  tier: "A"
+  score: 2
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: true
+  status: "passed"
+  evaluatedAt: "2026-10-17T07:57:54.593Z"
+  clusterId: 2278
+  claimIds:
+    - 1134517
+  evidenceHash: "12f1ccf40a3e7240"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+publication:
+  slug: "national-2278"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-17T07:57:54.593Z"
+  clusterId: 2278
+  claimIds:
+    - 1134517
+  evidenceHash: "12f1ccf40a3e7240"
+---
+
+যুব ও ক্রীড়া মন্ত্রণালয়ের অধীন চাকরি, পদ ৪৩. ৮. পদের নাম: মেডিক্যাল অফিসার পদসংখ্যা: ১ (২৩ সেপ্টেম্বর প্রকাশিত বিজ্ঞপ্তিতে পদ ছিল ২) বেতন স্কেল: ২২,০০০-৫৩,০৬০ টাকা।
+
+চাকরির বিবরণ— ১. পদের নাম: সহকারী কম্পট্রোলার পদসংখ্যা: ২ বেতন স্কেল: ৩৫,৫০০-৬৭,০১০ টাকা।
+
+১০. পদের নাম: উপসহকারী প্রকৌশলী (সিভিল) পদসংখ্যা: ২ বেতন স্কেল: ১৬,০০০-৩৮,৬৪০ টাকা।
+
+১৩. পদের নাম: ল্যাব টেকনিশিয়ান (প্যাথলজি) পদসংখ্যা: ১ বেতন স্কেল: ১১,০০০-২৬,৫৯০ টাকা।
+
+১৭. পদের নাম: অফিস সহকারী কাম কম্পিউটার টাইপিস্ট পদসংখ্যা: ১৪ বেতন স্কেল: ৯,৩০০-২২,৪৯০ টাকা।
+
+৫. পদের নাম: সহকারী উদ্যানতত্ত্ববিদ (ইতি পূর্বে যারা আবেদন করেছেন তাদের আবেদনের দরকার নেই।
