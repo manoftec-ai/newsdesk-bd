@@ -1,5 +1,7 @@
 ---
 title: "Cirkle-এ লাভ বেশি, Love বেশি!"
+thumbnail: "/images/national-cirkle-love.webp"
+thumbnailAlt: "Cirkle-এ লাভ বেশি, Love বেশি! — ছবি: প্রথম আলো"
 seoTitle: "Cirkle-এ লাভ বেশি, Love বেশি!"
 excerpt: "এ ভাবনা থেকেই সার্কেল নিয়ে এসেছে নতুন ফ্রেন্ডস প্যাকের কম্বো ডিলস ক্যাম্পেইন ‘Cirkle-এ লাভ বেশি, Love বেশি! এ জন্য My Cirkle p থেকে Friends Pack কিনে সর্বোচ্চ ১০ জন বন্ধুকে Friends"
 seoDescription: "এ ভাবনা থেকেই সার্কেল নিয়ে এসেছে নতুন ফ্রেন্ডস প্যাকের কম্বো ডিলস ক্যাম্পেইন ‘Cirkle-এ লাভ বেশি, Love বেশি! এ জন্য My Cirkle p থেকে Friends Pack কিনে সর্ব…"
