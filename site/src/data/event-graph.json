@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 4124,
+    "storyCount": 4127,
     "kinds": [
       "claim",
       "evidence",
@@ -8200,6 +8200,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -8238,14 +8246,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -15584,7 +15584,7 @@
       "cluster_id": 2603,
       "headline": "জাতীয় প্রেসক্লাবের নামে মেট্রোরেল স্টেশন করার দাবির সাথে একমত: শেখ রবিউল আলম",
       "first_seen": "2026-10-18T08:16:33.272Z",
-      "last_update": "2026-10-18T10:21:10.424Z",
+      "last_update": "2026-10-18T10:49:28.742Z",
       "claim_count": 2,
       "events": [
         {
@@ -15751,7 +15751,7 @@
       "cluster_id": 2623,
       "headline": "ড. ইউনূসকে করের ৬৬৬ কোটি টাকা দিতে বলা হাইকোর্টের রায়ের বিরুদ্ধে আপিল",
       "first_seen": "2026-10-18T09:21:01.575Z",
-      "last_update": "2026-10-18T10:21:10.420Z",
+      "last_update": "2026-10-18T10:49:28.738Z",
       "claim_count": 2,
       "events": [
         {
@@ -16070,6 +16070,45 @@
       ],
       "related": []
     },
+    "economy-2658": {
+      "cluster_id": 2658,
+      "headline": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+      "first_seen": "2026-10-18T10:49:29.035Z",
+      "last_update": "2026-10-18T10:49:29.038Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:39:36.000Z",
+          "kind": "evidence",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/nearly-half-of-the-countrys-households-are-in-debt-their-expenses-exceed-their-income/"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.340Z",
+          "kind": "claim",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-2677": {
       "cluster_id": 2677,
       "headline": "ব্যবসাপ্রতিষ্ঠানের ট্রেড লাইসেন্সে বাধ্যতামূলক হচ্ছে ‘বাংলা কিউআর’",
@@ -16175,20 +16214,20 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 666,
           "slug": "national-666",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু জ্বরেও দমেনি সাবরিন, মঞ্চে উঠে কৃতজ্ঞতা জানাল বাবাকে"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -20963,14 +21002,6 @@
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -20993,6 +21024,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -24140,6 +24179,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -24174,14 +24221,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -24268,14 +24307,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -24314,6 +24345,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1740,
+          "slug": "sports-1740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চন্দনাইশে হামে আক্রান্ত হয়ে সপ্তম শ্রেণির ছাত্রীর মৃত্যু"
         }
       ]
     },
@@ -27806,8 +27845,8 @@
           "slug": "national-2634",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 4,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 2578,
@@ -27930,6 +27969,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -27968,14 +28015,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -28560,6 +28599,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -28598,14 +28645,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -30186,6 +30225,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -30224,14 +30271,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2043,
-          "slug": "national-2043",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যুক্তরাষ্ট্রে স্কুলে গুলি: শিক্ষক, শিক্ষার্থী ও হামলাকারী নিহত"
         }
       ]
     },
@@ -32539,7 +32578,7 @@
       "cluster_id": 2503,
       "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন",
       "first_seen": "2026-10-18T00:04:20.733Z",
-      "last_update": "2026-10-18T10:21:10.433Z",
+      "last_update": "2026-10-18T10:49:28.750Z",
       "claim_count": 5,
       "events": [
         {
@@ -33758,11 +33797,41 @@
     },
     "entertainment-2662": {
       "cluster_id": 2662,
-      "headline": "পূর্বাচলে মিষ্টিমুখের নতুন ঠিকানা, পাবেন নানা স্বাদের মিষ্টি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+      "first_seen": "2026-10-18T10:49:29.049Z",
+      "last_update": "2026-10-18T10:49:29.050Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:12:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/7lkae8ajeo"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.350Z",
+          "kind": "claim",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-2664": {
@@ -46581,6 +46650,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -46615,14 +46692,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -50390,14 +50459,6 @@
           "headline": "চিকিৎসা নিয়ে মালয়েশিয়া থেকে দেশে ফিরলেন মির্জা আব্বাস"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -50412,6 +50473,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কলকাতায় দুর্গাপুজোর মণ্ডপে পদপিষ্ট হয়ে অন্তত ১৭ জনের মৃত্যু"
+        },
+        {
+          "cluster_id": 2494,
+          "slug": "sports-2494",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "কক্সবাজারে রিসোর্টে আগুন: বেলকনি থেকে লাফ দিয়ে বাঁচেন চিকিৎসক দম্পতি"
         }
       ]
     },
@@ -55788,6 +55857,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -55826,14 +55903,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -56212,6 +56281,14 @@
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2648,
           "slug": "national-2648",
           "actor_links": 0,
@@ -56234,14 +56311,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১০ জনের মৃত্যু: ফায়ার সার্ভিসের অনুমতি ছাড়াই চলছিল সেই রিসোর্ট, নেই ছাড়পত্রও"
-        },
-        {
-          "cluster_id": 2503,
-          "slug": "national-2503",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন"
         }
       ]
     },
@@ -59048,20 +59117,20 @@
           "headline": "বেসরকারি শিক্ষা প্রতিষ্ঠানের ম্যানেজিং কমিটি গঠনের কার্যক্রম স্থগিত"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2564,
-          "slug": "national-2564",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘মাদক’ সেবনের ভিডিও ভাইরাল, ময়মনসিংহে ছাত্রদল নেতাকে অব্যাহতি"
         }
       ]
     },
@@ -66060,20 +66129,20 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকার আবহাওয়া নিয়ে যে বার্তা দিল অধিদপ্তর"
-        },
-        {
-          "cluster_id": 2639,
-          "slug": "international-2639",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘চলুন ফ্রান্সে যাই, বিপ্লবে যোগ দিই’: সহিংস বিক্ষোভ নিয়ে ট্রাম্পের ঠাট্টা"
         }
       ]
     },
@@ -67484,7 +67553,7 @@
       "cluster_id": 2503,
       "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন",
       "first_seen": "2026-10-18T00:04:20.733Z",
-      "last_update": "2026-10-18T10:21:10.433Z",
+      "last_update": "2026-10-18T10:49:28.750Z",
       "claim_count": 5,
       "events": [
         {
@@ -69298,20 +69367,20 @@
           "headline": "শূন্য ঘোষিত সংরক্ষিত আসনে বিএনপির মনোনয়নপ্রত্যাশীদের সাক্ষাৎকার সোমবার"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2628,
-          "slug": "national-2628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের প্রথম নারী প্রধান তথ্য কমিশনার অধ্যাপক নাহরীন ইসলাম খান"
         }
       ]
     },
@@ -70140,8 +70209,8 @@
           "slug": "national-2634",
           "actor_links": 2,
           "source_links": 2,
-          "claim_count": 6,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 8,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 431,
@@ -70360,7 +70429,7 @@
       "cluster_id": 2594,
       "headline": "মার্কিন নারী সাংবাদিককে পিটিয়ে গুরুতর জখম, ইসরায়েলের ওপর ক্ষুব্ধ যুক্তরাষ্ট্র",
       "first_seen": "2026-10-18T07:47:13.802Z",
-      "last_update": "2026-10-18T10:21:10.431Z",
+      "last_update": "2026-10-18T10:49:28.737Z",
       "claim_count": 4,
       "events": [
         {
@@ -70813,7 +70882,7 @@
       "cluster_id": 2605,
       "headline": "‘আমি সাধারণ বিদেশি নই’: দেশ ছাড়ার নোটিশকে চ্যালেঞ্জ নায়ক ইমরান খানের",
       "first_seen": "2026-10-18T08:16:33.281Z",
-      "last_update": "2026-10-18T10:21:10.427Z",
+      "last_update": "2026-10-18T10:49:28.743Z",
       "claim_count": 5,
       "events": [
         {
@@ -71228,7 +71297,7 @@
       "cluster_id": 2617,
       "headline": "আমিনবাজারে সড়কের দুই পাশে সবুজায়ন কর্মসূচির উদ্বোধন প্রধানমন্ত্রীর",
       "first_seen": "2026-10-18T08:46:49.009Z",
-      "last_update": "2026-10-18T10:21:10.423Z",
+      "last_update": "2026-10-18T10:49:28.740Z",
       "claim_count": 2,
       "events": [
         {
@@ -71689,7 +71758,7 @@
       "cluster_id": 2641,
       "headline": "ইসরায়েলের নির্বাচনে ‘কিংমেকার’ কে এই আব্বাস, নেতানিয়াহুকেও সরিয়েছিলেন যিনি",
       "first_seen": "2026-10-18T09:49:39.624Z",
-      "last_update": "2026-10-18T10:21:10.436Z",
+      "last_update": "2026-10-18T10:49:28.751Z",
       "claim_count": 2,
       "events": [
         {
@@ -71854,20 +71923,169 @@
     },
     "international-2655": {
       "cluster_id": 2655,
-      "headline": "তৃণমূলের ১০ বিধায়কের পদ বাতিলের আবেদন খারিজ করলেন স্পিকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+      "first_seen": "2026-10-18T10:49:28.725Z",
+      "last_update": "2026-10-18T10:49:28.728Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-18T08:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxOekxvRnJCaS1oMVBjYm9nNTdlbnZ0LXYwN2xGQmVOVnBIRHRiZGs2ejVHbXpVT0pUQXRrOEQ3aXJ4dWpuOGl1ckJmZkhLSXZzQUt6U3J0MDYtYk1WYTk1bEg1V0hiN0Z2OTQxcXl2eUV5NGdEOW90RG40RFcwVzRFSFdaOHZSMlRzay1HTmNSTjVicVgwNjc4OW5aY3BzVUtLNFhpejlXVjZDVlN0TUJKb0VDaDlES284R0EyOFFTNXBnSzBvaDU3MjVPWlVKcFF6bGJJUm82T205V2l6aHpVZDdiRlpLbmhxRTdPUVV1NGNWVkQxeXNOZjhUdm5aM3pVQXFWci1Ndm1wUUgtcmZsS1Jjcmk0X3k1QkkyVXozQTdMR3RkWTJWdWotb2p3a1JmYS1NUjBWVWx3bzE3S2luOU9wLS15QnZUOVBuNFpmVjRldm1yejJ1SFgtdG4yX3lIRWo2aFZkVEd6UUlZYnc2NnVLQ3ZKazFPaFdoWG8weFhrZjNHYkZZaFF0NzlSN0FoQVRnWF94aDNadEhTYWxDaEVBcVNmZ0xZYmFBbnZWVU0yUWFjTmNfbGwxX19aVHF6ZzlGdlJkZjN6My11TlBhblJOQW5EbDZLaDZrMU0yc3hRYUZ2STl2NVZ5N1M5TUNOeHUyeVFzc2hYcXd6aW1FTlltbVZ4dnhuSEtj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T08:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxOekxvRnJCaS1oMVBjYm9nNTdlbnZ0LXYwN2xGQmVOVnBIRHRiZGs2ejVHbXpVT0pUQXRrOEQ3aXJ4dWpuOGl1ckJmZkhLSXZzQUt6U3J0MDYtYk1WYTk1bEg1V0hiN0Z2OTQxcXl2eUV5NGdEOW90RG40RFcwVzRFSFdaOHZSMlRzay1HTmNSTjVicVgwNjc4OW5aY3BzVUtLNFhpejlXVjZDVlN0TUJKb0VDaDlES284R0EyOFFTNXBnSzBvaDU3MjVPWlVKcFF6bGJJUm82T205V2l6aHpVZDdiRlpLbmhxRTdPUVV1NGNWVkQxeXNOZjhUdm5aM3pVQXFWci1Ndm1wUUgtcmZsS1Jjcmk0X3k1QkkyVXozQTdMR3RkWTJWdWotb2p3a1JmYS1NUjBWVWx3bzE3S2luOU9wLS15QnZUOVBuNFpmVjRldm1yejJ1SFgtdG4yX3lIRWo2aFZkVEd6UUlZYnc2NnVLQ3ZKazFPaFdoWG8weFhrZjNHYkZZaFF0NzlSN0FoQVRnWF94aDNadEhTYWxDaEVBcVNmZ0xZYmFBbnZWVU0yUWFjTmNfbGwxX19aVHF6ZzlGdlJkZjN6My11TlBhblJOQW5EbDZLaDZrMU0yc3hRYUZ2STl2NVZ5N1M5TUNOeHUyeVFzc2hYcXd6aW1FTlltbVZ4dnhuSEtj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T10:22:04.000Z",
+          "kind": "evidence",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/975274/%E0%A6%A1%E0%A7%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A7%9F-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8%E0%A7%87-%E0%A6%AA%E0%A7%81%E0%A7%9C%E0%A6%B2%E0%A7%8B-%E0%A6%9C%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%A5-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B8"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.326Z",
+          "kind": "claim",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.329Z",
+          "kind": "claim",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2635,
+          "slug": "national-2635",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
+        },
+        {
+          "cluster_id": 2480,
+          "slug": "national-2480",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১০ জনের মৃত্যু: ফায়ার সার্ভিসের অনুমতি ছাড়াই চলছিল সেই রিসোর্ট, নেই ছাড়পত্রও"
+        },
+        {
+          "cluster_id": 2391,
+          "slug": "national-2391",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অসহায় মানুষকে আইনি সহায়তা দিতে প্যারালিগ্যাল সেবা প্রাতিষ্ঠানিক করতে হবে: আইনমন্ত্রী"
+        },
+        {
+          "cluster_id": 2377,
+          "slug": "sports-2377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পল্টন হ্যান্ডবল স্টেডিয়াম থেকে দুই কোচের আইফোন চুরি"
+        },
+        {
+          "cluster_id": 2176,
+          "slug": "national-2176",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
+        },
+        {
+          "cluster_id": 2076,
+          "slug": "national-2076",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
+        }
+      ]
     },
     "international-2660": {
       "cluster_id": 2660,
-      "headline": "রিয়াদ বিমানবন্দরে আবারও হামলা, উড়োজাহাজ মারাত্মকভাবে ক্ষতিগ্রস্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কানসাসে শিশুদের ফুটবল খেলা চলার মধ্যেই মাঠে ঢুকে পড়ল ট্রাক, পিষ্ট হয়ে নিহত ২",
+      "first_seen": "2026-10-18T10:49:29.043Z",
+      "last_update": "2026-10-18T10:49:29.044Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:21:09.000Z",
+          "kind": "evidence",
+          "claim_id": 1499035,
+          "claim_text": "কানসাসে শিশুদের ফুটবল খেলা চলার মধ্যেই মাঠে ঢুকে পড়ল ট্রাক, পিষ্ট হয়ে নিহত ২",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/tynth2w5j4"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.345Z",
+          "kind": "claim",
+          "claim_id": 1499035,
+          "claim_text": "কানসাসে শিশুদের ফুটবল খেলা চলার মধ্যেই মাঠে ঢুকে পড়ল ট্রাক, পিষ্ট হয়ে নিহত ২"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499035,
+          "claim_text": "কানসাসে শিশুদের ফুটবল খেলা চলার মধ্যেই মাঠে ঢুকে পড়ল ট্রাক, পিষ্ট হয়ে নিহত ২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-2671": {
@@ -88525,6 +88743,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -88559,14 +88785,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -95182,6 +95400,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -95216,14 +95442,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -113211,14 +113429,6 @@
           "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -113249,6 +113459,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2132,
+          "slug": "opinion-2132",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দুর্গাপূজা উপলক্ষ্যে সনাতন ধর্মাবলম্বীদেরকে প্রধানমন্ত্রীর শুভেচ্ছা"
         }
       ]
     },
@@ -113755,6 +113973,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -113793,14 +114019,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -116653,6 +116871,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -116691,14 +116917,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -123650,6 +123868,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -123688,14 +123914,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -126281,6 +126499,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -126315,14 +126541,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -127273,14 +127491,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -127319,6 +127529,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1740,
+          "slug": "sports-1740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চন্দনাইশে হামে আক্রান্ত হয়ে সপ্তম শ্রেণির ছাত্রীর মৃত্যু"
         }
       ]
     },
@@ -131096,14 +131314,6 @@
           "headline": "ব্যাটারিচালিত রিকশা ছিনিয়ে নিতে চালককে খুন, গ্রেপ্তার ৭"
         },
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -131118,6 +131328,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন"
+        },
+        {
+          "cluster_id": 2426,
+          "slug": "national-2426",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "পিস্তল হাতে ‘মাদক অভিযানে’ প্রতিমন্ত্রী ইশরাক"
         }
       ]
     },
@@ -137801,6 +138019,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -137835,14 +138061,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -137929,6 +138147,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -137967,14 +138193,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -138017,14 +138235,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -138059,6 +138269,14 @@
         {
           "cluster_id": 2282,
           "slug": "opinion-2282",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2249,
+          "slug": "opinion-2249",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -138200,14 +138418,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -138242,6 +138452,14 @@
         {
           "cluster_id": 2282,
           "slug": "opinion-2282",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2249,
+          "slug": "opinion-2249",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -139188,6 +139406,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -139222,14 +139448,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -140893,6 +141111,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -140927,14 +141153,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -142061,14 +142279,6 @@
           "headline": "চুয়েট উপাচার্য জানালেন পদত্যাগ করেননি, আন্দোলন চালিয়ে নেওয়ার ঘোষণা শিক্ষক-শিক্ষার্থীদের"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -142099,6 +142309,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "লাইসেন্স ছিল না টুপটুপ রিসোর্টের, ‘ঝুঁকিপূর্ণ’ বলে নোটিশ দিয়েছিল ফায়ার সার্ভিস"
+        },
+        {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
         }
       ]
     },
@@ -145264,6 +145482,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -145298,14 +145524,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -145897,14 +146115,6 @@
           "headline": "প্রত্যেকের অধিকার-নিরাপত্তা নিশ্চিত করা আমার দায়িত্ব"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -145927,6 +146137,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -146732,14 +146950,6 @@
           "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -146770,6 +146980,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "মিরপুরে দখলমুক্ত ফুটপাত পরিদর্শনে প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 2282,
+          "slug": "opinion-2282",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
         }
       ]
     },
@@ -147498,6 +147716,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -147536,14 +147762,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -153178,6 +153396,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -153216,14 +153442,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -153473,6 +153691,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -153507,14 +153733,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -156110,8 +156328,8 @@
           "slug": "national-2634",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 4,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 2578,
@@ -157403,14 +157621,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -157449,6 +157659,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1740,
+          "slug": "sports-1740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চন্দনাইশে হামে আক্রান্ত হয়ে সপ্তম শ্রেণির ছাত্রীর মৃত্যু"
         }
       ]
     },
@@ -161626,14 +161844,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -161672,6 +161882,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
+        },
+        {
+          "cluster_id": 2119,
+          "slug": "national-2119",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "চুয়েট: অনলাইনে সিন্ডিকেট সভা করলেন উপাচার্য, ১৫ সদস্যের নয় জনই অনুপস্থিত"
         }
       ]
     },
@@ -166893,14 +167111,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -166939,6 +167149,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1683,
+          "slug": "national-1683",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -167933,6 +168151,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -167971,14 +168197,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -168253,8 +168471,8 @@
           "slug": "national-2634",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 4,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 2578,
@@ -172340,6 +172558,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -172374,14 +172600,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -174504,14 +174722,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -174546,6 +174756,14 @@
         {
           "cluster_id": 2282,
           "slug": "opinion-2282",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2249,
+          "slug": "opinion-2249",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
@@ -175931,6 +176149,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -175965,14 +176191,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -176431,6 +176649,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -176469,14 +176695,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -176975,6 +177193,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -177013,14 +177239,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -179020,8 +179238,8 @@
           "slug": "national-2634",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 4,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 2578,
@@ -179632,6 +179850,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -179670,14 +179896,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -182024,6 +182242,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -182062,14 +182288,6 @@
           "source_links": 2,
           "claim_count": 16,
           "headline": "ইরানে পারমাণু বোমা ব্যবহার না করলেও হামলা চালানোর ইঙ্গিত দিয়ে রাখলেন ট্রাম্প, কী বোমা মারবেন তিনি"
-        },
-        {
-          "cluster_id": 2484,
-          "slug": "sports-2484",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তাজমিন হত্যা : হোটেলকর্মী রাজুর বিরুদ্ধে ধর্ষণ মামলা দায়ের"
         }
       ]
     },
@@ -183682,6 +183900,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -183720,14 +183946,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -184183,6 +184401,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -184221,14 +184447,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -185851,6 +186069,14 @@
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2648,
           "slug": "national-2648",
           "actor_links": 0,
@@ -185873,14 +186099,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১০ জনের মৃত্যু: ফায়ার সার্ভিসের অনুমতি ছাড়াই চলছিল সেই রিসোর্ট, নেই ছাড়পত্রও"
-        },
-        {
-          "cluster_id": 2503,
-          "slug": "national-2503",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন"
         }
       ]
     },
@@ -187114,6 +187332,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -187152,14 +187378,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -191241,6 +191459,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -191279,14 +191505,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -197020,20 +197238,20 @@
           "headline": "বেসরকারি শিক্ষা প্রতিষ্ঠানের ম্যানেজিং কমিটি গঠনের কার্যক্রম স্থগিত"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2564,
-          "slug": "national-2564",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘মাদক’ সেবনের ভিডিও ভাইরাল, ময়মনসিংহে ছাত্রদল নেতাকে অব্যাহতি"
         }
       ]
     },
@@ -203645,14 +203863,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -203691,6 +203901,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -209143,6 +209361,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -209181,14 +209407,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -209727,6 +209945,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -209765,14 +209991,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2043,
-          "slug": "national-2043",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যুক্তরাষ্ট্রে স্কুলে গুলি: শিক্ষক, শিক্ষার্থী ও হামলাকারী নিহত"
         }
       ]
     },
@@ -223477,12 +223695,12 @@
           "headline": "উচ্চতর ডিগ্রিধারী তরুণদের কর্মসংস্থানে গুরুত্ব দিচ্ছে সরকার: শিক্ষামন্ত্রী"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
+          "cluster_id": 2577,
+          "slug": "national-2577",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
+          "headline": "জাতীয় পতাকার মান রক্ষা করা সব সৈনিকের পবিত্র দায়িত্ব: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -224464,6 +224682,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -224502,14 +224728,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -224568,14 +224786,6 @@
           "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -224598,6 +224808,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "মিরপুরে দখলমুক্ত ফুটপাত পরিদর্শনে প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1826,
+          "slug": "national-1826",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রতি তিন মাস পর গাছের চারার তথ্য নেবেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -231459,6 +231677,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -231497,14 +231723,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -231670,20 +231888,20 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকার আবহাওয়া নিয়ে যে বার্তা দিল অধিদপ্তর"
-        },
-        {
-          "cluster_id": 2639,
-          "slug": "international-2639",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘চলুন ফ্রান্সে যাই, বিপ্লবে যোগ দিই’: সহিংস বিক্ষোভ নিয়ে ট্রাম্পের ঠাট্টা"
         }
       ]
     },
@@ -232535,14 +232753,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 1,
@@ -232581,6 +232791,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু প্রতিরোধ ও পরিচ্ছন্ন বাংলাদেশ গড়তে তরুণদের ভূমিকা রাখার আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1826,
+          "slug": "national-1826",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রতি তিন মাস পর গাছের চারার তথ্য নেবেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -233209,12 +233427,12 @@
           "headline": "‘আমি সাধারণ বিদেশি নই’: দেশ ছাড়ার নোটিশকে চ্যালেঞ্জ নায়ক ইমরান খানের"
         },
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
+          "cluster_id": 2580,
+          "slug": "national-2580",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
+          "headline": "সীতাকুণ্ডে যুবদল কর্মীকে গুলি ও কুপিয়ে হত্যা, আহত ১"
         }
       ]
     },
@@ -237290,6 +237508,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -237328,14 +237554,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2043,
-          "slug": "national-2043",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যুক্তরাষ্ট্রে স্কুলে গুলি: শিক্ষক, শিক্ষার্থী ও হামলাকারী নিহত"
         }
       ]
     },
@@ -237506,6 +237724,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -237544,14 +237770,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
-        },
-        {
-          "cluster_id": 2404,
-          "slug": "national-2404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আরও ৫ জনের মৃত্যুদণ্ড কার্যকর করল সৌদি আরব"
         }
       ]
     },
@@ -237842,6 +238060,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -237880,14 +238106,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
-        },
-        {
-          "cluster_id": 2404,
-          "slug": "national-2404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আরও ৫ জনের মৃত্যুদণ্ড কার্যকর করল সৌদি আরব"
         }
       ]
     },
@@ -239911,7 +240129,7 @@
       "cluster_id": 2503,
       "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন",
       "first_seen": "2026-10-18T00:04:20.733Z",
-      "last_update": "2026-10-18T10:21:10.433Z",
+      "last_update": "2026-10-18T10:49:28.750Z",
       "claim_count": 5,
       "events": [
         {
@@ -242590,20 +242808,20 @@
           "headline": "গোয়ালিয়রে মন্দিরের দেয়ালে ধানবোঝাই ট্রাকের ধাক্কা, চাপা পড়ে নিহত ১৩ পুণ্যার্থী"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2628,
-          "slug": "national-2628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের প্রথম নারী প্রধান তথ্য কমিশনার অধ্যাপক নাহরীন ইসলাম খান"
         }
       ]
     },
@@ -245593,20 +245811,20 @@
           "headline": "এবিজি ইউনিভার্সিটি কাপের ক্যাম্পাস অ্যাক্টিভেশনে মাতল ব্র্যাক-সোনারগাঁও"
         },
         {
+          "cluster_id": 2634,
+          "slug": "national-2634",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
+        },
+        {
           "cluster_id": 2520,
           "slug": "national-2520",
           "actor_links": 3,
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইরানে পারমাণু বোমা ব্যবহার না করলেও হামলা চালানোর ইঙ্গিত দিয়ে রাখলেন ট্রাম্প, কী বোমা মারবেন তিনি"
-        },
-        {
-          "cluster_id": 2634,
-          "slug": "national-2634",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
         },
         {
           "cluster_id": 431,
@@ -247480,20 +247698,20 @@
           "headline": "শূন্য ঘোষিত সংরক্ষিত আসনে বিএনপির মনোনয়নপ্রত্যাশীদের সাক্ষাৎকার সোমবার"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2628,
-          "slug": "national-2628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের প্রথম নারী প্রধান তথ্য কমিশনার অধ্যাপক নাহরীন ইসলাম খান"
         }
       ]
     },
@@ -247692,14 +247910,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 636,
           "slug": "national-636",
           "actor_links": 2,
@@ -247738,6 +247948,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "দুর্গাপূজা উপলক্ষ্যে সনাতন ধর্মাবলম্বীদেরকে প্রধানমন্ত্রীর শুভেচ্ছা"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -248488,8 +248706,8 @@
           "slug": "national-2634",
           "actor_links": 2,
           "source_links": 2,
-          "claim_count": 6,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 8,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 431,
@@ -248513,7 +248731,7 @@
       "cluster_id": 2579,
       "headline": "ছেলের ছুরিকাঘাতে আহত বাবাকে বাঁচানো গেলো না",
       "first_seen": "2026-10-18T06:50:08.540Z",
-      "last_update": "2026-10-18T10:21:10.432Z",
+      "last_update": "2026-10-18T10:49:28.748Z",
       "claim_count": 2,
       "events": [
         {
@@ -249554,7 +249772,7 @@
       "cluster_id": 2593,
       "headline": "নেত্রকোনায় সাংবাদিক লুৎফুজ্জামান হত্যায় জড়িত সন্দেহে গ্রেপ্তার ১",
       "first_seen": "2026-10-18T07:47:13.796Z",
-      "last_update": "2026-10-18T10:21:10.429Z",
+      "last_update": "2026-10-18T10:49:28.744Z",
       "claim_count": 3,
       "events": [
         {
@@ -249722,7 +249940,7 @@
       "cluster_id": 2594,
       "headline": "মার্কিন নারী সাংবাদিককে পিটিয়ে গুরুতর জখম, ইসরায়েলের ওপর ক্ষুব্ধ যুক্তরাষ্ট্র",
       "first_seen": "2026-10-18T07:47:13.802Z",
-      "last_update": "2026-10-18T10:21:10.431Z",
+      "last_update": "2026-10-18T10:49:28.737Z",
       "claim_count": 4,
       "events": [
         {
@@ -250876,7 +251094,7 @@
       "cluster_id": 2603,
       "headline": "জাতীয় প্রেসক্লাবের নামে মেট্রোরেল স্টেশন করার দাবির সাথে একমত: শেখ রবিউল আলম",
       "first_seen": "2026-10-18T08:16:33.272Z",
-      "last_update": "2026-10-18T10:21:10.424Z",
+      "last_update": "2026-10-18T10:49:28.742Z",
       "claim_count": 2,
       "events": [
         {
@@ -251004,7 +251222,7 @@
       "cluster_id": 2605,
       "headline": "‘আমি সাধারণ বিদেশি নই’: দেশ ছাড়ার নোটিশকে চ্যালেঞ্জ নায়ক ইমরান খানের",
       "first_seen": "2026-10-18T08:16:33.281Z",
-      "last_update": "2026-10-18T10:21:10.427Z",
+      "last_update": "2026-10-18T10:49:28.743Z",
       "claim_count": 5,
       "events": [
         {
@@ -251920,7 +252138,7 @@
       "cluster_id": 2616,
       "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু",
       "first_seen": "2026-10-18T08:46:49.004Z",
-      "last_update": "2026-10-18T10:21:10.421Z",
+      "last_update": "2026-10-18T10:49:28.739Z",
       "claim_count": 2,
       "events": [
         {
@@ -252048,7 +252266,7 @@
       "cluster_id": 2617,
       "headline": "আমিনবাজারে সড়কের দুই পাশে সবুজায়ন কর্মসূচির উদ্বোধন প্রধানমন্ত্রীর",
       "first_seen": "2026-10-18T08:46:49.009Z",
-      "last_update": "2026-10-18T10:21:10.423Z",
+      "last_update": "2026-10-18T10:49:28.740Z",
       "claim_count": 2,
       "events": [
         {
@@ -252460,7 +252678,7 @@
       "cluster_id": 2623,
       "headline": "ড. ইউনূসকে করের ৬৬৬ কোটি টাকা দিতে বলা হাইকোর্টের রায়ের বিরুদ্ধে আপিল",
       "first_seen": "2026-10-18T09:21:01.575Z",
-      "last_update": "2026-10-18T10:21:10.420Z",
+      "last_update": "2026-10-18T10:49:28.738Z",
       "claim_count": 2,
       "events": [
         {
@@ -252614,6 +252832,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -252652,14 +252878,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
-        },
-        {
-          "cluster_id": 2404,
-          "slug": "national-2404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আরও ৫ জনের মৃত্যুদণ্ড কার্যকর করল সৌদি আরব"
         }
       ]
     },
@@ -253381,10 +253599,10 @@
     },
     "national-2634": {
       "cluster_id": 2634,
-      "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'",
+      "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
       "first_seen": "2026-10-18T09:49:39.581Z",
-      "last_update": "2026-10-18T10:21:10.399Z",
-      "claim_count": 3,
+      "last_update": "2026-10-18T10:49:28.723Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-17T19:22:55.000Z",
@@ -253409,6 +253627,17 @@
           }
         },
         {
+          "ts": "2026-10-17T19:22:55.000Z",
+          "kind": "evidence",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ck3wv4vwwzggo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-10-18T02:59:30.000Z",
           "kind": "evidence",
           "claim_id": 1484469,
@@ -253417,6 +253646,28 @@
             "source_id": "bbc-bengali",
             "relation": "supports",
             "url": "https://www.bbc.com/bengali/articles/c6n9r2xzl99lo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-18T02:59:30.000Z",
+          "kind": "evidence",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6n9r2xzl99lo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-18T04:31:22.000Z",
+          "kind": "evidence",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c5gm029lmnneo?at_medium=RSS&at_campaign=rss"
           }
         },
         {
@@ -253435,6 +253686,17 @@
           "kind": "evidence",
           "claim_id": 1484471,
           "claim_text": "অর্থনীতির ঘুরে দাঁড়াতে এখন একটা বড় ধাক্কা দরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/interview/yl04rbuond"
+          }
+        },
+        {
+          "ts": "2026-10-18T06:27:47.000Z",
+          "kind": "evidence",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -253494,9 +253756,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.251Z",
+          "kind": "claim",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1498994,
+          "claim_text": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 2555,
+          "slug": "national-2555",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "ইরানে পারমাণু বোমা ব্যবহার না করলেও হামলা চালানোর ইঙ্গিত দিয়ে রাখলেন ট্রাম্প, কী বোমা মারবেন তিনি"
+        },
         {
           "cluster_id": 2578,
           "slug": "national-2578",
@@ -253506,19 +253794,11 @@
           "headline": "এবিজি ইউনিভার্সিটি কাপের ক্যাম্পাস অ্যাক্টিভেশনে মাতল ব্র্যাক-সোনারগাঁও"
         },
         {
-          "cluster_id": 2555,
-          "slug": "national-2555",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 11,
-          "headline": "ইরানে পারমাণু বোমা ব্যবহার না করলেও হামলা চালানোর ইঙ্গিত দিয়ে রাখলেন ট্রাম্প, কী বোমা মারবেন তিনি"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
-          "actor_links": 0,
+          "actor_links": 2,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 18,
           "headline": "ইরানে পারমাণু বোমা ব্যবহার না করলেও হামলা চালানোর ইঙ্গিত দিয়ে রাখলেন ট্রাম্প, কী বোমা মারবেন তিনি"
         },
         {
@@ -253551,7 +253831,7 @@
       "cluster_id": 2635,
       "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ",
       "first_seen": "2026-10-18T09:49:39.586Z",
-      "last_update": "2026-10-18T10:21:10.416Z",
+      "last_update": "2026-10-18T10:49:28.733Z",
       "claim_count": 2,
       "events": [
         {
@@ -253626,6 +253906,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2480,
           "slug": "national-2480",
           "actor_links": 0,
@@ -253664,14 +253952,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2043,
-          "slug": "national-2043",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যুক্তরাষ্ট্রে স্কুলে গুলি: শিক্ষক, শিক্ষার্থী ও হামলাকারী নিহত"
         }
       ]
     },
@@ -253679,7 +253959,7 @@
       "cluster_id": 2636,
       "headline": "না’গঞ্জের আলোচিত সাত খুনের মামলায় আপিলের চূড়ান্ত শুনানির দিন নির্ধারণ",
       "first_seen": "2026-10-18T09:49:39.589Z",
-      "last_update": "2026-10-18T10:21:10.417Z",
+      "last_update": "2026-10-18T10:49:28.734Z",
       "claim_count": 4,
       "events": [
         {
@@ -254249,6 +254529,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2624,
           "slug": "national-2624",
           "actor_links": 0,
@@ -254287,14 +254575,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
-        },
-        {
-          "cluster_id": 2404,
-          "slug": "national-2404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আরও ৫ জনের মৃত্যুদণ্ড কার্যকর করল সৌদি আরব"
         }
       ]
     },
@@ -254302,7 +254582,7 @@
       "cluster_id": 2641,
       "headline": "ইসরায়েলের নির্বাচনে ‘কিংমেকার’ কে এই আব্বাস, নেতানিয়াহুকেও সরিয়েছিলেন যিনি",
       "first_seen": "2026-10-18T09:49:39.624Z",
-      "last_update": "2026-10-18T10:21:10.436Z",
+      "last_update": "2026-10-18T10:49:28.751Z",
       "claim_count": 2,
       "events": [
         {
@@ -254674,7 +254954,7 @@
       "cluster_id": 2647,
       "headline": "বিজিবির বাধায় লালমনিরহাট সীমান্তে বিএসএফের পুশইন চেষ্টা ব্যর্থ",
       "first_seen": "2026-10-18T10:21:10.401Z",
-      "last_update": "2026-10-18T10:21:10.404Z",
+      "last_update": "2026-10-18T10:49:28.729Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -254683,7 +254963,7 @@
       "cluster_id": 2648,
       "headline": "সীতাকুণ্ডে যুবদল কর্মী হত্যা: ২৪ ঘণ্টায় মূল আসামিসহ গ্রেপ্তার ৬",
       "first_seen": "2026-10-18T10:21:10.406Z",
-      "last_update": "2026-10-18T10:21:10.409Z",
+      "last_update": "2026-10-18T10:49:28.731Z",
       "claim_count": 3,
       "events": [
         {
@@ -254851,7 +255131,7 @@
       "cluster_id": 2649,
       "headline": "ফিফা সভাপতিকে ঢাকায় স্বাগত জানালেন বাফুফে সভাপতি",
       "first_seen": "2026-10-18T10:21:10.412Z",
-      "last_update": "2026-10-18T10:21:10.415Z",
+      "last_update": "2026-10-18T10:49:28.732Z",
       "claim_count": 2,
       "events": [
         {
@@ -255226,40 +255506,417 @@
       ],
       "related": []
     },
+    "national-2655": {
+      "cluster_id": 2655,
+      "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+      "first_seen": "2026-10-18T10:49:28.725Z",
+      "last_update": "2026-10-18T10:49:28.728Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-18T08:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxOekxvRnJCaS1oMVBjYm9nNTdlbnZ0LXYwN2xGQmVOVnBIRHRiZGs2ejVHbXpVT0pUQXRrOEQ3aXJ4dWpuOGl1ckJmZkhLSXZzQUt6U3J0MDYtYk1WYTk1bEg1V0hiN0Z2OTQxcXl2eUV5NGdEOW90RG40RFcwVzRFSFdaOHZSMlRzay1HTmNSTjVicVgwNjc4OW5aY3BzVUtLNFhpejlXVjZDVlN0TUJKb0VDaDlES284R0EyOFFTNXBnSzBvaDU3MjVPWlVKcFF6bGJJUm82T205V2l6aHpVZDdiRlpLbmhxRTdPUVV1NGNWVkQxeXNOZjhUdm5aM3pVQXFWci1Ndm1wUUgtcmZsS1Jjcmk0X3k1QkkyVXozQTdMR3RkWTJWdWotb2p3a1JmYS1NUjBWVWx3bzE3S2luOU9wLS15QnZUOVBuNFpmVjRldm1yejJ1SFgtdG4yX3lIRWo2aFZkVEd6UUlZYnc2NnVLQ3ZKazFPaFdoWG8weFhrZjNHYkZZaFF0NzlSN0FoQVRnWF94aDNadEhTYWxDaEVBcVNmZ0xZYmFBbnZWVU0yUWFjTmNfbGwxX19aVHF6ZzlGdlJkZjN6My11TlBhblJOQW5EbDZLaDZrMU0yc3hRYUZ2STl2NVZ5N1M5TUNOeHUyeVFzc2hYcXd6aW1FTlltbVZ4dnhuSEtj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T08:03:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxOekxvRnJCaS1oMVBjYm9nNTdlbnZ0LXYwN2xGQmVOVnBIRHRiZGs2ejVHbXpVT0pUQXRrOEQ3aXJ4dWpuOGl1ckJmZkhLSXZzQUt6U3J0MDYtYk1WYTk1bEg1V0hiN0Z2OTQxcXl2eUV5NGdEOW90RG40RFcwVzRFSFdaOHZSMlRzay1HTmNSTjVicVgwNjc4OW5aY3BzVUtLNFhpejlXVjZDVlN0TUJKb0VDaDlES284R0EyOFFTNXBnSzBvaDU3MjVPWlVKcFF6bGJJUm82T205V2l6aHpVZDdiRlpLbmhxRTdPUVV1NGNWVkQxeXNOZjhUdm5aM3pVQXFWci1Ndm1wUUgtcmZsS1Jjcmk0X3k1QkkyVXozQTdMR3RkWTJWdWotb2p3a1JmYS1NUjBWVWx3bzE3S2luOU9wLS15QnZUOVBuNFpmVjRldm1yejJ1SFgtdG4yX3lIRWo2aFZkVEd6UUlZYnc2NnVLQ3ZKazFPaFdoWG8weFhrZjNHYkZZaFF0NzlSN0FoQVRnWF94aDNadEhTYWxDaEVBcVNmZ0xZYmFBbnZWVU0yUWFjTmNfbGwxX19aVHF6ZzlGdlJkZjN6My11TlBhblJOQW5EbDZLaDZrMU0yc3hRYUZ2STl2NVZ5N1M5TUNOeHUyeVFzc2hYcXd6aW1FTlltbVZ4dnhuSEtj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T10:22:04.000Z",
+          "kind": "evidence",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/my-campus/975274/%E0%A6%A1%E0%A7%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A7%9F-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8%E0%A7%87-%E0%A6%AA%E0%A7%81%E0%A7%9C%E0%A6%B2%E0%A7%8B-%E0%A6%9C%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%A5-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B8"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.326Z",
+          "kind": "claim",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.329Z",
+          "kind": "claim",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499027,
+          "claim_text": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499028,
+          "claim_text": "জগন্নাথ বিশ্ববিদ্যালয়ের ‘নোঙর’ বাসে আগুন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2635,
+          "slug": "national-2635",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
+        },
+        {
+          "cluster_id": 2480,
+          "slug": "national-2480",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১০ জনের মৃত্যু: ফায়ার সার্ভিসের অনুমতি ছাড়াই চলছিল সেই রিসোর্ট, নেই ছাড়পত্রও"
+        },
+        {
+          "cluster_id": 2391,
+          "slug": "national-2391",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অসহায় মানুষকে আইনি সহায়তা দিতে প্যারালিগ্যাল সেবা প্রাতিষ্ঠানিক করতে হবে: আইনমন্ত্রী"
+        },
+        {
+          "cluster_id": 2377,
+          "slug": "sports-2377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পল্টন হ্যান্ডবল স্টেডিয়াম থেকে দুই কোচের আইফোন চুরি"
+        },
+        {
+          "cluster_id": 2176,
+          "slug": "national-2176",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
+        },
+        {
+          "cluster_id": 2076,
+          "slug": "national-2076",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
+        }
+      ]
+    },
     "national-2656": {
       "cluster_id": 2656,
-      "headline": "রেইনমেকার্স: কৃত্রিম উপায়ে বৃষ্টি তৈরি, মেঘের রাজ্যে ড্রোনের রাজত্ব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী",
+      "first_seen": "2026-10-18T10:49:28.745Z",
+      "last_update": "2026-10-18T10:49:28.747Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-18T05:45:59.000Z",
+          "kind": "evidence",
+          "claim_id": 1499029,
+          "claim_text": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3a3F5QW8xaHpHRmt5VHN4aXNhdEJZVzE2ZGxhTWpiaXl4MEpuMFJWdnhLNWZHcWNBUWhWU1hQcXNrOEx6a0JpUS1YY1lld19qUnFsVFowVG9XTnBsUVEtUmQwdnp1SmlRZlI2dUxxVQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T05:45:59.000Z",
+          "kind": "evidence",
+          "claim_id": 1499030,
+          "claim_text": "প্রবাসে থেকেও দেশের মানুষের পাশে থেকেছেন তারেক রহমান : রিজভী",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3a3F5QW8xaHpHRmt5VHN4aXNhdEJZVzE2ZGxhTWpiaXl4MEpuMFJWdnhLNWZHcWNBUWhWU1hQcXNrOEx6a0JpUS1YY1lld19qUnFsVFowVG9XTnBsUVEtUmQwdnp1SmlRZlI2dUxxVQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T06:34:35.000Z",
+          "kind": "evidence",
+          "claim_id": 1499029,
+          "claim_text": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xMVRrM0RSakd2YV8xd2pDeU83QXJ0cTEwZlJvbklsb204UXNNSkRBczZkbjFiR1hRZzJ1eE1UTW52Ync3bkxDaklIOTZjSFFBQWFR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.331Z",
+          "kind": "claim",
+          "claim_id": 1499029,
+          "claim_text": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.334Z",
+          "kind": "claim",
+          "claim_id": 1499030,
+          "claim_text": "প্রবাসে থেকেও দেশের মানুষের পাশে থেকেছেন তারেক রহমান : রিজভী"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499029,
+          "claim_text": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499030,
+          "claim_text": "প্রবাসে থেকেও দেশের মানুষের পাশে থেকেছেন তারেক রহমান : রিজভী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2640,
+          "slug": "national-2640",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকার আবহাওয়া নিয়ে যে বার্তা দিল অধিদপ্তর"
+        },
+        {
+          "cluster_id": 2624,
+          "slug": "national-2624",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মদের বোতল হাতে বিদ্যালয়ের মাঠে শিক্ষার্থীদের নাচানাচি, ভিডিও ভাইরাল"
+        },
+        {
+          "cluster_id": 2557,
+          "slug": "national-2557",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সৌদির হেলিকপ্টার বিধ্বস্ত হয়ে ২ ক্রুর মৃত্যু, ভূপাতিতের দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 2484,
+          "slug": "sports-2484",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "তাজমিন হত্যা : হোটেলকর্মী রাজুর বিরুদ্ধে ধর্ষণ মামলা দায়ের"
+        },
+        {
+          "cluster_id": 2482,
+          "slug": "national-2482",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 2405,
+          "slug": "national-2405",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
+        }
+      ]
     },
     "national-2657": {
       "cluster_id": 2657,
-      "headline": "নোবেল পুরস্কারের এ টু জেড: মনোনয়ন থেকে পুরস্কার তুলে দেওয়া পর্যন্ত কী ঘটে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আজকের নামাজের সময়সূচি",
+      "first_seen": "2026-10-18T10:49:28.752Z",
+      "last_update": "2026-10-18T10:49:28.755Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-18T11:03:51.336Z",
+          "kind": "claim",
+          "claim_id": 1499031,
+          "claim_text": "আজকের নামাজের সময়সূচি"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.337Z",
+          "kind": "evidence",
+          "claim_id": 1499031,
+          "claim_text": "আজকের নামাজের সময়সূচি",
+          "detail": {
+            "source_id": "atnbangla",
+            "relation": "supports",
+            "url": "https://www.atnbangla.tv/news/bngoopsagre-ntun-lghucap"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.338Z",
+          "kind": "claim",
+          "claim_id": 1499032,
+          "claim_text": "বঙ্গোপসাগরে নতুন লঘুচাপ!"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.338Z",
+          "kind": "evidence",
+          "claim_id": 1499031,
+          "claim_text": "আজকের নামাজের সময়সূচি",
+          "detail": {
+            "source_id": "atnbangla",
+            "relation": "supports",
+            "url": "https://www.atnbangla.tv/news/ajker-namajer-smysuuci"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.339Z",
+          "kind": "evidence",
+          "claim_id": 1499032,
+          "claim_text": "বঙ্গোপসাগরে নতুন লঘুচাপ!",
+          "detail": {
+            "source_id": "atnbangla",
+            "relation": "supports",
+            "url": "https://www.atnbangla.tv/news/bngoopsagre-ntun-lghucap"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499031,
+          "claim_text": "আজকের নামাজের সময়সূচি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499032,
+          "claim_text": "বঙ্গোপসাগরে নতুন লঘুচাপ!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2658": {
       "cluster_id": 2658,
-      "headline": "রিয়াদ বিমানবন্দরে হুথির হামলা, ফ্লাইট বাতিল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+      "first_seen": "2026-10-18T10:49:29.035Z",
+      "last_update": "2026-10-18T10:49:29.038Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:39:36.000Z",
+          "kind": "evidence",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/nearly-half-of-the-countrys-households-are-in-debt-their-expenses-exceed-their-income/"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.340Z",
+          "kind": "claim",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499033,
+          "claim_text": "দেশের প্রায় অর্ধেক পরিবার ঋণগ্রস্ত, আয়ের চেয়ে ব্যয় বেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2659": {
       "cluster_id": 2659,
-      "headline": "কনডেম সেলে কেমন আছেন মিন্নি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "অভিবাসন বিষয়ক মিডিয়া অ্যাওয়ার্ড পেলেন চ্যানেল আইয়ের রিয়াজ ইসলাম",
+      "first_seen": "2026-10-18T10:49:29.039Z",
+      "last_update": "2026-10-18T10:49:29.041Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:34:05.000Z",
+          "kind": "evidence",
+          "claim_id": 1499034,
+          "claim_text": "অভিবাসন বিষয়ক মিডিয়া অ্যাওয়ার্ড পেলেন চ্যানেল আইয়ের রিয়াজ ইসলাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/channel-is-riaz-islam-receives-media-award-for-reporting-on-migration/"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.343Z",
+          "kind": "claim",
+          "claim_id": 1499034,
+          "claim_text": "অভিবাসন বিষয়ক মিডিয়া অ্যাওয়ার্ড পেলেন চ্যানেল আইয়ের রিয়াজ ইসলাম"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499034,
+          "claim_text": "অভিবাসন বিষয়ক মিডিয়া অ্যাওয়ার্ড পেলেন চ্যানেল আইয়ের রিয়াজ ইসলাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-266": {
@@ -255303,11 +255960,80 @@
     },
     "national-2661": {
       "cluster_id": 2661,
-      "headline": "রাজধানীতে অটোরিকশার কাচ ভেঙে মাথায় আঘাতে প্রাণ গেল চালকের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সাবেক বিমানবাহিনী প্রধান শেখ আবদুল হান্নান কাতারে গ্রেপ্তার",
+      "first_seen": "2026-10-18T10:49:29.046Z",
+      "last_update": "2026-10-18T10:49:29.047Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:13:28.000Z",
+          "kind": "evidence",
+          "claim_id": 1499036,
+          "claim_text": "সাবেক বিমানবাহিনী প্রধান শেখ আবদুল হান্নান কাতারে গ্রেপ্তার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/tfx8l2b8gq"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.347Z",
+          "kind": "claim",
+          "claim_id": 1499036,
+          "claim_text": "সাবেক বিমানবাহিনী প্রধান শেখ আবদুল হান্নান কাতারে গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499036,
+          "claim_text": "সাবেক বিমানবাহিনী প্রধান শেখ আবদুল হান্নান কাতারে গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-2662": {
+      "cluster_id": 2662,
+      "headline": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+      "first_seen": "2026-10-18T10:49:29.049Z",
+      "last_update": "2026-10-18T10:49:29.050Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-18T10:12:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/7lkae8ajeo"
+          }
+        },
+        {
+          "ts": "2026-10-18T11:03:51.350Z",
+          "kind": "claim",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা"
+        },
+        {
+          "ts": "2026-10-18T11:03:51.426Z",
+          "kind": "verify",
+          "claim_id": 1499037,
+          "claim_text": "তরুণের মুখে স্প্রে করেন পাশে বসা দুই নারী, হাতিয়ে নেওয়া হয় লাখ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2663": {
@@ -257990,20 +258716,20 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 666,
           "slug": "national-666",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু জ্বরেও দমেনি সাবরিন, মঞ্চে উঠে কৃতজ্ঞতা জানাল বাবাকে"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -259710,6 +260436,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -259748,14 +260482,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -259972,6 +260698,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -260010,14 +260744,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -265162,6 +265888,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -265200,14 +265934,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -270696,20 +271422,20 @@
           "headline": "বেসরকারি শিক্ষা প্রতিষ্ঠানের ম্যানেজিং কমিটি গঠনের কার্যক্রম স্থগিত"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2564,
-          "slug": "national-2564",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘মাদক’ সেবনের ভিডিও ভাইরাল, ময়মনসিংহে ছাত্রদল নেতাকে অব্যাহতি"
         }
       ]
     },
@@ -273746,6 +274472,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -273780,14 +274514,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -273890,14 +274616,6 @@
           "headline": "দলবল নিয়ে কালি দিয়ে রবীন্দ্রনাথের প্রতিকৃতি মোছার চেষ্টা, আটক ৪"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -273920,6 +274638,14 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "কক্সবাজারে রিসোর্টে আগুন: বেলকনি থেকে লাফ দিয়ে বাঁচেন চিকিৎসক দম্পতি"
+        },
+        {
+          "cluster_id": 2354,
+          "slug": "national-2354",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "লাইসেন্স ছিল না টুপটুপ রিসোর্টের, ‘ঝুঁকিপূর্ণ’ বলে নোটিশ দিয়েছিল ফায়ার সার্ভিস"
         }
       ]
     },
@@ -275037,20 +275763,20 @@
           "headline": "কুমিল্লা সীমান্তে আটক দুই পুলিশ সদস্যকে পতাকা বৈঠকের মাধ্যমে ফেরত দেবে বিএসএফ"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2639,
           "slug": "international-2639",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "‘চলুন ফ্রান্সে যাই, বিপ্লবে যোগ দিই’: সহিংস বিক্ষোভ নিয়ে ট্রাম্পের ঠাট্টা"
-        },
-        {
-          "cluster_id": 2638,
-          "slug": "opinion-2638",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পশ্চিম তীরে ইউরোপীয় দূতদের ওপর হামলা, ফ্রান্সের মেয়রকে মারধর"
         }
       ]
     },
@@ -284083,14 +284809,6 @@
           "headline": "সৌদি আরবে বিমানবন্দরে হামলায় নিহত ও আহত ২৬ বাংলাদেশির পরিচয় জানা গেছে"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -284121,6 +284839,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "দুর্গাপূজা উপলক্ষ্যে সনাতন ধর্মাবলম্বীদেরকে প্রধানমন্ত্রীর শুভেচ্ছা"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -294697,14 +295423,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -294743,6 +295461,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
+        },
+        {
+          "cluster_id": 2119,
+          "slug": "national-2119",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "চুয়েট: অনলাইনে সিন্ডিকেট সভা করলেন উপাচার্য, ১৫ সদস্যের নয় জনই অনুপস্থিত"
         }
       ]
     },
@@ -294833,14 +295559,6 @@
           "headline": "ঢাকা বিশ্ববিদ্যালয় নিয়ে মন্তব্য: এবি পার্টির ফুয়াদকে উকিল নোটিস"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -294871,6 +295589,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "লাইসেন্স ছিল না টুপটুপ রিসোর্টের, ‘ঝুঁকিপূর্ণ’ বলে নোটিশ দিয়েছিল ফায়ার সার্ভিস"
+        },
+        {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
         }
       ]
     },
@@ -300354,14 +301080,6 @@
           "headline": "জার্মান পর্যটকের ল্যাপটপ কীভাবে গেলো কাপড়ের দোকানে?"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -300392,6 +301110,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "লাইসেন্স ছিল না টুপটুপ রিসোর্টের, ‘ঝুঁকিপূর্ণ’ বলে নোটিশ দিয়েছিল ফায়ার সার্ভিস"
+        },
+        {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
         }
       ]
     },
@@ -301273,20 +301999,20 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 281,
           "slug": "national-281",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "প্রথম আলো ডটকমের অনলাইন আবাসন মেলায় সম্মাননা পেল তিন প্রতিষ্ঠান"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -308940,6 +309666,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -308974,14 +309708,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -311259,6 +311985,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -311293,14 +312027,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -311847,6 +312573,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -311881,14 +312615,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -317238,6 +317964,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -317272,14 +318006,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -317640,6 +318366,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -317674,14 +318408,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -325758,14 +326484,6 @@
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
         },
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -325788,6 +326506,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "ল্যাপটপ ও ক্যামেরা ফেরত পাননি জার্মান পর্যটক, প্রচারিত ছবি-ভিডিও এআই দিয়ে তৈরি"
+        },
+        {
+          "cluster_id": 507,
+          "slug": "national-507",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "জনগণের অর্থের প্রতিটি পয়সা দেশের স্বার্থে ব্যয় করতে হবে: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -334627,14 +335353,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -334673,6 +335391,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1740,
+          "slug": "sports-1740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চন্দনাইশে হামে আক্রান্ত হয়ে সপ্তম শ্রেণির ছাত্রীর মৃত্যু"
         }
       ]
     },
@@ -340549,14 +341275,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -340595,6 +341313,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
+        },
+        {
+          "cluster_id": 2119,
+          "slug": "national-2119",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "চুয়েট: অনলাইনে সিন্ডিকেট সভা করলেন উপাচার্য, ১৫ সদস্যের নয় জনই অনুপস্থিত"
         }
       ]
     },
@@ -342046,14 +342772,6 @@
           "headline": "ব্যাটারিচালিত রিকশা ছিনিয়ে নিতে চালককে খুন, গ্রেপ্তার ৭"
         },
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -342068,6 +342786,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "রিসোর্টে অগ্নিকাণ্ডের পর ২ শিশুসহ নিখোঁজ একই পরিবারের ৪ জন"
+        },
+        {
+          "cluster_id": 2426,
+          "slug": "national-2426",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "পিস্তল হাতে ‘মাদক অভিযানে’ প্রতিমন্ত্রী ইশরাক"
         }
       ]
     },
@@ -343498,14 +344224,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2642,
-          "slug": "national-2642",
-          "actor_links": 2,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
-        },
-        {
           "cluster_id": 2577,
           "slug": "national-2577",
           "actor_links": 2,
@@ -343544,6 +344262,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 2642,
+          "slug": "national-2642",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সদিচ্ছা থাকলে একটি জায়গা মানুষের ভালোর জন্য পরিবর্তন করা যায়: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -351616,6 +352342,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -351650,14 +352384,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -352185,8 +352911,8 @@
           "slug": "national-2634",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'অস্ত্র হাতে মাদকসেবীদের ধাওয়া প্রতিমন্ত্রী ইশরাকের'"
+          "claim_count": 4,
+          "headline": "ফ্রান্সজুড়ে সহিংস সংঘর্ষ, লুটপাট ও অগ্নিসংযোগ চলছে, গ্রেপ্তার ১ হাজারের বেশি"
         },
         {
           "cluster_id": 2578,
@@ -352851,14 +353577,6 @@
           "headline": "চিকিৎসা নিয়ে মালয়েশিয়া থেকে দেশে ফিরলেন মির্জা আব্বাস"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -352873,6 +353591,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কলকাতায় দুর্গাপুজোর মণ্ডপে পদপিষ্ট হয়ে অন্তত ১৭ জনের মৃত্যু"
+        },
+        {
+          "cluster_id": 2494,
+          "slug": "sports-2494",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "কক্সবাজারে রিসোর্টে আগুন: বেলকনি থেকে লাফ দিয়ে বাঁচেন চিকিৎসক দম্পতি"
         }
       ]
     },
@@ -353474,6 +354200,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -353508,14 +354242,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -357391,6 +358117,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -357429,14 +358163,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারি কোয়ার্টারে সাবলেট কেন, জানতে চাইলেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 2405,
-          "slug": "national-2405",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
         }
       ]
     },
@@ -359444,20 +360170,20 @@
           "headline": "গোয়ালিয়রে মন্দিরের দেয়ালে ধানবোঝাই ট্রাকের ধাক্কা, চাপা পড়ে নিহত ১৩ পুণ্যার্থী"
         },
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাংবাদিক আলিফ হত্যাকাণ্ডে সম্পাদক পরিষদের নিন্দা ও প্রতিবাদ"
-        },
-        {
-          "cluster_id": 2628,
-          "slug": "national-2628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের প্রথম নারী প্রধান তথ্য কমিশনার অধ্যাপক নাহরীন ইসলাম খান"
         }
       ]
     },
@@ -366239,14 +366965,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -366285,6 +367003,14 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
+        },
+        {
+          "cluster_id": 2119,
+          "slug": "national-2119",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "চুয়েট: অনলাইনে সিন্ডিকেট সভা করলেন উপাচার্য, ১৫ সদস্যের নয় জনই অনুপস্থিত"
         }
       ]
     },
@@ -366406,14 +367132,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -366452,6 +367170,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1740,
+          "slug": "sports-1740",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চন্দনাইশে হামে আক্রান্ত হয়ে সপ্তম শ্রেণির ছাত্রীর মৃত্যু"
         }
       ]
     },
@@ -368593,14 +369319,6 @@
       ],
       "related": [
         {
-          "cluster_id": 2596,
-          "slug": "national-2596",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -368639,6 +369357,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাসপাতাল থেকে সার্কিট হাউসে ফিরেই সিন্ডিকেট সভা ডাকলেন চুয়েট উপাচার্য"
+        },
+        {
+          "cluster_id": 1683,
+          "slug": "national-1683",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চুরির চেষ্টার অভিযোগ হাত বেঁধে মারধর, পরদিন সেতুর নিচ থেকে তরুণের লাশ উদ্ধার"
         }
       ]
     },
@@ -371751,6 +372477,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2656,
+          "slug": "national-2656",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রবাসে থেকেও তারেক রহমান দেশের মানুষের পাশে দাঁড়িয়েছেন: রিজভী"
+        },
+        {
           "cluster_id": 2640,
           "slug": "national-2640",
           "actor_links": 0,
@@ -371789,14 +372523,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কর্ণফুলী টানেলের আর্থিক লোকসান নিয়ে তদন্তের নিরিখে কাজ করবে স্থায়ী কমিটি"
-        },
-        {
-          "cluster_id": 2404,
-          "slug": "national-2404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আরও ৫ জনের মৃত্যুদণ্ড কার্যকর করল সৌদি আরব"
         }
       ]
     },
@@ -372832,7 +373558,7 @@
       "cluster_id": 2649,
       "headline": "ফিফা সভাপতিকে ঢাকায় স্বাগত জানালেন বাফুফে সভাপতি",
       "first_seen": "2026-10-18T10:21:10.412Z",
-      "last_update": "2026-10-18T10:21:10.415Z",
+      "last_update": "2026-10-18T10:49:28.732Z",
       "claim_count": 2,
       "events": [
         {
@@ -374075,14 +374801,6 @@
           "headline": "ঢাকা বিশ্ববিদ্যালয় নিয়ে মন্তব্য: এবি পার্টির ফুয়াদকে উকিল নোটিস"
         },
         {
-          "cluster_id": 2616,
-          "slug": "national-2616",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রড ও বাটাম দিয়ে পেটানো হয় তরুণকে, হাসপাতালে মৃত্যু"
-        },
-        {
           "cluster_id": 2508,
           "slug": "national-2508",
           "actor_links": 0,
@@ -374113,6 +374831,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "লাইসেন্স ছিল না টুপটুপ রিসোর্টের, ‘ঝুঁকিপূর্ণ’ বলে নোটিশ দিয়েছিল ফায়ার সার্ভিস"
+        },
+        {
+          "cluster_id": 2225,
+          "slug": "national-2225",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "অফিসার্স ক্লাবের নির্মাণাধীন ভবনে রক্তাক্ত অবস্থায় পড়ে ছিলেন সাবেক অতিরিক্ত সচিব, হাসপাতালে মৃত্যু"
         }
       ]
     },
@@ -374519,6 +375245,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -374553,14 +375287,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -374695,6 +375421,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -374729,14 +375463,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
@@ -375352,6 +376078,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2655,
+          "slug": "national-2655",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেমরায় আগুনে পুড়লো জগন্নাথ বিশ্ববিদ্যালয়ের বাস"
+        },
+        {
           "cluster_id": 2635,
           "slug": "national-2635",
           "actor_links": 0,
@@ -375386,14 +376120,6 @@
         {
           "cluster_id": 2176,
           "slug": "national-2176",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের সব হাসপাতাল ও মেডিক্যাল কলেজের লাইব্রেরিতে জিয়া-খালেদা জিয়ার বই রাখার নির্দেশ"
-        },
-        {
-          "cluster_id": 2076,
-          "slug": "national-2076",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
