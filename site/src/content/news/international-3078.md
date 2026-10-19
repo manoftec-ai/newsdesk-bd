@@ -4,7 +4,7 @@ seoTitle: "ফ্রান্সে পরিস্থিতি নিয়ন্�
 excerpt: "পরিস্থিতি সামাল দিতে দেশটির কয়েকটি শহরে এলাকাভিত্তিক আংশিক কারফিউ জারির নির্দেশ দিয়েছেন প্রধানমন্ত্রী সেবাস্তিয়াঁ লেকর্নু। আজ সোমবার মন্ত্রিসভার জরুরি বৈঠকের পর প্রধানমন্ত্রী বলেন,"
 seoDescription: "পরিস্থিতি সামাল দিতে দেশটির কয়েকটি শহরে এলাকাভিত্তিক আংশিক কারফিউ জারির নির্দেশ দিয়েছেন প্রধানমন্ত্রী সেবাস্তিয়াঁ লেকর্নু। আজ সোমবার মন্ত্রিসভার জরুরি বৈঠ…"
 date: 2026-10-19T16:09:04.000Z
-publishedAt: 2026-10-19T19:57:17.284Z
+publishedAt: 2026-10-19T19:55:15.344Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-19T19:57:17.191Z"
+  evaluatedAt: "2026-10-19T19:55:15.241Z"
   clusterId: 3078
   claimIds:
     - 1976544
@@ -43,7 +43,7 @@ publication:
   slug: "international-3078"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-19T19:57:17.191Z"
+  checkedAt: "2026-10-19T19:55:15.241Z"
   clusterId: 3078
   claimIds:
     - 1976544

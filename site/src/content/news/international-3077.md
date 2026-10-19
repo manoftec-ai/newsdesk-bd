@@ -4,7 +4,7 @@ seoTitle: "পদপিষ্টের ঘটনার শোক কাটিয়
 excerpt: "পশ্চিমবঙ্গের উত্তর কলকাতার চোরবাগান সর্বজনীন পূজামণ্ডপে ভিড়ের চাপে পদপিষ্ট হয়ে ১৯ জনের মৃত্যুর ঘটনার পর থমকে গিয়েছিল কলকাতার দুর্গাপূজার স্বাভাবিক ছন্দ। সে সময় বৃষ্টি শুরু হলে পূজা"
 seoDescription: "পশ্চিমবঙ্গের উত্তর কলকাতার চোরবাগান সর্বজনীন পূজামণ্ডপে ভিড়ের চাপে পদপিষ্ট হয়ে ১৯ জনের মৃত্যুর ঘটনার পর থমকে গিয়েছিল কলকাতার দুর্গাপূজার স্বাভাবিক ছন্দ। স…"
 date: 2026-10-19T19:02:50.000Z
-publishedAt: 2026-10-19T19:57:17.269Z
+publishedAt: 2026-10-19T19:55:15.331Z
 developing: true
 category: "international"
 tags: ["economy", "weather"]
@@ -27,7 +27,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-19T19:57:17.191Z"
+  evaluatedAt: "2026-10-19T19:55:15.241Z"
   clusterId: 3077
   claimIds:
     - 1976543
@@ -42,7 +42,7 @@ publication:
   slug: "international-3077"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-19T19:57:17.191Z"
+  checkedAt: "2026-10-19T19:55:15.241Z"
   clusterId: 3077
   claimIds:
     - 1976543
