@@ -4,7 +4,7 @@ seoTitle: "মাবিদার ওভারহেড কিকে মোহা
 excerpt: "ফেডারেশন কাপে আজ পিডব্লুডির সঙ্গে ১-১ গোলে ড্র করেছে মোহামেডান। ১৭ মিনিটে কিংসের ব্রাজিলিয়ান ফরোয়ার্ড রবসনকে নিজেদের বক্সে ফাউল করেন সিটি ক্লাবের গাম্বিয়ান ডিফেন্ডার ফোদায়ে ডার্বো।"
 seoDescription: "ফেডারেশন কাপে আজ পিডব্লুডির সঙ্গে ১-১ গোলে ড্র করেছে মোহামেডান। ১৭ মিনিটে কিংসের ব্রাজিলিয়ান ফরোয়ার্ড রবসনকে নিজেদের বক্সে ফাউল করেন সিটি ক্লাবের গাম্বিয়া…"
 date: 2026-10-20T11:14:40.000Z
-publishedAt: 2026-10-20T15:08:07.586Z
+publishedAt: 2026-10-20T15:05:14.278Z
 developing: false
 category: "sports"
 tags: ["dhaka"]
@@ -30,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-20T15:08:07.426Z"
+  evaluatedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3271
   claimIds:
     - 2258077
@@ -48,7 +48,7 @@ publication:
   slug: "sports-3271"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-20T15:08:07.426Z"
+  checkedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3271
   claimIds:
     - 2258077

@@ -4,7 +4,7 @@ seoTitle: "একটি মহল অভ্যুত্থানকে বিত
 excerpt: "একটি মহল চব্বিশের জুলাই অভ্যুত্থানকে বিতর্কিত করার চেষ্টা করছে অভিযোগ করে প্রধানমন্ত্রী তারেক রহমান বলেছেন, '১৯৭১ সালের মহান মুক্তিযুদ্ধকে একটি দল বিতর্কিত করার চেষ্টা করেছে। এখন ত"
 seoDescription: "একটি মহল চব্বিশের জুলাই অভ্যুত্থানকে বিতর্কিত করার চেষ্টা করছে অভিযোগ করে প্রধানমন্ত্রী তারেক রহমান বলেছেন, '১৯৭১ সালের মহান মুক্তিযুদ্ধকে একটি দল বিতর্কি…"
 date: 2026-10-20T08:34:25.000Z
-publishedAt: 2026-10-20T15:08:07.596Z
+publishedAt: 2026-10-20T15:05:14.289Z
 developing: false
 category: "national"
 tags: ["rangpur"]
@@ -30,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-20T15:08:07.426Z"
+  evaluatedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3273
   claimIds:
     - 2258081
@@ -48,7 +48,7 @@ publication:
   slug: "national-3273"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-20T15:08:07.426Z"
+  checkedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3273
   claimIds:
     - 2258081

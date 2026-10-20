@@ -4,7 +4,7 @@ seoTitle: "হামের উপসর্গে আরও তিন জনে�
 excerpt: "১৫ মার্চ থেকে এখন পর্যন্ত হামের উপসর্গ দেখা দেওয়া রোগীর সংখ্যা দাঁড়িয়েছে ২ লাখ ১৫ হাজার ৭৬৮ জন। ১৫ মার্চ থেকে এ পর্যন্ত দেশে ল্যাব পরীক্ষায় মোট ২৩ হাজার ১৯৯ রোগীর শরীরে হামের সংক্র"
 seoDescription: "১৫ মার্চ থেকে এখন পর্যন্ত হামের উপসর্গ দেখা দেওয়া রোগীর সংখ্যা দাঁড়িয়েছে ২ লাখ ১৫ হাজার ৭৬৮ জন। ১৫ মার্চ থেকে এ পর্যন্ত দেশে ল্যাব পরীক্ষায় মোট ২৩ হাজার ১…"
 date: 2026-10-20T14:02:08.000Z
-publishedAt: 2026-10-20T15:08:07.578Z
+publishedAt: 2026-10-20T15:05:14.268Z
 developing: true
 category: "national"
 tags: ["health", "dhaka", "chattogram", "health"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-20T15:08:07.426Z"
+  evaluatedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3297
   claimIds:
     - 2275834
@@ -43,7 +43,7 @@ publication:
   slug: "national-3297"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-20T15:08:07.426Z"
+  checkedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3297
   claimIds:
     - 2275834

@@ -4,7 +4,7 @@ seoTitle: "স্কুলছাত্রের মৃত্যুর পর ম
 excerpt: "মাদক কেনার জন্য পর্যাপ্ত টাকা না পেয়ে মানসিকভাবে অস্থির হয়ে সোমবার (১৯ অক্টোবর) রাত সাড়ে ৭টার দিকে সে বিষপান করে। পরিবারের দাবি, গত দুই থেকে তিন বছর ধরে মাদকাসক্ত ছিল মারজান। স্থান"
 seoDescription: "মাদক কেনার জন্য পর্যাপ্ত টাকা না পেয়ে মানসিকভাবে অস্থির হয়ে সোমবার (১৯ অক্টোবর) রাত সাড়ে ৭টার দিকে সে বিষপান করে। পরিবারের দাবি, গত দুই থেকে তিন বছর ধরে ম…"
 date: 2026-10-20T14:07:54.000Z
-publishedAt: 2026-10-20T15:08:07.561Z
+publishedAt: 2026-10-20T15:05:14.247Z
 developing: true
 category: "national"
 tags: ["education"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-20T15:08:07.426Z"
+  evaluatedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3296
   claimIds:
     - 2275833
@@ -43,7 +43,7 @@ publication:
   slug: "national-3296"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-20T15:08:07.426Z"
+  checkedAt: "2026-10-20T15:05:14.112Z"
   clusterId: 3296
   claimIds:
     - 2275833
