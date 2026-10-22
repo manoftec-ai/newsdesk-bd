@@ -1,0 +1,61 @@
+---
+title: "কার্যক্রম নিষিদ্ধ যুবলীগ নেতা সন্দেহে আটক, থানা থেকে ছাড়িয়ে নিলেন জামায়াতের নেতারা"
+thumbnail: "/images/national-3882.webp"
+thumbnailAlt: "কার্যক্রম নিষিদ্ধ যুবলীগ নেতা সন্দেহে আটক, থানা থেকে ছাড়িয়ে নিলেন জামায়াতের নেতারা — ছবি: প্রথম আলো"
+seoTitle: "কার্যক্রম নিষিদ্ধ যুবলীগ নেতা সন্দেহে আটক, থানা থেকে ছাড়িয়ে নিলেন…"
+excerpt: "ঝিনাইদহের কোটচাঁদপুরে কার্যক্রম নিষিদ্ধ যুবলীগের নেতা মনে করে হায়দার আলী (৪৫) নামের এক ব্যক্তিকে আটক করে পুলিশ। পুলিশ গতকাল সন্ধ্যা ছয়টার দিকে হায়দার আলীকে নিজ বাড়ি থেকে আটক করে। এ"
+seoDescription: "ঝিনাইদহের কোটচাঁদপুরে কার্যক্রম নিষিদ্ধ যুবলীগের নেতা মনে করে হায়দার আলী (৪৫) নামের এক ব্যক্তিকে আটক করে পুলিশ। পুলিশ গতকাল সন্ধ্যা ছয়টার দিকে হায়দার আলীক…"
+date: 2026-10-22T16:43:09.000Z
+publishedAt: 2026-10-22T17:56:39.961Z
+developing: true
+category: "national"
+tags: ["bangladesh"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "প্রায় তিন ঘণ্টা পর রাত ৯টার দিকে তিনি থানা থেকে ছাড়া পান"
+  - "এ সম্পর্কে কোটচাঁদপুর থানার ভারপ্রাপ্ত কর্মকর্তা (ওসি) মেহেদী হাসান বলেন, সোর্সের তথ্যের ভিত্তিতে ৪ নম্বর ওয়ার্ড যুবলীগের (কার্যক্রম নিষিদ্ধ) সাধারণ সম্পাদক হিসেবে হায়দার আলীকে আটক করেন তালসার পুলিশ ফাঁড়ির উপপরিদর্শক (এসআই) তবিবুর রহমান"
+  - "এ সময় আমরা তাঁর ২০২২ সাল থেকে জামায়াত-সংশ্লিষ্ট সব কাগজপত্র দাখিল করি"
+faq: []
+sources:
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/district/33txzkdzk7"
+verification:
+  badge: "partial"
+  tier: "A"
+  score: 2
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: true
+  status: "passed"
+  evaluatedAt: "2026-10-22T17:56:39.804Z"
+  clusterId: 3882
+  claimIds:
+    - 3147953
+  evidenceHash: "f3d690f9bbb6ed48"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+publication:
+  slug: "national-3882"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-22T17:56:39.804Z"
+  clusterId: 3882
+  claimIds:
+    - 3147953
+  evidenceHash: "f3d690f9bbb6ed48"
+---
+
+ঝিনাইদহের কোটচাঁদপুরে কার্যক্রম নিষিদ্ধ যুবলীগের নেতা মনে করে হায়দার আলী (৪৫) নামের এক ব্যক্তিকে আটক করে পুলিশ।
+
+পুলিশ গতকাল সন্ধ্যা ছয়টার দিকে হায়দার আলীকে নিজ বাড়ি থেকে আটক করে।
+
+এ সময় উপস্থিত ছিলেন কোটচাঁদপুর উপজেলা জামায়াতের ভারপ্রাপ্ত আমির আজিজুর রহমান, জেলা জামায়াতের সুরা সদস্য ও যুব বিভাগের সম্পাদক শরিফুল ইসলাম প্রমুখ।
+
+হায়দার আলীকে মুক্ত করে বেরিয়ে আসার সময় কোটচাঁদপুর পৌর জামায়াতের আমির আবদুল কাইয়ুম বলেন, ‘আমরা থানায় গিয়ে হায়দার আলী যে জামায়াতের সংগঠনের সঙ্গে জড়িত, সেটা ওসি সাহেবকে জানালাম।
