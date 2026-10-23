@@ -4,7 +4,7 @@ seoTitle: "পশ্চিম তীরে গোলাগুলি, নির�
 excerpt: "অধিকৃত পশ্চিম তীরের হেবরন শহরে হামলা প্রতিহত করার পর পুরো পশ্চিম তীরে ‘পূর্ণ লকডাউনের’ নির্দেশ দিয়েছেন ইসরায়েলের প্রধানমন্ত্রী বেনিয়ামিন নেতানিয়াহু। এ ঘটনায় দুই সন্দেহভাজন ফিলিস্তি"
 seoDescription: "অধিকৃত পশ্চিম তীরের হেবরন শহরে হামলা প্রতিহত করার পর পুরো পশ্চিম তীরে ‘পূর্ণ লকডাউনের’ নির্দেশ দিয়েছেন ইসরায়েলের প্রধানমন্ত্রী বেনিয়ামিন নেতানিয়াহু। এ ঘটন…"
 date: 2026-10-23T09:10:04.000Z
-publishedAt: 2026-10-23T12:57:56.687Z
+publishedAt: 2026-10-23T12:54:15.511Z
 developing: false
 category: "international"
 tags: ["factcheck"]
@@ -32,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-23T12:57:56.511Z"
+  evaluatedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4039
   claimIds:
     - 3445301
@@ -53,7 +53,7 @@ publication:
   slug: "international-4039"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-23T12:57:56.511Z"
+  checkedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4039
   claimIds:
     - 3445301

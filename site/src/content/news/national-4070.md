@@ -4,7 +4,7 @@ seoTitle: "নিষেধাজ্ঞার মধ্যেও ধরা হচ
 excerpt: "দুটি অভিযানে ৩০৫ কেজি ইলিশ ও ৪২ হাজার মিটার জাল জব্দ করা হয়েছে। উপজেলা মৎস্য বিভাগের তথ্য অনুযায়ী, সন্দ্বীপের বিভিন্ন ঘাটে ৮ থেকে ২১ অক্টোবর পর্যন্ত মোট ২৩টি যৌথ অভিযান চালানো হয়েছ"
 seoDescription: "দুটি অভিযানে ৩০৫ কেজি ইলিশ ও ৪২ হাজার মিটার জাল জব্দ করা হয়েছে। উপজেলা মৎস্য বিভাগের তথ্য অনুযায়ী, সন্দ্বীপের বিভিন্ন ঘাটে ৮ থেকে ২১ অক্টোবর পর্যন্ত মোট ২…"
 date: 2026-10-23T11:51:01.000Z
-publishedAt: 2026-10-23T12:57:56.677Z
+publishedAt: 2026-10-23T12:54:15.502Z
 developing: true
 category: "national"
 tags: ["chattogram"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-23T12:57:56.511Z"
+  evaluatedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4070
   claimIds:
     - 3477978
@@ -43,7 +43,7 @@ publication:
   slug: "national-4070"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-23T12:57:56.511Z"
+  checkedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4070
   claimIds:
     - 3477978

@@ -4,7 +4,7 @@ seoTitle: "মাথার গুলির ক্ষত না দেখেই �
 excerpt: "শুক্রবার (২৩ অক্টোবর) সকালে বিষয়টি নিশ্চিত করেছেন মাগুরা ২৫০ শয্যা হাসপাতালের তত্ত্বাবধায়ক মোহসিন উদ্দিন ফকির। মোহসিন উদ্দিন ফকির বলেন, সাকেরকে প্রথম যখন হাসপাতালে আনা হয় তখন মাইনু"
 seoDescription: "শুক্রবার (২৩ অক্টোবর) সকালে বিষয়টি নিশ্চিত করেছেন মাগুরা ২৫০ শয্যা হাসপাতালের তত্ত্বাবধায়ক মোহসিন উদ্দিন ফকির। মোহসিন উদ্দিন ফকির বলেন, সাকেরকে প্রথম যখন …"
 date: 2026-10-23T12:03:19.000Z
-publishedAt: 2026-10-23T12:57:56.648Z
+publishedAt: 2026-10-23T12:54:15.480Z
 developing: true
 category: "national"
 tags: ["dhaka"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-23T12:57:56.511Z"
+  evaluatedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4069
   claimIds:
     - 3477977
@@ -43,7 +43,7 @@ publication:
   slug: "national-4069"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-23T12:57:56.511Z"
+  checkedAt: "2026-10-23T12:54:15.365Z"
   clusterId: 4069
   claimIds:
     - 3477977
