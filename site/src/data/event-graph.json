@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5304,
+    "storyCount": 5309,
     "kinds": [
       "claim",
       "evidence",
@@ -30942,7 +30942,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -100166,8 +100166,8 @@
       "cluster_id": 3944,
       "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না",
       "first_seen": "2026-10-23T02:33:53.640Z",
-      "last_update": "2026-10-23T02:33:53.648Z",
-      "claim_count": 8,
+      "last_update": "2026-10-23T03:04:02.307Z",
+      "claim_count": 9,
       "events": [
         {
           "ts": "2026-10-22T18:52:12.000Z",
@@ -100335,6 +100335,28 @@
           }
         },
         {
+          "ts": "2026-10-23T02:48:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3305684,
+          "claim_text": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cr20w875l110o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-23T02:48:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3316300,
+          "claim_text": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cr20w875l110o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-10-23T02:51:57.260Z",
           "kind": "claim",
           "claim_id": 3305684,
@@ -100477,6 +100499,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.265Z",
+          "kind": "claim",
+          "claim_id": 3316300,
+          "claim_text": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316300,
+          "claim_text": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -100529,6 +100569,45 @@
           "headline": "৪৫তম বিসিএসে সুপারিশ পেয়েও বাদ, রাষ্ট্রীয় অনাচারের অভিযোগ, রি–ভেরিফিকেশনের আশ্বাস প্রতিমন্ত্রীর"
         }
       ]
+    },
+    "international-3952": {
+      "cluster_id": 3952,
+      "headline": "তিব্বতে শক্তিশালী ভূমিকম্পে নিহত ১৬",
+      "first_seen": "2026-10-23T03:04:02.747Z",
+      "last_update": "2026-10-23T03:04:02.749Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T02:46:42.000Z",
+          "kind": "evidence",
+          "claim_id": 3316310,
+          "claim_text": "তিব্বতে শক্তিশালী ভূমিকম্পে নিহত ১৬",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/16-killed-32-injured-in-powerful-earthquake-in-tibet/"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.292Z",
+          "kind": "claim",
+          "claim_id": 3316310,
+          "claim_text": "তিব্বতে শক্তিশালী ভূমিকম্পে নিহত ১৬"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316310,
+          "claim_text": "তিব্বতে শক্তিশালী ভূমিকম্পে নিহত ১৬",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "international-400": {
       "cluster_id": 400,
@@ -179236,7 +179315,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -191387,7 +191466,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         }
       ]
@@ -202218,7 +202297,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -277557,7 +277636,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -294694,7 +294773,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -387306,7 +387385,7 @@
       "cluster_id": 3938,
       "headline": "আজ টিভিতে যা দেখবেন (২৩ অক্টোবর ২০২৬)",
       "first_seen": "2026-10-23T01:59:10.887Z",
-      "last_update": "2026-10-23T02:33:53.652Z",
+      "last_update": "2026-10-23T03:04:02.309Z",
       "claim_count": 2,
       "events": [
         {
@@ -387601,7 +387680,7 @@
       "cluster_id": 3940,
       "headline": "সংকটাপন্ন অবস্থায় সিসিইউতে মঈন খান, দেখতে গেলেন রিজভী",
       "first_seen": "2026-10-23T01:59:10.896Z",
-      "last_update": "2026-10-23T02:33:53.665Z",
+      "last_update": "2026-10-23T03:04:02.313Z",
       "claim_count": 2,
       "events": [
         {
@@ -387966,7 +388045,7 @@
       "cluster_id": 3946,
       "headline": "ডিসেম্বরের মধ্যে সিরাজগঞ্জ বিসিক শিল্পপার্কে গ্যাস-বিদ্যুৎ সংযোগ স্থাপন করা হবে",
       "first_seen": "2026-10-23T02:33:53.661Z",
-      "last_update": "2026-10-23T02:33:53.664Z",
+      "last_update": "2026-10-23T03:04:02.311Z",
       "claim_count": 2,
       "events": [
         {
@@ -388249,6 +388328,162 @@
           "kind": "verify",
           "claim_id": 3305699,
           "claim_text": "ওসির সঙ্গে রুমিনের বাদানুবাদ, বললেন ‘আপনি বিরাট আওয়ামী লীগ ছিলেন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3951": {
+      "cluster_id": 3951,
+      "headline": "মন অস্থির হলে নামাজ কতটা প্রশান্তি দিতে পারে?",
+      "first_seen": "2026-10-23T03:04:02.743Z",
+      "last_update": "2026-10-23T03:04:02.745Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T02:49:08.000Z",
+          "kind": "evidence",
+          "claim_id": 3316309,
+          "claim_text": "মন অস্থির হলে নামাজ কতটা প্রশান্তি দিতে পারে?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/how-much-peace-can-prayer-provide-when-the-mind-is-restless/"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.290Z",
+          "kind": "claim",
+          "claim_id": 3316309,
+          "claim_text": "মন অস্থির হলে নামাজ কতটা প্রশান্তি দিতে পারে?"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316309,
+          "claim_text": "মন অস্থির হলে নামাজ কতটা প্রশান্তি দিতে পারে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3953": {
+      "cluster_id": 3953,
+      "headline": "দইগোটা গাছে গোলাপি-সাদা ফুল, লালচে ফল",
+      "first_seen": "2026-10-23T03:04:02.751Z",
+      "last_update": "2026-10-23T03:04:02.753Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T02:37:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3316311,
+          "claim_text": "দইগোটা গাছে গোলাপি-সাদা ফুল, লালচে ফল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/v44esy7g1g"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.295Z",
+          "kind": "claim",
+          "claim_id": 3316311,
+          "claim_text": "দইগোটা গাছে গোলাপি-সাদা ফুল, লালচে ফল"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316311,
+          "claim_text": "দইগোটা গাছে গোলাপি-সাদা ফুল, লালচে ফল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3954": {
+      "cluster_id": 3954,
+      "headline": "বাংলাদেশ জাতীয় সংসদে ইউএনডিপি পার্লামেন্ট ইয়ং ফেলোশিপ, আবেদনের সুযোগ যাদের",
+      "first_seen": "2026-10-23T03:04:02.755Z",
+      "last_update": "2026-10-23T03:04:02.757Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T02:20:34.000Z",
+          "kind": "evidence",
+          "claim_id": 3316312,
+          "claim_text": "বাংলাদেশ জাতীয় সংসদে ইউএনডিপি পার্লামেন্ট ইয়ং ফেলোশিপ, আবেদনের সুযোগ যাদের",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/scholarship/cx1oy5bpm2"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.297Z",
+          "kind": "claim",
+          "claim_id": 3316312,
+          "claim_text": "বাংলাদেশ জাতীয় সংসদে ইউএনডিপি পার্লামেন্ট ইয়ং ফেলোশিপ, আবেদনের সুযোগ যাদের"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316312,
+          "claim_text": "বাংলাদেশ জাতীয় সংসদে ইউএনডিপি পার্লামেন্ট ইয়ং ফেলোশিপ, আবেদনের সুযোগ যাদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3955": {
+      "cluster_id": 3955,
+      "headline": "সপ্তাহের (১৬–২২ অক্টোবর) সেরা ১০ চাকরি, আছে লাখটাকা বেতনও",
+      "first_seen": "2026-10-23T03:04:02.758Z",
+      "last_update": "2026-10-23T03:04:02.760Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T02:18:52.000Z",
+          "kind": "evidence",
+          "claim_id": 3316313,
+          "claim_text": "সপ্তাহের (১৬–২২ অক্টোবর) সেরা ১০ চাকরি, আছে লাখটাকা বেতনও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/mwig4oxdem"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:26:01.299Z",
+          "kind": "claim",
+          "claim_id": 3316313,
+          "claim_text": "সপ্তাহের (১৬–২২ অক্টোবর) সেরা ১০ চাকরি, আছে লাখটাকা বেতনও"
+        },
+        {
+          "ts": "2026-10-23T03:26:01.407Z",
+          "kind": "verify",
+          "claim_id": 3316313,
+          "claim_text": "সপ্তাহের (১৬–২২ অক্টোবর) সেরা ১০ চাকরি, আছে লাখটাকা বেতনও",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -477121,7 +477356,7 @@
           "slug": "international-3944",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
+          "claim_count": 9,
           "headline": "হুতিদের ভান্ডারে কতটা ভয়ংকর অস্ত্র আছে, কোথা থেকে আসছে, সৌদি আরব কেন হামলা ঠেকাতে পারছে না"
         },
         {
@@ -510386,7 +510621,7 @@
       "cluster_id": 3938,
       "headline": "আজ টিভিতে যা দেখবেন (২৩ অক্টোবর ২০২৬)",
       "first_seen": "2026-10-23T01:59:10.887Z",
-      "last_update": "2026-10-23T02:33:53.652Z",
+      "last_update": "2026-10-23T03:04:02.309Z",
       "claim_count": 2,
       "events": [
         {
