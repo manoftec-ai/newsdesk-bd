@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5351,
+    "storyCount": 5358,
     "kinds": [
       "claim",
       "evidence",
@@ -17121,6 +17121,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -17159,14 +17167,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -20170,6 +20170,84 @@
           "kind": "verify",
           "claim_id": 3358997,
           "claim_text": "লাইভস্ট্রিমে স্টিক রান গেমের নির্মাতা ম্যানুয়েল অটোর আত্মহত্যা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-3994": {
+      "cluster_id": 3994,
+      "headline": "টানা তৃতীয় দফায় কমেছে স্বর্ণের দাম",
+      "first_seen": "2026-10-23T06:48:51.080Z",
+      "last_update": "2026-10-23T06:48:51.083Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T06:16:01.000Z",
+          "kind": "evidence",
+          "claim_id": 3369724,
+          "claim_text": "টানা তৃতীয় দফায় কমেছে স্বর্ণের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gold-prices-have-fallen-for-the-third-consecutive-time/"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.791Z",
+          "kind": "claim",
+          "claim_id": 3369724,
+          "claim_text": "টানা তৃতীয় দফায় কমেছে স্বর্ণের দাম"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369724,
+          "claim_text": "টানা তৃতীয় দফায় কমেছে স্বর্ণের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-3995": {
+      "cluster_id": 3995,
+      "headline": "টানা দুই দিনে সোনার দাম কমল ভরিতে ৩ হাজার ৮৪৯ টাকা",
+      "first_seen": "2026-10-23T06:48:51.085Z",
+      "last_update": "2026-10-23T06:48:51.087Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T06:13:31.000Z",
+          "kind": "evidence",
+          "claim_id": 3369725,
+          "claim_text": "টানা দুই দিনে সোনার দাম কমল ভরিতে ৩ হাজার ৮৪৯ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/87b7sxysl3"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.793Z",
+          "kind": "claim",
+          "claim_id": 3369725,
+          "claim_text": "টানা দুই দিনে সোনার দাম কমল ভরিতে ৩ হাজার ৮৪৯ টাকা"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369725,
+          "claim_text": "টানা দুই দিনে সোনার দাম কমল ভরিতে ৩ হাজার ৮৪৯ টাকা",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -31188,8 +31266,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -34443,6 +34521,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -34481,14 +34567,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -51901,6 +51979,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -51939,14 +52025,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -52520,6 +52598,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -52558,14 +52644,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -58738,8 +58816,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -60770,6 +60848,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -60808,14 +60894,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -88597,6 +88675,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -88635,14 +88721,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -100795,8 +100873,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3932,
@@ -100974,16 +101052,27 @@
     },
     "international-3979": {
       "cluster_id": 3979,
-      "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+      "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
       "first_seen": "2026-10-23T06:14:29.972Z",
-      "last_update": "2026-10-23T06:14:29.978Z",
-      "claim_count": 5,
+      "last_update": "2026-10-23T06:48:50.564Z",
+      "claim_count": 6,
       "events": [
         {
           "ts": "2026-10-23T02:48:45.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
           "claim_text": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cr20w875l110o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-23T02:48:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -101013,6 +101102,17 @@
           }
         },
         {
+          "ts": "2026-10-23T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/jeia6ruyet"
+          }
+        },
+        {
           "ts": "2026-10-23T04:00:00.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
@@ -101028,6 +101128,17 @@
           "kind": "evidence",
           "claim_id": 3358984,
           "claim_text": "মার্কিন নাগরিকদের কী নিয়ে সবচেয়ে বেশি ভয়, জানা গেল জরিপে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/xivbwbra5i"
+          }
+        },
+        {
+          "ts": "2026-10-23T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -101057,6 +101168,17 @@
           }
         },
         {
+          "ts": "2026-10-23T04:06:48.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/aibmdd89in"
+          }
+        },
+        {
           "ts": "2026-10-23T05:42:32.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
@@ -101076,6 +101198,28 @@
             "source_id": "bdnews24",
             "relation": "supports",
             "url": "https://bangla.bdnews24.com/tech/yiip2djndc"
+          }
+        },
+        {
+          "ts": "2026-10-23T05:42:32.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/yiip2djndc"
+          }
+        },
+        {
+          "ts": "2026-10-23T06:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/hollywood/cbis0rcw7x"
           }
         },
         {
@@ -101165,6 +101309,24 @@
             "status": "SINGLE_SOURCE",
             "from": null,
             "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.701Z",
+          "kind": "claim",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
             "reason": "verify"
           }
         }
@@ -101339,11 +101501,169 @@
     },
     "international-3988": {
       "cluster_id": 3988,
-      "headline": "ট্রাম্পের জামাতার ফোন হ্যাক, সৌদি-আমিরাতের সঙ্গে গোপন লেনদেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+      "first_seen": "2026-10-23T06:48:50.567Z",
+      "last_update": "2026-10-23T06:48:50.569Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-22T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95WlYwUnV4TTcta0RLajdseW5BMzFFQ2ZFT2d6b255R0thWXhHRk5Xenc2VEE1QXlOTmdqSm1meXBXWHFGT2cxUE9XUzZaNXIxUTViSEx5U1JXalFVdE9TcDFTMkFjSjBhUWpfY1E3Wm9BT1BhZE81UVd3bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95WlYwUnV4TTcta0RLajdseW5BMzFFQ2ZFT2d6b255R0thWXhHRk5Xenc2VEE1QXlOTmdqSm1meXBXWHFGT2cxUE9XUzZaNXIxUTViSEx5U1JXalFVdE9TcDFTMkFjSjBhUWpfY1E3Wm9BT1BhZE81UVd3bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-23T06:22:24.000Z",
+          "kind": "evidence",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/rangpur/976198/%E0%A6%B2%E0%A6%BE%E0%A6%89-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A7%A7-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A7%AA%E0%A6%9F%E0%A6%BF-%E0%A6%A6%E0%A6%BE%E0%A6%AE-%E0%A6%A8%E0%A6%BE-%E0%A6%AA%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.764Z",
+          "kind": "claim",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.767Z",
+          "kind": "claim",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 3919,
+          "slug": "politics-3919",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+        },
+        {
+          "cluster_id": 3888,
+          "slug": "sports-3888",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রফি উন্মোচনে রোমাঞ্চ, এবিজি ইউনিভার্সিটি কাপের ক্যাপ্টেনস মিটে অধিনায়কদের মিলনমেলা"
+        },
+        {
+          "cluster_id": 3794,
+          "slug": "politics-3794",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+        },
+        {
+          "cluster_id": 3777,
+          "slug": "national-3777",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ভারত যাওয়ার পথে জৈন্তাপুর আওয়ামী লীগ সভাপতি গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 3776,
+          "slug": "national-3776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
+        },
+        {
+          "cluster_id": 3680,
+          "slug": "national-3680",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
+        }
+      ]
+    },
+    "international-3993": {
+      "cluster_id": 3993,
+      "headline": "তেলের দাম বাড়াতে ইরানের ‘নাটক’: ডোনাল্ড ট্রাম্প",
+      "first_seen": "2026-10-23T06:48:51.071Z",
+      "last_update": "2026-10-23T06:48:51.073Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T06:19:41.000Z",
+          "kind": "evidence",
+          "claim_id": 3369723,
+          "claim_text": "তেলের দাম বাড়াতে ইরানের ‘নাটক’: ডোনাল্ড ট্রাম্প",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/irans-staged-act-to-drive-up-oil-prices-claims-donald-trump/"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.788Z",
+          "kind": "claim",
+          "claim_id": 3369723,
+          "claim_text": "তেলের দাম বাড়াতে ইরানের ‘নাটক’: ডোনাল্ড ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369723,
+          "claim_text": "তেলের দাম বাড়াতে ইরানের ‘নাটক’: ডোনাল্ড ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-400": {
@@ -119865,6 +120185,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -119903,14 +120231,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -126794,6 +127114,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -126832,14 +127160,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -131297,6 +131617,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -131335,14 +131663,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -134367,6 +134687,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -134405,14 +134733,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -149941,6 +150261,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -149979,14 +150307,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -151197,6 +151517,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -151235,14 +151563,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -151648,6 +151968,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -151686,14 +152014,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -153446,6 +153766,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -153484,14 +153812,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -154304,6 +154624,14 @@
           "headline": "দিল্লিতে ধরপাকড়: কেজরিওয়াল-মমতাসহ চার সাবেক মুখ্যমন্ত্রী আটক"
         },
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3871,
           "slug": "entertainment-3871",
           "actor_links": 0,
@@ -154318,14 +154646,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
-        },
-        {
-          "cluster_id": 3736,
-          "slug": "national-3736",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পাকিস্তানে যাত্রীবাহী বাস উল্টে নিহত ১০, আহত ৪৪"
         }
       ]
     },
@@ -156624,6 +156944,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -156662,14 +156990,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -164454,6 +164774,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -164492,14 +164820,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -165959,8 +166279,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -170942,6 +171262,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -170980,14 +171308,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -173441,6 +173761,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -173479,14 +173807,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -180052,8 +180372,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -185572,8 +185892,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -191619,6 +191939,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -191657,14 +191985,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -192203,8 +192523,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         }
       ]
     },
@@ -196998,6 +197318,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -197036,14 +197364,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -199044,6 +199364,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -199082,14 +199410,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -201942,6 +202262,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -201980,14 +202308,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -203034,8 +203354,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -207998,6 +208318,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -208036,14 +208364,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -208333,6 +208653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -208371,14 +208699,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -220266,6 +220586,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -220304,14 +220632,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -221771,6 +222091,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -221809,14 +222137,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -238986,6 +239306,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -239024,14 +239352,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -239192,6 +239512,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -239230,14 +239558,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -239320,6 +239640,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -239358,14 +239686,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -243318,6 +243638,14 @@
           "headline": "মন্ত্রিসভা থেকে পদত্যাগের নির্দেশ দিলেন প্রধানমন্ত্রী, ইশরাক বললেন, ‘গুজব’"
         },
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -243348,14 +243676,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভারত যাওয়ার পথে জৈন্তাপুর আওয়ামী লীগ সভাপতি গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 3776,
-          "slug": "national-3776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
         }
       ]
     },
@@ -258269,6 +258589,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -258307,14 +258635,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -276675,8 +276995,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -278381,8 +278701,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -295518,8 +295838,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -295952,6 +296272,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -295990,14 +296318,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -296338,6 +296658,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -296376,14 +296704,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -297344,6 +297664,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -297382,14 +297710,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -301027,6 +301347,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -301065,14 +301393,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -313578,6 +313898,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -313616,14 +313944,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -328603,12 +328923,12 @@
           "headline": "প্রধানমন্ত্রীর কার্যালয়ের সামনে মধ্যরাতে দুটি ককটেল নিক্ষেপ"
         },
         {
-          "cluster_id": 3919,
-          "slug": "politics-3919",
+          "cluster_id": 3988,
+          "slug": "national-3988",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
         }
       ]
     },
@@ -329021,6 +329341,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -329059,14 +329387,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -338035,6 +338355,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -338073,14 +338401,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -358854,20 +359174,20 @@
           "headline": "চকবাজারে মুনসুর খান প্লাজায় আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৭ ইউনিট"
         },
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3836,
           "slug": "national-3836",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘাস কাটা নিয়ে টর্চলাইট জ্বালিয়ে দু’পক্ষের সংঘর্ষ, ইউপি চেয়ারম্যানসহ আহত ২০"
-        },
-        {
-          "cluster_id": 3794,
-          "slug": "politics-3794",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
         }
       ]
     },
@@ -373301,6 +373621,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -373339,14 +373667,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
-        },
-        {
-          "cluster_id": 2826,
-          "slug": "national-2826",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মাঝ আকাশে দরজা খুলে গেল ভারতীয় এয়ার অ্যাম্বুলেন্সের, ঢাকায় জরুরি অবতরণ"
         }
       ]
     },
@@ -375774,6 +376094,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -375812,14 +376140,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
-        },
-        {
-          "cluster_id": 3648,
-          "slug": "national-3648",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মিরপুরে ফুটপাত পরিদর্শনের সময় প্রধানমন্ত্রীকে অনুসরণ, ছাত্রলীগ নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -375953,6 +376273,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -375991,14 +376319,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
-        },
-        {
-          "cluster_id": 3648,
-          "slug": "national-3648",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মিরপুরে ফুটপাত পরিদর্শনের সময় প্রধানমন্ত্রীকে অনুসরণ, ছাত্রলীগ নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -379825,8 +380145,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -386700,6 +387020,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3888,
           "slug": "sports-3888",
           "actor_links": 0,
@@ -386738,14 +387066,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
-        },
-        {
-          "cluster_id": 3648,
-          "slug": "national-3648",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মিরপুরে ফুটপাত পরিদর্শনের সময় প্রধানমন্ত্রীকে অনুসরণ, ছাত্রলীগ নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -388146,7 +388466,7 @@
       "cluster_id": 3938,
       "headline": "আজ টিভিতে যা দেখবেন (২৩ অক্টোবর ২০২৬)",
       "first_seen": "2026-10-23T01:59:10.887Z",
-      "last_update": "2026-10-23T06:14:30.009Z",
+      "last_update": "2026-10-23T06:48:50.585Z",
       "claim_count": 2,
       "events": [
         {
@@ -389387,7 +389707,7 @@
       "cluster_id": 3958,
       "headline": "আজ ঢাকার আকাশ মূলত পরিষ্কার থেকে আংশিক মেঘলা থাকবে",
       "first_seen": "2026-10-23T03:38:17.346Z",
-      "last_update": "2026-10-23T06:14:30.004Z",
+      "last_update": "2026-10-23T06:48:50.580Z",
       "claim_count": 2,
       "events": [
         {
@@ -389515,7 +389835,7 @@
       "cluster_id": 3959,
       "headline": "মোহাম্মদপুরে ‘মুখে ল’ সন্ত্রাসী গ্রুপের সক্রিয় সদস্য দিদার গ্রেফতার",
       "first_seen": "2026-10-23T03:38:17.352Z",
-      "last_update": "2026-10-23T06:14:30.007Z",
+      "last_update": "2026-10-23T06:48:50.582Z",
       "claim_count": 2,
       "events": [
         {
@@ -389738,8 +390058,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -390025,7 +390345,7 @@
       "cluster_id": 3966,
       "headline": "অপ্রতিম হত্যায় আদালতে অভিযোগপত্র দাখিল, চার আসামির মধ্যে দুজন কিশোর",
       "first_seen": "2026-10-23T04:07:14.965Z",
-      "last_update": "2026-10-23T06:14:30.002Z",
+      "last_update": "2026-10-23T06:48:50.578Z",
       "claim_count": 2,
       "events": [
         {
@@ -390398,7 +390718,7 @@
       "cluster_id": 3972,
       "headline": "চার স্থানে বিআরটিএর রোড শো, নিরাপদ সড়ক দিবস পালিত",
       "first_seen": "2026-10-23T04:42:41.205Z",
-      "last_update": "2026-10-23T06:14:30.012Z",
+      "last_update": "2026-10-23T06:48:50.587Z",
       "claim_count": 2,
       "events": [
         {
@@ -390682,7 +391002,7 @@
       "cluster_id": 3978,
       "headline": "Friday briefing: How a leaderless student group is challenging power in Serbia",
       "first_seen": "2026-10-23T06:14:29.965Z",
-      "last_update": "2026-10-23T06:14:29.968Z",
+      "last_update": "2026-10-23T06:48:50.571Z",
       "claim_count": 2,
       "events": [
         {
@@ -390759,16 +391079,27 @@
     },
     "national-3979": {
       "cluster_id": 3979,
-      "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+      "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
       "first_seen": "2026-10-23T06:14:29.972Z",
-      "last_update": "2026-10-23T06:14:29.978Z",
-      "claim_count": 5,
+      "last_update": "2026-10-23T06:48:50.564Z",
+      "claim_count": 6,
       "events": [
         {
           "ts": "2026-10-23T02:48:45.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
           "claim_text": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cr20w875l110o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-23T02:48:45.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -390798,6 +391129,17 @@
           }
         },
         {
+          "ts": "2026-10-23T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/jeia6ruyet"
+          }
+        },
+        {
           "ts": "2026-10-23T04:00:00.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
@@ -390813,6 +391155,17 @@
           "kind": "evidence",
           "claim_id": 3358984,
           "claim_text": "মার্কিন নাগরিকদের কী নিয়ে সবচেয়ে বেশি ভয়, জানা গেল জরিপে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/xivbwbra5i"
+          }
+        },
+        {
+          "ts": "2026-10-23T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -390842,6 +391195,17 @@
           }
         },
         {
+          "ts": "2026-10-23T04:06:48.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/aibmdd89in"
+          }
+        },
+        {
           "ts": "2026-10-23T05:42:32.000Z",
           "kind": "evidence",
           "claim_id": 3358982,
@@ -390861,6 +391225,28 @@
             "source_id": "bdnews24",
             "relation": "supports",
             "url": "https://bangla.bdnews24.com/tech/yiip2djndc"
+          }
+        },
+        {
+          "ts": "2026-10-23T05:42:32.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/yiip2djndc"
+          }
+        },
+        {
+          "ts": "2026-10-23T06:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/hollywood/cbis0rcw7x"
           }
         },
         {
@@ -390950,6 +391336,24 @@
             "status": "SINGLE_SOURCE",
             "from": null,
             "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.701Z",
+          "kind": "claim",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369696,
+          "claim_text": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
             "reason": "verify"
           }
         }
@@ -391137,7 +391541,7 @@
       "cluster_id": 3980,
       "headline": "নারী শিল্পীদের নিয়ে আপত্তি, সুনামগঞ্জে বন্ধ হলো বাউলগানের আসর",
       "first_seen": "2026-10-23T06:14:29.982Z",
-      "last_update": "2026-10-23T06:14:29.986Z",
+      "last_update": "2026-10-23T06:48:50.573Z",
       "claim_count": 2,
       "events": [
         {
@@ -391265,7 +391669,7 @@
       "cluster_id": 3981,
       "headline": "বেপরোয়া গতিতে চলছিল বাস, পিকআপের সঙ্গে সংঘর্ষে প্রাণ গেল দুজনের",
       "first_seen": "2026-10-23T06:14:29.990Z",
-      "last_update": "2026-10-23T06:14:29.994Z",
+      "last_update": "2026-10-23T06:48:50.576Z",
       "claim_count": 3,
       "events": [
         {
@@ -391753,14 +392157,261 @@
       ],
       "related": []
     },
+    "national-3988": {
+      "cluster_id": 3988,
+      "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+      "first_seen": "2026-10-23T06:48:50.567Z",
+      "last_update": "2026-10-23T06:48:50.569Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-22T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95WlYwUnV4TTcta0RLajdseW5BMzFFQ2ZFT2d6b255R0thWXhHRk5Xenc2VEE1QXlOTmdqSm1meXBXWHFGT2cxUE9XUzZaNXIxUTViSEx5U1JXalFVdE9TcDFTMkFjSjBhUWpfY1E3Wm9BT1BhZE81UVd3bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95WlYwUnV4TTcta0RLajdseW5BMzFFQ2ZFT2d6b255R0thWXhHRk5Xenc2VEE1QXlOTmdqSm1meXBXWHFGT2cxUE9XUzZaNXIxUTViSEx5U1JXalFVdE9TcDFTMkFjSjBhUWpfY1E3Wm9BT1BhZE81UVd3bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-23T06:22:24.000Z",
+          "kind": "evidence",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/rangpur/976198/%E0%A6%B2%E0%A6%BE%E0%A6%89-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A7%A7-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A7%AA%E0%A6%9F%E0%A6%BF-%E0%A6%A6%E0%A6%BE%E0%A6%AE-%E0%A6%A8%E0%A6%BE-%E0%A6%AA%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.764Z",
+          "kind": "claim",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.767Z",
+          "kind": "claim",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369715,
+          "claim_text": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369716,
+          "claim_text": "টাকায় চারটি লাউ লোকসানে চাষিরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 3919,
+          "slug": "politics-3919",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+        },
+        {
+          "cluster_id": 3888,
+          "slug": "sports-3888",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রফি উন্মোচনে রোমাঞ্চ, এবিজি ইউনিভার্সিটি কাপের ক্যাপ্টেনস মিটে অধিনায়কদের মিলনমেলা"
+        },
+        {
+          "cluster_id": 3794,
+          "slug": "politics-3794",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+        },
+        {
+          "cluster_id": 3777,
+          "slug": "national-3777",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ভারত যাওয়ার পথে জৈন্তাপুর আওয়ামী লীগ সভাপতি গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 3776,
+          "slug": "national-3776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
+        },
+        {
+          "cluster_id": 3680,
+          "slug": "national-3680",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
+        }
+      ]
+    },
     "national-3989": {
       "cluster_id": 3989,
-      "headline": "চাঁপাইনবাবগঞ্জ বন্ধুসভার সাহিত্য আড্ডা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য",
+      "first_seen": "2026-10-23T06:48:50.591Z",
+      "last_update": "2026-10-23T06:48:50.595Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-22T14:26:57.000Z",
+          "kind": "evidence",
+          "claim_id": 3369717,
+          "claim_text": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitARBVV95cUxQb2wyQzJ0MWpwdG5lNENHcTM1cWlDLUYtdkdTbmhXNGo2VDRuYThkMGR0WFB2dTI4alhPc0ZHWEVycTRfNkU1UkdydUh1N3dtZ3U2aGxTdU5EMTUwVmluR1ZEV2diZndhalV3LUczSlpzelQxeE1HbW9xaDdYSUI1UGdYRkdRcTJtQ3RRTG9JVHhMS0hfZkF0b2hNaGlBaXNKUVhDOUVWQjdwcXlFRWxINXM1NFA2UjVZdE45SWNwQmpWQ2dUTDNHRWJSWERpWGFDRzZxTXVxZThOem1YdXRTaktZOEFEVVM2VVFIV295cHZlbXVycURYZkl1VHh2WVp4NFRnYmUxUFMwVFBzaWFiN01NUnUxUnlrdlZPUW41NjZOZi0xMEczcE8yOVo2UW5YWmV5cndhM2k5REN0NnhDSTdTTzVqS0tpY2MtS0x2ZkNMdEpKTGFhTUdUQTRlN0tKVTY3cUlIN0dHRmxROFBkbWR3WmgwTzMtWDRxc2tOUk9qTERma3MwR1RDd3pITmdwVlBjbTFwSEljbHBJNWNGSC1qd0Q1N2VIQ3JxVGplYkE2ZF9QbVV0Z0dIV1pnbU44NE9OX0UyZHJfN2xsNkhralRRLUthTEZlMG9IbUtvalNVeTFYN1lpSXpaeHlkWHQ4SkV5NXhpdHJGUXhPaXlHNmRLTDdscUhtZC10RTNpbkRlN1RiWnZUSkdCeDNDb3BNMGkxSE1qRU5fT3NKRUI0YlY2eEnSAboEQVVfeXFMTm03U1V5MmhBc3pFNlhPanBuWDhxMTVyUHRraXRYZ2pyV2dNSzJTVnJ0T3RLUTN0R0VsbXpUb2s4am56bzNPTGNuVUgtamdLMFZ0RnNKeEdyX2pnc1JvbHdBM1czNlRRTEhDYkZ1LTRMaUZNU3hLQi00S0FYN3VLWjdnNkNrTDhBU2QxTUhKdENHX2lhdGFCRURaUFM1TVZqS0tHSVBjR1VhNG9teWtrbWRxd0MtRmZhRnlLcGd3WUwtVjRIX0pBeE51QU9xOUt4VVBPX0Y3dzRzWEhSUExNZU9FR0NPQ0lfSmRwZm14NEdLc1VVVnZ0YjFJRFdjMWdodWR6aGJPdWVIeHZUN1VhQlJmczRNb2x2eHlVZnBacmdsU3ZDOVVPTW1DelRSZUczeXdPRDJnS0dMLVk3TVlHdW03ZGd1YzE5bmhTRjhDVFBjLTczWDlucHRUNFgwbzF1by1IQ196RkFWUzd6TjROcVpQdjlwa1BkcExabV9NdlRxVGVyQzJaWHZfcGxlREVBS0VhSGxlY1F2RnhtekFmNzlmQTYwV1F1REhaV2pzbnFVNVNoM21WVVVfNUo4cFpYWUVuN3FrNUhtLU5sMVhuUWktcDBRYWRJQnROT282RFctY2dhV1V5SGlHeUZiNklyOTFUN0poR1ZxdjBqOTh6QlVaeWhFN01kSmVTTUhIUzJwMVdpZTlRYVpTSy1QVUJuaUxIZ0NkN0hxVWs2aG0zYkJpMTl1TDN6Y1VB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T14:26:57.000Z",
+          "kind": "evidence",
+          "claim_id": 3369718,
+          "claim_text": "‘দেশের সব সার কারখানা দ্রুত চালু করতে চায় সরকার’",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitARBVV95cUxQb2wyQzJ0MWpwdG5lNENHcTM1cWlDLUYtdkdTbmhXNGo2VDRuYThkMGR0WFB2dTI4alhPc0ZHWEVycTRfNkU1UkdydUh1N3dtZ3U2aGxTdU5EMTUwVmluR1ZEV2diZndhalV3LUczSlpzelQxeE1HbW9xaDdYSUI1UGdYRkdRcTJtQ3RRTG9JVHhMS0hfZkF0b2hNaGlBaXNKUVhDOUVWQjdwcXlFRWxINXM1NFA2UjVZdE45SWNwQmpWQ2dUTDNHRWJSWERpWGFDRzZxTXVxZThOem1YdXRTaktZOEFEVVM2VVFIV295cHZlbXVycURYZkl1VHh2WVp4NFRnYmUxUFMwVFBzaWFiN01NUnUxUnlrdlZPUW41NjZOZi0xMEczcE8yOVo2UW5YWmV5cndhM2k5REN0NnhDSTdTTzVqS0tpY2MtS0x2ZkNMdEpKTGFhTUdUQTRlN0tKVTY3cUlIN0dHRmxROFBkbWR3WmgwTzMtWDRxc2tOUk9qTERma3MwR1RDd3pITmdwVlBjbTFwSEljbHBJNWNGSC1qd0Q1N2VIQ3JxVGplYkE2ZF9QbVV0Z0dIV1pnbU44NE9OX0UyZHJfN2xsNkhralRRLUthTEZlMG9IbUtvalNVeTFYN1lpSXpaeHlkWHQ4SkV5NXhpdHJGUXhPaXlHNmRLTDdscUhtZC10RTNpbkRlN1RiWnZUSkdCeDNDb3BNMGkxSE1qRU5fT3NKRUI0YlY2eEnSAboEQVVfeXFMTm03U1V5MmhBc3pFNlhPanBuWDhxMTVyUHRraXRYZ2pyV2dNSzJTVnJ0T3RLUTN0R0VsbXpUb2s4am56bzNPTGNuVUgtamdLMFZ0RnNKeEdyX2pnc1JvbHdBM1czNlRRTEhDYkZ1LTRMaUZNU3hLQi00S0FYN3VLWjdnNkNrTDhBU2QxTUhKdENHX2lhdGFCRURaUFM1TVZqS0tHSVBjR1VhNG9teWtrbWRxd0MtRmZhRnlLcGd3WUwtVjRIX0pBeE51QU9xOUt4VVBPX0Y3dzRzWEhSUExNZU9FR0NPQ0lfSmRwZm14NEdLc1VVVnZ0YjFJRFdjMWdodWR6aGJPdWVIeHZUN1VhQlJmczRNb2x2eHlVZnBacmdsU3ZDOVVPTW1DelRSZUczeXdPRDJnS0dMLVk3TVlHdW03ZGd1YzE5bmhTRjhDVFBjLTczWDlucHRUNFgwbzF1by1IQ196RkFWUzd6TjROcVpQdjlwa1BkcExabV9NdlRxVGVyQzJaWHZfcGxlREVBS0VhSGxlY1F2RnhtekFmNzlmQTYwV1F1REhaV2pzbnFVNVNoM21WVVVfNUo4cFpYWUVuN3FrNUhtLU5sMVhuUWktcDBRYWRJQnROT282RFctY2dhV1V5SGlHeUZiNklyOTFUN0poR1ZxdjBqOTh6QlVaeWhFN01kSmVTTUhIUzJwMVdpZTlRYVpTSy1QVUJuaUxIZ0NkN0hxVWs2aG0zYkJpMTl1TDN6Y1VB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 3369717,
+          "claim_text": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZUlxS1NEc09qT01tcHBNNnQ2aVRYaVRLdU5tT2FMT2RBamdPNHlTQ2ZxX3kzQ0pJUE9rak1ld3E5ZUI0OUxycXJOMmRQQkxPMTZWSFJkTkRad2xTd2J3SEFJX2dLTTZCT2xmc1N3bm9rektWbFQ5ME9tajJvSlFwQ0pScTc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.770Z",
+          "kind": "claim",
+          "claim_id": 3369717,
+          "claim_text": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.773Z",
+          "kind": "claim",
+          "claim_id": 3369718,
+          "claim_text": "‘দেশের সব সার কারখানা দ্রুত চালু করতে চায় সরকার’"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369717,
+          "claim_text": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369718,
+          "claim_text": "‘দেশের সব সার কারখানা দ্রুত চালু করতে চায় সরকার’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 3794,
+          "slug": "politics-3794",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মঈন খানের শারীরিক অবস্থার খোঁজ নিলেন প্রধানমন্ত্রীর ব্যক্তিগত চিকিৎসক বিটু"
+        },
+        {
+          "cluster_id": 3736,
+          "slug": "national-3736",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাকিস্তানে যাত্রীবাহী বাস উল্টে নিহত ১০, আহত ৪৪"
+        },
+        {
+          "cluster_id": 3537,
+          "slug": "national-3537",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজশাহীর বিভাগীয় কমিশনারকে স্ট্যান্ড রিলিজ"
+        },
+        {
+          "cluster_id": 3482,
+          "slug": "national-3482",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 3442,
+          "slug": "national-3442",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 3259,
+          "slug": "national-3259",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
+        }
+      ]
     },
     "national-399": {
       "cluster_id": 399,
@@ -391889,6 +392540,163 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
         }
       ]
+    },
+    "national-3990": {
+      "cluster_id": 3990,
+      "headline": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-23T06:48:50.599Z",
+      "last_update": "2026-10-23T06:48:50.602Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-23T07:05:22.777Z",
+          "kind": "claim",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.778Z",
+          "kind": "evidence",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87962"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.779Z",
+          "kind": "evidence",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87960"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.780Z",
+          "kind": "claim",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.781Z",
+          "kind": "evidence",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87960"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3991": {
+      "cluster_id": 3991,
+      "headline": "দেশে পৌঁছেছে সৌদি বিমানবন্দরে হামলায় নিহত বাংলাদেশির মরদেহ",
+      "first_seen": "2026-10-23T06:48:51.060Z",
+      "last_update": "2026-10-23T06:48:51.064Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T06:27:40.000Z",
+          "kind": "evidence",
+          "claim_id": 3369721,
+          "claim_text": "দেশে পৌঁছেছে সৌদি বিমানবন্দরে হামলায় নিহত বাংলাদেশির মরদেহ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-body-of-the-bangladeshi-national-killed-in-an-attack-at-a-saudi-airport-has-arrived-in-the-country/"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.783Z",
+          "kind": "claim",
+          "claim_id": 3369721,
+          "claim_text": "দেশে পৌঁছেছে সৌদি বিমানবন্দরে হামলায় নিহত বাংলাদেশির মরদেহ"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369721,
+          "claim_text": "দেশে পৌঁছেছে সৌদি বিমানবন্দরে হামলায় নিহত বাংলাদেশির মরদেহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-3992": {
+      "cluster_id": 3992,
+      "headline": "ওয়াশিংটনভিত্তিক এসএএফএনের অনারারি সিনিয়র ফেলো হলেন মুশফিকুল ফজল আনসারী",
+      "first_seen": "2026-10-23T06:48:51.066Z",
+      "last_update": "2026-10-23T06:48:51.069Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-23T06:20:33.000Z",
+          "kind": "evidence",
+          "claim_id": 3369722,
+          "claim_text": "ওয়াশিংটনভিত্তিক এসএএফএনের অনারারি সিনিয়র ফেলো হলেন মুশফিকুল ফজল আনসারী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/mushfiqul-fazal-ansari-is-an-honorary-senior-fellow-at-the-washington-based-safn/"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.785Z",
+          "kind": "claim",
+          "claim_id": 3369722,
+          "claim_text": "ওয়াশিংটনভিত্তিক এসএএফএনের অনারারি সিনিয়র ফেলো হলেন মুশফিকুল ফজল আনসারী"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369722,
+          "claim_text": "ওয়াশিংটনভিত্তিক এসএএফএনের অনারারি সিনিয়র ফেলো হলেন মুশফিকুল ফজল আনসারী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "national-4": {
       "cluster_id": 4,
@@ -392097,6 +392905,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -392135,14 +392951,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -399307,6 +400115,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -399345,14 +400161,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -412406,8 +413214,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -412542,8 +413350,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -414305,6 +415113,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -414343,14 +415159,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -418063,8 +418871,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -431468,6 +432276,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -431506,14 +432322,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -452261,6 +453069,14 @@
           "headline": "মন্ত্রিসভা থেকে পদত্যাগের নির্দেশ দিলেন প্রধানমন্ত্রী, ইশরাক বললেন, ‘গুজব’"
         },
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -452291,14 +453107,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভারত যাওয়ার পথে জৈন্তাপুর আওয়ামী লীগ সভাপতি গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 3776,
-          "slug": "national-3776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
         }
       ]
     },
@@ -453247,7 +454055,7 @@
       "cluster_id": 3978,
       "headline": "Friday briefing: How a leaderless student group is challenging power in Serbia",
       "first_seen": "2026-10-23T06:14:29.965Z",
-      "last_update": "2026-10-23T06:14:29.968Z",
+      "last_update": "2026-10-23T06:48:50.571Z",
       "claim_count": 2,
       "events": [
         {
@@ -461813,8 +462621,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -479917,6 +480725,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -479955,14 +480771,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -480319,8 +481127,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 4,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -480997,8 +481805,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -491662,6 +492470,14 @@
           "headline": "মধ্যরাতে প্রতিমন্ত্রী ইশরাকের স্ট্যাটাস, কথা বলেছেন পদত্যাগ নিয়ে"
         },
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -491692,14 +492508,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভারত যাওয়ার পথে জৈন্তাপুর আওয়ামী লীগ সভাপতি গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 3776,
-          "slug": "national-3776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
         }
       ]
     },
@@ -497082,6 +497890,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3888,
           "slug": "sports-3888",
           "actor_links": 0,
@@ -497120,14 +497936,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
-        },
-        {
-          "cluster_id": 3648,
-          "slug": "national-3648",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মিরপুরে ফুটপাত পরিদর্শনের সময় প্রধানমন্ত্রীকে অনুসরণ, ছাত্রলীগ নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -502355,8 +503163,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -506623,6 +507431,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -506661,14 +507477,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাইবার সুরক্ষাসহ গণমাধ্যম সংশ্লিষ্ট আইন সংশোধনের কাজ চলছে: তথ্যমন্ত্রী"
-        },
-        {
-          "cluster_id": 3680,
-          "slug": "national-3680",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
         }
       ]
     },
@@ -512027,8 +512835,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -512742,8 +513550,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -513570,6 +514378,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3988,
+          "slug": "national-3988",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লাউ বিক্রি হচ্ছে ১ টাকায় ৪টি, দাম না পেয়ে বাগান কাটছেন চাষিরা"
+        },
+        {
           "cluster_id": 3919,
           "slug": "politics-3919",
           "actor_links": 0,
@@ -513608,14 +514424,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরে গভীর রাতে আগুনে পুড়ল মসজিদ-দোকান-গুদাম"
-        },
-        {
-          "cluster_id": 3648,
-          "slug": "national-3648",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মিরপুরে ফুটপাত পরিদর্শনের সময় প্রধানমন্ত্রীকে অনুসরণ, ছাত্রলীগ নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -513623,7 +514431,7 @@
       "cluster_id": 3938,
       "headline": "আজ টিভিতে যা দেখবেন (২৩ অক্টোবর ২০২৬)",
       "first_seen": "2026-10-23T01:59:10.887Z",
-      "last_update": "2026-10-23T06:14:30.009Z",
+      "last_update": "2026-10-23T06:48:50.585Z",
       "claim_count": 2,
       "events": [
         {
@@ -514558,8 +515366,8 @@
           "slug": "national-3979",
           "actor_links": 4,
           "source_links": 3,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 10,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3944,
@@ -515099,6 +515907,14 @@
       ],
       "related": [
         {
+          "cluster_id": 3989,
+          "slug": "national-3989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সার কারখানা সচলে ২২ হাজার কোটি টাকা সাশ্রয়ের লক্ষ্য"
+        },
+        {
           "cluster_id": 3794,
           "slug": "politics-3794",
           "actor_links": 0,
@@ -515137,14 +515953,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর সঙ্গে হাত মেলানোর সময় রাষ্ট্রাচার ‘ভঙ্গ’, রাজশাহী বিভাগীয় কমিশনারকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 3259,
-          "slug": "national-3259",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৮ চুক্তির লক্ষ্য, চারটি চূড়ান্ত: পররাষ্ট্র সচিব"
         }
       ]
     },
@@ -515534,8 +516342,8 @@
           "slug": "national-3979",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "পত্রিকা: 'জামায়াত সংশ্লিষ্টতায় প্রধানমন্ত্রীর সফরে রাষ্ট্রদূত বাদ'"
+          "claim_count": 6,
+          "headline": "দুবার স্ট্রোক থেকে ফিরে আলোচিত তারকা, এখন ২৪০ কোটি টাকার মালিক"
         },
         {
           "cluster_id": 3956,
@@ -521135,11 +521943,81 @@
     },
     "tech-3990": {
       "cluster_id": 3990,
-      "headline": "ক্যানসারে আক্রান্তদের মুখের ছবি বিশ্লেষণ করে মৃত্যুঝুঁকি জানাবে এআই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-23T06:48:50.599Z",
+      "last_update": "2026-10-23T06:48:50.602Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-23T07:05:22.777Z",
+          "kind": "claim",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.778Z",
+          "kind": "evidence",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87962"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.779Z",
+          "kind": "evidence",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87960"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.780Z",
+          "kind": "claim",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন"
+        },
+        {
+          "ts": "2026-10-23T07:05:22.781Z",
+          "kind": "evidence",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন",
+          "detail": {
+            "source_id": "dainikbangla",
+            "relation": "supports",
+            "url": "https://www.dainikbangla.com.bd/sports/87960"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369719,
+          "claim_text": "প্রথম নারী ক্লাব বিশ্বকাপের আয়োজক স্বত্ব পেল যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-23T07:05:22.906Z",
+          "kind": "verify",
+          "claim_id": 3369720,
+          "claim_text": "ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্ট দলে ফিরলেন লিটন ও তাসকিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "tech-467": {
