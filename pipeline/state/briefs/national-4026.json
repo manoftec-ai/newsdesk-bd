@@ -10,12 +10,14 @@
   "verdict": {
     "badge": "confirmed",
     "tier": "A",
-    "score": 4,
+    "score": 6,
     "status": "passed"
   },
-  "rawCategories": [],
-  "needsReview": true,
-  "reviewReason": "unknown-category",
+  "rawCategories": [
+    "স্বাস্থ্য"
+  ],
+  "needsReview": false,
+  "reviewReason": null,
   "members": [
     {
       "source_id": "deshrupantor",
@@ -36,6 +38,16 @@
       "lang": "bn",
       "lead": "ডেঙ্গু ও হামের উপসর্গে আরো ছয়জনের মৃত্যু কালের কণ্ঠ",
       "wordCount": 9
+    },
+    {
+      "source_id": "banglatribune",
+      "title": "একদিনে হাম উপসর্গে ৭ জনের মৃত্যু",
+      "url": "https://www.banglatribune.com/health/976233/%E0%A6%8F%E0%A6%95%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%AE-%E0%A6%89%E0%A6%AA%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A7%AD-%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81",
+      "published_at": "2026-10-23T09:39:54.000Z",
+      "category": "স্বাস্থ্য",
+      "lang": "bn",
+      "lead": "গত ২৪ ঘণ্টায় সারাদেশে হামের উপসর্গ নিয়ে আরও সাত জনের মৃত্যু হয়েছে। বৃহস্পতিবার (২২ অক্টোবর) সকাল ৮টা থেকে শুক্রবার (২৩ অক্টোবর) সকাল ৮টার মধ্যে তাদের মৃত্যু হয়। তবে এ সময়ের মধ্যে নিশ্চিত হামে কারও মৃত্যু হয়নি। একই সময়ের মধ্যে হাম ও হামের উপসর্গে আক্রান্ত হয়েছেন ১ হাজার ১৩৫ জন। স্বাস্থ্য অধিদফতরের এক সংবাদ বিজ্ঞপ্তিতে এসব তথ্য জানানো হয়েছে। এতে বলা হয়, গত ১৫ মার্চ থেকে আজ পর্যন্ত... বিস্তারিত",
+      "wordCount": 68
     }
   ],
   "sources": [
@@ -46,6 +58,10 @@
     {
       "name": "kalerkantho",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGTmMwYVIzLVBxRGJPTHdUOW5BWGRueXNsb1kzSmIxOUEwRXc0RVYxdUJ4QUludDVFRmVDSFQxbF9QUkhZRUxlUFBtZTAtX1JYVHI3czZNME9UeXQtOWxmSHdzVzBmc0FLY1I5YzYyY09TNk0?oc=5"
+    },
+    {
+      "name": "বাংলা ট্রিবিউন",
+      "url": "https://www.banglatribune.com/health/976233/%E0%A6%8F%E0%A6%95%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%AE-%E0%A6%89%E0%A6%AA%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A7%AD-%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81"
     }
   ],
   "evidence": [
@@ -56,16 +72,25 @@
     {
       "type": "paper",
       "label": "reputable paper corroboration (kalerkantho)"
+    },
+    {
+      "type": "paper",
+      "label": "reputable paper corroboration (banglatribune)"
     }
   ],
   "claims": [
     {
       "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ছয়জনের মৃত্যু",
       "status": "VERIFIED",
-      "confidence": 67
+      "confidence": 100
     },
     {
       "claim_text": "ডেঙ্গু ও হাম উপসর্গে আটজনের মৃত্যু",
+      "status": "SINGLE_SOURCE",
+      "confidence": 33
+    },
+    {
+      "claim_text": "একদিনে হাম উপসর্গে ৭ জনের মৃত্যু",
       "status": "SINGLE_SOURCE",
       "confidence": 33
     }
