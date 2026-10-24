@@ -4,7 +4,7 @@ seoTitle: "মাকে বলেছিলেন সকালে ফিরবে
 excerpt: "যে পিকআপ কেনার জন্য মা-বাবার কাছে বায়না ধরেছিলেন, মাত্র ১৫ দিন আগে ৭ লাখ টাকা দিয়ে কেনা সেই পিকআপেই শেষ হলো তাঁর পথচলা। শেষবারের মতো তাঁকে দেখতে ভিড় করেন আত্মীয়স্বজন, প্রতিবেশী ও প"
 seoDescription: "যে পিকআপ কেনার জন্য মা-বাবার কাছে বায়না ধরেছিলেন, মাত্র ১৫ দিন আগে ৭ লাখ টাকা দিয়ে কেনা সেই পিকআপেই শেষ হলো তাঁর পথচলা। শেষবারের মতো তাঁকে দেখতে ভিড় করেন …"
 date: 2026-10-24T05:00:00.000Z
-publishedAt: 2026-10-24T05:54:01.532Z
+publishedAt: 2026-10-24T05:51:23.056Z
 developing: true
 category: "national"
 tags: ["transport", "chattogram", "coxsbazar"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-24T05:54:01.431Z"
+  evaluatedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4242
   claimIds:
     - 3812272
@@ -43,7 +43,7 @@ publication:
   slug: "national-4242"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-24T05:54:01.431Z"
+  checkedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4242
   claimIds:
     - 3812272

@@ -4,7 +4,7 @@ seoTitle: "‘কালকের দিন সময় দিলাম, না হ
 excerpt: "গতকাল শুক্রবার রাত ১১টার দিকে মামলার বাদী কুরিয়ার সার্ভিসটির ব্যবস্থাপক আফসার উদ্দিনকে ফোন করে এ হুমকি দেওয়া হয়। তাঁকে বলতে শোনা যায়, ‘কালকের দিন সময় দিলাম, তোর বাপের সাথে কথা বলে "
 seoDescription: "গতকাল শুক্রবার রাত ১১টার দিকে মামলার বাদী কুরিয়ার সার্ভিসটির ব্যবস্থাপক আফসার উদ্দিনকে ফোন করে এ হুমকি দেওয়া হয়। তাঁকে বলতে শোনা যায়, ‘কালকের দিন সময় দিলা…"
 date: 2026-10-24T04:49:29.000Z
-publishedAt: 2026-10-24T05:54:01.556Z
+publishedAt: 2026-10-24T05:51:23.084Z
 developing: true
 category: "national"
 tags: ["dhaka"]
@@ -27,7 +27,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-24T05:54:01.431Z"
+  evaluatedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4244
   claimIds:
     - 3812274
@@ -42,7 +42,7 @@ publication:
   slug: "national-4244"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-24T05:54:01.431Z"
+  checkedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4244
   claimIds:
     - 3812274

@@ -4,7 +4,7 @@ seoTitle: "জর্ডানে গির্জায় অন্ত্যেষ�
 excerpt: "জর্ডানে ইরানের ক্ষেপণাস্ত্র–ড্রোন হামলায় ২ মার্কিন সেনাসদস্য নিহত, নিখোঁজ ১. জর্ডানের এ অঞ্চলটিতে এর আগেও হামলা হয়েছে। হামলা থেকে বেঁচে যাওয়া ব্যক্তিরা জানান, অন্ত্যেষ্টিক্রিয়ার "
 seoDescription: "জর্ডানে ইরানের ক্ষেপণাস্ত্র–ড্রোন হামলায় ২ মার্কিন সেনাসদস্য নিহত, নিখোঁজ ১. জর্ডানের এ অঞ্চলটিতে এর আগেও হামলা হয়েছে। হামলা থেকে বেঁচে যাওয়া ব্যক্তিরা জ…"
 date: 2026-10-24T04:45:18.000Z
-publishedAt: 2026-10-24T05:54:01.562Z
+publishedAt: 2026-10-24T05:51:23.092Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-24T05:54:01.431Z"
+  evaluatedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4245
   claimIds:
     - 3812275
@@ -43,7 +43,7 @@ publication:
   slug: "international-4245"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-24T05:54:01.431Z"
+  checkedAt: "2026-10-24T05:51:22.904Z"
   clusterId: 4245
   claimIds:
     - 3812275
