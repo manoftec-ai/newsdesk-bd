@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5920,
+    "storyCount": 5922,
     "kinds": [
       "claim",
       "evidence",
@@ -89,6 +89,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
         {
           "cluster_id": 101,
           "slug": "politics-101",
@@ -261,7 +269,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T09:53:54.054Z",
+      "last_update": "2026-10-25T10:23:23.270Z",
       "claim_count": 2,
       "events": [
         {
@@ -335,6 +343,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
         {
           "cluster_id": 77,
           "slug": "national-77",
@@ -616,7 +632,7 @@
       "cluster_id": 140,
       "headline": "বঙ্গোপসাগরে সৃষ্টি হচ্ছে শক্তিশালী ঘূর্ণিঝড়, যে নাম হতে পারে",
       "first_seen": "2026-10-25T09:53:54.042Z",
-      "last_update": "2026-10-25T09:53:54.045Z",
+      "last_update": "2026-10-25T10:23:23.260Z",
       "claim_count": 2,
       "events": [
         {
@@ -870,11 +886,41 @@
     },
     "economy-155": {
       "cluster_id": 155,
-      "headline": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+      "first_seen": "2026-10-25T10:23:23.682Z",
+      "last_update": "2026-10-25T10:23:23.684Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:29:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/a-low-pressure-area-that-has-formed-in-the-bay-of-bengal-could-intensify-into-a-very-severe-cyclonic-storm/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.849Z",
+          "kind": "claim",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-156": {
@@ -3316,7 +3362,7 @@
       "cluster_id": 106,
       "headline": "বায়তুল মোকাররমের উত্তর গেটে মিছিলের প্রস্তুতির সময় গ্রেপ্তার ১৯",
       "first_seen": "2026-10-25T08:18:47.182Z",
-      "last_update": "2026-10-25T09:53:54.042Z",
+      "last_update": "2026-10-25T10:23:23.259Z",
       "claim_count": 2,
       "events": [
         {
@@ -3710,8 +3756,8 @@
       "cluster_id": 133,
       "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
       "first_seen": "2026-10-25T09:53:54.007Z",
-      "last_update": "2026-10-25T09:53:54.010Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T10:23:23.231Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T08:40:01.000Z",
@@ -3744,6 +3790,28 @@
             "source_id": "banglatribune",
             "relation": "supports",
             "url": "https://www.banglatribune.com/entertainment/dhallywood/976613/%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%9A%E0%A6%AE%E0%A6%95-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%A3%E0%A6%BF-%E0%A6%86%E0%A6%B8%E0%A6%9B%E0%A7%87-%E2%80%98%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E2%80%99"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 3949,
+          "claim_text": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
           }
         },
         {
@@ -3781,9 +3849,43 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.762Z",
+          "kind": "claim",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
         {
           "cluster_id": 137,
           "slug": "national-137",
@@ -3801,20 +3903,20 @@
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডের অবস্থা এখন ভালো, জানিয়েছে পরিবার"
         },
         {
-          "cluster_id": 101,
-          "slug": "politics-101",
+          "cluster_id": 123,
+          "slug": "national-123",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+          "claim_count": 4,
+          "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পাওয়া গেছে: পুলিশ"
         },
         {
-          "cluster_id": 94,
-          "slug": "sports-94",
+          "cluster_id": 11,
+          "slug": "national-11",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
         }
       ]
     },
@@ -3945,6 +4047,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "entertainment-151": {
+      "cluster_id": 151,
+      "headline": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+      "first_seen": "2026-10-25T10:23:23.663Z",
+      "last_update": "2026-10-25T10:23:23.666Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:52:50.000Z",
+          "kind": "evidence",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/y089u05vzi"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.838Z",
+          "kind": "claim",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1537": {
@@ -5769,7 +5910,7 @@
       "cluster_id": 45,
       "headline": "রাষ্ট্রপতি হয়ে আমি আগের মতো কথা বলতে পারি না : মির্জা ফখরুল ইসলাম",
       "first_seen": "2026-10-25T04:39:46.751Z",
-      "last_update": "2026-10-25T09:53:54.062Z",
+      "last_update": "2026-10-25T10:23:23.281Z",
       "claim_count": 2,
       "events": [
         {
@@ -6276,7 +6417,7 @@
       "cluster_id": 81,
       "headline": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা",
       "first_seen": "2026-10-25T06:43:37.712Z",
-      "last_update": "2026-10-25T09:53:54.051Z",
+      "last_update": "2026-10-25T10:23:23.263Z",
       "claim_count": 2,
       "events": [
         {
@@ -6357,6 +6498,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 77,
@@ -6661,6 +6810,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
         {
           "cluster_id": 101,
           "slug": "politics-101",
@@ -7445,6 +7602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 122,
           "slug": "national-122",
           "actor_links": 0,
@@ -7483,14 +7648,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
-        },
-        {
-          "cluster_id": 5,
-          "slug": "sports-5",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
         }
       ]
     },
@@ -7714,7 +7871,7 @@
       "cluster_id": 134,
       "headline": "ক্রিপ্টো জালিয়াতি: প্রেসিডেন্ট মিলেইয়ের বিরুদ্ধে তদন্ত বন্ধ করল আর্জেন্টিনা",
       "first_seen": "2026-10-25T09:53:54.010Z",
-      "last_update": "2026-10-25T09:53:54.013Z",
+      "last_update": "2026-10-25T10:23:23.233Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -7741,7 +7898,7 @@
       "cluster_id": 135,
       "headline": "Signs suggest Thomas Markle Sr may be ‘sex offender of the grossest kind’, says Philippine minister",
       "first_seen": "2026-10-25T09:53:54.014Z",
-      "last_update": "2026-10-25T09:53:54.016Z",
+      "last_update": "2026-10-25T10:23:23.234Z",
       "claim_count": 2,
       "events": [
         {
@@ -7829,7 +7986,7 @@
       "cluster_id": 136,
       "headline": "Bust companies revived in ‘phoenix’ deals more likely to fail again, study finds",
       "first_seen": "2026-10-25T09:53:54.018Z",
-      "last_update": "2026-10-25T09:53:54.020Z",
+      "last_update": "2026-10-25T10:23:23.235Z",
       "claim_count": 2,
       "events": [
         {
@@ -7962,7 +8119,7 @@
       "cluster_id": 138,
       "headline": "দুই সপ্তাহ বন্ধ থাকার পর সৌদির রিয়াদ বিমানবন্দর চালু হচ্ছে আজ",
       "first_seen": "2026-10-25T09:53:54.029Z",
-      "last_update": "2026-10-25T09:53:54.031Z",
+      "last_update": "2026-10-25T10:23:23.249Z",
       "claim_count": 2,
       "events": [
         {
@@ -8077,7 +8234,7 @@
       "cluster_id": 140,
       "headline": "বঙ্গোপসাগরে সৃষ্টি হচ্ছে শক্তিশালী ঘূর্ণিঝড়, যে নাম হতে পারে",
       "first_seen": "2026-10-25T09:53:54.042Z",
-      "last_update": "2026-10-25T09:53:54.045Z",
+      "last_update": "2026-10-25T10:23:23.260Z",
       "claim_count": 2,
       "events": [
         {
@@ -8433,12 +8590,91 @@
     },
     "international-148": {
       "cluster_id": 148,
-      "headline": "মমতার পর এবার আটক দিল্লির সাবেক মুখ্যমন্ত্রী অরবিন্দ কেজরিওয়াল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+      "first_seen": "2026-10-25T10:23:23.238Z",
+      "last_update": "2026-10-25T10:23:23.240Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:31:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/jamat-e-islam/976597/%E2%80%98%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%A4-%E0%A6%AA%E0%A6%A4%E0%A6%BF%E0%A6%A4-%E0%A6%AB%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%AC%E0%A6%B2%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.820Z",
+          "kind": "claim",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.824Z",
+          "kind": "claim",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 117,
+          "slug": "politics-117",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির"
+        }
+      ]
     },
     "international-1480": {
       "cluster_id": 1480,
@@ -8469,11 +8705,41 @@
     },
     "international-151": {
       "cluster_id": 151,
-      "headline": "ব্যয় সংকোচন নীতির প্রতিবাদে ব্রাসেলসে বিক্ষোভ-সংঘর্ষ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+      "first_seen": "2026-10-25T10:23:23.663Z",
+      "last_update": "2026-10-25T10:23:23.666Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:52:50.000Z",
+          "kind": "evidence",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/y089u05vzi"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.838Z",
+          "kind": "claim",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1513": {
@@ -8496,11 +8762,41 @@
     },
     "international-152": {
       "cluster_id": 152,
-      "headline": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+      "first_seen": "2026-10-25T10:23:23.669Z",
+      "last_update": "2026-10-25T10:23:23.671Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:47:58.000Z",
+          "kind": "evidence",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/5-more-deaths-from-measles-symptoms/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.841Z",
+          "kind": "claim",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1528": {
@@ -14605,7 +14901,7 @@
       "cluster_id": 54,
       "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান",
       "first_seen": "2026-10-25T05:08:23.976Z",
-      "last_update": "2026-10-25T09:53:54.061Z",
+      "last_update": "2026-10-25T10:23:23.278Z",
       "claim_count": 7,
       "events": [
         {
@@ -14944,12 +15240,28 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম"
+        },
+        {
           "cluster_id": 116,
           "slug": "national-116",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 19,
@@ -15510,7 +15822,7 @@
       "cluster_id": 77,
       "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস",
       "first_seen": "2026-10-25T06:43:37.682Z",
-      "last_update": "2026-10-25T09:53:54.026Z",
+      "last_update": "2026-10-25T10:23:23.243Z",
       "claim_count": 5,
       "events": [
         {
@@ -15713,6 +16025,14 @@
           "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 28,
           "slug": "national-28",
           "actor_links": 0,
@@ -15743,14 +16063,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়"
-        },
-        {
-          "cluster_id": 32,
-          "slug": "national-32",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ বিশ্ব চিকা দিবস, বিজ্ঞানপ্রেমীদের কাছে গুরুত্বপূর্ণ একটি দিন"
         }
       ]
     },
@@ -15776,7 +16088,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T09:53:54.033Z",
+      "last_update": "2026-10-25T10:23:23.251Z",
       "claim_count": 4,
       "events": [
         {
@@ -16076,6 +16388,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
         {
           "cluster_id": 114,
           "slug": "national-114",
@@ -16479,7 +16799,7 @@
       "cluster_id": 105,
       "headline": "Ageing users and record deaths – the data behind Britain’s £9.8bn-a-year cocaine habit",
       "first_seen": "2026-10-25T08:18:47.171Z",
-      "last_update": "2026-10-25T09:53:54.027Z",
+      "last_update": "2026-10-25T10:23:23.247Z",
       "claim_count": 2,
       "events": [
         {
@@ -17190,7 +17510,7 @@
       "cluster_id": 101,
       "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
       "first_seen": "2026-10-25T08:18:47.160Z",
-      "last_update": "2026-10-25T09:53:54.025Z",
+      "last_update": "2026-10-25T10:23:23.241Z",
       "claim_count": 3,
       "events": [
         {
@@ -17305,6 +17625,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 94,
           "slug": "sports-94",
           "actor_links": 0,
@@ -17319,14 +17647,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাঈদীর মামলার বাদীকে গোপনে ‘গার্ড অব অনার’, রাতে কবর খুঁড়ে দাফন করলেন স্ত্রী-মেয়ে-বোন"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         },
         {
           "cluster_id": 132,
@@ -18020,7 +18340,7 @@
       "cluster_id": 105,
       "headline": "Ageing users and record deaths – the data behind Britain’s £9.8bn-a-year cocaine habit",
       "first_seen": "2026-10-25T08:18:47.171Z",
-      "last_update": "2026-10-25T09:53:54.027Z",
+      "last_update": "2026-10-25T10:23:23.247Z",
       "claim_count": 2,
       "events": [
         {
@@ -18189,7 +18509,7 @@
       "cluster_id": 106,
       "headline": "বায়তুল মোকাররমের উত্তর গেটে মিছিলের প্রস্তুতির সময় গ্রেপ্তার ১৯",
       "first_seen": "2026-10-25T08:18:47.182Z",
-      "last_update": "2026-10-25T09:53:54.042Z",
+      "last_update": "2026-10-25T10:23:23.259Z",
       "claim_count": 2,
       "events": [
         {
@@ -18358,7 +18678,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T09:53:54.054Z",
+      "last_update": "2026-10-25T10:23:23.270Z",
       "claim_count": 2,
       "events": [
         {
@@ -18432,6 +18752,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
         {
           "cluster_id": 77,
           "slug": "national-77",
@@ -18560,7 +18888,7 @@
       "cluster_id": 108,
       "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার",
       "first_seen": "2026-10-25T08:18:47.200Z",
-      "last_update": "2026-10-25T09:53:54.028Z",
+      "last_update": "2026-10-25T10:23:23.248Z",
       "claim_count": 3,
       "events": [
         {
@@ -18675,6 +19003,14 @@
       ],
       "related": [
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 116,
           "slug": "national-116",
           "actor_links": 0,
@@ -18713,14 +19049,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইশরাক হোসেনের পদত্যাগপত্র গ্রহণ, প্রজ্ঞাপন জারি"
-        },
-        {
-          "cluster_id": 28,
-          "slug": "national-28",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         }
       ]
     },
@@ -18890,7 +19218,7 @@
       "cluster_id": 11,
       "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের",
       "first_seen": "2026-10-25T04:39:46.602Z",
-      "last_update": "2026-10-25T09:53:54.039Z",
+      "last_update": "2026-10-25T10:23:23.256Z",
       "claim_count": 2,
       "events": [
         {
@@ -18964,6 +19292,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
         {
           "cluster_id": 123,
           "slug": "national-123",
@@ -19584,6 +19920,14 @@
       ],
       "related": [
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
           "cluster_id": 80,
           "slug": "national-rabiul-target-to",
           "actor_links": 0,
@@ -19832,6 +20176,14 @@
       ],
       "related": [
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -19870,14 +20222,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পাঁচ দিনের ছুটি শেষে আবারও কর্মব্যস্ত রাজধানী"
-        },
-        {
-          "cluster_id": 28,
-          "slug": "national-28",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         }
       ]
     },
@@ -20081,6 +20425,14 @@
       ],
       "related": [
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 115,
           "slug": "national-115",
           "actor_links": 0,
@@ -20240,7 +20592,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’"
+        }
+      ]
     },
     "national-1170": {
       "cluster_id": 1170,
@@ -20585,7 +20946,7 @@
       "cluster_id": 12,
       "headline": "সেতুর নিচে পড়ে ছিলেন নিখোঁজ মাদ্রাসাশিক্ষক, হাসপাতালে নেওয়ার পথে মৃত্যু",
       "first_seen": "2026-10-25T04:39:46.606Z",
-      "last_update": "2026-10-25T09:53:54.040Z",
+      "last_update": "2026-10-25T10:23:23.257Z",
       "claim_count": 2,
       "events": [
         {
@@ -21319,6 +21680,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 122,
           "slug": "national-122",
           "actor_links": 0,
@@ -21357,14 +21726,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
-        },
-        {
-          "cluster_id": 5,
-          "slug": "sports-5",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
         }
       ]
     },
@@ -21460,10 +21821,10 @@
     },
     "national-124": {
       "cluster_id": 124,
-      "headline": "‘শুধু একটা স্নাইপারের অভাব ছিল’ মন্তব্য করা যুবকের ৭ দিনের রিমান্ড চায় পুলিশ",
+      "headline": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
       "first_seen": "2026-10-25T09:22:59.944Z",
-      "last_update": "2026-10-25T09:53:54.006Z",
-      "claim_count": 3,
+      "last_update": "2026-10-25T10:23:23.222Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-22T07:37:22.000Z",
@@ -21488,10 +21849,32 @@
           }
         },
         {
+          "ts": "2026-10-22T07:37:22.000Z",
+          "kind": "evidence",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivgRBVV95cUxOd2ozbU51ekdMdDUta3JONlFXMWxpQUZTVjhOVlF2NkpTU2RUaWtMVWJ4VExlbTlfekw3ZFl5MHkzc2NEeWlNOENSdUZuZVUxMkdGU2hlTWNpMkpvOENkZEtfaW15ZWkzbVk0R2xTcHcxSVllVC1STVdWWFY1Qkl2b3hSWFd0dFVFYzFUdzM1cEM4bGJpRmRWVlV0eDlvODF6WjJhRHoxWlFXS3I5bzZPZGJCVUhoclBSOHdESFhsTXJNMjZvbG0wUjNDOGFJckZIMDFxT0c0YjdlbUVoWjhaNnVfbEh0VU1lQ21CcXM0U01kUWJqY1VmRUl2ek1NYldQcmtiWlNfa1Nyd2RMeTBZN0E4d3luR2xxek1uNGpIdUxRZF9yUndOTUJVRHQyMldtSEFZQ0ZuaUZPOEpOVHpLbDJRaUZPcm80R2NQQzJvRkg1S2NzZUJPRFdPbTJ4bkxqLUVSTFA0aGVJRFJTSXVTSHJFNE1HbjNMY3hwZFlpNm9vLVROOTVTdFhRdUdneWpXdlkwTDMxOFpISXZwWXN3cGJPMzBsYk9SM24xWm56Z1g0REdQdk90d0t3RTEzaEhreWZtY2N4VFZRdjJWR3hMN2EwZG9KaG9BNEVGYnZVdzNXbFNYRDV4djM1WFF1enpibmNadXhtTzgybWktajJkN0Y5WUR6c1hoU1kwLWgzX015S1MxSmxwd21BYUQ4Q28wdmRuOEhLUDFrZXNjMDZXR1JjMEYtRGJ1Nm5wR1hn0gHDBEFVX3lxTE5PbWgydVBwTFFlTDdEMkNXTUN1b3lISG5zVm1ialpfb3VTMGhzZWJFaUNHbkFMVDZ4TWVxWjdScFR4Y2lHTHljeHkxbGQ2LUF1NEtlaWU2TlpCN2J1d0ptazdBSkRRbHVKc2ltQVFzdTJpb3UxRGZ4X3BBdDNuczBrVm5IZzUzVzg4RkpWQlhzdkpQaS0wTnFjWW1FRlFlc2tWOEd3RWpHVDF1RGZjRzJBNmZNZ2hRZmNsSGpEZlI0YW5MZ19GR08wWmJ5ZG12aHBEVzYxenEyaElFME9ELU9jbkFqYVp4aC1QZ1RYVGtqN1ltbFg0M1lIMWxuRXRiV2NSWExOZUNuaE5rNXRaaG0xV1NfNXJnem10cHRtSE1KWW9QWlFWcjlXOXNoTVJwaXVaR2Ezb2hjTTJVbXMzc2ZoNDlTdE5qZHBLV1ZWcTk5dHVJY1pWR0h2azRVWXQybnpKS2t4b2NtbGhJZlBWeUlFenBJeUw1Y1VlbWF3RTBXTjFkd0x2WDZRQVN4eE5jR3YwUEhETmUyYmdBV2tULUpTbWRRcVBQbEo1V1JRSWViTUdFSzc4LVpXVXlOLURMRGdVd0RzLS1DVUlULXgzcVVBVEIzRkpyRkxaZm1kejZzcHptYlk1MGJOell5SHNtelB4bHVTcWFZLVZUUUNsYUxYenN1dFoyNk9VQ09ZaE4wZVhKZ0FNVnFhUlJlbEM4ajZ2RVczd3NBWFZBbG54elluNW4tdHVlSkp0TVkteWtKRWxIWQ?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-25T08:45:59.000Z",
           "kind": "evidence",
           "claim_id": 3399,
           "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’ মন্তব্য করা যুবকের ৭ দিনের রিমান্ড চায় পুলিশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/976602/%E2%80%98%E0%A6%B6%E0%A7%81%E0%A6%A7%E0%A7%81-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%87%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BE%E0%A6%AC-%E0%A6%9B%E0%A6%BF%E0%A6%B2%E2%80%99-%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%AC%E0%A7%8D%E0%A6%AF-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%AF%E0%A7%81%E0%A6%AC%E0%A6%95%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:45:59.000Z",
+          "kind": "evidence",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -21514,6 +21897,17 @@
           "kind": "evidence",
           "claim_id": 3937,
           "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’ কমেন্ট করা সেই যুবক ৭ দিনের রিমান্ডে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/976616/%E2%80%98%E0%A6%B6%E0%A7%81%E0%A6%A7%E0%A7%81-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%87%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BE%E0%A6%AC-%E0%A6%9B%E0%A6%BF%E0%A6%B2%E2%80%99-%E0%A6%95%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%87"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:36:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -21557,6 +21951,17 @@
           }
         },
         {
+          "ts": "2026-10-25T10:05:31.000Z",
+          "kind": "evidence",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/976623/%E2%80%98%E0%A6%B6%E0%A7%81%E0%A6%A7%E0%A7%81-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%87%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BE%E0%A6%AC-%E0%A6%9B%E0%A6%BF%E0%A6%B2%E2%80%99-%E0%A6%95%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%95%E0%A7%87%E0%A6%A8"
+          }
+        },
+        {
           "ts": "2026-10-25T10:12:16.324Z",
           "kind": "claim",
           "claim_id": 3937,
@@ -21571,6 +21976,24 @@
             "status": "SINGLE_SOURCE",
             "from": null,
             "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.714Z",
+          "kind": "claim",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4515,
+          "claim_text": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
             "reason": "verify"
           }
         }
@@ -21680,7 +22103,7 @@
       "cluster_id": 125,
       "headline": "সংকটে জর্জরিত গাজীপুর, সমাধানের পথ খুঁজতে প্রেস ক্লাবে গোলটেবিল বৈঠক",
       "first_seen": "2026-10-25T09:22:59.963Z",
-      "last_update": "2026-10-25T09:53:54.041Z",
+      "last_update": "2026-10-25T10:23:23.258Z",
       "claim_count": 2,
       "events": [
         {
@@ -22609,7 +23032,7 @@
       "cluster_id": 132,
       "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডের অবস্থা এখন ভালো, জানিয়েছে পরিবার",
       "first_seen": "2026-10-25T09:53:54.002Z",
-      "last_update": "2026-10-25T09:53:54.005Z",
+      "last_update": "2026-10-25T10:23:23.232Z",
       "claim_count": 2,
       "events": [
         {
@@ -22819,8 +23242,8 @@
       "cluster_id": 133,
       "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
       "first_seen": "2026-10-25T09:53:54.007Z",
-      "last_update": "2026-10-25T09:53:54.010Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T10:23:23.231Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T08:40:01.000Z",
@@ -22853,6 +23276,28 @@
             "source_id": "banglatribune",
             "relation": "supports",
             "url": "https://www.banglatribune.com/entertainment/dhallywood/976613/%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%9A%E0%A6%AE%E0%A6%95-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%A3%E0%A6%BF-%E0%A6%86%E0%A6%B8%E0%A6%9B%E0%A7%87-%E2%80%98%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E2%80%99"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 3949,
+          "claim_text": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
           }
         },
         {
@@ -22890,9 +23335,43 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.762Z",
+          "kind": "claim",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
         {
           "cluster_id": 137,
           "slug": "national-137",
@@ -22910,20 +23389,20 @@
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডের অবস্থা এখন ভালো, জানিয়েছে পরিবার"
         },
         {
-          "cluster_id": 101,
-          "slug": "politics-101",
+          "cluster_id": 123,
+          "slug": "national-123",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+          "claim_count": 4,
+          "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পাওয়া গেছে: পুলিশ"
         },
         {
-          "cluster_id": 94,
-          "slug": "sports-94",
+          "cluster_id": 11,
+          "slug": "national-11",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
         }
       ]
     },
@@ -23012,7 +23491,7 @@
       "cluster_id": 134,
       "headline": "ক্রিপ্টো জালিয়াতি: প্রেসিডেন্ট মিলেইয়ের বিরুদ্ধে তদন্ত বন্ধ করল আর্জেন্টিনা",
       "first_seen": "2026-10-25T09:53:54.010Z",
-      "last_update": "2026-10-25T09:53:54.013Z",
+      "last_update": "2026-10-25T10:23:23.233Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -23093,7 +23572,7 @@
       "cluster_id": 135,
       "headline": "Signs suggest Thomas Markle Sr may be ‘sex offender of the grossest kind’, says Philippine minister",
       "first_seen": "2026-10-25T09:53:54.014Z",
-      "last_update": "2026-10-25T09:53:54.016Z",
+      "last_update": "2026-10-25T10:23:23.234Z",
       "claim_count": 2,
       "events": [
         {
@@ -23244,7 +23723,7 @@
       "cluster_id": 136,
       "headline": "Bust companies revived in ‘phoenix’ deals more likely to fail again, study finds",
       "first_seen": "2026-10-25T09:53:54.018Z",
-      "last_update": "2026-10-25T09:53:54.020Z",
+      "last_update": "2026-10-25T10:23:23.235Z",
       "claim_count": 2,
       "events": [
         {
@@ -23395,7 +23874,7 @@
       "cluster_id": 137,
       "headline": "সাঈদীর মামলার বাদীকে গোপনে ‘গার্ড অব অনার’, রাতে কবর খুঁড়ে দাফন করলেন স্ত্রী-মেয়ে-বোন",
       "first_seen": "2026-10-25T09:53:54.021Z",
-      "last_update": "2026-10-25T09:53:54.023Z",
+      "last_update": "2026-10-25T10:23:23.236Z",
       "claim_count": 2,
       "events": [
         {
@@ -23570,7 +24049,7 @@
       "cluster_id": 138,
       "headline": "দুই সপ্তাহ বন্ধ থাকার পর সৌদির রিয়াদ বিমানবন্দর চালু হচ্ছে আজ",
       "first_seen": "2026-10-25T09:53:54.029Z",
-      "last_update": "2026-10-25T09:53:54.031Z",
+      "last_update": "2026-10-25T10:23:23.249Z",
       "claim_count": 2,
       "events": [
         {
@@ -24032,6 +24511,14 @@
           "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 23,
           "slug": "national-23",
           "actor_links": 0,
@@ -24062,14 +24549,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
-        },
-        {
-          "cluster_id": 78,
-          "slug": "politics-78",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         }
       ]
     },
@@ -24077,7 +24556,7 @@
       "cluster_id": 140,
       "headline": "বঙ্গোপসাগরে সৃষ্টি হচ্ছে শক্তিশালী ঘূর্ণিঝড়, যে নাম হতে পারে",
       "first_seen": "2026-10-25T09:53:54.042Z",
-      "last_update": "2026-10-25T09:53:54.045Z",
+      "last_update": "2026-10-25T10:23:23.260Z",
       "claim_count": 2,
       "events": [
         {
@@ -24237,7 +24716,7 @@
       "cluster_id": 141,
       "headline": "লামায় মৌচাক এর ৩২তম বার্ষিক সাধারণ সভা ও নির্বাচন অনুষ্ঠিত",
       "first_seen": "2026-10-25T09:53:54.047Z",
-      "last_update": "2026-10-25T09:53:54.049Z",
+      "last_update": "2026-10-25T10:23:23.262Z",
       "claim_count": 2,
       "events": [
         {
@@ -25040,11 +25519,81 @@
     },
     "national-147": {
       "cluster_id": 147,
-      "headline": "রাজউকের আবাসনে দখল ও চাঁদাবাজির অভিযোগ, বাড়ছে নিরাপত্তা শঙ্কা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+      "first_seen": "2026-10-25T10:23:23.225Z",
+      "last_update": "2026-10-25T10:23:23.228Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T09:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/0vwsfov67c"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:56:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%b8%e0%a6%bf%e0%a6%95%e0%a7%87%e0%a6%b0-%e0%a6%ae%e0%a7%87%e0%a7%9f%e0%a6%b0-%e0%a6%a5%e0%a7%87%e0%a6%95%e0%a7%87-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:56:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%b8%e0%a6%bf%e0%a6%95%e0%a7%87%e0%a6%b0-%e0%a6%ae%e0%a7%87%e0%a7%9f%e0%a6%b0-%e0%a6%a5%e0%a7%87%e0%a6%95%e0%a7%87-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.814Z",
+          "kind": "claim",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.817Z",
+          "kind": "claim",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1470": {
@@ -25130,12 +25679,91 @@
     },
     "national-148": {
       "cluster_id": 148,
-      "headline": "এমপি গাজী নজরুলের দ্বিতীয় স্ত্রীর মরদেহ উদ্ধার, জিজ্ঞাসাবাদের জন্য এমপি ও প্রথম স্ত্রী থানায়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+      "first_seen": "2026-10-25T10:23:23.238Z",
+      "last_update": "2026-10-25T10:23:23.240Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:31:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/jamat-e-islam/976597/%E2%80%98%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%A4-%E0%A6%AA%E0%A6%A4%E0%A6%BF%E0%A6%A4-%E0%A6%AB%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%AC%E0%A6%B2%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.820Z",
+          "kind": "claim",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.824Z",
+          "kind": "claim",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 117,
+          "slug": "politics-117",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির"
+        }
+      ]
     },
     "national-1480": {
       "cluster_id": 1480,
@@ -25229,12 +25857,107 @@
     },
     "national-149": {
       "cluster_id": 149,
-      "headline": "এসএসসিতে অকৃতকার্যদের ৩ মাসের মধ্যে ফের পরীক্ষার সুযোগ দিতে চায় সরকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+      "first_seen": "2026-10-25T10:23:23.244Z",
+      "last_update": "2026-10-25T10:23:23.246Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T06:15:23.000Z",
+          "kind": "evidence",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbXVyUFdsS3NlRFRBbHZhaG11MVlkcFJxVEhKcDBsVlNuQmd1a3NvZjBHTHRMUk5GdU1IU0ZETFhuNkZ4emNkUDBqZm5qeUpt?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:35:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM2ZjcjBpVmVGQ1I2UzhXbW12dmhndF9GQldiVThDMGJDaGNiSTl1Vk96ZU9FeFFjWUR5bF85Szh3cENjLUZUU0xsd1JjdVY5bW9kbEdmQ2RuYjRzUlJqWWd4cFNlSFRkZnBjYnF3dEVmOTNLa2JEUkVqYTdZekpBOXNJd3B4Q3RLMFlMZnF6ODVsQ3BTc0U0RmlUY25mU3R1VGVRUDd3ZWRub3Flb0lwdk5sSkpzNTRxdmNhcVQzNU9PdzBPN3NLSFo1cGlhWjZkenFGTzFrN0QzeTZaX2hIYmhRalMyejNqMDhVcDlUZzFQbGlHMGRJWnloa0F4cnpxWGV4OFNWOEp6LWU5ZzBXSGl6VG5Ddkx6MmdkbGNSNk92VGxWdF8xQTJabHBYT2lXQXVsRE9vSmhid0Rha3ZJM0I1XzNxRW1mOFVVajg1WDlNSC1LSF93aVMzeUVHekdRM3FUY2JjazhBNjhFNjJCalBMQnZRbWhWNTJXd08zN241Yk1fXzJkR0VPN3REX2xXNV96SlVkbklBTkxKdzRXa01tUF9jdlNXSXg3TWozb2VDT2VQbHM1NTlUTUJmY05CQW5henpERlBtNDd2YkxFN3MtRzFaZEhNQllZUUg3cEl5TjZGTTRsMFBJdmR6Q1J1ZVlDamxEOE1aNUpwdXhNU3BDRU5xNHFzazd2R2RjclQxRXNnamxWcTQ3OFJyMG01UGwzOQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:35:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM2ZjcjBpVmVGQ1I2UzhXbW12dmhndF9GQldiVThDMGJDaGNiSTl1Vk96ZU9FeFFjWUR5bF85Szh3cENjLUZUU0xsd1JjdVY5bW9kbEdmQ2RuYjRzUlJqWWd4cFNlSFRkZnBjYnF3dEVmOTNLa2JEUkVqYTdZekpBOXNJd3B4Q3RLMFlMZnF6ODVsQ3BTc0U0RmlUY25mU3R1VGVRUDd3ZWRub3Flb0lwdk5sSkpzNTRxdmNhcVQzNU9PdzBPN3NLSFo1cGlhWjZkenFGTzFrN0QzeTZaX2hIYmhRalMyejNqMDhVcDlUZzFQbGlHMGRJWnloa0F4cnpxWGV4OFNWOEp6LWU5ZzBXSGl6VG5Ddkx6MmdkbGNSNk92VGxWdF8xQTJabHBYT2lXQXVsRE9vSmhid0Rha3ZJM0I1XzNxRW1mOFVVajg1WDlNSC1LSF93aVMzeUVHekdRM3FUY2JjazhBNjhFNjJCalBMQnZRbWhWNTJXd08zN241Yk1fXzJkR0VPN3REX2xXNV96SlVkbklBTkxKdzRXa01tUF9jdlNXSXg3TWozb2VDT2VQbHM1NTlUTUJmY05CQW5henpERlBtNDd2YkxFN3MtRzFaZEhNQllZUUg3cEl5TjZGTTRsMFBJdmR6Q1J1ZVlDamxEOE1aNUpwdXhNU3BDRU5xNHFzazd2R2RjclQxRXNnamxWcTQ3OFJyMG01UGwzOQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.826Z",
+          "kind": "claim",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.829Z",
+          "kind": "claim",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
+        {
+          "cluster_id": 80,
+          "slug": "national-rabiul-target-to",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
+        },
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
+        }
+      ]
     },
     "national-1490": {
       "cluster_id": 1490,
@@ -25636,12 +26359,107 @@
     },
     "national-150": {
       "cluster_id": 150,
-      "headline": "মক্কা-মদিনা নিয়ে কোনও আপস করবে না বাংলাদেশ: পররাষ্ট্র প্রতিমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম",
+      "first_seen": "2026-10-25T10:23:23.266Z",
+      "last_update": "2026-10-25T10:23:23.269Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-21T06:12:40.000Z",
+          "kind": "evidence",
+          "claim_id": 4556,
+          "claim_text": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/economy/111616/%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%86%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A6%93-%E0%A6%AC%E0%A6"
+          }
+        },
+        {
+          "ts": "2026-10-23T14:43:17.000Z",
+          "kind": "evidence",
+          "claim_id": 4556,
+          "claim_text": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qX1NJNkJUZmVyQ0NmeGtCMlcwZThFLVhHbDZlSlVyWkRKaWdCRVZPNTVwYnFacUU5WnFTanUyWFBlbnItYzNXRHozeUtZbXBiMUliY0xjMkZ1dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-23T14:43:17.000Z",
+          "kind": "evidence",
+          "claim_id": 4557,
+          "claim_text": "জ্বালানি তেলের দাম আরও বাড়ল",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qX1NJNkJUZmVyQ0NmeGtCMlcwZThFLVhHbDZlSlVyWkRKaWdCRVZPNTVwYnFacUU5WnFTanUyWFBlbnItYzNXRHozeUtZbXBiMUliY0xjMkZ1dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.833Z",
+          "kind": "claim",
+          "claim_id": 4556,
+          "claim_text": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.836Z",
+          "kind": "claim",
+          "claim_id": 4557,
+          "claim_text": "জ্বালানি তেলের দাম আরও বাড়ল"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4556,
+          "claim_text": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4557,
+          "claim_text": "জ্বালানি তেলের দাম আরও বাড়ল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 54,
+          "slug": "national-54",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান"
+        },
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 19,
+          "slug": "national-19",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম"
+        }
+      ]
     },
     "national-1500": {
       "cluster_id": 1500,
@@ -25735,11 +26553,41 @@
     },
     "national-151": {
       "cluster_id": 151,
-      "headline": "রংপুরে চার হত্যায় নতুন সূত্র: ডিএনএ পরীক্ষার জন্য দুই আসামিকে ঢাকায় পাঠানো হলো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+      "first_seen": "2026-10-25T10:23:23.663Z",
+      "last_update": "2026-10-25T10:23:23.666Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:52:50.000Z",
+          "kind": "evidence",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/y089u05vzi"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.838Z",
+          "kind": "claim",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4558,
+          "claim_text": "কালো আনারকলিতে বেবি বাম্প নিয়ে নজর কাড়লেন সামান্থা রুথ প্রভু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1510": {
@@ -25834,11 +26682,41 @@
     },
     "national-152": {
       "cluster_id": 152,
-      "headline": "ধামরাইয়ে চীনা কর্মকর্তাকে বেঁধে লকার থেকে ৭০ লাখ টাকা লুটের অভিযোগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+      "first_seen": "2026-10-25T10:23:23.669Z",
+      "last_update": "2026-10-25T10:23:23.671Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:47:58.000Z",
+          "kind": "evidence",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/5-more-deaths-from-measles-symptoms/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.841Z",
+          "kind": "claim",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4559,
+          "claim_text": "হামের উপসর্গে আরও ৫ জনের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1520": {
@@ -25915,12 +26793,51 @@
     },
     "national-153": {
       "cluster_id": 153,
-      "headline": "একটি সম্পর্কের গল্প, যার ভেতরে লুকিয়ে আছে অনেক প্রশ্ন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর",
+      "first_seen": "2026-10-25T10:23:23.673Z",
+      "last_update": "2026-10-25T10:23:23.676Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:47:34.000Z",
+          "kind": "evidence",
+          "claim_id": 4560,
+          "claim_text": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/armertnu1q"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.844Z",
+          "kind": "claim",
+          "claim_id": 4560,
+          "claim_text": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4560,
+          "claim_text": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "national-1531": {
       "cluster_id": 1531,
@@ -26005,11 +26922,41 @@
     },
     "national-154": {
       "cluster_id": 154,
-      "headline": "ছাত্রীর স্বামীকে হুমকির অভিযোগ, অভিযুক্ত অফিস সহকারীকে শোকজ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিমানবন্দরের মতো মেট্রোরেল স্টেশনে আসছে যেসব পরিবর্তন",
+      "first_seen": "2026-10-25T10:23:23.678Z",
+      "last_update": "2026-10-25T10:23:23.680Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:47:06.000Z",
+          "kind": "evidence",
+          "claim_id": 4561,
+          "claim_text": "বিমানবন্দরের মতো মেট্রোরেল স্টেশনে আসছে যেসব পরিবর্তন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/decision-taken-to-install-modern-security-equipment-at-metro-stations-screening-capacity-to-increase/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.846Z",
+          "kind": "claim",
+          "claim_id": 4561,
+          "claim_text": "বিমানবন্দরের মতো মেট্রোরেল স্টেশনে আসছে যেসব পরিবর্তন"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4561,
+          "claim_text": "বিমানবন্দরের মতো মেট্রোরেল স্টেশনে আসছে যেসব পরিবর্তন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1540": {
@@ -26086,11 +27033,41 @@
     },
     "national-155": {
       "cluster_id": 155,
-      "headline": "৮ দিন পর উৎপাদনে ফিরলো রামপাল তাপবিদ্যুৎ কেন্দ্রের দ্বিতীয় ইউনিট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+      "first_seen": "2026-10-25T10:23:23.682Z",
+      "last_update": "2026-10-25T10:23:23.684Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:29:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/a-low-pressure-area-that-has-formed-in-the-bay-of-bengal-could-intensify-into-a-very-severe-cyclonic-storm/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.849Z",
+          "kind": "claim",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1550": {
@@ -29841,6 +30818,14 @@
       ],
       "related": [
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম"
+        },
+        {
           "cluster_id": 54,
           "slug": "national-54",
           "actor_links": 0,
@@ -30807,7 +31792,7 @@
       "cluster_id": 2,
       "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
       "first_seen": "2026-10-25T04:39:46.545Z",
-      "last_update": "2026-10-25T09:53:54.001Z",
+      "last_update": "2026-10-25T10:23:23.224Z",
       "claim_count": 30,
       "events": [
         {
@@ -32432,13 +33417,22 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        }
+      ]
     },
     "national-20": {
       "cluster_id": 20,
       "headline": "North Korea prepares to restart propaganda loudspeakers as ties sour with South",
       "first_seen": "2026-10-25T04:39:46.644Z",
-      "last_update": "2026-10-25T09:53:54.046Z",
+      "last_update": "2026-10-25T10:23:23.261Z",
       "claim_count": 2,
       "events": [
         {
@@ -33615,6 +34609,14 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
           "cluster_id": 114,
           "slug": "national-114",
           "actor_links": 0,
@@ -33637,14 +34639,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
-        },
-        {
-          "cluster_id": 61,
-          "slug": "national-61",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
         }
       ]
     },
@@ -38545,7 +39539,7 @@
       "cluster_id": 26,
       "headline": "উত্তরাধিকার সূত্রে পাওয়া জমির নামজারিতে যেসব কাগজপত্র লাগবে",
       "first_seen": "2026-10-25T04:39:46.668Z",
-      "last_update": "2026-10-25T09:53:54.052Z",
+      "last_update": "2026-10-25T10:23:23.264Z",
       "claim_count": 2,
       "events": [
         {
@@ -40867,6 +41861,14 @@
       ],
       "related": [
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 5,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -40905,14 +41907,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
-        },
-        {
-          "cluster_id": 116,
-          "slug": "national-116",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
         }
       ]
     },
@@ -41802,7 +42796,7 @@
       "cluster_id": 29,
       "headline": "কার্যক্রম নিষিদ্ধ আওয়ামী লীগ সভাপতি শেখ হাসিনার ফেরার বার্তায় মাইকিং, গ্রেপ্তার ২",
       "first_seen": "2026-10-25T04:39:46.683Z",
-      "last_update": "2026-10-25T09:53:54.053Z",
+      "last_update": "2026-10-25T10:23:23.265Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -42705,7 +43699,7 @@
       "cluster_id": 30,
       "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
       "first_seen": "2026-10-25T04:39:46.686Z",
-      "last_update": "2026-10-25T09:53:54.053Z",
+      "last_update": "2026-10-25T10:23:23.270Z",
       "claim_count": 2,
       "events": [
         {
@@ -44350,6 +45344,14 @@
           "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -45144,7 +46146,7 @@
       "cluster_id": 33,
       "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়",
       "first_seen": "2026-10-25T04:39:46.696Z",
-      "last_update": "2026-10-25T09:53:54.055Z",
+      "last_update": "2026-10-25T10:23:23.272Z",
       "claim_count": 7,
       "events": [
         {
@@ -45425,6 +46427,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 77,
@@ -46176,7 +47186,7 @@
       "cluster_id": 34,
       "headline": "নিরাপত্তা না পেয়ে থানায় রুমিন ফারহানা: ওসিকে বললেন, আপনি আওয়ামী লীগের ‘চোর’ ওসি",
       "first_seen": "2026-10-25T04:39:46.703Z",
-      "last_update": "2026-10-25T09:53:54.056Z",
+      "last_update": "2026-10-25T10:23:23.273Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -49058,6 +50068,14 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 43,
           "slug": "national-43",
           "actor_links": 0,
@@ -49088,14 +50106,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তিব্বতে ৭ মাত্রার ভূমিকম্প, নিহত ১৬"
-        },
-        {
-          "cluster_id": 25,
-          "slug": "national-india-s-cockroach",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার ঝুঁকি এড়াতে তৃতীয় দিনও বন্ধ বাংলাদেশ ব্যাংকের ওয়েবসাইট"
         }
       ]
     },
@@ -50673,7 +51683,7 @@
       "cluster_id": 39,
       "headline": "বুকে ব্যথা নিয়ে হাসপাতালে ভর্তি স্থানীয় সরকার মন্ত্রী আব্দুল মঈন খান",
       "first_seen": "2026-10-25T04:39:46.727Z",
-      "last_update": "2026-10-25T09:53:54.059Z",
+      "last_update": "2026-10-25T10:23:23.277Z",
       "claim_count": 2,
       "events": [
         {
@@ -50747,6 +51757,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
         {
           "cluster_id": 37,
           "slug": "national-37",
@@ -51806,8 +52824,8 @@
           "slug": "national-124",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘শুধু একটা স্নাইপারের অভাব ছিল’ মন্তব্য করা যুবকের ৭ দিনের রিমান্ড চায় পুলিশ"
+          "claim_count": 4,
+          "headline": "‘শুধু একটা স্নাইপারের অভাব ছিল’-কমেন্ট কেন করেছিলেন, আদালতকে জানালেন সেই যুবক"
         },
         {
           "cluster_id": 123,
@@ -55868,7 +56886,7 @@
       "cluster_id": 45,
       "headline": "রাষ্ট্রপতি হয়ে আমি আগের মতো কথা বলতে পারি না : মির্জা ফখরুল ইসলাম",
       "first_seen": "2026-10-25T04:39:46.751Z",
-      "last_update": "2026-10-25T09:53:54.062Z",
+      "last_update": "2026-10-25T10:23:23.281Z",
       "claim_count": 2,
       "events": [
         {
@@ -57271,7 +58289,7 @@
       "cluster_id": 54,
       "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান",
       "first_seen": "2026-10-25T05:08:23.976Z",
-      "last_update": "2026-10-25T09:53:54.061Z",
+      "last_update": "2026-10-25T10:23:23.278Z",
       "claim_count": 7,
       "events": [
         {
@@ -57610,12 +58628,28 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 150,
+          "slug": "national-150",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্ববাজারে আবারও বাড়লো জ্বালানি তেলের দাম"
+        },
+        {
           "cluster_id": 116,
           "slug": "national-116",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 19,
@@ -59438,7 +60472,7 @@
       "cluster_id": 67,
       "headline": "পাঁচ দিনের ছুটি শেষে আবারও কর্মব্যস্ত রাজধানী",
       "first_seen": "2026-10-25T06:13:27.940Z",
-      "last_update": "2026-10-25T09:53:54.032Z",
+      "last_update": "2026-10-25T10:23:23.250Z",
       "claim_count": 2,
       "events": [
         {
@@ -59784,7 +60818,7 @@
       "cluster_id": 69,
       "headline": "‘Unusually large’ multi-state storm causing severe weather for Australia’s east – with more on the way",
       "first_seen": "2026-10-25T06:13:27.947Z",
-      "last_update": "2026-10-25T09:53:54.034Z",
+      "last_update": "2026-10-25T10:23:23.252Z",
       "claim_count": 2,
       "events": [
         {
@@ -59953,7 +60987,7 @@
       "cluster_id": 7,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-25T04:39:46.587Z",
-      "last_update": "2026-10-25T09:53:54.038Z",
+      "last_update": "2026-10-25T10:23:23.253Z",
       "claim_count": 2,
       "events": [
         {
@@ -60891,7 +61925,7 @@
       "cluster_id": 77,
       "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস",
       "first_seen": "2026-10-25T06:43:37.682Z",
-      "last_update": "2026-10-25T09:53:54.026Z",
+      "last_update": "2026-10-25T10:23:23.243Z",
       "claim_count": 5,
       "events": [
         {
@@ -61094,6 +62128,14 @@
           "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 28,
           "slug": "national-28",
           "actor_links": 0,
@@ -61124,14 +62166,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়"
-        },
-        {
-          "cluster_id": 32,
-          "slug": "national-32",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ বিশ্ব চিকা দিবস, বিজ্ঞানপ্রেমীদের কাছে গুরুত্বপূর্ণ একটি দিন"
         }
       ]
     },
@@ -61211,7 +62245,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T09:53:54.033Z",
+      "last_update": "2026-10-25T10:23:23.251Z",
       "claim_count": 4,
       "events": [
         {
@@ -61857,6 +62891,14 @@
       ],
       "related": [
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
           "cluster_id": 114,
           "slug": "national-114",
           "actor_links": 0,
@@ -61968,7 +63010,7 @@
       "cluster_id": 81,
       "headline": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা",
       "first_seen": "2026-10-25T06:43:37.712Z",
-      "last_update": "2026-10-25T09:53:54.051Z",
+      "last_update": "2026-10-25T10:23:23.263Z",
       "claim_count": 2,
       "events": [
         {
@@ -62049,6 +63091,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 77,
@@ -62160,12 +63210,291 @@
     },
     "national-82": {
       "cluster_id": 82,
-      "headline": "রিয়াদে চালু হচ্ছে বিমানের ফ্লাইট, আগামীকাল শুরু হচ্ছে দাম্মাম রুটেও",
+      "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
       "first_seen": "2026-10-25T06:43:37.723Z",
-      "last_update": "2026-10-25T09:53:54.039Z",
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "last_update": "2026-10-25T10:23:23.255Z",
+      "claim_count": 6,
+      "events": [
+        {
+          "ts": "2026-10-21T13:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAzOW1WZVE2QjhFaEJFOXpiTDdEZ2w4RWp5Wk8tUUVsSDNHRlNWc0lfRk9vMlJEMEdFUjEwUjZJWGRfQVdJd0ZKeVNpbGx6UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-21T13:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4448,
+          "claim_text": "দাম্মাম-রিয়াদ রুটে ফ্লাইট চালু করছে বিমান",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAzOW1WZVE2QjhFaEJFOXpiTDdEZ2w4RWp5Wk8tUUVsSDNHRlNWc0lfRk9vMlJEMEdFUjEwUjZJWGRfQVdJd0ZKeVNpbGx6UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-21T14:44:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixwRBVV95cUxOQmJ2c19oRmxyODQyZ2pKMEMzOEtUNXhKREQyekk1T0xUU1FlRDQ0VV9MYU9iNThRR05wbEhsaUZKaUdaQWZNaW01RmIyUDFmNnhzV0Mwcm1zbTR0cFhOY19TaGdiUExnMV9VVjBVU0NIZmdRTDFteHBnN19TQmIteEk2NHZkaG56ci1zSDB1WFc5SEtQSVlaSmVZZXdhZzBDTTBsMkowcWxUX0xrMGxQMFB2SVlRV0FkVjdjeS1LcnZrdWh5bDAyUFAwTklFSTJyRTk5MkJRTk4xY3ozaGpuT3RHTWRvQmVvaFJ6SE9QNXB0S0xWbWdBU3hIbmpONEd3RXVheXpFcDF6MTZRNE9SZU1USlAwUENMdm42c1BWX05uZ1l6RHY1MTVXRXU3STFUeEVqUEg1NzVMYUVmN1EtSEhrbWNFLXZ0bndTc3cwTGZPT05XY2RFR0hDakV1Qnk3MjBLQ3hnQ08xTDRhZ3JCenVxdkU0Q0k1SVdpbUJhNGV5TmtfbEtYUGhHTXNhdWwxaU91R1FmdVNSUDgwd2FoTEhEV010dzNsaGFkbDZma1V1SDlXWHZyZm94MUx5UjBEY01DY21QMXF6RFFMbjk2MXdESkxPZEFUdHdzV2JPU3ozV2dHNkJ2VW9tWWVHN2pvSUs1V29GNHdtWE5vemU0VnpiX0hHTUxSUHRNRnNESEtXNFJOQjVQUlJwbHR6anRFQ3VKc0VOT0g3UWVIV3l2WXNPQXFXanBOYS05YW50ajhqeGdsaDM00gHMBEFVX3lxTFBndE9BVmlaUzd4dWR3MGg4N0tFOFZCc3JMUm43dVFqSDBzdDE5QTFuOGdZNVF3ME5TdzltZDBsRGRMajdzX1dVYmFYTGxKdy1VSlFYbWxZZk50S0U1MnJjZ1FCTUhjcjlfcnlJclROVWFaSVAtWUtwRXVucUJ1d05UVGZrcHdJeHJXWFNva0ZJRHBTdkdjcGtrTTBZOWlMTjVSWmFSNUxobWZsTmF5SWpXLWhVMVNqLUVlcWx2ZzhCTE5oM0RBejZmTkcyU3ppUzlVRzg4VVZ0N0N6UTEwU1E5WFRQWkZpVjBqQmxUdzl0QTFiX0JXTUs1TW15eGFNQUVRbUdVSjdzSWFyWWoyRnNzZ1BERW95T3BxYjZwdkczWUJKdFJBeUFkLTFOVWlmTTE3S1FWdTh4QVZpM0laMHRmcmotdGoyWkVoaDk5dEZVTVJ4bzRDTkFqV3A4V2F6S1FrNUVzVUVndDBMZnlPS2JRZkpEbXpwa3Vlb0QzU1hoZElmNVZCV2Nwc0Z5Y0FfMWZTTllnel84ek91ZWU1a0dOVVBUMEJWUlBtd2w0TV9oeEZkZG9zOVVZSmN3ME9aR3pHLXBxWWlaVDNOX0E0aVVQSF9qbm04bWl0VXFnQy1ZZkNkS01pZnctNFBGRGpXajBSZHFoM2dJTTNUQXlPdi1Sd0hsU0RVN2hZcGxPaG5iWHdNeWNQYnl2aFp1TGkyTUJtejdTblNGOGFBZ3JOY3ZldHhPSVJfOWc3LUZOUWowN1AxZHZ3YWhTR0dwMQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-21T14:44:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4449,
+          "claim_text": "রিয়াদে চালু হচ্ছে বিমানের ফ্লাইট, আগামীকাল শুরু হচ্ছে দাম্মাম রুটেও",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixwRBVV95cUxOQmJ2c19oRmxyODQyZ2pKMEMzOEtUNXhKREQyekk1T0xUU1FlRDQ0VV9MYU9iNThRR05wbEhsaUZKaUdaQWZNaW01RmIyUDFmNnhzV0Mwcm1zbTR0cFhOY19TaGdiUExnMV9VVjBVU0NIZmdRTDFteHBnN19TQmIteEk2NHZkaG56ci1zSDB1WFc5SEtQSVlaSmVZZXdhZzBDTTBsMkowcWxUX0xrMGxQMFB2SVlRV0FkVjdjeS1LcnZrdWh5bDAyUFAwTklFSTJyRTk5MkJRTk4xY3ozaGpuT3RHTWRvQmVvaFJ6SE9QNXB0S0xWbWdBU3hIbmpONEd3RXVheXpFcDF6MTZRNE9SZU1USlAwUENMdm42c1BWX05uZ1l6RHY1MTVXRXU3STFUeEVqUEg1NzVMYUVmN1EtSEhrbWNFLXZ0bndTc3cwTGZPT05XY2RFR0hDakV1Qnk3MjBLQ3hnQ08xTDRhZ3JCenVxdkU0Q0k1SVdpbUJhNGV5TmtfbEtYUGhHTXNhdWwxaU91R1FmdVNSUDgwd2FoTEhEV010dzNsaGFkbDZma1V1SDlXWHZyZm94MUx5UjBEY01DY21QMXF6RFFMbjk2MXdESkxPZEFUdHdzV2JPU3ozV2dHNkJ2VW9tWWVHN2pvSUs1V29GNHdtWE5vemU0VnpiX0hHTUxSUHRNRnNESEtXNFJOQjVQUlJwbHR6anRFQ3VKc0VOT0g3UWVIV3l2WXNPQXFXanBOYS05YW50ajhqeGdsaDM00gHMBEFVX3lxTFBndE9BVmlaUzd4dWR3MGg4N0tFOFZCc3JMUm43dVFqSDBzdDE5QTFuOGdZNVF3ME5TdzltZDBsRGRMajdzX1dVYmFYTGxKdy1VSlFYbWxZZk50S0U1MnJjZ1FCTUhjcjlfcnlJclROVWFaSVAtWUtwRXVucUJ1d05UVGZrcHdJeHJXWFNva0ZJRHBTdkdjcGtrTTBZOWlMTjVSWmFSNUxobWZsTmF5SWpXLWhVMVNqLUVlcWx2ZzhCTE5oM0RBejZmTkcyU3ppUzlVRzg4VVZ0N0N6UTEwU1E5WFRQWkZpVjBqQmxUdzl0QTFiX0JXTUs1TW15eGFNQUVRbUdVSjdzSWFyWWoyRnNzZ1BERW95T3BxYjZwdkczWUJKdFJBeUFkLTFOVWlmTTE3S1FWdTh4QVZpM0laMHRmcmotdGoyWkVoaDk5dEZVTVJ4bzRDTkFqV3A4V2F6S1FrNUVzVUVndDBMZnlPS2JRZkpEbXpwa3Vlb0QzU1hoZElmNVZCV2Nwc0Z5Y0FfMWZTTllnel84ek91ZWU1a0dOVVBUMEJWUlBtd2w0TV9oeEZkZG9zOVVZSmN3ME9aR3pHLXBxWWlaVDNOX0E0aVVQSF9qbm04bWl0VXFnQy1ZZkNkS01pZnctNFBGRGpXajBSZHFoM2dJTTNUQXlPdi1Sd0hsU0RVN2hZcGxPaG5iWHdNeWNQYnl2aFp1TGkyTUJtejdTblNGOGFBZ3JOY3ZldHhPSVJfOWc3LUZOUWowN1AxZHZ3YWhTR0dwMQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T07:35:13.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxPdnk0LXhtYnk1d2xrZ0NzVG85bnlLS2pjMGxUQVkxOU9xcnp2S3R1aFpwZHRSUFlXVUFYX0JNNDJYOW5hWWlQbk5lUkxFSHBHMFAzY3VpMHVGLWFtWXc1ZVp4NzVuZEhXaThJblJUSlhMcUVrQWd6WXJNNkZWS1VxSW1ncmFockVUcTBTb0JZQzR4UlhfU2tHQUd2bldMMUlaWkJTa0JRREFqeWYyY0FwYXExSDVOa1NhZWRjZ0ZBMVEtTXpjZ1FjQzJWOTVBUjZQOFJQLXZjczZKZmZueU1wMnNzZkUySEZDckM2U3F2X2U1eHozWXgzYVdHUVNIcEF2dGZzVDNxcWdQbV9yRl9kTmVpRS04LW9DbUpCOTdDWmhBa2lydVRMMUx3WFRneGZVQmMxSWlkM1B3aTlES0w5cUhRU1Z5Z01yUjNoYW9wVGgxSWVXSzc0WHhPRG9YRG5DX184Y1ZGZUdKUThTMFFBb05Cb1VWWllYMVhnMkM0eGFMR3c1OWF30gGMA0FVX3lxTFBFSFBmUVoycmtOeFdsc19SSHA4alNaU2RzU3FDV2hqeGcwcVhhZThhTXJ4djc2QzBsLXZuN21Cb2xKaDhKcF9rN2I3by1SUExqcFl6NmRGQzNZeFJ6T2pxT1ZVUEdqcnpUUjV1U2pRQnE1dmUxZFN3bmllMWVQaFAxbmhQb25FSHZjLUloaVRSOXB2Q2hDRXdTTXlZY29XOUl6a2NLcF9OYXpUalRSaUFRdzNKcDJNbmZSQlhTaTNJQnZFRUxZcFNfRTBZejBobWx4MEV1Y1pzLVJBVFlxcUdPaGFaNzYtazluNWxZMGxtLVpvQTAtUUpSV2J0cFJtSmlUb01CNmtRdUJUVVlfS3NzU2hYMUxteUR5TFVCU1lXTjF0U2lkZ19nQ1ZLak5hdnd3ZWpOUjFXM212NV9wV0NPZ1lYQ0p6SmpOVzlhd1owdEN6WDJWOGNncGtkQkt0UXRWR3JEUVZqbmF5aEZHY2Fza3pqNERNbkp6dE5HNWxWc0dGRGs4STBBUnkxVg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T07:35:13.000Z",
+          "kind": "evidence",
+          "claim_id": 4450,
+          "claim_text": "ঢাকা-দাম্মাম ফ্লাইট চলাচল শুরু",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxPdnk0LXhtYnk1d2xrZ0NzVG85bnlLS2pjMGxUQVkxOU9xcnp2S3R1aFpwZHRSUFlXVUFYX0JNNDJYOW5hWWlQbk5lUkxFSHBHMFAzY3VpMHVGLWFtWXc1ZVp4NzVuZEhXaThJblJUSlhMcUVrQWd6WXJNNkZWS1VxSW1ncmFockVUcTBTb0JZQzR4UlhfU2tHQUd2bldMMUlaWkJTa0JRREFqeWYyY0FwYXExSDVOa1NhZWRjZ0ZBMVEtTXpjZ1FjQzJWOTVBUjZQOFJQLXZjczZKZmZueU1wMnNzZkUySEZDckM2U3F2X2U1eHozWXgzYVdHUVNIcEF2dGZzVDNxcWdQbV9yRl9kTmVpRS04LW9DbUpCOTdDWmhBa2lydVRMMUx3WFRneGZVQmMxSWlkM1B3aTlES0w5cUhRU1Z5Z01yUjNoYW9wVGgxSWVXSzc0WHhPRG9YRG5DX184Y1ZGZUdKUThTMFFBb05Cb1VWWllYMVhnMkM0eGFMR3c1OWF30gGMA0FVX3lxTFBFSFBmUVoycmtOeFdsc19SSHA4alNaU2RzU3FDV2hqeGcwcVhhZThhTXJ4djc2QzBsLXZuN21Cb2xKaDhKcF9rN2I3by1SUExqcFl6NmRGQzNZeFJ6T2pxT1ZVUEdqcnpUUjV1U2pRQnE1dmUxZFN3bmllMWVQaFAxbmhQb25FSHZjLUloaVRSOXB2Q2hDRXdTTXlZY29XOUl6a2NLcF9OYXpUalRSaUFRdzNKcDJNbmZSQlhTaTNJQnZFRUxZcFNfRTBZejBobWx4MEV1Y1pzLVJBVFlxcUdPaGFaNzYtazluNWxZMGxtLVpvQTAtUUpSV2J0cFJtSmlUb01CNmtRdUJUVVlfS3NzU2hYMUxteUR5TFVCU1lXTjF0U2lkZ19nQ1ZLak5hdnd3ZWpOUjFXM212NV9wV0NPZ1lYQ0p6SmpOVzlhd1owdEN6WDJWOGNncGtkQkt0UXRWR3JEUVZqbmF5aEZHY2Fza3pqNERNbkp6dE5HNWxWc0dGRGs4STBBUnkxVg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T20:04:28.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxNWHZ6WkFaajU0b3VsTFhEWlpGSHl1d3pPUFozbldhcjZXMFpQZUhHLW00VnBlbmNVdEdMUGtPNDgwaXRPOXVlanpydDM2VEFlc0RGZDNkcjhmOFZXWnQ2Z0o1UzRIYk03dDdtb2JpRHBlblBlZklsbm5UMHM4Ym91aUFxZzhaeWNnQk1BalpZOFY1TnFPU3BYMDdxUzlVc183bm1fdkhtajF4T0c4aXNmbkxJa3d2amZSbk14amJvNFY1VXhYbGJiVFByaXNmWmxGUDZhSEdGODlfSm5XUHVaa1RFdzJLY29fYjRxQ2tQQWZhaFpRYzFzOUViMEVxRDR5M1kxMHZjam41MXFUc253WWx0OHdRdlNabWM1VHY4NThZbldqclNQUTMzeDBrZHVhRHJoWHVRSERTeVNnN0NVb2MxZUhBN2FJY1F1SjBCNUl5SmdaNTFuLThIbEEzQ0l2NEpxZUJ6ajZ3NVZsRTV3MTVVUk1nd09IUjM4dDNEbG1UZzVBU0ZUSGpoczJITXM4N2pqX2U2YzNzWGVrWnZoRUU3VmIxNG81eWkzeTBxb2RISFM0S0J4c3Z0RzE0UmZ4QzVYU0JCSEFEdURlc1FjY0hsRGtXSWlXd0c3UEtGLUZPNldtdndIUlVYZC1pdk5zT2U5OGYwcUx0TWluMWFvSnFrUDEteU9jdC12ZnI5ckYtVHRQSDVMb08xUWl4VUpOdjB4NXpkZld2NS10SDV4VUhrY9IBuARBVV95cUxPX0ZWUndJYXZ4YWc1Y2cyeGJLNFBLYTlPY05WMG5xSFZmZ1lucExtczdER0h5T2RTUVc1b1FKUFVHU1h5NmxzMzlfaE1yRGZ0bHhoWXI5bjJoYzNmWFluWGMtZ0NxV3Z2YzZJSlhtTDE3U1k2S0drcjZ2X0llX2RxZ3NpSmE2OW55RDZmcU5NQzdzM3ZUZHVrOXFMcVZXZVZ5UFdEZWJFTmNETTFwYnBTaXAyMTRWX0RWQnJQQm1IeHBWdWY0Z0R6UFp3eW1wSmtuV2NKN01ReG9mMUxnWGMxbUx1UzZWc1FSM2txUFo5TTBLYVJmNDdCVVI2d3JLN0JTUFpDV0w1OFBVVTEzNFg3OW1TQmEyLWxaRXhqeVAzSzUwT1ROY3Azb1VrRnYtc3JwQzdTckstbnhOc0VsNzBVb1J6a3g2NkR2dGVMZ2Q2dUpqWkw4S3JmcjRSbWlBb3ZFVnNOUGdIX1pONGczMWVkRW8yYm5nMGtVSlBUc01aOTEwb3pZMVlobFlrZVZBTFFNaWcwazRhSlRBMm5EVFZSXzFiNWFjX01mcGpWQ1dOQUg0b0xVaVp2TzdUTDhXaEZmTGd5ZVY3ZHJ2SEQzRGdrZFk0WWxjY2tXNzBVRlZablAyTDhGOTRYdzJ4U0NpWkZpcEZMYjVfYjZSa1FvWS01UjdHOUhJZ0NMNlkxVTFTZlo4bUVwemFjeGlXU19LNDBhcHJIQ1U4dW5IWFYxMkVIeGxBbmFuZjJr?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T20:04:28.000Z",
+          "kind": "evidence",
+          "claim_id": 4451,
+          "claim_text": "দাম্মাম-রিয়াদগামী বিমানের ফ্লাইট আবারও স্থগিত",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxNWHZ6WkFaajU0b3VsTFhEWlpGSHl1d3pPUFozbldhcjZXMFpQZUhHLW00VnBlbmNVdEdMUGtPNDgwaXRPOXVlanpydDM2VEFlc0RGZDNkcjhmOFZXWnQ2Z0o1UzRIYk03dDdtb2JpRHBlblBlZklsbm5UMHM4Ym91aUFxZzhaeWNnQk1BalpZOFY1TnFPU3BYMDdxUzlVc183bm1fdkhtajF4T0c4aXNmbkxJa3d2amZSbk14amJvNFY1VXhYbGJiVFByaXNmWmxGUDZhSEdGODlfSm5XUHVaa1RFdzJLY29fYjRxQ2tQQWZhaFpRYzFzOUViMEVxRDR5M1kxMHZjam41MXFUc253WWx0OHdRdlNabWM1VHY4NThZbldqclNQUTMzeDBrZHVhRHJoWHVRSERTeVNnN0NVb2MxZUhBN2FJY1F1SjBCNUl5SmdaNTFuLThIbEEzQ0l2NEpxZUJ6ajZ3NVZsRTV3MTVVUk1nd09IUjM4dDNEbG1UZzVBU0ZUSGpoczJITXM4N2pqX2U2YzNzWGVrWnZoRUU3VmIxNG81eWkzeTBxb2RISFM0S0J4c3Z0RzE0UmZ4QzVYU0JCSEFEdURlc1FjY0hsRGtXSWlXd0c3UEtGLUZPNldtdndIUlVYZC1pdk5zT2U5OGYwcUx0TWluMWFvSnFrUDEteU9jdC12ZnI5ckYtVHRQSDVMb08xUWl4VUpOdjB4NXpkZld2NS10SDV4VUhrY9IBuARBVV95cUxPX0ZWUndJYXZ4YWc1Y2cyeGJLNFBLYTlPY05WMG5xSFZmZ1lucExtczdER0h5T2RTUVc1b1FKUFVHU1h5NmxzMzlfaE1yRGZ0bHhoWXI5bjJoYzNmWFluWGMtZ0NxV3Z2YzZJSlhtTDE3U1k2S0drcjZ2X0llX2RxZ3NpSmE2OW55RDZmcU5NQzdzM3ZUZHVrOXFMcVZXZVZ5UFdEZWJFTmNETTFwYnBTaXAyMTRWX0RWQnJQQm1IeHBWdWY0Z0R6UFp3eW1wSmtuV2NKN01ReG9mMUxnWGMxbUx1UzZWc1FSM2txUFo5TTBLYVJmNDdCVVI2d3JLN0JTUFpDV0w1OFBVVTEzNFg3OW1TQmEyLWxaRXhqeVAzSzUwT1ROY3Azb1VrRnYtc3JwQzdTckstbnhOc0VsNzBVb1J6a3g2NkR2dGVMZ2Q2dUpqWkw4S3JmcjRSbWlBb3ZFVnNOUGdIX1pONGczMWVkRW8yYm5nMGtVSlBUc01aOTEwb3pZMVlobFlrZVZBTFFNaWcwazRhSlRBMm5EVFZSXzFiNWFjX01mcGpWQ1dOQUg0b0xVaVp2TzdUTDhXaEZmTGd5ZVY3ZHJ2SEQzRGdrZFk0WWxjY2tXNzBVRlZablAyTDhGOTRYdzJ4U0NpWkZpcEZMYjVfYjZSa1FvWS01UjdHOUhJZ0NMNlkxVTFTZlo4bUVwemFjeGlXU19LNDBhcHJIQ1U4dW5IWFYxMkVIeGxBbmFuZjJr?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-23T03:22:23.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxOX1FZUlVvbzB3M0hhTW5qUndVMG1RbmZsMm1UY2RmZGVLZWJ6SkRoNnkwdzQ1cFpnNEIwdm8wMWppOExxRjg4ZHpHRFRjaDVLYXAxZWxLN0ljLV8zMlF2aEZmcGs4azJ3S1ByVkdtSXRiWGMzS3ZaNzVkYlFKcGxBNUtvRmdOam1uUm44XzVhYU9kSXV1SkxZMHBFQnY4QmctMUo4azJ4MGg3RUtfRFhqRkh4d0FpaU55MmJ4aHZkVENXOVdNeV80Y2stWXhMcmpidUxMTmJUOVhqd2VIVGFwdEhPLU5YbTB2cXRQTEZXTzNDeV92UmlPYUtjUk0wc1N2TjBoa3gtRVVaSFNTNzhMUEk5VUdId2Z2VnJKZzh2TDcxSjk1cjE3RDZZS3Focnc1NVYzVHRoM2pDamc5OWJDZUJmOUlCSWREeTJLbEt1VFBTeWQtU0dZOE1nSTIwQmxvekstbUNRVTB3Q2VOa3hKbFhTMHJLYV9BM0E5TFFObHI1NHJPNmFjZkJpMk95T1kyMkhqSUFxSkFrSXlxdGlqTmhqVEl5VjNxcTJTcGdJalRwU0hrUExmTDM0Q3dPSEU3NlRBTTdDODA3QThhZDNGNEs0Q09xNkhuUjgwbXNpcGM1MVNPNVliME14aVFYRUd4Tjk4aENvalBwcjlVMzVnUXc2bzgxQmNYNzZIMHVpRnBOQ2t6NGJYQ05LaFd5UXg4RXhQWlhteHg3YzZNRTVWNzJReHZQaHFyUnhOVlEwLWJjQ3NwLUZUT9IBzgRBVV95cUxPeXpqRzVLbHFYcGdLTzZ2bkxHUkFValBhbG5IVTF3U2N5aks3MDgxVGZwVVdvNC0wRS1KajRFdndpQkxMQUxxS190NmsxcUNxZ3o1TW9MOFNDS3hUbHRSck9mWTFIOHRJbXVITFE5UVlSOHJDS1l0YnNCek40bV9xZ2dZNHgyOHJydUVmaC05SUdMbV9ReUE4TXF1UkViSVNCMjNFNkhuNnJ2cjNaTjc1YXowdjNSb2Jncnh4UmQwQTBzTWNWTXJfd01oRFh2UUlmUjA5SXlLOThKa3RDZFFBZlM3bmFzNGtYQVBfcFc3M0RwMWgzTEd4V1o0MFljY2RrZ245ekpUUVhCQ3VQaWs5WGV2ODZ4bkVSbkhvUFB2MGd4NXNOV2wtMmZJWWl0cmxnN1pKMTRHcnFnXzNkSjJBOUFIS0FVQTVaUDhjWUtSNnlvbXM5VU9pazFHZm9yMzRHSGltc0lCTGotRzN2dHA2OHpHNHBzUXlOdG0tYzk0YjR4dVlVYTJwMjJKUkJicnQ3N3pVdFlYcUxhSnUzb2tLR3ZrTDBxSzlIakpTQ2Z6VkM0bnNlV2tmeTI0QlVkWHFUTVQxU2J3T2ExTC1pY2dONnpUUTdqMl9KNjVjOFFYdnZ3TEVCWDVNckUyeE9MOW1QZU5xZ1VOZE9DMENyLXQ0S28wR2ZpVGFBcmFkM2lRaHpONWw2dzVsQ2VWSDRydTUxSFVlT25mMTE0Nm4wX2ZQTDhxdmZ0MVBxT0w3VUhqMlBoYTR3MUh3ckVoanlaZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T01:18:02.000Z",
+          "kind": "evidence",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55ZmFvWHI2MUp0ZjA5ZnF0XzFGRzNNVV83Wk5QRFc2dXFaWjBRazJKQThrVHd0ci1GWndJRzlxakJxRlo5eXFlTHVuQ2FkR01zM0tfSE92ZGlrcHBrMmc4UDZLUnI5Rl9fWjFzYmZfUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T01:18:02.000Z",
+          "kind": "evidence",
+          "claim_id": 4452,
+          "claim_text": "ঢাকা-জাপান রুটে সপ্তাহে দুটি ফ্লাইট চালাবে বিমান",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55ZmFvWHI2MUp0ZjA5ZnF0XzFGRzNNVV83Wk5QRFc2dXFaWjBRazJKQThrVHd0ci1GWndJRzlxakJxRlo5eXFlTHVuQ2FkR01zM0tfSE92ZGlrcHBrMmc4UDZLUnI5Rl9fWjFzYmZfUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.496Z",
+          "kind": "claim",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.503Z",
+          "kind": "claim",
+          "claim_id": 4448,
+          "claim_text": "দাম্মাম-রিয়াদ রুটে ফ্লাইট চালু করছে বিমান"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.506Z",
+          "kind": "claim",
+          "claim_id": 4449,
+          "claim_text": "রিয়াদে চালু হচ্ছে বিমানের ফ্লাইট, আগামীকাল শুরু হচ্ছে দাম্মাম রুটেও"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.508Z",
+          "kind": "claim",
+          "claim_id": 4450,
+          "claim_text": "ঢাকা-দাম্মাম ফ্লাইট চলাচল শুরু"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.510Z",
+          "kind": "claim",
+          "claim_id": 4451,
+          "claim_text": "দাম্মাম-রিয়াদগামী বিমানের ফ্লাইট আবারও স্থগিত"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.513Z",
+          "kind": "claim",
+          "claim_id": 4452,
+          "claim_text": "ঢাকা-জাপান রুটে সপ্তাহে দুটি ফ্লাইট চালাবে বিমান"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4447,
+          "claim_text": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4448,
+          "claim_text": "দাম্মাম-রিয়াদ রুটে ফ্লাইট চালু করছে বিমান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4449,
+          "claim_text": "রিয়াদে চালু হচ্ছে বিমানের ফ্লাইট, আগামীকাল শুরু হচ্ছে দাম্মাম রুটেও",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4450,
+          "claim_text": "ঢাকা-দাম্মাম ফ্লাইট চলাচল শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4451,
+          "claim_text": "দাম্মাম-রিয়াদগামী বিমানের ফ্লাইট আবারও স্থগিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4452,
+          "claim_text": "ঢাকা-জাপান রুটে সপ্তাহে দুটি ফ্লাইট চালাবে বিমান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 4,
+          "claim_count": 7,
+          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 116,
+          "slug": "national-116",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
+          "cluster_id": 108,
+          "slug": "national-masud-rana-creator",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 77,
+          "slug": "national-77",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
+        },
+        {
+          "cluster_id": 107,
+          "slug": "national-met-office-forecasts",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
+        }
+      ]
     },
     "national-820": {
       "cluster_id": 820,
@@ -62252,7 +63581,7 @@
       "cluster_id": 83,
       "headline": "সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু, মেয়ের অবস্থা আশঙ্কাজনক",
       "first_seen": "2026-10-25T06:43:37.729Z",
-      "last_update": "2026-10-25T09:53:54.057Z",
+      "last_update": "2026-10-25T10:23:23.274Z",
       "claim_count": 4,
       "events": [
         {
@@ -62431,6 +63760,14 @@
           "headline": "খুলনায় মায়ের সামনে মেয়েকে গুলি করে হত্যা"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 43,
           "slug": "national-43",
           "actor_links": 0,
@@ -62542,7 +63879,7 @@
       "cluster_id": 84,
       "headline": "খুলনায় মায়ের সামনে মেয়েকে গুলি করে হত্যা",
       "first_seen": "2026-10-25T06:43:37.734Z",
-      "last_update": "2026-10-25T09:53:54.057Z",
+      "last_update": "2026-10-25T10:23:23.275Z",
       "claim_count": 2,
       "events": [
         {
@@ -62639,6 +63976,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু, মেয়ের অবস্থা আশঙ্কাজনক"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 43,
@@ -62752,7 +64097,7 @@
       "cluster_id": 85,
       "headline": "সৌদিতে দাম্মাম বিমানবন্দরে হামলায় আহত দুই বাংলাদেশির মিলেছে পরিচয়, রয়েছে সুস্থ",
       "first_seen": "2026-10-25T06:43:37.738Z",
-      "last_update": "2026-10-25T09:53:54.058Z",
+      "last_update": "2026-10-25T10:23:23.276Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -62948,6 +64293,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু, মেয়ের অবস্থা আশঙ্কাজনক"
+        },
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
           "cluster_id": 43,
@@ -63982,7 +65335,7 @@
       "cluster_id": 94,
       "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
       "first_seen": "2026-10-25T07:14:38.421Z",
-      "last_update": "2026-10-25T09:53:54.024Z",
+      "last_update": "2026-10-25T10:23:23.237Z",
       "claim_count": 3,
       "events": [
         {
@@ -64156,6 +65509,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 101,
           "slug": "politics-101",
           "actor_links": 0,
@@ -64170,14 +65531,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাঈদীর মামলার বাদীকে গোপনে ‘গার্ড অব অনার’, রাতে কবর খুঁড়ে দাফন করলেন স্ত্রী-মেয়ে-বোন"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         },
         {
           "cluster_id": 132,
@@ -64962,7 +66315,7 @@
       "cluster_id": 7,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-25T04:39:46.587Z",
-      "last_update": "2026-10-25T09:53:54.038Z",
+      "last_update": "2026-10-25T10:23:23.253Z",
       "claim_count": 2,
       "events": [
         {
@@ -65152,7 +66505,7 @@
       "cluster_id": 136,
       "headline": "Bust companies revived in ‘phoenix’ deals more likely to fail again, study finds",
       "first_seen": "2026-10-25T09:53:54.018Z",
-      "last_update": "2026-10-25T09:53:54.020Z",
+      "last_update": "2026-10-25T10:23:23.235Z",
       "claim_count": 2,
       "events": [
         {
@@ -65771,7 +67124,7 @@
       "cluster_id": 108,
       "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার",
       "first_seen": "2026-10-25T08:18:47.200Z",
-      "last_update": "2026-10-25T09:53:54.028Z",
+      "last_update": "2026-10-25T10:23:23.248Z",
       "claim_count": 3,
       "events": [
         {
@@ -65886,6 +67239,14 @@
       ],
       "related": [
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 116,
           "slug": "national-116",
           "actor_links": 0,
@@ -65924,14 +67285,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইশরাক হোসেনের পদত্যাগপত্র গ্রহণ, প্রজ্ঞাপন জারি"
-        },
-        {
-          "cluster_id": 28,
-          "slug": "national-28",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         }
       ]
     },
@@ -65948,7 +67301,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T09:53:54.054Z",
+      "last_update": "2026-10-25T10:23:23.270Z",
       "claim_count": 2,
       "events": [
         {
@@ -66022,6 +67375,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
         {
           "cluster_id": 77,
           "slug": "national-77",
@@ -66184,7 +67545,7 @@
       "cluster_id": 30,
       "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
       "first_seen": "2026-10-25T04:39:46.686Z",
-      "last_update": "2026-10-25T09:53:54.053Z",
+      "last_update": "2026-10-25T10:23:23.270Z",
       "claim_count": 2,
       "events": [
         {
@@ -66317,7 +67678,7 @@
       "cluster_id": 20,
       "headline": "North Korea prepares to restart propaganda loudspeakers as ties sour with South",
       "first_seen": "2026-10-25T04:39:46.644Z",
-      "last_update": "2026-10-25T09:53:54.046Z",
+      "last_update": "2026-10-25T10:23:23.261Z",
       "claim_count": 2,
       "events": [
         {
@@ -66579,6 +67940,14 @@
       ],
       "related": [
         {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
           "cluster_id": 114,
           "slug": "national-114",
           "actor_links": 0,
@@ -66690,7 +68059,7 @@
       "cluster_id": 135,
       "headline": "Signs suggest Thomas Markle Sr may be ‘sex offender of the grossest kind’, says Philippine minister",
       "first_seen": "2026-10-25T09:53:54.014Z",
-      "last_update": "2026-10-25T09:53:54.016Z",
+      "last_update": "2026-10-25T10:23:23.234Z",
       "claim_count": 2,
       "events": [
         {
@@ -66784,12 +68153,42 @@
       "related": []
     },
     "national-storm": {
-      "cluster_id": 4310,
-      "headline": "বৃষ্টি-ঘূর্ণিঝড়ের আচরণ বদলে দেওয়াসহ বিশ্ব আবহাওয়ায় যে পাঁচ প্রভাব ফেলেছে এল নিনো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "cluster_id": 155,
+      "headline": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+      "first_seen": "2026-10-25T10:23:23.682Z",
+      "last_update": "2026-10-25T10:23:23.684Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T09:29:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/a-low-pressure-area-that-has-formed-in-the-bay-of-bengal-could-intensify-into-a-very-severe-cyclonic-storm/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.849Z",
+          "kind": "claim",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4562,
+          "claim_text": "বঙ্গোপসাগরে অতি প্রবল ঘূর্ণিঝড়ের শঙ্কা, আঘাত হানবে কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-strait-of-hormuz": {
@@ -66913,7 +68312,7 @@
       "cluster_id": 69,
       "headline": "‘Unusually large’ multi-state storm causing severe weather for Australia’s east – with more on the way",
       "first_seen": "2026-10-25T06:13:27.947Z",
-      "last_update": "2026-10-25T09:53:54.034Z",
+      "last_update": "2026-10-25T10:23:23.252Z",
       "claim_count": 2,
       "events": [
         {
@@ -68057,7 +69456,7 @@
       "cluster_id": 101,
       "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
       "first_seen": "2026-10-25T08:18:47.160Z",
-      "last_update": "2026-10-25T09:53:54.025Z",
+      "last_update": "2026-10-25T10:23:23.241Z",
       "claim_count": 3,
       "events": [
         {
@@ -68172,6 +69571,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 94,
           "slug": "sports-94",
           "actor_links": 0,
@@ -68186,14 +69593,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাঈদীর মামলার বাদীকে গোপনে ‘গার্ড অব অনার’, রাতে কবর খুঁড়ে দাফন করলেন স্ত্রী-মেয়ে-বোন"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         },
         {
           "cluster_id": 132,
@@ -68496,7 +69895,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 148,
+          "slug": "politics-148",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’"
+        }
+      ]
     },
     "politics-1172": {
       "cluster_id": 1172,
@@ -68672,6 +70080,85 @@
       "events": [],
       "related": []
     },
+    "politics-147": {
+      "cluster_id": 147,
+      "headline": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+      "first_seen": "2026-10-25T10:23:23.225Z",
+      "last_update": "2026-10-25T10:23:23.228Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T09:08:45.000Z",
+          "kind": "evidence",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/0vwsfov67c"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:56:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%b8%e0%a6%bf%e0%a6%95%e0%a7%87%e0%a6%b0-%e0%a6%ae%e0%a7%87%e0%a7%9f%e0%a6%b0-%e0%a6%a5%e0%a7%87%e0%a6%95%e0%a7%87-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:56:18.000Z",
+          "kind": "evidence",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%b8%e0%a6%bf%e0%a6%95%e0%a7%87%e0%a6%b0-%e0%a6%ae%e0%a7%87%e0%a7%9f%e0%a6%b0-%e0%a6%a5%e0%a7%87%e0%a6%95%e0%a7%87-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.814Z",
+          "kind": "claim",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.817Z",
+          "kind": "claim",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4550,
+          "claim_text": "আদালতের রায়ে মেয়র হওয়া শাহাদাত এবার চট্টগ্রাম সিটির প্রশাসক",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4551,
+          "claim_text": "চসিকের মেয়র থেকে প্রশাসক হলেন ডা. শাহাদাত হোসেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "politics-1470": {
       "cluster_id": 1470,
       "headline": "ডেঙ্গু প্রতিরোধে জামায়াতের সপ্তাহব্যাপী কর্মসূচি শুরু আজ",
@@ -68692,12 +70179,91 @@
     },
     "politics-148": {
       "cluster_id": 148,
-      "headline": "সংবিধান সংশোধন কমিটির বৈঠক শুরুর পর প্রতিবাদ জানিয়ে বেরিয়ে গেলেন হাসনাত কাইয়ুম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+      "first_seen": "2026-10-25T10:23:23.238Z",
+      "last_update": "2026-10-25T10:23:23.240Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:02:36.000Z",
+          "kind": "evidence",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QTmNWSFdZdEg1cWtGQ3FJZXlmaVZDQlpma3NlZ0FHSXBLNnZSVktYeUFTazItYWRya3llemMxMUIyVnRXU0VkSXV4ako2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:31:14.000Z",
+          "kind": "evidence",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/jamat-e-islam/976597/%E2%80%98%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%A4-%E0%A6%AA%E0%A6%A4%E0%A6%BF%E0%A6%A4-%E0%A6%AB%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%AC%E0%A6%B2%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.820Z",
+          "kind": "claim",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.824Z",
+          "kind": "claim",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4552,
+          "claim_text": "‘জামায়াত পতিত ফ্যাসিস্টের সঙ্গে হাত মেলাচ্ছে বলে ন্যারেটিভ তৈরি করছে সরকার’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4553,
+          "claim_text": "পাহাড়সম ব্যর্থতা চাপা দিতেই বিরোধীদলের ওপর দায় চাপানোর চেষ্টা করছে সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 117,
+          "slug": "politics-117",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির"
+        }
+      ]
     },
     "politics-1530": {
       "cluster_id": 1530,
@@ -70294,7 +71860,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T09:53:54.033Z",
+      "last_update": "2026-10-25T10:23:23.251Z",
       "claim_count": 4,
       "events": [
         {
@@ -71043,8 +72609,8 @@
       "cluster_id": 133,
       "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
       "first_seen": "2026-10-25T09:53:54.007Z",
-      "last_update": "2026-10-25T09:53:54.010Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T10:23:23.231Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T08:40:01.000Z",
@@ -71077,6 +72643,28 @@
             "source_id": "banglatribune",
             "relation": "supports",
             "url": "https://www.banglatribune.com/entertainment/dhallywood/976613/%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%9A%E0%A6%AE%E0%A6%95-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%A3%E0%A6%BF-%E0%A6%86%E0%A6%B8%E0%A6%9B%E0%A7%87-%E2%80%98%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E2%80%99"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 3949,
+          "claim_text": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:47:25.000Z",
+          "kind": "evidence",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/porimoni-new-movie-farzana-coming-eid/"
           }
         },
         {
@@ -71114,9 +72702,43 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.762Z",
+          "kind": "claim",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4532,
+          "claim_text": "কেক না কেটে জন্মদিনে পরীর সিনেমার ঘোষণা, মুক্তি ঈদে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
         {
           "cluster_id": 137,
           "slug": "national-137",
@@ -71134,20 +72756,20 @@
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডের অবস্থা এখন ভালো, জানিয়েছে পরিবার"
         },
         {
-          "cluster_id": 101,
-          "slug": "politics-101",
+          "cluster_id": 123,
+          "slug": "national-123",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+          "claim_count": 4,
+          "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পাওয়া গেছে: পুলিশ"
         },
         {
-          "cluster_id": 94,
-          "slug": "sports-94",
+          "cluster_id": 11,
+          "slug": "national-11",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
         }
       ]
     },
@@ -71191,7 +72813,7 @@
       "cluster_id": 141,
       "headline": "লামায় মৌচাক এর ৩২তম বার্ষিক সাধারণ সভা ও নির্বাচন অনুষ্ঠিত",
       "first_seen": "2026-10-25T09:53:54.047Z",
-      "last_update": "2026-10-25T09:53:54.049Z",
+      "last_update": "2026-10-25T10:23:23.262Z",
       "claim_count": 2,
       "events": [
         {
@@ -71304,12 +72926,107 @@
     },
     "sports-149": {
       "cluster_id": 149,
-      "headline": "বিসিবির সভায় ক্রিকেটারদের ম্যাচ ফি বাড়লো, এলো আরও যেসব সিদ্ধান্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+      "first_seen": "2026-10-25T10:23:23.244Z",
+      "last_update": "2026-10-25T10:23:23.246Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T06:15:23.000Z",
+          "kind": "evidence",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbXVyUFdsS3NlRFRBbHZhaG11MVlkcFJxVEhKcDBsVlNuQmd1a3NvZjBHTHRMUk5GdU1IU0ZETFhuNkZ4emNkUDBqZm5qeUpt?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:35:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM2ZjcjBpVmVGQ1I2UzhXbW12dmhndF9GQldiVThDMGJDaGNiSTl1Vk96ZU9FeFFjWUR5bF85Szh3cENjLUZUU0xsd1JjdVY5bW9kbEdmQ2RuYjRzUlJqWWd4cFNlSFRkZnBjYnF3dEVmOTNLa2JEUkVqYTdZekpBOXNJd3B4Q3RLMFlMZnF6ODVsQ3BTc0U0RmlUY25mU3R1VGVRUDd3ZWRub3Flb0lwdk5sSkpzNTRxdmNhcVQzNU9PdzBPN3NLSFo1cGlhWjZkenFGTzFrN0QzeTZaX2hIYmhRalMyejNqMDhVcDlUZzFQbGlHMGRJWnloa0F4cnpxWGV4OFNWOEp6LWU5ZzBXSGl6VG5Ddkx6MmdkbGNSNk92VGxWdF8xQTJabHBYT2lXQXVsRE9vSmhid0Rha3ZJM0I1XzNxRW1mOFVVajg1WDlNSC1LSF93aVMzeUVHekdRM3FUY2JjazhBNjhFNjJCalBMQnZRbWhWNTJXd08zN241Yk1fXzJkR0VPN3REX2xXNV96SlVkbklBTkxKdzRXa01tUF9jdlNXSXg3TWozb2VDT2VQbHM1NTlUTUJmY05CQW5henpERlBtNDd2YkxFN3MtRzFaZEhNQllZUUg3cEl5TjZGTTRsMFBJdmR6Q1J1ZVlDamxEOE1aNUpwdXhNU3BDRU5xNHFzazd2R2RjclQxRXNnamxWcTQ3OFJyMG01UGwzOQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T07:35:00.000Z",
+          "kind": "evidence",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM2ZjcjBpVmVGQ1I2UzhXbW12dmhndF9GQldiVThDMGJDaGNiSTl1Vk96ZU9FeFFjWUR5bF85Szh3cENjLUZUU0xsd1JjdVY5bW9kbEdmQ2RuYjRzUlJqWWd4cFNlSFRkZnBjYnF3dEVmOTNLa2JEUkVqYTdZekpBOXNJd3B4Q3RLMFlMZnF6ODVsQ3BTc0U0RmlUY25mU3R1VGVRUDd3ZWRub3Flb0lwdk5sSkpzNTRxdmNhcVQzNU9PdzBPN3NLSFo1cGlhWjZkenFGTzFrN0QzeTZaX2hIYmhRalMyejNqMDhVcDlUZzFQbGlHMGRJWnloa0F4cnpxWGV4OFNWOEp6LWU5ZzBXSGl6VG5Ddkx6MmdkbGNSNk92VGxWdF8xQTJabHBYT2lXQXVsRE9vSmhid0Rha3ZJM0I1XzNxRW1mOFVVajg1WDlNSC1LSF93aVMzeUVHekdRM3FUY2JjazhBNjhFNjJCalBMQnZRbWhWNTJXd08zN241Yk1fXzJkR0VPN3REX2xXNV96SlVkbklBTkxKdzRXa01tUF9jdlNXSXg3TWozb2VDT2VQbHM1NTlUTUJmY05CQW5henpERlBtNDd2YkxFN3MtRzFaZEhNQllZUUg3cEl5TjZGTTRsMFBJdmR6Q1J1ZVlDamxEOE1aNUpwdXhNU3BDRU5xNHFzazd2R2RjclQxRXNnamxWcTQ3OFJyMG01UGwzOQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.826Z",
+          "kind": "claim",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.829Z",
+          "kind": "claim",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল"
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4554,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T10:44:29.927Z",
+          "kind": "verify",
+          "claim_id": 4555,
+          "claim_text": "ব্যালন ডি’অরের দৌড়ে এগিয়ে কেইন, পিছিয়ে ইয়ামাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
+        {
+          "cluster_id": 80,
+          "slug": "national-rabiul-target-to",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
+        },
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
+        }
+      ]
     },
     "sports-1499": {
       "cluster_id": 1499,
@@ -72377,6 +74094,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 123,
           "slug": "national-123",
           "actor_links": 0,
@@ -72745,6 +74470,14 @@
           "headline": "সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু, মেয়ের অবস্থা আশঙ্কাজনক"
         },
         {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
+        },
+        {
           "cluster_id": 43,
           "slug": "national-43",
           "actor_links": 0,
@@ -72793,7 +74526,7 @@
       "cluster_id": 94,
       "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
       "first_seen": "2026-10-25T07:14:38.421Z",
-      "last_update": "2026-10-25T09:53:54.024Z",
+      "last_update": "2026-10-25T10:23:23.237Z",
       "claim_count": 3,
       "events": [
         {
@@ -72967,6 +74700,14 @@
       ],
       "related": [
         {
+          "cluster_id": 133,
+          "slug": "sports-133",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
+        },
+        {
           "cluster_id": 101,
           "slug": "politics-101",
           "actor_links": 0,
@@ -72981,14 +74722,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাঈদীর মামলার বাদীকে গোপনে ‘গার্ড অব অনার’, রাতে কবর খুঁড়ে দাফন করলেন স্ত্রী-মেয়ে-বোন"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         },
         {
           "cluster_id": 132,
