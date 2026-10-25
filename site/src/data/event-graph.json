@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5912,
+    "storyCount": 5914,
     "kinds": [
       "claim",
       "evidence",
@@ -90,12 +90,20 @@
       ],
       "related": [
         {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
           "cluster_id": 94,
           "slug": "sports-94",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ"
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
         }
       ]
     },
@@ -130,7 +138,7 @@
       "cluster_id": 103,
       "headline": "ঢাকা-কক্সবাজার রুটে আরো এক ট্রেন চালু হচ্ছে কাল",
       "first_seen": "2026-10-25T08:18:47.166Z",
-      "last_update": "2026-10-25T08:18:47.168Z",
+      "last_update": "2026-10-25T08:51:44.412Z",
       "claim_count": 2,
       "events": [
         {
@@ -205,6 +213,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 67,
           "slug": "national-67",
           "actor_links": 0,
@@ -245,7 +261,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T08:18:47.192Z",
+      "last_update": "2026-10-25T08:51:44.441Z",
       "claim_count": 2,
       "events": [
         {
@@ -3161,7 +3177,7 @@
       "cluster_id": 106,
       "headline": "বায়তুল মোকাররমের উত্তর গেটে মিছিলের প্রস্তুতির সময় গ্রেপ্তার ১৯",
       "first_seen": "2026-10-25T08:18:47.182Z",
-      "last_update": "2026-10-25T08:18:47.184Z",
+      "last_update": "2026-10-25T08:51:44.435Z",
       "claim_count": 2,
       "events": [
         {
@@ -3336,6 +3352,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "entertainment-119": {
+      "cluster_id": 119,
+      "headline": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+      "first_seen": "2026-10-25T08:51:44.778Z",
+      "last_update": "2026-10-25T08:51:44.780Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:18:01.000Z",
+          "kind": "evidence",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/78n4a8vmes"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.194Z",
+          "kind": "claim",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1193": {
@@ -5385,7 +5440,7 @@
       "cluster_id": 45,
       "headline": "রাষ্ট্রপতি হয়ে আমি আগের মতো কথা বলতে পারি না : মির্জা ফখরুল ইসলাম",
       "first_seen": "2026-10-25T04:39:46.751Z",
-      "last_update": "2026-10-25T08:18:47.202Z",
+      "last_update": "2026-10-25T08:51:44.450Z",
       "claim_count": 2,
       "events": [
         {
@@ -5967,6 +6022,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -6270,12 +6333,20 @@
       ],
       "related": [
         {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
           "cluster_id": 94,
           "slug": "sports-94",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ"
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
         }
       ]
     },
@@ -6337,7 +6408,7 @@
       "cluster_id": 103,
       "headline": "ঢাকা-কক্সবাজার রুটে আরো এক ট্রেন চালু হচ্ছে কাল",
       "first_seen": "2026-10-25T08:18:47.166Z",
-      "last_update": "2026-10-25T08:18:47.168Z",
+      "last_update": "2026-10-25T08:51:44.412Z",
       "claim_count": 2,
       "events": [
         {
@@ -6411,6 +6482,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
         {
           "cluster_id": 67,
           "slug": "national-67",
@@ -6708,11 +6787,41 @@
     },
     "international-118": {
       "cluster_id": 118,
-      "headline": "ইয়েমেনে আবারও যুদ্ধ, সংলাপের আহ্বান জাতিসংঘের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+      "first_seen": "2026-10-25T08:51:44.769Z",
+      "last_update": "2026-10-25T08:51:44.777Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:24:51.000Z",
+          "kind": "evidence",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/q8iymzst0v"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.192Z",
+          "kind": "claim",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1185": {
@@ -6735,11 +6844,41 @@
     },
     "international-119": {
       "cluster_id": 119,
-      "headline": "দিল্লিতে ‘জরুরি অবস্থা’ জারির অভিযোগ আম আদমি পার্টির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+      "first_seen": "2026-10-25T08:51:44.778Z",
+      "last_update": "2026-10-25T08:51:44.780Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:18:01.000Z",
+          "kind": "evidence",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/78n4a8vmes"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.194Z",
+          "kind": "claim",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1192": {
@@ -13519,7 +13658,7 @@
       "cluster_id": 54,
       "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান",
       "first_seen": "2026-10-25T05:08:23.976Z",
-      "last_update": "2026-10-25T08:18:47.199Z",
+      "last_update": "2026-10-25T08:51:44.449Z",
       "claim_count": 7,
       "events": [
         {
@@ -13856,6 +13995,14 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 116,
+          "slug": "national-116",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
         },
         {
           "cluster_id": 19,
@@ -14416,7 +14563,7 @@
       "cluster_id": 77,
       "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস",
       "first_seen": "2026-10-25T06:43:37.682Z",
-      "last_update": "2026-10-25T08:18:47.166Z",
+      "last_update": "2026-10-25T08:51:44.411Z",
       "claim_count": 4,
       "events": [
         {
@@ -14571,6 +14718,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 28,
           "slug": "national-28",
           "actor_links": 0,
@@ -14609,14 +14764,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়"
-        },
-        {
-          "cluster_id": 32,
-          "slug": "national-32",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ বিশ্ব চিকা দিবস, বিজ্ঞানপ্রেমীদের কাছে গুরুত্বপূর্ণ একটি দিন"
         }
       ]
     },
@@ -14642,7 +14789,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T08:18:47.175Z",
+      "last_update": "2026-10-25T08:51:44.415Z",
       "claim_count": 4,
       "events": [
         {
@@ -14805,6 +14952,14 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -14835,14 +14990,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
-        },
-        {
-          "cluster_id": 18,
-          "slug": "national-18",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
         }
       ]
     },
@@ -14868,7 +15015,7 @@
       "cluster_id": 80,
       "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?",
       "first_seen": "2026-10-25T06:43:37.706Z",
-      "last_update": "2026-10-25T08:18:47.186Z",
+      "last_update": "2026-10-25T08:51:44.438Z",
       "claim_count": 2,
       "events": [
         {
@@ -14942,6 +15089,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
         {
           "cluster_id": 21,
           "slug": "national-21",
@@ -15337,7 +15492,7 @@
       "cluster_id": 105,
       "headline": "Ageing users and record deaths – the data behind Britain’s £9.8bn-a-year cocaine habit",
       "first_seen": "2026-10-25T08:18:47.171Z",
-      "last_update": "2026-10-25T08:18:47.173Z",
+      "last_update": "2026-10-25T08:51:44.414Z",
       "claim_count": 2,
       "events": [
         {
@@ -15830,7 +15985,7 @@
       "cluster_id": 10,
       "headline": "এই সংসদের মূল্য দুই আনাও নেই, ৫ বছর টিকবে কিনা সন্দেহ: নাহিদ ইসলাম",
       "first_seen": "2026-10-25T04:39:46.598Z",
-      "last_update": "2026-10-25T08:18:47.180Z",
+      "last_update": "2026-10-25T08:51:44.429Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -15839,7 +15994,7 @@
       "cluster_id": 100,
       "headline": "গঙ্গাচড়ায় অটোরিকশা চোর সন্দেহে দুজনকে পিটিয়ে হত্যা",
       "first_seen": "2026-10-25T08:18:47.156Z",
-      "last_update": "2026-10-25T08:18:47.159Z",
+      "last_update": "2026-10-25T08:51:44.409Z",
       "claim_count": 3,
       "events": [
         {
@@ -16048,8 +16203,8 @@
       "cluster_id": 101,
       "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
       "first_seen": "2026-10-25T08:18:47.160Z",
-      "last_update": "2026-10-25T08:18:47.162Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T08:51:44.408Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T07:44:32.000Z",
@@ -16082,6 +16237,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/politics/qbkmxj4elo"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:25:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2372,
+          "claim_text": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/new-committee-for-jatiya-narishakti-announced-here-are-the-leaders/"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:25:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/new-committee-for-jatiya-narishakti-announced-here-are-the-leaders/"
           }
         },
         {
@@ -16119,9 +16296,60 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.118Z",
+          "kind": "claim",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
+        },
+        {
+          "cluster_id": 1,
+          "slug": "international-1",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সৌদি আরবে ৭ দফা হামলার দাবি হুতিদের, ক্ষেপণাস্ত্রের অংশ পড়ল মক্কায়"
+        }
+      ]
     },
     "national-1010": {
       "cluster_id": 1010,
@@ -16199,7 +16427,7 @@
       "cluster_id": 102,
       "headline": "টিকিট ছাড়াই দেখার সুযোগ বাংলাদেশ-ওয়েস্ট ইন্ডিজ প্রথম টেস্ট",
       "first_seen": "2026-10-25T08:18:47.162Z",
-      "last_update": "2026-10-25T08:18:47.164Z",
+      "last_update": "2026-10-25T08:51:44.410Z",
       "claim_count": 2,
       "events": [
         {
@@ -16401,7 +16629,7 @@
       "cluster_id": 103,
       "headline": "ঢাকা-কক্সবাজার রুটে আরো এক ট্রেন চালু হচ্ছে কাল",
       "first_seen": "2026-10-25T08:18:47.166Z",
-      "last_update": "2026-10-25T08:18:47.168Z",
+      "last_update": "2026-10-25T08:51:44.412Z",
       "claim_count": 2,
       "events": [
         {
@@ -16475,6 +16703,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
         {
           "cluster_id": 67,
           "slug": "national-67",
@@ -16579,7 +16815,7 @@
       "cluster_id": 104,
       "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পেয়েছে পুলিশ",
       "first_seen": "2026-10-25T08:18:47.169Z",
-      "last_update": "2026-10-25T08:18:47.171Z",
+      "last_update": "2026-10-25T08:51:44.413Z",
       "claim_count": 2,
       "events": [
         {
@@ -16765,7 +17001,7 @@
       "cluster_id": 105,
       "headline": "Ageing users and record deaths – the data behind Britain’s £9.8bn-a-year cocaine habit",
       "first_seen": "2026-10-25T08:18:47.171Z",
-      "last_update": "2026-10-25T08:18:47.173Z",
+      "last_update": "2026-10-25T08:51:44.414Z",
       "claim_count": 2,
       "events": [
         {
@@ -16934,7 +17170,7 @@
       "cluster_id": 106,
       "headline": "বায়তুল মোকাররমের উত্তর গেটে মিছিলের প্রস্তুতির সময় গ্রেপ্তার ১৯",
       "first_seen": "2026-10-25T08:18:47.182Z",
-      "last_update": "2026-10-25T08:18:47.184Z",
+      "last_update": "2026-10-25T08:51:44.435Z",
       "claim_count": 2,
       "events": [
         {
@@ -17103,7 +17339,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T08:18:47.192Z",
+      "last_update": "2026-10-25T08:51:44.441Z",
       "claim_count": 2,
       "events": [
         {
@@ -17305,7 +17541,7 @@
       "cluster_id": 108,
       "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার",
       "first_seen": "2026-10-25T08:18:47.200Z",
-      "last_update": "2026-10-25T08:18:47.202Z",
+      "last_update": "2026-10-25T08:51:44.449Z",
       "claim_count": 2,
       "events": [
         {
@@ -17587,7 +17823,7 @@
       "cluster_id": 11,
       "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের",
       "first_seen": "2026-10-25T04:39:46.602Z",
-      "last_update": "2026-10-25T08:18:47.181Z",
+      "last_update": "2026-10-25T08:51:44.429Z",
       "claim_count": 2,
       "events": [
         {
@@ -17661,6 +17897,22 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
         {
           "cluster_id": 5,
           "slug": "sports-5",
@@ -18180,12 +18432,99 @@
     },
     "national-114": {
       "cluster_id": 114,
-      "headline": "সড়কের পাশে দাঁড়িয়ে দাঁত মাজছিলেন, বাসের চাপায় প্রাণ গেল শাশুড়ি-পুত্রবধূর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ",
+      "first_seen": "2026-10-25T08:51:44.417Z",
+      "last_update": "2026-10-25T08:51:44.420Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-24T16:58:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2871,
+          "claim_text": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilAZBVV95cUxQQWtOYmlCVzgydkxGRnQwRnBIMWdRMHRoQzcwWnRZMEJEWkkwQWNzcFYxMHNuOFc5MFZnLTNQdzYxYXBXMjVsdG1welU2X0hXVjNmWWxHUXNJRmpBV0M0bjV1aG9LQ0FCb0dWLWppdHpIckh4d3ljRUFpcDE4Z3RDdnF6TS1PaVJQUHMxaHRlM1U5VkVpRHROZ2RRQXJiamMxa0k0V0VSNURoVnFKSDNQTy05TTZ1LVVoc1hnNjRmcEpmSDZyVHhESWYyUm1fcHlmeXVTTnRyZjBjQmVtT3haTnFQMFFCRjhzTjVtXzBNUnZaOC1IaGZaRlp5M18wOFZCanRvWGQtTXRKU1k4d3NxcDQtUXNPQ2M0Q3VIRFpJUmw4QnJaYVRpeE85NTdEbEt4Nm5oT1JKamhxb1hfWEhnaW5KdW45NUhVbUFWdjBFZ2ZTenhZMGpRbU96SmljNldmYkpCeDQyakJQWDJPaEJmQUxWcU1nczF2NVB3VVBjQ0JIWDRRNFh1aVlxRHFNRlJLZTZRNHVlX0lybGExZnBuUWlOX0tuX3pkQTBWLWprSXlpMWFvTnZsQlpya1BFdWpNNDNGb05kc3l2VmFoUlJqbWV1bGo3dU1laTR3QWVKaFBQUVRrS3psbGdaV2J6YWU4U0RJSXdWa1o3Z2dVRjE4Q0dQQ3VUR0pXSGtaNDV4amhZeFkwS0JUS0FIb2hzOVI0ZFdYYXNzQTY3Skw1eDBMS1g2Y3lUSGFlTE5pYXI4YTVoVUJWRjFpNXFhOVo2U1FwQWtid3JsX1RENzl2bDdmLW1ZOUhSaTlXNDdxS2pzRDRaSEEwSndIYVZLcEJWemZhaXU2d1JTb1VEdVdKY0pYXzRVaDd6S1BKQXpTcnVYV1dVYXZkWGpia2hkZjd3alJoSC1lem1xTVRTZ2NyZmdYMm9CZzVEZVFKLWZKbEhyc0pOWjlLemNSUFRJVjEwZHhDTm82NnVYZVpFeXdESmtKbTdQUzB6N3M5Nk5jaDRlVlR1Sm9kS01DN2xiVWVTWG8wTUFMSw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T05:03:14.000Z",
+          "kind": "evidence",
+          "claim_id": 2871,
+          "claim_text": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwNVRScEZtbnFxX0JTM3hRa3NiVElISDAtNERURUd1YkFTTW5ILXlQNGxWdFhHLVB0R2g5SnVIbVpRaFY2c0tsZEQyZ0tBVE5hbUliUGI2b0s?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T05:03:14.000Z",
+          "kind": "evidence",
+          "claim_id": 2872,
+          "claim_text": "সীমান্তে সাউন্ড গ্রেনেড নিক্ষেপ বিএসএফের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwNVRScEZtbnFxX0JTM3hRa3NiVElISDAtNERURUd1YkFTTW5ILXlQNGxWdFhHLVB0R2g5SnVIbVpRaFY2c0tsZEQyZ0tBVE5hbUliUGI2b0s?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.165Z",
+          "kind": "claim",
+          "claim_id": 2871,
+          "claim_text": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.168Z",
+          "kind": "claim",
+          "claim_id": 2872,
+          "claim_text": "সীমান্তে সাউন্ড গ্রেনেড নিক্ষেপ বিএসএফের"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2871,
+          "claim_text": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2872,
+          "claim_text": "সীমান্তে সাউন্ড গ্রেনেড নিক্ষেপ বিএসএফের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 80,
+          "slug": "national-rabiul-target-to",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
+        },
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
+        }
+      ]
     },
     "national-1140": {
       "cluster_id": 1140,
@@ -18261,12 +18600,211 @@
     },
     "national-115": {
       "cluster_id": 115,
-      "headline": "মিরপুরে চলন্ত দুটি বাসে আগুন ও অন্যান্য খবর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+      "first_seen": "2026-10-25T08:51:44.422Z",
+      "last_update": "2026-10-25T08:51:44.426Z",
+      "claim_count": 4,
+      "events": [
+        {
+          "ts": "2026-10-24T06:47:11.000Z",
+          "kind": "evidence",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/816953/%E0%A6%AC%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%8B%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A7%81%E0%A6%B8%E0%A7%8D%E0%A6%AA%E0%A6%B7%E0%A7%8D%E0%A6%9F-%"
+          }
+        },
+        {
+          "ts": "2026-10-24T06:47:11.000Z",
+          "kind": "evidence",
+          "claim_id": 2874,
+          "claim_text": "বঙ্গোপসাগরে সুস্পষ্ট লঘুচাপ, নৌযানকে সতর্কবার্তা",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://www.ittefaq.com.bd/816953/%E0%A6%AC%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%8B%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A7%81%E0%A6%B8%E0%A7%8D%E0%A6%AA%E0%A6%B7%E0%A7%8D%E0%A6%9F-%"
+          }
+        },
+        {
+          "ts": "2026-10-24T07:46:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWcG02bGR3MzZqRmg0N0JiSlU0S3MySkN6aHZRUnhFdFppZmFjMXp6TlBWbXRJYlFrV1VPLTE0bkg0a3BiMlJiUGdycHYydw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-24T07:46:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2875,
+          "claim_text": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWcG02bGR3MzZqRmg0N0JiSlU0S3MySkN6aHZRUnhFdFppZmFjMXp6TlBWbXRJYlFrV1VPLTE0bkg0a3BiMlJiUGdycHYydw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-24T19:07:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/weather/976530/%E0%A6%AC%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%8B%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A7%8D%E0%A6%A8%E0%A6%9A%E0%A6%BE%E0%A6%AA-%E0%A7%AA-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A7%A7-%E0%A6%A8%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-25T02:13:34.000Z",
+          "kind": "evidence",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9VR0VieFhnTmowYVRXWFpQVFFwQ0VtVEplVXNkaGdHaksxd3V4OW9Bb1VvUFpXS3Iyb1N2Q3c4SzUxbmVsaE9GQ1ZBbDVzSFhkSHdUeHR2cDdiZzZRcVRSMWVSUGZGakVuM3lhWmJNMA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T02:13:34.000Z",
+          "kind": "evidence",
+          "claim_id": 2876,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ, সমুদ্রবন্দরে ১ নম্বর সতর্কতা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9VR0VieFhnTmowYVRXWFpQVFFwQ0VtVEplVXNkaGdHaksxd3V4OW9Bb1VvUFpXS3Iyb1N2Q3c4SzUxbmVsaE9GQ1ZBbDVzSFhkSHdUeHR2cDdiZzZRcVRSMWVSUGZGakVuM3lhWmJNMA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.170Z",
+          "kind": "claim",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.175Z",
+          "kind": "claim",
+          "claim_id": 2874,
+          "claim_text": "বঙ্গোপসাগরে সুস্পষ্ট লঘুচাপ, নৌযানকে সতর্কবার্তা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.176Z",
+          "kind": "claim",
+          "claim_id": 2875,
+          "claim_text": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.178Z",
+          "kind": "claim",
+          "claim_id": 2876,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ, সমুদ্রবন্দরে ১ নম্বর সতর্কতা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2873,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2874,
+          "claim_text": "বঙ্গোপসাগরে সুস্পষ্ট লঘুচাপ, নৌযানকে সতর্কবার্তা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2875,
+          "claim_text": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2876,
+          "claim_text": "বঙ্গোপসাগরে নিম্নচাপ, সমুদ্রবন্দরে ১ নম্বর সতর্কতা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 77,
+          "slug": "national-77",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
+        },
+        {
+          "cluster_id": 116,
+          "slug": "national-116",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 103,
+          "slug": "national-103",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা-কক্সবাজার রুটে আরো এক ট্রেন চালু হচ্ছে কাল"
+        },
+        {
+          "cluster_id": 81,
+          "slug": "national-81",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা"
+        },
+        {
+          "cluster_id": 78,
+          "slug": "politics-78",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
+        },
+        {
+          "cluster_id": 67,
+          "slug": "national-67",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাঁচ দিনের ছুটি শেষে আবারও কর্মব্যস্ত রাজধানী"
+        }
+      ]
     },
     "national-1150": {
       "cluster_id": 1150,
@@ -18351,12 +18889,155 @@
     },
     "national-116": {
       "cluster_id": 116,
-      "headline": "এনসিটি নিয়ে ডিপি ওয়ার্ল্ডের সঙ্গে চুক্তিতে কী রয়েছে, জানালেন আশিক চৌধুরী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা",
+      "first_seen": "2026-10-25T08:51:44.431Z",
+      "last_update": "2026-10-25T08:51:44.435Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-10-22T06:49:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2877,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxQOTBpNTAwWXpvcl9NbXZwejZxWFRmUWtEVUxXeFVLajVIUmZWY1BubUJ0RnVQc2I4d01PQmtHTXMzdFRNZU10QnpzT1FVLTNDM3NQeTdCcnNmX0d5UWZwZXVJUWJnVUwxVlNBc1RLRWJ2Yk1URXZwSl9VemFVcHZNWk9HTTMwcUhfNWk2ZjVMZmJRQ1ZteXRTWUUtb2Z6UDRrQXh6SWI2di1yeW9JUm56NTN3V09JQ1I4SzJVOXhtTUE3OVd6b3hraTJLcl9lYzJzdjVQejMtQ2tjRWZYU3BkQzd3U2MxaUMyV1RybTJrWkhaUnZXVk91OTI3bVlKMUY5UXE2M2VCcXVuMmN1UjR1SUNXcHlDbDBuZnZORFJpQjQtNmVMM2JEUEdMYnQwSU5rTEJ5UUVlWEtiMnNzVUNBd1gwaDBfLU1ZUWdpXzhPeHpzLXlZMTVkNFk2ZzhUaWhvZ1Q0TVFtZDZpUml6dWt0WW9mUll2XzdjQUFVVHRVYnBzdkotV3lKT3JxckVKbmpFWXFSZDQtT0Z1Wm5YUFM0STExQVdLT3Rvdk1IYUJkTWl6OVlOLUhualZPZnFvYTlMRTdoOWpUdkRvWHJGQTQ5UjFuenNHakVMNUtjLV83U3ppQU5uaG5GeGJvVzRxY0tlT2xtZ1EyZnc5U01EYmJnQXpQY2tFclgyb3hCZEp3ZGs0TUpwOERZcmp2Z1hMOTluWTZhU0RhdFAyMUJqcUxMWmhFR3RHd3lnM3NYZmZKTUJVbUFCaWfSAcsEQVVfeXFMT3F2cFAwdUdtclJYSWlhU2MwNkV2RnhibDRMN1VNXy1URlhJelg2TUpxTXVzRHVZam50b3RxZlFYQnNHLVJuMEd1a243UTF6cFlZaVFMdktwMFU3SWVQZ09rY3pvWFFoR1AzYW9qTGJfRG15ZGNaREQ1S3g1NU9PNkpmMl93UnVlam5zWE1GdEpaN0p3WDZMVllnaW9YY05ZZDlpR2FNVFhFTFJNa25Pem1vcG5PSHM3aUpCeHpRdDRMazdFc2ZPLUZ0NGZMUFF0bWZfbHBYT1VtMDNMWEMxMlgzRkJEMXRjbEtCakx6OEV3OE40ZUFpMXZlQThrd3dSMFNucmozTkx3MXljSXZLa21sN2JwWTR4aXV6aUE2UDRMb1pzVkxMMzQ2Uk1SOEZnbzBkbURXRGwzbnRhV2EtMm5jX0YxZXBkQU9CSHpKZzV4U3pQZTY0Yk5XS3J5ME0xOEpnUzJEMlFURllaWXk0UWI1UXpiUFc1b1BtTHI5OFBaUUdpelktSG01eXNCaFZPc3ZkOURLYU96UVhPNDZaeHNlN2xrVzJzZGVyRURLeUZIVXlNNTl1VjhZUGc0bUgwVmhWQnlvdENXUHVFdURoSkZOalhqOXpqOERhaXdwTzEyanplYXJZVHRNM2tWN08zZTY2b3BFZnlBbkhWbm12Q0Y4NGlwUnBaRFhSTTEwdldsYjhRWnl3ZUFiX2pmN2RseFBwNTNoWDlGczNobThQaUpwWUVENURYeW5uOGNveVNsZ2hQdjhrWk5VSVk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-22T06:49:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2878,
+          "claim_text": "নারায়ণগঞ্জে যুবদল নেতাকে কুপিয়ে হত্যার অভিযোগ",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxQOTBpNTAwWXpvcl9NbXZwejZxWFRmUWtEVUxXeFVLajVIUmZWY1BubUJ0RnVQc2I4d01PQmtHTXMzdFRNZU10QnpzT1FVLTNDM3NQeTdCcnNmX0d5UWZwZXVJUWJnVUwxVlNBc1RLRWJ2Yk1URXZwSl9VemFVcHZNWk9HTTMwcUhfNWk2ZjVMZmJRQ1ZteXRTWUUtb2Z6UDRrQXh6SWI2di1yeW9JUm56NTN3V09JQ1I4SzJVOXhtTUE3OVd6b3hraTJLcl9lYzJzdjVQejMtQ2tjRWZYU3BkQzd3U2MxaUMyV1RybTJrWkhaUnZXVk91OTI3bVlKMUY5UXE2M2VCcXVuMmN1UjR1SUNXcHlDbDBuZnZORFJpQjQtNmVMM2JEUEdMYnQwSU5rTEJ5UUVlWEtiMnNzVUNBd1gwaDBfLU1ZUWdpXzhPeHpzLXlZMTVkNFk2ZzhUaWhvZ1Q0TVFtZDZpUml6dWt0WW9mUll2XzdjQUFVVHRVYnBzdkotV3lKT3JxckVKbmpFWXFSZDQtT0Z1Wm5YUFM0STExQVdLT3Rvdk1IYUJkTWl6OVlOLUhualZPZnFvYTlMRTdoOWpUdkRvWHJGQTQ5UjFuenNHakVMNUtjLV83U3ppQU5uaG5GeGJvVzRxY0tlT2xtZ1EyZnc5U01EYmJnQXpQY2tFclgyb3hCZEp3ZGs0TUpwOERZcmp2Z1hMOTluWTZhU0RhdFAyMUJqcUxMWmhFR3RHd3lnM3NYZmZKTUJVbUFCaWfSAcsEQVVfeXFMT3F2cFAwdUdtclJYSWlhU2MwNkV2RnhibDRMN1VNXy1URlhJelg2TUpxTXVzRHVZam50b3RxZlFYQnNHLVJuMEd1a243UTF6cFlZaVFMdktwMFU3SWVQZ09rY3pvWFFoR1AzYW9qTGJfRG15ZGNaREQ1S3g1NU9PNkpmMl93UnVlam5zWE1GdEpaN0p3WDZMVllnaW9YY05ZZDlpR2FNVFhFTFJNa25Pem1vcG5PSHM3aUpCeHpRdDRMazdFc2ZPLUZ0NGZMUFF0bWZfbHBYT1VtMDNMWEMxMlgzRkJEMXRjbEtCakx6OEV3OE40ZUFpMXZlQThrd3dSMFNucmozTkx3MXljSXZLa21sN2JwWTR4aXV6aUE2UDRMb1pzVkxMMzQ2Uk1SOEZnbzBkbURXRGwzbnRhV2EtMm5jX0YxZXBkQU9CSHpKZzV4U3pQZTY0Yk5XS3J5ME0xOEpnUzJEMlFURllaWXk0UWI1UXpiUFc1b1BtTHI5OFBaUUdpelktSG01eXNCaFZPc3ZkOURLYU96UVhPNDZaeHNlN2xrVzJzZGVyRURLeUZIVXlNNTl1VjhZUGc0bUgwVmhWQnlvdENXUHVFdURoSkZOalhqOXpqOERhaXdwTzEyanplYXJZVHRNM2tWN08zZTY2b3BFZnlBbkhWbm12Q0Y4NGlwUnBaRFhSTTEwdldsYjhRWnl3ZUFiX2pmN2RseFBwNTNoWDlGczNobThQaUpwWUVENURYeW5uOGNveVNsZ2hQdjhrWk5VSVk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-24T08:14:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2877,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0yaEVTUVd4R3lFLWtRVmFpVjRXV3JrN1FEdVItLUhPWUd5ZW9ISHo0dUo5MmdLUjRjcVhRME5LVmpweGhTSGdYQThaaDBfZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-24T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2877,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94Q1Vjbms2T3ZlRDBSRkVaZUhYUVFvWWpyV1JDd1BySmRJQ2Yxemx2UmhCRkhEZ1QyOFJacHI2ZUVnWFFCVGtkNklEd19FTEZuNUhrZTBPX0NKVnpIbDJjS1hJeV95MzU2WEFZVXFQdi1ZNHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-24T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 2879,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94Q1Vjbms2T3ZlRDBSRkVaZUhYUVFvWWpyV1JDd1BySmRJQ2Yxemx2UmhCRkhEZ1QyOFJacHI2ZUVnWFFCVGtkNklEd19FTEZuNUhrZTBPX0NKVnpIbDJjS1hJeV95MzU2WEFZVXFQdi1ZNHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.181Z",
+          "kind": "claim",
+          "claim_id": 2877,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.185Z",
+          "kind": "claim",
+          "claim_id": 2878,
+          "claim_text": "নারায়ণগঞ্জে যুবদল নেতাকে কুপিয়ে হত্যার অভিযোগ"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.187Z",
+          "kind": "claim",
+          "claim_id": 2879,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2877,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2878,
+          "claim_text": "নারায়ণগঞ্জে যুবদল নেতাকে কুপিয়ে হত্যার অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2879,
+          "claim_text": "খুলনায় যুবদল নেতাকে গুলি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
+          "cluster_id": 54,
+          "slug": "national-54",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান"
+        },
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 4,
+          "slug": "national-4",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "যুবদল নেতা হত্যার ঘটনায় ছাত্রদল নেতাকে প্রধান আসামি করে মামলা"
+        }
+      ]
     },
     "national-1160": {
       "cluster_id": 1160,
@@ -18441,11 +19122,41 @@
     },
     "national-117": {
       "cluster_id": 117,
-      "headline": "বিমানবন্দরে আটকে দেওয়া হয়েছে বৈষম্যবিরোধী আন্দোলনের নেতা মাহদীকে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+      "first_seen": "2026-10-25T08:51:44.765Z",
+      "last_update": "2026-10-25T08:51:44.768Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:38:02.000Z",
+          "kind": "evidence",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-bnp-came-to-power-by-begging-the-awami-league-for-votes-jamaat-amir/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.189Z",
+          "kind": "claim",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1170": {
@@ -18531,11 +19242,41 @@
     },
     "national-118": {
       "cluster_id": 118,
-      "headline": "কুমিল্লায় অপ্রতিম হত্যাকাণ্ডের ঘটনায় আটক তিনজন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+      "first_seen": "2026-10-25T08:51:44.769Z",
+      "last_update": "2026-10-25T08:51:44.777Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:24:51.000Z",
+          "kind": "evidence",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/q8iymzst0v"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.192Z",
+          "kind": "claim",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2881,
+          "claim_text": "ছাত্রকে ধর্ষণের অভিযোগ, লক্ষ্মীপুরে মাদ্রাসা থেকে এক শিক্ষক গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1180": {
@@ -18630,11 +19371,41 @@
     },
     "national-119": {
       "cluster_id": 119,
-      "headline": "এনসিটি ইজারা প্রক্রিয়া: এবার আন্দোলনে শ্রমিক দল ও বন্দর রক্ষা পরিষদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+      "first_seen": "2026-10-25T08:51:44.778Z",
+      "last_update": "2026-10-25T08:51:44.780Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:18:01.000Z",
+          "kind": "evidence",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/78n4a8vmes"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.194Z",
+          "kind": "claim",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2882,
+          "claim_text": "ঢাকা বিশ্ববিদ্যালয়ের ‘ক’ ইউনিটে প্রথম অনিক এখন কোথায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1190": {
@@ -18731,7 +19502,7 @@
       "cluster_id": 12,
       "headline": "সেতুর নিচে পড়ে ছিলেন নিখোঁজ মাদ্রাসাশিক্ষক, হাসপাতালে নেওয়ার পথে মৃত্যু",
       "first_seen": "2026-10-25T04:39:46.606Z",
-      "last_update": "2026-10-25T08:18:47.181Z",
+      "last_update": "2026-10-25T08:51:44.430Z",
       "claim_count": 2,
       "events": [
         {
@@ -18808,11 +19579,41 @@
     },
     "national-120": {
       "cluster_id": 120,
-      "headline": "সাজেকের সড়ক অবরোধ কর্মসূচিতে পরিবর্তন, শুরু হবে কাল সকাল থেকে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+      "first_seen": "2026-10-25T08:51:44.781Z",
+      "last_update": "2026-10-25T08:51:44.783Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:14:17.000Z",
+          "kind": "evidence",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/higher-education/8svebyfcsx"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.196Z",
+          "kind": "claim",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1200": {
@@ -18907,11 +19708,41 @@
     },
     "national-121": {
       "cluster_id": 121,
-      "headline": "শিগগিরই কি ক্যানসার ভ্যাকসিন আবিষ্কার হচ্ছে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রাথমিক বিদ্যালয়ে ইংরেজি শিক্ষা: বাস্তব চিত্র ও উত্তরণ ভাবনা",
+      "first_seen": "2026-10-25T08:51:44.785Z",
+      "last_update": "2026-10-25T08:51:44.787Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:10:25.000Z",
+          "kind": "evidence",
+          "claim_id": 2884,
+          "claim_text": "প্রাথমিক বিদ্যালয়ে ইংরেজি শিক্ষা: বাস্তব চিত্র ও উত্তরণ ভাবনা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/higher-education/x14b6mawax"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.199Z",
+          "kind": "claim",
+          "claim_id": 2884,
+          "claim_text": "প্রাথমিক বিদ্যালয়ে ইংরেজি শিক্ষা: বাস্তব চিত্র ও উত্তরণ ভাবনা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2884,
+          "claim_text": "প্রাথমিক বিদ্যালয়ে ইংরেজি শিক্ষা: বাস্তব চিত্র ও উত্তরণ ভাবনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1210": {
@@ -20610,7 +21441,7 @@
       "cluster_id": 14,
       "headline": "‘হামলাকারীদের লক্ষ্য ছিলাম আমি’, গাড়িতে গুলির পর সংগীতশিল্পী আসিফ",
       "first_seen": "2026-10-25T04:39:46.613Z",
-      "last_update": "2026-10-25T08:18:47.186Z",
+      "last_update": "2026-10-25T08:51:44.437Z",
       "claim_count": 5,
       "events": [
         {
@@ -20804,6 +21635,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
         {
           "cluster_id": 78,
           "slug": "politics-78",
@@ -27281,7 +28120,7 @@
       "cluster_id": 2,
       "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
       "first_seen": "2026-10-25T04:39:46.545Z",
-      "last_update": "2026-10-25T08:18:47.155Z",
+      "last_update": "2026-10-25T08:51:44.403Z",
       "claim_count": 30,
       "events": [
         {
@@ -28912,7 +29751,7 @@
       "cluster_id": 20,
       "headline": "North Korea prepares to restart propaganda loudspeakers as ties sour with South",
       "first_seen": "2026-10-25T04:39:46.644Z",
-      "last_update": "2026-10-25T08:18:47.185Z",
+      "last_update": "2026-10-25T08:51:44.436Z",
       "claim_count": 2,
       "events": [
         {
@@ -30089,6 +30928,14 @@
           "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
         },
         {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
+        {
           "cluster_id": 102,
           "slug": "politics-102",
           "actor_links": 0,
@@ -30111,14 +30958,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
-        },
-        {
-          "cluster_id": 53,
-          "slug": "national-53",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভোট ডাকাতি করব না, কাউকে করতেও দেব না: মিয়া গোলাম পরওয়ার"
         }
       ]
     },
@@ -35019,7 +35858,7 @@
       "cluster_id": 26,
       "headline": "উত্তরাধিকার সূত্রে পাওয়া জমির নামজারিতে যেসব কাগজপত্র লাগবে",
       "first_seen": "2026-10-25T04:39:46.668Z",
-      "last_update": "2026-10-25T08:18:47.188Z",
+      "last_update": "2026-10-25T08:51:44.438Z",
       "claim_count": 2,
       "events": [
         {
@@ -37381,12 +38220,12 @@
           "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
         },
         {
-          "cluster_id": 108,
-          "slug": "national-masud-rana-creator",
+          "cluster_id": 116,
+          "slug": "national-116",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার"
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
         }
       ]
     },
@@ -38276,7 +39115,7 @@
       "cluster_id": 29,
       "headline": "কার্যক্রম নিষিদ্ধ আওয়ামী লীগ সভাপতি শেখ হাসিনার ফেরার বার্তায় মাইকিং, গ্রেপ্তার ২",
       "first_seen": "2026-10-25T04:39:46.683Z",
-      "last_update": "2026-10-25T08:18:47.188Z",
+      "last_update": "2026-10-25T08:51:44.439Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -39179,7 +40018,7 @@
       "cluster_id": 30,
       "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
       "first_seen": "2026-10-25T04:39:46.686Z",
-      "last_update": "2026-10-25T08:18:47.189Z",
+      "last_update": "2026-10-25T08:51:44.440Z",
       "claim_count": 2,
       "events": [
         {
@@ -41618,7 +42457,7 @@
       "cluster_id": 33,
       "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়",
       "first_seen": "2026-10-25T04:39:46.696Z",
-      "last_update": "2026-10-25T08:18:47.193Z",
+      "last_update": "2026-10-25T08:51:44.442Z",
       "claim_count": 7,
       "events": [
         {
@@ -42650,7 +43489,7 @@
       "cluster_id": 34,
       "headline": "নিরাপত্তা না পেয়ে থানায় রুমিন ফারহানা: ওসিকে বললেন, আপনি আওয়ামী লীগের ‘চোর’ ওসি",
       "first_seen": "2026-10-25T04:39:46.703Z",
-      "last_update": "2026-10-25T08:18:47.194Z",
+      "last_update": "2026-10-25T08:51:44.443Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -47147,7 +47986,7 @@
       "cluster_id": 39,
       "headline": "বুকে ব্যথা নিয়ে হাসপাতালে ভর্তি স্থানীয় সরকার মন্ত্রী আব্দুল মঈন খান",
       "first_seen": "2026-10-25T04:39:46.727Z",
-      "last_update": "2026-10-25T08:18:47.198Z",
+      "last_update": "2026-10-25T08:51:44.448Z",
       "claim_count": 2,
       "events": [
         {
@@ -48268,6 +49107,22 @@
       ],
       "related": [
         {
+          "cluster_id": 116,
+          "slug": "national-116",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 104,
           "slug": "sports-104",
           "actor_links": 0,
@@ -48298,14 +49153,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
-        },
-        {
-          "cluster_id": 3,
-          "slug": "national-3",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
         }
       ]
     },
@@ -52334,7 +53181,7 @@
       "cluster_id": 45,
       "headline": "রাষ্ট্রপতি হয়ে আমি আগের মতো কথা বলতে পারি না : মির্জা ফখরুল ইসলাম",
       "first_seen": "2026-10-25T04:39:46.751Z",
-      "last_update": "2026-10-25T08:18:47.202Z",
+      "last_update": "2026-10-25T08:51:44.450Z",
       "claim_count": 2,
       "events": [
         {
@@ -53737,7 +54584,7 @@
       "cluster_id": 54,
       "headline": "প্রধানমন্ত্রী হওয়ার পর প্রথমবার রাজশাহীতে তারেক রহমান",
       "first_seen": "2026-10-25T05:08:23.976Z",
-      "last_update": "2026-10-25T08:18:47.199Z",
+      "last_update": "2026-10-25T08:51:44.449Z",
       "claim_count": 7,
       "events": [
         {
@@ -54074,6 +54921,14 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 116,
+          "slug": "national-116",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খুলনায় যুবদল নেতাকে গুলি করে পালাল দুর্বৃত্তরা"
         },
         {
           "cluster_id": 19,
@@ -55887,7 +56742,7 @@
       "cluster_id": 67,
       "headline": "পাঁচ দিনের ছুটি শেষে আবারও কর্মব্যস্ত রাজধানী",
       "first_seen": "2026-10-25T06:13:27.940Z",
-      "last_update": "2026-10-25T08:18:47.175Z",
+      "last_update": "2026-10-25T08:51:44.414Z",
       "claim_count": 2,
       "events": [
         {
@@ -55961,6 +56816,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
         {
           "cluster_id": 103,
           "slug": "national-103",
@@ -56216,7 +57079,7 @@
       "cluster_id": 69,
       "headline": "‘Unusually large’ multi-state storm causing severe weather for Australia’s east – with more on the way",
       "first_seen": "2026-10-25T06:13:27.947Z",
-      "last_update": "2026-10-25T08:18:47.176Z",
+      "last_update": "2026-10-25T08:51:44.416Z",
       "claim_count": 2,
       "events": [
         {
@@ -56385,7 +57248,7 @@
       "cluster_id": 7,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-25T04:39:46.587Z",
-      "last_update": "2026-10-25T08:18:47.178Z",
+      "last_update": "2026-10-25T08:51:44.427Z",
       "claim_count": 2,
       "events": [
         {
@@ -57323,7 +58186,7 @@
       "cluster_id": 77,
       "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস",
       "first_seen": "2026-10-25T06:43:37.682Z",
-      "last_update": "2026-10-25T08:18:47.166Z",
+      "last_update": "2026-10-25T08:51:44.411Z",
       "claim_count": 4,
       "events": [
         {
@@ -57478,6 +58341,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 28,
           "slug": "national-28",
           "actor_links": 0,
@@ -57516,14 +58387,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "নতুন পে-স্কেলে শিক্ষকদের বেতন প্রাপ্তির সম্ভাব্য সময় জানাল অর্থ মন্ত্রণালয়"
-        },
-        {
-          "cluster_id": 32,
-          "slug": "national-32",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আজ বিশ্ব চিকা দিবস, বিজ্ঞানপ্রেমীদের কাছে গুরুত্বপূর্ণ একটি দিন"
         }
       ]
     },
@@ -57603,7 +58466,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T08:18:47.175Z",
+      "last_update": "2026-10-25T08:51:44.415Z",
       "claim_count": 4,
       "events": [
         {
@@ -57766,6 +58629,14 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -57796,14 +58667,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
-        },
-        {
-          "cluster_id": 18,
-          "slug": "national-18",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
         }
       ]
     },
@@ -58145,6 +59008,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 78,
           "slug": "politics-78",
           "actor_links": 0,
@@ -58166,7 +59037,7 @@
       "cluster_id": 80,
       "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?",
       "first_seen": "2026-10-25T06:43:37.706Z",
-      "last_update": "2026-10-25T08:18:47.186Z",
+      "last_update": "2026-10-25T08:51:44.438Z",
       "claim_count": 2,
       "events": [
         {
@@ -58240,6 +59111,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
         {
           "cluster_id": 21,
           "slug": "national-21",
@@ -58419,6 +59298,14 @@
       ],
       "related": [
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -58530,7 +59417,7 @@
       "cluster_id": 82,
       "headline": "রিয়াদে চালু হচ্ছে বিমানের ফ্লাইট, আগামীকাল শুরু হচ্ছে দাম্মাম রুটেও",
       "first_seen": "2026-10-25T06:43:37.723Z",
-      "last_update": "2026-10-25T08:18:47.180Z",
+      "last_update": "2026-10-25T08:51:44.428Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -58620,7 +59507,7 @@
       "cluster_id": 83,
       "headline": "সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু, মেয়ের অবস্থা আশঙ্কাজনক",
       "first_seen": "2026-10-25T06:43:37.729Z",
-      "last_update": "2026-10-25T08:18:47.195Z",
+      "last_update": "2026-10-25T08:51:44.443Z",
       "claim_count": 4,
       "events": [
         {
@@ -58910,7 +59797,7 @@
       "cluster_id": 84,
       "headline": "খুলনায় মায়ের সামনে মেয়েকে গুলি করে হত্যা",
       "first_seen": "2026-10-25T06:43:37.734Z",
-      "last_update": "2026-10-25T08:18:47.195Z",
+      "last_update": "2026-10-25T08:51:44.444Z",
       "claim_count": 2,
       "events": [
         {
@@ -59120,7 +60007,7 @@
       "cluster_id": 85,
       "headline": "সৌদিতে দাম্মাম বিমানবন্দরে হামলায় আহত দুই বাংলাদেশির মিলেছে পরিচয়, রয়েছে সুস্থ",
       "first_seen": "2026-10-25T06:43:37.738Z",
-      "last_update": "2026-10-25T08:18:47.196Z",
+      "last_update": "2026-10-25T08:51:44.445Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -59219,7 +60106,7 @@
       "cluster_id": 86,
       "headline": "সুন্দরবন পরিদর্শন শেষে মোংলার পথে প্রধানমন্ত্রী",
       "first_seen": "2026-10-25T06:43:37.744Z",
-      "last_update": "2026-10-25T08:18:47.197Z",
+      "last_update": "2026-10-25T08:51:44.446Z",
       "claim_count": 2,
       "events": [
         {
@@ -59420,7 +60307,7 @@
       "cluster_id": 87,
       "headline": "প্রধানমন্ত্রীর সফরে অংশ না নেওয়ার নির্দেশ, দেশে ফিরলেন জাপানে নিযুক্ত রাষ্ট্রদূত",
       "first_seen": "2026-10-25T06:43:37.747Z",
-      "last_update": "2026-10-25T08:18:47.197Z",
+      "last_update": "2026-10-25T08:51:44.447Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -60348,16 +61235,27 @@
     },
     "national-94": {
       "cluster_id": 94,
-      "headline": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ",
+      "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
       "first_seen": "2026-10-25T07:14:38.421Z",
-      "last_update": "2026-10-25T08:18:47.174Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T08:51:44.406Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T04:04:48.000Z",
           "kind": "evidence",
           "claim_id": 1931,
           "claim_text": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/a9c087v7mk"
+          }
+        },
+        {
+          "ts": "2026-10-25T04:04:48.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -60380,6 +61278,17 @@
           "kind": "evidence",
           "claim_id": 1932,
           "claim_text": "কেন ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/alvarez-argentina-barcelona-atletico/"
+          }
+        },
+        {
+          "ts": "2026-10-25T06:58:29.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
           "detail": {
             "source_id": "channeli",
             "relation": "supports",
@@ -60435,6 +61344,17 @@
           }
         },
         {
+          "ts": "2026-10-25T08:35:30.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/976598/%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%B8%E0%A7%87%E0%A6%B2%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A7%9F-%E0%A6%AF%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%87%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B6-%E0%A6%95%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%AC%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
           "ts": "2026-10-25T08:41:14.237Z",
           "kind": "verify",
           "claim_id": 1931,
@@ -60457,9 +61377,63 @@
             "confidence": 13,
             "reason": "re-verify"
           }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.088Z",
+          "kind": "claim",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 40,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:58.327Z",
+          "kind": "conflict",
+          "claim_id": 1932,
+          "claim_text": "কেন ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c1932\",\"c2841\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
+        },
         {
           "cluster_id": 1,
           "slug": "international-1",
@@ -61227,7 +62201,7 @@
       "cluster_id": 7,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-25T04:39:46.587Z",
-      "last_update": "2026-10-25T08:18:47.178Z",
+      "last_update": "2026-10-25T08:51:44.427Z",
       "claim_count": 2,
       "events": [
         {
@@ -61957,7 +62931,7 @@
       "cluster_id": 108,
       "headline": "ডায়মন্ড ওয়ার্ল্ডের এমডি দিলীপ কুমার আগরওয়ালা গ্রেপ্তার",
       "first_seen": "2026-10-25T08:18:47.200Z",
-      "last_update": "2026-10-25T08:18:47.202Z",
+      "last_update": "2026-10-25T08:51:44.449Z",
       "claim_count": 2,
       "events": [
         {
@@ -62086,7 +63060,7 @@
       "cluster_id": 107,
       "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩",
       "first_seen": "2026-10-25T08:18:47.190Z",
-      "last_update": "2026-10-25T08:18:47.192Z",
+      "last_update": "2026-10-25T08:51:44.441Z",
       "claim_count": 2,
       "events": [
         {
@@ -62322,7 +63296,7 @@
       "cluster_id": 30,
       "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
       "first_seen": "2026-10-25T04:39:46.686Z",
-      "last_update": "2026-10-25T08:18:47.189Z",
+      "last_update": "2026-10-25T08:51:44.440Z",
       "claim_count": 2,
       "events": [
         {
@@ -62455,7 +63429,7 @@
       "cluster_id": 20,
       "headline": "North Korea prepares to restart propaganda loudspeakers as ties sour with South",
       "first_seen": "2026-10-25T04:39:46.644Z",
-      "last_update": "2026-10-25T08:18:47.185Z",
+      "last_update": "2026-10-25T08:51:44.436Z",
       "claim_count": 2,
       "events": [
         {
@@ -62642,7 +63616,7 @@
       "cluster_id": 80,
       "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?",
       "first_seen": "2026-10-25T06:43:37.706Z",
-      "last_update": "2026-10-25T08:18:47.186Z",
+      "last_update": "2026-10-25T08:51:44.438Z",
       "claim_count": 2,
       "events": [
         {
@@ -62716,6 +63690,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        },
         {
           "cluster_id": 21,
           "slug": "national-21",
@@ -62964,7 +63946,7 @@
       "cluster_id": 69,
       "headline": "‘Unusually large’ multi-state storm causing severe weather for Australia’s east – with more on the way",
       "first_seen": "2026-10-25T06:13:27.947Z",
-      "last_update": "2026-10-25T08:18:47.176Z",
+      "last_update": "2026-10-25T08:51:44.416Z",
       "claim_count": 2,
       "events": [
         {
@@ -64078,8 +65060,8 @@
       "cluster_id": 101,
       "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
       "first_seen": "2026-10-25T08:18:47.160Z",
-      "last_update": "2026-10-25T08:18:47.162Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T08:51:44.408Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T07:44:32.000Z",
@@ -64112,6 +65094,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/politics/qbkmxj4elo"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:25:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2372,
+          "claim_text": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/new-committee-for-jatiya-narishakti-announced-here-are-the-leaders/"
+          }
+        },
+        {
+          "ts": "2026-10-25T08:25:19.000Z",
+          "kind": "evidence",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/new-committee-for-jatiya-narishakti-announced-here-are-the-leaders/"
           }
         },
         {
@@ -64149,9 +65153,60 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.118Z",
+          "kind": "claim",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2851,
+          "claim_text": "জাতীয় নারীশক্তির নতুন কমিটি ঘোষণা, নেতৃত্বে যারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
+        },
+        {
+          "cluster_id": 1,
+          "slug": "international-1",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সৌদি আরবে ৭ দফা হামলার দাবি হুতিদের, ক্ষেপণাস্ত্রের অংশ পড়ল মক্কায়"
+        }
+      ]
     },
     "politics-1016": {
       "cluster_id": 1016,
@@ -64166,7 +65221,7 @@
       "cluster_id": 102,
       "headline": "টিকিট ছাড়াই দেখার সুযোগ বাংলাদেশ-ওয়েস্ট ইন্ডিজ প্রথম টেস্ট",
       "first_seen": "2026-10-25T08:18:47.162Z",
-      "last_update": "2026-10-25T08:18:47.164Z",
+      "last_update": "2026-10-25T08:51:44.410Z",
       "claim_count": 2,
       "events": [
         {
@@ -64391,6 +65446,45 @@
       "events": [],
       "related": []
     },
+    "politics-117": {
+      "cluster_id": 117,
+      "headline": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+      "first_seen": "2026-10-25T08:51:44.765Z",
+      "last_update": "2026-10-25T08:51:44.768Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:38:02.000Z",
+          "kind": "evidence",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-bnp-came-to-power-by-begging-the-awami-league-for-votes-jamaat-amir/"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.189Z",
+          "kind": "claim",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2880,
+          "claim_text": "আওয়ামী লীগের কাছে ভোট ভিক্ষা চেয়ে বিএনপি ক্ষমতায় এসেছে: জামায়াতের আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "politics-1172": {
       "cluster_id": 1172,
       "headline": "সরকারের মুখে জুলাই, অন্তরে আওয়ামী লীগ: হাসনাত আবদুল্লাহ",
@@ -64402,11 +65496,41 @@
     },
     "politics-120": {
       "cluster_id": 120,
-      "headline": "কুমিল্লায় অপ্রতিমের মৃত্যু আইনশৃঙ্খলা পরিস্থিতির ভয়াবহ অবনতিরই বহিঃপ্রকাশ: গোলাম পরওয়ার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+      "first_seen": "2026-10-25T08:51:44.781Z",
+      "last_update": "2026-10-25T08:51:44.783Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-25T08:14:17.000Z",
+          "kind": "evidence",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/higher-education/8svebyfcsx"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.196Z",
+          "kind": "claim",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2883,
+          "claim_text": "পদোন্নতির দাবিতে মাউশিতে শিক্ষা ক্যাডার কর্মকর্তাদের অবস্থান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1223": {
@@ -66157,7 +67281,7 @@
       "cluster_id": 78,
       "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
       "first_seen": "2026-10-25T06:43:37.688Z",
-      "last_update": "2026-10-25T08:18:47.175Z",
+      "last_update": "2026-10-25T08:51:44.415Z",
       "claim_count": 4,
       "events": [
         {
@@ -66320,6 +67444,14 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
+          "cluster_id": 115,
+          "slug": "national-115",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বঙ্গোপসাগরে নিম্নচাপ: ৪ সমুদ্রবন্দরে ১ নম্বর সতর্কতা সংকেত"
+        },
+        {
           "cluster_id": 77,
           "slug": "national-77",
           "actor_links": 0,
@@ -66350,14 +67482,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফরিদপুরে বাস-অ্যাম্বুলেন্সের মুখোমুখি সংঘর্ষে নিহত ৩"
-        },
-        {
-          "cluster_id": 18,
-          "slug": "national-18",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভূমিমন্ত্রী মিনুকে দেখতে হাসপাতালে গেলেন মির্জা আব্বাস"
         }
       ]
     },
@@ -66593,7 +67717,7 @@
       "cluster_id": 104,
       "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পেয়েছে পুলিশ",
       "first_seen": "2026-10-25T08:18:47.169Z",
-      "last_update": "2026-10-25T08:18:47.171Z",
+      "last_update": "2026-10-25T08:51:44.413Z",
       "claim_count": 2,
       "events": [
         {
@@ -67913,7 +69037,7 @@
       "cluster_id": 5,
       "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ",
       "first_seen": "2026-10-25T04:39:46.580Z",
-      "last_update": "2026-10-25T08:18:47.178Z",
+      "last_update": "2026-10-25T08:51:44.421Z",
       "claim_count": 2,
       "events": [
         {
@@ -68011,6 +69135,22 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 94,
+          "slug": "sports-94",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
         {
           "cluster_id": 11,
           "slug": "national-11",
@@ -68257,7 +69397,7 @@
       "cluster_id": 86,
       "headline": "সুন্দরবন পরিদর্শন শেষে মোংলার পথে প্রধানমন্ত্রী",
       "first_seen": "2026-10-25T06:43:37.744Z",
-      "last_update": "2026-10-25T08:18:47.197Z",
+      "last_update": "2026-10-25T08:51:44.446Z",
       "claim_count": 2,
       "events": [
         {
@@ -68402,16 +69542,27 @@
     },
     "sports-94": {
       "cluster_id": 94,
-      "headline": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ",
+      "headline": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
       "first_seen": "2026-10-25T07:14:38.421Z",
-      "last_update": "2026-10-25T08:18:47.174Z",
-      "claim_count": 2,
+      "last_update": "2026-10-25T08:51:44.406Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-25T04:04:48.000Z",
           "kind": "evidence",
           "claim_id": 1931,
           "claim_text": "আতলেতিকো সমর্থকদের কাছে ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/a9c087v7mk"
+          }
+        },
+        {
+          "ts": "2026-10-25T04:04:48.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -68434,6 +69585,17 @@
           "kind": "evidence",
           "claim_id": 1932,
           "claim_text": "কেন ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/alvarez-argentina-barcelona-atletico/"
+          }
+        },
+        {
+          "ts": "2026-10-25T06:58:29.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
           "detail": {
             "source_id": "channeli",
             "relation": "supports",
@@ -68489,6 +69651,17 @@
           }
         },
         {
+          "ts": "2026-10-25T08:35:30.000Z",
+          "kind": "evidence",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/976598/%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%B8%E0%A7%87%E0%A6%B2%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A7%9F-%E0%A6%AF%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%87%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B6-%E0%A6%95%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%AC%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
           "ts": "2026-10-25T08:41:14.237Z",
           "kind": "verify",
           "claim_id": 1931,
@@ -68511,9 +69684,63 @@
             "confidence": 13,
             "reason": "re-verify"
           }
+        },
+        {
+          "ts": "2026-10-25T09:11:56.088Z",
+          "kind": "claim",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ"
+        },
+        {
+          "ts": "2026-10-25T09:11:56.277Z",
+          "kind": "verify",
+          "claim_id": 2841,
+          "claim_text": "বার্সেলোনায় যাওয়ার ইচ্ছা প্রকাশ করে বিতর্কে, এবার ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 40,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-25T09:11:58.327Z",
+          "kind": "conflict",
+          "claim_id": 1932,
+          "claim_text": "কেন ক্ষমা চাইলেন আলভারেজ",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c1932\",\"c2841\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "এনসিপির নারী সংগঠনের শীর্ষ নেতৃত্ব থেকে মনিরা বাদ, মাহমুদা–নুসরাতের ‘পদোন্নতি’, নেপথ্যে কী"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধর্মমন্ত্রীর বক্তব্য বিচ্ছিন্নভাবে প্রকাশ না করে পুনর্বিবেচনার আহ্বান মন্ত্রণালয়ের"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১১ ওভার বল করেছেন আফগান অধিনায়ক, আম্পায়ারিং নিয়ে প্রশ্ন তুলল বাংলাদেশ"
+        },
         {
           "cluster_id": 1,
           "slug": "international-1",
