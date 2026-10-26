@@ -4,7 +4,7 @@ seoTitle: "নরওয়ে ‘জঘন্য’ দেশে পরিণত �
 excerpt: "৩ নভেম্বরের মধ্যবর্তী নির্বাচন সামনে রেখে স্থানীয় সময় গতকাল রোববার মিশিগান অঙ্গরাজ্যের পোর্ট হুরনে এক সমাবেশে অংশ নিয়েছিলেন ট্রাম্প। ‘এআই’ নাম বদলে কেন ‘এসআই’ রাখতে মরিয়া ট্রাম্প, "
 seoDescription: "৩ নভেম্বরের মধ্যবর্তী নির্বাচন সামনে রেখে স্থানীয় সময় গতকাল রোববার মিশিগান অঙ্গরাজ্যের পোর্ট হুরনে এক সমাবেশে অংশ নিয়েছিলেন ট্রাম্প। ‘এআই’ নাম বদলে কেন ‘এ…"
 date: 2026-10-26T18:07:15.000Z
-publishedAt: 2026-10-26T19:23:54.981Z
+publishedAt: 2026-10-26T19:20:39.942Z
 developing: true
 category: "international"
 tags: ["dhaka"]
@@ -27,7 +27,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-26T19:23:54.815Z"
+  evaluatedAt: "2026-10-26T19:20:39.792Z"
   clusterId: 596
   claimIds:
     - 82067
@@ -42,7 +42,7 @@ publication:
   slug: "international-596"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-26T19:23:54.815Z"
+  checkedAt: "2026-10-26T19:20:39.792Z"
   clusterId: 596
   claimIds:
     - 82067

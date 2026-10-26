@@ -4,7 +4,7 @@ seoTitle: "ম্যাচের আগে এমন কিছু ঘটা এ�
 excerpt: "ব্যাটিং ব্যর্থতা এবং সিরিজে দুটি ম্যাচেই হার, ভরাডুবির পর দায়িত্ব হারান টাইগারদের ব্যাটিং কোচ মোহাম্মদ আশরাফুল। ’ শনিবার রাতে সংবাদ বিজ্ঞপ্তি দিয়ে ব্যাটিং কোচের অপসারণের বিষয়টি জান"
 seoDescription: "ব্যাটিং ব্যর্থতা এবং সিরিজে দুটি ম্যাচেই হার, ভরাডুবির পর দায়িত্ব হারান টাইগারদের ব্যাটিং কোচ মোহাম্মদ আশরাফুল। ’ শনিবার রাতে সংবাদ বিজ্ঞপ্তি দিয়ে ব্যাটিং…"
 date: 2026-10-26T10:03:14.000Z
-publishedAt: 2026-10-26T19:23:55.002Z
+publishedAt: 2026-10-26T19:20:39.970Z
 developing: false
 category: "sports"
 tags: ["cricket"]
@@ -29,7 +29,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-26T19:23:54.815Z"
+  evaluatedAt: "2026-10-26T19:20:39.792Z"
   clusterId: 575
   claimIds:
     - 78381
@@ -47,7 +47,7 @@ publication:
   slug: "sports-575"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-26T19:23:54.815Z"
+  checkedAt: "2026-10-26T19:20:39.792Z"
   clusterId: 575
   claimIds:
     - 78381
