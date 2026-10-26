@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5972,
+    "storyCount": 5973,
     "kinds": [
       "claim",
       "evidence",
@@ -4418,11 +4418,41 @@
     },
     "economy-380": {
       "cluster_id": 380,
-      "headline": "নিম্ন আয়ের দেশগুলোর ঋণ মূল্যায়নে নতুন কাঠামো আনছে বিশ্বব্যাংক–আইএমএফ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+      "first_seen": "2026-10-26T04:56:33.136Z",
+      "last_update": "2026-10-26T04:56:33.138Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:37:55.000Z",
+          "kind": "evidence",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trump-has-stepped-back-from-the-decision-to-attack-iran/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.228Z",
+          "kind": "claim",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-3855": {
@@ -9949,12 +9979,12 @@
           "headline": "ব্যবসায়ীকে আটকে ১০ লাখ টাকা চাঁদা দাবি, গ্রেপ্তার ৬"
         },
         {
-          "cluster_id": 331,
-          "slug": "national-331",
+          "cluster_id": 376,
+          "slug": "politics-376",
           "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাপানের উদ্দেশে ঢাকা ত্যাগ করেছেন প্রধানমন্ত্রী তারেক রহমান"
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -10261,7 +10291,7 @@
       "cluster_id": 370,
       "headline": "সম্পাদকের শুভবিবাহ",
       "first_seen": "2026-10-26T04:28:59.317Z",
-      "last_update": "2026-10-26T04:28:59.320Z",
+      "last_update": "2026-10-26T04:56:32.838Z",
       "claim_count": 2,
       "events": [
         {
@@ -10343,6 +10373,30 @@
             "field": "স্বীকার",
             "sources": "[\"c39021\",\"c39022\"]",
             "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 39021,
+          "claim_text": "সম্পাদকের শুভবিবাহ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 39022,
+          "claim_text": "আমি ভুল করিনি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
           }
         }
       ],
@@ -14107,6 +14161,14 @@
       ],
       "related": [
         {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -14644,6 +14706,14 @@
           "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 284,
           "slug": "national-284",
           "actor_links": 0,
@@ -14674,14 +14744,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -19528,6 +19590,14 @@
           "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 284,
           "slug": "national-284",
           "actor_links": 0,
@@ -19558,14 +19628,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -21388,7 +21450,7 @@
       "cluster_id": 363,
       "headline": "চতুর্থ ও ষষ্ঠ শ্রেণির জন্য ৪টি নতুন বই অনুমোদন",
       "first_seen": "2026-10-26T03:56:19.100Z",
-      "last_update": "2026-10-26T04:28:59.321Z",
+      "last_update": "2026-10-26T04:56:32.839Z",
       "claim_count": 2,
       "events": [
         {
@@ -21934,12 +21996,263 @@
     },
     "international-376": {
       "cluster_id": 376,
-      "headline": "রিয়াদ বিমানবন্দরে হামলার নিন্দা শেহবাজ শরিফের, সৌদির পাশে থাকার ঘোষণা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+      "first_seen": "2026-10-26T04:56:32.820Z",
+      "last_update": "2026-10-26T04:56:32.828Z",
+      "claim_count": 5,
+      "events": [
+        {
+          "ts": "2026-10-25T18:54:36.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LeEQ3dnJyTHRSb2pEa1B1Wlg2Yk5pTnBHVTl0WE82aTI3S3h1NDA5M3ludjctbFkxUUVwTVEwWlVlX1VqeTAyTG5IY0VDbkRkVDZkekNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T18:54:36.000Z",
+          "kind": "evidence",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LeEQ3dnJyTHRSb2pEa1B1Wlg2Yk5pTnBHVTl0WE82aTI3S3h1NDA5M3ludjctbFkxUUVwTVEwWlVlX1VqeTAyTG5IY0VDbkRkVDZkekNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/south-america/ibaab5b93l"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/south-america/ibaab5b93l"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:58:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c70gleqrnljo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:58:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c70gleqrnljo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T03:19:42.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqlye383181do?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.191Z",
+          "kind": "claim",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.197Z",
+          "kind": "claim",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.199Z",
+          "kind": "claim",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.201Z",
+          "kind": "claim",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.203Z",
+          "kind": "claim",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:31.347Z",
+          "kind": "conflict",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c40313\",\"c40316\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 284,
+          "slug": "national-284",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 205,
+          "slug": "national-205",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
+        },
+        {
+          "cluster_id": 137,
+          "slug": "national-137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গার্ড অব অনার নিয়ে উত্তেজনার পর গভীর রাতে সাঈদীর মামলার সাক্ষীর দাফন"
+        },
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
+        }
+      ]
     },
     "international-3764": {
       "cluster_id": 3764,
@@ -21977,6 +22290,45 @@
       "events": [],
       "related": []
     },
+    "international-380": {
+      "cluster_id": 380,
+      "headline": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+      "first_seen": "2026-10-26T04:56:33.136Z",
+      "last_update": "2026-10-26T04:56:33.138Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:37:55.000Z",
+          "kind": "evidence",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trump-has-stepped-back-from-the-decision-to-attack-iran/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.228Z",
+          "kind": "claim",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-3811": {
       "cluster_id": 3811,
       "headline": "হুতিদের ঠেকাতে যুক্তরাজ্য কেন সৌদিতে যুদ্ধবিমান পাঠাচ্ছে, দুই দেশের সম্পর্কের ইতিহাস কী বলছে",
@@ -21988,11 +22340,41 @@
     },
     "international-382": {
       "cluster_id": 382,
-      "headline": "দিল্লিতে বিক্ষোভকারীদের আটকের ঘটনায় জাতিসংঘের উদ্বেগ, অবিলম্বে মুক্তির আহ্বান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+      "first_seen": "2026-10-26T04:56:33.144Z",
+      "last_update": "2026-10-26T04:56:33.146Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:32:15.000Z",
+          "kind": "evidence",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/japans-initiative-to-invest-6-35-billion-in-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.234Z",
+          "kind": "claim",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-3820": {
@@ -27093,6 +27475,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
         {
           "cluster_id": 178,
           "slug": "national-178",
@@ -33563,6 +33953,14 @@
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         },
         {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -33593,14 +33991,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
-        },
-        {
-          "cluster_id": 268,
-          "slug": "politics-268",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভারপ্রাপ্ত পররাষ্ট্রমন্ত্রী হিসেবে কমনওয়েলথ শীর্ষ সম্মেলনে যাচ্ছেন হুমায়ুন কবির"
         }
       ]
     },
@@ -36077,6 +36467,14 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -36107,14 +36505,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "টিকিট ছাড়াই দেখার সুযোগ বাংলাদেশ-ওয়েস্ট ইন্ডিজ প্রথম টেস্ট"
-        },
-        {
-          "cluster_id": 61,
-          "slug": "national-61",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
         }
       ]
     },
@@ -39919,6 +40309,14 @@
       ],
       "related": [
         {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -41182,7 +41580,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 378,
+          "slug": "national-378",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        }
+      ]
     },
     "national-1770": {
       "cluster_id": 1770,
@@ -41441,6 +41848,14 @@
           "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 284,
           "slug": "national-284",
           "actor_links": 0,
@@ -41471,14 +41886,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -47623,20 +48030,20 @@
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         },
         {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 8,
           "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
-        },
-        {
-          "cluster_id": 284,
-          "slug": "national-284",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
         }
       ]
     },
@@ -49874,6 +50281,14 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 338,
           "slug": "national-338",
           "actor_links": 0,
@@ -49888,14 +50303,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
-        },
-        {
-          "cluster_id": 284,
-          "slug": "national-284",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
         }
       ]
     },
@@ -65533,6 +65940,14 @@
           "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         },
         {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
           "cluster_id": 284,
           "slug": "national-284",
           "actor_links": 0,
@@ -65563,14 +65978,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -72818,12 +73225,12 @@
           "headline": "ব্যবসায়ীকে আটকে ১০ লাখ টাকা চাঁদা দাবি, গ্রেপ্তার ৬"
         },
         {
-          "cluster_id": 331,
-          "slug": "national-331",
+          "cluster_id": 376,
+          "slug": "politics-376",
           "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জাপানের উদ্দেশে ঢাকা ত্যাগ করেছেন প্রধানমন্ত্রী তারেক রহমান"
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -74680,7 +75087,7 @@
       "cluster_id": 347,
       "headline": "ভারত থেকে আসা বাঘের আক্রমণে লালমনিরহাট সীমান্তে ৩ বাংলাদেশি আহত",
       "first_seen": "2026-10-26T01:47:41.450Z",
-      "last_update": "2026-10-26T04:28:59.322Z",
+      "last_update": "2026-10-26T04:56:32.843Z",
       "claim_count": 2,
       "events": [
         {
@@ -77892,6 +78299,14 @@
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         },
         {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 7,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
           "cluster_id": 101,
           "slug": "politics-101",
           "actor_links": 0,
@@ -77922,14 +78337,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বঙ্গোপসাগরে গভীর নিম্নচাপ, ঘূর্ণিঝড়ের আশঙ্কা"
-        },
-        {
-          "cluster_id": 303,
-          "slug": "sports-303",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামজার মতো ফারহানকেও ভুটানের বিপক্ষে পাবে না বাংলাদেশ"
         }
       ]
     },
@@ -77991,7 +78398,7 @@
       "cluster_id": 363,
       "headline": "চতুর্থ ও ষষ্ঠ শ্রেণির জন্য ৪টি নতুন বই অনুমোদন",
       "first_seen": "2026-10-26T03:56:19.100Z",
-      "last_update": "2026-10-26T04:28:59.321Z",
+      "last_update": "2026-10-26T04:56:32.839Z",
       "claim_count": 2,
       "events": [
         {
@@ -78665,7 +79072,7 @@
       "cluster_id": 369,
       "headline": "গুগল অ্যাকাউন্টে গোপনে ফোন নম্বর যুক্ত হচ্ছে, বন্ধ করবেন যেভাবে",
       "first_seen": "2026-10-26T04:28:59.314Z",
-      "last_update": "2026-10-26T04:28:59.317Z",
+      "last_update": "2026-10-26T04:56:32.837Z",
       "claim_count": 2,
       "events": [
         {
@@ -79212,7 +79619,7 @@
       "cluster_id": 370,
       "headline": "সম্পাদকের শুভবিবাহ",
       "first_seen": "2026-10-26T04:28:59.317Z",
-      "last_update": "2026-10-26T04:28:59.320Z",
+      "last_update": "2026-10-26T04:56:32.838Z",
       "claim_count": 2,
       "events": [
         {
@@ -79294,6 +79701,30 @@
             "field": "স্বীকার",
             "sources": "[\"c39021\",\"c39022\"]",
             "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 39021,
+          "claim_text": "সম্পাদকের শুভবিবাহ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 39022,
+          "claim_text": "আমি ভুল করিনি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
           }
         }
       ],
@@ -79946,12 +80377,131 @@
     },
     "national-377": {
       "cluster_id": 377,
-      "headline": "নিউগিনি আবাসন প্রকল্পে হামলা চালাতে এক কোটি টাকায় ‘সন্ত্রাসী বাহিনী’ ভাড়া",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে",
+      "first_seen": "2026-10-26T04:56:32.829Z",
+      "last_update": "2026-10-26T04:56:32.832Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T17:19:47.000Z",
+          "kind": "evidence",
+          "claim_id": 40318,
+          "claim_text": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxOMUdwaXJFZS1HX1JaU05aTGdJWkFWcTlxWXc3N2Z2X2NIWGlhSEc2ZlkybHlTdFBGVVNfazNjZ2w5LW91ZEVWWEo0Sjc1R3dZVHRlMTZZM0xST2c1WjlIX0FhallKNkdZWV8xY2RPMUk0dGFmT2Nsa250dUFaekxFenU4dXFZbjdxYWdEVzZ6SzVNYXlkcEJuUTdLSXR1bWUxRG9UaXd5LUZOdGdjYXRLbTBSeHd1VE1QaURsc0tmSlVxMUxybnZFckx4ekxUNDZCN3M5RTFfeWZlbEdrRzZ1MlBlT0NKZWNTVW95U29tZDRjckd4eUtYMVEyOHBMTm9pa0pQbjRqZkh6RzdTaFpHQXp5MVBCQXdiYkpoZHBPX0tWN2JfZ241X2pmWlBBdnl5X3lJSl93OVdLX0hFRWk2QWFjaXg3T0kxamx6a3NEZlNmYUtTYVlvSWtIMW9kZTlPR1BxUmszZEwzckIxWG45Z2hsSURfRUp2Z0g2aTRhS2Vhd0IwTXZhdE9hS0QwaTJwaWRneWZ2MFBrMTRPQldqc25VM0FBZGhGOTd3YVVmNmRaVVVXSXdDeERBRHJGUTFjWUstdHVEQjk5Z1QtQlhlam9aeFFxemhmX2NCd1lkcmlXeWdXclI2bEFpMDRwX3l6UEFKQ0F2TlkyWGdkZVhMNXgzUGYwUnc2cDYzS1c5Vm5IUnRIQXRtNHJZeTVTRDlHbWpKTk05UXo1OHdab0RHSXB6TUNuWnloZk9oWUJldjhfdV85dEZLWDBJaFd4Ulh4cXVjY2RKS0RnZ29RTUdhR2pyT3JJZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T04:28:41.000Z",
+          "kind": "evidence",
+          "claim_id": 40318,
+          "claim_text": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1TVkN2WkkybmdoUzJyVjBpWmQ4OUhacmZtOEtqNGhoNUx6THFQZEt6NGFhT3o2Y2JLX3l3cnhYcjZLdDNQMDdNX0pmSEhocm8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T04:28:41.000Z",
+          "kind": "evidence",
+          "claim_id": 40319,
+          "claim_text": "খুলনায় তরুণীসহ জামায়াত নেতার ছেলে আটক",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1TVkN2WkkybmdoUzJyVjBpWmQ4OUhacmZtOEtqNGhoNUx6THFQZEt6NGFhT3o2Y2JLX3l3cnhYcjZLdDNQMDdNX0pmSEhocm8?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.206Z",
+          "kind": "claim",
+          "claim_id": 40318,
+          "claim_text": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.209Z",
+          "kind": "claim",
+          "claim_id": 40319,
+          "claim_text": "খুলনায় তরুণীসহ জামায়াত নেতার ছেলে আটক"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40318,
+          "claim_text": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40319,
+          "claim_text": "খুলনায় তরুণীসহ জামায়াত নেতার ছেলে আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 178,
+          "slug": "national-178",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
+        },
+        {
+          "cluster_id": 102,
+          "slug": "politics-102",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টিকিট ছাড়াই দেখার সুযোগ বাংলাদেশ-ওয়েস্ট ইন্ডিজ প্রথম টেস্ট"
+        },
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
+        },
+        {
+          "cluster_id": 15,
+          "slug": "national-15",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "বঙ্গোপসাগরে লঘুচাপের আভাস, সারা দেশে বৃষ্টির সম্ভাবনা"
+        },
+        {
+          "cluster_id": 6,
+          "slug": "national-6",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঈশ্বরগঞ্জে ছাত্রলীগ নেতা ছিনিয়ে নেয়া মামলায় গ্রেফতার ২"
+        },
+        {
+          "cluster_id": 3,
+          "slug": "national-3",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
+        }
+      ]
     },
     "national-3770": {
       "cluster_id": 3770,
@@ -80036,12 +80586,91 @@
     },
     "national-378": {
       "cluster_id": 378,
-      "headline": "জন্মগতভাবে কারো ভেতরে খারাপ কিছু থাকে না",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত",
+      "first_seen": "2026-10-26T04:56:32.833Z",
+      "last_update": "2026-10-26T04:56:32.836Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T23:35:01.000Z",
+          "kind": "evidence",
+          "claim_id": 40320,
+          "claim_text": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxQMVlUTkZ1eEtRaFJNaENySjM2UFM5c1dmcWItSzM0bmJmWEZVUWxuN2FpMWpWXzZjR3lXVUlKa0x3VWN5QWlpaFN6LU5ETXV2c2FaZzd4Z3hJLXBKUV85RnVackJfQ2RwT2xEekF1ellCWFFNNGp0b29sQUI0eUpJLTlHaERPNHZCcVBfR0xqei04eDZSa3pTNkFOTVZBakxiMW9jQ2NDNjJJR0diRW9IOUdZVGhGVXBGTjAxX2o5UC1HdlJqYWx4SzdYWDV1dVhoUkNUU3puZDNWTGZGZnc4TEhPMTRFbUtEOVlDT0xFTjFySFl5aENuS2swcURnN2p0SDdJVm01NE5LTkVzVkJyS3YwVDUwT3FwTzN5TjlFY2J1cWZBR1IzOVhvcDhVczBkMGJJUG1WWFBXZThILXpNelZtWFlheWYteUNWelczU0hSd3loaGJDVWY5SHNQTjB5WFNnc2piSFhBV0hKeDNLc3I2RzRpVE5kR2FYR3Q4TGVJNG9uSHgzYkZYZ29tWHdsbjdWWl9qNXZvU2g5eE1ndzR1Qk1qM3NsY1Q3dnBZSWlTeDJsWnRZREhZNjU4SjNXMUJLNURsdzN6QWZOM3NUR1oyNU5wdUdkdUZYZTJBQ0NCUzIzbWNsVlEyQ3JLaVRIVzhUbEdkTEp5VEpQZkxIdF9PajNfRmRPNWE2RW80bUp5WE04TEE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T23:35:01.000Z",
+          "kind": "evidence",
+          "claim_id": 40321,
+          "claim_text": "যশোরে পিকআপের ধাক্কায় মা ও শিশুসন্তান নিহত",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxQMVlUTkZ1eEtRaFJNaENySjM2UFM5c1dmcWItSzM0bmJmWEZVUWxuN2FpMWpWXzZjR3lXVUlKa0x3VWN5QWlpaFN6LU5ETXV2c2FaZzd4Z3hJLXBKUV85RnVackJfQ2RwT2xEekF1ellCWFFNNGp0b29sQUI0eUpJLTlHaERPNHZCcVBfR0xqei04eDZSa3pTNkFOTVZBakxiMW9jQ2NDNjJJR0diRW9IOUdZVGhGVXBGTjAxX2o5UC1HdlJqYWx4SzdYWDV1dVhoUkNUU3puZDNWTGZGZnc4TEhPMTRFbUtEOVlDT0xFTjFySFl5aENuS2swcURnN2p0SDdJVm01NE5LTkVzVkJyS3YwVDUwT3FwTzN5TjlFY2J1cWZBR1IzOVhvcDhVczBkMGJJUG1WWFBXZThILXpNelZtWFlheWYteUNWelczU0hSd3loaGJDVWY5SHNQTjB5WFNnc2piSFhBV0hKeDNLc3I2RzRpVE5kR2FYR3Q4TGVJNG9uSHgzYkZYZ29tWHdsbjdWWl9qNXZvU2g5eE1ndzR1Qk1qM3NsY1Q3dnBZSWlTeDJsWnRZREhZNjU4SjNXMUJLNURsdzN6QWZOM3NUR1oyNU5wdUdkdUZYZTJBQ0NCUzIzbWNsVlEyQ3JLaVRIVzhUbEdkTEp5VEpQZkxIdF9PajNfRmRPNWE2RW80bUp5WE04TEE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T04:26:25.000Z",
+          "kind": "evidence",
+          "claim_id": 40320,
+          "claim_text": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90OGdwZnhESUp0YV9oaUxfdDkzbThtNGRObEV3ZWVNbURsZUFraTBpR3h3OUNCcGRWa0p3Sm9pTENfOWQxMUZoMFJ4NFI1VGNib3pGdF8xTGt5MmtzRE5ueGNIWTBKM3V5N0lqSHRZXzBvX1lY?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.211Z",
+          "kind": "claim",
+          "claim_id": 40320,
+          "claim_text": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.214Z",
+          "kind": "claim",
+          "claim_id": 40321,
+          "claim_text": "যশোরে পিকআপের ধাক্কায় মা ও শিশুসন্তান নিহত"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40320,
+          "claim_text": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40321,
+          "claim_text": "যশোরে পিকআপের ধাক্কায় মা ও শিশুসন্তান নিহত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 177,
+          "slug": "sports-177",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অনেক বছর পর শান্তিপূর্ণভাবে দুর্গাপূজা উদযাপন হলো: স্বরাষ্ট্রমন্ত্রী"
+        }
+      ]
     },
     "national-3781": {
       "cluster_id": 3781,
@@ -80099,11 +80728,81 @@
     },
     "national-379": {
       "cluster_id": 379,
-      "headline": "সুন্দরবনে বিষ দিয়ে মাছ ধরলেও প্রমাণ করা যায় না",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চলন্ত বাসে নারীকে ধর্ষণের দায়ে চালকসহ তিনজনের যাবজ্জীবন",
+      "first_seen": "2026-10-26T04:56:32.840Z",
+      "last_update": "2026-10-26T04:56:32.843Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-25T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40322,
+          "claim_text": "চলন্ত বাসে নারীকে ধর্ষণের দায়ে চালকসহ তিনজনের যাবজ্জীবন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtX3RYVnAyM2hNZFpSdXQwYzlpN2tZT3hfT0VOdC1YUGFCTjF1dmV1RHQzUVZqUk53d3Y0YkhnN0xldFhZY2s5MmRpNHBRSlFIblhZd01NSE5DU0Qyb3FuM3llbWlGZmJnUUdzbWtFU2lycWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40322,
+          "claim_text": "চলন্ত বাসে নারীকে ধর্ষণের দায়ে চালকসহ তিনজনের যাবজ্জীবন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9yaVg0V0xqYWZjb1ZNLTd1NzlVWE9kc2dxZE5YODg5d2U4RU13aTFQRDBzTklDbV9XUXBFRzJWSjJ2aU1kbFhYVXFGY0RLbUdzMV9qXzJoN1htSnZBdEpaY0ZQaml2NFdoODdZSkxpZm9tamM?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40323,
+          "claim_text": "মক্তবের ছাত্রীকে ধর্ষণের দায়ে ইমামের যাবজ্জীবন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtX3RYVnAyM2hNZFpSdXQwYzlpN2tZT3hfT0VOdC1YUGFCTjF1dmV1RHQzUVZqUk53d3Y0YkhnN0xldFhZY2s5MmRpNHBRSlFIblhZd01NSE5DU0Qyb3FuM3llbWlGZmJnUUdzbWtFU2lycWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.217Z",
+          "kind": "claim",
+          "claim_id": 40322,
+          "claim_text": "চলন্ত বাসে নারীকে ধর্ষণের দায়ে চালকসহ তিনজনের যাবজ্জীবন"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.219Z",
+          "kind": "claim",
+          "claim_id": 40323,
+          "claim_text": "মক্তবের ছাত্রীকে ধর্ষণের দায়ে ইমামের যাবজ্জীবন"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40322,
+          "claim_text": "চলন্ত বাসে নারীকে ধর্ষণের দায়ে চালকসহ তিনজনের যাবজ্জীবন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40323,
+          "claim_text": "মক্তবের ছাত্রীকে ধর্ষণের দায়ে ইমামের যাবজ্জীবন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3790": {
@@ -80299,11 +80998,41 @@
     },
     "national-380": {
       "cluster_id": 380,
-      "headline": "নিরাপত্তা ও জানমাল রক্ষার দাবিতে সাজেকে অনির্দিষ্টকালের সড়ক অবরোধ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+      "first_seen": "2026-10-26T04:56:33.136Z",
+      "last_update": "2026-10-26T04:56:33.138Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:37:55.000Z",
+          "kind": "evidence",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trump-has-stepped-back-from-the-decision-to-attack-iran/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.228Z",
+          "kind": "claim",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40324,
+          "claim_text": "ইরানে হামলার সিদ্ধান্ত থেকে সরে এলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3800": {
@@ -80389,11 +81118,41 @@
     },
     "national-381": {
       "cluster_id": 381,
-      "headline": "প্রধানমন্ত্রীর সঙ্গে বিশ্বব্যাংক গ্রুপের প্রেসিডেন্টের সাইডলাইন বৈঠক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+      "first_seen": "2026-10-26T04:56:33.141Z",
+      "last_update": "2026-10-26T04:56:33.143Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:36:19.000Z",
+          "kind": "evidence",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/%e0%a6%a6%e0%a7%80%e0%a6%b0%e0%a7%8d%e0%a6%98-%e0%a6%9b%e0%a7%81%e0%a6%9f%e0%a6%bf-%e0%a6%b6%e0%a7%87%e0%a6%b7%e0%a7%87-%e0%a6%b8%e0%a7%8d%e0%a6%95%e0%a7%81%e0%a6%b2-%e0%a6%ae%e0%a6%be%e0%a6%a6/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.231Z",
+          "kind": "claim",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3810": {
@@ -80470,11 +81229,41 @@
     },
     "national-382": {
       "cluster_id": 382,
-      "headline": "আসাদ আলম সিয়ামকে দিল্লিতে বাংলাদেশের হাইকমিশনার করার সিদ্ধান্তে সম্মতি ভারতের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+      "first_seen": "2026-10-26T04:56:33.144Z",
+      "last_update": "2026-10-26T04:56:33.146Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:32:15.000Z",
+          "kind": "evidence",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/japans-initiative-to-invest-6-35-billion-in-bangladesh/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.234Z",
+          "kind": "claim",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40326,
+          "claim_text": "বাংলাদেশে ৬৩৫ কোটি ডলার বিনিয়োগের উদ্যোগ জাপানের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3822": {
@@ -80533,11 +81322,41 @@
     },
     "national-383": {
       "cluster_id": 383,
-      "headline": "পিক্সেল ওয়াচে ‘সেইফটি সিগনাল’ ফিচার বন্ধ করছে গুগল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা",
+      "first_seen": "2026-10-26T04:56:33.148Z",
+      "last_update": "2026-10-26T04:56:33.150Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:17:05.000Z",
+          "kind": "evidence",
+          "claim_id": 40327,
+          "claim_text": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/cop32fzt9a"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.236Z",
+          "kind": "claim",
+          "claim_id": 40327,
+          "claim_text": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40327,
+          "claim_text": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3833": {
@@ -80605,11 +81424,41 @@
     },
     "national-384": {
       "cluster_id": 384,
-      "headline": "আইজিপির সঙ্গে রাশিয়ার রাষ্ট্রদূতের সৌজন্য সাক্ষাৎ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+      "first_seen": "2026-10-26T04:56:33.152Z",
+      "last_update": "2026-10-26T04:56:33.154Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T03:28:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/editorial/dh9ak92t0b"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.239Z",
+          "kind": "claim",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-3840": {
@@ -88909,6 +89758,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
         {
           "cluster_id": 178,
           "slug": "national-178",
@@ -100461,11 +101318,41 @@
     },
     "opinion-384": {
       "cluster_id": 384,
-      "headline": "শুভ্রাংশের চোখে ফিরে দেখা সেই দুর্গাপূজা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+      "first_seen": "2026-10-26T04:56:33.152Z",
+      "last_update": "2026-10-26T04:56:33.154Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T03:28:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/editorial/dh9ak92t0b"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.239Z",
+          "kind": "claim",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40328,
+          "claim_text": "জাহাজভাঙা শিল্পে কোনো আপস নয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "opinion-3884": {
@@ -101090,6 +101977,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        },
         {
           "cluster_id": 178,
           "slug": "national-178",
@@ -102079,6 +102974,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 376,
+          "slug": "politics-376",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
         {
           "cluster_id": 362,
           "slug": "national-362",
@@ -105282,12 +106185,263 @@
     },
     "politics-376": {
       "cluster_id": 376,
-      "headline": "গাজী নজরুলের এমপি পদ থাকবে কি না, যা জানালেন স্পিকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+      "first_seen": "2026-10-26T04:56:32.820Z",
+      "last_update": "2026-10-26T04:56:32.828Z",
+      "claim_count": 5,
+      "events": [
+        {
+          "ts": "2026-10-25T18:54:36.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LeEQ3dnJyTHRSb2pEa1B1Wlg2Yk5pTnBHVTl0WE82aTI3S3h1NDA5M3ludjctbFkxUUVwTVEwWlVlX1VqeTAyTG5IY0VDbkRkVDZkekNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-25T18:54:36.000Z",
+          "kind": "evidence",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LeEQ3dnJyTHRSb2pEa1B1Wlg2Yk5pTnBHVTl0WE82aTI3S3h1NDA5M3ludjctbFkxUUVwTVEwWlVlX1VqeTAyTG5IY0VDbkRkVDZkekNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/south-america/ibaab5b93l"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/south-america/ibaab5b93l"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:58:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c70gleqrnljo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T01:58:08.000Z",
+          "kind": "evidence",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c70gleqrnljo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T03:19:42.000Z",
+          "kind": "evidence",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cqlye383181do?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.191Z",
+          "kind": "claim",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.197Z",
+          "kind": "claim",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.199Z",
+          "kind": "claim",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.201Z",
+          "kind": "claim",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.203Z",
+          "kind": "claim",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40314,
+          "claim_text": "জাপানের পথে প্রধানমন্ত্রী তারেক রহমান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40315,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40316,
+          "claim_text": "ব্রাজিলে লুলার নাটকীয় জয়, চতুর্থবারের মতো ক্ষমতায় বসছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40317,
+          "claim_text": "বাংলাদেশে সাপের বিষের প্রতিষেধক বা অ্যান্টিভেনম তৈরির কাজ কতদূর?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:31.347Z",
+          "kind": "conflict",
+          "claim_id": 40313,
+          "claim_text": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c40313\",\"c40316\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 284,
+          "slug": "national-284",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 205,
+          "slug": "national-205",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
+        },
+        {
+          "cluster_id": 137,
+          "slug": "national-137",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গার্ড অব অনার নিয়ে উত্তেজনার পর গভীর রাতে সাঈদীর মামলার সাক্ষীর দাফন"
+        },
+        {
+          "cluster_id": 101,
+          "slug": "politics-101",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
+        }
+      ]
     },
     "politics-3786": {
       "cluster_id": 3786,
@@ -105309,11 +106463,41 @@
     },
     "politics-381": {
       "cluster_id": 381,
-      "headline": "তুরস্ক সফর শেষে ঢাকা পৌঁছেছে বিরোধীদলীয় নেতা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+      "first_seen": "2026-10-26T04:56:33.141Z",
+      "last_update": "2026-10-26T04:56:33.143Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T04:36:19.000Z",
+          "kind": "evidence",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/%e0%a6%a6%e0%a7%80%e0%a6%b0%e0%a7%8d%e0%a6%98-%e0%a6%9b%e0%a7%81%e0%a6%9f%e0%a6%bf-%e0%a6%b6%e0%a7%87%e0%a6%b7%e0%a7%87-%e0%a6%b8%e0%a7%8d%e0%a6%95%e0%a7%81%e0%a6%b2-%e0%a6%ae%e0%a6%be%e0%a6%a6/"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:20:26.231Z",
+          "kind": "claim",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ"
+        },
+        {
+          "ts": "2026-10-26T05:20:26.314Z",
+          "kind": "verify",
+          "claim_id": 40325,
+          "claim_text": "দীর্ঘ ছুটি শেষে স্কুল-মাদ্রাসা খুলছে আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-3832": {
@@ -107219,7 +108403,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 378,
+          "slug": "national-378",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        }
+      ]
     },
     "sports-186": {
       "cluster_id": 186,
@@ -109735,7 +110928,7 @@
       "cluster_id": 347,
       "headline": "ভারত থেকে আসা বাঘের আক্রমণে লালমনিরহাট সীমান্তে ৩ বাংলাদেশি আহত",
       "first_seen": "2026-10-26T01:47:41.450Z",
-      "last_update": "2026-10-26T04:28:59.322Z",
+      "last_update": "2026-10-26T04:56:32.843Z",
       "claim_count": 2,
       "events": [
         {
@@ -111743,7 +112936,7 @@
       "cluster_id": 369,
       "headline": "গুগল অ্যাকাউন্টে গোপনে ফোন নম্বর যুক্ত হচ্ছে, বন্ধ করবেন যেভাবে",
       "first_seen": "2026-10-26T04:28:59.314Z",
-      "last_update": "2026-10-26T04:28:59.317Z",
+      "last_update": "2026-10-26T04:56:32.837Z",
       "claim_count": 2,
       "events": [
         {
