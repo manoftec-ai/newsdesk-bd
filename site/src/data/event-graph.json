@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 5985,
+    "storyCount": 5986,
     "kinds": [
       "claim",
       "evidence",
@@ -90,6 +90,14 @@
       ],
       "related": [
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -128,14 +136,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 190,
-          "slug": "sports-190",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রোববারই ইরানে হামলা, না হয় চমৎকার সমঝোতা: ট্রাম্প"
         }
       ]
     },
@@ -1735,28 +1735,28 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড"
-        },
-        {
-          "cluster_id": 394,
-          "slug": "national-394",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "একদিন বন্ধ থাকার পর কিশোরগঞ্জ-মহাখালী সড়কে বাস চলাচল শুরু"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -4909,11 +4909,41 @@
     },
     "economy-444": {
       "cluster_id": 444,
-      "headline": "ফ্ল্যাটের দাম নাগালে আনতে গৃহঋণ সুদ ৫% চান রিহ্যাব সভাপতি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+      "first_seen": "2026-10-26T08:35:46.915Z",
+      "last_update": "2026-10-26T08:35:46.916Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:07:25.000Z",
+          "kind": "evidence",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/c90kk6wj7a"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.508Z",
+          "kind": "claim",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-446": {
@@ -12401,6 +12431,14 @@
       ],
       "related": [
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -12439,14 +12477,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 190,
-          "slug": "sports-190",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রোববারই ইরানে হামলা, না হয় চমৎকার সমঝোতা: ট্রাম্প"
         }
       ]
     },
@@ -13248,6 +13278,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -13256,12 +13294,12 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
-          "cluster_id": 427,
-          "slug": "sports-427",
+          "cluster_id": 420,
+          "slug": "national-420",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
         },
         {
           "cluster_id": 408,
@@ -13286,14 +13324,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
-        },
-        {
-          "cluster_id": 223,
-          "slug": "sports-223",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "হামজারা না পারলেও বায়েজিদরা আটকে দিয়েছে ইন্দোনেশিয়াকে"
         }
       ]
     },
@@ -14999,6 +15029,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -15037,14 +15075,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
-        },
-        {
-          "cluster_id": 80,
-          "slug": "national-rabiul-target-to",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
         }
       ]
     },
@@ -15938,28 +15968,28 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড"
-        },
-        {
-          "cluster_id": 394,
-          "slug": "national-394",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "একদিন বন্ধ থাকার পর কিশোরগঞ্জ-মহাখালী সড়কে বাস চলাচল শুরু"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -16175,6 +16205,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -16205,22 +16251,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -17008,6 +17038,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -17038,22 +17084,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 193,
-          "slug": "national-193",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ"
         }
       ]
     },
@@ -24334,6 +24364,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
@@ -24380,7 +24418,7 @@
       "cluster_id": 395,
       "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা",
       "first_seen": "2026-10-26T06:00:53.958Z",
-      "last_update": "2026-10-26T08:08:07.790Z",
+      "last_update": "2026-10-26T08:35:46.053Z",
       "claim_count": 4,
       "events": [
         {
@@ -24535,6 +24573,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 335,
           "slug": "national-335",
           "actor_links": 0,
@@ -24573,14 +24619,6 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "চার দিনের সফরে আজ রাতে জাপান যাচ্ছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         }
       ]
     },
@@ -24924,7 +24962,7 @@
       "cluster_id": 408,
       "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড",
       "first_seen": "2026-10-26T07:05:59.936Z",
-      "last_update": "2026-10-26T08:08:07.788Z",
+      "last_update": "2026-10-26T08:35:45.995Z",
       "claim_count": 2,
       "events": [
         {
@@ -24998,6 +25036,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
         {
           "cluster_id": 395,
           "slug": "national-395",
@@ -26349,7 +26395,7 @@
       "cluster_id": 428,
       "headline": "ট্রাইব্যুনালে হাজির হয়ে নিঃশর্ত ক্ষমা চাইলেন আওয়ামীপন্থি ২ আইনজীবী",
       "first_seen": "2026-10-26T08:08:07.783Z",
-      "last_update": "2026-10-26T08:08:07.787Z",
+      "last_update": "2026-10-26T08:35:45.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -26909,12 +26955,123 @@
     },
     "international-436": {
       "cluster_id": 436,
-      "headline": "মুক্ত হয়ে পুরো ঘটনার বর্ণনায় যা জানালেন ধ্রুব রাঠি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+      "first_seen": "2026-10-26T08:35:45.538Z",
+      "last_update": "2026-10-26T08:35:45.540Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:24:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/810819"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:24:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/810819"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.469Z",
+          "kind": "claim",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.472Z",
+          "kind": "claim",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 410,
+          "slug": "politics-410",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিরোধী দলে থাকতেই কবর দিতে বাধা দিচ্ছে, রাষ্ট্রক্ষমতা হাতে গেলে কী করবে: তাসনিম জারা"
+        },
+        {
+          "cluster_id": 284,
+          "slug": "national-284",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 268,
+          "slug": "politics-268",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারপ্রাপ্ত পররাষ্ট্রমন্ত্রী হিসেবে কমনওয়েলথ শীর্ষ সম্মেলনে যাচ্ছেন হুমায়ুন কবির"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ক্যানসার হলেও ছড়াবে না শরীরের বিভিন্ন অঙ্গে, আসছে নতুন টিকা"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "international-4375": {
       "cluster_id": 4375,
@@ -26945,12 +27102,131 @@
     },
     "international-438": {
       "cluster_id": 438,
-      "headline": "আবারও অশান্ত মণিপুর: সহিংসতায় নিহত ৯, পুড়ল নাগা-কুকিদের ১৪ বাড়ি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+      "first_seen": "2026-10-26T08:35:45.788Z",
+      "last_update": "2026-10-26T08:35:45.982Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T07:30:55.000Z",
+          "kind": "evidence",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/mother-dies-from-daughters-attack-in-feni/"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:30:55.000Z",
+          "kind": "evidence",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/mother-dies-from-daughters-attack-in-feni/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:03:41.000Z",
+          "kind": "evidence",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/g4w0l81xzz"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.481Z",
+          "kind": "claim",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.484Z",
+          "kind": "claim",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 395,
+          "slug": "national-395",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 15,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 302,
+          "slug": "national-302",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "নজিরবিহীন শান্তিপূর্ণ দুর্গাপূজা নিশ্চিতে প্রধানমন্ত্রী তারেক রহমানের প্রশংসায় ভারতীয় গণমাধ্যম"
+        },
+        {
+          "cluster_id": 205,
+          "slug": "national-205",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
+        },
+        {
+          "cluster_id": 203,
+          "slug": "national-203",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
+        },
+        {
+          "cluster_id": 190,
+          "slug": "sports-190",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রোববারই ইরানে হামলা, না হয় চমৎকার সমঝোতা: ট্রাম্প"
+        }
+      ]
     },
     "international-4392": {
       "cluster_id": 4392,
@@ -26963,11 +27239,41 @@
     },
     "international-441": {
       "cluster_id": 441,
-      "headline": "ইরান যুদ্ধে মার্কিন সেনা নিহতের সংখ্যা কি বাড়ছে? নতুন হিসাব পেন্টাগনের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+      "first_seen": "2026-10-26T08:35:46.677Z",
+      "last_update": "2026-10-26T08:35:46.906Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:22:58.000Z",
+          "kind": "evidence",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/40-sick-iranian-sailors-rescued-off-the-coast-of-sri-lanka/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.500Z",
+          "kind": "claim",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4416": {
@@ -28875,6 +29181,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -28913,14 +29227,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
-        },
-        {
-          "cluster_id": 114,
-          "slug": "national-114",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
         }
       ]
     },
@@ -33157,6 +33463,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -33187,22 +33509,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -33801,6 +34107,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -33839,14 +34153,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
-        },
-        {
-          "cluster_id": 80,
-          "slug": "national-rabiul-target-to",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
         }
       ]
     },
@@ -35601,6 +35907,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -35609,12 +35923,12 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
-          "cluster_id": 427,
-          "slug": "sports-427",
+          "cluster_id": 420,
+          "slug": "national-420",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
         },
         {
           "cluster_id": 408,
@@ -35639,14 +35953,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
-        },
-        {
-          "cluster_id": 223,
-          "slug": "sports-223",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "হামজারা না পারলেও বায়েজিদরা আটকে দিয়েছে ইন্দোনেশিয়াকে"
         }
       ]
     },
@@ -40108,6 +40414,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -40146,14 +40460,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
-        },
-        {
-          "cluster_id": 80,
-          "slug": "national-rabiul-target-to",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
         }
       ]
     },
@@ -43552,7 +43858,7 @@
           "slug": "national-420",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 1,
+          "claim_count": 2,
           "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
         },
         {
@@ -43572,12 +43878,12 @@
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         },
         {
-          "cluster_id": 410,
-          "slug": "politics-410",
+          "cluster_id": 436,
+          "slug": "national-436",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বিরোধী দলে থাকতেই কবর দিতে বাধা দিচ্ছে, রাষ্ট্রক্ষমতা হাতে গেলে কী করবে: তাসনিম জারা"
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -44195,6 +44501,14 @@
           "headline": "তত্ত্বাবধায়ক সরকারের অধীনে আগামী নির্বাচন হওয়ার বিষয়ে সমঝোতা হয়েছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 428,
           "slug": "national-428",
           "actor_links": 0,
@@ -44217,14 +44531,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -44667,6 +44973,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -44705,14 +45019,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
-        },
-        {
-          "cluster_id": 80,
-          "slug": "national-rabiul-target-to",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
         }
       ]
     },
@@ -47200,6 +47506,22 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -47214,22 +47536,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জাপানের উদ্দেশে ঢাকা ত্যাগ করেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 294,
-          "slug": "national-294",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদিতে ক্ষেপণাস্ত্র প্রতিহতের দৃশ্য রেকর্ড ও শেয়ার না করতে ভারতীয়দের সতর্কবার্তা"
-        },
-        {
-          "cluster_id": 247,
-          "slug": "politics-247",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘নোট অব ডিসেন্ট’ পরিবর্তন নিয়ে সরকারের ডাকে সাড়া দেবে বিরোধী দল?"
         }
       ]
     },
@@ -47402,6 +47708,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -47432,22 +47754,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -48327,6 +48633,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -48365,14 +48679,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
-        },
-        {
-          "cluster_id": 114,
-          "slug": "national-114",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
         }
       ]
     },
@@ -49283,6 +49589,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -49313,22 +49635,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -52113,7 +52419,7 @@
           "slug": "national-420",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 1,
+          "claim_count": 2,
           "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
         },
         {
@@ -54368,6 +54674,14 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 418,
           "slug": "national-418",
           "actor_links": 0,
@@ -54382,14 +54696,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানে হামলা চালাবে না যুক্তরাষ্ট্র, জানালেন ট্রাম্প"
-        },
-        {
-          "cluster_id": 378,
-          "slug": "national-378",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
         }
       ]
     },
@@ -54912,6 +55218,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -54942,22 +55264,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 193,
-          "slug": "national-193",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ"
         }
       ]
     },
@@ -56752,6 +57058,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -56782,22 +57104,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 193,
-          "slug": "national-193",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ"
         }
       ]
     },
@@ -64208,6 +64514,14 @@
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
         },
         {
+          "cluster_id": 436,
+          "slug": "national-436",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
           "cluster_id": 410,
           "slug": "politics-410",
           "actor_links": 0,
@@ -64230,14 +64544,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা"
-        },
-        {
-          "cluster_id": 335,
-          "slug": "national-335",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -70672,6 +70978,14 @@
           "headline": "ধর্ষণের শিকার তরুণীর সন্তান প্রসব, নবজাতক নিয়ে গেছেন অভিযুক্ত যুবকের লোকজন"
         },
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -70686,14 +71000,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -82475,12 +82781,12 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
-          "cluster_id": 395,
-          "slug": "national-395",
+          "cluster_id": 437,
+          "slug": "national-437",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
         }
       ]
     },
@@ -87170,6 +87476,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
@@ -87261,7 +87575,7 @@
       "cluster_id": 395,
       "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা",
       "first_seen": "2026-10-26T06:00:53.958Z",
-      "last_update": "2026-10-26T08:08:07.790Z",
+      "last_update": "2026-10-26T08:35:46.053Z",
       "claim_count": 4,
       "events": [
         {
@@ -87416,6 +87730,14 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 335,
           "slug": "national-335",
           "actor_links": 0,
@@ -87454,14 +87776,6 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "চার দিনের সফরে আজ রাতে জাপান যাচ্ছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 133,
-          "slug": "sports-133",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "চট্টগ্রাম থেকে উড়ে এল শিউলি, জন্মদিনে ‘ফারজানা’র চমক পরীমনির"
         }
       ]
     },
@@ -89411,7 +89725,7 @@
       "cluster_id": 408,
       "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড",
       "first_seen": "2026-10-26T07:05:59.936Z",
-      "last_update": "2026-10-26T08:08:07.788Z",
+      "last_update": "2026-10-26T08:35:45.995Z",
       "claim_count": 2,
       "events": [
         {
@@ -89485,6 +89799,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
         {
           "cluster_id": 395,
           "slug": "national-395",
@@ -89568,7 +89890,7 @@
       "cluster_id": 409,
       "headline": "‘Like a stone in our hearts’: PM leads Helen Haines tributes as parliament pauses to praise ‘fighter’",
       "first_seen": "2026-10-26T07:05:59.942Z",
-      "last_update": "2026-10-26T08:08:07.789Z",
+      "last_update": "2026-10-26T08:35:46.052Z",
       "claim_count": 2,
       "events": [
         {
@@ -89863,6 +90185,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 436,
+          "slug": "national-436",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
         {
           "cluster_id": 284,
           "slug": "national-284",
@@ -91088,8 +91418,8 @@
       "cluster_id": 420,
       "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি",
       "first_seen": "2026-10-26T07:38:51.526Z",
-      "last_update": "2026-10-26T08:08:07.782Z",
-      "claim_count": 2,
+      "last_update": "2026-10-26T08:35:45.786Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-26T06:53:42.000Z",
@@ -91159,6 +91489,58 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-26T08:14:59.000Z",
+          "kind": "evidence",
+          "claim_id": 47247,
+          "claim_text": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/police-will-not-hesitate-to-carry-out-crossfire-if-permitted-by-the-government-igp/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:14:59.000Z",
+          "kind": "evidence",
+          "claim_id": 50142,
+          "claim_text": "সরকার অনুমতি দিলে ক্রসফায়ার করতেও পিছপা হবে না পুলিশ: আইজিপি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/police-will-not-hesitate-to-carry-out-crossfire-if-permitted-by-the-government-igp/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.343Z",
+          "kind": "claim",
+          "claim_id": 50142,
+          "claim_text": "সরকার অনুমতি দিলে ক্রসফায়ার করতেও পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 47247,
+          "claim_text": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50142,
+          "claim_text": "সরকার অনুমতি দিলে ক্রসফায়ার করতেও পিছপা হবে না পুলিশ: আইজিপি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -91177,6 +91559,38 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 395,
+          "slug": "national-395",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 223,
+          "slug": "sports-223",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "হামজারা না পারলেও বায়েজিদরা আটকে দিয়েছে ইন্দোনেশিয়াকে"
         }
       ]
     },
@@ -92254,8 +92668,8 @@
       "cluster_id": 427,
       "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
       "first_seen": "2026-10-26T08:08:07.777Z",
-      "last_update": "2026-10-26T08:08:07.779Z",
-      "claim_count": 2,
+      "last_update": "2026-10-26T08:35:45.456Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-26T07:27:31.000Z",
@@ -92325,6 +92739,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-26T08:26:53.000Z",
+          "kind": "evidence",
+          "claim_id": 48693,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trial-begins-for-34-individuals-including-sheikh-hasina-in-the-murder-case-of-truck-driver-hossain/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:26:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trial-begins-for-34-individuals-including-sheikh-hasina-in-the-murder-case-of-truck-driver-hossain/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.437Z",
+          "kind": "claim",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -92332,49 +92786,49 @@
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
-        },
-        {
-          "cluster_id": 204,
-          "slug": "national-most-popular-online",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 178,
-          "slug": "national-178",
-          "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 3,
-          "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
           "cluster_id": 123,
           "slug": "national-123",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
+          "source_links": 3,
+          "claim_count": 5,
           "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পাওয়া গেছে: পুলিশ"
         },
         {
-          "cluster_id": 122,
-          "slug": "national-122",
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
+          "cluster_id": 408,
+          "slug": "national-408",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "সাজেকের পরিস্থিতি নিরসনে তিন সদস্যের কমিটি গঠন"
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড"
+        },
+        {
+          "cluster_id": 394,
+          "slug": "national-394",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "একদিন বন্ধ থাকার পর কিশোরগঞ্জ-মহাখালী সড়কে বাস চলাচল শুরু"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -92463,7 +92917,7 @@
       "cluster_id": 428,
       "headline": "ট্রাইব্যুনালে হাজির হয়ে নিঃশর্ত ক্ষমা চাইলেন আওয়ামীপন্থি ২ আইনজীবী",
       "first_seen": "2026-10-26T08:08:07.783Z",
-      "last_update": "2026-10-26T08:08:07.787Z",
+      "last_update": "2026-10-26T08:35:45.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -93518,11 +93972,81 @@
     },
     "national-435": {
       "cluster_id": 435,
-      "headline": "ব্যারিকেড সরানোসহ ইন্টারনেট ও গণপরিবহন স্বাভাবিক করার নির্দেশ সুপ্রিম কোর্টের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেরানীগঞ্জে প্লাস্টিক কারখানায় ভয়াবহ আগুন, নিয়ন্ত্রণে ৮ ইউনিট",
+      "first_seen": "2026-10-26T08:35:45.534Z",
+      "last_update": "2026-10-26T08:35:45.537Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T07:57:23.000Z",
+          "kind": "evidence",
+          "claim_id": 50170,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানায় ভয়াবহ আগুন, নিয়ন্ত্রণে ৮ ইউনিট",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/976817/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%96%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%AD%E0%A7%9F%E0%A6%BE%E0%A6%AC%E0%A6%B9-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:24:20.000Z",
+          "kind": "evidence",
+          "claim_id": 50170,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানায় ভয়াবহ আগুন, নিয়ন্ত্রণে ৮ ইউনিট",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/976820/%E0%A6%95%E0%A7%87%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%96%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:24:20.000Z",
+          "kind": "evidence",
+          "claim_id": 50171,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানার আগুন নিয়ন্ত্রণে, একজনের মৃত্যু",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/976820/%E0%A6%95%E0%A7%87%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%96%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%AF%E0%A6%BC-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.464Z",
+          "kind": "claim",
+          "claim_id": 50170,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানায় ভয়াবহ আগুন, নিয়ন্ত্রণে ৮ ইউনিট"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.466Z",
+          "kind": "claim",
+          "claim_id": 50171,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানার আগুন নিয়ন্ত্রণে, একজনের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50170,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানায় ভয়াবহ আগুন, নিয়ন্ত্রণে ৮ ইউনিট",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50171,
+          "claim_text": "কেরানীগঞ্জে প্লাস্টিক কারখানার আগুন নিয়ন্ত্রণে, একজনের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4350": {
@@ -93608,12 +94132,123 @@
     },
     "national-436": {
       "cluster_id": 436,
-      "headline": "জাতিসংঘের ওপর থেকে আস্থা হারিয়েছে বিশ্ব: ইরানের পররাষ্ট্রমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+      "first_seen": "2026-10-26T08:35:45.538Z",
+      "last_update": "2026-10-26T08:35:45.540Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T01:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/ril9kyq0pv"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:24:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/810819"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:24:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/810819"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.469Z",
+          "kind": "claim",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.472Z",
+          "kind": "claim",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50172,
+          "claim_text": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50173,
+          "claim_text": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 410,
+          "slug": "politics-410",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিরোধী দলে থাকতেই কবর দিতে বাধা দিচ্ছে, রাষ্ট্রক্ষমতা হাতে গেলে কী করবে: তাসনিম জারা"
+        },
+        {
+          "cluster_id": 284,
+          "slug": "national-284",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
+        },
+        {
+          "cluster_id": 268,
+          "slug": "politics-268",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারপ্রাপ্ত পররাষ্ট্রমন্ত্রী হিসেবে কমনওয়েলথ শীর্ষ সম্মেলনে যাচ্ছেন হুমায়ুন কবির"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ক্যানসার হলেও ছড়াবে না শরীরের বিভিন্ন অঙ্গে, আসছে নতুন টিকা"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "national-4361": {
       "cluster_id": 4361,
@@ -93680,12 +94315,131 @@
     },
     "national-437": {
       "cluster_id": 437,
-      "headline": "খুনের মামলায় পুলিশকে ভুয়া তথ্য দিয়েছে অ্যানথ্রপিকের এআই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?",
+      "first_seen": "2026-10-26T08:35:45.541Z",
+      "last_update": "2026-10-26T08:35:45.544Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T05:53:39.000Z",
+          "kind": "evidence",
+          "claim_id": 50174,
+          "claim_text": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmaUEwblM4M1lJUmlrWHpDQU9WVkJGbDg0dndmX2djSGM1QU1Ib1BoMXRVN3dOei1EOHlMMUtxR1BKamFWaXdkZ1BmZ1FfWDU4RFRBb1BobzhUQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T05:53:39.000Z",
+          "kind": "evidence",
+          "claim_id": 50175,
+          "claim_text": "ইরানের সঙ্গে জরুরি বৈঠকে সৌদি-পাকিস্তান-তুরস্ক, নেপথ্যে কী?",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmaUEwblM4M1lJUmlrWHpDQU9WVkJGbDg0dndmX2djSGM1QU1Ib1BoMXRVN3dOei1EOHlMMUtxR1BKamFWaXdkZ1BmZ1FfWDU4RFRBb1BobzhUQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:18:42.000Z",
+          "kind": "evidence",
+          "claim_id": 50174,
+          "claim_text": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_gVBVV95cUxOcThCWnpsVHZNR0Jwb1RfTzhUSDBBRWVfN05wT2Ezb0k3SE9DT21wM2g2RU16dUxOeHZmUl85Z2ZEbWd6WnVBVWFLZDFfRlBUb2pxNDIyQ3Jsc2sxT0RiWWRUY0JjcEFjUjdoamhRZmFzUjFyQVlZeGhmNFlTSGY0bHNjSXp2cnNmZ3B2OWNsVmV3M1ZQU3pHVF9reTBjdVdtdmlQUWJsWnhvQjN4d2dJQ0FhTnBsbEd4d2txdnpQRnhfRjBMSGFvamxnOTBrN0l0MUg5d0poZ0dIeFVySkpjNEpPSXdzNDlTdUs3XzJITWozUU1VTHdGRTZmNjhiaDFkNHBnVkVwR2c2TkxYUW5TUk4tRXQ0clE3VE8wUlRyNFIxM1FvVU52Zkw4dmlVaGpZNFVXcmtpWmNKT0JhanRMV3hQaTg0RXhNOWljT09kYkFXM21ZengtTGZxY0V3WnNQejY1Um9ZeEdyOU4wMVZjQUtITEtBYjA0dXBHQjJfWTRRTjJjbzluV1pFbUtIMDRLZVYtOGxmbzlzRm9kbkhMVG1UdVcwQlF3cE1QSW41TTAwY0VMRnhmM2l6LVAxX3BtUFBRTlJhYUN1LTd6djk5c0Nwei1WRTRzbDdLc3hrR0RmUHcyMno3YThxRU9tQzBCemlDdGFMWEpVNDd3Xzc4aGNETkZjaDBuT0dYVG9PZ0VWVjV5TkVPQzY5YW1NbVVmQUlyYmo4bFNwRmtNY3hMOHYtTW5fX3o3MEd1ZFlxcVVFZkFmX19WLW1nY3c0cmhIbmZWRDVoX2cxcDh4UjJwSFIxTUd2ODR0QzFJUWRrOVVJcXRrQW1ITEVTQWE2Sm9adXZYRW0xeVZYcUtJYy04MGFfSE1LY3IyYmp3RkFEdEZWaFRfTkdGdmF6SzhDLTd0aHBYTlNPUUN3eVNDYlZ2RVo2cTBKa2d5dlhQTl9DRzJUbGstQm42bUgzaFVfbWJMb1E2Q3h1MEZOVFVUUHBfXzVSYmRRa09aV3A2amFR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.476Z",
+          "kind": "claim",
+          "claim_id": 50174,
+          "claim_text": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.478Z",
+          "kind": "claim",
+          "claim_id": 50175,
+          "claim_text": "ইরানের সঙ্গে জরুরি বৈঠকে সৌদি-পাকিস্তান-তুরস্ক, নেপথ্যে কী?"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50174,
+          "claim_text": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50175,
+          "claim_text": "ইরানের সঙ্গে জরুরি বৈঠকে সৌদি-পাকিস্তান-তুরস্ক, নেপথ্যে কী?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
+        },
+        {
+          "cluster_id": 189,
+          "slug": "national-189",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টঙ্গীতে শিশুকে যৌন নিপীড়নের মামলায় মাদ্রাসাশিক্ষকের জামিন নামঞ্জুর"
+        },
+        {
+          "cluster_id": 170,
+          "slug": "national-170",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাম্পের ‘বিশৃঙ্খলা ও নিষ্ঠুরতার’ সমালোচনা করলেন ওবামা"
+        },
+        {
+          "cluster_id": 168,
+          "slug": "national-168",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 149,
+          "slug": "sports-149",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
+        },
+        {
+          "cluster_id": 114,
+          "slug": "national-114",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
+        }
+      ]
     },
     "national-4370": {
       "cluster_id": 4370,
@@ -93743,12 +94497,131 @@
     },
     "national-438": {
       "cluster_id": 438,
-      "headline": "যুক্তরাষ্ট্র সফরের প্রথম দিনেই ১০ কর্মসূচিতে অংশ নেন প্রধানমন্ত্রী তারেক রহমান: মাহদী আমিন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+      "first_seen": "2026-10-26T08:35:45.788Z",
+      "last_update": "2026-10-26T08:35:45.982Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T07:30:55.000Z",
+          "kind": "evidence",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/mother-dies-from-daughters-attack-in-feni/"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:30:55.000Z",
+          "kind": "evidence",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/mother-dies-from-daughters-attack-in-feni/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:03:41.000Z",
+          "kind": "evidence",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/g4w0l81xzz"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.481Z",
+          "kind": "claim",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.484Z",
+          "kind": "claim",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50176,
+          "claim_text": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50177,
+          "claim_text": "মেয়ের বটির কোপে মায়ের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 395,
+          "slug": "national-395",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 15,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 302,
+          "slug": "national-302",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "নজিরবিহীন শান্তিপূর্ণ দুর্গাপূজা নিশ্চিতে প্রধানমন্ত্রী তারেক রহমানের প্রশংসায় ভারতীয় গণমাধ্যম"
+        },
+        {
+          "cluster_id": 205,
+          "slug": "national-205",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
+        },
+        {
+          "cluster_id": 203,
+          "slug": "national-203",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
+        },
+        {
+          "cluster_id": 190,
+          "slug": "sports-190",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রোববারই ইরানে হামলা, না হয় চমৎকার সমঝোতা: ট্রাম্প"
+        }
+      ]
     },
     "national-4381": {
       "cluster_id": 4381,
@@ -93824,11 +94697,81 @@
     },
     "national-439": {
       "cluster_id": 439,
-      "headline": "সুন্দরবনের বাতাসে দূষণ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "তেলের দামে স্বস্তি, কমল বিশ্ববাজারে",
+      "first_seen": "2026-10-26T08:35:45.983Z",
+      "last_update": "2026-10-26T08:35:45.986Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T03:43:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50178,
+          "claim_text": "তেলের দামে স্বস্তি, কমল বিশ্ববাজারে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ENEZJaUNoNFdQVTBUU3Q4X0tqVGdhZU56WTU4X3R6YjM2ZE1UZ2NvUkNPeG4wOVIwemVFNjAzRzRHRGpRSzZwVV9JSlA5UWNiN3o0eEdieGdxQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T03:43:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50179,
+          "claim_text": "বিশ্ববাজারে তেলের দামে পতন",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ENEZJaUNoNFdQVTBUU3Q4X0tqVGdhZU56WTU4X3R6YjM2ZE1UZ2NvUkNPeG4wOVIwemVFNjAzRzRHRGpRSzZwVV9JSlA5UWNiN3o0eEdieGdxQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:55:57.000Z",
+          "kind": "evidence",
+          "claim_id": 50178,
+          "claim_text": "তেলের দামে স্বস্তি, কমল বিশ্ববাজারে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RQkdqTWRLVEtxTmNaZ1VJVV94MWhST0EwbXRrRmVsUlZ3ZjVybExKZjFMb2MzajRqWm9reGF2RE13OEcyNi10YzVrRmJkV2pR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.488Z",
+          "kind": "claim",
+          "claim_id": 50178,
+          "claim_text": "তেলের দামে স্বস্তি, কমল বিশ্ববাজারে"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.492Z",
+          "kind": "claim",
+          "claim_id": 50179,
+          "claim_text": "বিশ্ববাজারে তেলের দামে পতন"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50178,
+          "claim_text": "তেলের দামে স্বস্তি, কমল বিশ্ববাজারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50179,
+          "claim_text": "বিশ্ববাজারে তেলের দামে পতন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4391": {
@@ -93984,11 +94927,81 @@
     },
     "national-440": {
       "cluster_id": 440,
-      "headline": "আমার শিক্ষক ট্রলারচালক মিলন ভাই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পে-স্কেল: বেতন বিল দাখিল নিয়ে উদ্বেগে সরকারি কর্মচারীরা",
+      "first_seen": "2026-10-26T08:35:45.988Z",
+      "last_update": "2026-10-26T08:35:45.991Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T06:30:44.000Z",
+          "kind": "evidence",
+          "claim_id": 50180,
+          "claim_text": "পে-স্কেল: বেতন বিল দাখিল নিয়ে উদ্বেগে সরকারি কর্মচারীরা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qNFJVZktyVU4wMFE1Ulk3cm1hTURZeFlCcDJncG5EOGF3bmQ4NmRDOUJaaEZNY01sUXNKOFlOOGRLYktPMVNaUFFudm1kOEY0WlQ0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:01:33.000Z",
+          "kind": "evidence",
+          "claim_id": 50180,
+          "claim_text": "পে-স্কেল: বেতন বিল দাখিল নিয়ে উদ্বেগে সরকারি কর্মচারীরা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVHAwS09TV0ZaXzZqV0FMNlVxY1hWMTNSajd5eUtId1RYbnFpSnZnQ1kwaFhEZTVrWTh5VFozTmlvbGZWcDZqYVFVbU5maEt3UExV?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T07:01:33.000Z",
+          "kind": "evidence",
+          "claim_id": 50181,
+          "claim_text": "নতুন পে স্কেলে বেতন পাওয়া যাবে কি, প্রশ্ন কর্মচারীদের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVHAwS09TV0ZaXzZqV0FMNlVxY1hWMTNSajd5eUtId1RYbnFpSnZnQ1kwaFhEZTVrWTh5VFozTmlvbGZWcDZqYVFVbU5maEt3UExV?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.494Z",
+          "kind": "claim",
+          "claim_id": 50180,
+          "claim_text": "পে-স্কেল: বেতন বিল দাখিল নিয়ে উদ্বেগে সরকারি কর্মচারীরা"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.497Z",
+          "kind": "claim",
+          "claim_id": 50181,
+          "claim_text": "নতুন পে স্কেলে বেতন পাওয়া যাবে কি, প্রশ্ন কর্মচারীদের"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50180,
+          "claim_text": "পে-স্কেল: বেতন বিল দাখিল নিয়ে উদ্বেগে সরকারি কর্মচারীরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50181,
+          "claim_text": "নতুন পে স্কেলে বেতন পাওয়া যাবে কি, প্রশ্ন কর্মচারীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4400": {
@@ -94074,11 +95087,41 @@
     },
     "national-441": {
       "cluster_id": 441,
-      "headline": "গুলশানে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের ঝটিকা মিছিল: গ্রেপ্তার ১৫ জন তিনদিনের রিমান্ডে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+      "first_seen": "2026-10-26T08:35:46.677Z",
+      "last_update": "2026-10-26T08:35:46.906Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:22:58.000Z",
+          "kind": "evidence",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/40-sick-iranian-sailors-rescued-off-the-coast-of-sri-lanka/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.500Z",
+          "kind": "claim",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50182,
+          "claim_text": "শ্রীলঙ্কার উপকূলে অসুস্থ ৪০ ইরানি নাবিক উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4410": {
@@ -94146,11 +95189,41 @@
     },
     "national-442": {
       "cluster_id": 442,
-      "headline": "বিনা টিকিটে ভ্রমণ, পরে চিরকুটে ৩০ টাকা দিয়ে যা লিখলেন যাত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাজীপুরে মাদ্রাসা পরিচালকের বিরুদ্ধে ছাত্রীকে অপহরণের অভিযোগ",
+      "first_seen": "2026-10-26T08:35:46.908Z",
+      "last_update": "2026-10-26T08:35:46.910Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:21:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50183,
+          "claim_text": "গাজীপুরে মাদ্রাসা পরিচালকের বিরুদ্ধে ছাত্রীকে অপহরণের অভিযোগ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/samagrabangladesh/7xgbp6nfe6"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.503Z",
+          "kind": "claim",
+          "claim_id": 50183,
+          "claim_text": "গাজীপুরে মাদ্রাসা পরিচালকের বিরুদ্ধে ছাত্রীকে অপহরণের অভিযোগ"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50183,
+          "claim_text": "গাজীপুরে মাদ্রাসা পরিচালকের বিরুদ্ধে ছাত্রীকে অপহরণের অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4421": {
@@ -94218,11 +95291,41 @@
     },
     "national-443": {
       "cluster_id": 443,
-      "headline": "ঢাকা বিশ্ববিদ্যালয়ের ৫৪তম সমাবর্তনের তারিখ ঘোষণা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+      "first_seen": "2026-10-26T08:35:46.911Z",
+      "last_update": "2026-10-26T08:35:46.913Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-night-of-the-lantern-festival/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.505Z",
+          "kind": "claim",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4430": {
@@ -94299,11 +95402,41 @@
     },
     "national-444": {
       "cluster_id": 444,
-      "headline": "সাতক্ষীরায় গাজী নজরুলের দ্বিতীয় স্ত্রীর দাফন সম্পন্ন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+      "first_seen": "2026-10-26T08:35:46.915Z",
+      "last_update": "2026-10-26T08:35:46.916Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:07:25.000Z",
+          "kind": "evidence",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/c90kk6wj7a"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.508Z",
+          "kind": "claim",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50185,
+          "claim_text": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4441": {
@@ -94371,11 +95504,41 @@
     },
     "national-445": {
       "cluster_id": 445,
-      "headline": "প্রাথমিকের নিয়োগপত্রের দাবিতে অধিদপ্তরের সামনে অনশন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+      "first_seen": "2026-10-26T08:35:46.918Z",
+      "last_update": "2026-10-26T08:35:46.920Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:06:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/dkvgpdtxoo"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.510Z",
+          "kind": "claim",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4450": {
@@ -100938,6 +102101,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -100976,14 +102147,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
-        },
-        {
-          "cluster_id": 114,
-          "slug": "national-114",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
         }
       ]
     },
@@ -105632,7 +106795,7 @@
           "slug": "national-420",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 1,
+          "claim_count": 2,
           "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
         },
         {
@@ -105652,12 +106815,12 @@
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         },
         {
-          "cluster_id": 410,
-          "slug": "politics-410",
+          "cluster_id": 436,
+          "slug": "national-436",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "বিরোধী দলে থাকতেই কবর দিতে বাধা দিচ্ছে, রাষ্ট্রক্ষমতা হাতে গেলে কী করবে: তাসনিম জারা"
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -106007,7 +107170,7 @@
       "cluster_id": 409,
       "headline": "‘Like a stone in our hearts’: PM leads Helen Haines tributes as parliament pauses to praise ‘fighter’",
       "first_seen": "2026-10-26T07:05:59.942Z",
-      "last_update": "2026-10-26T08:08:07.789Z",
+      "last_update": "2026-10-26T08:35:46.052Z",
       "claim_count": 2,
       "events": [
         {
@@ -107424,6 +108587,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -107462,14 +108633,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ব্যালন ডি’অরের দৌড়ে নতুন ‘টুইস্ট’, পিছিয়ে গেলেন শীর্ষ তারকা"
-        },
-        {
-          "cluster_id": 114,
-          "slug": "national-114",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
         }
       ]
     },
@@ -111774,6 +112937,22 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -111788,22 +112967,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জাপানের উদ্দেশে ঢাকা ত্যাগ করেছেন প্রধানমন্ত্রী তারেক রহমান"
-        },
-        {
-          "cluster_id": 294,
-          "slug": "national-294",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদিতে ক্ষেপণাস্ত্র প্রতিহতের দৃশ্য রেকর্ড ও শেয়ার না করতে ভারতীয়দের সতর্কবার্তা"
-        },
-        {
-          "cluster_id": 247,
-          "slug": "politics-247",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘নোট অব ডিসেন্ট’ পরিবর্তন নিয়ে সরকারের ডাকে সাড়া দেবে বিরোধী দল?"
         }
       ]
     },
@@ -112251,6 +113414,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -112281,22 +113460,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 193,
-          "slug": "national-193",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ"
         }
       ]
     },
@@ -113560,6 +114723,14 @@
           "headline": "‘আমার মৃত্যুর জন্য ইউএনও দায়ী থাকবে’ বলা এসি ল্যান্ডকে প্রত্যাহার"
         },
         {
+          "cluster_id": 436,
+          "slug": "national-436",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
           "cluster_id": 410,
           "slug": "politics-410",
           "actor_links": 0,
@@ -113582,14 +114753,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রেমের প্রস্তাবে রাজি না হওয়ায় ছাত্রীকে অপহরণের অভিযোগ, মাদ্রাসার পরিচালকের বিরুদ্ধে মামলা"
-        },
-        {
-          "cluster_id": 335,
-          "slug": "national-335",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -115234,6 +116397,14 @@
       ],
       "related": [
         {
+          "cluster_id": 436,
+          "slug": "national-436",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
           "cluster_id": 284,
           "slug": "national-284",
           "actor_links": 0,
@@ -116800,6 +117971,14 @@
       ],
       "related": [
         {
+          "cluster_id": 437,
+          "slug": "national-437",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানে বৈঠকে বসছেন সৌদি-তুরস্ক-পাকিস্তানের কর্মকর্তারা, লক্ষ্য কী?"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 0,
@@ -116838,14 +118017,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সীমান্ত পেরিয়ে বাংলাদেশিদের ওপর সাউন্ড গ্রেনেড নিক্ষেপ করল বিএসএফ"
-        },
-        {
-          "cluster_id": 80,
-          "slug": "national-rabiul-target-to",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?"
         }
       ]
     },
@@ -117226,6 +118397,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -117256,22 +118443,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -117607,28 +118778,28 @@
           "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        },
+        {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড"
-        },
-        {
-          "cluster_id": 394,
-          "slug": "national-394",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "একদিন বন্ধ থাকার পর কিশোরগঞ্জ-মহাখালী সড়কে বাস চলাচল শুরু"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "ব্রাজিলে চতুর্থবারের মতো প্রেসিডেন্ট নির্বাচিত লুলা, সামনে বৈরী কংগ্রেস ও বিভক্ত দেশ"
         }
       ]
     },
@@ -118326,6 +119497,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -118356,22 +119543,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
-        },
-        {
-          "cluster_id": 193,
-          "slug": "national-193",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ"
         }
       ]
     },
@@ -120024,8 +121195,8 @@
       "cluster_id": 427,
       "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
       "first_seen": "2026-10-26T08:08:07.777Z",
-      "last_update": "2026-10-26T08:08:07.779Z",
-      "claim_count": 2,
+      "last_update": "2026-10-26T08:35:45.456Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-10-26T07:27:31.000Z",
@@ -120095,6 +121266,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-26T08:26:53.000Z",
+          "kind": "evidence",
+          "claim_id": 48693,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trial-begins-for-34-individuals-including-sheikh-hasina-in-the-murder-case-of-truck-driver-hossain/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:26:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/trial-begins-for-34-individuals-including-sheikh-hasina-in-the-murder-case-of-truck-driver-hossain/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.437Z",
+          "kind": "claim",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50160,
+          "claim_text": "ট্রাকচালক হোসেন হত্যা মামলা: শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -120102,49 +121313,49 @@
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
-        },
-        {
-          "cluster_id": 204,
-          "slug": "national-most-popular-online",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবারের দুর্গাপূজা কেমন কেটেছে, জানালেন পূজা উদযাপন ফ্রন্টের নেতারা"
-        },
-        {
-          "cluster_id": 178,
-          "slug": "national-178",
-          "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 3,
-          "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
-        },
-        {
-          "cluster_id": 168,
-          "slug": "national-168",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নিরপেক্ষ তত্ত্বাবধায়ক সরকারের অধীনেই আগামী জাতীয় নির্বাচন: স্বরাষ্ট্রমন্ত্রী"
+          "headline": "রিয়াদ বিমানবন্দরে ক্ষেপণাস্ত্র হামলার দাবি হুতিদের, সানায় সৌদি জোটের পাল্টা হামলা"
         },
         {
           "cluster_id": 123,
           "slug": "national-123",
           "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
+          "source_links": 3,
+          "claim_count": 5,
           "headline": "টঙ্গীতে মাদ্রাসায় শিশুকে যৌন নিপীড়নের অভিযোগের প্রাথমিক সত্যতা পাওয়া গেছে: পুলিশ"
         },
         {
-          "cluster_id": 122,
-          "slug": "national-122",
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
+          "cluster_id": 408,
+          "slug": "national-408",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "সাজেকের পরিস্থিতি নিরসনে তিন সদস্যের কমিটি গঠন"
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ২১ প্লাটুন বিজিবি, নিরাপত্তায় ড্রোন ও ডগ স্কোয়াড"
+        },
+        {
+          "cluster_id": 394,
+          "slug": "national-394",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "একদিন বন্ধ থাকার পর কিশোরগঞ্জ-মহাখালী সড়কে বাস চলাচল শুরু"
+        },
+        {
+          "cluster_id": 335,
+          "slug": "national-335",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         }
       ]
     },
@@ -120261,11 +121472,41 @@
     },
     "sports-443": {
       "cluster_id": 443,
-      "headline": "কাউকে ভয় পেতে আসিনি—আসিয়ান কাপের প্রতিপক্ষ নিয়ে হামজা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+      "first_seen": "2026-10-26T08:35:46.911Z",
+      "last_update": "2026-10-26T08:35:46.913Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:18:47.000Z",
+          "kind": "evidence",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-night-of-the-lantern-festival/"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.505Z",
+          "kind": "claim",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50184,
+          "claim_text": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-4437": {
@@ -120407,6 +121648,22 @@
       ],
       "related": [
         {
+          "cluster_id": 427,
+          "slug": "sports-427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ট্রাকচালক হোসেন হত্যা মামলায় শেখ হাসিনাসহ ৩৪ জনের বিচার শুরু"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সরকার অনুমোদন দিলে প্রয়োজনে ক্রসফায়ার করতে পিছপা হবে না পুলিশ: আইজিপি"
+        },
+        {
           "cluster_id": 395,
           "slug": "national-395",
           "actor_links": 0,
@@ -120437,22 +121694,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রযুক্তিতে ফিরে এলেন ‘প্রয়াত’ ধর্মগুরু, আশীর্বাদ চাইলেন নরেন্দ্র মোদি"
-        },
-        {
-          "cluster_id": 205,
-          "slug": "national-205",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
-        },
-        {
-          "cluster_id": 203,
-          "slug": "national-203",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাগরের লঘুচাপটি নিম্নচাপে পরিণত, ঘূর্ণিঝড় হয়ে আঘাত হানতে পারে অন্ধ্র প্রদেশের উপকূলে"
         }
       ]
     },
@@ -121978,6 +123219,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "tech-445": {
+      "cluster_id": 445,
+      "headline": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+      "first_seen": "2026-10-26T08:35:46.918Z",
+      "last_update": "2026-10-26T08:35:46.920Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-26T08:06:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/dkvgpdtxoo"
+          }
+        },
+        {
+          "ts": "2026-10-26T08:53:52.510Z",
+          "kind": "claim",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি"
+        },
+        {
+          "ts": "2026-10-26T08:53:52.598Z",
+          "kind": "verify",
+          "claim_id": 50186,
+          "claim_text": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "tech-467": {
