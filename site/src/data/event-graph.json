@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6057,
+    "storyCount": 6059,
     "kinds": [
       "claim",
       "evidence",
@@ -13866,7 +13866,7 @@
       "cluster_id": 634,
       "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T05:26:40.809Z",
+      "last_update": "2026-10-27T05:54:38.612Z",
       "claim_count": 2,
       "events": [
         {
@@ -14253,14 +14253,132 @@
       ],
       "related": []
     },
+    "entertainment-677": {
+      "cluster_id": 677,
+      "headline": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+      "first_seen": "2026-10-27T05:54:39.053Z",
+      "last_update": "2026-10-27T05:54:39.057Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/world-cinema/zj1cizznma"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.791Z",
+          "kind": "claim",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "entertainment-678": {
       "cluster_id": 678,
-      "headline": "ভারতের আন্দোলনে আটক হয়েছিলেন, ইমরান খানের প্রেমিকা কে এই লেখা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+      "first_seen": "2026-10-27T05:54:39.059Z",
+      "last_update": "2026-10-27T05:54:39.061Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:29:36.000Z",
+          "kind": "evidence",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ifoo0auddx"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.794Z",
+          "kind": "claim",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
+        },
+        {
+          "cluster_id": 385,
+          "slug": "national-trump-says-relations",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 4,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ক্যানসার হলেও ছড়াবে না শরীরের বিভিন্ন অঙ্গে, আসছে নতুন টিকা"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
+        }
+      ]
     },
     "entertainment-704": {
       "cluster_id": 704,
@@ -25541,7 +25659,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 7,
+          "claim_count": 8,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -26432,20 +26550,20 @@
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
         },
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
-        },
-        {
-          "cluster_id": 360,
-          "slug": "national-piers-morgan-says",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "পত্রিকা: 'বিশেষ পাসপোর্ট পাচ্ছে ৬৯ হাজার রোহিঙ্গা'"
         }
       ]
     },
@@ -28126,7 +28244,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 15,
+          "claim_count": 16,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -31819,6 +31937,14 @@
       ],
       "related": [
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -31857,14 +31983,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
-        },
-        {
-          "cluster_id": 651,
-          "slug": "national-651",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "উষ্ণ অভ্যর্থনা, গার্ড অব অনারের পর তারেক রহমানের সঙ্গে বৈঠকে সানায়ে তাকাইচি"
         }
       ]
     },
@@ -33534,6 +33652,14 @@
       ],
       "related": [
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -34635,38 +34761,247 @@
     },
     "international-676": {
       "cluster_id": 676,
-      "headline": "রিয়াদ বিমানবন্দরে হামলায় হতাহত ২৬ বাংলাদেশির পরিচয় শনাক্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+      "first_seen": "2026-10-27T05:54:38.608Z",
+      "last_update": "2026-10-27T05:54:38.611Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T15:55:13.000Z",
+          "kind": "evidence",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BVWFCUVhoSkpZamYzWWtXQjBLanlJUXYzeDRualEwSWxWLU9VNmJHazVUNnd4NUhLOV84LVFNVmJVSmJOTkpSMC1ObkFHTEJUXzRfbTZNeS1qZ195ZlBFM2ZfaVF3S2taMHN3dms3bEdMcnRI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T15:55:13.000Z",
+          "kind": "evidence",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BVWFCUVhoSkpZamYzWWtXQjBLanlJUXYzeDRualEwSWxWLU9VNmJHazVUNnd4NUhLOV84LVFNVmJVSmJOTkpSMC1ObkFHTEJUXzRfbTZNeS1qZ195ZlBFM2ZfaVF3S2taMHN3dms3bEdMcnRI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T16:12:37.000Z",
+          "kind": "evidence",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUb0QxeXIwSkNqSHBDd2hMOTNKNmVmOGtKOXNYZlpCSi1qTUxDYTlpZk41a1liMFM1UmRaN1ZJcExzaDI0WmJYRllvYXdRSjhjaVg5TDlBZ1dSNTJmRVp2ZUE3b2ZYRDlyWEZEbThDaGZBeEN0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.785Z",
+          "kind": "claim",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.788Z",
+          "kind": "claim",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-678": {
       "cluster_id": 678,
-      "headline": "নিষেধাজ্ঞা প্রত্যাহার ও ইরানের অর্থছাড়ের প্রস্তাব দেওয়ার কথা অস্বীকার ট্রাম্পের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+      "first_seen": "2026-10-27T05:54:39.059Z",
+      "last_update": "2026-10-27T05:54:39.061Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:29:36.000Z",
+          "kind": "evidence",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ifoo0auddx"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.794Z",
+          "kind": "claim",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
+        },
+        {
+          "cluster_id": 385,
+          "slug": "national-trump-says-relations",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 4,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ক্যানসার হলেও ছড়াবে না শরীরের বিভিন্ন অঙ্গে, আসছে নতুন টিকা"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
+        }
+      ]
     },
     "international-679": {
       "cluster_id": 679,
-      "headline": "ভারতের সুপ্রিম কোর্ট অভিমুখে বিরোধীদের মিছিল ঘিরে নয়াদিল্লিতে কড়া নিরাপত্তা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+      "first_seen": "2026-10-27T05:54:39.062Z",
+      "last_update": "2026-10-27T05:54:39.064Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:29:18.000Z",
+          "kind": "evidence",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/an8g060dr1"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.797Z",
+          "kind": "claim",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-681": {
       "cluster_id": 681,
-      "headline": "‘খোঁজ নেই’ সোহেল আফ্রিদির, তিনি কি সত্যিই আটক হয়েছেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+      "first_seen": "2026-10-27T05:54:39.070Z",
+      "last_update": "2026-10-27T05:54:39.072Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/olivia-chow-re-elected-as-mayor-of-toronto/"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.803Z",
+          "kind": "claim",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-686": {
@@ -36341,7 +36676,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T05:26:40.802Z",
+      "last_update": "2026-10-27T05:54:38.603Z",
       "claim_count": 2,
       "events": [
         {
@@ -38085,20 +38420,20 @@
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
         },
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
-        },
-        {
-          "cluster_id": 360,
-          "slug": "national-piers-morgan-says",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "পত্রিকা: 'বিশেষ পাসপোর্ট পাচ্ছে ৬৯ হাজার রোহিঙ্গা'"
         }
       ]
     },
@@ -45408,7 +45743,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 7,
+          "claim_count": 8,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -48464,6 +48799,14 @@
       ],
       "related": [
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -51008,6 +51351,14 @@
           "headline": "ইরানের কট্টরপন্থীরা প্রেসিডেন্ট পেজেশকিয়ানের বিরুদ্ধে, পররাষ্ট্রমন্ত্রী আরাগচিরও অভিশংসন চায় তারা"
         },
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 675,
           "slug": "national-675",
           "actor_links": 1,
@@ -51022,14 +51373,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
-        },
-        {
-          "cluster_id": 420,
-          "slug": "national-420",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 6,
-          "headline": "ক্রসফায়ার যদি প্রয়োজন হয়, সরকার যদি অ্যালাউ করে, আমরা সেটাই করব: আইজিপি"
         }
       ]
     },
@@ -59728,12 +60071,12 @@
           "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
         },
         {
-          "cluster_id": 675,
-          "slug": "national-675",
+          "cluster_id": 678,
+          "slug": "national-678",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "ইরানই আমাদের সঙ্গে যুদ্ধ শুরু করেছে: ট্রাম্প"
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
         }
       ]
     },
@@ -80221,7 +80564,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 15,
+          "claim_count": 16,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -98709,7 +99052,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 15,
+          "claim_count": 16,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -109074,6 +109417,14 @@
       ],
       "related": [
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -109112,14 +109463,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
-        },
-        {
-          "cluster_id": 651,
-          "slug": "national-651",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "উষ্ণ অভ্যর্থনা, গার্ড অব অনারের পর তারেক রহমানের সঙ্গে বৈঠকে সানায়ে তাকাইচি"
         }
       ]
     },
@@ -114651,7 +114994,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 15,
+          "claim_count": 16,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -114765,6 +115108,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
         {
           "cluster_id": 509,
           "slug": "national-509",
@@ -118955,7 +119306,7 @@
       "cluster_id": 621,
       "headline": "আজ জাতীয় দাড়ি কাটা দিবস",
       "first_seen": "2026-10-26T23:06:02.686Z",
-      "last_update": "2026-10-27T05:26:40.808Z",
+      "last_update": "2026-10-27T05:54:38.607Z",
       "claim_count": 4,
       "events": [
         {
@@ -121500,7 +121851,7 @@
           "slug": "national-657",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -121781,7 +122132,7 @@
       "cluster_id": 634,
       "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T05:26:40.809Z",
+      "last_update": "2026-10-27T05:54:38.612Z",
       "claim_count": 2,
       "events": [
         {
@@ -123126,8 +123477,8 @@
       "cluster_id": 657,
       "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
       "first_seen": "2026-10-27T04:26:12.487Z",
-      "last_update": "2026-10-27T05:26:40.801Z",
-      "claim_count": 15,
+      "last_update": "2026-10-27T05:54:38.602Z",
+      "claim_count": 16,
       "events": [
         {
           "ts": "2026-10-26T13:39:03.000Z",
@@ -123717,6 +124068,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-27T05:22:11.000Z",
+          "kind": "evidence",
+          "claim_id": 116646,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/02hw52lnps"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:22:11.000Z",
+          "kind": "evidence",
+          "claim_id": 122852,
+          "claim_text": "হার না–মানা এক রানির বার্সেলোনা থেকে লন্ডন জয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/02hw52lnps"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.734Z",
+          "kind": "claim",
+          "claim_id": 122852,
+          "claim_text": "হার না–মানা এক রানির বার্সেলোনা থেকে লন্ডন জয়"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122852,
+          "claim_text": "হার না–মানা এক রানির বার্সেলোনা থেকে লন্ডন জয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -123774,7 +124165,7 @@
       "cluster_id": 658,
       "headline": "ভিক্ষা করে ছেলের চিকিৎসা করাইছি, এখন খোঁজও নেয় না: হাফেজ তাশরীফের বাবা",
       "first_seen": "2026-10-27T04:26:12.504Z",
-      "last_update": "2026-10-27T05:26:40.807Z",
+      "last_update": "2026-10-27T05:54:38.606Z",
       "claim_count": 2,
       "events": [
         {
@@ -124087,7 +124478,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T05:26:40.802Z",
+      "last_update": "2026-10-27T05:54:38.603Z",
       "claim_count": 2,
       "events": [
         {
@@ -124489,7 +124880,7 @@
       "cluster_id": 670,
       "headline": "প্রতিমন্ত্রী টুকুর সহযোগিতায় লিবিয়া থেকে দেশে ফিরলেন দুই যুবক",
       "first_seen": "2026-10-27T05:26:40.803Z",
-      "last_update": "2026-10-27T05:26:40.806Z",
+      "last_update": "2026-10-27T05:54:38.604Z",
       "claim_count": 2,
       "events": [
         {
@@ -124747,29 +125138,247 @@
     },
     "national-676": {
       "cluster_id": 676,
-      "headline": "শেষ মুহূর্তের ওলিসের দুর্দান্ত গোলে বেলজিয়ামকে হারালো ফ্রান্স",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+      "first_seen": "2026-10-27T05:54:38.608Z",
+      "last_update": "2026-10-27T05:54:38.611Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T15:55:13.000Z",
+          "kind": "evidence",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BVWFCUVhoSkpZamYzWWtXQjBLanlJUXYzeDRualEwSWxWLU9VNmJHazVUNnd4NUhLOV84LVFNVmJVSmJOTkpSMC1ObkFHTEJUXzRfbTZNeS1qZ195ZlBFM2ZfaVF3S2taMHN3dms3bEdMcnRI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T15:55:13.000Z",
+          "kind": "evidence",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BVWFCUVhoSkpZamYzWWtXQjBLanlJUXYzeDRualEwSWxWLU9VNmJHazVUNnd4NUhLOV84LVFNVmJVSmJOTkpSMC1ObkFHTEJUXzRfbTZNeS1qZ195ZlBFM2ZfaVF3S2taMHN3dms3bEdMcnRI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T16:12:37.000Z",
+          "kind": "evidence",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUb0QxeXIwSkNqSHBDd2hMOTNKNmVmOGtKOXNYZlpCSi1qTUxDYTlpZk41a1liMFM1UmRaN1ZJcExzaDI0WmJYRllvYXdRSjhjaVg5TDlBZ1dSNTJmRVp2ZUE3b2ZYRDlyWEZEbThDaGZBeEN0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.785Z",
+          "kind": "claim",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.788Z",
+          "kind": "claim",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122869,
+          "claim_text": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122870,
+          "claim_text": "রংপুরে ‘ধর্ম অবমাননার’ অভিযোগে কয়েকটি বাড়ি ভাঙচুর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-677": {
       "cluster_id": 677,
-      "headline": "আজ থেকে শুরু ফ্যামিলি কার্ডের তথ্য সংগ্রহ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+      "first_seen": "2026-10-27T05:54:39.053Z",
+      "last_update": "2026-10-27T05:54:39.057Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/world-cinema/zj1cizznma"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.791Z",
+          "kind": "claim",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122871,
+          "claim_text": "নতুন জম্বি, ভয়ংকর সংক্রমণ আর মানুষের বাঁচার লড়াই",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
+    },
+    "national-678": {
+      "cluster_id": 678,
+      "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+      "first_seen": "2026-10-27T05:54:39.059Z",
+      "last_update": "2026-10-27T05:54:39.061Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:29:36.000Z",
+          "kind": "evidence",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/ifoo0auddx"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.794Z",
+          "kind": "claim",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122872,
+          "claim_text": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 509,
+          "slug": "national-509",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
+        },
+        {
+          "cluster_id": 385,
+          "slug": "national-trump-says-relations",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 4,
+          "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "ক্যানসার হলেও ছড়াবে না শরীরের বিভিন্ন অঙ্গে, আসছে নতুন টিকা"
+        },
+        {
+          "cluster_id": 2,
+          "slug": "national-2",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
+        }
+      ]
     },
     "national-679": {
       "cluster_id": 679,
-      "headline": "ঠাকুরগাঁও-১ আসনের উপনির্বাচন: ১১ দলীয় ঐক্যের প্রার্থী দেলাওয়ার হোসেন; মনোনয়নপত্র জমা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+      "first_seen": "2026-10-27T05:54:39.062Z",
+      "last_update": "2026-10-27T05:54:39.064Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:29:18.000Z",
+          "kind": "evidence",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/an8g060dr1"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.797Z",
+          "kind": "claim",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122873,
+          "claim_text": "খুলনায় যুবদলের সাবেক নেতাকে হঠাৎ গুলি করে পালিয়ে যায় দুর্বৃত্তরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-68": {
@@ -124862,20 +125471,80 @@
     },
     "national-680": {
       "cluster_id": 680,
-      "headline": "র্যামের দাম সামলাতে পুরনো সকেটে আসছে ইনটেলের নতুন প্রসেসর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নিহত ১০ জনের পরিচয় শনাক্ত, পাওয়া যায়নি ছাত্রদল নেতার স্ত্রীর মরদেহ",
+      "first_seen": "2026-10-27T05:54:39.066Z",
+      "last_update": "2026-10-27T05:54:39.068Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:27:25.000Z",
+          "kind": "evidence",
+          "claim_id": 122874,
+          "claim_text": "নিহত ১০ জনের পরিচয় শনাক্ত, পাওয়া যায়নি ছাত্রদল নেতার স্ত্রীর মরদেহ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/5m9c8wcvlx"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.800Z",
+          "kind": "claim",
+          "claim_id": 122874,
+          "claim_text": "নিহত ১০ জনের পরিচয় শনাক্ত, পাওয়া যায়নি ছাত্রদল নেতার স্ত্রীর মরদেহ"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122874,
+          "claim_text": "নিহত ১০ জনের পরিচয় শনাক্ত, পাওয়া যায়নি ছাত্রদল নেতার স্ত্রীর মরদেহ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-681": {
       "cluster_id": 681,
-      "headline": "ইউপিএলের বিক্রয়কেন্দ্রে তালা, অসমাপ্ত আত্মজীবনী নিয়ে প্রকাশকের বিবৃতি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+      "first_seen": "2026-10-27T05:54:39.070Z",
+      "last_update": "2026-10-27T05:54:39.072Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T05:20:07.000Z",
+          "kind": "evidence",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/olivia-chow-re-elected-as-mayor-of-toronto/"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:12:10.803Z",
+          "kind": "claim",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ"
+        },
+        {
+          "ts": "2026-10-27T06:12:10.907Z",
+          "kind": "verify",
+          "claim_id": 122875,
+          "claim_text": "টরন্টোর মেয়র পদে পুনর্নির্বাচিত অলিভিয়া চাউ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-682": {
@@ -131967,6 +132636,14 @@
           "headline": "ইরানের কট্টরপন্থীরা প্রেসিডেন্ট পেজেশকিয়ানের বিরুদ্ধে, পররাষ্ট্রমন্ত্রী আরাগচিরও অভিশংসন চায় তারা"
         },
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 675,
           "slug": "national-675",
           "actor_links": 1,
@@ -131981,14 +132658,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
-        },
-        {
-          "cluster_id": 420,
-          "slug": "national-420",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 6,
-          "headline": "ক্রসফায়ার যদি প্রয়োজন হয়, সরকার যদি অ্যালাউ করে, আমরা সেটাই করব: আইজিপি"
         }
       ]
     },
@@ -132417,7 +133086,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T05:26:40.802Z",
+      "last_update": "2026-10-27T05:54:38.603Z",
       "claim_count": 2,
       "events": [
         {
@@ -133431,7 +134100,7 @@
       "cluster_id": 670,
       "headline": "প্রতিমন্ত্রী টুকুর সহযোগিতায় লিবিয়া থেকে দেশে ফিরলেন দুই যুবক",
       "first_seen": "2026-10-27T05:26:40.803Z",
-      "last_update": "2026-10-27T05:26:40.806Z",
+      "last_update": "2026-10-27T05:54:38.604Z",
       "claim_count": 2,
       "events": [
         {
@@ -134045,7 +134714,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T05:26:40.802Z",
+      "last_update": "2026-10-27T05:54:38.603Z",
       "claim_count": 2,
       "events": [
         {
@@ -134895,7 +135564,7 @@
       "cluster_id": 634,
       "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T05:26:40.809Z",
+      "last_update": "2026-10-27T05:54:38.612Z",
       "claim_count": 2,
       "events": [
         {
@@ -136100,20 +136769,20 @@
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
         },
         {
+          "cluster_id": 678,
+          "slug": "national-678",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শেরপুরে এক বৃদ্ধকে বসতঘরের বারান্দায় দাফন"
+        },
+        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
-        },
-        {
-          "cluster_id": 360,
-          "slug": "national-piers-morgan-says",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "পত্রিকা: 'বিশেষ পাসপোর্ট পাচ্ছে ৬৯ হাজার রোহিঙ্গা'"
         }
       ]
     },
@@ -143239,7 +143908,7 @@
           "slug": "national-657",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 7,
+          "claim_count": 8,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
@@ -145818,7 +146487,7 @@
       "cluster_id": 634,
       "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T05:26:40.809Z",
+      "last_update": "2026-10-27T05:54:38.612Z",
       "claim_count": 2,
       "events": [
         {
@@ -154348,7 +155017,7 @@
           "slug": "national-657",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 9,
+          "claim_count": 10,
           "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
