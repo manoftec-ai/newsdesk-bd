@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6063,
+    "storyCount": 6066,
     "kinds": [
       "claim",
       "evidence",
@@ -5089,6 +5089,14 @@
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -5103,14 +5111,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহাদাতকে প্রশাসক করায় সরকারের বিরুদ্ধে মামলা হওয়া উচিত: এনসিপি নেতা আরিফ"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
         }
       ]
     },
@@ -6863,6 +6863,45 @@
           "kind": "verify",
           "claim_id": 124968,
           "claim_text": "সব যোগ্যতা থাকার পরও শিক্ষা ক্যাডারে পদোন্নতিতে এত জটিলতা কেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-703": {
+      "cluster_id": 703,
+      "headline": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
+      "first_seen": "2026-10-27T07:25:08.463Z",
+      "last_update": "2026-10-27T07:25:08.465Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:01:29.000Z",
+          "kind": "evidence",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/s7qtj2rv4j"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.529Z",
+          "kind": "claim",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -13902,9 +13941,9 @@
     },
     "entertainment-634": {
       "cluster_id": 634,
-      "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
+      "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T06:55:26.744Z",
+      "last_update": "2026-10-27T07:25:07.990Z",
       "claim_count": 3,
       "events": [
         {
@@ -14001,6 +14040,17 @@
         {
           "ts": "2026-10-27T05:46:20.000Z",
           "kind": "evidence",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/bangladesh/111935/%E0%A6%98%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%BF%E0%A6%9D%E0%A7%9C-%E2%80%98%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%AC%E2%80%99-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%AC-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A7%A9-%E0%A6%A8%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:46:20.000Z",
+          "kind": "evidence",
           "claim_id": 124901,
           "claim_text": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
           "detail": {
@@ -14025,6 +14075,18 @@
             "from": null,
             "confidence": 67,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
           }
         }
       ],
@@ -14477,14 +14539,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -14515,16 +14569,54 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         }
       ]
     },
     "entertainment-704": {
       "cluster_id": 704,
-      "headline": "বিল গেটস অবাক: বাংলাদেশি এসব পেশা এআই খেতে পারবে না!",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+      "first_seen": "2026-10-27T07:25:08.467Z",
+      "last_update": "2026-10-27T07:25:08.469Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/f6bkf0xr9v"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.532Z",
+          "kind": "claim",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-730": {
@@ -18947,6 +19039,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -18985,14 +19085,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -19788,6 +19880,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -19826,14 +19926,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -20496,7 +20588,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 108,
@@ -25798,7 +25890,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 657,
@@ -26696,12 +26788,12 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
+          "cluster_id": 509,
+          "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         }
       ]
     },
@@ -29623,7 +29715,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 310,
@@ -30588,6 +30680,14 @@
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -30602,14 +30702,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহাদাতকে প্রশাসক করায় সরকারের বিরুদ্ধে মামলা হওয়া উচিত: এনসিপি নেতা আরিফ"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
         }
       ]
     },
@@ -32083,14 +32175,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -32121,6 +32205,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -33798,14 +33890,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -33836,6 +33920,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         }
       ]
     },
@@ -34901,7 +34993,7 @@
       "cluster_id": 676,
       "headline": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
       "first_seen": "2026-10-27T05:54:38.608Z",
-      "last_update": "2026-10-27T06:55:26.750Z",
+      "last_update": "2026-10-27T07:25:07.989Z",
       "claim_count": 2,
       "events": [
         {
@@ -35023,14 +35115,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -35061,6 +35145,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         }
       ]
     },
@@ -35222,9 +35314,9 @@
     },
     "international-690": {
       "cluster_id": 690,
-      "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+      "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
       "first_seen": "2026-10-27T06:55:26.722Z",
-      "last_update": "2026-10-27T06:55:26.729Z",
+      "last_update": "2026-10-27T07:25:07.974Z",
       "claim_count": 7,
       "events": [
         {
@@ -35250,6 +35342,17 @@
           }
         },
         {
+          "ts": "2026-10-27T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/vy95hakb3m"
+          }
+        },
+        {
           "ts": "2026-10-27T02:30:00.000Z",
           "kind": "evidence",
           "claim_id": 127072,
@@ -35265,6 +35368,17 @@
           "kind": "evidence",
           "claim_id": 127074,
           "claim_text": "‘স্বামীকে ভালোবাসি, তাতে সমস্যা কোথায়?’ কাদের ওপর চটলেন রাশমিকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/ahkamqs2vi"
+          }
+        },
+        {
+          "ts": "2026-10-27T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -35307,6 +35421,17 @@
         {
           "ts": "2026-10-27T03:04:57.000Z",
           "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/0bwpbq76an"
+          }
+        },
+        {
+          "ts": "2026-10-27T03:04:57.000Z",
+          "kind": "evidence",
           "claim_id": 127076,
           "claim_text": "হামের টিকা ঠিকমতো কাজে আসছে না, ২৭ শতাংশ শিশুর অ্যান্টিবডি হয়নি",
           "detail": {
@@ -35320,6 +35445,17 @@
           "kind": "evidence",
           "claim_id": 127072,
           "claim_text": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/aky04rpw0o"
+          }
+        },
+        {
+          "ts": "2026-10-27T04:14:57.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -35351,6 +35487,17 @@
         {
           "ts": "2026-10-27T05:22:11.000Z",
           "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/02hw52lnps"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:22:11.000Z",
+          "kind": "evidence",
           "claim_id": 127078,
           "claim_text": "হার না–মানা এক রানির বার্সেলোনা থেকে লন্ডন জয়",
           "detail": {
@@ -35364,6 +35511,17 @@
           "kind": "evidence",
           "claim_id": 127072,
           "claim_text": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/w1vy94xfir"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:20:28.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -35495,6 +35653,18 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -35552,7 +35722,7 @@
       "cluster_id": 693,
       "headline": "আবু সাঈদের সংবাদ প্রচার ও ভিডিও ধারণের জন্য সম্মাননা পেলেন যমুনা টিভির দুই সাংবাদিক",
       "first_seen": "2026-10-27T06:55:26.751Z",
-      "last_update": "2026-10-27T06:55:26.754Z",
+      "last_update": "2026-10-27T07:25:07.991Z",
       "claim_count": 2,
       "events": [
         {
@@ -35746,20 +35916,169 @@
     },
     "international-699": {
       "cluster_id": 699,
-      "headline": "বারবার আটক, তবু প্রতিবাদে অটল— কে এই নেহা বোরা?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+      "first_seen": "2026-10-27T07:25:07.975Z",
+      "last_update": "2026-10-27T07:25:07.978Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-27T05:05:55.000Z",
+          "kind": "evidence",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/976982/%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%9F%E0%A6%BF-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:15:34.000Z",
+          "kind": "evidence",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-fire-erupts-during-tubewell-drilling-in-inani-ukhia-panic-in-the-area/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:15:34.000Z",
+          "kind": "evidence",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-fire-erupts-during-tubewell-drilling-in-inani-ukhia-panic-in-the-area/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.511Z",
+          "kind": "claim",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.514Z",
+          "kind": "claim",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 651,
+          "slug": "national-651",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "উষ্ণ অভ্যর্থনা, গার্ড অব অনারের পর তারেক রহমানের সঙ্গে বৈঠকে সানায়ে তাকাইচি"
+        },
+        {
+          "cluster_id": 562,
+          "slug": "opinion-562",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জনতা ও অগ্রণী ব্যাংকের এমডি হচ্ছেন বেসরকারি ব্যাংকের দুই কর্মকর্তা"
+        },
+        {
+          "cluster_id": 493,
+          "slug": "sports-493",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
+        },
+        {
+          "cluster_id": 484,
+          "slug": "national-trump-s-ban",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
+        },
+        {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        }
+      ]
     },
     "international-701": {
       "cluster_id": 701,
-      "headline": "মার্কিন-ইসরায়েল সম্পর্কের অপূরণীয় ধ্বস এবং গাজা গণহত্যার ভয়াবহ বাস্তবতা: ইসরায়েলি গণমাধ্যম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+      "first_seen": "2026-10-27T07:25:08.455Z",
+      "last_update": "2026-10-27T07:25:08.457Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/7-benefits-of-seeking-forgiveness-istighfar-frequently-what-do-the-quran-and-hadith-say/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.523Z",
+          "kind": "claim",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-708": {
@@ -37371,7 +37690,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T06:55:26.747Z",
+      "last_update": "2026-10-27T07:25:07.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -37736,11 +38055,41 @@
     },
     "international-raf-fairford-labour": {
       "cluster_id": 701,
-      "headline": "RAF Fairford: Labour’s deputy leader says ‘I trust our police’ after Trump questions decision to bail suspects – latest updates",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+      "first_seen": "2026-10-27T07:25:08.455Z",
+      "last_update": "2026-10-27T07:25:08.457Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/7-benefits-of-seeking-forgiveness-istighfar-frequently-what-do-the-quran-and-hadith-say/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.523Z",
+          "kind": "claim",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-rightwing-extremists-increasingly": {
@@ -39123,12 +39472,12 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
+          "cluster_id": 509,
+          "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         }
       ]
     },
@@ -41314,7 +41663,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 624,
@@ -41591,6 +41940,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -41629,14 +41986,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -46447,7 +46796,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 657,
@@ -47013,6 +47362,14 @@
       ],
       "related": [
         {
+          "cluster_id": 700,
+          "slug": "national-700",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের"
+        },
+        {
           "cluster_id": 620,
           "slug": "national-620",
           "actor_links": 0,
@@ -47051,14 +47408,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "বঙ্গোপসাগরে গভীর নিম্নচাপ, ঘূর্ণিঝড়ে তিন বিভাগে বৃষ্টির শঙ্কা"
-        },
-        {
-          "cluster_id": 378,
-          "slug": "national-378",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
         }
       ]
     },
@@ -49502,14 +49851,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -49540,6 +49881,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -50605,6 +50954,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 700,
+          "slug": "national-700",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের"
+        },
         {
           "cluster_id": 588,
           "slug": "national-588",
@@ -52054,20 +52411,20 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 6,
+          "headline": "ক্রসফায়ার যদি প্রয়োজন হয়, সরকার যদি অ্যালাউ করে, আমরা সেটাই করব: আইজিপি"
         }
       ]
     },
@@ -55731,6 +56088,14 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -55753,14 +56118,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জনতা ও অগ্রণী ব্যাংকের এমডি হচ্ছেন বেসরকারি ব্যাংকের দুই কর্মকর্তা"
-        },
-        {
-          "cluster_id": 493,
-          "slug": "sports-493",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
         }
       ]
     },
@@ -55933,6 +56290,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -55971,14 +56336,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -57814,6 +58171,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -57852,14 +58217,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -63578,6 +63935,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -63616,14 +63981,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -65426,6 +65783,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -65464,14 +65829,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -66456,7 +66813,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 108,
@@ -93682,6 +94039,14 @@
       ],
       "related": [
         {
+          "cluster_id": 700,
+          "slug": "national-700",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের"
+        },
+        {
           "cluster_id": 692,
           "slug": "national-692",
           "actor_links": 0,
@@ -93720,14 +94085,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশ ছাড়ার খবর দিয়ে রুমি বললেন— ‘আপনারা ভালো থাকেন’"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
         }
       ]
     },
@@ -102260,7 +102617,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 310,
@@ -104768,6 +105125,14 @@
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -104782,14 +105147,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহাদাতকে প্রশাসক করায় সরকারের বিরুদ্ধে মামলা হওয়া উচিত: এনসিপি নেতা আরিফ"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
         }
       ]
     },
@@ -110153,14 +110510,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -110191,6 +110540,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -115845,14 +116202,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -115883,6 +116232,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         }
       ]
     },
@@ -116573,6 +116930,14 @@
           "headline": "‘এমন বিশৃঙ্খলা কি এই প্রথম দেখলেন’: বাংলাদেশ দলে অস্থিরতা নিয়ে ফিল সিমন্স"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -116603,14 +116968,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
-        },
-        {
-          "cluster_id": 484,
-          "slug": "national-trump-s-ban",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
         }
       ]
     },
@@ -117290,6 +117647,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 700,
+          "slug": "national-700",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের"
+        },
         {
           "cluster_id": 378,
           "slug": "national-378",
@@ -122579,8 +122944,8 @@
           "slug": "national-690",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 9,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 657,
@@ -122866,9 +123231,9 @@
     },
     "national-634": {
       "cluster_id": 634,
-      "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
+      "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T06:55:26.744Z",
+      "last_update": "2026-10-27T07:25:07.990Z",
       "claim_count": 3,
       "events": [
         {
@@ -122965,6 +123330,17 @@
         {
           "ts": "2026-10-27T05:46:20.000Z",
           "kind": "evidence",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/bangladesh/111935/%E0%A6%98%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%BF%E0%A6%9D%E0%A7%9C-%E2%80%98%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%AC%E2%80%99-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%AC-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A7%A9-%E0%A6%A8%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:46:20.000Z",
+          "kind": "evidence",
           "claim_id": 124901,
           "claim_text": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
           "detail": {
@@ -122989,6 +123365,18 @@
             "from": null,
             "confidence": 67,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
           }
         }
       ],
@@ -125165,8 +125553,8 @@
           "slug": "national-690",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 9,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 631,
@@ -125214,7 +125602,7 @@
       "cluster_id": 658,
       "headline": "ভিক্ষা করে ছেলের চিকিৎসা করাইছি, এখন খোঁজও নেয় না: হাফেজ তাশরীফের বাবা",
       "first_seen": "2026-10-27T04:26:12.504Z",
-      "last_update": "2026-10-27T06:55:26.748Z",
+      "last_update": "2026-10-27T07:25:07.988Z",
       "claim_count": 2,
       "events": [
         {
@@ -125527,7 +125915,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T06:55:26.747Z",
+      "last_update": "2026-10-27T07:25:07.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -126189,7 +126577,7 @@
       "cluster_id": 676,
       "headline": "সকালে জিডি, দুপুরে ‘ধর্ম অবমাননার’ অভিযোগে পুলিশ হেফাজতে যুবক",
       "first_seen": "2026-10-27T05:54:38.608Z",
-      "last_update": "2026-10-27T06:55:26.750Z",
+      "last_update": "2026-10-27T07:25:07.989Z",
       "claim_count": 2,
       "events": [
         {
@@ -126350,14 +126738,6 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
@@ -126388,6 +126768,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
         }
       ]
     },
@@ -126784,7 +127172,7 @@
       "cluster_id": 684,
       "headline": "জেদ্দায় বাংলাদেশ হজ অফিসে চাকরির সুযোগ",
       "first_seen": "2026-10-27T06:23:17.716Z",
-      "last_update": "2026-10-27T06:55:26.746Z",
+      "last_update": "2026-10-27T07:25:07.986Z",
       "claim_count": 2,
       "events": [
         {
@@ -127184,9 +127572,9 @@
     },
     "national-690": {
       "cluster_id": 690,
-      "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+      "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
       "first_seen": "2026-10-27T06:55:26.722Z",
-      "last_update": "2026-10-27T06:55:26.729Z",
+      "last_update": "2026-10-27T07:25:07.974Z",
       "claim_count": 7,
       "events": [
         {
@@ -127212,6 +127600,17 @@
           }
         },
         {
+          "ts": "2026-10-27T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/vy95hakb3m"
+          }
+        },
+        {
           "ts": "2026-10-27T02:30:00.000Z",
           "kind": "evidence",
           "claim_id": 127072,
@@ -127227,6 +127626,17 @@
           "kind": "evidence",
           "claim_id": 127074,
           "claim_text": "‘স্বামীকে ভালোবাসি, তাতে সমস্যা কোথায়?’ কাদের ওপর চটলেন রাশমিকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/ahkamqs2vi"
+          }
+        },
+        {
+          "ts": "2026-10-27T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -127269,6 +127679,17 @@
         {
           "ts": "2026-10-27T03:04:57.000Z",
           "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/0bwpbq76an"
+          }
+        },
+        {
+          "ts": "2026-10-27T03:04:57.000Z",
+          "kind": "evidence",
           "claim_id": 127076,
           "claim_text": "হামের টিকা ঠিকমতো কাজে আসছে না, ২৭ শতাংশ শিশুর অ্যান্টিবডি হয়নি",
           "detail": {
@@ -127282,6 +127703,17 @@
           "kind": "evidence",
           "claim_id": 127072,
           "claim_text": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/aky04rpw0o"
+          }
+        },
+        {
+          "ts": "2026-10-27T04:14:57.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -127313,6 +127745,17 @@
         {
           "ts": "2026-10-27T05:22:11.000Z",
           "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/football/02hw52lnps"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:22:11.000Z",
+          "kind": "evidence",
           "claim_id": 127078,
           "claim_text": "হার না–মানা এক রানির বার্সেলোনা থেকে লন্ডন জয়",
           "detail": {
@@ -127326,6 +127769,17 @@
           "kind": "evidence",
           "claim_id": 127072,
           "claim_text": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/w1vy94xfir"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:20:28.000Z",
+          "kind": "evidence",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -127457,6 +127911,18 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 127075,
+          "claim_text": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -127514,7 +127980,7 @@
       "cluster_id": 691,
       "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল",
       "first_seen": "2026-10-27T06:55:26.730Z",
-      "last_update": "2026-10-27T06:55:26.734Z",
+      "last_update": "2026-10-27T07:25:07.983Z",
       "claim_count": 3,
       "events": [
         {
@@ -127637,14 +128103,6 @@
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -127675,6 +128133,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -127682,7 +128148,7 @@
       "cluster_id": 692,
       "headline": "কঠোর নিরাপত্তায় রূপপুরে পৌঁছেছে ইউরেনিয়ামের দ্বিতীয় চালান",
       "first_seen": "2026-10-27T06:55:26.735Z",
-      "last_update": "2026-10-27T06:55:26.741Z",
+      "last_update": "2026-10-27T07:25:07.985Z",
       "claim_count": 2,
       "events": [
         {
@@ -127810,7 +128276,7 @@
       "cluster_id": 693,
       "headline": "আবু সাঈদের সংবাদ প্রচার ও ভিডিও ধারণের জন্য সম্মাননা পেলেন যমুনা টিভির দুই সাংবাদিক",
       "first_seen": "2026-10-27T06:55:26.751Z",
-      "last_update": "2026-10-27T06:55:26.754Z",
+      "last_update": "2026-10-27T07:25:07.991Z",
       "claim_count": 2,
       "events": [
         {
@@ -128082,12 +128548,131 @@
     },
     "national-699": {
       "cluster_id": 699,
-      "headline": "দেশে এলপিজির কোনো সংকট নেই, মন্ত্রীকে নিশ্চিত করলেন অপারেটররা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+      "first_seen": "2026-10-27T07:25:07.975Z",
+      "last_update": "2026-10-27T07:25:07.978Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-27T05:05:55.000Z",
+          "kind": "evidence",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/976982/%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%9F%E0%A6%BF-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:15:34.000Z",
+          "kind": "evidence",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-fire-erupts-during-tubewell-drilling-in-inani-ukhia-panic-in-the-area/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:15:34.000Z",
+          "kind": "evidence",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-fire-erupts-during-tubewell-drilling-in-inani-ukhia-panic-in-the-area/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.511Z",
+          "kind": "claim",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.514Z",
+          "kind": "claim",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129225,
+          "claim_text": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129226,
+          "claim_text": "কক্সবাজারে নলকূপ খননের সময় গ্যাসের আগুন, এলাকায় আতঙ্ক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 651,
+          "slug": "national-651",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "উষ্ণ অভ্যর্থনা, গার্ড অব অনারের পর তারেক রহমানের সঙ্গে বৈঠকে সানায়ে তাকাইচি"
+        },
+        {
+          "cluster_id": 562,
+          "slug": "opinion-562",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "জনতা ও অগ্রণী ব্যাংকের এমডি হচ্ছেন বেসরকারি ব্যাংকের দুই কর্মকর্তা"
+        },
+        {
+          "cluster_id": 493,
+          "slug": "sports-493",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
+        },
+        {
+          "cluster_id": 484,
+          "slug": "national-trump-s-ban",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
+        },
+        {
+          "cluster_id": 438,
+          "slug": "national-438",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
+        }
+      ]
     },
     "national-7": {
       "cluster_id": 7,
@@ -128249,47 +128834,309 @@
     },
     "national-700": {
       "cluster_id": 700,
-      "headline": "ওমরাহ করতে গিয়ে ইহরাম পরা অবস্থায় নিহত বাংলাদেশের মুফতি নাসরুল্লাহ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের",
+      "first_seen": "2026-10-27T07:25:07.979Z",
+      "last_update": "2026-10-27T07:25:07.982Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-26T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 129227,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82Sk05SERBZnlXUlJIQTRGQWtIQno5VWlJZ05ueG5JTm1hUlZ6bWs3b0VSTHpjdjJtQWx4a0dLUUttTEQ4bDBMS0lSR25ySzlGVlNua2h3TWlYa3FUc2tTU29fMG9GX2lSLXpiVkEtMERTS0E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-26T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 129228,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ার বৈঠক করেছেন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82Sk05SERBZnlXUlJIQTRGQWtIQno5VWlJZ05ueG5JTm1hUlZ6bWs3b0VSTHpjdjJtQWx4a0dLUUttTEQ4bDBMS0lSR25ySzlGVlNua2h3TWlYa3FUc2tTU29fMG9GX2lSLXpiVkEtMERTS0E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-27T06:58:33.000Z",
+          "kind": "evidence",
+          "claim_id": 129227,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5SNlc5YkUtNkxMdk5pRE1laW9SWnRlVExMcjByNXdJX2lBcXhPcXlFMHNhcDJYUUxIMEVRMVRGSEhYZnpwc0Nld3lKVFFQV1k?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.517Z",
+          "kind": "claim",
+          "claim_id": 129227,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.520Z",
+          "kind": "claim",
+          "claim_id": 129228,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ার বৈঠক করেছেন"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129227,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ারের গোপন বৈঠক, দাবি রাশেদের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129228,
+          "claim_text": "ভারতীয় গোয়েন্দার সঙ্গে গোলাম পরওয়ার বৈঠক করেছেন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 588,
+          "slug": "national-588",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশ ছাড়ার খবর দিয়ে রুমি বললেন— ‘আপনারা ভালো থাকেন’"
+        },
+        {
+          "cluster_id": 378,
+          "slug": "national-378",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        },
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১৮তম বার দ্রুততম মানবী যবিপ্রবির শিরিন আক্তার"
+        },
+        {
+          "cluster_id": 14,
+          "slug": "national-14",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘হামলাকারীদের লক্ষ্য ছিলাম আমি’, গাড়িতে গুলির পর সংগীতশিল্পী আসিফ"
+        }
+      ]
+    },
+    "national-701": {
+      "cluster_id": 701,
+      "headline": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+      "first_seen": "2026-10-27T07:25:08.455Z",
+      "last_update": "2026-10-27T07:25:08.457Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/7-benefits-of-seeking-forgiveness-istighfar-frequently-what-do-the-quran-and-hadith-say/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.523Z",
+          "kind": "claim",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-702": {
       "cluster_id": 702,
-      "headline": "‘ইসরায়েলকে সমর্থন করে যুক্তরাষ্ট্র নিজের আধিপত্যই ক্ষয় করছে’, জবিতে সুইডিশ অধ্যাপক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+      "first_seen": "2026-10-27T07:25:08.459Z",
+      "last_update": "2026-10-27T07:25:08.461Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:12:27.000Z",
+          "kind": "evidence",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/174-bangladeshis-have-returned-home-from-libya/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.526Z",
+          "kind": "claim",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-703": {
       "cluster_id": 703,
-      "headline": "একটা ফল, এত পরিচয় কেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
+      "first_seen": "2026-10-27T07:25:08.463Z",
+      "last_update": "2026-10-27T07:25:08.465Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:01:29.000Z",
+          "kind": "evidence",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/s7qtj2rv4j"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.529Z",
+          "kind": "claim",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129231,
+          "claim_text": "সরকারি চাকরিজীবীদের নতুন কাঠামোয় বাড়তি বেতন রোববার, অনেকের বেতন নির্ধারণে জটিলতা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-704": {
       "cluster_id": 704,
-      "headline": "নিখোঁজের পর সিসিটিভির ফুটেজ বিশ্লেষণ, ফুফুর কক্ষের বাক্সে মিলল শিশুর লাশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+      "first_seen": "2026-10-27T07:25:08.467Z",
+      "last_update": "2026-10-27T07:25:08.469Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/f6bkf0xr9v"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.532Z",
+          "kind": "claim",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-705": {
       "cluster_id": 705,
-      "headline": "তুরস্কে পর্যটকবাহী বাস ও ট্রাকের সংঘর্ষে নিহত ১১",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পরিবার একটু সচেতন ও সহানুভূতিশীল হলে সন্তান ভুল পথে যাওয়ার সম্ভাবনা কম থাকে",
+      "first_seen": "2026-10-27T07:25:08.471Z",
+      "last_update": "2026-10-27T07:25:08.473Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T06:52:55.000Z",
+          "kind": "evidence",
+          "claim_id": 129233,
+          "claim_text": "পরিবার একটু সচেতন ও সহানুভূতিশীল হলে সন্তান ভুল পথে যাওয়ার সম্ভাবনা কম থাকে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://trust.prothomalo.com/activities/drug-abuse/azhh1isujh"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.535Z",
+          "kind": "claim",
+          "claim_id": 129233,
+          "claim_text": "পরিবার একটু সচেতন ও সহানুভূতিশীল হলে সন্তান ভুল পথে যাওয়ার সম্ভাবনা কম থাকে"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129233,
+          "claim_text": "পরিবার একটু সচেতন ও সহানুভূতিশীল হলে সন্তান ভুল পথে যাওয়ার সম্ভাবনা কম থাকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-706": {
@@ -131094,7 +131941,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 227,
@@ -131312,7 +132159,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 227,
@@ -131629,7 +132476,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 227,
@@ -134975,20 +135822,20 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 509,
           "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
+        },
+        {
+          "cluster_id": 420,
+          "slug": "national-420",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 6,
+          "headline": "ক্রসফায়ার যদি প্রয়োজন হয়, সরকার যদি অ্যালাউ করে, আমরা সেটাই করব: আইজিপি"
         }
       ]
     },
@@ -135417,7 +136264,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T06:55:26.747Z",
+      "last_update": "2026-10-27T07:25:07.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -135735,7 +136582,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 624,
@@ -137045,7 +137892,7 @@
       "cluster_id": 664,
       "headline": "প্রথম দিনেই এক ঘণ্টা দেরিতে ফেনী ছাড়লো মহানগর এক্সপ্রেস",
       "first_seen": "2026-10-27T04:59:06.828Z",
-      "last_update": "2026-10-27T06:55:26.747Z",
+      "last_update": "2026-10-27T07:25:07.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -137250,11 +138097,41 @@
     },
     "national-raf-fairford-labour": {
       "cluster_id": 701,
-      "headline": "RAF Fairford: Labour’s deputy leader says ‘I trust our police’ after Trump questions decision to bail suspects – latest updates",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+      "first_seen": "2026-10-27T07:25:08.455Z",
+      "last_update": "2026-10-27T07:25:08.457Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:16:28.000Z",
+          "kind": "evidence",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/7-benefits-of-seeking-forgiveness-istighfar-frequently-what-do-the-quran-and-hadith-say/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.523Z",
+          "kind": "claim",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129229,
+          "claim_text": "বেশি বেশি ইস্তিগফার করার ৭টি উপকারিতা, কী বলছে কোরআন ও হাদিস?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-rj-mitte-actor": {
@@ -137893,9 +138770,9 @@
     },
     "national-storm": {
       "cluster_id": 634,
-      "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
+      "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T06:55:26.744Z",
+      "last_update": "2026-10-27T07:25:07.990Z",
       "claim_count": 3,
       "events": [
         {
@@ -137992,6 +138869,17 @@
         {
           "ts": "2026-10-27T05:46:20.000Z",
           "kind": "evidence",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/bangladesh/111935/%E0%A6%98%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%BF%E0%A6%9D%E0%A7%9C-%E2%80%98%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%AC%E2%80%99-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%AC-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A7%A9-%E0%A6%A8%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:46:20.000Z",
+          "kind": "evidence",
           "claim_id": 124901,
           "claim_text": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
           "detail": {
@@ -138016,6 +138904,18 @@
             "from": null,
             "confidence": 67,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
           }
         }
       ],
@@ -139208,12 +140108,12 @@
           "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
+          "cluster_id": 509,
+          "slug": "national-509",
           "actor_links": 1,
           "source_links": 0,
           "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
+          "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         }
       ]
     },
@@ -141403,7 +142303,7 @@
       "cluster_id": 691,
       "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল",
       "first_seen": "2026-10-27T06:55:26.730Z",
-      "last_update": "2026-10-27T06:55:26.734Z",
+      "last_update": "2026-10-27T07:25:07.983Z",
       "claim_count": 3,
       "events": [
         {
@@ -141526,14 +142426,6 @@
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -141564,6 +142456,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -143467,6 +144367,14 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -143489,14 +144397,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "জনতা ও অগ্রণী ব্যাংকের এমডি হচ্ছেন বেসরকারি ব্যাংকের দুই কর্মকর্তা"
-        },
-        {
-          "cluster_id": 493,
-          "slug": "sports-493",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
         }
       ]
     },
@@ -143944,6 +144844,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -143982,14 +144890,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -146677,7 +147577,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 7,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 657,
@@ -147283,6 +148183,14 @@
           "headline": "সাইবার হামলার শঙ্কায় জনতা ব্যাংক ও বেঙ্গল কমার্শিয়াল ব্যাংকের ওয়েবসাইট বন্ধ"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -147297,14 +148205,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহাদাতকে প্রশাসক করায় সরকারের বিরুদ্ধে মামলা হওয়া উচিত: এনসিপি নেতা আরিফ"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "আইজিপির বক্তব্য প্রত্যাহার করে ২৪ ঘণ্টার মধ্যে ক্ষমা চাওয়ার দাবি ডিআরইউর"
         }
       ]
     },
@@ -149253,9 +150153,9 @@
     },
     "politics-634": {
       "cluster_id": 634,
-      "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
+      "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
       "first_seen": "2026-10-27T01:47:47.602Z",
-      "last_update": "2026-10-27T06:55:26.744Z",
+      "last_update": "2026-10-27T07:25:07.990Z",
       "claim_count": 3,
       "events": [
         {
@@ -149352,6 +150252,17 @@
         {
           "ts": "2026-10-27T05:46:20.000Z",
           "kind": "evidence",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/bangladesh/111935/%E0%A6%98%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%BF%E0%A6%9D%E0%A7%9C-%E2%80%98%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%AC%E2%80%99-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%AC-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A7%A9-%E0%A6%A8%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-10-27T05:46:20.000Z",
+          "kind": "evidence",
           "claim_id": 124901,
           "claim_text": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত",
           "detail": {
@@ -149376,6 +150287,18 @@
             "from": null,
             "confidence": 67,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 106698,
+          "claim_text": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
           }
         }
       ],
@@ -149512,7 +150435,7 @@
       "cluster_id": 691,
       "headline": "যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকীতে জিয়া উদ্যানে নেতাকর্মীদের ঢল",
       "first_seen": "2026-10-27T06:55:26.730Z",
-      "last_update": "2026-10-27T06:55:26.734Z",
+      "last_update": "2026-10-27T07:25:07.983Z",
       "claim_count": 3,
       "events": [
         {
@@ -149635,14 +150558,6 @@
           "headline": "দ্বৈত পেশায় থাকা আইনজীবীদের বিষয়ে পদক্ষেপ নিতে এক আইনজীবীর রিট"
         },
         {
-          "cluster_id": 688,
-          "slug": "opinion-688",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "‘সকাল সকাল এত জ্যাম হবে ভাবিনি, একটা বিড়ম্বনায় পড়লাম’"
-        },
-        {
           "cluster_id": 385,
           "slug": "national-trump-says-relations",
           "actor_links": 1,
@@ -149673,6 +150588,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর"
+        },
+        {
+          "cluster_id": 566,
+          "slug": "national-566",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "‘বিএনপি সরকারকে ভোট দিয়া ভুক্তভোগী’ বলা নারী কারাগারে"
         }
       ]
     },
@@ -151561,6 +152484,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -151599,14 +152530,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -152661,6 +153584,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -152699,14 +153630,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -155356,6 +156279,14 @@
       ],
       "related": [
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -155394,14 +156325,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
-        },
-        {
-          "cluster_id": 438,
-          "slug": "national-438",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মেঝেতে মায়ের রক্তাক্ত লাশ, পাশে বঁটি হাতে মেয়ে, জানালা দিয়ে দেখে থানায় জানালেন প্রতিবেশীরা"
         }
       ]
     },
@@ -156334,6 +157257,14 @@
           "headline": "‘এমন বিশৃঙ্খলা কি এই প্রথম দেখলেন’: বাংলাদেশ দলে অস্থিরতা নিয়ে ফিল সিমন্স"
         },
         {
+          "cluster_id": 699,
+          "slug": "national-699",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজারে মাটি থেকে বের হচ্ছে আগুন, নিয়ন্ত্রণে ফায়ার সার্ভিসের ৩ ইউনিট"
+        },
+        {
           "cluster_id": 651,
           "slug": "national-651",
           "actor_links": 0,
@@ -156364,14 +157295,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফে প্রথম ম্যাচে হামজাকে পাচ্ছে না বাংলাদেশ"
-        },
-        {
-          "cluster_id": 484,
-          "slug": "national-trump-s-ban",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দুই বাংলাদেশির ভিডিও ছড়িয়ে দেওয়ার অভিযোগে সৌদির জেলে পশ্চিমবঙ্গের যুবক, দাবি পরিবারের"
         }
       ]
     },
@@ -158061,8 +158984,8 @@
           "slug": "national-690",
           "actor_links": 1,
           "source_links": 2,
-          "claim_count": 9,
-          "headline": "‘অপারেশন ল্যাংড়া’: গরু পাচারের অভিযোগ তুলে উত্তর প্রদেশে মুসলিমদের পঙ্গু করছে পুলিশ"
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         },
         {
           "cluster_id": 657,
@@ -158463,7 +159386,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "ঘূর্ণিঝড় ‘অর্ণব’: দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কসংকেত"
+          "headline": "গভীর নিম্নচাপের পর ঘূর্ণিঝড়ের শঙ্কা, নাম ‘অর্ণব’"
         },
         {
           "cluster_id": 227,
@@ -160003,11 +160926,80 @@
     },
     "tech-702": {
       "cluster_id": 702,
-      "headline": "অমীমাংসিত হত্যা মামলায় পুলিশের কাছে ভুয়া তথ্য পাঠাল অ্যানথ্রপিকের এআই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+      "first_seen": "2026-10-27T07:25:08.459Z",
+      "last_update": "2026-10-27T07:25:08.461Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:12:27.000Z",
+          "kind": "evidence",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/174-bangladeshis-have-returned-home-from-libya/"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.526Z",
+          "kind": "claim",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129230,
+          "claim_text": "লিবিয়া থেকে দেশে ফিরলেন ১৭৪ বাংলাদেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "tech-704": {
+      "cluster_id": 704,
+      "headline": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+      "first_seen": "2026-10-27T07:25:08.467Z",
+      "last_update": "2026-10-27T07:25:08.469Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-27T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/artificial-intelligence/f6bkf0xr9v"
+          }
+        },
+        {
+          "ts": "2026-10-27T07:49:06.532Z",
+          "kind": "claim",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ"
+        },
+        {
+          "ts": "2026-10-27T07:49:06.640Z",
+          "kind": "verify",
+          "claim_id": 129232,
+          "claim_text": "এআই শেখার ৭ দিনের চ্যালেঞ্জ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "tech-722": {
