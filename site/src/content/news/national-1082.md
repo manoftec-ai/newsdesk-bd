@@ -4,7 +4,7 @@ seoTitle: "পুলিশে সরাসরি এসআই নিয়োগ �
 excerpt: "মন্ত্রিপরিষদ বিভাগ ও স্বরাষ্ট্র মন্ত্রণালয় সূত্র জানিয়েছে, বিগত আওয়ামী লীগ সরকারের সাড়ে ১৫ বছরে কনস্টেবল, এসআই ও পুলিশ সার্জেন্ট পদে প্রায় ১ লাখ ২০ হাজার সদস্য নিয়োগ পেয়েছিলেন। এসআ"
 seoDescription: "মন্ত্রিপরিষদ বিভাগ ও স্বরাষ্ট্র মন্ত্রণালয় সূত্র জানিয়েছে, বিগত আওয়ামী লীগ সরকারের সাড়ে ১৫ বছরে কনস্টেবল, এসআই ও পুলিশ সার্জেন্ট পদে প্রায় ১ লাখ ২০ হাজার …"
 date: 2026-10-28T19:12:14.000Z
-publishedAt: 2026-10-28T21:08:08.962Z
+publishedAt: 2026-10-28T21:03:25.297Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-28T21:08:08.837Z"
+  evaluatedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1082
   claimIds:
     - 221959
@@ -43,7 +43,7 @@ publication:
   slug: "national-1082"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-28T21:08:08.837Z"
+  checkedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1082
   claimIds:
     - 221959

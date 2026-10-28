@@ -4,7 +4,7 @@ seoTitle: "জিনস প্যান্ট ও অন্তর্বাসে
 excerpt: "ঢাকা কাস্টমস হাউসের বিজ্ঞপ্তিতে বলা হয়, আজ বিকেল ৫টা ১৫ মিনিটে দুবাই থেকে এমিরেটসের ইকে৫৮৬ ফ্লাইটে আসা যাত্রীদের মাধ্যমে সোনা চোরাচালান হতে পারে বলে গোপন তথ্য পায় কাস্টমস কর্তৃপক্ষ"
 seoDescription: "ঢাকা কাস্টমস হাউসের বিজ্ঞপ্তিতে বলা হয়, আজ বিকেল ৫টা ১৫ মিনিটে দুবাই থেকে এমিরেটসের ইকে৫৮৬ ফ্লাইটে আসা যাত্রীদের মাধ্যমে সোনা চোরাচালান হতে পারে বলে গোপন …"
 date: 2026-10-28T17:52:18.000Z
-publishedAt: 2026-10-28T21:08:08.974Z
+publishedAt: 2026-10-28T21:03:25.315Z
 developing: true
 category: "national"
 tags: ["dhaka"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-28T21:08:08.837Z"
+  evaluatedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1084
   claimIds:
     - 221961
@@ -43,7 +43,7 @@ publication:
   slug: "national-1084"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-28T21:08:08.837Z"
+  checkedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1084
   claimIds:
     - 221961

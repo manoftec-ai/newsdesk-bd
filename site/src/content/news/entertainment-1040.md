@@ -4,7 +4,7 @@ seoTitle: "সমু চৌধুরীর চিকিৎসার সব খ�
 excerpt: "দীর্ঘদিন ধরে অসুস্থ অভিনেতা সমু চৌধুরীর চিকিৎসার সম্পূর্ণ দায়িত্ব নিয়েছে অভিনয়শিল্পী সংঘ। পরিবারের সম্মতি পাওয়ার পর তাঁর চিকিৎসার প্রক্রিয়াও শুরু করেছে সংগঠনটি। বিষয়টি কে নিশ্চিত ক"
 seoDescription: "দীর্ঘদিন ধরে অসুস্থ অভিনেতা সমু চৌধুরীর চিকিৎসার সম্পূর্ণ দায়িত্ব নিয়েছে অভিনয়শিল্পী সংঘ। পরিবারের সম্মতি পাওয়ার পর তাঁর চিকিৎসার প্রক্রিয়াও শুরু করেছে সং…"
 date: 2026-10-28T14:18:41.000Z
-publishedAt: 2026-10-28T21:08:08.986Z
+publishedAt: 2026-10-28T21:03:25.330Z
 developing: false
 category: "entertainment"
 tags: ["entertainment"]
@@ -30,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-10-28T21:08:08.837Z"
+  evaluatedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1040
   claimIds:
     - 215089
@@ -48,7 +48,7 @@ publication:
   slug: "entertainment-1040"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-28T21:08:08.837Z"
+  checkedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1040
   claimIds:
     - 215089

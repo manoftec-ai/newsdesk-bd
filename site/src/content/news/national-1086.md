@@ -4,7 +4,7 @@ seoTitle: "নির্বাচনের আগের দিন বিএনপ
 excerpt: "নির্বাচনে ২১ প্লাটুন বিজিবি, ২ হাজার ২৭২ পুলিশ সদস্য ও ২ হাজার ৪০৫ জন আনসার সদস্য দায়িত্ব পালন করবেন। দেলাওয়ার হোসেন অভিযোগ করেন, বিএনপির প্রার্থী গণসংযোগের সময় আচরণবিধি লঙ্ঘন করে "
 seoDescription: "নির্বাচনে ২১ প্লাটুন বিজিবি, ২ হাজার ২৭২ পুলিশ সদস্য ও ২ হাজার ৪০৫ জন আনসার সদস্য দায়িত্ব পালন করবেন। দেলাওয়ার হোসেন অভিযোগ করেন, বিএনপির প্রার্থী গণসংযোগ…"
 date: 2026-10-28T17:38:06.000Z
-publishedAt: 2026-10-28T21:08:08.979Z
+publishedAt: 2026-10-28T21:03:25.322Z
 developing: true
 category: "national"
 tags: ["economy"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-28T21:08:08.837Z"
+  evaluatedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1086
   claimIds:
     - 221963
@@ -43,7 +43,7 @@ publication:
   slug: "national-1086"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-28T21:08:08.837Z"
+  checkedAt: "2026-10-28T21:03:25.134Z"
   clusterId: 1086
   claimIds:
     - 221963
