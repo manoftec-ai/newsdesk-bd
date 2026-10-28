@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6163,
+    "storyCount": 6166,
     "kinds": [
       "claim",
       "evidence",
@@ -853,7 +853,7 @@
       "cluster_id": 1044,
       "headline": "সাদা কো–অর্ডে পূজা চেরীর স্নিগ্ধ লুক, দেখুন ৮টি ছবি",
       "first_seen": "2026-10-28T16:35:13.046Z",
-      "last_update": "2026-10-28T17:46:13.488Z",
+      "last_update": "2026-10-28T18:50:58.699Z",
       "claim_count": 2,
       "events": [
         {
@@ -932,7 +932,7 @@
       "cluster_id": 1053,
       "headline": "বাংলাদেশ ব্যাংকের অর্থ পাচার প্রতিরোধ কর্মকর্তা ও স্ত্রীর ব্যাংক হিসাব তলব",
       "first_seen": "2026-10-28T17:46:13.464Z",
-      "last_update": "2026-10-28T17:46:13.467Z",
+      "last_update": "2026-10-28T18:50:58.676Z",
       "claim_count": 2,
       "events": [
         {
@@ -1060,7 +1060,7 @@
       "cluster_id": 1054,
       "headline": "বলাকায় বুথে যান্ত্রিক ত্রুটি, আশকোনায় বিমানের টিকিট বিক্রির কাউন্টার আবার চালু",
       "first_seen": "2026-10-28T17:46:13.470Z",
-      "last_update": "2026-10-28T17:46:13.472Z",
+      "last_update": "2026-10-28T18:50:58.679Z",
       "claim_count": 2,
       "events": [
         {
@@ -1353,21 +1353,259 @@
     },
     "economy-1070": {
       "cluster_id": 1070,
-      "headline": "সেপ্টেম্বরে দেশে এলো ২৭৪ কোটি ডলারের বেশি রেমিট্যান্স",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+      "first_seen": "2026-10-28T18:50:58.689Z",
+      "last_update": "2026-10-28T18:50:58.692Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T10:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/1090ryfotv"
+          }
+        },
+        {
+          "ts": "2026-10-28T10:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/1090ryfotv"
+          }
+        },
+        {
+          "ts": "2026-10-28T16:09:02.000Z",
+          "kind": "evidence",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/yetrv0dj5p"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.283Z",
+          "kind": "claim",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.287Z",
+          "kind": "claim",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 913,
+          "slug": "national-913",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 16,
+          "headline": "বেসরকারি চাকরিতে বেতন ‘আলোচনা সাপেক্ষে’, দর-কষাকষির কীভাবে করবেন চাকরিপ্রার্থীরা"
+        },
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
+        },
+        {
+          "cluster_id": 897,
+          "slug": "sports-897",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 834,
+          "slug": "tech-834",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বেতন বাড়ানোর দাবিতে গাজীপুরে শ্রমিকদের মহাসড়ক অবরোধ, যান চলাচল বন্ধ"
+        },
+        {
+          "cluster_id": 824,
+          "slug": "politics-824",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 726,
+          "slug": "national-726",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
+        }
+      ]
     },
     "economy-1072": {
       "cluster_id": 1072,
-      "headline": "আবাসনে নতুন প্রজন্মের চাহিদা: কেমন বাড়ি তরুণদের পছন্দ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+      "first_seen": "2026-10-28T18:50:58.710Z",
+      "last_update": "2026-10-28T18:50:58.712Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T11:57:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizAVBVV95cUxQSlA0bG1SeUc3UElCbExPZTNZWWNPOTRzSERVWUVjT01RX1FfbGV6TWcwVUVlcTlnTGQ2OWhSdUVKODYyTlRLMzFJSjVtTE9tTEg1SElnU2lhelpuSWdZdTZqYjhGck0zSEU5bHFBWXhoVFZsb1ZYUVJETDIzZUhjMnd5WHNCNWNRSVlVdDRDYnRUQ3BVRTBEZGUzQ0lfNWJpcW54RGFOTVVsWWYzY0psQlFxWEVCN0VfNVlYbW5oRVh4RnNWOTI2Nnp2N0RGWS1tbGt4aE11ZXluMU5jNjJhMzZQcGE5REN3VDJfTDh3UHBnVmd2dmpGcmZacTRNSEhvOFRqc2FoYjlKTTJKYTJaa2d0VDZDQmx5WXJKYUs2NlZlN09fbjJuTkRuRUdJQk9VbGVkZWtWbS1pRHNob2hDTEEyYXRFTTB2Q0JzbHI5V2ZTaWtxLTJtNGtuZFQtbU1hY0FEU1d1cllIRFo3TnlKUXdVZllmcFo1Ynd1elBUTWRiSnE2NGE1d0xoUThoUkhRZURSOTltOFhjSFJQbzdyZHdNbjNZeURpYlZoT0ExdklWN0VOWXotRGhJNjZ2cWNXVGtvTFNzWmN3ZzFCUVZDMDhvM2xHM2VaOEFVZjMwYXNMa01VSlhWTFpFWHNOLUZQZ1JtNG02T2U0SXEwTFU3YUR4cUlrdnJPZ2NpWEZ1OVF0RXRVd05QSHYwcC03TktPZE90M25sb1ZldVY3WDhlM3U0NTU0MnJQamdEMy1CYnVjVGxpaUNlZnNoeGh0b0FoUVlkRHZvTk8zMHdPbUV1ZlFOR2lKUEZNS3NLNVNObUY4UmQtSkk2TkxrNndrZG9lTG9NRWE5WFpoNEx0ZVdFbUItRWxJaEljLXVfdi1BcUVtem9DNmZTNFBEN1oyYlNCU3lXMHpneXZJVFlQUmtqS2hLQUlBUXJ0U3l5Mw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T11:57:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizAVBVV95cUxQSlA0bG1SeUc3UElCbExPZTNZWWNPOTRzSERVWUVjT01RX1FfbGV6TWcwVUVlcTlnTGQ2OWhSdUVKODYyTlRLMzFJSjVtTE9tTEg1SElnU2lhelpuSWdZdTZqYjhGck0zSEU5bHFBWXhoVFZsb1ZYUVJETDIzZUhjMnd5WHNCNWNRSVlVdDRDYnRUQ3BVRTBEZGUzQ0lfNWJpcW54RGFOTVVsWWYzY0psQlFxWEVCN0VfNVlYbW5oRVh4RnNWOTI2Nnp2N0RGWS1tbGt4aE11ZXluMU5jNjJhMzZQcGE5REN3VDJfTDh3UHBnVmd2dmpGcmZacTRNSEhvOFRqc2FoYjlKTTJKYTJaa2d0VDZDQmx5WXJKYUs2NlZlN09fbjJuTkRuRUdJQk9VbGVkZWtWbS1pRHNob2hDTEEyYXRFTTB2Q0JzbHI5V2ZTaWtxLTJtNGtuZFQtbU1hY0FEU1d1cllIRFo3TnlKUXdVZllmcFo1Ynd1elBUTWRiSnE2NGE1d0xoUThoUkhRZURSOTltOFhjSFJQbzdyZHdNbjNZeURpYlZoT0ExdklWN0VOWXotRGhJNjZ2cWNXVGtvTFNzWmN3ZzFCUVZDMDhvM2xHM2VaOEFVZjMwYXNMa01VSlhWTFpFWHNOLUZQZ1JtNG02T2U0SXEwTFU3YUR4cUlrdnJPZ2NpWEZ1OVF0RXRVd05QSHYwcC03TktPZE90M25sb1ZldVY3WDhlM3U0NTU0MnJQamdEMy1CYnVjVGxpaUNlZnNoeGh0b0FoUVlkRHZvTk8zMHdPbUV1ZlFOR2lKUEZNS3NLNVNObUY4UmQtSkk2TkxrNndrZG9lTG9NRWE5WFpoNEx0ZVdFbUItRWxJaEljLXVfdi1BcUVtem9DNmZTNFBEN1oyYlNCU3lXMHpneXZJVFlQUmtqS2hLQUlBUXJ0U3l5Mw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T12:34:14.000Z",
+          "kind": "evidence",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE01QUNhVldNSmM4d2ZJWjhGaTZzajF0M24xX24tMzJoUFFzQzgwWGpfVlI4UXMtQ08wcFBDcnFPUGFPU0MwRDFJcUNKMWhDak0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.296Z",
+          "kind": "claim",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.299Z",
+          "kind": "claim",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 959,
+          "slug": "opinion-959",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
+        },
+        {
+          "cluster_id": 949,
+          "slug": "national-949",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শেরপুরে বাস-অটোরিকশা সংঘর্ষে প্রবাসী নিহত, আহত ৪"
+        },
+        {
+          "cluster_id": 631,
+          "slug": "sports-631",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
+        },
+        {
+          "cluster_id": 378,
+          "slug": "national-378",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        },
+        {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        }
+      ]
     },
     "economy-1082": {
       "cluster_id": 1082,
@@ -12530,6 +12768,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -12568,14 +12814,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মালয়েশিয়াগামীদের মেডিক্যাল শুরু ৩১ অক্টোবর, আগের পরীক্ষা গ্রহণযোগ্য হবে না"
-        },
-        {
-          "cluster_id": 947,
-          "slug": "politics-947",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব"
         }
       ]
     },
@@ -12658,20 +12896,20 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -12828,7 +13066,7 @@
       "cluster_id": 1040,
       "headline": "সমু চৌধুরীর চিকিৎসার সব খরচ বহন করবে অভিনয়শিল্পী সংঘ",
       "first_seen": "2026-10-28T16:35:13.016Z",
-      "last_update": "2026-10-28T17:46:13.485Z",
+      "last_update": "2026-10-28T18:50:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -13161,11 +13399,137 @@
     },
     "entertainment-1068": {
       "cluster_id": 1068,
-      "headline": "কাজ পেতে নগ্ন দৃশ্যকে না বলতে পারেননি এই অভিনেত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+      "first_seen": "2026-10-28T18:50:58.672Z",
+      "last_update": "2026-10-28T18:50:58.675Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T16:56:29.000Z",
+          "kind": "evidence",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/2-kil-led-in-bus-private-car-colli-sion-in-chakaria/"
+          }
+        },
+        {
+          "ts": "2026-10-28T16:56:29.000Z",
+          "kind": "evidence",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/2-kil-led-in-bus-private-car-colli-sion-in-chakaria/"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:53:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%95%e0%a6%b0%e0%a6%bf%e0%a7%9f%e0%a6%be%e0%a7%9f-%e0%a6%ac%e0%a6%be%e0%a6%b8-%e0%a6%95%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a7%81%e0%a6%96%e0%a7%8b%e0%a6%ae%e0%a7%81%e0%a6%96%e0%a6%bf/"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.271Z",
+          "kind": "claim",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.274Z",
+          "kind": "claim",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1062,
+          "slug": "national-1062",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২"
+        },
+        {
+          "cluster_id": 752,
+          "slug": "national-752",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
+        }
+      ]
+    },
+    "entertainment-1077": {
+      "cluster_id": 1077,
+      "headline": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+      "first_seen": "2026-10-28T18:50:59.191Z",
+      "last_update": "2026-10-28T18:50:59.192Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T16:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/ott/fg3u1kzo8z"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.314Z",
+          "kind": "claim",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-109": {
@@ -20452,7 +20816,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        }
+      ]
     },
     "entertainment-734": {
       "cluster_id": 734,
@@ -22777,7 +23150,7 @@
       "cluster_id": 1006,
       "headline": "পরিবার নিয়ে গা ঢাকা দিয়েছেন সেই এমপি, আপত্তিকর ভিডিও নিয়ে যা বললেন",
       "first_seen": "2026-10-28T14:15:43.046Z",
-      "last_update": "2026-10-28T17:46:13.494Z",
+      "last_update": "2026-10-28T18:50:58.705Z",
       "claim_count": 2,
       "events": [
         {
@@ -23431,12 +23804,12 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
-          "cluster_id": 1035,
-          "slug": "national-1035",
+          "cluster_id": 1065,
+          "slug": "national-1065",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রথম স্ত্রীর বোনকে বিয়ে, এবার মাসুদকে তালাক দিলেন শ্যালিকা পূর্ণিমা"
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
         }
       ]
     },
@@ -23572,7 +23945,7 @@
       "cluster_id": 1037,
       "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ",
       "first_seen": "2026-10-28T16:35:12.987Z",
-      "last_update": "2026-10-28T17:46:13.480Z",
+      "last_update": "2026-10-28T18:50:58.688Z",
       "claim_count": 6,
       "events": [
         {
@@ -23860,7 +24233,7 @@
       "cluster_id": 1040,
       "headline": "সমু চৌধুরীর চিকিৎসার সব খরচ বহন করবে অভিনয়শিল্পী সংঘ",
       "first_seen": "2026-10-28T16:35:13.016Z",
-      "last_update": "2026-10-28T17:46:13.485Z",
+      "last_update": "2026-10-28T18:50:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -24103,29 +24476,320 @@
     },
     "international-1065": {
       "cluster_id": 1065,
-      "headline": "আন্তর্জাতিক আদালতে মার্কিন চাপ বেআইনি: নোবেল জয়ী নাভি পিল্লাই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+      "first_seen": "2026-10-28T18:50:58.658Z",
+      "last_update": "2026-10-28T18:50:58.661Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T15:01:47.000Z",
+          "kind": "evidence",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdFJaMXY4NUE3TUJUSVBLd2hSNFZXODJLNjJvcFBIR3dVZGdYU2F4Q3VIdjVGaTJWcjEwX0JYTUJtZnktM21aX0gyY0pNNWs3UzNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T15:01:47.000Z",
+          "kind": "evidence",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdFJaMXY4NUE3TUJUSVBLd2hSNFZXODJLNjJvcFBIR3dVZGdYU2F4Q3VIdjVGaTJWcjEwX0JYTUJtZnktM21aX0gyY0pNNWs3UzNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T18:20:33.000Z",
+          "kind": "evidence",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811138"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.254Z",
+          "kind": "claim",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.257Z",
+          "kind": "claim",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1037,
+          "slug": "politics-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 998,
+          "slug": "national-998",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পার"
+        },
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 959,
+          "slug": "opinion-959",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
+        },
+        {
+          "cluster_id": 808,
+          "slug": "national-808",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
+        }
+      ]
     },
     "international-1067": {
       "cluster_id": 1067,
-      "headline": "হুতি হামলা ঘিরে ইরান-সৌদিকে ‘ভিন্ন বার্তা’ দিচ্ছে পাকিস্তান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+      "first_seen": "2026-10-28T18:50:58.666Z",
+      "last_update": "2026-10-28T18:50:58.671Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:55:55.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811131"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.265Z",
+          "kind": "claim",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.268Z",
+          "kind": "claim",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 968,
+          "slug": "national-968",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় হাসপাতালে স্বাস্থ্যমন্ত্রীর আকস্মিক পরিদর্শন, ৫ চিকিৎসকের বিরুদ্ধে ব্যবস্থার নির্দেশ"
+        },
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
+        },
+        {
+          "cluster_id": 22,
+          "slug": "national-22",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাদরাসায় বলাৎকার-অশালীন ঘটনা দুঃখজনক, কঠোর ব্যবস্থা নেওয়া হবে: ধর্মমন্ত্রী"
+        }
+      ]
+    },
+    "international-1075": {
+      "cluster_id": 1075,
+      "headline": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+      "first_seen": "2026-10-28T18:50:59.183Z",
+      "last_update": "2026-10-28T18:50:59.185Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T17:43:39.000Z",
+          "kind": "evidence",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/k0tjn7s5sp"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.308Z",
+          "kind": "claim",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1077": {
       "cluster_id": 1077,
-      "headline": "হুতি হামলা ঘিরে ইরান-সৌদিকে ‘ভিন্ন বার্তা’ দিচ্ছে পাকিস্তান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+      "first_seen": "2026-10-28T18:50:59.191Z",
+      "last_update": "2026-10-28T18:50:59.192Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T16:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/ott/fg3u1kzo8z"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.314Z",
+          "kind": "claim",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1091": {
@@ -26853,6 +27517,14 @@
           "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -26875,14 +27547,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1015,
-          "slug": "national-1015",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিএনপির এমপির ছেলের ঘনিষ্ঠ প্রবাসীর শপিংমল লুট, যে যার মতো নিয়ে গেছে সব মালামাল"
         }
       ]
     },
@@ -27647,6 +28311,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -27661,14 +28333,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -28542,6 +29206,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -28556,14 +29228,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -29122,6 +29786,14 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 997,
           "slug": "opinion-997",
           "actor_links": 0,
@@ -29136,14 +29808,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -30122,6 +30786,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -30160,14 +30832,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -31839,6 +32503,14 @@
           "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -31861,14 +32533,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1015,
-          "slug": "national-1015",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিএনপির এমপির ছেলের ঘনিষ্ঠ প্রবাসীর শপিংমল লুট, যে যার মতো নিয়ে গেছে সব মালামাল"
         }
       ]
     },
@@ -39893,6 +40557,14 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -39907,14 +40579,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আট বিভাগে বজ্রবৃষ্টির আশঙ্কা, ঢাকাসহ দেশের ১২ জেলায় বইছে মৃদু তাপপ্রবাহ"
-        },
-        {
-          "cluster_id": 1027,
-          "slug": "national-1027",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -41593,6 +42257,14 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 997,
           "slug": "opinion-997",
           "actor_links": 0,
@@ -41607,14 +42279,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -44768,6 +45432,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -44782,14 +45454,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -45054,6 +45718,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -45068,14 +45740,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -47427,6 +48091,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -47465,14 +48137,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -47555,6 +48219,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -47593,14 +48265,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -48409,6 +49073,14 @@
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -48423,14 +49095,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -48853,12 +49517,12 @@
           "headline": "ছাত্রদল নেতা শাকিল হত্যা মামলায় এমপিপুত্র মিন্টু গ্রেপ্তার, ১০ দিনের রিমান্ড আবেদন"
         },
         {
-          "cluster_id": 1057,
-          "slug": "sports-1057",
+          "cluster_id": 1072,
+          "slug": "national-1072",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "চাল-আটায় পুষ্টি উপাদান যুক্ত করতে দ্রুত আইন প্রণয়নের তাগিদ"
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
         }
       ]
     },
@@ -50897,6 +51561,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -50911,14 +51583,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -51067,7 +51731,7 @@
       "cluster_id": 947,
       "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব",
       "first_seen": "2026-10-28T08:56:48.143Z",
-      "last_update": "2026-10-28T17:46:13.479Z",
+      "last_update": "2026-10-28T18:50:58.687Z",
       "claim_count": 5,
       "events": [
         {
@@ -52142,6 +52806,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1067,
+          "slug": "tech-1067",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
           "cluster_id": 1043,
           "slug": "national-1043",
           "actor_links": 0,
@@ -52180,14 +52852,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -52604,7 +53268,7 @@
       "cluster_id": 995,
       "headline": "৪ দিন আগে চাঁদা চাইলেও দেননি, দুই হাত কেটে লাশ ফেলে রাখা হলো রাস্তায়",
       "first_seen": "2026-10-28T13:10:49.763Z",
-      "last_update": "2026-10-28T16:35:13.079Z",
+      "last_update": "2026-10-28T18:50:58.709Z",
       "claim_count": 4,
       "events": [
         {
@@ -54273,6 +54937,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে ছবি পোস্ট করে যা লিখলেন সানায়ে তাকাইচি"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -54287,14 +54959,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -55582,7 +56246,7 @@
       "cluster_id": 995,
       "headline": "৪ দিন আগে চাঁদা চাইলেও দেননি, দুই হাত কেটে লাশ ফেলে রাখা হলো রাস্তায়",
       "first_seen": "2026-10-28T13:10:49.763Z",
-      "last_update": "2026-10-28T16:35:13.079Z",
+      "last_update": "2026-10-28T18:50:58.709Z",
       "claim_count": 4,
       "events": [
         {
@@ -56352,7 +57016,7 @@
       "cluster_id": 1006,
       "headline": "পরিবার নিয়ে গা ঢাকা দিয়েছেন সেই এমপি, আপত্তিকর ভিডিও নিয়ে যা বললেন",
       "first_seen": "2026-10-28T14:15:43.046Z",
-      "last_update": "2026-10-28T17:46:13.494Z",
+      "last_update": "2026-10-28T18:50:58.705Z",
       "claim_count": 2,
       "events": [
         {
@@ -56506,6 +57170,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -56544,14 +57216,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মালয়েশিয়াগামীদের মেডিক্যাল শুরু ৩১ অক্টোবর, আগের পরীক্ষা গ্রহণযোগ্য হবে না"
-        },
-        {
-          "cluster_id": 947,
-          "slug": "politics-947",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব"
         }
       ]
     },
@@ -56687,7 +57351,7 @@
       "cluster_id": 1009,
       "headline": "নির্বাচনী প্রচারণায় গুলি ও জোড়া খুন, ‘সন্ত্রাসী’ ডেভিড ইমনের ৭ দিনের রিমান্ড",
       "first_seen": "2026-10-28T14:15:43.060Z",
-      "last_update": "2026-10-28T17:46:13.498Z",
+      "last_update": "2026-10-28T18:50:58.706Z",
       "claim_count": 3,
       "events": [
         {
@@ -57418,7 +58082,7 @@
       "cluster_id": 1011,
       "headline": "গুলির শব্দ শুনে দৌড়ে গিয়ে দেখেন রক্তে বুক ভিজে যাচ্ছে স্বামীর, হাসপাতালে নিতে নিতে শেষ",
       "first_seen": "2026-10-28T14:15:43.070Z",
-      "last_update": "2026-10-28T17:46:13.499Z",
+      "last_update": "2026-10-28T18:50:58.707Z",
       "claim_count": 2,
       "events": [
         {
@@ -57621,20 +58285,20 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
           "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -58581,6 +59245,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -58619,14 +59291,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
-        },
-        {
-          "cluster_id": 377,
-          "slug": "national-377",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
         }
       ]
     },
@@ -59321,12 +59985,12 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
-          "cluster_id": 1035,
-          "slug": "national-1035",
+          "cluster_id": 1065,
+          "slug": "national-1065",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রথম স্ত্রীর বোনকে বিয়ে, এবার মাসুদকে তালাক দিলেন শ্যালিকা পূর্ণিমা"
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
         }
       ]
     },
@@ -59913,7 +60577,7 @@
       "cluster_id": 1035,
       "headline": "প্রথম স্ত্রীর বোনকে বিয়ে, এবার মাসুদকে তালাক দিলেন শ্যালিকা পূর্ণিমা",
       "first_seen": "2026-10-28T16:35:12.971Z",
-      "last_update": "2026-10-28T17:46:13.469Z",
+      "last_update": "2026-10-28T18:50:58.677Z",
       "claim_count": 4,
       "events": [
         {
@@ -60222,7 +60886,7 @@
       "cluster_id": 1037,
       "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ",
       "first_seen": "2026-10-28T16:35:12.987Z",
-      "last_update": "2026-10-28T17:46:13.480Z",
+      "last_update": "2026-10-28T18:50:58.688Z",
       "claim_count": 6,
       "events": [
         {
@@ -60510,7 +61174,7 @@
       "cluster_id": 1038,
       "headline": "চাটমোহরে সড়ক দুর্ঘটনায় কৃষি কর্মকর্তার মৃত্যু",
       "first_seen": "2026-10-28T16:35:13.000Z",
-      "last_update": "2026-10-28T17:46:13.481Z",
+      "last_update": "2026-10-28T18:50:58.693Z",
       "claim_count": 2,
       "events": [
         {
@@ -60638,7 +61302,7 @@
       "cluster_id": 1039,
       "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত",
       "first_seen": "2026-10-28T16:35:13.009Z",
-      "last_update": "2026-10-28T17:46:13.484Z",
+      "last_update": "2026-10-28T18:50:58.695Z",
       "claim_count": 2,
       "events": [
         {
@@ -60894,7 +61558,7 @@
       "cluster_id": 1040,
       "headline": "সমু চৌধুরীর চিকিৎসার সব খরচ বহন করবে অভিনয়শিল্পী সংঘ",
       "first_seen": "2026-10-28T16:35:13.016Z",
-      "last_update": "2026-10-28T17:46:13.485Z",
+      "last_update": "2026-10-28T18:50:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -61150,7 +61814,7 @@
       "cluster_id": 1042,
       "headline": "গ্রেডিং ব্যবস্থা নেই রিক্রুটিং এজেন্সির, যাচাইয়ে বিদেশ গমনেচ্ছুদের ভোগান্তি",
       "first_seen": "2026-10-28T16:35:13.034Z",
-      "last_update": "2026-10-28T17:46:13.486Z",
+      "last_update": "2026-10-28T18:50:58.697Z",
       "claim_count": 2,
       "events": [
         {
@@ -61397,7 +62061,7 @@
       "cluster_id": 1044,
       "headline": "সাদা কো–অর্ডে পূজা চেরীর স্নিগ্ধ লুক, দেখুন ৮টি ছবি",
       "first_seen": "2026-10-28T16:35:13.046Z",
-      "last_update": "2026-10-28T17:46:13.488Z",
+      "last_update": "2026-10-28T18:50:58.699Z",
       "claim_count": 2,
       "events": [
         {
@@ -61476,7 +62140,7 @@
       "cluster_id": 1045,
       "headline": "লোহাগাড়ায় দুধ দিয়ে গোসল করে জামায়াতের সমর্থন ছাড়ার ঘোষণা",
       "first_seen": "2026-10-28T16:35:13.086Z",
-      "last_update": "2026-10-28T17:46:13.501Z",
+      "last_update": "2026-10-28T18:50:58.714Z",
       "claim_count": 2,
       "events": [
         {
@@ -61679,6 +62343,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        },
+        {
           "cluster_id": 913,
           "slug": "national-913",
           "actor_links": 0,
@@ -61717,14 +62389,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
-        },
-        {
-          "cluster_id": 571,
-          "slug": "national-571",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শাহাদাতকে প্রশাসক করায় সরকারের বিরুদ্ধে মামলা হওয়া উচিত: এনসিপি নেতা আরিফ"
         }
       ]
     },
@@ -62134,7 +62798,7 @@
       "cluster_id": 1053,
       "headline": "বাংলাদেশ ব্যাংকের অর্থ পাচার প্রতিরোধ কর্মকর্তা ও স্ত্রীর ব্যাংক হিসাব তলব",
       "first_seen": "2026-10-28T17:46:13.464Z",
-      "last_update": "2026-10-28T17:46:13.467Z",
+      "last_update": "2026-10-28T18:50:58.676Z",
       "claim_count": 2,
       "events": [
         {
@@ -62262,7 +62926,7 @@
       "cluster_id": 1054,
       "headline": "বলাকায় বুথে যান্ত্রিক ত্রুটি, আশকোনায় বিমানের টিকিট বিক্রির কাউন্টার আবার চালু",
       "first_seen": "2026-10-28T17:46:13.470Z",
-      "last_update": "2026-10-28T17:46:13.472Z",
+      "last_update": "2026-10-28T18:50:58.679Z",
       "claim_count": 2,
       "events": [
         {
@@ -62390,7 +63054,7 @@
       "cluster_id": 1055,
       "headline": "রাধারমণ দত্তের প্রয়াণদিবসের অনুষ্ঠান কবরস্থানের পাশে না করতে ইউএনওকে চিঠি",
       "first_seen": "2026-10-28T17:46:13.473Z",
-      "last_update": "2026-10-28T17:46:13.475Z",
+      "last_update": "2026-10-28T18:50:58.684Z",
       "claim_count": 2,
       "events": [
         {
@@ -62518,7 +63182,7 @@
       "cluster_id": 1056,
       "headline": "রিমান্ড শেষে কারাগারে আনিসুল হক ও আব্দুল্লাহ আল মামুন",
       "first_seen": "2026-10-28T17:46:13.476Z",
-      "last_update": "2026-10-28T17:46:13.478Z",
+      "last_update": "2026-10-28T18:50:58.686Z",
       "claim_count": 2,
       "events": [
         {
@@ -62646,7 +63310,7 @@
       "cluster_id": 1057,
       "headline": "চাল-আটায় পুষ্টি উপাদান যুক্ত করতে দ্রুত আইন প্রণয়নের তাগিদ",
       "first_seen": "2026-10-28T17:46:13.482Z",
-      "last_update": "2026-10-28T17:46:13.484Z",
+      "last_update": "2026-10-28T18:50:58.694Z",
       "claim_count": 2,
       "events": [
         {
@@ -63171,7 +63835,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1068,
+          "slug": "national-1068",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত"
+        }
+      ]
     },
     "national-1063": {
       "cluster_id": 1063,
@@ -63253,48 +63926,595 @@
     },
     "national-1065": {
       "cluster_id": 1065,
-      "headline": "সোনার দোকানের শোকেসে ঝুলছিল ১৪ ফুট লম্বা অজগর, এরপর যা ঘটল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+      "first_seen": "2026-10-28T18:50:58.658Z",
+      "last_update": "2026-10-28T18:50:58.661Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T15:01:47.000Z",
+          "kind": "evidence",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdFJaMXY4NUE3TUJUSVBLd2hSNFZXODJLNjJvcFBIR3dVZGdYU2F4Q3VIdjVGaTJWcjEwX0JYTUJtZnktM21aX0gyY0pNNWs3UzNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T15:01:47.000Z",
+          "kind": "evidence",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdFJaMXY4NUE3TUJUSVBLd2hSNFZXODJLNjJvcFBIR3dVZGdYU2F4Q3VIdjVGaTJWcjEwX0JYTUJtZnktM21aX0gyY0pNNWs3UzNR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T18:20:33.000Z",
+          "kind": "evidence",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811138"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.254Z",
+          "kind": "claim",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.257Z",
+          "kind": "claim",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221923,
+          "claim_text": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221924,
+          "claim_text": "সিআরআইয়ের আয়কর নথি জব্দের আদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1037,
+          "slug": "politics-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 998,
+          "slug": "national-998",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পার"
+        },
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 959,
+          "slug": "opinion-959",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
+        },
+        {
+          "cluster_id": 808,
+          "slug": "national-808",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
+        }
+      ]
     },
     "national-1066": {
       "cluster_id": 1066,
-      "headline": "ট্রেনের কোচ সংস্কারে অবহেলা, মন্ত্রীর প্রশ্ন—‘নিজের বাড়ির জানালার কাজ হলে কি এভাবে করতেন’",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+      "first_seen": "2026-10-28T18:50:58.662Z",
+      "last_update": "2026-10-28T18:50:58.665Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T12:38:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBMTlJsZEVlRUZtQ2F0MDdxeGszYjlrWGZvNGpjLTVtaHF6OEVtZDJ5QXNoeXd6ZmRZLUNua00xZHpJSFlTNlA5QlVfclh3QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T12:38:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBMTlJsZEVlRUZtQ2F0MDdxeGszYjlrWGZvNGpjLTVtaHF6OEVtZDJ5QXNoeXd6ZmRZLUNua00xZHpJSFlTNlA5QlVfclh3QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:57:28.000Z",
+          "kind": "evidence",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilwRBVV95cUxOc2hrX25fRWtFYjFqN3lxcDgtTnN6YnRWN1BBSUZ2cUNOclJNR2ZPWTBKRUwtZ3Q3cVR4TURFMkczZTZmTkV2alM1WUU3M2d1aXJ6TlR4d0VXSGxERm1ySUhyYjdBakQxSlZNWUdjazk0eFF4R1d3RFZhUEdtSDlXR3lEeXhYajRzSUdJaF9HNXFDSVhPYk5sSl9TaXZMUExzcGJUNE4zMExLZFBaYlBiXzdJTXZxUlc3a0MxNUZCMk9Lbm5zZTVVVE1VbWFpQ0U4bWtoTzZTVHJ4bE43bmZoQkMxZkdvU3pRMk93R3B1VzlYYXBINDNIc2xPZ2w5Rm1iQWxSVi1yZTFVZ2sxUGhrYmZFYk1ZNUlQc2xjUzF3Slo0NW1vT3BXRW15Ulh2QXBxOE9JcUZZNDlRMEU2WTJZQmJmSHJ4VlJUUnRUQTFMNmU1c2N4S1dHczZ2WGdSdmFZNENtNUE0blUxdU13cm4yMzNHVV9Oa1NmaVdMWmRHbTJhRFNGRDE5SjZNb0FGNUE0bkR0U3pqeGo4dnlzZXFCT0N3UkdwZ1UzUGNJYXlWRTdZSzY3ZGJMRk9zSHRXR0lRTFVXM0t3eG9uRHR0NDZEdEN2cDJhOG85T3JhWXIyQjhhY3Rpb0hwNUxoQjk5Z1hMOEtyblhzYkxJaW5PcXR3NlVtRi1kdWxUOFE2eGx3Rk16VXhoaW9J0gGcBEFVX3lxTE11T3d3ZjB3MUNiMEt3eXh4dTA0QnZ4aHM1ZEtDRVZURGdERDlHdUxHRi1DbjE2cWFtdlR1Ny1OUjVzYi01elE2YWxkR3ZuTXo2U1ZUc1JITTNWdGdBdHZtRktMMVhSRTFUM3dMUzVxaHFadjZJUGhJTXBiU3Q0WG56MjlMb09sVWlGalFRYU5YTVZ5ZlhwWENOZThjZGZrS3FlWnAxSE5KQmhSeDA5QlhqblZ2OTE2emJtNlMyZ3pEYUt3Y1ZfTEQxNWVOdFd4SGtjZHE4UmQxczBqTDJvNHVlWUlRTjFLeGFuOEdnUHdpMFM4cHFkQTBxc2R5eU42SUdKdTRoQnNIc2dBZkl6ZmE5VFJvMFpfQUZJY0tiWEtWQkZKb1VmSkJ3WGs2WXpHeUhUZmN2REtyNTFGdUU0NklTbGFKMGJLVWVvV3NiQThGTUlBNUtHcTRsQ3NaamgxNUg4WUFDMDBVMmxVNG1wNzcwaEVrV3FBSjBwN0VLTVUzMlY0WklXSnU4aU14TjYyUHdYaWg0OTgwZU5QOTRRWXFfT0cxaGZ3aGtubXJvUHJBZElkN1NMeFFfUGV4aDNKbHdYMU1kNEpiMmFtZXltU2VyOTZ6dndjcmFnV3VNdmxDVWd1QWVjeWpWanNwVXctRWZodUdHSDMyODhpdkZSWkVIOG16QkhLaUNDVlBSTjE1Z3pvcllwa2NiNGZxZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.259Z",
+          "kind": "claim",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.263Z",
+          "kind": "claim",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘ক্রসফায়ারের’ ক্ষেত্রে জিরো টলারেন্স, আইজিপির বক্তব্য ঠিক হয়নি: স্বরাষ্ট্রমন্ত্রী ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 815,
+          "slug": "national-815",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাথাপিছু জিডিপিতে এ বছর ভারতকে ছাড়িয়ে যাবে বাংলাদেশ: আইএমএফ"
+        },
+        {
+          "cluster_id": 809,
+          "slug": "opinion-809",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রদল নেতা হত্যা মামলায় এমপি আজিজের ছেলে মিন্টু পুলিশ হেফাজতে"
+        },
+        {
+          "cluster_id": 807,
+          "slug": "national-807",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "খুলনায় যুবদল নেতা গুলিবিদ্ধ, উন্নত চিকিৎসার জন্য ঢাকায় প্রেরণ"
+        },
+        {
+          "cluster_id": 797,
+          "slug": "national-797",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সুন্দরবনে কোস্ট গার্ডের সঙ্গে দস্যুদের বন্দুকযুদ্ধ, উদ্ধার ৫ জেলে"
+        },
+        {
+          "cluster_id": 785,
+          "slug": "sports-785",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
+        }
+      ]
     },
     "national-1067": {
       "cluster_id": 1067,
-      "headline": "দক্ষ মানবসম্পদ গড়ে তুলতে অগ্রাধিকারমূলক পরিকল্পনা বাস্তবায়নে কাজ করছে সরকার: মাহদী আমিন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+      "first_seen": "2026-10-28T18:50:58.666Z",
+      "last_update": "2026-10-28T18:50:58.671Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:55:55.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811131"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.265Z",
+          "kind": "claim",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.268Z",
+          "kind": "claim",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 968,
+          "slug": "national-968",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় হাসপাতালে স্বাস্থ্যমন্ত্রীর আকস্মিক পরিদর্শন, ৫ চিকিৎসকের বিরুদ্ধে ব্যবস্থার নির্দেশ"
+        },
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
+        },
+        {
+          "cluster_id": 22,
+          "slug": "national-22",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাদরাসায় বলাৎকার-অশালীন ঘটনা দুঃখজনক, কঠোর ব্যবস্থা নেওয়া হবে: ধর্মমন্ত্রী"
+        }
+      ]
     },
     "national-1068": {
       "cluster_id": 1068,
-      "headline": "শৃঙ্খলা ফেরাতে কঠোর সরকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+      "first_seen": "2026-10-28T18:50:58.672Z",
+      "last_update": "2026-10-28T18:50:58.675Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T16:56:29.000Z",
+          "kind": "evidence",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/2-kil-led-in-bus-private-car-colli-sion-in-chakaria/"
+          }
+        },
+        {
+          "ts": "2026-10-28T16:56:29.000Z",
+          "kind": "evidence",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/2-kil-led-in-bus-private-car-colli-sion-in-chakaria/"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:53:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%9a%e0%a6%95%e0%a6%b0%e0%a6%bf%e0%a7%9f%e0%a6%be%e0%a7%9f-%e0%a6%ac%e0%a6%be%e0%a6%b8-%e0%a6%95%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a7%81%e0%a6%96%e0%a7%8b%e0%a6%ae%e0%a7%81%e0%a6%96%e0%a6%bf/"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.271Z",
+          "kind": "claim",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.274Z",
+          "kind": "claim",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221929,
+          "claim_text": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221930,
+          "claim_text": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1062,
+          "slug": "national-1062",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চকরিয়ায় বাস-প্রাইভেট কারের সংঘর্ষে নিহত ২"
+        },
+        {
+          "cluster_id": 752,
+          "slug": "national-752",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
+        }
+      ]
     },
     "national-1069": {
       "cluster_id": 1069,
-      "headline": "মেট্রো স্টেশনে আনসার সদস্যের তৎপরতায় চুরি হওয়া শিশু উদ্ধার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির",
+      "first_seen": "2026-10-28T18:50:58.680Z",
+      "last_update": "2026-10-28T18:50:58.682Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T15:06:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221931,
+          "claim_text": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/zacent7aj0"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:18:11.000Z",
+          "kind": "evidence",
+          "claim_id": 221931,
+          "claim_text": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/977390/%E0%A6%8F%E0%A6%95-%E0%A6%8F%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%A6%E0%A7%81%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87%E0%A6%A6-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%BE-%E0%A6%A1%E0%A6%BF%E0%A6%8F%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:18:11.000Z",
+          "kind": "evidence",
+          "claim_id": 221932,
+          "claim_text": "এক এলাকায় একইদিনে দুইবার উচ্ছেদ অভিযান চালালো ডিএনসিসি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/977390/%E0%A6%8F%E0%A6%95-%E0%A6%8F%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%A6%E0%A7%81%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87%E0%A6%A6-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%BE-%E0%A6%A1%E0%A6%BF%E0%A6%8F%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.277Z",
+          "kind": "claim",
+          "claim_id": 221931,
+          "claim_text": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.280Z",
+          "kind": "claim",
+          "claim_id": 221932,
+          "claim_text": "এক এলাকায় একইদিনে দুইবার উচ্ছেদ অভিযান চালালো ডিএনসিসি"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221931,
+          "claim_text": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221932,
+          "claim_text": "এক এলাকায় একইদিনে দুইবার উচ্ছেদ অভিযান চালালো ডিএনসিসি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 730,
+          "slug": "national-730",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "লিবিয়া থেকে ফিরেছেন ১৭৪ বাংলাদেশি, বন্দিশিবিরে ছিলেন ৩৬ জন"
+        },
+        {
+          "cluster_id": 1046,
+          "slug": "national-1046",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জবি শিক্ষার্থী জোবায়েদ হত্যা: অভিযোগ গঠনের শুনানি ফের পিছিয়েছে"
+        },
+        {
+          "cluster_id": 913,
+          "slug": "national-913",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "বেসরকারি চাকরিতে বেতন ‘আলোচনা সাপেক্ষে’, দর-কষাকষির কীভাবে করবেন চাকরিপ্রার্থীরা"
+        },
+        {
+          "cluster_id": 897,
+          "slug": "sports-897",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 824,
+          "slug": "politics-824",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 752,
+          "slug": "national-752",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
+        }
+      ]
     },
     "national-107": {
       "cluster_id": 107,
@@ -63426,74 +64646,581 @@
     },
     "national-1070": {
       "cluster_id": 1070,
-      "headline": "চকবাজারে আগুনের ধোঁয়ায় চেহারা কালো হয়ে গেছে ফায়ার ফাইটার ও স্বেচ্ছাসেবকদের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+      "first_seen": "2026-10-28T18:50:58.689Z",
+      "last_update": "2026-10-28T18:50:58.692Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T10:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/1090ryfotv"
+          }
+        },
+        {
+          "ts": "2026-10-28T10:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/bangladesh/1090ryfotv"
+          }
+        },
+        {
+          "ts": "2026-10-28T16:09:02.000Z",
+          "kind": "evidence",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/yetrv0dj5p"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.283Z",
+          "kind": "claim",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.287Z",
+          "kind": "claim",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221933,
+          "claim_text": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221934,
+          "claim_text": "ঢাকার ২১ শিক্ষাপ্রতিষ্ঠানে ‘ক্লিন স্কুল টিম’ কার্যক্রম শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 913,
+          "slug": "national-913",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 16,
+          "headline": "বেসরকারি চাকরিতে বেতন ‘আলোচনা সাপেক্ষে’, দর-কষাকষির কীভাবে করবেন চাকরিপ্রার্থীরা"
+        },
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
+        },
+        {
+          "cluster_id": 897,
+          "slug": "sports-897",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 834,
+          "slug": "tech-834",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বেতন বাড়ানোর দাবিতে গাজীপুরে শ্রমিকদের মহাসড়ক অবরোধ, যান চলাচল বন্ধ"
+        },
+        {
+          "cluster_id": 824,
+          "slug": "politics-824",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
+        },
+        {
+          "cluster_id": 726,
+          "slug": "national-726",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
+        }
+      ]
     },
     "national-1071": {
       "cluster_id": 1071,
-      "headline": "নিম্নমানের কাজ দেখে মন্ত্রীর ক্ষোভ, এরপর কর্মকর্তা যা বললেন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+      "first_seen": "2026-10-28T18:50:58.701Z",
+      "last_update": "2026-10-28T18:50:58.704Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T14:09:37.000Z",
+          "kind": "evidence",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/977350/%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%B7%E0%A7%8B%E0%A6%B2%E0%A7%8B%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-28T14:09:37.000Z",
+          "kind": "evidence",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/977350/%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%B7%E0%A7%8B%E0%A6%B2%E0%A7%8B%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-28T14:12:10.000Z",
+          "kind": "evidence",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bangladesh-singapore-azerbaijan-baku-fifa-under-15/"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.290Z",
+          "kind": "claim",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.293Z",
+          "kind": "claim",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1037,
+          "slug": "politics-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
+        },
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 954,
+          "slug": "national-954",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "জাপানে বিনিয়োগকারীদের সঙ্গে বৈঠকে প্রধানমন্ত্রী তারেক রহমান, বাংলাদেশে বিনিয়োগ ও অর্থনৈতিক সহযোগিতা"
+        },
+        {
+          "cluster_id": 951,
+          "slug": "national-951",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মালয়েশিয়াগামীদের মেডিক্যাল শুরু ৩১ অক্টোবর, আগের পরীক্ষা গ্রহণযোগ্য হবে না"
+        },
+        {
+          "cluster_id": 947,
+          "slug": "politics-947",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব"
+        }
+      ]
     },
     "national-1072": {
       "cluster_id": 1072,
-      "headline": "সোনার দোকানের শোকেসে ঝুলছিল ১৪ ফুট লম্বা অজগর, এরপর যা ঘটল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+      "first_seen": "2026-10-28T18:50:58.710Z",
+      "last_update": "2026-10-28T18:50:58.712Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T11:57:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizAVBVV95cUxQSlA0bG1SeUc3UElCbExPZTNZWWNPOTRzSERVWUVjT01RX1FfbGV6TWcwVUVlcTlnTGQ2OWhSdUVKODYyTlRLMzFJSjVtTE9tTEg1SElnU2lhelpuSWdZdTZqYjhGck0zSEU5bHFBWXhoVFZsb1ZYUVJETDIzZUhjMnd5WHNCNWNRSVlVdDRDYnRUQ3BVRTBEZGUzQ0lfNWJpcW54RGFOTVVsWWYzY0psQlFxWEVCN0VfNVlYbW5oRVh4RnNWOTI2Nnp2N0RGWS1tbGt4aE11ZXluMU5jNjJhMzZQcGE5REN3VDJfTDh3UHBnVmd2dmpGcmZacTRNSEhvOFRqc2FoYjlKTTJKYTJaa2d0VDZDQmx5WXJKYUs2NlZlN09fbjJuTkRuRUdJQk9VbGVkZWtWbS1pRHNob2hDTEEyYXRFTTB2Q0JzbHI5V2ZTaWtxLTJtNGtuZFQtbU1hY0FEU1d1cllIRFo3TnlKUXdVZllmcFo1Ynd1elBUTWRiSnE2NGE1d0xoUThoUkhRZURSOTltOFhjSFJQbzdyZHdNbjNZeURpYlZoT0ExdklWN0VOWXotRGhJNjZ2cWNXVGtvTFNzWmN3ZzFCUVZDMDhvM2xHM2VaOEFVZjMwYXNMa01VSlhWTFpFWHNOLUZQZ1JtNG02T2U0SXEwTFU3YUR4cUlrdnJPZ2NpWEZ1OVF0RXRVd05QSHYwcC03TktPZE90M25sb1ZldVY3WDhlM3U0NTU0MnJQamdEMy1CYnVjVGxpaUNlZnNoeGh0b0FoUVlkRHZvTk8zMHdPbUV1ZlFOR2lKUEZNS3NLNVNObUY4UmQtSkk2TkxrNndrZG9lTG9NRWE5WFpoNEx0ZVdFbUItRWxJaEljLXVfdi1BcUVtem9DNmZTNFBEN1oyYlNCU3lXMHpneXZJVFlQUmtqS2hLQUlBUXJ0U3l5Mw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T11:57:04.000Z",
+          "kind": "evidence",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMizAVBVV95cUxQSlA0bG1SeUc3UElCbExPZTNZWWNPOTRzSERVWUVjT01RX1FfbGV6TWcwVUVlcTlnTGQ2OWhSdUVKODYyTlRLMzFJSjVtTE9tTEg1SElnU2lhelpuSWdZdTZqYjhGck0zSEU5bHFBWXhoVFZsb1ZYUVJETDIzZUhjMnd5WHNCNWNRSVlVdDRDYnRUQ3BVRTBEZGUzQ0lfNWJpcW54RGFOTVVsWWYzY0psQlFxWEVCN0VfNVlYbW5oRVh4RnNWOTI2Nnp2N0RGWS1tbGt4aE11ZXluMU5jNjJhMzZQcGE5REN3VDJfTDh3UHBnVmd2dmpGcmZacTRNSEhvOFRqc2FoYjlKTTJKYTJaa2d0VDZDQmx5WXJKYUs2NlZlN09fbjJuTkRuRUdJQk9VbGVkZWtWbS1pRHNob2hDTEEyYXRFTTB2Q0JzbHI5V2ZTaWtxLTJtNGtuZFQtbU1hY0FEU1d1cllIRFo3TnlKUXdVZllmcFo1Ynd1elBUTWRiSnE2NGE1d0xoUThoUkhRZURSOTltOFhjSFJQbzdyZHdNbjNZeURpYlZoT0ExdklWN0VOWXotRGhJNjZ2cWNXVGtvTFNzWmN3ZzFCUVZDMDhvM2xHM2VaOEFVZjMwYXNMa01VSlhWTFpFWHNOLUZQZ1JtNG02T2U0SXEwTFU3YUR4cUlrdnJPZ2NpWEZ1OVF0RXRVd05QSHYwcC03TktPZE90M25sb1ZldVY3WDhlM3U0NTU0MnJQamdEMy1CYnVjVGxpaUNlZnNoeGh0b0FoUVlkRHZvTk8zMHdPbUV1ZlFOR2lKUEZNS3NLNVNObUY4UmQtSkk2TkxrNndrZG9lTG9NRWE5WFpoNEx0ZVdFbUItRWxJaEljLXVfdi1BcUVtem9DNmZTNFBEN1oyYlNCU3lXMHpneXZJVFlQUmtqS2hLQUlBUXJ0U3l5Mw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T12:34:14.000Z",
+          "kind": "evidence",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE01QUNhVldNSmM4d2ZJWjhGaTZzajF0M24xX24tMzJoUFFzQzgwWGpfVlI4UXMtQ08wcFBDcnFPUGFPU0MwRDFJcUNKMWhDak0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.296Z",
+          "kind": "claim",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.299Z",
+          "kind": "claim",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221937,
+          "claim_text": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221938,
+          "claim_text": "পুলিশের গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, ভিডিও ভাইরাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 959,
+          "slug": "opinion-959",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
+        },
+        {
+          "cluster_id": 949,
+          "slug": "national-949",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শেরপুরে বাস-অটোরিকশা সংঘর্ষে প্রবাসী নিহত, আহত ৪"
+        },
+        {
+          "cluster_id": 631,
+          "slug": "sports-631",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
+        },
+        {
+          "cluster_id": 378,
+          "slug": "national-378",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
+        },
+        {
+          "cluster_id": 377,
+          "slug": "national-377",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
+        }
+      ]
     },
     "national-1073": {
       "cluster_id": 1073,
-      "headline": "ডেঙ্গু নিয়ে জনসচেতনতা বাড়াতে পাড়া-মহল্লায় মাইকিংয়ের নির্দেশ প্রধানমন্ত্রীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দাঁড়িয়ে গেলেন পঞ্চাশোর্ধ্ব নারী, অথচ বসে থাকলেন তরুণ ও মধ্যবয়সী পুরুষেরা",
+      "first_seen": "2026-10-28T18:50:59.176Z",
+      "last_update": "2026-10-28T18:50:59.178Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T18:19:24.000Z",
+          "kind": "evidence",
+          "claim_id": 221939,
+          "claim_text": "দাঁড়িয়ে গেলেন পঞ্চাশোর্ধ্ব নারী, অথচ বসে থাকলেন তরুণ ও মধ্যবয়সী পুরুষেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/k98adodta2"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.302Z",
+          "kind": "claim",
+          "claim_id": 221939,
+          "claim_text": "দাঁড়িয়ে গেলেন পঞ্চাশোর্ধ্ব নারী, অথচ বসে থাকলেন তরুণ ও মধ্যবয়সী পুরুষেরা"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221939,
+          "claim_text": "দাঁড়িয়ে গেলেন পঞ্চাশোর্ধ্ব নারী, অথচ বসে থাকলেন তরুণ ও মধ্যবয়সী পুরুষেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1074": {
       "cluster_id": 1074,
-      "headline": "হাজারীবাগে ছাদ থেকে পড়ে কেব্ল ব্যবসায়ী নিহত, স্বজনদের হত্যার অভিযোগ: পুলিশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জিনস প্যান্ট ও অন্তর্বাসে পাচারের চেষ্টা, শাহজালালে মিলল ২৪ কোটি টাকার সোনা",
+      "first_seen": "2026-10-28T18:50:59.180Z",
+      "last_update": "2026-10-28T18:50:59.182Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T17:52:18.000Z",
+          "kind": "evidence",
+          "claim_id": 221940,
+          "claim_text": "জিনস প্যান্ট ও অন্তর্বাসে পাচারের চেষ্টা, শাহজালালে মিলল ২৪ কোটি টাকার সোনা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/crime/gt44aaunpm"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.305Z",
+          "kind": "claim",
+          "claim_id": 221940,
+          "claim_text": "জিনস প্যান্ট ও অন্তর্বাসে পাচারের চেষ্টা, শাহজালালে মিলল ২৪ কোটি টাকার সোনা"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221940,
+          "claim_text": "জিনস প্যান্ট ও অন্তর্বাসে পাচারের চেষ্টা, শাহজালালে মিলল ২৪ কোটি টাকার সোনা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1075": {
       "cluster_id": 1075,
-      "headline": "আওয়ামী লীগের সঙ্গে সমঝোতার কোনো সম্ভাবনা নেই: উপদেষ্টা জাহেদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+      "first_seen": "2026-10-28T18:50:59.183Z",
+      "last_update": "2026-10-28T18:50:59.185Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T17:43:39.000Z",
+          "kind": "evidence",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/k0tjn7s5sp"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.308Z",
+          "kind": "claim",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221941,
+          "claim_text": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1076": {
       "cluster_id": 1076,
-      "headline": "৩৫ বছর বয়সের পর আইনজীবী হওয়ার পথ বন্ধ করা হবে: আইনমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নির্বাচনের আগের দিন বিএনপি ও জামায়াত প্রার্থীর পাল্টাপাল্টি অভিযোগ",
+      "first_seen": "2026-10-28T18:50:59.187Z",
+      "last_update": "2026-10-28T18:50:59.189Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T17:38:06.000Z",
+          "kind": "evidence",
+          "claim_id": 221942,
+          "claim_text": "নির্বাচনের আগের দিন বিএনপি ও জামায়াত প্রার্থীর পাল্টাপাল্টি অভিযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/x4z43zdrbb"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.311Z",
+          "kind": "claim",
+          "claim_id": 221942,
+          "claim_text": "নির্বাচনের আগের দিন বিএনপি ও জামায়াত প্রার্থীর পাল্টাপাল্টি অভিযোগ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221942,
+          "claim_text": "নির্বাচনের আগের দিন বিএনপি ও জামায়াত প্রার্থীর পাল্টাপাল্টি অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1077": {
       "cluster_id": 1077,
-      "headline": "রোনালদো ছাড়লেন পর্তুগালের ক্যাম্প, পর্তুগালের ইনস্টাগ্রাম ছেড়ে গেলেন ৫ লাখ অনুসারী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+      "first_seen": "2026-10-28T18:50:59.191Z",
+      "last_update": "2026-10-28T18:50:59.192Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-28T16:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/ott/fg3u1kzo8z"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.314Z",
+          "kind": "claim",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221943,
+          "claim_text": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1078": {
@@ -64025,6 +65752,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -64039,14 +65774,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -65230,20 +66957,20 @@
           "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 1045,
           "slug": "politics-1045",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "লোহাগাড়ায় দুধ দিয়ে গোসল করে জামায়াতের সমর্থন ছাড়ার ঘোষণা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
         }
       ]
     },
@@ -70677,6 +72404,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
           "cluster_id": 995,
           "slug": "national-witnesses-detail-horror",
           "actor_links": 0,
@@ -70715,14 +72450,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
-        },
-        {
-          "cluster_id": 834,
-          "slug": "tech-834",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বেতন বাড়ানোর দাবিতে গাজীপুরে শ্রমিকদের মহাসড়ক অবরোধ, যান চলাচল বন্ধ"
         }
       ]
     },
@@ -71510,6 +73237,14 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1029,
           "slug": "national-1029",
           "actor_links": 0,
@@ -71540,14 +73275,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
-        },
-        {
-          "cluster_id": 959,
-          "slug": "opinion-959",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
         }
       ]
     },
@@ -77149,6 +78876,14 @@
           "headline": "ইরানে আজই হামলা হতে পারে, চুক্তির পথও খোলা রাখলেন ট্রাম্প"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -77171,14 +78906,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1015,
-          "slug": "national-1015",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিএনপির এমপির ছেলের ঘনিষ্ঠ প্রবাসীর শপিংমল লুট, যে যার মতো নিয়ে গেছে সব মালামাল"
         }
       ]
     },
@@ -78430,6 +80157,14 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -78444,14 +80179,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         }
       ]
     },
@@ -78624,6 +80351,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -78638,14 +80373,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -80513,6 +82240,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -80527,14 +82262,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -81198,6 +82925,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -81236,14 +82971,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সুন্দরবনে কোস্ট গার্ডের সঙ্গে দস্যুদের বন্দুকযুদ্ধ, উদ্ধার ৫ জেলে"
-        },
-        {
-          "cluster_id": 785,
-          "slug": "sports-785",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
         }
       ]
     },
@@ -86363,6 +88090,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -86377,14 +88112,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -87596,6 +89323,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1067,
+          "slug": "tech-1067",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -88260,6 +89995,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -88274,14 +90017,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -89099,6 +90834,14 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 997,
           "slug": "opinion-997",
           "actor_links": 0,
@@ -89113,14 +90856,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -93342,6 +95077,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -93380,14 +95123,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -101639,6 +103374,14 @@
           "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -101661,14 +103404,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 1015,
-          "slug": "national-1015",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিএনপির এমপির ছেলের ঘনিষ্ঠ প্রবাসীর শপিংমল লুট, যে যার মতো নিয়ে গেছে সব মালামাল"
         }
       ]
     },
@@ -109560,6 +111295,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -109598,14 +111341,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -115041,6 +116776,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        },
+        {
           "cluster_id": 1046,
           "slug": "national-1046",
           "actor_links": 0,
@@ -115079,14 +116822,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -116443,6 +118178,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -116481,14 +118224,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
-        },
-        {
-          "cluster_id": 178,
-          "slug": "national-178",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         }
       ]
     },
@@ -116700,6 +118435,14 @@
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
         },
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 1043,
           "slug": "national-1043",
           "actor_links": 0,
@@ -116730,14 +118473,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "কুমিল্লায় হাসপাতালে স্বাস্থ্যমন্ত্রীর আকস্মিক পরিদর্শন, ৫ চিকিৎসকের বিরুদ্ধে ব্যবস্থার নির্দেশ"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে বাস-অটোরিকশা সংঘর্ষে প্রবাসী নিহত, আহত ৪"
         }
       ]
     },
@@ -120431,6 +122166,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -120469,14 +122212,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -122621,6 +124356,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -122659,14 +124402,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -129642,6 +131377,14 @@
           "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান"
         },
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -129656,14 +131399,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আট বিভাগে বজ্রবৃষ্টির আশঙ্কা, ঢাকাসহ দেশের ১২ জেলায় বইছে মৃদু তাপপ্রবাহ"
-        },
-        {
-          "cluster_id": 1027,
-          "slug": "national-1027",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তত্ত্বাবধায়ক সরকার ফিরিয়ে আনতেই হবে, এর বিকল্প নেই: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -136032,6 +137767,14 @@
           "headline": "দুপুর থেকে ৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে রাজধানীর যেসব এলাকায়"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 997,
           "slug": "opinion-997",
           "actor_links": 0,
@@ -136046,14 +137789,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -139411,6 +141146,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        },
+        {
           "cluster_id": 1046,
           "slug": "national-1046",
           "actor_links": 0,
@@ -139449,14 +141192,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -139784,6 +141519,14 @@
           "headline": "‘এমন বিশৃঙ্খলা কি এই প্রথম দেখলেন’: বাংলাদেশ দলে অস্থিরতা নিয়ে ফিল সিমন্স"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -139798,14 +141541,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -141577,6 +143312,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -141615,14 +143358,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
-        },
-        {
-          "cluster_id": 377,
-          "slug": "national-377",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
         }
       ]
     },
@@ -143653,20 +145388,20 @@
           "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত"
         },
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 1045,
           "slug": "politics-1045",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "লোহাগাড়ায় দুধ দিয়ে গোসল করে জামায়াতের সমর্থন ছাড়ার ঘোষণা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
         }
       ]
     },
@@ -151806,6 +153541,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -151820,14 +153563,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -152415,6 +154150,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -152429,14 +154172,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -152806,6 +154541,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -152820,14 +154563,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -155449,7 +157184,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        }
+      ]
     },
     "national-731": {
       "cluster_id": 731,
@@ -159395,6 +161139,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -159409,14 +161161,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -161655,6 +163399,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -161693,14 +163445,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -163572,6 +165316,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -163610,14 +165362,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -164436,6 +166180,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -164474,14 +166226,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -167744,6 +169488,14 @@
           "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         },
         {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
           "cluster_id": 913,
           "slug": "national-913",
           "actor_links": 0,
@@ -167774,14 +169526,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
-        },
-        {
-          "cluster_id": 631,
-          "slug": "sports-631",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 18,
-          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         }
       ]
     },
@@ -168821,6 +170565,14 @@
           "headline": "সানায়ে তাকাইচি-তারেক রহমানের বৈঠক ফলপ্রসূ হয়েছে: আতিকুর রহমান"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -168835,14 +170587,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -169172,6 +170916,14 @@
           "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -169186,14 +170938,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         }
       ]
     },
@@ -169880,6 +171624,14 @@
           "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -169894,14 +171646,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -172144,12 +173888,12 @@
           "headline": "ছাত্রদল নেতা শাকিল হত্যা মামলায় এমপিপুত্র মিন্টু গ্রেপ্তার, ১০ দিনের রিমান্ড আবেদন"
         },
         {
-          "cluster_id": 1057,
-          "slug": "sports-1057",
+          "cluster_id": 1072,
+          "slug": "national-1072",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "চাল-আটায় পুষ্টি উপাদান যুক্ত করতে দ্রুত আইন প্রণয়নের তাগিদ"
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
         }
       ]
     },
@@ -172716,6 +174460,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে ছবি পোস্ট করে যা লিখলেন সানায়ে তাকাইচি"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -172730,14 +174482,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -178601,6 +180345,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -178615,14 +180367,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -181046,7 +182790,7 @@
       "cluster_id": 947,
       "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব",
       "first_seen": "2026-10-28T08:56:48.143Z",
-      "last_update": "2026-10-28T17:46:13.479Z",
+      "last_update": "2026-10-28T18:50:58.687Z",
       "claim_count": 5,
       "events": [
         {
@@ -181508,6 +183252,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -181546,14 +183298,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
-        },
-        {
-          "cluster_id": 178,
-          "slug": "national-178",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সেন্টমার্টিন খুলছে, পর্যটকদের দিতে হবে ফি: আরও নতুন যেসব নির্দেশনা"
         }
       ]
     },
@@ -183418,20 +185162,20 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
-          "cluster_id": 1047,
-          "slug": "national-1047",
+          "cluster_id": 1072,
+          "slug": "national-1072",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "চিত্রনায়িকা পপির মা আর নেই"
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
         },
         {
-          "cluster_id": 1043,
-          "slug": "national-1043",
+          "cluster_id": 1065,
+          "slug": "national-1065",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৪ সমঝোতা স্মারক, ২ অনুদান চুক্তি ও অভিপ্রায়পত্র সই"
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
         }
       ]
     },
@@ -184957,6 +186701,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1067,
+          "slug": "tech-1067",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
           "cluster_id": 1043,
           "slug": "national-1043",
           "actor_links": 0,
@@ -184995,14 +186747,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
-        },
-        {
-          "cluster_id": 899,
-          "slug": "national-899",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "শিক্ষার্থীদের জন্য চার নতুন বই, এইচএসসির ফল ৩১ অক্টোবর"
         }
       ]
     },
@@ -187502,7 +189246,7 @@
       "cluster_id": 995,
       "headline": "৪ দিন আগে চাঁদা চাইলেও দেননি, দুই হাত কেটে লাশ ফেলে রাখা হলো রাস্তায়",
       "first_seen": "2026-10-28T13:10:49.763Z",
-      "last_update": "2026-10-28T16:35:13.079Z",
+      "last_update": "2026-10-28T18:50:58.709Z",
       "claim_count": 4,
       "events": [
         {
@@ -188041,6 +189785,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -188079,14 +189831,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
-        },
-        {
-          "cluster_id": 463,
-          "slug": "national-463",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বঙ্গোপসাগরে গভীর নিম্নচাপ, ঘূর্ণিঝড়ে তিন বিভাগে বৃষ্টির শঙ্কা"
         }
       ]
     },
@@ -193458,6 +195202,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে ছবি পোস্ট করে যা লিখলেন সানায়ে তাকাইচি"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -193472,14 +195224,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -193844,7 +195588,7 @@
       "cluster_id": 995,
       "headline": "৪ দিন আগে চাঁদা চাইলেও দেননি, দুই হাত কেটে লাশ ফেলে রাখা হলো রাস্তায়",
       "first_seen": "2026-10-28T13:10:49.763Z",
-      "last_update": "2026-10-28T16:35:13.079Z",
+      "last_update": "2026-10-28T18:50:58.709Z",
       "claim_count": 4,
       "events": [
         {
@@ -195702,7 +197446,7 @@
       "cluster_id": 995,
       "headline": "৪ দিন আগে চাঁদা চাইলেও দেননি, দুই হাত কেটে লাশ ফেলে রাখা হলো রাস্তায়",
       "first_seen": "2026-10-28T13:10:49.763Z",
-      "last_update": "2026-10-28T16:35:13.079Z",
+      "last_update": "2026-10-28T18:50:58.709Z",
       "claim_count": 4,
       "events": [
         {
@@ -198536,6 +200280,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -198574,14 +200326,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -199349,20 +201093,20 @@
           "headline": "রাষ্ট্রদূতকে ফিরিয়ে আনা পররাষ্ট্র মন্ত্রণালয়ের একান্ত সিদ্ধান্ত: শামা ওবায়েদ ইসলাম"
         },
         {
-          "cluster_id": 1047,
-          "slug": "national-1047",
+          "cluster_id": 1072,
+          "slug": "national-1072",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "চিত্রনায়িকা পপির মা আর নেই"
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
         },
         {
-          "cluster_id": 1043,
-          "slug": "national-1043",
+          "cluster_id": 1065,
+          "slug": "national-1065",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর জাপান সফরে ৪ সমঝোতা স্মারক, ২ অনুদান চুক্তি ও অভিপ্রায়পত্র সই"
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
         }
       ]
     },
@@ -200304,6 +202048,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1072,
+          "slug": "national-1072",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ"
+        },
+        {
           "cluster_id": 977,
           "slug": "national-977",
           "actor_links": 0,
@@ -200342,14 +202094,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "পিকআপ ভ্যানের ধাক্কায় মোটরসাইকেল থেকে ছিটকে পড়ে মা-ছেলে নিহত"
-        },
-        {
-          "cluster_id": 377,
-          "slug": "national-377",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মন্দিরের জমি দখলের অভিযোগ জামায়াত নেতার বিরুদ্ধে"
         }
       ]
     },
@@ -200524,7 +202268,7 @@
       "cluster_id": 1037,
       "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ",
       "first_seen": "2026-10-28T16:35:12.987Z",
-      "last_update": "2026-10-28T17:46:13.480Z",
+      "last_update": "2026-10-28T18:50:58.688Z",
       "claim_count": 6,
       "events": [
         {
@@ -200812,7 +202556,7 @@
       "cluster_id": 1045,
       "headline": "লোহাগাড়ায় দুধ দিয়ে গোসল করে জামায়াতের সমর্থন ছাড়ার ঘোষণা",
       "first_seen": "2026-10-28T16:35:13.086Z",
-      "last_update": "2026-10-28T17:46:13.501Z",
+      "last_update": "2026-10-28T18:50:58.714Z",
       "claim_count": 2,
       "events": [
         {
@@ -200979,7 +202723,7 @@
       "cluster_id": 1056,
       "headline": "রিমান্ড শেষে কারাগারে আনিসুল হক ও আব্দুল্লাহ আল মামুন",
       "first_seen": "2026-10-28T17:46:13.476Z",
-      "last_update": "2026-10-28T17:46:13.478Z",
+      "last_update": "2026-10-28T18:50:58.686Z",
       "claim_count": 2,
       "events": [
         {
@@ -201564,6 +203308,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
           "cluster_id": 995,
           "slug": "national-witnesses-detail-horror",
           "actor_links": 0,
@@ -201602,14 +203354,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
-        },
-        {
-          "cluster_id": 834,
-          "slug": "tech-834",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বেতন বাড়ানোর দাবিতে গাজীপুরে শ্রমিকদের মহাসড়ক অবরোধ, যান চলাচল বন্ধ"
         }
       ]
     },
@@ -202440,6 +204184,14 @@
           "headline": "এনসিপির জাতীয় নারীশক্তির বিদ্যমান কমিটি বাতিল, নতুন নেতৃত্বে দুই সংসদ সদস্যসহ তিনজন"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -202454,14 +204206,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         }
       ]
     },
@@ -202909,6 +204653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -202923,14 +204675,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -211085,7 +212829,7 @@
       "cluster_id": 947,
       "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব",
       "first_seen": "2026-10-28T08:56:48.143Z",
-      "last_update": "2026-10-28T17:46:13.479Z",
+      "last_update": "2026-10-28T18:50:58.687Z",
       "claim_count": 5,
       "events": [
         {
@@ -212099,7 +213843,7 @@
       "cluster_id": 1011,
       "headline": "গুলির শব্দ শুনে দৌড়ে গিয়ে দেখেন রক্তে বুক ভিজে যাচ্ছে স্বামীর, হাসপাতালে নিতে নিতে শেষ",
       "first_seen": "2026-10-28T14:15:43.070Z",
-      "last_update": "2026-10-28T17:46:13.499Z",
+      "last_update": "2026-10-28T18:50:58.707Z",
       "claim_count": 2,
       "events": [
         {
@@ -212601,7 +214345,7 @@
       "cluster_id": 1057,
       "headline": "চাল-আটায় পুষ্টি উপাদান যুক্ত করতে দ্রুত আইন প্রণয়নের তাগিদ",
       "first_seen": "2026-10-28T17:46:13.482Z",
-      "last_update": "2026-10-28T17:46:13.484Z",
+      "last_update": "2026-10-28T18:50:58.694Z",
       "claim_count": 2,
       "events": [
         {
@@ -212727,12 +214471,259 @@
     },
     "sports-1066": {
       "cluster_id": 1066,
-      "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+      "first_seen": "2026-10-28T18:50:58.662Z",
+      "last_update": "2026-10-28T18:50:58.665Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T12:38:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBMTlJsZEVlRUZtQ2F0MDdxeGszYjlrWGZvNGpjLTVtaHF6OEVtZDJ5QXNoeXd6ZmRZLUNua00xZHpJSFlTNlA5QlVfclh3QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T12:38:00.000Z",
+          "kind": "evidence",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBMTlJsZEVlRUZtQ2F0MDdxeGszYjlrWGZvNGpjLTVtaHF6OEVtZDJ5QXNoeXd6ZmRZLUNua00xZHpJSFlTNlA5QlVfclh3QQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:57:28.000Z",
+          "kind": "evidence",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilwRBVV95cUxOc2hrX25fRWtFYjFqN3lxcDgtTnN6YnRWN1BBSUZ2cUNOclJNR2ZPWTBKRUwtZ3Q3cVR4TURFMkczZTZmTkV2alM1WUU3M2d1aXJ6TlR4d0VXSGxERm1ySUhyYjdBakQxSlZNWUdjazk0eFF4R1d3RFZhUEdtSDlXR3lEeXhYajRzSUdJaF9HNXFDSVhPYk5sSl9TaXZMUExzcGJUNE4zMExLZFBaYlBiXzdJTXZxUlc3a0MxNUZCMk9Lbm5zZTVVVE1VbWFpQ0U4bWtoTzZTVHJ4bE43bmZoQkMxZkdvU3pRMk93R3B1VzlYYXBINDNIc2xPZ2w5Rm1iQWxSVi1yZTFVZ2sxUGhrYmZFYk1ZNUlQc2xjUzF3Slo0NW1vT3BXRW15Ulh2QXBxOE9JcUZZNDlRMEU2WTJZQmJmSHJ4VlJUUnRUQTFMNmU1c2N4S1dHczZ2WGdSdmFZNENtNUE0blUxdU13cm4yMzNHVV9Oa1NmaVdMWmRHbTJhRFNGRDE5SjZNb0FGNUE0bkR0U3pqeGo4dnlzZXFCT0N3UkdwZ1UzUGNJYXlWRTdZSzY3ZGJMRk9zSHRXR0lRTFVXM0t3eG9uRHR0NDZEdEN2cDJhOG85T3JhWXIyQjhhY3Rpb0hwNUxoQjk5Z1hMOEtyblhzYkxJaW5PcXR3NlVtRi1kdWxUOFE2eGx3Rk16VXhoaW9J0gGcBEFVX3lxTE11T3d3ZjB3MUNiMEt3eXh4dTA0QnZ4aHM1ZEtDRVZURGdERDlHdUxHRi1DbjE2cWFtdlR1Ny1OUjVzYi01elE2YWxkR3ZuTXo2U1ZUc1JITTNWdGdBdHZtRktMMVhSRTFUM3dMUzVxaHFadjZJUGhJTXBiU3Q0WG56MjlMb09sVWlGalFRYU5YTVZ5ZlhwWENOZThjZGZrS3FlWnAxSE5KQmhSeDA5QlhqblZ2OTE2emJtNlMyZ3pEYUt3Y1ZfTEQxNWVOdFd4SGtjZHE4UmQxczBqTDJvNHVlWUlRTjFLeGFuOEdnUHdpMFM4cHFkQTBxc2R5eU42SUdKdTRoQnNIc2dBZkl6ZmE5VFJvMFpfQUZJY0tiWEtWQkZKb1VmSkJ3WGs2WXpHeUhUZmN2REtyNTFGdUU0NklTbGFKMGJLVWVvV3NiQThGTUlBNUtHcTRsQ3NaamgxNUg4WUFDMDBVMmxVNG1wNzcwaEVrV3FBSjBwN0VLTVUzMlY0WklXSnU4aU14TjYyUHdYaWg0OTgwZU5QOTRRWXFfT0cxaGZ3aGtubXJvUHJBZElkN1NMeFFfUGV4aDNKbHdYMU1kNEpiMmFtZXltU2VyOTZ6dndjcmFnV3VNdmxDVWd1QWVjeWpWanNwVXctRWZodUdHSDMyODhpdkZSWkVIOG16QkhLaUNDVlBSTjE1Z3pvcllwa2NiNGZxZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.259Z",
+          "kind": "claim",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.263Z",
+          "kind": "claim",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221925,
+          "claim_text": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221926,
+          "claim_text": "টুপটুপ রিসোর্টে অগ্নিকাণ্ডে নিহত একই পরিবারের তিন সদস্যের দাফন সম্পন্ন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘ক্রসফায়ারের’ ক্ষেত্রে জিরো টলারেন্স, আইজিপির বক্তব্য ঠিক হয়নি: স্বরাষ্ট্রমন্ত্রী ও অন্যান্য খবর"
+        },
+        {
+          "cluster_id": 815,
+          "slug": "national-815",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাথাপিছু জিডিপিতে এ বছর ভারতকে ছাড়িয়ে যাবে বাংলাদেশ: আইএমএফ"
+        },
+        {
+          "cluster_id": 809,
+          "slug": "opinion-809",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ছাত্রদল নেতা হত্যা মামলায় এমপি আজিজের ছেলে মিন্টু পুলিশ হেফাজতে"
+        },
+        {
+          "cluster_id": 807,
+          "slug": "national-807",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "খুলনায় যুবদল নেতা গুলিবিদ্ধ, উন্নত চিকিৎসার জন্য ঢাকায় প্রেরণ"
+        },
+        {
+          "cluster_id": 797,
+          "slug": "national-797",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সুন্দরবনে কোস্ট গার্ডের সঙ্গে দস্যুদের বন্দুকযুদ্ধ, উদ্ধার ৫ জেলে"
+        },
+        {
+          "cluster_id": 785,
+          "slug": "sports-785",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
+        }
+      ]
+    },
+    "sports-1071": {
+      "cluster_id": 1071,
+      "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+      "first_seen": "2026-10-28T18:50:58.701Z",
+      "last_update": "2026-10-28T18:50:58.704Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T14:09:37.000Z",
+          "kind": "evidence",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/977350/%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%B7%E0%A7%8B%E0%A6%B2%E0%A7%8B%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-28T14:09:37.000Z",
+          "kind": "evidence",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/sport/football/977350/%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%B7%E0%A7%8B%E0%A6%B2%E0%A7%8B%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6"
+          }
+        },
+        {
+          "ts": "2026-10-28T14:12:10.000Z",
+          "kind": "evidence",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/bangladesh-singapore-azerbaijan-baku-fifa-under-15/"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.290Z",
+          "kind": "claim",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.293Z",
+          "kind": "claim",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221935,
+          "claim_text": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221936,
+          "claim_text": "টাইব্রেকারে সিঙ্গাপুরকে হারিয়ে শেষ ষোলোতে বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1037,
+          "slug": "politics-1037",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গুম প্রতিরোধে সংবিধানে নতুন কিছু যুক্ত করার প্রয়োজন নেই: সালাহউদ্দিন আহমদ"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
+        },
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 954,
+          "slug": "national-954",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "জাপানে বিনিয়োগকারীদের সঙ্গে বৈঠকে প্রধানমন্ত্রী তারেক রহমান, বাংলাদেশে বিনিয়োগ ও অর্থনৈতিক সহযোগিতা"
+        },
+        {
+          "cluster_id": 951,
+          "slug": "national-951",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মালয়েশিয়াগামীদের মেডিক্যাল শুরু ৩১ অক্টোবর, আগের পরীক্ষা গ্রহণযোগ্য হবে না"
+        },
+        {
+          "cluster_id": 947,
+          "slug": "politics-947",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ঠাকুরগাঁও উপনির্বাচন নিয়ে উদ্বিগ্ন হওয়ার কারণ নেই: ইসি সচিব"
+        }
+      ]
     },
     "sports-1081": {
       "cluster_id": 1081,
@@ -213813,6 +215804,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -213827,14 +215826,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -214913,6 +216904,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -214927,14 +216926,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -215357,6 +217348,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জয়-পুতুলসহ ৮ জনের মামলায় আয়কর নথি জব্দের নির্দেশ আদালতের"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -215395,14 +217394,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঈশ্বরগঞ্জে বর্ণাঢ্য আয়োজনে যুবদলের ৪৮তম প্রতিষ্ঠাবার্ষিকী পালিত"
-        },
-        {
-          "cluster_id": 808,
-          "slug": "national-808",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বাংলাদেশিসহ ২৯ দেশের নাগরিকদের জোরপূর্বক যুদ্ধে পাঠিয়েছে রাশিয়া"
         }
       ]
     },
@@ -217608,6 +219599,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -217622,14 +219621,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -218586,6 +220577,14 @@
           "headline": "‘এমন বিশৃঙ্খলা কি এই প্রথম দেখলেন’: বাংলাদেশ দলে অস্থিরতা নিয়ে ফিল সিমন্স"
         },
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -218600,14 +220599,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
@@ -224257,7 +226248,7 @@
       "cluster_id": 1039,
       "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত",
       "first_seen": "2026-10-28T16:35:13.009Z",
-      "last_update": "2026-10-28T17:46:13.484Z",
+      "last_update": "2026-10-28T18:50:58.695Z",
       "claim_count": 2,
       "events": [
         {
@@ -224383,12 +226374,115 @@
     },
     "tech-1067": {
       "cluster_id": 1067,
-      "headline": "এআই শিক্ষক নাকি শর্টকাট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+      "first_seen": "2026-10-28T18:50:58.666Z",
+      "last_update": "2026-10-28T18:50:58.671Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T09:01:17.000Z",
+          "kind": "evidence",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBRX1FaMWp6SVRiandJbGsyeVFzQmE5aEFOVEtZb3VmRUt5aTVOb3gzTXBCZVZqaHNodmpxRTVRQWdlbGNDRmxsRXl6S3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T17:55:55.000Z",
+          "kind": "evidence",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811131"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.265Z",
+          "kind": "claim",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.268Z",
+          "kind": "claim",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস"
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221927,
+          "claim_text": "ঘূর্ণিঝড় অর্ণবের প্রভাব বাংলাদেশে, ৭ বিভাগে বৃষ্টির আভাস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-28T19:47:22.416Z",
+          "kind": "verify",
+          "claim_id": 221928,
+          "claim_text": "৮ বিভাগেই বৃষ্টির আভাস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 977,
+          "slug": "national-977",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আইইডিসিআর পরিচালকের কক্ষে ঢুকে মারধর, ড্যাবের কর্মীদের বিরুদ্ধে অভিযোগ"
+        },
+        {
+          "cluster_id": 968,
+          "slug": "national-968",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুমিল্লায় হাসপাতালে স্বাস্থ্যমন্ত্রীর আকস্মিক পরিদর্শন, ৫ চিকিৎসকের বিরুদ্ধে ব্যবস্থার নির্দেশ"
+        },
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মৃত্যুর আগে ক্ষতসহ অনেকক্ষণ জীবিত ছিলেন সাগর ও রুনি, তদন্তে এখন পর্যন্ত যে অগ্রগতি"
+        },
+        {
+          "cluster_id": 22,
+          "slug": "national-22",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মাদরাসায় বলাৎকার-অশালীন ঘটনা দুঃখজনক, কঠোর ব্যবস্থা নেওয়া হবে: ধর্মমন্ত্রী"
+        }
+      ]
     },
     "tech-1081": {
       "cluster_id": 1081,
@@ -224710,6 +226804,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন"
+        },
+        {
           "cluster_id": 901,
           "slug": "national-901",
           "actor_links": 0,
@@ -224748,14 +226850,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সুন্দরবনে কোস্ট গার্ডের সঙ্গে দস্যুদের বন্দুকযুদ্ধ, উদ্ধার ৫ জেলে"
-        },
-        {
-          "cluster_id": 785,
-          "slug": "sports-785",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "যে বিশেষ পারফরম্যান্সের কারণে ব্যালন ডি’অর জিতলেন হ্যারি কেইন"
         }
       ]
     },
@@ -225114,6 +227208,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1069,
+          "slug": "national-1069",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির"
+        },
+        {
           "cluster_id": 1046,
           "slug": "national-1046",
           "actor_links": 0,
@@ -225152,14 +227254,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সড়কের পাশে অপেক্ষারত বাসযাত্রীদের চাপা দিলো লরি, নিহত ৫"
-        },
-        {
-          "cluster_id": 726,
-          "slug": "national-726",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         }
       ]
     },
@@ -226181,6 +228275,14 @@
           "headline": "কালিয়াকৈরে বেতন বাড়ানোর দাবিতে শ্রমিকদের বিক্ষোভ"
         },
         {
+          "cluster_id": 1070,
+          "slug": "national-1070",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ"
+        },
+        {
           "cluster_id": 913,
           "slug": "national-913",
           "actor_links": 0,
@@ -226211,14 +228313,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "আগারগাঁওয়ে সচিবালয় স্থানান্তরের বিরোধিতা শেকৃবি শিক্ষার্থীদের, সাইনবোর্ড উপড়ে প্রতিবাদ"
-        },
-        {
-          "cluster_id": 631,
-          "slug": "sports-631",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 18,
-          "headline": "পত্রিকা: 'প্রধানমন্ত্রী ও মন্ত্রীদের বাসভবনের দায়িত্বে আ'লীগপন্থী কর্মকর্তারা'"
         }
       ]
     },
@@ -226301,6 +228395,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়"
+        },
+        {
           "cluster_id": 1037,
           "slug": "politics-1037",
           "actor_links": 0,
@@ -226315,14 +228417,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানি নির্মাতা জাফর পানাহির পাঁচ বছরের কারাদণ্ড, জব্দ ব্যাংক হিসাব"
-        },
-        {
-          "cluster_id": 1007,
-          "slug": "national-1007",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সম্পর্কে ছিল তিক্ততা, সেই মায়ের মৃত্যুর পর যা বললেন পপি"
         },
         {
           "cluster_id": 977,
