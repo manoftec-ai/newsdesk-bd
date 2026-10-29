@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6241,
+    "storyCount": 6243,
     "kinds": [
       "claim",
       "evidence",
@@ -215,7 +215,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 5,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 64,
@@ -230,8 +230,8 @@
           "slug": "national-53",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিশ্ব হাত ধোয়া দিবস আজ"
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক শেফ দিবস"
         },
         {
           "cluster_id": 42,
@@ -2549,7 +2549,7 @@
       "cluster_id": 52,
       "headline": "ছাত্রলীগ নেতা এখন ছাত্রদল সভাপতি, পথসভায় জানালেন ‘মুজিবীয় শুভেচ্ছা’",
       "first_seen": "2026-10-29T15:41:49.277Z",
-      "last_update": "2026-10-29T16:51:26.031Z",
+      "last_update": "2026-10-29T17:59:26.294Z",
       "claim_count": 2,
       "events": [
         {
@@ -3017,12 +3017,107 @@
     },
     "economy-79": {
       "cluster_id": 79,
-      "headline": "লুটপাটের ক্ষতি সামলাতে সরকারের কাছে ৬০ হাজার কোটি টাকা চায় বাংলাদেশ ব্যাংক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+      "first_seen": "2026-10-29T17:59:26.213Z",
+      "last_update": "2026-10-29T17:59:26.218Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T15:03:36.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/y7ifssi29k"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.631Z",
+          "kind": "claim",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.635Z",
+          "kind": "claim",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 60,
+          "slug": "national-60",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কার্যক্রম নিষিদ্ধ শ্রমিক লীগ নেতা ও তাঁর ভাতিজাকে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 4,
+          "slug": "national-4",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "economy-798": {
       "cluster_id": 798,
@@ -3130,6 +3225,84 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "economy-88": {
+      "cluster_id": 88,
+      "headline": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+      "first_seen": "2026-10-29T17:59:26.805Z",
+      "last_update": "2026-10-29T17:59:26.808Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:34:52.000Z",
+          "kind": "evidence",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/vpt425gmav"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.689Z",
+          "kind": "claim",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-89": {
+      "cluster_id": 89,
+      "headline": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+      "first_seen": "2026-10-29T17:59:26.811Z",
+      "last_update": "2026-10-29T17:59:26.814Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/lftt4rcqth"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.692Z",
+          "kind": "claim",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-892": {
@@ -5816,7 +5989,7 @@
       "cluster_id": 51,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-29T15:41:49.273Z",
-      "last_update": "2026-10-29T16:51:26.030Z",
+      "last_update": "2026-10-29T17:59:26.290Z",
       "claim_count": 2,
       "events": [
         {
@@ -5902,10 +6075,10 @@
     },
     "entertainment-53": {
       "cluster_id": 53,
-      "headline": "বিশ্ব হাত ধোয়া দিবস আজ",
+      "headline": "আজ আন্তর্জাতিক শেফ দিবস",
       "first_seen": "2026-10-29T15:41:49.281Z",
-      "last_update": "2026-10-29T16:51:26.032Z",
-      "claim_count": 2,
+      "last_update": "2026-10-29T17:59:26.293Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2024-04-22T07:00:00.000Z",
@@ -5930,6 +6103,17 @@
           }
         },
         {
+          "ts": "2024-04-22T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPS255UnhqUWNhanZNZXNSY3RuOFI5MmgtQzVqb2wxSXhTZGVkRDdBSXpZTDlmTjNKVnJlRVBwcWdoa2J0eHZ6b1VVeDdMUDlCS3lSM3VTeEpjaUdJQnhNc2lrRUVpc2pRb3VHZHl0Sk5KR20xVWstSWhidU9CSENpdHMxSkpVaVRIX2NpRTE5R213c0E5M1kxTFhqQ1VuNnBuLU8tWGJkZGZ1OElLeFNXSllBRmZ6Vm9DRGxJbUE3RkdJSmVmejNGRHdHX096TDBoUXpUeHc4QTZZbEhwUDUyVkhLVDJtM0M1NE9LZDVZYlBVa25lbm5fMjN2Y0VTbWZ2OVQtdFV4SlNoZUJrdjFUYi0wc3JnaDVVQ1pVNjNkMVlBMi1TalNFVNIBrgJBVV95cUxPd3Y3Qm93UVRsd3BWeXBiUmVvbFpHVmZ1QVA2NTNkcXF1Wm1VT3lnc3puYjBEWjZiY0s0VkV5LUtJa3hVY2NuUy1zUGx3WnpObFBiY3A3bzFiSDVVenEzdFpjS3dfN3hqRXhLQXNPZGJxdkw2QTBvb0QzSjdNa2ZMdllfLXVHSy1ZMERRWWhiMGdaWDhIZDNoaWluWkpGbEpaTFFCTUROWFlKWTM2RTcxRUQ1ZFJINWtQeU5vd1ZudzhrMzZPalVhWE1jXzNYa25WVFNDQlU5Y3dNSG1KdGJMSm9mZEVvS01jeUtFMUV4N3RBX1dPLVhoWmJ4Y05wUk9fcXlnZG93eHRpNzFqM3k2dl8tTnp4bjJCX3g3THdwMnFpcVRPLVdPME4xYW54dw?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-15T07:00:00.000Z",
           "kind": "evidence",
           "claim_id": 151,
@@ -5938,6 +6122,28 @@
             "source_id": "daily-observer",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RcEJ4anlVYlZlR0RIYU9PaldjSWIwRlcwQklPUVVianFVWFhJcm0xQ0xIRWVuR0c5aF83WlhSNE9ud1ZGLVpwdHlpQUdFQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RcEJ4anlVYlZlR0RIYU9PaldjSWIwRlcwQklPUVVianFVWFhJcm0xQ0xIRWVuR0c5aF83WlhSNE9ud1ZGLVpwdHlpQUdFQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-20T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9uNGljOGFMZFJXQUhFSHcyNnhCNVUxTUljV1I1bE9yWHFfTVV2UVdiVU10ZlRXTnRScXVWNUZib0xOazlnZDU1NUQwa0hzdw?oc=5"
           }
         },
         {
@@ -5975,6 +6181,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.426Z",
+          "kind": "claim",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -5984,7 +6208,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 42,
@@ -6095,7 +6319,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        }
+      ]
     },
     "entertainment-611": {
       "cluster_id": 611,
@@ -6315,12 +6548,91 @@
     },
     "entertainment-81": {
       "cluster_id": 81,
-      "headline": "হাসপাতালে ভর্তি অভিনেতা রিফাত চৌধুরী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+      "first_seen": "2026-10-29T17:59:26.240Z",
+      "last_update": "2026-10-29T17:59:26.244Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T13:09:18.000Z",
+          "kind": "evidence",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ONHZBc2VrbURFOXJoNDRETkpKOGE4QmEwczdLWUJqajEzbk5paXo5X0EzbFEwaTlyaGFQaGZnNjZLY1E2eXRxWlA2UTgwd2Y4b0xsS3VB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T13:37:11.000Z",
+          "kind": "evidence",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14aUZwZGYtMC1qZlhEbjdSRWY1U0tuX3NDR3l1NUx4bnY0YUpEWXptbVJ6T09MbFdsdGhzRGRiUzN0czI0eUdjWktIRmtheUUwZmg2M2ZSQjNNeW84T21vNWdzRFNmZlA5dUJwczNPYnUzSk1H?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T13:37:11.000Z",
+          "kind": "evidence",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14aUZwZGYtMC1qZlhEbjdSRWY1U0tuX3NDR3l1NUx4bnY0YUpEWXptbVJ6T09MbFdsdGhzRGRiUzN0czI0eUdjWktIRmtheUUwZmg2M2ZSQjNNeW84T21vNWdzRFNmZlA5dUJwczNPYnUzSk1H?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.646Z",
+          "kind": "claim",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.650Z",
+          "kind": "claim",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "entertainment-821": {
       "cluster_id": 821,
@@ -6697,7 +7009,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 5,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 64,
@@ -6712,8 +7024,8 @@
           "slug": "national-53",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিশ্ব হাত ধোয়া দিবস আজ"
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক শেফ দিবস"
         },
         {
           "cluster_id": 42,
@@ -8446,7 +8758,7 @@
       "cluster_id": 18,
       "headline": "ইরান যুদ্ধে যুক্তরাষ্ট্রের ব্যয় ৪৭ বিলিয়ন ডলার ছাড়ালো",
       "first_seen": "2026-10-29T15:41:49.045Z",
-      "last_update": "2026-10-29T16:51:25.973Z",
+      "last_update": "2026-10-29T17:59:26.249Z",
       "claim_count": 2,
       "events": [
         {
@@ -10991,7 +11303,7 @@
       "cluster_id": 3,
       "headline": "বিশ্বকাপে প্লেট পর্বের ফাইনালে বাংলাদেশ",
       "first_seen": "2026-10-29T15:41:48.918Z",
-      "last_update": "2026-10-29T16:51:25.934Z",
+      "last_update": "2026-10-29T17:59:26.230Z",
       "claim_count": 2,
       "events": [
         {
@@ -12982,7 +13294,7 @@
       "cluster_id": 41,
       "headline": "লক্ষ্মীপুরে মাটি ব্যবসায়ীকে গুলি করে হত্যা, ৭ ঘণ্টায় আটক ২",
       "first_seen": "2026-10-29T15:41:49.188Z",
-      "last_update": "2026-10-29T16:51:26.018Z",
+      "last_update": "2026-10-29T17:59:26.283Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -13844,7 +14156,7 @@
       "cluster_id": 50,
       "headline": "‘ক্রসফায়ারের’ ক্ষেত্রে জিরো টলারেন্স, আইজিপির বক্তব্য ঠিক হয়নি: স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-10-29T15:41:49.269Z",
-      "last_update": "2026-10-29T16:51:26.028Z",
+      "last_update": "2026-10-29T17:59:26.288Z",
       "claim_count": 2,
       "events": [
         {
@@ -13918,6 +14230,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        },
         {
           "cluster_id": 22,
           "slug": "national-22",
@@ -14277,7 +14597,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        }
+      ]
     },
     "international-603": {
       "cluster_id": 603,
@@ -14586,7 +14915,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 6,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -14601,8 +14930,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 5,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 37,
@@ -14652,7 +14981,7 @@
       "cluster_id": 65,
       "headline": "মোটরসাইকেলের সামনে নম্বরপ্লেট ইস্যুতে বিআরটিএর নতুন সিদ্ধান্ত",
       "first_seen": "2026-10-29T16:51:25.942Z",
-      "last_update": "2026-10-29T16:51:25.946Z",
+      "last_update": "2026-10-29T17:59:26.235Z",
       "claim_count": 2,
       "events": [
         {
@@ -14758,7 +15087,7 @@
       "cluster_id": 66,
       "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র",
       "first_seen": "2026-10-29T16:51:25.950Z",
-      "last_update": "2026-10-29T16:51:25.959Z",
+      "last_update": "2026-10-29T17:59:26.238Z",
       "claim_count": 5,
       "events": [
         {
@@ -14974,7 +15303,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -15151,7 +15480,7 @@
       "cluster_id": 7,
       "headline": "ইসরায়েলের নির্বাচনে হস্তক্ষেপের অভিযোগ অস্বীকার করলো কাতার",
       "first_seen": "2026-10-29T15:41:48.958Z",
-      "last_update": "2026-10-29T16:51:25.938Z",
+      "last_update": "2026-10-29T17:59:26.231Z",
       "claim_count": 2,
       "events": [
         {
@@ -15284,7 +15613,7 @@
       "cluster_id": 72,
       "headline": "জামিন নামঞ্জুরের পর কারাগারে জামায়াত নেতা আখতারুজ্জামান",
       "first_seen": "2026-10-29T16:51:26.033Z",
-      "last_update": "2026-10-29T16:51:26.043Z",
+      "last_update": "2026-10-29T17:59:26.295Z",
       "claim_count": 2,
       "events": [
         {
@@ -15517,12 +15846,91 @@
     },
     "international-78": {
       "cluster_id": 78,
-      "headline": "লংমার্চের কর্মসূচি ঘোষণা করতে ১১ অক্টোবর সোয়াবিতে সমাবেশ ডেকেছেন পিটিআই নেতা সোহেল আফ্রিদি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+      "first_seen": "2026-10-29T17:59:26.207Z",
+      "last_update": "2026-10-29T17:59:26.212Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T12:16:42.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13eXFNeUdEZV85MVpQZS1MdVFteXN0X3pCX1Bibk1nT3RSLU4yaEhpeDhSWnVZdEQxeE9RR0IxMEdlZXN3ZVd6VGdOcVNxMV9leVB4S1pMMGF5UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.623Z",
+          "kind": "claim",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.627Z",
+          "kind": "claim",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        }
+      ]
     },
     "international-793": {
       "cluster_id": 793,
@@ -15623,12 +16031,99 @@
     },
     "international-80": {
       "cluster_id": 80,
-      "headline": "ইরান ও ইউক্রেন যুদ্ধ দ্রুত শেষ করার ঘোষণা ট্রাম্পের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+      "first_seen": "2026-10-29T17:59:26.221Z",
+      "last_update": "2026-10-29T17:59:26.225Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T10:28:05.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBxR1VlaTBRaWNNa2Zmek9EOEJSX3R0TzZlVjZmY1UtSUVVVVhOME05OTJ4eDV2UTVNakg2VVM2cmxsSjkwM251WV83d0REUDdmcXhjdGw2bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.639Z",
+          "kind": "claim",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.643Z",
+          "kind": "claim",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        },
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "international-808": {
       "cluster_id": 808,
@@ -16698,7 +17193,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 5,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 64,
@@ -16713,8 +17208,8 @@
           "slug": "national-53",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিশ্ব হাত ধোয়া দিবস আজ"
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক শেফ দিবস"
         },
         {
           "cluster_id": 42,
@@ -16746,7 +17241,7 @@
       "cluster_id": 10,
       "headline": "How did the Spain train crash happen and what will investigators be asking?",
       "first_seen": "2026-10-29T15:41:48.974Z",
-      "last_update": "2026-10-29T16:51:25.941Z",
+      "last_update": "2026-10-29T17:59:26.234Z",
       "claim_count": 2,
       "events": [
         {
@@ -17806,7 +18301,7 @@
       "cluster_id": 11,
       "headline": "প্রতিষ্ঠাবার্ষিকী উপলক্ষে রাজশাহী বন্ধুসভার সাংগঠনিক সভা",
       "first_seen": "2026-10-29T15:41:48.984Z",
-      "last_update": "2026-10-29T16:51:25.947Z",
+      "last_update": "2026-10-29T17:59:26.236Z",
       "claim_count": 2,
       "events": [
         {
@@ -19332,7 +19827,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 5,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 64,
@@ -20395,8 +20890,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 4,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 21,
@@ -21499,8 +21994,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 4,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 1,
@@ -22470,7 +22965,7 @@
       "cluster_id": 15,
       "headline": "গাজীপুরে বেতন বৃদ্ধির দাবিতে শ্রমিকদের মহাসড়ক অবরোধ",
       "first_seen": "2026-10-29T15:41:49.026Z",
-      "last_update": "2026-10-29T16:51:25.967Z",
+      "last_update": "2026-10-29T17:59:26.246Z",
       "claim_count": 4,
       "events": [
         {
@@ -22629,8 +23124,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 4,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 21,
@@ -23607,7 +24102,7 @@
       "cluster_id": 16,
       "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য",
       "first_seen": "2026-10-29T15:41:49.037Z",
-      "last_update": "2026-10-29T16:51:25.972Z",
+      "last_update": "2026-10-29T17:59:26.248Z",
       "claim_count": 3,
       "events": [
         {
@@ -23721,6 +24216,22 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 80,
+          "slug": "national-rabiul-target-to",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে"
+        },
+        {
+          "cluster_id": 78,
+          "slug": "politics-78",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর"
+        },
         {
           "cluster_id": 12,
           "slug": "politics-12",
@@ -25675,7 +26186,7 @@
       "cluster_id": 18,
       "headline": "ইরান যুদ্ধে যুক্তরাষ্ট্রের ব্যয় ৪৭ বিলিয়ন ডলার ছাড়ালো",
       "first_seen": "2026-10-29T15:41:49.045Z",
-      "last_update": "2026-10-29T16:51:25.973Z",
+      "last_update": "2026-10-29T17:59:26.249Z",
       "claim_count": 2,
       "events": [
         {
@@ -26925,7 +27436,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 30,
@@ -26941,7 +27452,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 5,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 12,
@@ -26952,12 +27463,12 @@
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
         },
         {
-          "cluster_id": 66,
-          "slug": "national-66",
+          "cluster_id": 83,
+          "slug": "national-83",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 5,
-          "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
+          "claim_count": 2,
+          "headline": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব"
         }
       ]
     },
@@ -27919,8 +28430,8 @@
       "cluster_id": 2,
       "headline": "Israel election results live: Qatar says accusations of election interference in Israel ‘ridiculous and dangerous’",
       "first_seen": "2026-10-29T15:41:48.899Z",
-      "last_update": "2026-10-29T16:51:25.933Z",
-      "claim_count": 3,
+      "last_update": "2026-10-29T17:59:26.220Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-28T18:54:10.000Z",
@@ -28024,6 +28535,46 @@
           "kind": "verify",
           "claim_id": 8,
           "claim_text": "Coalition talks loom in Israel as Netanyahu and Eisenkot blocs set to fall short of majority",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:26:06.000Z",
+          "kind": "evidence",
+          "claim_id": 6,
+          "claim_text": "Israel election results live: Qatar says accusations of election interference in Israel ‘ridiculous and dangerous’",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/29/israeli-leader-netanyahu-accused-of-using-ugly-smear-tactics-to-cling-to-power"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:26:06.000Z",
+          "kind": "evidence",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/29/israeli-leader-netanyahu-accused-of-using-ugly-smear-tactics-to-cling-to-power"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:34.826Z",
+          "kind": "claim",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -29008,7 +29559,7 @@
       "cluster_id": 21,
       "headline": "২৯ অক্টোবর প্রকাশ হচ্ছে না এইচএসসির ফল, নতুন তারিখ কবে?",
       "first_seen": "2026-10-29T15:41:49.087Z",
-      "last_update": "2026-10-29T16:51:25.988Z",
+      "last_update": "2026-10-29T17:59:26.289Z",
       "claim_count": 4,
       "events": [
         {
@@ -29171,6 +29722,14 @@
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
         },
         {
+          "cluster_id": 83,
+          "slug": "national-83",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব"
+        },
+        {
           "cluster_id": 64,
           "slug": "national-64",
           "actor_links": 0,
@@ -29183,16 +29742,16 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 4,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 25,
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 5,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 24,
@@ -29201,14 +29760,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তাহসিফের মৃত্যু নিয়ে যা বললেন স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 19,
-          "slug": "national-19",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         }
       ]
     },
@@ -30143,7 +30694,7 @@
       "cluster_id": 22,
       "headline": "মন্ত্রী-প্রতিমন্ত্রীর পিএস পদে বিচারকের বৈধতা জানতে চেয়ে হাইকোর্টের রুল",
       "first_seen": "2026-10-29T15:41:49.093Z",
-      "last_update": "2026-10-29T16:51:25.989Z",
+      "last_update": "2026-10-29T17:59:26.266Z",
       "claim_count": 2,
       "events": [
         {
@@ -30217,6 +30768,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        },
         {
           "cluster_id": 50,
           "slug": "national-50",
@@ -32118,7 +32677,7 @@
       "cluster_id": 24,
       "headline": "তাহসিফের মৃত্যু নিয়ে যা বললেন স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-10-29T15:41:49.100Z",
-      "last_update": "2026-10-29T16:51:25.990Z",
+      "last_update": "2026-10-29T17:59:26.267Z",
       "claim_count": 3,
       "events": [
         {
@@ -32237,8 +32796,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 5,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 12,
@@ -32247,6 +32806,14 @@
           "source_links": 3,
           "claim_count": 6,
           "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        },
+        {
+          "cluster_id": 83,
+          "slug": "national-83",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব"
         },
         {
           "cluster_id": 64,
@@ -32271,14 +32838,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এগোচ্ছে ঘূর্ণিঝড় ‘অর্ণব’, দেশের যেসব এলাকায় বৃষ্টি হতে পারে"
-        },
-        {
-          "cluster_id": 33,
-          "slug": "national-33",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মির্জাপুরে ট্রেনের বগি লাইনচ্যুত, উত্তরবঙ্গের ট্রেন চলাচল বন্ধ"
         }
       ]
     },
@@ -33157,9 +33716,9 @@
     },
     "national-25": {
       "cluster_id": 25,
-      "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+      "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
       "first_seen": "2026-10-29T15:41:49.104Z",
-      "last_update": "2026-10-29T16:51:25.994Z",
+      "last_update": "2026-10-29T17:59:26.285Z",
       "claim_count": 6,
       "events": [
         {
@@ -33185,10 +33744,32 @@
           }
         },
         {
+          "ts": "2026-10-28T11:30:27.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxQdjdxQ0N6OGdLM014NFQ4M1B1ZElxZHlnMkpTcUlOYVFxbVlJd2M0b2dBWGwtNXlsWnk1S1hZYmM1UjhqTXlnV2xYMGdMdm1SNGhqZ0stX3J2ZmxKb1Y0ZEM2MWkwQUx4TlRLdEJkTmtIWkpZWXFwcm8zdFFZX0RXREVvLW10Qll3MExiNnk2Mmt6aEZNLTdyNmRvN21lUlUxM0hsTHEzd05rX0V2em9CNUVDZjhFbUhGcDJBdGhYeDBwVDZmN0FGX1lVRk40bkdRaTlRUTMtS29VeHdhWWt5aVRJWFVNY29uNjE2MWpoOFQtV2N4RUtUbjluM1lRWUhpcHN3UGNneEswZVdwRU9BNnBETDBRQ3RkX3V1cGFPeUNiMS04ZEVVcnBvQmc1ejBTQl9sUnl3dEN6RkNUZENDeXdBeFdIeGE5SDI3S2xBeUw3UGdva0RKRC1EZUloUzFXeW93Vzl0dktEV3MwcmpSWDh6SHZTZWxBb09vZHg0TUNhSlNkdVJJYUxGR3VUbk5LVlpsUlREdC1SbUIzWktvZDRRRTI0c0R2blU4QjE3aDExUjBuNzdXcWxDR1dKSzlWLTJKZ2JRaF9tdmN0R2dBRExPcUF4aDBYR0haUGtqVGhheHllU2h6aFd4czRpaEJJWGw2TjRuZjdrWm5WSk9uMFBkc1dmeGVWLVNqRHU1UUJ1enBmX2pKTzU4N051ODFobW1DeGVKNGRQbkJaTC1qY1JLUdIBuARBVV95cUxQZExRd3JHLTZtRTg2eWlCM0QxbVExOURvbU1vblNEd3RNM0RzMHE0bW9wS19GWXduUXFPUzRGWUd2RHJTRXlpdlRwankxd1VpV21ETEdncjNJTzdRdWNYMXFHdnFxYjlIM3RKNkN0MlRQSzZIYXhsRFVFaWNvS280dGJ2ZmVzUFBRbk81ZzFLVlRYOFVlODJzV24xaUl0NjRWNFhyTHhxQ1M3Q0g4YlpFblFmbUFlQ3JDTGk3SzBicnlhU01BeDd1clhFS21Vd2lCTlBNR29pd3pmRlZyWjVJRWdONUJPNURHLWVfbXZJV0xPVDcxcGpPN001cTVMNlVpTkhTUmZRTTBhRWlwNGJkaE9TSk05QjNLaUlDZ3FtTWlyMzdvdEhLX1otcXdQT1dxV3lLSlRBOVFfWm0zMW12X1lKSm9xZ0JMUHlMd0dRMHJaQURyMTByWFlUWE1pMnE4Ymg5Y3lJMTBwYjVQQVBHLUVVTHJwZm9ENWFjTy1UcFlkSEFyeGtFMlBKaWYybm1Na05ORTJFb0U4WVR5MmotQ2x6Nzc1XzhvTDczdzFnM25KOUFOYWY1cUlBQVZBZXBQelA1VGpWeUtuTVFGTlRxanNwUVpEVF85ZDNydEg3ZnNVdU5fR0xQaHhta0NmOUpEd3NPb2pIQ0NEc0lsdmttUkVJTlNORUdUZzFpNGZqU0lBUTFLS1ZHNmZVenEtVWF5V3FUNExfVThMcXFiWDloUXBrc2ZBcGhx?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-28T11:53:00.000Z",
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxQOTlLSVE2NEgxaWRaWkFWMHVYclI3bkg4cVgtUkQwLUx1eUZkNXhDTF9TSVZRVlRCZ3lWbmxSUkV5SG9fM1VYVHpfUDUzbGtDYXg1LWN0SEpRVW5RS2stcV96Sm94LVYtVHI2RXU3U1F3RHFmT1A0RlVWMzUzME9ZU2VyMGRkMlFoZGp1X0Q0aC1CQ3FheE53VzJBN09MTDJEWjNWU0puWi01NHg5WDVXdFFYNzV3a2xMaVRfQXZwbEhmT3pXZlM0aEVCaWVHWmVIeUU3dlotMi1wcGdNNGZmeEE0VDZfTGhuU2swSUVKLWJueHVWQlpEcnFaWGNJbVdxQkpEVlVEYWszcUxrNjlOTFM5ejF6dTU1M2ZzZ0syaTEwc1FIakp0ZEQ0Q21HUWNaMkI3RUVQU1lGLUJ0VnJPYXowNm8yQU93dnRaZWNoLWRndTl5Vl9GMWtLS0RaeVdZWXFvNUhJd1lXYkRXTXpXUVNIQjQzczhEMWw4bzZ1dGdZbFExZkRyZDZ1SnlTamFVRmpMekxNZXhuT0hWdUFMVk5tQzF6SU1LYUF3cDF4U1g1ZEIwQ3czVnNXUXV4TURRbllIXzBiVFVhMFJlYU14RGhxVERiM1JYb2c2VjREdWFFRlEyN3dEcXd4RWI3dFV0SmNtcGM0OE1TV2lxQjFFblhiVVkzdlZTUTFQVl8zWXVVZ9IBlwRBVV95cUxQenJHaUJhcVVnQUJsLWtEdHVydl8za1d2NWFWQklmSGduaGxVMGlsb1F6RkJWaHBuS2lKX0RzR1ZnYjRYVUpocVRha1ZqV2tGMndYYThQa21IOWtBcURiUkxCdmtYbFhwYzdSY3BjZEYzSFRYTkp5NDFJTnJSWDNjQ1I5S3NtYUFyRWNNdEx1dlRZcjlHRmtuTVBOSVFGajNhSDVDd1kyeTVIcHpNZGVDTERsSC1CWXJ1WHdCQzllRWJEOFRnbldYZ3cyWjhybXBpbi1MVjhkZlN0eENfdGpDT2J0ZDNQdVE0V2tRX1dLalVqendjekdUSlZxdEFhb1BLc2p1V2lLRmtSbVNiT213bktuTEVxbzNfM3hoRjhGbjBTMGEwRV9GRHRtT082TmdwUmtQZXc0OGdYa0xtWVBDQXBLMFF5ajZzYUc5YlRFOWQxT2dtQkNqb0lnR1czMEZLT2NFNzBYOEgtd1g5dlF0TWQ4QnlJaHBRQVc0UjhET0Jpb05YTzZ5cGsyUUFiQVFGS21IZUZ1eVY0MmFUV2hNNDVwcjlKT0dRNXNqbWxJSjR2c1ZJUW5SVDhtQTV6a0toUjk5UkRMT242NWRjR0FTaG1USDhVdHVJcVV5QTJmenBtM0w1aVdrRW94R2diT0VVdUtLcC1FTlpsRkdOdmVTSHdHLWRjenY3NjFJYXNNVklJengtVDZF?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T11:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "deshrupantor",
             "relation": "supports",
@@ -33229,10 +33810,32 @@
           }
         },
         {
+          "ts": "2026-10-28T14:13:16.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwRBVV95cUxPSXNJSHFmU0xSZWR5Y3plLW5rUF9Nb2pZdkRtMHY3R0J5TUI0OUs2UUpoRURha19iZC13M2tGa2FTcjR5Vjg0NTRMb3lJVXp3Y3UtUkdfUm9IMmpSUkJCeU5GRlo0TVpaclI1Ymg5bk42blBBek1lUG5sX1NtdmVvdS14Slo3enZ6cG5ReUpGTk1Ob0F6dkwwS2pkZDViT29zT3FHNTRWUmdaelNHSlBSTnVMckNMaW1HbUZiQ3N5eTRtdU03SGdKLW5TdjFWRXJ5b0M1RmJDVXFoTTBOcWdvTWt3S05Eb2dENXFGcEN2TXJaZlpFRVFRbzZvWmkxS3BfSEFlZ1JJUE0yYnB2WGtCdTZVbllXTVN2UGU2Tm01UnNqSFFnbUxDYnUyNllBMXJqd0EzYWVEV1kyVnRCeGdjcVhJNTVTUW9LOS1KQnJETDFRR1NlVEkxWTczMS1DNjJ4aWtKWlcyWXZHMEpuRUtiaFYxS3A0YThjMl9rSG1VZGlXU3E1a0xiOWltRUt2NV9fOVg0NHFULUd3OXUtMDFFdkRsSW5WRU1TOTFPeGFoZE03Qk9iZ1E4WFlWbnVPbDVIdC1CM1NYLVBpRzU2MS1aNlFBMWhid1dXU0J1dmZNNnl6RXF4b09aTEdfNzFBdTBUOV9NVWloUWRoS09jNzdMR2JlVdIBiARBVV95cUxNRlNrOURMZmJXZFQwZVhIU3dsLVI4UDhGNVFUVXVKSnMyUjV1N1hfcHVRTVFUd2pTMVpGd1k3UmlXSGhEcXo3RU9VWWR3ZzRKYzRXYnlsV3M5THkzRVUzQVFUTXJaYVlTUktBZzE1bGoyb2NNUWF3RkxHY3dFVF9aclQtQkhjQnp4NENMVjFEVlFrVzRaaGp3MkFLLUZWWUloX1RwRXJKWVdmZzhuSmMtaXlMQ0pnb1ZUU01OWXZVQVNRS2FjWDNJZmlpRExLTHl0c0pYekszQkgybVdXSENVdlZtWlg0dG1aYXJ2V1RzNzN5YUZPV2stLXFLbnNEUjk5QkwwbnJMNTl6YlRQM2d2ZXpwYllSRFRyX0M3M2lCTC1fS3Z3Qm41R0xBaWlxRm00bzJfeXlPbzc1SlNoczd1aFBvcWhrdm9mdXpuQ0Fhdy1oNEtFeUpMSXYtRVFMdzU5TUpseTNvdnpUWWpqYXI3REk5dGNSZHhVYUVxQVZ0azV2Zzl6X19tX2I3RGotT3pmQV91UHZrcUV0X1NOaDg0X3Y3YWVNa2NsekwxSXdBUkpmUlJuMkNNblZLQzEwOFloVTMxZ0VNQUNMTEhfSGh5bWpZZE1uUHBENDZaeUp1QnJrX2dmM3pHOXM3d19RSDRrbjNGcFk4UXJvaVZqd3ZiWGhZYXByc2pM?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-28T15:08:44.000Z",
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMSUh4ZUJkU1BZOUJ5dWNlYWxkSkpKRlRDSG5hcVlSdDI2SHIxWWNrczlNRVpnTzUyZWVkLXFkUEJwc2ViXzFmUU01MS1uS2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T15:08:44.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "bd24live",
             "relation": "supports",
@@ -33266,6 +33869,17 @@
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50Tl9QZU9ORlZiOUhOWktKejIxWDRXSTYwSTFDdVh6OTJJRkg1d2dzRG9hNWNGNEc1VEgzSC16aUI5bENSbEpEZ2x6N3RUcU54MmhBcXVzZ0R5Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T09:58:58.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "jugantor",
             "relation": "supports",
@@ -33389,6 +34003,42 @@
             "from": null,
             "confidence": 33,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.352Z",
+          "kind": "conflict",
+          "claim_id": 91,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c91\",\"c94\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.354Z",
+          "kind": "conflict",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c94\",\"c419\"]",
+            "resolution": "unresolved"
           }
         }
       ],
@@ -35326,7 +35976,7 @@
       "cluster_id": 27,
       "headline": "আন্দোলনের তৃতীয় দিনে আগারগাঁওয়ে সড়ক অবরোধ শেকৃবি শিক্ষার্থীদের",
       "first_seen": "2026-10-29T15:41:49.113Z",
-      "last_update": "2026-10-29T16:51:25.995Z",
+      "last_update": "2026-10-29T17:59:26.274Z",
       "claim_count": 2,
       "events": [
         {
@@ -36332,7 +36982,7 @@
       "cluster_id": 28,
       "headline": "ঠাকুরগাঁও-১ উপনির্বাচনকে জাতীয় নির্বাচনের মতো গুরুত্ব দিচ্ছে ইসি: সিইসি",
       "first_seen": "2026-10-29T15:41:49.117Z",
-      "last_update": "2026-10-29T16:51:25.996Z",
+      "last_update": "2026-10-29T17:59:26.275Z",
       "claim_count": 2,
       "events": [
         {
@@ -36412,7 +37062,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 42,
@@ -37422,8 +38072,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 3,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 24,
@@ -38167,7 +38817,7 @@
       "cluster_id": 3,
       "headline": "বিশ্বকাপে প্লেট পর্বের ফাইনালে বাংলাদেশ",
       "first_seen": "2026-10-29T15:41:48.918Z",
-      "last_update": "2026-10-29T16:51:25.934Z",
+      "last_update": "2026-10-29T17:59:26.230Z",
       "claim_count": 2,
       "events": [
         {
@@ -38439,7 +39089,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -39291,8 +39941,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 4,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 39,
@@ -40035,7 +40685,7 @@
       "cluster_id": 32,
       "headline": "৪৫ দিন আগে ক্যানসারে ছেলের মৃত্যু, এবার বাসায় মিলল মায়ের লাশ",
       "first_seen": "2026-10-29T15:41:49.134Z",
-      "last_update": "2026-10-29T16:51:25.971Z",
+      "last_update": "2026-10-29T17:59:26.247Z",
       "claim_count": 3,
       "events": [
         {
@@ -41034,8 +41684,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 4,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 24,
@@ -41779,7 +42429,7 @@
       "cluster_id": 34,
       "headline": "টোকিওতে হাসপাতাল-জাদুঘর পরিদর্শন, প্রিন্সেস তাকামাদোর সঙ্গে ডা. জোবাইদার সাক্ষাৎ",
       "first_seen": "2026-10-29T15:41:49.149Z",
-      "last_update": "2026-10-29T16:51:25.997Z",
+      "last_update": "2026-10-29T17:59:26.276Z",
       "claim_count": 2,
       "events": [
         {
@@ -41875,7 +42525,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -44396,7 +45046,7 @@
       "cluster_id": 37,
       "headline": "দুপুরের মধ্যে দেশের ৮ জেলায় ঝড়-বৃষ্টির শঙ্কা, নদীবন্দরে সতর্কতা",
       "first_seen": "2026-10-29T15:41:49.169Z",
-      "last_update": "2026-10-29T16:51:26.007Z",
+      "last_update": "2026-10-29T17:59:26.280Z",
       "claim_count": 3,
       "events": [
         {
@@ -44524,7 +45174,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 48,
@@ -45293,7 +45943,7 @@
       "cluster_id": 38,
       "headline": "চট্টগ্রাম মেডিকেলকে পার্কভিউ হসপিটালের ডায়ালাইসিস মেশিন উপহার",
       "first_seen": "2026-10-29T15:41:49.174Z",
-      "last_update": "2026-10-29T16:51:26.010Z",
+      "last_update": "2026-10-29T17:59:26.279Z",
       "claim_count": 2,
       "events": [
         {
@@ -46261,7 +46911,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         }
       ]
     },
@@ -46962,9 +47612,53 @@
       "cluster_id": 4,
       "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
       "first_seen": "2026-10-29T15:41:48.927Z",
-      "last_update": "2026-10-29T16:51:25.905Z",
-      "claim_count": 19,
+      "last_update": "2026-10-29T17:59:26.206Z",
+      "claim_count": 21,
       "events": [
+        {
+          "ts": "2026-10-29T05:26:03.000Z",
+          "kind": "evidence",
+          "claim_id": 11,
+          "claim_text": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811158"
+          }
+        },
+        {
+          "ts": "2026-10-29T05:26:03.000Z",
+          "kind": "evidence",
+          "claim_id": 761,
+          "claim_text": "ইরানের সঙ্গে যুদ্ধ আমরা শুরু করিনি: ট্রাম্প",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811158"
+          }
+        },
+        {
+          "ts": "2026-10-29T09:59:38.000Z",
+          "kind": "evidence",
+          "claim_id": 11,
+          "claim_text": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IT0gzZ3NnN1hEWjlGVmdnanhmcTVHN0RWSm0yS1VrRGJnY0stVTkwSl9rdlVtVGpHU2l0bWV0NFN3Rm9PdEFOaTExWDhhckE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T09:59:38.000Z",
+          "kind": "evidence",
+          "claim_id": 762,
+          "claim_text": "তাহসিফের মৃত্যু: যা আছে সুরতহাল প্রতিবেদনে",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IT0gzZ3NnN1hEWjlGVmdnanhmcTVHN0RWSm0yS1VrRGJnY0stVTkwSl9rdlVtVGpHU2l0bWV0NFN3Rm9PdEFOaTExWDhhckE?oc=5"
+          }
+        },
         {
           "ts": "2026-10-29T11:56:44.000Z",
           "kind": "evidence",
@@ -47953,9 +48647,85 @@
             "confidence": 13,
             "reason": "re-verify"
           }
+        },
+        {
+          "ts": "2026-10-29T18:48:34.909Z",
+          "kind": "claim",
+          "claim_id": 761,
+          "claim_text": "ইরানের সঙ্গে যুদ্ধ আমরা শুরু করিনি: ট্রাম্প"
+        },
+        {
+          "ts": "2026-10-29T18:48:34.911Z",
+          "kind": "claim",
+          "claim_id": 762,
+          "claim_text": "তাহসিফের মৃত্যু: যা আছে সুরতহাল প্রতিবেদনে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 761,
+          "claim_text": "ইরানের সঙ্গে যুদ্ধ আমরা শুরু করিনি: ট্রাম্প",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 762,
+          "claim_text": "তাহসিফের মৃত্যু: যা আছে সুরতহাল প্রতিবেদনে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.332Z",
+          "kind": "conflict",
+          "claim_id": 11,
+          "claim_text": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c11\",\"c761\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.345Z",
+          "kind": "conflict",
+          "claim_id": 23,
+          "claim_text": "১৬ হাজার কোটি টাকার টেন্ডারসহ আসছে রোবটিক সার্জারি ব্যবস্থা",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c23\",\"c761\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        },
         {
           "cluster_id": 5,
           "slug": "sports-5",
@@ -48050,7 +48820,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 19,
@@ -48803,7 +49573,7 @@
       "cluster_id": 41,
       "headline": "লক্ষ্মীপুরে মাটি ব্যবসায়ীকে গুলি করে হত্যা, ৭ ঘণ্টায় আটক ২",
       "first_seen": "2026-10-29T15:41:49.188Z",
-      "last_update": "2026-10-29T16:51:26.018Z",
+      "last_update": "2026-10-29T17:59:26.283Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -49433,7 +50203,7 @@
       "cluster_id": 42,
       "headline": "টুপটুপ রিসোর্টে আগুনে প্রাণ হারানো দুই বোন মালিহা-নাবিলার দাফন সম্পন্ন",
       "first_seen": "2026-10-29T15:41:49.193Z",
-      "last_update": "2026-10-29T16:51:26.021Z",
+      "last_update": "2026-10-29T17:59:26.284Z",
       "claim_count": 3,
       "events": [
         {
@@ -49553,7 +50323,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 64,
@@ -49568,8 +50338,8 @@
           "slug": "national-53",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিশ্ব হাত ধোয়া দিবস আজ"
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক শেফ দিবস"
         },
         {
           "cluster_id": 28,
@@ -49584,8 +50354,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 5,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -52228,8 +52998,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 3,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 24,
@@ -52537,8 +53307,8 @@
           "slug": "national-india-s-cockroach",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "claim_count": 4,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         }
       ]
     },
@@ -52636,7 +53406,7 @@
       "cluster_id": 49,
       "headline": "দেশে বিশ্বমানের চিকিৎসাসেবা ও রোগীবান্ধব পরিবেশ নিশ্চিতের আহ্বান রাষ্ট্রপতির",
       "first_seen": "2026-10-29T15:41:49.264Z",
-      "last_update": "2026-10-29T16:51:26.026Z",
+      "last_update": "2026-10-29T17:59:26.287Z",
       "claim_count": 2,
       "events": [
         {
@@ -52953,6 +53723,14 @@
       ],
       "related": [
         {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
           "cluster_id": 16,
           "slug": "national-16",
           "actor_links": 0,
@@ -52990,7 +53768,7 @@
       "cluster_id": 50,
       "headline": "‘ক্রসফায়ারের’ ক্ষেত্রে জিরো টলারেন্স, আইজিপির বক্তব্য ঠিক হয়নি: স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-10-29T15:41:49.269Z",
-      "last_update": "2026-10-29T16:51:26.028Z",
+      "last_update": "2026-10-29T17:59:26.288Z",
       "claim_count": 2,
       "events": [
         {
@@ -53064,6 +53842,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 82,
+          "slug": "national-82",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        },
         {
           "cluster_id": 22,
           "slug": "national-22",
@@ -53176,7 +53962,7 @@
       "cluster_id": 51,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-29T15:41:49.273Z",
-      "last_update": "2026-10-29T16:51:26.030Z",
+      "last_update": "2026-10-29T17:59:26.290Z",
       "claim_count": 2,
       "events": [
         {
@@ -53345,7 +54131,7 @@
       "cluster_id": 52,
       "headline": "ছাত্রলীগ নেতা এখন ছাত্রদল সভাপতি, পথসভায় জানালেন ‘মুজিবীয় শুভেচ্ছা’",
       "first_seen": "2026-10-29T15:41:49.277Z",
-      "last_update": "2026-10-29T16:51:26.031Z",
+      "last_update": "2026-10-29T17:59:26.294Z",
       "claim_count": 2,
       "events": [
         {
@@ -53512,10 +54298,10 @@
     },
     "national-53": {
       "cluster_id": 53,
-      "headline": "বিশ্ব হাত ধোয়া দিবস আজ",
+      "headline": "আজ আন্তর্জাতিক শেফ দিবস",
       "first_seen": "2026-10-29T15:41:49.281Z",
-      "last_update": "2026-10-29T16:51:26.032Z",
-      "claim_count": 2,
+      "last_update": "2026-10-29T17:59:26.293Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2024-04-22T07:00:00.000Z",
@@ -53540,6 +54326,17 @@
           }
         },
         {
+          "ts": "2024-04-22T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPS255UnhqUWNhanZNZXNSY3RuOFI5MmgtQzVqb2wxSXhTZGVkRDdBSXpZTDlmTjNKVnJlRVBwcWdoa2J0eHZ6b1VVeDdMUDlCS3lSM3VTeEpjaUdJQnhNc2lrRUVpc2pRb3VHZHl0Sk5KR20xVWstSWhidU9CSENpdHMxSkpVaVRIX2NpRTE5R213c0E5M1kxTFhqQ1VuNnBuLU8tWGJkZGZ1OElLeFNXSllBRmZ6Vm9DRGxJbUE3RkdJSmVmejNGRHdHX096TDBoUXpUeHc4QTZZbEhwUDUyVkhLVDJtM0M1NE9LZDVZYlBVa25lbm5fMjN2Y0VTbWZ2OVQtdFV4SlNoZUJrdjFUYi0wc3JnaDVVQ1pVNjNkMVlBMi1TalNFVNIBrgJBVV95cUxPd3Y3Qm93UVRsd3BWeXBiUmVvbFpHVmZ1QVA2NTNkcXF1Wm1VT3lnc3puYjBEWjZiY0s0VkV5LUtJa3hVY2NuUy1zUGx3WnpObFBiY3A3bzFiSDVVenEzdFpjS3dfN3hqRXhLQXNPZGJxdkw2QTBvb0QzSjdNa2ZMdllfLXVHSy1ZMERRWWhiMGdaWDhIZDNoaWluWkpGbEpaTFFCTUROWFlKWTM2RTcxRUQ1ZFJINWtQeU5vd1ZudzhrMzZPalVhWE1jXzNYa25WVFNDQlU5Y3dNSG1KdGJMSm9mZEVvS01jeUtFMUV4N3RBX1dPLVhoWmJ4Y05wUk9fcXlnZG93eHRpNzFqM3k2dl8tTnp4bjJCX3g3THdwMnFpcVRPLVdPME4xYW54dw?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-15T07:00:00.000Z",
           "kind": "evidence",
           "claim_id": 151,
@@ -53548,6 +54345,28 @@
             "source_id": "daily-observer",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RcEJ4anlVYlZlR0RIYU9PaldjSWIwRlcwQklPUVVianFVWFhJcm0xQ0xIRWVuR0c5aF83WlhSNE9ud1ZGLVpwdHlpQUdFQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-15T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RcEJ4anlVYlZlR0RIYU9PaldjSWIwRlcwQklPUVVianFVWFhJcm0xQ0xIRWVuR0c5aF83WlhSNE9ud1ZGLVpwdHlpQUdFQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-20T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9uNGljOGFMZFJXQUhFSHcyNnhCNVUxTUljV1I1bE9yWHFfTVV2UVdiVU10ZlRXTnRScXVWNUZib0xOazlnZDU1NUQwa0hzdw?oc=5"
           }
         },
         {
@@ -53585,6 +54404,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.426Z",
+          "kind": "claim",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 892,
+          "claim_text": "আজ আন্তর্জাতিক শেফ দিবস",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -53594,7 +54431,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 3,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 42,
@@ -54714,7 +55551,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        }
+      ]
     },
     "national-600": {
       "cluster_id": 600,
@@ -54937,9 +55783,9 @@
     },
     "national-62": {
       "cluster_id": 62,
-      "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত",
+      "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
       "first_seen": "2026-10-29T16:51:25.907Z",
-      "last_update": "2026-10-29T16:51:25.916Z",
+      "last_update": "2026-10-29T17:59:26.227Z",
       "claim_count": 6,
       "events": [
         {
@@ -54978,6 +55824,17 @@
         {
           "ts": "2026-10-28T08:22:28.000Z",
           "kind": "evidence",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxOa1hjeElVaFJYckhZbE8tdDNuQkRzSzAxSlBvRXBKcXFuS05hbHBiUmltRmNISHJRSnhQdHpIUmk2U0tnbFoxZ2c0QkR5YlJTVWp1Q3lzMmFaTXBreDVQTWRSbVV0TGFVZklzUmRlVmtUbEpfbGpsajV6Z29MbEdoX1doQW9uODZZY1hOUGRTRFBDYXBCb2VDMnJJcFhTeUEwUlpnbEVfZjJlYjdpWGlidXpnSEtQZmNwQnIwYmpWdTdVWFVKa29LMzZ4Y0RrTzNhUHBzZjEyTDVIN1Z0ZFV5Qy1tRDBhaHVSQjF2c1h5TnMwXzl3TWpRcFFIUF9lc2VUYjJYcXdTTXFaandmdTlBZGttZFdFQ0REY3ZZS3luaTRObk5YWVFSM3R4SzRpV2pUMGZRNmxjeUpKN1cxT0dPMEU2VTUwdy00V0FoWk5EdWNLRHVVWmZzcjhOeGVuYnFybElfdXdJWGdnRlY0dUpEdnRUcEtZam01T0xwRXZFSHAyUGxmVDdsM0t2Sm9qZ0cyYmFoLVBFNHFKY2NMOWtHbjFfM2Z5MHVDbkR4bTBlV0VnRmFLU2Z4dGRUcllmMjc2eWxqVFlwS0REc1hncnBHSE9vM3lNTEIzSzFUa09rVVQzazFQWHhiZU5DN2Y5clZuM1dtek9qR3lRaWhxcVVNeWkyWnZGbi00ZUFNNXhxUEM4c2xELUZxSnplNEVqYld6VndEUmtjOXBnd0NrdXYxdksyNNIBuARBVV95cUxNdVJWeTBkS0NfZUt6TXBHdXB0dU5mcjRFRGlVQkdmd3dBOW1NYkN4OE1wQ0lKUjk1TkhxcTlGZlotMzRvQ2IxZ0IyWktSR1FOZWZpV2FCN0JQeUp4eFVyU3k0WnI3RC0xeVJxOWxVcmw1ZEJycllmZ0lmU1JUUENaN2U5enlYTlNFUHpBX3BWaWlQZWw0eWRVZm12VmZjSGNzcUlXb290NnJJbEdweE1NRmRsNFlqSzFabWJWdVBGRnoxeFk2dFRBLXUxb0hpSFpMd1BPNmpublRFVkdIa0JualQ3dllnZUVMNTRPck9nblcxLXdYWjlwVVlHNjZIUkdyNmNmSFNiR3hRb0huU0VzWUxCS1liVWhhUUx2QkplVzAwX0R0XzRhNnhCWlFUXzh0M1EyLWJhV1JSdXhfYkVLZmswRV9jYXhRYWVmcFlWbXhHcnJxWkc4Sm84dTBlYm5qb3AwdGZYMm9yQU5WR2FXVlJSNjYwcVBCSUtwVlFORXFuY1RlSjRmeE9OV3d4RDRuNnNyOHhFZWNKZWZmTUhTVDl3dUVTOGs2X0FybnhVbTBEclpIbC02d0kwNHpFbi1GbzVhWjlWUDRic3IxZ05Ha3VLZTVPVGY0SXVzenJ5eFBqT1FRX0JFRjYybVpQVWlvSmE5aDk4ZTNoVFIwRzRSRzdWSExTV0JGMXBPNUlJMFRoekJSVXN3SEFuSnJQRUpVZXhoTDJVampBRi1POUhUaHdBS0JJc3Jh?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T08:22:28.000Z",
+          "kind": "evidence",
           "claim_id": 496,
           "claim_text": "গোপালগঞ্জে বাসের ধাক্কায় মোটরসাইকেল চালক নিহত",
           "detail": {
@@ -54998,10 +55855,32 @@
           }
         },
         {
+          "ts": "2026-10-28T15:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yMzVISG41cUZTWnA2Z3ljYmdvU2c2Rmxkdzl4NERlT1o4cU82UU4xMzJSMjhfaGVIeGJDbXJ3UVI5MUFUNUhWWmY5aktEdw?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-28T20:29:04.000Z",
           "kind": "evidence",
           "claim_id": 494,
           "claim_text": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixwRBVV95cUxPVEo4R0wyY0lPLTNXYzdNTHc5VW42bmdweUtLNUVKWTRGdWZrYk5oUGV3dEVic3FuX0dYTWtPRW8yM1huaFZQUWJTTENmQUhwNVl6QjhFcEN1b2RRUE1LaWtQTVZGbW5PV2tHSllNQmRvYkgxd2dFVm5uSjROSjBTMEJ2Z1E2QVJrSE5haHBiMk9DYXB2eGpGUEpEejVGdXNkRDh0czdDMlFMSG1lcEd1T0IycTM4WFpYTEhQQWV4cExaWHE5bExzeDlZTzRiUkRKTzVEWk9vNXRHLVBQY1VoR1RDVEs1MmFOWTE4OFdHV194WDNXZHc1TFl1ellhSFk0dGg4aHRhMDJQeFdTd3JjMndRRVg4cWhvOHQ4NjZVUHlucEo5cjZJNWFXWlhIcnlmcEtBWTk2Z3QyUFJOV3JPWlpHRVYxeHJ2MEotV2lXVzRTZFZRNGF1SkFCbjhmcDQ4aFdkYmhrMk92TDM3Y0NtS1Q2MmFvemQzZFFETUpDeUZabmNYeUlETmtyNHh3TEFZcmZMVEZVS0tkWFFTWFdrSzlfZ2g1blJkUkhXbzdpSlA5SnpkUjhYMTF0eFVTR1RScWZuNjZUMXMtdDd0UjhZVkdlbjd4Mi1VaUdCak9XQjhSZGhaOGJweVBsRHFPdlN2YmpEQUhlTWd5V1FsSmpFTHRTYUJiYnM3Uzg0clRmMmxEcklONHVIVk41aGxsWnJtVzBsUjg1cE81OU83Z0hrZ0dTNjN3QzdPRjZld0FjZVRhS2xKMDk0?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T20:29:04.000Z",
+          "kind": "evidence",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
           "detail": {
             "source_id": "samakal",
             "relation": "supports",
@@ -55033,6 +55912,17 @@
         {
           "ts": "2026-10-29T15:56:02.000Z",
           "kind": "evidence",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMilwRBVV95cUxNMlFJelkwSGVEZzJvT0ZMTlVIa3JKTjY1UEFWbTNkTlRmRWZLcDZLSFRTcFZsVjViaHpCbC1PMXFWYnBrbF9UWGp6TmJrSkw2UXhTa0ktZTZYN01EdWhUUHVreGszdzBnYzVWOEY2Ukp0NFNkY3EwRF82VXRnZ3dGUHdkb05ST3k2cDVLeHVxbEhMZ3R2UElGNmc4R0dQOEpOQlFERWhlNUhNREw5ekRQN0Rudng5bHNGTHNlS1pUZlB1NWo0UWJrclRVYnNDLVBIQVYzdzRkeG9QTG03ZkJ3ZzFDSzNIcEliaEZJX3JWRVpHdFBOZW4tTFdwbXl4bkNsZFNuU0VLVEJtMTM0ZS1EVEZhMUNwWElTd2pZWGpKUDFESlNRT1ZtSXlnWnRJLUVtQ0N3ZVZ6cElycGpFZlFEWkZxOTVZTXBFSDZLWXZVUmNKa1hDczI4a1doNlI1c3ltSkQ2ZDNVUUtCN3pDNWFtZzA4RndVdjVkVG1MZHQ5ZTRrZndWSVBQa21TS3U2cnk4UVRuUWlmdzZvSWZpUmhFeVpsdW1lOTJFdHJtMlpyeXFscHpkNlI0OXlxR3I0T3JzTzlzRk84WnZvVXNOTHRLMHphLWhULTR0Y1ZKOVBuWUhkR3NucnhUN3pLdUNIVFIwam5uVmlvSWhqcG5OeXo0c01jU2Z5cHVyZEIwNDBLSFJOTThDNEtN0gGcBEFVX3lxTE15X1BFQWFBc29xLVcwdFBoOHE2eXVlWXJYTG9XUUF0UnBKYnRKWjdVZHVSLWRkTnAyY3ZSRWhFV2hzd0hOVnUxV0tDMnQ3azZJNXNsNkVfa096Nk0zYmZQcE5tR0ZyRHZlUWo5YmI4NW1iTkVLeEJweXVmMmlGS1FjMXRESXZBTG9iNzZJa0Y4OGd2eHp3NExzNGRGaENaMHBfaTRLWGV0dmdmZTAyckc2UFBrUFBnNlZ6bVlOQzNQWEtURlNNbjc3VVl4a1Y2NHlvamVGUVZCczJ4Rlk4SmxBTlluMFVPY1NTVUFfU1Y2cWVrM2l1NjJNamVHY1V6TzJiTk1zci03U2N4VHktaGY1WFBEY1I4UEdScm84SUlzOXFVSjlNbDhLNGVvRFZETlI5OGlIdENtQVYxeFlwRnV2RXNLbWVJYURraGtsUWhPMW5DV2h6RHRqTTk5c0NmVXVDeHE5bno0alotbE5JWlhad2lMX1hPcTAwZlpDQTBRcUUtVzIzcXN3UUduaGNxUW53UloyRkUyWUE5ZjNrenhPbnY4aWZ1Q0VRMDRrc2xVci13V0VoU21ya05BNHhHOFZCM2E5THBmZnducm9ac2t5bWxkVE5zbTRSQXV0TENLdEVIdVlfVVlVSGhDMGNqbTdHYWEzaVFac1F2aGQ1a2Q0MjliMnJETFI4SUU2QWZ2Z2RJNUZDYmhpbHVKcg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T15:56:02.000Z",
+          "kind": "evidence",
           "claim_id": 498,
           "claim_text": "ডিভাইডারে বাসের ধাক্কায় হেলপার নিহত, আহত ৩০",
           "detail": {
@@ -55046,6 +55936,17 @@
           "kind": "evidence",
           "claim_id": 494,
           "claim_text": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5pOWsxWmdzTDNZT0RlR3BWVlhwTHBNWFdRQ3lZV2hKSUFfZ19sYVkwYVhFc0wwOEpjRGZZZ1NqSXRrb1Y1N2JyUzBoS3BhQ0dRX3ZQOW5NUlRGQXZvUE9YNXVraVIxckY5Qzk2ai10d1FNbmd6?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:19:00.000Z",
+          "kind": "evidence",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -55170,6 +56071,18 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 495,
+          "claim_text": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -55210,8 +56123,8 @@
           "slug": "national-53",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিশ্ব হাত ধোয়া দিবস আজ"
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক শেফ দিবস"
         },
         {
           "cluster_id": 40,
@@ -55317,7 +56230,7 @@
       "cluster_id": 63,
       "headline": "ব্যাটারিচালিত রিকশা কীভাবে চলবে, বিধিমালা জারি",
       "first_seen": "2026-10-29T16:51:25.917Z",
-      "last_update": "2026-10-29T16:51:25.922Z",
+      "last_update": "2026-10-29T17:59:26.228Z",
       "claim_count": 3,
       "events": [
         {
@@ -55766,7 +56679,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 6,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -55781,8 +56694,8 @@
           "slug": "national-62",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
-          "headline": "চকরিয়ায় বাস-প্রাইভেটকারের সংঘর্ষে একই পরিবারের ২ জন নিহত"
+          "claim_count": 5,
+          "headline": "চট্টগ্রাম-কক্সবাজার মহাসড়কে বাস উল্টে আহত অন্তত ২০"
         },
         {
           "cluster_id": 37,
@@ -55904,7 +56817,7 @@
       "cluster_id": 65,
       "headline": "মোটরসাইকেলের সামনে নম্বরপ্লেট ইস্যুতে বিআরটিএর নতুন সিদ্ধান্ত",
       "first_seen": "2026-10-29T16:51:25.942Z",
-      "last_update": "2026-10-29T16:51:25.946Z",
+      "last_update": "2026-10-29T17:59:26.235Z",
       "claim_count": 2,
       "events": [
         {
@@ -56082,7 +56995,7 @@
       "cluster_id": 66,
       "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র",
       "first_seen": "2026-10-29T16:51:25.950Z",
-      "last_update": "2026-10-29T16:51:25.959Z",
+      "last_update": "2026-10-29T17:59:26.238Z",
       "claim_count": 5,
       "events": [
         {
@@ -56298,7 +57211,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -56412,7 +57325,7 @@
       "cluster_id": 67,
       "headline": "কক্সবাজার সৈকতে নিখোঁজ হওয়া আরেক পর্যটকের মরদেহ উদ্ধার, মৃত্যু বেড়ে ৫",
       "first_seen": "2026-10-29T16:51:25.961Z",
-      "last_update": "2026-10-29T16:51:25.966Z",
+      "last_update": "2026-10-29T17:59:26.239Z",
       "claim_count": 2,
       "events": [
         {
@@ -56759,7 +57672,7 @@
       "cluster_id": 69,
       "headline": "মোটরসাইকেল চালকদের জন্য স্বস্তির খবর",
       "first_seen": "2026-10-29T16:51:25.980Z",
-      "last_update": "2026-10-29T16:51:25.985Z",
+      "last_update": "2026-10-29T17:59:26.251Z",
       "claim_count": 2,
       "events": [
         {
@@ -56937,7 +57850,7 @@
       "cluster_id": 7,
       "headline": "ইসরায়েলের নির্বাচনে হস্তক্ষেপের অভিযোগ অস্বীকার করলো কাতার",
       "first_seen": "2026-10-29T15:41:48.958Z",
-      "last_update": "2026-10-29T16:51:25.938Z",
+      "last_update": "2026-10-29T17:59:26.231Z",
       "claim_count": 2,
       "events": [
         {
@@ -57016,7 +57929,7 @@
       "cluster_id": 70,
       "headline": "জাপানে টয়োটার মোতোমাচি কারখানা পরিদর্শন করলেন প্রধানমন্ত্রী",
       "first_seen": "2026-10-29T16:51:25.998Z",
-      "last_update": "2026-10-29T16:51:26.002Z",
+      "last_update": "2026-10-29T17:59:26.278Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -57115,7 +58028,7 @@
       "cluster_id": 71,
       "headline": "প্রকাশিত সংবাদের প্রতিবাদ জানিয়েছে অগ্রণী ব্যাংক",
       "first_seen": "2026-10-29T16:51:26.012Z",
-      "last_update": "2026-10-29T16:51:26.017Z",
+      "last_update": "2026-10-29T17:59:26.281Z",
       "claim_count": 2,
       "events": [
         {
@@ -57275,7 +58188,7 @@
       "cluster_id": 72,
       "headline": "জামিন নামঞ্জুরের পর কারাগারে জামায়াত নেতা আখতারুজ্জামান",
       "first_seen": "2026-10-29T16:51:26.033Z",
-      "last_update": "2026-10-29T16:51:26.043Z",
+      "last_update": "2026-10-29T17:59:26.295Z",
       "claim_count": 2,
       "events": [
         {
@@ -58078,12 +58991,91 @@
     },
     "national-78": {
       "cluster_id": 78,
-      "headline": "স্বরাষ্ট্রমন্ত্রী সর্বমন্ত্রীর দায়িত্ব পালন করেন, নিজের মন্ত্রণালের খোঁজ নেই: জামায়াত আমির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+      "first_seen": "2026-10-29T17:59:26.207Z",
+      "last_update": "2026-10-29T17:59:26.212Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T12:16:42.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13eXFNeUdEZV85MVpQZS1MdVFteXN0X3pCX1Bibk1nT3RSLU4yaEhpeDhSWnVZdEQxeE9RR0IxMEdlZXN3ZVd6VGdOcVNxMV9leVB4S1pMMGF5UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.623Z",
+          "kind": "claim",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.627Z",
+          "kind": "claim",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        }
+      ]
     },
     "national-780": {
       "cluster_id": 780,
@@ -58177,12 +59169,107 @@
     },
     "national-79": {
       "cluster_id": 79,
-      "headline": "মিরপুরে যাত্রীবাহী বাসে আগুন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+      "first_seen": "2026-10-29T17:59:26.213Z",
+      "last_update": "2026-10-29T17:59:26.218Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T15:03:36.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/y7ifssi29k"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.631Z",
+          "kind": "claim",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.635Z",
+          "kind": "claim",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 60,
+          "slug": "national-60",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কার্যক্রম নিষিদ্ধ শ্রমিক লীগ নেতা ও তাঁর ভাতিজাকে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 4,
+          "slug": "national-4",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "national-790": {
       "cluster_id": 790,
@@ -58355,12 +59442,99 @@
     },
     "national-80": {
       "cluster_id": 80,
-      "headline": "কেন মধ্যপ্রাচ্যের ঘাঁটিগুলো থেকে নীরবে সেনা সরিয়ে নিচ্ছে যুক্তরাষ্ট্র?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+      "first_seen": "2026-10-29T17:59:26.221Z",
+      "last_update": "2026-10-29T17:59:26.225Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T10:28:05.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBxR1VlaTBRaWNNa2Zmek9EOEJSX3R0TzZlVjZmY1UtSUVVVVhOME05OTJ4eDV2UTVNakg2VVM2cmxsSjkwM251WV83d0REUDdmcXhjdGw2bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.639Z",
+          "kind": "claim",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.643Z",
+          "kind": "claim",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        },
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "national-800": {
       "cluster_id": 800,
@@ -58454,12 +59628,91 @@
     },
     "national-81": {
       "cluster_id": 81,
-      "headline": "বঙ্গোপসাগরে লঘুচাপ, গভীর সমুদ্রে না যাওয়ার সতর্কতা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+      "first_seen": "2026-10-29T17:59:26.240Z",
+      "last_update": "2026-10-29T17:59:26.244Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T13:09:18.000Z",
+          "kind": "evidence",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ONHZBc2VrbURFOXJoNDRETkpKOGE4QmEwczdLWUJqajEzbk5paXo5X0EzbFEwaTlyaGFQaGZnNjZLY1E2eXRxWlA2UTgwd2Y4b0xsS3VB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T13:37:11.000Z",
+          "kind": "evidence",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14aUZwZGYtMC1qZlhEbjdSRWY1U0tuX3NDR3l1NUx4bnY0YUpEWXptbVJ6T09MbFdsdGhzRGRiUzN0czI0eUdjWktIRmtheUUwZmg2M2ZSQjNNeW84T21vNWdzRFNmZlA5dUJwczNPYnUzSk1H?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T13:37:11.000Z",
+          "kind": "evidence",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14aUZwZGYtMC1qZlhEbjdSRWY1U0tuX3NDR3l1NUx4bnY0YUpEWXptbVJ6T09MbFdsdGhzRGRiUzN0czI0eUdjWktIRmtheUUwZmg2M2ZSQjNNeW84T21vNWdzRFNmZlA5dUJwczNPYnUzSk1H?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.646Z",
+          "kind": "claim",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.650Z",
+          "kind": "claim",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 949,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দু’পক্ষের সংঘর্ষে আহত ১২",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 950,
+          "claim_text": "ঝিনাইদহে সারের কার্ড ভাগাভাগি নিয়ে দুপক্ষের সংঘর্ষ, আহত ১২",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "national-810": {
       "cluster_id": 810,
@@ -58553,12 +59806,107 @@
     },
     "national-82": {
       "cluster_id": 82,
-      "headline": "বিমানের দাম্মামগামী ফ্লাইট ২৫ অক্টোবর, রিয়াদগামী ফ্লাইট ৩১ অক্টোবর পর্যন্ত স্থগিত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান",
+      "first_seen": "2026-10-29T17:59:26.252Z",
+      "last_update": "2026-10-29T17:59:26.260Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T11:27:10.000Z",
+          "kind": "evidence",
+          "claim_id": 951,
+          "claim_text": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi7ARBVV95cUxOXzVQM0w4NVE3WTB3akEtSG5OejJjNkJaNEJ5WGk2OGY2bDFyMjF2MFVfSGE0bGJtdlVRWWQxSE9YSEdEOS1EV3pOSnhlemtnSkdpZk91UU0yN2tObS1ZbXVUUHR4NzAyZ3hqNFFYOUVxVUNVVElOWVVwQTdzX3gyb0NtekpBTWJJUEt4c04wUmoxNUE0NHlOVEI4X0dZZjVucWNXV2RlV3BPU25JZjdfRDlPWDNEWnZrcHBhdlU1SUtvOUhCZzVRcGNqdnZXc1lWWHBUUUlsekpzOUtJQkd2Sm9kQmdRQm9fVHNPVmxvcnV6WWxBMThBV3RDWkljZVFIMFg3U1pXUkNWZ2V6WWFCd0E3WWtmSUc3NnlUQmNNWHB2YUlxSy1md0FGd0l3YjZ6NUhhOXlxZWNGTzhVT2plYUlHUGJkcjVfNnpCWmxFa0lsZVJ4Nk5BeTV2QzRIQWotbFFUYUVNakhNVnhPUlpxaVVkRWRpWWtzbk9jZzJhdDcwb2NSY19QRlFxcGx3cTI2a0Z4NjY3OFIwZmI0QlVCTUpHaFBRc05TUW1WT0hnT1I4THc4N0EwSDdBdVkxQlRmbnF4a21KQUJOREhqQlUxcXpUelIyalJlTkMxUTcyVFhwQnRic2hQUlhMTkJpZDFWSk5nTF9DanRKZDBWYnJIYkFBWk5FZjdfc2NtdjRvd0RxSTNPQzNXMmNqRkZyU3ltZ2dENzgwdHFFbEF6QnZFSXplU0tSZXBfU3pQTTRpd3lPWnE2alhFcnZ6azFjc3hXaGRnR3ZYNzJDV3U3XzBMWVlKM3MyZ05sLXFjUtIB8gRBVV95cUxQWFNFaHVGaXlxZnJrWjdwbi1wS0d6cVpYamJHZnAzalRsNl96V09mN3FjQkVFM2RJQXE0SFJyQ0ZVaFI2RENUYWtMS0dDTGVma1NCLWlERU5VSmwxWDBKRHM2VVlUOW42cFQtNWVtZ09ubkRLVEg3ZjREdEVxcTZVbjQ0YjZsdkRDVHg4RHRzQUtFYUNtbkpsSUU1SE5peXlRTENVM0JKTU9WeHdJS19maEIyaDlWRFV2eWE4dGtINFFaYWc1UVVFMkNuWlNPMHQxMWhpdGxUc24wWFdEci02emtyTmZ3VklnZ3g2MWtITEY3b0VKWThkX3lUM2ptRTU5NS1HM3VQWHVPYzVpR1ZGQ19DSEVnR3drQ2FVeHktSElDNmE0TEZGdkdCdWZHb1R6QTkyTzZfYzl3aXpzbDIxRk5jN296SnMyV19GcW00T3JOY3NfMTdTV3ZMb3VSZDRFeVlTaW1TUGg5Z0czeXhBN0lFREl5WXhFdmZQbmNMVGxJX0lpc1lXbjBzbjlheUxWMUQ1S28wUzMwenl6WjlWQzJ1T2xIMnp0X3NIYzdzUHIzaFh3bTF6dHFoSjB0eEZkYzlvN1VkVWJXNUs4bFJGUm5KQjZ3NUppa21hSzdGU3BMZFNpaUFwUnA3WHZWRk0zSUtNLWJreXo5bmRQX1VsN0xRd2RicDNfR0t3cUNpSzZhVUFpTlhJdkdwVUc1TnZ4Q0xDakducGFCWnVYS2Zra3FtejRiYV9JUjlvN1YwdXVPR1Q4bkQxY1VfMjJNWXNkZ0NxQ1plUS02OGxYaFhwYjYyZVVocTNUQnZQbmlkdUtnZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:27:10.000Z",
+          "kind": "evidence",
+          "claim_id": 952,
+          "claim_text": "বিমানে যান্ত্রিক ত্রুটির কারণে প্রধানমন্ত্রী তারেক রহমানের ফ্লাইট বিলম্ব",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi7ARBVV95cUxOXzVQM0w4NVE3WTB3akEtSG5OejJjNkJaNEJ5WGk2OGY2bDFyMjF2MFVfSGE0bGJtdlVRWWQxSE9YSEdEOS1EV3pOSnhlemtnSkdpZk91UU0yN2tObS1ZbXVUUHR4NzAyZ3hqNFFYOUVxVUNVVElOWVVwQTdzX3gyb0NtekpBTWJJUEt4c04wUmoxNUE0NHlOVEI4X0dZZjVucWNXV2RlV3BPU25JZjdfRDlPWDNEWnZrcHBhdlU1SUtvOUhCZzVRcGNqdnZXc1lWWHBUUUlsekpzOUtJQkd2Sm9kQmdRQm9fVHNPVmxvcnV6WWxBMThBV3RDWkljZVFIMFg3U1pXUkNWZ2V6WWFCd0E3WWtmSUc3NnlUQmNNWHB2YUlxSy1md0FGd0l3YjZ6NUhhOXlxZWNGTzhVT2plYUlHUGJkcjVfNnpCWmxFa0lsZVJ4Nk5BeTV2QzRIQWotbFFUYUVNakhNVnhPUlpxaVVkRWRpWWtzbk9jZzJhdDcwb2NSY19QRlFxcGx3cTI2a0Z4NjY3OFIwZmI0QlVCTUpHaFBRc05TUW1WT0hnT1I4THc4N0EwSDdBdVkxQlRmbnF4a21KQUJOREhqQlUxcXpUelIyalJlTkMxUTcyVFhwQnRic2hQUlhMTkJpZDFWSk5nTF9DanRKZDBWYnJIYkFBWk5FZjdfc2NtdjRvd0RxSTNPQzNXMmNqRkZyU3ltZ2dENzgwdHFFbEF6QnZFSXplU0tSZXBfU3pQTTRpd3lPWnE2alhFcnZ6azFjc3hXaGRnR3ZYNzJDV3U3XzBMWVlKM3MyZ05sLXFjUtIB8gRBVV95cUxQWFNFaHVGaXlxZnJrWjdwbi1wS0d6cVpYamJHZnAzalRsNl96V09mN3FjQkVFM2RJQXE0SFJyQ0ZVaFI2RENUYWtMS0dDTGVma1NCLWlERU5VSmwxWDBKRHM2VVlUOW42cFQtNWVtZ09ubkRLVEg3ZjREdEVxcTZVbjQ0YjZsdkRDVHg4RHRzQUtFYUNtbkpsSUU1SE5peXlRTENVM0JKTU9WeHdJS19maEIyaDlWRFV2eWE4dGtINFFaYWc1UVVFMkNuWlNPMHQxMWhpdGxUc24wWFdEci02emtyTmZ3VklnZ3g2MWtITEY3b0VKWThkX3lUM2ptRTU5NS1HM3VQWHVPYzVpR1ZGQ19DSEVnR3drQ2FVeHktSElDNmE0TEZGdkdCdWZHb1R6QTkyTzZfYzl3aXpzbDIxRk5jN296SnMyV19GcW00T3JOY3NfMTdTV3ZMb3VSZDRFeVlTaW1TUGg5Z0czeXhBN0lFREl5WXhFdmZQbmNMVGxJX0lpc1lXbjBzbjlheUxWMUQ1S28wUzMwenl6WjlWQzJ1T2xIMnp0X3NIYzdzUHIzaFh3bTF6dHFoSjB0eEZkYzlvN1VkVWJXNUs4bFJGUm5KQjZ3NUppa21hSzdGU3BMZFNpaUFwUnA3WHZWRk0zSUtNLWJreXo5bmRQX1VsN0xRd2RicDNfR0t3cUNpSzZhVUFpTlhJdkdwVUc1TnZ4Q0xDakducGFCWnVYS2Zra3FtejRiYV9JUjlvN1YwdXVPR1Q4bkQxY1VfMjJNWXNkZ0NxQ1plUS02OGxYaFhwYjYyZVVocTNUQnZQbmlkdUtnZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:42:00.000Z",
+          "kind": "evidence",
+          "claim_id": 951,
+          "claim_text": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUZ1ItRzRweWcwMkZjWFp3Tk1oeS1oU2FHMlREdTJocE5uRU5MM0tBUGhxMGxlWjNOVm5XSzlsZFduNENOQ0duTWtsUEVSdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.654Z",
+          "kind": "claim",
+          "claim_id": 951,
+          "claim_text": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.658Z",
+          "kind": "claim",
+          "claim_id": 952,
+          "claim_text": "বিমানে যান্ত্রিক ত্রুটির কারণে প্রধানমন্ত্রী তারেক রহমানের ফ্লাইট বিলম্ব"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 951,
+          "claim_text": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 952,
+          "claim_text": "বিমানে যান্ত্রিক ত্রুটির কারণে প্রধানমন্ত্রী তারেক রহমানের ফ্লাইট বিলম্ব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 50,
+          "slug": "national-50",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘ক্রসফায়ারের’ ক্ষেত্রে জিরো টলারেন্স, আইজিপির বক্তব্য ঠিক হয়নি: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 22,
+          "slug": "national-22",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মন্ত্রী-প্রতিমন্ত্রীর পিএস পদে বিচারকের বৈধতা জানতে চেয়ে হাইকোর্টের রুল"
+        },
+        {
+          "cluster_id": 19,
+          "slug": "national-19",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        }
+      ]
     },
     "national-820": {
       "cluster_id": 820,
@@ -58652,12 +60000,131 @@
     },
     "national-83": {
       "cluster_id": 83,
-      "headline": "টঙ্গীতে গ্যাস সিলিন্ডার বিস্ফোরণে দগ্ধ স্বামী-স্ত্রীর মৃত্যু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব",
+      "first_seen": "2026-10-29T17:59:26.261Z",
+      "last_update": "2026-10-29T17:59:26.265Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T11:10:51.000Z",
+          "kind": "evidence",
+          "claim_id": 953,
+          "claim_text": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1nbENkTng4SEhSRjRXaGExTWFKa2I4SmhMLTEyeGdIOUF3VjQzaHpMdmV6bWRfMHI3T21ZdVVLWGhjV0dBR1hhazcxSWJ1dzl4NEduMXl2bUt2RTla?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:10:51.000Z",
+          "kind": "evidence",
+          "claim_id": 954,
+          "claim_text": "প্রধানমন্ত্রীর ফিরতি ফ্লাইটে যান্ত্রিক ত্রুটি, যাত্রায় বিলম্ব",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1nbENkTng4SEhSRjRXaGExTWFKa2I4SmhMLTEyeGdIOUF3VjQzaHpMdmV6bWRfMHI3T21ZdVVLWGhjV0dBR1hhazcxSWJ1dzl4NEduMXl2bUt2RTla?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:23:52.000Z",
+          "kind": "evidence",
+          "claim_id": 953,
+          "claim_text": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://bangla.dhakatribune.com/bangladesh/112085/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%97%E0%A6%B0%E0%A6%BF-%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%9F%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%9F%E0%A7%8B%E0%A6%95%E0%A6%BF%E0%A6%93-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%AE%E0%A7%80"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.662Z",
+          "kind": "claim",
+          "claim_id": 953,
+          "claim_text": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.666Z",
+          "kind": "claim",
+          "claim_id": 954,
+          "claim_text": "প্রধানমন্ত্রীর ফিরতি ফ্লাইটে যান্ত্রিক ত্রুটি, যাত্রায় বিলম্ব"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 953,
+          "claim_text": "কারিগরি ত্রুটিতে টোকিও থেকে ঢাকাগামী প্রধানমন্ত্রীর ফ্লাইটে বিলম্ব",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 954,
+          "claim_text": "প্রধানমন্ত্রীর ফিরতি ফ্লাইটে যান্ত্রিক ত্রুটি, যাত্রায় বিলম্ব",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 64,
+          "slug": "national-64",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
+        },
+        {
+          "cluster_id": 25,
+          "slug": "national-india-s-cockroach",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
+        },
+        {
+          "cluster_id": 24,
+          "slug": "national-24",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তাহসিফের মৃত্যু নিয়ে যা বললেন স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 21,
+          "slug": "national-21",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "২৯ অক্টোবর প্রকাশ হচ্ছে না এইচএসসির ফল, নতুন তারিখ কবে?"
+        },
+        {
+          "cluster_id": 19,
+          "slug": "national-19",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        },
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "national-830": {
       "cluster_id": 830,
@@ -58751,12 +60218,91 @@
     },
     "national-84": {
       "cluster_id": 84,
-      "headline": "খুলনায় মায়ের সামনে মেয়েকে গুলি করে হত্যা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই",
+      "first_seen": "2026-10-29T17:59:26.269Z",
+      "last_update": "2026-10-29T17:59:26.272Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2023-05-16T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 955,
+          "claim_text": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSEJBZXN2ZlhONndLNlh1ZWZjV0c1TG5pLUgwZEZLTzlKQUdIWTBjM29PVzFEdFNjNzIwTTRCX0JwNlIwNDhYMjd6LXB2TjRXVUVNeFF4eVpucXk1OWNQUi1VZndzVFJiSEgtSTBjc09ETTRFNnU0dWhZX2xHeTNDZlJGMnVWb1ZwV3pPcFg1T2hfRjhMM0drMVFobzlZcXlHUndidld5VXdjVFJqT1Q2aHhhc1JVRkVUTWpISzFseWI0VEZHY3FoUmpsbzlVRkNTWGJjejhNSjNNZWR5OGZkeEwzZXdtZXF4dkJORkpPc2hXMWl0TFQtenRqU1k4c2x0aTlV0gGIAkFVX3lxTE05d2szV0xHY0lfOVU2X0JUenVpRDd2RVJLVFpvRXNjVmdPWElURTdtV0pBZ1Q2RkxXLTJjaHBHZHFwaVNhbGZtLU1WVjhTb3N6ejctSjByNF82S0JlWDlqR2M2UXlpblJMbnhnYjNuaGJoRjBXY2xSZFR2amJqVEp1UkFqY25kOTk3LTNMMFRZbTV3OGNGRDZwM2NBYmxLTHNUejZyU2RINGFabWItY2phQmZSVE9vTkNoWmRRTk56dXdxM205VmhycTZaeEEzY3BySFZGSUpVTWhKekpRTVoyakJVSzlBeFlxWk81Q0tPUGpHR3FDV1RGRGhzakFZRHBsWmkyUU1ZVA?oc=5"
+          }
+        },
+        {
+          "ts": "2023-05-16T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 956,
+          "claim_text": "গল্প লিখে উপার্জন",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSEJBZXN2ZlhONndLNlh1ZWZjV0c1TG5pLUgwZEZLTzlKQUdIWTBjM29PVzFEdFNjNzIwTTRCX0JwNlIwNDhYMjd6LXB2TjRXVUVNeFF4eVpucXk1OWNQUi1VZndzVFJiSEgtSTBjc09ETTRFNnU0dWhZX2xHeTNDZlJGMnVWb1ZwV3pPcFg1T2hfRjhMM0drMVFobzlZcXlHUndidld5VXdjVFJqT1Q2aHhhc1JVRkVUTWpISzFseWI0VEZHY3FoUmpsbzlVRkNTWGJjejhNSjNNZWR5OGZkeEwzZXdtZXF4dkJORkpPc2hXMWl0TFQtenRqU1k4c2x0aTlV0gGIAkFVX3lxTE05d2szV0xHY0lfOVU2X0JUenVpRDd2RVJLVFpvRXNjVmdPWElURTdtV0pBZ1Q2RkxXLTJjaHBHZHFwaVNhbGZtLU1WVjhTb3N6ejctSjByNF82S0JlWDlqR2M2UXlpblJMbnhnYjNuaGJoRjBXY2xSZFR2amJqVEp1UkFqY25kOTk3LTNMMFRZbTV3OGNGRDZwM2NBYmxLTHNUejZyU2RINGFabWItY2phQmZSVE9vTkNoWmRRTk56dXdxM205VmhycTZaeEEzY3BySFZGSUpVTWhKekpRTVoyakJVSzlBeFlxWk81Q0tPUGpHR3FDV1RGRGhzakFZRHBsWmkyUU1ZVA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T09:18:32.000Z",
+          "kind": "evidence",
+          "claim_id": 955,
+          "claim_text": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5rY2FVclUtS3pmaEdSYlllZXF2MHg2NEI4NFVoWjNOYmJMSnktbHRyNWdfd1BvZTZMaTRNNzJJNG0xZEIyYl9sV3BMMlhsTlk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.669Z",
+          "kind": "claim",
+          "claim_id": 955,
+          "claim_text": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.673Z",
+          "kind": "claim",
+          "claim_id": 956,
+          "claim_text": "গল্প লিখে উপার্জন"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 955,
+          "claim_text": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 956,
+          "claim_text": "গল্প লিখে উপার্জন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 25,
+          "slug": "national-india-s-cockroach",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
+        }
+      ]
     },
     "national-840": {
       "cluster_id": 840,
@@ -58850,11 +60396,41 @@
     },
     "national-85": {
       "cluster_id": 85,
-      "headline": "মৃত্যুর আগে তাজমিনের সঙ্গে কী ঘটেছিল, চাঞ্চল্যকর তথ্য মিলল সিসিটিভি ফুটেজে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চাকরিচ্যুতির সাড়ে চার বছর পর দুদকে ফিরছেন শরীফ উদ্দিন",
+      "first_seen": "2026-10-29T17:59:26.786Z",
+      "last_update": "2026-10-29T17:59:26.790Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:41:53.000Z",
+          "kind": "evidence",
+          "claim_id": 957,
+          "claim_text": "চাকরিচ্যুতির সাড়ে চার বছর পর দুদকে ফিরছেন শরীফ উদ্দিন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/sharif-uddin-returns-to-the-acc-four-and-a-half-years-after-his-dismissal/"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.677Z",
+          "kind": "claim",
+          "claim_id": 957,
+          "claim_text": "চাকরিচ্যুতির সাড়ে চার বছর পর দুদকে ফিরছেন শরীফ উদ্দিন"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 957,
+          "claim_text": "চাকরিচ্যুতির সাড়ে চার বছর পর দুদকে ফিরছেন শরীফ উদ্দিন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-850": {
@@ -58949,11 +60525,41 @@
     },
     "national-86": {
       "cluster_id": 86,
-      "headline": "সুন্দরবন পরিদর্শন শেষে মোংলার পথে প্রধানমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+      "first_seen": "2026-10-29T17:59:26.793Z",
+      "last_update": "2026-10-29T17:59:26.797Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:40:59.000Z",
+          "kind": "evidence",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/6dk7iv60i1"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.681Z",
+          "kind": "claim",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-860": {
@@ -59048,11 +60654,41 @@
     },
     "national-87": {
       "cluster_id": 87,
-      "headline": "পশ্চিমবঙ্গে ট্রাক-পিকআপের মুখোমুখি সংঘর্ষে নিহত ৫",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ভালুকা পাইলট উচ্চ বিদ্যালয়ের অবসরপ্রাপ্ত শিক্ষক সলিম উদ্দিনের মৃত্যু",
+      "first_seen": "2026-10-29T17:59:26.799Z",
+      "last_update": "2026-10-29T17:59:26.802Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:38:14.000Z",
+          "kind": "evidence",
+          "claim_id": 959,
+          "claim_text": "ভালুকা পাইলট উচ্চ বিদ্যালয়ের অবসরপ্রাপ্ত শিক্ষক সলিম উদ্দিনের মৃত্যু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/death-of-retired-teacher-salim-uddin-of-valuka-pilot-high-school/"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.685Z",
+          "kind": "claim",
+          "claim_id": 959,
+          "claim_text": "ভালুকা পাইলট উচ্চ বিদ্যালয়ের অবসরপ্রাপ্ত শিক্ষক সলিম উদ্দিনের মৃত্যু"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 959,
+          "claim_text": "ভালুকা পাইলট উচ্চ বিদ্যালয়ের অবসরপ্রাপ্ত শিক্ষক সলিম উদ্দিনের মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-870": {
@@ -59147,11 +60783,41 @@
     },
     "national-88": {
       "cluster_id": 88,
-      "headline": "কমিউনিটি ব্যাংকে চাকরির সুযোগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+      "first_seen": "2026-10-29T17:59:26.805Z",
+      "last_update": "2026-10-29T17:59:26.808Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:34:52.000Z",
+          "kind": "evidence",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/vpt425gmav"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.689Z",
+          "kind": "claim",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 960,
+          "claim_text": "পেট্রাপোলে পণ্যবাহী ট্রাকের জট, বেনাপোলে প্রবেশে বিলম্বের অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-880": {
@@ -59246,11 +60912,41 @@
     },
     "national-89": {
       "cluster_id": 89,
-      "headline": "স্পেন ও যুক্তরাজ্য সফরে যাচ্ছেন পররাষ্ট্র প্রতিমন্ত্রী শামা ওবায়েদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+      "first_seen": "2026-10-29T17:59:26.811Z",
+      "last_update": "2026-10-29T17:59:26.814Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/lftt4rcqth"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.692Z",
+          "kind": "claim",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 961,
+          "claim_text": "সবজির দামে কিছুটা স্বস্তি, কমেছে খাদ্য মূল্যস্ফীতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-890": {
@@ -59347,7 +61043,7 @@
       "cluster_id": 9,
       "headline": "একনজরে আজকের কালের কণ্ঠ (২৯ অক্টোবর)",
       "first_seen": "2026-10-29T15:41:48.969Z",
-      "last_update": "2026-10-29T16:51:25.940Z",
+      "last_update": "2026-10-29T17:59:26.232Z",
       "claim_count": 2,
       "events": [
         {
@@ -60479,7 +62175,7 @@
       "cluster_id": 51,
       "headline": "Aung San Suu Kyi’s son speaks to detained former Myanmar leader for first time in five years",
       "first_seen": "2026-10-29T15:41:49.273Z",
-      "last_update": "2026-10-29T16:51:26.030Z",
+      "last_update": "2026-10-29T17:59:26.290Z",
       "claim_count": 2,
       "events": [
         {
@@ -60918,7 +62614,7 @@
       "cluster_id": 10,
       "headline": "How did the Spain train crash happen and what will investigators be asking?",
       "first_seen": "2026-10-29T15:41:48.974Z",
-      "last_update": "2026-10-29T16:51:25.941Z",
+      "last_update": "2026-10-29T17:59:26.234Z",
       "claim_count": 2,
       "events": [
         {
@@ -61049,9 +62745,9 @@
     },
     "national-india-s-cockroach": {
       "cluster_id": 25,
-      "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+      "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
       "first_seen": "2026-10-29T15:41:49.104Z",
-      "last_update": "2026-10-29T16:51:25.994Z",
+      "last_update": "2026-10-29T17:59:26.285Z",
       "claim_count": 6,
       "events": [
         {
@@ -61077,10 +62773,32 @@
           }
         },
         {
+          "ts": "2026-10-28T11:30:27.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxQdjdxQ0N6OGdLM014NFQ4M1B1ZElxZHlnMkpTcUlOYVFxbVlJd2M0b2dBWGwtNXlsWnk1S1hZYmM1UjhqTXlnV2xYMGdMdm1SNGhqZ0stX3J2ZmxKb1Y0ZEM2MWkwQUx4TlRLdEJkTmtIWkpZWXFwcm8zdFFZX0RXREVvLW10Qll3MExiNnk2Mmt6aEZNLTdyNmRvN21lUlUxM0hsTHEzd05rX0V2em9CNUVDZjhFbUhGcDJBdGhYeDBwVDZmN0FGX1lVRk40bkdRaTlRUTMtS29VeHdhWWt5aVRJWFVNY29uNjE2MWpoOFQtV2N4RUtUbjluM1lRWUhpcHN3UGNneEswZVdwRU9BNnBETDBRQ3RkX3V1cGFPeUNiMS04ZEVVcnBvQmc1ejBTQl9sUnl3dEN6RkNUZENDeXdBeFdIeGE5SDI3S2xBeUw3UGdva0RKRC1EZUloUzFXeW93Vzl0dktEV3MwcmpSWDh6SHZTZWxBb09vZHg0TUNhSlNkdVJJYUxGR3VUbk5LVlpsUlREdC1SbUIzWktvZDRRRTI0c0R2blU4QjE3aDExUjBuNzdXcWxDR1dKSzlWLTJKZ2JRaF9tdmN0R2dBRExPcUF4aDBYR0haUGtqVGhheHllU2h6aFd4czRpaEJJWGw2TjRuZjdrWm5WSk9uMFBkc1dmeGVWLVNqRHU1UUJ1enBmX2pKTzU4N051ODFobW1DeGVKNGRQbkJaTC1qY1JLUdIBuARBVV95cUxQZExRd3JHLTZtRTg2eWlCM0QxbVExOURvbU1vblNEd3RNM0RzMHE0bW9wS19GWXduUXFPUzRGWUd2RHJTRXlpdlRwankxd1VpV21ETEdncjNJTzdRdWNYMXFHdnFxYjlIM3RKNkN0MlRQSzZIYXhsRFVFaWNvS280dGJ2ZmVzUFBRbk81ZzFLVlRYOFVlODJzV24xaUl0NjRWNFhyTHhxQ1M3Q0g4YlpFblFmbUFlQ3JDTGk3SzBicnlhU01BeDd1clhFS21Vd2lCTlBNR29pd3pmRlZyWjVJRWdONUJPNURHLWVfbXZJV0xPVDcxcGpPN001cTVMNlVpTkhTUmZRTTBhRWlwNGJkaE9TSk05QjNLaUlDZ3FtTWlyMzdvdEhLX1otcXdQT1dxV3lLSlRBOVFfWm0zMW12X1lKSm9xZ0JMUHlMd0dRMHJaQURyMTByWFlUWE1pMnE4Ymg5Y3lJMTBwYjVQQVBHLUVVTHJwZm9ENWFjTy1UcFlkSEFyeGtFMlBKaWYybm1Na05ORTJFb0U4WVR5MmotQ2x6Nzc1XzhvTDczdzFnM25KOUFOYWY1cUlBQVZBZXBQelA1VGpWeUtuTVFGTlRxanNwUVpEVF85ZDNydEg3ZnNVdU5fR0xQaHhta0NmOUpEd3NPb2pIQ0NEc0lsdmttUkVJTlNORUdUZzFpNGZqU0lBUTFLS1ZHNmZVenEtVWF5V3FUNExfVThMcXFiWDloUXBrc2ZBcGhx?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-28T11:53:00.000Z",
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgRBVV95cUxQOTlLSVE2NEgxaWRaWkFWMHVYclI3bkg4cVgtUkQwLUx1eUZkNXhDTF9TSVZRVlRCZ3lWbmxSUkV5SG9fM1VYVHpfUDUzbGtDYXg1LWN0SEpRVW5RS2stcV96Sm94LVYtVHI2RXU3U1F3RHFmT1A0RlVWMzUzME9ZU2VyMGRkMlFoZGp1X0Q0aC1CQ3FheE53VzJBN09MTDJEWjNWU0puWi01NHg5WDVXdFFYNzV3a2xMaVRfQXZwbEhmT3pXZlM0aEVCaWVHWmVIeUU3dlotMi1wcGdNNGZmeEE0VDZfTGhuU2swSUVKLWJueHVWQlpEcnFaWGNJbVdxQkpEVlVEYWszcUxrNjlOTFM5ejF6dTU1M2ZzZ0syaTEwc1FIakp0ZEQ0Q21HUWNaMkI3RUVQU1lGLUJ0VnJPYXowNm8yQU93dnRaZWNoLWRndTl5Vl9GMWtLS0RaeVdZWXFvNUhJd1lXYkRXTXpXUVNIQjQzczhEMWw4bzZ1dGdZbFExZkRyZDZ1SnlTamFVRmpMekxNZXhuT0hWdUFMVk5tQzF6SU1LYUF3cDF4U1g1ZEIwQ3czVnNXUXV4TURRbllIXzBiVFVhMFJlYU14RGhxVERiM1JYb2c2VjREdWFFRlEyN3dEcXd4RWI3dFV0SmNtcGM0OE1TV2lxQjFFblhiVVkzdlZTUTFQVl8zWXVVZ9IBlwRBVV95cUxQenJHaUJhcVVnQUJsLWtEdHVydl8za1d2NWFWQklmSGduaGxVMGlsb1F6RkJWaHBuS2lKX0RzR1ZnYjRYVUpocVRha1ZqV2tGMndYYThQa21IOWtBcURiUkxCdmtYbFhwYzdSY3BjZEYzSFRYTkp5NDFJTnJSWDNjQ1I5S3NtYUFyRWNNdEx1dlRZcjlHRmtuTVBOSVFGajNhSDVDd1kyeTVIcHpNZGVDTERsSC1CWXJ1WHdCQzllRWJEOFRnbldYZ3cyWjhybXBpbi1MVjhkZlN0eENfdGpDT2J0ZDNQdVE0V2tRX1dLalVqendjekdUSlZxdEFhb1BLc2p1V2lLRmtSbVNiT213bktuTEVxbzNfM3hoRjhGbjBTMGEwRV9GRHRtT082TmdwUmtQZXc0OGdYa0xtWVBDQXBLMFF5ajZzYUc5YlRFOWQxT2dtQkNqb0lnR1czMEZLT2NFNzBYOEgtd1g5dlF0TWQ4QnlJaHBRQVc0UjhET0Jpb05YTzZ5cGsyUUFiQVFGS21IZUZ1eVY0MmFUV2hNNDVwcjlKT0dRNXNqbWxJSjR2c1ZJUW5SVDhtQTV6a0toUjk5UkRMT242NWRjR0FTaG1USDhVdHVJcVV5QTJmenBtM0w1aVdrRW94R2diT0VVdUtLcC1FTlpsRkdOdmVTSHdHLWRjenY3NjFJYXNNVklJengtVDZF?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T11:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "deshrupantor",
             "relation": "supports",
@@ -61121,10 +62839,32 @@
           }
         },
         {
+          "ts": "2026-10-28T14:13:16.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMigwRBVV95cUxPSXNJSHFmU0xSZWR5Y3plLW5rUF9Nb2pZdkRtMHY3R0J5TUI0OUs2UUpoRURha19iZC13M2tGa2FTcjR5Vjg0NTRMb3lJVXp3Y3UtUkdfUm9IMmpSUkJCeU5GRlo0TVpaclI1Ymg5bk42blBBek1lUG5sX1NtdmVvdS14Slo3enZ6cG5ReUpGTk1Ob0F6dkwwS2pkZDViT29zT3FHNTRWUmdaelNHSlBSTnVMckNMaW1HbUZiQ3N5eTRtdU03SGdKLW5TdjFWRXJ5b0M1RmJDVXFoTTBOcWdvTWt3S05Eb2dENXFGcEN2TXJaZlpFRVFRbzZvWmkxS3BfSEFlZ1JJUE0yYnB2WGtCdTZVbllXTVN2UGU2Tm01UnNqSFFnbUxDYnUyNllBMXJqd0EzYWVEV1kyVnRCeGdjcVhJNTVTUW9LOS1KQnJETDFRR1NlVEkxWTczMS1DNjJ4aWtKWlcyWXZHMEpuRUtiaFYxS3A0YThjMl9rSG1VZGlXU3E1a0xiOWltRUt2NV9fOVg0NHFULUd3OXUtMDFFdkRsSW5WRU1TOTFPeGFoZE03Qk9iZ1E4WFlWbnVPbDVIdC1CM1NYLVBpRzU2MS1aNlFBMWhid1dXU0J1dmZNNnl6RXF4b09aTEdfNzFBdTBUOV9NVWloUWRoS09jNzdMR2JlVdIBiARBVV95cUxNRlNrOURMZmJXZFQwZVhIU3dsLVI4UDhGNVFUVXVKSnMyUjV1N1hfcHVRTVFUd2pTMVpGd1k3UmlXSGhEcXo3RU9VWWR3ZzRKYzRXYnlsV3M5THkzRVUzQVFUTXJaYVlTUktBZzE1bGoyb2NNUWF3RkxHY3dFVF9aclQtQkhjQnp4NENMVjFEVlFrVzRaaGp3MkFLLUZWWUloX1RwRXJKWVdmZzhuSmMtaXlMQ0pnb1ZUU01OWXZVQVNRS2FjWDNJZmlpRExLTHl0c0pYekszQkgybVdXSENVdlZtWlg0dG1aYXJ2V1RzNzN5YUZPV2stLXFLbnNEUjk5QkwwbnJMNTl6YlRQM2d2ZXpwYllSRFRyX0M3M2lCTC1fS3Z3Qm41R0xBaWlxRm00bzJfeXlPbzc1SlNoczd1aFBvcWhrdm9mdXpuQ0Fhdy1oNEtFeUpMSXYtRVFMdzU5TUpseTNvdnpUWWpqYXI3REk5dGNSZHhVYUVxQVZ0azV2Zzl6X19tX2I3RGotT3pmQV91UHZrcUV0X1NOaDg0X3Y3YWVNa2NsekwxSXdBUkpmUlJuMkNNblZLQzEwOFloVTMxZ0VNQUNMTEhfSGh5bWpZZE1uUHBENDZaeUp1QnJrX2dmM3pHOXM3d19RSDRrbjNGcFk4UXJvaVZqd3ZiWGhZYXByc2pM?oc=5"
+          }
+        },
+        {
           "ts": "2026-10-28T15:08:44.000Z",
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMSUh4ZUJkU1BZOUJ5dWNlYWxkSkpKRlRDSG5hcVlSdDI2SHIxWWNrczlNRVpnTzUyZWVkLXFkUEJwc2ViXzFmUU01MS1uS2c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-28T15:08:44.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "bd24live",
             "relation": "supports",
@@ -61158,6 +62898,17 @@
           "kind": "evidence",
           "claim_id": 91,
           "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50Tl9QZU9ORlZiOUhOWktKejIxWDRXSTYwSTFDdVh6OTJJRkg1d2dzRG9hNWNGNEc1VEgzSC16aUI5bENSbEpEZ2x6N3RUcU54MmhBcXVzZ0R5Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T09:58:58.000Z",
+          "kind": "evidence",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
           "detail": {
             "source_id": "jugantor",
             "relation": "supports",
@@ -61282,6 +63033,42 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.352Z",
+          "kind": "conflict",
+          "claim_id": 91,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c91\",\"c94\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:38.354Z",
+          "kind": "conflict",
+          "claim_id": 94,
+          "claim_text": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c94\",\"c419\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -61357,8 +63144,8 @@
       "cluster_id": 2,
       "headline": "Israel election results live: Qatar says accusations of election interference in Israel ‘ridiculous and dangerous’",
       "first_seen": "2026-10-29T15:41:48.899Z",
-      "last_update": "2026-10-29T16:51:25.933Z",
-      "claim_count": 3,
+      "last_update": "2026-10-29T17:59:26.220Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-10-28T18:54:10.000Z",
@@ -61462,6 +63249,46 @@
           "kind": "verify",
           "claim_id": 8,
           "claim_text": "Coalition talks loom in Israel as Netanyahu and Eisenkot blocs set to fall short of majority",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:26:06.000Z",
+          "kind": "evidence",
+          "claim_id": 6,
+          "claim_text": "Israel election results live: Qatar says accusations of election interference in Israel ‘ridiculous and dangerous’",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/29/israeli-leader-netanyahu-accused-of-using-ugly-smear-tactics-to-cling-to-power"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:26:06.000Z",
+          "kind": "evidence",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/world/2026/oct/29/israeli-leader-netanyahu-accused-of-using-ugly-smear-tactics-to-cling-to-power"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:34.826Z",
+          "kind": "claim",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 743,
+          "claim_text": "Israeli leader Netanyahu accused of using ‘ugly’ smear tactics to cling to power",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -61901,7 +63728,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 19,
@@ -62173,12 +64000,99 @@
     },
     "national-rabiul-target-to": {
       "cluster_id": 80,
-      "headline": "Rabiul: Target to complete six-lane Dhaka-Sylhet highway by June 2029",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+      "first_seen": "2026-10-29T17:59:26.221Z",
+      "last_update": "2026-10-29T17:59:26.225Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-28T10:28:05.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBxR1VlaTBRaWNNa2Zmek9EOEJSX3R0TzZlVjZmY1UtSUVVVVhOME05OTJ4eDV2UTVNakg2VVM2cmxsSjkwM251WV83d0REUDdmcXhjdGw2bw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T16:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/international/68ukc9csgv"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.639Z",
+          "kind": "claim",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.643Z",
+          "kind": "claim",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 947,
+          "claim_text": "নির্বাচনে নেতানিয়াহুর পরাজয় যেভাবে ইরান যুদ্ধের গতিপথ বদলে দিতে পারে",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 948,
+          "claim_text": "ইসরায়েলের নির্বাচনে নেতানিয়াহুর পরাজয় দাবি ও অন্যান্য খবর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        },
+        {
+          "cluster_id": 12,
+          "slug": "politics-12",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোট দিলেন প্রধান দুই প্রার্থী, ভোটগ্রহণ চলবে বিকেল ৪টা পর্যন্ত"
+        }
+      ]
     },
     "national-raf-fairford-labour": {
       "cluster_id": 701,
@@ -62328,7 +64242,7 @@
       "cluster_id": 37,
       "headline": "দুপুরের মধ্যে দেশের ৮ জেলায় ঝড়-বৃষ্টির শঙ্কা, নদীবন্দরে সতর্কতা",
       "first_seen": "2026-10-29T15:41:49.169Z",
-      "last_update": "2026-10-29T16:51:26.007Z",
+      "last_update": "2026-10-29T17:59:26.280Z",
       "claim_count": 3,
       "events": [
         {
@@ -62456,7 +64370,7 @@
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 48,
@@ -62613,7 +64527,7 @@
       "cluster_id": 69,
       "headline": "মোটরসাইকেল চালকদের জন্য স্বস্তির খবর",
       "first_seen": "2026-10-29T16:51:25.980Z",
-      "last_update": "2026-10-29T16:51:25.985Z",
+      "last_update": "2026-10-29T17:59:26.251Z",
       "claim_count": 2,
       "events": [
         {
@@ -64527,7 +66441,7 @@
           "actor_links": 0,
           "source_links": 4,
           "claim_count": 5,
-          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষ, নিহত বেড়ে ৬৪"
+          "headline": "স্পেনে দুই দ্রুতগতির ট্রেনের সংঘর্ষে নিহত বেড়ে ৬৪"
         },
         {
           "cluster_id": 64,
@@ -66574,7 +68488,7 @@
       "cluster_id": 70,
       "headline": "জাপানে টয়োটার মোতোমাচি কারখানা পরিদর্শন করলেন প্রধানমন্ত্রী",
       "first_seen": "2026-10-29T16:51:25.998Z",
-      "last_update": "2026-10-29T16:51:26.002Z",
+      "last_update": "2026-10-29T17:59:26.278Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -66635,12 +68549,91 @@
     },
     "politics-78": {
       "cluster_id": 78,
-      "headline": "নাহিদ ইসলামের পদে থাকার নৈতিকতা নিয়ে প্রশ্ন রাশেদ খানের, ২৪ ঘণ্টার মধ্যে পদত্যাগের আহ্বান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+      "first_seen": "2026-10-29T17:59:26.207Z",
+      "last_update": "2026-10-29T17:59:26.212Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T12:16:42.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13eXFNeUdEZV85MVpQZS1MdVFteXN0X3pCX1Bibk1nT3RSLU4yaEhpeDhSWnVZdEQxeE9RR0IxMEdlZXN3ZVd6VGdOcVNxMV9leVB4S1pMMGF5UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:37:09.000Z",
+          "kind": "evidence",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/middle-east/977619/%E0%A6%86%E0%A6%B0%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A6%A8%E0%A7%8D%E0%A6%A5%E0%A6%BF"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.623Z",
+          "kind": "claim",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.627Z",
+          "kind": "claim",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 943,
+          "claim_text": "নির্বাচনে আরব দলগুলোর বড় সাফল্যের পর নেতাদের গ্রেফতারের দাবি ইসরাইলি মন্ত্রীর",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 944,
+          "claim_text": "আরব নেতাদের গ্রেফতারের দাবি ইসরায়েলের ডানপন্থি মন্ত্রীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        }
+      ]
     },
     "politics-782": {
       "cluster_id": 782,
@@ -67870,7 +69863,7 @@
       "cluster_id": 3,
       "headline": "বিশ্বকাপে প্লেট পর্বের ফাইনালে বাংলাদেশ",
       "first_seen": "2026-10-29T15:41:48.918Z",
-      "last_update": "2026-10-29T16:51:25.934Z",
+      "last_update": "2026-10-29T17:59:26.230Z",
       "claim_count": 2,
       "events": [
         {
@@ -68568,6 +70561,14 @@
       ],
       "related": [
         {
+          "cluster_id": 79,
+          "slug": "sports-79",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
           "cluster_id": 16,
           "slug": "national-16",
           "actor_links": 0,
@@ -68738,12 +70739,107 @@
     },
     "sports-79": {
       "cluster_id": 79,
-      "headline": "আজ টিভিতে যা দেখবেন (২৫ অক্টোবর ২০২৬)",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+      "first_seen": "2026-10-29T17:59:26.213Z",
+      "last_update": "2026-10-29T17:59:26.218Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T15:03:36.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/y7ifssi29k"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T17:32:58.000Z",
+          "kind": "evidence",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-boxes-inscribed-with-east-pakistan-police-were-found-underground/"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.631Z",
+          "kind": "claim",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.635Z",
+          "kind": "claim",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 945,
+          "claim_text": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 946,
+          "claim_text": "মাটির নিচে মিলল ‘ইস্ট পাকিস্তান পুলিশ’ লেখা দুটি বাক্স",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 60,
+          "slug": "national-60",
+          "actor_links": 2,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সখীপুরে দুই বাক্স গ্রেনেডসদৃশ বস্তু উদ্ধার, গায়ে লেখা ‘ইস্ট পাকিস্তান পুলিশ, টাঙ্গাইল’"
+        },
+        {
+          "cluster_id": 5,
+          "slug": "sports-5",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কার্যক্রম নিষিদ্ধ শ্রমিক লীগ নেতা ও তাঁর ভাতিজাকে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 4,
+          "slug": "national-4",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "অস্টিওপোরোসিস প্রতিরোধে সারাদেশে সচেতনতা ও স্ক্রিনিং কার্যক্রমের আহ্বান ডা. জুবাইদা রহমানের"
+        }
+      ]
     },
     "sports-792": {
       "cluster_id": 792,
@@ -68837,11 +70933,41 @@
     },
     "sports-86": {
       "cluster_id": 86,
-      "headline": "‘নতুন কুঁড়ি স্পোর্টস’-এর সেরা ৩০৬ খেলোয়াড় নিয়ে শুরু প্রশিক্ষণ ক্যাম্প",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+      "first_seen": "2026-10-29T17:59:26.793Z",
+      "last_update": "2026-10-29T17:59:26.797Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-29T17:40:59.000Z",
+          "kind": "evidence",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/6dk7iv60i1"
+          }
+        },
+        {
+          "ts": "2026-10-29T18:48:35.681Z",
+          "kind": "claim",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে"
+        },
+        {
+          "ts": "2026-10-29T18:48:35.773Z",
+          "kind": "verify",
+          "claim_id": 958,
+          "claim_text": "দুই হাজার টাকা মুচলেকায় সেই কিশোরের জামিন যেসব কারণে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-897": {
