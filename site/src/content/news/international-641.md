@@ -1,10 +1,12 @@
 ---
 title: "সেনা কর্মকর্তাদের সঙ্গে মোজতবা খামেনির প্রথম আনুষ্ঠানিক বৈঠক, কী নির্দেশ দিলেন"
+thumbnail: "/images/international-641.webp"
+thumbnailAlt: "সেনা কর্মকর্তাদের সঙ্গে মোজতবা খামেনির প্রথম আনুষ্ঠানিক বৈঠক, কী নির্দেশ দিলেন — ছবি: প্রথম আলো"
 seoTitle: "সেনা কর্মকর্তাদের সঙ্গে মোজতবা খামেনির প্রথম আনুষ্ঠানিক বৈঠক, কী…"
 excerpt: "’ মোজতবা খামেনির সঙ্গে ইরানের সামরিক বাহিনীর শীর্ষ কর্মকর্তাদের এটিই প্রথম আনুষ্ঠানিক বৈঠক। গত ২৮ ফেব্রুয়ারি যুক্তরাষ্ট্র ও ইসরায়েলি হামলায় আয়াতুল্লাহ আলী খামেনি নিহত হওয়ার পর মার"
 seoDescription: "’ মোজতবা খামেনির সঙ্গে ইরানের সামরিক বাহিনীর শীর্ষ কর্মকর্তাদের এটিই প্রথম আনুষ্ঠানিক বৈঠক। গত ২৮ ফেব্রুয়ারি যুক্তরাষ্ট্র ও ইসরায়েলি হামলায় আয়াতুল্লাহ আল…"
 date: 2026-10-31T21:55:14.000Z
-publishedAt: 2026-10-31T23:25:41.237Z
+publishedAt: 2026-10-31T23:22:29.704Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-10-31T23:25:41.043Z"
+  evaluatedAt: "2026-10-31T23:22:29.538Z"
   clusterId: 641
   claimIds:
     - 101307
@@ -43,7 +45,7 @@ publication:
   slug: "international-641"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-10-31T23:25:41.043Z"
+  checkedAt: "2026-10-31T23:22:29.538Z"
   clusterId: 641
   claimIds:
     - 101307
