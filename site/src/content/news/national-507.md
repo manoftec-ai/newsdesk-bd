@@ -1,0 +1,57 @@
+---
+title: "ডেঙ্গুতে ১ জনের মৃত্যু, হাসপাতালে নতুন রোগী ১৬৩৩"
+seoTitle: "ডেঙ্গুতে ১ জনের মৃত্যু, হাসপাতালে নতুন রোগী ১৬৩৩"
+excerpt: "এতে বলা হয়, গত ২৪ ঘণ্টায় ডেঙ্গু আক্রান্ত হয়ে হাসপাতালে ভর্তি রোগীর মধ্যে ঢাকা বিভাগে ৬০৪ জন, ময়মনসিংহ বিভাগে ৭০ জন, চট্টগ্রাম বিভাগে ২৮১ জন, খুলনা বিভাগে ২২৮ জন, রাজশাহী বিভাগে ১৪৯"
+seoDescription: "এতে বলা হয়, গত ২৪ ঘণ্টায় ডেঙ্গু আক্রান্ত হয়ে হাসপাতালে ভর্তি রোগীর মধ্যে ঢাকা বিভাগে ৬০৪ জন, ময়মনসিংহ বিভাগে ৭০ জন, চট্টগ্রাম বিভাগে ২৮১ জন, খুলনা বিভাগে …"
+date: 2026-10-31T12:48:56.000Z
+publishedAt: 2026-10-31T13:43:55.336Z
+developing: true
+category: "national"
+tags: ["health", "dhaka", "chattogram", "rajshahi", "khulna", "rangpur", "barishal", "health"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "২০২৫ সালের ১ জানুয়ারি থেকে ৩১ ডিসেম্বর পর্যন্ত মোট ডেঙ্গু আক্রান্ত হয়েছে এক লাখ দুই হাজার ৮৬১ জন এবং ডেঙ্গুতে মোট ৪১৩ জনের মৃত্যু হয়"
+  - "একই সময়ে সারাদেশে ডেঙ্গু আক্রান্ত হয়ে হাসপাতালে নতুন রোগী ভর্তি হয়েছেন ১ হাজার ৬৩৩ জন"
+  - "চলতি বছরের ৩০ অক্টোবর পর্যন্ত সারা দেশে মোট ১ লাখ ৩৫ হাজার জন ডেঙ্গু আক্রান্ত হয়ে হাসপাতালে ভর্তি হয়েছেন"
+faq: []
+sources:
+  - name: "চ্যানেল আই"
+    url: "https://www.channelionline.com/1-death-from-dengue-1633-new-patients-admitted-to-hospitals/"
+verification:
+  badge: "partial"
+  tier: "A"
+  score: 2
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: true
+  status: "passed"
+  evaluatedAt: "2026-10-31T13:43:55.197Z"
+  clusterId: 507
+  claimIds:
+    - 70251
+  evidenceHash: "8af7e779d5d8ebe4"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (channeli)"
+publication:
+  slug: "national-507"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-10-31T13:43:55.197Z"
+  clusterId: 507
+  claimIds:
+    - 70251
+  evidenceHash: "8af7e779d5d8ebe4"
+---
+
+এতে বলা হয়, গত ২৪ ঘণ্টায় ডেঙ্গু আক্রান্ত হয়ে হাসপাতালে ভর্তি রোগীর মধ্যে ঢাকা বিভাগে ৬০৪ জন, ময়মনসিংহ বিভাগে ৭০ জন, চট্টগ্রাম বিভাগে ২৮১ জন, খুলনা বিভাগে ২২৮ জন, রাজশাহী বিভাগে ১৪৯ জন, রংপুর বিভাগে ৬৭ জন, বরিশাল বিভাগে ২৩৪ জন রয়েছেন।
+
+চলতি বছরে এ যাবত মোট এক লাখ ২৮ হাজার ৩৪৫ জন ডেঙ্গুরোগী হাসপাতাল থেকে চিকিৎসা নিয়ে সুস্থ হয়ে ছাড়পত্র পেয়েছেন।
+
+শনিবার (৩১ অক্টোবর) স্বাস্থ্য অধিদপ্তরের হেলথ ইমার্জেন্সি অপারেশন সেন্টার ও কন্ট্রোলরুম থেকে পাঠানো ডেঙ্গু বিষয়ক এক প্রেস বিজ্ঞপ্তিতে এ তথ্য জানানো হয়।
