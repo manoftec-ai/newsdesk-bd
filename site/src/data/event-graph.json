@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6325,
+    "storyCount": 6327,
     "kinds": [
       "claim",
       "evidence",
@@ -3745,7 +3745,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -5811,29 +5811,247 @@
     },
     "economy-444": {
       "cluster_id": 444,
-      "headline": "ফ্ল্যাটের দাম নাগালে আনতে গৃহঋণ সুদ ৫% চান রিহ্যাব সভাপতি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+      "first_seen": "2026-10-31T07:55:09.518Z",
+      "last_update": "2026-10-31T07:55:09.521Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-31T06:18:44.000Z",
+          "kind": "evidence",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZZ29xMHhkUlNjamFxa3Y1QWlHRGYySHNUbGQtcExXbHZBelp6VThyRnZvVnR3S0Q3Z2pVUlVJZjA0WUs5OHlzaEwzT1VMYXdj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:18:44.000Z",
+          "kind": "evidence",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZZ29xMHhkUlNjamFxa3Y1QWlHRGYySHNUbGQtcExXbHZBelp6VThyRnZvVnR3S0Q3Z2pVUlVJZjA0WUs5OHlzaEwzT1VMYXdj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:31:09.000Z",
+          "kind": "evidence",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1UTE9GVmtMRVU1MHk0MURIMEFMMWhycTY4RVJ5cXE2T0xxc2NwM1JFWWtGM1oyS0hQTXdRdkd5Uld6X0hwZWJJWHZqNm02UVE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.187Z",
+          "kind": "claim",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.190Z",
+          "kind": "claim",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 435,
+          "slug": "national-435",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গণভোটের রায় উপেক্ষা করে জনগণের সঙ্গে প্রতারণা করছে সরকার: শফিকুর রহমান"
+        },
+        {
+          "cluster_id": 304,
+          "slug": "national-304",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানক্ষেতে লুকিয়ে থাকা আওয়ামী লীগ নেতা আটক"
+        },
+        {
+          "cluster_id": 283,
+          "slug": "national-283",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এমপি আব্দুল আজিজের বিরুদ্ধে ব্যবস্থা নিতে কেন্দ্রে চিঠি দেবে জেলা বিএনপি"
+        },
+        {
+          "cluster_id": 273,
+          "slug": "politics-273",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
+        },
+        {
+          "cluster_id": 237,
+          "slug": "national-237",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
+        }
+      ]
     },
     "economy-446": {
       "cluster_id": 446,
-      "headline": "বিদ্যুৎ খাতের উন্নয়নে বাংলাদেশকে ২৪৬০ কোটি টাকা ঋণ দিচ্ছে এডিবি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-31T07:55:09.984Z",
+      "last_update": "2026-10-31T07:55:09.986Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/amid-the-ongoing-war-the-united-states-is-providing-500-patriot-missiles-to-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.199Z",
+          "kind": "claim",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-447": {
       "cluster_id": 447,
-      "headline": "বিদ্যুৎ বিতরণ ব্যবস্থা আধুনিকায়নে বাংলাদেশকে ২০০ মিলিয়ন ডলার ঋণ দিচ্ছে এডিবি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+      "first_seen": "2026-10-31T07:55:09.989Z",
+      "last_update": "2026-10-31T07:55:09.991Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:41:45.000Z",
+          "kind": "evidence",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/christa-pike-who-survived-an-attempted-execution-says-i-am-in-constant-pain/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.202Z",
+          "kind": "claim",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-449": {
+      "cluster_id": 449,
+      "headline": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+      "first_seen": "2026-10-31T07:55:09.997Z",
+      "last_update": "2026-10-31T07:55:09.999Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:32:43.000Z",
+          "kind": "evidence",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/uncertainty-surrounds-salaries-under-the-new-pay-scale-the-increased-amounts-will-not-be-available-even-on-sunday/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.207Z",
+          "kind": "claim",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-467": {
@@ -6478,7 +6696,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -10157,6 +10375,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -10195,14 +10421,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -11311,7 +11529,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -13440,7 +13658,7 @@
           "slug": "national-415",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 20,
+          "claim_count": 21,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -14080,6 +14298,14 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
           "cluster_id": 393,
           "slug": "national-393",
           "actor_links": 0,
@@ -14110,14 +14336,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 230,
-          "slug": "national-230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাষ্ট্রপতির সঙ্গে বিশিষ্ট আলেম-ওলামাদের সৌজন্য সাক্ষাৎ"
         }
       ]
     },
@@ -17448,7 +17666,7 @@
           "slug": "national-415",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 20,
+          "claim_count": 21,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -23003,7 +23221,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -23506,7 +23724,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -27649,6 +27867,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -27687,14 +27913,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -28036,7 +28254,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -28428,7 +28646,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -28833,6 +29051,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -28855,14 +29081,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
-        },
-        {
-          "cluster_id": 370,
-          "slug": "national-370",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -29994,6 +30212,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -30032,14 +30258,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -32999,6 +33217,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -33037,14 +33263,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এমপি আব্দুল আজিজের বিরুদ্ধে ব্যবস্থা নিতে কেন্দ্রে চিঠি দেবে জেলা বিএনপি"
-        },
-        {
-          "cluster_id": 273,
-          "slug": "politics-273",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
         }
       ]
     },
@@ -34302,7 +34520,7 @@
       "cluster_id": 394,
       "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস",
       "first_seen": "2026-10-31T04:20:12.636Z",
-      "last_update": "2026-10-31T07:24:18.247Z",
+      "last_update": "2026-10-31T07:55:09.524Z",
       "claim_count": 3,
       "events": [
         {
@@ -34416,6 +34634,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
         {
           "cluster_id": 286,
           "slug": "national-286",
@@ -35498,8 +35724,8 @@
       "cluster_id": 415,
       "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে",
       "first_seen": "2026-10-31T05:56:14.463Z",
-      "last_update": "2026-10-31T07:24:18.236Z",
-      "claim_count": 17,
+      "last_update": "2026-10-31T07:55:09.513Z",
+      "claim_count": 18,
       "events": [
         {
           "ts": "2026-10-31T00:59:00.000Z",
@@ -36202,6 +36428,28 @@
           }
         },
         {
+          "ts": "2026-10-31T07:02:06.000Z",
+          "kind": "evidence",
+          "claim_id": 53543,
+          "claim_text": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/wott08dmt5"
+          }
+        },
+        {
+          "ts": "2026-10-31T07:02:06.000Z",
+          "kind": "evidence",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/wott08dmt5"
+          }
+        },
+        {
           "ts": "2026-10-31T07:02:07.000Z",
           "kind": "evidence",
           "claim_id": 53543,
@@ -36318,6 +36566,24 @@
           "kind": "verify",
           "claim_id": 55278,
           "claim_text": "এইচএসসিতে পাসের হারে এগিয়ে ছাত্রীরা, জিপিএ-৫ বেশি ছাত্রদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.088Z",
+          "kind": "claim",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -37396,7 +37662,7 @@
       "cluster_id": 437,
       "headline": "মধ্যরাতে তাহসিফের বন্ধু দীপকে নৌ পুলিশের কাছে হস্তান্তর",
       "first_seen": "2026-10-31T07:24:18.243Z",
-      "last_update": "2026-10-31T07:24:18.245Z",
+      "last_update": "2026-10-31T07:55:09.522Z",
       "claim_count": 2,
       "events": [
         {
@@ -37720,11 +37986,80 @@
     },
     "international-446": {
       "cluster_id": 446,
-      "headline": "পাকিস্তানের খাইবার পাখতুনখাওয়ায় জরুরি অবস্থা জারি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-31T07:55:09.984Z",
+      "last_update": "2026-10-31T07:55:09.986Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/amid-the-ongoing-war-the-united-states-is-providing-500-patriot-missiles-to-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.199Z",
+          "kind": "claim",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-447": {
+      "cluster_id": 447,
+      "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+      "first_seen": "2026-10-31T07:55:09.989Z",
+      "last_update": "2026-10-31T07:55:09.991Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:41:45.000Z",
+          "kind": "evidence",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/christa-pike-who-survived-an-attempted-execution-says-i-am-in-constant-pain/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.202Z",
+          "kind": "claim",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4478": {
@@ -37756,11 +38091,41 @@
     },
     "international-449": {
       "cluster_id": 449,
-      "headline": "নেপালে আবার আকস্মিক বন্যা, ভেসে গেল বাড়িঘর ও বিভিন্ন স্থাপনা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+      "first_seen": "2026-10-31T07:55:09.997Z",
+      "last_update": "2026-10-31T07:55:09.999Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:32:43.000Z",
+          "kind": "evidence",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/uncertainty-surrounds-salaries-under-the-new-pay-scale-the-increased-amounts-will-not-be-available-even-on-sunday/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.207Z",
+          "kind": "claim",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4492": {
@@ -37801,11 +38166,41 @@
     },
     "international-450": {
       "cluster_id": 450,
-      "headline": "ওউলুতে দুর্গোৎসব: বাঙালি সংস্কৃতির সঙ্গে বহুসংস্কৃতির সেতুবন্ধ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+      "first_seen": "2026-10-31T07:55:10.000Z",
+      "last_update": "2026-10-31T07:55:10.002Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:27:57.000Z",
+          "kind": "evidence",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/not-demanding-seven-points-is-not-acceptable-gopalganj-area-i/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.210Z",
+          "kind": "claim",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-457": {
@@ -61554,6 +61949,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -61592,14 +61995,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
-        },
-        {
-          "cluster_id": 237,
-          "slug": "national-237",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
         }
       ]
     },
@@ -62143,6 +62538,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
         {
           "cluster_id": 402,
           "slug": "national-402",
@@ -63361,7 +63764,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -63816,6 +64219,14 @@
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
         },
         {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
+        {
           "cluster_id": 408,
           "slug": "national-408",
           "actor_links": 0,
@@ -63846,14 +64257,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কক্সবাজার সৈকতে নিখোঁজ হওয়া আরেক পর্যটকের মরদেহ উদ্ধার, মৃত্যু বেড়ে ৫"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -64946,7 +65349,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -70774,6 +71177,14 @@
       ],
       "related": [
         {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
           "cluster_id": 402,
           "slug": "national-402",
           "actor_links": 0,
@@ -71979,6 +72390,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -72017,14 +72436,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -72638,6 +73049,14 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -72660,14 +73079,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থাকা আওয়ামী লীগ নেতা আটক"
-        },
-        {
-          "cluster_id": 283,
-          "slug": "national-283",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "এমপি আব্দুল আজিজের বিরুদ্ধে ব্যবস্থা নিতে কেন্দ্রে চিঠি দেবে জেলা বিএনপি"
         }
       ]
     },
@@ -76864,6 +77275,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -76902,14 +77321,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -78113,7 +78524,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -78973,7 +79384,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -80159,6 +80570,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -80181,14 +80600,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
-        },
-        {
-          "cluster_id": 370,
-          "slug": "national-370",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -81887,6 +82298,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -81925,14 +82344,6 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
-        },
-        {
-          "cluster_id": 331,
-          "slug": "national-331",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -82470,7 +82881,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -82943,12 +83354,12 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
-          "cluster_id": 402,
-          "slug": "national-402",
+          "cluster_id": 445,
+          "slug": "tech-445",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
         }
       ]
     },
@@ -83445,6 +83856,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -83483,14 +83902,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
-        },
-        {
-          "cluster_id": 237,
-          "slug": "national-237",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
         }
       ]
     },
@@ -85566,7 +85977,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -86162,6 +86573,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -86200,14 +86619,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -88408,7 +88819,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -96084,6 +96495,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -96122,14 +96541,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এমপি আব্দুল আজিজের বিরুদ্ধে ব্যবস্থা নিতে কেন্দ্রে চিঠি দেবে জেলা বিএনপি"
-        },
-        {
-          "cluster_id": 273,
-          "slug": "politics-273",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
         }
       ]
     },
@@ -99333,7 +99744,7 @@
           "slug": "national-415",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 20,
+          "claim_count": 21,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -99980,7 +100391,7 @@
       "cluster_id": 373,
       "headline": "বিষাক্ত মদপানে ছাত্রদল নেতাসহ ২ যুবকের মৃত্যু",
       "first_seen": "2026-10-31T02:41:53.392Z",
-      "last_update": "2026-10-31T07:24:18.246Z",
+      "last_update": "2026-10-31T07:55:09.523Z",
       "claim_count": 2,
       "events": [
         {
@@ -102670,6 +103081,14 @@
       ],
       "related": [
         {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
           "cluster_id": 402,
           "slug": "national-402",
           "actor_links": 0,
@@ -102979,7 +103398,7 @@
       "cluster_id": 394,
       "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস",
       "first_seen": "2026-10-31T04:20:12.636Z",
-      "last_update": "2026-10-31T07:24:18.247Z",
+      "last_update": "2026-10-31T07:55:09.524Z",
       "claim_count": 3,
       "events": [
         {
@@ -103093,6 +103512,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
         {
           "cluster_id": 286,
           "slug": "national-286",
@@ -105694,6 +106121,14 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
           "cluster_id": 393,
           "slug": "national-393",
           "actor_links": 0,
@@ -105724,14 +106159,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 230,
-          "slug": "national-230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাষ্ট্রপতির সঙ্গে বিশিষ্ট আলেম-ওলামাদের সৌজন্য সাক্ষাৎ"
         }
       ]
     },
@@ -107326,8 +107753,8 @@
       "cluster_id": 415,
       "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে",
       "first_seen": "2026-10-31T05:56:14.463Z",
-      "last_update": "2026-10-31T07:24:18.236Z",
-      "claim_count": 17,
+      "last_update": "2026-10-31T07:55:09.513Z",
+      "claim_count": 18,
       "events": [
         {
           "ts": "2026-10-31T00:59:00.000Z",
@@ -108030,6 +108457,28 @@
           }
         },
         {
+          "ts": "2026-10-31T07:02:06.000Z",
+          "kind": "evidence",
+          "claim_id": 53543,
+          "claim_text": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/wott08dmt5"
+          }
+        },
+        {
+          "ts": "2026-10-31T07:02:06.000Z",
+          "kind": "evidence",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/wott08dmt5"
+          }
+        },
+        {
           "ts": "2026-10-31T07:02:07.000Z",
           "kind": "evidence",
           "claim_id": 53543,
@@ -108146,6 +108595,24 @@
           "kind": "verify",
           "claim_id": 55278,
           "claim_text": "এইচএসসিতে পাসের হারে এগিয়ে ছাত্রীরা, জিপিএ-৫ বেশি ছাত্রদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.088Z",
+          "kind": "claim",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57036,
+          "claim_text": "এইচএসসিতে ছাত্রদের অর্ধেকই ফেল, ছাত্রী ৪৩.৬৯ শতাংশ",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -110822,6 +111289,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 304,
           "slug": "national-304",
           "actor_links": 0,
@@ -110860,14 +111335,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
-        },
-        {
-          "cluster_id": 183,
-          "slug": "national-183",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বসনিয়ায় সামরিক হেলিকপ্টার বিধ্বস্ত, ইতালির ৪ সেনা নিহত"
         }
       ]
     },
@@ -111147,7 +111614,7 @@
       "cluster_id": 437,
       "headline": "মধ্যরাতে তাহসিফের বন্ধু দীপকে নৌ পুলিশের কাছে হস্তান্তর",
       "first_seen": "2026-10-31T07:24:18.243Z",
-      "last_update": "2026-10-31T07:24:18.245Z",
+      "last_update": "2026-10-31T07:55:09.522Z",
       "claim_count": 2,
       "events": [
         {
@@ -111969,12 +112436,123 @@
     },
     "national-443": {
       "cluster_id": 443,
-      "headline": "প্রবারণা পূর্ণিমা ও লক্ষ্মী পূজা: ফানুসে ফানুসে রাতের ঢাকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+      "first_seen": "2026-10-31T07:55:09.514Z",
+      "last_update": "2026-10-31T07:55:09.517Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-31T03:12:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0ySXQ2SVdKYUhybFZoYzZGbjdHSWIwcTRrTjR2ZWwxVWtQT1hJQWFLcnhlLWQtN2ZjOTlYQnpMaVV2VEd5cXNveFAyOHkxUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T03:12:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0ySXQ2SVdKYUhybFZoYzZGbjdHSWIwcTRrTjR2ZWwxVWtQT1hJQWFLcnhlLWQtN2ZjOTlYQnpMaVV2VEd5cXNveFAyOHkxUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T07:11:42.000Z",
+          "kind": "evidence",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zMGxiS0JjdFpVU1VldXFlZXQwakRuRXV1dEtOX29IVThia3pXd1RreUJBT2xQV05yUkJoNHE4TktQNF9QWHkyVlNtNTVlLTJTNFpv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.181Z",
+          "kind": "claim",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.184Z",
+          "kind": "claim",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 402,
+          "slug": "national-402",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
+        },
+        {
+          "cluster_id": 392,
+          "slug": "national-392",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 186,
+          "slug": "sports-186",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চার দিনের জাপান সফর শেষে ঢাকায় পৌঁছেছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 23,
+          "slug": "national-23",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হরমুজ প্রণালিতে ৩ তেলবাহী জাহাজে আগুন: আইআরজিসি"
+        },
+        {
+          "cluster_id": 19,
+          "slug": "national-19",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        }
+      ]
     },
     "national-4430": {
       "cluster_id": 4430,
@@ -112050,12 +112628,131 @@
     },
     "national-444": {
       "cluster_id": 444,
-      "headline": "এআই জোয়ারে কেন ডেটা সেন্টারের নতুন ভরসা ‘ফিউয়েল সেল’?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+      "first_seen": "2026-10-31T07:55:09.518Z",
+      "last_update": "2026-10-31T07:55:09.521Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-31T06:18:44.000Z",
+          "kind": "evidence",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZZ29xMHhkUlNjamFxa3Y1QWlHRGYySHNUbGQtcExXbHZBelp6VThyRnZvVnR3S0Q3Z2pVUlVJZjA0WUs5OHlzaEwzT1VMYXdj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:18:44.000Z",
+          "kind": "evidence",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZZ29xMHhkUlNjamFxa3Y1QWlHRGYySHNUbGQtcExXbHZBelp6VThyRnZvVnR3S0Q3Z2pVUlVJZjA0WUs5OHlzaEwzT1VMYXdj?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:31:09.000Z",
+          "kind": "evidence",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1UTE9GVmtMRVU1MHk0MURIMEFMMWhycTY4RVJ5cXE2T0xxc2NwM1JFWWtGM1oyS0hQTXdRdkd5Uld6X0hwZWJJWHZqNm02UVE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.187Z",
+          "kind": "claim",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.190Z",
+          "kind": "claim",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57070,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57071,
+          "claim_text": "এইচএসসি ও সমমান পরীক্ষায় সর্বোচ্চ ফেল মানবিকে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 435,
+          "slug": "national-435",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গণভোটের রায় উপেক্ষা করে জনগণের সঙ্গে প্রতারণা করছে সরকার: শফিকুর রহমান"
+        },
+        {
+          "cluster_id": 304,
+          "slug": "national-304",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানক্ষেতে লুকিয়ে থাকা আওয়ামী লীগ নেতা আটক"
+        },
+        {
+          "cluster_id": 283,
+          "slug": "national-283",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এমপি আব্দুল আজিজের বিরুদ্ধে ব্যবস্থা নিতে কেন্দ্রে চিঠি দেবে জেলা বিএনপি"
+        },
+        {
+          "cluster_id": 273,
+          "slug": "politics-273",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
+        },
+        {
+          "cluster_id": 256,
+          "slug": "national-256",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
+        },
+        {
+          "cluster_id": 237,
+          "slug": "national-237",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
+        }
+      ]
     },
     "national-4441": {
       "cluster_id": 4441,
@@ -112122,12 +112819,123 @@
     },
     "national-445": {
       "cluster_id": 445,
-      "headline": "প্রাথমিকের নিয়োগপত্রের দাবিতে অধিদপ্তরের সামনে অনশন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+      "first_seen": "2026-10-31T07:55:09.525Z",
+      "last_update": "2026-10-31T07:55:09.528Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-08-11T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HUHpOVjNaNl9GYlJsWGFaYTEwTmhZV05KbDBBcUN3Mkt6YUVZeWxfV2xoSzNRNTlpcE9YNlRGU2w2ZVVpYlY4dGtNdlphdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIcHMyU0diU290amNNZER4UWVfejUzeUVXVVBCMnJPNmRWNHdFUzl4WVd0WU5jQTBmZlJWcHloZlU4NEtWUUtjU1J0OTh4dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIcHMyU0diU290amNNZER4UWVfejUzeUVXVVBCMnJPNmRWNHdFUzl4WVd0WU5jQTBmZlJWcHloZlU4NEtWUUtjU1J0OTh4dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.193Z",
+          "kind": "claim",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.196Z",
+          "kind": "claim",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 394,
+          "slug": "national-394",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস"
+        },
+        {
+          "cluster_id": 286,
+          "slug": "national-286",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
+        },
+        {
+          "cluster_id": 194,
+          "slug": "national-194",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাবনায় গরুর হাটের ইজারাদার ও শ্রমিক দল নেতাকে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 67,
+          "slug": "national-67",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার সৈকতে নিখোঁজ হওয়া আরেক পর্যটকের মরদেহ উদ্ধার, মৃত্যু বেড়ে ৫"
+        },
+        {
+          "cluster_id": 55,
+          "slug": "national-most-popular-television",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Most Popular Television in Bangladesh"
+        }
+      ]
     },
     "national-4450": {
       "cluster_id": 4450,
@@ -112185,11 +112993,41 @@
     },
     "national-446": {
       "cluster_id": 446,
-      "headline": "সংসদ সদস্য নজরুলের দ্বিতীয় স্ত্রীর আত্মহত্যা: প্ররোচনা দেওয়ার মামলায় ওবায়দুর কারাগারে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-31T07:55:09.984Z",
+      "last_update": "2026-10-31T07:55:09.986Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/amid-the-ongoing-war-the-united-states-is-providing-500-patriot-missiles-to-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.199Z",
+          "kind": "claim",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4460": {
@@ -112275,11 +113113,41 @@
     },
     "national-447": {
       "cluster_id": 447,
-      "headline": "মানবতাবিরোধী অপরাধে আওয়ামী লীগের ৭ নেতার বিরুদ্ধে চার্জ গঠন এ সপ্তাহেই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+      "first_seen": "2026-10-31T07:55:09.989Z",
+      "last_update": "2026-10-31T07:55:09.991Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:41:45.000Z",
+          "kind": "evidence",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/christa-pike-who-survived-an-attempted-execution-says-i-am-in-constant-pain/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.202Z",
+          "kind": "claim",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57075,
+          "claim_text": "মৃত্যুদণ্ড কার্যকরের চেষ্টা থেকে বেঁচে যাওয়া ক্রিস্টা পাইক বললেন, ‘সব সময় যন্ত্রণায় থাকি’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4470": {
@@ -112329,11 +113197,41 @@
     },
     "national-448": {
       "cluster_id": 448,
-      "headline": "মোহাম্মদপুরে চাঁদাবাজির অভিযোগে বিএনপি নেতা গ্রেপ্তার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মালয়েশিয়াগামী কর্মীদের স্বাস্থ্য পরীক্ষার ফি নির্ধারণ করল সরকার",
+      "first_seen": "2026-10-31T07:55:09.993Z",
+      "last_update": "2026-10-31T07:55:09.995Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:38:13.000Z",
+          "kind": "evidence",
+          "claim_id": 57076,
+          "claim_text": "মালয়েশিয়াগামী কর্মীদের স্বাস্থ্য পরীক্ষার ফি নির্ধারণ করল সরকার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/health-check-up-fee-for-workers-heading-to-malaysia-set-at-8000-taka/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.205Z",
+          "kind": "claim",
+          "claim_id": 57076,
+          "claim_text": "মালয়েশিয়াগামী কর্মীদের স্বাস্থ্য পরীক্ষার ফি নির্ধারণ করল সরকার"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57076,
+          "claim_text": "মালয়েশিয়াগামী কর্মীদের স্বাস্থ্য পরীক্ষার ফি নির্ধারণ করল সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4480": {
@@ -112401,11 +113299,41 @@
     },
     "national-449": {
       "cluster_id": 449,
-      "headline": "কওমি মাদ্রাসায় শিশুদের যৌন নির্যাতনের ঘটনা থামছে না কেন?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+      "first_seen": "2026-10-31T07:55:09.997Z",
+      "last_update": "2026-10-31T07:55:09.999Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:32:43.000Z",
+          "kind": "evidence",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/uncertainty-surrounds-salaries-under-the-new-pay-scale-the-increased-amounts-will-not-be-available-even-on-sunday/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.207Z",
+          "kind": "claim",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57077,
+          "claim_text": "নতুন স্কেলে বেতন নিয়ে অনিশ্চয়তা, রোববারও মিলছে না বর্ধিত অর্থ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4490": {
@@ -112567,11 +113495,41 @@
     },
     "national-450": {
       "cluster_id": 450,
-      "headline": "জানা গেল চলতি বছরের এইচএসসির ফল প্রকাশের সম্ভাব্য সময়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+      "first_seen": "2026-10-31T07:55:10.000Z",
+      "last_update": "2026-10-31T07:55:10.002Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:27:57.000Z",
+          "kind": "evidence",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/not-demanding-seven-points-is-not-acceptable-gopalganj-area-i/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.210Z",
+          "kind": "claim",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-451": {
@@ -112734,6 +113692,14 @@
       ],
       "related": [
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -112772,14 +113738,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
-        },
-        {
-          "cluster_id": 237,
-          "slug": "national-237",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জিজ্ঞাসাবাদে মুখ খুলছেন তাহসিফের ‘বন্ধু’ দীপ, মিলছে চাঞ্চল্যকর তথ্য"
         }
       ]
     },
@@ -114616,6 +115574,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
         {
           "cluster_id": 394,
           "slug": "national-394",
@@ -117519,6 +118485,14 @@
       ],
       "related": [
         {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
+        {
           "cluster_id": 394,
           "slug": "national-394",
           "actor_links": 0,
@@ -119570,7 +120544,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -126794,6 +127768,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 445,
+          "slug": "tech-445",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
         {
           "cluster_id": 394,
           "slug": "national-394",
@@ -136028,7 +137010,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -136233,6 +137215,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 444,
+          "slug": "national-444",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসি ও সমমান পরীক্ষায় প্রায় অর্ধেক শিক্ষার্থীই ফেল"
+        },
+        {
           "cluster_id": 435,
           "slug": "national-435",
           "actor_links": 0,
@@ -136255,14 +137245,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
-        },
-        {
-          "cluster_id": 370,
-          "slug": "national-370",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -137807,11 +138789,41 @@
     },
     "politics-446": {
       "cluster_id": 446,
-      "headline": "মিষ্টির শূন্য আসনে বিএনপির মনোনয়ন পেলেন এলিজা জামান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+      "first_seen": "2026-10-31T07:55:09.984Z",
+      "last_update": "2026-10-31T07:55:09.986Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:44:50.000Z",
+          "kind": "evidence",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/amid-the-ongoing-war-the-united-states-is-providing-500-patriot-missiles-to-ukraine/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.199Z",
+          "kind": "claim",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57074,
+          "claim_text": "যুদ্ধের মধ্যেই ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র দিচ্ছে যুক্তরাষ্ট্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-4493": {
@@ -137825,11 +138837,41 @@
     },
     "politics-450": {
       "cluster_id": 450,
-      "headline": "ইউপি নির্বাচন: জামানত বাড়ল, থাকছে যেসব প্রতীক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+      "first_seen": "2026-10-31T07:55:10.000Z",
+      "last_update": "2026-10-31T07:55:10.002Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T07:27:57.000Z",
+          "kind": "evidence",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/not-demanding-seven-points-is-not-acceptable-gopalganj-area-i/"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.210Z",
+          "kind": "claim",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57078,
+          "claim_text": "সাত দফা দাবি আদায় না করে ঘরে ফিরব না: গোপালগঞ্জে জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-468": {
@@ -140939,6 +141981,14 @@
       ],
       "related": [
         {
+          "cluster_id": 443,
+          "slug": "sports-443",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
           "cluster_id": 402,
           "slug": "national-402",
           "actor_links": 0,
@@ -141296,7 +142346,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -143536,7 +144586,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
+          "claim_count": 14,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -144764,12 +145814,123 @@
     },
     "sports-443": {
       "cluster_id": 443,
-      "headline": "কাউকে ভয় পেতে আসিনি—আসিয়ান কাপের প্রতিপক্ষ নিয়ে হামজা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+      "first_seen": "2026-10-31T07:55:09.514Z",
+      "last_update": "2026-10-31T07:55:09.517Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-31T03:12:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0ySXQ2SVdKYUhybFZoYzZGbjdHSWIwcTRrTjR2ZWwxVWtQT1hJQWFLcnhlLWQtN2ZjOTlYQnpMaVV2VEd5cXNveFAyOHkxUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T03:12:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0ySXQ2SVdKYUhybFZoYzZGbjdHSWIwcTRrTjR2ZWwxVWtQT1hJQWFLcnhlLWQtN2ZjOTlYQnpMaVV2VEd5cXNveFAyOHkxUQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T07:11:42.000Z",
+          "kind": "evidence",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zMGxiS0JjdFpVU1VldXFlZXQwakRuRXV1dEtOX29IVThia3pXd1RreUJBT2xQV05yUkJoNHE4TktQNF9QWHkyVlNtNTVlLTJTNFpv?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.181Z",
+          "kind": "claim",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.184Z",
+          "kind": "claim",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57068,
+          "claim_text": "দেশের যেসব এলাকায় টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57069,
+          "claim_text": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 402,
+          "slug": "national-402",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
+        },
+        {
+          "cluster_id": 392,
+          "slug": "national-392",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টানা ১১ ঘণ্টা বিদ্যুৎ থাকবে না যেসব এলাকায়"
+        },
+        {
+          "cluster_id": 186,
+          "slug": "sports-186",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চার দিনের জাপান সফর শেষে ঢাকায় পৌঁছেছেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 23,
+          "slug": "national-23",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হরমুজ প্রণালিতে ৩ তেলবাহী জাহাজে আগুন: আইআরজিসি"
+        },
+        {
+          "cluster_id": 19,
+          "slug": "national-19",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
+        }
+      ]
     },
     "sports-4437": {
       "cluster_id": 4437,
@@ -145228,7 +146389,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -146942,7 +148103,7 @@
           "slug": "national-415",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "এইচএসসি: চট্টগ্রাম শিক্ষা বোর্ডে পাসের হার ও জিপিএ-৫ দুটোই কমেছে"
         },
         {
@@ -147512,12 +148673,123 @@
     },
     "tech-445": {
       "cluster_id": 445,
-      "headline": "এআইয়ের জন্য আমরা কি ভাবতে ভুলে যাচ্ছি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+      "first_seen": "2026-10-31T07:55:09.525Z",
+      "last_update": "2026-10-31T07:55:09.528Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-08-11T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HUHpOVjNaNl9GYlJsWGFaYTEwTmhZV05KbDBBcUN3Mkt6YUVZeWxfV2xoSzNRNTlpcE9YNlRGU2w2ZVVpYlY4dGtNdlphdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIcHMyU0diU290amNNZER4UWVfejUzeUVXVVBCMnJPNmRWNHdFUzl4WVd0WU5jQTBmZlJWcHloZlU4NEtWUUtjU1J0OTh4dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-17T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIcHMyU0diU290amNNZER4UWVfejUzeUVXVVBCMnJPNmRWNHdFUzl4WVd0WU5jQTBmZlJWcHloZlU4NEtWUUtjU1J0OTh4dw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.193Z",
+          "kind": "claim",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.196Z",
+          "kind": "claim",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী"
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57072,
+          "claim_text": "কাল দেশের সব শিক্ষাপ্রতিষ্ঠান বন্ধ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T08:15:10.318Z",
+          "kind": "verify",
+          "claim_id": 57073,
+          "claim_text": "আজ ও কাল মহাসপ্তমী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 394,
+          "slug": "national-394",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস"
+        },
+        {
+          "cluster_id": 286,
+          "slug": "national-286",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
+        },
+        {
+          "cluster_id": 194,
+          "slug": "national-194",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাবনায় গরুর হাটের ইজারাদার ও শ্রমিক দল নেতাকে গুলি করে হত্যা"
+        },
+        {
+          "cluster_id": 67,
+          "slug": "national-67",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কক্সবাজার সৈকতে নিখোঁজ হওয়া আরেক পর্যটকের মরদেহ উদ্ধার, মৃত্যু বেড়ে ৫"
+        },
+        {
+          "cluster_id": 55,
+          "slug": "national-most-popular-television",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "Most Popular Television in Bangladesh"
+        }
+      ]
     },
     "tech-467": {
       "cluster_id": 467,
