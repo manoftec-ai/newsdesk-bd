@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6318,
+    "storyCount": 6321,
     "kinds": [
       "claim",
       "evidence",
@@ -5319,7 +5319,7 @@
       "cluster_id": 391,
       "headline": "অনূর্ধ্ব-২৩ দল নিয়েই ঢাকায় সাফে আসছে ভারত, স্কোয়াডে কারা",
       "first_seen": "2026-10-31T04:20:12.623Z",
-      "last_update": "2026-10-31T05:24:55.740Z",
+      "last_update": "2026-10-31T05:56:14.489Z",
       "claim_count": 2,
       "events": [
         {
@@ -5590,6 +5590,45 @@
       "events": [],
       "related": []
     },
+    "economy-419": {
+      "cluster_id": 419,
+      "headline": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+      "first_seen": "2026-10-31T05:56:14.941Z",
+      "last_update": "2026-10-31T05:56:14.944Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:43:06.000Z",
+          "kind": "evidence",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gold-prices-in-the-country-see-another-major-drop-falling-by-5482-taka-per-bhori/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.493Z",
+          "kind": "claim",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-4208": {
       "cluster_id": 4208,
       "headline": "আগের সময়সূচিতে ফিরল দোকানপাট–মার্কেট-শপিং মল, বন্ধ রাত ৮টায়",
@@ -5601,11 +5640,41 @@
     },
     "economy-421": {
       "cluster_id": 421,
-      "headline": "এবার বাড়ল যাত্রীবাহী লঞ্চের ভাড়া",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+      "first_seen": "2026-10-31T05:56:14.950Z",
+      "last_update": "2026-10-31T05:56:14.952Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:35:59.000Z",
+          "kind": "evidence",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/crkg7pp44k19o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.498Z",
+          "kind": "claim",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-4222": {
@@ -7057,20 +7126,20 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
-        },
-        {
-          "cluster_id": 310,
-          "slug": "national-310",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আট বিভাগেই হতে পারে বৃষ্টি, কমতে পারে তাপমাত্রা"
         }
       ]
     },
@@ -10278,6 +10347,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -10316,14 +10393,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -13323,20 +13392,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার"
+        },
+        {
           "cluster_id": 372,
           "slug": "national-372",
           "actor_links": 3,
           "source_links": 2,
           "claim_count": 4,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 335,
-          "slug": "national-335",
-          "actor_links": 3,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "গ্যাসের আগুন জ্বলছেই, ১৫ দিন পর্যবেক্ষণের পর রিলিফ কূপ খননের পরিকল্পনা পেট্রোবাংলার"
         }
       ]
     },
@@ -14160,6 +14229,182 @@
       "events": [],
       "related": []
     },
+    "entertainment-417": {
+      "cluster_id": 417,
+      "headline": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+      "first_seen": "2026-10-31T05:56:14.478Z",
+      "last_update": "2026-10-31T05:56:14.481Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-30T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WWlptOEVIN3dvRkxwaFhQb25ydFVjMUFhWllPVWVqWHJwMnVZTHFzaFdQLUFFdEFtQkNMRm5QQXEzOU9PZWw2TFpTeXh5WkpVMEFEcmlzV08xYjY3Z3Q0cFBvNV9JNGZ6OWx6bFN1aUNZVUFvTWUzRm9FSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-30T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WWlptOEVIN3dvRkxwaFhQb25ydFVjMUFhWllPVWVqWHJwMnVZTHFzaFdQLUFFdEFtQkNMRm5QQXEzOU9PZWw2TFpTeXh5WkpVMEFEcmlzV08xYjY3Z3Q0cFBvNV9JNGZ6OWx6bFN1aUNZVUFvTWUzRm9FSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:32.000Z",
+          "kind": "evidence",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%ae%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%b0-%e0%a6%85%e0%a6%a8%e0%a7%81%e0%a6%ae%e0%a6%a4%e0%a6%bf-%e0%a6%aa%e0%a7%87%e0%a6%b2-%e0%a6%a6%e0%a7%87%e0%a6%b6%e0%a7%87%e0%a6%b0/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.482Z",
+          "kind": "claim",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.484Z",
+          "kind": "claim",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 185,
+          "slug": "politics-185",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পিরোজপুরে মুক্তিযোদ্ধার দাফনে বাধা দেয়ার প্রতিবাদে নগরে বিক্ষোভ"
+        }
+      ]
+    },
+    "entertainment-418": {
+      "cluster_id": 418,
+      "headline": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+      "first_seen": "2026-10-31T05:56:14.482Z",
+      "last_update": "2026-10-31T05:56:14.485Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T11:57:35.000Z",
+          "kind": "evidence",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPblZEeThjQUxTUjVNWnIzSURsX1J1dzNYcnFQMXNLNUIwVVhqVU96UmcxM3g5ODlJdzhpR1BpbjJIMUNGbFZycWZVSlVlTzVGbjQ5VzRWanBsd2plX3V6SWJ5dkhZSEZhR3VwZnkzckJpNEgyclZvQm90a3VhbEhnVVdrMzlITF9QbXp2dEdEaFFtMURnNWJ0c2gwa0xyTzd0X2JEdlRUNGpmQkpPSGtnYmY4b2JjNUM3U0hTOUhyZkFSM09Sek5sNHpSZ3JtVDI5dFc5b2dWak10RV84SkVQamhKNTJNcENDM3FwMXhQZzhTTW5lZFpwVEQ2Q3pncFBsU1FhTzAzT3ZzZlFpNDVjcjN5UFF3VDZSU2hCZTBPWEh3dUJvbkNPdWd4SGVxazg4TnBKX9IBugJBVV95cUxPR2xfUUNlZzdhb0J3VlRMN1RvaDM2UWhJMFNlajM0Ni1xa2FWUTJqdEctT0RDeVExV0dyREVfcTF5eGh6QUpBbHEwUkhaWVNaZU1SdWV4TWpYMGt3Y1ltbjE5R3lvUFdvbUpTOWtoZ1lXdnlQZUZjLXVLeVVQZTVKMGFYR1ljNUxQMmZ4LTFWYmR4TDAyMHQxbDNRWFpBYXFDakZmc0NwRnk0S0ZaVWl2M21CSG1KVERlSGhnaWJOcEdTN0F3NmljNUhqcTlFTGtuS0tpQnV3S01VV3N0M1phaEZxSEhzQnoxOVVUVjVfcEdKb0JnSWk5b3JkVmVTbGo2N3MwaUYweEg2cTdhTElPaFM3bDNveHlwUUtueDROV25DN3FQWGxnMGJyZE5OZWJtUUVpSUFXdmNmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:57:35.000Z",
+          "kind": "evidence",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPblZEeThjQUxTUjVNWnIzSURsX1J1dzNYcnFQMXNLNUIwVVhqVU96UmcxM3g5ODlJdzhpR1BpbjJIMUNGbFZycWZVSlVlTzVGbjQ5VzRWanBsd2plX3V6SWJ5dkhZSEZhR3VwZnkzckJpNEgyclZvQm90a3VhbEhnVVdrMzlITF9QbXp2dEdEaFFtMURnNWJ0c2gwa0xyTzd0X2JEdlRUNGpmQkpPSGtnYmY4b2JjNUM3U0hTOUhyZkFSM09Sek5sNHpSZ3JtVDI5dFc5b2dWak10RV84SkVQamhKNTJNcENDM3FwMXhQZzhTTW5lZFpwVEQ2Q3pncFBsU1FhTzAzT3ZzZlFpNDVjcjN5UFF3VDZSU2hCZTBPWEh3dUJvbkNPdWd4SGVxazg4TnBKX9IBugJBVV95cUxPR2xfUUNlZzdhb0J3VlRMN1RvaDM2UWhJMFNlajM0Ni1xa2FWUTJqdEctT0RDeVExV0dyREVfcTF5eGh6QUpBbHEwUkhaWVNaZU1SdWV4TWpYMGt3Y1ltbjE5R3lvUFdvbUpTOWtoZ1lXdnlQZUZjLXVLeVVQZTVKMGFYR1ljNUxQMmZ4LTFWYmR4TDAyMHQxbDNRWFpBYXFDakZmc0NwRnk0S0ZaVWl2M21CSG1KVERlSGhnaWJOcEdTN0F3NmljNUhqcTlFTGtuS0tpQnV3S01VV3N0M1phaEZxSEhzQnoxOVVUVjVfcEdKb0JnSWk5b3JkVmVTbGo2N3MwaUYweEg2cTdhTElPaFM3bDNveHlwUUtueDROV25DN3FQWGxnMGJyZE5OZWJtUUVpSUFXdmNmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%ab%e0%a6%bf%e0%a6%ab%e0%a6%be%e0%a6%b0-%e0%a6%aa%e0%a6%b0-%e0%a6%8f%e0%a6%ac%e0%a6%be%e0%a6%b0-%e0%a6%9f%e0%a7%87%e0%a6%95%e0%a6%a8%e0%a7%8b-%e0%a6%b8%e0%a6%be%e0%a6%ab-%e0%a6%9a%e0%a7%8d/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.488Z",
+          "kind": "claim",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.491Z",
+          "kind": "claim",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঝালকাঠিতে ঘনচিনি দিয়ে আইসক্রিম তৈরি, জরিমানা ৫০ হাজার"
+        }
+      ]
+    },
     "entertainment-4206": {
       "cluster_id": 4206,
       "headline": "ফিফটি নট আউট",
@@ -14171,11 +14416,41 @@
     },
     "entertainment-422": {
       "cluster_id": 422,
-      "headline": "সেদিন মৃত্যুর মুখে পড়েও ফিরে এসেছিলেন অমিতাভ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+      "first_seen": "2026-10-31T05:56:14.953Z",
+      "last_update": "2026-10-31T05:56:14.955Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:32:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gpa-5-count-in-hsc-drops-by-29000/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.501Z",
+          "kind": "claim",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-4226": {
@@ -16967,20 +17242,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার"
+        },
+        {
           "cluster_id": 372,
           "slug": "national-372",
           "actor_links": 3,
           "source_links": 2,
           "claim_count": 4,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 335,
-          "slug": "national-335",
-          "actor_links": 3,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "গ্যাসের আগুন জ্বলছেই, ১৫ দিন পর্যবেক্ষণের পর রিলিফ কূপ খননের পরিকল্পনা পেট্রোবাংলার"
         }
       ]
     },
@@ -28340,6 +28615,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -28362,14 +28645,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
-        },
-        {
-          "cluster_id": 348,
-          "slug": "national-348",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
         }
       ]
     },
@@ -29818,6 +30093,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -29856,14 +30139,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -33769,7 +34044,7 @@
       "cluster_id": 394,
       "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস",
       "first_seen": "2026-10-31T04:20:12.636Z",
-      "last_update": "2026-10-31T05:24:55.742Z",
+      "last_update": "2026-10-31T05:56:14.490Z",
       "claim_count": 3,
       "events": [
         {
@@ -34433,8 +34708,8 @@
       "cluster_id": 408,
       "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা",
       "first_seen": "2026-10-31T05:24:55.732Z",
-      "last_update": "2026-10-31T05:24:55.736Z",
-      "claim_count": 5,
+      "last_update": "2026-10-31T05:56:14.487Z",
+      "claim_count": 6,
       "events": [
         {
           "ts": "2026-10-31T04:21:45.000Z",
@@ -34489,6 +34764,28 @@
             "source_id": "channeli",
             "relation": "supports",
             "url": "https://www.channelionline.com/father-files-case-two-days-after-recovery-of-tahsif-sauris-body/"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 48433,
+          "claim_text": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiuwRBVV95cUxNV1gwSDdCdVZ3cHdvVXpGQzh4UHBncnlvMTFnTnRfM1hQaDBiQ09RUm5qWmItNmRHaXRHaTJCTE9NTjFzSG1MWXFTRmx1TThGQnZRSUVPRjF2MENuSm5oV1VmV3BtQmJmcDhOcGE5X1FaRlItMUpkekE5bk9vZjdFYktUd0djWnJOU1FVam5JUWJSb2h3QTlPLVVCV1A1R185MEllLUw2cWhyZ3hLMWhiVG1LTHA1TUJRbkxzeUVLQjVETDBUbUFjNXdLUWE4LXFETGJCN1o0QWtBTmE5TjRKYjRtazQ5UWRTR2dLMlpCel92cXRDaDdVT2lPMlM1QmY3ejNzUUNXN3FVNFNHT21heWhSMGRSd3g4TWJvR0w4ejNIZ0hJa0d6SmN1TlNkU0RaZHNfZVRSWTFxT2djdmh4NEM5UWlOanpuNThwVTcxUlFfSW9UX2ZaV1drSkItN2VlcUpGb3FZWVpsOFpTemZSdnNsMTJWT2liYVo4YWVycFRmejF1UWVUcDhsRERVd21pUTVhYVlSTG5uVmlLbDJDYzJ1RjNEMmdJdS0xUWtkS05KY1FmV3JIUHd4RXBrQm1hcU4wUl9iNWpXMUZ1M05XV2ppeENDZGV6Q1BlWDFIUmZHS2V3U0xkX2sxVms4eUZFSnFQWl9kNkJ2OGFxa2RGMzhhYXFCX0Q2bFB4WHpKZmprMV9vTkRMaUNHRi1HNmM5Q3g0cDBDWUh1WjVzckYySDJicm0wRkpfdGd30gHABEFVX3lxTE1aVjlId2lYYU4wbUNjSUhMaXJGTXdKNTJGOFhaaEM0d0FIbjdlY3VpeVBEblZ3Z3pCMTY4ZlgxYTBwVWMxR0hPd25KUmxodm11bDlzLTdvMGhBOWdWTFRBWDhyUkRiNml5R1hXeUZMMWg2Sm1uTDdmdVpZclBBQ3BoS200TG9aTFJQdG9HSGhScl95UnhlMnJHOFJyRXRJYjFfVjhva1NaUV9IR014MTBuM2pteU53eWFxbm9xLVpLUC1uZk9tODYtSDJHVmZON1JpVldEMllWcVJvQXBWcHFQUDRzU1BVam9yaWtfVExtMzJuVTNvYS1DcE9ZcUpsckZmNlhVNy1NNENCdnZQTDlqUC16Z1B4R0EzMFc3eHZ0OXQ2WXUzeTVydXZWR0JKYU5FZV9sZWc2M3FKeklHV0VzdEhaM0NIMzYtMERPcVVfN2ZiQWZrQVpMNGZoS1VJZS1aYmpvZG8yN2d4ZnNTS1p4Q0NTejJGbG1RRXZiUk1MemNTeDRfQTJTU21xa3BhVGFfSUNpNDdxNnpQUnNPRGZmcnhjZVljTTRfU0VqajN4bDgzZlNRM2pXU012eEJlNUFXUUFOVVJCNlhPREVQWVdRZWdMd2x0blVwNXFHTXpDLTgxQVRYWktQYUJ2YWZTM3gwLVZ3REx6bVZFWWJJT3R2MnpocF9RVzd1S2RyZmhKV3d6WHZoMV9CNnBKalF3UXgyRXhTWHdBRnNCRktYZVlTYU1YQzN0N2xvLUkzdGdoMw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiuwRBVV95cUxNV1gwSDdCdVZ3cHdvVXpGQzh4UHBncnlvMTFnTnRfM1hQaDBiQ09RUm5qWmItNmRHaXRHaTJCTE9NTjFzSG1MWXFTRmx1TThGQnZRSUVPRjF2MENuSm5oV1VmV3BtQmJmcDhOcGE5X1FaRlItMUpkekE5bk9vZjdFYktUd0djWnJOU1FVam5JUWJSb2h3QTlPLVVCV1A1R185MEllLUw2cWhyZ3hLMWhiVG1LTHA1TUJRbkxzeUVLQjVETDBUbUFjNXdLUWE4LXFETGJCN1o0QWtBTmE5TjRKYjRtazQ5UWRTR2dLMlpCel92cXRDaDdVT2lPMlM1QmY3ejNzUUNXN3FVNFNHT21heWhSMGRSd3g4TWJvR0w4ejNIZ0hJa0d6SmN1TlNkU0RaZHNfZVRSWTFxT2djdmh4NEM5UWlOanpuNThwVTcxUlFfSW9UX2ZaV1drSkItN2VlcUpGb3FZWVpsOFpTemZSdnNsMTJWT2liYVo4YWVycFRmejF1UWVUcDhsRERVd21pUTVhYVlSTG5uVmlLbDJDYzJ1RjNEMmdJdS0xUWtkS05KY1FmV3JIUHd4RXBrQm1hcU4wUl9iNWpXMUZ1M05XV2ppeENDZGV6Q1BlWDFIUmZHS2V3U0xkX2sxVms4eUZFSnFQWl9kNkJ2OGFxa2RGMzhhYXFCX0Q2bFB4WHpKZmprMV9vTkRMaUNHRi1HNmM5Q3g0cDBDWUh1WjVzckYySDJicm0wRkpfdGd30gHABEFVX3lxTE1aVjlId2lYYU4wbUNjSUhMaXJGTXdKNTJGOFhaaEM0d0FIbjdlY3VpeVBEblZ3Z3pCMTY4ZlgxYTBwVWMxR0hPd25KUmxodm11bDlzLTdvMGhBOWdWTFRBWDhyUkRiNml5R1hXeUZMMWg2Sm1uTDdmdVpZclBBQ3BoS200TG9aTFJQdG9HSGhScl95UnhlMnJHOFJyRXRJYjFfVjhva1NaUV9IR014MTBuM2pteU53eWFxbm9xLVpLUC1uZk9tODYtSDJHVmZON1JpVldEMllWcVJvQXBWcHFQUDRzU1BVam9yaWtfVExtMzJuVTNvYS1DcE9ZcUpsckZmNlhVNy1NNENCdnZQTDlqUC16Z1B4R0EzMFc3eHZ0OXQ2WXUzeTVydXZWR0JKYU5FZV9sZWc2M3FKeklHV0VzdEhaM0NIMzYtMERPcVVfN2ZiQWZrQVpMNGZoS1VJZS1aYmpvZG8yN2d4ZnNTS1p4Q0NTejJGbG1RRXZiUk1MemNTeDRfQTJTU21xa3BhVGFfSUNpNDdxNnpQUnNPRGZmcnhjZVljTTRfU0VqajN4bDgzZlNRM2pXU012eEJlNUFXUUFOVVJCNlhPREVQWVdRZWdMd2x0blVwNXFHTXpDLTgxQVRYWktQYUJ2YWZTM3gwLVZ3REx6bVZFWWJJT3R2MnpocF9RVzd1S2RyZmhKV3d6WHZoMV9CNnBKalF3UXgyRXhTWHdBRnNCRktYZVlTYU1YQzN0N2xvLUkzdGdoMw?oc=5"
           }
         },
         {
@@ -34618,6 +34915,24 @@
           "kind": "verify",
           "claim_id": 48437,
           "claim_text": "তাহসিফের মৃত্যুর ঘটনায় মামলা, বন্ধু দীপ গ্রেফতার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.420Z",
+          "kind": "claim",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -34883,12 +35198,451 @@
     },
     "international-415": {
       "cluster_id": 415,
-      "headline": "তাহলে কি কেন্দ্রীয় শাসনের অধীনে যাচ্ছে খাইবার পাখতুনখাওয়া, পিটিআই–সরকার দ্বন্দ্ব আরও বাড়ছে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+      "first_seen": "2026-10-31T05:56:14.463Z",
+      "last_update": "2026-10-31T05:56:14.474Z",
+      "claim_count": 10,
+      "events": [
+        {
+          "ts": "2026-10-31T00:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/4ym0b375o7"
+          }
+        },
+        {
+          "ts": "2026-10-31T00:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/4ym0b375o7"
+          }
+        },
+        {
+          "ts": "2026-10-31T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/tr02c4eha9"
+          }
+        },
+        {
+          "ts": "2026-10-31T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/tr02c4eha9"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:03:45.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/pmgdt15hp8"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:03:45.000Z",
+          "kind": "evidence",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/pmgdt15hp8"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:49:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm62yel91yepo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:49:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm62yel91yepo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:52:14.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fxrklj2910"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:52:14.000Z",
+          "kind": "evidence",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fxrklj2910"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:28:17.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/xtfimn4vcl"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/s8v0cf76cf"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/s8v0cf76cf"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:02:02.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/mkusz85ilw"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:02:02.000Z",
+          "kind": "evidence",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/mkusz85ilw"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:04:08.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/vkv3cwjhaa"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:04:08.000Z",
+          "kind": "evidence",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/vkv3cwjhaa"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:07.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/bv5t5968g0"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:07.000Z",
+          "kind": "evidence",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/bv5t5968g0"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.446Z",
+          "kind": "claim",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.457Z",
+          "kind": "claim",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.459Z",
+          "kind": "claim",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.462Z",
+          "kind": "claim",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.463Z",
+          "kind": "claim",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.465Z",
+          "kind": "claim",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.467Z",
+          "kind": "claim",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.469Z",
+          "kind": "claim",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.471Z",
+          "kind": "claim",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.473Z",
+          "kind": "claim",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 27,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        },
+        {
+          "cluster_id": 253,
+          "slug": "sports-253",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 236,
+          "slug": "politics-236",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তার মৃত্যু রহস্য: যেসব বিষয় তদন্ত করছে পুলিশ"
+        },
+        {
+          "cluster_id": 201,
+          "slug": "politics-201",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "জাপানে এক লাখ কর্মী পাঠানোর খবরে বিভ্রান্তি যেভাবে, আসলে কী?"
+        },
+        {
+          "cluster_id": 192,
+          "slug": "sports-192",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        }
+      ]
     },
     "international-4157": {
       "cluster_id": 4157,
@@ -34937,11 +35691,41 @@
     },
     "international-419": {
       "cluster_id": 419,
-      "headline": "দেশের জন্য জীবন বাজি রাখতে ‘জানফাদা’, যুক্ত তিন কোটি ইরানি, আছেন তরুণীরাও",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+      "first_seen": "2026-10-31T05:56:14.941Z",
+      "last_update": "2026-10-31T05:56:14.944Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:43:06.000Z",
+          "kind": "evidence",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gold-prices-in-the-country-see-another-major-drop-falling-by-5482-taka-per-bhori/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.493Z",
+          "kind": "claim",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4198": {
@@ -34982,11 +35766,41 @@
     },
     "international-422": {
       "cluster_id": 422,
-      "headline": "ইরানের সঙ্গে নিরাপত্তা আলোচনায় মক্কা চুক্তির ৩ দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+      "first_seen": "2026-10-31T05:56:14.953Z",
+      "last_update": "2026-10-31T05:56:14.955Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:32:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gpa-5-count-in-hsc-drops-by-29000/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.501Z",
+          "kind": "claim",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4223": {
@@ -35009,11 +35823,41 @@
     },
     "international-423": {
       "cluster_id": 423,
-      "headline": "ব্রাজিলে ফিলিস্তিনপন্থী লুলার জয় আর সার্বিয়ায় নেতানিয়াহুর মিত্র ভুচিসের ভরাডুবি কী বার্তা দিচ্ছে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+      "first_seen": "2026-10-31T05:56:14.957Z",
+      "last_update": "2026-10-31T05:56:14.959Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-fourth-shipment-of-uranium-for-the-second-unit-of-rooppur-has-arrived/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.504Z",
+          "kind": "claim",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-4230": {
@@ -38630,20 +39474,20 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
-        },
-        {
-          "cluster_id": 310,
-          "slug": "national-310",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আট বিভাগেই হতে পারে বৃষ্টি, কমতে পারে তাপমাত্রা"
         }
       ]
     },
@@ -52447,6 +53291,14 @@
       ],
       "related": [
         {
+          "cluster_id": 418,
+          "slug": "national-418",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়"
+        },
+        {
           "cluster_id": 409,
           "slug": "national-like-a-stone",
           "actor_links": 0,
@@ -59718,7 +60570,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’"
+        }
+      ]
     },
     "national-1850": {
       "cluster_id": 1850,
@@ -65603,6 +66464,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -65641,14 +66510,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -70109,6 +70970,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -70147,14 +71016,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -70383,6 +71244,14 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 304,
           "slug": "national-304",
           "actor_links": 0,
@@ -70405,14 +71274,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
-        },
-        {
-          "cluster_id": 256,
-          "slug": "national-256",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ধানক্ষেতে লুকিয়ে থেকেও গ্রেপ্তার হলেন আওয়ামী লীগ নেতা"
         }
       ]
     },
@@ -77896,6 +78757,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -77918,14 +78787,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
-        },
-        {
-          "cluster_id": 348,
-          "slug": "national-348",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
         }
       ]
     },
@@ -80664,20 +81525,20 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 402,
           "slug": "national-402",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
-        },
-        {
-          "cluster_id": 401,
-          "slug": "national-401",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমমন্ত্রী: রবিবার থেকে শ্রমিকদের মজুরি বোর্ড গঠন ও কার্যক্রম শুরু"
         }
       ]
     },
@@ -81906,6 +82767,14 @@
           "headline": "কলাবাগান বাসস্ট্যান্ডের কাছে ককটেল বিস্ফোরণ, আটক ৪"
         },
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 286,
           "slug": "national-286",
           "actor_links": 0,
@@ -81920,14 +82789,6 @@
           "source_links": 3,
           "claim_count": 13,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
           "cluster_id": 401,
@@ -84586,6 +85447,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, খান-আলী-আতার আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 401,
           "slug": "national-401",
           "actor_links": 0,
@@ -84616,14 +85485,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "কলাবাগানে ককটেল বিস্ফোরণ, উদ্ধার ১৩ ককটেল, গ্রেপ্তার আওয়ামী যুবলীগের চার নেতা–কর্মী"
-        },
-        {
-          "cluster_id": 286,
-          "slug": "national-286",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
         }
       ]
     },
@@ -84706,6 +85567,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -84744,14 +85613,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -87504,6 +88365,14 @@
       ],
       "related": [
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 31,
           "slug": "national-31",
           "actor_links": 0,
@@ -89436,6 +90305,14 @@
       ],
       "related": [
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -89474,14 +90351,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শাহবাগে এনসিপির গণবিক্ষোভ আজ, সর্বস্তরের মানুষকে অংশ নেওয়ার আহ্বান"
-        },
-        {
-          "cluster_id": 96,
-          "slug": "national-96",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         }
       ]
     },
@@ -95703,6 +96572,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 349,
           "slug": "national-349",
           "actor_links": 0,
@@ -95717,14 +96594,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আট বিভাগেই হতে পারে বৃষ্টি, কমতে পারে তাপমাত্রা"
-        },
-        {
-          "cluster_id": 273,
-          "slug": "politics-273",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
         }
       ]
     },
@@ -97066,20 +97935,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার"
+        },
+        {
           "cluster_id": 372,
           "slug": "national-372",
           "actor_links": 3,
           "source_links": 2,
           "claim_count": 4,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 335,
-          "slug": "national-335",
-          "actor_links": 3,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "গ্যাসের আগুন জ্বলছেই, ১৫ দিন পর্যবেক্ষণের পর রিলিফ কূপ খননের পরিকল্পনা পেট্রোবাংলার"
         }
       ]
     },
@@ -97661,7 +98530,7 @@
       "cluster_id": 373,
       "headline": "বিষাক্ত মদপানে ছাত্রদল নেতাসহ ২ যুবকের মৃত্যু",
       "first_seen": "2026-10-31T02:41:53.392Z",
-      "last_update": "2026-10-31T05:24:55.741Z",
+      "last_update": "2026-10-31T05:56:14.490Z",
       "claim_count": 2,
       "events": [
         {
@@ -100103,7 +100972,7 @@
       "cluster_id": 391,
       "headline": "অনূর্ধ্ব-২৩ দল নিয়েই ঢাকায় সাফে আসছে ভারত, স্কোয়াডে কারা",
       "first_seen": "2026-10-31T04:20:12.623Z",
-      "last_update": "2026-10-31T05:24:55.740Z",
+      "last_update": "2026-10-31T05:56:14.489Z",
       "claim_count": 2,
       "events": [
         {
@@ -100660,7 +101529,7 @@
       "cluster_id": 394,
       "headline": "আজ আন্তর্জাতিক দুর্যোগ প্রশমন দিবস",
       "first_seen": "2026-10-31T04:20:12.636Z",
-      "last_update": "2026-10-31T05:24:55.742Z",
+      "last_update": "2026-10-31T05:56:14.490Z",
       "claim_count": 3,
       "events": [
         {
@@ -104011,8 +104880,8 @@
       "cluster_id": 408,
       "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা",
       "first_seen": "2026-10-31T05:24:55.732Z",
-      "last_update": "2026-10-31T05:24:55.736Z",
-      "claim_count": 5,
+      "last_update": "2026-10-31T05:56:14.487Z",
+      "claim_count": 6,
       "events": [
         {
           "ts": "2026-10-31T04:21:45.000Z",
@@ -104067,6 +104936,28 @@
             "source_id": "channeli",
             "relation": "supports",
             "url": "https://www.channelionline.com/father-files-case-two-days-after-recovery-of-tahsif-sauris-body/"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 48433,
+          "claim_text": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiuwRBVV95cUxNV1gwSDdCdVZ3cHdvVXpGQzh4UHBncnlvMTFnTnRfM1hQaDBiQ09RUm5qWmItNmRHaXRHaTJCTE9NTjFzSG1MWXFTRmx1TThGQnZRSUVPRjF2MENuSm5oV1VmV3BtQmJmcDhOcGE5X1FaRlItMUpkekE5bk9vZjdFYktUd0djWnJOU1FVam5JUWJSb2h3QTlPLVVCV1A1R185MEllLUw2cWhyZ3hLMWhiVG1LTHA1TUJRbkxzeUVLQjVETDBUbUFjNXdLUWE4LXFETGJCN1o0QWtBTmE5TjRKYjRtazQ5UWRTR2dLMlpCel92cXRDaDdVT2lPMlM1QmY3ejNzUUNXN3FVNFNHT21heWhSMGRSd3g4TWJvR0w4ejNIZ0hJa0d6SmN1TlNkU0RaZHNfZVRSWTFxT2djdmh4NEM5UWlOanpuNThwVTcxUlFfSW9UX2ZaV1drSkItN2VlcUpGb3FZWVpsOFpTemZSdnNsMTJWT2liYVo4YWVycFRmejF1UWVUcDhsRERVd21pUTVhYVlSTG5uVmlLbDJDYzJ1RjNEMmdJdS0xUWtkS05KY1FmV3JIUHd4RXBrQm1hcU4wUl9iNWpXMUZ1M05XV2ppeENDZGV6Q1BlWDFIUmZHS2V3U0xkX2sxVms4eUZFSnFQWl9kNkJ2OGFxa2RGMzhhYXFCX0Q2bFB4WHpKZmprMV9vTkRMaUNHRi1HNmM5Q3g0cDBDWUh1WjVzckYySDJicm0wRkpfdGd30gHABEFVX3lxTE1aVjlId2lYYU4wbUNjSUhMaXJGTXdKNTJGOFhaaEM0d0FIbjdlY3VpeVBEblZ3Z3pCMTY4ZlgxYTBwVWMxR0hPd25KUmxodm11bDlzLTdvMGhBOWdWTFRBWDhyUkRiNml5R1hXeUZMMWg2Sm1uTDdmdVpZclBBQ3BoS200TG9aTFJQdG9HSGhScl95UnhlMnJHOFJyRXRJYjFfVjhva1NaUV9IR014MTBuM2pteU53eWFxbm9xLVpLUC1uZk9tODYtSDJHVmZON1JpVldEMllWcVJvQXBWcHFQUDRzU1BVam9yaWtfVExtMzJuVTNvYS1DcE9ZcUpsckZmNlhVNy1NNENCdnZQTDlqUC16Z1B4R0EzMFc3eHZ0OXQ2WXUzeTVydXZWR0JKYU5FZV9sZWc2M3FKeklHV0VzdEhaM0NIMzYtMERPcVVfN2ZiQWZrQVpMNGZoS1VJZS1aYmpvZG8yN2d4ZnNTS1p4Q0NTejJGbG1RRXZiUk1MemNTeDRfQTJTU21xa3BhVGFfSUNpNDdxNnpQUnNPRGZmcnhjZVljTTRfU0VqajN4bDgzZlNRM2pXU012eEJlNUFXUUFOVVJCNlhPREVQWVdRZWdMd2x0blVwNXFHTXpDLTgxQVRYWktQYUJ2YWZTM3gwLVZ3REx6bVZFWWJJT3R2MnpocF9RVzd1S2RyZmhKV3d6WHZoMV9CNnBKalF3UXgyRXhTWHdBRnNCRktYZVlTYU1YQzN0N2xvLUkzdGdoMw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:53:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiuwRBVV95cUxNV1gwSDdCdVZ3cHdvVXpGQzh4UHBncnlvMTFnTnRfM1hQaDBiQ09RUm5qWmItNmRHaXRHaTJCTE9NTjFzSG1MWXFTRmx1TThGQnZRSUVPRjF2MENuSm5oV1VmV3BtQmJmcDhOcGE5X1FaRlItMUpkekE5bk9vZjdFYktUd0djWnJOU1FVam5JUWJSb2h3QTlPLVVCV1A1R185MEllLUw2cWhyZ3hLMWhiVG1LTHA1TUJRbkxzeUVLQjVETDBUbUFjNXdLUWE4LXFETGJCN1o0QWtBTmE5TjRKYjRtazQ5UWRTR2dLMlpCel92cXRDaDdVT2lPMlM1QmY3ejNzUUNXN3FVNFNHT21heWhSMGRSd3g4TWJvR0w4ejNIZ0hJa0d6SmN1TlNkU0RaZHNfZVRSWTFxT2djdmh4NEM5UWlOanpuNThwVTcxUlFfSW9UX2ZaV1drSkItN2VlcUpGb3FZWVpsOFpTemZSdnNsMTJWT2liYVo4YWVycFRmejF1UWVUcDhsRERVd21pUTVhYVlSTG5uVmlLbDJDYzJ1RjNEMmdJdS0xUWtkS05KY1FmV3JIUHd4RXBrQm1hcU4wUl9iNWpXMUZ1M05XV2ppeENDZGV6Q1BlWDFIUmZHS2V3U0xkX2sxVms4eUZFSnFQWl9kNkJ2OGFxa2RGMzhhYXFCX0Q2bFB4WHpKZmprMV9vTkRMaUNHRi1HNmM5Q3g0cDBDWUh1WjVzckYySDJicm0wRkpfdGd30gHABEFVX3lxTE1aVjlId2lYYU4wbUNjSUhMaXJGTXdKNTJGOFhaaEM0d0FIbjdlY3VpeVBEblZ3Z3pCMTY4ZlgxYTBwVWMxR0hPd25KUmxodm11bDlzLTdvMGhBOWdWTFRBWDhyUkRiNml5R1hXeUZMMWg2Sm1uTDdmdVpZclBBQ3BoS200TG9aTFJQdG9HSGhScl95UnhlMnJHOFJyRXRJYjFfVjhva1NaUV9IR014MTBuM2pteU53eWFxbm9xLVpLUC1uZk9tODYtSDJHVmZON1JpVldEMllWcVJvQXBWcHFQUDRzU1BVam9yaWtfVExtMzJuVTNvYS1DcE9ZcUpsckZmNlhVNy1NNENCdnZQTDlqUC16Z1B4R0EzMFc3eHZ0OXQ2WXUzeTVydXZWR0JKYU5FZV9sZWc2M3FKeklHV0VzdEhaM0NIMzYtMERPcVVfN2ZiQWZrQVpMNGZoS1VJZS1aYmpvZG8yN2d4ZnNTS1p4Q0NTejJGbG1RRXZiUk1MemNTeDRfQTJTU21xa3BhVGFfSUNpNDdxNnpQUnNPRGZmcnhjZVljTTRfU0VqajN4bDgzZlNRM2pXU012eEJlNUFXUUFOVVJCNlhPREVQWVdRZWdMd2x0blVwNXFHTXpDLTgxQVRYWktQYUJ2YWZTM3gwLVZ3REx6bVZFWWJJT3R2MnpocF9RVzd1S2RyZmhKV3d6WHZoMV9CNnBKalF3UXgyRXhTWHdBRnNCRktYZVlTYU1YQzN0N2xvLUkzdGdoMw?oc=5"
           }
         },
         {
@@ -104202,6 +105093,24 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.420Z",
+          "kind": "claim",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50096,
+          "claim_text": "তাহসিফের মৃত্যুর ঘটনায় হত্যা মামলা দায়ের করলেন বাবা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -104304,7 +105213,7 @@
       "cluster_id": 409,
       "headline": "ভারতে কারাভোগ শেষে দেশে ফিরলেন ১০ নারী",
       "first_seen": "2026-10-31T05:24:55.737Z",
-      "last_update": "2026-10-31T05:24:55.739Z",
+      "last_update": "2026-10-31T05:56:14.488Z",
       "claim_count": 2,
       "events": [
         {
@@ -104925,12 +105834,451 @@
     },
     "national-415": {
       "cluster_id": 415,
-      "headline": "বেঙ্গল কমার্শিয়াল ব্যাংকের ষষ্ঠ এজিএম অনুষ্ঠিত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+      "first_seen": "2026-10-31T05:56:14.463Z",
+      "last_update": "2026-10-31T05:56:14.474Z",
+      "claim_count": 10,
+      "events": [
+        {
+          "ts": "2026-10-31T00:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/4ym0b375o7"
+          }
+        },
+        {
+          "ts": "2026-10-31T00:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/4ym0b375o7"
+          }
+        },
+        {
+          "ts": "2026-10-31T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/tr02c4eha9"
+          }
+        },
+        {
+          "ts": "2026-10-31T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/tr02c4eha9"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:03:45.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/pmgdt15hp8"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:03:45.000Z",
+          "kind": "evidence",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/chakri-news/pmgdt15hp8"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:49:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm62yel91yepo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:49:15.000Z",
+          "kind": "evidence",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cm62yel91yepo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:52:14.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fxrklj2910"
+          }
+        },
+        {
+          "ts": "2026-10-31T02:52:14.000Z",
+          "kind": "evidence",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/fxrklj2910"
+          }
+        },
+        {
+          "ts": "2026-10-31T04:28:17.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/xtfimn4vcl"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/s8v0cf76cf"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/analysis/s8v0cf76cf"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:02:02.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/mkusz85ilw"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:02:02.000Z",
+          "kind": "evidence",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/mkusz85ilw"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:04:08.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/vkv3cwjhaa"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:04:08.000Z",
+          "kind": "evidence",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/vkv3cwjhaa"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:07.000Z",
+          "kind": "evidence",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/bv5t5968g0"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:07.000Z",
+          "kind": "evidence",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/examination/bv5t5968g0"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.446Z",
+          "kind": "claim",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.457Z",
+          "kind": "claim",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.459Z",
+          "kind": "claim",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.462Z",
+          "kind": "claim",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.463Z",
+          "kind": "claim",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.465Z",
+          "kind": "claim",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.467Z",
+          "kind": "claim",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.469Z",
+          "kind": "claim",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.471Z",
+          "kind": "claim",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.473Z",
+          "kind": "claim",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50106,
+          "claim_text": "বিটিআরসির প্রস্তাবের পর তরঙ্গের দাম আরও কম চায় অপারেটররা, রাজস্ব নিয়ে চিন্তায় সরকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50107,
+          "claim_text": "এইচএসসির ফল আজ, এবার ফল দেখতে এসএমএস পাঠাতে হবে নতুন নম্বরে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50108,
+          "claim_text": "বিশ্বের তৃতীয় দীর্ঘতম নদী ইয়াংজিতে কেন মাছ ধরা নিষিদ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50109,
+          "claim_text": "প্রাথমিক শিক্ষকদের পদোন্নতি: আইনি জট খুলেছে, পদোন্নতির অপেক্ষা কবে শেষ হবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50110,
+          "claim_text": "পত্রিকা: 'তাহসিফের মৃত্যু: বন্ধু দীপের তথ্যে বাড়ছে রহস্য'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50111,
+          "claim_text": "আপাত স্বস্তি, আছে সংস্কারের চাপ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50112,
+          "claim_text": "আমরা কুমিল্লায় এআই নিয়ে কাজ করার পরিকল্পনা করছি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50113,
+          "claim_text": "এইচএসসি ও সমমানের পরীক্ষায় পাসের হার ৫২.১২ শতাংশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50114,
+          "claim_text": "এবার এইচএসসি ও সমমানের পরীক্ষায় জিপিএ–৫ পেয়েছেন ৪০০৮৪ জন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50115,
+          "claim_text": "এইচএসসির ফল প্রকাশ, ৯ শিক্ষা বোর্ডের জিপিএ-৫ পেয়েছেন ৩৫৯৪৮",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 3,
+          "source_links": 2,
+          "claim_count": 27,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        },
+        {
+          "cluster_id": 253,
+          "slug": "sports-253",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 236,
+          "slug": "politics-236",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তার মৃত্যু রহস্য: যেসব বিষয় তদন্ত করছে পুলিশ"
+        },
+        {
+          "cluster_id": 201,
+          "slug": "politics-201",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "জাপানে এক লাখ কর্মী পাঠানোর খবরে বিভ্রান্তি যেভাবে, আসলে কী?"
+        },
+        {
+          "cluster_id": 192,
+          "slug": "sports-192",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        }
+      ]
     },
     "national-4152": {
       "cluster_id": 4152,
@@ -104988,12 +106336,131 @@
     },
     "national-416": {
       "cluster_id": 416,
-      "headline": "বিশ্বকাপ ও জলমাঠ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার",
+      "first_seen": "2026-10-31T05:56:14.475Z",
+      "last_update": "2026-10-31T05:56:14.477Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-30T06:56:27.000Z",
+          "kind": "evidence",
+          "claim_id": 50116,
+          "claim_text": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxOS0dVWXFNXzRWUWd1VGxuZFJEVlBVcUhZNmJMM3ZkLXNtT2F6UG5fckRxMzFNSjZSakRKNlZOYy1yREYzWFBJaFBTS1B6eEF2U2JoWjd5MUpmanFtQU1IQ2lnclNTYzBOSTdObFdXc0J2M1pNNzhnQ3pGYTBTbHZWdkVGbVh1YjUxRlhSZWVGMzh1UTJzc1dGcUJ6enhRNk44MGlTTHlMRHlyaG9DUkEtczZDR0NZci1maWdfaVZzcjVFTGN4S1VBdGxCem1oMUdJdzhMRDkxQnhkeXp4LVU1ekhiMV9vdW1TNEpkUlh6NnRWcjRCUW1WZTcwTlFSbGNRWHlNdE9sXzU4LUoydV9zZWVLTW5iTlJhYklhZVpnMzgteExZcnQ0eEJ2VHNXMWI4Q1NLSmU3T2hqZEc4aVB0OWhOcWppZUV2TnpjTVZ0N3pKM2p5aDhtTndHcG1MU0ZPTWZMcFhPLUdlR1FQbDBvNzhGRnhEbnVaMHd6OGtTYU5BZmhKSmdwZTN6RDNXcS0zTHVlcFVESXNpeTlkWjJ5UTA1OWVWU1h3ZVhaRG85eTdyVjZjU3J3OTJkMlJ2UFc3OWJFMjJabWJYdnNXU2pHY3VmZ1NtdnFVSDFqQlpKRTZNQkZucW1JM2I4cjBTbkU0Vlg2TzhzdDc0ZTdGYjBId0ZmWWVVWnN1Yms5cmpwaDk1b3RtWndFSEFyUTc0Uzc3MDVnVlln0gGrBEFVX3lxTFBvTzl4Nm9GMkpQZmhiSXFDdjNEWEU3RjNsYTQyVnp2eFZ0Rnd4dTdxTlNLU21IYXg1dEVSZXFTMm8zVV90eWFxODBub3d6Z3VXRU1kM01MWm1FYjB3RmNCSEpueTdoZDkzeFBxMzFXY2JMdlg1akxReWxpcWZOUXAyVnRqQ1JfNFY5UVRHa3d1R0NjWHlQVVhnZVpYMUtfaU1LUkVZVHBLM29xUVRiMDlic2lEYVZtU25UR3NoUWtFNWxGZEdXdEp3aVFWdVczTkZoTUhCR3k4MGZCOXVWUE1KNVpWbVlQLUpGMEhkRTU5cnlIbDRORTNobGVIYmlLY0owcFRmN1lmN1NsTDRtSGdlbHNjTy00NU9yTnZfdkpkeFl2WnZhWWFyZ1g3NTliUUd0dE0xMUI5UFNhOHhUVzY3d3p0RDBKMWZmUmd6VmFaQk9fekhNZjdOLXQ1ME5hSl9DcnpTUzkzblpHYWpjUHRFR0hZbWFHbFFYaFVCa2I5QnpqOXpZeVg2NERvbHVON2tFQ0tOSlBiaElDWjcwbE1QTXlndDlBMFNQSWJEOFVfc1RwRzZFeEg1RGR6VVVUdVZGY1d5ajlBT2owTUdIQWVDMC1ZeHcxcnp4bjFNRnhFY0hSeG9vN3dzZ0doTlhzR09UcFpYYXRuOVlhTlo5LU12U1dOUGMyUjdQbWZNd2VYMml0U3Bma3NFYktMbzFDZDhIclRnS3pPM1VsSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:22:57.000Z",
+          "kind": "evidence",
+          "claim_id": 50116,
+          "claim_text": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKMVcxaXk0YmRPMzdnMFFWMThvYV9CTFlwLXE4Y3V3M0JOQUdKX0dtc3UtOTVQczdQOVhkdGI2WTVSYWdNMGY2QmJpajBzT3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:22:57.000Z",
+          "kind": "evidence",
+          "claim_id": 50117,
+          "claim_text": "ভারতে যৌনপল্লি থেকে উদ্ধার ৬ বাংলাদেশি তরুণী",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKMVcxaXk0YmRPMzdnMFFWMThvYV9CTFlwLXE4Y3V3M0JOQUdKX0dtc3UtOTVQczdQOVhkdGI2WTVSYWdNMGY2QmJpajBzT3c?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.476Z",
+          "kind": "claim",
+          "claim_id": 50116,
+          "claim_text": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.479Z",
+          "kind": "claim",
+          "claim_id": 50117,
+          "claim_text": "ভারতে যৌনপল্লি থেকে উদ্ধার ৬ বাংলাদেশি তরুণী"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50116,
+          "claim_text": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50117,
+          "claim_text": "ভারতে যৌনপল্লি থেকে উদ্ধার ৬ বাংলাদেশি তরুণী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        },
+        {
+          "cluster_id": 310,
+          "slug": "national-310",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আট বিভাগেই হতে পারে বৃষ্টি, কমতে পারে তাপমাত্রা"
+        },
+        {
+          "cluster_id": 273,
+          "slug": "politics-273",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "স্বরাষ্ট্রমন্ত্রী ও জ্বালানিমন্ত্রীর পদত্যাগসহ চার দফা দাবিতে শাহবাগে এনসিপির গণবিক্ষোভ কর্মসূচি"
+        },
+        {
+          "cluster_id": 239,
+          "slug": "national-239",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নাঈমের ঘূর্ণিতে কুপোকাত ওয়েস্ট ইন্ডিজ, লিড পেল বাংলাদেশ"
+        },
+        {
+          "cluster_id": 212,
+          "slug": "national-212",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শাহবাগে এনসিপির গণবিক্ষোভ আজ, সর্বস্তরের মানুষকে অংশ নেওয়ার আহ্বান"
+        },
+        {
+          "cluster_id": 96,
+          "slug": "national-96",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
+        }
+      ]
     },
     "national-4161": {
       "cluster_id": 4161,
@@ -105060,12 +106527,91 @@
     },
     "national-417": {
       "cluster_id": 417,
-      "headline": "লাইভে ‘বিএনপিকে ভোট দিয়া আজকে ভুক্তভোগী’ বলে ক্ষোভের মুখে নারী ব্যবসায়ী, থানায় নিল পুলিশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+      "first_seen": "2026-10-31T05:56:14.478Z",
+      "last_update": "2026-10-31T05:56:14.481Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-30T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WWlptOEVIN3dvRkxwaFhQb25ydFVjMUFhWllPVWVqWHJwMnVZTHFzaFdQLUFFdEFtQkNMRm5QQXEzOU9PZWw2TFpTeXh5WkpVMEFEcmlzV08xYjY3Z3Q0cFBvNV9JNGZ6OWx6bFN1aUNZVUFvTWUzRm9FSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-30T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WWlptOEVIN3dvRkxwaFhQb25ydFVjMUFhWllPVWVqWHJwMnVZTHFzaFdQLUFFdEFtQkNMRm5QQXEzOU9PZWw2TFpTeXh5WkpVMEFEcmlzV08xYjY3Z3Q0cFBvNV9JNGZ6OWx6bFN1aUNZVUFvTWUzRm9FSQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:32.000Z",
+          "kind": "evidence",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%ae%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%b0-%e0%a6%85%e0%a6%a8%e0%a7%81%e0%a6%ae%e0%a6%a4%e0%a6%bf-%e0%a6%aa%e0%a7%87%e0%a6%b2-%e0%a6%a6%e0%a7%87%e0%a6%b6%e0%a7%87%e0%a6%b0/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.482Z",
+          "kind": "claim",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.484Z",
+          "kind": "claim",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50118,
+          "claim_text": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50119,
+          "claim_text": "প্রদর্শনীর অনুমতি পেল ‘গ্যাপ’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 185,
+          "slug": "politics-185",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পিরোজপুরে মুক্তিযোদ্ধার দাফনে বাধা দেয়ার প্রতিবাদে নগরে বিক্ষোভ"
+        }
+      ]
     },
     "national-4171": {
       "cluster_id": 4171,
@@ -105114,12 +106660,91 @@
     },
     "national-418": {
       "cluster_id": 418,
-      "headline": "নতুন পে স্কেলে বেতন নির্ধারণ শেষ, ভাতা নিয়ে নতুন সিদ্ধান্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+      "first_seen": "2026-10-31T05:56:14.482Z",
+      "last_update": "2026-10-31T05:56:14.485Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-10-29T11:57:35.000Z",
+          "kind": "evidence",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPblZEeThjQUxTUjVNWnIzSURsX1J1dzNYcnFQMXNLNUIwVVhqVU96UmcxM3g5ODlJdzhpR1BpbjJIMUNGbFZycWZVSlVlTzVGbjQ5VzRWanBsd2plX3V6SWJ5dkhZSEZhR3VwZnkzckJpNEgyclZvQm90a3VhbEhnVVdrMzlITF9QbXp2dEdEaFFtMURnNWJ0c2gwa0xyTzd0X2JEdlRUNGpmQkpPSGtnYmY4b2JjNUM3U0hTOUhyZkFSM09Sek5sNHpSZ3JtVDI5dFc5b2dWak10RV84SkVQamhKNTJNcENDM3FwMXhQZzhTTW5lZFpwVEQ2Q3pncFBsU1FhTzAzT3ZzZlFpNDVjcjN5UFF3VDZSU2hCZTBPWEh3dUJvbkNPdWd4SGVxazg4TnBKX9IBugJBVV95cUxPR2xfUUNlZzdhb0J3VlRMN1RvaDM2UWhJMFNlajM0Ni1xa2FWUTJqdEctT0RDeVExV0dyREVfcTF5eGh6QUpBbHEwUkhaWVNaZU1SdWV4TWpYMGt3Y1ltbjE5R3lvUFdvbUpTOWtoZ1lXdnlQZUZjLXVLeVVQZTVKMGFYR1ljNUxQMmZ4LTFWYmR4TDAyMHQxbDNRWFpBYXFDakZmc0NwRnk0S0ZaVWl2M21CSG1KVERlSGhnaWJOcEdTN0F3NmljNUhqcTlFTGtuS0tpQnV3S01VV3N0M1phaEZxSEhzQnoxOVVUVjVfcEdKb0JnSWk5b3JkVmVTbGo2N3MwaUYweEg2cTdhTElPaFM3bDNveHlwUUtueDROV25DN3FQWGxnMGJyZE5OZWJtUUVpSUFXdmNmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-29T11:57:35.000Z",
+          "kind": "evidence",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPblZEeThjQUxTUjVNWnIzSURsX1J1dzNYcnFQMXNLNUIwVVhqVU96UmcxM3g5ODlJdzhpR1BpbjJIMUNGbFZycWZVSlVlTzVGbjQ5VzRWanBsd2plX3V6SWJ5dkhZSEZhR3VwZnkzckJpNEgyclZvQm90a3VhbEhnVVdrMzlITF9QbXp2dEdEaFFtMURnNWJ0c2gwa0xyTzd0X2JEdlRUNGpmQkpPSGtnYmY4b2JjNUM3U0hTOUhyZkFSM09Sek5sNHpSZ3JtVDI5dFc5b2dWak10RV84SkVQamhKNTJNcENDM3FwMXhQZzhTTW5lZFpwVEQ2Q3pncFBsU1FhTzAzT3ZzZlFpNDVjcjN5UFF3VDZSU2hCZTBPWEh3dUJvbkNPdWd4SGVxazg4TnBKX9IBugJBVV95cUxPR2xfUUNlZzdhb0J3VlRMN1RvaDM2UWhJMFNlajM0Ni1xa2FWUTJqdEctT0RDeVExV0dyREVfcTF5eGh6QUpBbHEwUkhaWVNaZU1SdWV4TWpYMGt3Y1ltbjE5R3lvUFdvbUpTOWtoZ1lXdnlQZUZjLXVLeVVQZTVKMGFYR1ljNUxQMmZ4LTFWYmR4TDAyMHQxbDNRWFpBYXFDakZmc0NwRnk0S0ZaVWl2M21CSG1KVERlSGhnaWJOcEdTN0F3NmljNUhqcTlFTGtuS0tpQnV3S01VV3N0M1phaEZxSEhzQnoxOVVUVjVfcEdKb0JnSWk5b3JkVmVTbGo2N3MwaUYweEg2cTdhTElPaFM3bDNveHlwUUtueDROV25DN3FQWGxnMGJyZE5OZWJtUUVpSUFXdmNmdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-10-31T05:11:01.000Z",
+          "kind": "evidence",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%ab%e0%a6%bf%e0%a6%ab%e0%a6%be%e0%a6%b0-%e0%a6%aa%e0%a6%b0-%e0%a6%8f%e0%a6%ac%e0%a6%be%e0%a6%b0-%e0%a6%9f%e0%a7%87%e0%a6%95%e0%a6%a8%e0%a7%8b-%e0%a6%b8%e0%a6%be%e0%a6%ab-%e0%a6%9a%e0%a7%8d/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.488Z",
+          "kind": "claim",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.491Z",
+          "kind": "claim",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50120,
+          "claim_text": "ফিফার পর এবার টেকনো সাফ চ্যাম্পিয়নশিপের মঞ্চ মাতাবেন সঞ্জয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50121,
+          "claim_text": "এবার দেশ মাতাবেন সঞ্জয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঝালকাঠিতে ঘনচিনি দিয়ে আইসক্রিম তৈরি, জরিমানা ৫০ হাজার"
+        }
+      ]
     },
     "national-4181": {
       "cluster_id": 4181,
@@ -105168,11 +106793,41 @@
     },
     "national-419": {
       "cluster_id": 419,
-      "headline": "একঝলক (১১ অক্টোবর ২০২৬)",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+      "first_seen": "2026-10-31T05:56:14.941Z",
+      "last_update": "2026-10-31T05:56:14.944Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:43:06.000Z",
+          "kind": "evidence",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gold-prices-in-the-country-see-another-major-drop-falling-by-5482-taka-per-bhori/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.493Z",
+          "kind": "claim",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50122,
+          "claim_text": "দেশে স্বর্ণের দামে আবারও বড় পতন, ভরিতে কমল ৫ হাজার ৪৮২ টাকা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4190": {
@@ -105417,11 +107072,41 @@
     },
     "national-420": {
       "cluster_id": 420,
-      "headline": "ক্রসফায়ার যদি প্রয়োজন হয়, সরকার যদি অ্যালাউ করে, আমরা সেটাই করব: আইজিপি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আংশিক মেঘলা থাকবে রাজধানীর আকাশ",
+      "first_seen": "2026-10-31T05:56:14.946Z",
+      "last_update": "2026-10-31T05:56:14.948Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:36:30.000Z",
+          "kind": "evidence",
+          "claim_id": 50123,
+          "claim_text": "আংশিক মেঘলা থাকবে রাজধানীর আকাশ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-capitals-sky-will-remain-partly-cloudy/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.496Z",
+          "kind": "claim",
+          "claim_id": 50123,
+          "claim_text": "আংশিক মেঘলা থাকবে রাজধানীর আকাশ"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50123,
+          "claim_text": "আংশিক মেঘলা থাকবে রাজধানীর আকাশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4200": {
@@ -105480,11 +107165,41 @@
     },
     "national-421": {
       "cluster_id": 421,
-      "headline": "মোটরসাইকেলে পিকআপের ধাক্কা, সড়কে ছিটকে পড়ে মা-ছেলে নিহত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+      "first_seen": "2026-10-31T05:56:14.950Z",
+      "last_update": "2026-10-31T05:56:14.952Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:35:59.000Z",
+          "kind": "evidence",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/crkg7pp44k19o?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.498Z",
+          "kind": "claim",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50124,
+          "claim_text": "কেন উত্তর কোরিয়ার হ্যাকাররা বাইন্যান্সের হ্যাকিংয়ের ঘটনায় সন্দেহের তালিকায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4210": {
@@ -105561,11 +107276,41 @@
     },
     "national-422": {
       "cluster_id": 422,
-      "headline": "ডিসেম্বর নয়, বুকের পাটা থাকলে এখন দেশে আসেন: তথ্য প্রতিমন্ত্রী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+      "first_seen": "2026-10-31T05:56:14.953Z",
+      "last_update": "2026-10-31T05:56:14.955Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:32:53.000Z",
+          "kind": "evidence",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gpa-5-count-in-hsc-drops-by-29000/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.501Z",
+          "kind": "claim",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50125,
+          "claim_text": "এইচএসসিতে জিপিএ-৫ কমেছে ২৯ হাজার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4220": {
@@ -105624,11 +107369,41 @@
     },
     "national-423": {
       "cluster_id": 423,
-      "headline": "সাবেক এমপি নয়ন ও তার স্ত্রীর বিরুদ্ধে পৃথক মামলা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+      "first_seen": "2026-10-31T05:56:14.957Z",
+      "last_update": "2026-10-31T05:56:14.959Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-10-31T05:28:26.000Z",
+          "kind": "evidence",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-fourth-shipment-of-uranium-for-the-second-unit-of-rooppur-has-arrived/"
+          }
+        },
+        {
+          "ts": "2026-10-31T06:14:38.504Z",
+          "kind": "claim",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে"
+        },
+        {
+          "ts": "2026-10-31T06:14:38.608Z",
+          "kind": "verify",
+          "claim_id": 50126,
+          "claim_text": "রূপপুরের দ্বিতীয় ইউনিটের ইউরেনিয়ামের চতুর্থ চালান পৌঁছেছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-4231": {
@@ -118402,20 +120177,20 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
-        },
-        {
-          "cluster_id": 310,
-          "slug": "national-310",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আট বিভাগেই হতে পারে বৃষ্টি, কমতে পারে তাপমাত্রা"
         }
       ]
     },
@@ -121663,7 +123438,7 @@
       "cluster_id": 409,
       "headline": "ভারতে কারাভোগ শেষে দেশে ফিরলেন ১০ নারী",
       "first_seen": "2026-10-31T05:24:55.737Z",
-      "last_update": "2026-10-31T05:24:55.739Z",
+      "last_update": "2026-10-31T05:56:14.488Z",
       "claim_count": 2,
       "events": [
         {
@@ -128738,7 +130513,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 417,
+          "slug": "national-417",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুক্তির অনুমতি পেল দেশের প্রথম এআই চলচ্চিত্র ‘গ্যাপ’"
+        }
+      ]
     },
     "politics-1852": {
       "cluster_id": 1852,
@@ -131543,6 +133327,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 416,
+          "slug": "national-416",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতের পুনেতে যৌনপল্লি থেকে ৬ বাংলাদেশি তরুণী উদ্ধার"
+        },
+        {
           "cluster_id": 370,
           "slug": "national-370",
           "actor_links": 0,
@@ -131565,14 +133357,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
-        },
-        {
-          "cluster_id": 348,
-          "slug": "national-348",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
         }
       ]
     },
@@ -132166,6 +133950,14 @@
           "headline": "কলাবাগান বাসস্ট্যান্ডের কাছে ককটেল বিস্ফোরণ, আটক ৪"
         },
         {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
           "cluster_id": 286,
           "slug": "national-286",
           "actor_links": 0,
@@ -132180,14 +133972,6 @@
           "source_links": 3,
           "claim_count": 13,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
           "cluster_id": 401,
@@ -139652,7 +141436,7 @@
       "cluster_id": 391,
       "headline": "অনূর্ধ্ব-২৩ দল নিয়েই ঢাকায় সাফে আসছে ভারত, স্কোয়াডে কারা",
       "first_seen": "2026-10-31T04:20:12.623Z",
-      "last_update": "2026-10-31T05:24:55.740Z",
+      "last_update": "2026-10-31T05:56:14.489Z",
       "claim_count": 2,
       "events": [
         {
