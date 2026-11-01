@@ -1,10 +1,12 @@
 ---
 title: "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
+thumbnail: "/images/national-770.webp"
+thumbnailAlt: "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে — যাচাইডেস্ক"
 seoTitle: "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
 excerpt: "প্রতিটি পত্রের জন্য ১৫০ টাকা হারে ফি প্রযোজ্য এবং দ্বিপত্রবিশিষ্ট বিষয়ের ক্ষেত্রে উভয় পত্রের জন্য আবেদন করতে হবে। বাড়িতে বাবার মরদেহ রেখে পরীক্ষা দেওয়া আফিয়া পেলেন এ গ্রেড কুমিল"
 seoDescription: "প্রতিটি পত্রের জন্য ১৫০ টাকা হারে ফি প্রযোজ্য এবং দ্বিপত্রবিশিষ্ট বিষয়ের ক্ষেত্রে উভয় পত্রের জন্য আবেদন করতে হবে। বাড়িতে বাবার মরদেহ রেখে পরীক্ষা দেওয়া …"
 date: 2026-11-01T04:08:04.000Z
-publishedAt: 2026-11-01T13:27:09.225Z
+publishedAt: 2026-11-01T13:23:29.656Z
 developing: false
 category: "national"
 tags: ["education", "economy", "dhaka", "cumilla", "health"]
@@ -31,7 +33,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-01T13:27:09.020Z"
+  evaluatedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 770
   claimIds:
     - 156094
@@ -52,7 +54,7 @@ publication:
   slug: "national-770"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-01T13:27:09.020Z"
+  checkedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 770
   claimIds:
     - 156094

@@ -1,10 +1,12 @@
 ---
 title: "রাজনৈতিক সুর বদলালেও জুলাই নিয়ে আগের অবস্থানেই শেখ হাসিনা"
+thumbnail: "/images/politics-793.webp"
+thumbnailAlt: "রাজনৈতিক সুর বদলালেও জুলাই নিয়ে আগের অবস্থানেই শেখ হাসিনা — ছবি: চ্যানেল আই"
 seoTitle: "রাজনৈতিক সুর বদলালেও জুলাই নিয়ে আগের অবস্থানেই শেখ হাসিনা"
 excerpt: "গত ১৯ অক্টোবর ওয়াশিংটনে আয়োজিত সংবাদ সম্মেলন এবং ২৮ অক্টোবর সাংবাদিক সুলতানা রহমানকে দেওয়া সাক্ষাৎকারে তার বক্তব্যের মূল সুর ছিল দেশে ফেরা, রাজনৈতিক পুনর্মিলন ও অংশগ্রহণমূলক নির্বা"
 seoDescription: "গত ১৯ অক্টোবর ওয়াশিংটনে আয়োজিত সংবাদ সম্মেলন এবং ২৮ অক্টোবর সাংবাদিক সুলতানা রহমানকে দেওয়া সাক্ষাৎকারে তার বক্তব্যের মূল সুর ছিল দেশে ফেরা, রাজনৈতিক পুনর্…"
 date: 2026-11-01T12:28:36.000Z
-publishedAt: 2026-11-01T13:27:09.193Z
+publishedAt: 2026-11-01T13:23:29.623Z
 developing: true
 category: "politics"
 tags: ["politics"]
@@ -27,7 +29,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-01T13:27:09.020Z"
+  evaluatedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 793
   claimIds:
     - 161904
@@ -42,7 +44,7 @@ publication:
   slug: "politics-793"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-01T13:27:09.020Z"
+  checkedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 793
   claimIds:
     - 161904

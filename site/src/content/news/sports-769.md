@@ -1,10 +1,12 @@
 ---
 title: "সাফে রোনান সুলিভানকে পাচ্ছে না বাংলাদেশ"
+thumbnail: "/images/sports-769.webp"
+thumbnailAlt: "সাফে রোনান সুলিভানকে পাচ্ছে না বাংলাদেশ — ছবি: প্রথম আলো"
 seoTitle: "সাফে রোনান সুলিভানকে পাচ্ছে না বাংলাদেশ"
 excerpt: "সাফ চ্যাম্পিয়নশিপের জন্য গত ২৪ অক্টোবর রোনান সুলিভানকে নিয়ে ২৮ জনের প্রাথমিক স্কোয়াড ঘোষণা করে বাফুফে। রোনান গত এপ্রিলে সাফ অনূর্ধ্ব-২০ চ্যাম্পিয়নশিপে বাংলাদেশের শিরোপাজয়ী দলের সদস"
 seoDescription: "সাফ চ্যাম্পিয়নশিপের জন্য গত ২৪ অক্টোবর রোনান সুলিভানকে নিয়ে ২৮ জনের প্রাথমিক স্কোয়াড ঘোষণা করে বাফুফে। রোনান গত এপ্রিলে সাফ অনূর্ধ্ব-২০ চ্যাম্পিয়নশিপে বাং…"
 date: 2026-11-01T07:51:09.000Z
-publishedAt: 2026-11-01T13:27:09.217Z
+publishedAt: 2026-11-01T13:23:29.647Z
 developing: false
 category: "sports"
 tags: ["education", "dhaka"]
@@ -32,7 +34,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-01T13:27:09.020Z"
+  evaluatedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 769
   claimIds:
     - 156090
@@ -54,7 +56,7 @@ publication:
   slug: "sports-769"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-01T13:27:09.020Z"
+  checkedAt: "2026-11-01T13:23:29.451Z"
   clusterId: 769
   claimIds:
     - 156090
