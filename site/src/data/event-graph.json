@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6487,
+    "storyCount": 6488,
     "kinds": [
       "claim",
       "evidence",
@@ -358,7 +358,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T12:34:25.524Z",
+      "last_update": "2026-11-02T13:07:45.251Z",
       "claim_count": 3,
       "events": [
         {
@@ -1313,7 +1313,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T12:34:25.517Z",
+      "last_update": "2026-11-02T13:07:45.244Z",
       "claim_count": 2,
       "events": [
         {
@@ -1544,6 +1544,45 @@
           "kind": "verify",
           "claim_id": 284774,
           "claim_text": "রাইজ এআই বাংলাদেশে ব্যবহারকারীদের জন্য নিয়ে এলো ২৫টিরও বেশি এআই মডেল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-1075": {
+      "cluster_id": 1075,
+      "headline": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+      "first_seen": "2026-11-02T13:07:45.640Z",
+      "last_update": "2026-11-02T13:07:45.642Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:47:16.000Z",
+          "kind": "evidence",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-trade-show-returns-to-dhaka-after-two-and-a-half-years-amcham-hopeful-for-us-investment/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.525Z",
+          "kind": "claim",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -3068,6 +3107,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -3106,14 +3153,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
-        },
-        {
-          "cluster_id": 777,
-          "slug": "national-777",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিকদের বিক্ষোভে শ্রমমন্ত্রীর বিদেশ সফর বাতিল, মন্ত্রীদের নিয়ে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -4866,14 +4905,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -4896,6 +4927,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -13859,19 +13898,19 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 973,
+          "slug": "national-973",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -14087,7 +14126,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -14457,6 +14496,14 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -14479,14 +14526,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
-        },
-        {
-          "cluster_id": 628,
-          "slug": "national-628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘সন্ধ্যার পর স্কুল-কলেজ পড়ুয়াদের রাস্তায় পেলে গ্রেপ্তার করা হবে’"
         }
       ]
     },
@@ -18442,7 +18481,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T12:34:25.534Z",
+      "last_update": "2026-11-02T13:07:45.255Z",
       "claim_count": 3,
       "events": [
         {
@@ -18610,7 +18649,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T12:34:25.530Z",
+      "last_update": "2026-11-02T13:07:45.254Z",
       "claim_count": 3,
       "events": [
         {
@@ -18817,7 +18856,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T12:34:25.524Z",
+      "last_update": "2026-11-02T13:07:45.251Z",
       "claim_count": 3,
       "events": [
         {
@@ -19705,11 +19744,41 @@
     },
     "entertainment-1077": {
       "cluster_id": 1077,
-      "headline": "চার জুটির চার রকম প্রেম, তিন নতুন মুখের অভিষেক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+      "first_seen": "2026-11-02T13:07:45.647Z",
+      "last_update": "2026-11-02T13:07:45.648Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/cyberattack-on-supermarket-refrigerators-and-freezers-food-worth-crores-ruined/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.529Z",
+          "kind": "claim",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-109": {
@@ -23609,14 +23678,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -23639,6 +23700,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -31532,7 +31601,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -33988,14 +34057,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -34010,6 +34071,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -34187,14 +34256,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -34217,6 +34278,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
+        },
+        {
+          "cluster_id": 810,
+          "slug": "national-810",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাড়ে ১২ হাজার টাকায় চলছে না গার্মেন্টস শ্রমিকদের সংসার, কত হলে চলবে?"
         }
       ]
     },
@@ -37412,7 +37481,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T12:34:25.528Z",
+      "last_update": "2026-11-02T13:07:45.253Z",
       "claim_count": 2,
       "events": [
         {
@@ -37627,7 +37696,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T12:34:25.522Z",
+      "last_update": "2026-11-02T13:07:45.250Z",
       "claim_count": 4,
       "events": [
         {
@@ -37814,20 +37883,20 @@
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 8,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 768,
+          "slug": "sports-768",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
         }
       ]
     },
@@ -38627,7 +38696,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T12:34:25.496Z",
+      "last_update": "2026-11-02T13:07:45.240Z",
       "claim_count": 2,
       "events": [
         {
@@ -38755,7 +38824,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T12:34:25.502Z",
+      "last_update": "2026-11-02T13:07:45.241Z",
       "claim_count": 2,
       "events": [
         {
@@ -38838,6 +38907,30 @@
             "sources": "[\"c284764\",\"c284765\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284764,
+          "claim_text": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 27,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284765,
+          "claim_text": "আবাসিক মাদ্রাসায় দুই ছাত্রকে ধারাবাহিক ধর্ষণ, গ্রেফতারের পর স্বীকার করলেন শিক্ষক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -38895,7 +38988,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T12:34:25.517Z",
+      "last_update": "2026-11-02T13:07:45.244Z",
       "claim_count": 2,
       "events": [
         {
@@ -39099,20 +39192,80 @@
     },
     "international-1075": {
       "cluster_id": 1075,
-      "headline": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+      "first_seen": "2026-11-02T13:07:45.640Z",
+      "last_update": "2026-11-02T13:07:45.642Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:47:16.000Z",
+          "kind": "evidence",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-trade-show-returns-to-dhaka-after-two-and-a-half-years-amcham-hopeful-for-us-investment/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.525Z",
+          "kind": "claim",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1077": {
       "cluster_id": 1077,
-      "headline": "হুতি হামলা ঘিরে ইরান-সৌদিকে ‘ভিন্ন বার্তা’ দিচ্ছে পাকিস্তান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+      "first_seen": "2026-11-02T13:07:45.647Z",
+      "last_update": "2026-11-02T13:07:45.648Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/cyberattack-on-supermarket-refrigerators-and-freezers-food-worth-crores-ruined/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.529Z",
+          "kind": "claim",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1085": {
@@ -39702,6 +39855,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -39740,14 +39901,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় ‘জুলাই’ বন্ধে সংবিধান সংস্কার করা হবে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -43698,7 +43851,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -44710,14 +44863,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -44732,6 +44877,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -45707,14 +45860,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 1000,
           "slug": "national-1000",
           "actor_links": 0,
@@ -45745,6 +45890,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -49280,14 +49433,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -49310,6 +49455,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -50073,6 +50226,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -50087,14 +50248,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আলোচনার প্রভাবে বিশ্ববাজারে কমল তেলের দাম"
-        },
-        {
-          "cluster_id": 804,
-          "slug": "national-804",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
         }
       ]
     },
@@ -65173,6 +65326,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -65211,14 +65372,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 357,
-          "slug": "national-357",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         }
       ]
     },
@@ -78486,7 +78639,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T12:34:25.502Z",
+      "last_update": "2026-11-02T13:07:45.241Z",
       "claim_count": 2,
       "events": [
         {
@@ -78568,6 +78721,30 @@
             "field": "স্বীকার",
             "sources": "[\"c284764\",\"c284765\"]",
             "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284764,
+          "claim_text": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 27,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284765,
+          "claim_text": "আবাসিক মাদ্রাসায় দুই ছাত্রকে ধারাবাহিক ধর্ষণ, গ্রেফতারের পর স্বীকার করলেন শিক্ষক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
           }
         }
       ],
@@ -80615,7 +80792,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T12:34:25.530Z",
+      "last_update": "2026-11-02T13:07:45.254Z",
       "claim_count": 3,
       "events": [
         {
@@ -81448,7 +81625,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T12:34:25.528Z",
+      "last_update": "2026-11-02T13:07:45.253Z",
       "claim_count": 2,
       "events": [
         {
@@ -81655,7 +81832,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T12:34:25.524Z",
+      "last_update": "2026-11-02T13:07:45.251Z",
       "claim_count": 3,
       "events": [
         {
@@ -82986,7 +83163,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T12:34:25.522Z",
+      "last_update": "2026-11-02T13:07:45.250Z",
       "claim_count": 4,
       "events": [
         {
@@ -83173,20 +83350,20 @@
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 8,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 768,
+          "slug": "sports-768",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
         }
       ]
     },
@@ -83322,7 +83499,7 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T12:34:25.511Z",
+      "last_update": "2026-11-02T13:07:45.243Z",
       "claim_count": 4,
       "events": [
         {
@@ -84265,7 +84442,7 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T12:34:25.486Z",
+      "last_update": "2026-11-02T13:07:45.235Z",
       "claim_count": 18,
       "events": [
         {
@@ -85907,8 +86084,8 @@
       "cluster_id": 1048,
       "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
       "first_seen": "2026-11-02T11:23:19.533Z",
-      "last_update": "2026-11-02T12:34:25.510Z",
-      "claim_count": 3,
+      "last_update": "2026-11-02T13:07:45.237Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-11-02T11:00:41.000Z",
@@ -86002,6 +86179,28 @@
           }
         },
         {
+          "ts": "2026-11-02T12:31:58.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/first-thing-stevens-defects-to-back-el-sayeds-michigan-opponent-as-trump-delivers-anti-muslim-tirade"
+          }
+        },
+        {
+          "ts": "2026-11-02T12:31:58.000Z",
+          "kind": "evidence",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/first-thing-stevens-defects-to-back-el-sayeds-michigan-opponent-as-trump-delivers-anti-muslim-tirade"
+          }
+        },
+        {
           "ts": "2026-11-02T12:56:15.296Z",
           "kind": "claim",
           "claim_id": 284742,
@@ -86024,6 +86223,24 @@
           "kind": "verify",
           "claim_id": 284742,
           "claim_text": "Democratic divisions shake up key Michigan Senate race",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.297Z",
+          "kind": "claim",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -86255,7 +86472,7 @@
       "cluster_id": 1050,
       "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
       "first_seen": "2026-11-02T11:23:19.544Z",
-      "last_update": "2026-11-02T12:34:25.520Z",
+      "last_update": "2026-11-02T13:07:45.245Z",
       "claim_count": 3,
       "events": [
         {
@@ -86423,7 +86640,7 @@
       "cluster_id": 1051,
       "headline": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
       "first_seen": "2026-11-02T11:23:19.555Z",
-      "last_update": "2026-11-02T12:34:25.526Z",
+      "last_update": "2026-11-02T13:07:45.252Z",
       "claim_count": 2,
       "events": [
         {
@@ -87059,7 +87276,7 @@
       "cluster_id": 1063,
       "headline": "১০ মিনিটের জন্য নেওয়া মোটরসাইকেল ফেরত চাইতে গিয়ে প্রাণ গেলো ব্যবসায়ীর",
       "first_seen": "2026-11-02T12:34:25.487Z",
-      "last_update": "2026-11-02T12:34:25.491Z",
+      "last_update": "2026-11-02T13:07:45.238Z",
       "claim_count": 2,
       "events": [
         {
@@ -87187,7 +87404,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T12:34:25.496Z",
+      "last_update": "2026-11-02T13:07:45.240Z",
       "claim_count": 2,
       "events": [
         {
@@ -87315,7 +87532,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T12:34:25.502Z",
+      "last_update": "2026-11-02T13:07:45.241Z",
       "claim_count": 2,
       "events": [
         {
@@ -87398,6 +87615,30 @@
             "sources": "[\"c284764\",\"c284765\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284764,
+          "claim_text": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 27,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 284765,
+          "claim_text": "আবাসিক মাদ্রাসায় দুই ছাত্রকে ধারাবাহিক ধর্ষণ, গ্রেফতারের পর স্বীকার করলেন শিক্ষক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -87455,7 +87696,7 @@
       "cluster_id": 1066,
       "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই",
       "first_seen": "2026-11-02T12:34:25.503Z",
-      "last_update": "2026-11-02T12:34:25.507Z",
+      "last_update": "2026-11-02T13:07:45.242Z",
       "claim_count": 2,
       "events": [
         {
@@ -87583,7 +87824,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T12:34:25.517Z",
+      "last_update": "2026-11-02T13:07:45.244Z",
       "claim_count": 2,
       "events": [
         {
@@ -87943,56 +88184,325 @@
     },
     "national-1073": {
       "cluster_id": 1073,
-      "headline": "চকরিয়ায় বাস-কার মুখোমুখি সংঘর্ষে শিশুসহ দুইজন নিহত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন",
+      "first_seen": "2026-11-02T13:07:45.246Z",
+      "last_update": "2026-11-02T13:07:45.249Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T09:07:28.000Z",
+          "kind": "evidence",
+          "claim_id": 288537,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxOY1ktVDdybEhWN3pSWFY5QzdzV2lhV293OG1sZG5iUjR0Q3dFdTRIMHR1c2hYWjNoOFdqbDgtZFNsY3BYTGVTSVllVVdTZlBKQnVPZWxvODNGUUtFTEhiMFNqTWYweXpkQXRYV19rR2xsc1VzRVh2ckR2bXdHM0NmV2Q0bFh2WHcyR3czcjQydTNEdWlRcHBNZHlHY1pBbThXTDllSXJiWmF2VFlqdGNNZkZBMVZxT080djRVaDR0aHY3Si13c0hMdnVsUno4bVNMUGp0OHBEX1RtTXpZNWU2RmxKdVF2Q0UwU2lTUkpUNEw3SHlka2gzYks2UlJpTG9EckxxcWlNdlZYeE9MSVpWcjFHQTNTb1pJMUxfbmIwMko4NWpBWWlXU0FacDlKLWxDQVdtV2V5TVcteTJVR3ktbVNpa0I0cHQ4NkhQaVc2dmFOYVdIbDhDV3plWjdwMVNCdktUbWFwbWwxSnQ0NU1TbExPbjlfZG5kazJiMVYtUG94RXZBcm1HeWJKcWRWUDdSTHNIdW9HU1lCVHdQczQ1ZVl0MElhclNDRXMwTW4wTWNfMkhlaHE4Nk1PODd2SDdsanNFVHdkeXM0YXRoaXl5UEpELXVCQjAwejlxUk83Sklab1h3VXVCa0NoNlFPeWg1RWZuVTZyRjNTcWVKUWl5V2Q5alB1Rm1mSW05X2x5V19GdWdMUUR1M0cyWXFIaWxHSk5FYldB0gGrBEFVX3lxTE9wMG55bVhPem43ZnVHMjIyYzNFdFR5NVc1MGlVM0ViQW1Ua09xTndzU1VOcjdrS0wyQldMUUZocUZ2QmlaYmtnVWhwdjRVd2x6SHlqRjBJd1pCd1FOdlNHbURBZU9oM3hnM3k4MlliRkkxOFBDQmYtQXVURlRTbm9TV2l3SWxvbmRJZXhkTWk2UzlIeVdqQXgyendMTEU5U1Rad25nbzhoekNsMU1ZWFEzbGJSV05WVEZ5VEZGdEg5dGMyZGVMSWtSYlhFRTJCakplNkIxSVJuVDU5UXBkODVHa2lqeFdnR0NiQzkycHRjYnd6c2s2cF9ZR3lPTVRQZ3k4Z09rRmtkNVl2THVXOWtXcWd1SHJjb0U2Y3pua2syRzNKNFVkdUJ3MHRUTWJNVEJYRHV0T0x2UC1NTUpILWppaHotMUxYV2pCLUpnVXBscUR2TzFBVFZIb045bHJSS2pwc1pOdHlHTnFzQ2R5MkZrVTJuQWs1ZGZBLW00anJhUkpIMXBxWkxPTzg3RzBIZjVZeTFyR2dYTHpqNldlWGcxcHJBR1AtVVYxVVlxcWJ0UVoxTUZ5YzFVVUR5RVZ1UnQ4N2lOSkVHNlR3RjItbW5KRlpQS05ERGI1ejlzM3FhWVJ4dXhyMW9kbzE3WHVfakcwSTJDcEF4UlA2eFhiM3E1SXVTelVRYVdvSl9fZkZlYXlNdHRPOHdkVm9xa1gxWDFUNUJGZGFhZWFKVQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:28:53.000Z",
+          "kind": "evidence",
+          "claim_id": 288537,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811642"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:28:53.000Z",
+          "kind": "evidence",
+          "claim_id": 288538,
+          "claim_text": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/811642"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.512Z",
+          "kind": "claim",
+          "claim_id": 288537,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.515Z",
+          "kind": "claim",
+          "claim_id": 288538,
+          "claim_text": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288537,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288538,
+          "claim_text": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 989,
+          "slug": "national-989",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিনা প্রতিদ্বন্দ্বিতায় সংরক্ষিত নারী আসনের এমপি হলেন এলিজা জামান"
+        },
+        {
+          "cluster_id": 839,
+          "slug": "national-839",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পোশাকশ্রমিকদের নতুন নিম্নতম মজুরি বোর্ড গঠন, গেজেট প্রকাশ"
+        },
+        {
+          "cluster_id": 804,
+          "slug": "national-804",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
+        },
+        {
+          "cluster_id": 628,
+          "slug": "national-628",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "‘সন্ধ্যার পর স্কুল-কলেজ পড়ুয়াদের রাস্তায় পেলে গ্রেপ্তার করা হবে’"
+        },
+        {
+          "cluster_id": 606,
+          "slug": "national-606",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্বিতীয় ‘জুলাই’ বন্ধে সংবিধান সংস্কার করা হবে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        }
+      ]
     },
     "national-1074": {
       "cluster_id": 1074,
-      "headline": "মিরপুর-১ এ দুই দফা উচ্ছেদ অভিযান, পুরো ঢাকায় চালানোর ঘোষণা ডিএনসিসির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দুর্যোগ মোকাবিলায় যুক্তরাষ্ট্রের সেনাবাহিনী ও কোস্ট গার্ডের যৌথ মহড়া শুরু",
+      "first_seen": "2026-11-02T13:07:45.636Z",
+      "last_update": "2026-11-02T13:07:45.638Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:59:02.000Z",
+          "kind": "evidence",
+          "claim_id": 288539,
+          "claim_text": "দুর্যোগ মোকাবিলায় যুক্তরাষ্ট্রের সেনাবাহিনী ও কোস্ট গার্ডের যৌথ মহড়া শুরু",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/joint-exercise-by-the-us-military-and-coast-guard-for-disaster-response-begins/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.518Z",
+          "kind": "claim",
+          "claim_id": 288539,
+          "claim_text": "দুর্যোগ মোকাবিলায় যুক্তরাষ্ট্রের সেনাবাহিনী ও কোস্ট গার্ডের যৌথ মহড়া শুরু"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288539,
+          "claim_text": "দুর্যোগ মোকাবিলায় যুক্তরাষ্ট্রের সেনাবাহিনী ও কোস্ট গার্ডের যৌথ মহড়া শুরু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1075": {
       "cluster_id": 1075,
-      "headline": "আওয়ামী লীগের সঙ্গে সমঝোতার কোনো সম্ভাবনা নেই: উপদেষ্টা জাহেদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+      "first_seen": "2026-11-02T13:07:45.640Z",
+      "last_update": "2026-11-02T13:07:45.642Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:47:16.000Z",
+          "kind": "evidence",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-trade-show-returns-to-dhaka-after-two-and-a-half-years-amcham-hopeful-for-us-investment/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.525Z",
+          "kind": "claim",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1076": {
       "cluster_id": 1076,
-      "headline": "ডেঙ্গুতে আরও ৯ জনের মৃত্যু, হামে প্রাণ গেল ২ শিশুর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "জানুয়ারি–সেপ্টেম্বরে আইপিডিসি ফাইন্যান্সের নিট মুনাফা বেড়েছে ৩৫ শতাংশ",
+      "first_seen": "2026-11-02T13:07:45.643Z",
+      "last_update": "2026-11-02T13:07:45.645Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:41:08.000Z",
+          "kind": "evidence",
+          "claim_id": 288541,
+          "claim_text": "জানুয়ারি–সেপ্টেম্বরে আইপিডিসি ফাইন্যান্সের নিট মুনাফা বেড়েছে ৩৫ শতাংশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/corporate/bbd5jnnzg4"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.527Z",
+          "kind": "claim",
+          "claim_id": 288541,
+          "claim_text": "জানুয়ারি–সেপ্টেম্বরে আইপিডিসি ফাইন্যান্সের নিট মুনাফা বেড়েছে ৩৫ শতাংশ"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288541,
+          "claim_text": "জানুয়ারি–সেপ্টেম্বরে আইপিডিসি ফাইন্যান্সের নিট মুনাফা বেড়েছে ৩৫ শতাংশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1077": {
       "cluster_id": 1077,
-      "headline": "জাপানের মতো ঢাকার ২১ স্কুলে পরিছন্নতার অভ্যাস গড়ে তোলার উদ্যাগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+      "first_seen": "2026-11-02T13:07:45.647Z",
+      "last_update": "2026-11-02T13:07:45.648Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/cyberattack-on-supermarket-refrigerators-and-freezers-food-worth-crores-ruined/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.529Z",
+          "kind": "claim",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288542,
+          "claim_text": "সুপারশপের ফ্রিজ-ফ্রিজারে সাইবার হামলা, নষ্ট কোটি টাকার খাবার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1078": {
       "cluster_id": 1078,
-      "headline": "ড. ইউনূসকে হেনস্তার চেষ্টা আ. লীগের সন্ত্রাসনির্ভর রাজনীতির চরিত্র উন্মোচন করেছে : নাহিদ ইসলাম",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+      "first_seen": "2026-11-02T13:07:45.650Z",
+      "last_update": "2026-11-02T13:07:45.652Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:38:47.000Z",
+          "kind": "evidence",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/q5c48qh1yn"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.532Z",
+          "kind": "claim",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1079": {
@@ -90301,6 +90811,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -90339,14 +90857,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় ‘জুলাই’ বন্ধে সংবিধান সংস্কার করা হবে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -99765,6 +100275,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -99803,14 +100321,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
-        },
-        {
-          "cluster_id": 777,
-          "slug": "national-777",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিকদের বিক্ষোভে শ্রমমন্ত্রীর বিদেশ সফর বাতিল, মন্ত্রীদের নিয়ে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -105697,7 +106207,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -109835,14 +110345,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -109857,6 +110359,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -111315,14 +111825,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 1000,
           "slug": "national-1000",
           "actor_links": 0,
@@ -111353,6 +111855,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -118567,7 +119077,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -123122,14 +123632,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -123152,6 +123654,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -125164,6 +125674,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -125178,14 +125696,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আলোচনার প্রভাবে বিশ্ববাজারে কমল তেলের দাম"
-        },
-        {
-          "cluster_id": 804,
-          "slug": "national-804",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
         }
       ]
     },
@@ -130591,14 +131101,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -130621,6 +131123,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -130775,6 +131285,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -130813,14 +131331,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় ‘জুলাই’ বন্ধে সংবিধান সংস্কার করা হবে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 362,
-          "slug": "national-362",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -135693,14 +136203,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 473,
           "slug": "national-473",
           "actor_links": 0,
@@ -135715,6 +136217,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় অর্ণবের রেশ না কাটতেই বঙ্গোপসাগরে নতুন লঘুচাপ"
+        },
+        {
+          "cluster_id": 253,
+          "slug": "sports-253",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -147437,6 +147947,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, খান-আলী-আতার আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -147467,14 +147985,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 839,
-          "slug": "national-839",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পোশাকশ্রমিকদের নতুন নিম্নতম মজুরি বোর্ড গঠন, গেজেট প্রকাশ"
         }
       ]
     },
@@ -160321,14 +160831,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 473,
           "slug": "national-473",
           "actor_links": 0,
@@ -160359,6 +160861,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -172554,14 +173064,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -172576,6 +173078,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -177013,6 +177523,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -177051,14 +177569,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 357,
-          "slug": "national-357",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         }
       ]
     },
@@ -179561,6 +180071,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -179599,14 +180117,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 357,
-          "slug": "national-357",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         }
       ]
     },
@@ -185046,7 +185556,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -196849,19 +197359,19 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 973,
+          "slug": "national-973",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -197607,7 +198117,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -198304,6 +198814,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -198342,14 +198860,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 357,
-          "slug": "national-357",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         }
       ]
     },
@@ -198780,14 +199290,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -198810,6 +199312,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -201395,6 +201905,14 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -201417,14 +201935,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
-        },
-        {
-          "cluster_id": 628,
-          "slug": "national-628",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘সন্ধ্যার পর স্কুল-কলেজ পড়ুয়াদের রাস্তায় পেলে গ্রেপ্তার করা হবে’"
         }
       ]
     },
@@ -201982,14 +202492,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -202004,6 +202506,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -204733,14 +205243,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -204763,6 +205265,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
+        },
+        {
+          "cluster_id": 810,
+          "slug": "national-810",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাড়ে ১২ হাজার টাকায় চলছে না গার্মেন্টস শ্রমিকদের সংসার, কত হলে চলবে?"
         }
       ]
     },
@@ -215862,14 +216372,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -215892,6 +216394,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -218558,7 +219068,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T12:34:25.534Z",
+      "last_update": "2026-11-02T13:07:45.255Z",
       "claim_count": 3,
       "events": [
         {
@@ -218857,6 +219367,14 @@
           "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 1050,
           "slug": "politics-1050",
           "actor_links": 0,
@@ -218879,14 +219397,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1020,
-          "slug": "national-1020",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মোটরসাইকেলের সামনের নম্বরপ্লেটে পরিবর্তন, এক লাইনে লেখার অনুমতি"
         }
       ]
     },
@@ -220450,7 +220960,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -221673,8 +222183,8 @@
       "cluster_id": 1048,
       "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
       "first_seen": "2026-11-02T11:23:19.533Z",
-      "last_update": "2026-11-02T12:34:25.510Z",
-      "claim_count": 3,
+      "last_update": "2026-11-02T13:07:45.237Z",
+      "claim_count": 4,
       "events": [
         {
           "ts": "2026-11-02T11:00:41.000Z",
@@ -221768,6 +222278,28 @@
           }
         },
         {
+          "ts": "2026-11-02T12:31:58.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/first-thing-stevens-defects-to-back-el-sayeds-michigan-opponent-as-trump-delivers-anti-muslim-tirade"
+          }
+        },
+        {
+          "ts": "2026-11-02T12:31:58.000Z",
+          "kind": "evidence",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/first-thing-stevens-defects-to-back-el-sayeds-michigan-opponent-as-trump-delivers-anti-muslim-tirade"
+          }
+        },
+        {
           "ts": "2026-11-02T12:56:15.296Z",
           "kind": "claim",
           "claim_id": 284742,
@@ -221790,6 +222322,24 @@
           "kind": "verify",
           "claim_id": 284742,
           "claim_text": "Democratic divisions shake up key Michigan Senate race",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.297Z",
+          "kind": "claim",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288504,
+          "claim_text": "Stevens defects to back El-Sayed’s Michigan opponent as Trump delivers anti-Muslim tirade | First Thing",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -222334,7 +222884,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -223629,7 +224179,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -224559,14 +225109,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 1000,
           "slug": "national-1000",
           "actor_links": 0,
@@ -224597,6 +225139,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1012,
+          "slug": "national-1012",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -225542,7 +226092,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -226366,7 +226916,7 @@
           "slug": "national-democrats-condemn-haley",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
         },
         {
@@ -234740,14 +235290,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -234770,6 +235312,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -236116,7 +236666,7 @@
       "cluster_id": 1050,
       "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
       "first_seen": "2026-11-02T11:23:19.544Z",
-      "last_update": "2026-11-02T12:34:25.520Z",
+      "last_update": "2026-11-02T13:07:45.245Z",
       "claim_count": 3,
       "events": [
         {
@@ -236399,11 +236949,41 @@
     },
     "politics-1075": {
       "cluster_id": 1075,
-      "headline": "ঠাকুরগাঁও-১ আসনের উপনির্বাচন সুষ্ঠু হওয়া নিয়ে শঙ্কা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+      "first_seen": "2026-11-02T13:07:45.640Z",
+      "last_update": "2026-11-02T13:07:45.642Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:47:16.000Z",
+          "kind": "evidence",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-trade-show-returns-to-dhaka-after-two-and-a-half-years-amcham-hopeful-for-us-investment/"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.525Z",
+          "kind": "claim",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288540,
+          "claim_text": "আড়াই বছর পর ঢাকায় ফিরছে ইউএস ট্রেড শো, মার্কিন বিনিয়োগের আশা অ্যামচ্যামের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1085": {
@@ -241094,6 +241674,14 @@
           "headline": "স্পেনে দুই ট্রেনের মুখোমুখি সংঘর্ষে নিহত বেড়ে ৬৮"
         },
         {
+          "cluster_id": 1073,
+          "slug": "national-1073",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন"
+        },
+        {
           "cluster_id": 989,
           "slug": "national-989",
           "actor_links": 0,
@@ -241108,14 +241696,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আলোচনার প্রভাবে বিশ্ববাজারে কমল তেলের দাম"
-        },
-        {
-          "cluster_id": 804,
-          "slug": "national-804",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আ.লীগ ও ছাত্রলীগ গার্মেন্টসকর্মী হয়ে আন্দোলনে নেমেছে: রাশেদ খান"
         }
       ]
     },
@@ -251842,7 +252422,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T12:34:25.534Z",
+      "last_update": "2026-11-02T13:07:45.255Z",
       "claim_count": 3,
       "events": [
         {
@@ -253011,7 +253591,7 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T12:34:25.511Z",
+      "last_update": "2026-11-02T13:07:45.243Z",
       "claim_count": 4,
       "events": [
         {
@@ -253309,7 +253889,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T12:34:25.496Z",
+      "last_update": "2026-11-02T13:07:45.240Z",
       "claim_count": 2,
       "events": [
         {
@@ -253437,7 +254017,7 @@
       "cluster_id": 1066,
       "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই",
       "first_seen": "2026-11-02T12:34:25.503Z",
-      "last_update": "2026-11-02T12:34:25.507Z",
+      "last_update": "2026-11-02T13:07:45.242Z",
       "claim_count": 2,
       "events": [
         {
@@ -253641,11 +254221,41 @@
     },
     "sports-1078": {
       "cluster_id": 1078,
-      "headline": "বিশ্বকাপের শেষ আটে বাংলাদেশ, একদিনে দুবার টাইব্রেকারে জয়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+      "first_seen": "2026-11-02T13:07:45.650Z",
+      "last_update": "2026-11-02T13:07:45.652Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T12:38:47.000Z",
+          "kind": "evidence",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/q5c48qh1yn"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:29:07.532Z",
+          "kind": "claim",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি"
+        },
+        {
+          "ts": "2026-11-02T13:29:07.610Z",
+          "kind": "verify",
+          "claim_id": 288543,
+          "claim_text": "পদ্মায় জালে ধরা পড়ল ৭২ কেজির তিন বড় মাছ, ১ লাখ ৬০ হাজারে বিক্রি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1081": {
@@ -260464,14 +261074,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -260486,6 +261088,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
@@ -262035,19 +262645,19 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 6,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 973,
+          "slug": "national-973",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -263456,14 +264066,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -263486,6 +264088,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
         }
       ]
     },
@@ -264669,7 +265279,7 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T12:34:25.486Z",
+      "last_update": "2026-11-02T13:07:45.235Z",
       "claim_count": 18,
       "events": [
         {
@@ -265680,7 +266290,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T12:34:25.517Z",
+      "last_update": "2026-11-02T13:07:45.244Z",
       "claim_count": 2,
       "events": [
         {
@@ -266254,14 +266864,6 @@
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
         },
         {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
-        },
-        {
           "cluster_id": 998,
           "slug": "national-998",
           "actor_links": 0,
@@ -266276,6 +266878,14 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 872,
+          "slug": "national-872",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "৭ নভেম্বর সব সরকারি, আধা-সরকারি প্রতিষ্ঠানে উড়বে জাতীয় পতাকা"
         }
       ]
     },
