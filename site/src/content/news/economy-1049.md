@@ -1,5 +1,7 @@
 ---
 title: "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
+thumbnail: "/images/economy-1049.webp"
+thumbnailAlt: "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি — ছবি: চ্যানেল আই"
 seoTitle: "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
 excerpt: "’ Image ১৪: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৫: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্রায় ৫ কোটি টাকার ৬টি স্বর্ণ"
 seoDescription: "’ Image ১৪: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৫: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন প্র…"
