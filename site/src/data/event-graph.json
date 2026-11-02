@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6477,
+    "storyCount": 6483,
     "kinds": [
       "claim",
       "evidence",
@@ -358,7 +358,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T10:51:23.946Z",
+      "last_update": "2026-11-02T11:23:19.554Z",
       "claim_count": 3,
       "events": [
         {
@@ -849,8 +849,8 @@
       "cluster_id": 1041,
       "headline": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
       "first_seen": "2026-11-02T10:51:23.935Z",
-      "last_update": "2026-11-02T10:51:23.938Z",
-      "claim_count": 2,
+      "last_update": "2026-11-02T11:23:19.550Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-02T09:45:07.000Z",
@@ -872,6 +872,28 @@
             "source_id": "bd24live",
             "relation": "supports",
             "url": "https://www.bd24live.com/bangla/811637"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:20:29.000Z",
+          "kind": "evidence",
+          "claim_id": 273576,
+          "claim_text": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/xskdnfs4ck"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:20:29.000Z",
+          "kind": "evidence",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/xskdnfs4ck"
           }
         },
         {
@@ -920,9 +942,88 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.782Z",
+          "kind": "claim",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273576,
+          "claim_text": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 811,
+          "slug": "national-811",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘অন্ধকার পথ’ ছেড়ে স্বাভাবিক জীবনে ফিরতে সিরাজগঞ্জ, রাজবাড়ী ও পাবনার ৬৫ চরমপন্থির আত্মসমর্পণ"
+        },
+        {
+          "cluster_id": 583,
+          "slug": "politics-583",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
+        },
+        {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "১৫০ কিলোমিটার গতির পেসাররা হঠাৎ ধীর হয়ে যান কেন, রহস্য ফাঁস করলেন ওয়াকার ইউনিস"
+        }
+      ]
     },
     "economy-1044": {
       "cluster_id": 1044,
@@ -963,22 +1064,210 @@
       ],
       "related": []
     },
+    "economy-1049": {
+      "cluster_id": 1049,
+      "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+      "first_seen": "2026-11-02T11:23:19.539Z",
+      "last_update": "2026-11-02T11:23:19.542Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:56:42.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-owners-association-wants-to-extend-the-operating-hours-for-shopping-malls-and-shops/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.810Z",
+          "kind": "claim",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.813Z",
+          "kind": "claim",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 998,
+          "slug": "national-998",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 768,
+          "slug": "sports-768",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 730,
+          "slug": "national-730",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        }
+      ]
+    },
     "economy-1053": {
       "cluster_id": 1053,
-      "headline": "বাংলাদেশ ব্যাংকের অর্থ পাচার প্রতিরোধ কর্মকর্তা ও স্ত্রীর ব্যাংক হিসাব তলব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+      "first_seen": "2026-11-02T11:23:20.072Z",
+      "last_update": "2026-11-02T11:23:20.075Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T11:02:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-newly-elected-members-of-parliament-to-take-oath-tomorrow/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.834Z",
+          "kind": "claim",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1054": {
       "cluster_id": 1054,
-      "headline": "এশিয়ান ডুপ্লেক্স টাউন: জীবনের নতুন সংজ্ঞায় এক অভিজাত ঠিকানা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+      "first_seen": "2026-11-02T11:23:20.077Z",
+      "last_update": "2026-11-02T11:23:20.079Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T11:00:46.000Z",
+          "kind": "evidence",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/njnbgk31qr"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.836Z",
+          "kind": "claim",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1061": {
@@ -3525,6 +3814,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -3563,14 +3860,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -4636,6 +4925,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -4674,14 +4971,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -5996,6 +6285,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -6034,14 +6331,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -7029,6 +7318,14 @@
           "headline": "ভারতের স্কুলে বিদ্যুচালিত করাত দিয়ে দুই ছাত্রীকে হামলা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -7059,14 +7356,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -17927,7 +18216,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T10:51:23.956Z",
+      "last_update": "2026-11-02T11:23:19.569Z",
       "claim_count": 3,
       "events": [
         {
@@ -18095,7 +18384,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T10:51:23.958Z",
+      "last_update": "2026-11-02T11:23:19.570Z",
       "claim_count": 3,
       "events": [
         {
@@ -18234,6 +18523,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1027,
           "slug": "national-1027",
           "actor_links": 0,
@@ -18248,14 +18545,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -18302,7 +18591,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T10:51:23.946Z",
+      "last_update": "2026-11-02T11:23:19.554Z",
       "claim_count": 3,
       "events": [
         {
@@ -18780,7 +19069,7 @@
       "cluster_id": 1033,
       "headline": "দুদকের মামলায় ডায়মন্ড ওয়ার্ল্ডের দিলীপ কুমারকে গ্রেপ্তার দেখানোর আদেশ",
       "first_seen": "2026-11-02T10:16:28.902Z",
-      "last_update": "2026-11-02T10:51:23.949Z",
+      "last_update": "2026-11-02T11:23:19.560Z",
       "claim_count": 2,
       "events": [
         {
@@ -18908,7 +19197,7 @@
       "cluster_id": 1040,
       "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও",
       "first_seen": "2026-11-02T10:51:23.932Z",
-      "last_update": "2026-11-02T10:51:23.934Z",
+      "last_update": "2026-11-02T11:23:19.548Z",
       "claim_count": 2,
       "events": [
         {
@@ -19061,6 +19350,45 @@
           "kind": "verify",
           "claim_id": 273584,
           "claim_text": "ল্যাপটপের পাওয়ার বাটন চেপে বন্ধ করলে কেন আপনার দরকারি ফাইল নষ্ট হতে পারে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "entertainment-1056": {
+      "cluster_id": 1056,
+      "headline": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+      "first_seen": "2026-11-02T11:23:20.085Z",
+      "last_update": "2026-11-02T11:23:20.087Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:51:45.000Z",
+          "kind": "evidence",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/w0vo98znmd"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.842Z",
+          "kind": "claim",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -31056,6 +31384,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -31086,14 +31422,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -36584,7 +36912,7 @@
       "cluster_id": 1001,
       "headline": "বাংলাদেশে আর বিনিয়োগ করব না: সালমান মুক্তাদির",
       "first_seen": "2026-11-02T07:57:35.374Z",
-      "last_update": "2026-11-02T10:51:23.959Z",
+      "last_update": "2026-11-02T11:23:19.572Z",
       "claim_count": 2,
       "events": [
         {
@@ -36820,7 +37148,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T10:51:23.951Z",
+      "last_update": "2026-11-02T11:23:19.568Z",
       "claim_count": 2,
       "events": [
         {
@@ -37035,7 +37363,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T10:51:23.942Z",
+      "last_update": "2026-11-02T11:23:19.553Z",
       "claim_count": 4,
       "events": [
         {
@@ -37282,7 +37610,7 @@
       "cluster_id": 1033,
       "headline": "দুদকের মামলায় ডায়মন্ড ওয়ার্ল্ডের দিলীপ কুমারকে গ্রেপ্তার দেখানোর আদেশ",
       "first_seen": "2026-11-02T10:16:28.902Z",
-      "last_update": "2026-11-02T10:51:23.949Z",
+      "last_update": "2026-11-02T11:23:19.560Z",
       "claim_count": 2,
       "events": [
         {
@@ -37488,7 +37816,7 @@
       "cluster_id": 1040,
       "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও",
       "first_seen": "2026-11-02T10:51:23.932Z",
-      "last_update": "2026-11-02T10:51:23.934Z",
+      "last_update": "2026-11-02T11:23:19.548Z",
       "claim_count": 2,
       "events": [
         {
@@ -37653,12 +37981,131 @@
     },
     "international-1049": {
       "cluster_id": 1049,
-      "headline": "স্পেনে দুই ট্রেনের সংঘর্ষে নিহতের সংখ্যা বেড়ে ৬৪",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+      "first_seen": "2026-11-02T11:23:19.539Z",
+      "last_update": "2026-11-02T11:23:19.542Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:56:42.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-owners-association-wants-to-extend-the-operating-hours-for-shopping-malls-and-shops/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.810Z",
+          "kind": "claim",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.813Z",
+          "kind": "claim",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 998,
+          "slug": "national-998",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 768,
+          "slug": "sports-768",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 730,
+          "slug": "national-730",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        }
+      ]
     },
     "international-105": {
       "cluster_id": 105,
@@ -37718,11 +38165,159 @@
     },
     "international-1052": {
       "cluster_id": 1052,
-      "headline": "অর্থ চাওয়ার অভিযোগে ট্রাম্পের অসন্তোষ, চাকরি হারানোর ঝুঁকিতে মার্কিন রাষ্ট্রদূত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+      "first_seen": "2026-11-02T11:23:19.562Z",
+      "last_update": "2026-11-02T11:23:19.567Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T05:18:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9tWmdMMWxseXd3YTNYcWpOUFNod2ZBZmYyeDFNclhMN0xmSkdhMi1sal9Ga1NuOXI2Z2VQaXhOVlk0MHNXSWR5ckhMZUVaZzNFNXc1eVRmV2tGR2FJTzkyVnJMV1Nmc2phY1dnaTI0eWFDZjN5?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:18:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9tWmdMMWxseXd3YTNYcWpOUFNod2ZBZmYyeDFNclhMN0xmSkdhMi1sal9Ga1NuOXI2Z2VQaXhOVlk0MHNXSWR5ckhMZUVaZzNFNXc1eVRmV2tGR2FJTzkyVnJMV1Nmc2phY1dnaTI0eWFDZjN5?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T08:34:36.000Z",
+          "kind": "evidence",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3cDlybDY5QVg4d0lBWmpFX1Q1eHU0anQxZ0J4RGZUOWlZcmdYWHhIRzNiRGo4QTQxQ3MtS1BNZGFsSlRLQzJlQ3NHd2FQc1k0OVRkVGxQUEFKUE1ZWmlEcl9tZ3dsTVJYak5ZcDcxcw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.828Z",
+          "kind": "claim",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.831Z",
+          "kind": "claim",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1055": {
+      "cluster_id": 1055,
+      "headline": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+      "first_seen": "2026-11-02T11:23:20.081Z",
+      "last_update": "2026-11-02T11:23:20.083Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:52:16.000Z",
+          "kind": "evidence",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-midterm-elections-how-they-could-affect-stock-markets-and-oil-prices/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.839Z",
+          "kind": "claim",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1057": {
+      "cluster_id": 1057,
+      "headline": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+      "first_seen": "2026-11-02T11:23:20.089Z",
+      "last_update": "2026-11-02T11:23:20.091Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/0kuzghhfxn"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.845Z",
+          "kind": "claim",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-106": {
@@ -44152,6 +44747,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -44190,14 +44793,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -49734,6 +50329,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -49772,14 +50375,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -59951,6 +60546,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -59989,14 +60592,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -60262,6 +60857,14 @@
           "headline": "ভারতের স্কুলে বিদ্যুচালিত করাত দিয়ে দুই ছাত্রীকে হামলা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -60292,14 +60895,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -61404,6 +61999,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -61442,14 +62045,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -76830,6 +77425,14 @@
           "headline": "কৃত্রিমভাবে পাসের হার, জিপিএ-৫ ও অকৃতকার্য শিক্ষার্থীদের বিষয়ে যে বার্তা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -76860,14 +77463,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -79161,7 +79756,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T10:51:23.958Z",
+      "last_update": "2026-11-02T11:23:19.570Z",
       "claim_count": 3,
       "events": [
         {
@@ -79300,6 +79895,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1027,
           "slug": "national-1027",
           "actor_links": 0,
@@ -79314,14 +79917,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1012,
-          "slug": "national-1012",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার"
         }
       ]
     },
@@ -79329,7 +79924,7 @@
       "cluster_id": 1001,
       "headline": "বাংলাদেশে আর বিনিয়োগ করব না: সালমান মুক্তাদির",
       "first_seen": "2026-11-02T07:57:35.374Z",
-      "last_update": "2026-11-02T10:51:23.959Z",
+      "last_update": "2026-11-02T11:23:19.572Z",
       "claim_count": 2,
       "events": [
         {
@@ -79994,7 +80589,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T10:51:23.951Z",
+      "last_update": "2026-11-02T11:23:19.568Z",
       "claim_count": 2,
       "events": [
         {
@@ -80201,7 +80796,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T10:51:23.946Z",
+      "last_update": "2026-11-02T11:23:19.554Z",
       "claim_count": 3,
       "events": [
         {
@@ -80992,6 +81587,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -81006,14 +81609,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলের সামনের নম্বরপ্লেটে পরিবর্তন, এক লাইনে লেখার অনুমতি"
-        },
-        {
-          "cluster_id": 1000,
-          "slug": "national-1000",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
     },
@@ -81315,12 +81910,12 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
-          "cluster_id": 1040,
-          "slug": "national-1040",
+          "cluster_id": 1050,
+          "slug": "politics-1050",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও"
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
         }
       ]
     },
@@ -81532,7 +82127,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T10:51:23.942Z",
+      "last_update": "2026-11-02T11:23:19.553Z",
       "claim_count": 4,
       "events": [
         {
@@ -81868,8 +82463,8 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T10:51:23.947Z",
-      "claim_count": 2,
+      "last_update": "2026-11-02T11:23:19.538Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-02T08:49:16.000Z",
@@ -81933,6 +82528,46 @@
           "kind": "verify",
           "claim_id": 269901,
           "claim_text": "সাফ খেলতে সবার আগে ঢাকায় ভুটান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:03:19.000Z",
+          "kind": "evidence",
+          "claim_id": 269900,
+          "claim_text": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/zahid-hasan-emily-bangladesh-saff-championship-2026-ronan-sullivan-lead-sports/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:03:19.000Z",
+          "kind": "evidence",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/zahid-hasan-emily-bangladesh-saff-championship-2026-ronan-sullivan-lead-sports/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.697Z",
+          "kind": "claim",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -82074,7 +82709,7 @@
       "cluster_id": 1031,
       "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার",
       "first_seen": "2026-11-02T10:16:28.896Z",
-      "last_update": "2026-11-02T10:51:23.948Z",
+      "last_update": "2026-11-02T11:23:19.559Z",
       "claim_count": 2,
       "events": [
         {
@@ -82330,7 +82965,7 @@
       "cluster_id": 1033,
       "headline": "দুদকের মামলায় ডায়মন্ড ওয়ার্ল্ডের দিলীপ কুমারকে গ্রেপ্তার দেখানোর আদেশ",
       "first_seen": "2026-11-02T10:16:28.902Z",
-      "last_update": "2026-11-02T10:51:23.949Z",
+      "last_update": "2026-11-02T11:23:19.560Z",
       "claim_count": 2,
       "events": [
         {
@@ -82670,7 +83305,7 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T10:51:23.930Z",
+      "last_update": "2026-11-02T11:23:19.531Z",
       "claim_count": 14,
       "events": [
         {
@@ -83233,6 +83868,174 @@
             "sources": "[\"c273560\",\"c273566\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 40,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273561,
+          "claim_text": "বড় পতনের পর যে দামে বিক্রি হচ্ছে সোনার ভরি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273562,
+          "claim_text": "মেঘলা থাকবে ঢাকার আকাশ, বৃষ্টি হবে কি?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273563,
+          "claim_text": "নতুন দামে বিক্রি হচ্ছে সোনা, আজ ভরি কত?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273564,
+          "claim_text": "পত্রিকা: 'শ্রম অসন্তোষে ৫২৯ পোশাক কারখানায় উৎপাদন বন্ধ'",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273565,
+          "claim_text": "তুর্কি বিনিয়োগ বৃদ্ধির আহ্বান বাণিজ্যমন্ত্রীর, শুল্ক বাধা নিরসনে গুরুত্বারোপ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273566,
+          "claim_text": "পুলিশের গাড়িতে অগ্নিসংযোগের ‘স্বীকারোক্তি’, যুবক আটক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273567,
+          "claim_text": "কীভাবে কম কাজ করে বেশি ফল পাবেন? কৌশল জানুন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273568,
+          "claim_text": "আশুলিয়া-মিরপুরে শ্রমিক-পুলিশ সংঘর্ষ, টিয়ারশেল নিক্ষেপ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273569,
+          "claim_text": "জানুয়ারির বেতনের সঙ্গে নতুন মজুরি চান শ্রমিকরা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273570,
+          "claim_text": "মিরপুরে শ্রমিক বিক্ষোভের ঘটনায় ৫ মামলা, সকাল থেকে গ্রেপ্তার ২৯",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273571,
+          "claim_text": "মিরপুরে আজও বিক্ষোভের চেষ্টা, এখন পর্যন্ত গ্রেপ্তার ২৯",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273572,
+          "claim_text": "বাণিজ্য মেলার অস্থায়ী ফটক ভেঙে ফেললেন শেকৃবি শিক্ষার্থীরা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273573,
+          "claim_text": "মেঘলা ঢাকার আকাশ, বৃষ্টি হবে কিনা জানা গেল পূর্বাভাসে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
         }
       ],
       "related": [
@@ -83329,7 +84132,7 @@
       "cluster_id": 1040,
       "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও",
       "first_seen": "2026-11-02T10:51:23.932Z",
-      "last_update": "2026-11-02T10:51:23.934Z",
+      "last_update": "2026-11-02T11:23:19.548Z",
       "claim_count": 2,
       "events": [
         {
@@ -83457,8 +84260,8 @@
       "cluster_id": 1041,
       "headline": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
       "first_seen": "2026-11-02T10:51:23.935Z",
-      "last_update": "2026-11-02T10:51:23.938Z",
-      "claim_count": 2,
+      "last_update": "2026-11-02T11:23:19.550Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-02T09:45:07.000Z",
@@ -83480,6 +84283,28 @@
             "source_id": "bd24live",
             "relation": "supports",
             "url": "https://www.bd24live.com/bangla/811637"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:20:29.000Z",
+          "kind": "evidence",
+          "claim_id": 273576,
+          "claim_text": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/xskdnfs4ck"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:20:29.000Z",
+          "kind": "evidence",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tube/xskdnfs4ck"
           }
         },
         {
@@ -83528,15 +84353,94 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.782Z",
+          "kind": "claim",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273576,
+          "claim_text": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 67,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277273,
+          "claim_text": "ঝালকাঠিতে মানিক পশারীর জানাজা ও দাফনে বাধার প্রতিবাদে মানববন্ধন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 811,
+          "slug": "national-811",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "‘অন্ধকার পথ’ ছেড়ে স্বাভাবিক জীবনে ফিরতে সিরাজগঞ্জ, রাজবাড়ী ও পাবনার ৬৫ চরমপন্থির আত্মসমর্পণ"
+        },
+        {
+          "cluster_id": 583,
+          "slug": "politics-583",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
+        },
+        {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "১৫০ কিলোমিটার গতির পেসাররা হঠাৎ ধীর হয়ে যান কেন, রহস্য ফাঁস করলেন ওয়াকার ইউনিস"
+        }
+      ]
     },
     "national-1042": {
       "cluster_id": 1042,
       "headline": "আইসিইউতে আবাহনীর প্রতিষ্ঠাতা সাধারণ সম্পাদক হারুনুর রশীদ",
       "first_seen": "2026-11-02T10:51:23.939Z",
-      "last_update": "2026-11-02T10:51:23.941Z",
+      "last_update": "2026-11-02T11:23:19.551Z",
       "claim_count": 2,
       "events": [
         {
@@ -83857,21 +84761,210 @@
     },
     "national-1048": {
       "cluster_id": 1048,
-      "headline": "প্রধানমন্ত্রীর জাপান সফরে দ্বিপক্ষীয় সম্পর্ক নতুন মাত্রা পেয়েছে: হুমায়ুন কবীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+      "first_seen": "2026-11-02T11:23:19.533Z",
+      "last_update": "2026-11-02T11:23:19.536Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T11:00:41.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/democrats-reaction-haley-steven-mike-rogers"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:00:41.000Z",
+          "kind": "evidence",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/democrats-reaction-haley-steven-mike-rogers"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:06:26.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/02/democrats-haley-stevens-mike-rogers-abdul-el-sayed-michigan-midterms-trump-rallies-latest-news-updates"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.804Z",
+          "kind": "claim",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.807Z",
+          "kind": "claim",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1049": {
       "cluster_id": 1049,
-      "headline": "জন–আস্থা ও পেশাদারত্ব বজায় রেখে সাংবাদিকদের দায়িত্ব পালনের আহ্বান রাষ্ট্রপতির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+      "first_seen": "2026-11-02T11:23:19.539Z",
+      "last_update": "2026-11-02T11:23:19.542Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-01T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DUktzRjY5aGx2NDJ0VTJOcTRwb25tRHpPLTJLWGVVNWV0WWxIY19NZXVOUXk0WmptcVI1bW51UjE0X2E5VGhlMGJDMi1GQkduQUI2QktEQ0wwTjJEdkoxakJWaFFtQ1k4ejZWZ1Z4eS1RZHc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:56:42.000Z",
+          "kind": "evidence",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-owners-association-wants-to-extend-the-operating-hours-for-shopping-malls-and-shops/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.810Z",
+          "kind": "claim",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.813Z",
+          "kind": "claim",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277283,
+          "claim_text": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277284,
+          "claim_text": "রাত ৯টা পর্যন্ত মার্কেট খোলা রাখার দাবি মালিক সমিতির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 12,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 998,
+          "slug": "national-998",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
+          "cluster_id": 768,
+          "slug": "sports-768",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 730,
+          "slug": "national-730",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        }
+      ]
     },
     "national-105": {
       "cluster_id": 105,
@@ -83931,74 +85024,532 @@
     },
     "national-1050": {
       "cluster_id": 1050,
-      "headline": "বাংলাদেশ-জাপান ছয় সহযোগিতা চুক্তি স্বাক্ষর, ২৯৫.৫ মিলিয়ন ডলার ঋণ প্রতিশ্রুতি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+      "first_seen": "2026-11-02T11:23:19.544Z",
+      "last_update": "2026-11-02T11:23:19.547Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T07:57:14.000Z",
+          "kind": "evidence",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/978299/%E0%A6%AB%E0%A6%BE%E0%A6%9C%E0%A6%BF%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%97%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%82-%E0%A6%AC%E0%A6%A1%E0%A6%BF%E0%A6%B0-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:45:04.000Z",
+          "kind": "evidence",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/decision-to-dissolve-the-governing-bodies-of-fazil-kamil-madrasas-stayed/"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:45:04.000Z",
+          "kind": "evidence",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/decision-to-dissolve-the-governing-bodies-of-fazil-kamil-madrasas-stayed/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.815Z",
+          "kind": "claim",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.818Z",
+          "kind": "claim",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1021,
+          "slug": "sports-1021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1000,
+          "slug": "national-1000",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
+        },
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তাহসিফ সাউরির মৃত্যুর ঘটনায় চার দিনের রিমান্ডে বান্ধবী জেরিকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
+        },
+        {
+          "cluster_id": 776,
+          "slug": "national-776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 760,
+          "slug": "national-760",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
+        }
+      ]
     },
     "national-1051": {
       "cluster_id": 1051,
-      "headline": "শিক্ষার্থীদের দাবির মুখে সমাবর্তন ফি কমাল জগন্নাথ বিশ্ববিদ্যালয়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
+      "first_seen": "2026-11-02T11:23:19.555Z",
+      "last_update": "2026-11-02T11:23:19.558Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T05:07:07.000Z",
+          "kind": "evidence",
+          "claim_id": 277287,
+          "claim_text": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6vg9799kzkpo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-02T09:35:38.000Z",
+          "kind": "evidence",
+          "claim_id": 277287,
+          "claim_text": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/szwjbphlvq"
+          }
+        },
+        {
+          "ts": "2026-11-02T09:35:38.000Z",
+          "kind": "evidence",
+          "claim_id": 277288,
+          "claim_text": "রাশিয়ার জরুরি পরিস্থিতি মন্ত্রণালয় অ্যাপে সাইবার হামলা",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/szwjbphlvq"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.822Z",
+          "kind": "claim",
+          "claim_id": 277287,
+          "claim_text": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.825Z",
+          "kind": "claim",
+          "claim_id": 277288,
+          "claim_text": "রাশিয়ার জরুরি পরিস্থিতি মন্ত্রণালয় অ্যাপে সাইবার হামলা"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277287,
+          "claim_text": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277288,
+          "claim_text": "রাশিয়ার জরুরি পরিস্থিতি মন্ত্রণালয় অ্যাপে সাইবার হামলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 958,
+          "slug": "national-958",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "সেন্ট মার্টিনে ৩২ বছর ধরে অচল সরকারি বিদ্যুৎকেন্দ্র, বেসরকারি সৌরবিদ্যুতের দামও বাড়ছে"
+        },
+        {
+          "cluster_id": 583,
+          "slug": "politics-583",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
+        },
+        {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        },
+        {
+          "cluster_id": 157,
+          "slug": "national-157",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "১৫০ কিলোমিটার গতির পেসাররা হঠাৎ ধীর হয়ে যান কেন, রহস্য ফাঁস করলেন ওয়াকার ইউনিস"
+        }
+      ]
     },
     "national-1052": {
       "cluster_id": 1052,
-      "headline": "বেশি বেতনে চীনে চাকরির প্রলোভন, পাচারের জন্য আটকে রেখে ১২ নারীকে নির্যাতন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+      "first_seen": "2026-11-02T11:23:19.562Z",
+      "last_update": "2026-11-02T11:23:19.567Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T05:18:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9tWmdMMWxseXd3YTNYcWpOUFNod2ZBZmYyeDFNclhMN0xmSkdhMi1sal9Ga1NuOXI2Z2VQaXhOVlk0MHNXSWR5ckhMZUVaZzNFNXc1eVRmV2tGR2FJTzkyVnJMV1Nmc2phY1dnaTI0eWFDZjN5?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:18:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9tWmdMMWxseXd3YTNYcWpOUFNod2ZBZmYyeDFNclhMN0xmSkdhMi1sal9Ga1NuOXI2Z2VQaXhOVlk0MHNXSWR5ckhMZUVaZzNFNXc1eVRmV2tGR2FJTzkyVnJMV1Nmc2phY1dnaTI0eWFDZjN5?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T08:34:36.000Z",
+          "kind": "evidence",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3cDlybDY5QVg4d0lBWmpFX1Q1eHU0anQxZ0J4RGZUOWlZcmdYWHhIRzNiRGo4QTQxQ3MtS1BNZGFsSlRLQzJlQ3NHd2FQc1k0OVRkVGxQUEFKUE1ZWmlEcl9tZ3dsTVJYak5ZcDcxcw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.828Z",
+          "kind": "claim",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.831Z",
+          "kind": "claim",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277289,
+          "claim_text": "শ্রমিক আন্দোলন ঘিরে জামায়াত-আওয়ামী লীগ যৌথ চক্রান্ত করছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277290,
+          "claim_text": "রাজপথকে উত্তপ্ত করছে জামায়াত, আগুন দিচ্ছে আওয়ামী লীগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1053": {
       "cluster_id": 1053,
-      "headline": "বঙ্গোপসাগরে স্যাটেলাইট দিয়ে নজরদারি করতে চায় সরকারি কোম্পানি, ব্যয় ৬০০ কোটি টাকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+      "first_seen": "2026-11-02T11:23:20.072Z",
+      "last_update": "2026-11-02T11:23:20.075Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T11:02:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-newly-elected-members-of-parliament-to-take-oath-tomorrow/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.834Z",
+          "kind": "claim",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1054": {
       "cluster_id": 1054,
-      "headline": "বলাকায় বুথে যান্ত্রিক ত্রুটি, আশকোনায় বিমানের টিকিট বিক্রির কাউন্টার আবার চালু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+      "first_seen": "2026-11-02T11:23:20.077Z",
+      "last_update": "2026-11-02T11:23:20.079Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T11:00:46.000Z",
+          "kind": "evidence",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/njnbgk31qr"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.836Z",
+          "kind": "claim",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277292,
+          "claim_text": "কাপ্তাই হ্রদের কাচকি-চাপিলা মাছেও মাইক্রোপ্লাস্টিক, যেসব কারণ জানালেন গবেষকেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1055": {
       "cluster_id": 1055,
-      "headline": "রাধারমণ দত্তের প্রয়াণদিবসের অনুষ্ঠান কবরস্থানের পাশে না করতে ইউএনওকে চিঠি",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+      "first_seen": "2026-11-02T11:23:20.081Z",
+      "last_update": "2026-11-02T11:23:20.083Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:52:16.000Z",
+          "kind": "evidence",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/us-midterm-elections-how-they-could-affect-stock-markets-and-oil-prices/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.839Z",
+          "kind": "claim",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277293,
+          "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: যেভাবে প্রভাবিত হতে পারে পুঁজিবাজার ও তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1056": {
       "cluster_id": 1056,
-      "headline": "রিমান্ড শেষে কারাগারে আনিসুল হক ও আব্দুল্লাহ আল মামুন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+      "first_seen": "2026-11-02T11:23:20.085Z",
+      "last_update": "2026-11-02T11:23:20.087Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:51:45.000Z",
+          "kind": "evidence",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/w0vo98znmd"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.842Z",
+          "kind": "claim",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1057": {
       "cluster_id": 1057,
-      "headline": "চাল-আটায় পুষ্টি উপাদান যুক্ত করতে দ্রুত আইন প্রণয়নের তাগিদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+      "first_seen": "2026-11-02T11:23:20.089Z",
+      "last_update": "2026-11-02T11:23:20.091Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/0kuzghhfxn"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.845Z",
+          "kind": "claim",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1058": {
@@ -106947,6 +108498,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -106985,14 +108544,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -117644,6 +119195,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -117682,14 +119241,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -122713,6 +124264,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -122751,14 +124310,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -126386,6 +127937,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -126424,14 +127983,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -130469,6 +132020,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -130507,14 +132066,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -143881,6 +145432,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -143919,14 +145478,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -157414,6 +158965,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -157452,14 +159011,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -158854,6 +160405,14 @@
           "headline": "ভারতের স্কুলে বিদ্যুচালিত করাত দিয়ে দুই ছাত্রীকে হামলা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -158884,14 +160443,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -163544,6 +165095,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -163582,14 +165141,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -166837,6 +168388,14 @@
           "headline": "কৃত্রিমভাবে পাসের হার, জিপিএ-৫ ও অকৃতকার্য শিক্ষার্থীদের বিষয়ে যে বার্তা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -166867,14 +168426,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -181403,6 +182954,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -181433,14 +182992,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -181791,6 +183342,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -181829,14 +183388,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -189954,6 +191505,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -189976,14 +191535,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 813,
-          "slug": "national-storm",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
         }
       ]
     },
@@ -193256,6 +194807,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -193294,14 +194853,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -195155,6 +196706,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1041,
+          "slug": "national-1041",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কিশোরগঞ্জে মুক্তিযোদ্ধা মানিক পশারীর দাফনে বাধার প্রতিবাদে মানববন্ধন"
+        },
         {
           "cluster_id": 583,
           "slug": "politics-583",
@@ -214774,7 +216333,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T10:51:23.956Z",
+      "last_update": "2026-11-02T11:23:19.569Z",
       "claim_count": 3,
       "events": [
         {
@@ -217867,6 +219426,85 @@
           "kind": "verify",
           "claim_id": 228283,
           "claim_text": "Trump launches racist diatribe against Abdul El-Sayed at Iowa rally",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-democrats-condemn-haley": {
+      "cluster_id": 1048,
+      "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+      "first_seen": "2026-11-02T11:23:19.533Z",
+      "last_update": "2026-11-02T11:23:19.536Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T11:00:41.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/democrats-reaction-haley-steven-mike-rogers"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:00:41.000Z",
+          "kind": "evidence",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/02/democrats-reaction-haley-steven-mike-rogers"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:06:26.000Z",
+          "kind": "evidence",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/02/democrats-haley-stevens-mike-rogers-abdul-el-sayed-michigan-midterms-trump-rallies-latest-news-updates"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.804Z",
+          "kind": "claim",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.807Z",
+          "kind": "claim",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277281,
+          "claim_text": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277282,
+          "claim_text": "‘A despicable betrayal’: Democrats incensed by Haley Stevens’ endorsement of Mike Rogers",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -221823,6 +223461,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -221853,14 +223499,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
-        },
-        {
-          "cluster_id": 776,
-          "slug": "national-776",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
         }
       ]
     },
@@ -225194,7 +226832,7 @@
       "cluster_id": 1033,
       "headline": "দুদকের মামলায় ডায়মন্ড ওয়ার্ল্ডের দিলীপ কুমারকে গ্রেপ্তার দেখানোর আদেশ",
       "first_seen": "2026-11-02T10:16:28.902Z",
-      "last_update": "2026-11-02T10:51:23.949Z",
+      "last_update": "2026-11-02T11:23:19.560Z",
       "claim_count": 2,
       "events": [
         {
@@ -229011,6 +230649,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -229049,14 +230695,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -231756,6 +233394,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -231770,14 +233416,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলের সামনের নম্বরপ্লেটে পরিবর্তন, এক লাইনে লেখার অনুমতি"
-        },
-        {
-          "cluster_id": 1000,
-          "slug": "national-1000",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
     },
@@ -231951,12 +233589,12 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
-          "cluster_id": 1040,
-          "slug": "national-1040",
+          "cluster_id": 1050,
+          "slug": "politics-1050",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও"
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
         }
       ]
     },
@@ -232118,20 +233756,208 @@
     },
     "politics-1050": {
       "cluster_id": 1050,
-      "headline": "দুর্গাপূজা ঘিরে বিএনপির নেতাকর্মীদের সতর্ক থাকার নির্দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+      "first_seen": "2026-11-02T11:23:19.544Z",
+      "last_update": "2026-11-02T11:23:19.547Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T07:57:14.000Z",
+          "kind": "evidence",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/law-and-crime/978299/%E0%A6%AB%E0%A6%BE%E0%A6%9C%E0%A6%BF%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%97%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%82-%E0%A6%AC%E0%A6%A1%E0%A6%BF%E0%A6%B0-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:45:04.000Z",
+          "kind": "evidence",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/decision-to-dissolve-the-governing-bodies-of-fazil-kamil-madrasas-stayed/"
+          }
+        },
+        {
+          "ts": "2026-11-02T10:45:04.000Z",
+          "kind": "evidence",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/decision-to-dissolve-the-governing-bodies-of-fazil-kamil-madrasas-stayed/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.815Z",
+          "kind": "claim",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.818Z",
+          "kind": "claim",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277285,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277286,
+          "claim_text": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডি বাতিলের সিদ্ধান্ত স্থগিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1021,
+          "slug": "sports-1021",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1000,
+          "slug": "national-1000",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
+        },
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "তাহসিফ সাউরির মৃত্যুর ঘটনায় চার দিনের রিমান্ডে বান্ধবী জেরিকা"
+        },
+        {
+          "cluster_id": 840,
+          "slug": "politics-840",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ঢাকা মহানগর উত্তর বিএনপির আহ্বায়ক মিল্টন, সদস্যসচিব জাহাঙ্গীর"
+        },
+        {
+          "cluster_id": 776,
+          "slug": "national-776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 760,
+          "slug": "national-760",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
+        }
+      ]
+    },
+    "politics-1053": {
+      "cluster_id": 1053,
+      "headline": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+      "first_seen": "2026-11-02T11:23:20.072Z",
+      "last_update": "2026-11-02T11:23:20.075Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T11:02:30.000Z",
+          "kind": "evidence",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/two-newly-elected-members-of-parliament-to-take-oath-tomorrow/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.834Z",
+          "kind": "claim",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277291,
+          "claim_text": "নবনির্বাচিত দুই সংসদ সদস্যের শপথ কাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1056": {
       "cluster_id": 1056,
-      "headline": "ড. ইউনূসকে হেনস্তার নিন্দা জামায়াতের নায়েবে আমিরের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+      "first_seen": "2026-11-02T11:23:20.085Z",
+      "last_update": "2026-11-02T11:23:20.087Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:51:45.000Z",
+          "kind": "evidence",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/w0vo98znmd"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.842Z",
+          "kind": "claim",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277294,
+          "claim_text": "প্রিন্সেস ডায়ানার ‘রিভেঞ্জ ড্রেস’ লুকে আবেদন কাড়লেন ঋতাভরী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1061": {
@@ -247588,7 +249414,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T10:51:23.956Z",
+      "last_update": "2026-11-02T11:23:19.569Z",
       "claim_count": 3,
       "events": [
         {
@@ -248510,6 +250336,14 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -248524,14 +250358,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলের সামনের নম্বরপ্লেটে পরিবর্তন, এক লাইনে লেখার অনুমতি"
-        },
-        {
-          "cluster_id": 1000,
-          "slug": "national-1000",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
     },
@@ -248705,12 +250531,12 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
-          "cluster_id": 1040,
-          "slug": "national-1040",
+          "cluster_id": 1050,
+          "slug": "politics-1050",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "নতুন উপজেলা গঠনের প্রস্তাবের প্রতিবাদে উত্তপ্ত ব্রাহ্মণবাড়িয়া, ডিসি অফিস ঘেরাও"
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
         }
       ]
     },
@@ -248757,8 +250583,8 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T10:51:23.947Z",
-      "claim_count": 2,
+      "last_update": "2026-11-02T11:23:19.538Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-02T08:49:16.000Z",
@@ -248828,6 +250654,46 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-02T11:03:19.000Z",
+          "kind": "evidence",
+          "claim_id": 269900,
+          "claim_text": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/zahid-hasan-emily-bangladesh-saff-championship-2026-ronan-sullivan-lead-sports/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:03:19.000Z",
+          "kind": "evidence",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/zahid-hasan-emily-bangladesh-saff-championship-2026-ronan-sullivan-lead-sports/"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.697Z",
+          "kind": "claim",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277243,
+          "claim_text": "আলফাজ-কাঞ্চন-এনামুলদের মতো কেউ নেই এখন বাংলাদেশে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": []
@@ -248873,11 +250739,41 @@
     },
     "sports-1057": {
       "cluster_id": 1057,
-      "headline": "বড় স্বপ্ন দেখো, পরিকল্পনা করো, পরিশ্রম করো, ‘কিশোর আলো’র জন্মদিনের আয়োজনে গুণীজনেরা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+      "first_seen": "2026-11-02T11:23:20.089Z",
+      "last_update": "2026-11-02T11:23:20.091Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T10:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/0kuzghhfxn"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.845Z",
+          "kind": "claim",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো"
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 277295,
+          "claim_text": "রিপাবলিকানদের টেক্সাস ‘দুর্গ’ কি এবার ভেঙে দিতে পারবেন ডেমোক্র্যাট প্রার্থী ৩৭ বছর বয়সী টালারিকো",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1066": {
@@ -252770,6 +254666,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -252808,14 +254712,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -253539,6 +255435,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -253577,14 +255481,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -254318,6 +256214,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -254356,14 +256260,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -255230,6 +257126,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -255268,14 +257172,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -259937,7 +261833,7 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T10:51:23.930Z",
+      "last_update": "2026-11-02T11:23:19.531Z",
       "claim_count": 14,
       "events": [
         {
@@ -260499,6 +262395,174 @@
             "field": "স্বীকার",
             "sources": "[\"c273560\",\"c273566\"]",
             "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "VERIFIED",
+            "confidence": 40,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273561,
+          "claim_text": "বড় পতনের পর যে দামে বিক্রি হচ্ছে সোনার ভরি",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273562,
+          "claim_text": "মেঘলা থাকবে ঢাকার আকাশ, বৃষ্টি হবে কি?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273563,
+          "claim_text": "নতুন দামে বিক্রি হচ্ছে সোনা, আজ ভরি কত?",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273564,
+          "claim_text": "পত্রিকা: 'শ্রম অসন্তোষে ৫২৯ পোশাক কারখানায় উৎপাদন বন্ধ'",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273565,
+          "claim_text": "তুর্কি বিনিয়োগ বৃদ্ধির আহ্বান বাণিজ্যমন্ত্রীর, শুল্ক বাধা নিরসনে গুরুত্বারোপ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273566,
+          "claim_text": "পুলিশের গাড়িতে অগ্নিসংযোগের ‘স্বীকারোক্তি’, যুবক আটক",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273567,
+          "claim_text": "কীভাবে কম কাজ করে বেশি ফল পাবেন? কৌশল জানুন",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273568,
+          "claim_text": "আশুলিয়া-মিরপুরে শ্রমিক-পুলিশ সংঘর্ষ, টিয়ারশেল নিক্ষেপ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273569,
+          "claim_text": "জানুয়ারির বেতনের সঙ্গে নতুন মজুরি চান শ্রমিকরা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273570,
+          "claim_text": "মিরপুরে শ্রমিক বিক্ষোভের ঘটনায় ৫ মামলা, সকাল থেকে গ্রেপ্তার ২৯",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273571,
+          "claim_text": "মিরপুরে আজও বিক্ষোভের চেষ্টা, এখন পর্যন্ত গ্রেপ্তার ২৯",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273572,
+          "claim_text": "বাণিজ্য মেলার অস্থায়ী ফটক ভেঙে ফেললেন শেকৃবি শিক্ষার্থীরা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T11:45:12.943Z",
+          "kind": "verify",
+          "claim_id": 273573,
+          "claim_text": "মেঘলা ঢাকার আকাশ, বৃষ্টি হবে কিনা জানা গেল পূর্বাভাসে",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": "SINGLE_SOURCE",
+            "confidence": 13,
+            "reason": "re-verify"
           }
         }
       ],
@@ -261454,6 +263518,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1050,
+          "slug": "politics-1050",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত"
+        },
+        {
           "cluster_id": 1021,
           "slug": "sports-1021",
           "actor_links": 0,
@@ -261492,14 +263564,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ধর্ষণচেষ্টায় মুখ থেঁতলে দেওয়া শিশু ঢাকায়, চিকিৎসার দায়িত্ব নিলেন প্রতিমন্ত্রী"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
