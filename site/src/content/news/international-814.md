@@ -1,5 +1,7 @@
 ---
 title: "আরব উপসাগরে কাতারের এলএনজি ট্যাংকারে হামলা"
+thumbnail: "/images/international-814.webp"
+thumbnailAlt: "আরব উপসাগরে কাতারের এলএনজি ট্যাংকারে হামলা — যাচাইডেস্ক"
 seoTitle: "আরব উপসাগরে কাতারের এলএনজি ট্যাংকারে হামলা"
 excerpt: "Image ৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন লন্ডনে মার্কিন দূতাবাসের সামনে ফি"
 seoDescription: "Image ৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন লন্ডনে …"
