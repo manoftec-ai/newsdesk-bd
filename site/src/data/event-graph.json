@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6488,
+    "storyCount": 6489,
     "kinds": [
       "claim",
       "evidence",
@@ -358,7 +358,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T13:07:45.251Z",
+      "last_update": "2026-11-02T13:40:58.704Z",
       "claim_count": 3,
       "events": [
         {
@@ -509,7 +509,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -1313,7 +1313,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T13:07:45.244Z",
+      "last_update": "2026-11-02T13:40:58.700Z",
       "claim_count": 2,
       "events": [
         {
@@ -1388,14 +1388,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1049,
-          "slug": "national-1049",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
-        },
-        {
           "cluster_id": 1039,
           "slug": "tech-1039",
           "actor_links": 0,
@@ -1434,6 +1426,14 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -1593,13 +1593,82 @@
       ],
       "related": []
     },
+    "economy-1081": {
+      "cluster_id": 1081,
+      "headline": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+      "first_seen": "2026-11-02T13:40:59.083Z",
+      "last_update": "2026-11-02T13:40:59.085Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:31:48.000Z",
+          "kind": "evidence",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-price-of-12-kg-of-lpg-has-increased-by-223-taka-reaching-2060-taka/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.603Z",
+          "kind": "claim",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "economy-1082": {
       "cluster_id": 1082,
-      "headline": "৩ কোটি বর্গফুট নির্মাণ করেছে র্যাংগস",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+      "first_seen": "2026-11-02T13:40:59.087Z",
+      "last_update": "2026-11-02T13:40:59.089Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:27:01.000Z",
+          "kind": "evidence",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6p9ge5l779po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.605Z",
+          "kind": "claim",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1086": {
@@ -1699,6 +1768,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -1737,14 +1814,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -1845,6 +1914,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -1883,14 +1960,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -4893,7 +4962,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -7329,6 +7398,14 @@
           "headline": "এমপির ছেলেকে আবার রিমান্ডে নেওয়ার আবেদন, নাটোর জেলা বিএনপির বিশেষ সভা"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -7359,14 +7436,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -7837,6 +7906,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -7875,14 +7952,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -8004,6 +8073,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -8042,14 +8119,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -9395,6 +9464,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
         {
           "cluster_id": 362,
           "slug": "national-362",
@@ -12968,7 +13045,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -13412,6 +13489,14 @@
           "headline": "শিক্ষার্থীরা রাতে ঘরের বাইরে আড্ডা দিলে গ্রেপ্তার করবে পুলিশ: চট্টগ্রামের ডিআইজি"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -13442,14 +13527,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -13886,7 +13963,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -14608,6 +14685,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -14646,14 +14731,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -15013,6 +15090,14 @@
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 982,
           "slug": "national-982",
           "actor_links": 1,
@@ -15043,14 +15128,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1000,
-          "slug": "national-1000",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
     },
@@ -15133,6 +15210,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -15171,14 +15256,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -16066,6 +16143,14 @@
           "headline": "নাটোরে নিহত ছাত্রদল নেতার বাড়িতে সমাজকল্যাণ প্রতিমন্ত্রী, বিচারের আশ্বাস"
         },
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 1,
@@ -16329,6 +16414,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -16367,14 +16460,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -17144,7 +17229,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -18481,7 +18566,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T13:07:45.255Z",
+      "last_update": "2026-11-02T13:40:58.711Z",
       "claim_count": 3,
       "events": [
         {
@@ -18649,7 +18734,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T13:07:45.254Z",
+      "last_update": "2026-11-02T13:40:58.707Z",
       "claim_count": 3,
       "events": [
         {
@@ -18856,7 +18941,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T13:07:45.251Z",
+      "last_update": "2026-11-02T13:40:58.704Z",
       "claim_count": 3,
       "events": [
         {
@@ -19007,7 +19092,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -19281,6 +19366,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 934,
           "slug": "politics-934",
           "actor_links": 0,
@@ -19319,14 +19412,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -19409,6 +19494,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -19447,14 +19540,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -20759,7 +20844,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -20990,7 +21075,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -23283,7 +23368,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -23666,7 +23751,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -23987,6 +24072,14 @@
           "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -24017,14 +24110,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -31505,7 +31590,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -32071,6 +32156,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -32109,14 +32202,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -34045,7 +34130,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -34244,7 +34329,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -34452,6 +34537,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "নাটোরে নিহত ছাত্রদল নেতার বাড়িতে সমাজকল্যাণ প্রতিমন্ত্রী, বিচারের আশ্বাস"
+        },
+        {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
           "cluster_id": 362,
@@ -37481,7 +37574,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T13:07:45.253Z",
+      "last_update": "2026-11-02T13:40:58.706Z",
       "claim_count": 2,
       "events": [
         {
@@ -37696,7 +37789,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T13:07:45.250Z",
+      "last_update": "2026-11-02T13:40:58.703Z",
       "claim_count": 4,
       "events": [
         {
@@ -37859,6 +37952,14 @@
           "headline": "ট্রাক্টর নিয়ে পুরোনো বাণিজ্য মেলার মাঠে শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাংচুর"
         },
         {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
           "cluster_id": 860,
           "slug": "politics-uk-politics-live",
           "actor_links": 1,
@@ -37873,14 +37974,6 @@
           "source_links": 4,
           "claim_count": 14,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 16,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
           "cluster_id": 998,
@@ -38018,6 +38111,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -38056,14 +38157,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -38696,7 +38789,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T13:07:45.240Z",
+      "last_update": "2026-11-02T13:40:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -38824,7 +38917,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T13:07:45.241Z",
+      "last_update": "2026-11-02T13:40:58.697Z",
       "claim_count": 2,
       "events": [
         {
@@ -38935,6 +39028,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -38973,14 +39074,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -38988,7 +39081,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T13:07:45.244Z",
+      "last_update": "2026-11-02T13:40:58.700Z",
       "claim_count": 2,
       "events": [
         {
@@ -39063,14 +39156,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1049,
-          "slug": "national-1049",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
-        },
-        {
           "cluster_id": 1039,
           "slug": "tech-1039",
           "actor_links": 0,
@@ -39109,6 +39194,14 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -39270,11 +39363,41 @@
     },
     "international-1085": {
       "cluster_id": 1085,
-      "headline": "আরব দলগুলোর চমক, তৈরি হতে পারে নেতানিয়াহুর বিদায়ের পথ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+      "first_seen": "2026-11-02T13:40:59.096Z",
+      "last_update": "2026-11-02T13:40:59.098Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/health/5431oyq22i"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.612Z",
+          "kind": "claim",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1091": {
@@ -39392,6 +39515,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -39430,14 +39561,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -43263,7 +43386,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -44348,7 +44471,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -44851,7 +44974,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -46145,6 +46268,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -46183,14 +46314,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -49421,7 +49544,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -49829,7 +49952,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -60244,6 +60367,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -60282,14 +60413,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -61053,6 +61176,14 @@
           "headline": "এমপির ছেলেকে আবার রিমান্ডে নেওয়ার আবেদন, নাটোর জেলা বিএনপির বিশেষ সভা"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -61083,14 +61214,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -62109,6 +62232,14 @@
           "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -62123,14 +62254,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 1063,
-          "slug": "national-1063",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১০ মিনিটের জন্য নেওয়া মোটরসাইকেল ফেরত চাইতে গিয়ে প্রাণ গেলো ব্যবসায়ীর"
         }
       ]
     },
@@ -67496,7 +67619,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -69209,7 +69332,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -71069,6 +71192,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -71107,14 +71238,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -71699,6 +71822,14 @@
           "headline": "শিক্ষার্থীরা রাতে ঘরের বাইরে আড্ডা দিলে গ্রেপ্তার করবে পুলিশ: চট্টগ্রামের ডিআইজি"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -71729,14 +71860,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -76171,7 +76294,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -77160,6 +77283,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 879,
           "slug": "opinion-879",
           "actor_links": 1,
@@ -77847,7 +77978,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -78639,7 +78770,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T13:07:45.241Z",
+      "last_update": "2026-11-02T13:40:58.697Z",
       "claim_count": 2,
       "events": [
         {
@@ -78750,6 +78881,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -78788,14 +78927,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -79829,7 +79960,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -80792,7 +80923,7 @@
       "cluster_id": 1000,
       "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের",
       "first_seen": "2026-11-02T07:57:35.369Z",
-      "last_update": "2026-11-02T13:07:45.254Z",
+      "last_update": "2026-11-02T13:40:58.707Z",
       "claim_count": 3,
       "events": [
         {
@@ -81625,7 +81756,7 @@
       "cluster_id": 1010,
       "headline": "যুবকের দুই চোখ উপড়ে হাত-পা বেঁধে বিলের পাশে ফেলে গেলো দুর্বৃত্তরা",
       "first_seen": "2026-11-02T08:32:50.479Z",
-      "last_update": "2026-11-02T13:07:45.253Z",
+      "last_update": "2026-11-02T13:40:58.706Z",
       "claim_count": 2,
       "events": [
         {
@@ -81832,7 +81963,7 @@
       "cluster_id": 1012,
       "headline": "জানুয়ারি মাস থেকেই শ্রমিকেরা যেন বর্ধিত মজুরি পান সে লক্ষ্যে কাজ করা হবে: শ্রমিক প্রতিনিধি বাবুল আখতার",
       "first_seen": "2026-11-02T08:32:50.489Z",
-      "last_update": "2026-11-02T13:07:45.251Z",
+      "last_update": "2026-11-02T13:40:58.704Z",
       "claim_count": 3,
       "events": [
         {
@@ -81983,7 +82114,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -82208,6 +82339,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
           "cluster_id": 860,
@@ -83163,7 +83302,7 @@
       "cluster_id": 1027,
       "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর",
       "first_seen": "2026-11-02T10:16:28.874Z",
-      "last_update": "2026-11-02T13:07:45.250Z",
+      "last_update": "2026-11-02T13:40:58.703Z",
       "claim_count": 4,
       "events": [
         {
@@ -83326,6 +83465,14 @@
           "headline": "ট্রাক্টর নিয়ে পুরোনো বাণিজ্য মেলার মাঠে শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাংচুর"
         },
         {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 19,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
           "cluster_id": 860,
           "slug": "politics-uk-politics-live",
           "actor_links": 1,
@@ -83340,14 +83487,6 @@
           "source_links": 4,
           "claim_count": 14,
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 16,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
           "cluster_id": 998,
@@ -83499,7 +83638,7 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T13:07:45.243Z",
+      "last_update": "2026-11-02T13:40:58.699Z",
       "claim_count": 4,
       "events": [
         {
@@ -84049,6 +84188,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 934,
           "slug": "politics-934",
           "actor_links": 0,
@@ -84087,14 +84234,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -84177,6 +84316,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -84215,14 +84362,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -84442,8 +84581,8 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T13:07:45.235Z",
-      "claim_count": 18,
+      "last_update": "2026-11-02T13:40:58.690Z",
+      "claim_count": 19,
       "events": [
         {
           "ts": "2026-11-01T02:52:56.000Z",
@@ -84597,6 +84736,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.bondhushava.com/career/6l5slybyg1"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/3npf3rzo50"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/3npf3rzo50"
           }
         },
         {
@@ -85357,6 +85518,36 @@
             "sources": "[\"c273560\",\"c273566\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.459Z",
+          "kind": "claim",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:20.600Z",
+          "kind": "conflict",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c273560\",\"c273566\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -85367,6 +85558,30 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "মেঘলা ঢাকার আকাশ, বৃষ্টি হবে কিনা জানা গেল পূর্বাভাসে"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 1015,
+          "slug": "national-1015",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ট্রাক্টর নিয়ে পুরোনো বাণিজ্য মেলার মাঠে শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাংচুর"
+        },
+        {
+          "cluster_id": 860,
+          "slug": "politics-uk-politics-live",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ঢাকা বিশ্ববিদ্যালয়ের জগন্নাথ হল থেকে নিষিদ্ধ ছাত্রলীগের নেতাকে পুলিশে দিলেন ছাত্রদলের নেতা–কর্মীরা"
         },
         {
           "cluster_id": 253,
@@ -85383,30 +85598,6 @@
           "source_links": 4,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
-        },
-        {
-          "cluster_id": 879,
-          "slug": "opinion-879",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 22,
-          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 583,
-          "slug": "politics-583",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 21,
-          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
-        },
-        {
-          "cluster_id": 521,
-          "slug": "politics-521",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 18,
-          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
         }
       ]
     },
@@ -86084,7 +86275,7 @@
       "cluster_id": 1048,
       "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
       "first_seen": "2026-11-02T11:23:19.533Z",
-      "last_update": "2026-11-02T13:07:45.237Z",
+      "last_update": "2026-11-02T13:40:58.694Z",
       "claim_count": 4,
       "events": [
         {
@@ -86472,7 +86663,7 @@
       "cluster_id": 1050,
       "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
       "first_seen": "2026-11-02T11:23:19.544Z",
-      "last_update": "2026-11-02T13:07:45.245Z",
+      "last_update": "2026-11-02T13:40:58.701Z",
       "claim_count": 3,
       "events": [
         {
@@ -86640,7 +86831,7 @@
       "cluster_id": 1051,
       "headline": "রাশিয়া ও ইউক্রেনের জরুরি সতর্কতা অ্যাপগুলো সাইবার হামলার শিকার",
       "first_seen": "2026-11-02T11:23:19.555Z",
-      "last_update": "2026-11-02T13:07:45.252Z",
+      "last_update": "2026-11-02T13:40:58.705Z",
       "claim_count": 2,
       "events": [
         {
@@ -87276,7 +87467,7 @@
       "cluster_id": 1063,
       "headline": "১০ মিনিটের জন্য নেওয়া মোটরসাইকেল ফেরত চাইতে গিয়ে প্রাণ গেলো ব্যবসায়ীর",
       "first_seen": "2026-11-02T12:34:25.487Z",
-      "last_update": "2026-11-02T13:07:45.238Z",
+      "last_update": "2026-11-02T13:40:58.695Z",
       "claim_count": 2,
       "events": [
         {
@@ -87359,6 +87550,14 @@
           "headline": "৩০ হাজার টাকা বেতনের দাবিতে ফের উত্তাল মিরপুর, সড়ক অবরোধ শ্রমিকদের"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -87389,14 +87588,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -87404,7 +87595,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T13:07:45.240Z",
+      "last_update": "2026-11-02T13:40:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -87532,7 +87723,7 @@
       "cluster_id": 1065,
       "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার",
       "first_seen": "2026-11-02T12:34:25.498Z",
-      "last_update": "2026-11-02T13:07:45.241Z",
+      "last_update": "2026-11-02T13:40:58.697Z",
       "claim_count": 2,
       "events": [
         {
@@ -87643,6 +87834,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -87681,14 +87880,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -87696,7 +87887,7 @@
       "cluster_id": 1066,
       "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই",
       "first_seen": "2026-11-02T12:34:25.503Z",
-      "last_update": "2026-11-02T13:07:45.242Z",
+      "last_update": "2026-11-02T13:40:58.698Z",
       "claim_count": 2,
       "events": [
         {
@@ -87771,6 +87962,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1065,
           "slug": "national-1065",
           "actor_links": 0,
@@ -87809,14 +88008,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -87824,7 +88015,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T13:07:45.244Z",
+      "last_update": "2026-11-02T13:40:58.700Z",
       "claim_count": 2,
       "events": [
         {
@@ -87899,14 +88090,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1049,
-          "slug": "national-1049",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
-        },
-        {
           "cluster_id": 1039,
           "slug": "tech-1039",
           "actor_links": 0,
@@ -87945,6 +88128,14 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
@@ -88141,7 +88332,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 4,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        }
+      ]
     },
     "national-1072": {
       "cluster_id": 1072,
@@ -88186,7 +88386,7 @@
       "cluster_id": 1073,
       "headline": "শ্রমিক আন্দোলন ঘিরে একাত্তর ও চব্বিশের পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খাঁন",
       "first_seen": "2026-11-02T13:07:45.246Z",
-      "last_update": "2026-11-02T13:07:45.249Z",
+      "last_update": "2026-11-02T13:40:58.702Z",
       "claim_count": 2,
       "events": [
         {
@@ -88507,12 +88707,143 @@
     },
     "national-1079": {
       "cluster_id": 1079,
-      "headline": "যুবদল নেতার সঙ্গে মৎস্য কর্মকর্তার অডিও ভাইরাল, ‘চা খাওয়ার টাকা দিলেও তো খুশি হতাম’",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী",
+      "first_seen": "2026-11-02T13:40:58.691Z",
+      "last_update": "2026-11-02T13:40:58.693Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T12:12:38.000Z",
+          "kind": "evidence",
+          "claim_id": 292313,
+          "claim_text": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hheedzh7ft"
+          }
+        },
+        {
+          "ts": "2026-11-02T12:12:38.000Z",
+          "kind": "evidence",
+          "claim_id": 292314,
+          "claim_text": "বিপ্লব আপনারা কবে করেছেন, কোন বিপ্লবে ছিলেন: জামায়াতকে রিজভী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/hheedzh7ft"
+          }
+        },
+        {
+          "ts": "2026-11-02T13:04:14.000Z",
+          "kind": "evidence",
+          "claim_id": 292313,
+          "claim_text": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/sylhet/978359/%E0%A6%8F%E0%A6%9F%E0%A6%BE-%E0%A6%95%E0%A7%8B%E0%A6%A8-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%AC-%E0%A6%A6%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A7%9F-%E0%A6%9F%E0%A7%8B%E0%A6%95%E0%A6%BE-%E0%A6%A6%E0%A6%BF%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BF%E0%A6%95-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%8B%E0%A6%AD%E0%A7%87"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.593Z",
+          "kind": "claim",
+          "claim_id": 292313,
+          "claim_text": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.596Z",
+          "kind": "claim",
+          "claim_id": 292314,
+          "claim_text": "বিপ্লব আপনারা কবে করেছেন, কোন বিপ্লবে ছিলেন: জামায়াতকে রিজভী"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292313,
+          "claim_text": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292314,
+          "claim_text": "বিপ্লব আপনারা কবে করেছেন, কোন বিপ্লবে ছিলেন: জামায়াতকে রিজভী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:20.614Z",
+          "kind": "conflict",
+          "claim_id": 292313,
+          "claim_text": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c292313\",\"c292314\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1071,
+          "slug": "sports-1071",
+          "actor_links": 4,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বিপ্লব আপনারা কবে করেছেন, কোন বিপ্লবে ছিলেন: জামায়াতকে রিজভী"
+        },
+        {
+          "cluster_id": 1066,
+          "slug": "sports-1066",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
+        },
+        {
+          "cluster_id": 1065,
+          "slug": "national-1065",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 1063,
+          "slug": "national-1063",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "১০ মিনিটের জন্য নেওয়া মোটরসাইকেল ফেরত চাইতে গিয়ে প্রাণ গেলো ব্যবসায়ীর"
+        },
+        {
+          "cluster_id": 1031,
+          "slug": "national-1031",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 997,
+          "slug": "opinion-997",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
+        }
+      ]
     },
     "national-108": {
       "cluster_id": 108,
@@ -88595,56 +88926,374 @@
     },
     "national-1080": {
       "cluster_id": 1080,
-      "headline": "পুলিশের টহল গাড়ির সামনে নিষিদ্ধ যুবলীগের মিছিল, তদন্তের নির্দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের",
+      "first_seen": "2026-11-02T13:40:58.708Z",
+      "last_update": "2026-11-02T13:40:58.710Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-02T02:48:55.000Z",
+          "kind": "evidence",
+          "claim_id": 292315,
+          "claim_text": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMinARBVV95cUxPcmtpYUF5UTBObmowOFFpWWlyT0dRNEhFVU1jYVE2d3VRei02X2FjT3dGVnFYM2t3XzlEYTVzRjdJUDBnYUY1Ym0yOUpkaXJmMjVwb3doU3AybVV2X2hWLTRXbXliMy1aVUg4WEZMUTNEbi1kaEUwb1hTVjhXU3JZZEM4VF9tcVVCd19yRG1SR0U0V1M1Z1JOX0VGN2JIeXhtUThjWWJ5bFpYbnBzQ2pOc3JSMVVrSFVEWG9XV0ZaTFY4RUJabUMyd1Y5NVlPenYtLVVXbEhVaDUtZzQxV21TT3l2N3Y4Vld5Q2xHekl6eF9RX0tTaUI0aXdDcFFnU19wQ0tQU3Qyd2EtX1pHUDd6SUpYTXA5NWJSNlpua0JXZ1N2NDhjSmo4Z3dnekltaWszTzdEbWxFT0l1dDZNcXFrZjZWQ2tVNVY4ckI5bnJqSzZROXY0X25vNlViUjJZMGFQOEdhQzJFQ01qd1I1UnVCYll4d05ja3pvM0EwYlVIcUZvNHdGR2M3LVpWdWFkNUhzLURmb3huUjRCSUhkdm9OZ1FkSVJ2OHdDaUNLcHhGdWZKeWNOU1BwSWVUTFRYSWVfLS1ReVNjSlpUakxtVG9acE1WMXBockoyVFR4UW9LbVluY1duaUdua2xsQjdiQlVwbTRVRjdaZnVXbUNNSlY4NldjWF9nZEw2SjNvSUtMdTdONXJiREFRV2paOTHSAaIEQVVfeXFMTWtXR0ZlMUE2LW1VZTY3ZWdTWG8yLUhBcEo5aWdQWm9NZEVFWGt5YzkxZExkbTM1cGFUbGxwdFJrYzZ5LW9rVjM4N1J1MWtHUU15QWtYSE5ZRU1EVUs1MmFOMGpWN3VLeGRtUU9LZDhFRUdmWmxkdjFUcjlxczJxLTluUGVweHMzSWVSbUZiQjdETmtra2pVU2FuRkVjdXN4MXZjVEVaWkszcEJUZDJWem9DbHlJcEVjWHRyMUdGSUQ2ZlV0enVSazVNQnZ2aW5NWHF3LUx3ZVdtaHdqVHdNeUczcmZvcktuOElGMFRTUmNrb3NFQ2ZXVUd2ZDhIMk04T25tOExwaW56aGtPS0ZjUjhfMFpGV21QeWlQOTVhbEtCU3F1U25TYWJuX2tCdFY0dXlkTnh4bzhBRDNobm16TXhTOF9lTnNESUxPZkRmTEdsLTVpNGVWZk1tNU5odm1qbTMwU0NyRDdPV0pPNGpMaEdMWk5ZUC1pUFBHZkdBZVdtS1k0aXhLeEtrajZIVlZoY0M5QjI5ZlFjcWRka20zTkRlUm1hb2tGakRRbU5GWFBEaDFhSUNyXzNGa2ZrT0VjU0d6Nll1ZzFScF90X3B3UG56U3ZyZzhWY0o3eGlTRGMtLWQzeUVjbmVLNkFoZ05lUEtwN3pPeC1vam1NSmNuUVVxS1hzTGFGcjY3NEhjZ0NJWjRqU05UTDVXYS1paUI1QTRR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T06:28:46.000Z",
+          "kind": "evidence",
+          "claim_id": 292315,
+          "claim_text": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxNajFhYUZOV0hyT3NLbDMxTTFSX0xfbHowbTJXdHJLZ2NpZHZjVmtIZHNvSk43RjN3VHJWOW04cGUyVWM1cnNYa1pPWDdPcUlxbERDUEY2ZnBXc25PdnpFa3NrQUdtY0xZVzFacl96bkd5djEtUElsU3R3cmsxWGhLWFByam5TTDA3bER3RkNmZ01Rc283Z1Bmdl9ZdEdtOHdSVmlTWjN2MFBHcnRmZVB5dWh0R0RsQUItei1LMkxIN29LR1NSenlKZGNwR2xlOW5wRFlqR3RGZ09hVEdVNzlXOC1hN2ZLZTVlX0U3OWNqbzNaSW1zUVZncmFPWHhsQkRGN1k4eUZ0ZkZZR2p1V3YyY1BfY1I1d0ZCT3djRzlkcGtyNmNaS21fNkd5TlAxb0FjX2w4UHBqZ1NtejlEd21Vc0VsN1hyQ25UdXVFSkxlZHJlUXh2WFAtQklNaWRjS051b3AtMk8zaVV1TXd0ajliLUNZclhiUG5Uc0czSGYtbERkTnJmMHFmaWNsSzRWU3dFQTRjRlVrbzlaS2gxNThmbkR3RkcteTBhNnpuOFJUaHg2dU1OREhWX2tJd25PRHFiTlFweUdMN0NQUElTUU1FRm5VWFhjWDlQUV9BOEtQZlBhM3NOVGhRbjBkN1VNeU92blJ2ZWF3WGRXTl9pSEtVMHg2cFNXYmpIUUJYc2NB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T06:28:46.000Z",
+          "kind": "evidence",
+          "claim_id": 292316,
+          "claim_text": "চীন বিতর্কের পর এমবাপ্পের গোল, রিয়ালের বড় জয়",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxNajFhYUZOV0hyT3NLbDMxTTFSX0xfbHowbTJXdHJLZ2NpZHZjVmtIZHNvSk43RjN3VHJWOW04cGUyVWM1cnNYa1pPWDdPcUlxbERDUEY2ZnBXc25PdnpFa3NrQUdtY0xZVzFacl96bkd5djEtUElsU3R3cmsxWGhLWFByam5TTDA3bER3RkNmZ01Rc283Z1Bmdl9ZdEdtOHdSVmlTWjN2MFBHcnRmZVB5dWh0R0RsQUItei1LMkxIN29LR1NSenlKZGNwR2xlOW5wRFlqR3RGZ09hVEdVNzlXOC1hN2ZLZTVlX0U3OWNqbzNaSW1zUVZncmFPWHhsQkRGN1k4eUZ0ZkZZR2p1V3YyY1BfY1I1d0ZCT3djRzlkcGtyNmNaS21fNkd5TlAxb0FjX2w4UHBqZ1NtejlEd21Vc0VsN1hyQ25UdXVFSkxlZHJlUXh2WFAtQklNaWRjS051b3AtMk8zaVV1TXd0ajliLUNZclhiUG5Uc0czSGYtbERkTnJmMHFmaWNsSzRWU3dFQTRjRlVrbzlaS2gxNThmbkR3RkcteTBhNnpuOFJUaHg2dU1OREhWX2tJd25PRHFiTlFweUdMN0NQUElTUU1FRm5VWFhjWDlQUV9BOEtQZlBhM3NOVGhRbjBkN1VNeU92blJ2ZWF3WGRXTl9pSEtVMHg2cFNXYmpIUUJYc2NB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.598Z",
+          "kind": "claim",
+          "claim_id": 292315,
+          "claim_text": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.601Z",
+          "kind": "claim",
+          "claim_id": 292316,
+          "claim_text": "চীন বিতর্কের পর এমবাপ্পের গোল, রিয়ালের বড় জয়"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292315,
+          "claim_text": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292316,
+          "claim_text": "চীন বিতর্কের পর এমবাপ্পের গোল, রিয়ালের বড় জয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1032,
+          "slug": "national-1032",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
+        },
+        {
+          "cluster_id": 934,
+          "slug": "politics-934",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 704,
+          "slug": "tech-704",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাজেকে ফের ১২ ঘণ্টার অবরোধ ঘোষণা"
+        },
+        {
+          "cluster_id": 466,
+          "slug": "national-466",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গণভোটের রায় বাস্তবায়ন নিয়ে সরকার জনগণের সঙ্গে প্রতারণা করছে: জামায়াত আমির"
+        },
+        {
+          "cluster_id": 436,
+          "slug": "national-436",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গণভোটের রায় বাস্তবায়ন না করলে সরকারকে উচ্চ মূল্য দিতে হবে: জামায়াত আমির"
+        },
+        {
+          "cluster_id": 284,
+          "slug": "national-284",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
+        }
+      ]
     },
     "national-1081": {
       "cluster_id": 1081,
-      "headline": "প্রধানমন্ত্রীর সঙ্গে জাপানের ব্যাংক গভর্নরের বৈঠক, ঢাকায় কার্যালয় খোলার প্রস্তাব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+      "first_seen": "2026-11-02T13:40:59.083Z",
+      "last_update": "2026-11-02T13:40:59.085Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:31:48.000Z",
+          "kind": "evidence",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-price-of-12-kg-of-lpg-has-increased-by-223-taka-reaching-2060-taka/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.603Z",
+          "kind": "claim",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1082": {
       "cluster_id": 1082,
-      "headline": "পুলিশে সরাসরি এসআই নিয়োগ হবে ৪ হাজার, ৪০০-৫০০ এএসপি নিতে হবে বিশেষ বিসিএস",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+      "first_seen": "2026-11-02T13:40:59.087Z",
+      "last_update": "2026-11-02T13:40:59.089Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:27:01.000Z",
+          "kind": "evidence",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c6p9ge5l779po?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.605Z",
+          "kind": "claim",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292318,
+          "claim_text": "রামলীলা ময়দানের সমাবেশে মমতা ব্যানার্জীর উপস্থিতি রাজনৈতিতে কী বার্তা দিচ্ছে?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1083": {
       "cluster_id": 1083,
-      "headline": "দাঁড়িয়ে গেলেন পঞ্চাশোর্ধ্ব নারী, অথচ বসে থাকলেন তরুণ ও মধ্যবয়সী পুরুষেরা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+      "first_seen": "2026-11-02T13:40:59.090Z",
+      "last_update": "2026-11-02T13:40:59.092Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:20:28.000Z",
+          "kind": "evidence",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/fascist-sympathizers-are-fueling-the-workers-protests-home-minister/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.607Z",
+          "kind": "claim",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 982,
+          "slug": "national-982",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সীমান্তের ওপার থেকে অস্থিতিশীলতা তৈরির চেষ্টা, কঠোর হুঁশিয়ারি স্বরাষ্ট্রমন্ত্রীর"
+        },
+        {
+          "cluster_id": 879,
+          "slug": "opinion-879",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 59,
+          "slug": "national-59",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "নাটোরে নিহত ছাত্রদল নেতার বাড়িতে সমাজকল্যাণ প্রতিমন্ত্রী, বিচারের আশ্বাস"
+        },
+        {
+          "cluster_id": 90,
+          "slug": "national-90",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নিহত ছাত্রদল নেতার বাড়িতে গিয়ে বিচারের আশ্বাস দিলেন সমাজকল্যাণ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 536,
+          "slug": "sports-536",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মজুরি বোর্ড গঠন রবিবার, শ্রমিকদের আন্দোলনে থাকার কোন কারণ নেই: শ্রমমন্ত্রী"
+        }
+      ]
     },
     "national-1084": {
       "cluster_id": 1084,
-      "headline": "জিনস প্যান্ট ও অন্তর্বাসে পাচারের চেষ্টা, শাহজালালে মিলল ২৪ কোটি টাকার সোনা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+      "first_seen": "2026-11-02T13:40:59.093Z",
+      "last_update": "2026-11-02T13:40:59.095Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:17:08.000Z",
+          "kind": "evidence",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/0m4sxob0tq"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.610Z",
+          "kind": "claim",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1085": {
       "cluster_id": 1085,
-      "headline": "জার্মান পর্যটকের হারানো ল্যাপটপ হস্তান্তর, পুরস্কৃত দুই পুলিশ কর্মকর্তা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+      "first_seen": "2026-11-02T13:40:59.096Z",
+      "last_update": "2026-11-02T13:40:59.098Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/health/5431oyq22i"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.612Z",
+          "kind": "claim",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1086": {
@@ -89004,6 +89653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -89042,14 +89699,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -89132,6 +89781,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -89170,14 +89827,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -89350,6 +89999,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -89388,14 +90045,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -103405,7 +104054,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -103691,20 +104340,20 @@
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
-        },
-        {
-          "cluster_id": 1065,
-          "slug": "national-1065",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
         }
       ]
     },
@@ -105052,7 +105701,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -108565,7 +109214,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -110333,7 +110982,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -112825,6 +113474,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -112863,14 +113520,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -116008,6 +116657,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -116046,14 +116703,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -123620,7 +124269,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -124496,7 +125145,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -125171,7 +125820,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -127612,6 +128261,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -127650,14 +128307,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গণভোটের রায় বাস্তবায়ন না করলে সরকারকে উচ্চ মূল্য দিতে হবে: জামায়াত আমির"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -131089,7 +131738,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -134538,6 +135187,14 @@
           "headline": "তৈরি পোশাকশিল্পের শ্রমিকদের জন্য নিম্নতম মজুরি বোর্ড গঠন করা হবে রোববার: শ্রমমন্ত্রী"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -134568,14 +135225,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -136374,7 +137023,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -141503,7 +142152,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -147947,6 +148596,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, খান-আলী-আতার আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1073,
           "slug": "national-1073",
           "actor_links": 0,
@@ -147977,14 +148634,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 870,
-          "slug": "national-870",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
         }
       ]
     },
@@ -150648,7 +151297,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 5,
+          "claim_count": 6,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -158168,6 +158817,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -158206,14 +158863,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -161087,6 +161736,14 @@
           "headline": "এমপির ছেলেকে আবার রিমান্ডে নেওয়ার আবেদন, নাটোর জেলা বিএনপির বিশেষ সভা"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -161117,14 +161774,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -162011,6 +162660,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -162049,14 +162706,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -163844,6 +164493,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -163882,14 +164539,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গণভোটের রায় বাস্তবায়ন না করলে সরকারকে উচ্চ মূল্য দিতে হবে: জামায়াত আমির"
-        },
-        {
-          "cluster_id": 284,
-          "slug": "national-284",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
         }
       ]
     },
@@ -164731,6 +165380,14 @@
           "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -164745,14 +165402,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 1063,
-          "slug": "national-1063",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "১০ মিনিটের জন্য নেওয়া মোটরসাইকেল ফেরত চাইতে গিয়ে প্রাণ গেলো ব্যবসায়ীর"
         }
       ]
     },
@@ -165335,6 +165984,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -165373,14 +166030,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -166217,6 +166866,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -166255,14 +166912,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -169339,6 +169988,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 1,
@@ -170468,20 +171125,20 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
-        },
-        {
-          "cluster_id": 1065,
-          "slug": "national-1065",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
         }
       ]
     },
@@ -173052,7 +173709,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -176193,6 +176850,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "নিহত ছাত্রদল নেতার বাড়িতে গিয়ে বিচারের আশ্বাস দিলেন সমাজকল্যাণ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
           "cluster_id": 362,
@@ -184060,7 +184725,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -188422,7 +189087,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -189231,6 +189896,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -189269,14 +189942,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -191482,6 +192147,14 @@
           "headline": "সন্ধ্যার পর স্কুল-কলেজের শিক্ষার্থীরা বাইরে আড্ডা দিলে গ্রেফতার করবে পুলিশ: ডিআইজি"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -191512,14 +192185,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -192477,7 +193142,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -193422,20 +194087,20 @@
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
-        },
-        {
-          "cluster_id": 1065,
-          "slug": "national-1065",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
         }
       ]
     },
@@ -194471,6 +195136,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 982,
           "slug": "national-982",
           "actor_links": 1,
@@ -194700,6 +195373,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -194738,14 +195419,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -196226,6 +196899,14 @@
           "headline": "শিক্ষার্থীরা রাতে ঘরের বাইরে আড্ডা দিলে গ্রেপ্তার করবে পুলিশ: চট্টগ্রামের ডিআইজি"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -196256,14 +196937,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -196354,6 +197027,14 @@
           "headline": "অনৈতিক কর্মকাণ্ডের অভিযোগে অব্যাহতি পাওয়া জামায়াত নেতার বাড়ি ভাঙচুর"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -196384,14 +197065,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -196867,6 +197540,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -196905,14 +197586,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -197347,7 +198020,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -199278,7 +199951,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -200041,6 +200714,14 @@
           "headline": "দুই সংগঠন অবরোধ তুললেও সাজেকে চলছে না যানবাহন, ভোগান্তিতে মানুষ"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -200071,14 +200752,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -200740,6 +201413,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -200778,14 +201459,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -202340,6 +203013,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -202378,14 +203059,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -202480,7 +203153,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -203001,6 +203674,14 @@
           "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -203031,14 +203712,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -203985,6 +204658,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
           "cluster_id": 1027,
           "slug": "national-1027",
           "actor_links": 1,
@@ -204191,6 +204872,14 @@
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 982,
           "slug": "national-982",
           "actor_links": 1,
@@ -204221,14 +204910,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "ভূমিকম্পের ঝুঁকি কমাতে সর্বাত্মক প্রস্তুতি নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1000,
-          "slug": "national-1000",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
     },
@@ -204311,6 +204992,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -204349,14 +205038,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -205231,7 +205912,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -206654,6 +207335,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 982,
           "slug": "national-982",
           "actor_links": 1,
@@ -206676,14 +207365,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ছাত্রজীবনে রাজনৈতিক সংশ্লিষ্টতা থাকলেও কর্মজীবনে যেন প্রভাব না পড়ে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 253,
-          "slug": "sports-253",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 14,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -207419,6 +208100,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -207457,14 +208146,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -208321,6 +209002,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "নাটোরে নিহত ছাত্রদল নেতার বাড়িতে সমাজকল্যাণ প্রতিমন্ত্রী, বিচারের আশ্বাস"
+        },
+        {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
           "cluster_id": 362,
@@ -210703,6 +211392,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -210741,14 +211438,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -211042,7 +211731,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -212885,6 +213574,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -212923,14 +213620,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -213945,7 +214634,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -214624,6 +215313,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -214662,14 +215359,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -216256,7 +216945,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -216360,7 +217049,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -218143,7 +218832,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -218804,6 +219493,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 879,
           "slug": "opinion-879",
           "actor_links": 1,
@@ -219068,7 +219765,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T13:07:45.255Z",
+      "last_update": "2026-11-02T13:40:58.711Z",
       "claim_count": 3,
       "events": [
         {
@@ -220024,6 +220721,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -220062,14 +220767,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -220444,7 +221141,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 4,
-          "claim_count": 17,
+          "claim_count": 18,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -222183,7 +222880,7 @@
       "cluster_id": 1048,
       "headline": "Democrats condemn Haley Stevens’ ‘betrayal’ following endorsement of Republican Mike Rogers – US politics live",
       "first_seen": "2026-11-02T11:23:19.533Z",
-      "last_update": "2026-11-02T13:07:45.237Z",
+      "last_update": "2026-11-02T13:40:58.694Z",
       "claim_count": 4,
       "events": [
         {
@@ -223073,20 +223770,20 @@
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
-        },
-        {
-          "cluster_id": 1065,
-          "slug": "national-1065",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
         }
       ]
     },
@@ -229815,6 +230512,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -229853,14 +230558,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -234028,6 +234725,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -234066,14 +234771,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -235162,6 +235859,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 982,
           "slug": "national-982",
           "actor_links": 1,
@@ -235184,14 +235889,6 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ছাত্রজীবনে রাজনৈতিক সংশ্লিষ্টতা থাকলেও কর্মজীবনে যেন প্রভাব না পড়ে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 253,
-          "slug": "sports-253",
-          "actor_links": 0,
-          "source_links": 5,
-          "claim_count": 14,
-          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         }
       ]
     },
@@ -235278,7 +235975,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -235905,6 +236602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -235943,14 +236648,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -236666,7 +237363,7 @@
       "cluster_id": 1050,
       "headline": "ফাজিল-কামিল মাদ্রাসার গভর্নিং বডির কমিটি বাতিলের সিদ্ধান্ত হাইকোর্টে স্থগিত",
       "first_seen": "2026-11-02T11:23:19.544Z",
-      "last_update": "2026-11-02T13:07:45.245Z",
+      "last_update": "2026-11-02T13:40:58.701Z",
       "claim_count": 3,
       "events": [
         {
@@ -236988,11 +237685,41 @@
     },
     "politics-1085": {
       "cluster_id": 1085,
-      "headline": "বিএনপির এমপি ফেরদৌসী আহমেদ মিষ্টির পদত্যাগ, আসন শূন্য ঘোষণা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+      "first_seen": "2026-11-02T13:40:59.096Z",
+      "last_update": "2026-11-02T13:40:59.098Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:16:13.000Z",
+          "kind": "evidence",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/health/5431oyq22i"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.612Z",
+          "kind": "claim",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292321,
+          "claim_text": "পাকা চুলেরও কেন বিশেষ যত্ন নিতে হয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "politics-1095": {
@@ -241477,7 +242204,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
@@ -244033,6 +244760,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -244071,14 +244806,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -249077,7 +249804,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -249988,6 +250715,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -250026,14 +250761,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -250292,6 +251019,14 @@
           "headline": "শিক্ষার্থীরা রাতে ঘরের বাইরে আড্ডা দিলে গ্রেপ্তার করবে পুলিশ: চট্টগ্রামের ডিআইজি"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -250322,14 +251057,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মুন্সিগঞ্জে গৃহবধূর ভিডিও ছড়িয়ে দেওয়ার হুমকির অভিযোগে ইমাম গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 997,
-          "slug": "opinion-997",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
         }
       ]
     },
@@ -250746,6 +251473,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -250784,14 +251519,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -251624,6 +252351,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
@@ -251662,14 +252397,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘সবার আন্তরিকতা আমাকে বুঝিয়েছে, তাঁরা আমার ফেরার অপেক্ষায় ছিলেন’"
-        },
-        {
-          "cluster_id": 980,
-          "slug": "national-980",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
         }
       ]
     },
@@ -252085,6 +252812,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -252123,14 +252858,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
@@ -252422,7 +253149,7 @@
       "cluster_id": 988,
       "headline": "পোশাকশিল্প ধ্বংসের পাঁয়তারা চলছে, সরকারকে কঠোর হওয়ার আহ্বান জামায়াত আমিরের",
       "first_seen": "2026-11-02T06:47:52.412Z",
-      "last_update": "2026-11-02T13:07:45.255Z",
+      "last_update": "2026-11-02T13:40:58.711Z",
       "claim_count": 3,
       "events": [
         {
@@ -253026,6 +253753,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
+        },
+        {
           "cluster_id": 1027,
           "slug": "national-1027",
           "actor_links": 1,
@@ -253591,7 +254326,7 @@
       "cluster_id": 1029,
       "headline": "মেসি না থাকলেও আর্জেন্টিনা জেতে, হামজা না থাকলেও ভুটান ‘পারবে না’",
       "first_seen": "2026-11-02T10:16:28.886Z",
-      "last_update": "2026-11-02T13:07:45.243Z",
+      "last_update": "2026-11-02T13:40:58.699Z",
       "claim_count": 4,
       "events": [
         {
@@ -253889,7 +254624,7 @@
       "cluster_id": 1064,
       "headline": "চার হারের পর শক্তিশালী চীনের বিপক্ষে বাংলাদেশের স্বস্তির ড্র",
       "first_seen": "2026-11-02T12:34:25.493Z",
-      "last_update": "2026-11-02T13:07:45.240Z",
+      "last_update": "2026-11-02T13:40:58.696Z",
       "claim_count": 2,
       "events": [
         {
@@ -254017,7 +254752,7 @@
       "cluster_id": 1066,
       "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই",
       "first_seen": "2026-11-02T12:34:25.503Z",
-      "last_update": "2026-11-02T13:07:45.242Z",
+      "last_update": "2026-11-02T13:40:58.698Z",
       "claim_count": 2,
       "events": [
         {
@@ -254092,6 +254827,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1065,
           "slug": "national-1065",
           "actor_links": 0,
@@ -254130,14 +254873,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বনানীতে গ্যাস লিকেজের আগুনে দগ্ধ ফিলিপাইনি নারী মারা গেছেন"
-        },
-        {
-          "cluster_id": 949,
-          "slug": "national-949",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "লিভার সিরোসিসে আক্রান্ত শিক্ষক সাধন চক্রবর্তীকে বাঁচাতে সহায়তা দরকার"
         }
       ]
     },
@@ -254178,7 +254913,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 4,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        }
+      ]
     },
     "sports-1072": {
       "cluster_id": 1072,
@@ -254260,29 +255004,168 @@
     },
     "sports-1081": {
       "cluster_id": 1081,
-      "headline": "রোনালদো ছাড়লেন পর্তুগালের ক্যাম্প, পর্তুগালের ইনস্টাগ্রাম ছেড়ে গেলেন ৫ লাখ অনুসারী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+      "first_seen": "2026-11-02T13:40:59.083Z",
+      "last_update": "2026-11-02T13:40:59.085Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:31:48.000Z",
+          "kind": "evidence",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-price-of-12-kg-of-lpg-has-increased-by-223-taka-reaching-2060-taka/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.603Z",
+          "kind": "claim",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1083": {
       "cluster_id": 1083,
-      "headline": "রোনালদো ছাড়লেন পর্তুগালের ক্যাম্প, পর্তুগালের ইনস্টাগ্রাম ছেড়ে গেলেন ৫ লাখ অনুসারী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+      "first_seen": "2026-11-02T13:40:59.090Z",
+      "last_update": "2026-11-02T13:40:59.092Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:20:28.000Z",
+          "kind": "evidence",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/fascist-sympathizers-are-fueling-the-workers-protests-home-minister/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.607Z",
+          "kind": "claim",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292319,
+          "claim_text": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 982,
+          "slug": "national-982",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "সীমান্তের ওপার থেকে অস্থিতিশীলতা তৈরির চেষ্টা, কঠোর হুঁশিয়ারি স্বরাষ্ট্রমন্ত্রীর"
+        },
+        {
+          "cluster_id": 879,
+          "slug": "opinion-879",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 3,
+          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 362,
+          "slug": "national-362",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 59,
+          "slug": "national-59",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "নাটোরে নিহত ছাত্রদল নেতার বাড়িতে সমাজকল্যাণ প্রতিমন্ত্রী, বিচারের আশ্বাস"
+        },
+        {
+          "cluster_id": 90,
+          "slug": "national-90",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নিহত ছাত্রদল নেতার বাড়িতে গিয়ে বিচারের আশ্বাস দিলেন সমাজকল্যাণ প্রতিমন্ত্রী"
+        },
+        {
+          "cluster_id": 536,
+          "slug": "sports-536",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মজুরি বোর্ড গঠন রবিবার, শ্রমিকদের আন্দোলনে থাকার কোন কারণ নেই: শ্রমমন্ত্রী"
+        }
+      ]
     },
     "sports-1084": {
       "cluster_id": 1084,
-      "headline": "৩৬ বছরেই চলে গেলেন ঐতিহাসিক ‘অল-ফিমেল’ প্যানেলের সারাহ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+      "first_seen": "2026-11-02T13:40:59.093Z",
+      "last_update": "2026-11-02T13:40:59.095Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:17:08.000Z",
+          "kind": "evidence",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/0m4sxob0tq"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.610Z",
+          "kind": "claim",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292320,
+          "claim_text": "এলপিজির দাম এবার বাড়ল ২২৩ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1105": {
@@ -255924,7 +256807,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -256501,7 +257384,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 4,
+          "claim_count": 5,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -260739,6 +261622,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1083,
+          "slug": "sports-1083",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "শ্রমিকদের আন্দোলনে ফ্যাসিস্ট সমর্থকদের ইন্ধন রয়েছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
           "cluster_id": 362,
           "slug": "national-362",
           "actor_links": 1,
@@ -260915,20 +261806,20 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1079,
+          "slug": "national-1079",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "এটা কোন বিপ্লব দরজায় টোকা দিচ্ছে, শ্রমিক বিক্ষোভে পরাজিত শক্তির ইন্ধন আছে: রিজভী"
+        },
+        {
           "cluster_id": 1066,
           "slug": "sports-1066",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মেজর (অব.) আখতারুজ্জামানের জামিন বহাল, মুক্তিতে বাধা নেই"
-        },
-        {
-          "cluster_id": 1065,
-          "slug": "national-1065",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এক মাস আগে মাদ্রাসায় শিক্ষক হিসেবে যোগদান, দুই শিশুকে ধর্ষণের অভিযোগে গ্রেপ্তার"
         }
       ]
     },
@@ -261062,7 +261953,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -262633,7 +263524,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -264054,7 +264945,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -265279,8 +266170,8 @@
       "cluster_id": 1039,
       "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
       "first_seen": "2026-11-02T10:51:23.915Z",
-      "last_update": "2026-11-02T13:07:45.235Z",
-      "claim_count": 18,
+      "last_update": "2026-11-02T13:40:58.690Z",
+      "claim_count": 19,
       "events": [
         {
           "ts": "2026-11-01T02:52:56.000Z",
@@ -265434,6 +266325,28 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.bondhushava.com/career/6l5slybyg1"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/3npf3rzo50"
+          }
+        },
+        {
+          "ts": "2026-11-02T05:00:19.000Z",
+          "kind": "evidence",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/capital/3npf3rzo50"
           }
         },
         {
@@ -266194,6 +267107,36 @@
             "sources": "[\"c273560\",\"c273566\"]",
             "resolution": "unresolved"
           }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.459Z",
+          "kind": "claim",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292257,
+          "claim_text": "মিরপুরে বিভিন্ন গলি দিয়ে সড়কে নামার চেষ্টা পোশাকশ্রমিকদের, ধাওয়া–কাঁদানে গ্যাসে ছত্রভঙ্গ",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:20.600Z",
+          "kind": "conflict",
+          "claim_id": 273560,
+          "claim_text": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c273560\",\"c273566\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -266204,6 +267147,30 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "মেঘলা ঢাকার আকাশ, বৃষ্টি হবে কিনা জানা গেল পূর্বাভাসে"
+        },
+        {
+          "cluster_id": 1027,
+          "slug": "national-1027",
+          "actor_links": 1,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "পুরোনো বাণিজ্য মেলার মাঠে ট্রাক্টর চালালেন শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাঙচুর"
+        },
+        {
+          "cluster_id": 1015,
+          "slug": "national-1015",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ট্রাক্টর নিয়ে পুরোনো বাণিজ্য মেলার মাঠে শেকৃবি শিক্ষার্থীরা, অস্থায়ী স্থাপনা ভাংচুর"
+        },
+        {
+          "cluster_id": 860,
+          "slug": "politics-uk-politics-live",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "ঢাকা বিশ্ববিদ্যালয়ের জগন্নাথ হল থেকে নিষিদ্ধ ছাত্রলীগের নেতাকে পুলিশে দিলেন ছাত্রদলের নেতা–কর্মীরা"
         },
         {
           "cluster_id": 253,
@@ -266220,30 +267187,6 @@
           "source_links": 4,
           "claim_count": 9,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
-        },
-        {
-          "cluster_id": 879,
-          "slug": "opinion-879",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 22,
-          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 583,
-          "slug": "politics-583",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 21,
-          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
-        },
-        {
-          "cluster_id": 521,
-          "slug": "politics-521",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 18,
-          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
         }
       ]
     },
@@ -266290,7 +267233,7 @@
       "cluster_id": 1067,
       "headline": "দোকানপাট-শপিং মল খোলার রাখার সময় পরিবর্তন চায় মালিক সমিতি",
       "first_seen": "2026-11-02T12:34:25.513Z",
-      "last_update": "2026-11-02T13:07:45.244Z",
+      "last_update": "2026-11-02T13:40:58.700Z",
       "claim_count": 2,
       "events": [
         {
@@ -266365,14 +267308,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1049,
-          "slug": "national-1049",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শপিং মল ও দোকানপাট খোলার রাখার সময় বাড়াতে চায় মালিক সমিতি"
-        },
-        {
           "cluster_id": 1039,
           "slug": "tech-1039",
           "actor_links": 0,
@@ -266411,16 +267346,54 @@
           "source_links": 2,
           "claim_count": 7,
           "headline": "ন্যূনতম বেতন ৩০ হাজার টাকার দাবিতে আবার মিরপুরে পোশাকশ্রমিকদের অবরোধ"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         }
       ]
     },
     "tech-1081": {
       "cluster_id": 1081,
-      "headline": "ইস্ট ওয়েস্ট বিশ্ববিদ্যালয়ের শিক্ষার্থীদের এআই প্রশিক্ষণ দেবে হুয়াওয়ে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+      "first_seen": "2026-11-02T13:40:59.083Z",
+      "last_update": "2026-11-02T13:40:59.085Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-02T13:31:48.000Z",
+          "kind": "evidence",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/the-price-of-12-kg-of-lpg-has-increased-by-223-taka-reaching-2060-taka/"
+          }
+        },
+        {
+          "ts": "2026-11-02T14:03:01.603Z",
+          "kind": "claim",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০"
+        },
+        {
+          "ts": "2026-11-02T14:03:01.693Z",
+          "kind": "verify",
+          "claim_id": 292317,
+          "claim_text": "১২ কেজি এলপিজির দাম এখন ২০৬০",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "tech-109": {
@@ -266852,7 +267825,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
+          "claim_count": 4,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -269037,7 +270010,7 @@
           "slug": "tech-1039",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 16,
+          "claim_count": 17,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         },
         {
@@ -269333,6 +270306,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        },
+        {
           "cluster_id": 1032,
           "slug": "national-1032",
           "actor_links": 0,
@@ -269371,14 +270352,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বিলে মাছ ধরতে গিয়ে বজ্রপাতে একসঙ্গে ছয়জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 64,
-          "slug": "national-64",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         }
       ]
     },
