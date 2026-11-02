@@ -1,10 +1,12 @@
 ---
 title: "মোটরসাইকেলের সামনে নম্বরপ্লেট স্থাপনে বিধিমালা সংশোধন"
+thumbnail: "/images/national-1034.webp"
+thumbnailAlt: "মোটরসাইকেলের সামনে নম্বরপ্লেট স্থাপনে বিধিমালা সংশোধন — ছবি: চ্যানেল আই"
 seoTitle: "মোটরসাইকেলের সামনে নম্বরপ্লেট স্থাপনে বিধিমালা সংশোধন"
 excerpt: "মোটরসাইকেলের সামনের অংশে নম্বরপ্লেট স্থাপন ও রেজিস্ট্রেশন নম্বর প্রদর্শনের ক্ষেত্রে বিদ্যমান বিধিগত জটিলতা দূর করতে সড়ক পরিবহন বিধিমালা, ২০২২ সংশোধন করেছে সরকার। এ ছাড়া মোটরসাইকেলে"
 seoDescription: "মোটরসাইকেলের সামনের অংশে নম্বরপ্লেট স্থাপন ও রেজিস্ট্রেশন নম্বর প্রদর্শনের ক্ষেত্রে বিদ্যমান বিধিগত জটিলতা দূর করতে সড়ক পরিবহন বিধিমালা, ২০২২ সংশোধন করেছে…"
 date: 2026-11-02T09:56:17.000Z
-publishedAt: 2026-11-02T11:08:19.593Z
+publishedAt: 2026-11-02T11:03:59.112Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-02T11:08:19.414Z"
+  evaluatedAt: "2026-11-02T11:03:58.944Z"
   clusterId: 1034
   claimIds:
     - 269910
@@ -43,7 +45,7 @@ publication:
   slug: "national-1034"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-02T11:08:19.414Z"
+  checkedAt: "2026-11-02T11:03:58.944Z"
   clusterId: 1034
   claimIds:
     - 269910

@@ -1,10 +1,12 @@
 ---
 title: "আমিরাতের উড়োজাহাজের পাইলট আক্রান্ত হওয়ার পর কারা সেটি নিরাপদে সৌদিতে নামিয়েছিলেন"
+thumbnail: "/images/international-1035.webp"
+thumbnailAlt: "আমিরাতের উড়োজাহাজের পাইলট আক্রান্ত হওয়ার পর কারা সেটি নিরাপদে সৌদিতে নামিয়েছিলেন — ছবি: প্রথম আলো"
 seoTitle: "আমিরাতের উড়োজাহাজের পাইলট আক্রান্ত হওয়ার পর কারা সেটি নিরাপদে সৌদিতে…"
 excerpt: "মাঝ আকাশে থাকা অবস্থায় উড়োজাহাজটির একজন পাইলট অন্য পাইলটকে ছুরিকাঘাত করেন। গত সপ্তাহে হেনসন, রোয়ান ও উড়োজাহাজের অন্য ক্রুদের সম্মাননা দিয়েছেন সংযুক্ত আরব আমিরাতের প্রেসিডেন্ট মোহাম"
 seoDescription: "মাঝ আকাশে থাকা অবস্থায় উড়োজাহাজটির একজন পাইলট অন্য পাইলটকে ছুরিকাঘাত করেন। গত সপ্তাহে হেনসন, রোয়ান ও উড়োজাহাজের অন্য ক্রুদের সম্মাননা দিয়েছেন সংযুক্ত আরব …"
 date: 2026-11-02T09:52:12.000Z
-publishedAt: 2026-11-02T11:08:19.616Z
+publishedAt: 2026-11-02T11:03:59.137Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-02T11:08:19.414Z"
+  evaluatedAt: "2026-11-02T11:03:58.944Z"
   clusterId: 1035
   claimIds:
     - 269911
@@ -43,7 +45,7 @@ publication:
   slug: "international-1035"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-02T11:08:19.414Z"
+  checkedAt: "2026-11-02T11:03:58.944Z"
   clusterId: 1035
   claimIds:
     - 269911
