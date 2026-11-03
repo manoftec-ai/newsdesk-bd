@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6521,
+    "storyCount": 6524,
     "kinds": [
       "claim",
       "evidence",
@@ -218,6 +218,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1199,
           "slug": "tech-1199",
           "actor_links": 0,
@@ -248,14 +256,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টিএমজিবির সভাপতি মাসুদ রুমী, সাধারণ সম্পাদক কুমার বিশ্বজিত রায়"
-        },
-        {
-          "cluster_id": 1139,
-          "slug": "national-1139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
         }
       ]
     },
@@ -4015,7 +4015,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -4073,8 +4073,8 @@
       "cluster_id": 1186,
       "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
       "first_seen": "2026-11-03T01:07:15.305Z",
-      "last_update": "2026-11-03T03:19:56.449Z",
-      "claim_count": 22,
+      "last_update": "2026-11-03T03:53:18.416Z",
+      "claim_count": 23,
       "events": [
         {
           "ts": "2026-11-02T03:22:54.000Z",
@@ -5094,6 +5094,28 @@
           }
         },
         {
+          "ts": "2026-11-03T03:27:06.000Z",
+          "kind": "evidence",
+          "claim_id": 372790,
+          "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq203jp6n82vo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:27:06.000Z",
+          "kind": "evidence",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq203jp6n82vo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-11-03T03:41:35.664Z",
           "kind": "claim",
           "claim_id": 376989,
@@ -5365,6 +5387,36 @@
         },
         {
           "ts": "2026-11-03T03:41:53.504Z",
+          "kind": "conflict",
+          "claim_id": 372790,
+          "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c372790\",\"c372807\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.597Z",
+          "kind": "claim",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:51.859Z",
           "kind": "conflict",
           "claim_id": 372790,
           "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
@@ -5710,6 +5762,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1139,
           "slug": "national-1139",
           "actor_links": 0,
@@ -5748,14 +5808,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
-        },
-        {
-          "cluster_id": 147,
-          "slug": "politics-147",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পত্রিকা 2026-10-30"
         }
       ]
     },
@@ -9550,6 +9602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -9588,14 +9648,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -15650,8 +15702,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -15949,8 +16001,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -17289,8 +17341,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -21134,6 +21186,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1139,
           "slug": "national-1139",
           "actor_links": 0,
@@ -21172,14 +21232,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পত্রিকা 2026-10-30"
-        },
-        {
-          "cluster_id": 139,
-          "slug": "national-139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রিয়দর্শনের নতুন সিনেমায় অক্ষয়ের বিপরীতে ভূমি"
         }
       ]
     },
@@ -23092,6 +23144,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -23130,14 +23190,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -24592,7 +24644,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -25521,7 +25573,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -26105,6 +26157,45 @@
           "kind": "verify",
           "claim_id": 372835,
           "claim_text": "বিচ্ছেদের ছয় বছর পর আবার বিয়ে করছেন গায়িকা, বললেন, ‘স্বামী কোটিপতি নন’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "entertainment-1212": {
+      "cluster_id": 1212,
+      "headline": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
+      "first_seen": "2026-11-03T03:53:18.870Z",
+      "last_update": "2026-11-03T03:53:18.874Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/hollywood/z4hasmu90a"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.694Z",
+          "kind": "claim",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -28963,8 +29054,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -32952,6 +33043,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -32990,14 +33089,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -33716,6 +33807,14 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1199,
           "slug": "tech-1199",
           "actor_links": 0,
@@ -33737,14 +33836,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 13,
           "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
@@ -34114,6 +34205,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -34152,14 +34251,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         }
       ]
     },
@@ -34739,6 +34830,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -34777,14 +34876,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -39594,8 +39685,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -41522,8 +41613,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -43177,6 +43268,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1199,
           "slug": "tech-1199",
           "actor_links": 0,
@@ -43207,14 +43306,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টিএমজিবির সভাপতি মাসুদ রুমী, সাধারণ সম্পাদক কুমার বিশ্বজিত রায়"
-        },
-        {
-          "cluster_id": 1139,
-          "slug": "national-1139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
         }
       ]
     },
@@ -44241,6 +44332,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -44279,14 +44378,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -46305,8 +46396,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -47248,8 +47339,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -47428,20 +47519,20 @@
           "headline": "সংসদে যুক্ত হচ্ছেন নতুন দুই সদস্য, শপথ মঙ্গলবার"
         },
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -47687,7 +47778,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -49023,7 +49114,7 @@
       "cluster_id": 1205,
       "headline": "নির্বাচনের ঠিক আগেই ইরানের লক্ষ্যবস্তুতে যুক্তরাষ্ট্রের ‘প্রতিরক্ষামূলক’ হামলা",
       "first_seen": "2026-11-03T03:19:56.451Z",
-      "last_update": "2026-11-03T03:19:56.454Z",
+      "last_update": "2026-11-03T03:53:18.423Z",
       "claim_count": 2,
       "events": [
         {
@@ -49146,6 +49237,84 @@
           "headline": "নামাজ পড়ে ফেরার পথে ড্রাম ট্রাকের চাপায় প্রাণ গেলো দুই বৃদ্ধের"
         }
       ]
+    },
+    "international-1214": {
+      "cluster_id": 1214,
+      "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+      "first_seen": "2026-11-03T03:53:18.879Z",
+      "last_update": "2026-11-03T03:53:18.881Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:13:16.000Z",
+          "kind": "evidence",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/h1l8c5robf"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.700Z",
+          "kind": "claim",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1215": {
+      "cluster_id": 1215,
+      "headline": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+      "first_seen": "2026-11-03T03:53:18.883Z",
+      "last_update": "2026-11-03T03:53:18.885Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:11:55.000Z",
+          "kind": "evidence",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/oil-prices-rose-in-the-global-market-following-a-us-attack-in-iran/"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.703Z",
+          "kind": "claim",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "international-1222": {
       "cluster_id": 1222,
@@ -55553,8 +55722,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -64133,6 +64302,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -64171,14 +64348,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যুব এশিয়া কাপের দল ঘোষণা বাংলাদেশের"
-        },
-        {
-          "cluster_id": 541,
-          "slug": "national-541",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্তর্জাতিক বাজারে তেলের দাম ছয় মাসের মধ্যে সর্বোচ্চ"
         }
       ]
     },
@@ -68635,6 +68804,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -68673,14 +68850,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -69433,6 +69602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -69471,14 +69648,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -73622,8 +73791,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -73981,8 +74150,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -79009,6 +79178,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -79047,14 +79224,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -81458,6 +81627,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -81496,14 +81673,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -81590,8 +81759,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -81964,8 +82133,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -83005,8 +83174,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -83679,6 +83848,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -83717,14 +83894,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -84256,6 +84425,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1175,
           "slug": "national-1175",
           "actor_links": 0,
@@ -84286,14 +84463,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "টাঙ্গাইলে ৬ বছরের শিশু ধর্ষণ মামলার অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তাহসিফ হত্যা: দীপের সম্পৃক্ততার প্রাথমিক তথ্য পেয়েছে পুলিশ"
         }
       ]
     },
@@ -84376,6 +84545,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1139,
           "slug": "national-1139",
           "actor_links": 0,
@@ -84414,14 +84591,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পত্রিকা 2026-10-30"
-        },
-        {
-          "cluster_id": 139,
-          "slug": "national-139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রিয়দর্শনের নতুন সিনেমায় অক্ষয়ের বিপরীতে ভূমি"
         }
       ]
     },
@@ -85240,7 +85409,7 @@
           "slug": "national-1186",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 22,
+          "claim_count": 23,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -86956,7 +87125,7 @@
           "slug": "national-1186",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 22,
+          "claim_count": 23,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -88582,16 +88751,27 @@
     },
     "international-rightwing-extremists-increasingly": {
       "cluster_id": 1206,
-      "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা",
+      "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
       "first_seen": "2026-11-03T03:19:56.455Z",
-      "last_update": "2026-11-03T03:19:56.458Z",
-      "claim_count": 2,
+      "last_update": "2026-11-03T03:53:18.422Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-03T00:30:00.000Z",
           "kind": "evidence",
           "claim_id": 377037,
           "claim_text": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/978434/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8B-%E0%A6%A6%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-11-03T00:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -88618,6 +88798,28 @@
             "source_id": "kalerkantho",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92bkFKMGpEQjVQM1lOSWxuZlVpamFyT053M0RHRWFhTHVsZUN0ckZiY19keG9YZWNGNF9vUTBOSVRBNFZzbGdXVERfVXRjWVZKMTZMQnQ5QlZyaExueDI2RWQ5OVdxYW9WY1JB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:56:49.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92bkFKMGpEQjVQM1lOSWxuZlVpamFyT053M0RHRWFhTHVsZUN0ckZiY19keG9YZWNGNF9vUTBOSVRBNFZzbGdXVERfVXRjWVZKMTZMQnQ5QlZyaExueDI2RWQ5OVdxYW9WY1JB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:16:44.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Md0xrcEpCVnUxVERWam9yOUxpNE5mLTFXNUVhc3BHNzZkWm1PVW9pZTlrUGMycVlsVnZkNU5NLWI1bFotM0t2X0hTU1VoYkE?oc=5"
           }
         },
         {
@@ -88655,9 +88857,67 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.669Z",
+          "kind": "claim",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 1170,
+          "slug": "national-1170",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
+        },
+        {
+          "cluster_id": 879,
+          "slug": "opinion-879",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 18,
+          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 253,
+          "slug": "sports-253",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 9,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
         {
           "cluster_id": 1179,
           "slug": "national-1179",
@@ -88665,46 +88925,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 11,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
-        },
-        {
-          "cluster_id": 1162,
-          "slug": "national-1162",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মানিক পশারীর দাফনে বাধা দেওয়ার প্রতিবাদে এবার সাতক্ষীরায় মুক্তিযোদ্ধাদের মানববন্ধন"
-        },
-        {
-          "cluster_id": 1161,
-          "slug": "national-1161",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘যারা অস্থিতিশীলতা সৃষ্টি করছে, তাদের আন্দোলনকারী হিসেবে বিবেচনা করছে না পুলিশ’"
-        },
-        {
-          "cluster_id": 1152,
-          "slug": "national-1152",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘ন্যাশনাল স্পোর্টস অ্যালায়েন্স’এর আত্মপ্রকাশ অনুষ্ঠানে আসিফ আকবর, ক্রীড়া প্রতিমন্ত্রীকে তোপ"
-        },
-        {
-          "cluster_id": 1119,
-          "slug": "national-1119",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বরিশালে বাস ধর্মঘট, ভোগান্তিতে যাত্রীরা"
         }
       ]
     },
@@ -90091,6 +90311,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1199,
           "slug": "tech-1199",
           "actor_links": 0,
@@ -90121,14 +90349,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টিএমজিবির সভাপতি মাসুদ রুমী, সাধারণ সম্পাদক কুমার বিশ্বজিত রায়"
-        },
-        {
-          "cluster_id": 1139,
-          "slug": "national-1139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
         }
       ]
     },
@@ -90995,6 +91215,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -91033,14 +91261,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -92968,8 +93188,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -95122,6 +95342,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -95160,14 +95388,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -102792,8 +103012,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -105174,6 +105394,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 951,
           "slug": "national-951",
           "actor_links": 0,
@@ -105212,14 +105440,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পত্রিকা 2026-10-30"
-        },
-        {
-          "cluster_id": 139,
-          "slug": "national-139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রিয়দর্শনের নতুন সিনেমায় অক্ষয়ের বিপরীতে ভূমি"
         }
       ]
     },
@@ -106439,8 +106659,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -106747,20 +106967,20 @@
           "headline": "সংসদে যুক্ত হচ্ছেন নতুন দুই সদস্য, শপথ মঙ্গলবার"
         },
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -107290,7 +107510,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -107551,8 +107771,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -107671,8 +107891,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -109277,7 +109497,7 @@
           "slug": "national-1186",
           "actor_links": 3,
           "source_links": 3,
-          "claim_count": 26,
+          "claim_count": 27,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -109529,6 +109749,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -109567,14 +109795,6 @@
           "source_links": 2,
           "claim_count": 15,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
-        },
-        {
-          "cluster_id": 1009,
-          "slug": "national-1009",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
         }
       ]
     },
@@ -110284,8 +110504,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1194,
@@ -110938,8 +111158,8 @@
       "cluster_id": 1186,
       "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
       "first_seen": "2026-11-03T01:07:15.305Z",
-      "last_update": "2026-11-03T03:19:56.449Z",
-      "claim_count": 22,
+      "last_update": "2026-11-03T03:53:18.416Z",
+      "claim_count": 23,
       "events": [
         {
           "ts": "2026-11-02T03:22:54.000Z",
@@ -111959,6 +112179,28 @@
           }
         },
         {
+          "ts": "2026-11-03T03:27:06.000Z",
+          "kind": "evidence",
+          "claim_id": 372790,
+          "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq203jp6n82vo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:27:06.000Z",
+          "kind": "evidence",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cq203jp6n82vo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-11-03T03:41:35.664Z",
           "kind": "claim",
           "claim_id": 376989,
@@ -112230,6 +112472,36 @@
         },
         {
           "ts": "2026-11-03T03:41:53.504Z",
+          "kind": "conflict",
+          "claim_id": 372790,
+          "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c372790\",\"c372807\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.597Z",
+          "kind": "claim",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381222,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:51.859Z",
           "kind": "conflict",
           "claim_id": 372790,
           "claim_text": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার",
@@ -113233,7 +113505,7 @@
       "cluster_id": 1198,
       "headline": "মাকে হত্যা মামলার আসামি সাবেক শিক্ষকের কারাগারে মৃত্যু",
       "first_seen": "2026-11-03T02:48:28.488Z",
-      "last_update": "2026-11-03T03:19:56.459Z",
+      "last_update": "2026-11-03T03:53:18.429Z",
       "claim_count": 2,
       "events": [
         {
@@ -114373,7 +114645,7 @@
       "cluster_id": 1205,
       "headline": "নির্বাচনের ঠিক আগেই ইরানের লক্ষ্যবস্তুতে যুক্তরাষ্ট্রের ‘প্রতিরক্ষামূলক’ হামলা",
       "first_seen": "2026-11-03T03:19:56.451Z",
-      "last_update": "2026-11-03T03:19:56.454Z",
+      "last_update": "2026-11-03T03:53:18.423Z",
       "claim_count": 2,
       "events": [
         {
@@ -114499,16 +114771,27 @@
     },
     "national-1206": {
       "cluster_id": 1206,
-      "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা",
+      "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
       "first_seen": "2026-11-03T03:19:56.455Z",
-      "last_update": "2026-11-03T03:19:56.458Z",
-      "claim_count": 2,
+      "last_update": "2026-11-03T03:53:18.422Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-03T00:30:00.000Z",
           "kind": "evidence",
           "claim_id": 377037,
           "claim_text": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/others/capital-city/978434/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87-%E0%A6%86%E0%A6%97%E0%A7%81%E0%A6%A8-%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8B-%E0%A6%A6%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE"
+          }
+        },
+        {
+          "ts": "2026-11-03T00:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
           "detail": {
             "source_id": "banglatribune",
             "relation": "supports",
@@ -114535,6 +114818,28 @@
             "source_id": "kalerkantho",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92bkFKMGpEQjVQM1lOSWxuZlVpamFyT053M0RHRWFhTHVsZUN0ckZiY19keG9YZWNGNF9vUTBOSVRBNFZzbGdXVERfVXRjWVZKMTZMQnQ5QlZyaExueDI2RWQ5OVdxYW9WY1JB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:56:49.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92bkFKMGpEQjVQM1lOSWxuZlVpamFyT053M0RHRWFhTHVsZUN0ckZiY19keG9YZWNGNF9vUTBOSVRBNFZzbGdXVERfVXRjWVZKMTZMQnQ5QlZyaExueDI2RWQ5OVdxYW9WY1JB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:16:44.000Z",
+          "kind": "evidence",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Md0xrcEpCVnUxVERWam9yOUxpNE5mLTFXNUVhc3BHNzZkWm1PVW9pZTlrUGMycVlsVnZkNU5NLWI1bFotM0t2X0hTU1VoYkE?oc=5"
           }
         },
         {
@@ -114572,9 +114877,67 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.669Z",
+          "kind": "claim",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381248,
+          "claim_text": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 1170,
+          "slug": "national-1170",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
+        },
+        {
+          "cluster_id": 879,
+          "slug": "opinion-879",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 18,
+          "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 348,
+          "slug": "national-348",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 14,
+          "headline": "জামায়াত আগামীতে ক্ষমতায় যাওয়ার জন্য ভারতের সঙ্গে লিয়াজোঁ শুরু করেছে : রাশেদ খান"
+        },
+        {
+          "cluster_id": 331,
+          "slug": "national-331",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 6,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
+        {
+          "cluster_id": 253,
+          "slug": "sports-253",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 9,
+          "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
+        },
         {
           "cluster_id": 1179,
           "slug": "national-1179",
@@ -114582,46 +114945,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 11,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
-        },
-        {
-          "cluster_id": 1162,
-          "slug": "national-1162",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "মানিক পশারীর দাফনে বাধা দেওয়ার প্রতিবাদে এবার সাতক্ষীরায় মুক্তিযোদ্ধাদের মানববন্ধন"
-        },
-        {
-          "cluster_id": 1161,
-          "slug": "national-1161",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘যারা অস্থিতিশীলতা সৃষ্টি করছে, তাদের আন্দোলনকারী হিসেবে বিবেচনা করছে না পুলিশ’"
-        },
-        {
-          "cluster_id": 1152,
-          "slug": "national-1152",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "‘ন্যাশনাল স্পোর্টস অ্যালায়েন্স’এর আত্মপ্রকাশ অনুষ্ঠানে আসিফ আকবর, ক্রীড়া প্রতিমন্ত্রীকে তোপ"
-        },
-        {
-          "cluster_id": 1119,
-          "slug": "national-1119",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বরিশালে বাস ধর্মঘট, ভোগান্তিতে যাত্রীরা"
         }
       ]
     },
@@ -114629,7 +114952,7 @@
       "cluster_id": 1207,
       "headline": "গ্যাসের দাম না কমালে কঠোর আন্দোলনের হুঁশিয়ারি নাসীরুদ্দীন পাটওয়ারীর",
       "first_seen": "2026-11-03T03:19:56.460Z",
-      "last_update": "2026-11-03T03:19:56.463Z",
+      "last_update": "2026-11-03T03:53:18.430Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -114753,65 +115076,413 @@
     },
     "national-1210": {
       "cluster_id": 1210,
-      "headline": "দক্ষ জনশক্তি ও একাধিক ভাষা শিক্ষার ওপর গুরুত্বারোপ রাষ্ট্রপতির",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কোন রাগ থেকে ক্যামেরার পেছনে চলে গেলেন আফসানা মিমি",
+      "first_seen": "2026-11-03T03:53:18.417Z",
+      "last_update": "2026-11-03T03:53:18.420Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T03:27:19.000Z",
+          "kind": "evidence",
+          "claim_id": 381253,
+          "claim_text": "কোন রাগ থেকে ক্যামেরার পেছনে চলে গেলেন আফসানা মিমি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/entertainment/odmcbwp4qv"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:31:07.000Z",
+          "kind": "evidence",
+          "claim_id": 381253,
+          "claim_text": "কোন রাগ থেকে ক্যামেরার পেছনে চলে গেলেন আফসানা মিমি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/entertainment/ep8sc1akrc"
+          }
+        },
+        {
+          "ts": "2026-11-03T03:31:07.000Z",
+          "kind": "evidence",
+          "claim_id": 381254,
+          "claim_text": "অভিনয়ের বাইরেও নিজের জন্য একটা জায়গা থাকা উচিত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/video/entertainment/ep8sc1akrc"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.683Z",
+          "kind": "claim",
+          "claim_id": 381253,
+          "claim_text": "কোন রাগ থেকে ক্যামেরার পেছনে চলে গেলেন আফসানা মিমি"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.686Z",
+          "kind": "claim",
+          "claim_id": 381254,
+          "claim_text": "অভিনয়ের বাইরেও নিজের জন্য একটা জায়গা থাকা উচিত"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381253,
+          "claim_text": "কোন রাগ থেকে ক্যামেরার পেছনে চলে গেলেন আফসানা মিমি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381254,
+          "claim_text": "অভিনয়ের বাইরেও নিজের জন্য একটা জায়গা থাকা উচিত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1211": {
       "cluster_id": 1211,
-      "headline": "‘এমন দল আগে কখনও দেখিনি’, বার্সেলোনায় প্রথম গোলের পর গর্ডন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+      "first_seen": "2026-11-03T03:53:18.425Z",
+      "last_update": "2026-11-03T03:53:18.427Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T01:58:34.000Z",
+          "kind": "evidence",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTYXNVT1dBTS1RbkVYd1FXVTRIbGFlclZoUzgzcmZ3SncwQVBId0ZTZFpWeUlNOEZkMzc2Y2pHZVpJM3htaTFjblVZNXZfY0lNVmFZX3M1WXNjMm5tSnFtaXNvRHVCcTZ4Xy13?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:45:56.000Z",
+          "kind": "evidence",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxPLTE4RHFTNmlFVFJsZ1hLbnh6bFVmeGRCX1lrb2RTSGNFWElxZUZ3aHJHVS1WVFE3SFJEbkp5U1QwMmpIb0FzWkxuR0VKNDFVSGFqM1dNM3RyMVZ2Rkp0ZlQyS1dKQi1EZDJFVXdnVmJOX3VHTUxJZWd0bFZIRzI1TW9aMGt0VVZFZVFjY2FrOGQtRmR2RlktVVFqU0VUSkp4QmFFOGp3QW5rTDlSY0gxTTQwS0NxeFR2ckZ4TnY2eC1oaFhMNUFMM2MwaGFZakwyckpGalJaVEd1VWlMMlR6VENjenlYUlEwNHJETjV5V25pR0xjYU1EQlk2QkJKMEhDVkZXTEVDcTR6dGxXVHJ4YXQ2Ti10SGwzdGwwcTI5c1VpVm9jalFTcDFDVThzOEJrRnpDZ3lTdjZpUHE2MFBrcnBNNkxZZGJrd1F6a0VqOFJPUGpMNTAxaHQ3eDJwSGFjRUhReDRMZWNvX09YR1FMUy01eEhQYVhBUm9aa3JGaFd6RXdUemE2QnFEVFlzcVp0dS1NRzVkazgydXFlaEE1Mzkwb3hiQUtDUG54OFBXQzFFVzYySzY4VmJURnpYOVZhZEJuZmlB0gHLA0FVX3lxTE0yZWx3bHdzOXhoaW41RHhjTnpRZ0ZtbVVtT0ZmY1pyTW1IYmZNa1BoOEdSU243bmdCNHpONnRjSENlUHdtNWRwMG1QSkZWZ2hRRTluVXo5OTlSRVcwSlZEZDRhc01mbFpIcEg1VUxxV1pTRk5oaEVFLUN5Zy1jd3plTno2TW91WmVGUXdyR1N3U1RoWU1GREZtRjhHcEFjZlhxU3NWeFdtc0Q5amg0RFZiRnE4aUNFLVlveGFpSWlwemwxWExTaG5VLThKWF9jWU1qdFlDTzlCRzRKOTFDNDU1c1p5cExyY2tCRnE2clBjVENGWHcwXzNwRzNKdHhjYUhtb1Fwb3VUSFhqWmVCUFFyQVJhaGxHQmtMWFJOV2VIRG5sQlkyekluOE1zeVQ5S0tfWFhfZjBTbUxDVE9UQVhJa3luSG1wLXhycFlSXy0zMElQbjBQXzA5MUxoSzgzYjQ1d2VnVVhWNmUyWjdqd0p6NjZFN0R2TEhpWmJUa0pQUjBsa2lZYmhjR2luNUgtV3U5Q3dGNzFnUmlXRFBnMUtsRXJxQ1hIRXlNMVpTWFlvcU1vWHRGSUR0NVVjNkl3cGpiTjlJQnJnVUU1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:45:56.000Z",
+          "kind": "evidence",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxPLTE4RHFTNmlFVFJsZ1hLbnh6bFVmeGRCX1lrb2RTSGNFWElxZUZ3aHJHVS1WVFE3SFJEbkp5U1QwMmpIb0FzWkxuR0VKNDFVSGFqM1dNM3RyMVZ2Rkp0ZlQyS1dKQi1EZDJFVXdnVmJOX3VHTUxJZWd0bFZIRzI1TW9aMGt0VVZFZVFjY2FrOGQtRmR2RlktVVFqU0VUSkp4QmFFOGp3QW5rTDlSY0gxTTQwS0NxeFR2ckZ4TnY2eC1oaFhMNUFMM2MwaGFZakwyckpGalJaVEd1VWlMMlR6VENjenlYUlEwNHJETjV5V25pR0xjYU1EQlk2QkJKMEhDVkZXTEVDcTR6dGxXVHJ4YXQ2Ti10SGwzdGwwcTI5c1VpVm9jalFTcDFDVThzOEJrRnpDZ3lTdjZpUHE2MFBrcnBNNkxZZGJrd1F6a0VqOFJPUGpMNTAxaHQ3eDJwSGFjRUhReDRMZWNvX09YR1FMUy01eEhQYVhBUm9aa3JGaFd6RXdUemE2QnFEVFlzcVp0dS1NRzVkazgydXFlaEE1Mzkwb3hiQUtDUG54OFBXQzFFVzYySzY4VmJURnpYOVZhZEJuZmlB0gHLA0FVX3lxTE0yZWx3bHdzOXhoaW41RHhjTnpRZ0ZtbVVtT0ZmY1pyTW1IYmZNa1BoOEdSU243bmdCNHpONnRjSENlUHdtNWRwMG1QSkZWZ2hRRTluVXo5OTlSRVcwSlZEZDRhc01mbFpIcEg1VUxxV1pTRk5oaEVFLUN5Zy1jd3plTno2TW91WmVGUXdyR1N3U1RoWU1GREZtRjhHcEFjZlhxU3NWeFdtc0Q5amg0RFZiRnE4aUNFLVlveGFpSWlwemwxWExTaG5VLThKWF9jWU1qdFlDTzlCRzRKOTFDNDU1c1p5cExyY2tCRnE2clBjVENGWHcwXzNwRzNKdHhjYUhtb1Fwb3VUSFhqWmVCUFFyQVJhaGxHQmtMWFJOV2VIRG5sQlkyekluOE1zeVQ5S0tfWFhfZjBTbUxDVE9UQVhJa3luSG1wLXhycFlSXy0zMElQbjBQXzA5MUxoSzgzYjQ1d2VnVVhWNmUyWjdqd0p6NjZFN0R2TEhpWmJUa0pQUjBsa2lZYmhjR2luNUgtV3U5Q3dGNzFnUmlXRFBnMUtsRXJxQ1hIRXlNMVpTWFlvcU1vWHRGSUR0NVVjNkl3cGpiTjlJQnJnVUU1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.689Z",
+          "kind": "claim",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.691Z",
+          "kind": "claim",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1139,
+          "slug": "national-1139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
+        },
+        {
+          "cluster_id": 951,
+          "slug": "national-951",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৫২ বছর বয়সে এইচএসসি পাস"
+        },
+        {
+          "cluster_id": 626,
+          "slug": "sports-626",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যুব এশিয়া কাপের দল ঘোষণা বাংলাদেশের"
+        },
+        {
+          "cluster_id": 371,
+          "slug": "national-371",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এইচএসসি ও সমমানের ফল আজ, জানবেন যেভাবে"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "politics-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পত্রিকা 2026-10-30"
+        }
+      ]
     },
     "national-1212": {
       "cluster_id": 1212,
-      "headline": "ইয়াবা ‘গায়েব’, ৩ পুলিশ সদস্য প্রত্যাহার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
+      "first_seen": "2026-11-03T03:53:18.870Z",
+      "last_update": "2026-11-03T03:53:18.874Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/hollywood/z4hasmu90a"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.694Z",
+          "kind": "claim",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381257,
+          "claim_text": "সর্বকালের সবচেয়ে বেশি আয় করা ১০ সিনেমা, সাফল্যের নেপথ্যে কী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1213": {
       "cluster_id": 1213,
-      "headline": "‘তাহসিফ সৌরিকে হত্যা করা হয়েছে বলে সন্দেহ করি’, বললেন তার বাবা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "প্রথম আলোতে হামলা: সাড়ে ১০ মাসেও তদন্ত এগোয়নি, গ্রেপ্তার সবাই জামিনে মুক্ত",
+      "first_seen": "2026-11-03T03:53:18.876Z",
+      "last_update": "2026-11-03T03:53:18.877Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:18:48.000Z",
+          "kind": "evidence",
+          "claim_id": 381258,
+          "claim_text": "প্রথম আলোতে হামলা: সাড়ে ১০ মাসেও তদন্ত এগোয়নি, গ্রেপ্তার সবাই জামিনে মুক্ত",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/rhpcb0rwd1"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.697Z",
+          "kind": "claim",
+          "claim_id": 381258,
+          "claim_text": "প্রথম আলোতে হামলা: সাড়ে ১০ মাসেও তদন্ত এগোয়নি, গ্রেপ্তার সবাই জামিনে মুক্ত"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381258,
+          "claim_text": "প্রথম আলোতে হামলা: সাড়ে ১০ মাসেও তদন্ত এগোয়নি, গ্রেপ্তার সবাই জামিনে মুক্ত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 591,
+          "slug": "national-591",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "পল্টনে সাবেক অতিরিক্ত আইজিপির গাড়ির ধাক্কায় রিকশাচালক আহত, চালকের আসনে ছিলেন ছেলে"
+        }
+      ]
     },
     "national-1214": {
       "cluster_id": 1214,
-      "headline": "হামের উপসর্গ নিয়ে আরও ৭ জনের মৃত্যু",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+      "first_seen": "2026-11-03T03:53:18.879Z",
+      "last_update": "2026-11-03T03:53:18.881Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:13:16.000Z",
+          "kind": "evidence",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/h1l8c5robf"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.700Z",
+          "kind": "claim",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381259,
+          "claim_text": "ক্যালিফোর্নিয়ায় ২০ হাজার ব্যালট বাতিলে ট্রাম্প প্রশাসনের চেষ্টা সুপ্রিম কোর্টে খারিজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1215": {
       "cluster_id": 1215,
-      "headline": "হামলায় নিহত দুই বাংলাদেশির মরদেহ ফেরাতে সৌদির সহায়তা চাইল সরকার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+      "first_seen": "2026-11-03T03:53:18.883Z",
+      "last_update": "2026-11-03T03:53:18.885Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:11:55.000Z",
+          "kind": "evidence",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/oil-prices-rose-in-the-global-market-following-a-us-attack-in-iran/"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.703Z",
+          "kind": "claim",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1216": {
       "cluster_id": 1216,
-      "headline": "ঠাকুরগাঁও-১ উপনির্বাচনে ভোটার উপস্থিতি কম, ফাঁকা পড়ে আছে অধিকাংশ কেন্দ্র",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাসে রং করলেই রুট রেশনালাইজেশন হবে না",
+      "first_seen": "2026-11-03T03:53:18.887Z",
+      "last_update": "2026-11-03T03:53:18.889Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:03:30.000Z",
+          "kind": "evidence",
+          "claim_id": 381261,
+          "claim_text": "বাসে রং করলেই রুট রেশনালাইজেশন হবে না",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/editorial/o628jsbs02"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.705Z",
+          "kind": "claim",
+          "claim_id": 381261,
+          "claim_text": "বাসে রং করলেই রুট রেশনালাইজেশন হবে না"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381261,
+          "claim_text": "বাসে রং করলেই রুট রেশনালাইজেশন হবে না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1217": {
@@ -118691,6 +119362,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1139,
           "slug": "national-1139",
           "actor_links": 0,
@@ -118729,14 +119408,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
-        },
-        {
-          "cluster_id": 147,
-          "slug": "politics-147",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পত্রিকা 2026-10-30"
         }
       ]
     },
@@ -120684,6 +121355,14 @@
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1194,
           "slug": "national-1194",
           "actor_links": 0,
@@ -120706,14 +121385,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
-        },
-        {
-          "cluster_id": 1090,
-          "slug": "national-1090",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পুলিশের গাড়িতে আমরা আগুন দেইনি: পোশাক শ্রমিক"
         }
       ]
     },
@@ -134239,6 +134910,14 @@
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1194,
           "slug": "national-1194",
           "actor_links": 0,
@@ -134261,14 +134940,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
-        },
-        {
-          "cluster_id": 1090,
-          "slug": "national-1090",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পুলিশের গাড়িতে আমরা আগুন দেইনি: পোশাক শ্রমিক"
         }
       ]
     },
@@ -136279,8 +136950,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -145390,8 +146061,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -146866,6 +147537,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -146904,14 +147583,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -150208,6 +150879,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -150246,14 +150925,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -155714,6 +156385,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -155752,14 +156431,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -164742,6 +165413,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -164780,14 +165459,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -168010,6 +168681,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -168048,14 +168727,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "যুব এশিয়া কাপের দল ঘোষণা বাংলাদেশের"
-        },
-        {
-          "cluster_id": 541,
-          "slug": "national-541",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্তর্জাতিক বাজারে তেলের দাম ছয় মাসের মধ্যে সর্বোচ্চ"
         }
       ]
     },
@@ -179424,6 +180095,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -179462,14 +180141,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -181181,6 +181852,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -181219,14 +181898,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -184721,6 +185392,14 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1199,
           "slug": "tech-1199",
           "actor_links": 0,
@@ -184742,14 +185421,6 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 13,
           "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
@@ -188911,6 +189582,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -188949,14 +189628,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         }
       ]
     },
@@ -194922,6 +195593,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -194960,14 +195639,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -197974,8 +198645,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -199215,7 +199886,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1213,
+          "slug": "national-1213",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "প্রথম আলোতে হামলা: সাড়ে ১০ মাসেও তদন্ত এগোয়নি, গ্রেপ্তার সবাই জামিনে মুক্ত"
+        }
+      ]
     },
     "national-592": {
       "cluster_id": 592,
@@ -200005,8 +200685,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -202658,6 +203338,14 @@
           "headline": "পত্রিকা 2026-10-30"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1194,
           "slug": "national-1194",
           "actor_links": 0,
@@ -202680,14 +203368,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
-        },
-        {
-          "cluster_id": 1090,
-          "slug": "national-1090",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পুলিশের গাড়িতে আমরা আগুন দেইনি: পোশাক শ্রমিক"
         }
       ]
     },
@@ -204309,8 +204989,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -207344,6 +208024,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -207382,14 +208070,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -210121,8 +210801,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -213205,6 +213885,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -213243,14 +213931,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -216356,6 +217036,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -216394,14 +217082,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -218393,8 +219073,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -220049,8 +220729,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -222424,6 +223104,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -222462,14 +223150,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 513,
-          "slug": "politics-513",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেরপুরে মাইকে ঘোষণা দিয়ে দুই গ্রামবাসীর সংঘর্ষ, সাড়ে ৪ ঘণ্টা সড়ক অবরোধ"
         }
       ]
     },
@@ -222684,8 +223364,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -223019,8 +223699,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -223982,8 +224662,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -225454,8 +226134,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -231069,8 +231749,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -231892,8 +232572,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -233351,6 +234031,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -233389,14 +234077,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -237694,6 +238374,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1175,
           "slug": "national-1175",
           "actor_links": 0,
@@ -237724,14 +238412,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "টাঙ্গাইলে ৬ বছরের শিশু ধর্ষণ মামলার অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 851,
-          "slug": "national-851",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "তাহসিফ হত্যা: দীপের সম্পৃক্ততার প্রাথমিক তথ্য পেয়েছে পুলিশ"
         }
       ]
     },
@@ -237942,6 +238622,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1139,
           "slug": "national-1139",
           "actor_links": 0,
@@ -237980,14 +238668,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পত্রিকা 2026-10-30"
-        },
-        {
-          "cluster_id": 139,
-          "slug": "national-139",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রিয়দর্শনের নতুন সিনেমায় অক্ষয়ের বিপরীতে ভূমি"
         }
       ]
     },
@@ -239150,7 +239830,7 @@
           "slug": "national-1186",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 22,
+          "claim_count": 23,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -240015,8 +240695,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -242293,20 +242973,20 @@
           "headline": "সংসদে যুক্ত হচ্ছেন নতুন দুই সদস্য, শপথ মঙ্গলবার"
         },
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -243378,7 +244058,7 @@
           "slug": "national-1186",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 22,
+          "claim_count": 23,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
@@ -243474,8 +244154,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -254752,12 +255432,131 @@
     },
     "opinion-1211": {
       "cluster_id": 1211,
-      "headline": "মালয়েশিয়ার বাজার ধরতে রপ্তানি পণ্যে বৈচিত্র্য আনতে হবে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+      "first_seen": "2026-11-03T03:53:18.425Z",
+      "last_update": "2026-11-03T03:53:18.427Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T01:58:34.000Z",
+          "kind": "evidence",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTYXNVT1dBTS1RbkVYd1FXVTRIbGFlclZoUzgzcmZ3SncwQVBId0ZTZFpWeUlNOEZkMzc2Y2pHZVpJM3htaTFjblVZNXZfY0lNVmFZX3M1WXNjMm5tSnFtaXNvRHVCcTZ4Xy13?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:45:56.000Z",
+          "kind": "evidence",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxPLTE4RHFTNmlFVFJsZ1hLbnh6bFVmeGRCX1lrb2RTSGNFWElxZUZ3aHJHVS1WVFE3SFJEbkp5U1QwMmpIb0FzWkxuR0VKNDFVSGFqM1dNM3RyMVZ2Rkp0ZlQyS1dKQi1EZDJFVXdnVmJOX3VHTUxJZWd0bFZIRzI1TW9aMGt0VVZFZVFjY2FrOGQtRmR2RlktVVFqU0VUSkp4QmFFOGp3QW5rTDlSY0gxTTQwS0NxeFR2ckZ4TnY2eC1oaFhMNUFMM2MwaGFZakwyckpGalJaVEd1VWlMMlR6VENjenlYUlEwNHJETjV5V25pR0xjYU1EQlk2QkJKMEhDVkZXTEVDcTR6dGxXVHJ4YXQ2Ti10SGwzdGwwcTI5c1VpVm9jalFTcDFDVThzOEJrRnpDZ3lTdjZpUHE2MFBrcnBNNkxZZGJrd1F6a0VqOFJPUGpMNTAxaHQ3eDJwSGFjRUhReDRMZWNvX09YR1FMUy01eEhQYVhBUm9aa3JGaFd6RXdUemE2QnFEVFlzcVp0dS1NRzVkazgydXFlaEE1Mzkwb3hiQUtDUG54OFBXQzFFVzYySzY4VmJURnpYOVZhZEJuZmlB0gHLA0FVX3lxTE0yZWx3bHdzOXhoaW41RHhjTnpRZ0ZtbVVtT0ZmY1pyTW1IYmZNa1BoOEdSU243bmdCNHpONnRjSENlUHdtNWRwMG1QSkZWZ2hRRTluVXo5OTlSRVcwSlZEZDRhc01mbFpIcEg1VUxxV1pTRk5oaEVFLUN5Zy1jd3plTno2TW91WmVGUXdyR1N3U1RoWU1GREZtRjhHcEFjZlhxU3NWeFdtc0Q5amg0RFZiRnE4aUNFLVlveGFpSWlwemwxWExTaG5VLThKWF9jWU1qdFlDTzlCRzRKOTFDNDU1c1p5cExyY2tCRnE2clBjVENGWHcwXzNwRzNKdHhjYUhtb1Fwb3VUSFhqWmVCUFFyQVJhaGxHQmtMWFJOV2VIRG5sQlkyekluOE1zeVQ5S0tfWFhfZjBTbUxDVE9UQVhJa3luSG1wLXhycFlSXy0zMElQbjBQXzA5MUxoSzgzYjQ1d2VnVVhWNmUyWjdqd0p6NjZFN0R2TEhpWmJUa0pQUjBsa2lZYmhjR2luNUgtV3U5Q3dGNzFnUmlXRFBnMUtsRXJxQ1hIRXlNMVpTWFlvcU1vWHRGSUR0NVVjNkl3cGpiTjlJQnJnVUU1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T02:45:56.000Z",
+          "kind": "evidence",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxPLTE4RHFTNmlFVFJsZ1hLbnh6bFVmeGRCX1lrb2RTSGNFWElxZUZ3aHJHVS1WVFE3SFJEbkp5U1QwMmpIb0FzWkxuR0VKNDFVSGFqM1dNM3RyMVZ2Rkp0ZlQyS1dKQi1EZDJFVXdnVmJOX3VHTUxJZWd0bFZIRzI1TW9aMGt0VVZFZVFjY2FrOGQtRmR2RlktVVFqU0VUSkp4QmFFOGp3QW5rTDlSY0gxTTQwS0NxeFR2ckZ4TnY2eC1oaFhMNUFMM2MwaGFZakwyckpGalJaVEd1VWlMMlR6VENjenlYUlEwNHJETjV5V25pR0xjYU1EQlk2QkJKMEhDVkZXTEVDcTR6dGxXVHJ4YXQ2Ti10SGwzdGwwcTI5c1VpVm9jalFTcDFDVThzOEJrRnpDZ3lTdjZpUHE2MFBrcnBNNkxZZGJrd1F6a0VqOFJPUGpMNTAxaHQ3eDJwSGFjRUhReDRMZWNvX09YR1FMUy01eEhQYVhBUm9aa3JGaFd6RXdUemE2QnFEVFlzcVp0dS1NRzVkazgydXFlaEE1Mzkwb3hiQUtDUG54OFBXQzFFVzYySzY4VmJURnpYOVZhZEJuZmlB0gHLA0FVX3lxTE0yZWx3bHdzOXhoaW41RHhjTnpRZ0ZtbVVtT0ZmY1pyTW1IYmZNa1BoOEdSU243bmdCNHpONnRjSENlUHdtNWRwMG1QSkZWZ2hRRTluVXo5OTlSRVcwSlZEZDRhc01mbFpIcEg1VUxxV1pTRk5oaEVFLUN5Zy1jd3plTno2TW91WmVGUXdyR1N3U1RoWU1GREZtRjhHcEFjZlhxU3NWeFdtc0Q5amg0RFZiRnE4aUNFLVlveGFpSWlwemwxWExTaG5VLThKWF9jWU1qdFlDTzlCRzRKOTFDNDU1c1p5cExyY2tCRnE2clBjVENGWHcwXzNwRzNKdHhjYUhtb1Fwb3VUSFhqWmVCUFFyQVJhaGxHQmtMWFJOV2VIRG5sQlkyekluOE1zeVQ5S0tfWFhfZjBTbUxDVE9UQVhJa3luSG1wLXhycFlSXy0zMElQbjBQXzA5MUxoSzgzYjQ1d2VnVVhWNmUyWjdqd0p6NjZFN0R2TEhpWmJUa0pQUjBsa2lZYmhjR2luNUgtV3U5Q3dGNzFnUmlXRFBnMUtsRXJxQ1hIRXlNMVpTWFlvcU1vWHRGSUR0NVVjNkl3cGpiTjlJQnJnVUU1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.689Z",
+          "kind": "claim",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.691Z",
+          "kind": "claim",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381255,
+          "claim_text": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381256,
+          "claim_text": "রাজধানীতে দুই স্থানে ককটেল বিস্ফোরণ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1139,
+          "slug": "national-1139",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
+        },
+        {
+          "cluster_id": 951,
+          "slug": "national-951",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৫২ বছর বয়সে এইচএসসি পাস"
+        },
+        {
+          "cluster_id": 626,
+          "slug": "sports-626",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "যুব এশিয়া কাপের দল ঘোষণা বাংলাদেশের"
+        },
+        {
+          "cluster_id": 371,
+          "slug": "national-371",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এইচএসসি ও সমমানের ফল আজ, জানবেন যেভাবে"
+        },
+        {
+          "cluster_id": 370,
+          "slug": "national-370",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
+        },
+        {
+          "cluster_id": 147,
+          "slug": "politics-147",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পত্রিকা 2026-10-30"
+        }
+      ]
     },
     "opinion-1233": {
       "cluster_id": 1233,
@@ -263526,6 +264325,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -263564,14 +264371,6 @@
           "source_links": 2,
           "claim_count": 15,
           "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
-        },
-        {
-          "cluster_id": 1009,
-          "slug": "national-1009",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
         }
       ]
     },
@@ -264545,6 +265344,14 @@
           "headline": "‘আব কি বার, ট্রাম্প সরকার’ থেকে অবিশ্বাস—মোদির ভারত কেন ট্রাম্পের দিক থেকে মুখ ফিরিয়ে নিচ্ছে"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1194,
           "slug": "national-1194",
           "actor_links": 0,
@@ -264567,14 +265374,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
-        },
-        {
-          "cluster_id": 1090,
-          "slug": "national-1090",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পুলিশের গাড়িতে আমরা আগুন দেইনি: পোশাক শ্রমিক"
         }
       ]
     },
@@ -266149,8 +266948,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -270284,6 +271083,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1170,
           "slug": "national-1170",
           "actor_links": 0,
@@ -270322,14 +271129,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "গার্মেন্টসের অস্থিরতায় সীমান্তের ওপার থেকে ইন্ধন দেওয়া হচ্ছে: স্বরাষ্ট্রমন্ত্রী"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         }
       ]
     },
@@ -276563,8 +277362,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -281833,11 +282632,41 @@
     },
     "sports-1215": {
       "cluster_id": 1215,
-      "headline": "মন্টেনেগ্রোকে ৪ গোলের মালা পরিয়ে সেমিফাইনালে বাংলাদেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+      "first_seen": "2026-11-03T03:53:18.883Z",
+      "last_update": "2026-11-03T03:53:18.885Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T03:11:55.000Z",
+          "kind": "evidence",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/oil-prices-rose-in-the-global-market-following-a-us-attack-in-iran/"
+          }
+        },
+        {
+          "ts": "2026-11-03T04:14:33.703Z",
+          "kind": "claim",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম"
+        },
+        {
+          "ts": "2026-11-03T04:14:33.814Z",
+          "kind": "verify",
+          "claim_id": 381260,
+          "claim_text": "ইরানে মার্কিন হামলায় বিশ্ববাজারে বাড়ল তেলের দাম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1217": {
@@ -284141,8 +284970,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -288789,6 +289618,14 @@
           "headline": "পত্রিকা 2026-10-30"
         },
         {
+          "cluster_id": 1211,
+          "slug": "opinion-1211",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগারগাঁও মেট্রোরেল স্টেশনেরে পানির পাম্পে ককটেল বিস্ফোরণ"
+        },
+        {
           "cluster_id": 1194,
           "slug": "national-1194",
           "actor_links": 0,
@@ -288811,14 +289648,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঝিনাইদহে পানিতে ডুবে কলেজশিক্ষার্থীর মৃত্যু"
-        },
-        {
-          "cluster_id": 1090,
-          "slug": "national-1090",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "পুলিশের গাড়িতে আমরা আগুন দেইনি: পোশাক শ্রমিক"
         }
       ]
     },
@@ -291750,8 +292579,8 @@
           "slug": "national-1206",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "রাজধানীতে বাসে আগুন দিলো দুর্বৃত্তরা"
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
         },
         {
           "cluster_id": 1179,
@@ -294422,7 +295251,7 @@
       "cluster_id": 1207,
       "headline": "গ্যাসের দাম না কমালে কঠোর আন্দোলনের হুঁশিয়ারি নাসীরুদ্দীন পাটওয়ারীর",
       "first_seen": "2026-11-03T03:19:56.460Z",
-      "last_update": "2026-11-03T03:19:56.463Z",
+      "last_update": "2026-11-03T03:53:18.430Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -297622,6 +298451,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1206,
+          "slug": "national-1206",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "রাজধানীতে পার্কিং করে রাখা বাসে আগুন"
+        },
+        {
           "cluster_id": 1172,
           "slug": "politics-1172",
           "actor_links": 0,
@@ -297660,14 +298497,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "জানুয়ারির বেতনেই নতুন মজুরি চান শ্রমিকেরা, বোর্ডকে সময় বেঁধে দিলেন নেতারা"
-        },
-        {
-          "cluster_id": 1039,
-          "slug": "tech-1039",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 15,
-          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
