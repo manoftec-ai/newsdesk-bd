@@ -13,7 +13,7 @@ author: "desk"
 lang: "bn"
 draft: false
 tracked: true
-lastChecked: 2026-11-02T09:00:44.060Z
+lastChecked: 2026-11-03T09:09:26.404Z
 keyPoints:
   - "২৪ সেপ্টেম্বর সাধারণ পরিষদের সভাপতি"
 faq: []
