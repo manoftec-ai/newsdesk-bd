@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6549,
+    "storyCount": 6553,
     "kinds": [
       "claim",
       "evidence",
@@ -5879,6 +5879,134 @@
         }
       ],
       "related": []
+    },
+    "economy-1308": {
+      "cluster_id": 1308,
+      "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+      "first_seen": "2026-11-03T10:28:29.050Z",
+      "last_update": "2026-11-03T10:28:29.052Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T08:57:44.000Z",
+          "kind": "evidence",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5oVEZRUFlzRURuSUEtQ2dYcEFySld1TnJmQ2VocjZEQUh2a3hIbVJxbHlocXQ2NGctaU8wdVVRQk5aWktpSTJoLTdNSzlDZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T08:57:44.000Z",
+          "kind": "evidence",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5oVEZRUFlzRURuSUEtQ2dYcEFySld1TnJmQ2VocjZEQUh2a3hIbVJxbHlocXQ2NGctaU8wdVVRQk5aWktpSTJoLTdNSzlDZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T09:31:23.000Z",
+          "kind": "evidence",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/power-and-fuel/978504/%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%8F%E0%A6%B2%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF-%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%97%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A6%9A%E0%A6%BE%E0%A6%AA"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.246Z",
+          "kind": "claim",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.249Z",
+          "kind": "claim",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1179,
+          "slug": "national-1179",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
+        },
+        {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
+          "cluster_id": 286,
+          "slug": "national-286",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
+        },
+        {
+          "cluster_id": 285,
+          "slug": "sports-285",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
+        },
+        {
+          "cluster_id": 680,
+          "slug": "national-680",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
+        },
+        {
+          "cluster_id": 903,
+          "slug": "sports-903",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জ্ঞানেশ কুমার জেলে যাবেন: দিল্লির সমাবেশে ২০২৪-এর নির্বাচনকে অবৈধ বললেন রাহুল"
+        }
+      ]
     },
     "economy-1322": {
       "cluster_id": 1322,
@@ -26483,7 +26611,7 @@
       "cluster_id": 1212,
       "headline": "যেখানে ত্রাণ বিতরণ করা হচ্ছিল সেই স্কুলেই রুশ হামলা, নিহত অন্তত ২৬",
       "first_seen": "2026-11-03T04:26:04.602Z",
-      "last_update": "2026-11-03T09:56:02.924Z",
+      "last_update": "2026-11-03T10:28:29.065Z",
       "claim_count": 3,
       "events": [
         {
@@ -26857,7 +26985,7 @@
       "cluster_id": 1271,
       "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন",
       "first_seen": "2026-11-03T08:18:30.768Z",
-      "last_update": "2026-11-03T09:25:05.309Z",
+      "last_update": "2026-11-03T10:28:29.044Z",
       "claim_count": 4,
       "events": [
         {
@@ -27260,7 +27388,7 @@
       "cluster_id": 1297,
       "headline": "ঐক্য ও স্মৃতির বন্ধনে যাত্রা শুরু ওএলএফ অ্যালামনাই অ্যাসোসিয়েশনের",
       "first_seen": "2026-11-03T09:56:02.911Z",
-      "last_update": "2026-11-03T09:56:02.913Z",
+      "last_update": "2026-11-03T10:28:29.055Z",
       "claim_count": 2,
       "events": [
         {
@@ -27376,11 +27504,81 @@
     },
     "entertainment-1307": {
       "cluster_id": 1307,
-      "headline": "১ মিনিটেরও কম সময়ে পৌঁছে গেলাম ১১৮ তলায়, সেখান থেকেই দেখলাম সাংহাই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+      "first_seen": "2026-11-03T10:28:29.046Z",
+      "last_update": "2026-11-03T10:28:29.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T09:11:17.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.241Z",
+          "kind": "claim",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.243Z",
+          "kind": "claim",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-131": {
@@ -41908,6 +42106,14 @@
           "headline": "সারা দেশের কোমর ভাঙা, তাই দেশ মেরামত করতে হবে"
         },
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -41930,14 +42136,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -50364,7 +50562,7 @@
       "cluster_id": 1212,
       "headline": "যেখানে ত্রাণ বিতরণ করা হচ্ছিল সেই স্কুলেই রুশ হামলা, নিহত অন্তত ২৬",
       "first_seen": "2026-11-03T04:26:04.602Z",
-      "last_update": "2026-11-03T09:56:02.924Z",
+      "last_update": "2026-11-03T10:28:29.065Z",
       "claim_count": 3,
       "events": [
         {
@@ -52244,7 +52442,7 @@
       "cluster_id": 1301,
       "headline": "জলবায়ু সম্মেলনে যোগ দিতে তুরস্ক সফরে যাবেন প্রধানমন্ত্রী",
       "first_seen": "2026-11-03T09:56:02.932Z",
-      "last_update": "2026-11-03T09:56:02.935Z",
+      "last_update": "2026-11-03T10:28:29.069Z",
       "claim_count": 2,
       "events": [
         {
@@ -52436,22 +52634,121 @@
       ],
       "related": []
     },
+    "international-1309": {
+      "cluster_id": 1309,
+      "headline": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+      "first_seen": "2026-11-03T10:28:29.475Z",
+      "last_update": "2026-11-03T10:28:29.478Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:54:47.000Z",
+          "kind": "evidence",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/20-year-old-co-pilot-issued-repeated-mayday-calls-before-plane-crash/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.251Z",
+          "kind": "claim",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-1310": {
       "cluster_id": 1310,
-      "headline": "অর্থ ও উপহার নেওয়ার অভিযোগ, গ্রিসে মার্কিন রাষ্ট্রদূতকে পদত্যাগের নির্দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+      "first_seen": "2026-11-03T10:28:29.480Z",
+      "last_update": "2026-11-03T10:28:29.481Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:50:55.000Z",
+          "kind": "evidence",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/why-is-it-so-important-to-control-oneself-when-angry-what-islam-says-about-this/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.253Z",
+          "kind": "claim",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1311": {
       "cluster_id": 1311,
-      "headline": "গ্রিসে মার্কিন রাষ্ট্রদূতকে পদত্যাগের নির্দেশ ট্রাম্পের, কারণ কী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+      "first_seen": "2026-11-03T10:28:29.483Z",
+      "last_update": "2026-11-03T10:28:29.485Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:30:21.000Z",
+          "kind": "evidence",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/3ift92cto6"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.255Z",
+          "kind": "claim",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1317": {
@@ -85967,6 +86264,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -86005,14 +86310,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
-        },
-        {
-          "cluster_id": 918,
-          "slug": "sports-918",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গার্মেন্টস শিল্প কঠিন অবস্থার মধ্য দিয়ে অতিক্রম করছে: জামায়াত আমির"
         }
       ]
     },
@@ -113376,6 +113673,14 @@
           "headline": "ঠাকুরগাঁও ১ আসনের উপনির্বাচনে জাল ভোট দিতে গিয়ে আটক ৩ মাদ্রাসাছাত্র"
         },
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1272,
           "slug": "sports-1272",
           "actor_links": 0,
@@ -113390,14 +113695,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1241,
-          "slug": "national-1241",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "নবায়নযোগ্য জ্বালানি শুধু সম্ভাবনাময় খাত নয়, অনিবার্য বাস্তবতা: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -118194,7 +118491,7 @@
       "cluster_id": 1211,
       "headline": "ক্রিকেটের আলোচিত পাঁচ আম্পায়ার, যাঁদের ভুল সিদ্ধান্ত নিয়ে এখনো সমালোচনা হয়",
       "first_seen": "2026-11-03T04:26:04.594Z",
-      "last_update": "2026-11-03T09:56:02.922Z",
+      "last_update": "2026-11-03T10:28:29.062Z",
       "claim_count": 16,
       "events": [
         {
@@ -118987,7 +119284,7 @@
       "cluster_id": 1212,
       "headline": "যেখানে ত্রাণ বিতরণ করা হচ্ছিল সেই স্কুলেই রুশ হামলা, নিহত অন্তত ২৬",
       "first_seen": "2026-11-03T04:26:04.602Z",
-      "last_update": "2026-11-03T09:56:02.924Z",
+      "last_update": "2026-11-03T10:28:29.065Z",
       "claim_count": 3,
       "events": [
         {
@@ -121582,7 +121879,7 @@
       "cluster_id": 1229,
       "headline": "রূপগঞ্জে পোশাক কারখানায় ডায়ার কম্প্রেসার বিস্ফোরণ, দগ্ধ ৪",
       "first_seen": "2026-11-03T05:37:19.656Z",
-      "last_update": "2026-11-03T09:56:02.923Z",
+      "last_update": "2026-11-03T10:28:29.064Z",
       "claim_count": 2,
       "events": [
         {
@@ -122561,7 +122858,7 @@
       "cluster_id": 1239,
       "headline": "চাঁদপুরে ছোট ভাই ও তাঁর স্ত্রীর মারধরে প্রতিবন্ধী বড় ভাইয়ের মৃত্যুর অভিযোগ",
       "first_seen": "2026-11-03T06:10:08.858Z",
-      "last_update": "2026-11-03T09:56:02.920Z",
+      "last_update": "2026-11-03T10:28:29.059Z",
       "claim_count": 3,
       "events": [
         {
@@ -122779,7 +123076,7 @@
       "cluster_id": 1240,
       "headline": "শিক্ষার্থী ভিসায় চার পরিবর্তন আনল নিউজিল্যান্ড",
       "first_seen": "2026-11-03T06:10:08.866Z",
-      "last_update": "2026-11-03T09:56:02.921Z",
+      "last_update": "2026-11-03T10:28:29.060Z",
       "claim_count": 2,
       "events": [
         {
@@ -125502,7 +125799,7 @@
       "cluster_id": 1263,
       "headline": "কোনো কোনো মহল গার্মেন্টস উৎপাদন ব্যাহত করতে উসকানি দিচ্ছে: স্বরাষ্ট্রমন্ত্রী",
       "first_seen": "2026-11-03T07:45:56.241Z",
-      "last_update": "2026-11-03T09:56:02.914Z",
+      "last_update": "2026-11-03T10:28:29.056Z",
       "claim_count": 2,
       "events": [
         {
@@ -126258,7 +126555,7 @@
       "cluster_id": 1271,
       "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন",
       "first_seen": "2026-11-03T08:18:30.768Z",
-      "last_update": "2026-11-03T09:25:05.309Z",
+      "last_update": "2026-11-03T10:28:29.044Z",
       "claim_count": 4,
       "events": [
         {
@@ -128365,7 +128662,7 @@
       "cluster_id": 1295,
       "headline": "মিরপুরে পুলিশ সদস্যকে একা পেয়ে বেধড়ক পেটালো আন্দোলনকারীরা",
       "first_seen": "2026-11-03T09:56:02.902Z",
-      "last_update": "2026-11-03T09:56:02.905Z",
+      "last_update": "2026-11-03T10:28:29.053Z",
       "claim_count": 2,
       "events": [
         {
@@ -128493,7 +128790,7 @@
       "cluster_id": 1296,
       "headline": "নাহিদার অধিনায়কত্বে নতুন শুরু, প্রথম ম্যাচ পাকিস্তানের বিপক্ষে",
       "first_seen": "2026-11-03T09:56:02.906Z",
-      "last_update": "2026-11-03T09:56:02.909Z",
+      "last_update": "2026-11-03T10:28:29.054Z",
       "claim_count": 2,
       "events": [
         {
@@ -128621,7 +128918,7 @@
       "cluster_id": 1297,
       "headline": "ঐক্য ও স্মৃতির বন্ধনে যাত্রা শুরু ওএলএফ অ্যালামনাই অ্যাসোসিয়েশনের",
       "first_seen": "2026-11-03T09:56:02.911Z",
-      "last_update": "2026-11-03T09:56:02.913Z",
+      "last_update": "2026-11-03T10:28:29.055Z",
       "claim_count": 2,
       "events": [
         {
@@ -128700,7 +128997,7 @@
       "cluster_id": 1298,
       "headline": "নারায়ণগঞ্জে গ্যারেজে রাখা বাসে আগুন, নাশকতা কিনা খতিয়ে দেখছে পুলিশ",
       "first_seen": "2026-11-03T09:56:02.915Z",
-      "last_update": "2026-11-03T09:56:02.918Z",
+      "last_update": "2026-11-03T10:28:29.057Z",
       "claim_count": 2,
       "events": [
         {
@@ -128828,7 +129125,7 @@
       "cluster_id": 1299,
       "headline": "এবার দুর্নীতির মামলায় গ্রেপ্তার দিলীপ কুমার আগরওয়ালা",
       "first_seen": "2026-11-03T09:56:02.925Z",
-      "last_update": "2026-11-03T09:56:02.928Z",
+      "last_update": "2026-11-03T10:28:29.066Z",
       "claim_count": 2,
       "events": [
         {
@@ -129288,7 +129585,7 @@
       "cluster_id": 1300,
       "headline": "কূটনৈতিক তৎপরতার আভাসে বিশ্ববাজারে তেলের দামে বড় পতন",
       "first_seen": "2026-11-03T09:56:02.929Z",
-      "last_update": "2026-11-03T09:56:02.931Z",
+      "last_update": "2026-11-03T10:28:29.068Z",
       "claim_count": 2,
       "events": [
         {
@@ -129416,7 +129713,7 @@
       "cluster_id": 1301,
       "headline": "জলবায়ু সম্মেলনে যোগ দিতে তুরস্ক সফরে যাবেন প্রধানমন্ত্রী",
       "first_seen": "2026-11-03T09:56:02.932Z",
-      "last_update": "2026-11-03T09:56:02.935Z",
+      "last_update": "2026-11-03T10:28:29.069Z",
       "claim_count": 2,
       "events": [
         {
@@ -129688,20 +129985,169 @@
     },
     "national-1308": {
       "cluster_id": 1308,
-      "headline": "প্রথম শ্রেণিতে লটারি, দ্বিতীয় থেকে নবম শ্রেণিতে লিখিত পরীক্ষা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+      "first_seen": "2026-11-03T10:28:29.050Z",
+      "last_update": "2026-11-03T10:28:29.052Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T08:57:44.000Z",
+          "kind": "evidence",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5oVEZRUFlzRURuSUEtQ2dYcEFySld1TnJmQ2VocjZEQUh2a3hIbVJxbHlocXQ2NGctaU8wdVVRQk5aWktpSTJoLTdNSzlDZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T08:57:44.000Z",
+          "kind": "evidence",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা",
+          "detail": {
+            "source_id": "jamuna",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5oVEZRUFlzRURuSUEtQ2dYcEFySld1TnJmQ2VocjZEQUh2a3hIbVJxbHlocXQ2NGctaU8wdVVRQk5aWktpSTJoLTdNSzlDZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T09:31:23.000Z",
+          "kind": "evidence",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/business/power-and-fuel/978504/%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%8F%E0%A6%B2%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF-%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%97%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A6%9A%E0%A6%BE%E0%A6%AA"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.246Z",
+          "kind": "claim",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.249Z",
+          "kind": "claim",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430216,
+          "claim_text": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430217,
+          "claim_text": "আগামী চার দিন গ্যাস সরবরাহ বন্ধ নয়, কমতে পারে চাপ: পেট্রোবাংলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1179,
+          "slug": "national-1179",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গাজীপুরের কালিয়াকৈরে বাড়ি ও ফ্ল্যাট মালিকদের সতর্ক করে গণবিজ্ঞপ্তি জারি"
+        },
+        {
+          "cluster_id": 408,
+          "slug": "national-408",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
+        },
+        {
+          "cluster_id": 286,
+          "slug": "national-286",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
+        },
+        {
+          "cluster_id": 285,
+          "slug": "sports-285",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
+        },
+        {
+          "cluster_id": 680,
+          "slug": "national-680",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
+        },
+        {
+          "cluster_id": 903,
+          "slug": "sports-903",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "জ্ঞানেশ কুমার জেলে যাবেন: দিল্লির সমাবেশে ২০২৪-এর নির্বাচনকে অবৈধ বললেন রাহুল"
+        }
+      ]
     },
     "national-1309": {
       "cluster_id": 1309,
-      "headline": "নতুন বিধি করে চাকরিতে পদোন্নতির অধিকার কেড়ে নেওয়া যাবে না : হাইকোর্ট",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+      "first_seen": "2026-11-03T10:28:29.475Z",
+      "last_update": "2026-11-03T10:28:29.478Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:54:47.000Z",
+          "kind": "evidence",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/20-year-old-co-pilot-issued-repeated-mayday-calls-before-plane-crash/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.251Z",
+          "kind": "claim",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430218,
+          "claim_text": "বিমান বিধ্বস্তের আগে বারবার ‘মেডে’ ডাক ২০ বছর বয়সী সহ-পাইলটের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-131": {
@@ -129752,31 +130198,160 @@
         }
       ]
     },
+    "national-1310": {
+      "cluster_id": 1310,
+      "headline": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+      "first_seen": "2026-11-03T10:28:29.480Z",
+      "last_update": "2026-11-03T10:28:29.481Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:50:55.000Z",
+          "kind": "evidence",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/why-is-it-so-important-to-control-oneself-when-angry-what-islam-says-about-this/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.253Z",
+          "kind": "claim",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "national-1311": {
       "cluster_id": 1311,
-      "headline": "জুনিয়র বৃত্তি পরীক্ষা ২০২৬। বাংলাদেশ ও বিশ্বপরিচয়—অধ্যায় ৬: বাংলা ছিল চিরকালই সংগীতের দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+      "first_seen": "2026-11-03T10:28:29.483Z",
+      "last_update": "2026-11-03T10:28:29.485Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:30:21.000Z",
+          "kind": "evidence",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/3ift92cto6"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.255Z",
+          "kind": "claim",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430220,
+          "claim_text": "গাজীপুরে শ্রমিক–পুলিশ সংঘর্ষে আহত ৩০, ছুটি ৬০ কারখানায়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1312": {
       "cluster_id": 1312,
-      "headline": "প্রাথমিক বৃত্তি পরীক্ষা ২০২৬ (প্রাথমিক বিজ্ঞান—অধ্যায় ৩): সঠিক সময়ে খাদ্য গ্রহণ শরীরের জন্য গুরুত্বপূর্ণ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বাসের ধাক্কায় শিক্ষার্থী নিহত, মহাসড়ক ও রেললাইন অবরোধ",
+      "first_seen": "2026-11-03T10:28:29.486Z",
+      "last_update": "2026-11-03T10:28:29.488Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:27:47.000Z",
+          "kind": "evidence",
+          "claim_id": 430221,
+          "claim_text": "বাসের ধাক্কায় শিক্ষার্থী নিহত, মহাসড়ক ও রেললাইন অবরোধ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/student-killed-after-being-hit-by-a-bus-highway-and-railway-tracks-blocked/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.258Z",
+          "kind": "claim",
+          "claim_id": 430221,
+          "claim_text": "বাসের ধাক্কায় শিক্ষার্থী নিহত, মহাসড়ক ও রেললাইন অবরোধ"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430221,
+          "claim_text": "বাসের ধাক্কায় শিক্ষার্থী নিহত, মহাসড়ক ও রেললাইন অবরোধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1313": {
       "cluster_id": 1313,
-      "headline": "বিভূতিভূষণের ‘দৃষ্টি প্রদীপ’–এর আলোয়",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাজীপুরে তালাবদ্ধ ঘর থেকে যুবকের লাশ উদ্ধার, খোঁজ নেই স্ত্রীর",
+      "first_seen": "2026-11-03T10:28:29.489Z",
+      "last_update": "2026-11-03T10:28:29.491Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:14:32.000Z",
+          "kind": "evidence",
+          "claim_id": 430222,
+          "claim_text": "গাজীপুরে তালাবদ্ধ ঘর থেকে যুবকের লাশ উদ্ধার, খোঁজ নেই স্ত্রীর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/e281e18vn1"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.260Z",
+          "kind": "claim",
+          "claim_id": 430222,
+          "claim_text": "গাজীপুরে তালাবদ্ধ ঘর থেকে যুবকের লাশ উদ্ধার, খোঁজ নেই স্ত্রীর"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430222,
+          "claim_text": "গাজীপুরে তালাবদ্ধ ঘর থেকে যুবকের লাশ উদ্ধার, খোঁজ নেই স্ত্রীর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1314": {
@@ -244858,6 +245433,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -244896,14 +245479,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
-        },
-        {
-          "cluster_id": 918,
-          "slug": "sports-918",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গার্মেন্টস শিল্প কঠিন অবস্থার মধ্য দিয়ে অতিক্রম করছে: জামায়াত আমির"
         }
       ]
     },
@@ -246130,6 +246705,14 @@
           "headline": "সারা দেশের কোমর ভাঙা, তাই দেশ মেরামত করতে হবে"
         },
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -246152,14 +246735,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -261214,11 +261789,81 @@
     },
     "national-leaders-of-india": {
       "cluster_id": 1307,
-      "headline": "Leaders of India’s Cockroach party jailed for violating ban on protest site",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+      "first_seen": "2026-11-03T10:28:29.046Z",
+      "last_update": "2026-11-03T10:28:29.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T09:11:17.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.241Z",
+          "kind": "claim",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.243Z",
+          "kind": "claim",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-legal-action-to": {
@@ -264031,11 +264676,41 @@
     },
     "national-saudi-says-houthi": {
       "cluster_id": 1310,
-      "headline": "Saudi says Houthi attacks sparked Aramco fire, wounded 4 in Riyadh",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+      "first_seen": "2026-11-03T10:28:29.480Z",
+      "last_update": "2026-11-03T10:28:29.481Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-03T09:50:55.000Z",
+          "kind": "evidence",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/why-is-it-so-important-to-control-oneself-when-angry-what-islam-says-about-this/"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.253Z",
+          "kind": "claim",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430219,
+          "claim_text": "রাগের সময় নিজেকে নিয়ন্ত্রণ করা কেন এত গুরুত্বপূর্ণ? ইসলামে যা বলা হয়েছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-second-child-dies": {
@@ -268242,7 +268917,7 @@
       "cluster_id": 1211,
       "headline": "ক্রিকেটের আলোচিত পাঁচ আম্পায়ার, যাঁদের ভুল সিদ্ধান্ত নিয়ে এখনো সমালোচনা হয়",
       "first_seen": "2026-11-03T04:26:04.594Z",
-      "last_update": "2026-11-03T09:56:02.922Z",
+      "last_update": "2026-11-03T10:28:29.062Z",
       "claim_count": 16,
       "events": [
         {
@@ -279513,7 +280188,7 @@
       "cluster_id": 1239,
       "headline": "চাঁদপুরে ছোট ভাই ও তাঁর স্ত্রীর মারধরে প্রতিবন্ধী বড় ভাইয়ের মৃত্যুর অভিযোগ",
       "first_seen": "2026-11-03T06:10:08.858Z",
-      "last_update": "2026-11-03T09:56:02.920Z",
+      "last_update": "2026-11-03T10:28:29.059Z",
       "claim_count": 3,
       "events": [
         {
@@ -293982,6 +294657,14 @@
           "headline": "সারা দেশের কোমর ভাঙা, তাই দেশ মেরামত করতে হবে"
         },
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -294004,14 +294687,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -294901,6 +295576,85 @@
           "kind": "verify",
           "claim_id": 158988,
           "claim_text": "৪ দিনের রিমান্ডে সাবেক সেনা কর্মকর্তা হাফিজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "politics-burnham-says-he": {
+      "cluster_id": 1307,
+      "headline": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+      "first_seen": "2026-11-03T10:28:29.046Z",
+      "last_update": "2026-11-03T10:28:29.048Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T09:11:17.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:09:39.000Z",
+          "kind": "evidence",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/politics/2026/nov/03/andy-burnham-labour-free-movement-eu-europe"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.241Z",
+          "kind": "claim",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.243Z",
+          "kind": "claim",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU"
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430214,
+          "claim_text": "Burnham says he has not proposed return to EU freedom of movement – UK politics live",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-03T10:52:13.350Z",
+          "kind": "verify",
+          "claim_id": 430215,
+          "claim_text": "Burnham denies proposing return to free movement in talks with EU",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -298670,7 +299424,7 @@
       "cluster_id": 1296,
       "headline": "নাহিদার অধিনায়কত্বে নতুন শুরু, প্রথম ম্যাচ পাকিস্তানের বিপক্ষে",
       "first_seen": "2026-11-03T09:56:02.906Z",
-      "last_update": "2026-11-03T09:56:02.909Z",
+      "last_update": "2026-11-03T10:28:29.054Z",
       "claim_count": 2,
       "events": [
         {
@@ -307893,6 +308647,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -307931,14 +308693,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "অবসরপ্রাপ্ত সেনা কর্মকর্তা হাফিজকে ৭ দিনের রিমান্ডে চায় পুলিশ"
-        },
-        {
-          "cluster_id": 918,
-          "slug": "sports-918",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গার্মেন্টস শিল্প কঠিন অবস্থার মধ্য দিয়ে অতিক্রম করছে: জামায়াত আমির"
         }
       ]
     },
@@ -308037,6 +308791,14 @@
           "headline": "সারা দেশের কোমর ভাঙা, তাই দেশ মেরামত করতে হবে"
         },
         {
+          "cluster_id": 1308,
+          "slug": "national-1308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সামিটের এলএনজি টার্মিনাল বন্ধ, গ্যাসের স্বল্পচাপ থাকবে: গুজবে কান না দেওয়ার অনুরোধ"
+        },
+        {
           "cluster_id": 1179,
           "slug": "national-1179",
           "actor_links": 0,
@@ -308059,14 +308821,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
