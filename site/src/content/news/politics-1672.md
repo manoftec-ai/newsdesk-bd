@@ -1,5 +1,7 @@
 ---
 title: "দেশে ফিরতে না পারার কষ্ট নিয়েই শেষ বিদায় নেন বাবা: ইশরাক"
+thumbnail: "/images/politics-1672.webp"
+thumbnailAlt: "দেশে ফিরতে না পারার কষ্ট নিয়েই শেষ বিদায় নেন বাবা: ইশরাক — যাচাইডেস্ক"
 seoTitle: "দেশে ফিরতে না পারার কষ্ট নিয়েই শেষ বিদায় নেন বাবা: ইশরাক"
 excerpt: "Image ৫: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৬: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন মোংলা বন্দরে ৪ হাজার ৬৮ কোটি টাকা"
 seoDescription: "Image ৫: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৬: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন মোংলা ব…"
