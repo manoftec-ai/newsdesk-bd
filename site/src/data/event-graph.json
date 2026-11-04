@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6631,
+    "storyCount": 6634,
     "kinds": [
       "claim",
       "evidence",
@@ -8798,11 +8798,41 @@
     },
     "economy-1509": {
       "cluster_id": 1509,
-      "headline": "সোনালী ও স্ট্যান্ডার্ড ব্যাংকের লেনদেন বন্ধ থাকবে দুই দিন করে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "স্যরি, সবাইকে খুশি করতে পারিনি",
+      "first_seen": "2026-11-04T02:22:57.197Z",
+      "last_update": "2026-11-04T02:22:57.199Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fxtd0shzjz"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.418Z",
+          "kind": "claim",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1521": {
@@ -11631,6 +11661,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -11669,14 +11707,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -23296,7 +23326,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -27224,20 +27254,20 @@
           "headline": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1253,
           "slug": "opinion-1253",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1227,
-          "slug": "national-1227",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         }
       ]
     },
@@ -30762,7 +30792,7 @@
       "cluster_id": 1462,
       "headline": "জীবিকার টানে পোশাক কারখানায় এসেছিলেন, লাশ হয়ে ফিরলেন তৌফিক",
       "first_seen": "2026-11-03T21:33:54.643Z",
-      "last_update": "2026-11-04T01:51:29.752Z",
+      "last_update": "2026-11-04T02:22:56.807Z",
       "claim_count": 2,
       "events": [
         {
@@ -30954,6 +30984,45 @@
       ],
       "related": []
     },
+    "entertainment-1506": {
+      "cluster_id": 1506,
+      "headline": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+      "first_seen": "2026-11-04T02:22:57.182Z",
+      "last_update": "2026-11-04T02:22:57.188Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/ott/xmpntfu709"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.410Z",
+          "kind": "claim",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "entertainment-151": {
       "cluster_id": 151,
       "headline": "পর্তুগাল সমর্থকদের শান্ত থাকার অনুরোধ ফেলিক্সের",
@@ -30983,6 +31052,45 @@
           "kind": "verify",
           "claim_id": 3688,
           "claim_text": "পর্তুগাল সমর্থকদের শান্ত থাকার অনুরোধ ফেলিক্সের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "entertainment-1510": {
+      "cluster_id": 1510,
+      "headline": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
+      "first_seen": "2026-11-04T02:22:57.200Z",
+      "last_update": "2026-11-04T02:22:57.209Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/3om74q1ylq"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.420Z",
+          "kind": "claim",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -33685,7 +33793,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -41915,7 +42023,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -45595,6 +45703,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1463,
           "slug": "national-1463",
           "actor_links": 0,
@@ -45633,14 +45749,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -52193,20 +52301,20 @@
           "headline": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1253,
           "slug": "opinion-1253",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1227,
-          "slug": "national-1227",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         }
       ]
     },
@@ -52493,7 +52601,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1495,
@@ -62462,6 +62570,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 0,
@@ -62500,14 +62616,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
-        },
-        {
-          "cluster_id": 415,
-          "slug": "national-415",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 25,
-          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
         }
       ]
     },
@@ -62849,7 +62957,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T01:51:29.750Z",
+      "last_update": "2026-11-04T02:22:56.806Z",
       "claim_count": 2,
       "events": [
         {
@@ -63612,6 +63720,45 @@
           "kind": "verify",
           "claim_id": 546038,
           "claim_text": "পারশে মাছ কীভাবে এত দ্রুত বংশবিস্তার করে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1507": {
+      "cluster_id": 1507,
+      "headline": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
+      "first_seen": "2026-11-04T02:22:57.190Z",
+      "last_update": "2026-11-04T02:22:57.192Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/kxlwbvqdbg"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.413Z",
+          "kind": "claim",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -75256,6 +75403,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -75294,14 +75449,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -83721,6 +83868,14 @@
           "headline": "ইরানের বিরুদ্ধে যুদ্ধ শিগগিরই শেষ হবে, বললেন ট্রাম্প"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 285,
           "slug": "sports-285",
           "actor_links": 0,
@@ -83751,14 +83906,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
         }
       ]
     },
@@ -89125,7 +89272,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -93455,6 +93602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -93493,14 +93648,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -93740,6 +93887,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1463,
           "slug": "national-1463",
           "actor_links": 0,
@@ -93778,14 +93933,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -97811,6 +97958,14 @@
           "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -97825,14 +97980,6 @@
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1227,
-          "slug": "national-1227",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         }
       ]
     },
@@ -99535,20 +99682,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1289,
-          "slug": "national-1289",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "শেখ হাসিনা ও আসাদুজ্জামান খানের অর্ধেক সম্পত্তি বাজেয়াপ্তে চিঠি দেবে চিফ প্রসিকিউটর কার্যালয়"
         }
       ]
     },
@@ -120074,20 +120221,20 @@
           "headline": "শ্রমিক আন্দোলনকে ঘিরে ৭১ ও ২৪-এর পরাজিত শক্তির ষড়যন্ত্র চলছে: রাশেদ খান"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1253,
           "slug": "opinion-1253",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1227,
-          "slug": "national-1227",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         }
       ]
     },
@@ -120842,7 +120989,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1495,
@@ -125344,7 +125491,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -130003,20 +130150,20 @@
           "headline": "‘অনেক বিষয় নিয়ে কথা বলা যাবে, যেগুলো কেউ বলেন না’"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1289,
           "slug": "national-1289",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "শেখ হাসিনা ও আসাদুজ্জামান খানের অর্ধেক সম্পত্তি বাজেয়াপ্তে চিঠি দেবে চিফ প্রসিকিউটর কার্যালয়"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 7,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -155200,7 +155347,7 @@
       "cluster_id": 1462,
       "headline": "জীবিকার টানে পোশাক কারখানায় এসেছিলেন, লাশ হয়ে ফিরলেন তৌফিক",
       "first_seen": "2026-11-03T21:33:54.643Z",
-      "last_update": "2026-11-04T01:51:29.752Z",
+      "last_update": "2026-11-04T02:22:56.807Z",
       "claim_count": 2,
       "events": [
         {
@@ -155354,6 +155501,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 0,
@@ -155392,14 +155547,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
-        },
-        {
-          "cluster_id": 415,
-          "slug": "national-415",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 25,
-          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
         }
       ]
     },
@@ -156070,7 +156217,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T01:51:29.750Z",
+      "last_update": "2026-11-04T02:22:56.806Z",
       "claim_count": 2,
       "events": [
         {
@@ -156236,8 +156383,8 @@
       "cluster_id": 1474,
       "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর",
       "first_seen": "2026-11-03T22:48:07.561Z",
-      "last_update": "2026-11-04T01:51:29.748Z",
-      "claim_count": 2,
+      "last_update": "2026-11-04T02:22:56.805Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-03T21:20:11.000Z",
@@ -156307,9 +156454,73 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-04T01:44:54.000Z",
+          "kind": "evidence",
+          "claim_id": 521084,
+          "claim_text": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zWGR1R1lwcDBpdWJWQ3ZYMENTQ0lydnBaUjlNYXZBbjJ3czdnX1hLMGZScDhpT3FPTGhjSE9ybnpJd20xVE1leWhZZ2ZTUmhPLXVOd3J4Vlkxdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T01:44:54.000Z",
+          "kind": "evidence",
+          "claim_id": 551029,
+          "claim_text": "রোহিঙ্গা গণহত্যা: আন্তর্জাতিক বিচার আদালতে মামলার রায় ১৯ নভেম্বর",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zWGR1R1lwcDBpdWJWQ3ZYMENTQ0lydnBaUjlNYXZBbjJ3czdnX1hLMGZScDhpT3FPTGhjSE9ybnpJd20xVE1leWhZZ2ZTUmhPLXVOd3J4Vlkxdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.110Z",
+          "kind": "claim",
+          "claim_id": 551029,
+          "claim_text": "রোহিঙ্গা গণহত্যা: আন্তর্জাতিক বিচার আদালতে মামলার রায় ১৯ নভেম্বর"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551029,
+          "claim_text": "রোহিঙ্গা গণহত্যা: আন্তর্জাতিক বিচার আদালতে মামলার রায় ১৯ নভেম্বর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 498,
+          "slug": "national-498",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
+        },
+        {
+          "cluster_id": 285,
+          "slug": "sports-285",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 4,
+          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
+        },
+        {
+          "cluster_id": 16,
+          "slug": "national-16",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "মানিক পশারীর বিরুদ্ধে এবার মুখ খুললেন পিরোজপুরের দুই বীর মুক্তিযোদ্ধা, দিলেন চাঞ্চল্যকর তথ্য"
+        },
         {
           "cluster_id": 1495,
           "slug": "sports-1495",
@@ -156327,36 +156538,12 @@
           "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
         },
         {
-          "cluster_id": 1441,
-          "slug": "national-1441",
+          "cluster_id": 1463,
+          "slug": "national-1463",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "শ্রমিকদের ধাওয়ায় রাস্তা থেকে দৌড়ে থানায় পুলিশ, টিয়ারশেল-সাউন্ড গ্রেনেড"
-        },
-        {
-          "cluster_id": 1415,
-          "slug": "national-1415",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1404,
-          "slug": "sports-1404",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নারী ক্রিকেটারদের যৌন হয়রানি তদন্তে রাশনাকে প্রধান করে বিসিবির কমিটি"
-        },
-        {
-          "cluster_id": 1385,
-          "slug": "national-1385",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর ক্ষমতা থেকে জরুরি অবস্থা, সংবিধান সংশোধনে নানা প্রস্তাব নিয়ে আলোচনা"
+          "headline": "ঢাকা, গাজীপুর ও নারায়ণগঞ্জে পুলিশ–পোশাকশ্রমিক সংঘর্ষ ও অন্যান্য খবর"
         }
       ]
     },
@@ -158592,7 +158779,7 @@
       "cluster_id": 1496,
       "headline": "বাংলাদেশের পোশাক শ্রমিকদের বিক্ষোভ পর্যবেক্ষণ করছে দিল্লি: জয়সওয়াল",
       "first_seen": "2026-11-04T01:14:08.686Z",
-      "last_update": "2026-11-04T01:51:29.753Z",
+      "last_update": "2026-11-04T02:22:56.808Z",
       "claim_count": 2,
       "events": [
         {
@@ -158747,10 +158934,10 @@
     },
     "national-1499": {
       "cluster_id": 1499,
-      "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+      "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
       "first_seen": "2026-11-04T01:51:29.738Z",
-      "last_update": "2026-11-04T01:51:29.746Z",
-      "claim_count": 9,
+      "last_update": "2026-11-04T02:22:56.802Z",
+      "claim_count": 10,
       "events": [
         {
           "ts": "2026-11-03T11:20:36.000Z",
@@ -158768,6 +158955,17 @@
           "kind": "evidence",
           "claim_id": 546026,
           "claim_text": "চট্টগ্রামে ৪ দিন কমবে গ্যাস সরবরাহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtYU9vSkRoVnY4ejFoUnZNNDJYQzE0a0NMUUtCUjRrYXo0aGtZd1dkWFNmRHZ4aFN6YTVRZDU4b2wwRjJJZmlMVkM2d1ZkcjhtQlZYa0kyMmdVRWx1cXJrWF9UOHI1SGdtbGRvblhHX0xMZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T11:20:36.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -158832,6 +159030,39 @@
         {
           "ts": "2026-11-03T18:00:00.000Z",
           "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNWNwR2pxbkNZaFVzLUxxZWpxRExEVzF5bFQwbE8tS0JnRUtlSmplUWJLSGZJamF4LVJQdkZnTDZ2UjctNlRqU18xMG1manltYTBHeVg5ZVc4QTM1QlZCSjU4Wk0zTkZYbkYwbms5eC1CVEJsaXZMTFZrZ0VxZU45Y3Jhekk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NejZDYmhnd2NWMUZub1psWm9IRjhWMXZ5WWlLTVV6bVhMRjRLYjV4UzVYeFMzaHJRN0M1Z3VfRl9jemh3MmF0LS1valFqVlBSa3RKVzlrcS1ENHE3clJuQjFiVERmVXJFUERlSWtZUThqbjA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zNzkxLXdDTTEwTV9qaEo4TjBRTVFXR3psN0F4U1BZTmVuMi1jS2xweUp1TmtPVGw0cHpUamg2YTgyVjV3VlQ3SkdwS1RlM2pMMnFPRHVyNWc3bjNsZm1BUlk4LTNYdGZRX3cxcmlyNm5WUXc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
           "claim_id": 546028,
           "claim_text": "এআই বিজনেস সামিট ৫ নভেম্বর",
           "detail": {
@@ -158876,6 +159107,17 @@
         {
           "ts": "2026-11-03T18:01:50.000Z",
           "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tanV6VTBrdkR4Y1ZVc0I2M2xTWVhXeXlOb2xlRTlWRXZMM084OTlORkxVLTFtaUc3V2FuY1ZoMlM3eE10ZjNHMVdaN0x0bzZPdy1FZzVzNFRhcWlDLTMtaDM0LUhIcHlob3pseWd2eHQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:01:50.000Z",
+          "kind": "evidence",
           "claim_id": 546031,
           "claim_text": "এবিজি ইউনিভার্সিটি কাপের প্রশংসা করলেন তাবিথ আউয়াল",
           "detail": {
@@ -158889,6 +159131,17 @@
           "kind": "evidence",
           "claim_id": 546025,
           "claim_text": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KU1hCcTNqRVJXdWowYjVCcDc4SHBEdGJmbTZodmo5WVhacWxFWS0yRVFhYkJKWm5hYnctWGhseTZTc3c5QlNmamZkSWIxSTRYUDVwSkMzampFSVBsVUpsZFV4c2pKNlJNVVFGOGlIeWI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T19:34:59.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -158918,10 +159171,32 @@
           }
         },
         {
+          "ts": "2026-11-03T20:32:34.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vU1hyVUN3eFBDdDlXcDYzT29saWhfNVk3d01aTHVRUzRCeG05a21CUjRSeWJTN0NyXzhyakJWaHo4dDNhT19McEY0OXhGTlVwLUhaZ3JUQVkyTEhaTGI1U05WWDZ2SXNWZUdFTF9LblE?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-03T23:50:00.000Z",
           "kind": "evidence",
           "claim_id": 546025,
           "claim_text": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/af0vs27r7z"
+          }
+        },
+        {
+          "ts": "2026-11-03T23:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -159100,56 +159375,108 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-04T02:13:17.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ckd7q93zxzvvo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:13:17.000Z",
+          "kind": "evidence",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ckd7q93zxzvvo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.385Z",
+          "kind": "claim",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 1479,
-          "slug": "national-1479",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1415,
-          "slug": "national-1415",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1387,
-          "slug": "national-1387",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মিরপুরে শ্রমিকের সঙ্গে পুলিশের সংঘর্ষ, টিয়ারগ্যাস নিক্ষেপ, মেট্টোরেলের দুটি স্টেশন বন্ধ"
-        },
-        {
-          "cluster_id": 1383,
-          "slug": "sports-brazil-vs-india",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রাস্তায় পাওয়া মুড়ির প্যাকেট ঘরে নিতেই বিস্ফোরণ, দগ্ধ হয়ে হাসপাতালে জামায়াত নেতা"
-        },
-        {
-          "cluster_id": 1354,
-          "slug": "national-1354",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কারাগারে অসুস্থ বগুড়া আ. লীগ নেতা নবাবের মৃত্যু"
-        },
-        {
           "cluster_id": 1253,
           "slug": "opinion-1253",
           "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
+        },
+        {
+          "cluster_id": 1227,
+          "slug": "national-1227",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
+        },
+        {
+          "cluster_id": 1186,
+          "slug": "national-1186",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 25,
+          "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
+        },
+        {
+          "cluster_id": 1170,
+          "slug": "national-1170",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
+        },
+        {
+          "cluster_id": 1160,
+          "slug": "national-1160",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ঢাকা উত্তর বিএনপির নবগঠিত কমিটিকে শুভেচ্ছা জানিয়ে মিরপুরে আনন্দ মিছিল"
+        },
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 18,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -159404,7 +159731,7 @@
       "cluster_id": 1500,
       "headline": "দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণের পরিকল্পনা এগিয়ে নেওয়ার নির্দেশ প্রধানমন্ত্রীর",
       "first_seen": "2026-11-04T01:51:29.755Z",
-      "last_update": "2026-11-04T01:51:29.758Z",
+      "last_update": "2026-11-04T02:22:56.809Z",
       "claim_count": 2,
       "events": [
         {
@@ -159725,38 +160052,158 @@
     },
     "national-1506": {
       "cluster_id": 1506,
-      "headline": "বৃহস্পতির চৌম্বকীয় বলয়ে নতুন রহস্যের সন্ধান পেল জুনো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+      "first_seen": "2026-11-04T02:22:57.182Z",
+      "last_update": "2026-11-04T02:22:57.188Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/ott/xmpntfu709"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.410Z",
+          "kind": "claim",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551087,
+          "claim_text": "‘মানি হাইস্ট’–এর পর বিশ্বজুড়ে সাড়া ফেলেছে নতুন ব্যাংক ডাকাতির গল্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1507": {
       "cluster_id": 1507,
-      "headline": "কক্সবাজারেও যাবে মহানগর এক্সপ্রেস",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
+      "first_seen": "2026-11-04T02:22:57.190Z",
+      "last_update": "2026-11-04T02:22:57.192Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/kxlwbvqdbg"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.413Z",
+          "kind": "claim",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551088,
+          "claim_text": "কেনিয়া থেকে যুক্তরাষ্ট্র: দেশে দেশে নির্বাচন প্রভাবিত করতে কীভাবে কাজ করেন ভারতীয় ‘পরামর্শকেরা’",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1508": {
       "cluster_id": 1508,
-      "headline": "৮০ কেজি প্লাস্টিক বর্জ্য পুনঃপ্রক্রিয়াজাতকরণে পাঠাল ড্যাফোডিল বন্ধুসভা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কার্তিকের ভোরে আলো ফুটতেই জাগে শামুকখোলের ঝাঁক",
+      "first_seen": "2026-11-04T02:22:57.194Z",
+      "last_update": "2026-11-04T02:22:57.195Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551089,
+          "claim_text": "কার্তিকের ভোরে আলো ফুটতেই জাগে শামুকখোলের ঝাঁক",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/letrnixb70"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.415Z",
+          "kind": "claim",
+          "claim_id": 551089,
+          "claim_text": "কার্তিকের ভোরে আলো ফুটতেই জাগে শামুকখোলের ঝাঁক"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551089,
+          "claim_text": "কার্তিকের ভোরে আলো ফুটতেই জাগে শামুকখোলের ঝাঁক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1509": {
       "cluster_id": 1509,
-      "headline": "বিদায়ের আগে জয়শঙ্করের সঙ্গে রিয়াজ, বৈঠকে কী আলোচনা?",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "স্যরি, সবাইকে খুশি করতে পারিনি",
+      "first_seen": "2026-11-04T02:22:57.197Z",
+      "last_update": "2026-11-04T02:22:57.199Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fxtd0shzjz"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.418Z",
+          "kind": "claim",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551090,
+          "claim_text": "স্যরি, সবাইকে খুশি করতে পারিনি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-151": {
@@ -159800,11 +160247,41 @@
     },
     "national-1510": {
       "cluster_id": 1510,
-      "headline": "মিট বাংলাদেশি সায়েন্টিস্ট অনুষ্ঠানে বিজ্ঞানী জেবা ইসলাম সেরাজ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
+      "first_seen": "2026-11-04T02:22:57.200Z",
+      "last_update": "2026-11-04T02:22:57.209Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/celeb/look/3om74q1ylq"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.420Z",
+          "kind": "claim",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551091,
+          "claim_text": "হ্যালোউইনে মিথিলা সাজলেন রূপকথার টিংকারবেল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1511": {
@@ -162832,6 +163309,14 @@
           "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -162862,14 +163347,6 @@
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -186367,7 +186844,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -188589,6 +189066,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -188627,14 +189112,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাভার-আশুলিয়ায় শ্রমিক আন্দোলনের সুযোগ নেই, মজুরি কমিশন গঠন হয়েছে: প্রতিমন্ত্রী টুকু"
-        },
-        {
-          "cluster_id": 1271,
-          "slug": "national-1271",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
         }
       ]
     },
@@ -189144,6 +189621,14 @@
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -189174,14 +189659,6 @@
           "source_links": 3,
           "claim_count": 12,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -191234,6 +191711,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -191272,14 +191757,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -197570,7 +198047,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -201098,6 +201575,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -201136,14 +201621,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -225435,6 +225912,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -225473,14 +225958,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -225630,6 +226107,14 @@
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -225652,14 +226137,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "‘যারা অস্থিতিশীলতা সৃষ্টি করছে, তাদের আন্দোলনকারী হিসেবে বিবেচনা করছে না পুলিশ’"
-        },
-        {
-          "cluster_id": 1152,
-          "slug": "national-1152",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 9,
-          "headline": "‘ন্যাশনাল স্পোর্টস অ্যালায়েন্স’এর আত্মপ্রকাশ অনুষ্ঠানে আসিফ আকবর, ক্রীড়া প্রতিমন্ত্রীকে তোপ"
         }
       ]
     },
@@ -225958,6 +226435,14 @@
           "headline": "ইরানের বিরুদ্ধে যুদ্ধ শিগগিরই শেষ হবে, বললেন ট্রাম্প"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 285,
           "slug": "sports-285",
           "actor_links": 0,
@@ -225988,14 +226473,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1474,
-          "slug": "national-1474",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
         }
       ]
     },
@@ -229176,6 +229653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -229214,14 +229699,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -236176,6 +236653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 523,
           "slug": "national-523",
           "actor_links": 0,
@@ -236214,14 +236699,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -245345,7 +245822,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -257814,6 +258291,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -257852,14 +258337,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -259652,6 +260129,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1463,
           "slug": "national-1463",
           "actor_links": 0,
@@ -259690,14 +260175,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -272488,7 +272965,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -272728,6 +273205,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1463,
           "slug": "national-1463",
           "actor_links": 0,
@@ -272766,14 +273251,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -275391,7 +275868,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -277697,6 +278174,14 @@
           "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -277711,14 +278196,6 @@
           "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1227,
-          "slug": "national-1227",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         }
       ]
     },
@@ -281974,20 +282451,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1499,
+          "slug": "sports-1499",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 4,
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1289,
-          "slug": "national-1289",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "শেখ হাসিনা ও আসাদুজ্জামান খানের অর্ধেক সম্পত্তি বাজেয়াপ্তে চিঠি দেবে চিফ প্রসিকিউটর কার্যালয়"
         }
       ]
     },
@@ -289070,6 +289547,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1463,
           "slug": "national-1463",
           "actor_links": 0,
@@ -289108,14 +289593,6 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -307863,7 +308340,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T01:51:29.750Z",
+      "last_update": "2026-11-04T02:22:56.806Z",
       "claim_count": 2,
       "events": [
         {
@@ -312372,6 +312849,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -312410,14 +312895,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -313611,6 +314088,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -313649,14 +314134,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
-        },
-        {
-          "cluster_id": 285,
-          "slug": "sports-285",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         }
       ]
     },
@@ -319040,7 +319517,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
@@ -320390,6 +320867,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 584,
           "slug": "national-584",
           "actor_links": 0,
@@ -320428,14 +320913,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "১১ দলের লংমার্চে কেন যাননি নাহিদ, জামায়াত-এনসিপির মধ্যে কী চলছে?"
-        },
-        {
-          "cluster_id": 350,
-          "slug": "national-350",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এমপি আব্দুল আজিজের বিষয়ে ৮ ঘণ্টা চললো বৈঠক, এরপর যে সিদ্ধান্ত হলো"
         }
       ]
     },
@@ -329214,10 +329691,10 @@
     },
     "sports-1499": {
       "cluster_id": 1499,
-      "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+      "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
       "first_seen": "2026-11-04T01:51:29.738Z",
-      "last_update": "2026-11-04T01:51:29.746Z",
-      "claim_count": 9,
+      "last_update": "2026-11-04T02:22:56.802Z",
+      "claim_count": 10,
       "events": [
         {
           "ts": "2026-11-03T11:20:36.000Z",
@@ -329235,6 +329712,17 @@
           "kind": "evidence",
           "claim_id": 546026,
           "claim_text": "চট্টগ্রামে ৪ দিন কমবে গ্যাস সরবরাহ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtYU9vSkRoVnY4ejFoUnZNNDJYQzE0a0NMUUtCUjRrYXo0aGtZd1dkWFNmRHZ4aFN6YTVRZDU4b2wwRjJJZmlMVkM2d1ZkcjhtQlZYa0kyMmdVRWx1cXJrWF9UOHI1SGdtbGRvblhHX0xMZw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T11:20:36.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -329299,6 +329787,39 @@
         {
           "ts": "2026-11-03T18:00:00.000Z",
           "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNWNwR2pxbkNZaFVzLUxxZWpxRExEVzF5bFQwbE8tS0JnRUtlSmplUWJLSGZJamF4LVJQdkZnTDZ2UjctNlRqU18xMG1manltYTBHeVg5ZVc4QTM1QlZCSjU4Wk0zTkZYbkYwbms5eC1CVEJsaXZMTFZrZ0VxZU45Y3Jhekk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NejZDYmhnd2NWMUZub1psWm9IRjhWMXZ5WWlLTVV6bVhMRjRLYjV4UzVYeFMzaHJRN0M1Z3VfRl9jemh3MmF0LS1valFqVlBSa3RKVzlrcS1ENHE3clJuQjFiVERmVXJFUERlSWtZUThqbjA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zNzkxLXdDTTEwTV9qaEo4TjBRTVFXR3psN0F4U1BZTmVuMi1jS2xweUp1TmtPVGw0cHpUamg2YTgyVjV3VlQ3SkdwS1RlM2pMMnFPRHVyNWc3bjNsZm1BUlk4LTNYdGZRX3cxcmlyNm5WUXc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
           "claim_id": 546028,
           "claim_text": "এআই বিজনেস সামিট ৫ নভেম্বর",
           "detail": {
@@ -329343,6 +329864,17 @@
         {
           "ts": "2026-11-03T18:01:50.000Z",
           "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tanV6VTBrdkR4Y1ZVc0I2M2xTWVhXeXlOb2xlRTlWRXZMM084OTlORkxVLTFtaUc3V2FuY1ZoMlM3eE10ZjNHMVdaN0x0bzZPdy1FZzVzNFRhcWlDLTMtaDM0LUhIcHlob3pseWd2eHQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:01:50.000Z",
+          "kind": "evidence",
           "claim_id": 546031,
           "claim_text": "এবিজি ইউনিভার্সিটি কাপের প্রশংসা করলেন তাবিথ আউয়াল",
           "detail": {
@@ -329356,6 +329888,17 @@
           "kind": "evidence",
           "claim_id": 546025,
           "claim_text": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KU1hCcTNqRVJXdWowYjVCcDc4SHBEdGJmbTZodmo5WVhacWxFWS0yRVFhYkJKWm5hYnctWGhseTZTc3c5QlNmamZkSWIxSTRYUDVwSkMzampFSVBsVUpsZFV4c2pKNlJNVVFGOGlIeWI?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T19:34:59.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -329385,10 +329928,32 @@
           }
         },
         {
+          "ts": "2026-11-03T20:32:34.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vU1hyVUN3eFBDdDlXcDYzT29saWhfNVk3d01aTHVRUzRCeG05a21CUjRSeWJTN0NyXzhyakJWaHo4dDNhT19McEY0OXhGTlVwLUhaZ3JUQVkyTEhaTGI1U05WWDZ2SXNWZUdFTF9LblE?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-03T23:50:00.000Z",
           "kind": "evidence",
           "claim_id": 546025,
           "claim_text": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/af0vs27r7z"
+          }
+        },
+        {
+          "ts": "2026-11-03T23:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -329567,56 +330132,108 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-04T02:13:17.000Z",
+          "kind": "evidence",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ckd7q93zxzvvo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:13:17.000Z",
+          "kind": "evidence",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ckd7q93zxzvvo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.385Z",
+          "kind": "claim",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'"
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 546027,
+          "claim_text": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": "SINGLE_SOURCE",
+            "confidence": 100,
+            "reason": "re-verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:46:48.503Z",
+          "kind": "verify",
+          "claim_id": 551079,
+          "claim_text": "পত্রিকা: 'পোশাকশিল্পে উৎপাদন ক্ষতি দেড় হাজার কোটি টাকা'",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
         {
-          "cluster_id": 1479,
-          "slug": "national-1479",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
-        },
-        {
-          "cluster_id": 1415,
-          "slug": "national-1415",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1387,
-          "slug": "national-1387",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "মিরপুরে শ্রমিকের সঙ্গে পুলিশের সংঘর্ষ, টিয়ারগ্যাস নিক্ষেপ, মেট্টোরেলের দুটি স্টেশন বন্ধ"
-        },
-        {
-          "cluster_id": 1383,
-          "slug": "sports-brazil-vs-india",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "রাস্তায় পাওয়া মুড়ির প্যাকেট ঘরে নিতেই বিস্ফোরণ, দগ্ধ হয়ে হাসপাতালে জামায়াত নেতা"
-        },
-        {
-          "cluster_id": 1354,
-          "slug": "national-1354",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কারাগারে অসুস্থ বগুড়া আ. লীগ নেতা নবাবের মৃত্যু"
-        },
-        {
           "cluster_id": 1253,
           "slug": "opinion-1253",
           "actor_links": 0,
-          "source_links": 2,
+          "source_links": 3,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
+        },
+        {
+          "cluster_id": 1227,
+          "slug": "national-1227",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
+        },
+        {
+          "cluster_id": 1186,
+          "slug": "national-1186",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 25,
+          "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
+        },
+        {
+          "cluster_id": 1170,
+          "slug": "national-1170",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
+        },
+        {
+          "cluster_id": 1160,
+          "slug": "national-1160",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 5,
+          "headline": "ঢাকা উত্তর বিএনপির নবগঠিত কমিটিকে শুভেচ্ছা জানিয়ে মিরপুরে আনন্দ মিছিল"
+        },
+        {
+          "cluster_id": 1039,
+          "slug": "tech-1039",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 18,
+          "headline": "গার্মেন্টস শ্রমিকের মজুরি বৃদ্ধি: শ্রমিকের জীবনমান ও রপ্তানি প্রতিযোগিতা দুটিই রক্ষা করতে হবে"
         }
       ]
     },
@@ -333469,6 +334086,14 @@
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
         },
         {
+          "cluster_id": 1474,
+          "slug": "national-1474",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আন্তর্জাতিক বিচার আদালতে মিয়ানমারের বিরুদ্ধে রোহিঙ্গা গণহত্যা মামলার রায় ১৯ নভেম্বর"
+        },
+        {
           "cluster_id": 1415,
           "slug": "national-1415",
           "actor_links": 0,
@@ -333499,14 +334124,6 @@
           "source_links": 3,
           "claim_count": 12,
           "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
-        },
-        {
-          "cluster_id": 498,
-          "slug": "national-498",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 4,
-          "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানরা হারলে ইরানে বড় হামলা চালাতে পারেন ট্রাম্প"
         }
       ]
     },
@@ -345203,7 +345820,7 @@
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 9,
-          "headline": "চ্যাম্পিয়ন হয়েও আইইউবিকে প্রশংসা, দুইদলের ম্যাচকে ঘোষণা করলেন এল-ক্লাসিকো"
+          "headline": "অপহরণের পর বিবস্ত্র করে ভিডিও ধারণ, চট্টগ্রামে যুবক গ্রেপ্তার"
         },
         {
           "cluster_id": 1479,
