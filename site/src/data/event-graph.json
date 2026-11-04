@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6644,
+    "storyCount": 6648,
     "kinds": [
       "claim",
       "evidence",
@@ -8839,8 +8839,8 @@
           "slug": "national-1511",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 3,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 4,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         }
       ]
     },
@@ -9157,6 +9157,45 @@
           "kind": "verify",
           "claim_id": 566424,
           "claim_text": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচন: এখন পর্যন্ত প্রকাশিত ফলে পিছিয়ে ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "economy-1541": {
+      "cluster_id": 1541,
+      "headline": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
+      "first_seen": "2026-11-04T04:38:07.739Z",
+      "last_update": "2026-11-04T04:38:07.741Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:12:57.000Z",
+          "kind": "evidence",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-pressure-will-remain-low-for-four-consecutive-days-starting-today/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.265Z",
+          "kind": "claim",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -10387,14 +10426,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -10433,6 +10464,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -18423,6 +18462,14 @@
           "headline": "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -18437,14 +18484,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -19856,6 +19895,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -19894,14 +19941,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
-        },
-        {
-          "cluster_id": 603,
-          "slug": "national-603",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
         }
       ]
     },
@@ -23493,8 +23532,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -27426,8 +27465,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -30780,14 +30819,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -30826,6 +30857,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইসরায়েলকে ৪ বিলিয়ন ডলার অর্থসহায়তা বন্ধ করবে যুক্তরাষ্ট্র: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -31320,11 +31359,41 @@
     },
     "entertainment-1537": {
       "cluster_id": 1537,
-      "headline": "ভাইকিংসের তিন দশকে আসছে গান ও সিনেমা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+      "first_seen": "2026-11-04T04:38:07.724Z",
+      "last_update": "2026-11-04T04:38:07.726Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:28:51.000Z",
+          "kind": "evidence",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/keisha-lance-bottoms-became-the-first-black-female-governor-in-the-united-states/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.254Z",
+          "kind": "claim",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1552": {
@@ -31720,6 +31789,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -31750,14 +31827,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1230,
-          "slug": "national-1230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভাড়া বাসা থেকে নিষিদ্ধ ছাত্রলীগ নেতার মরদেহ উদ্ধার"
         }
       ]
     },
@@ -34009,8 +34078,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -37457,6 +37526,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
         {
           "cluster_id": 1187,
           "slug": "national-1187",
@@ -42239,8 +42316,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -52522,8 +52599,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -52817,8 +52894,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -53228,14 +53305,6 @@
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 202,
           "slug": "national-202",
           "actor_links": 1,
@@ -53266,6 +53335,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -54383,14 +54460,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -54429,6 +54498,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -55009,6 +55086,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -55039,14 +55124,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শেখ হাসিনা ও আসাদুজ্জামান খানের অর্ধেক সম্পত্তি বাজেয়াপ্তে চিঠি দেবে চিফ প্রসিকিউটর কার্যালয়"
-        },
-        {
-          "cluster_id": 1274,
-          "slug": "national-1274",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাভার-আশুলিয়ায় শ্রমিক আন্দোলনের সুযোগ নেই, মজুরি কমিশন গঠন হয়েছে: প্রতিমন্ত্রী টুকু"
         }
       ]
     },
@@ -60682,14 +60759,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -60728,6 +60797,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -61541,14 +61618,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -61587,6 +61656,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইসরায়েলকে ৪ বিলিয়ন ডলার অর্থসহায়তা বন্ধ করবে যুক্তরাষ্ট্র: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -63174,7 +63251,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T04:04:33.102Z",
+      "last_update": "2026-11-04T04:38:07.258Z",
       "claim_count": 2,
       "events": [
         {
@@ -63501,14 +63578,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -63547,6 +63616,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইসরায়েলকে ৪ বিলিয়ন ডলার অর্থসহায়তা বন্ধ করবে যুক্তরাষ্ট্র: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1436,
+          "slug": "national-1436",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
         }
       ]
     },
@@ -65285,6 +65362,84 @@
         }
       ]
     },
+    "international-1537": {
+      "cluster_id": 1537,
+      "headline": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+      "first_seen": "2026-11-04T04:38:07.724Z",
+      "last_update": "2026-11-04T04:38:07.726Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:28:51.000Z",
+          "kind": "evidence",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/keisha-lance-bottoms-became-the-first-black-female-governor-in-the-united-states/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.254Z",
+          "kind": "claim",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "international-1539": {
+      "cluster_id": 1539,
+      "headline": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+      "first_seen": "2026-11-04T04:38:07.731Z",
+      "last_update": "2026-11-04T04:38:07.734Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:21:17.000Z",
+          "kind": "evidence",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/%e0%a6%9f%e0%a7%87%e0%a6%95%e0%a7%8d%e0%a6%b8%e0%a6%be%e0%a6%b8%e0%a7%87-%e0%a6%95%e0%a6%bf-%e0%a6%85%e0%a6%ac%e0%a6%b8%e0%a6%be%e0%a6%a8-%e0%a6%b9%e0%a6%9a%e0%a7%8d%e0%a6%9b%e0%a7%87-%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.260Z",
+          "kind": "claim",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "international-1546": {
       "cluster_id": 1546,
       "headline": "৭ শর্ত পূরণ না হওয়া পর্যন্ত খুলবে না হরমুজ প্রণালি: ইরান",
@@ -65814,6 +65969,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -65844,14 +66007,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1230,
-          "slug": "national-1230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভাড়া বাসা থেকে নিষিদ্ধ ছাত্রলীগ নেতার মরদেহ উদ্ধার"
         }
       ]
     },
@@ -68174,14 +68329,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -68220,6 +68367,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -87129,6 +87284,14 @@
           "headline": "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -87143,14 +87306,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -87488,6 +87643,14 @@
           "headline": "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -87502,14 +87665,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -90068,8 +90223,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -98759,8 +98914,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -99444,6 +99599,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
+        },
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1187,
@@ -100491,8 +100654,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -101446,6 +101609,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1187,
           "slug": "national-1187",
           "actor_links": 0,
@@ -101796,6 +101967,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -101834,14 +102013,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -121141,8 +121312,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -121904,8 +122075,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -124299,14 +124470,6 @@
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
         },
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 202,
           "slug": "national-202",
           "actor_links": 1,
@@ -124337,6 +124500,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -126402,20 +126573,20 @@
       ],
       "related": [
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1514,
           "slug": "national-1514",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
-        },
-        {
-          "cluster_id": 1511,
-          "slug": "national-1511",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
         },
         {
           "cluster_id": 1499,
@@ -130317,14 +130488,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -130363,6 +130526,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -131070,8 +131241,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 9,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 12,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -133295,6 +133466,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -133325,14 +133504,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শেখ হাসিনা ও আসাদুজ্জামান খানের অর্ধেক সম্পত্তি বাজেয়াপ্তে চিঠি দেবে চিফ প্রসিকিউটর কার্যালয়"
-        },
-        {
-          "cluster_id": 1274,
-          "slug": "national-1274",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাভার-আশুলিয়ায় শ্রমিক আন্দোলনের সুযোগ নেই, মজুরি কমিশন গঠন হয়েছে: প্রতিমন্ত্রী টুকু"
         }
       ]
     },
@@ -150393,14 +150564,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -150439,6 +150602,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -153747,14 +153918,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -153793,6 +153956,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইসরায়েলকে ৪ বিলিয়ন ডলার অর্থসহায়তা বন্ধ করবে যুক্তরাষ্ট্র: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -157182,7 +157353,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T04:04:33.102Z",
+      "last_update": "2026-11-04T04:38:07.258Z",
       "claim_count": 2,
       "events": [
         {
@@ -158498,14 +158669,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -158544,6 +158707,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "ইসরায়েলকে ৪ বিলিয়ন ডলার অর্থসহায়তা বন্ধ করবে যুক্তরাষ্ট্র: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1436,
+          "slug": "national-1436",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
         }
       ]
     },
@@ -160440,8 +160611,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1253,
@@ -161215,8 +161386,8 @@
           "slug": "national-1511",
           "actor_links": 1,
           "source_links": 0,
-          "claim_count": 3,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 4,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         }
       ]
     },
@@ -161300,10 +161471,10 @@
     },
     "national-1511": {
       "cluster_id": 1511,
-      "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া",
+      "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
       "first_seen": "2026-11-04T02:55:59.918Z",
-      "last_update": "2026-11-04T04:04:33.097Z",
-      "claim_count": 14,
+      "last_update": "2026-11-04T04:38:07.246Z",
+      "claim_count": 17,
       "events": [
         {
           "ts": "2026-11-03T12:03:17.000Z",
@@ -161332,6 +161503,17 @@
           "kind": "evidence",
           "claim_id": 556160,
           "claim_text": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1mOU1aUDJ3dnY0ajVMTU9UdVNsNERhT2M5SmdlQWtuYW5nSEw3dmE0WnN3bFlzZWtHaWdXNS1JZlRqa2l3b21GQXBmd2s3X3hpeTZrR0R4dHNLZmR1QjI5ZW1WYmFHbjVMNGc2M0hXbkdaQQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T12:03:17.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -161449,6 +161631,50 @@
           }
         },
         {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NejZDYmhnd2NWMUZub1psWm9IRjhWMXZ5WWlLTVV6bVhMRjRLYjV4UzVYeFMzaHJRN0M1Z3VfRl9jemh3MmF0LS1valFqVlBSa3RKVzlrcS1ENHE3clJuQjFiVERmVXJFUERlSWtZUThqbjA?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zNzkxLXdDTTEwTV9qaEo4TjBRTVFXR3psN0F4U1BZTmVuMi1jS2xweUp1TmtPVGw0cHpUamg2YTgyVjV3VlQ3SkdwS1RlM2pMMnFPRHVyNWc3bjNsZm1BUlk4LTNYdGZRX3cxcmlyNm5WUXc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBmX0xoMlhFVlE3WUFqdWlNM0djSzBPNEtLWWptUW96cHgzU0RMYTNMTjRnbG1sUjhSX3VhcnZpZ2hRZlE1ak55bkl4eS0xMHA2ak9xOVU3ZVhTcEtmV3IwdGZGZWV1QkN0YVNaZ0VqbnZSdlE?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hOWlDV256b3M4YVFQUkhrb1dMSWgxSHZUdDNFZW9qSHZqSFpUblZsQzdBbTlnMUxIbFAxTGlSZEhoTlZPSlZhSjFzb2t0Qy1ObTRjM3ZnX0dyUVFmSlY5ZU4yTTFzMFRuRmdVSHpaNHNJUWM?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-03T23:30:00.000Z",
           "kind": "evidence",
           "claim_id": 556149,
@@ -161475,6 +161701,17 @@
           "kind": "evidence",
           "claim_id": 556160,
           "claim_text": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/lejxn9ic5u"
+          }
+        },
+        {
+          "ts": "2026-11-03T23:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -161512,6 +161749,50 @@
             "source_id": "prothomalo",
             "relation": "supports",
             "url": "https://www.prothomalo.com/bangladesh/af0vs27r7z"
+          }
+        },
+        {
+          "ts": "2026-11-03T23:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/af0vs27r7z"
+          }
+        },
+        {
+          "ts": "2026-11-04T00:31:18.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%b0%e0%a6%be%e0%a6%b7%e0%a7%8d%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a7%87-%e0%a6%ae%e0%a6%a7%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b0%e0%a7%8d%e0%a6%a4-5/"
+          }
+        },
+        {
+          "ts": "2026-11-04T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/dhallywood/34nrpv78ta"
+          }
+        },
+        {
+          "ts": "2026-11-04T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571533,
+          "claim_text": "বাংলা সিনেমা কীভাবে ঘুরে দাঁড়াবে? কী বলছেন নির্মাতারা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/dhallywood/34nrpv78ta"
           }
         },
         {
@@ -161669,6 +161950,61 @@
           }
         },
         {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/lifestyle/travel/rqa9d6dky0"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/fxtd0shzjz"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/india/kxlwbvqdbg"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/05fups3osv"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/1wpz9njnvz"
+          }
+        },
+        {
           "ts": "2026-11-04T02:13:17.000Z",
           "kind": "evidence",
           "claim_id": 556149,
@@ -161702,6 +162038,17 @@
           }
         },
         {
+          "ts": "2026-11-04T02:13:17.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/ckd7q93zxzvvo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
           "ts": "2026-11-04T02:27:36.000Z",
           "kind": "evidence",
           "claim_id": 556149,
@@ -161717,6 +162064,17 @@
           "kind": "evidence",
           "claim_id": 556160,
           "claim_text": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/suk0urw1un"
+          }
+        },
+        {
+          "ts": "2026-11-04T02:27:36.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -161940,6 +162298,28 @@
           }
         },
         {
+          "ts": "2026-11-04T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/s0r4uafrft"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571541,
+          "claim_text": "গত ষাট বছরের মধ্যে র্যামের দাম এখন সবচেয়ে বেশি কেন, দাম কমবে কবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/s0r4uafrft"
+          }
+        },
+        {
           "ts": "2026-11-04T04:26:22.254Z",
           "kind": "claim",
           "claim_id": 566391,
@@ -161986,6 +162366,60 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.116Z",
+          "kind": "claim",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.151Z",
+          "kind": "claim",
+          "claim_id": 571533,
+          "claim_text": "বাংলা সিনেমা কীভাবে ঘুরে দাঁড়াবে? কী বলছেন নির্মাতারা"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.166Z",
+          "kind": "claim",
+          "claim_id": 571541,
+          "claim_text": "গত ষাট বছরের মধ্যে র্যামের দাম এখন সবচেয়ে বেশি কেন, দাম কমবে কবে"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571525,
+          "claim_text": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571533,
+          "claim_text": "বাংলা সিনেমা কীভাবে ঘুরে দাঁড়াবে? কী বলছেন নির্মাতারা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571541,
+          "claim_text": "গত ষাট বছরের মধ্যে র্যামের দাম এখন সবচেয়ে বেশি কেন, দাম কমবে কবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
@@ -162022,20 +162456,20 @@
           "headline": "ক্যালিফোর্নিয়ায় ২০ হাজার ভোট আলাদা করতে ট্রাম্পের প্রচেষ্টায় সুপ্রিম কোর্টের বাধা"
         },
         {
+          "cluster_id": 1187,
+          "slug": "national-1187",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 3,
+          "headline": "আগামী বছরের সরকারি ছুটির তালিকা অনুমোদন"
+        },
+        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 25,
           "headline": "ছিল ঘিয়ের ব্যবসা, এখন তৈরি করে ১৮৫ রকম মিষ্টি, চার প্রজন্মের গল্পে বিক্রমপুর মিষ্টান্ন ভান্ডার"
-        },
-        {
-          "cluster_id": 1170,
-          "slug": "national-1170",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 15,
-          "headline": "প্রধানমন্ত্রীকে বহনকারী বিমানে বারবার ত্রুটি, কারণ জানতে চায় সংসদীয় কমিটি"
         }
       ]
     },
@@ -162325,6 +162759,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1187,
           "slug": "national-1187",
           "actor_links": 0,
@@ -162370,7 +162812,7 @@
       "cluster_id": 1515,
       "headline": "এক চমক ও দুই প্রত্যাবর্তন ‘মেসি পরবর্তী’ প্রথম আর্জেন্টিনা দলে",
       "first_seen": "2026-11-04T02:55:59.943Z",
-      "last_update": "2026-11-04T04:04:33.100Z",
+      "last_update": "2026-11-04T04:38:07.257Z",
       "claim_count": 2,
       "events": [
         {
@@ -163416,7 +163858,7 @@
       "cluster_id": 1522,
       "headline": "পাবনায় ছাত্রীনিবাস থেকে তরুণীর ঝুলন্ত মরদেহ উদ্ধার",
       "first_seen": "2026-11-04T03:27:53.903Z",
-      "last_update": "2026-11-04T04:04:33.098Z",
+      "last_update": "2026-11-04T04:38:07.255Z",
       "claim_count": 2,
       "events": [
         {
@@ -164158,56 +164600,405 @@
     },
     "national-1534": {
       "cluster_id": 1534,
-      "headline": "ঢাকার ফুটপাতে মারধরের ঘটনায় আটক সেই যুবকের ১৫ দিনের কারাদণ্ড",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+      "first_seen": "2026-11-04T04:38:07.238Z",
+      "last_update": "2026-11-04T04:38:07.241Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T04:20:53.000Z",
+          "kind": "evidence",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrat-gina-hinojosa-greg-abbott-texas"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:30:09.000Z",
+          "kind": "evidence",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrats-governor-races-wins"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:30:09.000Z",
+          "kind": "evidence",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrats-governor-races-wins"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.235Z",
+          "kind": "claim",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.238Z",
+          "kind": "claim",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1535": {
       "cluster_id": 1535,
-      "headline": "৪৫তম বিসিএসের চূড়ান্ত গেজেট প্রকাশ, সুপারিশ পেলেন ১৭০২ জন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "সচিবালয়ে সার্বক্ষণিক আইডি কার্ড প্রদর্শনের নির্দেশ",
+      "first_seen": "2026-11-04T04:38:07.247Z",
+      "last_update": "2026-11-04T04:38:07.250Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-03T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 571569,
+          "claim_text": "সচিবালয়ে সার্বক্ষণিক আইডি কার্ড প্রদর্শনের নির্দেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1LRUY2N1JUMFhnSzZidENjcnZGUGlkb1BFazAzZFBkM0pOQW0ycnFUR0dXMnBoeW95RnA4TGt1ZGlFSzN1YXU2QkNEdzZFdlYtSkpqSENPd1ZudzMtUF90QnBlVThTQ015SS1ZYkcyYVBEOFU?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:18:57.000Z",
+          "kind": "evidence",
+          "claim_id": 571569,
+          "claim_text": "সচিবালয়ে সার্বক্ষণিক আইডি কার্ড প্রদর্শনের নির্দেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3elBTUklGZ3J5N3pJaTZleXpESFh6VDlodF8yeld2X1U2bmlJT21pbXJXUVRtYVZOZ3FOZ1JXMTc1aERjY3RsREtnRlpJMzR2V2N2TnhWZzBqZ2V6OUN1c01iZktkTkg3dElJTXBLcw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:18:57.000Z",
+          "kind": "evidence",
+          "claim_id": 571570,
+          "claim_text": "সচিবালয়ে আইডি কার্ড দৃশ্যমান রাখার নির্দেশ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3elBTUklGZ3J5N3pJaTZleXpESFh6VDlodF8yeld2X1U2bmlJT21pbXJXUVRtYVZOZ3FOZ1JXMTc1aERjY3RsREtnRlpJMzR2V2N2TnhWZzBqZ2V6OUN1c01iZktkTkg3dElJTXBLcw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.243Z",
+          "kind": "claim",
+          "claim_id": 571569,
+          "claim_text": "সচিবালয়ে সার্বক্ষণিক আইডি কার্ড প্রদর্শনের নির্দেশ"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.246Z",
+          "kind": "claim",
+          "claim_id": 571570,
+          "claim_text": "সচিবালয়ে আইডি কার্ড দৃশ্যমান রাখার নির্দেশ"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571569,
+          "claim_text": "সচিবালয়ে সার্বক্ষণিক আইডি কার্ড প্রদর্শনের নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571570,
+          "claim_text": "সচিবালয়ে আইডি কার্ড দৃশ্যমান রাখার নির্দেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1536": {
       "cluster_id": 1536,
-      "headline": "অভিনন্দন, বিজ্ঞানচিন্তা!",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার",
+      "first_seen": "2026-11-04T04:38:07.251Z",
+      "last_update": "2026-11-04T04:38:07.254Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T03:27:54.000Z",
+          "kind": "evidence",
+          "claim_id": 571571,
+          "claim_text": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/dhaka/978666/%E0%A6%97%E0%A6%BE%E0%A6%9C%E0%A7%80%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%87-%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%9A%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A6%B2-%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%95-%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6-%E0%A6%B8%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:00:16.000Z",
+          "kind": "evidence",
+          "claim_id": 571571,
+          "claim_text": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMirwRBVV95cUxQWWpVbUxGWW5Nb09vRnpJNDh5dlVleGFsaEZMNGhydHVLQkhLZEprN3JQVkZYUFhaQ3FZWTZELXp0d3dJRlR4dmVWVWlWN2NWUm0zZkRjS0xfQmFpNTVIR01CYUx1M291eTVnUUxGVklZaWp4RUd0dU1vMDdKOTBqTzlPWklBOURvQkI5aUlxMzByT2REeU5CZXktaWZWTDlYUExSUHFCY2dLN3VRQ0hFZWt6QmMycXYxakVCTlBqSGtjb1NqUUFDQURaN2pTQlpobDdubGVjZldwUGt6czE5cjVTTVNBOERpNC1peHY1WVJZQkNxZ1FIOVRVUmlpX0padThxTVFLTmZjdGRHRjBlaFFqNy0ydjBHNnB3SXloZC1LSWdnb2tCZDlWSWNJVWdoNmVWbVFlejJUQV95UUJBTlV3aGx0ZFZGLVhtZnUxMG10aHg2QWo3M20wYnhRS1gycF8xRTdOTC0wVTZfOEFLUFowUkNXaFRrbnA2dml2Z3VZTVhkS2Q5QVlhVDN6SVlzLVhKVHdYM1BNRFdyRGE4cllvRWdYUTZfQm1TaHBnTGRLVVhIQVFjYUdwcnpRcFpWLTNqYmkzOUNHbkFNMEJBdkVmWDlsOVhKM0JkVTdDMnhQWWpoUzdEUEVYU0FzUXNvU2pEN29JNDBiSExMOWh0cnJTbFJEUkxjRDFVM2xOeTJEcVlLeVhROHFFMmYzMUlVRnVrcGk1RGhybmFSU3Fn0gG0BEFVX3lxTE9za1dBcGlWWVkydnZPOEtzZ0hNcGpJZUNtSm9OaWx6cUFiTkdnTzVEaGFwNHZKbHZZUy1CbU1KYzBzUUJzTURZdXNSaUREMWFtMXhqZzBZcFlYTXpOVV8yUHlhM3Z3bGZtOEhvdHozU3p5Z3R6Tkk4cHVKYkxBYWJzSGJfUDBWanRONjZjajdrRTIyMjFkbFg4V1dySEFpZU9wdDBDN1IzWmhWRmt4S1RYQ21Mb3RENk5MOHVoU0xyT2RHeFZGR1laeXVxa3JvSVo4SEctcm11VnZFaDYzQkxmZ2dvUE8tSUM3WXVTOFFfRWdBUjZjZ2FWMWxYa1R1UFJsTTFpc0JqMVF6NWZXbmZxN2FVeHpWODBGSzcxZmtLQ0RDdU1kdjRLa1Z0dGFtOFhzMms1aVBGMkxROFpxUVdjWklCVmpmQ0hDSkRaTjc4aE5pUERKVXNncS02QlE1bElVQ3Y3WUtLc05lME5JcmdhbXU0VUd0T0Z4ZGxMN21QZElvd0ZqTEVrY0pPY003THR2OGRFS2JTTmNDUGFiU3JuNnpyQlZxd3ZyV2NGZXl0QkEtY1dMRUJ3Ry1oRlhZU0VrUGJJeGRrQXV3MmxHRmRiYVFRSW1XUGNLal9wcFV6QV9MRjItWE1GYzlnbk9pbzhvOXplMHU4dlZBQzN6UXZUMmw3bG84ZzZfaGJQbEZwcnlvS0s5aDMzbGhZVkc0Nk5feldnNTgzdXBBVmVlVXFrY0JEdg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:00:16.000Z",
+          "kind": "evidence",
+          "claim_id": 571572,
+          "claim_text": "পুলিশ সুপার: গাজীপুরে যান চলাচল স্বাভাবিক আছে",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMirwRBVV95cUxQWWpVbUxGWW5Nb09vRnpJNDh5dlVleGFsaEZMNGhydHVLQkhLZEprN3JQVkZYUFhaQ3FZWTZELXp0d3dJRlR4dmVWVWlWN2NWUm0zZkRjS0xfQmFpNTVIR01CYUx1M291eTVnUUxGVklZaWp4RUd0dU1vMDdKOTBqTzlPWklBOURvQkI5aUlxMzByT2REeU5CZXktaWZWTDlYUExSUHFCY2dLN3VRQ0hFZWt6QmMycXYxakVCTlBqSGtjb1NqUUFDQURaN2pTQlpobDdubGVjZldwUGt6czE5cjVTTVNBOERpNC1peHY1WVJZQkNxZ1FIOVRVUmlpX0padThxTVFLTmZjdGRHRjBlaFFqNy0ydjBHNnB3SXloZC1LSWdnb2tCZDlWSWNJVWdoNmVWbVFlejJUQV95UUJBTlV3aGx0ZFZGLVhtZnUxMG10aHg2QWo3M20wYnhRS1gycF8xRTdOTC0wVTZfOEFLUFowUkNXaFRrbnA2dml2Z3VZTVhkS2Q5QVlhVDN6SVlzLVhKVHdYM1BNRFdyRGE4cllvRWdYUTZfQm1TaHBnTGRLVVhIQVFjYUdwcnpRcFpWLTNqYmkzOUNHbkFNMEJBdkVmWDlsOVhKM0JkVTdDMnhQWWpoUzdEUEVYU0FzUXNvU2pEN29JNDBiSExMOWh0cnJTbFJEUkxjRDFVM2xOeTJEcVlLeVhROHFFMmYzMUlVRnVrcGk1RGhybmFSU3Fn0gG0BEFVX3lxTE9za1dBcGlWWVkydnZPOEtzZ0hNcGpJZUNtSm9OaWx6cUFiTkdnTzVEaGFwNHZKbHZZUy1CbU1KYzBzUUJzTURZdXNSaUREMWFtMXhqZzBZcFlYTXpOVV8yUHlhM3Z3bGZtOEhvdHozU3p5Z3R6Tkk4cHVKYkxBYWJzSGJfUDBWanRONjZjajdrRTIyMjFkbFg4V1dySEFpZU9wdDBDN1IzWmhWRmt4S1RYQ21Mb3RENk5MOHVoU0xyT2RHeFZGR1laeXVxa3JvSVo4SEctcm11VnZFaDYzQkxmZ2dvUE8tSUM3WXVTOFFfRWdBUjZjZ2FWMWxYa1R1UFJsTTFpc0JqMVF6NWZXbmZxN2FVeHpWODBGSzcxZmtLQ0RDdU1kdjRLa1Z0dGFtOFhzMms1aVBGMkxROFpxUVdjWklCVmpmQ0hDSkRaTjc4aE5pUERKVXNncS02QlE1bElVQ3Y3WUtLc05lME5JcmdhbXU0VUd0T0Z4ZGxMN21QZElvd0ZqTEVrY0pPY003THR2OGRFS2JTTmNDUGFiU3JuNnpyQlZxd3ZyV2NGZXl0QkEtY1dMRUJ3Ry1oRlhZU0VrUGJJeGRrQXV3MmxHRmRiYVFRSW1XUGNLal9wcFV6QV9MRjItWE1GYzlnbk9pbzhvOXplMHU4dlZBQzN6UXZUMmw3bG84ZzZfaGJQbEZwcnlvS0s5aDMzbGhZVkc0Nk5feldnNTgzdXBBVmVlVXFrY0JEdg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.248Z",
+          "kind": "claim",
+          "claim_id": 571571,
+          "claim_text": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.252Z",
+          "kind": "claim",
+          "claim_id": 571572,
+          "claim_text": "পুলিশ সুপার: গাজীপুরে যান চলাচল স্বাভাবিক আছে"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571571,
+          "claim_text": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571572,
+          "claim_text": "পুলিশ সুপার: গাজীপুরে যান চলাচল স্বাভাবিক আছে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1238,
+          "slug": "national-1238",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্দোলনে কারখানা ছুটি, কালিয়াকৈরে তুরাগ নদে মাছ ধরতে গিয়ে পোশাকশ্রমিকের মৃত্যু"
+        },
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "তাহসিফ সাউরির মৃত্যুর ঘটনায় চার দিনের রিমান্ডে বান্ধবী জেরিকা"
+        },
+        {
+          "cluster_id": 813,
+          "slug": "national-storm",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
+        },
+        {
+          "cluster_id": 760,
+          "slug": "national-760",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 698,
+          "slug": "national-upl-s-banglabazar",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
+        },
+        {
+          "cluster_id": 603,
+          "slug": "national-603",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
+        }
+      ]
     },
     "national-1537": {
       "cluster_id": 1537,
-      "headline": "ডেঙ্গুতে মেয়ের অবস্থা খারাপ হচ্ছে—এমন কোনো লক্ষণই বুঝতে পারেননি চিকিৎসক মা–বাবা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+      "first_seen": "2026-11-04T04:38:07.724Z",
+      "last_update": "2026-11-04T04:38:07.726Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:28:51.000Z",
+          "kind": "evidence",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/keisha-lance-bottoms-became-the-first-black-female-governor-in-the-united-states/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.254Z",
+          "kind": "claim",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571573,
+          "claim_text": "ধনকুবের রিপাবলিকান প্রার্থীকে হারিয়ে যুক্তরাষ্ট্রের প্রথম কৃষ্ণাঙ্গ নারী গভর্নর বাটমস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1538": {
       "cluster_id": 1538,
-      "headline": "টঙ্গীর ড্রাগ ইন্টারন্যাশনালের আগুন সম্পূর্ণ নিভেছে: ফায়ার সার্ভিস",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বিভিন্ন বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সময়সূচি প্রকাশ",
+      "first_seen": "2026-11-04T04:38:07.728Z",
+      "last_update": "2026-11-04T04:38:07.729Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:24:13.000Z",
+          "kind": "evidence",
+          "claim_id": 571574,
+          "claim_text": "বিভিন্ন বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সময়সূচি প্রকাশ",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/university-admission-test-schedule-announced/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.257Z",
+          "kind": "claim",
+          "claim_id": 571574,
+          "claim_text": "বিভিন্ন বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সময়সূচি প্রকাশ"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571574,
+          "claim_text": "বিভিন্ন বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সময়সূচি প্রকাশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1539": {
       "cluster_id": 1539,
-      "headline": "ডেঙ্গু প্রতিরোধে সপ্তাহে দু’দিন ঘরবাড়ি ও আশপাশ পরিষ্কারের আহ্বান প্রধানমন্ত্রীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+      "first_seen": "2026-11-04T04:38:07.731Z",
+      "last_update": "2026-11-04T04:38:07.734Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:21:17.000Z",
+          "kind": "evidence",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/%e0%a6%9f%e0%a7%87%e0%a6%95%e0%a7%8d%e0%a6%b8%e0%a6%be%e0%a6%b8%e0%a7%87-%e0%a6%95%e0%a6%bf-%e0%a6%85%e0%a6%ac%e0%a6%b8%e0%a6%be%e0%a6%a8-%e0%a6%b9%e0%a6%9a%e0%a7%8d%e0%a6%9b%e0%a7%87-%e0%a6%95/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.260Z",
+          "kind": "claim",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571575,
+          "claim_text": "টেক্সাসে কি অবসান হচ্ছে কয়েক দশকের রিপাবলিকান আধিপত্য?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-154": {
@@ -164380,20 +165171,80 @@
     },
     "national-1540": {
       "cluster_id": 1540,
-      "headline": "জুলাই গণ-অভ্যুত্থান স্মৃতি জাদুঘরের সামনে ককটেল বিস্ফোরণ, সিএনজি অটোরিকশাচালক আহত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "দেশের বাজারে শাওমির ‘রেডমি ১৭ ফাইভজি’, দাম কত?",
+      "first_seen": "2026-11-04T04:38:07.735Z",
+      "last_update": "2026-11-04T04:38:07.737Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:13:12.000Z",
+          "kind": "evidence",
+          "claim_id": 571576,
+          "claim_text": "দেশের বাজারে শাওমির ‘রেডমি ১৭ ফাইভজি’, দাম কত?",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/6z0bfisxup"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.263Z",
+          "kind": "claim",
+          "claim_id": 571576,
+          "claim_text": "দেশের বাজারে শাওমির ‘রেডমি ১৭ ফাইভজি’, দাম কত?"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571576,
+          "claim_text": "দেশের বাজারে শাওমির ‘রেডমি ১৭ ফাইভজি’, দাম কত?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1541": {
       "cluster_id": 1541,
-      "headline": "২৪ ঘণ্টায় ডেঙ্গুতে প্রাণ গেলো পাঁচজনের, হাসপাতালে নতুন ভর্তি ১৯২০",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
+      "first_seen": "2026-11-04T04:38:07.739Z",
+      "last_update": "2026-11-04T04:38:07.741Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-04T04:12:57.000Z",
+          "kind": "evidence",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/gas-pressure-will-remain-low-for-four-consecutive-days-starting-today/"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.265Z",
+          "kind": "claim",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571577,
+          "claim_text": "টানা ৪ দিন গ্যাসের চাপ কম থাকবে, সরবরাহ বন্ধ হবে না",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1542": {
@@ -169055,6 +169906,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1187,
           "slug": "national-1187",
           "actor_links": 0,
@@ -169584,6 +170443,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -169614,14 +170481,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1230,
-          "slug": "national-1230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভাড়া বাসা থেকে নিষিদ্ধ ছাত্রলীগ নেতার মরদেহ উদ্ধার"
         }
       ]
     },
@@ -171729,6 +172588,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
         {
           "cluster_id": 1187,
           "slug": "national-1187",
@@ -175768,14 +176635,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1527,
-          "slug": "national-1527",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "ইরানে আপাতত হামলার পরিকল্পনা নেই যুক্তরাষ্ট্রের: ট্রাম্প"
-        },
-        {
           "cluster_id": 1186,
           "slug": "national-1186",
           "actor_links": 1,
@@ -175814,6 +176673,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "এ বছর শেষে ইসরায়েলকে সব সামরিক সহায়তা বন্ধ করা হবে: ট্রাম্প"
+        },
+        {
+          "cluster_id": 1483,
+          "slug": "national-1483",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মার্কিনিরা ‘বিরক্ত’ হলে ইসরায়েলে গিয়ে প্রধানমন্ত্রী হতে চান ট্রাম্প"
         }
       ]
     },
@@ -189780,8 +190647,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -198544,6 +199411,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1495,
           "slug": "sports-1495",
           "actor_links": 0,
@@ -198574,14 +199449,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আগামী বছরের সরকারি ছুটির তালিকা অনুমোদন"
-        },
-        {
-          "cluster_id": 1117,
-          "slug": "national-1117",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পক্ষ ছাড়ায় কর্মীকে খুনের অভিযোগ, চট্টগ্রামের সেই যুবদল নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -200983,8 +201850,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -220283,6 +221150,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1187,
           "slug": "national-1187",
           "actor_links": 0,
@@ -235142,20 +236017,20 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1495,
           "slug": "sports-1495",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
-        },
-        {
-          "cluster_id": 1479,
-          "slug": "national-1479",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
         }
       ]
     },
@@ -239822,6 +240697,14 @@
           "headline": "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -239836,14 +240719,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -241853,6 +242728,14 @@
           "headline": "এইচএসসির ফল পুনর্নিরীক্ষণের আবেদন শুরু, করবেন যেভাবে"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -241867,14 +242750,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -248758,8 +249633,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -253453,6 +254328,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -253491,14 +254374,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -258970,6 +259845,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1495,
           "slug": "sports-1495",
           "actor_links": 0,
@@ -258992,14 +259875,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "নারী ক্রিকেটারদের যৌন হয়রানি তদন্তে রাশনাকে প্রধান করে বিসিবির কমিটি"
-        },
-        {
-          "cluster_id": 1385,
-          "slug": "national-1385",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রধানমন্ত্রীর ক্ষমতা থেকে জরুরি অবস্থা, সংবিধান সংশোধনে নানা প্রস্তাব নিয়ে আলোচনা"
         }
       ]
     },
@@ -260297,6 +261172,14 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -260311,14 +261194,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -261493,6 +262368,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -261531,14 +262414,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
-        },
-        {
-          "cluster_id": 603,
-          "slug": "national-603",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
         }
       ]
     },
@@ -264484,6 +265359,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -264522,14 +265405,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -275901,8 +276776,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -278804,8 +279679,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -281115,8 +281990,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -283124,6 +283999,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
+        },
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1187,
@@ -285400,8 +286283,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -287457,6 +288340,85 @@
           "kind": "verify",
           "claim_id": 241732,
           "claim_text": "সকালেই শিল্পাঞ্চলের তিন কারখানায় আচমকা হামলা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "national-democrat-gina-hinojosa": {
+      "cluster_id": 1534,
+      "headline": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+      "first_seen": "2026-11-04T04:38:07.238Z",
+      "last_update": "2026-11-04T04:38:07.241Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T04:20:53.000Z",
+          "kind": "evidence",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrat-gina-hinojosa-greg-abbott-texas"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:30:09.000Z",
+          "kind": "evidence",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrats-governor-races-wins"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:30:09.000Z",
+          "kind": "evidence",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/democrats-governor-races-wins"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.235Z",
+          "kind": "claim",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.238Z",
+          "kind": "claim",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states"
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571567,
+          "claim_text": "Democrat Gina Hinojosa defeats Texas governor Greg Abbott in stunning upset",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-04T04:57:41.373Z",
+          "kind": "verify",
+          "claim_id": 571568,
+          "claim_text": "Democrats aim to sweep most US governor elections after wins in key states",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -290693,6 +291655,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -290731,14 +291701,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -293803,6 +294765,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -293841,14 +294811,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -295390,6 +296352,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -295428,14 +296398,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
-        },
-        {
-          "cluster_id": 585,
-          "slug": "national-585",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "অর্ধশতাধিক নেতাকর্মী নিয়ে পুকুরে জামায়াতের লংমার্চের বাস, নিহত ১: ঘটনাস্থলে দুই এমপি"
         }
       ]
     },
@@ -305370,6 +306332,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1187,
           "slug": "national-1187",
           "actor_links": 0,
@@ -311293,7 +312263,7 @@
       "cluster_id": 1470,
       "headline": "একাধিক অঙ্গরাজ্যে ভোটগ্রহণে বিঘ্ন, কোথাও যন্ত্রে ত্রুটি, কোথাও বিদ্যুৎ বিভ্রাট",
       "first_seen": "2026-11-03T22:14:13.804Z",
-      "last_update": "2026-11-04T04:04:33.102Z",
+      "last_update": "2026-11-04T04:38:07.258Z",
       "claim_count": 2,
       "events": [
         {
@@ -312259,6 +313229,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 8,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
         {
           "cluster_id": 1187,
           "slug": "national-1187",
@@ -322508,8 +323486,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
@@ -323627,6 +324605,14 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1479,
           "slug": "national-1479",
           "actor_links": 0,
@@ -323641,14 +324627,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিএসসিসিতে ব্যাটারিচালিত রিকশার নিবন্ধন শুরু"
-        },
-        {
-          "cluster_id": 1457,
-          "slug": "sports-1457",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "৪ দিন গ্যাস সরবরাহ বন্ধের গুজবে বিভ্রান্ত না হতে পেট্রোবাংলার আহ্বান"
         }
       ]
     },
@@ -323987,6 +324965,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1238,
           "slug": "national-1238",
           "actor_links": 0,
@@ -324025,14 +325011,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
-        },
-        {
-          "cluster_id": 603,
-          "slug": "national-603",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সংসদের আগামী অধিবেশনেই পাস হবে সৌরবিদ্যুৎ উৎপাদন আইন: বিদ্যুৎমন্ত্রী"
         }
       ]
     },
@@ -333184,8 +334162,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 14,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 17,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1253,
@@ -333233,7 +334211,7 @@
       "cluster_id": 1515,
       "headline": "এক চমক ও দুই প্রত্যাবর্তন ‘মেসি পরবর্তী’ প্রথম আর্জেন্টিনা দলে",
       "first_seen": "2026-11-04T02:55:59.943Z",
-      "last_update": "2026-11-04T04:04:33.100Z",
+      "last_update": "2026-11-04T04:38:07.257Z",
       "claim_count": 2,
       "events": [
         {
@@ -334481,6 +335459,14 @@
           "headline": "হালদার দুই তীরে ১ হাজার ২৯ প্রজাতির উদ্ভিদ শনাক্ত"
         },
         {
+          "cluster_id": 1511,
+          "slug": "national-1511",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
+        },
+        {
           "cluster_id": 1354,
           "slug": "national-1354",
           "actor_links": 0,
@@ -334511,14 +335497,6 @@
           "source_links": 2,
           "claim_count": 9,
           "headline": "মিরপুরে টানা তৃতীয় দিন পুলিশ-শ্রমিক সংঘর্ষ, বন্ধ ১১ নম্বর মেট্রো স্টেশন"
-        },
-        {
-          "cluster_id": 1230,
-          "slug": "national-1230",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ভাড়া বাসা থেকে নিষিদ্ধ ছাত্রলীগ নেতার মরদেহ উদ্ধার"
         }
       ]
     },
@@ -339476,20 +340454,20 @@
           "headline": "বাড়ি থেকে মাদক উদ্ধারের ঘটনায় পুলিশের সেই অতিরিক্ত ডিআইজিকে সাময়িক বরখাস্ত"
         },
         {
+          "cluster_id": 1536,
+          "slug": "national-1536",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে যান চলাচল পুরোপুরি স্বাভাবিক: পুলিশ সুপার"
+        },
+        {
           "cluster_id": 1495,
           "slug": "sports-1495",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 4,
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
-        },
-        {
-          "cluster_id": 1479,
-          "slug": "national-1479",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ভিসি ও প্রো-ভিসিদের ভেতরে রেখে প্রশাসনিক ভবনে তালা, উদ্ধার করল ছাত্রদল"
         }
       ]
     },
@@ -349029,8 +350007,8 @@
           "slug": "national-1511",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 13,
-          "headline": "১৩ ঘণ্টায় ৬২ লাখ টাকা, ছোট্ট মিনহার ক্যানসার চিকিৎসায় বিপুল সাড়া"
+          "claim_count": 16,
+          "headline": "যুক্তরাষ্ট্রে মধ্যবর্তী নির্বাচন, কংগ্রেসের নিয়ন্ত্রণ কার হাতে জানা যাবে আজ"
         },
         {
           "cluster_id": 1499,
