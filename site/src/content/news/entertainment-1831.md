@@ -4,7 +4,7 @@ seoTitle: "গ্যাসের বাড়তি দামে দীর্ঘম
 excerpt: "আমরা সাধারণ মানুষ কেবল বর্তমানের পেটের জ্বালা বুঝি, ভবিষ্যতের দীর্ঘমেয়াদি কল্যাণ বুঝি না। মিতার মুখের যে ভাব, তাতে মনে হচ্ছে আমার দীর্ঘমেয়াদি কল্যাণের কোনো বালাই নেই, ওর তাৎক্ষণিক "
 seoDescription: "আমরা সাধারণ মানুষ কেবল বর্তমানের পেটের জ্বালা বুঝি, ভবিষ্যতের দীর্ঘমেয়াদি কল্যাণ বুঝি না। মিতার মুখের যে ভাব, তাতে মনে হচ্ছে আমার দীর্ঘমেয়াদি কল্যাণের কোন…"
 date: 2026-11-05T01:00:00.000Z
-publishedAt: 2026-11-05T02:30:06.151Z
+publishedAt: 2026-11-05T02:26:10.059Z
 developing: true
 category: "entertainment"
 tags: ["economy", "health"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-05T02:30:05.964Z"
+  evaluatedAt: "2026-11-05T02:26:09.896Z"
   clusterId: 1831
   claimIds:
     - 758236
@@ -43,7 +43,7 @@ publication:
   slug: "entertainment-1831"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-05T02:30:05.964Z"
+  checkedAt: "2026-11-05T02:26:09.896Z"
   clusterId: 1831
   claimIds:
     - 758236
