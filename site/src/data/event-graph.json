@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6779,
+    "storyCount": 6781,
     "kinds": [
       "claim",
       "evidence",
@@ -218,6 +218,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1871,
           "slug": "national-1871",
           "actor_links": 0,
@@ -248,14 +256,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আদনান আল রাজীবের সিনেমায় নিশো-মেহজাবীন"
-        },
-        {
-          "cluster_id": 1746,
-          "slug": "national-1746",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
         }
       ]
     },
@@ -9079,14 +9079,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -9101,6 +9093,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রের প্রথম ইউনিটে বিদ্যুৎ উৎপাদনের অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         },
         {
           "cluster_id": 1816,
@@ -13257,7 +13257,7 @@
       "cluster_id": 1856,
       "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়",
       "first_seen": "2026-11-05T04:14:49.742Z",
-      "last_update": "2026-11-05T06:41:14.059Z",
+      "last_update": "2026-11-05T07:14:43.834Z",
       "claim_count": 3,
       "events": [
         {
@@ -13833,11 +13833,97 @@
     },
     "economy-1903": {
       "cluster_id": 1903,
-      "headline": "৮০ টাকার নিচে শুধু পেঁপে আর কুমড়া, সব সবজির দামই চড়া",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+      "first_seen": "2026-11-05T07:14:44.392Z",
+      "last_update": "2026-11-05T07:14:44.394Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:49:10.000Z",
+          "kind": "evidence",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/venergy-infrastructure-will-be-developed-from-mongla-to-the-northern-region-prime-minister/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.189Z",
+          "kind": "claim",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1602,
+          "slug": "national-1602",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রোহিঙ্গা সংকট সমাধানে চীনের সহযোগিতা চাইলেন প্রধানমন্ত্রী"
+        }
+      ]
+    },
+    "economy-1904": {
+      "cluster_id": 1904,
+      "headline": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+      "first_seen": "2026-11-05T07:14:44.396Z",
+      "last_update": "2026-11-05T07:14:44.398Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:43:10.000Z",
+          "kind": "evidence",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/56q1jrolyl"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.192Z",
+          "kind": "claim",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1914": {
@@ -14885,14 +14971,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -14915,6 +14993,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -22119,12 +22205,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -23536,6 +23622,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -23574,14 +23668,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -23902,20 +23988,20 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1772,
+          "slug": "sports-1772",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
         }
       ]
     },
@@ -24254,6 +24340,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -24292,14 +24386,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -29195,8 +29281,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -34034,14 +34120,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -34056,6 +34134,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -39373,7 +39459,7 @@
       "cluster_id": 1883,
       "headline": "অ্যাকাউন্টস বিভাগে সুলতান’স ডাইনে চাকরি, আবেদন শেষ ৩০ নভেম্বর",
       "first_seen": "2026-11-05T06:06:16.515Z",
-      "last_update": "2026-11-05T06:41:14.060Z",
+      "last_update": "2026-11-05T07:14:43.836Z",
       "claim_count": 2,
       "events": [
         {
@@ -42017,14 +42103,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -42047,6 +42125,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -45774,6 +45860,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -45812,14 +45906,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 803,
-          "slug": "opinion-803",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কুমিল্লায় অস্ত্র হাতে ভিডিও ভাইরাল, ‘এসবিএস’ গ্রুপের ৪ সদস্য গ্রেপ্তার"
         }
       ]
     },
@@ -46126,6 +46212,14 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -46148,14 +46242,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারে থাকুক বা বাইরে, বাংলাদেশের সব দলের সঙ্গে সম্পর্ক চায় চীন: লিউ হাইসিং"
-        },
-        {
-          "cluster_id": 1792,
-          "slug": "national-1792",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচনে ইতিহাস গড়লেন যাঁরা"
         }
       ]
     },
@@ -48445,14 +48531,6 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -48475,6 +48553,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         }
       ]
     },
@@ -52461,14 +52547,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -52483,6 +52561,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -52660,14 +52746,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -52690,6 +52768,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -55658,6 +55744,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1871,
           "slug": "national-1871",
           "actor_links": 0,
@@ -55688,14 +55782,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আদনান আল রাজীবের সিনেমায় নিশো-মেহজাবীন"
-        },
-        {
-          "cluster_id": 1746,
-          "slug": "national-1746",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
         }
       ]
     },
@@ -62711,6 +62797,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1843,
           "slug": "national-1843",
           "actor_links": 0,
@@ -62733,14 +62827,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1693,
-          "slug": "national-1693",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ডিবিসি কার্যালয় থেকে ইকবাল সোবহান চৌধুরীকে ডিবি কার্যালয়ে নেওয়া হয়েছে"
         }
       ]
     },
@@ -65675,14 +65761,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -65697,6 +65775,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -67237,6 +67323,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1634,
           "slug": "tech-1634",
           "actor_links": 0,
@@ -67275,14 +67369,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -71476,20 +71562,20 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1772,
+          "slug": "sports-1772",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
         }
       ]
     },
@@ -74017,6 +74103,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -74055,14 +74149,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -78032,6 +78118,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -78070,14 +78164,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -80460,6 +80546,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1843,
           "slug": "national-1843",
           "actor_links": 0,
@@ -80482,14 +80576,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ওয়েস্ট ইন্ডিজের কাছে হারের পর র্যাঙ্কিংয়ে পিছিয়ে তাইজুল-মিরাজ"
-        },
-        {
-          "cluster_id": 1781,
-          "slug": "national-1781",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বাংলাদেশকে অভিবাসন গন্তব্য হিসেবে গড়ে তুলতে হবে: স্পিকার"
         }
       ]
     },
@@ -82782,8 +82868,8 @@
       "cluster_id": 1870,
       "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
       "first_seen": "2026-11-05T05:29:35.906Z",
-      "last_update": "2026-11-05T06:41:14.043Z",
-      "claim_count": 11,
+      "last_update": "2026-11-05T07:14:43.819Z",
+      "claim_count": 12,
       "events": [
         {
           "ts": "2026-11-04T17:07:00.000Z",
@@ -83341,6 +83427,28 @@
           }
         },
         {
+          "ts": "2026-11-05T06:30:39.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/9i3tnq8hlh"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:30:39.000Z",
+          "kind": "evidence",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/9i3tnq8hlh"
+          }
+        },
+        {
           "ts": "2026-11-05T07:02:39.448Z",
           "kind": "claim",
           "claim_id": 807564,
@@ -83379,6 +83487,96 @@
             "conflict_type": "polarity",
             "field": "সমর্থন",
             "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.045Z",
+          "kind": "claim",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.879Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795077\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.883Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.887Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795072\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.890Z",
+          "kind": "conflict",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795073\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.893Z",
+          "kind": "conflict",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795074\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.896Z",
+          "kind": "conflict",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795076\",\"c813845\"]",
             "resolution": "unresolved"
           }
         }
@@ -83438,7 +83636,7 @@
       "cluster_id": 1872,
       "headline": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
       "first_seen": "2026-11-05T05:29:36.007Z",
-      "last_update": "2026-11-05T06:41:14.062Z",
+      "last_update": "2026-11-05T07:14:43.837Z",
       "claim_count": 2,
       "events": [
         {
@@ -83517,7 +83715,7 @@
       "cluster_id": 1874,
       "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
       "first_seen": "2026-11-05T05:29:36.064Z",
-      "last_update": "2026-11-05T06:41:14.068Z",
+      "last_update": "2026-11-05T07:14:43.842Z",
       "claim_count": 2,
       "events": [
         {
@@ -83916,7 +84114,7 @@
       "cluster_id": 1883,
       "headline": "অ্যাকাউন্টস বিভাগে সুলতান’স ডাইনে চাকরি, আবেদন শেষ ৩০ নভেম্বর",
       "first_seen": "2026-11-05T06:06:16.515Z",
-      "last_update": "2026-11-05T06:41:14.060Z",
+      "last_update": "2026-11-05T07:14:43.836Z",
       "claim_count": 2,
       "events": [
         {
@@ -84120,10 +84318,10 @@
     },
     "international-1889": {
       "cluster_id": 1889,
-      "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি",
+      "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
       "first_seen": "2026-11-05T06:41:14.044Z",
-      "last_update": "2026-11-05T06:41:14.047Z",
-      "claim_count": 2,
+      "last_update": "2026-11-05T07:14:43.821Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-05T06:18:53.000Z",
@@ -84148,6 +84346,17 @@
           }
         },
         {
+          "ts": "2026-11-05T06:18:53.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQbUkwMFhfVTk0UHFYaGd5aGRvMmJjcFZSb0pMcGRtQm9PU2JVc1JkWWVPSy10YlpBX0ViM0VSQlJYenZOZG5BRVJwV2ZkSVRCSHFtY25mbjk4WnZ0WmU4blFpYzlWNm5kSmlKVTdWbkdsT1o3bzlZWXRBa205NlVVYUo0U3QyUlk2YUdlMVcxa3h4MG1GdjRyeHhjUGEtV3RfUXZBQ1VFS3BBWmxpcHdkR1BpcC10Qm5faUZQZ2NjaUY2c0ozUFVFWU9QZGR6LTg1cWhyQkF4bDZBLWpKMDdGeTcwNm1kbTdKX01ZcmRWelJLejJ1WW1JTkFXcWE4b1J4aXlONFN6V25OazBTcUg00gGUAkFVX3lxTE9LRmhTemJCZ0VzS0hoMU5feEhnNUVVRE5sSGN0dkYxMFRDVkVVZmR4R01FU2dVZjFPdXlwZ205NTRLcGlKck9XUHNyTmhZZHlpZ2lkSGV6S2EzcVE5ZmdYcFE5dE1Tb29rM2Z0azdGa1JubVI0NWFMSFlqb0VvSl9GSGNWLVBfRDlRdXlnYlptYl9QelN4N0d2dVFNeXRnWU05SURycXZkZWVleUhub3pKYzIyWEVrZm0tWjI0SWpBQ2R0NnEtbHZKd1BkaU02SlNjRjlJYTZxT2h6NWhJR29QVkZRbFZKWEhTT2tZakt6Q19LOTQ1aVY1bjQ4dmJZNzBfcFdVRVhZWkpaN0s2MUljczNTNg?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-05T06:23:16.000Z",
           "kind": "evidence",
           "claim_id": 807593,
@@ -84156,6 +84365,28 @@
             "source_id": "bd24live",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LOW14YUpRRW4tWG1RTTZLeHZoRzZaSzd2SGM2TDZHT0U1dUtTNmhxOWpXUmJMTmpqLXAtR1pud0tsSTFvMmRDUUdqNEhfZWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:23:16.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LOW14YUpRRW4tWG1RTTZLeHZoRzZaSzd2SGM2TDZHT0U1dUtTNmhxOWpXUmJMTmpqLXAtR1pud0tsSTFvMmRDUUdqNEhfZWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:43:38.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikARBVV95cUxPSlZocVFUblZPRnoybHBuYlZwbm1iekFfd2lvUFRMRWRFZEMxUzVZenpqUkFCbzdiWXhxeXA2OFdyNmY3a0tuUUFXVjZwYzhOYWF3aU5HV0VYM3N6THNvQnRfdkQwU2NoXzlpTlc3TkdBSEs1STdPc3BGeTlKRDhfLWVHeGRsMXlVQUZDTzhJbTlhUWtvTUl5YnVmQm1UQkU3UlgzZThfd3JOdGhHQUY1RVlLWngxbEw0WFJYR2dPdVZtOHl3V0dtdVRFQlI0Rk5fYkxRUElGaHJOZXRtMVpyTnZZalpCaWNZWnh5RUxuRGt6eU9MNWRnNkJPRHdqTHRmQ01qaXFJVnlMb0hERUplWHJSQXAwNnpjTzd6SWpsNWE0bVlhS1FqNWZ6RXRhY3N3WEN4VjFXYU9KV2hsSjZsRmlVZ3pmZExTa3BGVk9FS1ZSV25EYmthQTBiRTYtdFFJVER1WG1uWl9VM3hfbjB2M2ZHa3NGNVZ5MXhJeExXZ2I1c1FWcWVzeVZRWWpXaTRKWkRfa2FkejJSa0xhaHFZa1ZQcG04SVVndXdmTUtWTUhzVXQxYXFVSnhJaHNiMTFhRlBFRVVFUWhGbkp0VHdJTHVYcHh6WFcydjNoOEswYmllMVNLQXVDY2VTdzJ5bExGcXIyenpCN0VYNGlmcDk1LWRHR1FFbHFHZ1YyY1pVbEE?oc=5"
           }
         },
         {
@@ -84193,9 +84424,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.126Z",
+          "kind": "claim",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 1752,
+          "slug": "national-1752",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
+        },
         {
           "cluster_id": 1693,
           "slug": "national-1693",
@@ -84203,6 +84460,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডিবিসি কার্যালয় থেকে ইকবাল সোবহান চৌধুরীকে ডিবি কার্যালয়ে নেওয়া হয়েছে"
+        },
+        {
+          "cluster_id": 1634,
+          "slug": "tech-1634",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কল্যাণপুরে বাস-অটোরিকশার মুখোমুখি সংঘর্ষে নিহত ৪"
         },
         {
           "cluster_id": 1607,
@@ -84213,36 +84478,20 @@
           "headline": "জয়পুরহাটে স্ত্রী হত্যার দায়ে স্বামীর যাবজ্জীবন"
         },
         {
+          "cluster_id": 1560,
+          "slug": "national-1560",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
+        },
+        {
           "cluster_id": 1264,
           "slug": "sports-1264",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "গাজীপুরে শ্রমিক অসন্তোষ: বিজিবি বাড়িয়ে ১১ প্লাটুন, ম্যাজিস্ট্রেট ২৫"
-        },
-        {
-          "cluster_id": 1019,
-          "slug": "national-1019",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এমপিওভুক্ত শিক্ষক-কর্মচারীদের পে-স্কেল নিয়ে সুখবর"
-        },
-        {
-          "cluster_id": 748,
-          "slug": "national-748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জয়পুরহাটে ‘দক্ষ যুব গড়ব দেশ’ স্লোগানে জাতীয় যুব দিবস উদযাপিত"
-        },
-        {
-          "cluster_id": 84,
-          "slug": "national-84",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই"
         }
       ]
     },
@@ -84365,11 +84614,41 @@
     },
     "international-1902": {
       "cluster_id": 1902,
-      "headline": "দিল্লিতে ধরনা থেকে রাহুল-প্রিয়াঙ্কা গান্ধী আটক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+      "first_seen": "2026-11-05T07:14:44.388Z",
+      "last_update": "2026-11-05T07:14:44.390Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:55:07.000Z",
+          "kind": "evidence",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/qlnxkik6py"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.187Z",
+          "kind": "claim",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1909": {
@@ -85163,14 +85442,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -85185,6 +85456,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -89742,14 +90021,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -89772,6 +90043,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -94725,6 +95004,14 @@
           "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -94747,14 +95034,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1731,
-          "slug": "national-1731",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আগামী বছর ঈদুল ফিতর-আজহা ও পূজায় ছুটি থাকবে কয়দিন"
         }
       ]
     },
@@ -104898,12 +105177,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -105257,12 +105536,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -110983,8 +111262,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -114697,6 +114976,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1634,
           "slug": "tech-1634",
           "actor_links": 0,
@@ -114735,14 +115022,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -116560,7 +116839,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -118547,7 +118826,7 @@
       "cluster_id": 1833,
       "headline": "Beau Lamarre-Condon trial live updates: accused double murderer gives evidence in high-profile case",
       "first_seen": "2026-11-05T02:30:41.892Z",
-      "last_update": "2026-11-05T06:41:14.070Z",
+      "last_update": "2026-11-05T07:14:43.850Z",
       "claim_count": 2,
       "events": [
         {
@@ -119929,6 +120208,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -119967,14 +120254,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 698,
-          "slug": "national-upl-s-banglabazar",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
         }
       ]
     },
@@ -121001,7 +121280,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -122011,6 +122290,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1871,
           "slug": "national-1871",
           "actor_links": 0,
@@ -122041,14 +122328,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "আদনান আল রাজীবের সিনেমায় নিশো-মেহজাবীন"
-        },
-        {
-          "cluster_id": 1746,
-          "slug": "national-1746",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
         }
       ]
     },
@@ -123833,8 +124112,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -131540,7 +131819,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -134380,6 +134659,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -134418,14 +134705,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুমিল্লায় অস্ত্র হাতে ভিডিও ভাইরাল, ‘এসবিএস’ গ্রুপের ৪ সদস্য গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -134512,7 +134791,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -136870,14 +137149,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -136900,6 +137171,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -149243,7 +149522,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 10,
+          "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -151508,6 +151787,14 @@
           "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         },
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1843,
           "slug": "national-1843",
           "actor_links": 0,
@@ -151530,14 +151817,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1693,
-          "slug": "national-1693",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "ডিবিসি কার্যালয় থেকে ইকবাল সোবহান চৌধুরীকে ডিবি কার্যালয়ে নেওয়া হয়েছে"
         }
       ]
     },
@@ -151854,14 +152133,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -151884,6 +152155,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -153616,6 +153895,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -153654,14 +153941,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুমিল্লায় অস্ত্র হাতে ভিডিও ভাইরাল, ‘এসবিএস’ গ্রুপের ৪ সদস্য গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -154760,8 +155039,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1843,
@@ -157627,14 +157906,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -157657,6 +157928,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -162831,14 +163110,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -162853,6 +163124,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -165828,6 +166107,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1634,
           "slug": "tech-1634",
           "actor_links": 0,
@@ -165866,14 +166153,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -171446,7 +171725,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -177039,20 +177318,20 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1772,
+          "slug": "sports-1772",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
         }
       ]
     },
@@ -182530,14 +182809,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -182552,6 +182823,14 @@
           "source_links": 0,
           "claim_count": 1,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রের প্রথম ইউনিটে বিদ্যুৎ উৎপাদনের অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         },
         {
           "cluster_id": 1816,
@@ -183010,6 +183289,14 @@
           "headline": "প্রধানমন্ত্রীর ফ্লাইটে কারিগরি ত্রুটির কারণ অনুসন্ধানে তদন্ত কমিটি"
         },
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -183040,14 +183327,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "কারাগারে অসুস্থ বগুড়া আ. লীগ নেতা নবাবের মৃত্যু"
-        },
-        {
-          "cluster_id": 1238,
-          "slug": "national-1238",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্দোলনে কারখানা ছুটি, কালিয়াকৈরে তুরাগ নদে মাছ ধরতে গিয়ে পোশাকশ্রমিকের মৃত্যু"
         }
       ]
     },
@@ -186112,12 +186391,12 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
-          "cluster_id": 1871,
-          "slug": "national-1871",
+          "cluster_id": 1889,
+          "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         }
       ]
     },
@@ -186819,6 +187098,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -186857,14 +187144,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -192686,6 +192965,22 @@
       ],
       "related": [
         {
+          "cluster_id": 1903,
+          "slug": "opinion-1903",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1241,
           "slug": "national-1241",
           "actor_links": 1,
@@ -193225,8 +193520,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -196124,14 +196419,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -196146,6 +196433,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -196447,12 +196742,12 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
+          "cluster_id": 1832,
+          "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
+          "claim_count": 11,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         }
       ]
     },
@@ -196535,6 +196830,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 952,
           "slug": "national-952",
           "actor_links": 0,
@@ -196573,14 +196876,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -198014,14 +198309,6 @@
           "headline": "দেশে ৪৬ লাখের বেশি মামলা বিচারাধীন: আইনমন্ত্রী"
         },
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -198036,6 +198323,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         },
         {
           "cluster_id": 1881,
@@ -203055,6 +203350,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -203093,14 +203396,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -208653,12 +208948,12 @@
           "headline": "প্রি-পেইড মিটারে রিচার্জ বন্ধ থাকতে পারে টানা ২৪ ঘণ্টা, গ্রাহকদের জরুরি নির্দেশনা"
         },
         {
-          "cluster_id": 1843,
-          "slug": "national-1843",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আজ খুলনা ও বাগেরহাট সফরে যাচ্ছেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -209605,6 +209900,14 @@
           "headline": "সীমান্তের ওপার থেকে শ্রমিকদের উসকে দিয়ে অস্থিরতা সৃষ্টির চক্রান্ত চলছে: স্বরাষ্ট্রমন্ত্রী"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1843,
           "slug": "national-1843",
           "actor_links": 0,
@@ -209627,14 +209930,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ওয়েস্ট ইন্ডিজের কাছে হারের পর র্যাঙ্কিংয়ে পিছিয়ে তাইজুল-মিরাজ"
-        },
-        {
-          "cluster_id": 1781,
-          "slug": "national-1781",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বাংলাদেশকে অভিবাসন গন্তব্য হিসেবে গড়ে তুলতে হবে: স্পিকার"
         }
       ]
     },
@@ -220117,7 +220412,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T05:29:36.140Z",
+      "last_update": "2026-11-05T07:14:43.851Z",
       "claim_count": 3,
       "events": [
         {
@@ -221725,7 +222020,7 @@
           "slug": "national-1870",
           "actor_links": 2,
           "source_links": 3,
-          "claim_count": 14,
+          "claim_count": 15,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -221766,7 +222061,7 @@
       "cluster_id": 1833,
       "headline": "Beau Lamarre-Condon trial live updates: accused double murderer gives evidence in high-profile case",
       "first_seen": "2026-11-05T02:30:41.892Z",
-      "last_update": "2026-11-05T06:41:14.070Z",
+      "last_update": "2026-11-05T07:14:43.850Z",
       "claim_count": 2,
       "events": [
         {
@@ -223595,7 +223890,7 @@
       "cluster_id": 1856,
       "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়",
       "first_seen": "2026-11-05T04:14:49.742Z",
-      "last_update": "2026-11-05T06:41:14.059Z",
+      "last_update": "2026-11-05T07:14:43.834Z",
       "claim_count": 3,
       "events": [
         {
@@ -224416,7 +224711,7 @@
       "cluster_id": 1864,
       "headline": "মার্কিন নির্বাচনে ট্রাম্পের দলের হার, তেহরানে ট্রাম্প-নেতানিয়াহুর ছবি পুড়িয়ে উদ্যাপন",
       "first_seen": "2026-11-05T04:54:28.055Z",
-      "last_update": "2026-11-05T06:41:14.054Z",
+      "last_update": "2026-11-05T07:14:43.831Z",
       "claim_count": 3,
       "events": [
         {
@@ -224780,8 +225075,8 @@
       "cluster_id": 1870,
       "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
       "first_seen": "2026-11-05T05:29:35.906Z",
-      "last_update": "2026-11-05T06:41:14.043Z",
-      "claim_count": 11,
+      "last_update": "2026-11-05T07:14:43.819Z",
+      "claim_count": 12,
       "events": [
         {
           "ts": "2026-11-04T17:07:00.000Z",
@@ -225339,6 +225634,28 @@
           }
         },
         {
+          "ts": "2026-11-05T06:30:39.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/9i3tnq8hlh"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:30:39.000Z",
+          "kind": "evidence",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/9i3tnq8hlh"
+          }
+        },
+        {
           "ts": "2026-11-05T07:02:39.448Z",
           "kind": "claim",
           "claim_id": 807564,
@@ -225377,6 +225694,96 @@
             "conflict_type": "polarity",
             "field": "সমর্থন",
             "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.045Z",
+          "kind": "claim",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813845,
+          "claim_text": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.879Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795077\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.883Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.887Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795072\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.890Z",
+          "kind": "conflict",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795073\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.893Z",
+          "kind": "conflict",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795074\",\"c813845\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:29.896Z",
+          "kind": "conflict",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c795076\",\"c813845\"]",
             "resolution": "unresolved"
           }
         }
@@ -225564,7 +225971,7 @@
       "cluster_id": 1872,
       "headline": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
       "first_seen": "2026-11-05T05:29:36.007Z",
-      "last_update": "2026-11-05T06:41:14.062Z",
+      "last_update": "2026-11-05T07:14:43.837Z",
       "claim_count": 2,
       "events": [
         {
@@ -225643,7 +226050,7 @@
       "cluster_id": 1873,
       "headline": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ",
       "first_seen": "2026-11-05T05:29:36.032Z",
-      "last_update": "2026-11-05T06:41:14.063Z",
+      "last_update": "2026-11-05T07:14:43.839Z",
       "claim_count": 2,
       "events": [
         {
@@ -225771,7 +226178,7 @@
       "cluster_id": 1874,
       "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
       "first_seen": "2026-11-05T05:29:36.064Z",
-      "last_update": "2026-11-05T06:41:14.068Z",
+      "last_update": "2026-11-05T07:14:43.842Z",
       "claim_count": 2,
       "events": [
         {
@@ -226246,7 +226653,7 @@
       "cluster_id": 1881,
       "headline": "যাত্রীর অপেক্ষায় ছিলেন দুই অটোরিকশাচালক, ট্রাকচাপায় দুজনই নিহত",
       "first_seen": "2026-11-05T06:06:16.426Z",
-      "last_update": "2026-11-05T06:41:14.052Z",
+      "last_update": "2026-11-05T07:14:43.829Z",
       "claim_count": 2,
       "events": [
         {
@@ -226582,7 +226989,7 @@
       "cluster_id": 1883,
       "headline": "অ্যাকাউন্টস বিভাগে সুলতান’স ডাইনে চাকরি, আবেদন শেষ ৩০ নভেম্বর",
       "first_seen": "2026-11-05T06:06:16.515Z",
-      "last_update": "2026-11-05T06:41:14.060Z",
+      "last_update": "2026-11-05T07:14:43.836Z",
       "claim_count": 2,
       "events": [
         {
@@ -226903,10 +227310,10 @@
     },
     "national-1889": {
       "cluster_id": 1889,
-      "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি",
+      "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
       "first_seen": "2026-11-05T06:41:14.044Z",
-      "last_update": "2026-11-05T06:41:14.047Z",
-      "claim_count": 2,
+      "last_update": "2026-11-05T07:14:43.821Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-05T06:18:53.000Z",
@@ -226931,6 +227338,17 @@
           }
         },
         {
+          "ts": "2026-11-05T06:18:53.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQbUkwMFhfVTk0UHFYaGd5aGRvMmJjcFZSb0pMcGRtQm9PU2JVc1JkWWVPSy10YlpBX0ViM0VSQlJYenZOZG5BRVJwV2ZkSVRCSHFtY25mbjk4WnZ0WmU4blFpYzlWNm5kSmlKVTdWbkdsT1o3bzlZWXRBa205NlVVYUo0U3QyUlk2YUdlMVcxa3h4MG1GdjRyeHhjUGEtV3RfUXZBQ1VFS3BBWmxpcHdkR1BpcC10Qm5faUZQZ2NjaUY2c0ozUFVFWU9QZGR6LTg1cWhyQkF4bDZBLWpKMDdGeTcwNm1kbTdKX01ZcmRWelJLejJ1WW1JTkFXcWE4b1J4aXlONFN6V25OazBTcUg00gGUAkFVX3lxTE9LRmhTemJCZ0VzS0hoMU5feEhnNUVVRE5sSGN0dkYxMFRDVkVVZmR4R01FU2dVZjFPdXlwZ205NTRLcGlKck9XUHNyTmhZZHlpZ2lkSGV6S2EzcVE5ZmdYcFE5dE1Tb29rM2Z0azdGa1JubVI0NWFMSFlqb0VvSl9GSGNWLVBfRDlRdXlnYlptYl9QelN4N0d2dVFNeXRnWU05SURycXZkZWVleUhub3pKYzIyWEVrZm0tWjI0SWpBQ2R0NnEtbHZKd1BkaU02SlNjRjlJYTZxT2h6NWhJR29QVkZRbFZKWEhTT2tZakt6Q19LOTQ1aVY1bjQ4dmJZNzBfcFdVRVhZWkpaN0s2MUljczNTNg?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-05T06:23:16.000Z",
           "kind": "evidence",
           "claim_id": 807593,
@@ -226939,6 +227357,28 @@
             "source_id": "bd24live",
             "relation": "supports",
             "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LOW14YUpRRW4tWG1RTTZLeHZoRzZaSzd2SGM2TDZHT0U1dUtTNmhxOWpXUmJMTmpqLXAtR1pud0tsSTFvMmRDUUdqNEhfZWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:23:16.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LOW14YUpRRW4tWG1RTTZLeHZoRzZaSzd2SGM2TDZHT0U1dUtTNmhxOWpXUmJMTmpqLXAtR1pud0tsSTFvMmRDUUdqNEhfZWc?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:43:38.000Z",
+          "kind": "evidence",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikARBVV95cUxPSlZocVFUblZPRnoybHBuYlZwbm1iekFfd2lvUFRMRWRFZEMxUzVZenpqUkFCbzdiWXhxeXA2OFdyNmY3a0tuUUFXVjZwYzhOYWF3aU5HV0VYM3N6THNvQnRfdkQwU2NoXzlpTlc3TkdBSEs1STdPc3BGeTlKRDhfLWVHeGRsMXlVQUZDTzhJbTlhUWtvTUl5YnVmQm1UQkU3UlgzZThfd3JOdGhHQUY1RVlLWngxbEw0WFJYR2dPdVZtOHl3V0dtdVRFQlI0Rk5fYkxRUElGaHJOZXRtMVpyTnZZalpCaWNZWnh5RUxuRGt6eU9MNWRnNkJPRHdqTHRmQ01qaXFJVnlMb0hERUplWHJSQXAwNnpjTzd6SWpsNWE0bVlhS1FqNWZ6RXRhY3N3WEN4VjFXYU9KV2hsSjZsRmlVZ3pmZExTa3BGVk9FS1ZSV25EYmthQTBiRTYtdFFJVER1WG1uWl9VM3hfbjB2M2ZHa3NGNVZ5MXhJeExXZ2I1c1FWcWVzeVZRWWpXaTRKWkRfa2FkejJSa0xhaHFZa1ZQcG04SVVndXdmTUtWTUhzVXQxYXFVSnhJaHNiMTFhRlBFRVVFUWhGbkp0VHdJTHVYcHh6WFcydjNoOEswYmllMVNLQXVDY2VTdzJ5bExGcXIyenpCN0VYNGlmcDk1LWRHR1FFbHFHZ1YyY1pVbEE?oc=5"
           }
         },
         {
@@ -226976,9 +227416,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.126Z",
+          "kind": "claim",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813869,
+          "claim_text": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
         }
       ],
       "related": [
+        {
+          "cluster_id": 1752,
+          "slug": "national-1752",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
+        },
         {
           "cluster_id": 1693,
           "slug": "national-1693",
@@ -226986,6 +227452,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "ডিবিসি কার্যালয় থেকে ইকবাল সোবহান চৌধুরীকে ডিবি কার্যালয়ে নেওয়া হয়েছে"
+        },
+        {
+          "cluster_id": 1634,
+          "slug": "tech-1634",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কল্যাণপুরে বাস-অটোরিকশার মুখোমুখি সংঘর্ষে নিহত ৪"
         },
         {
           "cluster_id": 1607,
@@ -226996,36 +227470,20 @@
           "headline": "জয়পুরহাটে স্ত্রী হত্যার দায়ে স্বামীর যাবজ্জীবন"
         },
         {
+          "cluster_id": 1560,
+          "slug": "national-1560",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
+        },
+        {
           "cluster_id": 1264,
           "slug": "sports-1264",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "গাজীপুরে শ্রমিক অসন্তোষ: বিজিবি বাড়িয়ে ১১ প্লাটুন, ম্যাজিস্ট্রেট ২৫"
-        },
-        {
-          "cluster_id": 1019,
-          "slug": "national-1019",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এমপিওভুক্ত শিক্ষক-কর্মচারীদের পে-স্কেল নিয়ে সুখবর"
-        },
-        {
-          "cluster_id": 748,
-          "slug": "national-748",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "জয়পুরহাটে ‘দক্ষ যুব গড়ব দেশ’ স্লোগানে জাতীয় যুব দিবস উদযাপিত"
-        },
-        {
-          "cluster_id": 84,
-          "slug": "national-84",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রকৃতির গল্প লিখে যাওয়া সাংবাদিক আহমেদ গিয়াস আর নেই"
         }
       ]
     },
@@ -227072,7 +227530,7 @@
       "cluster_id": 1890,
       "headline": "অতীতের বোঝা বয়ে বেড়াচ্ছেন? নিজেকে ভারমুক্ত করার ৬ উপায়",
       "first_seen": "2026-11-05T06:41:14.048Z",
-      "last_update": "2026-11-05T06:41:14.050Z",
+      "last_update": "2026-11-05T07:14:43.827Z",
       "claim_count": 2,
       "events": [
         {
@@ -227151,7 +227609,7 @@
       "cluster_id": 1891,
       "headline": "মোংলায় পৌঁছেছেন প্রধানমন্ত্রী, সই করবেন ৪,০৬৮ কোটি টাকার প্রকল্পে",
       "first_seen": "2026-11-05T06:41:14.055Z",
-      "last_update": "2026-11-05T06:41:14.058Z",
+      "last_update": "2026-11-05T07:14:43.833Z",
       "claim_count": 2,
       "events": [
         {
@@ -227279,7 +227737,7 @@
       "cluster_id": 1892,
       "headline": "সোনার দামে বড় লাফ, ভরি কত?",
       "first_seen": "2026-11-05T06:41:14.064Z",
-      "last_update": "2026-11-05T06:41:14.067Z",
+      "last_update": "2026-11-05T07:14:43.840Z",
       "claim_count": 2,
       "events": [
         {
@@ -227600,21 +228058,227 @@
     },
     "national-1898": {
       "cluster_id": 1898,
-      "headline": "নিরাপত্তা ও মর্যাদা নিশ্চিত করে মিয়ানমারে ফিরতে চায় রোহিঙ্গারা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী",
+      "first_seen": "2026-11-05T07:14:43.823Z",
+      "last_update": "2026-11-05T07:14:43.826Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T06:26:26.000Z",
+          "kind": "evidence",
+          "claim_id": 813883,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxNWEZxdE9sQ3NCX09fMXJwcWhENjZ1MzZSRC1RRGdWRmpLLVlibjIwWUdiNHRmVkZDRVBGazluTGFHY2tFMnNfSm9yQW9mejMwVnFhcU10SHF3QXZOeE1oYlE1SmQxdzg4akk3N2h2bFBEbjNXSk9jRUYyZExLQ3kyam9xZTVFXzNocW02Vi1tSmpWbFItaHJtcGpiUWhtdDhnaTdlQ2puY1BWZFRjSEJmR05HOHZrMU1yLXdjMDR3QkREREQ5WWFiQkpnVXUtY2RHNHhBeEo1THVBb3FHTHZOSXNKUGVpRUlFVFhtamFEemg2U2hwX1pyQmtubmRiSmdkWkdIWXUzTkp4aXROZWFjTk80cFRYclFUdVhfMHI4b3dTUnhqZ2EzRExCa3loTkVqWDNSMXFCLS05QW1fV0NVRV81Q0xNRFM0cUQwU2dRUXQxQkY0aWpFM2Q4Y19rSVA4cS03WUp3d0dCcjBBRklsNVQzS2I5OHRENUpsa1FGZWNCZ2JXU2RXbDZqOEhCUUxqVG1WUWd4QlNjVWt6dzhoQlpuUlI0QkphbkVwREFHY2JhYk9TTjVMT0FCbHg1eWhuX1NpQkVocEFuSF9jZ21fd1pzZDFFRFpTTGRjUDNmNzZyZzRpTG5EMHp4cVN5UTlJUFNhcVJmZVhJdnJiMW5NR1kyYS1EZzhSVjRPaVV0WG1pMG16eDlPbGVxcXZRdC1hM2prUEgxS2Q2VVlNQmtPTnQzLUtBS1E1NUE3dzhtWldma3BWcDYzTThBNlBhWG96cXJIUGZXRG83LUwweWdUUdIB5gRBVV95cUxPd3lqbXUwVUczRFhLRUtEY09IOVVCTlI5Qjlrc215ckRDLXlHQmhTckxObEFZdEU3NnlRQnp0UGkxRVhmbGppV0Mxbm5rS0xHUkhZSU1DTlJzTXlEUjgtLUNiV29OWlhzeGJiOXlUZDBDaUdiSTJsUDRXSWxXbFBkOW44aGFHWE9GWnN4SmFYdXB2REVBS0tWWmozSGVLXzF4YXZsZWptVDFWdUNoaHFBSE1YVmlLVDh4NmIxdUxNamJkVUxmQVF5TEFzUVNMZndhZkNuem5xTDJGZFRQNXhvbjhmTjdyeVpNS2xHM014MW9YT2FqUXNveWNkY0MyakRqUF9QbUJSV0F2TWQxSU1ZTUFNeS0tVm5taWZIQzBkNm0zNmx0bkdHODNvOV9adkc2UU93LXY5Q0FncGF4ckI0VjJ0NXpDa0RvZUM4ZktvSE9BTDZaOFNxdU9sU0hrUU1TMnVVZC1GOWlvN0lKMmlZTUNwMUJLamJxSmE4T1pZRTZPaXJTM3JVdU52bVUzdFBqeGM3UVRGNWpNRmM2R21xVXRzQkE4aVg3a3k1eHByM3Fjc1d1Y0pLVEo0Z3VoYlZaY3dPUWJnZy14aGc2ZkdHZnhIaTF6ZmNCa0MyaDJHdVRteXRlVEsyZ012V2VYN3VsWkFWZEZ4a2RWakJLRGhyN2RpSkVOX0JhVWxsbjhVdVpha3NnVEdtaWdaRjlYQm54blB1d2RIS3hQLUlTWTg3cmdNd05sYnFqVDdZdmZlQm0yWEM4dVFKcDhhcG9zM0FQS01nMVNZd05DUjY1ZGJPLUUtQVN2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:26:26.000Z",
+          "kind": "evidence",
+          "claim_id": 813884,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত সরাসরি সড়ক ও শিল্পাঞ্চল রুটের ঘোষণা",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxNWEZxdE9sQ3NCX09fMXJwcWhENjZ1MzZSRC1RRGdWRmpLLVlibjIwWUdiNHRmVkZDRVBGazluTGFHY2tFMnNfSm9yQW9mejMwVnFhcU10SHF3QXZOeE1oYlE1SmQxdzg4akk3N2h2bFBEbjNXSk9jRUYyZExLQ3kyam9xZTVFXzNocW02Vi1tSmpWbFItaHJtcGpiUWhtdDhnaTdlQ2puY1BWZFRjSEJmR05HOHZrMU1yLXdjMDR3QkREREQ5WWFiQkpnVXUtY2RHNHhBeEo1THVBb3FHTHZOSXNKUGVpRUlFVFhtamFEemg2U2hwX1pyQmtubmRiSmdkWkdIWXUzTkp4aXROZWFjTk80cFRYclFUdVhfMHI4b3dTUnhqZ2EzRExCa3loTkVqWDNSMXFCLS05QW1fV0NVRV81Q0xNRFM0cUQwU2dRUXQxQkY0aWpFM2Q4Y19rSVA4cS03WUp3d0dCcjBBRklsNVQzS2I5OHRENUpsa1FGZWNCZ2JXU2RXbDZqOEhCUUxqVG1WUWd4QlNjVWt6dzhoQlpuUlI0QkphbkVwREFHY2JhYk9TTjVMT0FCbHg1eWhuX1NpQkVocEFuSF9jZ21fd1pzZDFFRFpTTGRjUDNmNzZyZzRpTG5EMHp4cVN5UTlJUFNhcVJmZVhJdnJiMW5NR1kyYS1EZzhSVjRPaVV0WG1pMG16eDlPbGVxcXZRdC1hM2prUEgxS2Q2VVlNQmtPTnQzLUtBS1E1NUE3dzhtWldma3BWcDYzTThBNlBhWG96cXJIUGZXRG83LUwweWdUUdIB5gRBVV95cUxPd3lqbXUwVUczRFhLRUtEY09IOVVCTlI5Qjlrc215ckRDLXlHQmhTckxObEFZdEU3NnlRQnp0UGkxRVhmbGppV0Mxbm5rS0xHUkhZSU1DTlJzTXlEUjgtLUNiV29OWlhzeGJiOXlUZDBDaUdiSTJsUDRXSWxXbFBkOW44aGFHWE9GWnN4SmFYdXB2REVBS0tWWmozSGVLXzF4YXZsZWptVDFWdUNoaHFBSE1YVmlLVDh4NmIxdUxNamJkVUxmQVF5TEFzUVNMZndhZkNuem5xTDJGZFRQNXhvbjhmTjdyeVpNS2xHM014MW9YT2FqUXNveWNkY0MyakRqUF9QbUJSV0F2TWQxSU1ZTUFNeS0tVm5taWZIQzBkNm0zNmx0bkdHODNvOV9adkc2UU93LXY5Q0FncGF4ckI0VjJ0NXpDa0RvZUM4ZktvSE9BTDZaOFNxdU9sU0hrUU1TMnVVZC1GOWlvN0lKMmlZTUNwMUJLamJxSmE4T1pZRTZPaXJTM3JVdU52bVUzdFBqeGM3UVRGNWpNRmM2R21xVXRzQkE4aVg3a3k1eHByM3Fjc1d1Y0pLVEo0Z3VoYlZaY3dPUWJnZy14aGc2ZkdHZnhIaTF6ZmNCa0MyaDJHdVRteXRlVEsyZ012V2VYN3VsWkFWZEZ4a2RWakJLRGhyN2RpSkVOX0JhVWxsbjhVdVpha3NnVEdtaWdaRjlYQm54blB1d2RIS3hQLUlTWTg3cmdNd05sYnFqVDdZdmZlQm0yWEM4dVFKcDhhcG9zM0FQS01nMVNZd05DUjY1ZGJPLUUtQVN2UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T06:41:49.000Z",
+          "kind": "evidence",
+          "claim_id": 813883,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/khulna/978937/%E0%A6%AE%E0%A7%8B%E0%A6%82%E0%A6%B2%E0%A6%BE-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AA%E0%A6%9E%E0%A7%8D%E0%A6%9A%E0%A6%97%E0%A7%9C-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A6%B8%E0%A7%9C%E0%A6%95-%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%93"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.165Z",
+          "kind": "claim",
+          "claim_id": 813883,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.168Z",
+          "kind": "claim",
+          "claim_id": 813884,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত সরাসরি সড়ক ও শিল্পাঞ্চল রুটের ঘোষণা"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813883,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813884,
+          "claim_text": "মোংলা থেকে পঞ্চগড় পর্যন্ত সরাসরি সড়ক ও শিল্পাঞ্চল রুটের ঘোষণা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1903,
+          "slug": "opinion-1903",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1602,
+          "slug": "national-1602",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রোহিঙ্গা সংকট সমাধানে চীনের সহযোগিতা চাইলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1818,
+          "slug": "national-1818",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
+        },
+        {
+          "cluster_id": 1592,
+          "slug": "national-1592",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সচিবালয়ের জন্য নির্ধারিত জমি বিষয়ে সড়ক অবরোধ, কী চান শেকৃবি শিক্ষার্থীরা?"
+        },
+        {
+          "cluster_id": 1238,
+          "slug": "national-1238",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্দোলনে কারখানা ছুটি, কালিয়াকৈরে তুরাগ নদে মাছ ধরতে গিয়ে পোশাকশ্রমিকের মৃত্যু"
+        },
+        {
+          "cluster_id": 901,
+          "slug": "national-901",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "তাহসিফ সাউরির মৃত্যুর ঘটনায় চার দিনের রিমান্ডে বান্ধবী জেরিকা"
+        }
+      ]
     },
     "national-1899": {
       "cluster_id": 1899,
-      "headline": "বসুন্ধরা টেকনিক্যাল ইনস্টিটিউটে নবীন শিক্ষার্থীদের ওরিয়েন্টেশন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+      "first_seen": "2026-11-05T07:14:43.843Z",
+      "last_update": "2026-11-05T07:14:43.848Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T00:24:34.000Z",
+          "kind": "evidence",
+          "claim_id": 813885,
+          "claim_text": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%af%e0%a6%be%e0%a6%a4%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%ac%e0%a6%be%e0%a7%9c%e0%a7%80%e0%a6%b0-%e0%a6%b9%e0%a6%a4%e0%a7%8d%e0%a6%af%e0%a6%be-%e0%a6%ae%e0%a6%be%e0%a6%ae%e0%a6%b2%e0%a6%be%e0%a7%9f/"
+          }
+        },
+        {
+          "ts": "2026-11-05T00:24:34.000Z",
+          "kind": "evidence",
+          "claim_id": 813886,
+          "claim_text": "যাত্রাবাড়ীর হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/%e0%a6%af%e0%a6%be%e0%a6%a4%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%ac%e0%a6%be%e0%a7%9c%e0%a7%80%e0%a6%b0-%e0%a6%b9%e0%a6%a4%e0%a7%8d%e0%a6%af%e0%a6%be-%e0%a6%ae%e0%a6%be%e0%a6%ae%e0%a6%b2%e0%a6%be%e0%a7%9f/"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:09:44.000Z",
+          "kind": "evidence",
+          "claim_id": 813885,
+          "claim_text": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/rajib-ghosh-was-released-at-midnight-iqbal-sobhan-was-arrested-in-connection-with-the-july-murder-case/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.171Z",
+          "kind": "claim",
+          "claim_id": 813885,
+          "claim_text": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.175Z",
+          "kind": "claim",
+          "claim_id": 813886,
+          "claim_text": "যাত্রাবাড়ীর হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813885,
+          "claim_text": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813886,
+          "claim_text": "যাত্রাবাড়ীর হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1882,
+          "slug": "national-1882",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গ্রেপ্তারি পরোয়ানার পর আত্মসমর্পণ করতে আদালতে পরীমনি"
+        },
+        {
+          "cluster_id": 451,
+          "slug": "national-451",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিশ্ব স্ট্রোক দিবসে এভারকেয়ার চট্টগ্রামে পেশেন্ট ফোরাম ও র্যালি"
+        }
+      ]
     },
     "national-19": {
       "cluster_id": 19,
@@ -227905,38 +228569,214 @@
     },
     "national-1900": {
       "cluster_id": 1900,
-      "headline": "দুর্গাপূজায় সার্বিক নিরাপত্তা নিশ্চিত করাকে সর্বোচ্চ গুরুত্ব দেওয়া হয়েছে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "অন্তর্বর্তী সরকারের সময় হামের টিকার অনিয়ম তদন্তে কমিশন গঠন",
+      "first_seen": "2026-11-05T07:14:44.378Z",
+      "last_update": "2026-11-05T07:14:44.381Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T07:04:05.000Z",
+          "kind": "evidence",
+          "claim_id": 813887,
+          "claim_text": "অন্তর্বর্তী সরকারের সময় হামের টিকার অনিয়ম তদন্তে কমিশন গঠন",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/government-sets-up-commission-to-investigate-irregularities-in-measles-vaccination-during-the-interim-governments-tenure/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.180Z",
+          "kind": "claim",
+          "claim_id": 813887,
+          "claim_text": "অন্তর্বর্তী সরকারের সময় হামের টিকার অনিয়ম তদন্তে কমিশন গঠন"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813887,
+          "claim_text": "অন্তর্বর্তী সরকারের সময় হামের টিকার অনিয়ম তদন্তে কমিশন গঠন",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1901": {
       "cluster_id": 1901,
-      "headline": "১৮ বছরের অভিজ্ঞতার শর্ত বাতিলের রায় স্থগিত, মৌখিক পরীক্ষায় অংশ নিতে বাধা নেই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+      "first_seen": "2026-11-05T07:14:44.384Z",
+      "last_update": "2026-11-05T07:14:44.386Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:59:41.000Z",
+          "kind": "evidence",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/3-individuals-of-bangladeshi-origin-win-in-us-midterm-elections/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.183Z",
+          "kind": "claim",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1902": {
       "cluster_id": 1902,
-      "headline": "৯—১৫ অক্টোবর সপ্তাহের সেরা ১০ সরকারি চাকরি কোনগুলো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+      "first_seen": "2026-11-05T07:14:44.388Z",
+      "last_update": "2026-11-05T07:14:44.390Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:55:07.000Z",
+          "kind": "evidence",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/qlnxkik6py"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.187Z",
+          "kind": "claim",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813889,
+          "claim_text": "বই কিনতেন ভাগাভাগি করে, একজন পড়েন ঢাকা, আরেকজন জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
+    },
+    "national-1903": {
+      "cluster_id": 1903,
+      "headline": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+      "first_seen": "2026-11-05T07:14:44.392Z",
+      "last_update": "2026-11-05T07:14:44.394Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:49:10.000Z",
+          "kind": "evidence",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/venergy-infrastructure-will-be-developed-from-mongla-to-the-northern-region-prime-minister/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.189Z",
+          "kind": "claim",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1602,
+          "slug": "national-1602",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রোহিঙ্গা সংকট সমাধানে চীনের সহযোগিতা চাইলেন প্রধানমন্ত্রী"
+        }
+      ]
     },
     "national-1904": {
       "cluster_id": 1904,
-      "headline": "আসুসের নতুন গেমিং ল্যাপটপ বাজারে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+      "first_seen": "2026-11-05T07:14:44.396Z",
+      "last_update": "2026-11-05T07:14:44.398Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:43:10.000Z",
+          "kind": "evidence",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/56q1jrolyl"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.192Z",
+          "kind": "claim",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813891,
+          "claim_text": "খুলনার ইন্দ্রমোহন সুইটসের ১৩৬ বছরের ঐতিহ্যবাহী মিষ্টি, বিশেষত্ব কী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1905": {
@@ -230112,14 +230952,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -230134,6 +230966,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -243480,14 +244320,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -243510,6 +244342,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -250949,14 +251789,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -250979,6 +251811,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -252244,6 +253084,14 @@
           "headline": "মোংলায় পৌঁছেছেন প্রধানমন্ত্রী, সই করবেন ৪,০৬৮ কোটি টাকার প্রকল্পে"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -252258,14 +253106,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1560,
-          "slug": "national-1560",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
         }
       ]
     },
@@ -253787,7 +254627,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -261561,6 +262401,14 @@
           "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -261583,14 +262431,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1731,
-          "slug": "national-1731",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আগামী বছর ঈদুল ফিতর-আজহা ও পূজায় ছুটি থাকবে কয়দিন"
         }
       ]
     },
@@ -267827,6 +268667,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, খান-আলী-আতার আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1875,
           "slug": "politics-1875",
           "actor_links": 0,
@@ -267857,14 +268705,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সপ্তাহজুড়ে তিন বিভাগে বৃষ্টির আভাস, কমবে রাতের তাপমাত্রা"
-        },
-        {
-          "cluster_id": 1717,
-          "slug": "national-1717",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রাথমিক শিক্ষা উন্নয়নে ৪১ হাজার কোটি টাকার প্রকল্প অনুমোদন"
         }
       ]
     },
@@ -280321,6 +281161,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1899,
+          "slug": "national-1899",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মধ্যরাতে মুক্ত রাজীব ঘোষ, জুলাইয়ের হত্যা মামলায় গ্রেপ্তার ইকবাল সোবহান"
+        },
+        {
           "cluster_id": 1882,
           "slug": "national-1882",
           "actor_links": 0,
@@ -280696,6 +281544,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -280734,14 +281590,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 803,
-          "slug": "opinion-803",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "কুমিল্লায় অস্ত্র হাতে ভিডিও ভাইরাল, ‘এসবিএস’ গ্রুপের ৪ সদস্য গ্রেপ্তার"
         }
       ]
     },
@@ -281908,6 +282756,14 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -281930,14 +282786,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সরকারে থাকুক বা বাইরে, বাংলাদেশের সব দলের সঙ্গে সম্পর্ক চায় চীন: লিউ হাইসিং"
-        },
-        {
-          "cluster_id": 1792,
-          "slug": "national-1792",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্রের মধ্যবর্তী নির্বাচনে ইতিহাস গড়লেন যাঁরা"
         }
       ]
     },
@@ -293130,14 +293978,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -293152,6 +293992,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -295222,12 +296070,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -297277,12 +298125,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -298742,6 +299590,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1634,
           "slug": "tech-1634",
           "actor_links": 0,
@@ -298780,14 +299636,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -302507,14 +303355,6 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -302537,6 +303377,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         }
       ]
     },
@@ -308911,6 +309759,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -308949,14 +309805,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -313156,8 +314004,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -314484,12 +315332,12 @@
           "headline": "কিশোরগঞ্জে সাবেক এমপি মেজর (অব.) মোহাম্মদ আখতারুজ্জামানের ছেলেকে ছুরিকাঘাত"
         },
         {
-          "cluster_id": 1843,
-          "slug": "national-1843",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আজ খুলনা ও বাগেরহাট সফরে যাচ্ছেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -315803,12 +316651,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -316983,6 +317831,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -317021,14 +317877,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -317603,20 +318451,20 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1772,
+          "slug": "sports-1772",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
         }
       ]
     },
@@ -318978,6 +319826,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -319016,14 +319872,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -319582,14 +320430,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -319612,6 +320452,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -319990,6 +320838,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -320028,14 +320884,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 698,
-          "slug": "national-upl-s-banglabazar",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
         }
       ]
     },
@@ -322322,8 +323170,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1693,
@@ -322817,14 +323665,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -322839,6 +323679,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -323354,7 +324202,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -323489,7 +324337,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -325297,6 +326145,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -325335,14 +326191,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুমিল্লায় অস্ত্র হাতে ভিডিও ভাইরাল, ‘এসবিএস’ গ্রুপের ৪ সদস্য গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -325600,14 +326448,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -325630,6 +326470,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -330195,6 +331043,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1634,
           "slug": "tech-1634",
           "actor_links": 0,
@@ -330233,14 +331089,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -335641,6 +336489,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -335671,14 +336527,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
-        },
-        {
-          "cluster_id": 1553,
-          "slug": "national-1553",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "রিপাবলিকানদের হারিয়ে সিনেটের নিয়ন্ত্রণ ডেমোক্র্যাটদের হাতে"
         }
       ]
     },
@@ -336670,7 +337518,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 3,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -336778,14 +337626,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -336808,6 +337648,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -344740,14 +345588,6 @@
           "headline": "দেশে ৪৬ লাখের বেশি মামলা বিচারাধীন: আইনমন্ত্রী"
         },
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -344762,6 +345602,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         },
         {
           "cluster_id": 1881,
@@ -347120,6 +347968,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -347158,14 +348014,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 698,
-          "slug": "national-upl-s-banglabazar",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
         }
       ]
     },
@@ -350119,7 +350967,7 @@
           "slug": "national-1870",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 11,
+          "claim_count": 12,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         },
         {
@@ -350314,6 +351162,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -350352,14 +351208,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 698,
-          "slug": "national-upl-s-banglabazar",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হাইকোর্টে আখতারুজ্জামানের জামিন আবেদন"
         }
       ]
     },
@@ -351544,7 +352392,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T05:29:36.140Z",
+      "last_update": "2026-11-05T07:14:43.851Z",
       "claim_count": 3,
       "events": [
         {
@@ -352112,6 +352960,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -352150,14 +353006,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -352670,7 +353518,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T05:29:36.140Z",
+      "last_update": "2026-11-05T07:14:43.851Z",
       "claim_count": 3,
       "events": [
         {
@@ -354207,14 +355055,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -354237,6 +355077,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -356311,8 +357159,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1843,
@@ -358467,21 +359315,98 @@
     },
     "opinion-1901": {
       "cluster_id": 1901,
-      "headline": "প্রাচীন সাহিত্যে নিবেদিতপ্রাণ এক কবি-সাধকের নোবেল–যাত্রা: অ্যান কারসন ও তাঁর লাল ডানার কথকতা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+      "first_seen": "2026-11-05T07:14:44.384Z",
+      "last_update": "2026-11-05T07:14:44.386Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:59:41.000Z",
+          "kind": "evidence",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/3-individuals-of-bangladeshi-origin-win-in-us-midterm-elections/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.183Z",
+          "kind": "claim",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813888,
+          "claim_text": "মার্কিন মধ্যবর্তী নির্বাচনে জয়ী ৩ বাংলাদেশি বংশোদ্ভূত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "opinion-1903": {
       "cluster_id": 1903,
-      "headline": "অর্থনীতির বাস্তব চিত্র উঠে এসেছে, প্রয়োজন সংস্কার বাস্তবায়ন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+      "first_seen": "2026-11-05T07:14:44.392Z",
+      "last_update": "2026-11-05T07:14:44.394Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T06:49:10.000Z",
+          "kind": "evidence",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/venergy-infrastructure-will-be-developed-from-mongla-to-the-northern-region-prime-minister/"
+          }
+        },
+        {
+          "ts": "2026-11-05T07:36:02.189Z",
+          "kind": "claim",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী"
+        },
+        {
+          "ts": "2026-11-05T07:36:02.306Z",
+          "kind": "verify",
+          "claim_id": 813890,
+          "claim_text": "মোংলা থেকে উত্তরাঞ্চল পর্যন্ত জ্বালানি অবকাঠামো গড়ে তোলা হবে: প্রধানমন্ত্রী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 1602,
+          "slug": "national-1602",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রোহিঙ্গা সংকট সমাধানে চীনের সহযোগিতা চাইলেন প্রধানমন্ত্রী"
+        }
+      ]
     },
     "opinion-1996": {
       "cluster_id": 1996,
@@ -361116,14 +362041,6 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
-          "cluster_id": 1877,
-          "slug": "national-1877",
-          "actor_links": 1,
-          "source_links": 0,
-          "claim_count": 1,
-          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
-        },
-        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -361146,6 +362063,14 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        },
+        {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
         }
       ]
     },
@@ -361897,6 +362822,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 1752,
           "slug": "national-1752",
           "actor_links": 0,
@@ -361935,14 +362868,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ডিজিটাল সেবার অভিজ্ঞতায় নতুন মাত্রা যোগ করতে আসছে বাংলালিংকের ‘মুক্ত’"
-        },
-        {
-          "cluster_id": 587,
-          "slug": "national-587",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         }
       ]
     },
@@ -363374,14 +364299,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -363404,6 +364321,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -370589,14 +371514,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -370611,6 +371528,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -370693,6 +371618,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 952,
           "slug": "national-952",
           "actor_links": 0,
@@ -370731,14 +371664,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -372044,12 +372969,12 @@
           "headline": "প্রি-পেইড মিটারে রিচার্জ বন্ধ থাকতে পারে টানা ২৪ ঘণ্টা, গ্রাহকদের জরুরি নির্দেশনা"
         },
         {
-          "cluster_id": 1843,
-          "slug": "national-1843",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "আজ খুলনা ও বাগেরহাট সফরে যাচ্ছেন প্রধানমন্ত্রী"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -374859,7 +375784,7 @@
       "cluster_id": 1891,
       "headline": "মোংলায় পৌঁছেছেন প্রধানমন্ত্রী, সই করবেন ৪,০৬৮ কোটি টাকার প্রকল্পে",
       "first_seen": "2026-11-05T06:41:14.055Z",
-      "last_update": "2026-11-05T06:41:14.058Z",
+      "last_update": "2026-11-05T07:14:43.833Z",
       "claim_count": 2,
       "events": [
         {
@@ -386307,12 +387232,12 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
-          "cluster_id": 1832,
-          "slug": "national-1832",
+          "cluster_id": 1898,
+          "slug": "national-1898",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
         }
       ]
     },
@@ -386651,6 +387576,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -386689,14 +387622,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -392192,8 +393117,8 @@
           "slug": "national-1889",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "নাসির উদ্দিনের মামলায় জামিন পেলেন পরীমনি"
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
         },
         {
           "cluster_id": 1843,
@@ -392905,14 +393830,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -392935,6 +393852,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -396498,6 +397423,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1898,
+          "slug": "national-1898",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোংলা থেকে পঞ্চগড় পর্যন্ত হবে সড়ক যোগাযোগ ও শিল্পাঞ্চল রুট: প্রধানমন্ত্রী"
+        },
+        {
           "cluster_id": 1818,
           "slug": "national-1818",
           "actor_links": 0,
@@ -396536,14 +397469,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ঘূর্ণিঝড় মুরাসু: সমুদ্রবন্দরগুলোতে ২ নম্বর দূরবর্তী হুঁশিয়ারি সংকেত"
-        },
-        {
-          "cluster_id": 760,
-          "slug": "national-760",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "টাঙ্গাইলে শিশুকে ধর্ষণচেষ্টা ও মুখ থেঁতলে দেওয়ার ঘটনায় অভিযুক্ত গ্রেপ্তার"
         }
       ]
     },
@@ -398941,14 +399866,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -398963,6 +399880,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -399136,12 +400061,12 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
+          "cluster_id": 1832,
+          "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
+          "claim_count": 11,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         }
       ]
     },
@@ -407229,14 +408154,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -407251,6 +408168,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
@@ -408800,20 +409725,20 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1772,
+          "slug": "sports-1772",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
         }
       ]
     },
@@ -410229,14 +411154,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -410259,6 +411176,14 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
+        },
+        {
+          "cluster_id": 1725,
+          "slug": "politics-1725",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্পাঞ্চলে অস্থিরতা সমাধানে সরকার ও মালিকপক্ষকে উদ্যোগী হতে বললেন শফিকুর রহমান"
         }
       ]
     },
@@ -414423,6 +415348,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1889,
+          "slug": "national-1889",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আদালতে আত্মসমর্পণের পর জামিন পেলেন পরীমনি"
+        },
+        {
           "cluster_id": 952,
           "slug": "national-952",
           "actor_links": 0,
@@ -414461,14 +415394,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, তিনজনের আমৃত্যু কারাদণ্ড"
-        },
-        {
-          "cluster_id": 62,
-          "slug": "national-62",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         }
       ]
     },
@@ -415243,14 +416168,6 @@
           "headline": "রাশিয়াসহ ১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমতি ছাড়া ছাড়পত্র নয়"
         },
         {
-          "cluster_id": 1850,
-          "slug": "sports-1850",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেট টেস্ট: টসে হেরে ফিল্ডিংয়ে বাংলাদেশ, একাদশে আছেন কারা"
-        },
-        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -415265,6 +416182,14 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ভারত ম্যাচের আগে পাকিস্তানের অনুশীলন বাতিল, বাংলাদেশের সমর্থন চান অধিনায়ক!"
+        },
+        {
+          "cluster_id": 1744,
+          "slug": "national-1744",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "এটি পরিকল্পিত রাজনৈতিক সহিংসতা, ষড়যন্ত্র ও রাষ্ট্রবিরোধী অপচেষ্টা: স্বরাষ্ট্রমন্ত্রী"
         }
       ]
     },
