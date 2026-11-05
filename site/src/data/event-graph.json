@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6767,
+    "storyCount": 6771,
     "kinds": [
       "claim",
       "evidence",
@@ -218,6 +218,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1792,
           "slug": "national-1792",
           "actor_links": 0,
@@ -248,14 +256,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 1676,
-          "slug": "national-1676",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আশুলিয়ায় ভাড়া বাসা থেকে পোশাকশ্রমিকের গলিত মরদেহ উদ্ধার"
         }
       ]
     },
@@ -9079,6 +9079,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -9117,14 +9125,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইউপি নির্বাচনের তালিকা যাচাই করে তথ্য পাঠাতে মাঠ কর্মকর্তাদের নির্দেশ"
-        },
-        {
-          "cluster_id": 1641,
-          "slug": "national-1641",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "নাসির উদ্দিনের মামলায় পরীমনির জামিন বাতিল, গ্রেপ্তারি পরোয়ানা জারি"
         }
       ]
     },
@@ -13257,7 +13257,7 @@
       "cluster_id": 1856,
       "headline": "১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমোদন বাধ্যতামূলক, ছাড়পত্র না দেওয়ার নির্দেশ",
       "first_seen": "2026-11-05T04:14:49.742Z",
-      "last_update": "2026-11-05T04:54:28.058Z",
+      "last_update": "2026-11-05T05:29:36.095Z",
       "claim_count": 2,
       "events": [
         {
@@ -13420,13 +13420,107 @@
       ],
       "related": []
     },
+    "economy-1877": {
+      "cluster_id": 1877,
+      "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+      "first_seen": "2026-11-05T05:29:36.609Z",
+      "last_update": "2026-11-05T05:29:36.622Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:58:24.000Z",
+          "kind": "evidence",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/v4tvev6agq"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.002Z",
+          "kind": "claim",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 647,
+          "slug": "opinion-647",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চাঁদে পারমাণবিক চুল্লি বসাতে যুক্তরাষ্ট্রের এত তাড়া কেন, প্রতিযোগিতায় রাশিয়া–চীনও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রের প্রথম ইউনিটে বিদ্যুৎ উৎপাদনের অনুমোদন"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        }
+      ]
+    },
     "economy-1879": {
       "cluster_id": 1879,
-      "headline": "ব্যাংক খাতের সংকট নিরসনে ৪ দফা সংস্কার প্রস্তাব হাসনাতের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+      "first_seen": "2026-11-05T05:29:36.658Z",
+      "last_update": "2026-11-05T05:29:36.671Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:14:25.000Z",
+          "kind": "evidence",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/roundtable/oz36cdp0nn"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.029Z",
+          "kind": "claim",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-188": {
@@ -23683,6 +23777,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -23721,14 +23823,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -25017,6 +25111,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1873,
+          "slug": "national-1873",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -25055,14 +25157,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রমিকদের বিক্ষোভে শ্রমমন্ত্রীর বিদেশ সফর বাতিল, মন্ত্রীদের নিয়ে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 659,
-          "slug": "national-659",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাড়ে সাত বছরের শিশুকে ধর্ষণ, অভিযুক্তের মুখ ও নাক থেঁতলে দেওয়া হলো"
         }
       ]
     },
@@ -26982,6 +27076,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -27020,14 +27122,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -29043,6 +29137,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -29081,14 +29183,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -38592,21 +38686,259 @@
     },
     "entertainment-1871": {
       "cluster_id": 1871,
-      "headline": "বাংলা একাডেমির নতুন ফন্ট ‘বাংলা একাডেমি ফন্ট’-এর উদ্বোধন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+      "first_seen": "2026-11-05T05:29:35.981Z",
+      "last_update": "2026-11-05T05:29:36.000Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T03:44:03.000Z",
+          "kind": "evidence",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgZBVV95cUxNMGNBU3V0R2ltbFFPMzVsNGx4MGxiaTluWlFDY3lmSVF0RFJKWDZrVlU0V1VpOVJLNUhsVUs1bzZ3c25md29TV3EwS1RKYk5Pd3dpdU9VY3kzc0J2TXN5b1Q0M0FIVjN3UFdTS2tmS1YyX0hBMHNqN3AwSDhaTlcwLXFfSXM1ejFXQzhxZ2N6V3BiLXpnRHpqeDFIWjVaMTVkbmgtdGpoU3R2YkZ3aDZiR3pVVk40Tlh0NVk3aVNZenNJNzJVMm9DTnRFWDNzQ093VDVlalJlcVdZMHRXc1lOQmtsWi16OVloazd0dnFNcFAzQzV4ZGx0Z0pHdEpWZWFlVVBXX0V6X0dPcGdjeDVxWTVfZnpyTVpDNTlFQUstSk1pMjl6UUQxV2l1a19WbHhkSWNIX0xybm5PaHBkWVprVTBnb2NiSElSX2VYMFVDaGNfUG05dW51MGFMR1pqeWltM2VJLTdCZ1dyRkVfWGVNZUZhQ0NCSzZ2YlFiYmhNa2doTXRLajNhNFVYS0phaEVPcFNPTnpiRTlDdDNPMEF6ZXltV013eGNXZlhrbUNYd2lSNzdfRE5RUXo5WWNxSEZDWEFpRVhfclh0VW5OSFc4dVI4cnMwRUNGSjZVRTRwWDRJQjI2cHB2UmVpQTNpSEE1bW84bjY4RFloZ3Y0MEhDZjctUEFEckQ2TzZuakp3cFRYU3A1QmFGVzFPMkxHSkdaUnhmUjF2WGtteGx5VXpiRlp0c0xyZEI1ZDFlN1RFaEU5QlhjbXFTSXQyZU5FSUUtVTBPUXVuRWNrSXg1a0RjSC1jdDhxVnZka25tbjJwaXNKYktucEJYNWQtVlNfLWNZLWJlZ0IwMjQyZHJOci1YNkN4ZGJraS1TOERwTUV2WHU5QzR5NENxeEhjaWNNbmdldjFRcks5QmQ5UzF5N19JMjBPTlVwU0hxRGZsdmIwYjNZaUdHeGsxbnQyTXJvOGp1cGY4dkg2am51QUw4ZWljZnVmS2EwOG9WSWpZMWlhZTVIc0tXcWJ6V21kZFk4VW1Cb1E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:11:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1SWVphZ1ZKbWJUeF91RUdoUXhnUmhEU3pWTFZCaHpoWGlJeTJLQ2duNU4wR0tEVXhrUHg0SnVwbkdKR1hDdC1VcC0yMHQ1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:11:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1SWVphZ1ZKbWJUeF91RUdoUXhnUmhEU3pWTFZCaHpoWGlJeTJLQ2duNU4wR0tEVXhrUHg0SnVwbkdKR1hDdC1VcC0yMHQ1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.824Z",
+          "kind": "claim",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.843Z",
+          "kind": "claim",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1783,
+          "slug": "national-1783",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হামের টিকা সংগ্রহ ও বিতরণে বিলম্বের অভিযোগ তদন্তে কমিশন"
+        },
+        {
+          "cluster_id": 1676,
+          "slug": "national-1676",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আশুলিয়ায় ভাড়া বাসা থেকে পোশাকশ্রমিকের গলিত মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 1560,
+          "slug": "national-1560",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
+        },
+        {
+          "cluster_id": 1553,
+          "slug": "national-1553",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিপাবলিকানদের হারিয়ে সিনেটের নিয়ন্ত্রণ ডেমোক্র্যাটদের হাতে"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
+        },
+        {
+          "cluster_id": 798,
+          "slug": "sports-798",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
+        }
+      ]
     },
     "entertainment-1875": {
       "cluster_id": 1875,
-      "headline": "মুম্বাইয়ে ফিল্ম সিটিতে আগুন, ‘রামায়ণ’-এর সেট নিয়ে যা জানা গেল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+      "first_seen": "2026-11-05T05:29:36.102Z",
+      "last_update": "2026-11-05T05:29:36.120Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T23:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi6wRBVV95cUxNSVhpVDFjampkUTdmd3F3ZWhPRnl1T2NEdDh4dW9XYlpJYVNJOERmNkRoVFBJMlE3STdDQ2E4TDNzZWcwVFNqUTBKaTV0OG9NX3pEbUVnMW5MZzBZRGk2SkRnb2gwbUU1OUJhdy1KbWpyTGFNeF9LbWEyd3czS2tXRGFNNjVGS2VyZmNNVlBIeTh5UXZGaGc0d0E5UGRpSlI4V3E1cW0zd3pMUjBseExSZnhReTEtdzBORW1FR01ySk1RQU8tSDJhM3AtcDJya0p6VjIyQ2RCcElldzFrMkpwazNnSHFrVDl0UGx0aWUyRHlORHNoczJPbW5DaVJRNV94RUVBcWc5WWJ5VWs1X1NlYWtZWTVKcWJPNWVOTmt3MkhIUkhfMTd0NG5aenNzRlQ3bWc0U3p2RG04VWozNWNscFQzZzZLbDl4UXZMeUVKbVg1RWRadjRZQjl3WHI5dXEwZTFPVnZXWVNJSDdib2RBRF9nYV9NS0pjZ1A5a0lOQlZlalZBR3JVdHRuUDR6Qmc5aEdUaHV4c01SWkNQZnBPdHVOOWZhT1BEa1hsamlEWHNNdFZNSXBKWi1sS21JSU1naUtRUUhhd2pUQ2hiWWJRNzJyb01zb05tLVg2LWIwQUg3YzhVbTNzQWdRQUNhbmo4LXI3Z01JZlh4NU9pc3c3dXBhemZKdE43TUZrMEtJUmZZcDlDWVN2RXJJRVJRTm1xbjhHZ1BheXRIWFd1WHEtdktkNmppb2JHSWZVMUh3QU9OZzg4VmNEUkdrY0lZcWF3Yk5XS0YtdXpBb1hYa1VLS3U0aG81RHVwYXlR0gHwBEFVX3lxTE50UFNRdm5KTnE0VW5fMU9RRDhDVURqQzJBX3Fhd0xFNGFIb29PSWhUWUJmMms4RkdJWXU4MEpYaFZDX3dsdnBDUlh3SnVQVkZPQzdjOXgtRlVNdWszWjJoZk45Vjg0Y0M5Tnp0Q3NGamJKZkNSSzI1bi1neUdSLTZ5eUJOenY4RTl3NVBNejhJQTN0ZGpnUFZORGM3clJvWG9tWFA1eDJXblZUeHRDbDZOSUdDVUlHdGthdlJLSzA5RV9MZDdfdW02V1RPamRHX3VLNXFpWFgyTHdVUGxNS0cxMl83S3M0Y2U0Qlk5ZEU2TDNKWDN0UFZFQTY4eUpOcDlzaDgzR0NJY2JiYTZYckVTb2dtcFZzSlpYZGFUazB0bUw5NC1uSUNxblhwVlRtWE4zU1ZEaDEteUU1UzhFcU1MS0dET3BsVDFkcW9jT3BQZUF3ZkRzdGZmWnJPQlFMMjRvRG9TZ21uSFBJUFhMN3VpRG94TUYzRmlJclR4NWtVSDZDQURxZ0phazAxWWFaUmNoM2F5Ym44cDVFZlZVOG1wQkgzTmczN2YzYVZiSnhfM2VIOG1zcWYxaEJaWXJzLWFTZFZaWkphM0RHempsZVRobV9Wb3BxVVdoem1kYW1aUWc2ZmVfSjlMaXFYdDZUUUhyNVBxNnk5THlqeWRCUDB5UUNYZmJoUVItVElMQ3ZrZDRRdWE0cEc0RXBRNlpVelN3eGV5Z1VUWUdPMVB4SmJsaUJMRTExdWxNaUtZc1dfWF9YdHo5NTExeDI1Ql9QNTNBUmtFTTBJbWlVb3lxb2pWd3RYTGY5d1daRm82b01nUg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.952Z",
+          "kind": "claim",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.975Z",
+          "kind": "claim",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1500,
+          "slug": "national-1500",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণের পরিকল্পনা এগিয়ে নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1427,
+          "slug": "national-1427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
+        },
+        {
+          "cluster_id": 1409,
+          "slug": "national-1409",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শেখ হাসিনা ও সাবেক স্বরাষ্ট্রমন্ত্রীর সম্পত্তি নিয়ন্ত্রণে নিতে স্বরাষ্ট্র মন্ত্রণালয়ে প্রসিকিউশনের চিঠি"
+        },
+        {
+          "cluster_id": 1396,
+          "slug": "national-1396",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শপথ নিলেন নবনির্বাচিত সংসদ সদস্য মির্জা ফয়সল আমীন ও এলিজা জামান"
+        },
+        {
+          "cluster_id": 1255,
+          "slug": "national-alaska-governor-orders",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
+        },
+        {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        }
+      ]
     },
     "entertainment-1883": {
       "cluster_id": 1883,
@@ -43620,6 +43952,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -43658,14 +43998,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 798,
-          "slug": "sports-798",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -43897,6 +44229,14 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -43911,14 +44251,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গার্মেন্টস শ্রমিকদের মজুরি নির্ধারণে প্রথম সভা"
-        },
-        {
-          "cluster_id": 1783,
-          "slug": "national-1783",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের টিকা সংগ্রহ ও বিতরণে বিলম্বের অভিযোগ তদন্তে কমিশন"
         }
       ]
     },
@@ -47535,6 +47867,14 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -47557,14 +47897,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
-        },
-        {
-          "cluster_id": 1832,
-          "slug": "national-1832",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 17,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         }
       ]
     },
@@ -49565,6 +49897,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -49603,14 +49943,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -54748,6 +55080,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1792,
           "slug": "national-1792",
           "actor_links": 0,
@@ -54778,14 +55118,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 1676,
-          "slug": "national-1676",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আশুলিয়ায় ভাড়া বাসা থেকে পোশাকশ্রমিকের গলিত মরদেহ উদ্ধার"
         }
       ]
     },
@@ -81534,7 +81866,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1874,
+          "slug": "national-1874",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প"
+        }
+      ]
     },
     "international-1851": {
       "cluster_id": 1851,
@@ -81861,30 +82202,745 @@
     },
     "international-1870": {
       "cluster_id": 1870,
-      "headline": "জুলাইয়ের ‘মানবতাবিরোধী অপরাধ’: সাবেক মন্ত্রী-উপদেষ্টাদের বিরুদ্ধে অভিযোগপত্র ‘প্রায় প্রস্তুত’",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+      "first_seen": "2026-11-05T05:29:35.906Z",
+      "last_update": "2026-11-05T05:29:35.974Z",
+      "claim_count": 10,
+      "events": [
+        {
+          "ts": "2026-11-04T17:07:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/world/zib1sdd7v0"
+          }
+        },
+        {
+          "ts": "2026-11-04T17:07:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/world/zib1sdd7v0"
+          }
+        },
+        {
+          "ts": "2026-11-04T22:22:54.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/qpkjxi0ltk"
+          }
+        },
+        {
+          "ts": "2026-11-04T22:22:54.000Z",
+          "kind": "evidence",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/qpkjxi0ltk"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/blwd5t55d6"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/blwd5t55d6"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/1iwxs7nz05"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/1iwxs7nz05"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/0sql2p6y2j"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/0sql2p6y2j"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:22:35.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cwp9g3jpkmnko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/personal-finance/ygjlxv7q9g"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/personal-finance/ygjlxv7q9g"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/1d5ymh18w9"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/1d5ymh18w9"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:52:34.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/9sl85fxh72"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:52:34.000Z",
+          "kind": "evidence",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/9sl85fxh72"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/cp8bx1g5w0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/cp8bx1g5w0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.632Z",
+          "kind": "claim",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.709Z",
+          "kind": "claim",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.722Z",
+          "kind": "claim",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.734Z",
+          "kind": "claim",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.747Z",
+          "kind": "claim",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.760Z",
+          "kind": "claim",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.773Z",
+          "kind": "claim",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.785Z",
+          "kind": "claim",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.798Z",
+          "kind": "claim",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.811Z",
+          "kind": "claim",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:54:48.237Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795077\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:54:48.248Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1832,
+          "slug": "national-1832",
+          "actor_links": 2,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 958,
+          "slug": "national-958",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "সেন্ট মার্টিনে ৩২ বছর ধরে অচল সরকারি বিদ্যুৎকেন্দ্র, বেসরকারি সৌরবিদ্যুতের দামও বাড়ছে"
+        },
+        {
+          "cluster_id": 583,
+          "slug": "politics-583",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
+        },
+        {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 24,
+          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        }
+      ]
+    },
+    "international-1872": {
+      "cluster_id": 1872,
+      "headline": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+      "first_seen": "2026-11-05T05:29:36.007Z",
+      "last_update": "2026-11-05T05:29:36.025Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T04:28:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978912/%E0%A6%AD%E0%A7%8B%E0%A6%9F%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0-%E0%A6%B9%E0%A7%87%E0%A6%97%E0%A6%B8%E0%A7%87%E0%A6%A5%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%B6%E0%A7%87-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%A4%E0%A6%AC%E0%A7%87-%E0%A6%85%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:28:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978912/%E0%A6%AD%E0%A7%8B%E0%A6%9F%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0-%E0%A6%B9%E0%A7%87%E0%A6%97%E0%A6%B8%E0%A7%87%E0%A6%A5%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%B6%E0%A7%87-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%A4%E0%A6%AC%E0%A7%87-%E0%A6%85%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978919/%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%A6%E0%A7%82%E0%A6%B0%E0%A6%A4%E0%A7%8D%E0%A6%AC-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.856Z",
+          "kind": "claim",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.874Z",
+          "kind": "claim",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
+    },
+    "international-1874": {
+      "cluster_id": 1874,
+      "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+      "first_seen": "2026-11-05T05:29:36.064Z",
+      "last_update": "2026-11-05T05:29:36.083Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T02:25:44.000Z",
+          "kind": "evidence",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/8csm0all09"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:25:44.000Z",
+          "kind": "evidence",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/8csm0all09"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:12:22.000Z",
+          "kind": "evidence",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/mdhybrtii-nirbaacne-dhaakkaa-ekhn-kii-krben-ttraamp"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.919Z",
+          "kind": "claim",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.940Z",
+          "kind": "claim",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1846,
+          "slug": "national-1846",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এখন কী করবেন ট্রাম্প"
+        }
+      ]
     },
     "international-1876": {
       "cluster_id": 1876,
-      "headline": "ভারতের সুপ্রিম কোর্টে স্বরাষ্ট্রসচিবের নিঃশর্ত ক্ষমাপ্রার্থনা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+      "first_seen": "2026-11-05T05:29:36.584Z",
+      "last_update": "2026-11-05T05:29:36.597Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/biology/0fa9dtj6q4"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.988Z",
+          "kind": "claim",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1877": {
       "cluster_id": 1877,
-      "headline": "হুমকির কারণে যুক্তরাজ্য থেকে মার্কিন বোমারু বিমান সরানো হয়েছে: ট্রাম্প",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+      "first_seen": "2026-11-05T05:29:36.609Z",
+      "last_update": "2026-11-05T05:29:36.622Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:58:24.000Z",
+          "kind": "evidence",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/v4tvev6agq"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.002Z",
+          "kind": "claim",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 647,
+          "slug": "opinion-647",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চাঁদে পারমাণবিক চুল্লি বসাতে যুক্তরাষ্ট্রের এত তাড়া কেন, প্রতিযোগিতায় রাশিয়া–চীনও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রের প্রথম ইউনিটে বিদ্যুৎ উৎপাদনের অনুমোদন"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        }
+      ]
     },
     "international-1882": {
       "cluster_id": 1882,
@@ -98167,6 +99223,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -98205,14 +99269,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -114154,19 +115210,19 @@
           "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1815,
           "slug": "national-1815",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
-          "headline": "হাসিনাকে সমর্থনের অভিযোগে বিশ্ববিদ্যালয়ের শিক্ষক-শিক্ষার্থীদের নির্বিচার শাস্তি দেওয়া হচ্ছে"
-        },
-        {
-          "cluster_id": 1762,
-          "slug": "politics-1762",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 26,
           "headline": "হাসিনাকে সমর্থনের অভিযোগে বিশ্ববিদ্যালয়ের শিক্ষক-শিক্ষার্থীদের নির্বিচার শাস্তি দেওয়া হচ্ছে"
         }
       ]
@@ -116145,7 +117201,7 @@
       "cluster_id": 1833,
       "headline": "Beau Lamarre-Condon trial live updates: accused double murderer gives evidence in high-profile case",
       "first_seen": "2026-11-05T02:30:41.892Z",
-      "last_update": "2026-11-05T04:54:28.061Z",
+      "last_update": "2026-11-05T05:29:36.133Z",
       "claim_count": 2,
       "events": [
         {
@@ -118595,6 +119651,14 @@
           "headline": "২০২৭ সালে সরকারি ছুটি ২৯ দিন, মন্ত্রিসভায় অনুমোদন"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -118625,14 +119689,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1117,
-          "slug": "national-1117",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পক্ষ ছাড়ায় কর্মীকে খুনের অভিযোগ, চট্টগ্রামের সেই যুবদল নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -119609,6 +120665,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1792,
           "slug": "national-1792",
           "actor_links": 0,
@@ -119639,14 +120703,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কমলাপুরে বৈদ্যুতিক তার চুরি করতে গিয়ে বিদ্যুৎস্পৃষ্টে ১ জনের মৃত্যু"
-        },
-        {
-          "cluster_id": 1676,
-          "slug": "national-1676",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আশুলিয়ায় ভাড়া বাসা থেকে পোশাকশ্রমিকের গলিত মরদেহ উদ্ধার"
         }
       ]
     },
@@ -123149,6 +124205,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -123187,14 +124251,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -125957,6 +127013,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -125995,14 +127059,6 @@
           "source_links": 2,
           "claim_count": 5,
           "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
-        },
-        {
-          "cluster_id": 161,
-          "slug": "sports-storm",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 5,
-          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
         }
       ]
     },
@@ -128118,6 +129174,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -128156,14 +129220,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -129134,6 +130190,14 @@
           "headline": "২০২৭ সালে সরকারি ছুটি ২৯ দিন, মন্ত্রিসভায় অনুমোদন"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -129164,14 +130228,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1117,
-          "slug": "national-1117",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পক্ষ ছাড়ায় কর্মীকে খুনের অভিযোগ, চট্টগ্রামের সেই যুবদল নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -132106,6 +133162,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -132144,14 +133208,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পূজার ছুটির আগে শনিবার অফিস খোলা, ৭ নভেম্বর সাধারণ ছুটি"
-        },
-        {
-          "cluster_id": 958,
-          "slug": "national-958",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "সেন্ট মার্টিনে ৩২ বছর ধরে অচল সরকারি বিদ্যুৎকেন্দ্র, বেসরকারি সৌরবিদ্যুতের দামও বাড়ছে"
         }
       ]
     },
@@ -146837,20 +147893,20 @@
           "headline": "‘অনেক বিষয় নিয়ে কথা বলা যাবে, যেগুলো কেউ বলেন না’"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 9,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
-        },
-        {
-          "cluster_id": 1815,
-          "slug": "national-1815",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "হাসিনাকে সমর্থনের অভিযোগে বিশ্ববিদ্যালয়ের শিক্ষক-শিক্ষার্থীদের নির্বিচার শাস্তি দেওয়া হচ্ছে"
         }
       ]
     },
@@ -151342,6 +152398,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -151380,14 +152444,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -165559,6 +166615,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1804,
           "slug": "national-1804",
           "actor_links": 0,
@@ -165597,14 +166661,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণের পরিকল্পনা এগিয়ে নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
-        },
-        {
-          "cluster_id": 1451,
-          "slug": "national-1451",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিক অসন্তোষের মধ্যে গাজীপুর-নারায়ণগঞ্জে ১২ প্লাটুন বিজিবি মোতায়েন"
         }
       ]
     },
@@ -167184,6 +168240,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -167222,14 +168286,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -168560,6 +169616,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -168598,14 +169662,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -169040,6 +170096,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -169078,14 +170142,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পূজার ছুটির আগে শনিবার অফিস খোলা, ৭ নভেম্বর সাধারণ ছুটি"
-        },
-        {
-          "cluster_id": 958,
-          "slug": "national-958",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 8,
-          "headline": "সেন্ট মার্টিনে ৩২ বছর ধরে অচল সরকারি বিদ্যুৎকেন্দ্র, বেসরকারি সৌরবিদ্যুতের দামও বাড়ছে"
         }
       ]
     },
@@ -176638,6 +177694,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1427,
           "slug": "national-1427",
           "actor_links": 0,
@@ -176676,14 +177740,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -180128,6 +181184,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -180166,14 +181230,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইউপি নির্বাচনের তালিকা যাচাই করে তথ্য পাঠাতে মাঠ কর্মকর্তাদের নির্দেশ"
-        },
-        {
-          "cluster_id": 1641,
-          "slug": "national-1641",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "নাসির উদ্দিনের মামলায় পরীমনির জামিন বাতিল, গ্রেপ্তারি পরোয়ানা জারি"
         }
       ]
     },
@@ -182955,6 +184011,14 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -182969,14 +184033,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গার্মেন্টস শ্রমিকদের মজুরি নির্ধারণে প্রথম সভা"
-        },
-        {
-          "cluster_id": 1783,
-          "slug": "national-1783",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের টিকা সংগ্রহ ও বিতরণে বিলম্বের অভিযোগ তদন্তে কমিশন"
         }
       ]
     },
@@ -183710,12 +184766,12 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
-          "cluster_id": 1857,
-          "slug": "national-1857",
+          "cluster_id": 1871,
+          "slug": "national-1871",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "মার্কিন নির্বাচনে ট্রাম্পের দলের হারের প্রভাব তেলের বাজারে"
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
         }
       ]
     },
@@ -195612,6 +196668,14 @@
           "headline": "দেশে ৪৬ লাখের বেশি মামলা বিচারাধীন: আইনমন্ত্রী"
         },
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -195634,14 +196698,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1782,
-          "slug": "national-1782",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ইকবাল সোবহান চৌধুরী ও সাংবাদিক রাজীব ডিবি হেফাজতে, 'অনাকাঙ্ক্ষিত পরিস্থিতি'র দাবি পুলিশের"
         }
       ]
     },
@@ -199402,6 +200458,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -199440,14 +200504,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -211810,6 +212866,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1676,
           "slug": "national-1676",
           "actor_links": 0,
@@ -211848,14 +212912,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -217715,7 +218771,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T04:54:28.062Z",
+      "last_update": "2026-11-05T05:29:36.140Z",
       "claim_count": 3,
       "events": [
         {
@@ -219319,6 +220375,14 @@
           "headline": "মধ্যরাতে ছেড়ে দেওয়া হলো রাজীব ঘোষকে, ইকবাল সোবহান জুলাইয়ের হত্যা মামলায় গ্রেপ্তার"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 2,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1815,
           "slug": "national-1815",
           "actor_links": 2,
@@ -219349,14 +220413,6 @@
           "source_links": 3,
           "claim_count": 22,
           "headline": "ঢাকায় পাসের হার ৭৯%, মানিকগঞ্জে ৩৮%, এইচএসসির ফলে শহর-গ্রামে বড় বৈষম্য"
-        },
-        {
-          "cluster_id": 1171,
-          "slug": "national-1171",
-          "actor_links": 1,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ফাজিল ও কামিল মাদ্রাসার গভর্নিং বডি–এডহক কমিটি বাতিলের সিদ্ধান্ত স্থগিত"
         }
       ]
     },
@@ -219364,7 +220420,7 @@
       "cluster_id": 1833,
       "headline": "Beau Lamarre-Condon trial live updates: accused double murderer gives evidence in high-profile case",
       "first_seen": "2026-11-05T02:30:41.892Z",
-      "last_update": "2026-11-05T04:54:28.061Z",
+      "last_update": "2026-11-05T05:29:36.133Z",
       "claim_count": 2,
       "events": [
         {
@@ -220648,7 +221704,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 1874,
+          "slug": "national-1874",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প"
+        }
+      ]
     },
     "national-1847": {
       "cluster_id": 1847,
@@ -220732,7 +221797,7 @@
       "cluster_id": 1849,
       "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানদের পরাজয়ের মূল কারণ ইরান যুদ্ধ: ভ্যান্স",
       "first_seen": "2026-11-05T03:41:13.372Z",
-      "last_update": "2026-11-05T04:54:28.060Z",
+      "last_update": "2026-11-05T05:29:36.127Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -221184,7 +222249,7 @@
       "cluster_id": 1856,
       "headline": "১২ দেশে কর্মী পাঠাতে মন্ত্রণালয়ের অনুমোদন বাধ্যতামূলক, ছাড়পত্র না দেওয়ার নির্দেশ",
       "first_seen": "2026-11-05T04:14:49.742Z",
-      "last_update": "2026-11-05T04:54:28.058Z",
+      "last_update": "2026-11-05T05:29:36.095Z",
       "claim_count": 2,
       "events": [
         {
@@ -221763,7 +222828,7 @@
       "cluster_id": 1863,
       "headline": "জামায়াত নেতা মেজর (অব.) আখতারুজ্জামানের ছেলেকে ছুরিকাঘাত",
       "first_seen": "2026-11-05T04:54:28.051Z",
-      "last_update": "2026-11-05T04:54:28.054Z",
+      "last_update": "2026-11-05T05:29:36.057Z",
       "claim_count": 3,
       "events": [
         {
@@ -221931,7 +222996,7 @@
       "cluster_id": 1864,
       "headline": "‘ম্যাজিস্ট্রেট’ ছেলের পেছনে এক মায়ের নিঃশব্দ লড়াই",
       "first_seen": "2026-11-05T04:54:28.055Z",
-      "last_update": "2026-11-05T04:54:28.057Z",
+      "last_update": "2026-11-05T05:29:36.089Z",
       "claim_count": 2,
       "events": [
         {
@@ -222242,92 +223307,1206 @@
     },
     "national-1870": {
       "cluster_id": 1870,
-      "headline": "লালমনিরহাটে এবি পার্টির নেতার বাড়ির সীমানাপ্রাচীর বুলডোজার দিয়ে গুঁড়িয়ে দেওয়ার অভিযোগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+      "first_seen": "2026-11-05T05:29:35.906Z",
+      "last_update": "2026-11-05T05:29:35.974Z",
+      "claim_count": 10,
+      "events": [
+        {
+          "ts": "2026-11-04T17:07:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/world/zib1sdd7v0"
+          }
+        },
+        {
+          "ts": "2026-11-04T17:07:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/world/zib1sdd7v0"
+          }
+        },
+        {
+          "ts": "2026-11-04T22:22:54.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/qpkjxi0ltk"
+          }
+        },
+        {
+          "ts": "2026-11-04T22:22:54.000Z",
+          "kind": "evidence",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/qpkjxi0ltk"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/blwd5t55d6"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.kishoralo.com/feature/blwd5t55d6"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/1iwxs7nz05"
+          }
+        },
+        {
+          "ts": "2026-11-05T01:50:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/1iwxs7nz05"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/0sql2p6y2j"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/opinion/column/0sql2p6y2j"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:22:35.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/cwp9g3jpkmnko?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/personal-finance/ygjlxv7q9g"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/personal-finance/ygjlxv7q9g"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/1d5ymh18w9"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/1d5ymh18w9"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:52:34.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/9sl85fxh72"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:52:34.000Z",
+          "kind": "evidence",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/9sl85fxh72"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/cp8bx1g5w0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/cp8bx1g5w0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.632Z",
+          "kind": "claim",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.709Z",
+          "kind": "claim",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.722Z",
+          "kind": "claim",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.734Z",
+          "kind": "claim",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.747Z",
+          "kind": "claim",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.760Z",
+          "kind": "claim",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.773Z",
+          "kind": "claim",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.785Z",
+          "kind": "claim",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.798Z",
+          "kind": "claim",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.811Z",
+          "kind": "claim",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795073,
+          "claim_text": "মধ্যবর্তী নির্বাচনে জয়: ইরান যুদ্ধ ও ট্রাম্পের শুল্কনীতি রুখতে পারবে ডেমোক্র্যাটরা?",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795074,
+          "claim_text": "কংগ্রেস হাতছাড়া, বড় ধাক্কা খেলেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795075,
+          "claim_text": "কাল যদি সব এআই ডেটা সেন্টার বন্ধ হয়ে যায়, কী ঘটবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795076,
+          "claim_text": "মাদ্রাসায় শিশুসুরক্ষা: অস্বীকার ও দোষারোপের বৃত্ত ভেঙে সমাধানের পথে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795077,
+          "claim_text": "আমেরিকায় ইসরায়েল লবি যেভাবে গ্রহণযোগ্যতা হারাল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795078,
+          "claim_text": "সঞ্চয়পত্রের উৎসে কর চূড়ান্ত কর নয়, কার লাভ কার ক্ষতি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795079,
+          "claim_text": "পলিটিক্যাল ব্রেকআপ ও বর্তমান বাংলাদেশ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795080,
+          "claim_text": "পাইকারি বাজারের ১৯০ টাকার মাল্টা খুচরা দোকানে ৩৫০ টাকা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795081,
+          "claim_text": "দাম বাড়ার চাপ যখন নিত্যসঙ্গী",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:54:48.237Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795077\"]",
+            "resolution": "unresolved"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:54:48.248Z",
+          "kind": "conflict",
+          "claim_id": 795072,
+          "claim_text": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "সমর্থন",
+            "sources": "[\"c795072\",\"c795079\"]",
+            "resolution": "unresolved"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1832,
+          "slug": "national-1832",
+          "actor_links": 2,
+          "source_links": 3,
+          "claim_count": 15,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 958,
+          "slug": "national-958",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "সেন্ট মার্টিনে ৩২ বছর ধরে অচল সরকারি বিদ্যুৎকেন্দ্র, বেসরকারি সৌরবিদ্যুতের দামও বাড়ছে"
+        },
+        {
+          "cluster_id": 583,
+          "slug": "politics-583",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
+        },
+        {
+          "cluster_id": 521,
+          "slug": "politics-521",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 13,
+          "headline": "গাজীপুরে শ্রমিক–পুলিশ দফায় দফায় সংঘর্ষ, আহত ৩০; পুলিশের গাড়িসহ ১৫টি যানবাহন ভাঙচুর"
+        },
+        {
+          "cluster_id": 415,
+          "slug": "national-415",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 24,
+          "headline": "ময়মনসিংহ শিক্ষা বোর্ডে চার বছরের মধ্যে সর্বনিম্ন পাসের হার, ১৯ প্রতিষ্ঠানে কেউ পাস করেননি"
+        },
+        {
+          "cluster_id": 161,
+          "slug": "sports-storm",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 12,
+          "headline": "ইরান কি বিদেশে মার্কিনদের ওপর হামলার পরিকল্পনা করছে, হাতে কী কী ভয়ংকর অস্ত্র"
+        }
+      ]
     },
     "national-1871": {
       "cluster_id": 1871,
-      "headline": "ককরোচদের কর্মসূচিতে অনুমতি দিল্লি হাইকোর্টের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+      "first_seen": "2026-11-05T05:29:35.981Z",
+      "last_update": "2026-11-05T05:29:36.000Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T03:44:03.000Z",
+          "kind": "evidence",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMikgZBVV95cUxNMGNBU3V0R2ltbFFPMzVsNGx4MGxiaTluWlFDY3lmSVF0RFJKWDZrVlU0V1VpOVJLNUhsVUs1bzZ3c25md29TV3EwS1RKYk5Pd3dpdU9VY3kzc0J2TXN5b1Q0M0FIVjN3UFdTS2tmS1YyX0hBMHNqN3AwSDhaTlcwLXFfSXM1ejFXQzhxZ2N6V3BiLXpnRHpqeDFIWjVaMTVkbmgtdGpoU3R2YkZ3aDZiR3pVVk40Tlh0NVk3aVNZenNJNzJVMm9DTnRFWDNzQ093VDVlalJlcVdZMHRXc1lOQmtsWi16OVloazd0dnFNcFAzQzV4ZGx0Z0pHdEpWZWFlVVBXX0V6X0dPcGdjeDVxWTVfZnpyTVpDNTlFQUstSk1pMjl6UUQxV2l1a19WbHhkSWNIX0xybm5PaHBkWVprVTBnb2NiSElSX2VYMFVDaGNfUG05dW51MGFMR1pqeWltM2VJLTdCZ1dyRkVfWGVNZUZhQ0NCSzZ2YlFiYmhNa2doTXRLajNhNFVYS0phaEVPcFNPTnpiRTlDdDNPMEF6ZXltV013eGNXZlhrbUNYd2lSNzdfRE5RUXo5WWNxSEZDWEFpRVhfclh0VW5OSFc4dVI4cnMwRUNGSjZVRTRwWDRJQjI2cHB2UmVpQTNpSEE1bW84bjY4RFloZ3Y0MEhDZjctUEFEckQ2TzZuakp3cFRYU3A1QmFGVzFPMkxHSkdaUnhmUjF2WGtteGx5VXpiRlp0c0xyZEI1ZDFlN1RFaEU5QlhjbXFTSXQyZU5FSUUtVTBPUXVuRWNrSXg1a0RjSC1jdDhxVnZka25tbjJwaXNKYktucEJYNWQtVlNfLWNZLWJlZ0IwMjQyZHJOci1YNkN4ZGJraS1TOERwTUV2WHU5QzR5NENxeEhjaWNNbmdldjFRcks5QmQ5UzF5N19JMjBPTlVwU0hxRGZsdmIwYjNZaUdHeGsxbnQyTXJvOGp1cGY4dkg2am51QUw4ZWljZnVmS2EwOG9WSWpZMWlhZTVIc0tXcWJ6V21kZFk4VW1Cb1E?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:11:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1SWVphZ1ZKbWJUeF91RUdoUXhnUmhEU3pWTFZCaHpoWGlJeTJLQ2duNU4wR0tEVXhrUHg0SnVwbkdKR1hDdC1VcC0yMHQ1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:11:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা",
+          "detail": {
+            "source_id": "daily-observer",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1SWVphZ1ZKbWJUeF91RUdoUXhnUmhEU3pWTFZCaHpoWGlJeTJLQ2duNU4wR0tEVXhrUHg0SnVwbkdKR1hDdC1VcC0yMHQ1UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.824Z",
+          "kind": "claim",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.843Z",
+          "kind": "claim",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795082,
+          "claim_text": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795083,
+          "claim_text": "নারায়ণগঞ্জে কাজে ফিরছেন শ্রমিকেরা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1783,
+          "slug": "national-1783",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "হামের টিকা সংগ্রহ ও বিতরণে বিলম্বের অভিযোগ তদন্তে কমিশন"
+        },
+        {
+          "cluster_id": 1676,
+          "slug": "national-1676",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আশুলিয়ায় ভাড়া বাসা থেকে পোশাকশ্রমিকের গলিত মরদেহ উদ্ধার"
+        },
+        {
+          "cluster_id": 1560,
+          "slug": "national-1560",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
+        },
+        {
+          "cluster_id": 1553,
+          "slug": "national-1553",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "রিপাবলিকানদের হারিয়ে সিনেটের নিয়ন্ত্রণ ডেমোক্র্যাটদের হাতে"
+        },
+        {
+          "cluster_id": 941,
+          "slug": "politics-941",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
+        },
+        {
+          "cluster_id": 798,
+          "slug": "sports-798",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
+        }
+      ]
     },
     "national-1872": {
       "cluster_id": 1872,
-      "headline": "১২২ দেশের মধ্যে বাংলাদেশ ৮৪তম, ক্ষুধা কমানোয় অগ্রগতি ধীর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+      "first_seen": "2026-11-05T05:29:36.007Z",
+      "last_update": "2026-11-05T05:29:36.025Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T04:28:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978912/%E0%A6%AD%E0%A7%8B%E0%A6%9F%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0-%E0%A6%B9%E0%A7%87%E0%A6%97%E0%A6%B8%E0%A7%87%E0%A6%A5%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%B6%E0%A7%87-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%A4%E0%A6%AC%E0%A7%87-%E0%A6%85%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:28:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978912/%E0%A6%AD%E0%A7%8B%E0%A6%9F%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0-%E0%A6%B9%E0%A7%87%E0%A6%97%E0%A6%B8%E0%A7%87%E0%A6%A5%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%B6%E0%A7%87-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%A4%E0%A6%AC%E0%A7%87-%E0%A6%85%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:01:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/foreign/america/978919/%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA-%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%A6%E0%A7%82%E0%A6%B0%E0%A6%A4%E0%A7%8D%E0%A6%AC-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%B0"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.856Z",
+          "kind": "claim",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.874Z",
+          "kind": "claim",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795084,
+          "claim_text": "ট্রাম্প-ভ্যান্স দূরত্ব বাড়ছে, হারের পর রিপাবলিকানদের মধ্যে চরম কোন্দল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795085,
+          "claim_text": "ভোটে হারের পর হেগসেথের পাশে ট্রাম্প, তবে অপসারণের গুঞ্জন তুঙ্গে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1873": {
       "cluster_id": 1873,
-      "headline": "ফাজিল ও কামিল মাদ্রাসায় সব ধরনের নিয়োগ কার্যক্রম বন্ধের নির্দেশ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ",
+      "first_seen": "2026-11-05T05:29:36.032Z",
+      "last_update": "2026-11-05T05:29:36.050Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T02:00:06.000Z",
+          "kind": "evidence",
+          "claim_id": 795086,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/employment/fezo8lvsfg"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:00:06.000Z",
+          "kind": "evidence",
+          "claim_id": 795087,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষা কবে, এনটিআরসিএ জানাল সময়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/employment/fezo8lvsfg"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:52:10.000Z",
+          "kind": "evidence",
+          "claim_id": 795086,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ",
+          "detail": {
+            "source_id": "dhakatribune",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMivwRBVV95cUxNZEc3Uks2dDk2c1FsTnhRaDJfUGdDdDdlU1VhLW9yRFlId215QnpqQzV1U3ZfUmNhVm0zcTdhdnVhZi1ZVElPNG5LX0dpZGluQUE3N3RUbktSdU92VFFvN3lpeUtqLUJ1Sy15UlFxQ2Z1WXlHWjB2U0w0ajkyc0lKMmRFRXVWWkFRUkdSTVM4eHAwSUduMGYzTGRIbHROZVRiNEJ3Rm5oNXdaa2lxT3dmVzRzR1NSTmFNRnJGb09CRGh6WDk5UXRpR2tuc0p1UWs1emhpQUF3bzRIOUhFSmZmb1B1dGRtblZLelRjemJuWEtRNi1MSTUxSHFjQkQ0Vmc5TkgtTVp4SnhCV25XbDY2djc5NVQ4LXV6RXk5UDFTWnA1UVFNSDk4Q25oRmFrZWRETTZvcS1jQTMxSnVXcUtiV0tBVGMyVC04b21DRDVNVVA1dWJfVU01N2NqbE1aSENzbEZtN1RHdVlFcGFHOU9RRWVqbHJ1RkxaMFlxX0hMZThoNmVRd09oRG9vY0MyZkZOSHpLcFdsN0ZFVk5tZHNGdG5xVHBmZnRMOHYxV0JsYU1WQWJ4QmV0Uks5b1J1VzMtRFpyelhOTElkZlRTLS1lbnY2MmUwVEpqbVBTbnhaR2tPQlNWM1FNVVdFWmxNSVpoRWp5dE15TXZac0Q2YVV6S2g3c0paUXpvVUNKX1QxR2NUVTdUZkRmUUVNdl9YT3dBYzN0aHJLd2NyQUFLSmU3VEwtaVhVNDJVaTY0OWgyVdIBxARBVV95cUxPdHpuRHgtMVJBTmpTaEJwa0lOdTg2WDJFNUtIQktteGs3YThGQ000TGtmZnZmZjVRT05hN2tHV3F2a2JjVkZxbnBGd1d4b3J2VlVsZ2pPX1R2NVkyVUF6MjZPb0w2NkVhTkpCUFdtRGNqU3p5MG11WnhGNWw5MVdRUmU3cHRGZUFNTW9sdDN4Q05QTjVpOU5vQ2k2dXFVS1VNWHM3dDVnZmt2eWwzNmF1XzZ2OFdCNV8zRENYMmhwc0FfcUhnVExRTHo3a1ZIMW50UG12cjFWTGdfbXA1V3Nrd0d1Y2dsZ1ZjeWRRNzJaaC0wdDdmcEp4TXRFWEp2OG44VWdCVzVpeWd6U09heFVOa2hxdGd5TGRDNFVxUTJMY3Zzc01Nb1ZNU0dzNGNIOG9WVzhCTVVCQWRzQ2Fadmh3bHUzSFZQVnI4TjFtdHlVX0JhRW45ZjJ6Vkx5WmQxSTN3Ums3b2lNRDBfRUNieHFLaURWemNDbnRLZ3lqYkZkOXNkOFRGTUFlQVA5ejNneHEtNzhJazZQaE1rVjNFVXF0d3RsSzRuem1UX0cwM0YzdkJhN3JXMUp0eGlpYXpWQUljTkZScEtZZ0tWNlJpSlVpUnNiMUJYV2xVUTZ2UWo0SnhpWDAzSWh4VUxNUHpfeHBjWnhkLWg0R2tjWlQzNThNNll1d1Q3RlFLQVBYWDNXS19uS3RhT3ZQRV9XZDhMOEh5M0pnTWR1cFl3Q2YwTDludU5xampabDZwd2paZFJFQzJkdTM1?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.887Z",
+          "kind": "claim",
+          "claim_id": 795086,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.906Z",
+          "kind": "claim",
+          "claim_id": 795087,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষা কবে, এনটিআরসিএ জানাল সময়"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795086,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795087,
+          "claim_text": "৯ম শিক্ষক নিবন্ধন পরীক্ষা কবে, এনটিআরসিএ জানাল সময়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1832,
+          "slug": "national-1832",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 11,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
+          "cluster_id": 1818,
+          "slug": "national-1818",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
+        },
+        {
+          "cluster_id": 863,
+          "slug": "national-863",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "লালবাগে যুবককে কুপিয়ে হত্যা করল দুর্বৃত্তরা"
+        },
+        {
+          "cluster_id": 552,
+          "slug": "national-552",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাংবাদিক আলিফ হত্যা: প্রধান সন্দেহভাজন তাজুলের দুই সহযোগী গ্রেপ্তার"
+        },
+        {
+          "cluster_id": 549,
+          "slug": "sports-549",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "নিউমার্কেটের ফুটপাতে উচ্ছেদ অভিযান, বসানো হলো শতাধিক গাছের চারা"
+        },
+        {
+          "cluster_id": 526,
+          "slug": "opinion-526",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "অর্ণবের রেশ কাটতে না কাটতেই বঙ্গোপসাগরে নতুন ঘূর্ণিঝড়ের আশঙ্কা"
+        }
+      ]
     },
     "national-1874": {
       "cluster_id": 1874,
-      "headline": "যুব উন্নয়নের প্রশ্নপত্র ফাঁসের ঘটনায় গ্রেপ্তার ৬",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+      "first_seen": "2026-11-05T05:29:36.064Z",
+      "last_update": "2026-11-05T05:29:36.083Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-05T02:25:44.000Z",
+          "kind": "evidence",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/8csm0all09"
+          }
+        },
+        {
+          "ts": "2026-11-05T02:25:44.000Z",
+          "kind": "evidence",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/8csm0all09"
+          }
+        },
+        {
+          "ts": "2026-11-05T04:12:22.000Z",
+          "kind": "evidence",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/usa/mdhybrtii-nirbaacne-dhaakkaa-ekhn-kii-krben-ttraamp"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.919Z",
+          "kind": "claim",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.940Z",
+          "kind": "claim",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795088,
+          "claim_text": "মধ্যবর্তী নির্বাচনে ধাক্কা, এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795089,
+          "claim_text": "এখন কী করবেন ট্রাম্প",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1846,
+          "slug": "national-1846",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "এখন কী করবেন ট্রাম্প"
+        }
+      ]
     },
     "national-1875": {
       "cluster_id": 1875,
-      "headline": "এমপিওভুক্ত প্রতিষ্ঠানে প্রধান শিক্ষক নিয়োগে আর বাধা নেই",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+      "first_seen": "2026-11-05T05:29:36.102Z",
+      "last_update": "2026-11-05T05:29:36.120Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T23:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi6wRBVV95cUxNSVhpVDFjampkUTdmd3F3ZWhPRnl1T2NEdDh4dW9XYlpJYVNJOERmNkRoVFBJMlE3STdDQ2E4TDNzZWcwVFNqUTBKaTV0OG9NX3pEbUVnMW5MZzBZRGk2SkRnb2gwbUU1OUJhdy1KbWpyTGFNeF9LbWEyd3czS2tXRGFNNjVGS2VyZmNNVlBIeTh5UXZGaGc0d0E5UGRpSlI4V3E1cW0zd3pMUjBseExSZnhReTEtdzBORW1FR01ySk1RQU8tSDJhM3AtcDJya0p6VjIyQ2RCcElldzFrMkpwazNnSHFrVDl0UGx0aWUyRHlORHNoczJPbW5DaVJRNV94RUVBcWc5WWJ5VWs1X1NlYWtZWTVKcWJPNWVOTmt3MkhIUkhfMTd0NG5aenNzRlQ3bWc0U3p2RG04VWozNWNscFQzZzZLbDl4UXZMeUVKbVg1RWRadjRZQjl3WHI5dXEwZTFPVnZXWVNJSDdib2RBRF9nYV9NS0pjZ1A5a0lOQlZlalZBR3JVdHRuUDR6Qmc5aEdUaHV4c01SWkNQZnBPdHVOOWZhT1BEa1hsamlEWHNNdFZNSXBKWi1sS21JSU1naUtRUUhhd2pUQ2hiWWJRNzJyb01zb05tLVg2LWIwQUg3YzhVbTNzQWdRQUNhbmo4LXI3Z01JZlh4NU9pc3c3dXBhemZKdE43TUZrMEtJUmZZcDlDWVN2RXJJRVJRTm1xbjhHZ1BheXRIWFd1WHEtdktkNmppb2JHSWZVMUh3QU9OZzg4VmNEUkdrY0lZcWF3Yk5XS0YtdXpBb1hYa1VLS3U0aG81RHVwYXlR0gHwBEFVX3lxTE50UFNRdm5KTnE0VW5fMU9RRDhDVURqQzJBX3Fhd0xFNGFIb29PSWhUWUJmMms4RkdJWXU4MEpYaFZDX3dsdnBDUlh3SnVQVkZPQzdjOXgtRlVNdWszWjJoZk45Vjg0Y0M5Tnp0Q3NGamJKZkNSSzI1bi1neUdSLTZ5eUJOenY4RTl3NVBNejhJQTN0ZGpnUFZORGM3clJvWG9tWFA1eDJXblZUeHRDbDZOSUdDVUlHdGthdlJLSzA5RV9MZDdfdW02V1RPamRHX3VLNXFpWFgyTHdVUGxNS0cxMl83S3M0Y2U0Qlk5ZEU2TDNKWDN0UFZFQTY4eUpOcDlzaDgzR0NJY2JiYTZYckVTb2dtcFZzSlpYZGFUazB0bUw5NC1uSUNxblhwVlRtWE4zU1ZEaDEteUU1UzhFcU1MS0dET3BsVDFkcW9jT3BQZUF3ZkRzdGZmWnJPQlFMMjRvRG9TZ21uSFBJUFhMN3VpRG94TUYzRmlJclR4NWtVSDZDQURxZ0phazAxWWFaUmNoM2F5Ym44cDVFZlZVOG1wQkgzTmczN2YzYVZiSnhfM2VIOG1zcWYxaEJaWXJzLWFTZFZaWkphM0RHempsZVRobV9Wb3BxVVdoem1kYW1aUWc2ZmVfSjlMaXFYdDZUUUhyNVBxNnk5THlqeWRCUDB5UUNYZmJoUVItVElMQ3ZrZDRRdWE0cEc0RXBRNlpVelN3eGV5Z1VUWUdPMVB4SmJsaUJMRTExdWxNaUtZc1dfWF9YdHo5NTExeDI1Ql9QNTNBUmtFTTBJbWlVb3lxb2pWd3RYTGY5d1daRm82b01nUg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.952Z",
+          "kind": "claim",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.975Z",
+          "kind": "claim",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1500,
+          "slug": "national-1500",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণের পরিকল্পনা এগিয়ে নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1427,
+          "slug": "national-1427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
+        },
+        {
+          "cluster_id": 1409,
+          "slug": "national-1409",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শেখ হাসিনা ও সাবেক স্বরাষ্ট্রমন্ত্রীর সম্পত্তি নিয়ন্ত্রণে নিতে স্বরাষ্ট্র মন্ত্রণালয়ে প্রসিকিউশনের চিঠি"
+        },
+        {
+          "cluster_id": 1396,
+          "slug": "national-1396",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শপথ নিলেন নবনির্বাচিত সংসদ সদস্য মির্জা ফয়সল আমীন ও এলিজা জামান"
+        },
+        {
+          "cluster_id": 1255,
+          "slug": "national-alaska-governor-orders",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
+        },
+        {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        }
+      ]
     },
     "national-1876": {
       "cluster_id": 1876,
-      "headline": "সুরক্ষিত স্বাস্থ্য, উচ্ছল তারুণ্য: কিশোরীদের স্বাস্থ্য সচেতনতায় পাওয়ার অব শির বিশেষ আয়োজন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+      "first_seen": "2026-11-05T05:29:36.584Z",
+      "last_update": "2026-11-05T05:29:36.597Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T05:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/biology/0fa9dtj6q4"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.988Z",
+          "kind": "claim",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795092,
+          "claim_text": "মৃতপ্রায় গাছের কাছ থেকে দূরে সরে যায় অন্য গাছ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1877": {
       "cluster_id": 1877,
-      "headline": "অবস্থান ছাড়লেন পোশাকশ্রমিকেরা, উত্তরায় যান চলাচল স্বাভাবিক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+      "first_seen": "2026-11-05T05:29:36.609Z",
+      "last_update": "2026-11-05T05:29:36.622Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:58:24.000Z",
+          "kind": "evidence",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/business/economics/v4tvev6agq"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.002Z",
+          "kind": "claim",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795093,
+          "claim_text": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 647,
+          "slug": "opinion-647",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চাঁদে পারমাণবিক চুল্লি বসাতে যুক্তরাষ্ট্রের এত তাড়া কেন, প্রতিযোগিতায় রাশিয়া–চীনও"
+        },
+        {
+          "cluster_id": 165,
+          "slug": "national-fuel-prices-jump",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রের প্রথম ইউনিটে বিদ্যুৎ উৎপাদনের অনুমোদন"
+        },
+        {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
+        }
+      ]
     },
     "national-1878": {
       "cluster_id": 1878,
-      "headline": "পরিবার ও কর্মজীবনে সম্পর্ক ভালো রাখতে আবেগীয় বুদ্ধিমত্তার ওপর গুরুত্ব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+      "first_seen": "2026-11-05T05:29:36.634Z",
+      "last_update": "2026-11-05T05:29:36.646Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:17:14.000Z",
+          "kind": "evidence",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/jwk9zz23s3"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.015Z",
+          "kind": "claim",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1879": {
       "cluster_id": 1879,
-      "headline": "প্লাস্টিক দূষণ কমাতে উৎপাদনকারীদের দায়িত্ব নেওয়ার তাগিদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+      "first_seen": "2026-11-05T05:29:36.658Z",
+      "last_update": "2026-11-05T05:29:36.671Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:14:25.000Z",
+          "kind": "evidence",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/roundtable/oz36cdp0nn"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.029Z",
+          "kind": "claim",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-188": {
@@ -222371,11 +224550,41 @@
     },
     "national-1880": {
       "cluster_id": 1880,
-      "headline": "ইউক্রেনের বিরুদ্ধে যুদ্ধে বাংলাদেশিদের 'টোপ' হিসেবে ব্যবহারের অভিযোগ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গাজীপুরে সিলিন্ডার লিকেজ থেকে আগুনে চারজন দগ্ধ",
+      "first_seen": "2026-11-05T05:29:36.683Z",
+      "last_update": "2026-11-05T05:29:36.695Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:13:03.000Z",
+          "kind": "evidence",
+          "claim_id": 795096,
+          "claim_text": "গাজীপুরে সিলিন্ডার লিকেজ থেকে আগুনে চারজন দগ্ধ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/3ykejgekht"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.042Z",
+          "kind": "claim",
+          "claim_id": 795096,
+          "claim_text": "গাজীপুরে সিলিন্ডার লিকেজ থেকে আগুনে চারজন দগ্ধ"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795096,
+          "claim_text": "গাজীপুরে সিলিন্ডার লিকেজ থেকে আগুনে চারজন দগ্ধ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1881": {
@@ -231123,6 +233332,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -231161,14 +233378,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 798,
-          "slug": "sports-798",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -242423,6 +244632,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -242461,14 +244678,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -248738,6 +250947,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -248776,14 +250993,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
-        },
-        {
-          "cluster_id": 1430,
-          "slug": "national-1430",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সহপাঠীর মৃত্যু: ৫ ঘণ্টা পর সড়ক ছাড়লেন আইআইইউসির শিক্ষার্থীরা"
         }
       ]
     },
@@ -262790,6 +264999,14 @@
           "headline": "মানবতাবিরোধী অপরাধে হানিফের মৃত্যুদণ্ড, খান-আলী-আতার আমৃত্যু কারাদণ্ড"
         },
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1863,
           "slug": "national-1863",
           "actor_links": 0,
@@ -262820,14 +265037,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রাথমিক শিক্ষা উন্নয়নে ৪১ হাজার কোটি টাকার প্রকল্প অনুমোদন"
-        },
-        {
-          "cluster_id": 1560,
-          "slug": "national-1560",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিনেটের নিয়ন্ত্রণ হারাল ট্রাম্পের দল, প্রতিনিধি পরিষদেও এগিয়ে ডেমোক্র্যাটরা"
         }
       ]
     },
@@ -263367,6 +265576,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -263405,14 +265622,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 798,
-          "slug": "sports-798",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -265607,6 +267816,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -265645,14 +267862,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 798,
-          "slug": "sports-798",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
         }
       ]
     },
@@ -266230,6 +268439,14 @@
           "headline": "প্রধানমন্ত্রীকে আনতে যাওয়া বিমানে যান্ত্রিক ত্রুটি, টোকিওতে অপেক্ষায় তারেক রহমান"
         },
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1857,
           "slug": "national-1857",
           "actor_links": 0,
@@ -266244,14 +268461,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "গার্মেন্টস শ্রমিকদের মজুরি নির্ধারণে প্রথম সভা"
-        },
-        {
-          "cluster_id": 1783,
-          "slug": "national-1783",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "হামের টিকা সংগ্রহ ও বিতরণে বিলম্বের অভিযোগ তদন্তে কমিশন"
         }
       ]
     },
@@ -273091,6 +275300,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -273129,14 +275346,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -276974,6 +279183,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -277012,14 +279229,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -278807,6 +281016,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -278845,14 +281062,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -285903,6 +288112,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1873,
+          "slug": "national-1873",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -285941,14 +288158,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "অর্ণবের রেশ কাটতে না কাটতেই বঙ্গোপসাগরে নতুন ঘূর্ণিঝড়ের আশঙ্কা"
-        },
-        {
-          "cluster_id": 408,
-          "slug": "national-408",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিমানবাহিনীর সাবেক কর্মকর্তা তাহসিফের লাশ উদ্ধারের দুই দিন পর মামলা করলেন বাবা"
         }
       ]
     },
@@ -297461,6 +299670,14 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -297483,14 +299700,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
-        },
-        {
-          "cluster_id": 1832,
-          "slug": "national-1832",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 17,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         }
       ]
     },
@@ -304373,6 +306582,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -304411,14 +306628,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -313183,6 +315392,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -313221,14 +315438,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -318287,6 +320496,14 @@
           "headline": "সরকারি বাসা সাবলেট দিলেই বরাদ্দ বাতিল, ভাড়াটিয়া সরাতে হবে শনিবারের মধ্যে"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -318301,14 +320518,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1782,
-          "slug": "national-1782",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ইকবাল সোবহান চৌধুরী ও সাংবাদিক রাজীব ডিবি হেফাজতে, 'অনাকাঙ্ক্ষিত পরিস্থিতি'র দাবি পুলিশের"
         }
       ]
     },
@@ -318430,6 +320639,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -318468,14 +320685,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পক্ষ ছাড়ায় কর্মীকে খুনের অভিযোগ, চট্টগ্রামের সেই যুবদল নেতা গ্রেপ্তার"
-        },
-        {
-          "cluster_id": 1088,
-          "slug": "national-spacex-flight-led",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পূজার ছুটির আগে শনিবার অফিস খোলা, ৭ নভেম্বর সাধারণ ছুটি"
         }
       ]
     },
@@ -319792,6 +322001,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1873,
+          "slug": "national-1873",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "৯ম শিক্ষক নিবন্ধন পরীক্ষার সম্ভাব্য সময় জানালো এনটিআরসিএ"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -319830,14 +322047,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "শ্রমিকদের বিক্ষোভে শ্রমমন্ত্রীর বিদেশ সফর বাতিল, মন্ত্রীদের নিয়ে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 659,
-          "slug": "national-659",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সাড়ে সাত বছরের শিশুকে ধর্ষণ, অভিযুক্তের মুখ ও নাক থেঁতলে দেওয়া হলো"
         }
       ]
     },
@@ -328236,6 +330445,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -328274,14 +330491,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -329396,6 +331605,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -329434,14 +331651,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -331611,19 +333820,19 @@
           "headline": "এইচএসসিতে রাজউক কলেজের ঈর্ষণীয় ফল, শিক্ষার্থীদের কৃতিত্ব দিলেন অধ্যক্ষ"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 3,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1815,
           "slug": "national-1815",
           "actor_links": 0,
           "source_links": 3,
           "claim_count": 11,
-          "headline": "হাসিনাকে সমর্থনের অভিযোগে বিশ্ববিদ্যালয়ের শিক্ষক-শিক্ষার্থীদের নির্বিচার শাস্তি দেওয়া হচ্ছে"
-        },
-        {
-          "cluster_id": 1762,
-          "slug": "politics-1762",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 26,
           "headline": "হাসিনাকে সমর্থনের অভিযোগে বিশ্ববিদ্যালয়ের শিক্ষক-শিক্ষার্থীদের নির্বিচার শাস্তি দেওয়া হচ্ছে"
         }
       ]
@@ -336440,6 +338649,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -336478,14 +338695,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
-        },
-        {
-          "cluster_id": 1032,
-          "slug": "national-1032",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চার দিন বন্ধ থাকবে একটি এলএনজি টার্মিনাল, সারা দেশে কমবে গ্যাসের সরবরাহ"
         }
       ]
     },
@@ -339685,6 +341894,14 @@
           "headline": "দেশে ৪৬ লাখের বেশি মামলা বিচারাধীন: আইনমন্ত্রী"
         },
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 647,
           "slug": "opinion-647",
           "actor_links": 1,
@@ -339707,14 +341924,6 @@
           "source_links": 2,
           "claim_count": 6,
           "headline": "ইরানের বিরুদ্ধে যুদ্ধই মধ্যবর্তী নির্বাচনে আমাদের পরাজয়ের কারণ: জেডি ভ্যান্স"
-        },
-        {
-          "cluster_id": 1782,
-          "slug": "national-1782",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 6,
-          "headline": "ইকবাল সোবহান চৌধুরী ও সাংবাদিক রাজীব ডিবি হেফাজতে, 'অনাকাঙ্ক্ষিত পরিস্থিতি'র দাবি পুলিশের"
         }
       ]
     },
@@ -345060,6 +347269,14 @@
           "headline": "২০২৭ সালে সরকারি ছুটি ২৯ দিন, মন্ত্রিসভায় অনুমোদন"
         },
         {
+          "cluster_id": 1870,
+          "slug": "national-1870",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
+        },
+        {
           "cluster_id": 1832,
           "slug": "national-1832",
           "actor_links": 0,
@@ -345090,14 +347307,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
-        },
-        {
-          "cluster_id": 1117,
-          "slug": "national-1117",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "পক্ষ ছাড়ায় কর্মীকে খুনের অভিযোগ, চট্টগ্রামের সেই যুবদল নেতা গ্রেপ্তার"
         }
       ]
     },
@@ -346489,7 +348698,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T04:54:28.062Z",
+      "last_update": "2026-11-05T05:29:36.140Z",
       "claim_count": 3,
       "events": [
         {
@@ -347615,7 +349824,7 @@
       "cluster_id": 1828,
       "headline": "Trump boasts about ‘magnificent’ ballroom day after Republican rout",
       "first_seen": "2026-11-05T01:54:35.998Z",
-      "last_update": "2026-11-05T04:54:28.062Z",
+      "last_update": "2026-11-05T05:29:36.140Z",
       "claim_count": 3,
       "events": [
         {
@@ -353327,7 +355536,7 @@
       "cluster_id": 1849,
       "headline": "মধ্যবর্তী নির্বাচনে রিপাবলিকানদের পরাজয়ের মূল কারণ ইরান যুদ্ধ: ভ্যান্স",
       "first_seen": "2026-11-05T03:41:13.372Z",
-      "last_update": "2026-11-05T04:54:28.060Z",
+      "last_update": "2026-11-05T05:29:36.127Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -353361,6 +355570,45 @@
           "kind": "verify",
           "claim_id": 776557,
           "claim_text": "হাওরাঞ্চলের স্বাস্থ্যসেবার করুণ চিত্র",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "opinion-1879": {
+      "cluster_id": 1879,
+      "headline": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+      "first_seen": "2026-11-05T05:29:36.658Z",
+      "last_update": "2026-11-05T05:29:36.671Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:14:25.000Z",
+          "kind": "evidence",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/roundtable/oz36cdp0nn"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.029Z",
+          "kind": "claim",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795095,
+          "claim_text": "বান্দরবানের উন্নয়নে শিক্ষা হোক অগ্রাধিকার",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -356022,6 +358270,14 @@
           "headline": "সাত দফা না মানলে এক দফা অনিবার্য হয়ে উঠবে: কুষ্টিয়ায় শফিকুর রহমান"
         },
         {
+          "cluster_id": 1877,
+          "slug": "national-1877",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "বড় বাজার ঘিরেই চলছে খুলনার ব্যবসা"
+        },
+        {
           "cluster_id": 1379,
           "slug": "politics-1379",
           "actor_links": 1,
@@ -356044,14 +358300,6 @@
           "source_links": 0,
           "claim_count": 2,
           "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন"
-        },
-        {
-          "cluster_id": 1832,
-          "slug": "national-1832",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 17,
-          "headline": "পত্রিকা: 'আন্দোলনে অর্থায়নের অভিযোগ: সাবেক মন্ত্রী, এমপিসহ ২০ ব্যক্তির ব্যাংক হিসাব জব্দ হচ্ছে'"
         }
       ]
     },
@@ -369596,12 +371844,131 @@
     },
     "politics-1875": {
       "cluster_id": 1875,
-      "headline": "মার্কিন চুক্তি আসলে চুক্তি নয়, এটা ট্রাম্পের আদেশনামা: আনু মুহাম্মদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+      "first_seen": "2026-11-05T05:29:36.102Z",
+      "last_update": "2026-11-05T05:29:36.120Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-04T23:59:00.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi6wRBVV95cUxNSVhpVDFjampkUTdmd3F3ZWhPRnl1T2NEdDh4dW9XYlpJYVNJOERmNkRoVFBJMlE3STdDQ2E4TDNzZWcwVFNqUTBKaTV0OG9NX3pEbUVnMW5MZzBZRGk2SkRnb2gwbUU1OUJhdy1KbWpyTGFNeF9LbWEyd3czS2tXRGFNNjVGS2VyZmNNVlBIeTh5UXZGaGc0d0E5UGRpSlI4V3E1cW0zd3pMUjBseExSZnhReTEtdzBORW1FR01ySk1RQU8tSDJhM3AtcDJya0p6VjIyQ2RCcElldzFrMkpwazNnSHFrVDl0UGx0aWUyRHlORHNoczJPbW5DaVJRNV94RUVBcWc5WWJ5VWs1X1NlYWtZWTVKcWJPNWVOTmt3MkhIUkhfMTd0NG5aenNzRlQ3bWc0U3p2RG04VWozNWNscFQzZzZLbDl4UXZMeUVKbVg1RWRadjRZQjl3WHI5dXEwZTFPVnZXWVNJSDdib2RBRF9nYV9NS0pjZ1A5a0lOQlZlalZBR3JVdHRuUDR6Qmc5aEdUaHV4c01SWkNQZnBPdHVOOWZhT1BEa1hsamlEWHNNdFZNSXBKWi1sS21JSU1naUtRUUhhd2pUQ2hiWWJRNzJyb01zb05tLVg2LWIwQUg3YzhVbTNzQWdRQUNhbmo4LXI3Z01JZlh4NU9pc3c3dXBhemZKdE43TUZrMEtJUmZZcDlDWVN2RXJJRVJRTm1xbjhHZ1BheXRIWFd1WHEtdktkNmppb2JHSWZVMUh3QU9OZzg4VmNEUkdrY0lZcWF3Yk5XS0YtdXpBb1hYa1VLS3U0aG81RHVwYXlR0gHwBEFVX3lxTE50UFNRdm5KTnE0VW5fMU9RRDhDVURqQzJBX3Fhd0xFNGFIb29PSWhUWUJmMms4RkdJWXU4MEpYaFZDX3dsdnBDUlh3SnVQVkZPQzdjOXgtRlVNdWszWjJoZk45Vjg0Y0M5Tnp0Q3NGamJKZkNSSzI1bi1neUdSLTZ5eUJOenY4RTl3NVBNejhJQTN0ZGpnUFZORGM3clJvWG9tWFA1eDJXblZUeHRDbDZOSUdDVUlHdGthdlJLSzA5RV9MZDdfdW02V1RPamRHX3VLNXFpWFgyTHdVUGxNS0cxMl83S3M0Y2U0Qlk5ZEU2TDNKWDN0UFZFQTY4eUpOcDlzaDgzR0NJY2JiYTZYckVTb2dtcFZzSlpYZGFUazB0bUw5NC1uSUNxblhwVlRtWE4zU1ZEaDEteUU1UzhFcU1MS0dET3BsVDFkcW9jT3BQZUF3ZkRzdGZmWnJPQlFMMjRvRG9TZ21uSFBJUFhMN3VpRG94TUYzRmlJclR4NWtVSDZDQURxZ0phazAxWWFaUmNoM2F5Ym44cDVFZlZVOG1wQkgzTmczN2YzYVZiSnhfM2VIOG1zcWYxaEJaWXJzLWFTZFZaWkphM0RHempsZVRobV9Wb3BxVVdoem1kYW1aUWc2ZmVfSjlMaXFYdDZUUUhyNVBxNnk5THlqeWRCUDB5UUNYZmJoUVItVElMQ3ZrZDRRdWE0cEc0RXBRNlpVelN3eGV5Z1VUWUdPMVB4SmJsaUJMRTExdWxNaUtZc1dfWF9YdHo5NTExeDI1Ql9QNTNBUmtFTTBJbWlVb3lxb2pWd3RYTGY5d1daRm82b01nUg?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T03:21:55.000Z",
+          "kind": "evidence",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxOdGdPZ3FLUlA3VDVWMWxiVkh4LUdEMXQxRUNTN0swa1B0emp2VEU2ellLcEZoTFJsNWc3UEdwZS01QzJtNldmbG1pSl9UTUdzc0N5XzNBOHdpUkZVbDlqcVRJMGMxWGNlYTZBSksxT25aQ3JFQlBxU1laUTF4enpiTHZQUWY0SmtBVEZGcHpITjdwU3p1MGxHTWFvX3pfR05pTklKRDdpWk5CRjc5ajBBM2dQblRYSldVX0NRR3RMb3dVMVVfX3ZaVkttMTh4WnpNMEZUUmlFVUFUYmdEckk0TmhBbUMxTFJ1QzdtVHROcjBHWENMOU5XWVF2UnNWUzNta003Q01aLXRubW9nOHJKcll2TWlNNElrV0VBSVNSaFhIMFVsZndJRjJSRXNKeFFJUHR0U2JoNDhvdVMzX0VWd1VqQ09rUU5tUkZ2T0x6ZGlZZWNsd2NCRFZGV0tRdE9sNFpyR3AtSXliZlpHcFhxNnYtOXI3M3p3c2t5TEYyQ1ozSXZqS0JUMVNsX2ZCRzNjT2Y2TkZzd1hJQUtER3M2TW1tN0pObFpVSTlpeVFacEJBWGlwNjgxZEtqLVc4TTlmRWRLaGlJSE9KN2U3dUllSng3dGF1aHE5YzJMRGdCWDRhTWJZb0Rmb2FwV2QtNXZBQjhJZkdTQ2NYTnJqN1dfbUFCSHA2MnRDYXdpQjV2LW96b2hHbUtWM09la3hBNGVUMkNrQU9RV09oUzd3MkdIWUkxb1E0VEFvNXdFNVlibnRGNDVPank5amRSY2NaU0RwYi1kdlZwNTB2bWpZdmlpc3ZxdldiQ3RLWXBmajZuM0pVdm5CYnM0ejdpaXdudy0xUVlZNk1fNmxSSXdaMWpSTXNEclpBX1o2TjVjcnNNS1oxNW8tXzYzeFk2YTFaZ1lwdFdhUWpVaDB4UEtFYmYwLWtCYkVxaEFidmNwRkZWZVRBQ3RXRzRLS2xydFVzckZ5S0p4SVhJSFlZYlgtazRmOGoyQ3hyOElpQjRha2NodHRZQzM5S0FnTkRwUE40UlFoeWsyRGk1WkZJVWlkeHpUVTh2clhvTGotNTdKZy1JSUVnOVFIMTlYSkxBTllmYkxB?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:57.952Z",
+          "kind": "claim",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
+          "ts": "2026-11-05T05:52:57.975Z",
+          "kind": "claim",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795090,
+          "claim_text": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795091,
+          "claim_text": "শেখ হাসিনাকে সমর্থনের অভিযোগে শাস্তি দেওয়া হচ্ছে শিক্ষক-শিক্ষার্থীদের",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1500,
+          "slug": "national-1500",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণের পরিকল্পনা এগিয়ে নেওয়ার নির্দেশ প্রধানমন্ত্রীর"
+        },
+        {
+          "cluster_id": 1427,
+          "slug": "national-1427",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সংবিধান সংশোধন কমিটির বৈঠক বর্জন শিবির, ছাত্রশক্তিসহ বিভিন্ন সংগঠনের"
+        },
+        {
+          "cluster_id": 1409,
+          "slug": "national-1409",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শেখ হাসিনা ও সাবেক স্বরাষ্ট্রমন্ত্রীর সম্পত্তি নিয়ন্ত্রণে নিতে স্বরাষ্ট্র মন্ত্রণালয়ে প্রসিকিউশনের চিঠি"
+        },
+        {
+          "cluster_id": 1396,
+          "slug": "national-1396",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "শপথ নিলেন নবনির্বাচিত সংসদ সদস্য মির্জা ফয়সল আমীন ও এলিজা জামান"
+        },
+        {
+          "cluster_id": 1255,
+          "slug": "national-alaska-governor-orders",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
+        },
+        {
+          "cluster_id": 1080,
+          "slug": "national-1080",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
+        }
+      ]
     },
     "politics-1885": {
       "cluster_id": 1885,
@@ -382842,6 +385209,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -382880,14 +385255,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
@@ -382970,6 +385337,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -383008,14 +385383,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শ্রমিক অসন্তোষ: সন্ধ্যায় মন্ত্রীদের সঙ্গে বৈঠকে বসছেন প্রধানমন্ত্রী"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -396919,11 +399286,41 @@
     },
     "sports-1878": {
       "cluster_id": 1878,
-      "headline": "মেসিকে আটকানোর ‘বিশেষ পরিকল্পনা’ নেই বেনিনের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+      "first_seen": "2026-11-05T05:29:36.634Z",
+      "last_update": "2026-11-05T05:29:36.646Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T04:17:14.000Z",
+          "kind": "evidence",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/jwk9zz23s3"
+          }
+        },
+        {
+          "ts": "2026-11-05T05:52:58.015Z",
+          "kind": "claim",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর"
+        },
+        {
+          "ts": "2026-11-05T05:52:58.134Z",
+          "kind": "verify",
+          "claim_id": 795094,
+          "claim_text": "মহা-হিসাব নিরীক্ষক ও নিয়ন্ত্রকের কার্যালয়ে ৩৪৭ পদে চাকরির সুযোগ, আবেদন শেষ ২৫ নভেম্বর",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "sports-1884": {
@@ -403593,6 +405990,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1871,
+          "slug": "national-1871",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গাজীপুরে কর্মস্থলে ফিরছেন শ্রমিকেরা, কারখানায় ফিরছে কর্মচাঞ্চল্য"
+        },
+        {
           "cluster_id": 1783,
           "slug": "national-1783",
           "actor_links": 0,
@@ -403631,14 +406036,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ফ্লোরিডায় ব্যবসায়িক বিমান বিধ্বস্ত, নিহত ৯"
-        },
-        {
-          "cluster_id": 402,
-          "slug": "national-402",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "এইচএসসির ফল প্রকাশ আজ: কমতে পারে পাসের হার ও জিপিএ-৫"
         }
       ]
     },
@@ -412281,6 +414678,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1875,
+          "slug": "politics-1875",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশে শিক্ষক-শিক্ষার্থীদের অন্যায়ভাবে শাস্তি দেওয়া হচ্ছে: এইচআরডব্লিউ"
+        },
+        {
           "cluster_id": 1500,
           "slug": "national-1500",
           "actor_links": 0,
@@ -412319,14 +414724,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সাফ খেলতে সবার আগে ঢাকায় ভুটান"
-        },
-        {
-          "cluster_id": 1080,
-          "slug": "national-1080",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "চীন বিতর্কের পর মাঠে এমবাপ্পের গোল, বড় জয় রিয়াল মাদ্রিদের"
         }
       ]
     },
