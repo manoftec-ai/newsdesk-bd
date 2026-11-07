@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 6938,
+    "storyCount": 6942,
     "kinds": [
       "claim",
       "evidence",
@@ -218,6 +218,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -248,14 +256,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
-        },
-        {
-          "cluster_id": 2244,
-          "slug": "national-2244",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
         }
       ]
     },
@@ -18421,6 +18421,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -18459,14 +18467,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -19228,7 +19228,7 @@
       "cluster_id": 2363,
       "headline": "যুব মহিলা লীগের নেত্রীকে নির্যাতনের দাবি, ছবিতে এআই ব্যবহার, নারীর খোঁজও মেলেনি",
       "first_seen": "2026-11-06T21:16:26.124Z",
-      "last_update": "2026-11-07T00:55:22.147Z",
+      "last_update": "2026-11-07T01:30:37.986Z",
       "claim_count": 7,
       "events": [
         {
@@ -19554,11 +19554,41 @@
     },
     "economy-2389": {
       "cluster_id": 2389,
-      "headline": "রেকর্ড ব্যবসা রেনাটা ফার্মার, মুনাফা বেড়েছে ১৪২ কোটি টাকা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+      "first_seen": "2026-11-07T01:30:38.435Z",
+      "last_update": "2026-11-07T01:30:38.436Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T13:54:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/samagrabangladesh/b281im83ul"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.686Z",
+          "kind": "claim",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-2391": {
@@ -22145,6 +22175,14 @@
           "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2374,
           "slug": "national-2374",
           "actor_links": 0,
@@ -22159,14 +22197,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
-        },
-        {
-          "cluster_id": 2372,
-          "slug": "national-2372",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার খুলনায় রবীন্দ্রনাথের গ্রাফিতিতে কালি, নিন্দা ও ক্ষোভ"
         }
       ]
     },
@@ -49891,7 +49921,7 @@
       "cluster_id": 2363,
       "headline": "যুব মহিলা লীগের নেত্রীকে নির্যাতনের দাবি, ছবিতে এআই ব্যবহার, নারীর খোঁজও মেলেনি",
       "first_seen": "2026-11-06T21:16:26.124Z",
-      "last_update": "2026-11-07T00:55:22.147Z",
+      "last_update": "2026-11-07T01:30:37.986Z",
       "claim_count": 7,
       "events": [
         {
@@ -50934,6 +50964,84 @@
           "headline": "ব্যাংকিং খাতে প্রথম ওয়েবভিত্তিক ইন্টারেক্টিভ সাসটেইনেবিলিটি রিপোর্ট প্রকাশ ইউসিবির"
         }
       ]
+    },
+    "entertainment-2386": {
+      "cluster_id": 2386,
+      "headline": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+      "first_seen": "2026-11-07T01:30:38.426Z",
+      "last_update": "2026-11-07T01:30:38.428Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/fun/2za0l88vbx"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.679Z",
+          "kind": "claim",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
+    "entertainment-2387": {
+      "cluster_id": 2387,
+      "headline": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+      "first_seen": "2026-11-07T01:30:38.430Z",
+      "last_update": "2026-11-07T01:30:38.431Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/ukct001hqs"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.681Z",
+          "kind": "claim",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
     },
     "entertainment-239": {
       "cluster_id": 239,
@@ -56079,20 +56187,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
-        },
-        {
-          "cluster_id": 2366,
-          "slug": "national-2366",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘জয় বাংলা’ ও জাতীয় চার নেতার নামে কোস্টগার্ডের চার জাহাজের নাম বদল"
         }
       ]
     },
@@ -65603,6 +65711,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -65633,14 +65749,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
-        },
-        {
-          "cluster_id": 2244,
-          "slug": "national-2244",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
         }
       ]
     },
@@ -70444,12 +70552,12 @@
           "headline": "নিষিদ্ধ ছাত্রলীগের মোটরসাইকেল মিছিল থেকে পুলিশের গাড়িতে ককটেল নিক্ষেপ, আহত কনস্টেবল"
         },
         {
-          "cluster_id": 2373,
-          "slug": "national-2373",
+          "cluster_id": 2384,
+          "slug": "sports-2384",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
         }
       ]
     },
@@ -79403,6 +79511,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -79441,14 +79557,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -97825,6 +97933,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -97863,14 +97979,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -102874,6 +102982,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -102912,14 +103028,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -103338,6 +103446,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -103376,14 +103492,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -104858,6 +104966,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -104896,14 +105012,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -109177,7 +109285,7 @@
       "cluster_id": 2363,
       "headline": "যুব মহিলা লীগের নেত্রীকে নির্যাতনের দাবি, ছবিতে এআই ব্যবহার, নারীর খোঁজও মেলেনি",
       "first_seen": "2026-11-06T21:16:26.124Z",
-      "last_update": "2026-11-07T00:55:22.147Z",
+      "last_update": "2026-11-07T01:30:37.986Z",
       "claim_count": 7,
       "events": [
         {
@@ -110057,7 +110165,7 @@
       "cluster_id": 2382,
       "headline": "ট্রাম্প প্রশাসনে রদবদল: হোয়াইট হাউসের নতুন প্রধান স্টিফেন মিলার",
       "first_seen": "2026-11-07T00:55:22.139Z",
-      "last_update": "2026-11-07T00:55:22.142Z",
+      "last_update": "2026-11-07T01:30:37.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -110222,38 +110330,217 @@
     },
     "international-2384": {
       "cluster_id": 2384,
-      "headline": "জ্ঞান ফিরেছে, কথাও বলছেন মৃত্যুদণ্ড কার্যকরের চেষ্টায় বেঁচে যাওয়া সেই মার্কিন নারী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+      "first_seen": "2026-11-07T01:30:37.990Z",
+      "last_update": "2026-11-07T01:30:37.992Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:16:36.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_gVBVV95cUxPYnBBVmQtODIyZmxkVHBvWVp6WE93UFk3SVBEdW5RNl9oQkdHY0xqVzFjMS1FLU9nN0lFWTNaODNwNjNWd3BPNU1RR3VQSU1LUmxuclBjakpzUVRDdjlaRlkyVTRKb1ZnanFPU3g3YlZqdmdqYm9nQmQtNXUyaU9BSEhFaW5XNG04ZTJRUlhXM0pDYmxDN1BJYzlIRnAtdWY3Q0JpVEkwd0pPakEzUWY2R2dLNHFFaGI5OE5Ob2RFaFM2ZHk2VU5MckJBalBkRjlfNHFXTXgwZzBtUVFuMWpGLVE5UHJCOWtSUFVVd1JKR2VoWXpKSUtEWWg3ZEFhVnFOMHA5M19hNGNxVnYyMU14NVc3bm9BcjdCTmFSdTUzdDFmQWc1cDlIcGVBa2QzYzg5ZjdIendMVDNrTUxFUUp5S3ZGbGpqZHMxYU1XYXlIZ19td1pqMkEyWWZ0Q200ejc4UHNhQWJIc0FjT3J4VHF2NW5tVXpncjRwd3A4N1pZNjFoeEowOTNzbG9FY2NrTTJRY3J6XzRQZW9LU3VxS25vTzFaV3dJWlM2ckdxSHpjaUY0cGVvdGoxMDlHR0puakY2aGpINEUxcmFSU2pwOHo5OHVhZ0VUQjlFdXY0RFNucVJJNFR5akR0V0FtbTBIeldNMUp3Q000OGxQVVY5eWI1Zm5oWDdzdGdobUg4RFc3UWNMU1JXSHlvb25iZzZWSWNzVWpyb1hJbkZiRVY3aEtKbTdCX1VkSWhFQWJlT183RW9COEEzWmJGdVlraExnODhKMU94TExpQjVkYVZfTzlQM0ZhNFdrVGFiTUQzeVc5ZXZSTUw0ZUNJM0xHS09tNEl1c1RmSTZsTExnZmtqS3daY0R6QjhuUkFmeEh0ODdoaFNnYWRZRkt5aTR2dWpsNWFjd05sUENRY0syNmR3X216ZXNNeVJzR3VqV001dlhvaGdtOTVvX1JINW5EeFBUV0hqV2Yya25wWWh3X0pTcE5CVUVid2pUU1lBMGRYQlFR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.674Z",
+          "kind": "claim",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.677Z",
+          "kind": "claim",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2373,
+          "slug": "national-2373",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+        },
+        {
+          "cluster_id": 2339,
+          "slug": "national-2339",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্প-কারখানায় অস্থিরতা সৃষ্টির পেছনে আওয়ামী লীগের ইন্ধন : রিজভী"
+        },
+        {
+          "cluster_id": 2308,
+          "slug": "politics-2308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "টেকনাফের পাহাড়ে যৌথ বাহিনীর অভিযান, জঙ্গলে পড়ে আছে ৩ মরদেহ"
+        },
+        {
+          "cluster_id": 2264,
+          "slug": "national-2264",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
+        },
+        {
+          "cluster_id": 2244,
+          "slug": "national-2244",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
+        },
+        {
+          "cluster_id": 2236,
+          "slug": "national-2236",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
+        }
+      ]
     },
     "international-2385": {
       "cluster_id": 2385,
-      "headline": "জীবনযাত্রার ব্যয় বৃদ্ধির প্রতিবাদে উত্তাল ফ্রান্স, প্যারিসে সংঘর্ষ",
-      "first_seen": null,
-      "last_update": null,
+      "headline": "জাতীয় বিপ্লব ও সংহতি দিবসে বিএনপির শোভাযাত্রা, নেতৃত্ব দেবেন প্রধানমন্ত্রী",
+      "first_seen": "2026-11-07T01:30:37.996Z",
+      "last_update": "2026-11-07T01:30:38.000Z",
       "claim_count": 0,
       "events": [],
       "related": []
     },
     "international-2386": {
       "cluster_id": 2386,
-      "headline": "শিক্ষায় ক্রমোন্নতি, আর ছন্দপতনে ঘুরে দাঁড়ানো",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+      "first_seen": "2026-11-07T01:30:38.426Z",
+      "last_update": "2026-11-07T01:30:38.428Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/fun/2za0l88vbx"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.679Z",
+          "kind": "claim",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-2387": {
       "cluster_id": 2387,
-      "headline": "মিয়ানমারের জান্তার সঙ্গে সরাসরি আলোচনা শুরু যুক্তরাষ্ট্রের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+      "first_seen": "2026-11-07T01:30:38.430Z",
+      "last_update": "2026-11-07T01:30:38.431Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/ukct001hqs"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.681Z",
+          "kind": "claim",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-2397": {
@@ -123948,6 +124235,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -123986,14 +124281,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -142366,7 +142653,7 @@
       "cluster_id": 2377,
       "headline": "কক্সবাজারে মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি",
       "first_seen": "2026-11-06T23:41:34.166Z",
-      "last_update": "2026-11-07T00:55:22.145Z",
+      "last_update": "2026-11-07T01:30:37.989Z",
       "claim_count": 3,
       "events": [
         {
@@ -142755,6 +143042,136 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "international-how-stephen-miller": {
+      "cluster_id": 2376,
+      "headline": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+      "first_seen": "2026-11-06T23:07:21.483Z",
+      "last_update": "2026-11-07T01:30:37.980Z",
+      "claim_count": 3,
+      "events": [
+        {
+          "ts": "2026-11-06T19:05:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1224084,
+          "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+          }
+        },
+        {
+          "ts": "2026-11-06T19:05:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1224085,
+          "claim_text": "Stephen Miller to become Trump’s new White House chief of staff",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+          }
+        },
+        {
+          "ts": "2026-11-06T19:05:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:35:09.000Z",
+          "kind": "evidence",
+          "claim_id": 1224084,
+          "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/susie-wiles-white-house-resignation"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:35:09.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/susie-wiles-white-house-resignation"
+          }
+        },
+        {
+          "ts": "2026-11-06T23:29:52.862Z",
+          "kind": "claim",
+          "claim_id": 1224084,
+          "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role"
+        },
+        {
+          "ts": "2026-11-06T23:29:52.864Z",
+          "kind": "claim",
+          "claim_id": 1224085,
+          "claim_text": "Stephen Miller to become Trump’s new White House chief of staff"
+        },
+        {
+          "ts": "2026-11-06T23:29:52.970Z",
+          "kind": "verify",
+          "claim_id": 1224084,
+          "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-06T23:29:52.970Z",
+          "kind": "verify",
+          "claim_id": 1224085,
+          "claim_text": "Stephen Miller to become Trump’s new White House chief of staff",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:04:52.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/donald-trump-stephen-miller-immigration"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.648Z",
+          "kind": "claim",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-jordon-steele-john": {
@@ -144276,10 +144693,10 @@
     },
     "international-susie-wiles-exits": {
       "cluster_id": 2376,
-      "headline": "Susie Wiles exits White House as Trump ousts another woman from key role",
+      "headline": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
       "first_seen": "2026-11-06T23:07:21.483Z",
-      "last_update": "2026-11-07T00:55:22.149Z",
-      "claim_count": 2,
+      "last_update": "2026-11-07T01:30:37.980Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-06T19:05:58.000Z",
@@ -144304,10 +144721,32 @@
           }
         },
         {
+          "ts": "2026-11-06T19:05:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+          }
+        },
+        {
           "ts": "2026-11-06T22:35:09.000Z",
           "kind": "evidence",
           "claim_id": 1224084,
           "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/susie-wiles-white-house-resignation"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:35:09.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
           "detail": {
             "source_id": "guardian-world",
             "relation": "supports",
@@ -144343,6 +144782,35 @@
           "kind": "verify",
           "claim_id": 1224085,
           "claim_text": "Stephen Miller to become Trump’s new White House chief of staff",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:04:52.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/donald-trump-stephen-miller-immigration"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.648Z",
+          "kind": "claim",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
           "detail": {
             "status": "SINGLE_SOURCE",
             "from": null,
@@ -145248,6 +145716,14 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -145278,14 +145754,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
-        },
-        {
-          "cluster_id": 2244,
-          "slug": "national-2244",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
         }
       ]
     },
@@ -145733,6 +146201,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -145771,14 +146247,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -150627,6 +151095,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -150665,14 +151141,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -157889,6 +158357,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -157927,14 +158403,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -163335,12 +163803,12 @@
           "headline": "নিষিদ্ধ ছাত্রলীগের মোটরসাইকেল মিছিল থেকে পুলিশের গাড়িতে ককটেল নিক্ষেপ, আহত কনস্টেবল"
         },
         {
-          "cluster_id": 2373,
-          "slug": "national-2373",
+          "cluster_id": 2384,
+          "slug": "sports-2384",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
         }
       ]
     },
@@ -163590,6 +164058,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -163628,14 +164104,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -166093,6 +166561,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -166131,14 +166607,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -168886,6 +169354,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -168924,14 +169400,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -191671,6 +192139,14 @@
           "headline": "তাহসিফ হত্যাকাণ্ডে ‘বন্ধুস্থানীয় ছোট ভাই’ দীপের আবারও রিমান্ড মঞ্জুর"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2377,
           "slug": "sports-2377",
           "actor_links": 0,
@@ -191701,14 +192177,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
-        },
-        {
-          "cluster_id": 2339,
-          "slug": "national-2339",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শিল্প-কারখানায় অস্থিরতা সৃষ্টির পেছনে আওয়ামী লীগের ইন্ধন : রিজভী"
         }
       ]
     },
@@ -195582,6 +196050,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -195620,14 +196096,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -195710,6 +196178,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -195748,14 +196224,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -235545,6 +236013,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -235583,14 +236059,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -238367,6 +238835,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -238405,14 +238881,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -252935,6 +253403,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -252973,14 +253449,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -261606,6 +262074,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -261644,14 +262120,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -273238,6 +273706,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -273276,14 +273752,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -278235,6 +278703,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -278273,14 +278749,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -279525,6 +279993,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -279563,14 +280039,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -279717,6 +280185,14 @@
           "headline": "বদলে গেছে এইচএসসির ফল জানার পদ্ধতি, নতুন নিয়ম জেনে নিন"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2374,
           "slug": "national-2374",
           "actor_links": 0,
@@ -279731,14 +280207,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
-        },
-        {
-          "cluster_id": 2372,
-          "slug": "national-2372",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার খুলনায় রবীন্দ্রনাথের গ্রাফিতিতে কালি, নিন্দা ও ক্ষোভ"
         }
       ]
     },
@@ -286960,12 +287428,12 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
-          "cluster_id": 2373,
-          "slug": "national-2373",
+          "cluster_id": 2384,
+          "slug": "sports-2384",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
         }
       ]
     },
@@ -288512,6 +288980,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -288550,14 +289026,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -289041,6 +289509,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -289079,14 +289555,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -290944,6 +291412,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -290982,14 +291458,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -298330,7 +298798,7 @@
       "cluster_id": 2327,
       "headline": "তিশার সদস্যপদ অনির্দিষ্টকালের জন্য স্থগিত করল অভিনয়শিল্পী সংঘ বাংলাদেশ",
       "first_seen": "2026-11-06T18:42:54.010Z",
-      "last_update": "2026-11-07T00:55:22.152Z",
+      "last_update": "2026-11-07T01:30:37.995Z",
       "claim_count": 4,
       "events": [
         {
@@ -300245,6 +300713,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -300283,14 +300759,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -302607,7 +303075,7 @@
       "cluster_id": 2362,
       "headline": "বিএলসিসিকে হারিয়ে ফ্রস্ট ব্লাস্ট টি-টোয়েন্টির ফাইনালে বসুন্ধরা স্ট্রাইকার্স",
       "first_seen": "2026-11-06T21:16:26.119Z",
-      "last_update": "2026-11-07T00:55:22.150Z",
+      "last_update": "2026-11-07T01:30:37.993Z",
       "claim_count": 2,
       "events": [
         {
@@ -302686,7 +303154,7 @@
       "cluster_id": 2364,
       "headline": "রূপগঞ্জে এপিবিএন সদস্যের রগ কাটল মাদক কারবারিরা",
       "first_seen": "2026-11-06T21:16:26.132Z",
-      "last_update": "2026-11-07T00:55:22.153Z",
+      "last_update": "2026-11-07T01:30:38.001Z",
       "claim_count": 2,
       "events": [
         {
@@ -304032,6 +304500,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2339,
           "slug": "national-2339",
           "actor_links": 0,
@@ -304070,14 +304546,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
-        },
-        {
-          "cluster_id": 2218,
-          "slug": "national-2218",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "গৃহবধূকে হাতুড়ি দিয়ে পিটিয়ে হত্যার অভিযোগে স্বামী আটক"
         }
       ]
     },
@@ -304290,10 +304758,10 @@
     },
     "national-2376": {
       "cluster_id": 2376,
-      "headline": "Susie Wiles exits White House as Trump ousts another woman from key role",
+      "headline": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
       "first_seen": "2026-11-06T23:07:21.483Z",
-      "last_update": "2026-11-07T00:55:22.149Z",
-      "claim_count": 2,
+      "last_update": "2026-11-07T01:30:37.980Z",
+      "claim_count": 3,
       "events": [
         {
           "ts": "2026-11-06T19:05:58.000Z",
@@ -304318,10 +304786,32 @@
           }
         },
         {
+          "ts": "2026-11-06T19:05:58.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+          }
+        },
+        {
           "ts": "2026-11-06T22:35:09.000Z",
           "kind": "evidence",
           "claim_id": 1224084,
           "claim_text": "Susie Wiles exits White House as Trump ousts another woman from key role",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/susie-wiles-white-house-resignation"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:35:09.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
           "detail": {
             "source_id": "guardian-world",
             "relation": "supports",
@@ -304363,6 +304853,35 @@
             "confidence": 33,
             "reason": "verify"
           }
+        },
+        {
+          "ts": "2026-11-07T01:04:52.000Z",
+          "kind": "evidence",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "source_id": "guardian-world",
+            "relation": "supports",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/donald-trump-stephen-miller-immigration"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.648Z",
+          "kind": "claim",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254563,
+          "claim_text": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
         }
       ],
       "related": []
@@ -304371,7 +304890,7 @@
       "cluster_id": 2377,
       "headline": "কক্সবাজারে মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি",
       "first_seen": "2026-11-06T23:41:34.166Z",
-      "last_update": "2026-11-07T00:55:22.145Z",
+      "last_update": "2026-11-07T01:30:37.989Z",
       "claim_count": 3,
       "events": [
         {
@@ -304933,7 +305452,7 @@
       "cluster_id": 2382,
       "headline": "ট্রাম্প প্রশাসনে রদবদল: হোয়াইট হাউসের নতুন প্রধান স্টিফেন মিলার",
       "first_seen": "2026-11-07T00:55:22.139Z",
-      "last_update": "2026-11-07T00:55:22.142Z",
+      "last_update": "2026-11-07T01:30:37.987Z",
       "claim_count": 2,
       "events": [
         {
@@ -305096,49 +305615,297 @@
       ],
       "related": []
     },
+    "national-2384": {
+      "cluster_id": 2384,
+      "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+      "first_seen": "2026-11-07T01:30:37.990Z",
+      "last_update": "2026-11-07T01:30:37.992Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:16:36.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_gVBVV95cUxPYnBBVmQtODIyZmxkVHBvWVp6WE93UFk3SVBEdW5RNl9oQkdHY0xqVzFjMS1FLU9nN0lFWTNaODNwNjNWd3BPNU1RR3VQSU1LUmxuclBjakpzUVRDdjlaRlkyVTRKb1ZnanFPU3g3YlZqdmdqYm9nQmQtNXUyaU9BSEhFaW5XNG04ZTJRUlhXM0pDYmxDN1BJYzlIRnAtdWY3Q0JpVEkwd0pPakEzUWY2R2dLNHFFaGI5OE5Ob2RFaFM2ZHk2VU5MckJBalBkRjlfNHFXTXgwZzBtUVFuMWpGLVE5UHJCOWtSUFVVd1JKR2VoWXpKSUtEWWg3ZEFhVnFOMHA5M19hNGNxVnYyMU14NVc3bm9BcjdCTmFSdTUzdDFmQWc1cDlIcGVBa2QzYzg5ZjdIendMVDNrTUxFUUp5S3ZGbGpqZHMxYU1XYXlIZ19td1pqMkEyWWZ0Q200ejc4UHNhQWJIc0FjT3J4VHF2NW5tVXpncjRwd3A4N1pZNjFoeEowOTNzbG9FY2NrTTJRY3J6XzRQZW9LU3VxS25vTzFaV3dJWlM2ckdxSHpjaUY0cGVvdGoxMDlHR0puakY2aGpINEUxcmFSU2pwOHo5OHVhZ0VUQjlFdXY0RFNucVJJNFR5akR0V0FtbTBIeldNMUp3Q000OGxQVVY5eWI1Zm5oWDdzdGdobUg4RFc3UWNMU1JXSHlvb25iZzZWSWNzVWpyb1hJbkZiRVY3aEtKbTdCX1VkSWhFQWJlT183RW9COEEzWmJGdVlraExnODhKMU94TExpQjVkYVZfTzlQM0ZhNFdrVGFiTUQzeVc5ZXZSTUw0ZUNJM0xHS09tNEl1c1RmSTZsTExnZmtqS3daY0R6QjhuUkFmeEh0ODdoaFNnYWRZRkt5aTR2dWpsNWFjd05sUENRY0syNmR3X216ZXNNeVJzR3VqV001dlhvaGdtOTVvX1JINW5EeFBUV0hqV2Yya25wWWh3X0pTcE5CVUVid2pUU1lBMGRYQlFR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.674Z",
+          "kind": "claim",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.677Z",
+          "kind": "claim",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2373,
+          "slug": "national-2373",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+        },
+        {
+          "cluster_id": 2339,
+          "slug": "national-2339",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্প-কারখানায় অস্থিরতা সৃষ্টির পেছনে আওয়ামী লীগের ইন্ধন : রিজভী"
+        },
+        {
+          "cluster_id": 2308,
+          "slug": "politics-2308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "টেকনাফের পাহাড়ে যৌথ বাহিনীর অভিযান, জঙ্গলে পড়ে আছে ৩ মরদেহ"
+        },
+        {
+          "cluster_id": 2264,
+          "slug": "national-2264",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
+        },
+        {
+          "cluster_id": 2244,
+          "slug": "national-2244",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
+        },
+        {
+          "cluster_id": 2236,
+          "slug": "national-2236",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
+        }
+      ]
+    },
     "national-2385": {
       "cluster_id": 2385,
-      "headline": "দুদকের মামলায় সাবেক পুলিশ সার্জেন্টের সাজা",
-      "first_seen": null,
-      "last_update": null,
+      "headline": "জাতীয় বিপ্লব ও সংহতি দিবসে বিএনপির শোভাযাত্রা, নেতৃত্ব দেবেন প্রধানমন্ত্রী",
+      "first_seen": "2026-11-07T01:30:37.996Z",
+      "last_update": "2026-11-07T01:30:38.000Z",
       "claim_count": 0,
       "events": [],
       "related": []
     },
     "national-2386": {
       "cluster_id": 2386,
-      "headline": "বাংলাদেশ থেকে বিশ্বমঞ্চে: এডুকেশন কানেক্ট গ্লোবালের পথচলা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+      "first_seen": "2026-11-07T01:30:38.426Z",
+      "last_update": "2026-11-07T01:30:38.428Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/fun/2za0l88vbx"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.679Z",
+          "kind": "claim",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254579,
+          "claim_text": "হোয়াট আ গ্রেট ট্রানজিশন অব এলপিজি সিলিন্ডার!",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2387": {
       "cluster_id": 2387,
-      "headline": "বাংলার প্যাঁচাদের রহস্যময় জগৎ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+      "first_seen": "2026-11-07T01:30:38.430Z",
+      "last_update": "2026-11-07T01:30:38.431Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/song/ukct001hqs"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.681Z",
+          "kind": "claim",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254580,
+          "claim_text": "৭ ব্যান্ডের ৭ ঘণ্টার কনসার্ট আজ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2388": {
       "cluster_id": 2388,
-      "headline": "ভবিষ্যতের আবাসন খাত এবং আবাসন খাতের ভবিষ্যৎ–ভাবনা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "একটি সাধারণ ঘরে প্রায় পরমশূন্য তাপমাত্রার কোনো বস্তু রাখলে কী ঘটবে",
+      "first_seen": "2026-11-07T01:30:38.432Z",
+      "last_update": "2026-11-07T01:30:38.434Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-07T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254581,
+          "claim_text": "একটি সাধারণ ঘরে প্রায় পরমশূন্য তাপমাত্রার কোনো বস্তু রাখলে কী ঘটবে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bigganchinta.com/physics/2te17ip615"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.684Z",
+          "kind": "claim",
+          "claim_id": 1254581,
+          "claim_text": "একটি সাধারণ ঘরে প্রায় পরমশূন্য তাপমাত্রার কোনো বস্তু রাখলে কী ঘটবে"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254581,
+          "claim_text": "একটি সাধারণ ঘরে প্রায় পরমশূন্য তাপমাত্রার কোনো বস্তু রাখলে কী ঘটবে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-2389": {
       "cluster_id": 2389,
-      "headline": "আবদুল করিম সাহিত্যবিশারদকে স্মরণ করল পটিয়া বন্ধুসভা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+      "first_seen": "2026-11-07T01:30:38.435Z",
+      "last_update": "2026-11-07T01:30:38.436Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-05T13:54:00.000Z",
+          "kind": "evidence",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/samagrabangladesh/b281im83ul"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.686Z",
+          "kind": "claim",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254582,
+          "claim_text": "স্কুলে ‘জয় বাংলা, জয় বঙ্গবন্ধু’ স্লোগান, ৯ শিক্ষার্থীকে টিসি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-239": {
@@ -312372,6 +313139,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -312410,14 +313185,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -325581,6 +326348,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -325619,14 +326394,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -347077,6 +347844,14 @@
           "headline": "এইচএসসিতে দিনাজপুর শিক্ষা বোর্ডে ৪৯ প্রতিষ্ঠানের পাশ করেনি কেউ"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2374,
           "slug": "national-2374",
           "actor_links": 0,
@@ -347091,14 +347866,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
-        },
-        {
-          "cluster_id": 2372,
-          "slug": "national-2372",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এবার খুলনায় রবীন্দ্রনাথের গ্রাফিতিতে কালি, নিন্দা ও ক্ষোভ"
         }
       ]
     },
@@ -347855,6 +348622,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -347893,14 +348668,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -348286,12 +349053,12 @@
           "headline": "রামপুরায় দুই বাসের পাল্লাপাল্লিতে চাপা পড়ে ইলেকট্রিশিয়ানের মৃত্যু, চালক আটক"
         },
         {
-          "cluster_id": 2373,
-          "slug": "national-2373",
+          "cluster_id": 2384,
+          "slug": "sports-2384",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
         }
       ]
     },
@@ -348630,6 +349397,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -348668,14 +349443,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -349626,20 +350393,20 @@
           "headline": "তাহসিফের মৃত্যু: ধাওয়া দেওয়া ব্যক্তিরা কি মাদক কারবারি, নাকি পুলিশ—সেই প্রশ্নের উত্তর খুঁজছেন তদন্তকারীরা"
         },
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
-        },
-        {
-          "cluster_id": 2366,
-          "slug": "national-2366",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "‘জয় বাংলা’ ও জাতীয় চার নেতার নামে কোস্টগার্ডের চার জাহাজের নাম বদল"
         }
       ]
     },
@@ -351427,6 +352194,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -351465,14 +352240,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -365797,6 +366564,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -365835,14 +366610,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -368646,6 +369413,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -368684,14 +369459,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -423244,6 +424011,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -423282,14 +424057,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -428925,6 +429692,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -428963,14 +429738,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -437870,6 +438637,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -437908,14 +438683,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -457089,6 +457856,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -457127,14 +457902,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -483539,7 +484306,7 @@
       "cluster_id": 2377,
       "headline": "কক্সবাজারে মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি",
       "first_seen": "2026-11-06T23:41:34.166Z",
-      "last_update": "2026-11-07T00:55:22.145Z",
+      "last_update": "2026-11-07T01:30:37.989Z",
       "claim_count": 3,
       "events": [
         {
@@ -483716,12 +484483,131 @@
     },
     "sports-2384": {
       "cluster_id": 2384,
-      "headline": "সাফে ভারতের অংশগ্রহণ নিয়ে নতুন করে যা জানা গেল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+      "first_seen": "2026-11-07T01:30:37.990Z",
+      "last_update": "2026-11-07T01:30:37.992Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T09:38:57.000Z",
+          "kind": "evidence",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oQVZORDJ3MWNhcTZ3dlRJWlpOaGV2MDFIOEFNS1lsMXk1aDh2dENzaFUwUkNMRENtQnUxNy1VUEM1WWZUdS1FZjM4TFUwSHlqdlRGb0JRSDlRcFpjVFNvUVZmRklRME1SLXN2dXZ5Yk53NjdX?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-06T22:16:36.000Z",
+          "kind": "evidence",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "source_id": "samakal",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_gVBVV95cUxPYnBBVmQtODIyZmxkVHBvWVp6WE93UFk3SVBEdW5RNl9oQkdHY0xqVzFjMS1FLU9nN0lFWTNaODNwNjNWd3BPNU1RR3VQSU1LUmxuclBjakpzUVRDdjlaRlkyVTRKb1ZnanFPU3g3YlZqdmdqYm9nQmQtNXUyaU9BSEhFaW5XNG04ZTJRUlhXM0pDYmxDN1BJYzlIRnAtdWY3Q0JpVEkwd0pPakEzUWY2R2dLNHFFaGI5OE5Ob2RFaFM2ZHk2VU5MckJBalBkRjlfNHFXTXgwZzBtUVFuMWpGLVE5UHJCOWtSUFVVd1JKR2VoWXpKSUtEWWg3ZEFhVnFOMHA5M19hNGNxVnYyMU14NVc3bm9BcjdCTmFSdTUzdDFmQWc1cDlIcGVBa2QzYzg5ZjdIendMVDNrTUxFUUp5S3ZGbGpqZHMxYU1XYXlIZ19td1pqMkEyWWZ0Q200ejc4UHNhQWJIc0FjT3J4VHF2NW5tVXpncjRwd3A4N1pZNjFoeEowOTNzbG9FY2NrTTJRY3J6XzRQZW9LU3VxS25vTzFaV3dJWlM2ckdxSHpjaUY0cGVvdGoxMDlHR0puakY2aGpINEUxcmFSU2pwOHo5OHVhZ0VUQjlFdXY0RFNucVJJNFR5akR0V0FtbTBIeldNMUp3Q000OGxQVVY5eWI1Zm5oWDdzdGdobUg4RFc3UWNMU1JXSHlvb25iZzZWSWNzVWpyb1hJbkZiRVY3aEtKbTdCX1VkSWhFQWJlT183RW9COEEzWmJGdVlraExnODhKMU94TExpQjVkYVZfTzlQM0ZhNFdrVGFiTUQzeVc5ZXZSTUw0ZUNJM0xHS09tNEl1c1RmSTZsTExnZmtqS3daY0R6QjhuUkFmeEh0ODdoaFNnYWRZRkt5aTR2dWpsNWFjd05sUENRY0syNmR3X216ZXNNeVJzR3VqV001dlhvaGdtOTVvX1JINW5EeFBUV0hqV2Yya25wWWh3X0pTcE5CVUVid2pUU1lBMGRYQlFR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.674Z",
+          "kind": "claim",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.677Z",
+          "kind": "claim",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার"
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254577,
+          "claim_text": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-07T01:50:58.779Z",
+          "kind": "verify",
+          "claim_id": 1254578,
+          "claim_text": "ঝিনাইদহে হোটেল মালিকের ঝুলন্ত মরদেহ উদ্ধার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 2373,
+          "slug": "national-2373",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মোটরসাইকেলে এসে মাইক্রোবাস থামিয়ে ব্যবসায়ীকে গুলি"
+        },
+        {
+          "cluster_id": 2339,
+          "slug": "national-2339",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "শিল্প-কারখানায় অস্থিরতা সৃষ্টির পেছনে আওয়ামী লীগের ইন্ধন : রিজভী"
+        },
+        {
+          "cluster_id": 2308,
+          "slug": "politics-2308",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "টেকনাফের পাহাড়ে যৌথ বাহিনীর অভিযান, জঙ্গলে পড়ে আছে ৩ মরদেহ"
+        },
+        {
+          "cluster_id": 2264,
+          "slug": "national-2264",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুলিশের হামলার প্রতিবাদে কালো কাপড় বেঁধে বিক্ষোভ শিক্ষার্থীদের, অধ্যক্ষকে অবাঞ্ছিত ঘোষণা"
+        },
+        {
+          "cluster_id": 2244,
+          "slug": "national-2244",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
+        },
+        {
+          "cluster_id": 2236,
+          "slug": "national-2236",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
+        }
+      ]
     },
     "sports-2424": {
       "cluster_id": 2424,
@@ -486222,6 +487108,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -486260,14 +487154,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
@@ -493942,6 +494828,14 @@
       ],
       "related": [
         {
+          "cluster_id": 2384,
+          "slug": "sports-2384",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "গৃহবধূর ঝুলন্ত মরদেহ উদ্ধার, গরু-ছাগল নিয়ে ‘উধাও’ শশুরবাড়ির লোকজন"
+        },
+        {
           "cluster_id": 2373,
           "slug": "national-2373",
           "actor_links": 0,
@@ -493980,14 +494874,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমবার ভৌতিক সিনেমায় ভূমি পেডনেকর"
-        },
-        {
-          "cluster_id": 2236,
-          "slug": "national-2236",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "স্ট্রেচারে মাঠ ছাড়া সাদমানকে নেওয়া হলো হাসপাতালে"
         }
       ]
     },
