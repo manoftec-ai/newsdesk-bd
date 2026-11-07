@@ -1,10 +1,12 @@
 ---
 title: "খাজার বোমা: কেপ টাউনে বল টেম্পারিংয়ে জড়িত ছিল পুরো অস্ট্রেলিয়া দল"
+thumbnail: "/images/sports-2441.webp"
+thumbnailAlt: "খাজার বোমা: কেপ টাউনে বল টেম্পারিংয়ে জড়িত ছিল পুরো অস্ট্রেলিয়া দল — ছবি: প্রথম আলো"
 seoTitle: "খাজার বোমা: কেপ টাউনে বল টেম্পারিংয়ে জড়িত ছিল পুরো অস্ট্রেলিয়া দল"
 excerpt: "’ . এত দিন ক্রিকেট অস্ট্রেলিয়া (সিএ), সংশ্লিষ্ট খেলোয়াড় ও স্টাফদের পক্ষ থেকে বলা হয়েছে, এ ঘটনার জন্য শুধু স্টিভ স্মিথ, ডেভিড ওয়ার্নার ও ব্যানক্রফটই দায়ী ছিলেন। খাজা আরও দাবি করেছেন"
 seoDescription: "’ . এত দিন ক্রিকেট অস্ট্রেলিয়া (সিএ), সংশ্লিষ্ট খেলোয়াড় ও স্টাফদের পক্ষ থেকে বলা হয়েছে, এ ঘটনার জন্য শুধু স্টিভ স্মিথ, ডেভিড ওয়ার্নার ও ব্যানক্রফটই দায়ী ছ…"
 date: 2026-11-07T04:54:36.000Z
-publishedAt: 2026-11-07T07:15:39.191Z
+publishedAt: 2026-11-07T07:11:10.693Z
 developing: false
 category: "sports"
 tags: ["cricket"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-07T07:15:38.958Z"
+  evaluatedAt: "2026-11-07T07:11:10.465Z"
   clusterId: 2441
   claimIds:
     - 1308986
@@ -48,7 +50,7 @@ publication:
   slug: "sports-2441"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-07T07:15:38.958Z"
+  checkedAt: "2026-11-07T07:11:10.465Z"
   clusterId: 2441
   claimIds:
     - 1308986

@@ -1,10 +1,12 @@
 ---
 title: "বেনাপোল বন্দর দিয়ে আমদানি-রপ্তানি বন্ধ"
+thumbnail: "/images/economy-2457.webp"
+thumbnailAlt: "বেনাপোল বন্দর দিয়ে আমদানি-রপ্তানি বন্ধ — ছবি: চ্যানেল আই"
 seoTitle: "বেনাপোল বন্দর দিয়ে আমদানি-রপ্তানি বন্ধ"
 excerpt: "এদিকে বেনাপোল চেকপোষ্টে আন্তর্জাতিক ইমিগ্রেশনের অফিসার ইনচার্জ সাইফুর রহমান জানান, জাতীয় বিপ্লব ও সংহতি দিবস উপলক্ষে আমদানি-রপ্তানি কার্যক্রম বন্ধ থাকলেও বেনাপোল ইমিগ্রেশন চেকপোস্ট"
 seoDescription: "এদিকে বেনাপোল চেকপোষ্টে আন্তর্জাতিক ইমিগ্রেশনের অফিসার ইনচার্জ সাইফুর রহমান জানান, জাতীয় বিপ্লব ও সংহতি দিবস উপলক্ষে আমদানি-রপ্তানি কার্যক্রম বন্ধ থাকলেও …"
 date: 2026-11-07T06:30:16.000Z
-publishedAt: 2026-11-07T07:15:39.164Z
+publishedAt: 2026-11-07T07:11:10.664Z
 developing: true
 category: "economy"
 tags: ["jashore"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-07T07:15:38.958Z"
+  evaluatedAt: "2026-11-07T07:11:10.465Z"
   clusterId: 2457
   claimIds:
     - 1324806
@@ -43,7 +45,7 @@ publication:
   slug: "economy-2457"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-07T07:15:38.958Z"
+  checkedAt: "2026-11-07T07:11:10.465Z"
   clusterId: 2457
   claimIds:
     - 1324806
