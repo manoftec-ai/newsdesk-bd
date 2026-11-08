@@ -1,10 +1,12 @@
 ---
 title: "ঢাবিতে ককটেল বিস্ফোরণের পর আটক ব্যক্তি বললেন, ‘আমি বিএনপি করি ভাই’"
+thumbnail: "/images/national-2841.webp"
+thumbnailAlt: "ঢাবিতে ককটেল বিস্ফোরণের পর আটক ব্যক্তি বললেন, ‘আমি বিএনপি করি ভাই’ — ছবি: প্রথম আলো"
 seoTitle: "ঢাবিতে ককটেল বিস্ফোরণের পর আটক ব্যক্তি বললেন, ‘আমি বিএনপি করি ভাই’"
 excerpt: "বিশ্ববিদ্যালয়ের প্রক্টর অধ্যাপক মো. ইসরাফিল প্রাং বলেন, টিএসসিতে ককটেল বিস্ফোরণের পর শিক্ষার্থীরা দুজনকে আটক করে প্রক্টরিয়াল টিমের কাছে সোপর্দ করেন। বিস্ফোরণের পর উপস্থিত লোকজন ও ছ"
 seoDescription: "বিশ্ববিদ্যালয়ের প্রক্টর অধ্যাপক মো. ইসরাফিল প্রাং বলেন, টিএসসিতে ককটেল বিস্ফোরণের পর শিক্ষার্থীরা দুজনকে আটক করে প্রক্টরিয়াল টিমের কাছে সোপর্দ করেন। বিস্ফ…"
 date: 2026-11-08T12:56:00.000Z
-publishedAt: 2026-11-08T17:07:53.846Z
+publishedAt: 2026-11-08T17:04:34.848Z
 developing: false
 category: "national"
 tags: ["education", "economy", "transport", "dhaka", "factcheck", "rajshahi", "khulna", "cumilla"]
@@ -36,7 +38,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-08T17:07:53.684Z"
+  evaluatedAt: "2026-11-08T17:04:34.659Z"
   clusterId: 2841
   claimIds:
     - 1738556
@@ -65,7 +67,7 @@ publication:
   slug: "national-2841"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-08T17:07:53.684Z"
+  checkedAt: "2026-11-08T17:04:34.659Z"
   clusterId: 2841
   claimIds:
     - 1738556

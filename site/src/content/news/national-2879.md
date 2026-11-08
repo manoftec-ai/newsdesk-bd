@@ -1,10 +1,12 @@
 ---
 title: "এনএসইউতে শিক্ষার্থীদের নির্মিত চলচ্চিত্রে সাইবার নিরাপত্তার বার্তা"
+thumbnail: "/images/national-2879.webp"
+thumbnailAlt: "এনএসইউতে শিক্ষার্থীদের নির্মিত চলচ্চিত্রে সাইবার নিরাপত্তার বার্তা — ছবি: প্রথম আলো"
 seoTitle: "এনএসইউতে শিক্ষার্থীদের নির্মিত চলচ্চিত্রে সাইবার নিরাপত্তার বার্তা"
 excerpt: "গল্প ও চলচ্চিত্রের মাধ্যমে সাইবার নিরাপত্তা বিষয়ে সচেতনতা তৈরির লক্ষ্যে নর্থ সাউথ ইউনিভার্সিটির (এনএসইউ) সাইবারসিকিউরিটি সেন্টার (এনএসইউ-সিএসসি) আয়োজন করেছে ‘সাইবারফ্রেমস গালা নাইট"
 seoDescription: "গল্প ও চলচ্চিত্রের মাধ্যমে সাইবার নিরাপত্তা বিষয়ে সচেতনতা তৈরির লক্ষ্যে নর্থ সাউথ ইউনিভার্সিটির (এনএসইউ) সাইবারসিকিউরিটি সেন্টার (এনএসইউ-সিএসসি) আয়োজন করে…"
 date: 2026-11-08T15:57:00.000Z
-publishedAt: 2026-11-08T17:07:53.826Z
+publishedAt: 2026-11-08T17:04:34.827Z
 developing: true
 category: "national"
 tags: ["education"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-08T17:07:53.684Z"
+  evaluatedAt: "2026-11-08T17:04:34.659Z"
   clusterId: 2879
   claimIds:
     - 1774874
@@ -43,7 +45,7 @@ publication:
   slug: "national-2879"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-08T17:07:53.684Z"
+  checkedAt: "2026-11-08T17:04:34.659Z"
   clusterId: 2879
   claimIds:
     - 1774874
