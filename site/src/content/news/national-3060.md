@@ -1,5 +1,7 @@
 ---
 title: "শিল্পাঞ্চলের নিরাপত্তা: দেশের তিন জেলায় ৩৪ প্লাটুন বিজিবি মোতায়েন"
+thumbnail: "/images/national-3060.webp"
+thumbnailAlt: "শিল্পাঞ্চলের নিরাপত্তা: দেশের তিন জেলায় ৩৪ প্লাটুন বিজিবি মোতায়েন — যাচাইডেস্ক"
 seoTitle: "শিল্পাঞ্চলের নিরাপত্তা: দেশের তিন জেলায় ৩৪ প্লাটুন বিজিবি মোতায়েন"
 excerpt: "Image ১৯: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ২০: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন সরকারি ক্রয়, ভ্যাট ও সৌরবিদ্যুৎ"
 seoDescription: "Image ১৯: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ২০: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন সরকার…"
