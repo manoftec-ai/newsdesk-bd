@@ -8,16 +8,17 @@
   "date": "2026-11-10T06:28:11.000Z",
   "developing": false,
   "verdict": {
-    "badge": "single",
+    "badge": "confirmed",
     "tier": "A",
-    "score": 2,
+    "score": 4,
     "status": "passed"
   },
   "rawCategories": [
-    "international"
+    "international",
+    "Nvidia"
   ],
-  "needsReview": false,
-  "reviewReason": null,
+  "needsReview": true,
+  "reviewReason": "unknown-category",
   "members": [
     {
       "source_id": "prothomalo-en",
@@ -38,6 +39,16 @@
       "lang": "bn",
       "lead": "Nvidia CEO Jensen Huang has admitted to having an affair, reportedly with a Chinese executive at a Singapore-based company that the United States suspects of smuggling AI microchips into China. The scandal has focused attention on how China, a major artificial-intelligence power in itself, obtains the cutting-edge chips despite US export restrictions. . Nvidia designs advanced components originally created to handle 3D visuals in video games, called Graphics Processing Units (GPUs). These have the power to crunch colossal amounts of digital data, so are also used at scale to train and run artificial intelligence. . ChatGPT's 2022 launch showcased the potential of AI, sparking an investment gold rush as governments and tech giants raced to develop the technology further. With chip orders pouring in, Nvidia's market valuation has soared to $4.5 trillion -- currently on par with Apple as the world's two most valuable companies. . Washington bans the export of Nvidia's top-end \"Blackwell\" and \"Rubin\" GPUs to China, citing security concerns, as advanced AI has military applications. The policy also allows the United States's top AI labs to maintain their global lead. Huang has lobbied the US government to allow Nvidia chip sales to China, warning that the restrictions are fuelling the rise of competitive homegrown alternatives. This year Washington eased controls on Nvidia's previously banned -- and less powerful -- \"H200\" chip, with the United States taking a 25 per cent cut of sales. But US conditions have made it difficult for shipments to be approved, with Beijing also reportedly reluctant to buy H200s as its own chip industry gains momentum. . Recent launches of high-performing models from Chinese startups, including Moonshot AI, Z.ai and DeepSeek, have turned up the heat on US rivals. \"Chinese vendors are still using cutting-edge Nvidia chips to train their models\" despite the controls, Lian Jye Su, a chief analyst at Omdia, told AFP. Chips may be smuggled into the…",
       "wordCount": 636
+    },
+    {
+      "source_id": "guardian-world",
+      "title": "Nvidia and Jensen Huang sued by shareholders over affair with alleged Chinese spy",
+      "url": "https://www.theguardian.com/technology/2026/nov/10/nvidia-jensen-huang-sued-donald-trump-fbi",
+      "published_at": "2026-11-10T07:30:15.000Z",
+      "category": "Nvidia",
+      "lang": "en",
+      "lead": "Legal action comes as Donald Trump says FBI is investigating tech company CEO’s links with Alice Huang Business live – latest updates Nvidia’s board needs to do some succession planning – sharpish Nvidia and its chief executive, Jensen Huang, have been accused of defrauding shareholders in a lawsuit over the Chinese spying scandal engulfing the $4.3tn (£3.2tn) company. The legal action came as Donald Trump said the FBI was investigating Huang’s affair with an alleged Chinese spy. Continue reading...",
+      "wordCount": 79
     }
   ],
   "sources": [
@@ -48,23 +59,35 @@
     {
       "name": "prothomalo-en",
       "url": "https://en.prothomalo.com/international/dcz6cjmbc1"
+    },
+    {
+      "name": "guardian-world",
+      "url": "https://www.theguardian.com/technology/2026/nov/10/nvidia-jensen-huang-sued-donald-trump-fbi"
     }
   ],
   "evidence": [
     {
       "type": "paper",
       "label": "reputable paper corroboration (prothomalo-en)"
+    },
+    {
+      "type": "paper",
+      "label": "reputable paper corroboration (guardian-world)"
     }
   ],
-  "uncorroborated": true,
   "claims": [
     {
       "claim_text": "Trump's close ties to Nvidia's Huang scrutinised after foreign intelligence concerns",
+      "status": "VERIFIED",
+      "confidence": 67
+    },
+    {
+      "claim_text": "How China gets the Nvidia chips it needs to develop AI",
       "status": "SINGLE_SOURCE",
       "confidence": 33
     },
     {
-      "claim_text": "How China gets the Nvidia chips it needs to develop AI",
+      "claim_text": "Nvidia and Jensen Huang sued by shareholders over affair with alleged Chinese spy",
       "status": "SINGLE_SOURCE",
       "confidence": 33
     }
