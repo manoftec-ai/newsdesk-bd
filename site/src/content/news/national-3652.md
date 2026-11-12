@@ -1,5 +1,7 @@
 ---
 title: "দাকোপে বিএনপির কার্যালয়ে আগুন, জুলাই স্মৃতিস্তম্ভে আগুন দেওয়ার সময় একজন আটক"
+thumbnail: "/images/national-3652.webp"
+thumbnailAlt: "দাকোপে বিএনপির কার্যালয়ে আগুন, জুলাই স্মৃতিস্তম্ভে আগুন দেওয়ার সময় একজন আটক — যাচাইডেস্ক"
 seoTitle: "দাকোপে বিএনপির কার্যালয়ে আগুন, জুলাই স্মৃতিস্তম্ভে আগুন দেওয়ার সময়…"
 excerpt: "Image ১২: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৩: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন রাজশাহীতে স্ত্রীর মুখ ও শরীর অ্"
 seoDescription: "Image ১২: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৩: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন রাজশা…"
