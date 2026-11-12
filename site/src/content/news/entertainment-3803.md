@@ -4,7 +4,7 @@ seoTitle: "হ্যাপি সিঙ্গেল ডে টু মি!"
 excerpt: "চীনে নাকি এই দিনটিকে জাঁকজমক করে ‘সিঙ্গেলস ডে’ বলে পালন করা হয়। ইতিহাস ঘাঁটলে দেখা যায়, আমার জন্মই হয়েছিল এই ১১ নভেম্বরের পুণ্যলগ্নে। কারণ, প্রেমের বাজারে দীর্ঘদিনের অনভিজ্ঞতা থাকল"
 seoDescription: "চীনে নাকি এই দিনটিকে জাঁকজমক করে ‘সিঙ্গেলস ডে’ বলে পালন করা হয়। ইতিহাস ঘাঁটলে দেখা যায়, আমার জন্মই হয়েছিল এই ১১ নভেম্বরের পুণ্যলগ্নে। কারণ, প্রেমের বাজারে…"
 date: 2026-11-12T01:00:00.000Z
-publishedAt: 2026-11-12T03:03:46.159Z
+publishedAt: 2026-11-12T02:59:13.082Z
 developing: true
 category: "entertainment"
 tags: ["economy"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-12T03:03:45.897Z"
+  evaluatedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3803
   claimIds:
     - 2940651
@@ -43,7 +43,7 @@ publication:
   slug: "entertainment-3803"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T03:03:45.897Z"
+  checkedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3803
   claimIds:
     - 2940651

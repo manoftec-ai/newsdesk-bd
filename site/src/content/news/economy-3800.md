@@ -4,7 +4,7 @@ seoTitle: "৩০ টাকা করে মাসে ১০ কেজি চা
 excerpt: "বিশেষ এই ওএমএস কার্যক্রম বাস্তবায়নে খাদ্য মন্ত্রণালয় গতকাল অর্থ মন্ত্রণালয়ের কাছে চলতি ২০২৬-২৭ অর্থবছরের জন্য প্রয়োজনীয় অতিরিক্ত বা বিশেষ অর্থ বরাদ্দ চেয়ে চিঠি দিয়েছেন খাদ্য মন্ত্র"
 seoDescription: "বিশেষ এই ওএমএস কার্যক্রম বাস্তবায়নে খাদ্য মন্ত্রণালয় গতকাল অর্থ মন্ত্রণালয়ের কাছে চলতি ২০২৬-২৭ অর্থবছরের জন্য প্রয়োজনীয় অতিরিক্ত বা বিশেষ অর্থ বরাদ্দ চেয়ে…"
 date: 2026-11-12T01:30:00.000Z
-publishedAt: 2026-11-12T03:03:46.134Z
+publishedAt: 2026-11-12T02:59:13.070Z
 developing: true
 category: "economy"
 tags: ["dhaka", "chattogram"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-12T03:03:45.897Z"
+  evaluatedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3800
   claimIds:
     - 2940648
@@ -43,7 +43,7 @@ publication:
   slug: "economy-3800"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T03:03:45.897Z"
+  checkedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3800
   claimIds:
     - 2940648

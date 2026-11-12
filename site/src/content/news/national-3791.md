@@ -4,7 +4,7 @@ seoTitle: "কয়েদির পেট থেকে অস্ত্রোপচ
 excerpt: "কারাগার জানা যায়, অসুস্থ হওয়ার পর হাসমত আলীকে উন্নত চিকিৎসার জন্য গত ৩১ অক্টোবর সন্ধ্যা ৭টা ২০ মিনিটে কাশিমপুর হাই সিকিউরিটি কেন্দ্রীয় কারাগার থেকে কেরানীগঞ্জে ঢাকা কেন্দ্রীয় কারাগ"
 seoDescription: "কারাগার জানা যায়, অসুস্থ হওয়ার পর হাসমত আলীকে উন্নত চিকিৎসার জন্য গত ৩১ অক্টোবর সন্ধ্যা ৭টা ২০ মিনিটে কাশিমপুর হাই সিকিউরিটি কেন্দ্রীয় কারাগার থেকে কেরানী…"
 date: 2026-11-11T16:15:17.000Z
-publishedAt: 2026-11-12T03:03:46.173Z
+publishedAt: 2026-11-12T02:59:13.089Z
 developing: false
 category: "national"
 tags: ["economy", "dhaka", "tangail", "health"]
@@ -30,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-12T03:03:45.897Z"
+  evaluatedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3791
   claimIds:
     - 2916800
@@ -48,7 +48,7 @@ publication:
   slug: "national-3791"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T03:03:45.897Z"
+  checkedAt: "2026-11-12T02:59:12.922Z"
   clusterId: 3791
   claimIds:
     - 2916800
