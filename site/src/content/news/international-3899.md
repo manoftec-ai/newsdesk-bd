@@ -1,10 +1,12 @@
 ---
 title: "নিষেধাজ্ঞা উপেক্ষা করে ভারত থেকে পাকিস্তানের আমদানি বাড়ছে"
+thumbnail: "/images/international-3899.webp"
+thumbnailAlt: "নিষেধাজ্ঞা উপেক্ষা করে ভারত থেকে পাকিস্তানের আমদানি বাড়ছে — ছবি: চ্যানেল আই"
 seoTitle: "নিষেধাজ্ঞা উপেক্ষা করে ভারত থেকে পাকিস্তানের আমদানি বাড়ছে"
 excerpt: "২০২৫-২৬ অর্থবছরে ভারত থেকে পণ্য আমদানির বিপরীতে পাকিস্তান মোট ২০ কোটি ৩৮ লাখ ডলার পরিশোধ করেছে, যা আগের অর্থবছরের তুলনায় ৭ দশমিক ৬ শতাংশ কম। সংঘাতের পর ভারত থেকে পাকিস্তানের আমদানি"
 seoDescription: "২০২৫-২৬ অর্থবছরে ভারত থেকে পণ্য আমদানির বিপরীতে পাকিস্তান মোট ২০ কোটি ৩৮ লাখ ডলার পরিশোধ করেছে, যা আগের অর্থবছরের তুলনায় ৭ দশমিক ৬ শতাংশ কম। সংঘাতের পর ভা…"
 date: 2026-11-12T09:44:07.000Z
-publishedAt: 2026-11-12T11:10:25.964Z
+publishedAt: 2026-11-12T11:06:33.574Z
 developing: true
 category: "international"
 tags: ["economy"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-12T11:10:25.745Z"
+  evaluatedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3899
   claimIds:
     - 3073831
@@ -43,7 +45,7 @@ publication:
   slug: "international-3899"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T11:10:25.745Z"
+  checkedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3899
   claimIds:
     - 3073831

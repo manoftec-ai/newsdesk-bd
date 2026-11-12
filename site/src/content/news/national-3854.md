@@ -1,10 +1,12 @@
 ---
 title: "মুন্সীগঞ্জে বিএনপির দুই পক্ষের ককটেল বিস্ফোরণ ও গোলাগুলি, আহত ৫"
+thumbnail: "/images/national-3854.webp"
+thumbnailAlt: "মুন্সীগঞ্জে বিএনপির দুই পক্ষের ককটেল বিস্ফোরণ ও গোলাগুলি, আহত ৫ — যাচাইডেস্ক"
 seoTitle: "মুন্সীগঞ্জে বিএনপির দুই পক্ষের ককটেল বিস্ফোরণ ও গোলাগুলি, আহত ৫"
 excerpt: "বুধবার (১১ নভেম্বর) দিনগত রাত সাড়ে ১১টা থেকে বৃহস্পতিবার (১২ নভেম্বর) সকাল ৭টা পর্যন্ত মোল্লাকান্দি ইউনিয়নের নোয়াদ্দা, রাজারচর, কংসপুরা ও নতুন আমঘাটা গ্রামে ইউনিয়ন বিএনপির সহ-সভাপত"
 seoDescription: "বুধবার (১১ নভেম্বর) দিনগত রাত সাড়ে ১১টা থেকে বৃহস্পতিবার (১২ নভেম্বর) সকাল ৭টা পর্যন্ত মোল্লাকান্দি ইউনিয়নের নোয়াদ্দা, রাজারচর, কংসপুরা ও নতুন আমঘাটা গ্রা…"
 date: 2026-11-12T06:45:37.000Z
-publishedAt: 2026-11-12T11:10:25.986Z
+publishedAt: 2026-11-12T11:06:33.589Z
 developing: false
 category: "national"
 tags: ["education", "economy"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-12T11:10:25.745Z"
+  evaluatedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3854
   claimIds:
     - 3024957
@@ -48,7 +50,7 @@ publication:
   slug: "national-3854"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T11:10:25.745Z"
+  checkedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3854
   claimIds:
     - 3024957

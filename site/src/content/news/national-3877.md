@@ -1,10 +1,12 @@
 ---
 title: "এসএসসি-এইচএসসি পরীক্ষার ফল প্রকাশের পর ২০ শিক্ষার্থীর অস্বাভাবিক মৃত্যু"
+thumbnail: "/images/national-3877.webp"
+thumbnailAlt: "এসএসসি-এইচএসসি পরীক্ষার ফল প্রকাশের পর ২০ শিক্ষার্থীর অস্বাভাবিক মৃত্যু — যাচাইডেস্ক"
 seoTitle: "এসএসসি-এইচএসসি পরীক্ষার ফল প্রকাশের পর ২০ শিক্ষার্থীর অস্বাভাবিক মৃত্যু"
 excerpt: "চল‌তি বছ‌রের এসএসসি ও সমমান পরীক্ষার ফল প্রকাশের পর ১১ জন এবং এইচএসসি পরীক্ষার ফল প্রকাশের পর ৯ জন শিক্ষার্থীর আত্মহত্যার ঘটনা সামনে এসেছে। এ ছাড়া চট্টগ্রাম বিভাগের লক্ষ্মীপুর, রংপ"
 seoDescription: "চল‌তি বছ‌রের এসএসসি ও সমমান পরীক্ষার ফল প্রকাশের পর ১১ জন এবং এইচএসসি পরীক্ষার ফল প্রকাশের পর ৯ জন শিক্ষার্থীর আত্মহত্যার ঘটনা সামনে এসেছে। এ ছাড়া চট্টগ্র…"
 date: 2026-11-12T05:39:35.000Z
-publishedAt: 2026-11-12T11:10:25.994Z
+publishedAt: 2026-11-12T11:06:33.595Z
 developing: false
 category: "national"
 tags: ["education", "economy", "dhaka", "factcheck", "chattogram", "rajshahi", "khulna", "rangpur", "cumilla", "jashore"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-12T11:10:25.745Z"
+  evaluatedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3877
   claimIds:
     - 3049326
@@ -48,7 +50,7 @@ publication:
   slug: "national-3877"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-12T11:10:25.745Z"
+  checkedAt: "2026-11-12T11:06:33.388Z"
   clusterId: 3877
   claimIds:
     - 3049326
