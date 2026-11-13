@@ -4,7 +4,7 @@ seoTitle: "আপত্তিকর স্পর্শের প্রতিব�
 excerpt: "Image ৬: আপত্তিকর স্পর্শের প্রতিবাদ করায় চলন্ত ট্রেন থেকে ধাক্কা, হাত হারালেন তরুণীআপত্তিকর স্পর্শের প্রতিবাদ করায় চলন্ত ট্রেন থেকে ধাক্কা, হাত হারালেন তরুণী পুলিশ জানায়, দুপুর আড়া"
 seoDescription: "Image ৬: আপত্তিকর স্পর্শের প্রতিবাদ করায় চলন্ত ট্রেন থেকে ধাক্কা, হাত হারালেন তরুণীআপত্তিকর স্পর্শের প্রতিবাদ করায় চলন্ত ট্রেন থেকে ধাক্কা, হাত হারালেন তর…"
 date: 2026-11-12T11:06:08.000Z
-publishedAt: 2026-11-13T00:26:57.657Z
+publishedAt: 2026-11-13T00:22:21.032Z
 developing: false
 category: "international"
 tags: ["education", "economy", "transport"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-13T00:26:57.434Z"
+  evaluatedAt: "2026-11-13T00:22:20.846Z"
   clusterId: 3913
   claimIds:
     - 3098440
@@ -44,7 +44,7 @@ publication:
   slug: "international-3913"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-13T00:26:57.434Z"
+  checkedAt: "2026-11-13T00:22:20.846Z"
   clusterId: 3913
   claimIds:
     - 3098440
