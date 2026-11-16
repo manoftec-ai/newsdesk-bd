@@ -1,5 +1,7 @@
 ---
 title: "দেশে ফেরার পথে আবার অসুস্থ ড. মোশাররফ, সিঙ্গাপুরে হাসপাতালে ভর্তি"
+thumbnail: "/images/politics-4604.webp"
+thumbnailAlt: "দেশে ফেরার পথে আবার অসুস্থ ড. মোশাররফ, সিঙ্গাপুরে হাসপাতালে ভর্তি — যাচাইডেস্ক"
 seoTitle: "দেশে ফেরার পথে আবার অসুস্থ ড. মোশাররফ, সিঙ্গাপুরে হাসপাতালে ভর্তি"
 excerpt: "Image ৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন ‘শেখ হাসিনার দোসররা পাশের দেশ থেক"
 seoDescription: "Image ৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন ‘শেখ হা…"
