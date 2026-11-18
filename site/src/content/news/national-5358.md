@@ -4,7 +4,7 @@ seoTitle: "ছেলের ‘নেতৃত্বে’ নিষিদ্ধ 
 excerpt: "মিছিলটিতে মো. সেলিম উদ্দিনের ছেলে সজীব উদ্দিন নেতৃত্ব দেন বলে জানিয়েছে পুলিশ। ’ . জানতে চাইলে রাউজান থানার ভারপ্রাপ্ত কর্মকর্তা (ওসি) সাইফুল ইসলাম বলেন, বিএনপি নেতার ছেলে সজীব সম্প"
 seoDescription: "মিছিলটিতে মো. সেলিম উদ্দিনের ছেলে সজীব উদ্দিন নেতৃত্ব দেন বলে জানিয়েছে পুলিশ। ’ . জানতে চাইলে রাউজান থানার ভারপ্রাপ্ত কর্মকর্তা (ওসি) সাইফুল ইসলাম বলেন, ব…"
 date: 2026-11-18T08:05:26.000Z
-publishedAt: 2026-11-18T14:02:20.900Z
+publishedAt: 2026-11-18T13:58:28.669Z
 developing: false
 category: "national"
 tags: ["chattogram"]
@@ -29,7 +29,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-18T14:02:20.733Z"
+  evaluatedAt: "2026-11-18T13:58:28.430Z"
   clusterId: 5358
   claimIds:
     - 5453819
@@ -47,7 +47,7 @@ publication:
   slug: "national-5358"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-18T14:02:20.733Z"
+  checkedAt: "2026-11-18T13:58:28.430Z"
   clusterId: 5358
   claimIds:
     - 5453819
