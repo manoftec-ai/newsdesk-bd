@@ -1,5 +1,7 @@
 ---
 title: "শ্রমিকদের বিক্ষোভ ঘিরে ধাওয়া-পাল্টাধাওয়া, সাউন্ড গ্রেনেড নিক্ষেপ"
+thumbnail: "/images/national-5480.webp"
+thumbnailAlt: "শ্রমিকদের বিক্ষোভ ঘিরে ধাওয়া-পাল্টাধাওয়া, সাউন্ড গ্রেনেড নিক্ষেপ — ছবি: চ্যানেল আই"
 seoTitle: "শ্রমিকদের বিক্ষোভ ঘিরে ধাওয়া-পাল্টাধাওয়া, সাউন্ড গ্রেনেড নিক্ষেপ"
 excerpt: "Image ১৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন মিরপুরে কার্যক্রম নিষিদ্ধ যুবলী"
 seoDescription: "Image ১৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন মিরপু…"
