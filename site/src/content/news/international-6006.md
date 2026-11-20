@@ -1,10 +1,12 @@
 ---
 title: "ভোটার তালিকা থেকে মুসলিমদের বেশি বাদ দিচ্ছে ভারত সরকার: মার্কিন ধর্মীয় স্বাধীনতা কমিশন"
+thumbnail: "/images/international-6006.webp"
+thumbnailAlt: "ভোটার তালিকা থেকে মুসলিমদের বেশি বাদ দিচ্ছে ভারত সরকার: মার্কিন ধর্মীয় স্বাধীনতা কমিশন — ছবি: প্রথম আলো"
 seoTitle: "ভোটার তালিকা থেকে মুসলিমদের বেশি বাদ দিচ্ছে ভারত সরকার: মার্কিন ধর্মীয়…"
 excerpt: "মানবাধিকার সংগঠনগুলোর ভাষ্য, ২০১৪ সালে প্রধানমন্ত্রী নরেন্দ্র মোদির হিন্দুত্ববাদী ভারতীয় জনতা পার্টি (বিজেপি) ক্ষমতায় আসার পর থেকে মুসলিমরা বর্জনমূলক নীতি ও ক্রমবর্ধমান বৈষম্যের শি"
 seoDescription: "মানবাধিকার সংগঠনগুলোর ভাষ্য, ২০১৪ সালে প্রধানমন্ত্রী নরেন্দ্র মোদির হিন্দুত্ববাদী ভারতীয় জনতা পার্টি (বিজেপি) ক্ষমতায় আসার পর থেকে মুসলিমরা বর্জনমূলক নীতি…"
 date: 2026-11-20T17:00:34.000Z
-publishedAt: 2026-11-20T18:26:30.577Z
+publishedAt: 2026-11-20T18:21:31.524Z
 developing: true
 category: "international"
 tags: ["world"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-20T18:26:30.346Z"
+  evaluatedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6006
   claimIds:
     - 6431002
@@ -43,7 +45,7 @@ publication:
   slug: "international-6006"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-20T18:26:30.346Z"
+  checkedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6006
   claimIds:
     - 6431002

@@ -1,10 +1,12 @@
 ---
 title: "বিরোধী দলের বিরোধিতা ‘পুরোনো বন্দোবস্তে’, তার সুযোগ নিচ্ছে পতিত শক্তি: জোনায়েদ সাকি"
+thumbnail: "/images/politics-5970.webp"
+thumbnailAlt: "বিরোধী দলের বিরোধিতা ‘পুরোনো বন্দোবস্তে’, তার সুযোগ নিচ্ছে পতিত শক্তি: জোনায়েদ সাকি — ছবি: প্রথম আলো"
 seoTitle: "বিরোধী দলের বিরোধিতা ‘পুরোনো বন্দোবস্তে’, তার সুযোগ নিচ্ছে পতিত শক্তি:…"
 excerpt: "বিরোধী দলের বর্তমান রাজনৈতিক ভূমিকার সমালোচনা করে জোনায়েদ সাকি বলেন, নতুন একটি রাজনৈতিক ব্যবস্থার মধ্যে সরকারি দল বা বিরোধী দল—যেখানেই যাওয়া হোক না কেন, পুনর্গঠনের দায়িত্ব এড়িয়ে যা"
 seoDescription: "বিরোধী দলের বর্তমান রাজনৈতিক ভূমিকার সমালোচনা করে জোনায়েদ সাকি বলেন, নতুন একটি রাজনৈতিক ব্যবস্থার মধ্যে সরকারি দল বা বিরোধী দল—যেখানেই যাওয়া হোক না কেন, প…"
 date: 2026-11-20T14:52:56.000Z
-publishedAt: 2026-11-20T18:26:30.594Z
+publishedAt: 2026-11-20T18:21:31.540Z
 developing: false
 category: "politics"
 tags: ["education", "dhaka"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-20T18:26:30.346Z"
+  evaluatedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 5970
   claimIds:
     - 6394118
@@ -48,7 +50,7 @@ publication:
   slug: "politics-5970"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-20T18:26:30.346Z"
+  checkedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 5970
   claimIds:
     - 6394118

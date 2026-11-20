@@ -1,10 +1,12 @@
 ---
 title: "সশস্ত্র বাহিনীর ইতিহাসে ২১ নভেম্বর অবিস্মরণীয় অধ্যায়: প্রধানমন্ত্রী"
+thumbnail: "/images/national-6005.webp"
+thumbnailAlt: "সশস্ত্র বাহিনীর ইতিহাসে ২১ নভেম্বর অবিস্মরণীয় অধ্যায়: প্রধানমন্ত্রী — ছবি: চ্যানেল আই"
 seoTitle: "সশস্ত্র বাহিনীর ইতিহাসে ২১ নভেম্বর অবিস্মরণীয় অধ্যায়: প্রধানমন্ত্রী"
 excerpt: "শুক্রবার (২০ নভেম্বর) ২১ নভেম্বর সশস্ত্র বাহিনী দিবস-২০২৬ উপলক্ষে দেওয়া এক বাণীতে তিনি এ কথা বলেন। ’ তিনি আরও বলেন, সশস্ত্র বাহিনীর ইতিহাসেও এটি একটি গুরুত্বপূর্ণ দিন। প্রধানমন্ত্র"
 seoDescription: "শুক্রবার (২০ নভেম্বর) ২১ নভেম্বর সশস্ত্র বাহিনী দিবস-২০২৬ উপলক্ষে দেওয়া এক বাণীতে তিনি এ কথা বলেন। ’ তিনি আরও বলেন, সশস্ত্র বাহিনীর ইতিহাসেও এটি একটি গুরু…"
 date: 2026-11-20T17:09:45.000Z
-publishedAt: 2026-11-20T18:26:30.558Z
+publishedAt: 2026-11-20T18:21:31.508Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -27,7 +29,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-20T18:26:30.346Z"
+  evaluatedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6005
   claimIds:
     - 6431001
@@ -42,7 +44,7 @@ publication:
   slug: "national-6005"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-20T18:26:30.346Z"
+  checkedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6005
   claimIds:
     - 6431001

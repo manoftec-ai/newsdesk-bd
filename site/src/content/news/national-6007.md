@@ -1,10 +1,12 @@
 ---
 title: "বিএনপি পাওয়ারে আছে বিধায়ই তো আমি ভাইস চ্যান্সেলর হয়েছি: জবি উপাচার্য"
+thumbnail: "/images/national-6007.webp"
+thumbnailAlt: "বিএনপি পাওয়ারে আছে বিধায়ই তো আমি ভাইস চ্যান্সেলর হয়েছি: জবি উপাচার্য — ছবি: প্রথম আলো"
 seoTitle: "বিএনপি পাওয়ারে আছে বিধায়ই তো আমি ভাইস চ্যান্সেলর হয়েছি: জবি উপাচার্য"
 excerpt: "’—প্রধানমন্ত্রী তারেক রহমানের ৬২তম জন্মদিন উপলক্ষে আয়োজিত দোয়া মাহফিলে এ কথা বলেছেন জগন্নাথ বিশ্ববিদ্যালয়ের উপাচার্য অধ্যাপক মো. রইছ উদ্‌দীন। ‘বিএনপি পাওয়ারে আছে বিধায়ই তো আমি ভাইস"
 seoDescription: "’—প্রধানমন্ত্রী তারেক রহমানের ৬২তম জন্মদিন উপলক্ষে আয়োজিত দোয়া মাহফিলে এ কথা বলেছেন জগন্নাথ বিশ্ববিদ্যালয়ের উপাচার্য অধ্যাপক মো. রইছ উদ্‌দীন। ‘বিএনপি পাওয়…"
 date: 2026-11-20T16:55:28.000Z
-publishedAt: 2026-11-20T18:26:30.585Z
+publishedAt: 2026-11-20T18:21:31.531Z
 developing: true
 category: "national"
 tags: ["bangladesh"]
@@ -26,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-20T18:26:30.346Z"
+  evaluatedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6007
   claimIds:
     - 6431003
@@ -41,7 +43,7 @@ publication:
   slug: "national-6007"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-20T18:26:30.346Z"
+  checkedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 6007
   claimIds:
     - 6431003

@@ -1,10 +1,12 @@
 ---
 title: "কনুইয়ের চোটে দক্ষিণ আফ্রিকা থেকে দেশে ফিরছেন হাসান মাহমুদ"
+thumbnail: "/images/sports-5968.webp"
+thumbnailAlt: "কনুইয়ের চোটে দক্ষিণ আফ্রিকা থেকে দেশে ফিরছেন হাসান মাহমুদ — ছবি: চ্যানেল আই"
 seoTitle: "কনুইয়ের চোটে দক্ষিণ আফ্রিকা থেকে দেশে ফিরছেন হাসান মাহমুদ"
 excerpt: "বিসিবি বিজ্ঞপ্তিতে জানিয়েছে, হাসানের চোট থেকে সেরে ওঠার জন্য পর্যাপ্ত সময় দেয়া ও ভবিষ্যতে ম্যাচগুলোর জন্য প্রস্তুত হওয়ার সুযোগ করে দিতে দেশে ফিরিয়ে আনার সিদ্ধান্ত হয়েছে। দ্বিতীয় টে"
 seoDescription: "বিসিবি বিজ্ঞপ্তিতে জানিয়েছে, হাসানের চোট থেকে সেরে ওঠার জন্য পর্যাপ্ত সময় দেয়া ও ভবিষ্যতে ম্যাচগুলোর জন্য প্রস্তুত হওয়ার সুযোগ করে দিতে দেশে ফিরিয়ে আনার স…"
 date: 2026-11-20T14:13:04.000Z
-publishedAt: 2026-11-20T18:26:30.602Z
+publishedAt: 2026-11-20T18:21:31.547Z
 developing: false
 category: "sports"
 tags: ["education", "economy", "cricket", "health"]
@@ -30,7 +32,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-20T18:26:30.346Z"
+  evaluatedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 5968
   claimIds:
     - 6394114
@@ -48,7 +50,7 @@ publication:
   slug: "sports-5968"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-20T18:26:30.346Z"
+  checkedAt: "2026-11-20T18:21:31.308Z"
   clusterId: 5968
   claimIds:
     - 6394114
