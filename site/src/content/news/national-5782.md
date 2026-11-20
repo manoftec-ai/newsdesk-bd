@@ -1,0 +1,65 @@
+---
+title: "নিখোঁজ নন, কুয়াকাটা সৈকতে বেড়াতে গিয়েছিলেন সেই বিচারক"
+seoTitle: "নিখোঁজ নন, কুয়াকাটা সৈকতে বেড়াতে গিয়েছিলেন সেই বিচারক"
+excerpt: "বরিশাল মহানগর পুলিশের উপপুলিশ কমিশনার সুশান্ত সরকার বিষয়টি নিশ্চিত করেছেন। সুশান্ত সরকার বলেন, বিচারক শেখ ফারহান নাদিম একা ঘুরতে কুয়াকাটায় যান। শেখ ফারহান নাদিম বরিশাল জেলা ও দায়রা"
+seoDescription: "বরিশাল মহানগর পুলিশের উপপুলিশ কমিশনার সুশান্ত সরকার বিষয়টি নিশ্চিত করেছেন। সুশান্ত সরকার বলেন, বিচারক শেখ ফারহান নাদিম একা ঘুরতে কুয়াকাটায় যান। শেখ ফারহান…"
+date: 2026-11-19T17:15:06.000Z
+publishedAt: 2026-11-20T00:06:48.207Z
+developing: false
+category: "national"
+tags: ["barishal"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "বৃহস্পতিবার (২৯ নভেম্বর) সন্ধ্যা সাড়ে ৬টার দিকে তার খোঁজ পায় বরিশাল মহানগর পুলিশ"
+  - "বরিশাল নগরীর ব্রাউন কম্পাউন্ড রোডের একটি ফ্ল্যাটে পরিবার নিয়ে বসবাস করেন তিনি"
+  - "পটুয়াখালীর কুয়াকাটা পর্যটনকেন্দ্রের সমুদ্রসৈকতে খোঁজ পাওয়া গেছে বরিশাল জেলা ও দায়রা জজ আদালতের সিনিয়র সহকারী জজ শেখ ফারহান নাদিমের"
+faq: []
+sources:
+  - name: "প্রথম আলো"
+    url: "https://www.prothomalo.com/bangladesh/district/ppgkbb83v6"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/country/barishal/982067/%E0%A6%A8%E0%A6%BF%E0%A6%96%E0%A7%8B%E0%A6%81%E0%A6%9C-%E0%A6%B9%E0%A6%A8%E0%A6%A8%E0%A6%BF-%E0%A6%B8%E0%A7%87%E0%A6%87-%E0%A6%AC%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A6%95-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8-%E2%80%98%E0%A6%8F%E0%A6%95%E0%A6%BE-%E0%A6%98%E0%A7%81%E0%A6%B0%E0%A6%A4%E0%A7%87-%E0%A6%8F%E0%A6%B8%E0%A7%87%E0%A6%9B%E0%A6%BF%E2%80%99"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-11-20T00:06:47.946Z"
+  clusterId: 5782
+  claimIds:
+    - 6069631
+    - 6069632
+  evidenceHash: "65b49c84aa3fa777"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (prothomalo)"
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+publication:
+  slug: "national-5782"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-11-20T00:06:47.946Z"
+  clusterId: 5782
+  claimIds:
+    - 6069631
+    - 6069632
+  evidenceHash: "65b49c84aa3fa777"
+---
+
+বরিশাল মহানগর পুলিশের উপপুলিশ কমিশনার সুশান্ত সরকার বিষয়টি নিশ্চিত করেছেন।
+
+সুশান্ত সরকার বলেন, বিচারক শেখ ফারহান নাদিম একা ঘুরতে কুয়াকাটায় যান।
+
+শেখ ফারহান নাদিম বরিশাল জেলা ও দায়রা জজ আদালতের অধীনে মেহেন্দিগঞ্জ ও উজিরপুর সিভিল জজ আদালতের সিনিয়র সহকারী জজ হিসেবে দায়িত্ব পালন করছেন।
+
+শেষ পর্যন্ত তাঁর কোনো সন্ধান না পেয়ে বুধবার বরিশাল কোতোয়ালি মডেল থানায় পরিবারের পক্ষ থেকে সাধারণ ডায়েরি (জিডি) করা হয়।
