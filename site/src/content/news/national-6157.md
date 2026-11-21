@@ -1,0 +1,85 @@
+---
+title: "অপ্রতিম হত্যার চার্জ শুনানি ২৯ নভেম্বর, বিচার হবে দুই আদালতে"
+thumbnail: "/images/national-6157.webp"
+thumbnailAlt: "অপ্রতিম হত্যার চার্জ শুনানি ২৯ নভেম্বর, বিচার হবে দুই আদালতে — যাচাইডেস্ক"
+seoTitle: "অপ্রতিম হত্যার চার্জ শুনানি ২৯ নভেম্বর, বিচার হবে দুই আদালতে"
+excerpt: "মামলার চার আসামির মধ্যে দুজন অপ্রাপ্তবয়স্ক ও দুজন প্রাপ্তবয়স্ক হওয়ায় তাদের বিচার হবে পৃথক দুটি আদালতে। অভিযোগপত্রে দুই আসামির বয়স কম দেখানো হয়েছে উল্লেখ করে তিনি বলেন, হত্যার মতো গ"
+seoDescription: "মামলার চার আসামির মধ্যে দুজন অপ্রাপ্তবয়স্ক ও দুজন প্রাপ্তবয়স্ক হওয়ায় তাদের বিচার হবে পৃথক দুটি আদালতে। অভিযোগপত্রে দুই আসামির বয়স কম দেখানো হয়েছে উল্লেখ ক…"
+date: 2026-11-21T07:49:30.000Z
+publishedAt: 2026-11-21T13:46:39.885Z
+developing: false
+category: "national"
+tags: ["education", "cumilla"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "পিপি অ্যাডভোকেট মো. কাইমুল হক বলেন, অপ্রাপ্তবয়স্ক দুই আসামির বিচার হবে শিশু আদালতে এবং প্রাপ্তবয়স্ক দুই আসামির বিচার হবে কুমিল্লার দায়রা জজ আদালতে"
+  - "কুমিল্লা বিশ্ববিদ্যালয়ের (কুবি) বাংলা বিভাগের সহযোগী অধ্যাপক ড. নাহিদা বেগমের ছেলে ইশায়াত শাহরিয়ার অপ্রতিম (১৩) হত্যা মামলায় অভিযোগ গঠনের শুনানি আগামী ২৯ নভেম্বর অনুষ্ঠিত হবে"
+  - "অপ্রতিমের বাবা কে এম ফিরোজ শাহরিয়ার বলেন, ২৯ নভেম্বর মামলার অভিযোগ গঠন হবে"
+faq: []
+sources:
+  - name: "Dhaka Tribune"
+    url: "https://bangla.dhakatribune.com/bangladesh/113543/%E0%A6%85%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AE-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%AE%E0%A6%B2%E0%A6%BE%E0"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/country/chitagong/982327/%E0%A6%85%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AE-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9C-%E0%A6%B6%E0%A7%81%E0%A6%A8%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A7%A8%E0%A7%AF-%E0%A6%A8%E0%A6%AD%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A6%AC%E0%A7%87"
+  - name: "সমকাল"
+    url: "https://samakal.com/whole-country/article/384298/%E0%A6%85%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AE-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%AE%E0%A6%B2%E0%A6%BE%E0%"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 6
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-11-21T13:46:39.697Z"
+  clusterId: 6157
+  claimIds:
+    - 6711153
+    - 6711154
+    - 6730077
+  evidenceHash: "e2e893fdc58858be"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+    - type: "paper"
+      label: "reputable paper corroboration (dhakatribune)"
+    - type: "paper"
+      label: "reputable paper corroboration (samakal)"
+publication:
+  slug: "national-6157"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-11-21T13:46:39.697Z"
+  clusterId: 6157
+  claimIds:
+    - 6711153
+    - 6711154
+    - 6730077
+  evidenceHash: "e2e893fdc58858be"
+---
+
+মামলার চার আসামির মধ্যে দুজন অপ্রাপ্তবয়স্ক ও দুজন প্রাপ্তবয়স্ক হওয়ায় তাদের বিচার হবে পৃথক দুটি আদালতে।
+
+অভিযোগপত্রে দুই আসামির বয়স কম দেখানো হয়েছে উল্লেখ করে তিনি বলেন, হত্যার মতো গুরুতর অপরাধের বিচারে ওই দুই আসামি যেন লঘুদণ্ডে রেহাই না পায়, সেটিই আমার প্রত্যাশা।
+
+প্রাপ্তবয়স্ক ও অপ্রাপ্তবয়স্ক আসামিদের বিচার পৃথক আদালতে হবে বলে আমি জানতে পেরেছি।
+
+এ মামলায় অভিযোগপত্রে আসামি করা হয়েছে সাইফুল ইসলাম ওরফে তুহিন (১৯), মো. সিয়াম (১৯) এবং ১৫ ও ১৬ বছর বয়সী দুই কিশোরকে।
+
+পরদিন সদর দক্ষিণ উপজেলার বিজয়পুর ইউনিয়নের সানন্দা গ্রামের একটি পাহাড়ের নির্জন এলাকা থেকে তার মরদেহ উদ্ধার করা হয়।
+
+শনিবার (২১ নভেম্বর) সকালে বিষয়টি নিশ্চিত করেন মামলার রাষ্ট্রপক্ষের আইনজীবী ও কুমিল্লা জেলা ও দায়রা জজ আদালতের পাবলিক...
+
+এ জন্য চার আসামিকে আদালতে হাজির করার নির্দেশ দেওয়া হয়েছে।
+
+নির্ধারিত দিনে আসামিরা উপস্থিত হলে অভিযোগ গঠন ও বিচারিক কার্যক্রম শুরু হবে।
+
+আসামিপক্ষ একটি মানবাধিকার সংগঠনের মাধ্যমে আইনজীবী নিয়োগের চেষ্টা করছে।
+
+চার আসামির বিরুদ্ধে দেওয়া অভিযোগপত্র আদালত গ্রহণ করেছেন।
