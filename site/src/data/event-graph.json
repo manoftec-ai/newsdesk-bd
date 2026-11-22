@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 9729,
+    "storyCount": 9731,
     "kinds": [
       "claim",
       "evidence",
@@ -2804,12 +2804,131 @@
     },
     "economy-153": {
       "cluster_id": 153,
-      "headline": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্রে প্রথম ইউনিটের বিদ্যুৎ উৎপাদন প্রক্রিয়া শুরুর অনুমোদন",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+      "first_seen": "2026-11-22T04:54:42.148Z",
+      "last_update": "2026-11-22T04:54:42.151Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-22T04:12:20.000Z",
+          "kind": "evidence",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSklMYUN6UVpwYnNlYmV4Y2RnMTMzYTloa2d3MEM3Z0l5TnJDakJHNmhtU05xSHpNODRqaUY4d0trUWNVT0FFSUkzUE5Cb29odTR1ZzI2LWE3Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:23:42.000Z",
+          "kind": "evidence",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/813894"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:23:42.000Z",
+          "kind": "evidence",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/813894"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.294Z",
+          "kind": "claim",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.297Z",
+          "kind": "claim",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 17,
+          "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
+        },
+        {
+          "cluster_id": 38,
+          "slug": "national-38",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক চলচ্চিত্র উৎসবে সেরা অভিনেত্রী নাজিফা তুষি"
+        },
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কার্যক্রম নিষিদ্ধ আওয়ামী লীগের ওপর স্থায়ী নিষেধাজ্ঞা দিতে চার সচিবকে আইনি নোটিশ"
+        },
+        {
+          "cluster_id": 15,
+          "slug": "national-15",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "নড়াইলে কার্যক্রম নিষিদ্ধ আওয়ামী লীগ নেতা–কর্মীদের ২০–৩০টি বাড়িতে হামলা–আগুন"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
+        },
+        {
+          "cluster_id": 24,
+          "slug": "national-24",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আওয়ামী লীগের সঙ্গে জড়িত সন্দেহে ৫ কর্মকর্তাকে মারধর: ছাত্রদলের ১৩ নেতা বহিষ্কার"
+        }
+      ]
     },
     "economy-1530": {
       "cluster_id": 1530,
@@ -2849,12 +2968,99 @@
     },
     "economy-155": {
       "cluster_id": 155,
-      "headline": "কোম্পানিগুলো নিজে থেকে আইপিওতে না এলে আইন প্রয়োগ করা হবে: বিএসইসি চেয়ারম্যান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+      "first_seen": "2026-11-22T04:54:42.162Z",
+      "last_update": "2026-11-22T04:54:42.164Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-07-03T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOUFNlblJLN3ZsZXhFZm1pdE1FMmJxNEZTUnJvWlJEdlp1b296eG8wbWlOSS1UQkgzQU1ZaHg0YVhsbENhOEswMHJVbXR0TGVSejZzMVRQTDE3WmR2cEg5cFBJOXI5VzhuQjBqUFdSdFVCbHIySmNnQ2VLSXNWSnVlbkd5TVpUZjFhTkwzTjV1bC1wcjh2TEd5U2VsanZ0TUJQbW43dktNcGwxYnhuYTFFU3Uxb25qbWprUTZhRXpRb0xpOWxKM0NjcUhUc0x3N25NNHZ0Y28yckxfSWphX2NYUENYb0dEd0U0a3lBaWxOSUQ3M2hUUmVCMEZYSzV1dktlRXpLdU1mbVgwdVkwWElwMXBaMkEtaDh1M2NSMENYTmpvMzJVaEhuLXgzbHdQOVpxS0NYcFNmS0pGYjRHRGVMZnhOYnB5SDlUWXcwUmF5UGdqMlFYNlJpNnN4SlF6RXVKem1hd2tEQ3ZyeXFzNEZ2N25KWnNhUmQzTG45cS1pMNIBhANBVV95cUxOYTRoenFURDNGWGZQUVJxdzNJR01vN0c3NmhSQmtzSUVhTDNHR1Z0TVFQcHIzV1ZpTjdkYVQyaHRySE1JNVpFZnhqNUYxNlA3c2ZDaFB0NVNjZGpYWmdnRV9iWk05d3hEQ3cxQmtkWlFTekxEZG95WTBmVGxrYXBlYTdONE1EUkdONE9PcXpVODdhM3BEYTU1Z2FiSXZESHBsQ0ZzZDhId2wxd2wwTkowMzlCVi1yTXFwR1dXeG5ZeFNFLWYtQnU2QVZZbTg5blRuQVlYemJYbWtaYkJJQXZFc0VFTVZaZlVMaUt6akMzZ3FDcUloZDJ2T08tMGlRQjB4dUdpSURuN3ZGMGd3ci1rc2NyR0tGNU1HS180X0lVUFRfaWJPUTRuZ092SnF6bnU2V0xNUEw5ODJMSjJsR1cxNklHLTVWZ0Zocm40b18wRUE2SEpmYXdlRmo3NTJfeTRYYklHbEpkQThoOUFhaHBhanlwOEZTMXpsQW0wQnZTOEd4a2xW?oc=5"
+          }
+        },
+        {
+          "ts": "2026-07-03T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOUFNlblJLN3ZsZXhFZm1pdE1FMmJxNEZTUnJvWlJEdlp1b296eG8wbWlOSS1UQkgzQU1ZaHg0YVhsbENhOEswMHJVbXR0TGVSejZzMVRQTDE3WmR2cEg5cFBJOXI5VzhuQjBqUFdSdFVCbHIySmNnQ2VLSXNWSnVlbkd5TVpUZjFhTkwzTjV1bC1wcjh2TEd5U2VsanZ0TUJQbW43dktNcGwxYnhuYTFFU3Uxb25qbWprUTZhRXpRb0xpOWxKM0NjcUhUc0x3N25NNHZ0Y28yckxfSWphX2NYUENYb0dEd0U0a3lBaWxOSUQ3M2hUUmVCMEZYSzV1dktlRXpLdU1mbVgwdVkwWElwMXBaMkEtaDh1M2NSMENYTmpvMzJVaEhuLXgzbHdQOVpxS0NYcFNmS0pGYjRHRGVMZnhOYnB5SDlUWXcwUmF5UGdqMlFYNlJpNnN4SlF6RXVKem1hd2tEQ3ZyeXFzNEZ2N25KWnNhUmQzTG45cS1pMNIBhANBVV95cUxOYTRoenFURDNGWGZQUVJxdzNJR01vN0c3NmhSQmtzSUVhTDNHR1Z0TVFQcHIzV1ZpTjdkYVQyaHRySE1JNVpFZnhqNUYxNlA3c2ZDaFB0NVNjZGpYWmdnRV9iWk05d3hEQ3cxQmtkWlFTekxEZG95WTBmVGxrYXBlYTdONE1EUkdONE9PcXpVODdhM3BEYTU1Z2FiSXZESHBsQ0ZzZDhId2wxd2wwTkowMzlCVi1yTXFwR1dXeG5ZeFNFLWYtQnU2QVZZbTg5blRuQVlYemJYbWtaYkJJQXZFc0VFTVZaZlVMaUt6akMzZ3FDcUloZDJ2T08tMGlRQjB4dUdpSURuN3ZGMGd3ci1rc2NyR0tGNU1HS180X0lVUFRfaWJPUTRuZ092SnF6bnU2V0xNUEw5ODJMSjJsR1cxNklHLTVWZ0Zocm40b18wRUE2SEpmYXdlRmo3NTJfeTRYYklHbEpkQThoOUFhaHBhanlwOEZTMXpsQW0wQnZTOEd4a2xW?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-21T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtZWZ3eWx0RXkwbWZDU245QVVxWnVkbkh6RlhzbTlJUGJLSmg1MkUyczViQzNlSUdjd203M2l1QmhURlhSRGxmLU0xWVA0YXdBWnBta3pYZndmaHlsTnRrNmJBYU1PS3ZMLW85Y2ROVnRxeFk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.304Z",
+          "kind": "claim",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.307Z",
+          "kind": "claim",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 83,
+          "slug": "national-83",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "যথাযোগ্য মর্যাদায় নৌ অঞ্চলসমূহে সশস্ত্র বাহিনী দিবস-২০২৬ উদযাপিত"
+        },
+        {
+          "cluster_id": 44,
+          "slug": "national-44",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ঘূর্ণিঝড় ‘আকভান’র প্রভাবে ঢাকাসহ বিভিন্ন স্থানে বৃষ্টি, জনজীবনে দুর্ভোগ"
+        }
+      ]
     },
     "economy-1556": {
       "cluster_id": 1556,
@@ -2867,11 +3073,41 @@
     },
     "economy-156": {
       "cluster_id": 156,
-      "headline": "১১ খাতে অনলাইন ভ্যাট রিটার্ন বাধ্যতামূলক করলো এনবিআর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+      "first_seen": "2026-11-22T04:54:42.513Z",
+      "last_update": "2026-11-22T04:54:42.515Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:22:47.000Z",
+          "kind": "evidence",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/employment/6i4as66ds2"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.309Z",
+          "kind": "claim",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1585": {
@@ -2903,11 +3139,41 @@
     },
     "economy-160": {
       "cluster_id": 160,
-      "headline": "বাংলাদেশের এলডিসি উত্তরণ তিন বছর পেছাল",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+      "first_seen": "2026-11-22T04:54:42.526Z",
+      "last_update": "2026-11-22T04:54:42.528Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/njgubtoyzc"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.319Z",
+          "kind": "claim",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1600": {
@@ -6695,8 +6961,8 @@
           "slug": "national-122",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 10,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         },
         {
           "cluster_id": 76,
@@ -7067,8 +7333,8 @@
           "slug": "national-122",
           "actor_links": 2,
           "source_links": 0,
-          "claim_count": 2,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 3,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         }
       ]
     },
@@ -8404,7 +8670,7 @@
       "cluster_id": 146,
       "headline": "পাবনায় বিএনপি ও কার্যক্রম নিষিদ্ধ আ. লীগ নেতাকর্মীদের দফায় দফায় সংঘর্ষ",
       "first_seen": "2026-11-22T04:02:18.116Z",
-      "last_update": "2026-11-22T04:02:18.118Z",
+      "last_update": "2026-11-22T04:54:42.159Z",
       "claim_count": 2,
       "events": [
         {
@@ -8653,6 +8919,45 @@
       "events": [],
       "related": []
     },
+    "entertainment-158": {
+      "cluster_id": 158,
+      "headline": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+      "first_seen": "2026-11-22T04:54:42.520Z",
+      "last_update": "2026-11-22T04:54:42.522Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/4qg4m15jpm"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.314Z",
+          "kind": "claim",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": []
+    },
     "entertainment-1584": {
       "cluster_id": 1584,
       "headline": "ইউক্রেনের ড্রোনের গতি কমিয়ে দেওয়ার পেছনে যুক্তরাষ্ট্র সরকার থাকতে পারে, ইঙ্গিত ইলন মাস্কের",
@@ -8664,11 +8969,41 @@
     },
     "entertainment-159": {
       "cluster_id": 159,
-      "headline": "কাকফাঁকা এক সকালে!",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+      "first_seen": "2026-11-22T04:54:42.523Z",
+      "last_update": "2026-11-22T04:54:42.525Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:07:31.000Z",
+          "kind": "evidence",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/x4i01831mk"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.317Z",
+          "kind": "claim",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1593": {
@@ -13593,6 +13928,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 135,
           "slug": "national-signs-suggest-thomas",
           "actor_links": 0,
@@ -15440,6 +15783,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -16689,7 +17040,7 @@
       "cluster_id": 123,
       "headline": "বিচারের মাধ্যমে আ. লীগকে নিষিদ্ধের দাবি হেফাজতের",
       "first_seen": "2026-11-22T03:01:03.159Z",
-      "last_update": "2026-11-22T04:02:18.120Z",
+      "last_update": "2026-11-22T04:54:42.159Z",
       "claim_count": 2,
       "events": [
         {
@@ -16762,7 +17113,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        }
+      ]
     },
     "international-1232": {
       "cluster_id": 1232,
@@ -17242,6 +17602,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 75,
           "slug": "national-75",
           "actor_links": 0,
@@ -17363,6 +17731,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 108,
           "slug": "national-masud-rana-creator",
@@ -17994,7 +18370,7 @@
       "cluster_id": 146,
       "headline": "পাবনায় বিএনপি ও কার্যক্রম নিষিদ্ধ আ. লীগ নেতাকর্মীদের দফায় দফায় সংঘর্ষ",
       "first_seen": "2026-11-22T04:02:18.116Z",
-      "last_update": "2026-11-22T04:02:18.118Z",
+      "last_update": "2026-11-22T04:54:42.159Z",
       "claim_count": 2,
       "events": [
         {
@@ -18356,12 +18732,251 @@
     },
     "international-152": {
       "cluster_id": 152,
-      "headline": "সিজেপির নেতা–কর্মীদের মোদি সরকারের এমন ধরপাকড়ের পেছনের কারণ কী",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+      "first_seen": "2026-11-22T04:54:42.141Z",
+      "last_update": "2026-11-22T04:54:42.147Z",
+      "claim_count": 5,
+      "events": [
+        {
+          "ts": "2026-11-22T01:42:16.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/982451/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%87-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%AF%E0%A7%8B%E0%A6%97"
+          }
+        },
+        {
+          "ts": "2026-11-22T01:42:16.000Z",
+          "kind": "evidence",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/982451/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%87-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%AF%E0%A7%8B%E0%A6%97"
+          }
+        },
+        {
+          "ts": "2026-11-22T02:48:20.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/jamat-e-islam/982454/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%AA-%E0%A6%93"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/t0x37iymp8"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/t0x37iymp8"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:13:26.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/khagrachhari-sadik-kayem-house-arson-attempt/"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:13:26.000Z",
+          "kind": "evidence",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/khagrachhari-sadik-kayem-house-arson-attempt/"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:32:32.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPZU9CZktvZzN2V25XYXFmNHR5eVZ5dWpKZ2NuSkxqOUEybWtlWjhnUm55ZGt5N1o1eWlQX0pFQ3JmVEh3NnM5OXdMeWNrbE8xT1VR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:32:32.000Z",
+          "kind": "evidence",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPZU9CZktvZzN2V25XYXFmNHR5eVZ5dWpKZ2NuSkxqOUEybWtlWjhnUm55ZGt5N1o1eWlQX0pFQ3JmVEh3NnM5OXdMeWNrbE8xT1VR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.282Z",
+          "kind": "claim",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.287Z",
+          "kind": "claim",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.288Z",
+          "kind": "claim",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.290Z",
+          "kind": "claim",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.292Z",
+          "kind": "claim",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 136,
+          "slug": "national-bust-companies-revived",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম"
+        },
+        {
+          "cluster_id": 135,
+          "slug": "national-signs-suggest-thomas",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যুক্তরাষ্ট্রে খালেদা জিয়ার নামে সড়কের প্রস্তাব, নাম ‘মাদার অব ডেমোক্রেসি’"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিচারের মাধ্যমে আ. লীগকে নিষিদ্ধের দাবি হেফাজতের"
+        },
+        {
+          "cluster_id": 108,
+          "slug": "national-masud-rana-creator",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগামী ১০ বছরেও সরকার পরিবর্তনের সম্ভাবনা নেই, গ্যারান্টি দিলাম: এমপি সেলিম ভূঁইয়া"
+        },
+        {
+          "cluster_id": 75,
+          "slug": "national-75",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গোপালগঞ্জে অতিরিক্ত ৭ প্লাটুন আনসার মোতায়েন, সাত জেলায় দায়িত্বে ৪৯ প্লাটুন"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
+        }
+      ]
     },
     "international-1520": {
       "cluster_id": 1520,
@@ -18631,6 +19246,45 @@
       "last_update": null,
       "claim_count": 0,
       "events": [],
+      "related": []
+    },
+    "international-160": {
+      "cluster_id": 160,
+      "headline": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+      "first_seen": "2026-11-22T04:54:42.526Z",
+      "last_update": "2026-11-22T04:54:42.528Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/njgubtoyzc"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.319Z",
+          "kind": "claim",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1609": {
@@ -33709,6 +34363,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -38017,6 +38679,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -38587,8 +39257,8 @@
           "slug": "national-122",
           "actor_links": 2,
           "source_links": 0,
-          "claim_count": 1,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 2,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         }
       ]
     },
@@ -39373,6 +40043,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
@@ -40891,7 +41569,7 @@
       "cluster_id": 115,
       "headline": "মালয়েশিয়া নেওয়ার কথা বলে এক সপ্তাহ সাগরে, কক্সবাজার সৈকতে নামিয়ে পালাল দালাল চক্র",
       "first_seen": "2026-11-22T02:09:13.303Z",
-      "last_update": "2026-11-22T04:02:18.121Z",
+      "last_update": "2026-11-22T04:54:42.160Z",
       "claim_count": 2,
       "events": [
         {
@@ -41060,7 +41738,7 @@
       "cluster_id": 116,
       "headline": "মোংলায় সর্বসাধারণের জন্য উন্মুক্ত নৌবাহিনীর যুদ্ধজাহাজ",
       "first_seen": "2026-11-22T02:09:13.321Z",
-      "last_update": "2026-11-22T04:02:18.123Z",
+      "last_update": "2026-11-22T04:54:42.165Z",
       "claim_count": 2,
       "events": [
         {
@@ -42001,10 +42679,10 @@
     },
     "national-122": {
       "cluster_id": 122,
-      "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি",
+      "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
       "first_seen": "2026-11-22T03:01:03.155Z",
-      "last_update": "2026-11-22T04:02:18.039Z",
-      "claim_count": 9,
+      "last_update": "2026-11-22T04:54:42.154Z",
+      "claim_count": 11,
       "events": [
         {
           "ts": "2026-11-20T16:32:01.000Z",
@@ -42022,6 +42700,17 @@
           "kind": "evidence",
           "claim_id": 5868,
           "claim_text": "লাকসামে নিষিদ্ধ ছাত্রলীগ নেতা নাঈমসহ গ্রেপ্তার ৪",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNTTA0aDZqdXFSLWhQclJDZUxuSlZ1QlhsUEhMSVh3R0d6R1pRZ2hxT2VaYllLdGNtdnJpZkJwMkxhYzBhUEJnRWY1VTFMUlpxSG5pWUVkWURGTjZlYkxUOWx2SEQ1TG1EMmZhUGFJN1M4aUU5?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-20T16:32:01.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
           "detail": {
             "source_id": "kalerkantho",
             "relation": "supports",
@@ -42051,10 +42740,32 @@
           }
         },
         {
+          "ts": "2026-11-21T03:54:01.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FR0NNTjNiX2ktU1ZUQlV1YXRBRDBmOUJoYlBoYzlSSlRRYjU3Q0FYT0pQYlUydVk3YTcyRzd5d01sclNWeDU1akRwYUFCR3piU2dabzdnS1FpSGl6N3lwQ3JHQkJvclFRbVAzbXdyN3VGaUlM?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-21T13:29:51.000Z",
           "kind": "evidence",
           "claim_id": 5867,
           "claim_text": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/kclys0fhty"
+          }
+        },
+        {
+          "ts": "2026-11-21T13:29:51.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -42084,6 +42795,17 @@
           }
         },
         {
+          "ts": "2026-11-21T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1sQ1BWX0dqUlNiQVdDNWZUTFZWa0xyVEJsVWJXbTVQYkttSHZQUmhoNkV1Z3ZfV1hmYWcwQkJ4UmhDNUtRZXozOFhFMTMxM3kxMDRDdlhmbkQzaDJHUE5aQ2Q3Z0hzckJ0YUlxczgydVFyS2ZSUnRweGowbw?oc=5"
+          }
+        },
+        {
           "ts": "2026-11-21T20:45:00.000Z",
           "kind": "evidence",
           "claim_id": 5867,
@@ -42099,6 +42821,17 @@
           "kind": "evidence",
           "claim_id": 6560,
           "claim_text": "নড়াইলের বেন্দারচর গ্রামে যা দেখা গেল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/1yjc43zwk8"
+          }
+        },
+        {
+          "ts": "2026-11-21T20:45:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -42128,6 +42861,17 @@
           }
         },
         {
+          "ts": "2026-11-22T01:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.haal.fashion/lifestyle/well-being/nrvp4uhqrf"
+          }
+        },
+        {
           "ts": "2026-11-22T02:00:00.000Z",
           "kind": "evidence",
           "claim_id": 5867,
@@ -42143,6 +42887,17 @@
           "kind": "evidence",
           "claim_id": 5872,
           "claim_text": "এআইকে নিরাপদে প্রশিক্ষণ দিতে কৃত্রিম ইন্টারনেট তৈরি করেছে গুগল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/technology/cyberworld/nj74lvkq79"
+          }
+        },
+        {
+          "ts": "2026-11-22T02:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
           "detail": {
             "source_id": "prothomalo",
             "relation": "supports",
@@ -42172,6 +42927,39 @@
           }
         },
         {
+          "ts": "2026-11-22T02:30:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/sports/cricket/wg3j8yrjng"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/writings/dd66yirkma"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8021,
+          "claim_text": "‘দ্য জেন্টলমেন’ সিজন ২: ভদ্রলোকের পোশাকে অপরাধের অন্ধকার",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.bondhushava.com/writings/dd66yirkma"
+          }
+        },
+        {
           "ts": "2026-11-22T03:11:01.000Z",
           "kind": "evidence",
           "claim_id": 5867,
@@ -42187,6 +42975,17 @@
           "kind": "evidence",
           "claim_id": 6564,
           "claim_text": "পত্রিকা: 'দেশি-বিদেশি চাপে পোশাক খাত, রপ্তানি ও দাম কমছে'",
+          "detail": {
+            "source_id": "bbc-bengali",
+            "relation": "supports",
+            "url": "https://www.bbc.com/bengali/articles/c60qjn5583zyo?at_medium=RSS&at_campaign=rss"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:11:01.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
           "detail": {
             "source_id": "bbc-bengali",
             "relation": "supports",
@@ -42317,6 +43116,17 @@
             "from": null,
             "confidence": 33,
             "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:33:49.000Z",
+          "kind": "evidence",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/dvmghzvm83"
           }
         },
         {
@@ -42474,6 +43284,54 @@
             "confidence": 13,
             "reason": "re-verify"
           }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.147Z",
+          "kind": "claim",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.170Z",
+          "kind": "claim",
+          "claim_id": 8021,
+          "claim_text": "‘দ্য জেন্টলমেন’ সিজন ২: ভদ্রলোকের পোশাকে অপরাধের অন্ধকার"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8012,
+          "claim_text": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 40,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8021,
+          "claim_text": "‘দ্য জেন্টলমেন’ সিজন ২: ভদ্রলোকের পোশাকে অপরাধের অন্ধকার",
+          "detail": {
+            "status": "CONFLICTING",
+            "from": null,
+            "confidence": 13,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:49.883Z",
+          "kind": "conflict",
+          "claim_id": 6560,
+          "claim_text": "নড়াইলের বেন্দারচর গ্রামে যা দেখা গেল",
+          "detail": {
+            "conflict_type": "polarity",
+            "field": "স্বীকার",
+            "sources": "[\"c6560\",\"c8012\"]",
+            "resolution": "unresolved"
+          }
         }
       ],
       "related": [
@@ -42621,7 +43479,7 @@
       "cluster_id": 123,
       "headline": "বিচারের মাধ্যমে আ. লীগকে নিষিদ্ধের দাবি হেফাজতের",
       "first_seen": "2026-11-22T03:01:03.159Z",
-      "last_update": "2026-11-22T04:02:18.120Z",
+      "last_update": "2026-11-22T04:54:42.159Z",
       "claim_count": 2,
       "events": [
         {
@@ -42694,7 +43552,16 @@
           }
         }
       ],
-      "related": []
+      "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        }
+      ]
     },
     "national-1230": {
       "cluster_id": 1230,
@@ -42984,7 +43851,7 @@
       "cluster_id": 125,
       "headline": "ইউরোপের বিভিন্ন শহরে তরুণদের বিক্ষোভ",
       "first_seen": "2026-11-22T03:01:03.163Z",
-      "last_update": "2026-11-22T04:02:18.122Z",
+      "last_update": "2026-11-22T04:54:42.161Z",
       "claim_count": 3,
       "events": [
         {
@@ -44109,6 +44976,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -44865,6 +45740,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 75,
           "slug": "national-75",
           "actor_links": 0,
@@ -45040,6 +45923,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 108,
           "slug": "national-masud-rana-creator",
@@ -46189,7 +47080,7 @@
       "cluster_id": 143,
       "headline": "Awami League miscreants tried to set my house on fire in Khagrachhari: Shadik Kayem",
       "first_seen": "2026-11-22T04:02:18.105Z",
-      "last_update": "2026-11-22T04:02:18.108Z",
+      "last_update": "2026-11-22T04:54:42.155Z",
       "claim_count": 2,
       "events": [
         {
@@ -46721,7 +47612,7 @@
       "cluster_id": 146,
       "headline": "পাবনায় বিএনপি ও কার্যক্রম নিষিদ্ধ আ. লীগ নেতাকর্মীদের দফায় দফায় সংঘর্ষ",
       "first_seen": "2026-11-22T04:02:18.116Z",
-      "last_update": "2026-11-22T04:02:18.118Z",
+      "last_update": "2026-11-22T04:54:42.159Z",
       "claim_count": 2,
       "events": [
         {
@@ -47941,12 +48832,251 @@
     },
     "national-152": {
       "cluster_id": 152,
-      "headline": "পাকিস্তান থেকে আনা ১৫০ টন তামাক ঘিরে সন্দেহ, ক্ষতিকর রাসায়নিক আছে কি না, পরীক্ষা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+      "first_seen": "2026-11-22T04:54:42.141Z",
+      "last_update": "2026-11-22T04:54:42.147Z",
+      "claim_count": 5,
+      "events": [
+        {
+          "ts": "2026-11-22T01:42:16.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/982451/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%87-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%AF%E0%A7%8B%E0%A6%97"
+          }
+        },
+        {
+          "ts": "2026-11-22T01:42:16.000Z",
+          "kind": "evidence",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/country/chitagong/982451/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%87-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%AF%E0%A7%8B%E0%A6%97"
+          }
+        },
+        {
+          "ts": "2026-11-22T02:48:20.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "banglatribune",
+            "relation": "supports",
+            "url": "https://www.banglatribune.com/politics/jamat-e-islam/982454/%E0%A6%B8%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2-%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%AA-%E0%A6%93"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/t0x37iymp8"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:02:25.000Z",
+          "kind": "evidence",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/politics/t0x37iymp8"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:13:26.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/khagrachhari-sadik-kayem-house-arson-attempt/"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:13:26.000Z",
+          "kind": "evidence",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ",
+          "detail": {
+            "source_id": "dainikazadi",
+            "relation": "supports",
+            "url": "https://dainikazadi.net/khagrachhari-sadik-kayem-house-arson-attempt/"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:32:32.000Z",
+          "kind": "evidence",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPZU9CZktvZzN2V25XYXFmNHR5eVZ5dWpKZ2NuSkxqOUEybWtlWjhnUm55ZGt5N1o1eWlQX0pFQ3JmVEh3NnM5OXdMeWNrbE8xT1VR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:32:32.000Z",
+          "kind": "evidence",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPZU9CZktvZzN2V25XYXFmNHR5eVZ5dWpKZ2NuSkxqOUEybWtlWjhnUm55ZGt5N1o1eWlQX0pFQ3JmVEh3NnM5OXdMeWNrbE8xT1VR?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.282Z",
+          "kind": "claim",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.287Z",
+          "kind": "claim",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.288Z",
+          "kind": "claim",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.290Z",
+          "kind": "claim",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.292Z",
+          "kind": "claim",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8066,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 100,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8067,
+          "claim_text": "সাদিক কায়েমের বাড়িতে পেট্রোলবোমা মেরে অগ্নিসংযোগ, যা বললেন ডাকসু ভিপি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8068,
+          "claim_text": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8069,
+          "claim_text": "ভিপি সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের চেষ্টার অভিযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8070,
+          "claim_text": "সাদিক কায়েমের বাড়িতে হামলা কাপুরুষোচিত: জামায়াত আমির",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 136,
+          "slug": "national-bust-companies-revived",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খাগড়াছড়িতে আমার বাড়িতে অগ্নিসংযোগের চেষ্টা চালিয়েছে আ.লীগের সন্ত্রাসীরা: সাদিক কায়েম"
+        },
+        {
+          "cluster_id": 135,
+          "slug": "national-signs-suggest-thomas",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "যুক্তরাষ্ট্রে খালেদা জিয়ার নামে সড়কের প্রস্তাব, নাম ‘মাদার অব ডেমোক্রেসি’"
+        },
+        {
+          "cluster_id": 123,
+          "slug": "national-123",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বিচারের মাধ্যমে আ. লীগকে নিষিদ্ধের দাবি হেফাজতের"
+        },
+        {
+          "cluster_id": 108,
+          "slug": "national-masud-rana-creator",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আগামী ১০ বছরেও সরকার পরিবর্তনের সম্ভাবনা নেই, গ্যারান্টি দিলাম: এমপি সেলিম ভূঁইয়া"
+        },
+        {
+          "cluster_id": 75,
+          "slug": "national-75",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গোপালগঞ্জে অতিরিক্ত ৭ প্লাটুন আনসার মোতায়েন, সাত জেলায় দায়িত্বে ৪৯ প্লাটুন"
+        },
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
+        }
+      ]
     },
     "national-1520": {
       "cluster_id": 1520,
@@ -48040,12 +49170,131 @@
     },
     "national-153": {
       "cluster_id": 153,
-      "headline": "হত্যাচেষ্টার অভিযোগ তুলে মামলা করলেন আসিফ আকবর",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+      "first_seen": "2026-11-22T04:54:42.148Z",
+      "last_update": "2026-11-22T04:54:42.151Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-22T04:12:20.000Z",
+          "kind": "evidence",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "jugantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSklMYUN6UVpwYnNlYmV4Y2RnMTMzYTloa2d3MEM3Z0l5TnJDakJHNmhtU05xSHpNODRqaUY4d0trUWNVT0FFSUkzUE5Cb29odTR1ZzI2LWE3Zw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:23:42.000Z",
+          "kind": "evidence",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/813894"
+          }
+        },
+        {
+          "ts": "2026-11-22T04:23:42.000Z",
+          "kind": "evidence",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/813894"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.294Z",
+          "kind": "claim",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.297Z",
+          "kind": "claim",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8071,
+          "claim_text": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8072,
+          "claim_text": "সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 17,
+          "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
+        },
+        {
+          "cluster_id": 38,
+          "slug": "national-38",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "আন্তর্জাতিক চলচ্চিত্র উৎসবে সেরা অভিনেত্রী নাজিফা তুষি"
+        },
+        {
+          "cluster_id": 28,
+          "slug": "national-28",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "কার্যক্রম নিষিদ্ধ আওয়ামী লীগের ওপর স্থায়ী নিষেধাজ্ঞা দিতে চার সচিবকে আইনি নোটিশ"
+        },
+        {
+          "cluster_id": 15,
+          "slug": "national-15",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "নড়াইলে কার্যক্রম নিষিদ্ধ আওয়ামী লীগ নেতা–কর্মীদের ২০–৩০টি বাড়িতে হামলা–আগুন"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 7,
+          "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
+        },
+        {
+          "cluster_id": 24,
+          "slug": "national-24",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "আওয়ামী লীগের সঙ্গে জড়িত সন্দেহে ৫ কর্মকর্তাকে মারধর: ছাত্রদলের ১৩ নেতা বহিষ্কার"
+        }
+      ]
     },
     "national-1531": {
       "cluster_id": 1531,
@@ -48130,12 +49379,115 @@
     },
     "national-154": {
       "cluster_id": 154,
-      "headline": "ঝালকাঠিতে ঘনচিনি দিয়ে আইসক্রিম তৈরি, জরিমানা ৫০ হাজার",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ",
+      "first_seen": "2026-11-22T04:54:42.156Z",
+      "last_update": "2026-11-22T04:54:42.158Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-21T16:45:38.000Z",
+          "kind": "evidence",
+          "claim_id": 8073,
+          "claim_text": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00ckFhbGp4ZDJmTjV5eVN0UV9OLTdzS1RYVkp1UmVkMlVOTFNIcDNJUExZd3ViSHFkdi02X21sS1Y1QVRodkloQ1pYb3l2aFJnemMweFViNGtSc0hGN0hoR3ZFY0Q5bE1ucWNN?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:22:15.000Z",
+          "kind": "evidence",
+          "claim_id": 8073,
+          "claim_text": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxNaXcyZHZKNDBTRUNMMHd5NzFndlRCWDlrMEdNSmZnTklNZThpbzlhek1RMWZXMXBkNHhFaUNaRDM3RkhQM2JlQlJTNEVjUnBiM2h4UVFGODluX0ZTYXBHaUJhUVAtRWN4VzBHTGFEUmtZMEYyMDlnUzd1N25QRFpQV2FuZnZWYlpWcGZ0RHZ0M2pyMWt4LVU2enJMa1cxU1pFeXcxX19mOUJDa2p5V2VxSVBCempobG5ZY3JYbkN4RkFTUHVQT0lMZzdfaUtWWEVtc1RjM3FxU3ZpWUNjbjV1cF8tV0ZWZFZGMTdVakNCRjExOWRUVnRzUzlpZlowNW9NS1JfTlNqeUMzVk9mOHRILTFpc2xMdjA1cGlQdUREZmkwNGdpbnRxTVVNS1N3OFZ3eFlWdzBybmg4cno3NmhpQXR0alZCRjc4cXhNRENDNE9Od0l0cGJEYUttYU14R043MkdzSHoyc01MV3BobFVRYzVIRlFZc0RwOE5CVGFiQzMxaDJFS3U2ak1GT1pLM2pMMjM2ZzlsWmlMNTZKZjNlUlB0N3ZOX0hUbW9rZVc5WEZ3MFZrWkhyS3hadTlCb1hyRTYxS0UzY1NseWRIMnVmZWhoMk9TMUktT0VLRjlZdXBrRHNqQ0NBUlVOLWNMaURiYjRIUXpEWURTREdNNjE0SmMwRGpZTVFLbGRCR9IBkgRBVV95cUxQS3ZVY2RqSkVGTk9iQV83SDJIOFU5STNEOFlGdVBhM0dWZ0luODhIUGZydmZ0WjdXZ3ByanJieWVRWXI0RFFNWENVMmZCOENBdE5XTHBjVzVSY0pJQkVjZkp2VmFOTC1RUEdzTWdhbUJWbG02N3lRb3pQWkNNZU5yZjlhUGFZNGRqT3NWSjJTZWw5NVpqbU93dUItYXNDWDU1VkFCLVJkX21ZVGpWdGFJcTZaS25fT1J3a2J5ZWdOQmszaEk1ZkZfYmV3ejZCOFRKY0dGYi1ndVQtRklXTmdzVGw5aTJNRUcxdURrcnBrSktubXByVWROb2Z6OERlYVlLdlAyWnN4X05VMjVSUEZMYmFUdGRLdlYyM0JjM0JIcmpXcFNQWVN3U0tESWE5SHg5VTF4TXdpM2JwRmtKeTI2U2hzd1dwelc2bTlZMXFoSl91djJZWE5aeEpEMm1SNTMtNmNYWExvTmFvWFRKSkdoa2VxMnpUOV95N3ZRdERhRk0tSTJCZmtLRUdwaUtqYXdMVE1QbExCeUgwbjdVaV9xX1I0amtKOHpTb25fU3laalN1Xy03R1NaWGtBTHZvRG4wZThpMzl1N01TZU1qdFpkN1lSdHlmYnB6Ql85eUpCX0ZCXzc4Z2Nnem5FNVhXUjgwRzlnWUhDUVY3dU15QTJOTG1jcW9Ha0ZwNUkzWnd2cXVBdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T03:22:15.000Z",
+          "kind": "evidence",
+          "claim_id": 8074,
+          "claim_text": "রাজধানী থেকে নিষিদ্ধ ছাত্রলীগের সাবেক ভিপি গ্রেপ্তার",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxNaXcyZHZKNDBTRUNMMHd5NzFndlRCWDlrMEdNSmZnTklNZThpbzlhek1RMWZXMXBkNHhFaUNaRDM3RkhQM2JlQlJTNEVjUnBiM2h4UVFGODluX0ZTYXBHaUJhUVAtRWN4VzBHTGFEUmtZMEYyMDlnUzd1N25QRFpQV2FuZnZWYlpWcGZ0RHZ0M2pyMWt4LVU2enJMa1cxU1pFeXcxX19mOUJDa2p5V2VxSVBCempobG5ZY3JYbkN4RkFTUHVQT0lMZzdfaUtWWEVtc1RjM3FxU3ZpWUNjbjV1cF8tV0ZWZFZGMTdVakNCRjExOWRUVnRzUzlpZlowNW9NS1JfTlNqeUMzVk9mOHRILTFpc2xMdjA1cGlQdUREZmkwNGdpbnRxTVVNS1N3OFZ3eFlWdzBybmg4cno3NmhpQXR0alZCRjc4cXhNRENDNE9Od0l0cGJEYUttYU14R043MkdzSHoyc01MV3BobFVRYzVIRlFZc0RwOE5CVGFiQzMxaDJFS3U2ak1GT1pLM2pMMjM2ZzlsWmlMNTZKZjNlUlB0N3ZOX0hUbW9rZVc5WEZ3MFZrWkhyS3hadTlCb1hyRTYxS0UzY1NseWRIMnVmZWhoMk9TMUktT0VLRjlZdXBrRHNqQ0NBUlVOLWNMaURiYjRIUXpEWURTREdNNjE0SmMwRGpZTVFLbGRCR9IBkgRBVV95cUxQS3ZVY2RqSkVGTk9iQV83SDJIOFU5STNEOFlGdVBhM0dWZ0luODhIUGZydmZ0WjdXZ3ByanJieWVRWXI0RFFNWENVMmZCOENBdE5XTHBjVzVSY0pJQkVjZkp2VmFOTC1RUEdzTWdhbUJWbG02N3lRb3pQWkNNZU5yZjlhUGFZNGRqT3NWSjJTZWw5NVpqbU93dUItYXNDWDU1VkFCLVJkX21ZVGpWdGFJcTZaS25fT1J3a2J5ZWdOQmszaEk1ZkZfYmV3ejZCOFRKY0dGYi1ndVQtRklXTmdzVGw5aTJNRUcxdURrcnBrSktubXByVWROb2Z6OERlYVlLdlAyWnN4X05VMjVSUEZMYmFUdGRLdlYyM0JjM0JIcmpXcFNQWVN3U0tESWE5SHg5VTF4TXdpM2JwRmtKeTI2U2hzd1dwelc2bTlZMXFoSl91djJZWE5aeEpEMm1SNTMtNmNYWExvTmFvWFRKSkdoa2VxMnpUOV95N3ZRdERhRk0tSTJCZmtLRUdwaUtqYXdMVE1QbExCeUgwbjdVaV9xX1I0amtKOHpTb25fU3laalN1Xy03R1NaWGtBTHZvRG4wZThpMzl1N01TZU1qdFpkN1lSdHlmYnB6Ql85eUpCX0ZCXzc4Z2Nnem5FNVhXUjgwRzlnWUhDUVY3dU15QTJOTG1jcW9Ha0ZwNUkzWnd2cXVBdw?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.299Z",
+          "kind": "claim",
+          "claim_id": 8073,
+          "claim_text": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.302Z",
+          "kind": "claim",
+          "claim_id": 8074,
+          "claim_text": "রাজধানী থেকে নিষিদ্ধ ছাত্রলীগের সাবেক ভিপি গ্রেপ্তার"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8073,
+          "claim_text": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8074,
+          "claim_text": "রাজধানী থেকে নিষিদ্ধ ছাত্রলীগের সাবেক ভিপি গ্রেপ্তার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 70,
+          "slug": "politics-70",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
+        },
+        {
+          "cluster_id": 62,
+          "slug": "national-62",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পাবনায় বিএনপির সঙ্গে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের দফায় দফায় সংঘর্ষ"
+        },
+        {
+          "cluster_id": 44,
+          "slug": "national-44",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ঘূর্ণিঝড় ‘আকভান’র প্রভাবে ঢাকাসহ বিভিন্ন স্থানে বৃষ্টি, জনজীবনে দুর্ভোগ"
+        },
+        {
+          "cluster_id": 11,
+          "slug": "national-11",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 6,
+          "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
+        }
+      ]
     },
     "national-1540": {
       "cluster_id": 1540,
@@ -48220,12 +49572,99 @@
     },
     "national-155": {
       "cluster_id": 155,
-      "headline": "নভেম্বরের জন্য জ্বালানি তেলের নতুন দাম ঘোষণা",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+      "first_seen": "2026-11-22T04:54:42.162Z",
+      "last_update": "2026-11-22T04:54:42.164Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-07-03T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOUFNlblJLN3ZsZXhFZm1pdE1FMmJxNEZTUnJvWlJEdlp1b296eG8wbWlOSS1UQkgzQU1ZaHg0YVhsbENhOEswMHJVbXR0TGVSejZzMVRQTDE3WmR2cEg5cFBJOXI5VzhuQjBqUFdSdFVCbHIySmNnQ2VLSXNWSnVlbkd5TVpUZjFhTkwzTjV1bC1wcjh2TEd5U2VsanZ0TUJQbW43dktNcGwxYnhuYTFFU3Uxb25qbWprUTZhRXpRb0xpOWxKM0NjcUhUc0x3N25NNHZ0Y28yckxfSWphX2NYUENYb0dEd0U0a3lBaWxOSUQ3M2hUUmVCMEZYSzV1dktlRXpLdU1mbVgwdVkwWElwMXBaMkEtaDh1M2NSMENYTmpvMzJVaEhuLXgzbHdQOVpxS0NYcFNmS0pGYjRHRGVMZnhOYnB5SDlUWXcwUmF5UGdqMlFYNlJpNnN4SlF6RXVKem1hd2tEQ3ZyeXFzNEZ2N25KWnNhUmQzTG45cS1pMNIBhANBVV95cUxOYTRoenFURDNGWGZQUVJxdzNJR01vN0c3NmhSQmtzSUVhTDNHR1Z0TVFQcHIzV1ZpTjdkYVQyaHRySE1JNVpFZnhqNUYxNlA3c2ZDaFB0NVNjZGpYWmdnRV9iWk05d3hEQ3cxQmtkWlFTekxEZG95WTBmVGxrYXBlYTdONE1EUkdONE9PcXpVODdhM3BEYTU1Z2FiSXZESHBsQ0ZzZDhId2wxd2wwTkowMzlCVi1yTXFwR1dXeG5ZeFNFLWYtQnU2QVZZbTg5blRuQVlYemJYbWtaYkJJQXZFc0VFTVZaZlVMaUt6akMzZ3FDcUloZDJ2T08tMGlRQjB4dUdpSURuN3ZGMGd3ci1rc2NyR0tGNU1HS180X0lVUFRfaWJPUTRuZ092SnF6bnU2V0xNUEw5ODJMSjJsR1cxNklHLTVWZ0Zocm40b18wRUE2SEpmYXdlRmo3NTJfeTRYYklHbEpkQThoOUFhaHBhanlwOEZTMXpsQW0wQnZTOEd4a2xW?oc=5"
+          }
+        },
+        {
+          "ts": "2026-07-03T07:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু",
+          "detail": {
+            "source_id": "deshrupantor",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOUFNlblJLN3ZsZXhFZm1pdE1FMmJxNEZTUnJvWlJEdlp1b296eG8wbWlOSS1UQkgzQU1ZaHg0YVhsbENhOEswMHJVbXR0TGVSejZzMVRQTDE3WmR2cEg5cFBJOXI5VzhuQjBqUFdSdFVCbHIySmNnQ2VLSXNWSnVlbkd5TVpUZjFhTkwzTjV1bC1wcjh2TEd5U2VsanZ0TUJQbW43dktNcGwxYnhuYTFFU3Uxb25qbWprUTZhRXpRb0xpOWxKM0NjcUhUc0x3N25NNHZ0Y28yckxfSWphX2NYUENYb0dEd0U0a3lBaWxOSUQ3M2hUUmVCMEZYSzV1dktlRXpLdU1mbVgwdVkwWElwMXBaMkEtaDh1M2NSMENYTmpvMzJVaEhuLXgzbHdQOVpxS0NYcFNmS0pGYjRHRGVMZnhOYnB5SDlUWXcwUmF5UGdqMlFYNlJpNnN4SlF6RXVKem1hd2tEQ3ZyeXFzNEZ2N25KWnNhUmQzTG45cS1pMNIBhANBVV95cUxOYTRoenFURDNGWGZQUVJxdzNJR01vN0c3NmhSQmtzSUVhTDNHR1Z0TVFQcHIzV1ZpTjdkYVQyaHRySE1JNVpFZnhqNUYxNlA3c2ZDaFB0NVNjZGpYWmdnRV9iWk05d3hEQ3cxQmtkWlFTekxEZG95WTBmVGxrYXBlYTdONE1EUkdONE9PcXpVODdhM3BEYTU1Z2FiSXZESHBsQ0ZzZDhId2wxd2wwTkowMzlCVi1yTXFwR1dXeG5ZeFNFLWYtQnU2QVZZbTg5blRuQVlYemJYbWtaYkJJQXZFc0VFTVZaZlVMaUt6akMzZ3FDcUloZDJ2T08tMGlRQjB4dUdpSURuN3ZGMGd3ci1rc2NyR0tGNU1HS180X0lVUFRfaWJPUTRuZ092SnF6bnU2V0xNUEw5ODJMSjJsR1cxNklHLTVWZ0Zocm40b18wRUE2SEpmYXdlRmo3NTJfeTRYYklHbEpkQThoOUFhaHBhanlwOEZTMXpsQW0wQnZTOEd4a2xW?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-21T18:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "source_id": "kalerkantho",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtZWZ3eWx0RXkwbWZDU245QVVxWnVkbkh6RlhzbTlJUGJLSmg1MkUyczViQzNlSUdjd203M2l1QmhURlhSRGxmLU0xWVA0YXdBWnBta3pYZndmaHlsTnRrNmJBYU1PS3ZMLW85Y2ROVnRxeFk?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.304Z",
+          "kind": "claim",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.307Z",
+          "kind": "claim",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8075,
+          "claim_text": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8076,
+          "claim_text": "হাম উপসর্গে আরও ৫ শিশুর মৃত্যু",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 83,
+          "slug": "national-83",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "যথাযোগ্য মর্যাদায় নৌ অঞ্চলসমূহে সশস্ত্র বাহিনী দিবস-২০২৬ উদযাপিত"
+        },
+        {
+          "cluster_id": 44,
+          "slug": "national-44",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 4,
+          "headline": "ঘূর্ণিঝড় ‘আকভান’র প্রভাবে ঢাকাসহ বিভিন্ন স্থানে বৃষ্টি, জনজীবনে দুর্ভোগ"
+        }
+      ]
     },
     "national-1550": {
       "cluster_id": 1550,
@@ -48319,11 +49758,41 @@
     },
     "national-156": {
       "cluster_id": 156,
-      "headline": "ডেঙ্গুতে ২৪ ঘণ্টায় ৬ জনের মৃত্যু, হাসপাতালে ১৮৮৬",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+      "first_seen": "2026-11-22T04:54:42.513Z",
+      "last_update": "2026-11-22T04:54:42.515Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:22:47.000Z",
+          "kind": "evidence",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/chakri/employment/6i4as66ds2"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.309Z",
+          "kind": "claim",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8077,
+          "claim_text": "ঢাকা কর অঞ্চল–১৫ তে ৪২ পদে চাকরির সুযোগ",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1560": {
@@ -48418,11 +49887,41 @@
     },
     "national-157": {
       "cluster_id": 157,
-      "headline": "১৫০ কিলোমিটার গতির পেসাররা হঠাৎ ধীর হয়ে যান কেন, রহস্য ফাঁস করলেন ওয়াকার ইউনিস",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "বুটেক্সে ভর্তি পরীক্ষা: আসন ৬৩০, জিপিএ অপরিবর্তিত, সুযোগ সাপ্লিমেন্টারি পরীক্ষার্থীদেরও",
+      "first_seen": "2026-11-22T04:54:42.517Z",
+      "last_update": "2026-11-22T04:54:42.518Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:21:26.000Z",
+          "kind": "evidence",
+          "claim_id": 8078,
+          "claim_text": "বুটেক্সে ভর্তি পরীক্ষা: আসন ৬৩০, জিপিএ অপরিবর্তিত, সুযোগ সাপ্লিমেন্টারি পরীক্ষার্থীদেরও",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/education/admission/a3ujgzdwfw"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.312Z",
+          "kind": "claim",
+          "claim_id": 8078,
+          "claim_text": "বুটেক্সে ভর্তি পরীক্ষা: আসন ৬৩০, জিপিএ অপরিবর্তিত, সুযোগ সাপ্লিমেন্টারি পরীক্ষার্থীদেরও"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8078,
+          "claim_text": "বুটেক্সে ভর্তি পরীক্ষা: আসন ৬৩০, জিপিএ অপরিবর্তিত, সুযোগ সাপ্লিমেন্টারি পরীক্ষার্থীদেরও",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1570": {
@@ -48517,11 +50016,41 @@
     },
     "national-158": {
       "cluster_id": 158,
-      "headline": "মানুষ কি মাংস খাওয়ার জন্যই তৈরি, নাকি নিরামিষেই সুস্থ থাকা সম্ভব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+      "first_seen": "2026-11-22T04:54:42.520Z",
+      "last_update": "2026-11-22T04:54:42.522Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:15:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/bollywood/4qg4m15jpm"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.314Z",
+          "kind": "claim",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8079,
+          "claim_text": "কাজ হারানোর ভয়ে বিনা পারিশ্রমিকেও অভিনয়",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1580": {
@@ -48616,11 +50145,41 @@
     },
     "national-159": {
       "cluster_id": 159,
-      "headline": "দুই শতাধিক প্রবীণকে নিয়ে কুষ্টিয়ায় দিনব্যাপী উৎসব",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+      "first_seen": "2026-11-22T04:54:42.523Z",
+      "last_update": "2026-11-22T04:54:42.525Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:07:31.000Z",
+          "kind": "evidence",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+          "detail": {
+            "source_id": "bdnews24",
+            "relation": "supports",
+            "url": "https://bangla.bdnews24.com/tech/x4i01831mk"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.317Z",
+          "kind": "claim",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8080,
+          "claim_text": "আইফোন ডুওর আদলে মটোরোলার নতুন ফোল্ডএবল ফোনের ছবি ফাঁস",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1590": {
@@ -48794,11 +50353,41 @@
     },
     "national-160": {
       "cluster_id": 160,
-      "headline": "কিশোরগঞ্জে দুই চেয়ারম্যান প্রার্থীর সমর্থকদের সংঘর্ষ, আহত ১৫",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+      "first_seen": "2026-11-22T04:54:42.526Z",
+      "last_update": "2026-11-22T04:54:42.528Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-22T04:00:00.000Z",
+          "kind": "evidence",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/njgubtoyzc"
+          }
+        },
+        {
+          "ts": "2026-11-22T05:46:46.319Z",
+          "kind": "claim",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল"
+        },
+        {
+          "ts": "2026-11-22T05:46:46.403Z",
+          "kind": "verify",
+          "claim_id": 8081,
+          "claim_text": "কেনেডির হত্যাকাণ্ড ঘিরে মার্কিন নথিপত্রে শেষ পর্যন্ত কী বেরিয়ে এল",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1600": {
@@ -50028,6 +51617,14 @@
           "headline": "‘নিরাপত্তা’র কথা বলে বৈশাখী টিভির ডিএমডি টিপুকে নেওয়ার ১০ ঘণ্টা পরও ছাড়েনি পুলিশ"
         },
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -50058,14 +51655,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "পাবনায় বিএনপির সঙ্গে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের দফায় দফায় সংঘর্ষ"
-        },
-        {
-          "cluster_id": 61,
-          "slug": "sports-61",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "সাফ–ব্যর্থতায় ডুলিকে রাখা হবে নাকি বিদায়, সিদ্ধান্ত নিতে সময় চায় বাফুফে"
         }
       ]
     },
@@ -58200,28 +59789,28 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 144,
           "slug": "national-144",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
           "headline": "মধ্যপ্রাচ্যের আরেক দেশে যুক্তরাষ্ট্রের দুই ঘাঁটি লক্ষ্য করে ইরানের হামলা"
-        },
-        {
-          "cluster_id": 135,
-          "slug": "national-signs-suggest-thomas",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "যুক্তরাষ্ট্রে খালেদা জিয়ার নামে সড়কের প্রস্তাব, নাম ‘মাদার অব ডেমোক্রেসি’"
-        },
-        {
-          "cluster_id": 93,
-          "slug": "national-93",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নোয়াখালীতে গ্রামীণ ব্যাংকে পেট্রোল ঢেলে আগুন"
         }
       ]
     },
@@ -62582,6 +64171,14 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
           "cluster_id": 75,
           "slug": "national-75",
           "actor_links": 0,
@@ -62604,14 +64201,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "রাত ১টার মধ্যে ঢাকাসহ ১০ জেলায় ঝড়ের আশঙ্কা, নদীবন্দরে সতর্কতা"
-        },
-        {
-          "cluster_id": 38,
-          "slug": "national-38",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "আন্তর্জাতিক চলচ্চিত্র উৎসবে সেরা অভিনেত্রী নাজিফা তুষি"
         }
       ]
     },
@@ -73069,6 +74658,14 @@
       ],
       "related": [
         {
+          "cluster_id": 153,
+          "slug": "national-153",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ভারতে সড়ক দুর্ঘটনায় একই পরিবারের ৯ জন নিহত"
+        },
+        {
           "cluster_id": 83,
           "slug": "national-83",
           "actor_links": 0,
@@ -73107,14 +74704,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ভারতে অনুপ্রবেশকালে নালিতাবাড়ী সীমান্তে ৩ শিশুসহ ৬ ভারতীয় নাগরিক আটক"
-        },
-        {
-          "cluster_id": 28,
-          "slug": "national-28",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "কার্যক্রম নিষিদ্ধ আওয়ামী লীগের ওপর স্থায়ী নিষেধাজ্ঞা দিতে চার সচিবকে আইনি নোটিশ"
         }
       ]
     },
@@ -79765,20 +81354,20 @@
           "headline": "নড়াইলে কার্যক্রম নিষিদ্ধ আওয়ামী লীগ নেতা–কর্মীদের ২০–৩০টি বাড়িতে হামলা–আগুন"
         },
         {
-          "cluster_id": 129,
-          "slug": "sports-129",
+          "cluster_id": 155,
+          "slug": "national-155",
           "actor_links": 0,
           "source_links": 2,
           "claim_count": 2,
-          "headline": "সাভার-আশুলিয়ার ৮০ কারখানায় সাধারণ ছুটি, বন্ধ আরও ১১"
+          "headline": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু"
         },
         {
-          "cluster_id": 125,
-          "slug": "national-125",
+          "cluster_id": 154,
+          "slug": "national-154",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 3,
-          "headline": "ইউরোপের বিভিন্ন শহরে তরুণদের বিক্ষোভ"
+          "claim_count": 2,
+          "headline": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ"
         }
       ]
     },
@@ -96092,12 +97681,20 @@
           "headline": "গোপালগঞ্জের হাসপাতালে হামলা জেনেভা কনভেনশন অনুযায়ী যুদ্ধাপরাধ: প্রধানমন্ত্রীর উপ-প্রেস সচিব"
         },
         {
+          "cluster_id": 154,
+          "slug": "national-154",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "মিরপুর থেকে ছাত্রলীগের সাবেক নেতা গ্রেপ্তার, বিশৃঙ্খলার অভিযোগ"
+        },
+        {
           "cluster_id": 122,
           "slug": "national-122",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 10,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         },
         {
           "cluster_id": 76,
@@ -96122,14 +97719,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "প্রথমার্ধে এগিয়ে পরের অর্ধে পিছিয়ে পড়েও পয়েন্ট কাড়ল আর্সেনাল"
-        },
-        {
-          "cluster_id": 63,
-          "slug": "national-63",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "ইউপি নির্বাচনে আচরণবিধি লঙ্ঘন করলে প্রার্থিতা বাতিল করতে পারবে ইসি"
         }
       ]
     },
@@ -101053,6 +102642,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -101469,8 +103066,8 @@
           "slug": "national-122",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 10,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         },
         {
           "cluster_id": 76,
@@ -102361,8 +103958,8 @@
           "slug": "national-122",
           "actor_links": 0,
           "source_links": 2,
-          "claim_count": 8,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 10,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         },
         {
           "cluster_id": 116,
@@ -103779,6 +105376,14 @@
       ],
       "related": [
         {
+          "cluster_id": 155,
+          "slug": "national-155",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ডেঙ্গু ও হামের উপসর্গে আরো ৫ জনের মৃত্যু"
+        },
+        {
           "cluster_id": 137,
           "slug": "national-137",
           "actor_links": 0,
@@ -103817,14 +105422,6 @@
           "source_links": 2,
           "claim_count": 4,
           "headline": "ঘূর্ণিঝড় ‘আকভান’র প্রভাবে ঢাকাসহ বিভিন্ন স্থানে বৃষ্টি, জনজীবনে দুর্ভোগ"
-        },
-        {
-          "cluster_id": 38,
-          "slug": "national-38",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "আন্তর্জাতিক চলচ্চিত্র উৎসবে সেরা অভিনেত্রী নাজিফা তুষি"
         }
       ]
     },
@@ -104744,8 +106341,8 @@
           "slug": "national-122",
           "actor_links": 2,
           "source_links": 0,
-          "claim_count": 2,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 3,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         }
       ]
     },
@@ -105857,6 +107454,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 135,
           "slug": "national-signs-suggest-thomas",
@@ -107272,6 +108877,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 108,
           "slug": "national-masud-rana-creator",
           "actor_links": 0,
@@ -107635,6 +109248,14 @@
       ],
       "related": [
         {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
+        {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
           "actor_links": 0,
@@ -107934,6 +109555,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
@@ -108553,6 +110182,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 136,
           "slug": "national-bust-companies-revived",
@@ -109696,6 +111333,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 75,
           "slug": "national-75",
@@ -112205,7 +113850,7 @@
       "cluster_id": 143,
       "headline": "Awami League miscreants tried to set my house on fire in Khagrachhari: Shadik Kayem",
       "first_seen": "2026-11-22T04:02:18.105Z",
-      "last_update": "2026-11-22T04:02:18.108Z",
+      "last_update": "2026-11-22T04:54:42.155Z",
       "claim_count": 2,
       "events": [
         {
@@ -121021,8 +122666,8 @@
           "slug": "national-122",
           "actor_links": 2,
           "source_links": 0,
-          "claim_count": 1,
-          "headline": "ভারতে বেড়াতে গিয়ে খুনের মামলা, ১৮ বছর পর মায়ের কাছে ফিরছেন তিনি"
+          "claim_count": 2,
+          "headline": "বারে পরিচয়, প্রেম-বিয়ে-বিচ্ছেদ, সন্তান নিয়ে মার্কিন বাবার লড়াই, পাসপোর্টে ‘ভিন্ন বাবা’"
         }
       ]
     },
@@ -124812,6 +126457,14 @@
         }
       ],
       "related": [
+        {
+          "cluster_id": 152,
+          "slug": "national-152",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাদিক কায়েমের বাড়িতে পেট্রোল বোমা নিক্ষেপ ও অগ্নিসংযোগের ঘটনায় জামায়াত সেক্রেটারির নিন্দা"
+        },
         {
           "cluster_id": 135,
           "slug": "national-signs-suggest-thomas",
