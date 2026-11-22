@@ -1,10 +1,12 @@
 ---
 title: "পশ্চিমবঙ্গের পেট্রাপোল সীমান্তে নানক–নাছিমসহ কার্যক্রম নিষিদ্ধ আ.লীগের নেতারা"
+thumbnail: "/images/politics-364.webp"
+thumbnailAlt: "পশ্চিমবঙ্গের পেট্রাপোল সীমান্তে নানক–নাছিমসহ কার্যক্রম নিষিদ্ধ আ.লীগের নেতারা — ছবি: প্রথম আলো"
 seoTitle: "পশ্চিমবঙ্গের পেট্রাপোল সীমান্তে নানক–নাছিমসহ কার্যক্রম নিষিদ্ধ আ.লীগের…"
 excerpt: "আওয়ামী লীগের নেতারা একটি সাদা গাড়িতে করে এসে ওই ইমিগ্রেশন সেন্টারে ঢোকেন। বর্তমানে পশ্চিমবঙ্গে থাকা কয়েকজন আওয়ামী লীগ নেতার দাবি, ডিসেম্বরের মাঝামাঝি বাংলাদেশে প্রবেশের একটা চেষ্"
 seoDescription: "আওয়ামী লীগের নেতারা একটি সাদা গাড়িতে করে এসে ওই ইমিগ্রেশন সেন্টারে ঢোকেন। বর্তমানে পশ্চিমবঙ্গে থাকা কয়েকজন আওয়ামী লীগ নেতার দাবি, ডিসেম্বরের মাঝামাঝি বা…"
 date: 2026-11-22T17:52:39.000Z
-publishedAt: 2026-11-22T19:44:43.434Z
+publishedAt: 2026-11-22T19:40:39.010Z
 developing: true
 category: "politics"
 tags: ["jashore"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-22T19:44:43.229Z"
+  evaluatedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 364
   claimIds:
     - 27319
@@ -43,7 +45,7 @@ publication:
   slug: "politics-364"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-22T19:44:43.229Z"
+  checkedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 364
   claimIds:
     - 27319

@@ -1,10 +1,12 @@
 ---
 title: "পরিচয় গোপন করে দুই মাস ধরে লক্ষ্মীপুরে আত্মগোপনে ছিলেন ‘বোমারু মামুন’"
+thumbnail: "/images/national-363.webp"
+thumbnailAlt: "পরিচয় গোপন করে দুই মাস ধরে লক্ষ্মীপুরে আত্মগোপনে ছিলেন ‘বোমারু মামুন’ — ছবি: প্রথম আলো"
 seoTitle: "পরিচয় গোপন করে দুই মাস ধরে লক্ষ্মীপুরে আত্মগোপনে ছিলেন ‘বোমারু মামুন’"
 excerpt: "উগ্রবাদী সংগঠন নব্য জেএমবির সদস্য নাজমুল হাসান মামুন ওরফে ‘বোমারু মামুন’ প্রায় দুই মাস ধরে পরিচয় গোপন করে লক্ষ্মীপুরের রায়পুর উপজেলায় আত্মগোপনে ছিলেন। রায়পুর থানার ভারপ্রাপ্ত কর্মক"
 seoDescription: "উগ্রবাদী সংগঠন নব্য জেএমবির সদস্য নাজমুল হাসান মামুন ওরফে ‘বোমারু মামুন’ প্রায় দুই মাস ধরে পরিচয় গোপন করে লক্ষ্মীপুরের রায়পুর উপজেলায় আত্মগোপনে ছিলেন। রায়…"
 date: 2026-11-22T18:02:55.000Z
-publishedAt: 2026-11-22T19:44:43.421Z
+publishedAt: 2026-11-22T19:40:38.996Z
 developing: true
 category: "national"
 tags: ["dhaka"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-22T19:44:43.229Z"
+  evaluatedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 363
   claimIds:
     - 27318
@@ -43,7 +45,7 @@ publication:
   slug: "national-363"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-22T19:44:43.229Z"
+  checkedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 363
   claimIds:
     - 27318

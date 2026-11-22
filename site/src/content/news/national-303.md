@@ -1,10 +1,12 @@
 ---
 title: "ককটেল বিস্ফোরণে কবি নজরুল কলেজের কর্মচারী ও ছাত্রদল নেতা আহত"
+thumbnail: "/images/national-303.webp"
+thumbnailAlt: "ককটেল বিস্ফোরণে কবি নজরুল কলেজের কর্মচারী ও ছাত্রদল নেতা আহত — ছবি: flickingerbrad (BY)"
 seoTitle: "ককটেল বিস্ফোরণে কবি নজরুল কলেজের কর্মচারী ও ছাত্রদল নেতা আহত"
 excerpt: "ঢাকা সেন্ট্রাল ইউনিভার্সিটির সংযুক্ত কবি নজরুল সরকারি কলেজের অনার্স প্রথম বর্ষের পরীক্ষা চলাকালে কলেজের মূল ফটকের সামনে দুইটি ককটেল বিস্ফোরণের ঘটনা ঘটেছে। রবিবার ( ২২ নভেম্বর) বিকা"
 seoDescription: "ঢাকা সেন্ট্রাল ইউনিভার্সিটির সংযুক্ত কবি নজরুল সরকারি কলেজের অনার্স প্রথম বর্ষের পরীক্ষা চলাকালে কলেজের মূল ফটকের সামনে দুইটি ককটেল বিস্ফোরণের ঘটনা ঘটেছে।…"
 date: 2026-11-22T14:32:48.000Z
-publishedAt: 2026-11-22T19:44:43.442Z
+publishedAt: 2026-11-22T19:40:39.018Z
 developing: false
 category: "national"
 tags: ["education", "economy", "dhaka"]
@@ -29,7 +31,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: false
   status: "passed"
-  evaluatedAt: "2026-11-22T19:44:43.229Z"
+  evaluatedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 303
   claimIds:
     - 21666
@@ -48,7 +50,7 @@ publication:
   slug: "national-303"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-22T19:44:43.229Z"
+  checkedAt: "2026-11-22T19:40:38.791Z"
   clusterId: 303
   claimIds:
     - 21666
