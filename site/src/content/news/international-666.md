@@ -4,7 +4,7 @@ seoTitle: "যুক্তরাষ্ট্রের কাছে ২৯ হা
 excerpt: "কয়েক দশকের মার্কিন কর্মকাণ্ডে ক্ষয়ক্ষতির অভিযোগ তুলে ২৯ হাজার কোটি ডলার ক্ষতিপূরণ দাবি করেছে ইরান। কয়েক দশক ধরে যুক্তরাষ্ট্রের বিভিন্ন কর্মকাণ্ডের কারণে হওয়া ক্ষয়ক্ষতির জন্য এ অর্থ"
 seoDescription: "কয়েক দশকের মার্কিন কর্মকাণ্ডে ক্ষয়ক্ষতির অভিযোগ তুলে ২৯ হাজার কোটি ডলার ক্ষতিপূরণ দাবি করেছে ইরান। কয়েক দশক ধরে যুক্তরাষ্ট্রের বিভিন্ন কর্মকাণ্ডের কারণে হ…"
 date: 2026-11-24T04:11:59.000Z
-publishedAt: 2026-11-24T06:06:08.853Z
+publishedAt: 2026-11-24T06:00:48.133Z
 developing: true
 category: "international"
 tags: ["economy"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-24T06:06:08.590Z"
+  evaluatedAt: "2026-11-24T06:00:47.908Z"
   clusterId: 666
   claimIds:
     - 98677
@@ -43,7 +43,7 @@ publication:
   slug: "international-666"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-24T06:06:08.590Z"
+  checkedAt: "2026-11-24T06:00:47.908Z"
   clusterId: 666
   claimIds:
     - 98677

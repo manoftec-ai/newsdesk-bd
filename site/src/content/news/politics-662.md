@@ -4,7 +4,7 @@ seoTitle: "পাবনায় বিএনপির বিক্ষোভ মি
 excerpt: "পাবনার ঈশ্বরদীতে বিক্ষোভ মিছিলের প্রস্তুতিকালে বিএনপি ও অঙ্গসংগঠনের নেতাকর্মীদের ওপর অতর্কিত হামলা ও গুলিবর্ষণের ঘটনা ঘটেছে। স্থানীয় জানা যায়, কার্যক্রম নিষিদ্ধ আওয়ামী লীগের নৈরাজ্"
 seoDescription: "পাবনার ঈশ্বরদীতে বিক্ষোভ মিছিলের প্রস্তুতিকালে বিএনপি ও অঙ্গসংগঠনের নেতাকর্মীদের ওপর অতর্কিত হামলা ও গুলিবর্ষণের ঘটনা ঘটেছে। স্থানীয় জানা যায়, কার্যক্রম ন…"
 date: 2026-11-24T04:36:20.000Z
-publishedAt: 2026-11-24T06:06:08.831Z
+publishedAt: 2026-11-24T06:00:48.117Z
 developing: true
 category: "politics"
 tags: ["rajshahi"]
@@ -28,7 +28,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-24T06:06:08.590Z"
+  evaluatedAt: "2026-11-24T06:00:47.908Z"
   clusterId: 662
   claimIds:
     - 98673
@@ -43,7 +43,7 @@ publication:
   slug: "politics-662"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-24T06:06:08.590Z"
+  checkedAt: "2026-11-24T06:00:47.908Z"
   clusterId: 662
   claimIds:
     - 98673
