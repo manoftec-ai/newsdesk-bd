@@ -1,5 +1,7 @@
 ---
 title: "আওয়ামী লীগের সন্ত্রাসী কর্মকাণ্ড ঠেকাতে ঐক্যবদ্ধ থাকতে হবে : দুদু"
+thumbnail: "/images/politics-552.webp"
+thumbnailAlt: "আওয়ামী লীগের সন্ত্রাসী কর্মকাণ্ড ঠেকাতে ঐক্যবদ্ধ থাকতে হবে : দুদু — যাচাইডেস্ক"
 seoTitle: "আওয়ামী লীগের সন্ত্রাসী কর্মকাণ্ড ঠেকাতে ঐক্যবদ্ধ থাকতে হবে : দুদু"
 excerpt: "Image ১৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন দেশ ছেড়ে পালিয়েও শেখ হাসিনা প্র"
 seoDescription: "Image ১৭: google news ের খবর পেতে গুগল নিউজ চ্যানেল ফলো করুন Image ১৮: Add as a preferred source on GoogleGoogle-এ পছন্দের সংবাদ উৎস হিসেবে যোগ করুন দেশ ছ…"
