@@ -8,7 +8,7 @@ seoDescription: "ডেঙ্গু আক্রান্ত হয়ে গত
 date: 2026-09-19T11:18:25.000Z
 updated: 2026-11-15T11:50:44.000Z
 tracked: true
-lastChecked: 2026-11-24T12:08:30.673Z
+lastChecked: 2026-11-25T10:59:19.964Z
 category: "national"
 tags: ["ডেঙ্গু","স্বাস্থ্য"]
 author: "desk"
