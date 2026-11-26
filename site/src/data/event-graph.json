@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": 1,
     "generatedBy": "tools/event_graph.mjs",
-    "storyCount": 9996,
+    "storyCount": 9998,
     "kinds": [
       "claim",
       "evidence",
@@ -7379,11 +7379,41 @@
     },
     "economy-1322": {
       "cluster_id": 1322,
-      "headline": "১৯ অক্টোবর বন্ধ থাকবে দেশের সব জুয়েলারি প্রতিষ্ঠান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+      "first_seen": "2026-11-26T18:58:45.027Z",
+      "last_update": "2026-11-26T18:58:45.028Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:10:12.000Z",
+          "kind": "evidence",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/gzg2z1e0lm"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.695Z",
+          "kind": "claim",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "economy-1338": {
@@ -22495,6 +22525,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -22533,14 +22571,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -33956,7 +33986,7 @@
       "cluster_id": 1271,
       "headline": "মেয়রের দপ্তরে ই-মেইলে অমিতাভ বচ্চনের বাড়ি উড়িয়ে দেওয়ার হুমকি",
       "first_seen": "2026-11-26T14:04:53.391Z",
-      "last_update": "2026-11-26T18:08:22.937Z",
+      "last_update": "2026-11-26T18:58:44.630Z",
       "claim_count": 2,
       "events": [
         {
@@ -34084,7 +34114,7 @@
       "cluster_id": 1277,
       "headline": "সাইবার হামলার শিকার ফিফা, চুরি হয়েছে তথ্য!",
       "first_seen": "2026-11-26T14:39:40.982Z",
-      "last_update": "2026-11-26T18:08:22.927Z",
+      "last_update": "2026-11-26T18:58:44.627Z",
       "claim_count": 2,
       "events": [
         {
@@ -34735,7 +34765,7 @@
       "cluster_id": 1297,
       "headline": "পল্পবীতে বাসে আগুন দিয়েছে দুর্বৃত্তরা",
       "first_seen": "2026-11-26T17:20:13.734Z",
-      "last_update": "2026-11-26T18:08:22.925Z",
+      "last_update": "2026-11-26T18:58:44.624Z",
       "claim_count": 2,
       "events": [
         {
@@ -34863,7 +34893,7 @@
       "cluster_id": 1302,
       "headline": "পরিবার থেকে বিতাড়িত হয়ে বৃদ্ধাশ্রমে ঘর বাঁধলেন ৭৫ বছরের বৃদ্ধ ও ৬৩ বছরের বৃদ্ধা",
       "first_seen": "2026-11-26T17:20:13.755Z",
-      "last_update": "2026-11-26T18:08:22.934Z",
+      "last_update": "2026-11-26T18:58:44.629Z",
       "claim_count": 3,
       "events": [
         {
@@ -35107,20 +35137,144 @@
     },
     "entertainment-1320": {
       "cluster_id": 1320,
-      "headline": "অনলাইনে সৌন্দর্য বিষয়ক সবকিছু অন্ধভাবে অনুসরণ করা ঠিক নয়: কানিজ আলমাস খান",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+      "first_seen": "2026-11-26T18:58:45.024Z",
+      "last_update": "2026-11-26T18:58:45.025Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:22:43.000Z",
+          "kind": "evidence",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/matia-banu-shuku-passes-away/"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.692Z",
+          "kind": "claim",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-1323": {
       "cluster_id": 1323,
-      "headline": "এক সিনেমার দুই সমাপ্তি, পরিচালকও দুই—শতবর্ষে গার্বোর ‘দ্য টেম্পট্রেস’",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+      "first_seen": "2026-11-26T18:58:45.029Z",
+      "last_update": "2026-11-26T18:58:45.030Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:01:29.000Z",
+          "kind": "evidence",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/zrzl00ffb5"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.696Z",
+          "kind": "claim",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নেত্রকোনায় ইউএনওর কক্ষে আগুন লেগে সবকিছু পুড়ে গেছে"
+        },
+        {
+          "cluster_id": 785,
+          "slug": "sports-785",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
+        },
+        {
+          "cluster_id": 417,
+          "slug": "politics-417",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
+        }
+      ]
+    },
+    "entertainment-1324": {
+      "cluster_id": 1324,
+      "headline": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+      "first_seen": "2026-11-26T18:58:45.031Z",
+      "last_update": "2026-11-26T18:58:45.031Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T17:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/tollywood/hlia4rmadv"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.697Z",
+          "kind": "claim",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "entertainment-133": {
@@ -42723,6 +42877,14 @@
           "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 1247,
           "slug": "sports-1247",
           "actor_links": 0,
@@ -42745,14 +42907,6 @@
           "source_links": 4,
           "claim_count": 6,
           "headline": "মজুরি বৃদ্ধির পরও আন্দোলনে পোশাক শ্রমিকরা, হেমায়েতপুরে সংঘর্ষ, ২২ কারখানা বন্ধ"
-        },
-        {
-          "cluster_id": 810,
-          "slug": "national-810",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 5,
-          "headline": "কক্সবাজারে বাসের নিচে চাপা পড়ে অটোরিকশা, নারীসহ ৫ যাত্রী নিহত"
         }
       ]
     },
@@ -44248,14 +44402,6 @@
           "headline": "ব্রাহ্মণবাড়িয়ায় ঢাকা-চট্টগ্রাম রেলপথ অবরোধ, এক ঘণ্টা ট্রেন চলাচল বন্ধ"
         },
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -44270,6 +44416,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সৌদি আরবের বৃহত্তম তেল শোধনাগারে হামলার দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 1183,
+          "slug": "national-1183",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাবেক এমপি আনোয়ারুল আজীম আনারের মেয়ে মুনতারিন ফেরদৌস ডরিন গ্রেফতার"
         }
       ]
     },
@@ -45908,6 +46062,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -45946,14 +46108,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
-        },
-        {
-          "cluster_id": 529,
-          "slug": "politics-if-crossfire-is",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সীমান্তে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের পলাতক আসামিদের ঠেকাতে সতর্ক অবস্থান বিজিবির"
         }
       ]
     },
@@ -57857,6 +58011,14 @@
           "headline": "আইনশৃঙ্খলা নিয়ন্ত্রণে সাত জেলায় ৯৫ প্লাটুন বিজিবি মোতায়েন"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1183,
           "slug": "national-1183",
           "actor_links": 0,
@@ -57887,14 +58049,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশি পণ্যে সর্বোচ্চ ১৮ শতাংশ শুল্ক আরোপের প্রস্তাব ট্রাম্প প্রশাসনের"
-        },
-        {
-          "cluster_id": 1092,
-          "slug": "national-1092",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
         }
       ]
     },
@@ -57977,6 +58131,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -58015,14 +58177,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
         }
       ]
     },
@@ -67310,14 +67464,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -67356,6 +67502,14 @@
           "source_links": 2,
           "claim_count": 10,
           "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 1133,
+          "slug": "national-1133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "বগুড়ায় বিএনপি কার্যালয়ের সামনে আগুন নিয়ে বিভ্রান্তি, অপপ্রচার বললেন এমপি"
         }
       ]
     },
@@ -68651,7 +68805,7 @@
       "cluster_id": 1290,
       "headline": "৬০ টাকার সাবান ৮৯ টাকা, ২০০ টাকার ফিনাইলের দাম দেখানো হয়েছে ৩৯৯ টাকা",
       "first_seen": "2026-11-26T17:20:13.689Z",
-      "last_update": "2026-11-26T18:08:22.913Z",
+      "last_update": "2026-11-26T18:58:44.620Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -69084,7 +69238,7 @@
       "cluster_id": 1302,
       "headline": "পরিবার থেকে বিতাড়িত হয়ে বৃদ্ধাশ্রমে ঘর বাঁধলেন ৭৫ বছরের বৃদ্ধ ও ৬৩ বছরের বৃদ্ধা",
       "first_seen": "2026-11-26T17:20:13.755Z",
-      "last_update": "2026-11-26T18:08:22.934Z",
+      "last_update": "2026-11-26T18:58:44.629Z",
       "claim_count": 3,
       "events": [
         {
@@ -69790,29 +69944,272 @@
     },
     "international-1318": {
       "cluster_id": 1318,
-      "headline": "ভারতের লাদাখ অঞ্চলের ২৮ এলাকার নূতন নাম দিয়ে নতুন মানচিত্র প্রকাশ করল চীন, দিল্লির প্রতিবাদ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+      "first_seen": "2026-11-26T18:58:44.622Z",
+      "last_update": "2026-11-26T18:58:44.623Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-26T14:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMisgRBVV95cUxNWDRTR2ZnWkFGOHlRZWhmMzUzWnFscUxhUU9wQi14emJteDViYjd2SGJac0dIcDNFVmZEV2s4VGhjUkljOFExN0piQmoxcHF0aUN6cEEtYTNLdmpxZGYzb0NzOVhRa1BRWldsQlJydEszcThIMWFEUG9uS3VmZmRvUlJyYUhHcEd5WU5GT2wtdFd0Y3BqTElKcVNOTDRsRjFmV2lKYm5JLXV3NlRCMVc3R3pHdUg2bXlFdkpUQS1sMDh3QUxaUnQ4cmFTUmZ5b1RSVjJ5YWpFcTJYLW55UlYzXzhfYXhFcnluT3BFUmNQYnQ1LW90dU12UFdmWTgtTzBtTXdUZjl5T25TSU5rT1B4ZER2dTVKWTFUdkZWVWJ5aFZuU0pWU216U2N3LXpKaElNX1h1anlCa1RjUE40bUlsZDJzUndXY0VLS1dNYWNtM0FCYW1GVFB2THhCUFI0bzBUVGpOUjZCUEhpTWNMX1h1UDhwSmJERUl1S05ONzN4NWZJcmFQcElWZ2ZBM3BzY2xnY1pzbnNTb01kb2d2X21wV3JFNExmR0M0cGVvbGQ2bG5YZTllTnk5Q2JHU1c1TndaaHZrSlRJTGh1ZVl5TEctb2dpOTJxUl9hR3o5c2JTRDBzRG1XX3NUUWxCcGhkMElIVlYyX1ZEVWZOY2Zkc0Z4a2xRVm02eEY0X3FWbV9pT0t1ajJYUmhLOTVXd2xBZDllb2staVBmaEF0RHZ4Y1NER0Jn0gG3BEFVX3lxTE9zOU85VlIxemllaFRiWW5mQ2Y4dHJpdGFBS3lYVHl1X3ZTZ2RGM0QxWXktWlJDcnE1d3pOYVVsajgtZDF4d1prYmhBWERzSTVDcWF5NXBiaWo1TnZzU3VoeGFKN1dkWlBEaXJMaG5faXlJZkFnWV9Wd3Q4UndOUmp1d0JBSGcyRW4tblpRb0xLVHlhLUhEZnBWTFpwWTR0TXNtU0dDZzRYdjB1RHRPSmpGQkF0Q21zYkZhdFd2OVpRN1ZEVlVueDJZSlNJS1hkcGdTYWFzeERCNmVveTNIRUN3M1JrRF9vVmF6ZjE5cGVnbzUwU0FGbDZ2T1lOQUtESXpSbG96S0Ywa3BfV3EyQzlpOXR5U3lxcHkxVnh0WktuTUJIZE9tTVdIb2piM25qb2dVeDctRmxIUlFmbFVVenRDRWMyZUJWZUdWbmRhZU1LbVctXzJmcjFwdUxrWEw2WDhPRGVxV0wxakNTTW5mSE5nNE5oSnhoNU5tcUtiUWMwcjh2S1FlN3gwZFI5cTJBLUg0Q2FFQTJkenRJY2VGZnhYX0I1cEFreW96dE1PY3BHVi1QZlhkUUI5bGl6MVpRT1ZacTlvTGg1U3JDdXVGQ2dfNEI4VTlRYkRkNHl2SVVtMGl5Qi1SbEhLeTVPUFNzT2dROHpWUi1OdnYzUnFZZUlfNG12UDhCLWM1ZE9rZGZSSTFpUTZuSl9xbXF3RGVaX1NCRVJWN0s5eXlTd1VmTXQ4NTN6d2h0UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T14:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMisgRBVV95cUxNWDRTR2ZnWkFGOHlRZWhmMzUzWnFscUxhUU9wQi14emJteDViYjd2SGJac0dIcDNFVmZEV2s4VGhjUkljOFExN0piQmoxcHF0aUN6cEEtYTNLdmpxZGYzb0NzOVhRa1BRWldsQlJydEszcThIMWFEUG9uS3VmZmRvUlJyYUhHcEd5WU5GT2wtdFd0Y3BqTElKcVNOTDRsRjFmV2lKYm5JLXV3NlRCMVc3R3pHdUg2bXlFdkpUQS1sMDh3QUxaUnQ4cmFTUmZ5b1RSVjJ5YWpFcTJYLW55UlYzXzhfYXhFcnluT3BFUmNQYnQ1LW90dU12UFdmWTgtTzBtTXdUZjl5T25TSU5rT1B4ZER2dTVKWTFUdkZWVWJ5aFZuU0pWU216U2N3LXpKaElNX1h1anlCa1RjUE40bUlsZDJzUndXY0VLS1dNYWNtM0FCYW1GVFB2THhCUFI0bzBUVGpOUjZCUEhpTWNMX1h1UDhwSmJERUl1S05ONzN4NWZJcmFQcElWZ2ZBM3BzY2xnY1pzbnNTb01kb2d2X21wV3JFNExmR0M0cGVvbGQ2bG5YZTllTnk5Q2JHU1c1TndaaHZrSlRJTGh1ZVl5TEctb2dpOTJxUl9hR3o5c2JTRDBzRG1XX3NUUWxCcGhkMElIVlYyX1ZEVWZOY2Zkc0Z4a2xRVm02eEY0X3FWbV9pT0t1ajJYUmhLOTVXd2xBZDllb2staVBmaEF0RHZ4Y1NER0Jn0gG3BEFVX3lxTE9zOU85VlIxemllaFRiWW5mQ2Y4dHJpdGFBS3lYVHl1X3ZTZ2RGM0QxWXktWlJDcnE1d3pOYVVsajgtZDF4d1prYmhBWERzSTVDcWF5NXBiaWo1TnZzU3VoeGFKN1dkWlBEaXJMaG5faXlJZkFnWV9Wd3Q4UndOUmp1d0JBSGcyRW4tblpRb0xLVHlhLUhEZnBWTFpwWTR0TXNtU0dDZzRYdjB1RHRPSmpGQkF0Q21zYkZhdFd2OVpRN1ZEVlVueDJZSlNJS1hkcGdTYWFzeERCNmVveTNIRUN3M1JrRF9vVmF6ZjE5cGVnbzUwU0FGbDZ2T1lOQUtESXpSbG96S0Ywa3BfV3EyQzlpOXR5U3lxcHkxVnh0WktuTUJIZE9tTVdIb2piM25qb2dVeDctRmxIUlFmbFVVenRDRWMyZUJWZUdWbmRhZU1LbVctXzJmcjFwdUxrWEw2WDhPRGVxV0wxakNTTW5mSE5nNE5oSnhoNU5tcUtiUWMwcjh2S1FlN3gwZFI5cTJBLUg0Q2FFQTJkenRJY2VGZnhYX0I1cEFreW96dE1PY3BHVi1QZlhkUUI5bGl6MVpRT1ZacTlvTGg1U3JDdXVGQ2dfNEI4VTlRYkRkNHl2SVVtMGl5Qi1SbEhLeTVPUFNzT2dROHpWUi1OdnYzUnFZZUlfNG12UDhCLWM1ZE9rZGZSSTFpUTZuSl9xbXF3RGVaX1NCRVJWN0s5eXlTd1VmTXQ4NTN6d2h0UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T16:39:36.000Z",
+          "kind": "evidence",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/814458"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.686Z",
+          "kind": "claim",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.688Z",
+          "kind": "claim",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1128,
+          "slug": "sports-1128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশি পণ্যে সর্বোচ্চ ১৮ শতাংশ শুল্ক আরোপের প্রস্তাব ট্রাম্প প্রশাসনের"
+        },
+        {
+          "cluster_id": 1092,
+          "slug": "national-1092",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
+        },
+        {
+          "cluster_id": 1023,
+          "slug": "sports-1023",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "২০২৮ সালেও কোপা আমেরিকা হবে যুক্তরাষ্ট্রে, খেলবে ১৬ দল"
+        },
+        {
+          "cluster_id": 966,
+          "slug": "sports-966",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশে স্বর্ণের দামে এবার বড় ধাক্কা"
+        },
+        {
+          "cluster_id": 776,
+          "slug": "national-776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
+        },
+        {
+          "cluster_id": 764,
+          "slug": "national-764",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
+        }
+      ]
+    },
+    "international-1321": {
+      "cluster_id": 1321,
+      "headline": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+      "first_seen": "2026-11-26T18:58:45.026Z",
+      "last_update": "2026-11-26T18:58:45.027Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:17:23.000Z",
+          "kind": "evidence",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/4bmudzdpce"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.693Z",
+          "kind": "claim",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1323": {
       "cluster_id": 1323,
-      "headline": "এবার বলিউড অভিনেত্রী দিয়া মির্জার ভিডিও বার্তা ফেরানোর নির্দেশ হাইকোর্টের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+      "first_seen": "2026-11-26T18:58:45.029Z",
+      "last_update": "2026-11-26T18:58:45.030Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:01:29.000Z",
+          "kind": "evidence",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/zrzl00ffb5"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.696Z",
+          "kind": "claim",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নেত্রকোনায় ইউএনওর কক্ষে আগুন লেগে সবকিছু পুড়ে গেছে"
+        },
+        {
+          "cluster_id": 785,
+          "slug": "sports-785",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
+        },
+        {
+          "cluster_id": 417,
+          "slug": "politics-417",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
+        }
+      ]
     },
     "international-1324": {
       "cluster_id": 1324,
-      "headline": "গাজায় জরুরি চিকিৎসাসামগ্রী প্রবেশে বাধা, সতর্ক করল ডব্লিউএইচও",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+      "first_seen": "2026-11-26T18:58:45.031Z",
+      "last_update": "2026-11-26T18:58:45.031Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T17:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/tollywood/hlia4rmadv"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.697Z",
+          "kind": "claim",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "international-1329": {
@@ -84786,14 +85183,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -84832,6 +85221,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আ. লীগ আমলে গুম খুনের তথ্য সংগ্রহে দেশজুড়ে গণশুনানি'"
+        },
+        {
+          "cluster_id": 1145,
+          "slug": "opinion-1145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
         }
       ]
     },
@@ -97643,14 +98040,6 @@
           "headline": "ব্রাহ্মণবাড়িয়ায় ঢাকা-চট্টগ্রাম রেলপথ অবরোধ, এক ঘণ্টা ট্রেন চলাচল বন্ধ"
         },
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -97665,6 +98054,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সৌদি আরবের বৃহত্তম তেল শোধনাগারে হামলার দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 1183,
+          "slug": "national-1183",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাবেক এমপি আনোয়ারুল আজীম আনারের মেয়ে মুনতারিন ফেরদৌস ডরিন গ্রেফতার"
         }
       ]
     },
@@ -113442,6 +113839,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -113480,14 +113885,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -115366,14 +115763,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -115412,6 +115801,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আ. লীগ আমলে গুম খুনের তথ্য সংগ্রহে দেশজুড়ে গণশুনানি'"
+        },
+        {
+          "cluster_id": 1145,
+          "slug": "opinion-1145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
         }
       ]
     },
@@ -131910,6 +132307,14 @@
           "headline": "আইনশৃঙ্খলা নিয়ন্ত্রণে সাত জেলায় ৯৫ প্লাটুন বিজিবি মোতায়েন"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1183,
           "slug": "national-1183",
           "actor_links": 0,
@@ -131940,14 +132345,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশি পণ্যে সর্বোচ্চ ১৮ শতাংশ শুল্ক আরোপের প্রস্তাব ট্রাম্প প্রশাসনের"
-        },
-        {
-          "cluster_id": 1092,
-          "slug": "national-1092",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
         }
       ]
     },
@@ -132030,6 +132427,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -132068,14 +132473,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
         }
       ]
     },
@@ -139087,6 +139484,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -139125,14 +139530,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -143331,6 +143728,14 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1150,
           "slug": "politics-1150",
           "actor_links": 0,
@@ -143353,14 +143758,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
-        },
-        {
-          "cluster_id": 1081,
-          "slug": "tech-1081",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামের ভুলে ১৮ বছর কারাবাসের পরও অসুস্থ মাকে দেখতে প্যারোলে মুক্তি পেলেন মোংলার বাদল"
         }
       ]
     },
@@ -156432,14 +156829,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -156478,6 +156867,14 @@
           "source_links": 2,
           "claim_count": 10,
           "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 1133,
+          "slug": "national-1133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "বগুড়ায় বিএনপি কার্যালয়ের সামনে আগুন নিয়ে বিভ্রান্তি, অপপ্রচার বললেন এমপি"
         }
       ]
     },
@@ -157289,7 +157686,7 @@
       "cluster_id": 1248,
       "headline": "প্রাথমিক শিক্ষার্থীদের ঝরে পড়া রোধ ঠেকাতে সংসদীয় কমিটির সুপারিশ",
       "first_seen": "2026-11-26T11:56:42.511Z",
-      "last_update": "2026-11-26T18:08:22.940Z",
+      "last_update": "2026-11-26T18:58:44.631Z",
       "claim_count": 2,
       "events": [
         {
@@ -158337,7 +158734,7 @@
       "cluster_id": 1258,
       "headline": "‘রং হেডেড’ উপাধি পাওয়া ব্যক্তি কী বলল তাতে কিছু যায় আসে না: তথ্য প্রতিমন্ত্রী",
       "first_seen": "2026-11-26T13:10:22.520Z",
-      "last_update": "2026-11-26T18:08:22.938Z",
+      "last_update": "2026-11-26T18:58:44.630Z",
       "claim_count": 2,
       "events": [
         {
@@ -158465,7 +158862,7 @@
       "cluster_id": 1259,
       "headline": "‘বন্দুকযুদ্ধে’ ছাত্রদল নেতা জনি হত্যার অভিযোগে এসপি আজাদ গ্রেপ্তার",
       "first_seen": "2026-11-26T13:10:22.524Z",
-      "last_update": "2026-11-26T18:08:22.930Z",
+      "last_update": "2026-11-26T18:58:44.628Z",
       "claim_count": 5,
       "events": [
         {
@@ -160123,7 +160520,7 @@
       "cluster_id": 1271,
       "headline": "মেয়রের দপ্তরে ই-মেইলে অমিতাভ বচ্চনের বাড়ি উড়িয়ে দেওয়ার হুমকি",
       "first_seen": "2026-11-26T14:04:53.391Z",
-      "last_update": "2026-11-26T18:08:22.937Z",
+      "last_update": "2026-11-26T18:58:44.630Z",
       "claim_count": 2,
       "events": [
         {
@@ -160446,7 +160843,7 @@
       "cluster_id": 1277,
       "headline": "সাইবার হামলার শিকার ফিফা, চুরি হয়েছে তথ্য!",
       "first_seen": "2026-11-26T14:39:40.982Z",
-      "last_update": "2026-11-26T18:08:22.927Z",
+      "last_update": "2026-11-26T18:58:44.627Z",
       "claim_count": 2,
       "events": [
         {
@@ -160841,7 +161238,7 @@
       "cluster_id": 1280,
       "headline": "বাংলাদেশ আক্রান্ত হলে ভারতও নিরাপদ থাকবে না, দিল্লির মসনদও তছনছ করে দিতে পারে: হেফাজত",
       "first_seen": "2026-11-26T14:39:40.994Z",
-      "last_update": "2026-11-26T18:08:22.932Z",
+      "last_update": "2026-11-26T18:58:44.628Z",
       "claim_count": 2,
       "events": [
         {
@@ -161256,7 +161653,7 @@
       "cluster_id": 1283,
       "headline": "রোজার আগে খেজুর, মাল্টা ও আপেল আমদানিতে শুল্ক কমাল সরকার",
       "first_seen": "2026-11-26T14:39:41.018Z",
-      "last_update": "2026-11-26T18:08:22.941Z",
+      "last_update": "2026-11-26T18:58:44.632Z",
       "claim_count": 4,
       "events": [
         {
@@ -161866,7 +162263,7 @@
       "cluster_id": 1290,
       "headline": "৬০ টাকার সাবান ৮৯ টাকা, ২০০ টাকার ফিনাইলের দাম দেখানো হয়েছে ৩৯৯ টাকা",
       "first_seen": "2026-11-26T17:20:13.689Z",
-      "last_update": "2026-11-26T18:08:22.913Z",
+      "last_update": "2026-11-26T18:58:44.620Z",
       "claim_count": 0,
       "events": [],
       "related": []
@@ -162914,7 +163311,7 @@
       "cluster_id": 1297,
       "headline": "পল্পবীতে বাসে আগুন দিয়েছে দুর্বৃত্তরা",
       "first_seen": "2026-11-26T17:20:13.734Z",
-      "last_update": "2026-11-26T18:08:22.925Z",
+      "last_update": "2026-11-26T18:58:44.624Z",
       "claim_count": 2,
       "events": [
         {
@@ -163042,7 +163439,7 @@
       "cluster_id": 1298,
       "headline": "ওয়াশিংটনের নতুন শুল্ক নিয়ে আলোচনায় যাবে ঢাকা: পররাষ্ট্র প্রতিমন্ত্রী",
       "first_seen": "2026-11-26T17:20:13.737Z",
-      "last_update": "2026-11-26T18:08:22.926Z",
+      "last_update": "2026-11-26T18:58:44.624Z",
       "claim_count": 2,
       "events": [
         {
@@ -163672,7 +164069,7 @@
       "cluster_id": 1302,
       "headline": "পরিবার থেকে বিতাড়িত হয়ে বৃদ্ধাশ্রমে ঘর বাঁধলেন ৭৫ বছরের বৃদ্ধ ও ৬৩ বছরের বৃদ্ধা",
       "first_seen": "2026-11-26T17:20:13.755Z",
-      "last_update": "2026-11-26T18:08:22.934Z",
+      "last_update": "2026-11-26T18:58:44.629Z",
       "claim_count": 3,
       "events": [
         {
@@ -164586,7 +164983,7 @@
       "cluster_id": 1312,
       "headline": "এক ব্যক্তিকে পিটিয়ে হত্যা, পুলিশ বলছে ‘জুলাই আন্দোলনের সময় জেল থেকে পালিয়ে ছিল’",
       "first_seen": "2026-11-26T18:08:22.915Z",
-      "last_update": "2026-11-26T18:08:22.918Z",
+      "last_update": "2026-11-26T18:58:44.621Z",
       "claim_count": 2,
       "events": [
         {
@@ -164907,21 +165304,259 @@
     },
     "national-1318": {
       "cluster_id": 1318,
-      "headline": "মালিক-শ্রমিকদের নিরাপত্তার আশ্বাস, বিশৃঙ্খলাকারীদের হুঁশিয়ারি পুলিশের",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+      "first_seen": "2026-11-26T18:58:44.622Z",
+      "last_update": "2026-11-26T18:58:44.623Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-26T14:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMisgRBVV95cUxNWDRTR2ZnWkFGOHlRZWhmMzUzWnFscUxhUU9wQi14emJteDViYjd2SGJac0dIcDNFVmZEV2s4VGhjUkljOFExN0piQmoxcHF0aUN6cEEtYTNLdmpxZGYzb0NzOVhRa1BRWldsQlJydEszcThIMWFEUG9uS3VmZmRvUlJyYUhHcEd5WU5GT2wtdFd0Y3BqTElKcVNOTDRsRjFmV2lKYm5JLXV3NlRCMVc3R3pHdUg2bXlFdkpUQS1sMDh3QUxaUnQ4cmFTUmZ5b1RSVjJ5YWpFcTJYLW55UlYzXzhfYXhFcnluT3BFUmNQYnQ1LW90dU12UFdmWTgtTzBtTXdUZjl5T25TSU5rT1B4ZER2dTVKWTFUdkZWVWJ5aFZuU0pWU216U2N3LXpKaElNX1h1anlCa1RjUE40bUlsZDJzUndXY0VLS1dNYWNtM0FCYW1GVFB2THhCUFI0bzBUVGpOUjZCUEhpTWNMX1h1UDhwSmJERUl1S05ONzN4NWZJcmFQcElWZ2ZBM3BzY2xnY1pzbnNTb01kb2d2X21wV3JFNExmR0M0cGVvbGQ2bG5YZTllTnk5Q2JHU1c1TndaaHZrSlRJTGh1ZVl5TEctb2dpOTJxUl9hR3o5c2JTRDBzRG1XX3NUUWxCcGhkMElIVlYyX1ZEVWZOY2Zkc0Z4a2xRVm02eEY0X3FWbV9pT0t1ajJYUmhLOTVXd2xBZDllb2staVBmaEF0RHZ4Y1NER0Jn0gG3BEFVX3lxTE9zOU85VlIxemllaFRiWW5mQ2Y4dHJpdGFBS3lYVHl1X3ZTZ2RGM0QxWXktWlJDcnE1d3pOYVVsajgtZDF4d1prYmhBWERzSTVDcWF5NXBiaWo1TnZzU3VoeGFKN1dkWlBEaXJMaG5faXlJZkFnWV9Wd3Q4UndOUmp1d0JBSGcyRW4tblpRb0xLVHlhLUhEZnBWTFpwWTR0TXNtU0dDZzRYdjB1RHRPSmpGQkF0Q21zYkZhdFd2OVpRN1ZEVlVueDJZSlNJS1hkcGdTYWFzeERCNmVveTNIRUN3M1JrRF9vVmF6ZjE5cGVnbzUwU0FGbDZ2T1lOQUtESXpSbG96S0Ywa3BfV3EyQzlpOXR5U3lxcHkxVnh0WktuTUJIZE9tTVdIb2piM25qb2dVeDctRmxIUlFmbFVVenRDRWMyZUJWZUdWbmRhZU1LbVctXzJmcjFwdUxrWEw2WDhPRGVxV0wxakNTTW5mSE5nNE5oSnhoNU5tcUtiUWMwcjh2S1FlN3gwZFI5cTJBLUg0Q2FFQTJkenRJY2VGZnhYX0I1cEFreW96dE1PY3BHVi1QZlhkUUI5bGl6MVpRT1ZacTlvTGg1U3JDdXVGQ2dfNEI4VTlRYkRkNHl2SVVtMGl5Qi1SbEhLeTVPUFNzT2dROHpWUi1OdnYzUnFZZUlfNG12UDhCLWM1ZE9rZGZSSTFpUTZuSl9xbXF3RGVaX1NCRVJWN0s5eXlTd1VmTXQ4NTN6d2h0UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T14:40:31.000Z",
+          "kind": "evidence",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMisgRBVV95cUxNWDRTR2ZnWkFGOHlRZWhmMzUzWnFscUxhUU9wQi14emJteDViYjd2SGJac0dIcDNFVmZEV2s4VGhjUkljOFExN0piQmoxcHF0aUN6cEEtYTNLdmpxZGYzb0NzOVhRa1BRWldsQlJydEszcThIMWFEUG9uS3VmZmRvUlJyYUhHcEd5WU5GT2wtdFd0Y3BqTElKcVNOTDRsRjFmV2lKYm5JLXV3NlRCMVc3R3pHdUg2bXlFdkpUQS1sMDh3QUxaUnQ4cmFTUmZ5b1RSVjJ5YWpFcTJYLW55UlYzXzhfYXhFcnluT3BFUmNQYnQ1LW90dU12UFdmWTgtTzBtTXdUZjl5T25TSU5rT1B4ZER2dTVKWTFUdkZWVWJ5aFZuU0pWU216U2N3LXpKaElNX1h1anlCa1RjUE40bUlsZDJzUndXY0VLS1dNYWNtM0FCYW1GVFB2THhCUFI0bzBUVGpOUjZCUEhpTWNMX1h1UDhwSmJERUl1S05ONzN4NWZJcmFQcElWZ2ZBM3BzY2xnY1pzbnNTb01kb2d2X21wV3JFNExmR0M0cGVvbGQ2bG5YZTllTnk5Q2JHU1c1TndaaHZrSlRJTGh1ZVl5TEctb2dpOTJxUl9hR3o5c2JTRDBzRG1XX3NUUWxCcGhkMElIVlYyX1ZEVWZOY2Zkc0Z4a2xRVm02eEY0X3FWbV9pT0t1ajJYUmhLOTVXd2xBZDllb2staVBmaEF0RHZ4Y1NER0Jn0gG3BEFVX3lxTE9zOU85VlIxemllaFRiWW5mQ2Y4dHJpdGFBS3lYVHl1X3ZTZ2RGM0QxWXktWlJDcnE1d3pOYVVsajgtZDF4d1prYmhBWERzSTVDcWF5NXBiaWo1TnZzU3VoeGFKN1dkWlBEaXJMaG5faXlJZkFnWV9Wd3Q4UndOUmp1d0JBSGcyRW4tblpRb0xLVHlhLUhEZnBWTFpwWTR0TXNtU0dDZzRYdjB1RHRPSmpGQkF0Q21zYkZhdFd2OVpRN1ZEVlVueDJZSlNJS1hkcGdTYWFzeERCNmVveTNIRUN3M1JrRF9vVmF6ZjE5cGVnbzUwU0FGbDZ2T1lOQUtESXpSbG96S0Ywa3BfV3EyQzlpOXR5U3lxcHkxVnh0WktuTUJIZE9tTVdIb2piM25qb2dVeDctRmxIUlFmbFVVenRDRWMyZUJWZUdWbmRhZU1LbVctXzJmcjFwdUxrWEw2WDhPRGVxV0wxakNTTW5mSE5nNE5oSnhoNU5tcUtiUWMwcjh2S1FlN3gwZFI5cTJBLUg0Q2FFQTJkenRJY2VGZnhYX0I1cEFreW96dE1PY3BHVi1QZlhkUUI5bGl6MVpRT1ZacTlvTGg1U3JDdXVGQ2dfNEI4VTlRYkRkNHl2SVVtMGl5Qi1SbEhLeTVPUFNzT2dROHpWUi1OdnYzUnFZZUlfNG12UDhCLWM1ZE9rZGZSSTFpUTZuSl9xbXF3RGVaX1NCRVJWN0s5eXlTd1VmTXQ4NTN6d2h0UQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T16:39:36.000Z",
+          "kind": "evidence",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "source_id": "bd24live",
+            "relation": "supports",
+            "url": "https://www.bd24live.com/bangla/814458"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.686Z",
+          "kind": "claim",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.688Z",
+          "kind": "claim",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349731,
+          "claim_text": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349732,
+          "claim_text": "এবার পিতৃত্বকালীন ছুটি চালু করল থালাপতি বিজয়ের সরকার",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 1128,
+          "slug": "sports-1128",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "বাংলাদেশি পণ্যে সর্বোচ্চ ১৮ শতাংশ শুল্ক আরোপের প্রস্তাব ট্রাম্প প্রশাসনের"
+        },
+        {
+          "cluster_id": 1092,
+          "slug": "national-1092",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
+        },
+        {
+          "cluster_id": 1023,
+          "slug": "sports-1023",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "২০২৮ সালেও কোপা আমেরিকা হবে যুক্তরাষ্ট্রে, খেলবে ১৬ দল"
+        },
+        {
+          "cluster_id": 966,
+          "slug": "sports-966",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশে স্বর্ণের দামে এবার বড় ধাক্কা"
+        },
+        {
+          "cluster_id": 776,
+          "slug": "national-776",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
+        },
+        {
+          "cluster_id": 764,
+          "slug": "national-764",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
+        }
+      ]
     },
     "national-1319": {
       "cluster_id": 1319,
-      "headline": "খুলনায় ১২ দিনে সাত খুনের পাঁচটির নেপথ্যে মাদক",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’",
+      "first_seen": "2026-11-26T18:58:44.625Z",
+      "last_update": "2026-11-26T18:58:44.626Z",
+      "claim_count": 2,
+      "events": [
+        {
+          "ts": "2026-11-26T12:36:36.000Z",
+          "kind": "evidence",
+          "claim_id": 349733,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/u4i57bm3f8"
+          }
+        },
+        {
+          "ts": "2026-11-26T14:35:15.000Z",
+          "kind": "evidence",
+          "claim_id": 349733,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxNMkxpWnlTSXNySTlvc2ZRWDl3RmhMZHV4NkQ2MFF1WWJpaGlXWGZVT3FaaFZwbTM3NXREcXhLQkdrRXNkZWtERkQxTFQtV2YwWFRVOHZKbGQwQllyLTEzNmRuSVhZUjhKVnFsa3YtV3R6ZFBKRUFhb082Y2hqSXFGSjIxS0psRHM3UWJkY3VfVXE2WGVhT1MybXVBSjdROC11NkZjcDRYdm5OSm1paE1zRGlsTVpLU2lmVW9lTC1xQUh4bU9pUlF4T1M2MnNIQkFIWmVVNmZuam5zV0pfTldxYUo3TnlLRWlXOENiRFM2UXpFY2ExTkVOcnc1Zkc3NlF1SVhGZnJtY2wtZkJSUjYyQ2FlZXcwaFpiTVVucTIyRFY1dUdVdnVIeVF6OXVTQ2FLV3BqdWRtZnRBanFiVjJ1OEJUVmRxc1RzTEVlcGZYakZGSXNqN0pnSE44ZWVRc0dLUlE1OGdCUUhvcTN4M0hXYUpIT1dWdmZ4TkxxREt6MVRKSWMzZHp6SVljYUVHd0NVVk1wamNxRVZtZ0xlOUxYQUtOendJOVM2V1Q1Smp5NVFDMXI5WHhObXpPN2VORUFDbDNYTDFMVUZmNG9WVy12bEk1NFdoTm93X0F0RklrNnFZWHNfN0tIbzRxVzIyc3FLZU5fY01rYml2TTQtbndZWXN6MWhrMDNhV2xnUWNuSUoyWHo4aXpuMmUtTk5JaThXSkxKekNSWkZKeUxpSThzQjZsYjlwWHRFcXV5eUVkaG9PTkRfOW9YNFFR0gHPBEFVX3lxTE1kSURKbDItU2t0bFZLRWlNdFJMRWlxMnkzQ1duTl9yd09faUd5TmV6aHlvUThCbS1wYTFIb3hxbFNfaml2WWlHREpjVGhQQzhTbVZ2emxaT25ZM1JPTHoxTUpQNExaREU5bGZVbWpSazRCak1aWUF0SkxQbk1PTDhGLXNjdzlIckc5cHRqdmFKR0ZkazBiRjlPazZObVdlV295dDVYNlFsS3NzS1JBWGFfbS1ZcTNQQjVwRmdPRWRiNW9tS2FBTDBrc0lZZlpvRE9QNlU1aDc2MGM2d29vcTJNMEpYcDZPN2lmOWZTTTY1QnJVR2QtbzhJM0hFeFhYZ21vNklWbXV3TWlKOUZxVEJUOVJWX1R3YUhKNGV6NFBSaVRrZzNNQzNQTTVWMVZuR3J2a01Hajg1b1BmRGtWRVBLbUhtWVVLRWhTZjhnWjdreHdkYVQ1UFQ4TmlWSDJPbGJ0VGFvd2t2M0V4WTRLd050NlhSSG9tNEVFcnBhZTN2WkNmaDEyYklaa040TVlyZ2ZPdE42V19jQ2xSeGhEdnNkT29xdTlOV1hiY1pRNU9kRlphSnZoRnZfWEV1NE1nNzgtM2x1blc3YXRtWkpUM3F1ZnN1UUU1b3NqakQtUkpfSkNXWHdwZEF2SVJneEMxbUV1Zl9Oa21RWUFxWXRBc0hDcjZTY0ktVS1NR0NvNzhIZi1TSkFGZUpkakFRZHFVMmd2Zk1ZbklwZVo5YVFhREE1T0ROM1llV2N5Y1RoTzlLRklrMENlQ0RYTmtGT3lnWQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T14:35:15.000Z",
+          "kind": "evidence",
+          "claim_id": 349734,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ২০ দালাল আটক",
+          "detail": {
+            "source_id": "ittefaq",
+            "relation": "supports",
+            "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxNMkxpWnlTSXNySTlvc2ZRWDl3RmhMZHV4NkQ2MFF1WWJpaGlXWGZVT3FaaFZwbTM3NXREcXhLQkdrRXNkZWtERkQxTFQtV2YwWFRVOHZKbGQwQllyLTEzNmRuSVhZUjhKVnFsa3YtV3R6ZFBKRUFhb082Y2hqSXFGSjIxS0psRHM3UWJkY3VfVXE2WGVhT1MybXVBSjdROC11NkZjcDRYdm5OSm1paE1zRGlsTVpLU2lmVW9lTC1xQUh4bU9pUlF4T1M2MnNIQkFIWmVVNmZuam5zV0pfTldxYUo3TnlLRWlXOENiRFM2UXpFY2ExTkVOcnc1Zkc3NlF1SVhGZnJtY2wtZkJSUjYyQ2FlZXcwaFpiTVVucTIyRFY1dUdVdnVIeVF6OXVTQ2FLV3BqdWRtZnRBanFiVjJ1OEJUVmRxc1RzTEVlcGZYakZGSXNqN0pnSE44ZWVRc0dLUlE1OGdCUUhvcTN4M0hXYUpIT1dWdmZ4TkxxREt6MVRKSWMzZHp6SVljYUVHd0NVVk1wamNxRVZtZ0xlOUxYQUtOendJOVM2V1Q1Smp5NVFDMXI5WHhObXpPN2VORUFDbDNYTDFMVUZmNG9WVy12bEk1NFdoTm93X0F0RklrNnFZWHNfN0tIbzRxVzIyc3FLZU5fY01rYml2TTQtbndZWXN6MWhrMDNhV2xnUWNuSUoyWHo4aXpuMmUtTk5JaThXSkxKekNSWkZKeUxpSThzQjZsYjlwWHRFcXV5eUVkaG9PTkRfOW9YNFFR0gHPBEFVX3lxTE1kSURKbDItU2t0bFZLRWlNdFJMRWlxMnkzQ1duTl9yd09faUd5TmV6aHlvUThCbS1wYTFIb3hxbFNfaml2WWlHREpjVGhQQzhTbVZ2emxaT25ZM1JPTHoxTUpQNExaREU5bGZVbWpSazRCak1aWUF0SkxQbk1PTDhGLXNjdzlIckc5cHRqdmFKR0ZkazBiRjlPazZObVdlV295dDVYNlFsS3NzS1JBWGFfbS1ZcTNQQjVwRmdPRWRiNW9tS2FBTDBrc0lZZlpvRE9QNlU1aDc2MGM2d29vcTJNMEpYcDZPN2lmOWZTTTY1QnJVR2QtbzhJM0hFeFhYZ21vNklWbXV3TWlKOUZxVEJUOVJWX1R3YUhKNGV6NFBSaVRrZzNNQzNQTTVWMVZuR3J2a01Hajg1b1BmRGtWRVBLbUhtWVVLRWhTZjhnWjdreHdkYVQ1UFQ4TmlWSDJPbGJ0VGFvd2t2M0V4WTRLd050NlhSSG9tNEVFcnBhZTN2WkNmaDEyYklaa040TVlyZ2ZPdE42V19jQ2xSeGhEdnNkT29xdTlOV1hiY1pRNU9kRlphSnZoRnZfWEV1NE1nNzgtM2x1blc3YXRtWkpUM3F1ZnN1UUU1b3NqakQtUkpfSkNXWHdwZEF2SVJneEMxbUV1Zl9Oa21RWUFxWXRBc0hDcjZTY0ktVS1NR0NvNzhIZi1TSkFGZUpkakFRZHFVMmd2Zk1ZbklwZVo5YVFhREE1T0ROM1llV2N5Y1RoTzlLRklrMENlQ0RYTmtGT3lnWQ?oc=5"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.689Z",
+          "kind": "claim",
+          "claim_id": 349733,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.690Z",
+          "kind": "claim",
+          "claim_id": 349734,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ২০ দালাল আটক"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349733,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’",
+          "detail": {
+            "status": "VERIFIED",
+            "from": null,
+            "confidence": 67,
+            "reason": "verify"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349734,
+          "claim_text": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ২০ দালাল আটক",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 993,
+          "slug": "politics-993",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "টুঙ্গিপাড়ায় বিএনপির আরও ছয় নেতার পদত্যাগের ঘোষণা"
+        },
+        {
+          "cluster_id": 874,
+          "slug": "national-874",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "স্বর্ণদ্বীপে তিন বাহিনীর বিশেষ যৌথ প্রশিক্ষণ মহড়া পরিদর্শন করলেন প্রধানমন্ত্রী"
+        },
+        {
+          "cluster_id": 795,
+          "slug": "sports-795",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "নাটকের নতুন অধ্যায়, আপিল করে আবারও আফ্রিকার চ্যাম্পিয়ন সেনেগাল"
+        },
+        {
+          "cluster_id": 618,
+          "slug": "national-618",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "খেতাবপ্রাপ্ত মুক্তিযোদ্ধা ও কিলো ফ্লাইটের সদস্যসহ ৩৬ জনকে বিমান বাহিনী প্রধানের সংবর্ধনা"
+        },
+        {
+          "cluster_id": 580,
+          "slug": "national-580",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
+        },
+        {
+          "cluster_id": 562,
+          "slug": "opinion-562",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
+        }
+      ]
     },
     "national-132": {
       "cluster_id": 132,
@@ -164964,47 +165599,222 @@
     },
     "national-1320": {
       "cluster_id": 1320,
-      "headline": "পাঠ্যবইয়ে স্বাধীনতা ঘোষণার বর্ণনা বদলাবে, এবার যেভাবে থাকছে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+      "first_seen": "2026-11-26T18:58:45.024Z",
+      "last_update": "2026-11-26T18:58:45.025Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:22:43.000Z",
+          "kind": "evidence",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+          "detail": {
+            "source_id": "channeli",
+            "relation": "supports",
+            "url": "https://www.channelionline.com/matia-banu-shuku-passes-away/"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.692Z",
+          "kind": "claim",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349735,
+          "claim_text": "নাট্যকার ও নির্মাতা মাতিয়া বানু শুকু আর নেই",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1321": {
       "cluster_id": 1321,
-      "headline": "সাদা স্লিপে জমা নিয়ে দেড় কোটি টাকা আত্মসাত, ৭ ডাকঘর কর্মচারি কারাগারে",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+      "first_seen": "2026-11-26T18:58:45.026Z",
+      "last_update": "2026-11-26T18:58:45.027Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:17:23.000Z",
+          "kind": "evidence",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/world/middle-east/4bmudzdpce"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.693Z",
+          "kind": "claim",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349736,
+          "claim_text": "আরব দলগুলোর প্রতি নমনীয় গোলানকে চার মন্ত্রণালয় দিয়ে সঙ্গে রাখলেন আইজেনকট",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1322": {
       "cluster_id": 1322,
-      "headline": "তাহসিফ হত্যা: সিসিটিভি ও ফোনের তথ্য যাচাইয়ে আবারও রিমান্ডে দ্বীপ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+      "first_seen": "2026-11-26T18:58:45.027Z",
+      "last_update": "2026-11-26T18:58:45.028Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:10:12.000Z",
+          "kind": "evidence",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/gzg2z1e0lm"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.695Z",
+          "kind": "claim",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349737,
+          "claim_text": "টুঙ্গিপাড়া থানায় হামলা-অগ্নিসংযোগের ঘটনায় মামলা, আসামি ৮ হাজারের বেশি",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1323": {
       "cluster_id": 1323,
-      "headline": "১৮ কোটি টাকার হাসপাতাল কেন নির্মাণের পর থেকে তালাবদ্ধ",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
-      "related": []
+      "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+      "first_seen": "2026-11-26T18:58:45.029Z",
+      "last_update": "2026-11-26T18:58:45.030Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T18:01:29.000Z",
+          "kind": "evidence",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/bangladesh/district/zrzl00ffb5"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.696Z",
+          "kind": "claim",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349738,
+          "claim_text": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
+      "related": [
+        {
+          "cluster_id": 908,
+          "slug": "national-908",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "নেত্রকোনায় ইউএনওর কক্ষে আগুন লেগে সবকিছু পুড়ে গেছে"
+        },
+        {
+          "cluster_id": 785,
+          "slug": "sports-785",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 2,
+          "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
+        },
+        {
+          "cluster_id": 417,
+          "slug": "politics-417",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
+        }
+      ]
     },
     "national-1324": {
       "cluster_id": 1324,
-      "headline": "পদ্মা ব্যারাজ, দ্বিতীয় পদ্মা ও যমুনা সেতু নির্মাণ করবে সরকার, নীতিগত সিদ্ধান্ত",
-      "first_seen": null,
-      "last_update": null,
-      "claim_count": 0,
-      "events": [],
+      "headline": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+      "first_seen": "2026-11-26T18:58:45.031Z",
+      "last_update": "2026-11-26T18:58:45.031Z",
+      "claim_count": 1,
+      "events": [
+        {
+          "ts": "2026-11-26T17:57:30.000Z",
+          "kind": "evidence",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "source_id": "prothomalo",
+            "relation": "supports",
+            "url": "https://www.prothomalo.com/entertainment/tollywood/hlia4rmadv"
+          }
+        },
+        {
+          "ts": "2026-11-26T19:20:20.697Z",
+          "kind": "claim",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে"
+        },
+        {
+          "ts": "2026-11-26T19:20:20.777Z",
+          "kind": "verify",
+          "claim_id": 349739,
+          "claim_text": "গোপনীয়তা ভেঙে বিয়ের ছবি প্রকাশ করলেন মিমি, পাত্র কে",
+          "detail": {
+            "status": "SINGLE_SOURCE",
+            "from": null,
+            "confidence": 33,
+            "reason": "verify"
+          }
+        }
+      ],
       "related": []
     },
     "national-1325": {
@@ -176132,6 +176942,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -176170,14 +176988,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 764,
-          "slug": "national-764",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
         }
       ]
     },
@@ -196329,6 +197139,14 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1303,
           "slug": "national-1303",
           "actor_links": 0,
@@ -196343,14 +197161,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "তৃণমূলে নাশকতা মোকাবিলায় সতর্ক বিএনপি, ৫ সদস্যের বিশেষ টিম"
-        },
-        {
-          "cluster_id": 1284,
-          "slug": "national-1284",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "শেখ হাসিনা দেশে ফিরছেন না—জয়সওয়ালের কথায় তা মোটামুটি স্পষ্ট: রাশেদ খাঁন"
         }
       ]
     },
@@ -206376,14 +207186,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -206422,6 +207224,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আ. লীগ আমলে গুম খুনের তথ্য সংগ্রহে দেশজুড়ে গণশুনানি'"
+        },
+        {
+          "cluster_id": 1145,
+          "slug": "opinion-1145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
         }
       ]
     },
@@ -213748,6 +214558,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -213786,14 +214604,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "খেতাবপ্রাপ্ত মুক্তিযোদ্ধা ও কিলো ফ্লাইটের সদস্যসহ ৩৬ জনকে বিমান বাহিনী প্রধানের সংবর্ধনা"
-        },
-        {
-          "cluster_id": 593,
-          "slug": "national-593",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "প্রধানমন্ত্রীর সঙ্গে বৈঠকে নাহিদের সঙ্গে থাকবেন হাসনাত ও আখতার"
         }
       ]
     },
@@ -214581,14 +215391,6 @@
           "headline": "ভৈরবে ডেঙ্গুতে পুলিশ কনস্টেবল সাঈদ আক্তারের মৃত্যু"
         },
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -214603,6 +215405,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সৌদি আরবের বৃহত্তম তেল শোধনাগারে হামলার দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 1183,
+          "slug": "national-1183",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাবেক এমপি আনোয়ারুল আজীম আনারের মেয়ে মুনতারিন ফেরদৌস ডরিন গ্রেফতার"
         }
       ]
     },
@@ -223753,6 +224563,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -223791,14 +224609,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
         }
       ]
     },
@@ -226339,6 +227149,14 @@
           "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 1247,
           "slug": "sports-1247",
           "actor_links": 0,
@@ -226361,14 +227179,6 @@
           "source_links": 4,
           "claim_count": 6,
           "headline": "মজুরি বৃদ্ধির পরও আন্দোলনে পোশাক শ্রমিকরা, হেমায়েতপুরে সংঘর্ষ, ২২ কারখানা বন্ধ"
-        },
-        {
-          "cluster_id": 810,
-          "slug": "national-810",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 5,
-          "headline": "কক্সবাজারে বাসের নিচে চাপা পড়ে অটোরিকশা, নারীসহ ৫ যাত্রী নিহত"
         }
       ]
     },
@@ -242621,14 +243431,6 @@
           "headline": "ব্রাহ্মণবাড়িয়ায় ঢাকা-চট্টগ্রাম রেলপথ অবরোধ, এক ঘণ্টা ট্রেন চলাচল বন্ধ"
         },
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -242643,6 +243445,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সৌদি আরবের বৃহত্তম তেল শোধনাগারে হামলার দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 1183,
+          "slug": "national-1183",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাবেক এমপি আনোয়ারুল আজীম আনারের মেয়ে মুনতারিন ফেরদৌস ডরিন গ্রেফতার"
         }
       ]
     },
@@ -246518,6 +247328,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে কাল দুপুরে সাক্ষাৎ করবে এনসিপি, থাকবেন নাহিদ ইসলামসহ চার নেতা"
         },
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 1295,
           "slug": "national-1295",
           "actor_links": 0,
@@ -246532,14 +247350,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শেখ হাসিনা দেশে ফিরছেন না—জয়সওয়ালের কথায় তা মোটামুটি স্পষ্ট: রাশেদ খাঁন"
-        },
-        {
-          "cluster_id": 1260,
-          "slug": "opinion-1260",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ঈশ্বরগঞ্জে জাতীয় প্রাণিসম্পদ সপ্তাহ উদযাপন উপলক্ষে বর্ণাঢ্য র্যালী ও আলোচনা সভা"
         }
       ]
     },
@@ -255969,6 +256779,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -256007,14 +256825,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
-        },
-        {
-          "cluster_id": 529,
-          "slug": "politics-if-crossfire-is",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সীমান্তে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের পলাতক আসামিদের ঠেকাতে সতর্ক অবস্থান বিজিবির"
         }
       ]
     },
@@ -262766,6 +263576,14 @@
           "headline": "বিমানবাহিনীর খেতাবপ্রাপ্ত মুক্তিযোদ্ধা, কিলো ফ্লাইটের সদস্য ও উত্তরাধিকারীদের সংবর্ধনা"
         },
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -262796,14 +263614,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
         }
       ]
     },
@@ -274002,6 +274812,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -274040,14 +274858,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 764,
-          "slug": "national-764",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
         }
       ]
     },
@@ -280144,6 +280954,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -280182,14 +281000,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 764,
-          "slug": "national-764",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
         }
       ]
     },
@@ -285379,6 +286189,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -285417,14 +286235,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -286712,6 +287522,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -286750,14 +287568,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -287862,6 +288672,14 @@
           "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 968,
           "slug": "national-968",
           "actor_links": 1,
@@ -287876,14 +288694,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "চট্টগ্রামে সাড়ে পাঁচ ঘণ্টার ব্যবধানে পুলিশ বক্স ও ভূমি অফিসে আগুন"
-        },
-        {
-          "cluster_id": 1087,
-          "slug": "opinion-1087",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "পুলিশ বক্সে আগুন, মামলার বাদী হতে রাজি না হওয়ায় ট্রাফিক সার্জেন্ট সাময়িক বরখাস্ত"
         }
       ]
     },
@@ -292699,14 +293509,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -292745,6 +293547,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আ. লীগ আমলে গুম খুনের তথ্য সংগ্রহে দেশজুড়ে গণশুনানি'"
+        },
+        {
+          "cluster_id": 1145,
+          "slug": "opinion-1145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
         }
       ]
     },
@@ -298026,6 +298836,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -298064,14 +298882,6 @@
           "source_links": 2,
           "claim_count": 3,
           "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
-        },
-        {
-          "cluster_id": 529,
-          "slug": "politics-if-crossfire-is",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 4,
-          "headline": "সীমান্তে কার্যক্রম নিষিদ্ধ আওয়ামী লীগের পলাতক আসামিদের ঠেকাতে সতর্ক অবস্থান বিজিবির"
         }
       ]
     },
@@ -302917,6 +303727,14 @@
           "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 1312,
           "slug": "national-1312",
           "actor_links": 0,
@@ -302939,14 +303757,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "পল্পবীতে বাসে আগুন দিয়েছে দুর্বৃত্তরা"
-        },
-        {
-          "cluster_id": 1280,
-          "slug": "national-1280",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "বাংলাদেশ আক্রান্ত হলে ভারতও নিরাপদ থাকবে না, দিল্লির মসনদও তছনছ করে দিতে পারে: হেফাজত"
         }
       ]
     },
@@ -306655,14 +307465,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -306701,6 +307503,14 @@
           "source_links": 2,
           "claim_count": 11,
           "headline": "পত্রিকা: 'আ. লীগ আমলে গুম খুনের তথ্য সংগ্রহে দেশজুড়ে গণশুনানি'"
+        },
+        {
+          "cluster_id": 1145,
+          "slug": "opinion-1145",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 10,
+          "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
         }
       ]
     },
@@ -308830,6 +309640,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -308868,14 +309686,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -314276,6 +315086,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -314314,14 +315132,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
@@ -334824,6 +335634,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 993,
           "slug": "politics-993",
           "actor_links": 0,
@@ -334862,14 +335680,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "কুড়িয়ে পাওয়া তিন ভরি স্বর্ণালংকার মালিককে খুঁজে ফেরত দিলেন চানাচুর বিক্রেতা"
-        },
-        {
-          "cluster_id": 562,
-          "slug": "opinion-562",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "বিএনপির মিছিলের প্রস্তুতির সময় কার্যক্রম নিষিদ্ধ আ.লীগের হামলা, ৫ জন গুলিবিদ্ধ"
         }
       ]
     },
@@ -336868,6 +337678,14 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1150,
           "slug": "politics-1150",
           "actor_links": 0,
@@ -336890,14 +337708,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
-        },
-        {
-          "cluster_id": 1081,
-          "slug": "tech-1081",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামের ভুলে ১৮ বছর কারাবাসের পরও অসুস্থ মাকে দেখতে প্যারোলে মুক্তি পেলেন মোংলার বাদল"
         }
       ]
     },
@@ -339088,14 +339898,6 @@
       ],
       "related": [
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -339134,6 +339936,14 @@
           "source_links": 2,
           "claim_count": 10,
           "headline": "১৬ ডিসেম্বরের মধ্যেই বাংলাদেশের নিয়ন্ত্রণ নিয়ে নেব : বিজেপির পরিবহনমন্ত্রী"
+        },
+        {
+          "cluster_id": 1133,
+          "slug": "national-1133",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 5,
+          "headline": "বগুড়ায় বিএনপি কার্যালয়ের সামনে আগুন নিয়ে বিভ্রান্তি, অপপ্রচার বললেন এমপি"
         }
       ]
     },
@@ -339141,7 +339951,7 @@
       "cluster_id": 1248,
       "headline": "প্রাথমিক শিক্ষার্থীদের ঝরে পড়া রোধ ঠেকাতে সংসদীয় কমিটির সুপারিশ",
       "first_seen": "2026-11-26T11:56:42.511Z",
-      "last_update": "2026-11-26T18:08:22.940Z",
+      "last_update": "2026-11-26T18:58:44.631Z",
       "claim_count": 2,
       "events": [
         {
@@ -341206,6 +342016,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -341244,14 +342062,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "ইরানের বিরুদ্ধে সামরিক পদক্ষেপের প্রয়োজন দেখছেন না আইজেনকোট"
-        },
-        {
-          "cluster_id": 764,
-          "slug": "national-764",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
         }
       ]
     },
@@ -348851,6 +349661,14 @@
           "headline": "গাজীপুরে মহাসড়কে শ্রমিকদের বিক্ষোভ, পুলিশ বক্স ভাঙচুর–আগুন, ৭০ কারখানায় ছুটি"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 1247,
           "slug": "sports-1247",
           "actor_links": 0,
@@ -348873,14 +349691,6 @@
           "source_links": 4,
           "claim_count": 6,
           "headline": "মজুরি বৃদ্ধির পরও আন্দোলনে পোশাক শ্রমিকরা, হেমায়েতপুরে সংঘর্ষ, ২২ কারখানা বন্ধ"
-        },
-        {
-          "cluster_id": 810,
-          "slug": "national-810",
-          "actor_links": 0,
-          "source_links": 4,
-          "claim_count": 5,
-          "headline": "কক্সবাজারে বাসের নিচে চাপা পড়ে অটোরিকশা, নারীসহ ৫ যাত্রী নিহত"
         }
       ]
     },
@@ -363994,6 +364804,14 @@
           "headline": "প্রধানমন্ত্রীর সঙ্গে কাল দুপুরে সাক্ষাৎ করবে এনসিপি, থাকবেন নাহিদ ইসলামসহ চার নেতা"
         },
         {
+          "cluster_id": 1319,
+          "slug": "national-1319",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "অসহায় রোগীদের ঘিরে টাকার ফাঁদ, চট্টগ্রাম মেডিকেলে ধরা ২০ ‘দালাল’"
+        },
+        {
           "cluster_id": 1295,
           "slug": "national-1295",
           "actor_links": 0,
@@ -364008,14 +364826,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "শেখ হাসিনা দেশে ফিরছেন না—জয়সওয়ালের কথায় তা মোটামুটি স্পষ্ট: রাশেদ খাঁন"
-        },
-        {
-          "cluster_id": 1260,
-          "slug": "opinion-1260",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 3,
-          "headline": "ঈশ্বরগঞ্জে জাতীয় প্রাণিসম্পদ সপ্তাহ উদযাপন উপলক্ষে বর্ণাঢ্য র্যালী ও আলোচনা সভা"
         }
       ]
     },
@@ -365404,6 +366214,14 @@
           "headline": "আইনশৃঙ্খলা নিয়ন্ত্রণে সাত জেলায় ৯৫ প্লাটুন বিজিবি মোতায়েন"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1183,
           "slug": "national-1183",
           "actor_links": 0,
@@ -365434,14 +366252,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "বাংলাদেশি পণ্যে সর্বোচ্চ ১৮ শতাংশ শুল্ক আরোপের প্রস্তাব ট্রাম্প প্রশাসনের"
-        },
-        {
-          "cluster_id": 1092,
-          "slug": "national-1092",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
         }
       ]
     },
@@ -366981,6 +367791,14 @@
           "headline": "সশস্ত্র বাহিনী দিবসে শিখা অনির্বাণে রাষ্ট্রপতি ও প্রধানমন্ত্রীর পুষ্পস্তবক অর্পণ"
         },
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1150,
           "slug": "politics-1150",
           "actor_links": 0,
@@ -367003,14 +367821,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সিলেটে আবাসিক হোটেলে অভিযান: কক্সবাজারের সাবেক এমপি বদির ছেলে ও ২ ভাই আটক"
-        },
-        {
-          "cluster_id": 1081,
-          "slug": "tech-1081",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "নামের ভুলে ১৮ বছর কারাবাসের পরও অসুস্থ মাকে দেখতে প্যারোলে মুক্তি পেলেন মোংলার বাদল"
         }
       ]
     },
@@ -368481,7 +369291,7 @@
       "cluster_id": 1259,
       "headline": "‘বন্দুকযুদ্ধে’ ছাত্রদল নেতা জনি হত্যার অভিযোগে এসপি আজাদ গ্রেপ্তার",
       "first_seen": "2026-11-26T13:10:22.524Z",
-      "last_update": "2026-11-26T18:08:22.930Z",
+      "last_update": "2026-11-26T18:58:44.628Z",
       "claim_count": 5,
       "events": [
         {
@@ -369092,7 +369902,7 @@
       "cluster_id": 1277,
       "headline": "সাইবার হামলার শিকার ফিফা, চুরি হয়েছে তথ্য!",
       "first_seen": "2026-11-26T14:39:40.982Z",
-      "last_update": "2026-11-26T18:08:22.927Z",
+      "last_update": "2026-11-26T18:58:44.627Z",
       "claim_count": 2,
       "events": [
         {
@@ -374188,14 +374998,6 @@
           "headline": "ভৈরবে ডেঙ্গুতে পুলিশ কনস্টেবল সাঈদ আক্তারের মৃত্যু"
         },
         {
-          "cluster_id": 1270,
-          "slug": "national-1270",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "সৌদির বৃহত্তম তেল শোধনাগারে হুতিদের হামলা, ধোঁয়ার কুণ্ডলী"
-        },
-        {
           "cluster_id": 1260,
           "slug": "opinion-1260",
           "actor_links": 0,
@@ -374210,6 +375012,14 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "সৌদি আরবের বৃহত্তম তেল শোধনাগারে হামলার দাবি হুতিদের"
+        },
+        {
+          "cluster_id": 1183,
+          "slug": "national-1183",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 3,
+          "headline": "সাবেক এমপি আনোয়ারুল আজীম আনারের মেয়ে মুনতারিন ফেরদৌস ডরিন গ্রেফতার"
         }
       ]
     },
@@ -378862,6 +379672,14 @@
           "headline": "চট্টগ্রাম বিশ্ববিদ্যালয়ের শাটল ট্রেনে রাতের আঁধারে আগুন, দ্রুত নেভালেন রেলকর্মী ও শিক্ষার্থীরা"
         },
         {
+          "cluster_id": 1323,
+          "slug": "national-1323",
+          "actor_links": 1,
+          "source_links": 0,
+          "claim_count": 1,
+          "headline": "চট্টগ্রাম নগরে মাজারে ককটেল নিয়ে আসে দুজন, ধরা পড়ল পুলিশের হাতে"
+        },
+        {
           "cluster_id": 968,
           "slug": "national-968",
           "actor_links": 1,
@@ -378876,14 +379694,6 @@
           "source_links": 3,
           "claim_count": 3,
           "headline": "চট্টগ্রামে সাড়ে পাঁচ ঘণ্টার ব্যবধানে পুলিশ বক্স ও ভূমি অফিসে আগুন"
-        },
-        {
-          "cluster_id": 1087,
-          "slug": "opinion-1087",
-          "actor_links": 0,
-          "source_links": 3,
-          "claim_count": 3,
-          "headline": "পুলিশ বক্সে আগুন, মামলার বাদী হতে রাজি না হওয়ায় ট্রাফিক সার্জেন্ট সাময়িক বরখাস্ত"
         }
       ]
     },
@@ -380843,6 +381653,14 @@
       ],
       "related": [
         {
+          "cluster_id": 1318,
+          "slug": "national-1318",
+          "actor_links": 0,
+          "source_links": 2,
+          "claim_count": 2,
+          "headline": "পুরুষ কর্মীদের ১৫ দিনের পিতৃত্বকালীন ছুটি দিলেন থালাপতি বিজয়"
+        },
+        {
           "cluster_id": 1128,
           "slug": "sports-1128",
           "actor_links": 0,
@@ -380881,14 +381699,6 @@
           "source_links": 2,
           "claim_count": 2,
           "headline": "দেশের বাজারে টানা কমছে স্বর্ণের দাম, সামনে আরও কমার সম্ভাবনা"
-        },
-        {
-          "cluster_id": 721,
-          "slug": "national-721",
-          "actor_links": 0,
-          "source_links": 2,
-          "claim_count": 2,
-          "headline": "এনসিপি থেকে পদত্যাগ করলেন কেন্দ্রীয় নেতা সুলতান মোহাম্মদ জাকারিয়া"
         }
       ]
     },
