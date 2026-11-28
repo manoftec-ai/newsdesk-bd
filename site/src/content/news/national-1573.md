@@ -1,10 +1,12 @@
 ---
 title: "ঢাকা-চট্টগ্রাম মহাসড়কে যাত্রীবেশে বাসে আগুন"
+thumbnail: "/images/national-1573.webp"
+thumbnailAlt: "ঢাকা-চট্টগ্রাম মহাসড়কে যাত্রীবেশে বাসে আগুন — ছবি: krossbow (BY)"
 seoTitle: "ঢাকা-চট্টগ্রাম মহাসড়কে যাত্রীবেশে বাসে আগুন"
 excerpt: "শুক্রবার (২৭ নভেম্বর) রাত পৌনে ১০টার দিকে মহাসড়কের সিদ্ধিরগঞ্জ সানারপাড় ইউটার্ন এলাকায় ঢাকামুখী লেনে এ ঘটনা ঘটে। পল্লবী থানার ভারপ্রাপ্ত কর্মকর্তা (ওসি) মো. জালাল উদ্দিন বলেন, যাত্"
 seoDescription: "শুক্রবার (২৭ নভেম্বর) রাত পৌনে ১০টার দিকে মহাসড়কের সিদ্ধিরগঞ্জ সানারপাড় ইউটার্ন এলাকায় ঢাকামুখী লেনে এ ঘটনা ঘটে। পল্লবী থানার ভারপ্রাপ্ত কর্মকর্তা (ওসি) ম…"
 date: 2026-11-27T20:01:55.000Z
-publishedAt: 2026-11-28T02:05:25.775Z
+publishedAt: 2026-11-28T02:01:15.420Z
 developing: false
 category: "national"
 tags: ["education", "economy", "transport", "dhaka", "chattogram"]
@@ -28,7 +30,7 @@ verification:
   # badge alone reads as stronger corroboration than one source can support.
   uncorroborated: true
   status: "passed"
-  evaluatedAt: "2026-11-28T02:05:25.579Z"
+  evaluatedAt: "2026-11-28T02:01:15.223Z"
   clusterId: 1573
   claimIds:
     - 494307
@@ -44,7 +46,7 @@ publication:
   slug: "national-1573"
   gate: "passed"
   gateVersion: "1.0.0"
-  checkedAt: "2026-11-28T02:05:25.579Z"
+  checkedAt: "2026-11-28T02:01:15.223Z"
   clusterId: 1573
   claimIds:
     - 494307
