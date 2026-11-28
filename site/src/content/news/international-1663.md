@@ -1,0 +1,69 @@
+---
+title: "আফগানিস্তানে নারীদের চিকিৎসা নথি থেকে নাম বাদ দেওয়ার নির্দেশ তালেবানের"
+seoTitle: "আফগানিস্তানে নারীদের চিকিৎসা নথি থেকে নাম বাদ দেওয়ার নির্দেশ তালেবানের"
+excerpt: "আফগানিস্তানের উত্তরাঞ্চলীয় বালখ প্রদেশে সরকারি নথি, চিকিৎসা সংক্রান্ত রেকর্ড ও ব্যবস্থাপত্রে নারীদের পূর্ণ নামের পরিবর্তে শুধু ‘বিবি’ শব্দ ব্যবহারের নির্দেশ দিয়েছে তালেবান কর্তৃপক্"
+seoDescription: "আফগানিস্তানের উত্তরাঞ্চলীয় বালখ প্রদেশে সরকারি নথি, চিকিৎসা সংক্রান্ত রেকর্ড ও ব্যবস্থাপত্রে নারীদের পূর্ণ নামের পরিবর্তে শুধু ‘বিবি’ শব্দ ব্যবহারের নির্দ…"
+date: 2026-11-28T07:12:19.000Z
+publishedAt: 2026-11-28T11:15:18.724Z
+developing: false
+category: "international"
+tags: ["education", "health"]
+author: "desk"
+lang: "bn"
+draft: false
+keyPoints:
+  - "২০২১ সালের আগস্টে তালেবান আবারও আফগানিস্তানের ক্ষমতায় ফেরার পর থেকে দেশটির নারী ও মেয়েদের ওপর নানা বিধিনিষেধ আরোপ করা হয়েছে"
+  - "আফগানিস্তানের উত্তরাঞ্চলীয় বালখ প্রদেশে নারীদের নাম সরকারি নথিতে ব্যবহারের ওপর নিষেধাজ্ঞা জারি করেছে তালেবান"
+  - "শিক্ষা, কর্মসংস্থান, চলাচলের স্বাধীনতা এবং জনজীবনে অংশগ্রহণের ক্ষেত্রেও তাদের ওপর কঠোর নিয়ন্ত্রণ রয়েছে"
+faq: []
+sources:
+  - name: "চ্যানেল আই"
+    url: "https://www.channelionline.com/taliban-orders-remove-womens-names-medical-records/"
+  - name: "বাংলা ট্রিবিউন"
+    url: "https://www.banglatribune.com/foreign/asia/983763/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%A8%E0%A6%A5%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%AB%E0%A6%97%E0%A6%BE%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%BE%E0%A6%AE-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7-%E0%A6%A1%E0%A6%BE%E0%A6%95%E0%A6%A4%E0%A7%87-%E0%A6%B9%E0%A6%AC%E0%A7%87"
+verification:
+  badge: "confirmed"
+  tier: "A"
+  score: 4
+  # 2026-09-26: true when a tier A (national/politics/international) story is
+  # published from a single source. The site must say so on the page, because the
+  # badge alone reads as stronger corroboration than one source can support.
+  uncorroborated: false
+  status: "passed"
+  evaluatedAt: "2026-11-28T11:15:18.428Z"
+  clusterId: 1663
+  claimIds:
+    - 562588
+    - 562589
+  evidenceHash: "7b223abe5509f1b0"
+  headline:
+    status: "supported"
+    support: 100
+  evidence:
+    - type: "paper"
+      label: "reputable paper corroboration (channeli)"
+    - type: "paper"
+      label: "reputable paper corroboration (banglatribune)"
+publication:
+  slug: "international-1663"
+  gate: "passed"
+  gateVersion: "1.0.0"
+  checkedAt: "2026-11-28T11:15:18.428Z"
+  clusterId: 1663
+  claimIds:
+    - 562588
+    - 562589
+  evidenceHash: "7b223abe5509f1b0"
+---
+
+আফগানিস্তানের উত্তরাঞ্চলীয় বালখ প্রদেশে সরকারি নথি, চিকিৎসা সংক্রান্ত রেকর্ড ও ব্যবস্থাপত্রে নারীদের পূর্ণ নামের পরিবর্তে শুধু ‘বিবি’ শব্দ ব্যবহারের নির্দেশ দিয়েছে তালেবান কর্তৃপক্ষ।
+
+সর্বশেষ এই নির্দেশনা আফগান সমাজে নারীদের স্বতন্ত্র পরিচয় ও অধিকার সংকুচিত হওয়ার বিষয়টি নতুন করে সামনে এনেছে।
+
+আফগানিস্তানের অনলাইন সংবাদমাধ্যম জান টাইমস ও ব্রিটিশ সংবাদমাধ্যম দ্য গার্ডিয়ানের প্রতিবেদনে এ তথ্য জানানো হয়েছে।
+
+সরকারি কর্মকর্তা ও স্বাস্থ্যকর্মীদের এ নির্দেশনা দেওয়া হয়েছে বলে বিভিন্ন প্রতিবেদনে জানানো হয়েছে।
+
+নির্দেশনা অনুযায়ী, সরকারি ও চিকিৎসাসংক্রান্ত নথিতে নারীদের নিজস্ব নামের পরিবর্তে সাধারণভাবে ‘বিবি’ শব্দ ব্যবহার করতে হবে।
+
+এতে সরকারি ও স্বাস্থ্যসেবা সংক্রান্ত নথিতে নারীদের ব্যক্তিগত পরিচয় আরও সীমিত হয়ে পড়ার আশঙ্কা তৈরি হয়েছে।
